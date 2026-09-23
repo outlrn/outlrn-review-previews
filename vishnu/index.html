@@ -387,20 +387,18 @@ function diagram(q,solution=false){
   break;
  }
  case 'review-lift-incline':{
-  height=530;const t=rad(p.angle),c=Math.cos(t),n=Math.sin(t),x=205,y=263,rx=65,ry=y+(x-65)*Math.tan(t);
+  height=500;const t=rad(p.angle),c=Math.cos(t),n=Math.sin(t),x=205,y=263,rx=65,ry=y+(x-65)*Math.tan(t);
   s=line(45,52,45,434,G,2)+line(45,434,372,434,G,2)+line(372,434,372,52,G,2)+txt(209,32,'Lift frame',M,15);
   s+=line(rx,ry,rx+210*c,ry-210*n,G,3)+line(rx,ry,rx+170,ry,M,1,true)+arc(rx,ry,128,0,-t,`${p.angle}°`,rx+93*Math.cos(t/2),ry-93*Math.sin(t/2)+6);
   s+=`<g transform="translate(${x} ${y}) rotate(${-p.angle})">${rect(-23,-40,46,37,'')}</g>`;
-  s+=arrow(407,p.up?195:90,407,p.up?90:195,'',GREEN)+txt(424,222,`${p.a} m/s²`,GREEN,13);
+  s+=arrow(407,p.up?195:90,407,p.up?90:195,'',GREEN)+txt(405,224,`${p.a} m/s²`,GREEN,13);
   const ox=x-15*n,oy=y-15*c;
- if(solution){
-   if(!p.freeFall){
-    s+=arrow(ox,oy,ox-78*n,oy-78*c,'',B)+txt(ox-78*n-18,oy-78*c-9,'N',B);
-    s+=arrow(ox,oy,ox+106*c,oy-106*n,'',GREEN)+txt(ox+106*c+14,oy-106*n-24,'f',GREEN);
-   }
-   s+=arrow(ox,oy,ox,oy+127,'',Y)+txt(ox+54,oy+112,'mg',Y,16,'start');
+  if(solution){
+   s+=arrow(ox,oy,ox-78*n,oy-78*c,'',B)+txt(ox-78*n-18,oy-78*c-9,'N',B);
+   s+=arrow(ox,oy,ox+106*c,oy-106*n,'',GREEN)+txt(ox+106*c+14,oy-106*n-24,'f',GREEN);
+   s+=arrow(ox,oy,ox,oy+127,'',Y)+txt(ox+22,oy+124,'mg',Y,16,'start');
    s+=arrow(ox+12,oy,ox+12,oy+(p.up?86:-99),'',W)+txt(p.up?ox+29:ox-6,p.up?oy+77:oy-97,'ma (pseudo)',W,14,p.up?'start':'end');
-   s+=txt(210,472,p.freeFall?'gₑff = g − g = 0':`gₑff = g ${p.up?'+':'−'} a`,Y,17)+txt(210,507,p.freeFall?'N = 0 · f = 0 · a(relative) = 0':'N = mgₑff cos θ; f = mgₑff sin θ',M,14);
+   s+=txt(210,467,`gₑff = g ${p.up?'+':'−'} a`,Y,17)+txt(210,491,'N = mgₑff cos θ; f = mgₑff sin θ',M,14);
   }else s+=txt(211,467,'At rest relative to the lift',M,15);
   break;
  }
@@ -446,84 +444,6 @@ function diagram(q,solution=false){
    s+=arrow(ax,ay,ax,ay+130,'',Y)+txt(ax+25,ay+127,'mg',Y,17);
    s+=txt(230,334,'Forces on sphere A',M,16)+txt(230,369,'N sin θ = C; N cos θ = mg',W,18)+txt(230,406,'OA = 2r; θ = 30°',W,18);
   }else s+=txt(230,291,'Smooth cup · equal spheres',M,17);
- break;
- }
- case 'review-stack-floor':{
-  const floorY=250,left=144,w=174,bh=62,topY=floorY-2*bh;
-  viewTop=12;height=solution?410:340;
-  s=ground(54,floorY,352)+rect(left,topY,w,bh,p.top)+rect(left,topY+bh,w,bh,p.bottom);
-  s+=`<g data-vector="applied">`+arrow(left+w,topY+bh+bh/2,left+w+86,topY+bh+bh/2,'',GREEN)+txt(left+w+43,topY+bh+bh/2-18,p.F,GREEN,16)+`</g>`;
-  s+=txt(left+w/2,topY-20,p.muTop,W,15)+txt(left+w/2,floorY+40,p.muFloor,W,15);
-  if(solution){
-   s+=`<g data-vector="floor-friction">`+arrow(left, floorY-12,left-92,floorY-12,'',B)+txt(left-62,floorY-34,`f(floor) = ${p.floorFriction}`,B,15)+`</g>`;
-   s+=txt(230,326,`fₛ,max(floor) = 50 N > ${p.F}`,B,16);
-   s+=txt(230,359,`No horizontal force is needed on A`,W,16);
-   s+=txt(230,392,`f(A-B) = ${p.interfaceFriction}`,GREEN,17);
-  }else s+=txt(230,318,'Two rough contacts · force applied only to B',M,14);
-  break;
- }
- case 'review-resisted-motion':{
-  const floorY=205,cx=230,w=94,bh=58;
-  viewTop=12;height=solution?370:306;
-  s=ground(48,floorY,364)+rect(cx-w/2,floorY-bh,w,bh,p.body);
-  s+=`<g data-vector="drive">`+arrow(cx+w/2,floorY-bh/2,cx+w/2+104,floorY-bh/2,'',GREEN)+txt(cx+w/2+52,floorY-bh/2-18,p.drive,GREEN,16)+`</g>`;
-  s+=`<g data-vector="resistance">`+arrow(cx-w/2,floorY-bh/2,cx-w/2-118,floorY-bh/2,'',B)+txt(cx-w/2-78,floorY-bh/2-22,p.resistance,B,15)+`</g>`;
-  s+=`<g data-part="velocity">`+arrow(cx-32,88,cx+62,88,'',W)+txt(cx+15,68,p.velocity,W,16)+`</g>`;
-  if(solution){
-   s+=txt(230,274,'At release: F(net) = 100 − 25 = 75 N',W,15);
-   s+=txt(230,307,'Target: F(net) = 15 × 2.5 = 37.5 N',B,15);
-   s+=txt(230,340,'100 − (25 + 0.5v) = 37.5',GREEN,16);
-  }else s+=txt(230,274,'Resistance grows linearly with speed',M,14);
-  break;
- }
- case 'review-hanging-chain':{
-  const x=230,top=54,bottom=300,cut=142;
-  viewTop=12;height=solution?420:358;
-  s=ground(x-78,top,156,true)+line(x,top,x,bottom,Y,12);
-  s+=line(x+36,top,x+58,top,M,1.5)+line(x+36,bottom,x+58,bottom,M,1.5)+line(x+48,top,x+48,bottom,M,1.5);
-  s+=txt(x+69,(top+bottom)/2+6,p.L,M,16,'start');
-  s+=line(x-42,top,x-20,top,M,1.5)+line(x-42,cut,x-20,cut,M,1.5)+line(x-32,top,x-32,cut,M,1.5)+txt(x-48,(top+cut)/2+6,p.y,M,16,'end');
-  s+=line(x-18,cut,x+18,cut,W,2,true)+txt(x-55,cut-13,'P',W,16,'end');
-  if(solution){
-   s+=`<g data-part="system-box">${systemBox(x-23,cut+8,46,bottom-cut-2)}</g>`;
-   s+=`<g data-vector="tension">`+arrow(x,cut,x,cut-72,'',B)+txt(x+18,cut-54,p.tension,B,17,'start')+`</g>`;
-   s+=`<g data-vector="weight">`+arrow(x,bottom-6,x,bottom+66,'',Y)+txt(x+18,bottom+48,'m(below)g',Y,15,'start')+`</g>`;
-   s+=txt(230,389,`Length below P = ${p.below}`,W,16);
-  }else s+=txt(230,340,'Uniform vertical chain fixed at its upper end',M,14);
-  break;
- }
- case 'review-machine-gun':{
-  const gx=118,gy=174;
-  viewTop=12;height=solution?402:326;
-  s=rect(gx,gy-28,118,56,'gun','#496bff')+rect(gx-42,gy-12,48,28,'',G)+line(gx+118,gy-5,gx+176,gy-5,G,12);
-  for(let i=0;i<3;i++)s+=`<circle cx="${gx+200+i*42}" cy="${gy-5}" r="7" fill="${Y}"/>`+arrow(gx+178+i*42,gy-5,gx+216+i*42,gy-5,'',B);
-  s+=txt(330,108,p.speed,B,16)+txt(330,139,p.mass+' each',W,15);
-  s+=`<g data-vector="recoil">`+arrow(gx,gy+55,gx-90,gy+55,'',GREEN)+txt(gx-41,gy+88,`Fᵣ ≤ ${p.force}`,GREEN,15)+`</g>`;
-  if(solution){
-   s+=txt(230,326,'Momentum per bullet = 0.04 × 1200',W,15);
-   s+=txt(230,359,'48n = 144',B,17);
-   s+=txt(230,392,'n = 3 bullets/s',GREEN,17);
-  }else s+=txt(230,306,p.rate,M,15);
-  break;
- }
- case 'review-lift-ratio':{
-  viewTop=12;height=solution?430:360;
-  for(let i=0;i<2;i++){
-   const x=i?330:130,top=70,floor=250,up=!i;
-   s+=line(x-72,top,x-72,floor,G,2)+line(x+72,top,x+72,floor,G,2)+ground(x-72,floor,144);
-   s+=rect(x-34,floor-62,68,62,'m');
-   s+=`<g data-part="acceleration">`+arrow(x+58,up?floor-18:top+34,x+58,up?top+34:floor-18,'',GREEN)+txt(x+58,up?top+20:floor+32,'a',GREEN,16)+`</g>`;
-   s+=txt(x,40,up?'accelerating up':'accelerating down',W,15);
-   if(solution){
-    s+=`<g data-vector="normal-${i}">`+arrow(x,floor-62,x,floor-132,'',B)+txt(up?x-42:x-40,floor-116,up?'N₁':'N₂',B,16,'end')+`</g>`;
-    s+=`<g data-vector="weight-${i}">`+arrow(x,floor,x,floor+56,'',Y)+txt(x+15,floor+50,'mg',Y,15,'start')+`</g>`;
-   }
-  }
-  if(solution){
-   s+=txt(230,334,'Nup = m(g + a) · Ndown = m(g − a)',W,15);
-   s+=txt(230,372,'Nup : Ndown = 2 : 1',B,16);
-   s+=txt(230,407,'a = g/3',GREEN,18);
-  }else s+=txt(230,326,'Same man · same acceleration magnitude',M,14);
   break;
  }
  case 'ropecut':{
@@ -2841,154 +2761,6 @@ function diagram(q,solution=false){
   }else s+=txt(230,300,p.note||'A pinned, C sliding along the axis, B above it',M,13);
   break;
  }
- case 'review-force-time':{
-  const floorY=214,cx=218;
-  viewTop=8;height=solution?382:304;
-  s=ground(42,floorY,376)+rect(cx-45,floorY-58,90,58,p.body||'m');
-  s+=arrow(cx+45,floorY-29,cx+145,floorY-29,'',GREEN)+txt(cx+96,floorY-49,'F = 2t',GREEN,16);
-  s+=arrow(cx-45,floorY-18,cx-132,floorY-18,'',B)+txt(cx-91,floorY-39,'fₖ = 0.5mg',B,15);
-  s+=arrow(cx-52,78,cx+60,78,'',W)+txt(cx+4,58,'initial velocity v₀',W,15);
-  if(solution){
-   s+=txt(230,270,'Fₙₑₜ = 2t − 0.5mg',W,17);
-   s+=txt(230,307,'2t < 0.5mg: speed decreases',B,15);
-   s+=txt(230,340,'2t > 0.5mg: speed increases',GREEN,15);
-   s+=txt(230,373,'Turning time: t = 0.25mg',M,14);
-  }else s+=txt(230,276,'Rough horizontal surface · μₖ = 0.5',M,14);
-  break;
- }
- case 'review-variable-patch':{
-  const y=214,x1=74,x2=390,cx=190;
-  viewTop=8;height=solution?390:318;
-  s=ground(36,y,390)+line(x1,y+17,x1,y-8,Y,2)+line(x2,y+17,x2,y-8,Y,2);
-  s+=rect(cx-38,y-50,76,50,'1 kg')+arrow(cx-40,80,cx+68,80,'',W)+txt(cx+14,59,'u = 2 m/s',W,15);
-  s+=arrow(cx-38,y-24,cx-130,y-24,'',B)+txt(cx-85,y-45,'fᵣ = k/x',B,15);
-  s+=span(x1,x2,y+55,'rough patch: x = 0.10 m to 2.00 m',M);
-  if(solution){
-   s+=txt(230,304,'Work by resistance',M,14);
-   s+=txt(230,337,'W = −∫₀.₁² (k/x) dx = −k ln 20 = −1.5 J',B,15);
-   s+=txt(230,373,'½mv² = ½mu² + W = 2 − 1.5 = 0.5 J',GREEN,15);
-  }else s+=txt(230,304,'k = 0.5 J · ln 20 = 3',M,14);
-  break;
- }
- case 'review-adjustable-pulley':{
-  const floorY=254,bx=126,px=330,py=76,theta=rad(36),tieX=bx+58,tieY=floorY-45;
-  viewTop=8;height=solution?436:340;
-  s=ground(38,floorY,318)+rect(bx-42,floorY-56,84,56,'')+txt(68,142,'m₁ = 20 kg',W,14);
-  s+=line(tieX,tieY,px,py,W,3)+`<circle cx="${px}" cy="${py}" r="17" fill="none" stroke="${G}" stroke-width="3"/>`+line(px+17,py,px+17,246,W,3)+rect(px+17-34,246,68,50,'')+txt(px+69,276,'m₂',W,16,'start');
-  s+=line(tieX,tieY,tieX+105,tieY,M,1,true)+`<polygon points="${tieX},${tieY} ${tieX+68*Math.cos(-theta)},${tieY+68*Math.sin(-theta)} ${tieX+68},${tieY}" fill="${W}" fill-opacity=".08"/>`+txt(tieX+76,tieY-11,'θ',W,15);
-  if(solution){
-   s+=arrow(tieX,tieY, tieX+92*Math.cos(theta),tieY-92*Math.sin(theta),'',B)+txt(tieX+72,tieY-82,'T',B,17);
-   s+=arrow(bx+25,floorY-56,bx+25,floorY-137,'',GREEN)+txt(bx+43,floorY-125,'N',GREEN,16,'start');
-   s+=arrow(bx-22,floorY-4,bx-22,floorY+76,'',Y)+txt(bx-4,floorY+62,'m₁g',Y,15,'start');
-   s+=arrow(bx-42,floorY-20,bx-123,floorY-20,'',W)+txt(bx-84,floorY-41,'μN',W,15);
-   s+=txt(230,364,'Resolve the tension on m₁',M,13);
-   s+=txt(230,404,'Best string angle gives Tₘᵢₙ = 120 N',GREEN,16);
-  }else s+=txt(230,318,'Pulley position may be adjusted',M,14);
-  break;
- }
- case 'review-circle-friction':{
-  const cx=230,cy=72,R=154,t=rad(60),px=cx+R*Math.sin(t),py=cy+R*Math.cos(t);
-  viewTop=8;height=solution?430:338;
-  s=`<path d="M ${cx-R} ${cy} A ${R} ${R} 0 0 0 ${cx+R} ${cy}" fill="none" stroke="${B}" stroke-width="3"/>`+line(cx,cy,cx,cy+R,M,1,true)+line(cx,cy,px,py,M,1.5,true);
-  s+=arc(cx,cy,104,Math.PI/2,Math.PI/6,'60°',cx+38,cy+63)+`<circle cx="${px}" cy="${py}" r="11" fill="${Y}"/>`;
-  s+=arrow(px+5,py-8,px-52,py-107,'',W)+txt(82,52,'speed 4 m/s',W,15);
-  if(solution){
-   const ux=(cx-px)/R,uy=(cy-py)/R,tx=-uy,ty=ux;
-   s+=arrow(px,py,px+84*ux,py+84*uy,'',B)+txt(px+70*ux-8,py+70*uy-18,'N',B,17);
-   s+=arrow(px,py,px,py+105,'',Y)+txt(px+18,py+88,'mg',Y,16,'start');
-   s+=arrow(px,py,px-76*tx,py-76*ty,'',GREEN)+txt(408,292,'f = μN',GREEN,15,'end');
-   s+=txt(230,333,'Towards centre: N − mg cos 60° = mv²/r',B,14);
-   s+=txt(230,368,'N = 13 N',W,16)+txt(230,404,'f = 0.5 × 13 = 6.5 N',GREEN,16);
-  }else s+=txt(230,307,'Inside a circular track · r = 2 m · μ = 0.5',M,14);
-  break;
- }
- case 'review-up-rough-incline':{
-  const t=rad(60),x0=74,y0=298,x=152,y=y0-(x-x0)*Math.tan(t);
-  viewTop=8;height=solution?420:360;
-  s=line(x0,y0,238,y0-(238-x0)*Math.tan(t),G,3)+line(x0,y0,390,y0,M,1,true)+`<polygon points="${x0},${y0} ${x0+76},${y0} ${x0+76*Math.cos(t)},${y0-76*Math.sin(t)}" fill="${W}" fill-opacity=".08"/>`+txt(x0+66,y0-23,'60°',W,14);
-  s+=`<g transform="translate(${x} ${y}) rotate(-60)">${rect(-28,-42,56,42,'')}</g>`;
-  s+=arrow(x+18,y-18,x+68*Math.cos(t),y-18-68*Math.sin(t),'',W)+txt(x+100,y-28,'u = 20 m/s',W,14);
-  if(solution){
-   s+=arrow(x-12,y+6,x-75*Math.cos(t),y+6+75*Math.sin(t),'',GREEN)+txt(x-62,y+56,'fₖ',GREEN,16);
-   s+=arrow(x+10,y,x+10,y+98,'',Y)+txt(x+29,y+84,'mg',Y,16,'start');
-   s+=arrow(x-18,y-8,x-18-62*Math.sin(t),y-8-62*Math.cos(t),'',B)+txt(x-79,y-47,'N',B,16);
-   s+=txt(230,332,'a = (20 − 0)/2 = 10 m/s² down the plane',W,14);
-   s+=txt(230,367,'10 = 10(sin 60° + μ cos 60°)',B,15);
-   s+=txt(230,402,'μ = 2 − √3 ≈ 0.27',GREEN,16);
-  }else s+=txt(230,338,'Stops after 2 s · g = 10 m/s²',M,14);
-  break;
- }
- case 'review-rod-string':{
-  const A={x:90,y:258},Bv={x:308,y:70},C={x:90,y:70},mx=(A.x+Bv.x)/2,my=(A.y+Bv.y)/2;
-  viewTop=8;height=solution?425:338;
-  s=ground(38,A.y,340)+line(A.x,A.y,Bv.x,Bv.y,Y,8)+line(Bv.x,Bv.y,C.x,C.y,W,3)+line(C.x,C.y,A.x,A.y,G,3);
-  s+=txt(A.x-20,A.y-15,'A',W,16)+txt(Bv.x+18,Bv.y,'B',W,16)+txt(C.x-18,C.y,'C',W,16);
-  if(solution){
-   s+=arrow(Bv.x,Bv.y,Bv.x-104,Bv.y,'',B)+txt(Bv.x-58,Bv.y-18,'T',B,16);
-   s+=arrow(A.x-38,A.y-8,A.x-38,A.y-104,'',B)+txt(A.x-56,A.y-82,'N',B,16);
-   s+=arrow(mx-12,my,mx-12,my+105,'',Y)+txt(276,218,'mg',Y,16,'start');
-   s+=arrow(A.x,A.y-18,A.x+88,A.y-18,'',GREEN)+txt(205,214,'f',GREEN,16);
-   s+=txt(230,342,'Take moments about A',B,14);
-   s+=txt(230,375,'T = mg/2 = 50 N',W,16)+txt(230,407,'Horizontal balance: f = 50 N right',GREEN,15);
-  }else s+=txt(230,315,'Uniform rod · mass 10 kg · AC = BC (rod at 45°)',M,14);
-  break;
- }
- case 'review-double-incline':{
-  const O={x:230,y:72},L={x:70,y:232},Rr={x:390,y:232};
-  viewTop=8;height=solution?430:345;
-  s=ground(L.x,L.y,Rr.x-L.x)+line(L.x,L.y,O.x,O.y,G,3)+line(O.x,O.y,Rr.x,Rr.y,G,3)+`<circle cx="${O.x}" cy="${O.y}" r="17" fill="none" stroke="${W}" stroke-width="3"/>`;
-  s+=line(150,152,O.x-12,O.y+12,W,3)+line(O.x+12,O.y+12,310,152,W,3);
-  s+=`<g transform="translate(150 152) rotate(-45)">${rect(-29,-42,58,42,'')}</g>`+`<g transform="translate(310 152) rotate(45)">${rect(-31,-44,62,44,'')}</g>`;
-  s+=txt(94,105,'m',W,16)+txt(370,105,'3m',W,16)+txt(135,220,'45°',W,13)+txt(325,220,'45°',W,13)+txt(92,276,'smooth AB',M,14)+txt(368,276,'rough AC',M,14);
-  if(solution){
-   s+=arrow(150,152,95,207,'',B);
-   s+=arrow(310,152,252,94,'',B);
-   s+=arrow(310,152,254,208,'',GREEN)+txt(245,220,'f',GREEN,16);
-   s+=txt(230,338,'One light string carries the same tension T',W,15);
-   s+=txt(230,370,'Tension and friction balance the slope components',B,13);
-   s+=txt(230,400,'μ = 2/3',GREEN,18);
-  }else s+=txt(230,313,'The 3m block slides down at constant velocity',M,14);
-  break;
- }
- case 'review-constant-power':{
-  const y=218,cx=222;
-  viewTop=8;height=solution?390:306;
-  s=ground(42,y,376)+rect(cx-46,y-58,92,58,'m');
-  s+=arrow(cx+46,y-29,cx+146,y-29,'',GREEN)+txt(cx+97,y-49,'F = P/v',GREEN,16);
-  s+=arrow(cx-46,y-18,cx-139,y-18,'',B)+txt(cx-93,y-39,'fₖ = μmg',B,15);
-  s+=arrow(cx-38,78,cx+64,78,'',W)+txt(cx+13,58,'v',W,16);
-  if(solution){s+=txt(230,276,'P = Fv  ⇒  F = P/v',W,16)+txt(230,316,'At terminal speed: P/vₘₐₓ = μmg',B,15)+txt(230,360,'vₘₐₓ = P/(μmg)',GREEN,18);}
-  else s+=txt(230,278,'Constant power P · rough horizontal plane',M,14);
-  break;
- }
- case 'review-wall-oblique':{
-  const wallX=350,cx=298,cy=170;
-  viewTop=8;height=solution?420:320;
-  s=line(wallX,42,wallX,276,G,4)+Array.from({length:13},(_,i)=>line(wallX+2,54+i*17,wallX+13,48+i*17,M,1)).join('')+rect(cx-40,cy-42,80,84,'');
-  s+=arrow(cx-130,cy+75,cx-18,cy+10,'',GREEN)+txt(cx-124,cy+100,'100 N',GREEN,16);
-  {const ox=cx-18,oy=cy+10,r=152;s+=line(ox,oy,cx-165,oy,M,1,true)+`<polygon points="${ox},${oy} ${ox-r},${oy} ${ox-r*Math.cos(rad(30))},${oy+r*Math.sin(rad(30))}" fill="${W}" fill-opacity=".08"/>`+txt(cx-158,cy+50,'30°',W,11);}
-  if(solution){
-   s+=arrow(cx+40,cy-14,cx-42,cy-14,'',B)+txt(cx-76,cy-34,'N',B,16);
-   s+=arrow(cx-14,cy+42,cx-14,cy+112,'',Y)+txt(cx+5,cy+101,'mg',Y,15,'start');
-   s+=arrow(cx+25,cy-38,cx+25,cy+25,'',W)+txt(cx-88,cy-65,'f down',W,14,'start');
-   s+=txt(230,324,'Upward component = 100 sin 30° = 50 N',GREEN,14);
-   s+=txt(230,358,'Required downward friction = 20 N',W,14);
-   s+=txt(230,393,'Limit μN = 21.65 N',B,15);
-  }else s+=txt(230,297,'μ = 1/4 · vertical wall',M,14);
-  break;
- }
- case 'review-stack-two-cases':{
-  viewTop=8;height=solution?510:420;
-  for(let i=0;i<2;i++){
-   const y=145+i*188,x=172;
-   s+=txt(55,y-74,i?'(ii) force on B':'(i) force on A',W,15,'start')+ground(46,y+58,360);
-   s+=rect(x,y-42,116,42,'A · m')+rect(x,y,116,58,'B · M');
-   if(i===0)s+=arrow(x+116,y-21,x+196,y-21,'',GREEN)+txt(x+157,y-39,'F',GREEN,16);
-   else s+=arrow(x+116,y+29,x+196,y+29,'',GREEN)+txt(x+157,y+11,'F',GREEN,16);
-  }
-  if(solution){s+=txt(230,438,'In case (ii), friction accelerates A',W,14)+txt(230,470,'Required friction must stay below μmg',B,14)+txt(230,500,'Fₘₐₓ = μ(M + m)g',GREEN,17);}
-  break;
- }
  case 'ropepull':{
   /* A block dragged by a rope that runs up to a pulley and is reeled in horizontally.
      Only the part of the block's velocity along the rope shortens the rope, which is
@@ -3320,9 +3092,7 @@ mcqItems.forEach((v,i)=>{const n=families.length+1,q={...v,id:`NLM-${n}-P`,famil
 
 const instituteDocuments={
  'INST-NLM-MODULE':{name:'Institute Laws of Motion module',file:'5. LAWS OF MOTION - Print Ready.pdf',shortName:'Institute module',kind:'Coaching-institute practice module',numbering:'Printed question numbers 1-344'},
- 'INST-NLM-TEST':{name:'Institute NLM test',file:'NLM TEST.pdf',shortName:'Institute NLM test',kind:'Coaching-institute test paper',numbering:'Outer test numbering 1-50, not the numbering inside embedded screenshots'},
- 'INST-FRICTION-SCQ':{name:'Institute Friction single-correct collection',file:'1. Friction (S.C.Q. E).doc',shortName:'Institute friction collection',kind:'Coaching-institute practice collection',numbering:'Printed question numbers repeat; catalogue id includes the occurrence'},
- 'INST-NLM-SCQ':{name:'Institute Laws of Motion single-correct collection',file:'1. Low of motion (S.C.Q. ) E.doc',shortName:'Institute NLM collection',kind:'Coaching-institute practice collection',numbering:'Printed question numbers repeat; catalogue id includes the occurrence'}
+ 'INST-NLM-TEST':{name:'Institute NLM test',file:'NLM TEST.pdf',shortName:'Institute NLM test',kind:'Coaching-institute test paper',numbering:'Outer test numbering 1-50, not the numbering inside embedded screenshots'}
 };
 const plain=text=>{
  if(/[<>&"]/.test(text))throw Error(`Source text must be imported as plain text: ${text}`);
@@ -11003,6 +10773,9 @@ instituteFamily({
 });
 /* September practice completion. Each new item is reviewed separately;
    source questions are never silently repaired or relabelled as verified PYQs. */
+instituteDocuments['INST-FRICTION-SCQ']={name:'Institute Friction SCQ',file:'1. Friction (S.C.Q. E).doc',shortName:'Institute friction',kind:'Coaching-institute practice sheet',numbering:'Printed numbers; repeated numbers disambiguated by source occurrence'};
+instituteDocuments['INST-NLM-SCQ']={name:'Institute Laws of Motion SCQ',file:'1. Low of motion (S.C.Q. ) E.doc',shortName:'Institute NLM SCQ',kind:'Coaching-institute practice sheet',numbering:'Printed numbers; repeated numbers disambiguated by source occurrence'};
+
 // The free-fall case tests the boundary at which the parent's effective-gravity
 // division is no longer valid: N and friction both vanish.
 instituteFamily({parentFamily:13,title:'Friction in an accelerating frame',skill:'Effective gravity and friction',difficulty:'Standard',time:90,trap:'A free-falling floor exerts no normal force.',items:[{
@@ -11097,232 +10870,6 @@ instituteFamily({parentFamily:55,title:'Equilibrium of touching spheres',skill:'
  short:'OA = 2r; sin θ = r/(2r) = 1/2; N sin θ = C; N/C = 2.',steps:['Equal spheres sit symmetrically and touch each other.','Their centres lie 2r from the cup centre, while each is r from the vertical through O.','Thus θ = 30°. For one sphere, N sin θ = C and N cos θ = mg, giving N/C = 2.'],
  diagram:'review-two-spheres',p:{},validity:'Identical uniform spheres, fixed smooth circular cup; contact normals pass through centres.',match:'Three-force equilibrium with an angled smooth-contact reaction; geometry supplies the angle.',assumptions:['The diagram shows a circular cross-section, and both spheres touch the cup and each other.'],concepts:['three-force equilibrium','smooth contact','circle geometry'],stepTags:['centre geometry','horizontal balance','reaction ratio'],verification:{independentAnswer:'B: 2',agreesWithPrintedKey:true,status:'Recalculated from givens; blind review and faculty approval pending',notes:'Centre separation is 2r and distance from O to either centre is 2r. sin θ = 1/2; C = N/2. Vertical balance checks N = 2mg/√3 and C = mg/√3.'},
  link:{type:'controlled transfer',sharedSkill:'Resolve an angled force and balance a horizontal normal reaction plus weight.',purpose:'Transfer sphere equilibrium from a wall-and-string to two smooth contacts.',unknown:'Ratio of cup reaction to inter-sphere reaction',addedPrerequisites:['Geometry of internally tangent circles']}
-}]});
-
-/* Later institute SCQ reconciliation: source-complete questions only. Every item
-   below was read from the rendered source page, solved again, and attached to an
-   existing family whose recovery skill it actually exercises. Items whose Word
-   extraction still omits an equation or figure remain in the reconciliation queue. */
-instituteFamily({parentFamily:21,title:'Static friction before motion begins',skill:'Static friction supplies only the force required for equilibrium',difficulty:'Standard',time:100,trap:'Do not assign limiting friction at either contact before checking whether the lower block moves.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:10,questionPage:2,solutionPage:2,optionKey:'A',catalogueId:'friction-010-1',wording:'Printed wording and option order retained; spacing and unit typography normalised only.',diagram:'No figure printed with this question.'},
- question:'A block A of mass 2 kg rests on another block B of mass 8 kg which rests on a horizontal floor. The coefficient of friction between A and B is 0.2 while between B and floor is 0.5. When a horizontal force 25 N is applied on B, the frictional force acting between A and B is -',
- options:['0 N','3.9 N','5 N','49 N'],correct:0,
- brief:[['First test whether the floor can hold the complete stack.',`fₛ,max = 0.5 × (2 + 8) × 10 = 50 N`],['The applied force is smaller than the available floor friction.',`25 N < 50 N`],['Therefore B remains at rest and A needs no horizontal force.','f(A on B) = 0 N']],
- short:'fₛ,max at the floor = 50 N > 25 N; the stack stays at rest, so the friction between A and B is 0 N.',
- steps:['The normal force from the floor is the total weight, 100 N, so the floor can supply up to 50 N of static friction.','Only 25 N is needed to balance the applied force, so the floor supplies 25 N and block B does not move.','Block A has no other horizontal force and no horizontal acceleration. Its contact friction is therefore zero. Option (A).'],
- diagram:'review-stack-floor',p:{top:'A · 2 kg',bottom:'B · 8 kg',F:'25 N',muTop:'μₛ = 0.2',muFloor:'μₛ = 0.5',floorFriction:'25 N',interfaceFriction:'0 N'},
- validity:'Both contacts are static; take g = 10 m/s² as used in the printed solution.',editorial:'Institute collection question with printed wording and option order preserved. The source solution checks the floor contact; the rebuilt solution also explicitly checks why the A-B friction is zero.',match:'Controlled transfer: distinguish the floor friction that balances the applied force from the unused friction at the upper contact.',assumptions:['The 25 N force is horizontal and applied to B.','The printed solution uses g = 10 m/s².'],concepts:['static-friction','stacked-blocks','multiple-contacts'],stepTags:['check-floor-limit','identify-rest-state','separate-contact-forces'],verification:{independentAnswer:'A: 0 N',agreesWithPrintedKey:true,notes:'The floor can supply 50 N but only 25 N is required. With both blocks stationary, block A has no horizontal force requirement, so interfacial friction is zero.'},
- link:{type:'controlled transfer',sharedSkill:'Static friction equals the force needed, up to its limit.',addedPrerequisites:['Treat the two contacts independently.'],unknown:'Friction at the A-B contact',difficulty:'Adds a second contact without adding motion.',purpose:'Prevents the common mistake of using μN automatically at every rough contact.'}
-}]});
-
-instituteFamily({parentFamily:69,title:'Two limiting forces on a rough incline',skill:'Compare impending upward and downward motion on the same incline',difficulty:'Standard',time:120,trap:'Friction reverses between the two limiting cases.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:36,questionPage:7,solutionPage:7,optionKey:'D',catalogueId:'friction-036-1',wording:'Printed wording and option order retained; inverse-trigonometric typography normalised.',diagram:'No figure printed with this question.'},
- question:'The force required to just move a body up the inclined plane is double the force required to just prevent the body from sliding down the plane. The coefficient of friction is μ. The inclination θ of the plane is -',
- options:['tan⁻¹ μ',markup(`tan⁻¹ ${fraction('μ','2')}`),'tan⁻¹ 2μ','tan⁻¹ 3μ'],correct:3,
- brief:[['For impending downward motion, friction acts up the plane.',`Fdown = mg sin θ − μmg cos θ`],['For impending upward motion, friction acts down the plane.',`Fup = mg sin θ + μmg cos θ`],['Use the stated force ratio.',`Fup = 2Fdown`],['Collect the sine and cosine terms.',`mg sin θ + μmg cos θ = 2mg sin θ − 2μmg cos θ`],['Divide by mg cos θ.','tan θ = 3μ'],['Select the acute incline angle.','θ = tan⁻¹(3μ)']],
- short:'Fup = mg(sin θ + μ cos θ), Fdown = mg(sin θ − μ cos θ), and Fup = 2Fdown give tan θ = 3μ.',
- steps:['Write separate limiting-equilibrium equations because the friction direction reverses.','Substitute the statement that the upward force is twice the holding force.','After cancellation, sin θ = 3μ cos θ, so θ = tan⁻¹(3μ). Option (D).'],
- diagram:'inclinepull',p:{figure:'the same rough incline in the two limiting cases',angle:37,angleLabel:'θ',body:'m',mu:'μ',cord:'F',friction:'μN',frictionDown:true,remainNote:'Fup = mg(sin θ + μ cos θ) · Fdown = mg(sin θ − μ cos θ)',note:'Same slope · friction reverses between the two limiting cases'},
- validity:'Force is applied parallel to the plane; both cases are at limiting equilibrium.',editorial:'Institute collection question with printed wording and option order preserved. The printed working labels the two forces and then writes their ratio in the reverse order; the rebuilt derivation follows the wording and still agrees with the printed key.',match:'Symbolic retry of the parent relation, with μ retained instead of assigned a number.',assumptions:['The applied force is parallel to the incline.','The required angle is the physical acute inclination.'],concepts:['limiting-friction','rough-incline','opposite-impending-motion'],stepTags:['write-two-limits','reverse-friction','use-force-ratio'],verification:{independentAnswer:'D: tan⁻¹(3μ)',agreesWithPrintedKey:true,notes:'Using Fup = 2Fdown gives sin θ + μ cos θ = 2 sin θ - 2μ cos θ, hence tan θ = 3μ.'},
- link:{type:'direct retry',sharedSkill:'Write the two limiting forces with opposite friction directions and compare them.',addedPrerequisites:['Keep the result symbolic in μ.'],unknown:'Inclination angle',difficulty:'Same reasoning as the family core.',purpose:'Checks the force-ratio derivation without numerical substitution.'}
-}]});
-
-instituteFamily({parentFamily:27,title:'Acceleration with speed-dependent resistance',skill:'Apply Newton’s second law to the instantaneous net force',difficulty:'Standard',time:120,trap:'Half the initial acceleration means half the initial net force, not half the applied 100 N force.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:112,questionPage:18,solutionPage:null,optionKey:'C',catalogueId:'friction-112-1',wording:'Printed wording and option order retained; unit spacing and the subscript in Fᵣ normalised.',diagram:'No figure printed with this question.'},
- question:'A 15 kg mass is accelerated from rest with a force of 100 N. As it moves faster, friction and air resistance create an oppositely directed retarding force given by Fᵣ = A + Bv, where A = 25 N and B = 0.5 N/m/s. At what velocity does the acceleration equal to one half of the initial acceleration?',
- options:['25 m s⁻¹','50 m s⁻¹','75 m s⁻¹','100 m s⁻¹'],correct:2,
- brief:[['At v = 0, only the constant part of the resistance acts.',`a₀ = ${fraction('100 − 25','15')} = 5 m s⁻²`],['Set the later acceleration to half this value.',`a = ${fraction('a₀','2')} = 2.5 m s⁻²`],['Apply Newton’s second law at speed v.',`100 − (25 + 0.5v) = 15 × 2.5`],['Solve the linear equation.','75 − 0.5v = 37.5'],['Hence.','v = 75 m s⁻¹']],
- short:'a₀ = (100 − 25)/15 = 5 m s⁻². Setting [100 − (25 + 0.5v)]/15 = 2.5 gives v = 75 m s⁻¹.',
- steps:['The initial resistance is 25 N because the speed-dependent term is zero at release.','Half the initial acceleration is 2.5 m/s², so the required instantaneous net force is 37.5 N.','Equating 100 - 25 - 0.5v to 37.5 gives v = 75 m/s. Option (C).'],
- diagram:'review-resisted-motion',p:{body:'15 kg',drive:'100 N',resistance:'Fᵣ = 25 + 0.5v',velocity:'v',target:'a = 2.5 m/s²'},
- validity:'One-dimensional motion; the stated resistance law applies over the speed range considered.',editorial:'Institute collection question with printed wording and options retained. The source gives only the key; the complete derivation is rebuilt independently.',match:'Controlled transfer from constant-force Newton’s second law to an instantaneous force that depends on speed.',assumptions:['A and B have the units printed in the question, so Fᵣ is in newtons.'],concepts:['newton-second-law','speed-dependent-resistance','instantaneous-acceleration'],stepTags:['find-initial-acceleration','halve-net-force','solve-resistance-law'],verification:{independentAnswer:'C: 75 m s⁻¹',agreesWithPrintedKey:true,notes:'Initial net force 75 N gives 5 m/s². Half acceleration needs net 37.5 N, so resistance is 62.5 N and 25 + 0.5v = 62.5.'},
- link:{type:'controlled transfer',sharedSkill:'Acceleration is set by the instantaneous net force.',addedPrerequisites:['Evaluate a force law at the current speed.'],unknown:'Speed at a specified acceleration',difficulty:'Adds a linear resistance law.',purpose:'Checks whether the student halves the net force rather than the applied force.'}
-}]});
-
-instituteFamily({parentFamily:13,title:'Rough incline in a freely falling lift',skill:'Use effective gravity in a translating non-inertial frame',difficulty:'Standard',time:90,trap:'In free fall the normal force and friction both vanish; inserting ordinary g in the incline formula is incorrect.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:118,questionPage:19,solutionPage:null,optionKey:'A',catalogueId:'friction-118-1',wording:'Printed wording and option order retained; Greek symbols typeset.',diagram:'No figure printed with this question.'},
- question:'A block of mass m is placed on a rough inclined plane of inclination θ kept on the floor of the lift. The coefficient of friction between the block and the inclined plane is μ. With what acceleration will the block slide down the inclined plane when the lift falls freely?',
- options:['Zero','g sin θ − μg cos θ','g sin θ + μg cos θ','None of these'],correct:0,
- brief:[['In the lift frame, combine gravity with the upward pseudo-acceleration.',`gₑff = g − a(lift)`],['For free fall, the lift acceleration equals g.',`a(lift) = g`],['Therefore the effective gravity is zero.','gₑff = 0'],['Both the normal force and friction vanish.','N = 0 · f = 0'],['The block has no acceleration relative to the plane.','a(relative) = 0']],
- short:'In free fall gₑff = g − g = 0, so N = 0, friction = 0, and the block has zero acceleration relative to the incline.',
- steps:['Use the freely falling lift as the frame. Gravity downward and the pseudo-force upward have equal magnitudes.','The effective gravity is zero, so there is no component along the plane and no normal reaction to create friction.','The block and incline fall together with the same gravitational acceleration; their relative acceleration is zero. Option (A).'],
- diagram:'review-lift-incline',p:{angle:35,a:10,up:false,freeFall:true},
- validity:'The lift, plane and block enter free fall together; air resistance is neglected.',editorial:'Institute collection question with printed wording and option order preserved. The source gives only the key; the rebuilt solution states explicitly that the requested acceleration is relative to the incline.',match:'Boundary case of the effective-gravity method: downward lift acceleration reaches g.',assumptions:['“Slide down” is interpreted relative to the plane fixed in the lift.'],concepts:['free-fall','effective-gravity','friction-with-zero-normal'],stepTags:['choose-lift-frame','cancel-gravity-and-pseudo','infer-relative-acceleration'],verification:{independentAnswer:'A: Zero',agreesWithPrintedKey:true,notes:'In free fall g_eff = 0. Hence both bodies have the same acceleration g in the ground frame and zero relative acceleration.'},
- link:{type:'controlled transfer',sharedSkill:'Replace gravity by the effective gravity in the lift frame.',addedPrerequisites:['Recognise free fall as gₑff = 0.'],unknown:'Acceleration relative to the incline',difficulty:'Simpler numerical limit, conceptually easy to mishandle.',purpose:'Tests the zero-effective-gravity limit directly.'}
-}]});
-
-instituteFamily({parentFamily:70,title:'Coefficient from motion down a rough incline',skill:'Combine incline dynamics with constant-acceleration kinematics',difficulty:'Standard',time:120,trap:'The measured acceleration is not g sin 30° because kinetic friction also acts.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:126,questionPage:21,solutionPage:null,optionKey:'A',catalogueId:'friction-126-1',wording:'Printed wording and option order retained; spacing and degree typography normalised.',diagram:'No figure printed with this question.'},
- question:'A block slides down an inclined surface of inclination 30° with the horizontal. Starting from rest it covers 8 m in the first two seconds. Find the coefficient of kinetic friction between the two.',
- options:['0.11','0.5','0.8','0.2'],correct:0,
- brief:[['Use the displacement to obtain the actual acceleration.',`8 = ${fraction('1','2')} a(2)²`],['Hence.','a = 4 m s⁻²'],['Resolve forces down the incline.',`a = g(sin 30° − μₖ cos 30°)`],['Take g = 10 m/s² and solve for μₖ.',`4 = 10(${fraction('1','2')} − μₖ${fraction('√3','2')})`],['Therefore.',`μₖ = ${fraction('0.2','√3')} ≈ 0.115`],['Match the printed approximation.','μₖ ≈ 0.11']],
- short:'8 = ½a(2)² gives a = 4 m s⁻². Then 4 = 10(sin 30° − μₖ cos 30°), so μₖ ≈ 0.11.',
- steps:['The first two seconds begin from rest, so s = 1/2 at² gives a = 4 m/s².','For a block sliding down, friction acts up the plane: ma = mg sin 30° - μₖmg cos 30°.','Substitution gives μₖ = 0.2/√3 = 0.115, whose listed approximation is 0.11. Option (A).'],
- diagram:'inclinepull',p:{figure:'a block sliding from rest down a rough 30 degree incline',angle:30,body:'m',mu:'μₖ',friction:'μₖN',aNote:'a = 4 m/s²',aDown:true,alongLabel:'mg sin 30°',remainNote:'8 = ½a(2)² · a = g(sin 30° − μₖ cos 30°)',note:'From rest · 8 m in 2 s · sliding down'},
- validity:'Constant kinetic friction and g = 10 m/s², as implied by the answer choices.',editorial:'Institute collection question with printed wording and option order preserved. The printed question does not state g; the listed key uses g = 10 m/s², which is recorded as an assumption rather than silently hidden.',match:'Inverse use of the rough-incline acceleration formula: motion data determine μₖ.',assumptions:['Take g = 10 m/s² to reproduce the printed option.','Friction remains kinetic and constant.'],concepts:['kinetic-friction','incline-dynamics','constant-acceleration'],stepTags:['infer-acceleration-from-distance','resolve-along-incline','solve-for-mu'],verification:{independentAnswer:'A: 0.11',agreesWithPrintedKey:true,notes:'a = 4 m/s². With g = 10, μ = (0.5 - 0.4)/(√3/2) = 0.2/√3 = 0.115.'},
- link:{type:'inverse target',sharedSkill:'Use a = g(sin θ − μₖ cos θ) for downward sliding.',addedPrerequisites:['Infer acceleration from displacement and time.'],unknown:'Coefficient of kinetic friction',difficulty:'Adds one kinematics step before the force balance.',purpose:'Checks whether the student can recover μₖ from observed motion.'}
-}]});
-
-instituteFamily({parentFamily:60,title:'Stopping distance under kinetic friction',skill:'Use frictional retardation with v² = u² + 2as',difficulty:'Standard',time:90,trap:'The mass cancels; do not use the friction force itself as the acceleration.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:167,questionPage:27,solutionPage:27,optionKey:'B',catalogueId:'friction-167-1',wording:'Printed wording and option order retained; powers and units typeset.',diagram:'No figure printed with this question.'},
- question:'On a rough horizontal surface, a body of mass 2 kg is given a velocity of 10 m/s. If the coefficient of friction is 0.2 and g = 10 m s⁻², the body will stop after covering a distance of -',
- options:['10 m','25 m','50 m','250 m'],correct:1,
- brief:[['Kinetic friction gives a constant retardation.',`a = −μₖg = −0.2 × 10 = −2 m s⁻²`],['Use the stopping condition in the velocity-displacement equation.','v² = u² + 2as'],['Substitute v = 0 and u = 10 m/s.','0 = 10² − 2 × 2 × s'],['Hence.','s = 25 m']],
- short:'a = −μₖg = −2 m s⁻². From 0 = 10² + 2(−2)s, the stopping distance is 25 m.',
- steps:['The kinetic-friction force is μₖmg, so the acceleration is -μₖg = -2 m/s².','Apply v² = u² + 2as with final speed zero.','Solving 0 = 100 - 4s gives s = 25 m. Option (B).'],
- diagram:'motionline',p:{figure:'a 2 kg body sliding to rest under kinetic friction',body:'2 kg',u:'u = 10 m/s',F:'fₖ = 4 N',forceDirection:'backward',aNote:'a = 2 m/s², backwards',remainNote:'0 = 10² − 2 × 2 × s · s = 25 m',note:'Rough horizontal surface · μₖ = 0.2',solutionNote:'Body only · friction produces a constant retardation μₖg'},
- validity:'Horizontal surface, constant coefficient of kinetic friction, g = 10 m/s².',editorial:'Institute collection question with printed wording, options and short source working preserved in meaning; the rebuilt solution completes the final substitution.',match:'Direct stopping-distance retry with new speed and coefficient.',assumptions:['The body slides throughout until it stops.'],concepts:['kinetic-friction','stopping-distance','constant-retardation'],stepTags:['find-frictional-retardation','use-v-square-equation','solve-distance'],verification:{independentAnswer:'B: 25 m',agreesWithPrintedKey:true,notes:'a = -2 m/s² and s = u²/(2μg) = 100/4 = 25 m.'},
- link:{type:'direct retry',sharedSkill:'Kinetic friction gives retardation μₖg on a horizontal surface.',addedPrerequisites:['Use velocity-displacement kinematics.'],unknown:'Stopping distance',difficulty:'Same method with direct numerical data.',purpose:'Reinforces the fastest stopping-distance relation.'}
-}]});
-
-instituteFamily({parentFamily:25,title:'Downward force on an ideal pulley',skill:'Find string tension first, then add the two pulls on the pulley',difficulty:'Standard',time:120,trap:'The pulley feels two tensions, while the small mass equation contains only one.',items:[{
- source:{doc:'INST-NLM-SCQ',number:38,questionPage:'part 01 · p.12',solutionPage:null,optionKey:'C',catalogueId:'laws-of-motion-038-1',wording:'Printed wording and option order retained.',diagram:'No figure printed with this question.'},
- question:'A particle of small mass m is joined to a very heavy body by a light string passing over a light pulley. Both bodies are free to move. The total downward force on the pulley is -',
- options:['mg','2mg','4mg','≫ mg'],correct:2,
- brief:[['Let the other body be M, with M much greater than m.',`a = ${fraction('(M − m)g','M + m')} ≈ g`],['For the small mass moving upward.','T − mg = ma'],['Use a ≈ g.','T ≈ 2mg'],['Both vertical string segments pull down on the pulley.','F(pulley) = 2T'],['Therefore.','F(pulley) ≈ 4mg']],
- short:'For M ≫ m, a ≈ g. Then T − mg = ma gives T ≈ 2mg, and the two string segments pull the pulley down with 2T ≈ 4mg.',
- steps:['Write the exact Atwood acceleration for masses M and m, then take the stated limit M much greater than m.','The light mass rises with acceleration almost g, so T = m(g + a) is almost 2mg.','Each vertical segment pulls the pulley downward by T. Their sum is nearly 4mg. Option (C).'],
- diagram:'pulleythrust',p:{left:'m',right:'M ≫ m',heavier:'right',aNote:'a ≈ g',leftWeight:'mg',rightWeight:'Mg',remainNote:'T ≈ 2mg · downward pull on pulley = T + T ≈ 4mg',note:'Light string and pulley · M is much greater than m'},
- validity:'Ideal light string and pulley; the answer is the M/m → ∞ limiting value.',editorial:'Institute collection question with printed wording and option order preserved. “Very heavy” is treated as the standard M ≫ m limit, so 4mg is approached rather than exactly reached for finite M.',match:'Asymptotic version of the parent pulley-thrust calculation.',assumptions:['The very heavy body has mass M with M ≫ m.','Both string segments are vertical.'],concepts:['atwood-machine','pulley-thrust','large-mass-limit'],stepTags:['take-atwood-limit','find-tension','add-two-string-pulls'],verification:{independentAnswer:'C: 4mg in the M ≫ m limit',agreesWithPrintedKey:true,notes:'Exact T = 2mMg/(M+m); pulley force 2T = 4mMg/(M+m), tending to 4mg as M/m tends to infinity.'},
- link:{type:'controlled transfer',sharedSkill:'The load on an ideal pulley is the vector sum of the string tensions.',addedPrerequisites:['Take a large-mass limit after deriving the tension.'],unknown:'Total downward force on the pulley',difficulty:'Adds an asymptotic limit.',purpose:'Separates the string tension from the two-tension pulley load.'}
-}]});
-
-instituteFamily({parentFamily:16,title:'Tension at a point in a hanging chain',skill:'A cut supports the chain mass below it',difficulty:'Standard',time:100,trap:'Distance y is measured from the support, so the hanging length below the cut is L − y.',items:[{
- source:{doc:'INST-NLM-SCQ',number:50,questionPage:'part 02 · p.2',solutionPage:null,optionKey:'B',catalogueId:'laws-of-motion-050-1',wording:'Printed wording and option order retained; option m is kept as printed.',diagram:'No figure printed with this question.'},
- question:'A chain of mass M and length L held vertical by fixing its upper end to a rigid support. The tension in the chain at a distance y from the rigid support is -',
- options:['mg',markup(`${fraction('Mg(L − y)','L')}`),markup(`${fraction('MgL','L − y')}`),markup(`${fraction('Mgy','L')}`)],correct:1,
- brief:[['The uniform chain has linear mass density M/L.',`λ = ${fraction('M','L')}`],['The length below a cut made y from the support is L − y.','ℓ(below) = L − y'],['Find the mass below the cut.',`m(below) = ${fraction('M','L')}(L − y)`],['The tension supports that mass.','T = m(below)g'],['Therefore.',`T = ${fraction('Mg(L − y)','L')}`]],
- short:'λ = M/L and the length below the cut is L − y, so T = λ(L − y)g = Mg(L − y)/L.',
- steps:['A uniform chain has mass per unit length M/L.','At a point y below the top, only the remaining length L - y hangs beneath the cut.','Its weight is Mg(L - y)/L, which is the tension at the cut. Option (B).'],
- diagram:'review-hanging-chain',p:{M:'M',L:'L',y:'y',tension:'T',below:'L − y'},
- validity:'Uniform stationary chain in a uniform gravitational field.',editorial:'Institute collection question with printed wording and option order preserved. Option (A) uses lowercase m in the source even though the chain mass is denoted M; it is preserved as printed.',match:'Turns the horizontal massive-rope cut rule into a vertical weight-support problem.',assumptions:['The chain is uniform and stationary.','The chain’s own mass is M.'],concepts:['massive-chain','variable-tension','subsystem-below-cut'],stepTags:['find-linear-density','choose-below-cut-subsystem','support-its-weight'],verification:{independentAnswer:'B: Mg(L − y)/L',agreesWithPrintedKey:true,notes:'The part below the cut has mass M(L-y)/L and is in equilibrium, so the cut tension equals its weight.'},
- link:{type:'representation change',sharedSkill:'Tension at a cut is fixed by the mass on one side of that cut.',addedPrerequisites:['Include the chain’s own weight.'],unknown:'Tension at distance y from the support',difficulty:'Same cut argument in a vertical static chain.',purpose:'Checks whether the student identifies the correct length beyond the cut.'}
-}]});
-
-instituteFamily({parentFamily:39,title:'Lift acceleration from apparent-weight ratio',skill:'Compare N = m(g + a) and N = m(g − a)',difficulty:'Standard',time:100,trap:'Use the same mass in both readings and keep the acceleration direction tied to each journey.',items:[{
- source:{doc:'INST-NLM-SCQ',number:64,questionPage:'part 02 · p.6',solutionPage:null,optionKey:'A',catalogueId:'laws-of-motion-064-1',wording:'Printed wording and option order retained; “weighs” is preserved as printed.',diagram:'No figure printed with this question.'},
- question:'A man goes up in a uniformly accelerating lift. He returns downward with the lift accelerating at the same rate. The ratio of apparent weighs in the two cases is 2 : 1. The acceleration of the lift is -',
- options:[markup(fraction('g','3')),markup(fraction('g','4')),markup(fraction('g','5')),markup(fraction('g','6'))],correct:0,
- brief:[['During the upward acceleration, the normal reaction is larger.',`Nup = m(g + a)`],['During the downward acceleration, it is smaller.',`Ndown = m(g − a)`],['Use the measured ratio.',`${fraction('g + a','g − a')} = ${fraction('2','1')}`],['Cross-multiply.','g + a = 2g − 2a'],['Hence.','3a = g'],['Therefore.',`a = ${fraction('g','3')}`]],
- short:'Nup/Ndown = (g + a)/(g − a) = 2, so g + a = 2g − 2a and a = g/3.',
- steps:['The scale reads the normal reaction. For upward acceleration it is m(g+a); for downward acceleration it is m(g-a).','The mass cancels from their ratio: (g+a)/(g-a) = 2.','Solving gives 3a = g, hence a = g/3. Option (A).'],
- diagram:'review-lift-ratio',p:{},
- validity:'The upward journey has upward acceleration and the return journey has downward acceleration of the same magnitude.',editorial:'Institute collection question with printed wording and option order preserved. The nonstandard word “weighs” is left unchanged rather than silently repaired.',match:'Inverse apparent-weight problem: a ratio determines the acceleration.',assumptions:['“Goes up in a uniformly accelerating lift” means acceleration upward; on return the acceleration is downward.'],concepts:['apparent-weight','lift-acceleration','ratio'],stepTags:['write-two-normal-forces','form-ratio','solve-for-acceleration'],verification:{independentAnswer:'A: g/3',agreesWithPrintedKey:true,notes:'(g+a)/(g-a)=2 gives 3a=g; the result is below g, so both readings remain positive.'},
- link:{type:'inverse target',sharedSkill:'Apparent weight is m(g ± a) according to the lift acceleration.',addedPrerequisites:['Use two readings as a ratio.'],unknown:'Lift acceleration',difficulty:'Symbolic inverse problem.',purpose:'Checks both signs in a single calculation.'}
-}]});
-
-instituteFamily({parentFamily:47,title:'Maximum firing rate from recoil force',skill:'Use force as momentum delivered per second',difficulty:'Standard',time:100,trap:'Convert 40 g to kilograms before multiplying by speed and bullets per second.',items:[{
- source:{doc:'INST-NLM-SCQ',number:198,questionPage:'part 05 · p.9',solutionPage:null,optionKey:'D',catalogueId:'laws-of-motion-198-1',wording:'Printed wording and option order retained; powers and unit spacing typeset.',diagram:'No figure printed with this question.'},
- question:'A machine gun fires a bullet of mass 40 g with a velocity 1200 m s⁻¹. The man holding it can exert a maximum force of 144 N on the gun. How many bullets can he fire per second at the most?',
- options:['One','Four','Two','Three'],correct:3,
- brief:[['Convert the mass of one bullet to SI units.','m = 40 g = 0.04 kg'],['Each bullet carries forward momentum mv.','Δp(one bullet) = 0.04 × 1200 = 48 kg m s⁻¹'],['If n bullets leave each second, their momentum rate is the recoil force.','F = nΔp(one bullet)'],['Use the maximum force the man can supply.','144 = 48n'],['Hence.','n = 3 bullets s⁻¹']],
- short:'Each bullet carries 0.04 × 1200 = 48 kg m s⁻¹. Since F = nΔp, 144 = 48n and n = 3 bullets s⁻¹.',
- steps:['One bullet gains 48 kg m/s of forward momentum. The gun receives an equal backward impulse.','At n bullets per second, the average recoil force is 48n newtons.','The 144 N limit gives n = 3 bullets per second. Option (D).'],
- diagram:'review-machine-gun',p:{mass:'40 g',speed:'1200 m/s',force:'144 N',rate:'n bullets/s'},
- validity:'Steady average firing rate; bullets start with negligible forward momentum relative to the gun; propellant mass is neglected.',editorial:'Institute collection question with printed wording and option order preserved. The source gives only the key; the momentum-rate solution is rebuilt independently.',match:'Discrete-particle version of the family’s continuous momentum-flux rule.',assumptions:['The quoted 144 N is the maximum sustainable average recoil force.'],concepts:['momentum-flux','recoil','average-force'],stepTags:['momentum-per-bullet','multiply-by-rate','apply-force-limit'],verification:{independentAnswer:'D: Three',agreesWithPrintedKey:true,notes:'F = n(0.04)(1200) = 48n. Setting F=144 gives n=3 s^-1.'},
- link:{type:'representation change',sharedSkill:'Average force equals momentum transferred per unit time.',addedPrerequisites:['Convert a discrete count rate into mass flow.'],unknown:'Maximum bullets per second',difficulty:'Direct one-line momentum-flux calculation after unit conversion.',purpose:'Links jet-force reasoning to recoil from discrete bullets.'}
-}]});
-
-/* Friction collection, source-order batch 2. Duplicate and disputed source
-   items are kept in the reconciliation ledger rather than silently imported. */
-instituteFamily({parentFamily:21,title:'Time-varying drive against kinetic friction',skill:'Compare the instantaneous drive with the constant kinetic-friction force',difficulty:'Standard',time:100,trap:'The force begins at zero, so the block first slows even though the applied force points along its velocity.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:4,questionPage:1,solutionPage:null,optionKey:'C',catalogueId:'friction-004-1',wording:'Printed wording and option order retained; the embedded velocity symbol is transcribed as v₀.',diagram:'Printed block-on-rough-floor setup with velocity and horizontal force'},
- question:'A block of mass m is moving on a rough horizontal surface where coefficient of friction between block and surface is μ = 0.5. At t = 0 block is moving with a velocity v₀ then a horizontal force F = 2t is applied on it in the direction of velocity. Here t represent time then the speed of block after the application of force',
- options:['decreases','increases','first decreases then increases','first increases then decreases'],correct:2,
- brief:[['Kinetic friction is constant and opposes the motion.','fₖ = μmg = 0.5mg'],['Initially the applied force is smaller than friction, so the acceleration is opposite to the velocity.','Fₙₑₜ = 2t − 0.5mg < 0'],['After the forces become equal, the applied force becomes larger and the speed increases.','2t = 0.5mg  ⇒  t = 0.25mg']],
- short:'fₖ = 0.5mg. Initially 2t < fₖ, so speed decreases; later 2t > fₖ, so speed increases.',
- steps:['While the block is sliding, kinetic friction has magnitude 0.5mg and acts opposite to its velocity.','At t = 0 the applied force is zero, so the net force is backward and the speed decreases.','The applied force grows linearly. At t = 0.25mg it equals friction; after this instant the net force is forward and the speed increases. Therefore option (C).'],
- diagram:'review-force-time',p:{figure:'block driven by a time-varying force on a rough horizontal surface',body:'m'},validity:'The block continues sliding in the original direction until the force crossover; the printed answer assumes it does not stop before that instant.',editorial:'Institute collection wording and option order preserved. The source gives only the key, so the no-stop assumption is stated explicitly.',match:'Controlled transfer from required-versus-available friction to a drive that changes with time.',assumptions:['Kinetic coefficient is the stated 0.5.','Initial speed is large enough that the block has not stopped before t = 0.25mg.'],concepts:['kinetic friction','time-varying force','sign of acceleration'],stepTags:['write friction','compare forces','locate force crossover'],verification:{independentAnswer:'C: first decreases then increases, provided the block does not stop before the crossover',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'Net force along the initial motion is 2t − 0.5mg. Its sign changes once from negative to positive.'},link:{type:'controlled transfer',unknown:'Trend of speed with time',addedPrerequisites:['Read the sign of a time-varying net force.'],purpose:'Separate the direction of an applied force from the direction of acceleration.',kind:'controlled-transfer',sharedSkill:'Find the friction force actually acting, then compare it with the required or applied force.',recoveryPurpose:'Reinforce that friction need not be the largest force for the whole motion.'}
-}]});
-
-instituteFamily({parentFamily:48,title:'Work done by a position-dependent resistance',skill:'Integrate the resisting force over the rough patch and apply work–energy',difficulty:'Advanced',time:150,trap:'The resistance is k/x, so its work is logarithmic; it is not the force at either endpoint times the distance.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:5,questionPage:2,solutionPage:2,optionKey:'B',catalogueId:'friction-005-1',wording:'Printed wording and option order retained except that the printed inequality signs are written as equivalent plain-language intervals; the embedded formula is transcribed as fᵣ = k/x.',corrections:['The printed intervals 0.10 < x < 2.00, x < 0.10 and x > 2.00 are written in words so institute prose remains plain text; all values and endpoint meaning are unchanged.'],diagram:'Printed formula and rough-patch limits; no separate physical figure'},
- question:'A block of mass m = 1kg moving on horizontal surface with speed u = 2m/s enters a rough horizontal patch ranging from x = 0.10 m to x = 2.00m. If the retarding force fᵣ on the block in this range is inversely proportional to x over this range i.e. fᵣ = k/x for x between 0.10 and 2.00 and is zero for x below 0.10 and above 2.00. If k = 0.5 J then the speed of this block as it crosses the patch is (use ln 20 = 3)',
- options:['2.65 m/s','1 m/s','1.5 m/s','2 m/s'],correct:1,
- brief:[['Integrate the resisting force across the stated patch. ',`W = −∫${fraction('k','x')} dx = −k ln${fraction('2.00','0.10')} = −1.5 J`],['The block enters with 2 J of kinetic energy.','Kᵢ = ½mu² = 2 J'],['Use work–energy to obtain the exit speed.','½mv² = 2 − 1.5 = 0.5 J  ⇒  v = 1 m/s']],
- short:`W = −k ln${fraction('2.00','0.10')} = −1.5 J. ½mv² = 2 − 1.5 = 0.5 J, so v = 1 m/s.`,
- steps:['The resistance points opposite to motion, so its work is negative. Because its magnitude varies with x, integrate it from 0.10 m to 2.00 m.','This gives W = −k ln(2.00/0.10) = −0.5 ln 20 = −1.5 J.','The initial kinetic energy is ½ × 1 × 2² = 2 J. Hence the final kinetic energy is 0.5 J and ½ × 1 × v² = 0.5, giving v = 1 m/s. Option (B).'],
- diagram:'review-variable-patch',p:{figure:'block crossing a rough patch with inverse-position resistance'},validity:'Resistance has magnitude k/x only inside the stated interval and always opposes the motion.',editorial:'Source formula recovered from the embedded equation and checked against the printed working.',match:'Controlled transfer: stopping-work reasoning with a non-constant resistance.',assumptions:['The block crosses the complete patch; the computed kinetic energy remains positive.'],concepts:['work energy theorem','variable resistance','logarithmic integral'],stepTags:['integrate work','initial kinetic energy','solve final speed'],verification:{independentAnswer:'B: 1 m/s',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'Work is −0.5 ln20 = −1.5 J; final kinetic energy is 0.5 J.'},link:{type:'controlled transfer',unknown:'Exit speed',addedPrerequisites:['Integrate k/x over distance.'],purpose:'Extend resisting-work reasoning beyond a constant force.',kind:'controlled-transfer',sharedSkill:'Use negative work by resistance to find the change in kinetic energy.',recoveryPurpose:'Show why a varying resisting force must be integrated.'}
-}]});
-
-instituteFamily({parentFamily:4,title:'Adjust the pull angle to minimise the hanging mass',skill:'Maximise the useful horizontal pull together with the reduction in normal force',difficulty:'Advanced',time:150,trap:'Changing the pulley position changes both the horizontal pull and the normal force.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:7,questionPage:2,solutionPage:null,optionKey:'A',catalogueId:'friction-007-1',wording:'Printed wording and option order retained; symbols and squared units typeset.',diagram:'Block m₁ on rough floor connected over an adjustable fixed pulley to hanging m₂'},
- question:'A block of mass m₁ = 20 kg is kept on horizontal surface where coefficient of friction between block and surface is μ = 0.75. This block is connected by an ideal string with another block of mass m₂. The string is passing over an ideal fixed pulley and the string between pulley and m₂ is vertical as shown in the figure. Then the minimum value of mass m₂ which can make m₁ just move on horizontal surface is (position of m₁ on surface is not fixed you can adjust it to get minimum value of m₂ and assume g = 10 m/s²).',
- options:['12 kg','14 kg','16 kg','20 kg'],correct:0,
- brief:[['At impending motion, resolve the inclined tension on m₁.','T cos θ = μ(m₁g − T sin θ)'],['Collect the two useful components of tension.','T(cos θ + μ sin θ) = μm₁g'],['The required tension is least when this bracket is largest.','max(cos θ + μ sin θ) = √(1 + μ²) = 1.25'],['The hanging block is just at rest at the threshold.','m₂g = Tₘᵢₙ = 120 N  ⇒  m₂ = 12 kg']],
- short:'T(cos θ + μ sin θ) = μm₁g. The bracket is at most √(1 + μ²) = 1.25, so Tₘᵢₙ = 120 N and m₂,min = 12 kg.',
- steps:['Let θ be the angle of the string above the horizontal at m₁. The upward tension component reduces the normal force to N = m₁g − T sin θ.','For impending rightward motion, T cos θ = μN. Therefore T(cos θ + μ sin θ) = μm₁g.','For adjustable θ, cos θ + μ sin θ has maximum √(1 + μ²) = 1.25. Thus the least tension is (0.75 × 20 × 10)/1.25 = 120 N.','At the threshold the hanging block is stationary, so T = m₂g and m₂ = 12 kg. Option (A).'],
- diagram:'review-adjustable-pulley',p:{figure:'adjustable pulley pulling a rough-floor block with a hanging mass'},validity:'Ideal string and pulley; limiting static friction; the hanging mass and floor block are at the threshold of motion.',editorial:'Source diagram topology and adjustable-pulley condition preserved.',match:'Direct transfer of the parent least-force result to tension supplied by a hanging mass.',assumptions:['The pulley can be positioned to choose the string angle.','Static coefficient is 0.75 and g = 10 m/s².'],concepts:['limiting friction','least pull','angle optimisation'],stepTags:['vertical balance','impending motion','maximize trigonometric combination'],verification:{independentAnswer:'A: 12 kg',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'Minimum T = μm₁g/√(1+μ²) = 120 N, hence m₂ = 12 kg.'},link:{type:'representation change',unknown:'Minimum hanging mass',addedPrerequisites:['Relate hanging mass to string tension at the threshold.'],purpose:'Reuse least-pull optimisation in an adjustable-pulley setup.',kind:'representation-change',sharedSkill:'Choose the pull angle that minimises the force needed to overcome limiting friction.',recoveryPurpose:'Connect least force to a physical pulley position.'}
-}]});
-
-instituteFamily({parentFamily:82,title:'Friction on the inside of a circular track',skill:'Use the radial equation to find the normal force before applying f = μN',difficulty:'Advanced',time:140,trap:'The normal force is not mg cos θ because the block has radial acceleration.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:8,questionPage:2,solutionPage:null,optionKey:'C',catalogueId:'friction-008-1',wording:'Printed wording and option order retained; theta and squared units typeset.',diagram:'Block on inside of circular track, radius to block and θ = 60° from downward vertical'},
- question:'A block of mass 1 kg starts slipping on a circular track of radius 2m and it is observed that when θ = 60° its speed is 4 m/s as shown in figure. Assuming size of block to be negligible and coefficient of friction between block and track is 0.5 frictional force on block when θ = 60° is (g = 10 m/s²) –',
- options:['5 N','2.5 N','6.5 N','4 N'],correct:2,
- brief:[['Write the radial equation towards the centre. Friction is tangential, so it does not enter this equation.','N − mg cos 60° = mv²/r'],['Substitute the data to find the contact load.','N = 5 + 8 = 13 N'],['The block is slipping, so use kinetic friction.','f = μN = 0.5 × 13 = 6.5 N']],
- short:'Towards the centre, N − mg cos 60° = mv²/r, so N = 13 N. Hence f = μN = 6.5 N.',
- steps:['At the shown position, the normal force points towards the centre. The inward component of weight is opposite to that direction and has magnitude mg cos 60°.','Therefore N − mg cos 60° = mv²/r. With m = 1 kg, v = 4 m/s and r = 2 m, N = 5 + 8 = 13 N.','Because the block is slipping, friction has magnitude μN = 0.5 × 13 = 6.5 N. Its direction is tangent to the track and opposite the instantaneous sliding direction. Option (C).'],
- diagram:'review-circle-friction',p:{figure:'block sliding inside a circular track'},validity:'Block remains in contact on the inside of the circular track and is sliding at the stated instant.',editorial:'Source geometry and angle reference preserved; the solution drawing adds all forces to the same physical setup.',match:'Controlled transfer from vertical-circle radial dynamics to a rough contact.',assumptions:['The stated coefficient is kinetic because the block is slipping.'],concepts:['radial dynamics','normal force','kinetic friction'],stepTags:['choose inward radial direction','solve normal force','apply kinetic friction'],verification:{independentAnswer:'C: 6.5 N',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'N − 5 = 8 gives N = 13 N; friction magnitude is 6.5 N.'},link:{type:'controlled transfer',unknown:'Friction magnitude',addedPrerequisites:['Use contact force from radial dynamics before applying μN.'],purpose:'Prevent the common error N = mg cos θ on a moving curved track.',kind:'controlled-transfer',sharedSkill:'Write the radial force equation at the marked point of a vertical circle.',recoveryPurpose:'Add a rough contact without changing the radial method.'}
-}]});
-
-instituteFamily({parentFamily:70,title:'A block projected up a rough incline',skill:'Use the stopping time to find retardation, then resolve gravity and friction down the slope',difficulty:'Standard',time:110,trap:'While the block moves upward, both gravity and friction act down the incline.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:11,questionPage:3,solutionPage:3,optionKey:'C',catalogueId:'friction-011-1',wording:'Printed wording and option order retained; squared units typeset.',diagram:'No source figure; statement specifies a fixed 60° incline'},
- question:'A block starts moving up a fixed inclined plane of inclination 60° with a velocity of 20 m/s and stops after 2 sec. The approximate value of coefficient of friction is (g = 10 m/s²)',
- options:['3','3.3','0.27','0.33'],correct:2,
- brief:[['The stopping time gives the retardation along the plane.','0 = 20 − a(2)  ⇒  a = 10 m/s²'],['While moving up, gravity and friction both point down the plane.','a = g(sin 60° + μ cos 60°)'],['Solve for the coefficient.','1 = √3/2 + μ/2  ⇒  μ = 2 − √3 ≈ 0.27']],
- short:'0 = 20 − 2a gives a = 10 m/s². Then 10 = 10(sin 60° + μ cos 60°), so μ = 2 − √3 ≈ 0.27.',
- steps:['Take the upward direction along the plane as positive. From v = u + at, 0 = 20 − 2a, so the retardation magnitude is 10 m/s².','During upward motion, mg sin 60° and kinetic friction μmg cos 60° both act down the plane.','Thus 10 = 10(sin 60° + μ cos 60°). Solving gives μ = 2 − √3 ≈ 0.268, which is option (C).'],
- diagram:'review-up-rough-incline',p:{figure:'block projected up a rough 60-degree incline'},validity:'Kinetic friction is constant during the two-second upward slide.',editorial:'Source solution checked; our version restores the equation terms missing from text extraction.',match:'Direction reversal relative to the parent down-slope motion; the same component method is used.',assumptions:['The block slides throughout the two seconds.'],concepts:['rough incline','kinematics','friction direction'],stepTags:['find retardation','resolve down slope','solve coefficient'],verification:{independentAnswer:'C: approximately 0.27',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'μ = 2 − √3 = 0.2679.'},link:{type:'controlled transfer',unknown:'Coefficient of kinetic friction',addedPrerequisites:['Infer retardation from stopping time.','Reverse friction when motion is up the slope.'],purpose:'Train the sign of friction for upward motion.',kind:'controlled-transfer',sharedSkill:'Resolve gravity and friction along a rough incline.',recoveryPurpose:'Correct the assumption that friction always points up an incline.'}
-}]});
-
-instituteFamily({parentFamily:56,title:'A uniform rod held by a horizontal string',skill:'Balance forces and take moments about the floor contact',difficulty:'Advanced',time:150,trap:'Force balance alone does not determine the string tension; rotational equilibrium is also required.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:12,questionPage:3,solutionPage:3,optionKey:'A',catalogueId:'friction-012-1',wording:'Printed wording and option order retained.',diagram:'Uniform rod AB at 45°, A on rough horizontal floor, B tied horizontally to point C above A, with AC = BC'},
- question:'A rod AB of mass 10 kg tied with a string at C such that AC = BC and rod remains in equilibrium then friction force by horizontal surface will be –',
- options:['50 N towards right','50 N towards left','100 N','None of these'],correct:0,
- brief:[['Take moments about A so the unknown floor forces give no moment.','T(AB sin 45°) = mg(AB/2 cos 45°)'],['The string tension follows directly.','T = mg/2 = 50 N'],['Horizontal force balance fixes the friction direction and magnitude.','f = T = 50 N towards right']],
- short:'About A, T(AB sin 45°) = mg(AB/2 cos 45°), so T = 50 N. Horizontal balance gives f = 50 N towards right.',
- steps:['The geometry AC = BC makes triangle ABC right-isosceles, so the rod is at 45° and the string at B is horizontal.','Take moments about A. The tension lever arm is AB sin 45°, while the weight mg at the rod midpoint has lever arm (AB/2) cos 45°.','Equating moments gives T = mg/2 = 50 N for m = 10 kg and g = 10 m/s². The string pulls the rod left, so floor friction on the rod is 50 N to the right. Option (A).'],
- diagram:'review-rod-string',p:{figure:'uniform rod held at 45 degrees by a horizontal string'},validity:'Uniform rod; static equilibrium; string horizontal; rough floor can supply 50 N without slipping.',editorial:'Source diagram and source torque construction preserved in one integrated solution figure.',match:'Controlled transfer from resolving a slanted equilibrium force to a rigid body that also requires moment balance.',assumptions:['The rod is uniform, as implied by using its centre of mass at the midpoint.','g = 10 m/s², required by the printed 50 N key.'],concepts:['rigid-body equilibrium','moments','static friction'],stepTags:['read geometry','moments about contact','horizontal balance'],verification:{independentAnswer:'A: 50 N towards right',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'Moment balance gives T = mg/2 = 50 N; friction balances the leftward tension.'},link:{type:'controlled transfer',unknown:'Floor friction on the rod',addedPrerequisites:['Take moments for a rigid body.'],purpose:'Show when translational equilibrium must be supplemented by rotational equilibrium.',kind:'controlled-transfer',sharedSkill:'Resolve forces and impose equilibrium in each independent direction.',recoveryPurpose:'Prevent force balance from being used as the only equation for a rod.'}
-}]});
-
-instituteFamily({parentFamily:35,title:'Two 45-degree slopes with one rough face',skill:'Use constant velocity to balance the slope components and friction',difficulty:'Standard',time:130,trap:'The left surface is smooth, so its block sets the string tension directly.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:13,questionPage:3,solutionPage:null,optionKey:'B',catalogueId:'friction-013-1',wording:'Printed wording and option order retained.',diagram:'Fixed wedge with two 45° faces, pulley at apex, mass m on smooth AB and 3m on rough AC'},
- question:'In the given figure the wedge is fixed, pulley is frictionless and string is light. Surface AB is frictionless whereas AC is rough. If the block of mass 3m slides down with constant velocity, then the coefficient of friction between surface AC and the block is –',
- options:[markup(fraction('1','3')),markup(fraction('2','3')),markup(fraction('1','2')),markup(fraction('4','3'))],correct:1,
- brief:[['The smooth-side block also has zero acceleration.','T = mg sin 45°'],['For the 3m block, tension and friction balance the downward component of weight.','3mg sin 45° = T + μ(3mg cos 45°)'],['Substitute T and cancel common factors.','3 = 1 + 3μ  ⇒  μ = 2/3']],
- short:`T = mg sin 45°. Then 3mg sin 45° = T + μ(3mg cos 45°), giving μ = ${fraction('2','3')}.`,
- steps:['The blocks move with constant velocity, so each has zero acceleration. On smooth AB, tension balances the component mg sin 45°, giving T = mg/√2.','The 3m block moves down AC. Friction therefore acts up AC, along with the tension. Its balance is 3mg/√2 = T + μ(3mg/√2).','Substitute T = mg/√2 and cancel mg/√2: 3 = 1 + 3μ, so μ = 2/3. Option (B).'],
- diagram:'review-double-incline',p:{figure:'two blocks on opposite 45-degree faces connected over the wedge apex'},validity:'Both faces are 45° as shown; ideal pulley and light string; the 3m block slides at constant velocity.',editorial:'Source topology and surface labels preserved; forces are added on the same wedge construction.',match:'Direct retry of incline-and-hanging balance with both bodies on slopes and one rough face.',assumptions:['The two incline angles shown are 45°.'],concepts:['connected bodies','rough incline','constant velocity'],stepTags:['smooth-side tension','rough-side balance','solve coefficient'],verification:{independentAnswer:'B: 2/3',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'T = mg/√2 and 3mg/√2 = T + 3μmg/√2, hence μ = 2/3.'},link:{type:'controlled transfer',unknown:'Coefficient of friction',addedPrerequisites:['Use zero acceleration from constant velocity.'],purpose:'Practise a two-slope balance with friction on only one body.',kind:'controlled-transfer',sharedSkill:'Resolve each connected body along its incline and use the common string tension.',recoveryPurpose:'Reinforce that constant velocity means separate force balance for both bodies.'}
-}]});
-
-instituteFamily({parentFamily:27,title:'Terminal speed under constant power',skill:'Convert constant power into the speed-dependent driving force P/v',difficulty:'Standard',time:100,trap:'Constant power does not mean constant force; the driving force decreases as speed rises.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:14,questionPage:3,solutionPage:3,optionKey:'D',catalogueId:'friction-014-1',wording:'Printed wording and option order retained; embedded option formulas transcribed from the page.',diagram:'No source figure; rough horizontal plane specified in text'},
- question:'A block of mass m is pulled by a constant power P placed on a rough horizontal plane. The friction co-efficient between the block and the surface is μ. Maximum velocity of the block will be –',
- options:[markup(fraction('Pμ','mg')),markup(fraction('Pmg','μ')),'μmgP',markup(fraction('P','μmg'))],correct:3,
- brief:[['Constant power makes the applied force fall as speed increases.','P = Fv  ⇒  F = P/v'],['At the maximum steady speed, the net force is zero.','P/vₘₐₓ = μmg'],['Solve for the terminal speed.',`vₘₐₓ = ${fraction('P','μmg')}`]],
- short:`P = Fv. At terminal speed F = μmg, so vₘₐₓ = ${fraction('P','μmg')}.`,
- steps:['With constant power P, the instantaneous pulling force is F = P/v. Therefore the pull decreases as the block becomes faster.','On the horizontal plane, kinetic friction is μmg. The limiting speed is reached when the drive just equals this resistance, so the acceleration becomes zero.','P/vₘₐₓ = μmg, hence vₘₐₓ = P/(μmg). Option (D).'],
- diagram:'review-constant-power',p:{figure:'block pulled at constant power on a rough horizontal plane'},validity:'Constant kinetic-friction coefficient; available power remains P; no other resistance.',editorial:'Source solution order preserved and raw division replaced by a stacked fraction.',match:'Controlled transfer from force and acceleration to a driving force that depends on speed.',assumptions:['The question uses “maximum” for the terminal speed approached when net force tends to zero.'],concepts:['power','terminal speed','kinetic friction'],stepTags:['power-force relation','zero net force','solve terminal speed'],verification:{independentAnswer:'D: P/(μmg)',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'F = P/v falls until it equals μmg.'},link:{type:'controlled transfer',unknown:'Terminal speed',addedPrerequisites:['Use P = Fv.'],purpose:'Distinguish constant power from constant force.',kind:'controlled-transfer',sharedSkill:'Use the instantaneous net force to decide how the speed changes.',recoveryPurpose:'Connect a speed-dependent drive to zero acceleration at terminal speed.'}
-}]});
-
-instituteFamily({parentFamily:65,title:'Oblique force pressing a block against a wall',skill:'Resolve the applied force, find the required friction, then check its limiting value',difficulty:'Standard',time:120,trap:'Friction is the amount needed for vertical balance, not automatically μN.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:17,questionPage:4,solutionPage:null,optionKey:'C',catalogueId:'friction-017-1',wording:'Printed wording and option order retained; the source figure fixes the 30° force direction.',diagram:'3 kg block against vertical wall; 100 N force at 30° above horizontal presses it into wall'},
- question:'A force of 100 N is applied on a block of mass 3 kg as shown in figure. The coefficient of friction between the surface and block is 1/4. The friction force acting on the block is –',
- options:['15 N downwards','25 N upwards','20 N downwards','20 N upwards'],correct:2,
- brief:[['Resolve the applied force.','Fₓ = 100 cos 30°; Fᵧ = 100 sin 30° = 50 N'],['The upward component exceeds the 30 N weight, so friction must act downward.','f = 50 − 30 = 20 N downward'],['Check that static friction can supply this amount.','fₘₐₓ = μN = ¼(100 cos 30°) ≈ 21.65 N > 20 N']],
- short:'100 sin 30° = 50 N upward while mg = 30 N downward, so friction is 20 N downward. Since 20 N < μ(100 cos 30°), static balance is possible.',
- steps:['The horizontal component presses the block into the wall, so N = 100 cos 30°. The vertical applied component is 100 sin 30° = 50 N upward.','The block weighs 3 × 10 = 30 N. Without friction it would tend to move upward, so static friction acts downward with the required magnitude 50 − 30 = 20 N.','The limiting value is (1/4)(100 cos 30°) ≈ 21.65 N, which exceeds 20 N. Therefore the actual friction is 20 N downward, option (C).'],
- diagram:'review-wall-oblique',p:{figure:'block pressed against a vertical wall by an oblique force'},validity:'Static equilibrium under the shown 30° force; g = 10 m/s² as required by the printed choices.',editorial:'Source force direction and angle preserved; the solution figure shows components and actual friction together.',match:'Direct retry of wall friction with an oblique press instead of a horizontal press.',assumptions:['The block remains at rest because required friction is below its limiting value.'],concepts:['wall friction','force resolution','static friction'],stepTags:['resolve applied force','determine tendency','check limiting friction'],verification:{independentAnswer:'C: 20 N downwards',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'Required downward friction is 50 − 30 = 20 N; limit is 21.65 N.'},link:{type:'direct retry',unknown:'Actual friction magnitude and direction',addedPrerequisites:['Resolve an oblique pressing force.'],purpose:'Show that wall friction may point downward and need not equal μN.',kind:'direct-retry',sharedSkill:'Find the normal force, determine the impending tendency, and use only the static friction required.',recoveryPurpose:'Correct both automatic μN use and automatic upward-friction assumptions.'}
-}]});
-
-instituteFamily({parentFamily:10,title:'Force applied to either block in a stacked pair',skill:'Use static friction to accelerate the block that is not directly pulled',difficulty:'Standard',time:130,trap:'The no-slip limit changes according to which block receives the applied force.',items:[{
- source:{doc:'INST-FRICTION-SCQ',number:18,questionPage:4,solutionPage:null,optionKey:'C',catalogueId:'friction-018-1',wording:'Printed wording and option order retained; case labels follow the source figure.',diagram:'Two stacked blocks A(m) on B(M), on frictionless floor; force on A in case (i), on B in case (ii)'},
- question:'A body A rests on B and friction coefficient between A and B is μ. Block M is placed on a frictionless surface. Then –',
- options:['the maximum possible value of F so that both bodies move together in case (i) is μ(m + M)g','the maximum possible value of F so that both bodies move together in case (i) is μmg','the maximum possible value of F so that both bodies move together in case (ii) is μ(M + m)g','the maximum possible value of F so that both bodies move together in case (ii) is μMg'],correct:2,
- brief:[['In case (ii), the common acceleration is set by the total mass. ',`a = ${fraction('F','M + m')}`],['Friction is the only horizontal force on the top block.',`f = ma = ${fraction('mF','M + m')}`],['For no slipping, this must not exceed μmg.',` ${fraction('mF','M + m')} ≤ μmg  ⇒  F ≤ μ(M + m)g`]],
- short:`For case (ii), a = ${fraction('F','M + m')} and f = ma. Requiring f ≤ μmg gives Fₘₐₓ = μ(M + m)g.`,
- steps:['Consider case (ii), where F is applied to the lower block B. If the blocks move together, their common acceleration is F/(M + m).','The top block A is accelerated only by friction, so the required friction is ma = mF/(M + m).','No slipping requires mF/(M + m) ≤ μmg. Cancelling m gives F ≤ μ(M + m)g. Thus statement (C) is correct.','For comparison, when F acts on the top block in case (i), friction must accelerate the lower mass M and the limit is different; this is why the two cases cannot be interchanged.'],
- diagram:'review-stack-two-cases',p:{figure:'stacked blocks with force applied to the top or bottom block'},validity:'Horizontal floor under B is frictionless; coefficient μ acts only at the A–B interface; both blocks are initially in contact.',editorial:'Both source cases are preserved in one comparative construction.',match:'Direct retry of moving stacked blocks together, now comparing which block is pulled.',assumptions:['A has mass m and B has mass M, as labelled in the source figure.'],concepts:['stacked blocks','static friction','common acceleration'],stepTags:['whole-system acceleration','top-block subsystem','no-slip inequality'],verification:{independentAnswer:'C: μ(M + m)g for case (ii)',agreesWithPrintedKey:true,status:'Recalculated from givens; fresh blind review and faculty approval pending',notes:'For bottom pull, top-block friction demand is mF/(M+m), bounded by μmg.'},link:{type:'representation change',unknown:'Maximum applied force without relative motion',addedPrerequisites:['Distinguish top-pull and bottom-pull cases.'],purpose:'Train subsystem choice when the applied force moves between blocks.',kind:'representation-change',sharedSkill:'Use static friction to give both stacked blocks one common acceleration.',recoveryPurpose:'Identify which mass the interface friction must accelerate.'}
 }]});
 </script>
 <script>/* JEE syllabus taxonomy for the question bank.
