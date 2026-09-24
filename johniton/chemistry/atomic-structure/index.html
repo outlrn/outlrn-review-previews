@@ -1466,6 +1466,174 @@ short:[['The z-component of orbital angular momentum is quantised as m times h/2
 detailed:[
  ['The component of the orbital angular momentum along the z-axis takes values m · h/2π.','L_z = m · h/2π'],
  ['So the magnetic quantum number m governs it, while ℓ governs the magnitude of the total angular momentum.','Answer: Magnetic quantum number']
+]},
+{id:'ATOM-59',topic:'Energy of an electron in a given Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.61 · p.6',sourceRef:true,question:'Energy of third orbit of Bohr’s atom is',options:['−13.6 eV','−3.4 eV','−1.5 eV','None of the three'],correct:2,answer:'−1.5 eV',
+short:[['Bohr’s atom here means hydrogen (Z = 1); the third orbit is n = 3.','Eₙ = −13.6/n² eV','E₃ = −13.6/3²','= −13.6/9','= −1.51 eV','≈ −1.5 eV']],
+detailed:[
+ ['For hydrogen the Bohr energy of the nth orbit is inversely proportional to n².','Eₙ = −13.6/n² eV'],
+ ['The third orbit means n = 3. Substitute.','E₃ = −13.6/3²','= −13.6/9'],
+ ['Evaluate.','= −1.51 eV','≈ −1.5 eV'],
+ ['This matches option (C); −13.6 eV is n = 1 and −3.4 eV is n = 2.','Answer: −1.5 eV']
+]},
+{id:'ATOM-50-C',parent:'ATOM-50',variant:3,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.35 · p.4 (Q.175, p.15, Q.202, p.17, and Q.224, p.19, are verbatim repeats of this item)',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Ionization energy of a one-electron species scales as Z²',recoveryPurpose:'Direct retry — scale the hydrogen ionization energy to He⁺ instead of scaling from He⁺ to Li²⁺'},question:'The ionization energy of hydrogen atom is 13.6 eV. What will be the ionization energy of He⁺ ?',options:['13.6 eV','54.4 eV','122.4 eV','Zero'],correct:1,answer:'54.4 eV',
+short:[['He⁺ is a one-electron ion with Z = 2, and its ionization energy scales as Z².','IE = 13.6×Z² eV','IE(He⁺) = 13.6×2²','= 13.6×4','= 54.4 eV']],
+detailed:[
+ ['Ionization energy is the energy to take the electron from n = 1 to n = ∞. For a hydrogen-like species it is 13.6 Z² eV.','IE = 13.6×Z² eV'],
+ ['He⁺ has one electron and nuclear charge Z = 2.','IE(He⁺) = 13.6×2²','= 13.6×4'],
+ ['Evaluate.','= 54.4 eV'],
+ ['Answer: 54.4 eV']
+]},
+{id:'ATOM-60',topic:'Energy difference between Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.65 · p.6',sourceRef:true,question:'The ionization energy of hydrogen atom (in the ground state) is x kJ. The energy required for an electron to jump from 2nd orbit to the 3rd orbit will be',options:['x/6','5x','7.2x','5x/36'],correct:3,answer:'5x/36',
+short:[['The ground-state energy is −x, and energies scale as 1/n².','Eₙ = −x/n²','E₂ = −x/4','E₃ = −x/9','ΔE = E₃ − E₂','= x×(1/4 − 1/9)','= x×(5/36)','= 5x/36']],
+detailed:[
+ ['The ionization energy of the ground state equals the magnitude of E₁, so E₁ = −x. Energies of hydrogen scale as 1/n².','Eₙ = −x/n²'],
+ ['Write the energies of the 2nd and 3rd orbits.','E₂ = −x/4','E₃ = −x/9'],
+ ['Energy required is the difference between final and initial levels.','ΔE = E₃ − E₂','= −x/9 + x/4'],
+ ['Combine over a common denominator.','= x×(9 − 4)/36','= 5x/36'],
+ ['Answer: 5x/36']
+]},
+{id:'ATOM-60-A',parent:'ATOM-60',variant:1,topic:'Energy difference between Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.101 · p.9 (Q.409, p.36, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-60',sharedSkill:'Energy difference between two Bohr levels of hydrogen, Eₙ ∝ 1/n²',recoveryPurpose:'Inverse/representation change — start from the 2→3 gap E and work back to the ionization energy, instead of going from the ionization energy to the gap'},question:'One energy difference between the states n = 2 and n = 3 is E eV, in hydrogen atom. The ionisation potential of H atom is',options:['3.2 E','5.6 E','7.2 E','13.2 E'],correct:2,answer:'7.2 E',
+short:[['The 2 to 3 gap in terms of 13.6 eV, then invert to get 13.6 eV in terms of E.','E = 13.6×(1/2² − 1/3²)','= 13.6×(1/4 − 1/9)','= (13.6×5)/36','13.6 = E×(36/5)','= 7.2E']],
+detailed:[
+ ['The gap between n = 2 and n = 3 in hydrogen follows from Eₙ = −13.6/n² eV.','E = 13.6×(1/2² − 1/3²)','= 13.6×(1/4 − 1/9)'],
+ ['Combine the fractions.','= (13.6×5)/36 eV'],
+ ['The ionisation potential of hydrogen is 13.6 eV. Express it in terms of E by inverting the relation.','13.6 = E×(36/5)','= 7.2E'],
+ ['Answer: 7.2 E']
+]},
+{id:'ATOM-60-B',parent:'ATOM-60',variant:2,topic:'Energy difference between Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.110 · p.10',sourceRef:true,relevance:{parent:'ATOM-60',sharedSkill:'Energy difference between two Bohr levels of hydrogen, Eₙ ∝ 1/n²',recoveryPurpose:'Controlled transfer — identify the two orbits from a radius ratio (r ∝ n²) first, then find the energy gap'},question:'The radii of two of the first four Bohr orbits of the hydrogen atom are in the ratio 1 : 4. The energy difference between them may be :',options:['Either 12.09 eV or 3.4 eV','Either 2.55 eV or 10.2 eV','Either 13.6 eV or 3.4 eV','Either 3.4 eV or 0.85 eV'],correct:1,answer:'Either 2.55 eV or 10.2 eV',
+short:[['Radius scales as n², so the orbit numbers must be in the ratio 1 : 2.','r ∝ n²','r₁ : r₂ = 1 : 4','n₁ : n₂ = 1 : 2','Pairs from n = 1 to 4: (1, 2) and (2, 4)','ΔE(1→2) = 13.6×(1 − 1/4)','= 10.2 eV','ΔE(2→4) = 13.6×(1/4 − 1/16)','= 2.55 eV']],
+detailed:[
+ ['Bohr radius is proportional to n², so a radius ratio of 1 : 4 means the orbit numbers are in the ratio 1 : 2.','r ∝ n²','n₁ : n₂ = 1 : 2'],
+ ['Among the first four orbits (n = 1 to 4) only two pairs have n in the ratio 1 : 2.','(n = 1, n = 2)','(n = 2, n = 4)'],
+ ['Energy difference for the first pair.','ΔE = 13.6×(1/1² − 1/2²)','= 13.6×(3/4)','= 10.2 eV'],
+ ['Energy difference for the second pair.','ΔE = 13.6×(1/2² − 1/4²)','= 13.6×(3/16)','= 2.55 eV'],
+ ['Answer: Either 2.55 eV or 10.2 eV']
+]},
+{id:'ATOM-61',topic:'Spacing of Bohr energy levels',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.76 · p.7',sourceRef:true,question:'With the increasing principal quantum number, the energy difference between adjacent energy levels in H atom',options:['decreases','increases','remains constant','decreases for low value of Z and increases for higher value of Z'],correct:0,answer:'decreases',
+short:[['Energies go as 1/n², so successive gaps shrink; check with the first few levels.','Eₙ = −13.6/n² eV','E₂ − E₁ = −3.4 + 13.6','= 10.2 eV','E₃ − E₂ = −1.51 + 3.4','= 1.89 eV','E₄ − E₃ = −0.85 + 1.51','= 0.66 eV','The gaps decrease']],
+detailed:[
+ ['In the Bohr model of hydrogen the energy of level n is −13.6/n² eV, so the levels crowd together as n grows.','Eₙ = −13.6/n² eV'],
+ ['Compute the first few gaps.','E₂ − E₁ = 10.2 eV','E₃ − E₂ = 1.89 eV','E₄ − E₃ = 0.66 eV'],
+ ['In general the gap between n and n+1 falls roughly as 1/n³.','ΔE = 13.6×[1/n² − 1/(n+1)²]','= 13.6×(2n+1)/(n²(n+1)²)'],
+ ['The question is about the H atom, so Z is fixed at 1; Z only scales every gap by the same factor Z², it never reverses the trend. So option (D) is wrong.','Answer: decreases']
+]},
+{id:'ATOM-61-A',parent:'ATOM-61',variant:1,topic:'Spacing of Bohr energy levels',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.34 · p.4 (Q.173, p.15, Q.201, p.17, and Q.222, p.19, are verbatim repeats of this item)',sourceRef:true,relevance:{parent:'ATOM-61',sharedSkill:'Trend of the gap between adjacent Bohr levels with n (Eₙ ∝ 1/n²)',recoveryPurpose:'Direct retry — same shrinking-gap idea, worded as ‘going away from the nucleus’ instead of ‘increasing principal quantum number’'},question:'As we go away from the nucleus, the difference between the successive energy levels -',options:['increases','decreases','remains constant','first increases, then decreases'],correct:1,answer:'decreases',
+short:[['Going away from the nucleus means larger n, and energies follow 1/n².','Eₙ = −13.6/n² eV','E₂ − E₁ = 10.2 eV','E₃ − E₂ = 1.89 eV','E₄ − E₃ = 0.66 eV','The gaps keep decreasing']],
+detailed:[
+ ['Levels farther from the nucleus have larger n. Their energies −13.6/n² eV approach zero from below.','Eₙ = −13.6/n² eV'],
+ ['Successive differences get smaller.','E₂ − E₁ = 10.2 eV','E₃ − E₂ = 1.89 eV','E₄ − E₃ = 0.66 eV'],
+ ['Far from the nucleus the levels crowd together and the difference tends to zero.','Answer: decreases']
+]},
+{id:'ATOM-62',topic:'Bohr quantization for a non-Coulomb potential',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.30 · p.4',sourceRef:true,question:'A small particle of mass m moves in such a way that P.E. = −1/2 mkr², where k is a constant and r is the distance of the particle from origin. Assuming Bohr’s model of quantization of angular momentum and circular orbit, r is directly proportional to -',options:['n²','n','√n','none of these'],correct:2,answer:'√n',
+short:[['The magnitude of the force from this potential supplies the centripetal force; then apply Bohr’s quantization mvr = nh/(2π).','F = −dU/dr','= mkr','mv²/r = mkr','v = r√k','mvr = nh/(2π)','m×(r√k)×r = nh/(2π)','r² ∝ n','r ∝ √n']],
+detailed:[
+ ['The force on the particle is the negative gradient of its potential energy. Its magnitude is used as the centripetal force of the circular orbit.','F = −dU/dr','= mkr'],
+ ['Balance with the centripetal requirement.','mv²/r = mkr','v² = kr²','v = r√k'],
+ ['Bohr’s quantization of angular momentum.','mvr = nh/(2π)'],
+ ['Substitute v = r√k.','m×(r√k)×r = nh/(2π)','r² = (nh)/(2πm√k)'],
+ ['Everything except n is constant.','r² ∝ n','r ∝ √n','Answer: √n']
+]},
+{id:'ATOM-63',topic:'Postulates of the Bohr model',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.59 · p.6',sourceRef:true,question:'Bohr advanced the idea of',options:['stationary electrons','Stationary nucleus','Stationary orbits','Elliptical orbits'],correct:2,answer:'Stationary orbits',
+short:[['Bohr’s central postulate is that an electron moves only in certain fixed circular orbits of definite energy and does not radiate while in them.','Bohr: electron in stationary (fixed-energy) circular orbits','Electrons revolve, so (A) is wrong','A nucleus at the centre was already Rutherford’s idea','Elliptical orbits were added later by Sommerfeld']],
+detailed:[
+ ['Bohr proposed that an electron revolves around the nucleus only in certain allowed circular orbits, each with a fixed energy, and does not lose energy while it stays in one. Such orbits are called stationary orbits.','Bohr’s postulate: stationary orbits'],
+ ['The electron is not stationary, it moves in the orbit, so option (A) is wrong.','Electron revolves in its orbit'],
+ ['The nucleus at the centre was already part of Rutherford’s nuclear model, so option (B) is not Bohr’s new idea.','Nucleus at centre: Rutherford'],
+ ['Elliptical orbits were introduced later by Sommerfeld, while Bohr’s orbits are circular.','Bohr: circular orbits','Sommerfeld: elliptical orbits'],
+ ['Answer: Stationary orbits']
+]},
+{id:'ATOM-26-C',parent:'ATOM-26',variant:3,topic:'Applicability of the Bohr model',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.112 · p.10',sourceRef:true,relevance:{parent:'ATOM-26',sharedSkill:'Which species the Bohr model applies to (one-electron species only)',recoveryPurpose:'Direct retry — choose the correct scope of the Bohr model from four statements instead of picking the invalid species from four named ones'},question:'Bohr’s model can explain-',options:['the spectrum of hydrogen atom only','spectrum of an atom or ion containing one electron only','the spectrum of hydrogen molecule','the solar spectrum'],correct:1,answer:'spectrum of an atom or ion containing one electron only',
+short:[['The Bohr model works only for one-electron species such as H, He⁺ and Li²⁺, not for species with two or more electrons.','One-electron species: H, He⁺, Li²⁺','H₂ has two electrons: not covered','Solar spectrum: many-electron atoms, not covered','‘Hydrogen atom only’ is too narrow, He⁺ and Li²⁺ also work']],
+detailed:[
+ ['The Bohr model treats a single electron moving around a nucleus, so it applies to any one-electron species, not only to hydrogen.','Applies to: H, He⁺, Li²⁺, …'],
+ ['Option (A) is too restrictive because He⁺ and Li²⁺ spectra are also explained with the Z² scaling.','Eₙ = −13.6×Z²/n² eV'],
+ ['The hydrogen molecule has two electrons and two nuclei, and the solar spectrum comes from many-electron atoms, so neither is explained.','H₂: two electrons, so no','Sun: many-electron atoms, so no'],
+ ['Answer: spectrum of an atom or ion containing one electron only']
+]},
+{id:'ATOM-04-J',parent:'ATOM-04',variant:10,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.58 · p.6 (Q.171, p.15, and Q.220, p.19, are verbatim repeats of this item)',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Direct retry — ratio of the radii of the first three Bohr orbits, with the atom left unnamed (hydrogen assumed)'},question:'The ratio of the radii of first three Bohr orbits is',options:['1 : 0.5 : 0.33','1 : 2 : 3','1 : 4 : 9','1 : 8 : 27'],correct:2,answer:'1 : 4 : 9',
+short:[['Bohr radius is proportional to n² (fixed Z).','rₙ ∝ n²','r₁ : r₂ : r₃ = 1² : 2² : 3²','= 1 : 4 : 9']],
+detailed:[
+ ['The Bohr radius is rₙ = 0.529×n²/Z Å, so for the same atom it is proportional to n².','rₙ ∝ n²'],
+ ['Take n = 1, 2, 3.','r₁ : r₂ : r₃ = 1² : 2² : 3²','= 1 : 4 : 9'],
+ ['Answer: 1 : 4 : 9']
+]},
+{id:'ATOM-08-D',parent:'ATOM-08',variant:4,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.78 · p.7 (Q.342, p.32, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching a quantum number to the specific property it determines',recoveryPurpose:'Controlled transfer — spot the wrongly assigned property among four statements instead of naming the quantum number for one property'},question:'Which of the following statements concerning the four quantum numbers is false',options:['n gives idea of the size of an orbital','ℓ gives the shape of an orbital','m gives the energy of the electron in the orbital','s gives the direction of spin of the electron in an orbital.'],correct:2,answer:'m gives the energy of the electron in the orbital',
+short:[['Match each quantum number to what it fixes.','n: size (and main energy)','ℓ: shape','m: orientation, not energy','s: direction of spin','Statement (C) is false']],
+detailed:[
+ ['Each quantum number answers a different question about the electron.','n = size of the orbital','ℓ = shape','m = orientation in space','s = direction of spin'],
+ ['Statements (A), (B) and (D) agree with this list.','(A), (B), (D) true'],
+ ['Statement (C) says m gives the energy, but m only gives orientation; in the hydrogen atom the energy depends on n alone.','m: orientation, not energy','Answer: (C)']
+]},
+{id:'ATOM-08-E',parent:'ATOM-08',variant:5,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.79 · p.7',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching a quantum number to the specific property it determines',recoveryPurpose:'Controlled transfer — spot the wrongly assigned property among four statements, including the energy of an electron in a multi-electron atom'},question:'Which of the following statements is not correct ?',options:['The shape of an atomic orbital depends on the azimuthal quantum number','The orientation of an atomic orbital depends on the magnetic quantum number','The energy of an electron in an atomic orbital of multi electron atom depends on the principal quantum number','The number of degenerate atomic orbitals of one type depends on the values of azimuthal and magnetic quantum numbers'],correct:2,answer:'The energy of an electron in an atomic orbital of multi electron atom depends on the principal quantum number',
+short:[['Check each statement against what n, ℓ and m determine.','Shape: ℓ (A true)','Orientation: m (B true)','Multi-electron atom: energy depends on n and ℓ','Saying ‘n only’ (C) is not correct','Degenerate orbitals of a subshell = 2ℓ+1 values of m (D true)']],
+detailed:[
+ ['The shape of an orbital is set by ℓ and its orientation by m.','(A) true','(B) true'],
+ ['In a multi-electron atom, electron–electron repulsion splits the subshells, so the orbital energy depends on both n and ℓ (the n+ℓ rule), not on n alone.','E = f(n, ℓ)','(C) not correct'],
+ ['The orbitals of one type (a subshell, given by n and ℓ) are the 2ℓ+1 values of m and have the same energy.','Number of degenerate orbitals = 2ℓ+1','(D) true'],
+ ['Answer: (C)']
+]},
+{id:'ATOM-21-E',parent:'ATOM-21',variant:5,topic:'Identifying invalid quantum-number sets',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.82 · p.8',sourceRef:true,relevance:{parent:'ATOM-21',sharedSkill:'Allowed values of m for a given ℓ (−ℓ to +ℓ)',recoveryPurpose:'Controlled transfer — test which orbital types can carry a given m instead of checking complete sets of four quantum numbers'},question:'A given orbital is labelled by the magnetic quantum number m = –1. This can not be',options:['s-orbital','d-orbital','p-orbital','f-orbital'],correct:0,answer:'s-orbital',
+short:[['m can take the values −ℓ to +ℓ, so m = −1 needs ℓ ≥ 1.','s (ℓ = 0): m = 0 only','p (ℓ = 1): m = −1 to +1','d (ℓ = 2): m = −2 to +2','f (ℓ = 3): m = −3 to +3','So m = −1 cannot be an s-orbital']],
+detailed:[
+ ['The magnetic quantum number runs over 2ℓ+1 values.','m = −ℓ to +ℓ'],
+ ['Check each orbital type.','s (ℓ = 0): m = 0 only','p (ℓ = 1): m = −1 to +1','d (ℓ = 2): m = −2 to +2','f (ℓ = 3): m = −3 to +3'],
+ ['Only the s-orbital has no m = −1 value.','Answer: s-orbital']
+]},
+{id:'ATOM-64',topic:'Electron capacity of a shell',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.77 · p.7 (Q.343, p.32, is a verbatim repeat of this item)',sourceRef:true,question:'How many electrons can fit into the orbitals that comprise the 3rd quantum shell n = 3 ?',options:['2','8','18','32'],correct:2,answer:'18',
+short:[['The n = 3 shell contains the subshells 3s, 3p and 3d; each orbital holds 2 electrons.','Orbitals = 1 + 3 + 5','= 9','Electrons = 2×9','= 18','Check: 2n² = 2×3²','= 18']],
+detailed:[
+ ['For n = 3, ℓ takes the values 0, 1, 2, giving subshells 3s, 3p and 3d with 2ℓ+1 orbitals each.','3s: 1 orbital','3p: 3 orbitals','3d: 5 orbitals'],
+ ['Total number of orbitals in the shell.','1 + 3 + 5 = 9','= n²'],
+ ['Each orbital holds a maximum of 2 electrons.','2×9 = 18','= 2n²'],
+ ['32 electrons is the capacity of the fourth shell (n = 4), not the third.','Answer: 18']
+]},
+{id:'ATOM-64-A',parent:'ATOM-64',variant:1,topic:'Electron capacity of a shell',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.89 · p.8',sourceRef:true,relevance:{parent:'ATOM-64',sharedSkill:'Shell capacity 2n² electrons and n² orbitals',recoveryPurpose:'Controlled transfer — apply shell capacity (and the n+ℓ order of 4s and 3d) to test four statements instead of counting electrons for one shell'},question:'For the energy levels in an atom which one of the following statements is correct ?',options:['The 4s sub-energy level is at a higher energy than the 3d sub-energy level','The M-energy level can have maximum of 32 electrons','The second principal energy level can have four orbitals and contain a maximum of 8 electrons','The 5th main energy level can have maximum of 49 electrons'],correct:2,answer:'The second principal energy level can have four orbitals and contain a maximum of 8 electrons',
+short:[['Test each statement with the (n+ℓ) rule and the shell capacity 2n² (orbitals n²).','4s: n+ℓ = 4','3d: n+ℓ = 5','4s is lower than 3d, so (A) is false','M shell (n = 3) has 2n² = 18 electrons, not 32 (B false)','n = 2 shell: number of orbitals is n²','= 4','It holds 2n² = 8 electrons (C true)','n = 5 shell: capacity is 2n²','= 50, not 49 (D false)']],
+detailed:[
+ ['Statement (A): the (n+ℓ) rule orders subshell energies; a lower value means lower energy.','4s: n+ℓ = 4+0','= 4','3d: n+ℓ = 3+2','= 5','4s is lower than 3d, so (A) is false'],
+ ['Statement (B): the M shell is n = 3.','Capacity = 2n²','= 18','(B) false'],
+ ['Statement (C): the second shell, n = 2.','Orbitals = n²','= 4 (2s and three 2p)','Electrons = 2n²','= 8','(C) true'],
+ ['Statement (D): the fifth shell, n = 5.','2n² = 2×25','= 50, not 49','(D) false'],
+ ['Answer: (C)']
+]},
+{id:'ATOM-65',topic:'Spherical symmetry of s orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.75 · p.7',sourceRef:true,question:'For s-orbitals, since ψ (orbital) is independent of angles, the probability (ψ²) is –',options:['also independent of angles','spherically symmetric','both (A) and (B) are correct','both (A) & (B) are incorrect'],correct:2,answer:'both (A) and (B) are correct',
+short:[['If ψ does not depend on the angles, neither does ψ², and the probability then depends only on the distance r.','s orbital: ψ = f(r) only','ψ² = [f(r)]²','ψ² is independent of angles (A true)','Same probability in every direction at a given r','Spherically symmetric (B true)']],
+detailed:[
+ ['For an s orbital the wave function depends only on the distance from the nucleus.','ψ = f(r)'],
+ ['The probability density is the square of ψ, so it also has no angular dependence.','ψ² = [f(r)]²','(A) true'],
+ ['A probability that depends only on r is the same in every direction at a given distance, which is what spherically symmetric means.','(B) true'],
+ ['Both statements are correct.','Answer: both (A) and (B) are correct']
+]},
+{id:'ATOM-65-A',parent:'ATOM-65',variant:1,topic:'Spherical symmetry of s orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.94 · p.9 (Q.401, p.36, and Q.550, p.47, are verbatim repeats of this item)',sourceRef:true,relevance:{parent:'ATOM-65',sharedSkill:'s orbitals are spherically symmetric: probability depends only on r',recoveryPurpose:'Controlled transfer — apply spherical symmetry to two specific points at the same distance from the nucleus'},question:'The nucleus of an atom is located at x = y = z = 0. If the probability of finding an s-orbital electron in a tiny volume around x = a, y = z = 0 is 1 × 10⁻⁵, what is the probability of finding the electron in the same sized volume around x = z = 0, y = a ?',options:['1 × 10⁻⁵','1 × 10⁻⁵ × a','1 × 10⁻⁵ × a²','1 × 10⁻⁵ × a⁻¹'],correct:0,answer:'1 × 10⁻⁵',
+short:[['An s orbital is spherically symmetric, so the probability depends only on the distance from the nucleus.','Distance of (a, 0, 0) from origin = a','Distance of (0, a, 0) from origin = a','Same distance: same probability','P = 1 × 10⁻⁵']],
+detailed:[
+ ['The probability density of an s electron depends only on r, the distance from the nucleus.','P = f(r)'],
+ ['Compare the two points.','r₁ = a (on the x axis)','r₂ = a (on the y axis)'],
+ ['Equal distances and equal volumes give equal probabilities, with no factor of a.','P = 1 × 10⁻⁵','Answer: 1 × 10⁻⁵']
+]},
+{id:'ATOM-66',topic:'Shape and orientation of d orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.93 · p.9 (Q.356, p.33, is a verbatim repeat of this item)',sourceRef:true,question:'The maximum probability of finding electron in the dxy orbital is :',options:['Along the x axis','Along the y axis','At an angle of 45º from the x and y axis','At an angle of 90º from the x and y axis'],correct:2,answer:'At an angle of 45º from the x and y axis',
+short:[['The four lobes of dxy lie in the xy plane between the axes, not along them.','dxy lobes lie in the xy plane','Lobes point between the x and y axes','Angle from each axis = 45°','On the x and y axes ψ = 0 (nodal planes yz and zx)']],
+detailed:[
+ ['The dxy orbital has four lobes in the xy plane.','Four lobes in the xy plane'],
+ ['The lobes are directed between the x and y axes, bisecting them, so the maximum probability lies at 45° to both axes.','Angle from x = 45°','Angle from y = 45°'],
+ ['Along the axes themselves the wave function is zero (the yz and zx planes are the two nodal planes), so options (A) and (B) are wrong.','Nodal planes: yz and zx'],
+ ['Answer: At an angle of 45º from the x and y axis']
+]},
+{id:'ATOM-67',topic:'Nodal planes and zero probability',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.87 · p.8 (Q.406, p.36, is a verbatim repeat of this item)',sourceRef:true,question:'Each orbital has a nodal plane. Which of the following statements about nodal planes are not true :',options:['A plane on which there is zero probability that the electron will be found','A plane on which there is maximum probability that the electron will be found','both','none'],correct:1,answer:'A plane on which there is maximum probability that the electron will be found',
+short:[['A nodal plane is a plane on which ψ = 0, so the probability there is zero.','Nodal plane: ψ = 0','Probability ∝ ψ² = 0','(A) zero probability: true','(B) maximum probability: not true']],
+detailed:[
+ ['A nodal plane is a plane on which the wave function vanishes.','ψ = 0 on a nodal plane'],
+ ['The probability of finding the electron is proportional to ψ², so it is zero on that plane.','Probability ∝ ψ² = 0'],
+ ['Statement (A) describes a nodal plane correctly, so it is true. Statement (B) contradicts it, so it is not true.','(A) true','(B) not true'],
+ ['Answer: (B)']
+]},
+{id:'ATOM-68',topic:'Assessing statements about energy, probability and measurement',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.74 · p.7',sourceRef:true,question:'Which of the following statements is incorrect?',options:['Probabilities are found by solving Schrodinger wave equation','Energy of the electron at infinite distance is zero and yet it is maximum','Some spectral lines of an element may have the same wave number','The position and momentum of a rolling ball can be measured accurately'],correct:2,answer:'Some spectral lines of an element may have the same wave number',
+short:[['Check each statement.','(A) Ψ from Schrödinger’s equation gives probability Ψ²: true','(B) Bound energies are negative and E(∞) = 0 is the highest: true','(C) Each transition has its own energy gap: different lines have different wave numbers','(C) is the incorrect statement','(D) For a ball Δx·Δp ≥ h/(4π) is negligible: true']],
+detailed:[
+ ['(A) Solving the Schrödinger equation gives Ψ, and Ψ² gives the probability density, so this statement is true.','(A) true'],
+ ['(B) Bound electrons have negative energies that rise towards zero, so the energy at infinite distance is zero and is the maximum.','Eₙ = −13.6/n² eV → 0 as n → ∞','(B) true'],
+ ['(D) The uncertainty in position and momentum of a ball is negligible because h is extremely small compared with its mass, so both can be measured accurately.','Δx·Δp ≥ h/(4π)','(D) true'],
+ ['(C) Every spectral line comes from a different energy gap and has its own wave number, so the statement that lines share the same wave number is the incorrect one.','Wave number = R×(1/n₁² − 1/n₂²)','Different (n₁, n₂): different wave number','Answer: (C)']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1596,7 +1764,17 @@ const pilotTopicMap={
  'Bohr orbit radius: numerical values and changes':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
  'Same orbit radius for different hydrogen-like species':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
  'Bohr orbital velocity of hydrogen-like species':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
- 'Number of de Broglie waves in a Bohr orbit':['bohr-model','Bohr’s postulate of angular momentum quantization']
+ 'Number of de Broglie waves in a Bohr orbit':['bohr-model','Bohr’s postulate of angular momentum quantization'],
+ 'Energy of an electron in a given Bohr orbit':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Energy difference between Bohr orbits':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Spacing of Bohr energy levels':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Bohr quantization for a non-Coulomb potential':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Postulates of the Bohr model':['bohr-model','Postulates of the Bohr model'],
+ 'Electron capacity of a shell':['quantum-model','Electron capacity of shells'],
+ 'Spherical symmetry of s orbitals':['quantum-model','Shapes of orbitals and nodes'],
+ 'Shape and orientation of d orbitals':['quantum-model','Shapes of orbitals and nodes'],
+ 'Nodal planes and zero probability':['quantum-model','Shapes of orbitals and nodes'],
+ 'Assessing statements about energy, probability and measurement':['quantum-model','Quantum mechanical ideas: statement checks']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
