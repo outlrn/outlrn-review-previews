@@ -180,10 +180,10 @@
    pilot-first logic, see qa/submissions/. */
 const questions=[
 {id:'ATOM-01',topic:'Rutherford’s scattering experiment: beam composition',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.13 · p.2',sourceRef:true,question:'Rutherford’s experiment, which established the nuclear model of the atom, used a beam of –',options:['β particles, which impinged on a metal foil and got absorbed','γ-rays, which impinged on a metal foil and got absorbed','Helium atoms, which impinged on a metal foil and got scattered','Helium nuclei, which impinged on a metal foil and got scattered'],correct:3,answer:'Helium nuclei, which impinged on a metal foil and got scattered',
-short:[['Rutherford’s gold-foil experiment used a beam of alpha particles — bare helium nuclei, not neutral atoms — which scattered off the foil rather than being absorbed.','Beam = He²⁺ (helium nuclei); outcome = scattered']],
+short:[['Rutherford’s gold-foil experiment used a beam of alpha particles — bare helium nuclei, not neutral atoms — which scattered off the foil rather than being absorbed.','Beam = He²⁺ (helium nuclei)','outcome = scattered']],
 detailed:[
  ['The scattering experiment needed particles that would deflect off the atom’s internal structure rather than be stopped by it.','Ruled out: β (electron) and γ (photon) do not match the observed heavy-particle scattering'],
- ['Alpha particles are doubly-ionised helium nuclei with no electrons attached, so “helium atoms” (which are neutral) is not the correct description.','Beam ≠ helium atoms; beam = He²⁺ nuclei'],
+ ['Alpha particles are doubly-ionised helium nuclei with no electrons attached, so “helium atoms” (which are neutral) is not the correct description.','Beam ≠ helium atoms','beam = He²⁺ nuclei'],
  ['Most alpha particles passed straight through the foil and a small fraction deflected at large angles.','Outcome = scattered, not absorbed']
 ]},
 {id:'ATOM-02',topic:'Rutherford’s scattering experiment: conclusion',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.17 · p.3',sourceRef:true,question:'Rutherford’s α-particle scattering experiment led to the conclusion that –',options:['Mass and energy are related','The mass and the positive charge of an atom are concentrated in the nucleus','Neutrons are present in the nucleus','Atoms are electrically neutral'],correct:1,answer:'The mass and the positive charge of an atom are concentrated in the nucleus',
@@ -196,33 +196,33 @@ detailed:[
 {id:'ATOM-03',topic:'Properties of anode (canal) rays',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.15 · p.2–3',sourceRef:true,question:'Which of the following statements is NOT true for anode rays?',options:['They are deflected by electric and magnetic fields','Their e/m ratio depends on the gas used in the discharge tube to produce anode rays','The e/m ratio of anode rays is constant','They are produced by ionisation of the gas in the discharge tube'],correct:2,answer:'The e/m ratio of anode rays is constant',
 short:[['Anode rays are ionised gas atoms, so their e/m ratio depends on which gas is used — it is not a universal constant.','False statement: "e/m ratio of anode rays is constant"']],
 detailed:[
- ['Anode (canal) rays form when the residual gas in a discharge tube is ionised, and the ions travel toward the cathode.','True: produced by ionisation; True: deflected by fields'],
+ ['Anode (canal) rays form when the residual gas in a discharge tube is ionised, and the ions travel toward the cathode.','True: produced by ionisation','True: deflected by fields'],
  ['Because the ray is made of ionised gas atoms rather than one fundamental particle, its e/m ratio changes with the gas used in the tube.','True: e/m depends on the gas'],
  ['That gas-dependence is exactly why the constant-e/m statement is false — unlike the cathode ray’s universal e/m ratio.','False: e/m ratio is NOT constant → this is the answer']
 ]},
 {id:'ATOM-04',topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.20 · p.3',sourceRef:true,question:'The ratio of the radii of the first Bohr orbits of H, He⁺ and Li²⁺ is:',options:['1 : 2 : 3','6 : 3 : 2','1 : 4 : 9','9 : 4 : 1'],correct:1,answer:'6 : 3 : 2',
-short:[['Bohr radius scales as n²/Z for a one-electron species.','rₙ ∝ n²/Z'],['Evaluate at n=1 for Z = 1, 2, 3.','r(H) : r(He⁺) : r(Li²⁺) = 1 : 1/2 : 1/3 = 6 : 3 : 2']],
+short:[['Bohr radius scales as n²/Z for a one-electron species.','rₙ ∝ n²/Z'],['Evaluate at n=1 for Z = 1, 2, 3.','r(H) : r(He⁺) : r(Li²⁺) = 1 : 1/2 : 1/3','= 6 : 3 : 2']],
 detailed:[
  ['The Bohr radius of the nth orbit scales as n² and inversely with nuclear charge Z, for any hydrogen-like (one-electron) species.','rₙ ∝ n²/Z'],
  ['All three species are compared at their first orbit (n=1), so only Z differs: H has Z=1, He⁺ has Z=2, Li²⁺ has Z=3.','r(H) : r(He⁺) : r(Li²⁺) = 1/1 : 1/2 : 1/3'],
  ['Multiplying every term by 6 clears the fractions without changing the ratio.','1/1 : 1/2 : 1/3 = 6 : 3 : 2']
 ]},
 {id:'ATOM-04-A',parent:'ATOM-04',variant:1,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.61 · question p.39 · solution p.65',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model scaling laws for hydrogen-like species (Z/n dependence)',recoveryPurpose:'Controlled transfer — same family of orbit-property scaling as ATOM-04, but for velocity (v∝Z/n) instead of radius (r∝n²/Z)'},question:'The ratio of the velocity of the electron present in the second Bohr’s orbit of He⁺ and the third Bohr’s orbit of Li²⁺ is:',options:['1 : 1','2 : 3','3 : 2','1 : 2'],correct:0,answer:'1 : 1',
-short:[['Bohr velocity scales as Z/n for a one-electron species.','v ∝ Z/n'],['Evaluate for He⁺ (Z=2,n=2) and Li²⁺ (Z=3,n=3).','v(He⁺)/v(Li²⁺) = (2/2)/(3/3) = 1']],
+short:[['Bohr velocity scales as Z/n for a one-electron species.','v ∝ Z/n'],['Evaluate for He⁺ (Z=2,n=2) and Li²⁺ (Z=3,n=3).','v(He⁺)/v(Li²⁺) = (2/2)/(3/3)','= 1']],
 detailed:[
  ['The electron’s speed in the nth Bohr orbit of a hydrogen-like species scales as Z/n.','v ∝ Z/n'],
- ['Substitute He⁺’s Z=2 at n=2, and Li²⁺’s Z=3 at n=3.','v(He⁺) ∝ 2/2 = 1; v(Li²⁺) ∝ 3/3 = 1'],
+ ['Substitute He⁺’s Z=2 at n=2, and Li²⁺’s Z=3 at n=3.','v(He⁺) ∝ 2/2 = 1','v(Li²⁺) ∝ 3/3 = 1'],
  ['Both ratios reduce to exactly 1, so the two velocities are equal.','Answer: 1 : 1']
 ]},
 {id:'ATOM-06-B',parent:'ATOM-06',variant:2,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.62 · question p.39 · solution p.66',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula, extended with the virial-theorem relation between potential and total energy',recoveryPurpose:'Controlled transfer — same Eₙ formula as ATOM-06, plus the PE=2×(total energy) relation, which no question in the bank has tested yet'},question:'The energy of the electron in the first Bohr orbit of the H-atom is −13.6 eV. What will be its potential energy in the n = 4th orbit?',options:['−13.6 eV','−3.4 eV','−0.85 eV','−1.70 eV'],correct:3,answer:'−1.70 eV',
-short:[['Total energy at n=4.','E₄ = −13.6/4² = −0.85 eV'],['Potential energy is twice the total energy (virial theorem).','PE = 2 × E₄ = −1.70 eV']],
+short:[['Total energy at n=4.','E₄ = −13.6/4²','= −0.85 eV'],['Potential energy is twice the total energy (virial theorem).','PE = 2 × E₄','= −1.70 eV']],
 detailed:[
- ['First find the total energy at n=4 using the Bohr formula for hydrogen (Z=1).','E₄ = −13.6 × 1²/4² = −13.6/16 = −0.85 eV'],
+ ['First find the total energy at n=4 using the Bohr formula for hydrogen (Z=1).','E₄ = −13.6 × 1²/4²','= −13.6/16','= −0.85 eV'],
  ['For a Coulomb (1/r) potential, the virial theorem gives PE = −2×KE and TE = KE+PE = −KE, so PE = 2×TE.','PE = 2 × (total energy)'],
- ['Substitute the total energy just found.','PE = 2 × (−0.85) = −1.70 eV']
+ ['Substitute the total energy just found.','PE = 2 × (−0.85)','= −1.70 eV']
 ]},
 {id:'ATOM-06-C',parent:'ATOM-06',variant:3,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.60 · question p.38 · solution p.65',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula (Eₙ ∝ 1/n²)',recoveryPurpose:'Representation change — a direct ratio between two named excited states of plain hydrogen, instead of checking possible values for an ion'},question:'The ratio of energies of a hydrogen atom for its first and second excited states is:',options:['4/1','1/4','4/9','9/4'],correct:3,answer:'9/4',
-short:[['Energy magnitude scales as 1/n²; first excited state is n=2, second is n=3.','E(n=2)/E(n=3) = (1/2²)/(1/3²) = 9/4']],
+short:[['Energy magnitude scales as 1/n²; first excited state is n=2, second is n=3.','E(n=2)/E(n=3) = (1/2²)/(1/3²)','= 9/4']],
 detailed:[
  ['The first excited state of hydrogen is n=2; the second excited state is n=3.','n=2 and n=3'],
  ['Energy magnitude scales as 1/n² (Z=1 for hydrogen), so the ratio is the inverse ratio of n².','E(n=2)/E(n=3) = (1/2²)/(1/3²)'],
@@ -242,78 +242,78 @@ detailed:[
  ['The third line starts one level higher again.','3rd line: n=5→2 (Hγ)','Answer: 5 to 2']
 ]},
 {id:'ATOM-05',topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.21 · p.3',sourceRef:true,question:'The wave number of the limiting line in the Lyman series of hydrogen is 109678 cm⁻¹. The wave number of the limiting line in the Balmer series of He⁺ would be:',options:['54839 cm⁻¹','219356 cm⁻¹','109678 cm⁻¹','438712 cm⁻¹'],correct:2,answer:'109678 cm⁻¹',
-short:[['Rydberg formula for a hydrogen-like species.','1/λ̄ = R_H Z²(1/n₁² − 1/n₂²)'],['Balmer limiting line (n₁=2, n₂→∞) for He⁺ (Z=2).','ν̄ = 109678 × 4 × (1/4 − 0) = 109678 cm⁻¹']],
+short:[['Rydberg formula for a hydrogen-like species.','1/λ̄ = R_H Z²(1/n₁² − 1/n₂²)'],['Balmer limiting line (n₁=2, n₂→∞) for He⁺ (Z=2).','ν̄ = 109678 × 4 × (1/4 − 0)','= 109678 cm⁻¹']],
 detailed:[
  ['The “limiting line” of a series is its series edge, where the electron falls from n₂ = ∞ to the series’ base level n₁, giving that series’ maximum wave number.','Limiting line: n₂ → ∞'],
- ['For hydrogen’s Lyman limiting line, n₁=1 and n₂→∞, so its wave number equals R_H exactly — consistent with the value given.','ν̄(Lyman limit, H) = R_H(1/1² − 0) = 109678 cm⁻¹'],
- ['For He⁺’s Balmer limiting line, apply the same formula with Z=2 and n₁=2, n₂→∞.','ν̄ = R_H × Z² × (1/n₁² − 1/n₂²) = 109678 × 4 × (1/4 − 0)'],
- ['The factor of 4 from Z² and the factor of 1/4 from 1/n₁² cancel exactly, leaving the same numeric value as hydrogen’s Lyman limit — a coincidence of this specific pairing, not a general rule.','ν̄ = 109678 × 1 = 109678 cm⁻¹']
+ ['For hydrogen’s Lyman limiting line, n₁=1 and n₂→∞, so its wave number equals R_H exactly — consistent with the value given.','ν̄(Lyman limit, H) = R_H(1/1² − 0)','= 109678 cm⁻¹'],
+ ['For He⁺’s Balmer limiting line, apply the same formula with Z=2 and n₁=2, n₂→∞.','ν̄ = R_H × Z² × (1/n₁² − 1/n₂²)','= 109678 × 4 × (1/4 − 0)'],
+ ['The factor of 4 from Z² and the factor of 1/4 from 1/n₁² cancel exactly, leaving the same numeric value as hydrogen’s Lyman limit — a coincidence of this specific pairing, not a general rule.','ν̄ = 109678 × 1','= 109678 cm⁻¹']
 ]},
 {id:'ATOM-05-A',parent:'ATOM-05',variant:1,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.52 · p.6',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula Z² scaling for hydrogen-like ions',recoveryPurpose:'Direct retry — same transition (first Balmer line), different one-electron ion (Li²⁺ instead of He⁺)'},question:'The wave number of the first line of the Balmer series of hydrogen is 15200 cm⁻¹. The wave number of the first Balmer line of the Li²⁺ ion is:',options:['15200 cm⁻¹','60800 cm⁻¹','76000 cm⁻¹','136800 cm⁻¹'],correct:3,answer:'136800 cm⁻¹',
-short:[['Wave number scales with Z² for a hydrogen-like species at the same transition.','ν̄(Li²⁺) = Z² × ν̄(H) = 9 × 15200'],['Evaluate.','= 136800 cm⁻¹']],
+short:[['Wave number scales with Z² for a hydrogen-like species at the same transition.','ν̄(Li²⁺) = Z² × ν̄(H)','= 9 × 15200'],['Evaluate.','= 136800 cm⁻¹']],
 detailed:[
  ['The first Balmer line is the same transition (n=3→2) in both species; only the nuclear charge Z differs.','ν̄ = R_H Z² (1/2² − 1/3²)'],
  ['Since hydrogen’s value already equals R_H(1/4−1/9), scaling to Li²⁺ (Z=3) just multiplies by Z²=9.','ν̄(Li²⁺) = 9 × 15200 cm⁻¹'],
  ['Evaluate.','= 136800 cm⁻¹']
 ]},
 {id:'ATOM-05-B',parent:'ATOM-05',variant:2,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.170 · p.15',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula applied to frequency rather than wave number',recoveryPurpose:'Representation change — asks for frequency instead of wave number, plain hydrogen instead of an ion'},question:'Calculate the frequency of light emitted for an electron transition from the sixth to the second orbit of the hydrogen atom.',options:['7.31 × 10¹⁴ Hz','2.31 × 10¹⁴ Hz','3.21 × 10¹⁴ Hz','5.2 × 10¹⁴ Hz'],correct:0,answer:'7.31 × 10¹⁴ Hz',
-short:[['Frequency from the Rydberg relation (hydrogen, Z=1).','ν = R_H c (1/n₁² − 1/n₂²), n₁=2, n₂=6'],['Evaluate.','ν = 1.097×10⁷ × 3×10⁸ × (1/4 − 1/36) ≈ 7.31×10¹⁴ Hz']],
+short:[['Frequency from the Rydberg relation (hydrogen, Z=1).','ν = R_H c (1/n₁² − 1/n₂²), n₁=2, n₂=6'],['Evaluate.','ν = 1.097×10⁷ × 3×10⁸ × (1/4 − 1/36)','≈ 7.31×10¹⁴ Hz']],
 detailed:[
  ['The Rydberg formula gives wave number directly; multiplying by the speed of light converts it to frequency.','ν = R_H c (1/n₁² − 1/n₂²)'],
- ['Substitute n₁=2 (landing level) and n₂=6 (starting level).','1/2² − 1/6² = 1/4 − 1/36 = 8/36 = 2/9'],
- ['Evaluate the full expression.','ν = 1.097×10⁷ × 3×10⁸ × 2/9 ≈ 7.31×10¹⁴ Hz']
+ ['Substitute n₁=2 (landing level) and n₂=6 (starting level).','1/2² − 1/6² = 1/4 − 1/36','= 8/36','= 2/9'],
+ ['Evaluate the full expression.','ν = 1.097×10⁷ × 3×10⁸ × 2/9','≈ 7.31×10¹⁴ Hz']
 ]},
 {id:'ATOM-06',topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.29 · p.3–4',sourceRef:true,question:'The energy of an electron in the first orbit of H-atom is − 13.6 eV. The possible energy values for the excited state for electron in Bohr orbits of Li²⁺ ions is/are -',options:['−3.4 eV','−30.6 eV','−13.6 eV','All of the above'],correct:3,answer:'All of the above',
-short:[['One-electron ion energy levels scale with Z².','Eₙ = −13.6 × Z²/n² eV, Z = 3 for Li²⁺'],['Evaluate three excited orbits.','E₂ = −30.6 eV, E₃ = −13.6 eV, E₆ = −3.4 eV']],
+short:[['One-electron ion energy levels scale with Z².','Eₙ = −13.6 × Z²/n² eV, Z','= 3 for Li²⁺'],['Evaluate three excited orbits.','E₂ = −30.6 eV','E₃ = −13.6 eV, E₆','= −3.4 eV']],
 detailed:[
  ['Li²⁺ has lost two electrons, leaving one — a hydrogen-like ion with nuclear charge Z=3, so the Bohr energy formula applies with Z² scaling.','Eₙ = −13.6 Z²/n² eV'],
- ['Check each option against this formula for some integer n > 1.','E₂ = −(13.6×9)/4 = −30.6 eV — matches option (B)'],
- ['Continue checking the remaining options.','E₃ = −(13.6×9)/9 = −13.6 eV — matches option (C)','E₆ = −(13.6×9)/36 = −3.4 eV — matches option (A)'],
+ ['Check each option against this formula for some integer n > 1.','E₂ = −(13.6×9)/4','= −30.6 eV — matches option (B)'],
+ ['Continue checking the remaining options.','E₃ = −(13.6×9)/9','= −13.6 eV — matches option (C)','E₆ = −(13.6×9)/36','= −3.4 eV — matches option (A)'],
  ['All three printed values correspond to a genuine excited orbit of Li²⁺, so none can be excluded.','Answer: (D) All of the above']
 ]},
 {id:'ATOM-06-A',parent:'ATOM-06',variant:1,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.64 · p.6',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Z² scaling of one-electron ground-state/ionization energy',recoveryPurpose:'Controlled transfer — same Z² energy-scaling skill, applied as an ionization-energy ratio across two different one-electron species instead of checking excited-state values for one ion'},question:'The ratio of the ionization energy of H and Be³⁺ is:',options:['1 : 1','1 : 3','1 : 9','1 : 16'],correct:3,answer:'1 : 16',
-short:[['Ionization energy of a one-electron species scales as Z² (from n=1 to n=∞).','IE(H) : IE(Be³⁺) = 1² : 4² = 1 : 16']],
+short:[['Ionization energy of a one-electron species scales as Z² (from n=1 to n=∞).','IE(H) : IE(Be³⁺) = 1² : 4²','= 1 : 16']],
 detailed:[
  ['Ionization energy is the energy needed to remove the electron from the ground state (n=1) to n=∞, which for a hydrogen-like species is 13.6Z² eV.','IE = 13.6 Z² eV'],
- ['H has Z=1; Be³⁺ has lost three electrons, leaving one electron with nuclear charge Z=4.','IE(H) = 13.6×1² eV, IE(Be³⁺) = 13.6×4² eV'],
+ ['H has Z=1; Be³⁺ has lost three electrons, leaving one electron with nuclear charge Z=4.','IE(H) = 13.6×1² eV','IE(Be³⁺) = 13.6×4² eV'],
  ['Take the ratio; the 13.6 eV cancels.','IE(H) : IE(Be³⁺) = 1 : 16']
 ]},
 {id:'ATOM-07',topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.18 · p.3',sourceRef:true,question:'If the kinetic energy of a proton is increased nine times, the wavelength of the de-Broglie wave associated with it would become:',options:['3 times','9 times','1/3 times','1/9 times'],correct:2,answer:'1/3 times',
-short:[['de Broglie wavelength in terms of kinetic energy.','λ = h/√(2mE)'],['Ratio for E₂ = 9E₁.','λ₁/λ₂ = √(E₂/E₁) = 3 ⇒ λ₂ = λ₁/3']],
+short:[['de Broglie wavelength in terms of kinetic energy.','λ = h/√(2mE)'],['Ratio for E₂ = 9E₁.','λ₁/λ₂ = √(E₂/E₁)','= 3','⇒ λ₂ = λ₁/3']],
 detailed:[
- ['The de Broglie wavelength is set by momentum, and momentum can be written in terms of kinetic energy and mass.','λ = h/p = h/√(2mE)'],
+ ['The de Broglie wavelength is set by momentum, and momentum can be written in terms of kinetic energy and mass.','λ = h/p','= h/√(2mE)'],
  ['Mass is unchanged, so wavelength varies only with 1/√E — comparing two kinetic energies gives a ratio in √E.','λ₁/λ₂ = √(E₂/E₁)'],
- ['Substitute the ninefold increase in kinetic energy.','λ₁/λ₂ = √(9E₁/E₁) = √9 = 3'],
+ ['Substitute the ninefold increase in kinetic energy.','λ₁/λ₂ = √(9E₁/E₁)','= √9','= 3'],
  ['A ratio of 3 for λ₁/λ₂ means the new wavelength is one-third of the original.','λ₂ = λ₁/3']
 ]},
 {id:'ATOM-07-A',parent:'ATOM-07',variant:1,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.70 · p.7',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'de Broglie wavelength formula λ=h/(mv)',recoveryPurpose:'Direct retry — direct numeric substitution into λ=h/(mv) rather than a before/after ratio'},question:'A 200 g cricket ball is thrown with a speed of 3.0 × 10³ cm s⁻¹. What will be its de Broglie wavelength? (h = 6.6 × 10⁻²⁷ g cm² s⁻¹)',options:['1.1 × 10⁻³² cm','2.2 × 10⁻³² cm','0.55 × 10⁻³² cm','11.0 × 10⁻³² cm'],correct:0,answer:'1.1 × 10⁻³² cm',
-short:[['de Broglie wavelength.','λ = h/(mv) = (6.6×10⁻²⁷)/(200 × 3.0×10³)'],['Evaluate.','= 1.1×10⁻³² cm']],
+short:[['de Broglie wavelength.','λ = h/(mv)','= (6.6×10⁻²⁷)/(200 × 3.0×10³)'],['Evaluate.','= 1.1×10⁻³² cm']],
 detailed:[
  ['The de Broglie wavelength is found by direct substitution into λ = h/(mv), using consistent units (grams and cm here).','λ = h/(mv)'],
  ['Substitute the given mass and speed.','λ = (6.6×10⁻²⁷)/(200 × 3.0×10³)'],
- ['Evaluate.','λ = (6.6×10⁻²⁷)/(6×10⁵) = 1.1×10⁻³² cm']
+ ['Evaluate.','λ = (6.6×10⁻²⁷)/(6×10⁵)','= 1.1×10⁻³² cm']
 ]},
 {id:'ATOM-07-B',parent:'ATOM-07',variant:2,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.157 · p.14',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'de Broglie relation used as a comparison between two particles at equal wavelength',recoveryPurpose:'Representation change — instead of computing one wavelength, use the equal-wavelength condition to find a velocity ratio between two different particles'},question:'If the de Broglie wavelength associated with an electron is equal to the de Broglie wavelength associated with a proton (mₑ = 9.1 × 10⁻²⁸ g, mₚ = 1.67 × 10⁻²⁴ g), then:',options:['vₑ = vₚ','vₑ = 1835 vₚ','vₚ = 1836 vₑ','vₑ = 961 vₚ'],correct:1,answer:'vₑ = 1835 vₚ',
-short:[['Equal wavelengths mean equal momenta.','mₑvₑ = mₚvₚ ⇒ vₑ/vₚ = mₚ/mₑ ≈ 1835']],
+short:[['Equal wavelengths mean equal momenta.','mₑvₑ = mₚvₚ','⇒ vₑ/vₚ = mₚ/mₑ','≈ 1835']],
 detailed:[
  ['de Broglie wavelength is λ = h/(mv); if two particles share the same λ, they must share the same momentum.','mₑvₑ = mₚvₚ'],
  ['Rearranging gives the velocity ratio as the inverse mass ratio.','vₑ/vₚ = mₚ/mₑ'],
- ['Substitute the given masses.','vₑ/vₚ = (1.67×10⁻²⁴)/(9.1×10⁻²⁸) ≈ 1835'],
+ ['Substitute the given masses.','vₑ/vₚ = (1.67×10⁻²⁴)/(9.1×10⁻²⁸)','≈ 1835'],
  ['So the electron must move about 1835 times faster than the proton to share the same wavelength.','Answer: vₑ = 1835 vₚ']
 ]},
 {id:'ATOM-08',topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.6 · p.1',sourceRef:true,question:'Which of the following quantum numbers determines the orientation of the atomic orbital?',options:['n','ℓ','m','s'],correct:2,answer:'m',
 short:[['The magnetic quantum number m fixes an orbital’s spatial orientation; n fixes size/energy, ℓ fixes shape, s fixes spin.','Orientation → m']],
 detailed:[
- ['Each quantum number answers a different question about the electron’s state.','n = size/energy, ℓ = shape, m = orientation, s = spin'],
+ ['Each quantum number answers a different question about the electron’s state.','n = size/energy','ℓ = shape','m = orientation, s','= spin'],
  ['Orientation refers to how an orbital of a given shape is directed in space, and that distinction between orbitals of the same ℓ is exactly what m specifies.','Same ℓ, different orientation → different m'],
  ['So the orientation-determining quantum number is m.','Answer: m']
 ]},
 {id:'ATOM-09',topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.26 · p.3',sourceRef:true,question:'A "5g" orbital has -',options:['Zero angular and zero radial node','Zero radial node and two angular nodes','Four radial nodes and four angular nodes','Zero radial node and four angular nodes'],correct:3,answer:'Zero radial node and four angular nodes',
-short:[['For "5g": n = 5, ℓ = 4 (g subshell).','Angular nodes = ℓ = 4','Radial nodes = n − ℓ − 1 = 0']],
+short:[['For "5g": n = 5, ℓ = 4 (g subshell).','Angular nodes = ℓ','= 4','Radial nodes = n − ℓ − 1','= 0']],
 detailed:[
  ['The letter in an orbital’s name fixes its azimuthal quantum number: s, p, d, f, g correspond to ℓ = 0, 1, 2, 3, 4.','For "5g": n = 5, ℓ = 4'],
- ['The number of angular nodes always equals ℓ directly.','Angular nodes = ℓ = 4'],
- ['The number of radial nodes is whatever remains of the total (n−1) nodes once the angular ones are accounted for.','Radial nodes = n − ℓ − 1 = 5 − 4 − 1 = 0'],
+ ['The number of angular nodes always equals ℓ directly.','Angular nodes = ℓ','= 4'],
+ ['The number of radial nodes is whatever remains of the total (n−1) nodes once the angular ones are accounted for.','Radial nodes = n − ℓ − 1','= 5 − 4 − 1','= 0'],
  ['So the 5g orbital has zero radial nodes and four angular nodes.','Answer: 0 radial, 4 angular']
 ]},
 {id:'ATOM-09-A',parent:'ATOM-09',variant:1,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.140 · p.12',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Radial node counting (n−ℓ−1) for a specific orbital',recoveryPurpose:'Direct retry — same radial-node formula, two different orbitals compared side by side instead of one orbital’s full node breakdown'},question:'The number of radial nodal surfaces in 3s and 2p respectively are:',options:['2, 0','2, 1','1, 0','0, 2'],correct:0,answer:'2, 0',
@@ -325,11 +325,11 @@ detailed:[
  ['So the pair is 2 radial nodes for 3s and 0 for 2p.','Answer: 2, 0']
 ]},
 {id:'ATOM-10',topic:'Electronic configuration exceptions (Aufbau)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.1 · p.1',sourceRef:true,question:'Consider the ground state of Cr (Z = 24). The number of electrons with the azimuthal quantum number ℓ = 1 and ℓ = 2 respectively are:',options:['16 & 4','12 & 5','12 & 4','16 & 5'],correct:1,answer:'12 & 5',
-short:[['Cr is an Aufbau exception: ground state is [Ar] 3d⁵ 4s¹, not 3d⁴ 4s².','Full configuration: 1s²2s²2p⁶ 3s²3p⁶ 3d⁵ 4s¹'],['ℓ=1 electrons are the p-electrons; ℓ=2 electrons are the d-electrons.','p: 2p⁶+3p⁶ = 12; d: 3d⁵ = 5']],
+short:[['Cr is an Aufbau exception: ground state is [Ar] 3d⁵ 4s¹, not 3d⁴ 4s².','Full configuration: 1s²2s²2p⁶ 3s²3p⁶ 3d⁵ 4s¹'],['ℓ=1 electrons are the p-electrons; ℓ=2 electrons are the d-electrons.','p: 2p⁶+3p⁶ = 12','d: 3d⁵ = 5']],
 detailed:[
  ['Chromium (Z=24) is a well-known exception to the naive Aufbau filling order: a half-filled 3d subshell is more stable than the predicted 3d⁴ 4s², so one 4s electron shifts into 3d.','Ground state: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹'],
- ['Electrons with ℓ = 1 are exactly the p-subshell electrons; sum every occupied p-subshell.','ℓ=1 count = 2p⁶ + 3p⁶ = 6 + 6 = 12'],
- ['Electrons with ℓ = 2 are exactly the d-subshell electrons; Cr has only one occupied d-subshell.','ℓ=2 count = 3d⁵ = 5'],
+ ['Electrons with ℓ = 1 are exactly the p-subshell electrons; sum every occupied p-subshell.','ℓ=1 count = 2p⁶ + 3p⁶','= 6 + 6','= 12'],
+ ['Electrons with ℓ = 2 are exactly the d-subshell electrons; Cr has only one occupied d-subshell.','ℓ=2 count = 3d⁵','= 5'],
  ['So the respective counts are 12 (for ℓ=1) and 5 (for ℓ=2).','Answer: 12 & 5']
 ]},
 {id:'ATOM-11',topic:'Hydrogen-like spectral series (Rydberg formula)',diagram:'hSpectralSeries',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.2 · p.1',sourceRef:true,question:'Suppose that a hypothetical H-like atom gives a red, green, blue and violet line spectrum. Which jump would give off the red spectral line?',options:['3 → 1','2 → 1','4 → 1','3 → 2'],correct:3,answer:'3 → 2',
@@ -340,9 +340,9 @@ detailed:[
  ['So the red line must be the 3→2 transition.','Answer: 3 → 2']
 ]},
 {id:'ATOM-12',topic:'Electron arrangements within a subshell',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.5 · p.1',sourceRef:true,question:'Electrons in various degenerate orbitals of a subshell can be filled by different arrangements by changing spins. The total number of arrangements is x!/((x−y)!y!), where x = 2 × (number of orbitals) and y = number of electrons. In how many ways can a p² configuration be written?',options:['15 ways','6 ways','45 ways','10 ways'],correct:0,answer:'15 ways',
-short:[['p subshell has 3 orbitals, so x = 2×3 = 6; y = 2 electrons.','Arrangements = 6!/((6−2)!×2!) = 6!/(4!×2!)'],['Evaluate.','= 720/(24×2) = 15']],
+short:[['p subshell has 3 orbitals, so x = 2×3 = 6; y = 2 electrons.','Arrangements = 6!/((6−2)!×2!)','= 6!/(4!×2!)'],['Evaluate.','= 720/(24×2) = 15']],
 detailed:[
- ['The formula treats each of the 3 p-orbitals as offering 2 spin slots, so the total slot count is x = 2 × 3, and y is the number of electrons being placed, here 2.','x = 6, y = 2'],
+ ['The formula treats each of the 3 p-orbitals as offering 2 spin slots, so the total slot count is x = 2 × 3, and y is the number of electrons being placed, here 2.','x = 6, y','= 2'],
  ['Substitute into the given combinatorial formula.','Arrangements = 6!/(4!×2!)'],
  ['Evaluate the factorials.','= 720/(24×2) = 15'],
  ['So a p² configuration can be written in 15 distinct ways under this counting.','Answer: 15 ways']
@@ -372,7 +372,7 @@ detailed:[
 short:[['Cl: 1s² 2s² 2p⁶ 3s² 3p⁵.','ℓ=0 electrons are the s-subshell electrons: 1s²+2s²+3s² = 6']],
 detailed:[
  ['Write chlorine’s (Z=17) ground-state configuration in full.','1s² 2s² 2p⁶ 3s² 3p⁵'],
- ['Electrons with ℓ = 0 are exactly the s-subshell electrons; sum every occupied s-subshell.','ℓ=0 count = 1s²+2s²+3s² = 2+2+2 = 6'],
+ ['Electrons with ℓ = 0 are exactly the s-subshell electrons; sum every occupied s-subshell.','ℓ=0 count = 1s²+2s²+3s²','= 2+2+2','= 6'],
  ['So six electrons in chlorine have ℓ = 0.','Answer: 6']
 ]},
 {id:'ATOM-17',topic:'Probability density and radial wave functions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.27 · p.4',sourceRef:true,question:'The radii of maximum probability for the 3s, 3p and 3d electrons are in the order:',options:['(r_max)3d > (r_max)3p > (r_max)3s','(r_max)3d > (r_max)3s > (r_max)3p','(r_max)3s > (r_max)3p > (r_max)3d','None of these'],correct:2,answer:'(r_max)3s > (r_max)3p > (r_max)3d',
@@ -401,15 +401,15 @@ detailed:[
 short:[['Quantitative form of the uncertainty principle.','Δv ≥ h/(4πmΔx)'],['Substitute m=0.15 kg, Δx=1×10⁻¹⁰ m.','Δv ≈ 3.5×10⁻²⁴ m s⁻¹']],
 detailed:[
  ['The quantitative form of the uncertainty principle relates the minimum uncertainty in velocity to the uncertainty in position and the particle’s mass.','Δv ≥ h/(4πmΔx)'],
- ['Convert 1 Å to metres and substitute the given mass.','Δx = 1×10⁻¹⁰ m, m = 0.15 kg'],
- ['Evaluate.','Δv = (6.6×10⁻³⁴)/(4π × 0.15 × 1×10⁻¹⁰) ≈ 3.5×10⁻²⁴ m s⁻¹']
+ ['Convert 1 Å to metres and substitute the given mass.','Δx = 1×10⁻¹⁰ m, m','= 0.15 kg'],
+ ['Evaluate.','Δv = (6.6×10⁻³⁴)/(4π × 0.15 × 1×10⁻¹⁰)','≈ 3.5×10⁻²⁴ m s⁻¹']
 ]},
 {id:'ATOM-19-B',parent:'ATOM-19',variant:2,topic:'Heisenberg’s uncertainty principle',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.158 · p.14',sourceRef:true,relevance:{parent:'ATOM-19',sharedSkill:'Heisenberg uncertainty principle quantitative form, solved in the opposite direction (position from velocity)',recoveryPurpose:'Inverse — given a percentage uncertainty in velocity, find the position uncertainty, for a microscopic particle instead of a macroscopic one'},question:'The uncertainty in the position of an electron is to be found if the uncertainty in its velocity is 0.1%. (vₑ = 2.2 × 10⁶ m s⁻¹, mₑ = 9.1 × 10⁻³¹ kg)',options:['20 nm','22 nm','26 nm','28 nm'],correct:2,answer:'26 nm',
-short:[['Find the absolute velocity uncertainty first.','Δv = 0.1% × 2.2×10⁶ = 2200 m s⁻¹'],['Apply the uncertainty principle for Δx.','Δx ≥ h/(4πmΔv) ≈ 26 nm']],
+short:[['Find the absolute velocity uncertainty first.','Δv = 0.1% × 2.2×10⁶','= 2200 m s⁻¹'],['Apply the uncertainty principle for Δx.','Δx ≥ h/(4πmΔv) ≈ 26 nm']],
 detailed:[
- ['A percentage uncertainty must first be converted to an absolute value before it can be substituted into the formula.','Δv = 0.001 × 2.2×10⁶ m s⁻¹ = 2200 m s⁻¹'],
+ ['A percentage uncertainty must first be converted to an absolute value before it can be substituted into the formula.','Δv = 0.001 × 2.2×10⁶ m s⁻¹','= 2200 m s⁻¹'],
  ['Rearranged for position uncertainty, using the electron’s mass.','Δx ≥ h/(4πmₑΔv)'],
- ['Evaluate.','Δx = (6.6×10⁻³⁴)/(4π × 9.1×10⁻³¹ × 2200) ≈ 2.6×10⁻⁸ m = 26 nm']
+ ['Evaluate.','Δx = (6.6×10⁻³⁴)/(4π × 9.1×10⁻³¹ × 2200)','≈ 2.6×10⁻⁸ m','= 26 nm']
 ]},
 {id:'ATOM-20',topic:'Reading electron-box (orbital) diagrams',diagram:'hOrbitalHund',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.81 · p.8',sourceRef:true,question:'If the electronic structure of the oxygen atom is written as shown (1s², 2s², and 2p⁴ as two fully-paired orbitals), it would violate:',options:['Hund’s rule','Pauli’s exclusion principle','Both Hund’s and Pauli’s principles','None of these'],correct:0,answer:'Hund’s rule',
 short:[['Hund’s rule requires filling each orbital singly before any pairing; three 2p orbitals are available but only two are used, both already paired.','Violates: Hund’s rule']],
@@ -441,41 +441,41 @@ detailed:[
  ['Every other option keeps m within −ℓ to +ℓ, so only (C) is invalid.','Answer: 3, 2, −3, 1/2']
 ]},
 {id:'ATOM-04-B',parent:'ATOM-04',variant:2,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.23 · question p.16 · answer p.53',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Direct retry — same species (plain hydrogen), scaling across three orbit numbers instead of across three different one-electron species'},question:'The ratio of the radii of the first three Bohr orbits in H atom is',options:['1 : 1/2 : 1/3','1 : 2 : 3','1 : 4 : 9','1 : 4 : 27'],correct:2,answer:'1 : 4 : 9',
-short:[['For hydrogen, Z=1, so rₙ ∝ n² alone.','r₁ : r₂ : r₃ = 1² : 2² : 3² = 1 : 4 : 9']],
+short:[['For hydrogen, Z=1, so rₙ ∝ n² alone.','r₁ : r₂ : r₃ = 1² : 2² : 3²','= 1 : 4 : 9']],
 detailed:[
  ['For a fixed species, comparing different orbits of the same atom, only n changes — Z stays at 1 for hydrogen.','rₙ ∝ n²/Z, Z=1'],
  ['Substitute n=1, 2, 3.','r₁ : r₂ : r₃ = 1² : 2² : 3²'],
  ['Evaluate.','= 1 : 4 : 9']
 ]},
 {id:'ATOM-04-C',parent:'ATOM-04',variant:3,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.53 · question p.35 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Representation change — the given radius is a symbol (r) rather than a number, so the answer must be expressed algebraically'},question:'The radius of the first Bohr orbit of the H-atom is r. Then, the radius of the first orbit of Li²⁺ will be:',options:['r/9','r/3','3r','9r'],correct:1,answer:'r/3',
-short:[['At the same orbit number, radius scales as 1/Z.','r(Li²⁺) = r(H)/Z = r/3, since Li²⁺ has Z=3']],
+short:[['At the same orbit number, radius scales as 1/Z.','r(Li²⁺) = r(H)/Z','= r/3, since Li²⁺ has Z=3']],
 detailed:[
  ['Both radii are for the first orbit (n=1), so only the nuclear charge Z differs between the two species.','rₙ ∝ n²/Z, same n'],
- ['Li²⁺ has lost two electrons, leaving nuclear charge Z=3 acting on the remaining electron.','r(Li²⁺) = r(H) × (Z_H/Z_Li) = r × 1/3'],
+ ['Li²⁺ has lost two electrons, leaving nuclear charge Z=3 acting on the remaining electron.','r(Li²⁺) = r(H) × (Z_H/Z_Li)','= r × 1/3'],
  ['So the Li²⁺ radius is one-third of the given hydrogen radius.','Answer: r/3']
 ]},
 {id:'ATOM-04-D',parent:'ATOM-04',variant:4,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.27 · question p.18 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Controlled transfer — two steps instead of one: first recover the base radius from the given orbit, then apply it to a different species at a different orbit'},question:'If the radius of the 3rd orbit of Li²⁺ ion is x, then find the radius of the 1st orbit of He⁺ in terms of x.',options:['x/8','x/6','5x/8','7x/8'],correct:1,answer:'x/6',
-short:[['Recover the base radius r₀ from the given Li²⁺ orbit.','x = r₀ × 3²/3 = 3r₀ ⇒ r₀ = x/3'],['Apply r₀ to He⁺’s first orbit.','r(He⁺, n=1) = r₀/2 = (x/3)/2 = x/6']],
+short:[['Recover the base radius r₀ from the given Li²⁺ orbit.','x = r₀ × 3²/3','= 3r₀','⇒ r₀ = x/3'],['Apply r₀ to He⁺’s first orbit.','r(He⁺, n=1) = r₀/2','= (x/3)/2','= x/6']],
 detailed:[
- ['Use rₙ = r₀n²/Z for Li²⁺’s third orbit (Z=3, n=3) to solve for the base radius r₀ (hydrogen’s first-orbit radius).','x = r₀ × 3²/3 = 3r₀'],
+ ['Use rₙ = r₀n²/Z for Li²⁺’s third orbit (Z=3, n=3) to solve for the base radius r₀ (hydrogen’s first-orbit radius).','x = r₀ × 3²/3','= 3r₀'],
  ['Solve for r₀.','r₀ = x/3'],
- ['Now apply the same base radius to He⁺’s first orbit (Z=2, n=1).','r(He⁺) = r₀ × 1²/2 = r₀/2'],
- ['Substitute r₀ = x/3.','r(He⁺) = (x/3)/2 = x/6']
+ ['Now apply the same base radius to He⁺’s first orbit (Z=2, n=1).','r(He⁺) = r₀ × 1²/2','= r₀/2'],
+ ['Substitute r₀ = x/3.','r(He⁺) = (x/3)/2','= x/6']
 ]},
 {id:'ATOM-05-E',parent:'ATOM-05',variant:5,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · atomic structure.pdf · Q.31 · question p.21 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula applied to a series’ limiting (shortest) wavelength',recoveryPurpose:'Representation change — ratio between the limiting lines of two different series of the same atom, instead of the same series across two different species'},question:'In hydrogen spectrum, the shortest wavelength in the Balmer series is λ. The shortest wavelength in the Bracket series is:',options:['4λ','9λ','16λ','2λ'],correct:0,answer:'4λ',
-short:[['Shortest wavelength = series limit, where λ ∝ n₁².','λ(Balmer) ∝ 2² = 4, λ(Bracket) ∝ 4² = 16'],['Ratio.','λ(Bracket)/λ(Balmer) = 16/4 = 4 ⇒ λ(Bracket) = 4λ']],
+short:[['Shortest wavelength = series limit, where λ ∝ n₁².','λ(Balmer) ∝ 2² = 4, λ(Bracket) ∝ 4²','= 16'],['Ratio.','λ(Bracket)/λ(Balmer) = 16/4','= 4','⇒ λ(Bracket) = 4λ']],
 detailed:[
  ['A series’ shortest wavelength is its limiting line (n₂→∞), where 1/λ = R/n₁², so λ = n₁²/R.','λ(limit) ∝ n₁²'],
  ['Balmer’s base level is n₁=2; Bracket’s base level is n₁=4.','λ(Balmer) ∝ 4, λ(Bracket) ∝ 16'],
- ['Take the ratio to find Bracket’s limiting wavelength in terms of λ.','λ(Bracket) = (16/4)×λ = 4λ']
+ ['Take the ratio to find Bracket’s limiting wavelength in terms of λ.','λ(Bracket) = (16/4)×λ','= 4λ']
 ]},
 {id:'ATOM-05-F',parent:'ATOM-05',variant:6,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · atomic structure.pdf · Q.41 · question p.27 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula applied to a series’ longest wavelength (first line)',recoveryPurpose:'Representation change — ratio between the longest (first) lines of two different series, complementing ATOM-05-E’s limiting-line ratio'},question:'In the spectrum of hydrogen, the ratio of the longest wavelength in the Lyman series to the longest wavelength in the Balmer series is',options:['27/5','5/27','4/9','9/4'],correct:1,answer:'5/27',
-short:[['Longest wavelength = first line of the series.','1/λ(Lyman) = R(1−1/4) = 3R/4; 1/λ(Balmer) = R(1/4−1/9) = 5R/36'],['So λ(Lyman) = 4/(3R), λ(Balmer) = 36/(5R).','Ratio = (4/3)/(36/5) = 20/108 = 5/27']],
+short:[['Longest wavelength = first line of the series.','1/λ(Lyman) = R(1−1/4)','= 3R/4','1/λ(Balmer) = R(1/4−1/9)','= 5R/36'],['So λ(Lyman) = 4/(3R), λ(Balmer) = 36/(5R).','Ratio = (4/3)/(36/5)','= 20/108','= 5/27']],
 detailed:[
- ['A series’ longest wavelength is its first line, the smallest possible jump within that series (n₁ → n₁+1).','Lyman first line: 1→2; Balmer first line: 2→3'],
- ['Apply the Rydberg formula to each first line.','1/λ(Lyman) = R(1/1²−1/2²) = 3R/4; 1/λ(Balmer) = R(1/2²−1/3²) = 5R/36'],
- ['Invert both to get the wavelengths, then take the ratio.','λ(Lyman) = 4/(3R), λ(Balmer) = 36/(5R)'],
- ['Simplify the ratio.','λ(Lyman)/λ(Balmer) = (4/3)×(5/36) = 20/108 = 5/27']
+ ['A series’ longest wavelength is its first line, the smallest possible jump within that series (n₁ → n₁+1).','Lyman first line: 1→2','Balmer first line: 2→3'],
+ ['Apply the Rydberg formula to each first line.','1/λ(Lyman) = R(1/1²−1/2²)','= 3R/4','1/λ(Balmer) = R(1/2²−1/3²)','= 5R/36'],
+ ['Invert both to get the wavelengths, then take the ratio.','λ(Lyman) = 4/(3R)','λ(Balmer) = 36/(5R)'],
+ ['Simplify the ratio.','λ(Lyman)/λ(Balmer) = (4/3)×(5/36)','= 20/108','= 5/27']
 ]},
 {id:'ATOM-05-G',parent:'ATOM-05',variant:7,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · atomic structure.pdf · Q.33 · question p.22 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Identifying which named spectral series a transition belongs to',recoveryPurpose:'Representation change — instead of naming the series, identify the region of the electromagnetic spectrum it falls in'},question:'The wavelength of Lyman series of hydrogen atom appears in:',options:['visible region','far infrared region','ultraviolet region','infrared region'],correct:2,answer:'ultraviolet region',
 short:[['The Lyman series (all transitions ending at n=1) has the highest energy, shortest-wavelength lines of the hydrogen spectrum, which fall in the ultraviolet.','Answer: ultraviolet region']],
@@ -485,58 +485,58 @@ detailed:[
  ['That places every Lyman line in the ultraviolet.','Answer: ultraviolet region']
 ]},
 {id:'ATOM-05-H',parent:'ATOM-05',variant:8,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · atomic structure.pdf · Q.51 · question p.34 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula applied to compute the actual numeric wavelength of specific Balmer lines',recoveryPurpose:'Controlled transfer — compute four Balmer-series wavelengths from the Rydberg formula and match them to a list, instead of computing or ranking just one line'},question:'Match List I with List II. List I gives spectral lines of hydrogen for transitions from n₂ to n₁=2: (A) n₂=3, (B) n₂=4, (C) n₂=5, (D) n₂=6. List II gives wavelengths: (I) 410.2 nm, (II) 434.1 nm, (III) 656.3 nm, (IV) 486.1 nm.',options:['A-II, B-I, C-IV, D-III','A-III, B-IV, C-II, D-I','A-IV, B-III, C-I, D-II','A-I, B-II, C-III, D-IV'],correct:1,answer:'A-III, B-IV, C-II, D-I',
-short:[['Apply 1/λ = R(1/4 − 1/n₂²) to each transition; larger n₂ gives a smaller (shorter) wavelength.','n₂=3→656.3nm, n₂=4→486.1nm, n₂=5→434.1nm, n₂=6→410.2nm'],['Match to the list.','A-III, B-IV, C-II, D-I']],
+short:[['Apply 1/λ = R(1/4 − 1/n₂²) to each transition; larger n₂ gives a smaller (shorter) wavelength.','n₂=3→656.3nm','n₂=4→486.1nm','n₂=5→434.1nm','n₂=6→410.2nm'],['Match to the list.','A-III, B-IV, C-II, D-I']],
 detailed:[
  ['All four transitions land on n₁=2 (the Balmer series), so apply the Rydberg formula with n₁=2 for each starting level.','1/λ = R(1/2² − 1/n₂²)'],
  ['For A (n₂=3): 1/λ = R(0.25−0.111) = 0.1389R, giving the longest wavelength among the four.','λ_A ≈ 656.3 nm → III'],
  ['For B (n₂=4): 1/λ = R(0.25−0.0625) = 0.1875R.','λ_B ≈ 486.1 nm → IV'],
- ['For C (n₂=5) and D (n₂=6), the wavelength keeps shrinking as n₂ grows.','λ_C ≈ 434.1 nm → II; λ_D ≈ 410.2 nm → I'],
+ ['For C (n₂=5) and D (n₂=6), the wavelength keeps shrinking as n₂ grows.','λ_C ≈ 434.1 nm → II','λ_D ≈ 410.2 nm → I'],
  ['Matching each transition to its computed wavelength gives A-III, B-IV, C-II, D-I.','Answer: (B)']
 ]},
 {id:'ATOM-05-I',parent:'ATOM-05',variant:9,topic:'Hydrogen-like spectral series (Rydberg formula)',source:'Institute worksheet · atomic structure.pdf · Q.80 · question p.51 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-05',sharedSkill:'Rydberg formula ratio between two transitions sharing the same landing level',recoveryPurpose:'Representation change — shells are named by letter (M, L, N) instead of by principal quantum number'},question:'In a hydrogen like atom, when an electron jumps from the M-shell to the L-shell, the wavelength of emitted radiation is λ. If an electron jumps from N-shell to the L-shell, the wavelength of emitted radiation will be:',options:['25/16 λ','27/20 λ','16/25 λ','20/27 λ'],correct:3,answer:'20/27 λ',
-short:[['Shell letters: K=1, L=2, M=3, N=4. Both transitions land on L (n₁=2).','1/λ = R(1/4−1/9) = 5R/36 (M→L); 1/λ′ = R(1/4−1/16) = 3R/16 (N→L)'],['Ratio.','λ′/λ = (5/36)/(3/16) = 5/36 × 16/3 = 20/27 ⇒ λ′ = 20/27 λ']],
+short:[['Shell letters: K=1, L=2, M=3, N=4. Both transitions land on L (n₁=2).','1/λ = R(1/4−1/9)','= 5R/36 (M→L)','1/λ′ = R(1/4−1/16)','= 3R/16 (N→L)'],['Ratio.','λ′/λ = (5/36)/(3/16)','= 5/36 × 16/3','= 20/27','⇒ λ′ = 20/27 λ']],
 detailed:[
- ['Convert the shell letters to principal quantum numbers: K=1, L=2, M=3, N=4.','M→L is n=3→2; N→L is n=4→2'],
- ['Apply the Rydberg formula to each transition, both landing on n₁=2.','1/λ = R(1/2²−1/3²) = R(1/4−1/9) = 5R/36'],
- ['For the second transition.','1/λ′ = R(1/2²−1/4²) = R(1/4−1/16) = 3R/16'],
- ['Divide to get λ′ in terms of λ.','λ′/λ = (5R/36)/(3R/16) = (5/36)×(16/3) = 80/108 = 20/27']
+ ['Convert the shell letters to principal quantum numbers: K=1, L=2, M=3, N=4.','M→L is n=3→2','N→L is n=4→2'],
+ ['Apply the Rydberg formula to each transition, both landing on n₁=2.','1/λ = R(1/2²−1/3²)','= R(1/4−1/9)','= 5R/36'],
+ ['For the second transition.','1/λ′ = R(1/2²−1/4²)','= R(1/4−1/16)','= 3R/16'],
+ ['Divide to get λ′ in terms of λ.','λ′/λ = (5R/36)/(3R/16)','= (5/36)×(16/3)','= 80/108','= 20/27']
 ]},
 {id:'ATOM-06-D',parent:'ATOM-06',variant:4,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.8 · question p.7 · answer p.52',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula Eₙ = −13.6/n² eV, checked as a validity test',recoveryPurpose:'Direct retry — check a single printed value against the formula for plain hydrogen, instead of checking three values at once for an ion'},question:'Which of the following is the energy of a possible excited state of hydrogen?',options:['+6.8 eV','+13.6 eV','−6.8 eV','−3.4 eV'],correct:3,answer:'−3.4 eV',
-short:[['Bohr energies for hydrogen are always negative and equal −13.6/n² for integer n.','Only −3.4 eV = −13.6/2² fits; the rest are positive or non-integer n']],
+short:[['Bohr energies for hydrogen are always negative and equal −13.6/n² for integer n.','Only −3.4 eV = −13.6/2² fits','the rest are positive or non-integer n']],
 detailed:[
- ['A bound electron in hydrogen always has negative total energy, following Eₙ = −13.6/n² eV for a positive integer n.','Eₙ = −13.6/n² eV, n = 1, 2, 3, …'],
+ ['A bound electron in hydrogen always has negative total energy, following Eₙ = −13.6/n² eV for a positive integer n.','Eₙ = −13.6/n² eV, n','= 1, 2, 3, …'],
  ['The positive values (+6.8, +13.6 eV) cannot represent a bound state at all, ruling them out immediately.','Positive energy → not bound'],
- ['Checking −6.8 eV: −13.6/n² = −6.8 needs n²=2, which is not an integer, so it is impossible.','n² = 13.6/6.8 = 2 → invalid'],
+ ['Checking −6.8 eV: −13.6/n² = −6.8 needs n²=2, which is not an integer, so it is impossible.','n² = 13.6/6.8','= 2 → invalid'],
  ['Checking −3.4 eV: −13.6/n² = −3.4 needs n²=4, i.e. n=2 — a genuine excited state.','Answer: −3.4 eV (n=2)']
 ]},
 {id:'ATOM-06-E',parent:'ATOM-06',variant:5,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.30 · question p.20 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula Eₙ = −13.6/n² eV',recoveryPurpose:'Representation change — ionization energy measured FROM an excited state rather than from the ground state'},question:'The ground state energy of hydrogen atom is −13.6 eV. The energy needed to ionize hydrogen atom from its second excited state will be:',options:['13.6 eV','6.8 eV','1.51 eV','3.4 eV'],correct:2,answer:'1.51 eV',
-short:[['The second excited state is n=3.','Ionization energy = |E₃| = 13.6/3² = 1.51 eV']],
+short:[['The second excited state is n=3.','Ionization energy = |E₃|','= 13.6/3²','= 1.51 eV']],
 detailed:[
  ['The second excited state means two levels above the ground state, i.e. n=3 (ground=n=1, first excited=n=2, second excited=n=3).','n = 3'],
- ['Ionization energy from level n is the magnitude of that level’s energy (energy to reach n=∞).','IE = |Eₙ| = 13.6/n² eV'],
- ['Substitute n=3.','IE = 13.6/9 = 1.51 eV']
+ ['Ionization energy from level n is the magnitude of that level’s energy (energy to reach n=∞).','IE = |Eₙ|','= 13.6/n² eV'],
+ ['Substitute n=3.','IE = 13.6/9','= 1.51 eV']
 ]},
 {id:'ATOM-06-F',parent:'ATOM-06',variant:6,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.32 · question p.22 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Virial-theorem relation between total, kinetic and potential energy in a Bohr orbit',recoveryPurpose:'Controlled transfer — recover both KE and PE together from a given total energy, instead of just one of them from a different starting value'},question:'The total energy of an electron in an atom in an orbit is −3.4 eV. Its kinetic and potential energies are, respectively.',options:['3.4 eV, −6.8 eV','3.4 eV, 3.4 eV','−3.4 eV, −3.4 eV','−3.4 eV, −6.8 eV'],correct:0,answer:'3.4 eV, −6.8 eV',
-short:[['Virial theorem for a Coulomb orbit: KE = −(total energy), PE = 2×(total energy).','KE = −(−3.4) = 3.4 eV; PE = 2×(−3.4) = −6.8 eV']],
+short:[['Virial theorem for a Coulomb orbit: KE = −(total energy), PE = 2×(total energy).','KE = −(−3.4)','= 3.4 eV','PE = 2×(−3.4)','= −6.8 eV']],
 detailed:[
- ['For an inverse-square (Coulomb) force, the virial theorem gives PE = −2×KE, and total energy = KE+PE = −KE.','TE = −KE ⇒ KE = −TE'],
- ['Substitute the given total energy to get the kinetic energy.','KE = −(−3.4 eV) = 3.4 eV (always positive, as expected)'],
- ['Potential energy is twice the total energy.','PE = 2×TE = 2×(−3.4 eV) = −6.8 eV']
+ ['For an inverse-square (Coulomb) force, the virial theorem gives PE = −2×KE, and total energy = KE+PE = −KE.','TE = −KE','⇒ KE = −TE'],
+ ['Substitute the given total energy to get the kinetic energy.','KE = −(−3.4 eV)','= 3.4 eV (always positive, as expected)'],
+ ['Potential energy is twice the total energy.','PE = 2×TE','= 2×(−3.4 eV)','= −6.8 eV']
 ]},
 {id:'ATOM-06-G',parent:'ATOM-06',variant:7,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.73 · question p.46 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Z² scaling of the Bohr energy-level formula for a one-electron ion',recoveryPurpose:'Representation change — an excitation energy (difference between two orbits of the same ion), instead of checking or ratioing single energy values'},question:'Energy required for the electron excitation in Li⁺⁺ from the first to the third Bohr orbit is:',options:['36.3 eV','108.8 eV','122.4 eV','12.1 eV'],correct:1,answer:'108.8 eV',
-short:[['Li²⁺ has Z=3.','ΔE = 13.6×Z²×(1/1² − 1/3²) = 13.6×9×(8/9) = 108.8 eV']],
+short:[['Li²⁺ has Z=3.','ΔE = 13.6×Z²×(1/1² − 1/3²)','= 13.6×9×(8/9)','= 108.8 eV']],
 detailed:[
  ['Li²⁺ (written Li⁺⁺ here) is a one-electron ion with Z=3, so the Bohr energy formula applies with Z² scaling.','Eₙ = −13.6×Z²/n² eV, Z=3'],
- ['Excitation energy is the difference between the final and initial energies.','ΔE = E₃ − E₁ = −(13.6×9)/9 − (−(13.6×9)/1) = 13.6×9×(1 − 1/9)'],
- ['Evaluate.','ΔE = (13.6×9×8)/9 = 13.6×8 = 108.8 eV']
+ ['Excitation energy is the difference between the final and initial energies.','ΔE = E₃ − E₁','= −(13.6×9)/9 − (−(13.6×9)/1)','= 13.6×9×(1 − 1/9)'],
+ ['Evaluate.','ΔE = (13.6×9×8)/9','= 13.6×8','= 108.8 eV']
 ]},
 {id:'ATOM-07-C',parent:'ATOM-07',variant:3,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · atomic structure.pdf · Q.76 · question p.48 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'Connecting the de Broglie wavelength to Bohr’s orbit condition (λ=2πr/n)',recoveryPurpose:'Controlled transfer — de Broglie wavelength recovered from an orbit radius via Bohr’s quantization condition, instead of from mass and velocity directly'},question:'Consider an electron in a hydrogen atom revolving in its second excited state (having radius 4.65 Å). The de Broglie wavelength of this electron is:',options:['6.6 Å','3.5 Å','9.7 Å','12.9 Å'],correct:2,answer:'9.7 Å',
-short:[['Bohr’s quantization condition is exactly the de Broglie standing-wave condition: nλ = 2πr.','λ = 2πr/n'],['Second excited state is n=3.','λ = (2π×4.65)/3 ≈ 9.7 Å']],
+short:[['Bohr’s quantization condition is exactly the de Broglie standing-wave condition: nλ = 2πr.','λ = 2πr/n'],['Second excited state is n=3.','λ = (2π×4.65)/3','≈ 9.7 Å']],
 detailed:[
- ['Bohr’s postulate that angular momentum is quantized (mvr = nh/2π) is equivalent to requiring the electron’s de Broglie wave to fit the orbit’s circumference in a whole number of wavelengths.','2πr = nλ ⇒ λ = 2πr/n'],
+ ['Bohr’s postulate that angular momentum is quantized (mvr = nh/2π) is equivalent to requiring the electron’s de Broglie wave to fit the orbit’s circumference in a whole number of wavelengths.','2πr = nλ','⇒ λ = 2πr/n'],
  ['The second excited state of hydrogen is n=3 (ground=1, first excited=2, second excited=3).','n = 3'],
  ['Substitute the given radius and n.','λ = 2π(4.65 Å)/3'],
- ['Evaluate.','λ ≈ 29.2/3 ≈ 9.7 Å']
+ ['Evaluate.','λ ≈ 29.2/3','≈ 9.7 Å']
 ]},
 {id:'ATOM-08-A',parent:'ATOM-08',variant:1,topic:'Significance of the four quantum numbers',source:'Institute worksheet · atomic structure.pdf · Q.10 · question p.8 · answer p.52',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching a quantum number to the specific property it distinguishes',recoveryPurpose:'Direct retry — same kind of matching skill as ATOM-08 (orientation → m), applied instead to what distinguishes two electrons sharing one orbital'},question:'Two electrons occupying the same orbital are distinguished by',options:['azimuthal quantum number','spin quantum number','principal quantum number','magnetic quantum number'],correct:1,answer:'spin quantum number',
 short:[['Electrons in the same orbital share n, ℓ and m by definition; only spin (s = ±1/2) can differ, by the Pauli exclusion principle.','Answer: spin quantum number']],
@@ -546,18 +546,18 @@ detailed:[
  ['So the distinguishing quantum number is spin.','Answer: spin quantum number']
 ]},
 {id:'ATOM-22',topic:'Bohr’s postulate of angular momentum quantization',source:'Institute worksheet · atomic structure.pdf · Q.54 · question p.36 · answer p.56',sourceRef:true,question:'The angular momentum of an electron present in the excited state of Hydrogen is 1.5h/π. The electron present in',options:['Third orbit','Second orbit','Fourth orbit','Fifth orbit'],correct:0,answer:'Third orbit',
-short:[['Bohr’s postulate: angular momentum = nh/2π.','nh/2π = 1.5h/π ⇒ n/2 = 1.5 ⇒ n = 3']],
+short:[['Bohr’s postulate: angular momentum = nh/2π.','nh/2π = 1.5h/π','⇒ n/2 = 1.5','⇒ n = 3']],
 detailed:[
  ['Bohr’s postulate quantizes orbital angular momentum in whole multiples of h/2π.','L = nh/2π'],
- ['Set this equal to the given angular momentum and solve for n.','nh/2π = 1.5h/π = 3h/2π ⇒ n = 3'],
+ ['Set this equal to the given angular momentum and solve for n.','nh/2π = 1.5h/π','= 3h/2π','⇒ n = 3'],
  ['n=3 corresponds to the third orbit.','Answer: Third orbit']
 ]},
 {id:'ATOM-22-A',parent:'ATOM-22',variant:1,topic:'Bohr’s postulate of angular momentum quantization',source:'Institute worksheet · atomic structure.pdf · Q.29 · question p.20 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-22',sharedSkill:'Recovering the orbit number n from a given angular momentum via L=nh/2π',recoveryPurpose:'Controlled transfer — same angular-momentum-to-n step as the core, then a second step (Bohr energy formula) not required by the core question'},question:'The angular momentum of an electron moving in an orbit of hydrogen atom is 1.5(h/π). The energy in the same orbit is nearly.',options:['−1.5 eV','−1.6 eV','−1.3 eV','−1.4 eV'],correct:0,answer:'−1.5 eV',
-short:[['Angular momentum gives the orbit number, as in the core question.','nh/2π = 1.5h/π ⇒ n = 3'],['Apply the Bohr energy formula at n=3.','E₃ = −13.6/3² ≈ −1.51 eV ≈ −1.5 eV']],
+short:[['Angular momentum gives the orbit number, as in the core question.','nh/2π = 1.5h/π','⇒ n = 3'],['Apply the Bohr energy formula at n=3.','E₃ = −13.6/3²','≈ −1.51 eV','≈ −1.5 eV']],
 detailed:[
- ['First recover n from the angular momentum, exactly as in the core question.','nh/2π = 1.5h/π ⇒ n = 3'],
+ ['First recover n from the angular momentum, exactly as in the core question.','nh/2π = 1.5h/π','⇒ n = 3'],
  ['Then apply the Bohr energy-level formula for hydrogen at that orbit.','Eₙ = −13.6/n² eV'],
- ['Substitute n=3.','E₃ = −13.6/9 ≈ −1.51 eV, i.e. nearly −1.5 eV']
+ ['Substitute n=3.','E₃ = −13.6/9','≈ −1.51 eV, i.e. nearly −1.5 eV']
 ]},
 {id:'ATOM-22-B',parent:'ATOM-22',variant:2,topic:'Bohr’s postulate of angular momentum quantization',source:'Institute worksheet · atomic structure.pdf · Q.28 · question p.19 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-22',sharedSkill:'Recalling the angular-momentum formula alongside three other Bohr/quantum formulas',recoveryPurpose:'Representation change — a matching-format question that requires recalling four related formulas (uncertainty, radius, angular momentum, de Broglie wavelength) side by side, rather than applying angular momentum alone'},question:'Match the Column-I with Column-II. Column-I: (I) Uncertainty of an object, (II) Bohr’s radius of an orbit, (III) Angular momentum of an orbit, (IV) de Broglie wavelength. Column-II: (P) 0.529×n²/Z, (Q) h/4πm, (R) h/mv, (S) nh/2π.',options:['(I)-(R), (II)-(S), (III)-(P), (IV)-(Q)','(I)-(Q), (II)-(P), (III)-(S), (IV)-(R)','(I)-(S), (II)-(R), (III)-(P), (IV)-(Q)','(I)-(P), (II)-(Q), (III)-(S), (IV)-(R)'],correct:1,answer:'(I)-(Q), (II)-(P), (III)-(S), (IV)-(R)',
 short:[['Match each named quantity to its formula: uncertainty→h/4πm, Bohr radius→0.529n²/Z, angular momentum→nh/2π, de Broglie λ→h/mv.','(I)-Q, (II)-P, (III)-S, (IV)-R']],
@@ -568,29 +568,29 @@ detailed:[
  ['The de Broglie wavelength is h/mv.','(IV) → (R) h/mv, giving (I)-Q, (II)-P, (III)-S, (IV)-R']
 ]},
 {id:'ATOM-23',topic:'Ritz combination principle for spectral series',source:'Institute worksheet · atomic structure.pdf · Q.66 · question p.41 · answer p.56',sourceRef:true,question:'For an atom or ion having a single electron, three transitions between three orbits (n₃, n₂ and n₁, with n₃ > n₂ > n₁) are observed. The direct n₃→n₁ transition has wavelength 40 mm, the n₂→n₁ step has wavelength 60 mm, and the n₃→n₂ step has the missing wavelength x. What is the value of x?',options:['20 mm','40 mm','60 mm','120 mm'],correct:3,answer:'120 mm',
-short:[['By the Ritz combination principle, the wave numbers of the two steps add up to the wave number of the direct transition.','1/40 = 1/x + 1/60'],['Solve for x.','1/x = 1/40 − 1/60 = 1/120 ⇒ x = 120 mm']],
+short:[['By the Ritz combination principle, the wave numbers of the two steps add up to the wave number of the direct transition.','1/40 = 1/x + 1/60'],['Solve for x.','1/x = 1/40 − 1/60','= 1/120','⇒ x = 120 mm']],
 detailed:[
  ['The Ritz combination principle says that going through an intermediate level gives the same total energy as the direct jump, so wave numbers (∝1/λ) of the two steps add up to that of the direct transition.','1/λ(n₃→n₁) = 1/λ(n₃→n₂) + 1/λ(n₂→n₁)'],
  ['Substitute the given direct wavelength (40 mm) and the n₂→n₁ step (60 mm), solving for the missing step x = λ(n₃→n₂).','1/40 = 1/x + 1/60'],
- ['Isolate 1/x.','1/x = 1/40 − 1/60 = 3/120 − 2/120 = 1/120'],
+ ['Isolate 1/x.','1/x = 1/40 − 1/60','= 3/120 − 2/120','= 1/120'],
  ['So the missing wavelength is 120 mm — longer than either of the other two, consistent with the n₃→n₂ step carrying the least energy of the three.','Answer: 120 mm']
 ]},
 {id:'ATOM-09-B',parent:'ATOM-09',variant:2,topic:'Radial and angular nodes',source:'Institute worksheet · atomic structure.pdf · Q.18 · question p.13 · answer p.53',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Node-counting rules: angular nodes = ℓ, radial nodes = n−ℓ−1',recoveryPurpose:'Inverse — given the node counts, identify the orbital, instead of given the orbital, find the node counts'},question:'Orbital having 3 angular nodes and 3 total nodes is',options:['6d','5p','3d','4f'],correct:3,answer:'4f',
-short:[['Angular nodes = ℓ = 3, so the subshell is f.','Total nodes = n−1 = 3 ⇒ n = 4 ⇒ orbital is 4f']],
+short:[['Angular nodes = ℓ = 3, so the subshell is f.','Total nodes = n−1','= 3','⇒ n = 4','⇒ orbital is 4f']],
 detailed:[
- ['The number of angular nodes always equals ℓ directly, so ℓ=3 identifies an f subshell.','3 angular nodes ⇒ ℓ = 3 (f)'],
- ['Total nodes (radial + angular) always equals n−1 for any orbital.','n − 1 = 3 ⇒ n = 4'],
+ ['The number of angular nodes always equals ℓ directly, so ℓ=3 identifies an f subshell.','3 angular nodes','⇒ ℓ = 3 (f)'],
+ ['Total nodes (radial + angular) always equals n−1 for any orbital.','n − 1 = 3','⇒ n = 4'],
  ['Combining n=4 with the f subshell gives the orbital.','Answer: 4f']
 ]},
 {id:'ATOM-16-A',parent:'ATOM-16',variant:1,topic:'Counting electrons by azimuthal quantum number',source:'Institute worksheet · atomic structure.pdf · Q.17 · question p.13 · answer p.53',sourceRef:true,relevance:{parent:'ATOM-16',sharedSkill:'Maximum electron capacity of a subshell, 2(2ℓ+1)',recoveryPurpose:'Representation change — computed directly from a formula for a bare (n, ℓ) pair, instead of counted from a written electron configuration'},question:'The total number of electrons that can be accommodated in all the orbitals having principal quantum number 2 and azimuthal quantum number 1 are',options:['2','4','6','8'],correct:2,answer:'6',
-short:[['n=2, ℓ=1 describes the 2p subshell.','Maximum capacity = 2(2ℓ+1) = 2(2×1+1) = 6']],
+short:[['n=2, ℓ=1 describes the 2p subshell.','Maximum capacity = 2(2ℓ+1)','= 2(2×1+1)','= 6']],
 detailed:[
  ['n=2 with ℓ=1 identifies the 2p subshell directly.','n=2, ℓ=1 → 2p'],
  ['Any subshell of azimuthal quantum number ℓ holds at most 2(2ℓ+1) electrons (2 electrons in each of the 2ℓ+1 orbitals).','Capacity = 2(2ℓ+1)'],
- ['Substitute ℓ=1.','Capacity = 2(3) = 6']
+ ['Substitute ℓ=1.','Capacity = 2(3)','= 6']
 ]},
 {id:'ATOM-17-A',parent:'ATOM-17',variant:1,topic:'Probability density and radial wave functions',source:'Institute worksheet · atomic structure.pdf · Q.26 · question p.17 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-17',sharedSkill:'Reading the radial probability distribution 4πr²ψ² for an orbital',recoveryPurpose:'Representation change — read the principal quantum number off a plotted radial-distribution graph, instead of ranking radii of maximum probability across three named orbitals'},question:'The following graph (4πr²ψ² vs r, showing three peaks) is plotted for an ns-orbital. The value of n will be:',options:['1','2','3','4'],correct:2,answer:'3',
-short:[['For an ns orbital (ℓ=0), the number of radial-probability peaks equals n.','3 peaks shown ⇒ n = 3']],
+short:[['For an ns orbital (ℓ=0), the number of radial-probability peaks equals n.','3 peaks shown','⇒ n = 3']],
 detailed:[
  ['The radial probability distribution 4πr²ψ² of any ns orbital has exactly n maxima (peaks), since it has n−1 radial nodes separating them.','Number of peaks = n (for ℓ=0)'],
  ['The graph shows three peaks.','3 peaks'],
@@ -599,13 +599,13 @@ detailed:[
 {id:'ATOM-21-B',parent:'ATOM-21',variant:2,topic:'Identifying invalid quantum-number sets',source:'Institute worksheet · atomic structure.pdf · Q.63 · question p.39 · answer p.56',sourceRef:true,relevance:{parent:'ATOM-21',sharedSkill:'Checking a quantum-number quadruple against the n/ℓ/m validity rules',recoveryPurpose:'Representation change — pick the one VALID set for a named orbital (4f), instead of picking the one invalid set out of four otherwise-plausible sets'},question:'Which of the following sets of quantum numbers is correct for an electron in a 4f orbital?',options:['n=3, ℓ=2, m=−2, s=+1/2','n=4, ℓ=4, m=−4, s=−1/2','n=4, ℓ=3, m=+1, s=+1/2','n=4, ℓ=3, m=+4, s=+1/2'],correct:2,answer:'n=4, ℓ=3, m=+1, s=+1/2',
 short:[['A 4f orbital needs n=4 and ℓ=3, with m within −3 to +3.','Only (C) has all three consistent: n=4, ℓ=3, m=+1']],
 detailed:[
- ['“4f” fixes n=4 and ℓ=3 (f ↔ ℓ=3); this immediately rules out (A), which has n=3.','4f ⇒ n=4, ℓ=3'],
+ ['“4f” fixes n=4 and ℓ=3 (f ↔ ℓ=3); this immediately rules out (A), which has n=3.','4f','⇒ n=4, ℓ=3'],
  ['(B) has ℓ=4, but ℓ can be at most n−1=3 for n=4, so ℓ=4 is impossible.','ℓ ≤ n−1'],
  ['(D) has m=+4, but m must satisfy −ℓ ≤ m ≤ ℓ, i.e. −3 to +3 for ℓ=3, so m=+4 is impossible.','−ℓ ≤ m ≤ ℓ'],
  ['(C) has n=4, ℓ=3, m=+1 — every constraint satisfied.','Answer: n=4, ℓ=3, m=+1, s=+1/2']
 ]},
 {id:'ATOM-21-C',parent:'ATOM-21',variant:3,topic:'Identifying invalid quantum-number sets',source:'Institute worksheet · atomic structure.pdf · Q.67 · question p.42 · answer p.56 (Q.69, p.43, is a verbatim duplicate of this item)',sourceRef:true,relevance:{parent:'ATOM-21',sharedSkill:'Checking several quantum-number quadruples against the n/ℓ/m validity rules at once',recoveryPurpose:'Controlled transfer — check five quadruples in one table and identify every invalid one, instead of checking four options for a single invalid set'},question:'Consider the following sets of quantum numbers — (i) n=3,ℓ=0,m=0,s=+1/2; (ii) n=2,ℓ=2,m=1,s=+1/2; (iii) n=4,ℓ=3,m=−2,s=−1/2; (iv) n=1,ℓ=0,m=−1,s=−1/2; (v) n=3,ℓ=2,m=3,s=+1/2. Which of the following sets of quantum numbers is not possible?',options:['(i), (ii), (iii) and (iv)','(ii), (iv) and (v)','(i) and (iii)','(ii), (iii) and (iv)'],correct:1,answer:'(ii), (iv) and (v)',
-short:[['Check each against ℓ≤n−1 and −ℓ≤m≤ℓ.','(ii): ℓ=2 needs n≥3, but n=2 — invalid. (iv): ℓ=0 forces m=0, but m=−1 — invalid. (v): ℓ=2 allows m up to 2, but m=3 — invalid'],['(i) and (iii) satisfy every rule.','Invalid sets: (ii), (iv), (v)']],
+short:[['Check each against ℓ≤n−1 and −ℓ≤m≤ℓ.','(ii): ℓ=2 needs n≥3 but n=2 — invalid','(iv): ℓ=0 forces m=0 but m=−1 — invalid','(v): ℓ=2 allows m up to 2 but m=3 — invalid'],['(i) and (iii) satisfy every rule.','Invalid sets: (ii), (iv), (v)']],
 detailed:[
  ['(i): n=3, ℓ=0 (ℓ≤n−1 ✓), m=0 (within −ℓ..ℓ ✓) — valid.','(i) is possible'],
  ['(ii): n=2, ℓ=2 — but ℓ can be at most n−1=1 for n=2, so ℓ=2 is impossible.','(ii) is not possible'],
@@ -631,16 +631,16 @@ detailed:[
  ['Putting it together in decreasing order of energy.','Answer: 5f > 6p > 5p > 4d']
 ]},
 {id:'ATOM-24-A',parent:'ATOM-24',variant:1,topic:'Ordering orbital energies by the (n+ℓ) rule',source:'Institute worksheet · atomic structure.pdf · Q.70 · question p.44 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-24',sharedSkill:'The (n+ℓ) rule for ranking orbital energies, including the same-sum tie-break by n',recoveryPurpose:'Representation change — the four orbitals are given as full (n, ℓ, m, s) quantum-number sets rather than by subshell name'},question:'Arrange the electrons represented by the following set of quantum numbers in the decreasing order of energy — (i) n=4,ℓ=0,m=0,s=+1/2; (ii) n=3,ℓ=1,m=1,s=−1/2; (iii) n=3,ℓ=2,m=0,s=+1/2; (iv) n=3,ℓ=0,m=0,s=−1/2.',options:['(i) > (ii) > (iii) > (iv)','(iv) > (iii) > (ii) > (i)','(iii) > (i) > (ii) > (iv)','(i) > (iii) > (ii) > (iv)'],correct:2,answer:'(iii) > (i) > (ii) > (iv)',
-short:[['Reduce each to a subshell and rank by (n+ℓ), tie-breaking by n.','(i)=4s(n+ℓ=4), (ii)=3p(n+ℓ=4), (iii)=3d(n+ℓ=5), (iv)=3s(n+ℓ=3)'],['Decreasing order.','3d(5) > 4s(4, higher n than 3p) > 3p(4, lower n) > 3s(3) ⇒ (iii) > (i) > (ii) > (iv)']],
+short:[['Reduce each to a subshell and rank by (n+ℓ), tie-breaking by n.','(i)=4s(n+ℓ=4), (ii)=3p(n+ℓ=4), (iii)=3d(n+ℓ=5), (iv)=3s(n+ℓ=3)'],['Decreasing order.','3d(5) > 4s(4, higher n than 3p) > 3p(4, lower n) > 3s(3)','⇒ (iii) > (i) > (ii) > (iv)']],
 detailed:[
- ['First identify the subshell each quantum-number set describes.','(i) n=4,ℓ=0 → 4s; (ii) n=3,ℓ=1 → 3p; (iii) n=3,ℓ=2 → 3d; (iv) n=3,ℓ=0 → 3s'],
+ ['First identify the subshell each quantum-number set describes.','(i) n=4,ℓ=0 → 4s','(ii) n=3,ℓ=1 → 3p','(iii) n=3,ℓ=2 → 3d','(iv) n=3,ℓ=0 → 3s'],
  ['Compute n+ℓ for each.','4s=4, 3p=4, 3d=5, 3s=3'],
  ['3d has the highest sum, so (iii) is highest in energy; 3s has the lowest sum, so (iv) is lowest.','(iii) highest, (iv) lowest'],
  ['4s and 3p tie at n+ℓ=4; the lower-n orbital (3p, n=3) is lower in energy, so 4s (i) ranks above 3p (ii).','(i) > (ii)'],
  ['Combining all four gives the full decreasing order.','Answer: (iii) > (i) > (ii) > (iv)']
 ]},
 {id:'ATOM-26',topic:'Applicability of the Bohr model',source:'Institute worksheet · atomic structure.pdf · Q.36 · question p.24 · answer p.54',sourceRef:true,question:'For which one of the following, Bohr model is not valid?',options:['Singly ionised helium atom (He⁺)','Deuteron atom','Singly ionised neon atom (Ne⁺)','Hydrogen atom'],correct:2,answer:'Singly ionised neon atom (Ne⁺)',
-short:[['The Bohr model only applies to one-electron (hydrogen-like) species.','He⁺, deuteron and H all have exactly one electron; Ne⁺ (from Z=10) still has 9 electrons left — not one-electron']],
+short:[['The Bohr model only applies to one-electron (hydrogen-like) species.','He⁺, deuteron and H all have exactly one electron','Ne⁺ (from Z=10) still has 9 electrons left — not one-electron']],
 detailed:[
  ['The Bohr model was derived for a single electron orbiting a nucleus, so it only applies exactly to one-electron species.','Applies to: H, He⁺, Li²⁺, … and isotopes like deuterium'],
  ['He⁺ (helium minus one electron), a deuteron atom (a hydrogen isotope) and neutral hydrogen all have exactly one electron around the nucleus.','All one-electron species'],
@@ -648,30 +648,30 @@ detailed:[
  ['So the Bohr model fails specifically for Ne⁺.','Answer: Singly ionised neon atom (Ne⁺)']
 ]},
 {id:'ATOM-27',topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · atomic structure.pdf · Q.42 · question p.28 · answer p.55',sourceRef:true,question:'Hydrogen atom in ground state is excited by a monochromatic radiation of λ = 975 Å. Number of spectral lines in the resulting spectrum emitted will be',options:['3','2','6','10'],correct:2,answer:'6',
-short:[['Find n from the absorbed photon energy, then count lines.','E = hc/λ ≈ 12.7 eV; 13.6(1−1/n²) = 12.7 ⇒ n ≈ 4'],['Number of spectral lines = n(n−1)/2.','= (4×3)/2 = 6']],
+short:[['Find n from the absorbed photon energy, then count lines.','E = hc/λ','≈ 12.7 eV','13.6(1−1/n²) = 12.7','⇒ n ≈ 4'],['Number of spectral lines = n(n−1)/2.','= (4×3)/2 = 6']],
 detailed:[
- ['Convert the absorbed photon’s wavelength to energy using E=hc/λ (with hc≈12400 eV·Å).','E = 12400/975 ≈ 12.7 eV'],
+ ['Convert the absorbed photon’s wavelength to energy using E=hc/λ (with hc≈12400 eV·Å).','E = 12400/975','≈ 12.7 eV'],
  ['This energy excites the electron from n=1 to some level n; use the Bohr energy-gap formula to solve for n.','13.6(1 − 1/n²) = 12.7'],
- ['Solve.','1 − 1/n² = 0.934 ⇒ 1/n² ≈ 0.066 ⇒ n² ≈ 15.1 ⇒ n ≈ 4'],
+ ['Solve.','1 − 1/n² = 0.934','⇒ 1/n² ≈ 0.066','⇒ n² ≈ 15.1','⇒ n ≈ 4'],
  ['Once excited to n=4, the electron can cascade down through every possible pair of levels, giving n(n−1)/2 possible spectral lines.','Lines = (4×3)/2 = 6']
 ]},
 {id:'ATOM-27-A',parent:'ATOM-27',variant:1,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · atomic structure.pdf · Q.50 · question p.33 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Finding n from an absorbed photon’s energy, then counting spectral lines via n(n−1)/2',recoveryPurpose:'Direct retry — same two-step method as the core, with the photon energy given directly in eV instead of as a wavelength'},question:'Ionization potential of hydrogen atom is 13.6 eV. Hydrogen atoms in the ground state are excited by monochromatic radiation of photon energy 12.1 eV. According to Bohr’s theory, the spectral lines emitted by hydrogen will be',options:['one','two','three','four'],correct:2,answer:'three',
-short:[['Find n from the excitation energy.','13.6(1−1/n²) = 12.1 ⇒ n ≈ 3'],['Number of spectral lines = n(n−1)/2.','= (3×2)/2 = 3']],
+short:[['Find n from the excitation energy.','13.6(1−1/n²) = 12.1','⇒ n ≈ 3'],['Number of spectral lines = n(n−1)/2.','= (3×2)/2 = 3']],
 detailed:[
  ['Use the Bohr energy-gap formula directly, since the photon energy is already given in eV.','13.6(1 − 1/n²) = 12.1'],
- ['Solve for n.','1 − 1/n² = 0.890 ⇒ 1/n² ≈ 0.110 ⇒ n² ≈ 9.07 ⇒ n = 3'],
+ ['Solve for n.','1 − 1/n² = 0.890','⇒ 1/n² ≈ 0.110','⇒ n² ≈ 9.07','⇒ n = 3'],
  ['With the electron excited to n=3, every possible downward pair of levels among {1,2,3} gives a spectral line.','Lines = (3×2)/2 = 3']
 ]},
 {id:'ATOM-28',topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · atomic structure.pdf · Q.64 · question p.40 · answer p.56',sourceRef:true,question:'The orbital angular momentum for an electron revolving in an orbit is given by √(ℓ(ℓ+1))·h/2π. This momentum for an s-electron will be given by',options:['zero','h/2π','√2 · h/2π','+1/2 · h/2π'],correct:0,answer:'zero',
-short:[['An s-electron has ℓ=0.','√(ℓ(ℓ+1)) = √(0×1) = 0, so the angular momentum is zero']],
+short:[['An s-electron has ℓ=0.','√(ℓ(ℓ+1)) = √(0×1)','= 0, so the angular momentum is zero']],
 detailed:[
  ['This is the full quantum-mechanical orbital angular momentum formula, distinct from Bohr’s simpler nh/2π postulate — it depends on ℓ, not n.','L = √(ℓ(ℓ+1)) · h/2π'],
  ['An s-electron has azimuthal quantum number ℓ=0 by definition.','ℓ = 0'],
- ['Substitute ℓ=0 into the formula.','√(0×(0+1)) = √0 = 0'],
+ ['Substitute ℓ=0 into the formula.','√(0×(0+1)) = √0','= 0'],
  ['So an s-electron’s orbital angular momentum is exactly zero.','Answer: zero']
 ]},
 {id:'ATOM-10-A',parent:'ATOM-10',variant:1,topic:'Electronic configuration exceptions (Aufbau)',source:'Original practice · authored for this bank as a variant of ATOM-10',sourceRef:false,relevance:{parent:'ATOM-10',sharedSkill:'Half-filled/fully-filled d-subshell exceptions to the Aufbau order',recoveryPurpose:'Direct retry — same exception idea as Cr (3d⁵4s¹), applied to Cu (3d¹⁰4s¹) with a different subshell count'},question:'Consider the ground state of Cu (Z = 29). The number of electrons with the azimuthal quantum number ℓ = 1 and ℓ = 2 respectively are:',options:['12 & 9','16 & 10','12 & 10','10 & 12'],correct:2,answer:'12 & 10',
-short:[['Cu is an exception: the fully-filled d subshell is favoured, so the ground state is 3d¹⁰4s¹, not 3d⁹4s².','ℓ = 1: 2p⁶ + 3p⁶ = 12','ℓ = 2: 3d¹⁰ = 10']],
+short:[['Cu is an exception: the fully-filled d subshell is favoured, so the ground state is 3d¹⁰4s¹, not 3d⁹4s².','ℓ = 1: 2p⁶ + 3p⁶','= 12','ℓ = 2: 3d¹⁰','= 10']],
 detailed:[
  ['Write copper’s ground-state configuration, remembering the exception that moves one 4s electron into 3d to complete it.','1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s¹'],
  ['Electrons with ℓ = 1 are the p-subshell electrons: 2p and 3p.','2p⁶ + 3p⁶ = 12'],
@@ -679,36 +679,36 @@ detailed:[
  ['So the counts are 12 and 10 (using the regular 3d⁹4s² order would wrongly give 9 for ℓ = 2).','Answer: 12 & 10']
 ]},
 {id:'ATOM-12-A',parent:'ATOM-12',variant:1,topic:'Electron arrangements within a subshell',source:'Original practice · authored for this bank as a variant of ATOM-12',sourceRef:false,relevance:{parent:'ATOM-12',sharedSkill:'Counting spin arrangements with x!/((x−y)!y!)',recoveryPurpose:'Direct retry — same formula, a p³ configuration instead of p²'},question:'Electrons in various degenerate orbitals of a subshell can be filled by different arrangements by changing spins. The total number of arrangements is x!/((x−y)!y!), where x = 2 × (number of orbitals) and y = number of electrons. In how many ways can a p³ configuration be written?',options:['15 ways','6 ways','35 ways','20 ways'],correct:3,answer:'20 ways',
-short:[['A p subshell has 3 orbitals, so x = 6; three electrons, so y = 3.','Arrangements = 6!/((6−3)!×3!) = 6!/(3!×3!)','= 720/(6×6) = 20']],
+short:[['A p subshell has 3 orbitals, so x = 6; three electrons, so y = 3.','Arrangements = 6!/((6−3)!×3!)','= 6!/(3!×3!)','= 720/(6×6) = 20']],
 detailed:[
- ['Find x and y: three p orbitals give x = 2 × 3, and the configuration has three electrons.','x = 6, y = 3'],
- ['Substitute into the given formula.','Arrangements = 6!/((6−3)!×3!) = 6!/(3!×3!)'],
+ ['Find x and y: three p orbitals give x = 2 × 3, and the configuration has three electrons.','x = 6, y','= 3'],
+ ['Substitute into the given formula.','Arrangements = 6!/((6−3)!×3!)','= 6!/(3!×3!)'],
  ['Evaluate the factorials.','= 720/(6×6) = 20']
 ]},
 {id:'ATOM-16-B',parent:'ATOM-16',variant:2,topic:'Counting electrons by azimuthal quantum number',source:'Original practice · authored for this bank as a variant of ATOM-16',sourceRef:false,relevance:{parent:'ATOM-16',sharedSkill:'Counting electrons of one ℓ value from a written ground-state configuration',recoveryPurpose:'Direct retry — same counting step as the core, a different atom (Ca) and a different ℓ (p instead of s)'},question:'The number of electrons having the azimuthal quantum number ℓ = 1 in a calcium atom (Z = 20) is:',options:['12','6','8','2'],correct:0,answer:'12',
-short:[['Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s².','ℓ = 1 electrons are the p electrons: 2p⁶ + 3p⁶ = 12']],
+short:[['Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s².','ℓ = 1 electrons are the p electrons: 2p⁶ + 3p⁶','= 12']],
 detailed:[
  ['Write calcium’s (Z = 20) ground-state configuration in full.','1s² 2s² 2p⁶ 3s² 3p⁶ 4s²'],
- ['Electrons with ℓ = 1 are exactly the p-subshell electrons; add every occupied p subshell.','ℓ = 1 count = 2p⁶ + 3p⁶ = 6 + 6'],
+ ['Electrons with ℓ = 1 are exactly the p-subshell electrons; add every occupied p subshell.','ℓ = 1 count','= 2p⁶ + 3p⁶','= 6 + 6'],
  ['So twelve electrons in calcium have ℓ = 1.','Answer: 12']
 ]},
 {id:'ATOM-22-C',parent:'ATOM-22',variant:3,topic:'Bohr’s postulate of angular momentum quantization',source:'Original practice · authored for this bank as a variant of ATOM-22',sourceRef:false,relevance:{parent:'ATOM-22',sharedSkill:'Bohr’s angular-momentum postulate L = nh/2π',recoveryPurpose:'Inverse — given the orbit, find the angular momentum, instead of given the angular momentum, find the orbit'},question:'The angular momentum of an electron in the fourth Bohr orbit of a hydrogen atom is:',options:['h/π','2h/π','4h/π','h/2π'],correct:1,answer:'2h/π',
-short:[['Bohr’s postulate: angular momentum = nh/2π, with n = 4.','L = 4h/2π = 2h/π']],
+short:[['Bohr’s postulate: angular momentum = nh/2π, with n = 4.','L = 4h/2π','= 2h/π']],
 detailed:[
  ['Bohr’s postulate quantizes angular momentum as a whole multiple of h/2π.','L = nh/2π'],
  ['The fourth orbit means n = 4.','L = 4h/2π'],
  ['Simplify.','L = 2h/π']
 ]},
 {id:'ATOM-23-A',parent:'ATOM-23',variant:1,topic:'Ritz combination principle for spectral series',source:'Original practice · authored for this bank as a variant of ATOM-23',sourceRef:false,relevance:{parent:'ATOM-23',sharedSkill:'Ritz combination: wave numbers of successive transitions add to the direct transition',recoveryPurpose:'Direct retry — same relation with different wavelengths, so the missing step is the n₃→n₂ one and comes out shorter than the n₂→n₁ step'},question:'For an atom or ion having a single electron, three transitions between three orbits (n₃, n₂ and n₁, with n₃ > n₂ > n₁) are observed. The direct n₃→n₁ transition has wavelength 20 mm, and the n₂→n₁ step has wavelength 60 mm. What is the wavelength x of the n₃→n₂ step?',options:['15 mm','30 mm','40 mm','80 mm'],correct:1,answer:'30 mm',
-short:[['Wave numbers of the two steps add up to that of the direct transition.','1/20 = 1/x + 1/60','1/x = 1/20 − 1/60 = 1/30 ⇒ x = 30 mm']],
+short:[['Wave numbers of the two steps add up to that of the direct transition.','1/20 = 1/x + 1/60','1/x = 1/20 − 1/60','= 1/30','⇒ x = 30 mm']],
 detailed:[
  ['Going through the intermediate level gives the same total energy as the direct jump, so wave numbers (∝1/λ) add.','1/λ(n₃→n₁) = 1/λ(n₃→n₂) + 1/λ(n₂→n₁)'],
  ['Substitute the direct wavelength (20 mm) and the n₂→n₁ step (60 mm).','1/20 = 1/x + 1/60'],
- ['Isolate 1/x.','1/x = 1/20 − 1/60 = 3/60 − 1/60 = 1/30'],
+ ['Isolate 1/x.','1/x = 1/20 − 1/60','= 3/60 − 1/60','= 1/30'],
  ['So the missing wavelength is 30 mm — longer than the direct 20 mm, as it carries less energy.','Answer: 30 mm']
 ]},
 {id:'ATOM-26-A',parent:'ATOM-26',variant:1,topic:'Applicability of the Bohr model',source:'Original practice · authored for this bank as a variant of ATOM-26',sourceRef:false,relevance:{parent:'ATOM-26',sharedSkill:'The Bohr model applies only to one-electron species',recoveryPurpose:'Direct retry — same one-electron criterion with a different set of species'},question:'For which one of the following is the Bohr model not valid?',options:['Hydrogen atom','Li²⁺','Be³⁺','Li⁺'],correct:3,answer:'Li⁺',
-short:[['The Bohr model applies only to one-electron species.','H, Li²⁺ and Be³⁺ have one electron; Li⁺ (Z = 3) keeps two electrons']],
+short:[['The Bohr model applies only to one-electron species.','H, Li²⁺ and Be³⁺ have one electron','Li⁺ (Z = 3) keeps two electrons']],
 detailed:[
  ['The Bohr model was derived for a single electron orbiting a nucleus.','Valid only for one-electron species'],
  ['Count electrons: H has 1; Li²⁺ (3 − 2) has 1; Be³⁺ (4 − 3) has 1.','All one-electron'],
@@ -716,7 +716,7 @@ detailed:[
  ['So the Bohr model fails for Li⁺.','Answer: Li⁺']
 ]},
 {id:'ATOM-28-A',parent:'ATOM-28',variant:1,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Original practice · authored for this bank as a variant of ATOM-28',sourceRef:false,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1))·h/2π depends on ℓ',recoveryPurpose:'Direct retry — same formula, a 3d electron (ℓ = 2) instead of an s electron (ℓ = 0)'},question:'The orbital angular momentum for an electron is given by √(ℓ(ℓ+1))·h/2π. This momentum for a 3d electron will be given by',options:['√2 · h/2π','√6 · h/2π','√12 · h/2π','2 · h/2π'],correct:1,answer:'√6 · h/2π',
-short:[['A d electron has ℓ = 2.','√(ℓ(ℓ+1)) = √(2×3) = √6, so L = √6 · h/2π']],
+short:[['A d electron has ℓ = 2.','√(ℓ(ℓ+1)) = √(2×3)','= √6, so L','= √6 · h/2π']],
 detailed:[
  ['The formula depends on ℓ, not n, so only the subshell letter matters.','L = √(ℓ(ℓ+1)) · h/2π'],
  ['A d subshell has ℓ = 2.','ℓ = 2'],
@@ -724,7 +724,7 @@ detailed:[
  ['So the angular momentum is √6 times h/2π.','Answer: √6 · h/2π']
 ]},
 {id:'ATOM-29',topic:'Properties of cathode rays',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.9 · p.1',sourceRef:true,question:'Which of the following is true about cathode rays?',options:['It produce heating effect','Cathode rays of different material carry different mass','It produce bright spot on ZnS sheet','It deflect in –ve part of electric field'],correct:2,answer:'It produce bright spot on ZnS sheet',
-short:[['Cathode rays are streams of electrons; they make a ZnS screen fluoresce, giving a bright spot.','Fluorescence on ZnS = bright spot ⇒ (C)'],['Their mass and e/m are the same for every cathode material, and they bend toward the positive plate, so (B) and (D) are false.','Same particle (electron) whatever the cathode']],
+short:[['Cathode rays are streams of electrons; they make a ZnS screen fluoresce, giving a bright spot.','Fluorescence on ZnS = bright spot','⇒ (C)'],['Their mass and e/m are the same for every cathode material, and they bend toward the positive plate, so (B) and (D) are false.','Same particle (electron) whatever the cathode']],
 detailed:[
  ['Cathode rays are a beam of electrons, so their properties are those of the electron.','Cathode rays = electrons'],
  ['(B) is false: the particle is always the electron, so its mass does not depend on the cathode material.','m = same for all materials'],
@@ -739,31 +739,31 @@ detailed:[
  ['The other options are not shown by these experiments: α-particles and nuclei belong to other experiments, and “all matter contains electrons” is a further inference from this result rather than what the measurement itself shows.','Answer: e/m is constant']
 ]},
 {id:'ATOM-30',topic:'Specific charge of charged particles',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.105 · p.10 (Q.331, p.30, is a verbatim repeat of this item)',sourceRef:true,question:'The specific charge of a proton is 9.6 × 10⁷ C kg⁻¹, then for an α-particle it will be –',options:['2.4 × 10⁷ C kg⁻¹','4.8 × 10⁷ C kg⁻¹','19.2 × 10⁷ C kg⁻¹','38.4 × 10⁷ C kg⁻¹'],correct:1,answer:'4.8 × 10⁷ C kg⁻¹',
-short:[['An α-particle has twice the proton’s charge and four times its mass.','q/m(α) = (2e)/(4mₚ) = (1/2)(e/mₚ)'],['Evaluate.','= 0.5 × 9.6 × 10⁷ = 4.8 × 10⁷ C kg⁻¹']],
+short:[['An α-particle has twice the proton’s charge and four times its mass.','q/m(α) = (2e)/(4mₚ)','= (1/2)(e/mₚ)'],['Evaluate.','= 0.5 × 9.6 × 10⁷ = 4.8 × 10⁷ C kg⁻¹']],
 detailed:[
  ['Specific charge is charge divided by mass.','Specific charge = q/m'],
- ['An α-particle is a helium nucleus: two protons and two neutrons, so charge +2e and mass ≈ 4mₚ.','q = 2e, m ≈ 4mₚ'],
- ['Divide.','q/m(α) = (2e)/(4mₚ) = (1/2)(e/mₚ)'],
+ ['An α-particle is a helium nucleus: two protons and two neutrons, so charge +2e and mass ≈ 4mₚ.','q = 2e, m','≈ 4mₚ'],
+ ['Divide.','q/m(α) = (2e)/(4mₚ)','= (1/2)(e/mₚ)'],
  ['Substitute the proton’s specific charge.','= 0.5 × 9.6 × 10⁷ = 4.8 × 10⁷ C kg⁻¹']
 ]},
 {id:'ATOM-31',topic:'Particle and wave nature of the electron',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.403 · p.36',sourceRef:true,question:'Electron corpuscular nature is not connected with –',options:['Diffraction phenomenon','Photo electric effect','Compton effect','Mechanical effect by cathode rays'],correct:0,answer:'Diffraction phenomenon',
 short:[['Diffraction is a wave phenomenon; the other three treat the electron (or photon) as a particle with momentum.','Corpuscular (particle) nature ↛ diffraction']],
 detailed:[
- ['“Corpuscular nature” means the electron behaves as a particle carrying mass and momentum.','Particle nature ⇒ collisions, momentum transfer'],
+ ['“Corpuscular nature” means the electron behaves as a particle carrying mass and momentum.','Particle nature','⇒ collisions, momentum transfer'],
  ['Photoelectric effect, Compton scattering and the mechanical push of cathode rays on a paddle all involve particle-like transfer of energy or momentum.','(B), (C), (D) show particle nature'],
  ['Diffraction needs the wave nature, so it is the one that is not connected with corpuscular behaviour.','Answer: Diffraction phenomenon']
 ]},
 {id:'ATOM-32',topic:'Distance of closest approach in α-particle scattering',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.552 · p.47',sourceRef:true,question:'α-particles of 6 MeV energy is scattered back from a silver foil. Calculate the maximum volume in which the entire charge of the atom is supposed to be concentrated? [Z for silver = 47]',options:['3.6 × 10⁻²⁸ m³','5.97 × 10⁻⁴² m³','6.55 × 10⁻⁷¹ m³','48 × 10⁻⁴² m³'],correct:3,answer:'48 × 10⁻⁴² m³',
-short:[['Scattered straight back, the α-particle stops at the distance of closest approach, where all its kinetic energy has become electrostatic energy.','r₀ = (2Ze²)/(4πε₀E), with e²/(4πε₀) = 1.44 MeV fm'],['Evaluate the radius, then the volume of a sphere of that radius.','r₀ = (2×47×1.44)/6 = 22.56 fm = 2.256 × 10⁻¹⁴ m','V = (4/3)πr₀³ ≈ 4.8 × 10⁻⁴¹ m³ = 48 × 10⁻⁴² m³']],
+short:[['Scattered straight back, the α-particle stops at the distance of closest approach, where all its kinetic energy has become electrostatic energy.','r₀ = (2Ze²)/(4πε₀E), with e²/(4πε₀)','= 1.44 MeV fm'],['Evaluate the radius, then the volume of a sphere of that radius.','r₀ = (2×47×1.44)/6','= 22.56 fm','= 2.256 × 10⁻¹⁴ m','V = (4/3)πr₀³','≈ 4.8 × 10⁻⁴¹ m³','= 48 × 10⁻⁴² m³']],
 detailed:[
  ['An α-particle turned back head-on stops momentarily at the distance of closest approach r₀, so its kinetic energy equals the electrostatic potential energy there.','E = (1/(4πε₀))·(2e)(Ze)/r₀'],
- ['Solve for r₀ using e²/(4πε₀) = 1.44 MeV fm.','r₀ = (2Ze²/(4πε₀))/E = (2×47×1.44 MeV fm)/(6 MeV)'],
- ['Evaluate.','r₀ = 22.56 fm = 2.256 × 10⁻¹⁴ m'],
- ['Take the region holding the charge as a sphere of radius r₀ (the largest possible), and find its volume.','V = (4/3)πr₀³ = (4/3)π(2.256 × 10⁻¹⁴)³'],
- ['Evaluate.','V ≈ 4.8 × 10⁻⁴¹ m³ = 48 × 10⁻⁴² m³']
+ ['Solve for r₀ using e²/(4πε₀) = 1.44 MeV fm.','r₀ = (2Ze²/(4πε₀))/E','= (2×47×1.44 MeV fm)/(6 MeV)'],
+ ['Evaluate.','r₀ = 22.56 fm','= 2.256 × 10⁻¹⁴ m'],
+ ['Take the region holding the charge as a sphere of radius r₀ (the largest possible), and find its volume.','V = (4/3)πr₀³','= (4/3)π(2.256 × 10⁻¹⁴)³'],
+ ['Evaluate.','V ≈ 4.8 × 10⁻⁴¹ m³','= 48 × 10⁻⁴² m³']
 ]},
 {id:'ATOM-01-A',parent:'ATOM-01',variant:1,topic:'Rutherford’s scattering experiment: beam composition',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.45 · p.5 (Q.312, p.29, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-01',sharedSkill:'Knowing that Rutherford’s projectiles (α-particles) are helium nuclei',recoveryPurpose:'Direct retry — asks for the identity of the α-particle directly instead of via the beam used in the experiment'},question:'α-particles are represented by –',options:['Lithium atoms','Helium nuclei','Hydrogen nucleus','None of the above'],correct:1,answer:'Helium nuclei',
-short:[['An α-particle is a doubly-ionised helium atom, i.e. a helium nucleus.','α-particle = He²⁺ = helium nucleus']],
+short:[['An α-particle is a doubly-ionised helium atom, i.e. a helium nucleus.','α-particle = He²⁺','= helium nucleus']],
 detailed:[
  ['α-particles are emitted by radioactive nuclei and consist of two protons and two neutrons.','2 protons + 2 neutrons'],
  ['That is exactly the helium nucleus (He²⁺), not lithium atoms and not a hydrogen nucleus (one proton).','Answer: Helium nuclei']
@@ -780,15 +780,319 @@ detailed:[
 short:[['A hydrogen nucleus (a proton, mass ≈ 1 u) is about four times lighter than an α-particle (≈ 4 u) and carries far less charge than gold.','m(α) ≈ 4 m(proton)'],['A heavy projectile hitting a lighter target is not bounced back, so large-angle scattering does not occur.','Large-angle scattering is not possible']],
 detailed:[
  ['Large-angle scattering in Rutherford’s experiment needs a target nucleus that is heavy and highly charged compared with the α-particle.','Gold: heavy, Z = 79'],
- ['A hydrogen nucleus has mass about ¼ that of an α-particle and charge +1, so the α-particle just pushes it aside like a heavy ball meeting a light one.','m(H) ≈ ¼ m(α), Z = 1'],
+ ['A hydrogen nucleus has mass about ¼ that of an α-particle and charge +1, so the α-particle just pushes it aside like a heavy ball meeting a light one.','m(H) ≈ ¼ m(α), Z','= 1'],
  ['So α-particles would not be turned through large angles; small-angle scattering can still occur.','Answer: large angle scattering of α-particles is not possible']
 ]},
 {id:'ATOM-15-A',parent:'ATOM-15',variant:1,topic:'Rutherford’s scattering experiment: limits of the formula',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.561 · p.48',sourceRef:true,relevance:{parent:'ATOM-15',sharedSkill:'The angular dependence of Rutherford scattering',recoveryPurpose:'Representation change — recall the form of the scattering law itself rather than the conditions where it fails'},question:'From the Rutherford’s α-particle scattering, it can be concluded that (N = number of α-particles scattered by an angle θ):',options:['N ∝ sin⁴(θ/2)','N ∝ 1/(sin⁴θ)','N ∝ 1/(sin⁴(θ/2))','N = sin(θ/2)'],correct:2,answer:'N ∝ 1/(sin⁴(θ/2))',
 short:[['Rutherford’s scattering formula gives the number scattered per unit solid angle.','N ∝ 1/(sin⁴(θ/2))'],['So small angles are scattered far more often than large ones.','N is large at small θ and falls steeply as θ grows']],
 detailed:[
  ['Rutherford’s analysis of Coulomb scattering by a point nucleus gives an inverse fourth power of sin(θ/2).','N ∝ 1/(sin⁴(θ/2))'],
- ['This matches the observation that most α-particles are deflected only slightly and very few are turned through large angles.','Small θ ⇒ many, large θ ⇒ very few'],
+ ['This matches the observation that most α-particles are deflected only slightly and very few are turned through large angles.','Small θ','⇒ many, large θ','⇒ very few'],
  ['Only option (C) has this form.','Answer: N ∝ 1/(sin⁴(θ/2))']
+]},
+{id:'ATOM-33',topic:'Isoelectronic species and proton count',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.4 · p.1',sourceRef:true,question:'Isoelectronic means same number of electrons. X⁺, Y²⁺ and Z⁻ are isoelectronic with CO₂. Increasing order of number of protons in given species is –',options:['X⁺ = Y²⁺ = Z⁻','X⁺ < Y²⁺ < Z⁻','Z⁻ < X⁺ < Y²⁺','Y²⁺ < X⁺ < Z⁻'],correct:2,answer:'Z⁻ < X⁺ < Y²⁺',
+short:[['Every species has as many electrons as CO₂.','electrons in CO₂ = 6 + 2×8','= 22'],['Protons = electrons + charge on a cation, or electrons − charge on an anion.','X⁺: 22 + 1 = 23','Y²⁺: 22 + 2 = 24','Z⁻: 22 − 1 = 21'],['Arrange in increasing proton number.','Z⁻ (21) < X⁺ (23) < Y²⁺ (24)']],
+detailed:[
+ ['Isoelectronic species have the same number of electrons, so first count the electrons in CO₂ (C has 6, each O has 8).','electrons in CO₂ = 6 + 8 + 8','= 22'],
+ ['A cation has lost electrons, so its nucleus holds more protons than the electron count. X⁺ lost 1 electron, Y²⁺ lost 2.','protons in X⁺ = 22 + 1','= 23','protons in Y²⁺ = 22 + 2','= 24'],
+ ['An anion has gained electrons, so its nucleus holds fewer protons than the electron count. Z⁻ gained 1 electron.','protons in Z⁻ = 22 − 1','= 21'],
+ ['The species are isoelectronic but not equal in protons; the ranking follows the proton numbers.','Z⁻ (21) < X⁺ (23) < Y²⁺ (24)']
+]},
+{id:'ATOM-34',topic:'Charge on the common ion of an element',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.128 · p.11',sourceRef:true,question:'An element M has an atomic mass 19 and atomic number 9, its ion is represented by',options:['M⁺','M²⁺','M⁻','M²⁻'],correct:2,answer:'M⁻',
+short:[['Atomic number 9 means 9 protons and, in the neutral atom, 9 electrons: 1s² 2s² 2p⁵ (fluorine).','Z = 9','⇒ 1s² 2s² 2p⁵'],['One more electron completes the stable octet (neon configuration), so the atom forms a 1− ion.','M + e⁻ → M⁻']],
+detailed:[
+ ['The atomic number gives the number of protons, which equals the number of electrons in the neutral atom. The mass number 19 is not needed for the charge.','Z = 9','⇒ 9 electrons'],
+ ['Write the electron configuration to see how far the atom is from a stable noble-gas arrangement.','1s² 2s² 2p⁵ (one electron short of neon, 1s² 2s² 2p⁶)'],
+ ['Gaining a single electron gives the complete octet, so the ion carries one unit of negative charge.','M + e⁻ → M⁻']
+]},
+{id:'ATOM-35',topic:'Electron capture and changes in atomic and mass number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.8 · p.1',sourceRef:true,question:'When an atom undergoes one K electron capture, then its mass number –',options:['remains the same while the atomic number increases by one','remains the same while the atomic number increases by two','remains the same while the atomic number decreases by one','as well as the atomic number decreases by one'],correct:2,answer:'remains the same while the atomic number decreases by one',
+short:[['In K-electron capture the nucleus absorbs an electron from the K shell and a proton becomes a neutron.','p + e⁻ → n + ν'],['A proton is replaced by a neutron, so Z falls by 1 while the total number of nucleons stays the same.','Z → Z − 1','A → A']],
+detailed:[
+ ['The K electron (n = 1) is the one closest to the nucleus, so the nucleus can capture it.','K electron is absorbed by the nucleus'],
+ ['The captured electron combines with a proton to form a neutron (and a neutrino).','p + e⁻ → n + ν'],
+ ['The number of protons drops by one, so the atomic number decreases by one.','Z → Z − 1'],
+ ['A proton is converted into a neutron, so the total number of nucleons (mass number) does not change.','A → A (unchanged)']
+]},
+{id:'ATOM-36',topic:'Dalton’s atomic theory',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.42 · p.5 (Q.310, p.30, is a verbatim repeat of this item)',sourceRef:true,question:'According to Dalton’s atomic theory, an atom can :',options:['Be created','Be destroyed','Neither be created nor destroyed','None'],correct:2,answer:'Neither be created nor destroyed',
+short:[['Dalton treated atoms as indivisible and indestructible: chemical reactions only rearrange them.','Atom: neither created nor destroyed']],
+detailed:[
+ ['Dalton pictured matter as made of tiny indivisible atoms that keep their identity in every chemical change.','Atoms are indivisible and indestructible'],
+ ['Chemical reactions only rearrange atoms into new combinations; no atom appears or vanishes.','Reaction = rearrangement, not creation or destruction'],
+ ['So the statement that matches the theory is that an atom can neither be created nor destroyed.','Answer: (C)']
+]},
+{id:'ATOM-36-A',parent:'ATOM-36',variant:1,topic:'Dalton’s atomic theory',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.10 · p.1',sourceRef:true,relevance:{parent:'ATOM-36',sharedSkill:'Recalling the postulates of Dalton’s atomic theory',recoveryPurpose:'Controlled transfer — pick the true statement from four postulate-style options instead of recalling a single postulate about creation and destruction'},question:'What is true regarding Dalton’s atomic theory –',options:['All atom of same element possess same mass & same size','It can be destructible','Atoms combine in definite ratio','It is the smallest particle which can take part in chemical reaction'],correct:2,answer:'Atoms combine in definite ratio',
+short:[['Dalton’s theory says atoms combine in fixed whole-number ratios (law of definite proportions), which also holds today.','Atoms combine in a definite ratio','⇒ C'],['Check the others: atoms of one element differ in mass (isotopes), and atoms are not destructible in Dalton’s view.','A: fails for isotopes','B: contradicts Dalton']],
+detailed:[
+ ['Dalton proposed that compounds form when atoms of different elements combine in fixed, simple whole-number ratios.','Definite (fixed) ratio of atoms in a compound'],
+ ['Option A states that all atoms of an element have the same mass and size. This is Dalton’s postulate, but isotopes show it is not true.','A: Dalton’s postulate, disproved by isotopes'],
+ ['Option B says the atom can be destroyed. Dalton said the opposite: atoms are indestructible in chemical reactions.','B: contradicts Dalton'],
+ ['Option D makes the atom the smallest particle in a reaction. Dalton did say this, but electrons are now known to take part in reactions.','D: Dalton’s view, no longer valid'],
+ ['Of the four statements, the definite-ratio statement is the one that is both Dalton’s and still true.','Answer: (C)']
+]},
+{id:'ATOM-37',topic:'Mass defect and binding energy per nucleon',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.11 · p.2',sourceRef:true,question:'The mass defect equal to 1 amu releases 931 MeV of energy. The mass of one proton = 1.0073 amu and the mass of one neutron = 1.0087 amu and the mass of Helium nucleus is 4.0017 amu. Therefore binding energy per nucleon of the helium nucleus is –',options:['7 MeV','28.2 MeV','14.1 MeV','−14.1 MeV'],correct:0,answer:'7 MeV',
+short:[['The He nucleus has 2 protons and 2 neutrons. Mass defect = mass of separate nucleons − mass of nucleus.','Δm = (2×1.0073 + 2×1.0087) − 4.0017','= 4.0320 − 4.0017','= 0.0303 amu'],['Convert to energy (931 MeV per amu), then divide by 4 nucleons.','BE = 0.0303 × 931','= 28.2 MeV','BE per nucleon = 28.2/4','≈ 7 MeV']],
+detailed:[
+ ['Helium-4 has 2 protons and 2 neutrons. Add the masses of the free nucleons.','2(1.0073) + 2(1.0087) = 4.0320 amu'],
+ ['The mass defect is the difference between the free-nucleon mass and the actual nucleus mass.','Δm = 4.0320 − 4.0017','= 0.0303 amu'],
+ ['Each amu of mass defect corresponds to 931 MeV, so this gives the total binding energy.','BE = 0.0303 × 931','≈ 28.2 MeV'],
+ ['Binding energy per nucleon divides by the 4 nucleons. Option B (28.2 MeV) is the total, not the per-nucleon value.','BE per nucleon = 28.2/4','≈ 7 MeV']
+]},
+{id:'ATOM-38',topic:'Atomic mass from proton, neutron and electron masses',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.111 · p.10 (Q.383, p.34, is a verbatim repeat of this item)',sourceRef:true,question:'It is known that atoms contain protons, neutrons and electrons. If the mass of neutron is assumed to be half of its original value whereas that of electron is assumed to be twice of this original value. The atomic mass of ₆C¹² will be :',options:['Twice','75% less','25% less','one-half of its'],correct:2,answer:'25% less',
+short:[['₆C¹² has 6 protons, 6 neutrons and 6 electrons. Electron mass is negligible, so the atomic mass comes from protons and neutrons (1 amu each).','Original ≈ 6(1) + 6(1)','= 12 amu'],['Halve the neutron mass, and doubling the electron mass changes nothing noticeable.','New ≈ 6(1) + 6(0.5)','= 9 amu','(12 − 9)/12 = 1/4','= 25% less']],
+detailed:[
+ ['Carbon-12 has 6 protons, 6 neutrons (12 − 6) and 6 electrons.','6p + 6n + 6e'],
+ ['The electron is about 1/1836 of a proton’s mass, so its contribution to the atomic mass is negligible even when doubled.','Electron term ≈ 0 before and after'],
+ ['Original mass, counting protons and neutrons at about 1 amu each.','6(1) + 6(1) = 12 amu'],
+ ['New mass with the neutron mass halved.','6(1) + 6(0.5) = 9 amu'],
+ ['Fractional decrease in atomic mass.','(12 − 9)/12 = 1/4','= 25% less']
+]},
+{id:'ATOM-39',topic:'Nuclear composition of hydrogen isotopes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.46 · p.5',sourceRef:true,question:'Neutrons are not present in the nuclei of',options:['Chlorine','Deuterium','Hydrogen','Oxygen'],correct:2,answer:'Hydrogen',
+short:[['Ordinary hydrogen (protium) has a nucleus of a single proton; deuterium adds a neutron.','¹₁H: 1 proton, 0 neutrons','²₁H: 1 proton, 1 neutron'],['Chlorine and oxygen nuclei both contain neutrons.','Only hydrogen has no neutron']],
+detailed:[
+ ['Neutrons = mass number − atomic number. Ordinary hydrogen (protium) has A = 1 and Z = 1.','n = 1 − 1','= 0'],
+ ['Deuterium is the heavy isotope of hydrogen, with A = 2 and Z = 1, so it has one neutron.','n = 2 − 1','= 1'],
+ ['Chlorine (for example ³⁵₁₇Cl) and oxygen (for example ¹⁶₈O) have many neutrons.','n(Cl) = 35 − 17','= 18','n(O) = 16 − 8','= 8'],
+ ['So the only nucleus in the list with no neutron is that of ordinary hydrogen.','Answer: (C)']
+]},
+{id:'ATOM-40',topic:'Identity and properties of sub-atomic particles',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.40 · p.5 (Q.308, p.29, is a verbatim repeat of this item)',sourceRef:true,question:'Proton is :',options:['Nucleus of deuterium','Ionised hydrogen molecule','Ionised hydrogen atom','An α-particle'],correct:2,answer:'Ionised hydrogen atom',
+short:[['A hydrogen atom is one proton plus one electron; removing the electron leaves the bare proton.','H − e⁻ → H⁺ = proton'],['The other options are different species.','Deuterium nucleus = p + n','H₂⁺ = molecule ion','α-particle = He²⁺']],
+detailed:[
+ ['Ordinary hydrogen has one proton in the nucleus and one electron outside.','H = 1p + 1e⁻'],
+ ['Ionising the atom removes the electron, leaving only the proton.','H → H⁺ + e⁻, so H⁺ = proton'],
+ ['The nucleus of deuterium (the deuteron) also has one neutron, so it is not a proton.','deuteron = 1p + 1n'],
+ ['An ionised hydrogen molecule is H₂⁺, and an α-particle is the helium nucleus He²⁺.','H₂⁺ and He²⁺ are not protons']
+]},
+{id:'ATOM-40-A',parent:'ATOM-40',variant:1,topic:'Identity and properties of sub-atomic particles',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.41 · p.5 (Q.309, p.30, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-40',sharedSkill:'Identifying sub-atomic particles by their charge and nature',recoveryPurpose:'Controlled transfer — use the charge of each particle to predict deflection instead of using composition to identify one particle'},question:'Which is not deflected by magnetic field :',options:['Neutron','Positron','Proton','Electron'],correct:0,answer:'Neutron',
+short:[['A magnetic field deflects only charged particles moving through it.','Deflected: positron (+), proton (+), electron (−)'],['The neutron carries no charge, so it passes straight through.','Neutron: charge 0, not deflected']],
+detailed:[
+ ['The force of a magnetic field on a moving particle is proportional to its charge.','F ∝ q'],
+ ['The positron and the proton are positive, and the electron is negative, so all three are deflected.','q ≠ 0','⇒ deflected'],
+ ['The neutron has zero charge, so it feels no force and is not deflected.','q = 0','⇒ F = 0']
+]},
+{id:'ATOM-41',topic:'Size of the nucleus and the atom',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.113 · p.10',sourceRef:true,question:'The radius of an atomic nucleus is of the order of –',options:['10⁻¹⁰ cm','10⁻¹³ cm','10⁻¹⁵ cm','10⁻⁸ cm'],correct:1,answer:'10⁻¹³ cm',
+short:[['Nuclear radii are of the order of 1 fermi (fm) = 10⁻¹⁵ m; convert to cm.','1 fm = 10⁻¹⁵ m','= 10⁻¹⁵ × 10² cm','= 10⁻¹³ cm']],
+detailed:[
+ ['The radius of a nucleus is about 1 to 10 fm (fermi), of order 10⁻¹⁵ m.','r ≈ 10⁻¹⁵ m'],
+ ['Convert metres to centimetres (1 m = 100 cm).','10⁻¹⁵ m = 10⁻¹³ cm'],
+ ['The atom itself is much larger, about 10⁻⁸ cm, and 10⁻¹⁰ cm is a typical bond length; both are ruled out.','Nuclear radius ≈ 10⁻¹³ cm','answer (B)']
+]},
+{id:'ATOM-41-A',parent:'ATOM-41',variant:1,topic:'Size of the nucleus and the atom',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.143 · p.13 (Q.182, p.16, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-41',sharedSkill:'Comparing the size of the nucleus with the size of the atom',recoveryPurpose:'Controlled transfer — compare the two sizes as a volume fraction (cube of the radius ratio) instead of recalling the nuclear radius itself'},question:'Atomic radius is of the order of 10⁻⁸ cm and nuclear radius is of the order of 10⁻¹³ cm. Calculate what fraction of atom is occupied by nucleus ?',options:['10⁻⁵','10⁵','10⁻¹⁵','10⁻⁸'],correct:2,answer:'10⁻¹⁵',
+short:[['The fraction of the atom occupied is a volume fraction, so cube the ratio of the radii.','radius ratio = 10⁻¹³/10⁻⁸','= 10⁻⁵'],['Volume scales as r³.','V_nucleus/V_atom = (10⁻⁵)³','= 10⁻¹⁵']],
+detailed:[
+ ['Take the ratio of the nuclear radius to the atomic radius.','r_n/r_a = 10⁻¹³/10⁻⁸','= 10⁻⁵'],
+ ['The space occupied is measured by volume, and volume of a sphere is proportional to the cube of its radius.','V ∝ r³'],
+ ['Cube the radius ratio to get the fraction of the atom’s volume occupied by the nucleus. (Option A is only the ratio of radii, not the volume fraction.)','V_n/V_a = (10⁻⁵)³','= 10⁻¹⁵']
+]},
+{id:'ATOM-42',topic:'Isotopes, isobars and isotones',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.148 · p.13',sourceRef:true,question:'The nuclides ⁴⁰₁₈Ar and ⁴¹₁₉K are –',options:['isotopes','isobars','isotones','isoelectronic'],correct:2,answer:'isotones',
+short:[['Neutron number = mass number − atomic number for each nuclide.','Ar: 40 − 18 = 22','K: 41 − 19 = 22'],['Equal neutron numbers with different Z and A means isotones.','Same n','⇒ isotones']],
+detailed:[
+ ['Isotopes have the same Z, isobars the same A, isotones the same number of neutrons (n = A − Z). Compare all three quantities.','Ar: Z = 18, A = 40','K: Z = 19, A','= 41'],
+ ['Different Z, so they are not isotopes; different A, so they are not isobars.','Z: 18 ≠ 19','A: 40 ≠ 41'],
+ ['Count the neutrons in each.','n(Ar) = 40 − 18','= 22','n(K) = 41 − 19','= 22'],
+ ['The neutron numbers are equal, so the nuclides are isotones. They are not isoelectronic either, as neutral atoms have 18 and 19 electrons.','Answer: (C) isotones']
+]},
+{id:'ATOM-42-A',parent:'ATOM-42',variant:1,topic:'Isotopes, isobars and isotones',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.149 · p.13',sourceRef:true,relevance:{parent:'ATOM-42',sharedSkill:'Reading Z and A from nuclide notation to classify isotopes, isobars and isotones',recoveryPurpose:'Direct retry — the same Z, A and neutron-number comparison, now asked for isobars'},question:'Which of the following nuclides are isobars ?',options:['⁴⁰₂₁Sc and ⁴²₂₁Sc','⁴⁰₁₈Ar and ⁴⁰₂₁Sc','⁴⁰₁₈Ar and ⁴¹₁₉K','None of these'],correct:1,answer:'⁴⁰₁₈Ar and ⁴⁰₂₁Sc',
+short:[['Isobars have the same mass number A but different atomic number Z. Compare A and Z in each pair.','A: A = 40 and 42, Z','= 21 both (isotopes)','B: A = 40 and 40, Z','= 18 and 21','C: A = 40 and 41'],['Only pair B has equal A and different Z.','⁴⁰₁₈Ar and ⁴⁰₂₁Sc are isobars']],
+detailed:[
+ ['Isobars are nuclides with the same mass number but different atomic numbers.','Isobars: same A, different Z'],
+ ['Pair A has the same Z (21) and different A (40 and 42), so they are isotopes.','A: isotopes'],
+ ['Pair B has the same A (40) and different Z (18 and 21).','B: isobars'],
+ ['Pair C has different A (40 and 41), so it is not an isobaric pair. It is a pair of isotones, both with 22 neutrons.','C: A = 40, 41','⇒ not isobars'],
+ ['So the isobars are pair B.','Answer: (B)']
+]},
+{id:'ATOM-42-B',parent:'ATOM-42',variant:2,topic:'Isotopes, isobars and isotones',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.118 · p.11 (Q.273, p.24, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-42',sharedSkill:'Reading Z and A from nuclide notation to classify isotopes, isobars and isotones',recoveryPurpose:'Controlled transfer — find the neutron number for a whole triad of nuclides in each option instead of classifying one pair'},question:'The triad of nuclei that is isotonic is–',options:['¹⁴₆C, ¹⁵₇N, ¹⁷₉F','¹²₆C, ¹⁴₇N, ¹⁹₉F','¹⁴₆C, ¹⁴₇N, ¹⁷₉F','¹⁴₆C, ¹⁴₇N, ¹⁹₉F'],correct:0,answer:'¹⁴₆C, ¹⁵₇N, ¹⁷₉F',
+short:[['Isotonic nuclei have the same number of neutrons, n = A − Z. Find n for each nuclide in every option.','Option A: ¹⁴₆C has 14 − 6 = 8 neutrons','¹⁵₇N has 15 − 7 = 8 neutrons','¹⁷₉F has 17 − 9 = 8 neutrons'],['Check the other options quickly.','B: 6, 7, 10','C: 8, 7, 8','D: 8, 7, 10 — not equal']],
+detailed:[
+ ['Isotones are nuclei with the same number of neutrons, found from n = A − Z.','n = A − Z'],
+ ['Option A: all three give 8 neutrons.','¹⁴₆C: 8','¹⁵₇N: 8','¹⁷₉F: 8'],
+ ['Option B: the neutron numbers differ.','¹²₆C: 6','¹⁴₇N: 7','¹⁹₉F: 10'],
+ ['Options C and D each have one nitrogen nuclide with 7 neutrons, so they are not isotonic.','C: 8, 7, 8','D: 8, 7, 10'],
+ ['Only option A has the same neutron number in all three nuclei.','Answer: (A)']
+]},
+{id:'ATOM-43',topic:'Origin of atomic line spectra',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.49 · p.5',sourceRef:true,question:'The line spectra of two elements are not identical because',options:['the elements do not have the same number of neutrons','they have different mass number','their outermost electrons are at different energy levels','they have different valencies'],correct:2,answer:'their outermost electrons are at different energy levels',
+short:[['A line arises when an electron moves between two quantised energy levels; the wavelength depends on the gap between them.','ΔE = E₂ − E₁','= hc/λ'],['Different elements have different sets of electron energy levels, so their lines differ. Neutron number and mass number do not set these levels, and valency is a consequence, not the cause.','Different energy levels','⇒ different lines']],
+detailed:[
+ ['A spectral line is emitted or absorbed when an electron jumps between two allowed energy levels.','λ = hc/ΔE'],
+ ['The energy levels are fixed by the nuclear charge and the electrons of the atom, so each element has its own set of levels and therefore its own set of line wavelengths.','Different levels','⇒ different ΔE','⇒ different λ'],
+ ['Neutron number and mass number describe the nucleus mass, and change the energy levels only negligibly. Valency is a chemical property, not the source of the lines.','A, B and D are ruled out'],
+ ['So the line spectra differ because the electrons occupy different energy levels.','Answer: (C)']
+]},
+{id:'ATOM-43-A',parent:'ATOM-43',variant:1,topic:'Origin of atomic line spectra',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.119 · p.11 (Q.274, p.24, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-43',sharedSkill:'Line spectra as transitions between quantised energy levels',recoveryPurpose:'Controlled transfer — relate the wavelength of a line to the energy gap (λ = hc/ΔE) instead of explaining why two elements have different line spectra'},question:'The wavelength of a spectral line for an electronic transition is inversely related to–',options:['the number of electrons undergoing the transition','the nuclear charge of the atom','the difference in the energy of the energy levels involved in the transition','the velocity of the electron undergoing the transition'],correct:2,answer:'the difference in the energy of the energy levels involved in the transition',
+short:[['The photon energy equals the gap between the two levels, and E = hc/λ.','ΔE = hc/λ','⇒ λ = hc/ΔE'],['So λ is inversely proportional to the energy difference of the levels.','λ ∝ 1/ΔE']],
+detailed:[
+ ['In a transition the atom emits or absorbs a photon whose energy equals the difference between the two levels.','ΔE = E₂ − E₁','= hν'],
+ ['Write the frequency in terms of wavelength.','ν = c/λ','⇒ ΔE = hc/λ'],
+ ['Solve for the wavelength: it varies as 1/ΔE. The number of electrons and the electron’s velocity do not appear in this relation.','λ = hc/ΔE ∝ 1/ΔE'],
+ ['So the wavelength is inversely related to the energy difference of the levels.','Answer: (C)']
+]},
+{id:'ATOM-02-B',parent:'ATOM-02',variant:2,topic:'Rutherford’s scattering experiment: conclusion',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.115 · p.11 (Q.269, p.24, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-02',sharedSkill:'Recalling what Rutherford’s α-particle scattering experiment established',recoveryPurpose:'Direct retry — the same conclusion question with a different set of distractors'},question:'Rutherford’s alpha particle scattering experiment eventually led to the conclusion that–',options:['mass and energy are related','electrons occupy space around the nucleus','neutrons are buried deep in the nucleus','the point of impact with matter can be precisely determined'],correct:1,answer:'electrons occupy space around the nucleus',
+short:[['Scattering showed a tiny dense nucleus; the remaining empty space of the atom is where the electrons are.','Nucleus at the centre','electrons in the space around it'],['Eliminate the rest: mass-energy equivalence is Einstein’s, neutrons were found later (Chadwick, 1932), and impact points are not precisely known.','A, C, D ruled out']],
+detailed:[
+ ['Most alpha particles passed straight through and a few were deflected strongly, so the atom has a small dense nucleus and is otherwise mostly empty space.','Small dense nucleus + mostly empty space'],
+ ['In that empty space around the nucleus lie the electrons, which is the nuclear model built from the result.','Electrons occupy the space around the nucleus'],
+ ['Mass-energy relation belongs to Einstein’s relativity, and neutrons were discovered in 1932 by Chadwick, long after this experiment.','A and C not conclusions of the experiment'],
+ ['The precise point of impact cannot be known in the quantum picture, and the scattering experiment did not show that either.','D is incorrect'],
+ ['Among the options, the correct one is the electrons around the nucleus.','Answer: (B)']
+]},
+{id:'ATOM-02-C',parent:'ATOM-02',variant:3,topic:'Rutherford’s scattering experiment: conclusion',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.44 · p.5 (Q.311, p.30, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-02',sharedSkill:'Recalling what Rutherford’s α-particle scattering experiment established',recoveryPurpose:'Direct retry — the same conclusion asked as a single-word answer (what the atom was shown to have)'},question:'Rutherford’s experiment on scattering of alpha particles showed for the first time that atom has',options:['Electrons','Protons','Nucleus','Neutrons'],correct:2,answer:'Nucleus',
+short:[['Large-angle scattering of a few α-particles could only be explained by a small, dense, positively charged centre.','New finding: the atom has a nucleus'],['Electrons were known from Thomson’s work; protons were identified later; neutrons in 1932.','Electrons, protons, neutrons not shown first by this experiment']],
+detailed:[
+ ['Most α-particles passed straight through the foil but a few were deflected through large angles, and a very few bounced back.','Few large deflections','⇒ small dense positive centre'],
+ ['That centre is the nucleus, and it was established for the first time by this experiment.','Result: atom has a nucleus'],
+ ['Electrons had been found earlier by J. J. Thomson, protons were identified afterwards (Rutherford, 1919) and neutrons by Chadwick in 1932, so none of them was the new finding.','Answer: (C)']
+]},
+{id:'ATOM-01-B',parent:'ATOM-01',variant:2,topic:'Rutherford’s scattering experiment: beam composition',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.137 · p.12 (Q.498, p.43, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-01',sharedSkill:'Recalling the beam and the outcome of Rutherford’s gold-foil experiment',recoveryPurpose:'Direct retry — the same beam-composition question with different wording of two distractors (γ-rays now ‘ejected electrons’)'},question:'Rutherford’s experiment, which established the nuclear model of the atom, used a beam of –',options:['β–particles, which impinged on a metal foil and got absorbed','γ–rays, which impinged on a metal foil and ejected electrons','helium atoms, which impinged on a metal foil and got scattered','helium nuclei, which impinged on a metal foil and got scattered'],correct:3,answer:'helium nuclei, which impinged on a metal foil and got scattered',
+short:[['The beam was α-particles, which are helium nuclei (He²⁺), and they were scattered by the gold foil.','Beam = He²⁺ (helium nuclei)','outcome = scattered']],
+detailed:[
+ ['Rutherford’s beam was α-particles. An α-particle is a helium atom stripped of both electrons, not a neutral helium atom.','α-particle = He²⁺','= helium nucleus'],
+ ['β-particles are electrons and γ-rays are photons; neither gave the observed large-angle scattering, and γ-rays ejecting electrons is the photoelectric effect, not this experiment.','A and B ruled out'],
+ ['Helium atoms are neutral, so C is ruled out; the α-particles scattered off the foil.','Answer: (D)']
+]},
+{id:'ATOM-44',topic:'Neutrons, protons and nucleons from atomic and mass number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.434 · p.38',sourceRef:true,question:'The mass number of dispositive Zn ion is 70. The total number of neutrons is -',options:['34','40','36','38'],correct:1,answer:'40',
+short:[['Neutrons = mass number − atomic number. Removing electrons (the 2+ charge) does not change the nucleus.','Zn: Z = 30, so N = A − Z = 70 − 30 = 40']],
+detailed:[
+ ['Zinc has atomic number 30, so its nucleus holds 30 protons. A dispositive ion (Zn²⁺) has lost two electrons, which does not touch the nucleus.','Z = 30','charge 2+ changes electrons only'],
+ ['The mass number counts protons plus neutrons.','A = Z + N'],
+ ['Rearrange and substitute.','N = A − Z','= 70 − 30','= 40']
+]},
+{id:'ATOM-44-A',parent:'ATOM-44',variant:1,topic:'Neutrons, protons and nucleons from atomic and mass number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.382 · p.34',sourceRef:true,relevance:{parent:'ATOM-44',sharedSkill:'Neutrons = mass number − atomic number (A = Z + N)',recoveryPurpose:'Inverse/representation change - the same relation stated as a general formula in W and N rather than applied to the numbers of zinc'},question:'If W is the atomic mass and N is the atomic number of an element, the number of -',options:['Electrons = W – N','Neutrons = W – N','Protons = W – N','Electrons = W'],correct:1,answer:'Neutrons = W – N',
+short:[['Atomic mass (mass number) W = protons + neutrons, and the atomic number N = protons.','Neutrons = W − N']],
+detailed:[
+ ['The atomic number N is the number of protons (and, in the neutral atom, of electrons).','protons = N','electrons = N'],
+ ['The atomic mass (mass number) W is the number of nucleons, that is protons plus neutrons.','W = protons + neutrons'],
+ ['Subtract the protons from the nucleons to get the neutrons.','neutrons = W − N']
+]},
+{id:'ATOM-44-B',parent:'ATOM-44',variant:2,topic:'Neutrons, protons and nucleons from atomic and mass number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.172 · p.15 (Q.221, p.19, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-44',sharedSkill:'Nucleons = protons + neutrons = mass number; neutrons = A − Z',recoveryPurpose:'Direct retry - count nucleons in two oxygen isotopes instead of neutrons in a zinc ion'},question:'The ratio of nucleons in ¹⁶O and ¹⁸O is -',options:['9/8','8/9','4/5','2'],correct:1,answer:'8/9',
+short:[['Nucleons (protons + neutrons) equal the mass number, so read them straight from the superscripts.','¹⁶O: 8p + 8n = 16','¹⁸O: 8p + 10n = 18'],['Form the ratio.','16/18 = 8/9']],
+detailed:[
+ ['Oxygen has 8 protons in every isotope. ¹⁶O has 8 neutrons and ¹⁸O has 10 neutrons.','¹⁶O: 8 + 8 = 16','¹⁸O: 8 + 10 = 18'],
+ ['The number of nucleons is the mass number.','nucleons in ¹⁶O = 16','nucleons in ¹⁸O = 18'],
+ ['Divide and simplify.','16/18 = 8/9']
+]},
+{id:'ATOM-44-C',parent:'ATOM-44',variant:3,topic:'Neutrons, protons and nucleons from atomic and mass number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.243 · p.21',sourceRef:true,relevance:{parent:'ATOM-44',sharedSkill:'Neutrons = mass number − atomic number for named isotopes',recoveryPurpose:'Controlled transfer - apply A − Z to four named species and pick the one with zero neutrons'},question:'Neutron is not present in -',options:['Helium','Protium','Deuterium','Tritium'],correct:1,answer:'Protium',
+short:[['Neutrons = A − Z. Protium is the hydrogen isotope with mass number 1 and atomic number 1.','¹H: N = 1 − 1','= 0','²H: N = 1','³H: N = 2','⁴He: N = 2']],
+detailed:[
+ ['Protium, deuterium and tritium are the three isotopes of hydrogen (Z = 1) with mass numbers 1, 2 and 3.','¹H, ²H, ³H'],
+ ['Apply neutrons = A − Z to each.','protium: 1 − 1 = 0','deuterium: 2 − 1 = 1','tritium: 3 − 1 = 2'],
+ ['Helium (Z = 2, A = 4) has neutrons too.','N(He) = 4 − 2','= 2'],
+ ['Only protium has no neutron.','Answer: Protium']
+]},
+{id:'ATOM-44-D',parent:'ATOM-44',variant:4,topic:'Neutrons, protons and nucleons from atomic and mass number',source:'Institute worksheet · atomic structure.pdf · Q.58 · question p.37 · answer p.56',sourceRef:true,relevance:{parent:'ATOM-44',sharedSkill:'Nuclear composition of a named isotope (protons = Z, neutrons = A − Z)',recoveryPurpose:'Direct retry - nuclear composition of a named hydrogen isotope from its mass number'},question:'The nucleus of tritium contains',options:['1 Proton + 1 Neutron','1 Proton + 3 Neutron','1 Proton + 0 Neutron','1 Proton + 2 Neutron'],correct:3,answer:'1 Proton + 2 Neutron',
+short:[['Tritium is the hydrogen isotope ³H: atomic number 1, mass number 3.','protons = Z','= 1','neutrons = A − Z','= 3 − 1','= 2']],
+detailed:[
+ ['Tritium is an isotope of hydrogen, so it has one proton. Its mass number is 3.','Z = 1, A','= 3'],
+ ['The neutrons are the nucleons that are not protons.','N = A − Z','= 3 − 1','= 2'],
+ ['So the nucleus is one proton and two neutrons.','Answer: 1 Proton + 2 Neutron']
+]},
+{id:'ATOM-33-A',parent:'ATOM-33',variant:1,topic:'Isoelectronic species and proton count',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.211 · p.18',sourceRef:true,relevance:{parent:'ATOM-33',sharedSkill:'Counting electrons of ions to decide whether species are isoelectronic',recoveryPurpose:'Representation change — choose the set of isoelectronic ions from four candidate sets instead of ordering the proton numbers of species isoelectronic with CO₂'},question:'Which one of the following sets of ions represents a collection of isoelectronic species -',options:['K⁺, Cl⁻, Ca²⁺, Sc³⁺','Ba²⁺, Sr²⁺, K⁺, Ca²⁺','N³⁻, O²⁻, F⁻, S²⁻','Li⁺, Na⁺, Mg²⁺, Ca²⁺'],correct:0,answer:'K⁺, Cl⁻, Ca²⁺, Sc³⁺',
+short:[['Isoelectronic species have the same number of electrons. Electrons = Z − charge for a cation and Z + charge for an anion.','K⁺ 19−1 = 18','Cl⁻ 17+1 = 18','Ca²⁺ 20−2 = 18','Sc³⁺ 21−3 = 18'],['Each other set contains a mismatch.','(B) Ba²⁺ 54 vs Sr²⁺ 36','(C) S²⁻ 18 vs N³⁻ 10','(D) Li⁺ 2 vs Na⁺ 10']],
+detailed:[
+ ['Count the electrons of each ion in set (A) using electrons = Z − charge (cation) or Z + charge (anion).','K⁺: 19 − 1 = 18','Cl⁻: 17 + 1 = 18','Ca²⁺: 20 − 2 = 18','Sc³⁺: 21 − 3 = 18'],
+ ['All four have 18 electrons, so (A) is isoelectronic.','18 = 18','= 18','= 18'],
+ ['In (B), Ba²⁺ (Z = 56) has 54 electrons while Sr²⁺ (Z = 38) has 36, so it fails.','54 ≠ 36'],
+ ['In (C), N³⁻, O²⁻ and F⁻ each have 10 electrons but S²⁻ (Z = 16) has 18.','10 ≠ 18'],
+ ['In (D), Li⁺ has 2 electrons but Na⁺ and Mg²⁺ have 10 and Ca²⁺ has 18.','2 ≠ 10 ≠ 18']
+]},
+{id:'ATOM-33-B',parent:'ATOM-33',variant:2,topic:'Isoelectronic species and proton count',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.477 · p.41',sourceRef:true,relevance:{parent:'ATOM-33',sharedSkill:'Counting electrons of monatomic ions from atomic number and charge to test for isoelectronic sets',recoveryPurpose:'Direct retry - another four-option set of monatomic ions, with the atomic numbers supplied'},question:'Which one of the following sets of ions represents the collection of isoelectronic species ? (Atomic nos.: F = 9, Cl = 17, Na = 11, Mg = 12, Al = 13, K = 19, Ca = 20, Sc = 21)',options:['K⁺, Ca²⁺, Sc³⁺, Cl⁻','Na⁺, Ca²⁺, Sc³⁺, F⁻','K⁺, Cl⁻, Mg²⁺, Sc³⁺','Na⁺, Mg²⁺, Al³⁺, Cl⁻'],correct:0,answer:'K⁺, Ca²⁺, Sc³⁺, Cl⁻',
+short:[['Count electrons: Z − charge for cations, Z + charge for anions.','K⁺ 18','Ca²⁺ 18','Sc³⁺ 18','Cl⁻ 18'],['The other sets each mix 10-electron and 18-electron ions.','Na⁺ 10, Mg²⁺ 10, Al³⁺ 10, F⁻ 10 but Ca²⁺ 18, Sc³⁺ 18, Cl⁻ 18, K⁺ 18']],
+detailed:[
+ ['Set (A): count the electrons of each ion.','K⁺: 19 − 1 = 18','Ca²⁺: 20 − 2 = 18','Sc³⁺: 21 − 3 = 18','Cl⁻: 17 + 1 = 18'],
+ ['All are 18, so (A) is isoelectronic.','18 = 18','= 18','= 18'],
+ ['Set (B) mixes Na⁺ and F⁻ (10 electrons each) with Ca²⁺ and Sc³⁺ (18 each).','10 ≠ 18'],
+ ['Set (C) mixes 18-electron K⁺, Cl⁻ and Sc³⁺ with 10-electron Mg²⁺.','18 ≠ 10'],
+ ['Set (D) mixes 10-electron Na⁺, Mg²⁺, Al³⁺ with 18-electron Cl⁻.','10 ≠ 18']
+]},
+{id:'ATOM-33-C',parent:'ATOM-33',variant:3,topic:'Isoelectronic species and proton count',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.479 · p.41',sourceRef:true,relevance:{parent:'ATOM-33',sharedSkill:'Counting electrons to test whether species are isoelectronic',recoveryPurpose:'Controlled transfer - count electrons in polyatomic ions (sum over all atoms plus charge) and find the set that is NOT isoelectronic'},question:'Of the following sets which one does NOT contain isoelectronic species ?',options:['CN⁻, N₂, C₂²⁻','PO₄³⁻, SO₄²⁻, ClO₄⁻','BO₃³⁻, CO₃²⁻, NO₃⁻','SO₃²⁻, CO₃²⁻, NO₃⁻'],correct:3,answer:'SO₃²⁻, CO₃²⁻, NO₃⁻',
+short:[['For a polyatomic ion, add the atomic numbers of all its atoms, then add the negative charge.','(A) CN⁻ 6+7+1 = 14, N₂ 14, C₂²⁻ 12+2','= 14'],['Check the remaining sets.','(B) all 50','(C) all 32','(D) SO₃²⁻ = 16+24+2','= 42, but CO₃²⁻','= 32 and NO₃⁻','= 32']],
+detailed:[
+ ['Set (A): total electrons = sum of atomic numbers plus the negative charge.','CN⁻: 6 + 7 + 1 = 14','N₂: 7 × 2 = 14','C₂²⁻: 6 × 2 + 2 = 14'],
+ ['Set (B).','PO₄³⁻: 15 + 32 + 3 = 50','SO₄²⁻: 16 + 32 + 2 = 50','ClO₄⁻: 17 + 32 + 1 = 50'],
+ ['Set (C).','BO₃³⁻: 5 + 24 + 3 = 32','CO₃²⁻: 6 + 24 + 2 = 32','NO₃⁻: 7 + 24 + 1 = 32'],
+ ['Set (D) does not match: sulfite has 42 electrons while carbonate and nitrate have 32.','SO₃²⁻: 16 + 24 + 2 = 42','CO₃²⁻ = 32','NO₃⁻ = 32'],
+ ['So the set that is not isoelectronic is (D).','Answer: SO₃²⁻, CO₃²⁻, NO₃⁻']
+]},
+{id:'ATOM-42-C',parent:'ATOM-42',variant:3,topic:'Isotopes, isobars and isotones',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.508 · p.43',sourceRef:true,relevance:{parent:'ATOM-42',sharedSkill:'Definitions of isotopes, isobars and isotones in terms of Z, A and neutron number',recoveryPurpose:'Representation change — judge four statements of the definitions instead of classifying two given nuclides'},question:'Which of the following statement is not correct ?',options:['Isotones are atoms of different elements having same number of neutrons','Isotopes are atoms of different elements having same number of protons','Isobars are atoms of different elements having same numbers of nucleons','Isotones and Isobars are atoms of different elements'],correct:1,answer:'Isotopes are atoms of different elements having same number of protons',
+short:[['Isotopes are atoms of the SAME element (same Z, different mass number), so statement (B) is wrong.','isotopes: same Z, different A, same element'],['The other statements are correct definitions.','isotones: same N','isobars: same A','both have different Z, so are different elements']],
+detailed:[
+ ['Isotopes have the same number of protons, and therefore belong to the same element. They differ only in neutrons.','same Z, different A'],
+ ['Statement (B) says isotopes are atoms of different elements, so it is not correct.','(B) is false'],
+ ['Isotones share the neutron number but have different proton numbers, hence they are different elements.','same N, different Z'],
+ ['Isobars share the mass number (number of nucleons) but have different atomic numbers, hence they are different elements.','same A, different Z']
+]},
+{id:'ATOM-42-D',parent:'ATOM-42',variant:4,topic:'Isotopes, isobars and isotones',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.268 · p.24',sourceRef:true,relevance:{parent:'ATOM-42',sharedSkill:'Isotopes are atoms of one element with different masses; atomic mass is their weighted average',recoveryPurpose:'Controlled transfer - use the definition of isotopes to explain why atomic masses are not whole numbers'},question:'Many elements have non-integral atomic masses because-',options:['They have isotopes, isobars, isotones etc.','Their isotopes have different masses','Their isotopes have non-integral masses','The constituents, neutrons, protons and electrons combine to give fractional masses'],correct:1,answer:'Their isotopes have different masses',
+short:[['A natural element is a mixture of isotopes with different masses in fixed proportions; its atomic mass is their weighted average, which is usually not a whole number.','Cl: (35 × 75 + 37 × 25)/100 = 35.5']],
+detailed:[
+ ['Most elements occur as a mixture of isotopes, atoms of the same element with different mass numbers.','e.g. chlorine: ³⁵Cl and ³⁷Cl'],
+ ['The atomic mass is the average of the isotopic masses weighted by their natural abundances.','M = (m₁x₁ + m₂x₂)/100'],
+ ['Chlorine, with about 75% of ³⁵Cl and 25% of ³⁷Cl, shows how a fraction results.','(35 × 75 + 37 × 25)/100 = 35.5'],
+ ['Isobars and isotones are different elements and play no part, and the particles do not combine to give fractional masses; the fraction comes from averaging the isotopes.','So (B)']
+]},
+{id:'ATOM-45',topic:'Discovery of the electron, proton and neutron',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.380 · p.34',sourceRef:true,question:'Electron, Proton and Neutron were respectively discovered by -',options:['James Chadwick, John Dalton, J.J. Thomson','J.J. Thomson, Goldsteine, John Dalton','J.J. Thomson, William Crookes, Goldsteine','J.J. thomson, Goldstein , James Chadwick'],correct:3,answer:'J.J. thomson, Goldstein , James Chadwick',
+short:[['Match each particle with its discoverer.','electron: J.J. Thomson (1897)','proton: Goldstein (1886)','neutron: James Chadwick (1932)']],
+detailed:[
+ ['J.J. Thomson found the electron from cathode-ray experiments (1897).','electron: J.J. Thomson'],
+ ['Goldstein found the positive canal rays (1886); from hydrogen these are protons.','proton: Goldstein'],
+ ['James Chadwick discovered the neutron in 1932 by bombarding beryllium with alpha particles.','neutron: James Chadwick'],
+ ['Dalton proposed the atomic theory and Crookes worked on discharge tubes, so neither is the discoverer of a subatomic particle here.','Answer: J.J. Thomson, Goldstein, James Chadwick']
+]},
+{id:'ATOM-46',topic:'Charge-to-mass ratio of subatomic particles',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.242 · p.21',sourceRef:true,question:'Increasing order of e/m ratio for α-particle (α), electron (e), proton (p) and neutron (n) is -',options:['α < e < p < n','e < p < n < α','n < α < p < e','e < α < p < n'],correct:2,answer:'n < α < p < e',
+short:[['Compare charge/mass, taking the proton as the unit. The neutron has no charge; the α-particle has charge 2 and mass 4; the electron has the same charge magnitude as the proton but about 1/1836 of its mass.','n: 0','α: 2/4 = 0.5','p: 1','e: 1836'],['Arrange in increasing order.','n < α < p < e']],
+detailed:[
+ ['The neutron is uncharged, so its e/m is zero, the lowest.','n: 0'],
+ ['The α-particle carries +2 charge and has mass number 4, so its e/m is half that of a proton (about 4.8 × 10⁷ C kg⁻¹).','α: 2/4 = 0.5 (proton = 1)'],
+ ['The proton has unit charge and unit mass (about 9.58 × 10⁷ C kg⁻¹).','p: 1/1 = 1'],
+ ['The electron has the same charge size but a mass about 1/1836 of the proton, so its e/m is the largest (1.76 × 10¹¹ C kg⁻¹).','e: 1836'],
+ ['Order from smallest to largest.','n < α < p < e']
+]},
+{id:'ATOM-46-A',parent:'ATOM-46',variant:1,topic:'Charge-to-mass ratio of subatomic particles',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.378 · p.34',sourceRef:true,relevance:{parent:'ATOM-46',sharedSkill:'Charge-to-mass ratio of the electron is a fixed property that does not depend on the gas or cathode',recoveryPurpose:'Controlled transfer - a conceptual question about e/m of cathode rays instead of ranking e/m of four particles'},question:'The e/m ratio for cathode rays -',options:['Is constant','Varies as the atomic number of the element forming cathode in the discharge tube changes','Varies as atomic number of the gas in the discharge tube varies','Has the smallest value when the discharge tube is filled with hydrogen'],correct:0,answer:'Is constant',
+short:[['Cathode rays are streams of electrons, whichever cathode material or gas is used, so e/m is that of the electron and does not change.','e/m = 1.76 × 10¹¹ C kg⁻¹ for every gas and cathode']],
+detailed:[
+ ['Cathode rays are a stream of electrons.','cathode rays = electrons'],
+ ['All electrons have the same charge and the same mass, so the charge-to-mass ratio does not depend on the cathode metal or the gas in the tube.','e/m = 1.76 × 10¹¹ C kg⁻¹ (constant)'],
+ ['In contrast, the e/m of canal (positive) rays depends on the gas, with the largest value for hydrogen.','Answer: is constant']
+]},
+{id:'ATOM-47',topic:'Unpaired electrons and spin-only magnetic moment of ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.413 · p.36',sourceRef:true,question:'Consider the following ions - (1) Ni²⁺ (2) Co²⁺ (3) Cr²⁺ (4) Fe³⁺ (Atomic numbers : Cr = 24, Fe = 26, Co = 27, Ni = 28) The correct sequence of the increasing order of the number of unpaired electrons in these ions is-',options:['1, 2, 3, 4','4, 2, 3, 1','1, 3, 2, 4','3, 4, 2, 1'],correct:0,answer:'1, 2, 3, 4',
+short:[['Write each ion\'s 3d configuration (4s electrons leave first) and count unpaired electrons.','Ni²⁺ 3d⁸: 2','Co²⁺ 3d⁷: 3','Cr²⁺ 3d⁴: 4','Fe³⁺ 3d⁵: 5'],['Order increasing.','Ni²⁺ < Co²⁺ < Cr²⁺ < Fe³⁺, that is 1, 2, 3, 4']],
+detailed:[
+ ['Ni (Z = 28) is [Ar] 3d⁸ 4s². Losing 2 electrons from 4s gives 3d⁸, which has two unpaired electrons.','Ni²⁺: 3d⁸ ⇒ 2 unpaired'],
+ ['Co (Z = 27) is [Ar] 3d⁷ 4s², so Co²⁺ is 3d⁷ with three unpaired electrons.','Co²⁺: 3d⁷ ⇒ 3 unpaired'],
+ ['Cr (Z = 24) is [Ar] 3d⁵ 4s¹, so Cr²⁺ is 3d⁴ with four unpaired electrons.','Cr²⁺: 3d⁴ ⇒ 4 unpaired'],
+ ['Fe (Z = 26) is [Ar] 3d⁶ 4s², so Fe³⁺ is 3d⁵ with five unpaired electrons.','Fe³⁺: 3d⁵ ⇒ 5 unpaired'],
+ ['Arrange the ions by increasing number of unpaired electrons.','2 < 3 < 4 < 5, so (1) < (2) < (3) < (4)']
+]},
+{id:'ATOM-47-A',parent:'ATOM-47',variant:1,topic:'Unpaired electrons and spin-only magnetic moment of ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.419 · p.37',sourceRef:true,relevance:{parent:'ATOM-47',sharedSkill:'Unpaired electrons in 3d ions and the spin-only formula μ = √(n(n+2))',recoveryPurpose:'Inverse/representation change - start from the magnetic moment, work back to the unpaired electrons and identify the element, instead of counting unpaired electrons from given ions'},question:'Magnetic moment of X³⁺ ion of 3d series is √35 BM. What is atomic number of X³⁺ ?',options:['25','26','27','28'],correct:1,answer:'26',
+short:[['Use μ = √(n(n+2)) BM to find the unpaired electrons n.','n(n + 2) = 35','⇒ n = 5'],['X³⁺ is 3d⁵, so neutral X is 3d⁶4s² (add three electrons back).','X = [Ar] 3d⁶ 4s²','⇒ Z = 18 + 8','= 26 (Fe)']],
+detailed:[
+ ['The spin-only magnetic moment depends on the number of unpaired electrons n.','μ = √(n(n+2)) BM'],
+ ['Set it equal to √35 and solve.','n(n + 2) = 35','⇒ n = 5'],
+ ['Five unpaired electrons in a 3d ion with a 3+ charge means 3d⁵.','X³⁺ = 3d⁵'],
+ ['Add back the three electrons that were removed (two from 4s, one from 3d) to get the neutral atom.','X = [Ar] 3d⁶ 4s²'],
+ ['Count the electrons of the neutral atom to get the atomic number. This is iron; the nucleus is unchanged by ionisation.','Z = 18 + 6 + 2','= 26']
+]},
+{id:'ATOM-07-D',parent:'ATOM-07',variant:4,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.375 · p.34',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'de Broglie wavelength formula λ = h/(mv)',recoveryPurpose:'Direct retry - compute λ for a helium atom from its velocity, with the mass taken from the mass number, instead of a cricket ball'},question:'Velocity of helium atom at 300 K is 2.40 × 10² m s⁻¹. What is its wave length - (mass number of helium is 4)',options:['0.416 nm','0.83 nm','803 Å','8000 Å'],correct:0,answer:'0.416 nm',
+short:[['Mass of one He atom = 4 u = 4 × 1.66 × 10⁻²⁷ kg. Apply λ = h/(mv).','λ = (6.626 × 10⁻³⁴)/(6.64 × 10⁻²⁷ × 240)'],['Evaluate and convert to nm.','λ = 4.16 × 10⁻¹⁰ m','= 0.416 nm']],
+detailed:[
+ ['The mass number 4 means one helium atom has a mass of 4 atomic mass units.','m = 4 × 1.66 × 10⁻²⁷ kg','= 6.64 × 10⁻²⁷ kg'],
+ ['The de Broglie relation gives the wavelength from momentum.','λ = h/(mv)'],
+ ['Substitute h = 6.626 × 10⁻³⁴ J s and v = 240 m s⁻¹.','λ = (6.626 × 10⁻³⁴)/(6.64 × 10⁻²⁷ × 240)'],
+ ['Evaluate. The denominator is 1.594 × 10⁻²⁴.','λ = 4.16 × 10⁻¹⁰ m'],
+ ['Convert to nm (1 nm = 10⁻⁹ m).','λ = 0.416 nm']
+]},
+{id:'ATOM-48',topic:'Most probable distance from the radial distribution function',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.514 · p.44',sourceRef:true,question:'The normalized wave function of 1s orbital is : ψ = √N · e^(−Zr/a₀) and the radial distribution function is 4πr²ψ², where N = Z³/(πa₀³). Calculate the most probable distance at which the 1s electron of hydrogen like atom with atomic number Z is to be found -',options:['a₀/Z','a₀/(2Z)','2a₀/Z','none of these'],correct:0,answer:'a₀/Z',
+short:[['Write the radial distribution function and set its derivative to zero to find the maximum.','P(r) = 4πN r² e^(−2Zr/a₀)'],['Differentiate and solve for r (r ≠ 0).','dP/dr ∝ 2r − (2Z/a₀)r² = 0','⇒ r = a₀/Z']],
+detailed:[
+ ['Square the wave function and multiply by 4πr².','P(r) = 4πr²ψ²','= 4πN r² e^(−2Zr/a₀)'],
+ ['The most probable distance is where P(r) is a maximum, so set dP/dr = 0. Only the r-dependent part matters.','d/dr [r² e^(−2Zr/a₀)] = 0'],
+ ['Apply the product rule.','2r e^(−2Zr/a₀) − (2Z/a₀) r² e^(−2Zr/a₀) = 0'],
+ ['Divide out the common factor and solve for r.','2 − (2Z/a₀) r = 0','⇒ r = a₀/Z'],
+ ['For hydrogen (Z = 1) this is the Bohr radius a₀.','Answer: a₀/Z']
+]},
+{id:'ATOM-43-B',parent:'ATOM-43',variant:2,topic:'Origin of atomic line spectra',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.557 · p.48',sourceRef:true,relevance:{parent:'ATOM-43',sharedSkill:'Line spectra arise from each element’s own set of energy levels',recoveryPurpose:'Direct retry — the same question with reworded options'},question:'The line spectrum of two elements is not identical because',options:['They donot have same number of neutrons','They have dissimilar mass numbers','They have different energy level schemes','They have different number of valence electrons.'],correct:2,answer:'They have different energy level schemes',
+short:[['Each spectral line comes from an electron jumping between two energy levels; the levels depend on the nuclear charge and electron arrangement of the element, so each element has its own set.','ΔE = E_high − E_low','= hν']],
+detailed:[
+ ['A line spectrum arises when electrons jump between allowed energy levels and emit or absorb photons of definite energy.','hν = E_high − E_low'],
+ ['The allowed energies are fixed by the nuclear charge and the arrangement of electrons, so they are different for each element.','different element','⇒ different energy level scheme'],
+ ['Neutron number and mass number do not change the electronic energy levels appreciably (isotopes give practically the same spectrum), and the number of valence electrons is not the cause of the differing line positions.','Answer: different energy level schemes']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -893,7 +1197,23 @@ const pilotTopicMap={
  'Properties of cathode rays':['particles-models','Discovery of sub-atomic particles: cathode and anode rays'],
  'Specific charge of charged particles':['particles-models','Discovery of sub-atomic particles: cathode and anode rays'],
  'Distance of closest approach in α-particle scattering':['particles-models','Rutherford’s scattering experiment and the nuclear model'],
- 'Particle and wave nature of the electron':['dual-nature','Wave-particle duality: conceptual evidence']
+ 'Particle and wave nature of the electron':['dual-nature','Wave-particle duality: conceptual evidence'],
+ 'Isoelectronic species and proton count':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Charge on the common ion of an element':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Isotopes, isobars and isotones':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Nuclear composition of hydrogen isotopes':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Electron capture and changes in atomic and mass number':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Atomic mass from proton, neutron and electron masses':['particles-models','Nuclear composition, isotopes and isoelectronic species'],
+ 'Mass defect and binding energy per nucleon':['particles-models','Mass defect and binding energy'],
+ 'Size of the nucleus and the atom':['particles-models','Nuclear size and Rutherford’s nuclear model'],
+ 'Dalton’s atomic theory':['particles-models','Dalton’s atomic theory'],
+ 'Identity and properties of sub-atomic particles':['particles-models','Discovery of sub-atomic particles: cathode and anode rays'],
+ 'Origin of atomic line spectra':['bohr-model','Origin of atomic line spectra'],
+ 'Neutrons, protons and nucleons from atomic and mass number':['particles-models','Neutrons, protons and nucleons from atomic and mass number'],
+ 'Discovery of the electron, proton and neutron':['particles-models','Discovery of the electron, proton and neutron'],
+ 'Charge-to-mass ratio of subatomic particles':['particles-models','Charge-to-mass ratio of subatomic particles'],
+ 'Most probable distance from the radial distribution function':['quantum-model','Most probable distance from the radial distribution function'],
+ 'Unpaired electrons and spin-only magnetic moment of ions':['configuration','Unpaired electrons and spin-only magnetic moment of ions']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
@@ -935,6 +1255,7 @@ questions.sort((a,b)=>{const x=canonicalQuestionOrder(a),y=canonicalQuestionOrde
  const isWord=s=>/[A-Za-z]{3,}/.test((s[0]==='('?s:s.replace(new RegExp(grp,'g'),'').replace(/_[A-Za-z0-9]+/g,'')).replace(/sin|cos|tan|cot|sec|log|exp/g,''));
  const stack=text=>text.replace(fracRe,(m,a,b)=>{if(isWord(a)||isWord(b))return m;const open=s=>s[0]==='('?s.slice(1,-1):s;return '<span class="fraction"><span>'+stack(open(a))+'</span><span>'+stack(open(b))+'</span></span>';});
  out=stack(out);
+ out=(t=>{let r='',i=0;while(i<t.length){const k=t.indexOf('^(',i);if(k<0){r+=t.slice(i);break}r+=t.slice(i,k);let d=0,j=k+1;for(;j<t.length;j++){if(t[j]==='(')d++;else if(t[j]===')'){d--;if(!d)break}}r+='<sup>'+t.slice(k+2,j)+'</sup>';i=j+1}return r})(out);
  out=out.replace(/([A-Za-zα-ωΑ-Ωℓ])_([A-Za-z0-9]+)/g,'$1<sub>$2</sub>');
  out=out.replace(/(?:[A-Z][a-z]?\d+|(?:[A-Z][a-z]?\d*){2,})(?:[+-])?(?![a-z])/g,token=>'<span class="formula">'+token.replace(/([A-Za-z)])(\d+)/g,'$1<sub>$2</sub>')+'</span>');
  out=out.replace(/\b(cm|dm|m)3\b/gi,'$1<sup>3</sup>').replace(/\b(mol|cm|dm|m)-1\b/gi,'$1<sup>−1</sup>');
@@ -946,7 +1267,7 @@ function briefSolution(q){
 function detailedSolution(q){
  const steps=q.detailed||q.brief;
  const seen=new Set,rendered=steps.map(([explanation,...equations])=>{
-  const unique=equations.filter(line=>{const key=String(line).replace(/[^a-z0-9]/gi,'').toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true;});
+  const unique=equations.filter(line=>{const key=String(line).replace(/[^a-z0-9]/gi,'').toLowerCase();if(!key||(key.length>=8&&seen.has(key)))return false;seen.add(key);return true;});
   if(!equations.length)return `<div class="detailedstep"><p>${mathHtml(explanation)}</p></div>`;
   return unique.length?`<div class="detailedstep"><p>${mathHtml(explanation)}</p><div class="detailedequations">${unique.map(line=>`<div class="equation">${mathHtml(line)}</div>`).join('')}</div></div>`:'';
  }).join('');
