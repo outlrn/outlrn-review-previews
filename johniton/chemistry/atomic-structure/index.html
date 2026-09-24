@@ -1093,6 +1093,379 @@ detailed:[
  ['A line spectrum arises when electrons jump between allowed energy levels and emit or absorb photons of definite energy.','hν = E_high − E_low'],
  ['The allowed energies are fixed by the nuclear charge and the arrangement of electrons, so they are different for each element.','different element','⇒ different energy level scheme'],
  ['Neutron number and mass number do not change the electronic energy levels appreciably (isotopes give practically the same spectrum), and the number of valence electrons is not the cause of the differing line positions.','Answer: different energy level schemes']
+]},
+{id:'ATOM-49',topic:'Kinetic, potential and total energy in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.192 · p.16',sourceRef:true,question:'The kinetic and potential energy (in eV) of electron present in third Bohr’s orbit of Hydrogen atom are respectively-',options:['−1.51, −3.02','1.51, −3.02','−3.02, 1.51','1.51, −1.51'],correct:1,answer:'1.51, −3.02',
+short:[['Total energy of hydrogen at n = 3.','E₃ = −13.6/3²','= −1.51 eV'],['Virial relation for a Coulomb orbit: KE = −(total energy), PE = 2×(total energy).','KE = −E₃','= +1.51 eV','PE = 2×E₃','= −3.02 eV']],
+detailed:[
+ ['First find the total energy in the third orbit from the Bohr formula for hydrogen (Z = 1).','Eₙ = −13.6/n² eV','E₃ = −13.6/9','= −1.51 eV'],
+ ['For a Coulomb (1/r) force the virial theorem gives PE = −2×KE, so the total energy is TE = KE + PE = −KE.','KE = −TE','PE = 2×TE'],
+ ['Substitute the total energy.','KE = −(−1.51 eV)','= +1.51 eV','PE = 2×(−1.51 eV)','= −3.02 eV'],
+ ['Kinetic energy is positive, potential energy negative.','Answer: (B) 1.51, −3.02']
+]},
+{id:'ATOM-49-A',parent:'ATOM-49',variant:1,topic:'Kinetic, potential and total energy in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.178 · p.15 (Q.227, p.19, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-49',sharedSkill:'Virial-theorem relation KE = −(total energy) in a Bohr orbit',recoveryPurpose:'Direct retry - the total energy is given as a single value and only the kinetic energy is asked for'},question:'In hydrogen atom, energy of the first excited state is −3.4 eV. Then find out the K.E. of the same orbit of H-atoms.',options:['+3.4 eV','+6.8 eV','−13.6 eV','+13.6 eV'],correct:0,answer:'+3.4 eV',
+short:[['The first excited state is n = 2 and the given value is the total energy.','TE = −3.4 eV'],['Virial theorem: the kinetic energy equals minus the total energy.','KE = −TE','= −(−3.4 eV)','= +3.4 eV']],
+detailed:[
+ ['In a Coulomb orbit the virial theorem gives PE = −2×KE, so TE = KE + PE = −KE.','TE = −KE'],
+ ['The given −3.4 eV is the total energy of the orbit (consistent with E₂ = −13.6/2²).','E₂ = −13.6/4','= −3.4 eV'],
+ ['Solve for the kinetic energy.','KE = −TE','= −(−3.4 eV)','= +3.4 eV'],
+ ['Answer: (A) +3.4 eV']
+]},
+{id:'ATOM-50',topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.132 · p.12 (Q.493, p.42, is a verbatim repeat of this item)',sourceRef:true,question:'The energy of the electron in the first orbit of He⁺ is −871.6 × 10⁻²⁰ J. The energy of the electron in the first orbit of hydrogen would be',options:['−871.6 × 10⁻²⁰ J','−435.8 × 10⁻²⁰ J','−217.9 × 10⁻²⁰ J','−108.9 × 10⁻²⁰ J'],correct:2,answer:'−217.9 × 10⁻²⁰ J',
+short:[['Energy in the first orbit scales as Z². He⁺ has Z = 2 and H has Z = 1.','E₁(He⁺)/E₁(H) = 2²/1²','= 4'],['Divide the He⁺ value by 4.','E₁(H) = (−871.6×10⁻²⁰)/4','= −217.9×10⁻²⁰ J']],
+detailed:[
+ ['For a one-electron species the Bohr energy is proportional to Z² at fixed n.','Eₙ ∝ Z²/n²'],
+ ['At n = 1 the ratio of the two energies is the ratio of Z².','E₁(He⁺)/E₁(H) = 2²/1²','= 4'],
+ ['Solve for the hydrogen energy.','E₁(H) = (−871.6×10⁻²⁰)/4','= −217.9×10⁻²⁰ J'],
+ ['Answer: (C) −217.9 × 10⁻²⁰ J']
+]},
+{id:'ATOM-50-A',parent:'ATOM-50',variant:1,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.165 · p.14 (Q.232, p.20, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of the ground-state energy of one-electron species',recoveryPurpose:'Controlled transfer - the given quantity is the ionization energy of He⁺ (Z = 2) and the target is Li²⁺ (Z = 3), so the scaling factor is 9/4 instead of 1/4'},question:'The ionization energy of He⁺ is 19.6 × 10⁻¹⁸ J atom⁻¹. Calculate the energy of the first stationary state of Li²⁺.',options:['19.6 × 10⁻¹⁸ J atom⁻¹','4.41 × 10⁻¹⁸ J atom⁻¹','19.6 × 10⁻¹⁹ J atom⁻¹','4.41 × 10⁻¹⁷ J atom⁻¹'],correct:3,answer:'4.41 × 10⁻¹⁷ J atom⁻¹',
+short:[['Ionization energy from n = 1 equals the magnitude of the first-orbit energy, which scales as Z².','|E₁(He⁺)| = 19.6×10⁻¹⁸ J','Z = 2 for He⁺'],['Scale to Li²⁺ (Z = 3).','(|E₁(Li²⁺)|)/(|E₁(He⁺)|) = 3²/2²','= 9/4'],['Multiply.','|E₁(Li²⁺)| = 19.6×10⁻¹⁸×(9/4)','= 44.1×10⁻¹⁸ J','= 4.41×10⁻¹⁷ J']],
+detailed:[
+ ['For a one-electron species the ionization energy from the ground state is |E₁|, and |E₁| ∝ Z².','IE = |E₁| ∝ Z²'],
+ ['He⁺ has Z = 2 and Li²⁺ has Z = 3, so the ratio of the two energies is 9/4.','(|E₁(Li²⁺)|)/(|E₁(He⁺)|) = 3²/2²','= 9/4'],
+ ['Multiply the given value by 9/4.','|E₁(Li²⁺)| = 19.6×10⁻¹⁸ × 9/4','= 44.1×10⁻¹⁸ J','= 4.41×10⁻¹⁷ J'],
+ ['The option gives the magnitude; the energy of the stationary state itself is negative (−4.41×10⁻¹⁷ J).','Answer: (D) 4.41 × 10⁻¹⁷ J atom⁻¹']
+]},
+{id:'ATOM-50-B',parent:'ATOM-50',variant:2,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.193 · p.16',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of Bohr energies of one-electron ions',recoveryPurpose:'Representation change - the separation (ionization) energy is measured from the first excited state n = 2 of Be³⁺ instead of from the ground state'},question:'What is the separation energy (in eV) for Be³⁺ in the first excited state in eV ?',options:['13.6 eV','27.2 eV','40.8 eV','54.5 eV'],correct:3,answer:'54.5 eV',
+short:[['Separation energy from level n is the energy to reach n = ∞, that is |Eₙ|. The first excited state is n = 2 and Be³⁺ has Z = 4.','|E₂| = 13.6×Z²/n²','= (13.6×16)/4'],['Evaluate.','= 217.6/4','= 54.4 eV','≈ 54.5 eV']],
+detailed:[
+ ['Be³⁺ has lost three of four electrons, leaving one electron with nuclear charge Z = 4.','Z = 4'],
+ ['The first excited state is n = 2. The energy needed to remove the electron from it is the magnitude of its energy.','Separation energy = |E₂|','= 13.6×Z²/n² eV'],
+ ['Substitute.','|E₂| = (13.6×16)/4','= 217.6/4','= 54.4 eV'],
+ ['The nearest option is 54.5 eV (the small difference is rounding of 13.6).','Answer: (D) 54.5 eV']
+]},
+{id:'ATOM-51',topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.176 · p.15 (Q.225, p.19, is a verbatim repeat of this item)',sourceRef:true,question:'How much energy should be absorbed by a hydrogen atom in ground state to reach excited state ?',options:['+ 1.5 eV','3.4 eV','13.4 eV','10.2 eV'],correct:3,answer:'10.2 eV',
+short:[['The least energy that takes the atom to an excited state is the ground state to n = 2 (first excited state) jump.','ΔE = E₂ − E₁','= −3.4 − (−13.6)'],['Evaluate.','= 13.6×(1 − 1/4)','= 13.6×3/4','= 10.2 eV']],
+detailed:[
+ ['The ground state is n = 1 and the lowest excited state is n = 2. The energy absorbed is the difference of the two level energies.','ΔE = E₂ − E₁'],
+ ['Use Eₙ = −13.6/n² eV for hydrogen.','E₁ = −13.6 eV','E₂ = −3.4 eV'],
+ ['Subtract.','ΔE = −3.4 − (−13.6)','= 10.2 eV'],
+ ['10.2 eV is the least energy that lifts the atom to an excited state.','Answer: (D) 10.2 eV']
+]},
+{id:'ATOM-51-A',parent:'ATOM-51',variant:1,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.195 · p.16',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels ΔE = 13.6(1/n₁² − 1/n₂²)',recoveryPurpose:'Controlled transfer - two such differences (1 to 2 and 2 to 3) are compared as a ratio'},question:'The ratio of the difference in energy of electron between the first and second Bohr’s orbits to that between second and third Bohr’s orbits is : (For Hydrogen)',options:['1/3','27/5','9/4','4/9'],correct:1,answer:'27/5',
+short:[['Energy difference between the first and second orbits.','E₂ − E₁ = 13.6×(1/1² − 1/2²)','= 13.6×3/4','= 10.2 eV'],['Energy difference between the second and third orbits.','E₃ − E₂ = 13.6×(1/2² − 1/3²)','= 13.6×5/36','= 1.89 eV'],['Take the ratio; 13.6 cancels.','ratio = (3/4)/(5/36)','= (3×36)/(4×5)','= 27/5']],
+detailed:[
+ ['Hydrogen energies are Eₙ = −13.6/n² eV, so the difference between two orbits is 13.6(1/n₁² − 1/n₂²).','ΔE = 13.6×(1/n₁² − 1/n₂²)'],
+ ['First and second orbits.','ΔE₁₂ = 13.6×(1 − 1/4)','= 13.6×3/4'],
+ ['Second and third orbits.','ΔE₂₃ = 13.6×(1/4 − 1/9)','= 13.6×5/36'],
+ ['The factor 13.6 cancels in the ratio.','ΔE₁₂/ΔE₂₃ = (3/4)/(5/36)','= (3×36)/(4×5)','= 108/20','= 27/5'],
+ ['Answer: (B) 27/5']
+]},
+{id:'ATOM-52',topic:'Time period of revolution in Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.167 · p.15 (Q.190, p.16, and Q.415, p.37, are verbatim repeats of this item)',sourceRef:true,question:'In an atom, two electrons move around the nucleus in circular orbits of radii R and 4R. The ratio of the time taken by them to complete one revolution is',options:['1 : 4','4 : 1','1 : 8','8 : 7'],correct:2,answer:'1 : 8',
+short:[['Bohr radius scales as n², so radii R and 4R mean n₁ : n₂ = 1 : 2.','r ∝ n²','n₁ : n₂ = 1 : 2'],['Speed scales as 1/n (v ∝ Z/n).','v ∝ 1/n'],['Time for one revolution is T = 2πr/v.','T ∝ r/v','∝ n²/(1/n)','= n³'],['Substitute.','T₁ : T₂ = 1³ : 2³','= 1 : 8']],
+detailed:[
+ ['In the Bohr model the radius of the nth orbit is proportional to n², so a radius ratio 1 : 4 means n₁ : n₂ = 1 : 2.','r ∝ n²/Z','n₁ : n₂ = 1 : 2'],
+ ['The orbital speed is proportional to 1/n for the same nucleus.','v ∝ Z/n'],
+ ['One revolution takes the circumference divided by the speed.','T = 2πr/v'],
+ ['Combine the two proportionalities.','T ∝ n²/(1/n)','= n³'],
+ ['Ratio of the times.','T₁ : T₂ = 1³ : 2³','= 1 : 8'],
+ ['Answer: (C) 1 : 8']
+]},
+{id:'ATOM-53',topic:'Statements on ionization energy and orbit radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.241 · p.21',sourceRef:true,question:'Which of the following statements are incorrect ?',options:['For designating orbitals three quantum numbers are needed','The second ionization energy of helium is 4 times, the first ionization of hydrogen','The third ionization energy of lithium is 9 times, the first ionization of hydrogen','Radius of third orbit of Li²⁺ is 3 times the radius of third orbit of hydrogen atom'],correct:3,answer:'Radius of third orbit of Li²⁺ is 3 times the radius of third orbit of hydrogen atom',
+short:[['(A) n, ℓ and m fix an orbital, so it is correct.','orbital needs 3 numbers: n ℓ m'],['(B) The second IE of He is the IE of He⁺ (Z = 2).','IE₂(He) = 13.6×2²','= 4×13.6 eV','so (B) is correct'],['(C) The third IE of Li is the IE of Li²⁺ (Z = 3).','IE₃(Li) = 13.6×3²','= 9×13.6 eV','so (C) is correct'],['(D) Radius rₙ = 0.529×n²/Z, so at n = 3 it goes as 1/Z.','r₃(Li²⁺)/r₃(H) = 1/3','not 3 times','(D) is incorrect']],
+detailed:[
+ ['(A) An orbital is defined by n, ℓ and m, so three quantum numbers are enough. This statement is correct.','n ℓ m'],
+ ['(B) The second ionization energy of helium removes the electron from He⁺, a one-electron ion with Z = 2.','IE₂(He) = 13.6×2² eV','= 4×13.6 eV','Statement (B) is correct'],
+ ['(C) The third ionization energy of lithium removes the electron from Li²⁺, with Z = 3.','IE₃(Li) = 13.6×3² eV','= 9×13.6 eV','Statement (C) is correct'],
+ ['(D) The Bohr radius is rₙ = 0.529×n²/Z Å. At the same n the radius is inversely proportional to Z.','r₃(Li²⁺) = 0.529×9/3','= 1.587 Å','r₃(H) = 0.529×9/1','= 4.761 Å'],
+ ['The Li²⁺ radius is one third of the hydrogen radius, not three times.','r₃(Li²⁺)/r₃(H) = 1/3'],
+ ['Only (D) is incorrect.','Answer: (D)']
+]},
+{id:'ATOM-53-A',parent:'ATOM-53',variant:1,topic:'Statements on ionization energy and orbit radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.260 · p.22',sourceRef:true,relevance:{parent:'ATOM-53',sharedSkill:'Checking statements about a hydrogen-like ion against the Z² energy formula and the n²/Z radius formula',recoveryPurpose:'Controlled transfer - one He⁺ ion in n = 5 with four numerical statements, adding the Rydberg wavelength and the number of lines'},question:'Consider one He⁺ ion in excited state (n = 5). Which of the following observations will hold true as per the Bohr’s model -',options:['10 emission spectral lines will be seen','The ionisation energy needed is less than 2eV','The longest emitted wavelength is less than 10/R (R = Rydberg’s constant)','The electronic separation from the centre of nucleus is more than 6 Å'],correct:3,answer:'The electronic separation from the centre of nucleus is more than 6 Å',
+short:[['(A) One ion follows one downward path (5→4→3→2→1), so it gives at most 4 lines. 10 lines is the count for a large sample.','one ion → at most 4 lines','(A) does not hold'],['(B) Ionization energy from n = 5 for Z = 2.','IE = 13.6×4/25','= 2.18 eV','> 2 eV','(B) fails'],['(C) Longest wavelength is the 5→4 line.','1/λ = R×4×(1/16 − 1/25)','= 9R/100','λ = 100/(9R)','= 11.1/R','> 10/R','(C) fails'],['(D) Orbit radius for n = 5, Z = 2.','r₅ = 0.529×25/2','= 6.61 Å','> 6 Å','(D) holds']],
+detailed:[
+ ['He⁺ is a one-electron ion with Z = 2, so the Bohr formulas apply. Check each statement.','Z = 2'],
+ ['(A) A single ion in n = 5 de-excites along one path, for example 5→4→3→2→1, and emits at most 4 photons. The 10 lines n(n−1)/2 appear only when many ions are present.','n(n−1)/2 = 10 (many ions only)','one ion → at most 4 lines'],
+ ['(B) Ionization energy from n = 5.','IE = 13.6×Z²/n²','= (13.6×4)/25','= 2.18 eV','not less than 2 eV'],
+ ['(C) The longest wavelength belongs to the smallest energy gap, 5→4.','1/λ = R×Z²×(1/4² − 1/5²)','= R×4×(9/400)','= 9R/100','λ = 100/(9R)','= 11.1/R','not less than 10/R'],
+ ['(D) Bohr radius of the fifth orbit of He⁺.','r₅ = 0.529×n²/Z','= 0.529×25/2','= 6.61 Å','more than 6 Å'],
+ ['Only (D) holds.','Answer: (D)']
+]},
+{id:'ATOM-54',topic:'Quantum numbers of the outermost electron of an atom',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.207 · p.18',sourceRef:true,question:'Which of the following sets of quantum number describes the electron which is removed most easily from a potassium atom in its ground state ?',options:['n = 3, ℓ = 1, mℓ = 1, mₛ = −1/2','n = 2, ℓ = 1, mℓ = 0, mₛ = −1/2','n = 4, ℓ = 0, mℓ = 1, mₛ = +1/2','n = 4, ℓ = 0, mℓ = 0, mₛ = +1/2'],correct:3,answer:'n = 4, ℓ = 0, mℓ = 0, mₛ = +1/2',
+short:[['Potassium (Z = 19) has the configuration 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹.','outermost electron: 4s¹'],['The 4s electron has the highest n and is removed most easily.','n = 4'],['For ℓ = 0 only mℓ = 0 is allowed, with mₛ = ±1/2.','mℓ = 0','so (C) with mℓ = 1 is impossible'],['Options (A) and (B) describe 3p and 2p electrons, which are held more tightly.','Answer: (D)']],
+detailed:[
+ ['Write the ground-state configuration of potassium (19 electrons).','1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹'],
+ ['The electron removed most easily is the outermost one, the single 4s electron.','n = 4','ℓ = 0'],
+ ['For ℓ = 0 the magnetic quantum number can only be 0. The spin can be +1/2 or −1/2.','mℓ = 0','mₛ = ±1/2'],
+ ['Compare the options. (A) is a 3p electron and (B) is a 2p electron, both deeper inside. (C) has ℓ = 0 with mℓ = 1, which is not allowed.','(A) is 3p','(B) is 2p','(C) is invalid'],
+ ['Only (D) matches n = 4, ℓ = 0, mℓ = 0.','Answer: (D)']
+]},
+{id:'ATOM-06-H',parent:'ATOM-06',variant:8,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.131 · p.12 (Q.492, p.42, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula Eₙ = −13.6/n² eV, checked as a validity test',recoveryPurpose:'Direct retry - the same validity check as ATOM-06-D, with four printed values for hydrogen'},question:'The energy of an electron in the first Bohr orbit of H atom is −13.6 eV. The possible energy value (s) of the excited state(s) for electrons in Bohr orbits of hydrogen is (are)',options:['−3.4 eV','−4.2 eV','−6.8 eV','+6.8 eV'],correct:0,answer:'−3.4 eV',
+short:[['Allowed energies are Eₙ = −13.6/n² eV for whole n. Solve n² for each negative value.','−13.6/n² = −3.4','n² = 13.6/3.4','= 4','n = 2 (valid)'],['Check the others.','−4.2 eV: n² = 3.24 (invalid)','−6.8 eV: n² = 2 (invalid)','+6.8 eV: positive (not bound)']],
+detailed:[
+ ['Bound-state energies of hydrogen are negative and follow Eₙ = −13.6/n² eV with n = 2, 3, 4, … for excited states.','Eₙ = −13.6/n² eV'],
+ ['(A) −3.4 eV.','n² = 13.6/3.4','= 4','n = 2 (valid)'],
+ ['(B) −4.2 eV.','n² = 13.6/4.2','= 3.24','not a perfect square (invalid)'],
+ ['(C) −6.8 eV.','n² = 13.6/6.8','= 2','not a perfect square (invalid)'],
+ ['(D) +6.8 eV is positive, so it is not a bound state.','Answer: (A) −3.4 eV']
+]},
+{id:'ATOM-26-B',parent:'ATOM-26',variant:2,topic:'Applicability of the Bohr model',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.174 · p.15 (Q.223, p.19, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-26',sharedSkill:'The Bohr model applies only to species with exactly one electron',recoveryPurpose:'Controlled transfer - the species that fails has no electron at all (He²⁺) instead of having too many electrons'},question:'For which of the following species, Bohr’s theory is not applicable ?',options:['H','He²⁺','Li²⁺','Be³⁺'],correct:1,answer:'He²⁺',
+short:[['Bohr’s theory needs exactly one electron orbiting a nucleus. Count electrons = Z − charge.','H: 1 − 0 = 1','He²⁺: 2 − 2 = 0','Li²⁺: 3 − 2 = 1','Be³⁺: 4 − 3 = 1'],['He²⁺ has no electron, so the theory does not apply.','Answer: He²⁺']],
+detailed:[
+ ['Bohr’s theory describes a single electron moving around a nucleus.','one electron required'],
+ ['Count the electrons in each species as atomic number minus positive charge.','H: 1 electron','He²⁺: 2 − 2 = 0 electrons','Li²⁺: 3 − 2 = 1 electron','Be³⁺: 4 − 3 = 1 electron'],
+ ['He²⁺ is a bare nucleus (an α-particle), so there is no electron to describe. H, Li²⁺ and Be³⁺ are one-electron species.','Answer: (B) He²⁺']
+]},
+{id:'ATOM-07-E',parent:'ATOM-07',variant:5,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.215 · p.18',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'de Broglie wavelength from the kinetic energy, λ = h/√(2mE)',recoveryPurpose:'Controlled transfer - the kinetic energy of the electron is first found from an ionization (Bohr) energy balance, then converted to a wavelength'},question:'An electron in a hydrogen atom in it’s ground state absorbs 1.50 times as much energy as the minimum required for it to escape from the atom. What is wavelength of the emitted electron : (√[(2×1.089×10⁻¹⁸)/(9.1×10⁻³¹)] = 1.55×10⁶)',options:['2.2 × 10⁻¹⁰ m','4.7 × 10⁻¹⁰ m','7 × 10⁻¹⁰ m','1 × 10⁻¹⁰ m'],correct:1,answer:'4.7 × 10⁻¹⁰ m',
+short:[['Minimum energy to escape is the ionization energy, 13.6 eV = 2.18×10⁻¹⁸ J. The atom absorbs 1.5 times this.','absorbed = 1.5×13.6 eV','KE = 1.5×13.6 − 13.6','= 6.8 eV','= 1.089×10⁻¹⁸ J'],['Speed of the emitted electron.','v = √[(2×1.089×10⁻¹⁸)/(9.1×10⁻³¹)]','= 1.55×10⁶ m s⁻¹'],['de Broglie wavelength.','λ = h/(mv)','= (6.626×10⁻³⁴)/(9.1×10⁻³¹ × 1.55×10⁶)','= 4.7×10⁻¹⁰ m']],
+detailed:[
+ ['The least energy needed to free the ground-state electron is the ionization energy. Whatever is absorbed beyond this becomes kinetic energy.','KE = absorbed − ionization energy'],
+ ['Absorbed energy is 1.5 times the ionization energy.','KE = 1.5×13.6 − 13.6','= 0.5×13.6','= 6.8 eV','= 1.089×10⁻¹⁸ J'],
+ ['Speed from the kinetic energy (the given number).','v = √(2KE/m)','= √[(2×1.089×10⁻¹⁸)/(9.1×10⁻³¹)]','= 1.55×10⁶ m s⁻¹'],
+ ['de Broglie wavelength of the emitted electron.','λ = h/(mv)','= (6.626×10⁻³⁴)/(9.1×10⁻³¹ × 1.55×10⁶)','= 4.7×10⁻¹⁰ m'],
+ ['Answer: (B) 4.7 × 10⁻¹⁰ m']
+]},
+{id:'ATOM-09-C',parent:'ATOM-09',variant:3,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.206 · p.17',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Radial node counting n − ℓ − 1',recoveryPurpose:'Direct retry - the same 3s and 2p pair as ATOM-09-A with the options re-ordered'},question:'The number of radial nodes of 3s & 2p orbital respectively -',options:['2, 0','0, 2','1, 2','2, 1'],correct:0,answer:'2, 0',
+short:[['Radial nodes = n − ℓ − 1.','3s: n = 3 and ℓ','= 0','3 − 0 − 1','= 2','2p: n = 2 and ℓ','= 1','2 − 1 − 1','= 0'],['So the pair is 2 and 0.','Answer: 2, 0']],
+detailed:[
+ ['The number of radial nodes of an orbital is n − ℓ − 1.','radial nodes = n − ℓ − 1'],
+ ['3s has n = 3 and ℓ = 0.','3 − 0 − 1','= 2'],
+ ['2p has n = 2 and ℓ = 1.','2 − 1 − 1','= 0'],
+ ['Answer: (A) 2, 0']
+]},
+{id:'ATOM-09-D',parent:'ATOM-09',variant:4,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.134 · p.12 (Q.495, p.42, is a repeat of this item with the options in a different order)',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Angular nodes = ℓ',recoveryPurpose:'Controlled transfer - counting nodal planes of a specific p orbital, where the angular nodes are planes'},question:'The number of nodal planes in a pₓ orbital is–',options:['two','one','three','zero'],correct:1,answer:'one',
+short:[['A p orbital has ℓ = 1, so it has 1 angular node.','angular nodes = ℓ','= 1'],['For pₓ the angular node is the plane where x = 0 (the yz plane).','nodal planes = 1']],
+detailed:[
+ ['The number of angular nodes equals the azimuthal quantum number.','angular nodes = ℓ'],
+ ['A p orbital has ℓ = 1.','angular nodes = 1'],
+ ['For pₓ the single angular node is a flat plane through the nucleus, perpendicular to the x axis (the yz plane).','nodal planes = 1'],
+ ['Answer: (B) one']
+]},
+{id:'ATOM-10-B',parent:'ATOM-10',variant:2,topic:'Electronic configuration exceptions (Aufbau)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.121 · p.11',sourceRef:true,relevance:{parent:'ATOM-10',sharedSkill:'Half-filled d-subshell exception: Cr is [Ar] 3d⁵ 4s¹',recoveryPurpose:'Direct retry - recall the chromium configuration itself instead of counting its ℓ = 1 and ℓ = 2 electrons'},question:'The correct ground state electronic configuration of chromium atom is-',options:['[Ar] 3d⁵ 4s¹','[Ar] 3d⁴ 4s²','[Ar] 3d⁶ 4s⁰','[Ar] 4d⁵ 4s¹'],correct:0,answer:'[Ar] 3d⁵ 4s¹',
+short:[['Chromium has Z = 24, so it has 18 (argon core) + 6 outer electrons.','24 − 18 = 6'],['A half-filled 3d subshell is extra stable, so one 4s electron moves to 3d.','Expected 4s² 3d⁴','Actual 4s¹ 3d⁵'],['(C) has no 4s electron and (D) uses 4d, which lies higher than 3d.','Answer: [Ar] 3d⁵ 4s¹']],
+detailed:[
+ ['Chromium has 24 electrons, of which 18 form the [Ar] core.','24 − 18 = 6 outer electrons'],
+ ['Filling in order would give 4s² 3d⁴. But a half-filled 3d subshell (5 electrons, all parallel) has extra exchange stability, so one 4s electron shifts to 3d.','4s² 3d⁴ → 4s¹ 3d⁵'],
+ ['Options (C) 3d⁶ 4s⁰ and (D) 4d⁵ 4s¹ are not the lowest-energy arrangement (4d lies above 3d).'],
+ ['Answer: (A) [Ar] 3d⁵ 4s¹']
+]},
+{id:'ATOM-10-C',parent:'ATOM-10',variant:3,topic:'Electronic configuration exceptions (Aufbau)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.133 · p.12 (Q.494, p.42, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-10',sharedSkill:'Half-filled d-subshell exception: Cr is [Ar] 3d⁵ 4s¹',recoveryPurpose:'Inverse - the configuration is given and the question asks whether it is the ground state, excited state or an ion'},question:'The electronic configuration of an element is 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹. This represents its',options:['excited state','ground state','cationic form','anionic form'],correct:1,answer:'ground state',
+short:[['Count the electrons.','2 + 2 + 6 + 2 + 6 + 5 + 1','= 24'],['24 electrons in a neutral atom is Z = 24, chromium.','Z = 24'],['Chromium’s ground state is [Ar] 3d⁵ 4s¹ because half-filled 3d is extra stable.','3d⁵ 4s¹ = ground state']],
+detailed:[
+ ['Add the electrons in the given configuration.','2 + 2 + 6 + 2 + 6 + 5 + 1','= 24'],
+ ['The element is neutral, so Z = 24 (chromium).','Z = 24'],
+ ['Chromium is an Aufbau exception: one 4s electron shifts to 3d to give the half-filled 3d⁵ 4s¹ arrangement.','ground state: [Ar] 3d⁵ 4s¹'],
+ ['The given configuration is therefore the ground state, not an excited state, cation or anion.','Answer: (B) ground state']
+]},
+{id:'ATOM-16-C',parent:'ATOM-16',variant:3,topic:'Counting electrons by azimuthal quantum number',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.188 · p.16 (Q.259, p.22, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-16',sharedSkill:'Counting electrons in a given type of subshell from the written configuration',recoveryPurpose:'Controlled transfer - four counts in different atoms and ions (F, Na, Fe³⁺, Mn) have to be compared'},question:'Number of electrons that F (Z = 9) has in p- orbitals is equal to:',options:['number of electrons in s-orbitals in Na (11 e⁻)','number of electrons in d-orbitals in Fe³⁺ (23 e⁻)','number of electrons in d-orbitals in Mn (25 e⁻)','(A), (B), (C) true'],correct:3,answer:'(A), (B), (C) true',
+short:[['F: 1s² 2s² 2p⁵.','p electrons = 5'],['(A) Na: 1s² 2s² 2p⁶ 3s¹.','s electrons = 2 + 2 + 1','= 5'],['(B) Fe³⁺ (23 e⁻): [Ar] 3d⁵.','d electrons = 5'],['(C) Mn (25 e⁻): [Ar] 3d⁵ 4s².','d electrons = 5'],['All three equal 5.','Answer: (D)']],
+detailed:[
+ ['Fluorine has 9 electrons.','F: 1s² 2s² 2p⁵','p electrons = 5'],
+ ['(A) Sodium has 11 electrons.','Na: 1s² 2s² 2p⁶ 3s¹','s electrons = 2 + 2 + 1','= 5'],
+ ['(B) Fe³⁺ has 23 electrons: the 4s electrons and one 3d electron of iron are lost.','Fe³⁺: [Ar] 3d⁵','d electrons = 5'],
+ ['(C) Mn has 25 electrons.','Mn: [Ar] 3d⁵ 4s²','d electrons = 5'],
+ ['Each count equals 5, so all three are true.','Answer: (D) (A), (B), (C) true']
+]},
+{id:'ATOM-20-B',parent:'ATOM-20',variant:2,topic:'Reading electron-box (orbital) diagrams',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.120 · p.11',sourceRef:true,relevance:{parent:'ATOM-20',sharedSkill:'Reading an electron-box diagram to see which filling rule is broken',recoveryPurpose:'Controlled transfer - the rule to look for is the Aufbau order (a higher subshell filled before a lower one is complete) instead of Hund’s or Pauli’s'},question:'The orbital diagram in which the Auf-bau principle is violated-',options:['2s: [↑↓]   2p: [↑↓] [↑] [ ]','2s: [↑]   2p: [↑↓] [↑] [↑]','2s: [↑↓]   2p: [↑] [↑] [↑]','2s: [↑↓]   2p: [↑↓] [↑↓] [↑]'],correct:1,answer:'2s: [↑]   2p: [↑↓] [↑] [↑]',
+short:[['Aufbau: a lower subshell is filled completely before the next one starts.','2s must hold 2 electrons before 2p is used'],['(A) 2s is full but 2p pairs up before the empty box is used. That breaks Hund’s rule, not Aufbau.','2p: [↑↓] [↑] [ ]','Hund violated'],['(B) 2s has only 1 electron but 2p already has 4.','2s holds 1 electron','2p holds 4 electrons','Aufbau violated'],['(C) and (D) fill 2s first, then 2p correctly.','Answer: (B)']],
+detailed:[
+ ['The Aufbau principle says electrons enter the lowest-energy subshell first, so 2s must be full (2 electrons) before 2p receives any.','2s → then 2p'],
+ ['(A) 2s is full. In 2p, one box is paired while another is empty, so Hund’s rule is broken instead.','2s: 2 electrons','2p: [↑↓] [↑] [ ]'],
+ ['(B) 2s holds only one electron, yet 2p already has four electrons.','2s: 1 electron','2p: 4 electrons','Aufbau violated'],
+ ['(C) 2s full, then three unpaired 2p electrons, which is correct.'],
+ ['(D) 2s full, then five 2p electrons filled correctly.'],
+ ['Answer: (B)']
+]},
+{id:'ATOM-08-B',parent:'ATOM-08',variant:2,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.213 · p.18',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'What each quantum number and the number of quantum numbers define',recoveryPurpose:'Controlled transfer - four statements about quantum numbers, one of which mixes up the Zeeman and Stark effects'},question:'Select incorrect statements -',options:['Only three quantum number n, ℓ, m are needed to define an orbital','Four quantum number are needed for complete description of an electron','Two quantum number n & ℓ are needed to identify subshell energy and shape of orbital','splitting of spectral lines in presence electric field is known as Zeeman effect.'],correct:3,answer:'splitting of spectral lines in presence electric field is known as Zeeman effect.',
+short:[['(A) n, ℓ and m fix an orbital, so it is correct.','n ℓ m → orbital'],['(B) The electron also needs the spin number, so four are needed. Correct.','n ℓ m s → electron'],['(C) n and ℓ fix the subshell, its energy and its shape. Correct.','n ℓ → subshell'],['(D) Splitting of lines in an electric field is the Stark effect. The Zeeman effect is splitting in a magnetic field.','electric field → Stark','magnetic field → Zeeman','so (D) is incorrect']],
+detailed:[
+ ['(A) An orbital is specified by n (size), ℓ (shape) and m (orientation). Correct.','n ℓ m'],
+ ['(B) A complete description of an electron adds the spin quantum number s. Correct.','n ℓ m s'],
+ ['(C) n and ℓ together identify the subshell (for example 3d), which sets its energy and shape. Correct.','n ℓ → subshell'],
+ ['(D) Splitting of spectral lines in an electric field is the Stark effect, while splitting in a magnetic field is the Zeeman effect. So (D) is incorrect.','electric field → Stark','magnetic field → Zeeman'],
+ ['Answer: (D)']
+]},
+{id:'ATOM-55',topic:'Bohr orbit radius: numerical values and changes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.322 · p.30',sourceRef:true,question:'The value of Bohr radius of hydrogen atom is -',options:['0.529 × 10⁻⁷ cm','0.529 × 10⁻⁸ cm','0.529 × 10⁻⁹ cm','0.529 × 10⁻¹⁰ cm'],correct:1,answer:'0.529 × 10⁻⁸ cm',
+short:[['The Bohr radius a₀ is the radius of the first orbit of hydrogen. Convert the standard value from Å to cm.','a₀ = 0.529 Å','1 Å = 10⁻⁸ cm','a₀ = 0.529 × 10⁻⁸ cm']],
+detailed:[
+ ['The Bohr radius is the radius of the first (n = 1) orbit of hydrogen, given by rₙ = 0.529 n²/Z Å with n = 1 and Z = 1.','a₀ = 0.529 Å'],
+ ['The options are in cm, so convert with 1 Å = 10⁻⁸ cm.','1 Å = 10⁻¹⁰ m','= 10⁻⁸ cm'],
+ ['Multiply.','a₀ = 0.529 × 10⁻⁸ cm']
+]},
+{id:'ATOM-55-A',parent:'ATOM-55',variant:1,topic:'Bohr orbit radius: numerical values and changes',source:'Institute worksheet · atomic structure.pdf · Q.6 · question p.5 · answer p.52',sourceRef:true,relevance:{parent:'ATOM-55',sharedSkill:'Using a₀ = 0.529 Å with rₙ = a₀n²/Z to get a numerical Bohr radius',recoveryPurpose:'Controlled transfer - the same constant is now applied to a hydrogen-like ion (Z = 3) rather than recalled for hydrogen'},question:'The radius of first orbit of hydrogen atom is 0.53 Å. The radius of first orbit of ₃Li²⁺ is',options:['1.27 Å','0.17 Å','0.57 Å','0.99 Å'],correct:1,answer:'0.17 Å',
+short:[['Li²⁺ is one-electron with Z = 3. Scale the hydrogen radius by n²/Z at n = 1.','rₙ = 0.53 × n²/Z','r₁(Li²⁺) = 0.53 × 1²/3','= 0.53/3','= 0.1767 Å','≈ 0.17 Å (nearest option)']],
+detailed:[
+ ['Li²⁺ has one electron and nuclear charge Z = 3, so the Bohr formula applies.','rₙ = 0.53 × n²/Z Å'],
+ ['Use n = 1 and Z = 3.','r₁ = 0.53 × 1²/3','= 0.53/3'],
+ ['Evaluate and pick the nearest option.','= 0.1767 Å','≈ 0.17 Å']
+]},
+{id:'ATOM-55-B',parent:'ATOM-55',variant:2,topic:'Bohr orbit radius: numerical values and changes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.97 · p.9 (Q.338, p.31, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-55',sharedSkill:'Using a₀ = 0.529 Å with rₙ = a₀n²/Z to get numerical Bohr radii',recoveryPurpose:'Controlled transfer - two radii are needed and subtracted, and the orbits must first be identified from the series name'},question:'What is the change in the orbit radius when the electron in the hydrogen atom (Bohr model) undergoes the first Paschen transition?',options:['4.23 × 10⁻¹⁰ m','0.35 × 10⁻¹⁰ m','3.7 × 10⁻¹⁰ m','1.587 × 10⁻¹⁰ m'],correct:2,answer:'3.7 × 10⁻¹⁰ m',
+short:[['The Paschen series ends on n = 3, and its first line is 4 → 3.','n: 4 → 3'],['Radii from rₙ = 0.529 n² Å for hydrogen.','r₄ = 0.529 × 16','= 8.464 Å','r₃ = 0.529 × 9','= 4.761 Å'],['Take the difference.','Δr = 8.464 − 4.761','= 3.703 Å','= 3.7 × 10⁻¹⁰ m']],
+detailed:[
+ ['Paschen lines are the transitions that end on n = 3. The first Paschen transition starts from the next level, n = 4.','n: 4 → 3'],
+ ['For hydrogen the radius is rₙ = 0.529 n² Å.','r₄ = 0.529 × 4²','= 8.464 Å','r₃ = 0.529 × 3²','= 4.761 Å'],
+ ['The change in radius is the difference, in magnitude.','Δr = 8.464 − 4.761','= 3.703 Å'],
+ ['Convert to metres with 1 Å = 10⁻¹⁰ m.','Δr = 3.7 × 10⁻¹⁰ m']
+]},
+{id:'ATOM-56',topic:'Same orbit radius for different hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.191 · p.16',sourceRef:true,question:'Which state of Be³⁺ has the same orbit radius as that of the ground state of hydrogen atom.',options:['3','2','4','5'],correct:1,answer:'2',
+short:[['Be³⁺ has Z = 4. Set its radius equal to the hydrogen n = 1 radius.','rₙ ∝ n²/Z','n²/4 = 1²/1','n² = 4','n = 2']],
+detailed:[
+ ['The radius of a one-electron species scales as n²/Z.','rₙ ∝ n²/Z'],
+ ['Hydrogen ground state has n = 1 and Z = 1, so n²/Z = 1. Be³⁺ has Z = 4.','n²/4 = 1'],
+ ['Solve for n.','n² = 4','n = 2']
+]},
+{id:'ATOM-56-A',parent:'ATOM-56',variant:1,topic:'Same orbit radius for different hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.139 · p.12 (Q.501, p.43, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-56',sharedSkill:'Equal Bohr radius requires equal n²/Z',recoveryPurpose:'Direct retry - the same condition, checked over four species and orbit pairs instead of solved for one unknown n'},question:'For which of the following the radius will be same as for hydrogen atom n = 1 :',options:['He⁺, n = 2','Li²⁺, n = 2','Be³⁺, n = 2','Li²⁺, n = 3'],correct:2,answer:'Be³⁺, n = 2',
+short:[['The radius scales as n²/Z. Hydrogen n = 1 gives n²/Z = 1. Evaluate n²/Z for each option.','He⁺ (n = 2): 4/2 = 2','Li²⁺ (n = 2): 4/3','Be³⁺ (n = 2): 4/4 = 1','Li²⁺ (n = 3): 9/3 = 3'],['Only Be³⁺ with n = 2 gives 1.','Answer: Be³⁺, n = 2']],
+detailed:[
+ ['The radius of a one-electron species scales as n²/Z, so equal radius means equal n²/Z.','rₙ ∝ n²/Z'],
+ ['For hydrogen n = 1 the value is 1.','n²/Z = 1²/1','= 1'],
+ ['Evaluate each option.','He⁺ (Z = 2 and n = 2): 4/2 = 2','Li²⁺ (Z = 3 and n = 2): 4/3','Be³⁺ (Z = 4 and n = 2): 4/4 = 1','Li²⁺ (Z = 3 and n = 3): 9/3 = 3'],
+ ['Only Be³⁺ with n = 2 matches.','Answer: Be³⁺, n = 2']
+]},
+{id:'ATOM-57',topic:'Bohr orbital velocity of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.179 · p.15 (Q.228, p.19, is a verbatim repeat of this item)',sourceRef:true,question:'If the velocity of electron in Bohr’s first orbit of hydrogen atom is x, then the velocity of electron in the third orbit is -',options:['3x','x','9x','x/3'],correct:3,answer:'x/3',
+short:[['Bohr velocity scales as Z/n. For hydrogen only n changes.','v ∝ Z/n','v₃/v₁ = 1/3','v₃ = x/3']],
+detailed:[
+ ['The speed of the electron in the nth orbit of a one-electron species scales as Z/n.','v ∝ Z/n'],
+ ['For hydrogen Z = 1, so v ∝ 1/n. Compare n = 3 with n = 1.','v₃/v₁ = (1/3)/(1/1)','= 1/3'],
+ ['Multiply by the given first-orbit velocity.','v₃ = x/3']
+]},
+{id:'ATOM-57-A',parent:'ATOM-57',variant:1,topic:'Bohr orbital velocity of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.423 · p.37',sourceRef:true,relevance:{parent:'ATOM-57',sharedSkill:'Bohr orbital velocity v ∝ Z/n',recoveryPurpose:'Direct retry - the same question with the options in a different order and the wrong answers 9x and x/9 added'},question:'If x is the velocity of an electron in first Bohr’s orbit. What would be the velocity of the electron in third Bohr’s orbit -',options:['x/9','x/3','3x','9x'],correct:1,answer:'x/3',
+short:[['Bohr velocity scales as Z/n, and Z = 1 for hydrogen.','v ∝ 1/n','v₃/v₁ = 1/3','v₃ = x/3']],
+detailed:[
+ ['The speed in the nth Bohr orbit scales as Z/n; hydrogen has Z = 1.','v ∝ 1/n'],
+ ['Compare n = 3 with n = 1.','v₃/v₁ = 1/3'],
+ ['Multiply by x.','v₃ = x/3']
+]},
+{id:'ATOM-57-B',parent:'ATOM-57',variant:2,topic:'Bohr orbital velocity of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.507 · p.43',sourceRef:true,relevance:{parent:'ATOM-57',sharedSkill:'Bohr orbital velocity v ∝ Z/n',recoveryPurpose:'Controlled transfer - both Z and n change, so the two effects must be combined'},question:'If the speed of electron in the Bohr’s first orbit of hydrogen atom be x, then speed of the electron in second orbit of He⁺ is –',options:['x/2','2x','x','4x'],correct:2,answer:'x',
+short:[['Bohr speed scales as Z/n. Compare He⁺ at n = 2 with H at n = 1.','v ∝ Z/n','H (n = 1): Z/n = 1/1','= 1','He⁺ (n = 2): Z/n = 2/2','= 1','v(He⁺ at n = 2)/v(H at n = 1) = 1','v = x']],
+detailed:[
+ ['The speed in a Bohr orbit scales as Z/n for any one-electron species.','v ∝ Z/n'],
+ ['Hydrogen first orbit has Z = 1 and n = 1. He⁺ second orbit has Z = 2 and n = 2.','H: Z/n = 1/1','= 1','He⁺: Z/n = 2/2 = 1'],
+ ['The two values are equal, so the speeds are equal.','v(He⁺ at n = 2) = x']
+]},
+{id:'ATOM-57-C',parent:'ATOM-57',variant:3,topic:'Bohr orbital velocity of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.326 · p.30',sourceRef:true,relevance:{parent:'ATOM-57',sharedSkill:'Bohr orbital velocity v ∝ Z/n',recoveryPurpose:'Controlled transfer - an absolute value in cm s⁻¹ is asked, so v₁ must be known rather than only a ratio'},question:'The velocity of an electron in the third orbit of hydrogen atom -',options:['7.28 × 10⁷ cm s⁻¹','7.08 × 10⁷ cm s⁻¹','7.38 × 10⁷ cm s⁻¹','7.48 × 10⁷ cm s⁻¹'],correct:0,answer:'7.28 × 10⁷ cm s⁻¹',
+short:[['The first-orbit speed of hydrogen is 2.188 × 10⁸ cm s⁻¹, and v scales as 1/n.','v₁ = 2.188 × 10⁸ cm s⁻¹','v₃ = v₁/3','= (2.188 × 10⁸)/3','= 7.29 × 10⁷ cm s⁻¹'],['The nearest option is 7.28 × 10⁷ cm s⁻¹.','Answer: 7.28 × 10⁷ cm s⁻¹']],
+detailed:[
+ ['The speed of the electron in the first Bohr orbit of hydrogen is a standard constant.','v₁ = 2.188 × 10⁸ cm s⁻¹'],
+ ['Speed scales as Z/n, so for hydrogen v₃ = v₁/3.','v₃ = (2.188 × 10⁸)/3','= 7.29 × 10⁷ cm s⁻¹'],
+ ['The closest option, allowing for the rounding of the constant, is A.','Answer: 7.28 × 10⁷ cm s⁻¹']
+]},
+{id:'ATOM-52-A',parent:'ATOM-52',variant:1,topic:'Time period of revolution in Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.422 · p.37',sourceRef:true,relevance:{parent:'ATOM-52',sharedSkill:'Time period of revolution in a Bohr orbit, T ∝ n³/Z²',recoveryPurpose:'Direct retry — ratio of time periods for the first and second orbit of hydrogen instead of for orbits of radii R and 4R'},question:'Ratio of time period of electron in first and second orbit of H-atom would be -',options:['1 : 18','1 : 8','1 : 2','2 : 1'],correct:1,answer:'1 : 8',
+short:[['Time period is circumference over speed, with r ∝ n² and v ∝ 1/n.','T = 2πr/v','T ∝ n²/(1/n)','T ∝ n³'],['Compare n = 1 with n = 2.','T₁/T₂ = 1³/2³','= 1/8','= 1 : 8']],
+detailed:[
+ ['The time for one revolution is the orbit circumference divided by the speed.','T = 2πr/v'],
+ ['In the Bohr model the radius grows as n² and the speed falls as 1/n, so the period grows as n³.','r ∝ n²','v ∝ 1/n','T ∝ n²/(1/n) = n³'],
+ ['Compare the first and second orbits.','T₁/T₂ = 1³/2³','= 1/8'],
+ ['Ratio.','Answer: 1 : 8']
+]},
+{id:'ATOM-52-B',parent:'ATOM-52',variant:2,topic:'Time period of revolution in Bohr orbits',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.458 · p.40',sourceRef:true,relevance:{parent:'ATOM-52',sharedSkill:'Bohr time period T ∝ n³/Z², with frequency f = 1/T',recoveryPurpose:'Controlled transfer - an absolute number of revolutions per second is asked, so the n = 1 frequency must be computed and then scaled'},question:'The number of revolution/sec. made by electron in 3rd orbit of hydrogen atom -',options:['4.88 × 10¹⁴','2.44 × 10¹⁴','9.9 × 10¹⁴','2.44 × 10¹²'],correct:1,answer:'2.44 × 10¹⁴',
+short:[['Revolutions per second is f = v/(2πr). Find it for n = 1 first.','v₁ = 2.19 × 10⁶ m s⁻¹','r₁ = 5.29 × 10⁻¹¹ m','f₁ = (2.19 × 10⁶)/(2π × 5.29 × 10⁻¹¹)','= 6.59 × 10¹⁵ s⁻¹'],['Frequency is the reciprocal of the period, so f ∝ 1/n³.','f₃ = f₁/3³','= (6.59 × 10¹⁵)/27','= 2.44 × 10¹⁴ s⁻¹']],
+detailed:[
+ ['The number of revolutions per second is the reciprocal of the time period, f = v/(2πr).','f = v/(2πr)'],
+ ['For the first orbit of hydrogen v₁ = 2.19 × 10⁶ m s⁻¹ and r₁ = 5.29 × 10⁻¹¹ m.','f₁ = (2.19 × 10⁶)/(2π × 5.29 × 10⁻¹¹)','= 6.59 × 10¹⁵ s⁻¹'],
+ ['The period grows as n³, so the frequency falls as 1/n³.','f₃ = f₁/27'],
+ ['Substitute.','f₃ = (6.59 × 10¹⁵)/27','= 2.44 × 10¹⁴ s⁻¹']
+]},
+{id:'ATOM-58',topic:'Number of de Broglie waves in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.184 · p.16 (Q.255, p.22, is a verbatim repeat of this item)',sourceRef:true,question:'Number of waves made by a Bohr electron in one complete revolution in its fourth orbit is:',options:['2','3','4','∞'],correct:2,answer:'4',
+short:[['Bohr’s condition is the standing-wave condition: the circumference holds a whole number n of de Broglie wavelengths.','2πr = nλ','number of waves = n','n = 4','= 4 waves']],
+detailed:[
+ ['Bohr’s quantization mvr = nh/2π together with λ = h/(mv) says the circumference fits a whole number of wavelengths.','2πr = nλ'],
+ ['So the number of waves in one revolution equals the orbit number.','number of waves = 2πr/λ','= n'],
+ ['For the fourth orbit n = 4.','Answer: 4']
+]},
+{id:'ATOM-58-A',parent:'ATOM-58',variant:1,topic:'Number of de Broglie waves in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.466 · p.40',sourceRef:true,relevance:{parent:'ATOM-58',sharedSkill:'Number of de Broglie waves in a Bohr orbit equals n',recoveryPurpose:'Direct retry - the same idea for the 3rd orbit instead of the 4th'},question:'The number of waves made by a Bohr electron in one complete revolution in its 3rd orbit -',options:['1','2','3','4'],correct:2,answer:'3',
+short:[['The circumference holds n de Broglie wavelengths.','2πr = nλ','number of waves = n','n = 3','= 3 waves']],
+detailed:[
+ ['Bohr’s quantization condition is the standing-wave condition.','2πr = nλ'],
+ ['So the number of waves in one revolution equals n.','number of waves = n'],
+ ['For the third orbit n = 3.','Answer: 3']
+]},
+{id:'ATOM-58-B',parent:'ATOM-58',variant:2,topic:'Number of de Broglie waves in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.551 · p.47',sourceRef:true,relevance:{parent:'ATOM-58',sharedSkill:'Number of de Broglie waves in a Bohr orbit equals n',recoveryPurpose:'Controlled transfer - the orbit number is not given directly and must first be found from the largest allowed m'},question:'The number of waves made by a Bohr electron in an orbit of maximum magnetic quantum number +2',options:['3','4','2','1'],correct:0,answer:'3',
+short:[['For a given n the largest ℓ is n − 1, and the largest m equals the largest ℓ.','m_max = ℓ_max','= n − 1','+2 = n − 1','n = 3'],['The number of waves equals n.','number of waves = n','= 3']],
+detailed:[
+ ['For a given principal quantum number n, ℓ runs from 0 to n − 1, and m runs from −ℓ to +ℓ. So the largest m is n − 1.','m_max = n − 1'],
+ ['Set this equal to +2 and solve for n.','n − 1 = 2','n = 3'],
+ ['The number of de Broglie waves in a Bohr orbit equals n.','Answer: 3']
+]},
+{id:'ATOM-04-E',parent:'ATOM-04',variant:5,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.62 · p.6',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Direct retry - same hydrogen atom, one orbit number compared with the first, radius given as a symbol a₀'},question:'If the radius of first Bohr orbit be a₀, then the radius of the third orbit would be',options:['3 × a₀','6 × a₀','9 × a₀','1/9 × a₀'],correct:2,answer:'9 × a₀',
+short:[['Same species, so only n changes and r ∝ n².','r₃/r₁ = 3²/1²','= 9','r₃ = 9a₀']],
+detailed:[
+ ['For a given species the Bohr radius scales as n².','rₙ ∝ n²'],
+ ['Compare n = 3 with n = 1.','r₃/r₁ = 3²/1²','= 9'],
+ ['Multiply by a₀.','r₃ = 9 × a₀']
+]},
+{id:'ATOM-04-F',parent:'ATOM-04',variant:6,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.177 · p.15 (Q.226, p.19, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Direct retry - same scaling with a numerical first-orbit radius in Å'},question:'Bohr’s radius for the H-atom (n = 1) is approximately 0.53 Å. The radius of the first excited state (n = 2) orbit is -',options:['0.13 Å','1.06 Å','4.77 Å','2.12 Å'],correct:3,answer:'2.12 Å',
+short:[['Radius scales as n² for hydrogen.','r₂ = 0.53 × 2²','= 0.53 × 4','= 2.12 Å']],
+detailed:[
+ ['For hydrogen rₙ = 0.53 n² Å.','rₙ = 0.53 × n²'],
+ ['Substitute n = 2.','r₂ = 0.53 × 4','= 2.12 Å']
+]},
+{id:'ATOM-04-G',parent:'ATOM-04',variant:7,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.323 · p.30',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Representation change - the answer is given in words as a multiple of the first-orbit radius'},question:'On the basis of Bohr’s model, the radius of the 3rd orbit is -',options:['Equal to the radius of first orbit','Three times the radius of first orbit','Five times the radius of first orbit','Nine times the radius of first orbit'],correct:3,answer:'Nine times the radius of first orbit',
+short:[['Radius scales as n².','r₃/r₁ = 3²/1²','= 9','r₃ = 9r₁']],
+detailed:[
+ ['The Bohr radius scales as n² for a given species.','rₙ ∝ n²'],
+ ['Compare n = 3 with n = 1.','r₃/r₁ = 9'],
+ ['So the third orbit is nine times the first.','Answer: Nine times the radius of first orbit']
+]},
+{id:'ATOM-04-H',parent:'ATOM-04',variant:8,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.34 · question p.23 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Controlled transfer - the given radius is in metres and the options are in Å, so a unit conversion comes before the n² scaling'},question:'The radius of inner most orbit of hydrogen atom is 5.3 × 10⁻¹¹ m. What is the radius of third allowed orbit of hydrogen atom?',options:['1.06 Å','1.59 Å','4.77 Å','0.53 Å'],correct:2,answer:'4.77 Å',
+short:[['Convert the innermost radius to Å.','5.3 × 10⁻¹¹ m = 0.53 Å'],['Radius scales as n² for hydrogen.','r₃ = 0.53 × 3²','= 0.53 × 9','= 4.77 Å']],
+detailed:[
+ ['The innermost orbit is n = 1. Convert its radius to Å with 1 Å = 10⁻¹⁰ m.','r₁ = 5.3 × 10⁻¹¹ m','= 0.53 Å'],
+ ['The third allowed orbit is n = 3, and rₙ = r₁n² for hydrogen.','r₃ = 0.53 × 3²'],
+ ['Evaluate.','= 4.77 Å']
+]},
+{id:'ATOM-04-I',parent:'ATOM-04',variant:9,topic:'Bohr radius of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.35 · question p.23 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-04',sharedSkill:'Bohr-model radius scaling rₙ ∝ n²/Z',recoveryPurpose:'Direct retry - a ratio of two orbits of the same atom, as in the ratio of the first three orbits'},question:'Let R₁ be the radius of the second stationary orbit and R₂ be the radius of the fourth stationary orbit of an electron in Bohr’s model. The ratio R₁/R₂ is :',options:['4','0.25','0.5','2'],correct:1,answer:'0.25',
+short:[['Same species, so r ∝ n². R₁ is at n = 2 and R₂ at n = 4.','R₁/R₂ = 2²/4²','= 4/16','= 0.25']],
+detailed:[
+ ['For a given species the Bohr radius scales as n².','rₙ ∝ n²'],
+ ['R₁ is the second orbit (n = 2) and R₂ the fourth (n = 4).','R₁/R₂ = 2²/4²'],
+ ['Evaluate.','= 4/16','= 0.25']
+]},
+{id:'ATOM-22-D',parent:'ATOM-22',variant:4,topic:'Bohr’s postulate of angular momentum quantization',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.480 · p.41',sourceRef:true,relevance:{parent:'ATOM-22',sharedSkill:'Bohr angular momentum quantization L = nh/2π',recoveryPurpose:'Inverse/representation change - n is given and L is found, the reverse of finding n from L in the core'},question:'According to Bohr’s theory, the angular momentum of an electron in 5th orbit is -',options:['1.0 h/π','10 h/π','2.5 h/π','25 h/π'],correct:2,answer:'2.5 h/π',
+short:[['Bohr’s postulate gives L = nh/2π with n = 5.','L = 5h/2π','= 2.5 h/π']],
+detailed:[
+ ['Bohr’s postulate quantizes angular momentum in whole multiples of h/2π.','L = nh/2π'],
+ ['Substitute n = 5.','L = 5h/2π'],
+ ['Write 5/2 as 2.5.','= 2.5 h/π']
+]},
+{id:'ATOM-28-B',parent:'ATOM-28',variant:2,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.125 · p.11 (Q.487, p.42, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Direct retry - a 2s electron instead of an unnamed s electron, so n = 2 is a distractor'},question:'The orbital angular momentum of an electron in 2s orbital is',options:['+1/2 · h/2π','zero','h/2π','√2 · h/2π'],correct:1,answer:'zero',
+short:[['A 2s electron has ℓ = 0, whatever the value of n.','ℓ = 0'],['Put ℓ = 0 in the formula.','L = √(ℓ(ℓ+1)) · h/2π','= √(0 × 1) · h/2π','= 0']],
+detailed:[
+ ['The orbital angular momentum depends on ℓ, not on n.','L = √(ℓ(ℓ+1)) · h/2π'],
+ ['An s subshell has ℓ = 0.','ℓ = 0'],
+ ['Substitute.','L = √(0 × 1) · h/2π','= 0'],
+ ['So the angular momentum is zero.','Answer: zero']
+]},
+{id:'ATOM-28-C',parent:'ATOM-28',variant:3,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.130 · p.12 (Q.491, p.42, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Representation change - the result is written with ħ instead of h/2π, for a d electron'},question:'For a d-electron, the orbital angular momentum is',options:['√6 ħ','√2 ħ','ħ','2ħ'],correct:0,answer:'√6 ħ',
+short:[['A d electron has ℓ = 2, and ħ = h/2π.','ℓ = 2'],['Substitute.','L = √(ℓ(ℓ+1)) ħ','= √(2 × 3) ħ','= √6 ħ']],
+detailed:[
+ ['The orbital angular momentum is √(ℓ(ℓ+1)) times ħ, where ħ = h/2π.','L = √(ℓ(ℓ+1)) ħ'],
+ ['A d subshell has ℓ = 2.','ℓ = 2'],
+ ['Substitute.','L = √(2 × 3) ħ','= √6 ħ']
+]},
+{id:'ATOM-28-D',parent:'ATOM-28',variant:4,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.108 · p.10 (Q.414, p.37, and Q.440, p.39, are verbatim repeats of this item)',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Controlled transfer - four orbitals evaluated in one question, with n ignored'},question:'What are the values of the orbital angular momentum of an electron in the orbitals 1s, 3s, 3d and 2p?',options:['0, 0, √6 · h/2π, √2 · h/2π','1, 1, √4 · h/2π, √2 · h/2π','0, 1, √6 · h/2π, √3 · h/2π','0, 0, √20 · h/2π, √6 · h/2π'],correct:0,answer:'0, 0, √6 · h/2π, √2 · h/2π',
+short:[['Find ℓ for each orbital: s = 0, p = 1, d = 2.','1s: ℓ = 0','3s: ℓ = 0','3d: ℓ = 2','2p: ℓ = 1'],['Apply L = √(ℓ(ℓ+1)) · h/2π.','1s: L = 0','3s: L = 0','3d: L = √6 · h/2π','2p: L = √2 · h/2π']],
+detailed:[
+ ['The orbital angular momentum depends only on ℓ.','L = √(ℓ(ℓ+1)) · h/2π'],
+ ['Read ℓ from the subshell letter.','1s: ℓ = 0','3s: ℓ = 0','3d: ℓ = 2','2p: ℓ = 1'],
+ ['Evaluate each.','1s: √(0 × 1) = 0','3s: √(0 × 1) = 0','3d: √(2 × 3) = √6','2p: √(1 × 2) = √2'],
+ ['Match to the options.','Answer: 0, 0, √6 · h/2π, √2 · h/2π']
+]},
+{id:'ATOM-28-E',parent:'ATOM-28',variant:5,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.245 · p.21',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Controlled transfer - four orbitals in a different order, including a repeated ℓ (2p and 3p) and n ignored'},question:'What are values of orbital angular momentum of an electron in an orbitals 2p, 3d, 4s, 3p respectively',options:['√2 · h/2π, √6 · h/2π, 0, √2 · h/2π','1, 1, √4 · h/2π, √2 · h/2π','√2 · h/2π, √6 · h/2π, √3 · h/2π','None of these'],correct:0,answer:'√2 · h/2π, √6 · h/2π, 0, √2 · h/2π',
+short:[['Find ℓ for each orbital.','2p: ℓ = 1','3d: ℓ = 2','4s: ℓ = 0','3p: ℓ = 1'],['Apply L = √(ℓ(ℓ+1)) · h/2π.','2p: L = √2 · h/2π','3d: L = √6 · h/2π','4s: L = 0','3p: L = √2 · h/2π']],
+detailed:[
+ ['The orbital angular momentum depends only on ℓ, so 2p and 3p give the same value.','L = √(ℓ(ℓ+1)) · h/2π'],
+ ['Read ℓ from the subshell letter.','2p: ℓ = 1','3d: ℓ = 2','4s: ℓ = 0','3p: ℓ = 1'],
+ ['Evaluate each.','2p: √(1 × 2) = √2','3d: √(2 × 3) = √6','4s: √(0 × 1) = 0','3p: √(1 × 2) = √2'],
+ ['Match to the options.','Answer: √2 · h/2π, √6 · h/2π, 0, √2 · h/2π']
+]},
+{id:'ATOM-28-F',parent:'ATOM-28',variant:6,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.98 · p.9 (Q.405, p.36, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Inverse/representation change - the formula itself is asked, without a specific orbital'},question:'In centre-symmetrical system, the orbital angular momentum, a measure of the momentum of a particle travelling around the nucleus, is quantised. Its magnitude is',options:['√(ℓ(ℓ+1)) · h/2π','√(ℓ(ℓ−1)) · h/2π','√(s(s+1)) · h/2π','√(s(s−1)) · h/2π'],correct:0,answer:'√(ℓ(ℓ+1)) · h/2π',
+short:[['The orbital angular momentum depends on the azimuthal quantum number ℓ, through ℓ(ℓ+1).','L = √(ℓ(ℓ+1)) · h/2π'],['s(s+1) would be the spin form, and the minus-sign forms are not used.','Answer: √(ℓ(ℓ+1)) · h/2π']],
+detailed:[
+ ['The magnitude of the orbital angular momentum is quantised in terms of the azimuthal quantum number ℓ.','L = √(ℓ(ℓ+1)) · h/2π'],
+ ['The forms with s refer to spin, not to orbital motion, and ℓ(ℓ−1) is not a valid expression.','Answer: √(ℓ(ℓ+1)) · h/2π']
+]},
+{id:'ATOM-28-G',parent:'ATOM-28',variant:7,topic:'Orbital angular momentum (quantum-mechanical formula)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.285 · p.26',sourceRef:true,relevance:{parent:'ATOM-28',sharedSkill:'Orbital angular momentum √(ℓ(ℓ+1)) · h/2π depends only on ℓ',recoveryPurpose:'Inverse/representation change - the formula is chosen from four look-alike expressions, separating the orbital result from Bohr’s nh/2π'},question:'The angular momentum of an electron in an orbital is-',options:['L = nh/2π','L = ℓh/2π','L = √(ℓ(ℓ+1)) · h/2π','L = mh/2π'],correct:2,answer:'L = √(ℓ(ℓ+1)) · h/2π',
+short:[['For an orbital, the angular momentum is set by ℓ.','L = √(ℓ(ℓ+1)) · h/2π'],['nh/2π is Bohr’s value for an orbit, and mh/2π is only the z-component.','Answer: L = √(ℓ(ℓ+1)) · h/2π']],
+detailed:[
+ ['In the quantum-mechanical description the orbital angular momentum depends on ℓ.','L = √(ℓ(ℓ+1)) · h/2π'],
+ ['nh/2π belongs to Bohr’s orbit model, mh/2π is the component along the z-axis, and ℓh/2π is not a valid form.','Answer: L = √(ℓ(ℓ+1)) · h/2π']
+]},
+{id:'ATOM-08-C',parent:'ATOM-08',variant:3,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.284 · p.26',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching a quantum number to the property it governs',recoveryPurpose:'Controlled transfer - the property asked is the z-component of angular momentum rather than the orbital orientation'},question:'The Z-component of angular momentum of an electron in an atomic orbital is governed by the-',options:['Principal quantum number','Azimuthal quantum number','Magnetic quantum number','Spin quantum number'],correct:2,answer:'Magnetic quantum number',
+short:[['The z-component of orbital angular momentum is quantised as m times h/2π, so it is set by m.','L_z = m · h/2π','Answer: Magnetic quantum number']],
+detailed:[
+ ['The component of the orbital angular momentum along the z-axis takes values m · h/2π.','L_z = m · h/2π'],
+ ['So the magnetic quantum number m governs it, while ℓ governs the magnitude of the total angular momentum.','Answer: Magnetic quantum number']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1213,7 +1586,17 @@ const pilotTopicMap={
  'Discovery of the electron, proton and neutron':['particles-models','Discovery of the electron, proton and neutron'],
  'Charge-to-mass ratio of subatomic particles':['particles-models','Charge-to-mass ratio of subatomic particles'],
  'Most probable distance from the radial distribution function':['quantum-model','Most probable distance from the radial distribution function'],
- 'Unpaired electrons and spin-only magnetic moment of ions':['configuration','Unpaired electrons and spin-only magnetic moment of ions']
+ 'Unpaired electrons and spin-only magnetic moment of ions':['configuration','Unpaired electrons and spin-only magnetic moment of ions'],
+ 'Kinetic, potential and total energy in a Bohr orbit':['bohr-model','Kinetic, potential and total energy in a Bohr orbit'],
+ 'Ionization energy of hydrogen-like species':['bohr-model','Ionization energy of hydrogen-like species'],
+ 'Excitation energy between Bohr levels of hydrogen':['bohr-model','Excitation energy between Bohr levels of hydrogen'],
+ 'Time period of revolution in Bohr orbits':['bohr-model','Time period of revolution in Bohr orbits'],
+ 'Statements on ionization energy and orbit radius of hydrogen-like species':['bohr-model','Statements on ionization energy and orbit radius of hydrogen-like species'],
+ 'Quantum numbers of the outermost electron of an atom':['quantum-model','Quantum numbers of the outermost electron of an atom'],
+ 'Bohr orbit radius: numerical values and changes':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Same orbit radius for different hydrogen-like species':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Bohr orbital velocity of hydrogen-like species':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Number of de Broglie waves in a Bohr orbit':['bohr-model','Bohr’s postulate of angular momentum quantization']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
