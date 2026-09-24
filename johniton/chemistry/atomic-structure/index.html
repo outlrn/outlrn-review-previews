@@ -224,7 +224,7 @@ detailed:[
 {id:'ATOM-06-C',parent:'ATOM-06',variant:3,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · atomic structure.pdf · Q.60 · question p.38 · solution p.65',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula (Eₙ ∝ 1/n²)',recoveryPurpose:'Representation change — a direct ratio between two named excited states of plain hydrogen, instead of checking possible values for an ion'},question:'The ratio of energies of a hydrogen atom for its first and second excited states is:',options:['4/1','1/4','4/9','9/4'],correct:3,answer:'9/4',
 short:[['Energy magnitude scales as 1/n²; first excited state is n=2, second is n=3.','E(n=2)/E(n=3) = (1/2²)/(1/3²)','= 9/4']],
 detailed:[
- ['The first excited state of hydrogen is n=2; the second excited state is n=3.','n=2 and n=3'],
+ ['The first excited state of hydrogen is n=2; the second excited state is n=3.','n=2','n=3'],
  ['Energy magnitude scales as 1/n² (Z=1 for hydrogen), so the ratio is the inverse ratio of n².','E(n=2)/E(n=3) = (1/2²)/(1/3²)'],
  ['Evaluate.','= (1/4)/(1/9)','= 9/4']
 ]},
@@ -1216,7 +1216,7 @@ detailed:[
  ['Answer: (B) 4.7 × 10⁻¹⁰ m']
 ]},
 {id:'ATOM-09-C',parent:'ATOM-09',variant:3,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.206 · p.17',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Radial node counting n − ℓ − 1',recoveryPurpose:'Direct retry - the same 3s and 2p pair as ATOM-09-A with the options re-ordered'},question:'The number of radial nodes of 3s & 2p orbital respectively -',options:['2, 0','0, 2','1, 2','2, 1'],correct:0,answer:'2, 0',
-short:[['Radial nodes = n − ℓ − 1.','3s: n = 3 and ℓ','= 0','3 − 0 − 1','= 2','2p: n = 2 and ℓ','= 1','2 − 1 − 1','= 0'],['So the pair is 2 and 0.','Answer: 2, 0']],
+short:[['Radial nodes = n − ℓ − 1.','3s: n = 3','ℓ = 0','3 − 0 − 1','= 2','2p: n = 2','ℓ = 1','2 − 1 − 1','= 0'],['So the pair is 2 and 0.','Answer: 2, 0']],
 detailed:[
  ['The number of radial nodes of an orbital is n − ℓ − 1.','radial nodes = n − ℓ − 1'],
  ['3s has n = 3 and ℓ = 0.','3 − 0 − 1','= 2'],
@@ -1634,6 +1634,832 @@ detailed:[
  ['(B) Bound electrons have negative energies that rise towards zero, so the energy at infinite distance is zero and is the maximum.','Eₙ = −13.6/n² eV → 0 as n → ∞','(B) true'],
  ['(D) The uncertainty in position and momentum of a ball is negligible because h is extremely small compared with its mass, so both can be measured accurately.','Δx·Δp ≥ h/(4π)','(D) true'],
  ['(C) Every spectral line comes from a different energy gap and has its own wave number, so the statement that lines share the same wave number is the incorrect one.','Wave number = R×(1/n₁² − 1/n₂²)','Different (n₁, n₂): different wave number','Answer: (C)']
+]},
+{id:'ATOM-69',topic:'Rydberg formula for hydrogen-like ions (Z² scaling)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.300 · p.28',sourceRef:true,question:'What is the wave length emitted during the transition of electron in between two levels of Li²⁺ whose sum is 4 and difference is 2 ? Given R_H = 109678 cm⁻¹ :',options:['0.1096 cm⁻¹','0.101 × 10⁻⁶ cm⁻¹','1.14 × 10⁻⁶ cm⁻¹','109 Å'],correct:2,answer:'1.14 × 10⁻⁶ cm⁻¹',
+short:[['Sum and difference of the two levels give n₁ and n₂.','n₁ + n₂ = 4','n₂ − n₁ = 2','⇒ n₂ = 3','⇒ n₁ = 1'],['Rydberg formula for a hydrogen-like ion, Li²⁺ has Z = 3.','1/λ = R_H Z²(1/n₁² − 1/n₂²)','= 109678 × 9 × (1/1² − 1/3²)','= 109678 × 9 × 8/9','= 877424 cm⁻¹'],['Invert to get the wavelength.','λ = 1/877424','= 1.14×10⁻⁶ cm','Answer: (C)']],
+detailed:[
+ ['Add and subtract the two conditions to find the two levels.','n₁ + n₂ = 4','n₂ − n₁ = 2','⇒ n₂ = 3','⇒ n₁ = 1'],
+ ['Li²⁺ is a one-electron ion with Z = 3, so the Rydberg formula carries a factor Z².','1/λ = R_H Z²(1/n₁² − 1/n₂²)'],
+ ['Substitute R_H = 109678 cm⁻¹, Z = 3, n₁ = 1 and n₂ = 3.','1/λ = 109678 × 9 × (1/1² − 1/3²)','= 109678 × 9 × 8/9','= 877424 cm⁻¹'],
+ ['The wavelength is the reciprocal of the wave number.','λ = 1/877424 cm','= 1.14×10⁻⁶ cm','(about 114 Å)'],
+ ['The options print the units of the first three values as cm⁻¹, but a wavelength is in cm, so option (C) is the match.','Answer: (C) 1.14 × 10⁻⁶']
+]},
+{id:'ATOM-69-A',parent:'ATOM-69',variant:1,topic:'Rydberg formula for hydrogen-like ions (Z² scaling)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.264 · p.23',sourceRef:true,relevance:{parent:'ATOM-69',sharedSkill:'Rydberg formula 1/λ = R_H Z²(1/n₁² − 1/n₂²) for a hydrogen-like ion',recoveryPurpose:'Controlled transfer - Z is not given but must first be found from the kinetic energy of the electron, and the line asked is a series limit'},question:'For a hydrogenic ion kinetic energy of electron in its 3rd excited state is found to be 54.4 eV. Then series limit (1/λ) for Balmer series, for this ion, is -',options:['109678 × 16 cm⁻¹','109678/16 cm⁻¹','109678 × 4 cm⁻¹','109678 × 64 cm⁻¹'],correct:0,answer:'109678 × 16 cm⁻¹',
+short:[['The 3rd excited state is n = 4.','n = 3 + 1','= 4'],['Kinetic energy of a Bohr electron gives Z.','KE = 13.6×Z²/n²','54.4 = 13.6×Z²/4²','Z² = (54.4×16)/13.6','= 64'],['Balmer series limit has n₁ = 2 and n₂ = ∞.','1/λ = R_H Z²(1/2² − 0)','= 109678 × 64 × 1/4','= 109678 × 16 cm⁻¹','Answer: (A)']],
+detailed:[
+ ['The ground state is n = 1, so the third excited state is n = 4.','n = 4'],
+ ['For a one-electron ion the kinetic energy equals the magnitude of the total energy.','KE = 13.6×Z²/n² eV'],
+ ['Substitute the given kinetic energy and n = 4 to find Z².','54.4 = 13.6×Z²/16','Z² = (54.4×16)/13.6','= 64'],
+ ['The Balmer series ends on n₁ = 2, and the series limit is the transition from n₂ = ∞.','1/λ = R_H Z²(1/2² − 0)','= 109678 × 64 × (1/4 − 0)'],
+ ['Simplify.','= 109678 × 16 cm⁻¹','Answer: (A)']
+]},
+{id:'ATOM-70',topic:'Identifying an orbital from its wave function',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.263 · p.23',sourceRef:true,question:'What may be the correct orbital notation if the wave function is – ψ = 1/(81√(6π)) (1/a₀)^(3/2) σ² e^(−σ/3) (3cos²θ − 1) ; Here σ = r/a₀ and a₀ = (h²ε₀)/(πme²)',options:['4s','2pₓ','3py','3dz²'],correct:3,answer:'3dz²',
+short:[['The radial exponential e^(−Zr/(n a₀)) with Z = 1 gives n.','e^(−σ/3) = e^(−r/(3a₀))','⇒ n = 3'],['The angular factor gives the angular nodes.','3cos²θ − 1 = 0','⇒ cos²θ = 1/3','⇒ cosθ = ±1/√3','⇒ 2 angular nodes (conical)'],['Angular nodes equal ℓ, so ℓ = 2, a d orbital.','ℓ = 2','⇒ 3d'],['There is no φ dependence, so m = 0, and the (3cos²θ − 1) angular part is the z² orbital.','Answer: (D) 3dz²']],
+detailed:[
+ ['Compare the radial part with the general hydrogen-like form e^(−Zr/(n a₀)). Here Z = 1 and the exponent is σ/3, so the principal quantum number is 3.','e^(−σ/3) = e^(−r/(3a₀))','⇒ n = 3'],
+ ['Find the angular nodes by setting the angular part to zero.','3cos²θ − 1 = 0','⇒ cos²θ = 1/3','⇒ cosθ = ±1/√3'],
+ ['Two values of θ give two conical angular nodes, and the number of angular nodes equals ℓ.','angular nodes = ℓ','⇒ ℓ = 2'],
+ ['Radial nodes are n − ℓ − 1.','n − ℓ − 1 = 3 − 2 − 1','= 0','consistent with the single term σ² e^(−σ/3)'],
+ ['The wave function has no dependence on φ, so m = 0, and the angular factor 3cos²θ − 1 is that of the z² orbital.','Answer: (D) 3dz²']
+]},
+{id:'ATOM-70-A',parent:'ATOM-70',variant:1,topic:'Identifying an orbital from its wave function',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.291 · p.27',sourceRef:true,relevance:{parent:'ATOM-70',sharedSkill:'Reading the structure of an orbital wave function in terms of n, ℓ and m',recoveryPurpose:'Representation change - decide which quantum numbers each factor of Ψ(n,ℓ,m) depends on, instead of reading n, ℓ and m from a given Ψ'},question:'Which of the following symbols represent an atomic orbital ?',options:['Ψ(n,ℓ,m) = R(n) Θ(ℓ) Φ(m)','Ψ(n,ℓ,m) = R(n,ℓ) Θ(ℓ) Φ(m)','Ψ(n,ℓ,m) = R(n) Θ(ℓ,m) Φ(m)','Ψ(n,ℓ,m) = R(n,ℓ) Θ(ℓ,m) Φ(m)'],correct:3,answer:'Ψ(n,ℓ,m) = R(n,ℓ) Θ(ℓ,m) Φ(m)',
+short:[['An orbital wave function is a product of a radial part and two angular parts.','Ψ(n,ℓ,m) = R × Θ × Φ'],['Radial part depends on n and ℓ.','R(n,ℓ)'],['Polar angular part depends on ℓ and m.','Θ(ℓ,m)'],['Azimuthal angular part depends on m only.','Φ(m)'],['Combine the three factors.','Ψ(n,ℓ,m) = R(n,ℓ) Θ(ℓ,m) Φ(m)','Answer: (D)']],
+detailed:[
+ ['The wave function of an electron in a hydrogen-like atom separates into a radial function and two angular functions.','Ψ = R × Θ × Φ'],
+ ['The radial function changes with the size and shape of the orbital, so it depends on n and ℓ.','R(n,ℓ)'],
+ ['The polar angular function depends on ℓ and on the orientation m.','Θ(ℓ,m)'],
+ ['The azimuthal function depends only on m.','Φ(m)'],
+ ['Only option (D) has all three dependences correct. The options here are written with the quantum numbers as arguments in brackets instead of subscripts.','Answer: (D)']
+]},
+{id:'ATOM-71',topic:'Symmetry of s orbitals about the nucleus and directional character',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.290 · p.27',sourceRef:true,question:'An orbital having ℓ = 0 is symmetrical about',options:['X-axis only','Y-axis only','Z-axis only','nucleus only'],correct:3,answer:'nucleus only',
+short:[['ℓ = 0 is an s orbital.','ℓ = 0','⇒ s orbital'],['The s wave function depends only on the distance r from the nucleus.','ψ = f(r)'],['So it looks the same in every direction around the nucleus, not about one axis only.','spherical symmetry about the nucleus','Answer: (D)']],
+detailed:[
+ ['The azimuthal quantum number ℓ = 0 belongs to the s subshell.','ℓ = 0','⇒ s orbital'],
+ ['The wave function of an s orbital has no angular part, only a radial part.','ψ = f(r)'],
+ ['A function of r alone is unchanged by rotation in any direction, so the orbital is symmetrical about the nucleus, and not about the X, Y or Z axis alone.','Answer: (D) nucleus only']
+]},
+{id:'ATOM-71-A',parent:'ATOM-71',variant:1,topic:'Symmetry of s orbitals about the nucleus and directional character',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.305 · p.29',sourceRef:true,relevance:{parent:'ATOM-71',sharedSkill:'Consequence of the spherical symmetry of an s orbital',recoveryPurpose:'Direct retry - state the same property (no dependence on direction) in the words used for the s orbital'},question:'s-orbital is spherically symmetrical hence it is –',options:['directional independent','angular dependent','directional dependent','angular independent'],correct:0,answer:'directional independent',
+short:[['An s orbital is spherically symmetrical.','ψ = f(r)'],['Its value is the same in every direction from the nucleus.','no dependence on direction'],['So it is non-directional. Options (B) and (C) say the opposite.','directional independent','Answer: (A)']],
+detailed:[
+ ['A spherically symmetrical orbital has a wave function that depends only on r.','ψ = f(r)'],
+ ['The probability of finding the electron at a given distance is the same in every direction, so the orbital is non-directional, that is, directional independent.','Answer: (A)'],
+ ['Options (B) and (C) claim a dependence on direction or angle, which is wrong for an s orbital. Option (D) is a near-synonym of (A) because the s wave function has no angular part, so the choice rests on the usual textbook phrase, non-directional.']
+]},
+{id:'ATOM-72',topic:'Statements on the meaning, region and sign of an atomic orbital',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.288 · p.26',sourceRef:true,question:'Which of the following statements regarding an atomic orbital is correct ?',options:['An orbital is a definite trajectory around the nucleus in which electron can move.','An orbital always has spherical trajectory.','It is the region around the nucleus where there is 90 to 95% probability of finding all','An orbital is characterised by the three distinct quantum numbers n, ℓ and m'],correct:3,answer:'An orbital is characterised by the three distinct quantum numbers n, ℓ and m',
+short:[['(A) A definite trajectory belongs to Bohr’s orbit, not to an orbital.','(A) is wrong'],['(B) Only s orbitals are spherical, and an orbital is not a trajectory.','(B) is wrong'],['(C) As printed the sentence stops at “finding all”, so it is not a complete correct statement.','(C) is incomplete'],['(D) An orbital is fixed by n, ℓ and m.','n ℓ m','Answer: (D)']],
+detailed:[
+ ['(A) An orbital is a region of high probability given by a wave function, not a definite path. A definite trajectory would need the position and velocity together, which the uncertainty principle forbids.'],
+ ['(B) Only s orbitals are spherical, p and d orbitals have other shapes.'],
+ ['(C) The 90 to 95% boundary describes the region in which the electron is found. The option as printed ends at “finding all”, so it is cut off and does not read as a correct statement.'],
+ ['(D) The three quantum numbers n, ℓ and m specify one orbital (spin is needed only for an electron in it).','Answer: (D)']
+]},
+{id:'ATOM-72-A',parent:'ATOM-72',variant:1,topic:'Statements on the meaning, region and sign of an atomic orbital',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.287 · p.26',sourceRef:true,relevance:{parent:'ATOM-72',sharedSkill:'Interpreting features of an atomic orbital drawing',recoveryPurpose:'Controlled transfer - decide what the plus and minus signs on the lobes stand for, instead of judging statements about the orbital'},question:'In an atomic orbital the sign of the lobes indicates the-',options:['Sign of the probability distribution','Sign of charge','Sign of wave function','presence or absence of electron'],correct:2,answer:'Sign of wave function',
+short:[['The wave function ψ can be positive or negative, and the lobe sign shows that.','sign of lobe = sign of ψ'],['Probability is ψ², always positive, so it cannot carry a sign.','ψ² ≥ 0'],['The signs do not mean charge or presence of the electron.','Answer: (C)']],
+detailed:[
+ ['The orbital is a wave function ψ, and its value has a sign. The lobes are drawn with + or − to show it.','lobe sign = sign of ψ'],
+ ['The probability density is ψ², which is always positive, so (A) is wrong.','ψ² ≥ 0'],
+ ['The electron charge is always negative and the signs do not show whether an electron is present, so (B) and (D) are wrong.','Answer: (C)']
+]},
+{id:'ATOM-73',topic:'Bohr energy expression for the nth level',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.324 · p.30',sourceRef:true,question:'The correct expression derived for the energy of an electron in the nth energy level is -',options:['Eₙ = 2π²me⁴/(n²h²)','Eₙ = −2π²me⁴/(nh²)','Eₙ = −2π²me²/(n²h²)','Eₙ = −2π²me⁴/(n²h²)'],correct:3,answer:'Eₙ = −2π²me⁴/(n²h²)',
+short:[['Bohr’s result for hydrogen (Z = 1).','Eₙ = −2π²me⁴/(n²h²)'],['The sign is negative because the electron is bound.','Eₙ < 0','(A) has the wrong sign'],['The energy varies as 1/n², so n² is in the denominator.','Eₙ ∝ 1/n²','(B) has n instead of n²'],['The charge enters as e⁴, so (C) with e² is wrong.','Answer: (D)']],
+detailed:[
+ ['Equate the Coulomb attraction to the centripetal force and apply the quantisation of angular momentum. This gives the energy of the nth level of hydrogen.','Eₙ = −2π²me⁴/(n²h²)'],
+ ['The energy is negative because the electron is bound, which rules out (A).'],
+ ['Energy is inversely proportional to n², not to n, which rules out (B).','Eₙ ∝ 1/n²'],
+ ['The charge appears as e⁴ (e² from the force and e² from the potential), which rules out (C).','Answer: (D)']
+]},
+{id:'ATOM-06-I',parent:'ATOM-06',variant:9,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.277 · p.24',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula Eₙ = −13.6Z²/n² eV for excited states of Li²⁺',recoveryPurpose:'Direct retry - the same stem as ATOM-06 with the last option changed to “Both B & C are correct”'},question:'The energy of an electron in the Ist orbit of H- atom is — 13.6 eV. The possible energy values of the excited state for electrons in Bohr orbits of Li²⁺ ions is/are-',options:['−3.4 eV','−30.6 eV','−13.6 eV','Both B & C are correct'],correct:3,answer:'Both B & C are correct',
+short:[['Li²⁺ has Z = 3.','Eₙ = −13.6×Z²/n²','= −(13.6×9)/n²','= −122.4/n² eV'],['Second level.','E₂ = −122.4/4','= −30.6 eV'],['Third level.','E₃ = −122.4/9','= −13.6 eV'],['Sixth level also fits −3.4 eV, so A is possible too, but option (D) names the two values B and C.','E₆ = −122.4/36','= −3.4 eV','Answer: (D)']],
+detailed:[
+ ['Energies of a one-electron ion are Eₙ = −13.6×Z²/n² eV, with Z = 3 for Li²⁺.','Eₙ = −(13.6×9)/n²','= −122.4/n² eV'],
+ ['Evaluate the excited levels.','E₂ = −122.4/4','= −30.6 eV','E₃ = −122.4/9','= −13.6 eV'],
+ ['So −30.6 eV (B) and −13.6 eV (C) are both allowed, which is what option (D) states.'],
+ ['Note that −3.4 eV (A) is also an allowed value, at n = 6, so A, B and C are all possible energies. Option (D) is the only option that covers B and C together.','E₆ = −122.4/36','= −3.4 eV','Answer: (D)']
+]},
+{id:'ATOM-06-J',parent:'ATOM-06',variant:10,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.327 · p.30',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy-level formula Eₙ = −13.6Z²/n² eV for Li²⁺',recoveryPurpose:'Direct retry - one named level (the third-lowest, n = 3) of Li²⁺ instead of the list of excited levels in ATOM-06'},question:'The ionization energy of a hydrogen atom is 13.6eV. The energy of the third-lowest electronic level in doubly ionized lithium (Z = 3) is -',options:['–28.7 eV','–54.4 eV','–122.4 eV','–13.6 eV'],correct:3,answer:'–13.6 eV',
+short:[['The lowest level is n = 1, so the third-lowest is n = 3.','third-lowest level','⇒ n = 3'],['Energy of a hydrogen-like ion.','Eₙ = −13.6×Z²/n²','E₃ = −(13.6×9)/9'],['Evaluate.','= −13.6 eV','Answer: (D)']],
+detailed:[
+ ['Levels are n = 1, 2, 3 and so on in order of increasing energy, so the third-lowest level is n = 3.','n = 3'],
+ ['Use the hydrogen-like formula with Z = 3.','Eₙ = −13.6×Z²/n²','E₃ = −(13.6×3²)/3²'],
+ ['The Z² and n² cancel.','= −13.6 eV','(n = 1 gives −122.4 eV and n = 2 gives −30.6 eV)','Answer: (D)']
+]},
+{id:'ATOM-50-D',parent:'ATOM-50',variant:4,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.275 · p.24',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Ionization energy as the n = 1 → ∞ transition energy',recoveryPurpose:'Representation change - write the hydrogen ionization energy through R_H, h, c and N_A instead of a value in eV or joules'},question:'The ionization energy of per mole of hydrogen atom in terms of Rydberg constant (R_H) is given by the expression',options:['R_H hc','R_H c','2 R_H hc','R_H N_A hc'],correct:3,answer:'R_H N_A hc',
+short:[['Ionization is the jump from n₁ = 1 to n₂ = ∞.','1/λ = R_H × (1 − 0)','= R_H'],['Energy for one atom.','E = hc/λ','= R_H hc'],['One mole holds N_A atoms.','IE = N_A × R_H hc','= R_H N_A hc','Answer: (D)']],
+detailed:[
+ ['Ionizing hydrogen takes the electron from n₁ = 1 to n₂ = ∞.','1/λ = R_H(1/1² − 0)','= R_H'],
+ ['The energy of one atom is that of the photon, E = hc/λ.','E = hc/λ','= R_H hc'],
+ ['For one mole multiply by Avogadro’s number. Option (A) is the value per atom.','IE = N_A × R_H hc','= R_H N_A hc','Answer: (D)']
+]},
+{id:'ATOM-50-E',parent:'ATOM-50',variant:5,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.318 · p.30',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Ionization energy of hydrogen from the Bohr scaling Eₙ = E₁/n²',recoveryPurpose:'Inverse/representation change - the energy of the 4th shell is given in arbitrary units and the ground-state value is asked'},question:'Supposing the energy of fourth shell for hydrogen atom is −50 a.u. (arbitrary unit). What would be its ionization potential -',options:['50','800','15.4','20.8'],correct:1,answer:'800',
+short:[['Energy scales as 1/n², so the 4th shell is 1/16 of the first.','E₄ = E₁/4²','E₁ = 16 × E₄'],['Substitute.','E₁ = 16 × (−50)','= −800 a.u.'],['Ionization potential is the energy to remove the electron from the ground state.','IP = |E₁|','= 800','Answer: (B)']],
+detailed:[
+ ['In the Bohr model the energy of level n is E₁/n².','Eₙ = E₁/n²'],
+ ['For n = 4 the energy is one sixteenth of E₁.','E₄ = E₁/16','E₁ = 16 × (−50)','= −800 a.u.'],
+ ['The ionization potential is the energy needed to take the electron from the ground state to infinity.','IP = |E₁|','= 800 a.u.','Answer: (B)']
+]},
+{id:'ATOM-50-F',parent:'ATOM-50',variant:6,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.319 · p.30',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Bohr scaling Eₙ = E₁/n² with the ionization energy as |E₁|',recoveryPurpose:'Inverse/representation change - find the shell n that has a given energy when the ionization energy is scaled to 640 eV'},question:'Supposing the ionization energy of hydrogen atom is 640 eV. Point out the main shell having energy equal to – 40 eV -',options:['n = 2','n = 3','n = 4','n = 5'],correct:2,answer:'n = 4',
+short:[['The ionization energy equals |E₁|.','E₁ = −640 eV'],['Energy of shell n.','Eₙ = −640/n²','−40 = −640/n²'],['Solve for n.','n² = 640/40','= 16','⇒ n = 4','Answer: (C)']],
+detailed:[
+ ['Ionization energy is the energy needed from the ground state, so E₁ = −640 eV.','E₁ = −640 eV'],
+ ['Energy of shell n scales as 1/n².','Eₙ = −640/n²'],
+ ['Set Eₙ = −40 eV and solve.','−40 = −640/n²','n² = 640/40','= 16','⇒ n = 4','Answer: (C)']
+]},
+{id:'ATOM-50-G',parent:'ATOM-50',variant:7,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.325 · p.30',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Ionization energy of hydrogen, 13.6 eV, expressed in other units',recoveryPurpose:'Representation change - give the same ionization energy in erg, joule and eV instead of scaling it with Z'},question:'Ionization energy for hydrogen atom in ergs, Joules and eV respectively is -',options:['21.8 × 10⁻¹², 218 × 10⁻²⁰, 13.6','13.6 × 218 × 10⁻²⁰, 21.8 × 10⁻¹³','21.8 × 10⁻²⁰, 13.6, 21.8 × 10⁻¹³','21.8 × 10⁻¹³, 13.6, 21.8 × 10⁻²⁰'],correct:0,answer:'21.8 × 10⁻¹², 218 × 10⁻²⁰, 13.6',
+short:[['The ionization energy of hydrogen is 13.6 eV.','IE = 13.6 eV'],['Convert to joules with 1 eV = 1.6×10⁻¹⁹ J.','IE = 13.6 × 1.6×10⁻¹⁹','= 2.18×10⁻¹⁸ J','= 218×10⁻²⁰ J'],['Convert to ergs with 1 J = 10⁷ erg.','IE = 2.18×10⁻¹⁸ × 10⁷','= 2.18×10⁻¹¹ erg','= 21.8×10⁻¹² erg'],['Order asked is erg, joule, eV.','Answer: (A) 21.8 × 10⁻¹², 218 × 10⁻²⁰, 13.6']],
+detailed:[
+ ['The ionization energy of hydrogen is 13.6 eV, which is the value in eV.','IE = 13.6 eV'],
+ ['Convert to joules using 1 eV = 1.6×10⁻¹⁹ J.','IE = 13.6 × 1.6×10⁻¹⁹ J','= 2.18×10⁻¹⁸ J','= 218×10⁻²⁰ J'],
+ ['Convert to ergs using 1 J = 10⁷ erg.','IE = 2.18×10⁻¹⁸ × 10⁷ erg','= 2.18×10⁻¹¹ erg','= 21.8×10⁻¹² erg'],
+ ['Only option (A) lists 21.8 × 10⁻¹² erg, 218 × 10⁻²⁰ J and 13.6 eV in that order.','Answer: (A)']
+]},
+{id:'ATOM-50-H',parent:'ATOM-50',variant:8,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.329 · p.31',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Ionization (separation) energy from level n is |Eₙ| = 13.6/n² eV',recoveryPurpose:'Representation change - the atom is in an unspecified excited state, so only a bound on the energy is asked'},question:'For ionising an excited hydrogen atom, the energy required in eV will be -',options:['3.4 or less','More than 13.6','Little less than 13.6','13.6'],correct:0,answer:'3.4 or less',
+short:[['Energy to ionize from level n is the magnitude of Eₙ.','IE(n) = 13.6/n² eV'],['An excited atom has n ≥ 2. The largest value is at n = 2.','n = 2','IE = 13.6/4','= 3.4 eV'],['Higher levels need less, for example n = 3.','n = 3','IE = 13.6/9','= 1.51 eV'],['So the energy needed is at most 3.4 eV.','Answer: (A)']],
+detailed:[
+ ['The energy to remove the electron from level n is |Eₙ|.','IE(n) = 13.6/n² eV'],
+ ['An excited atom has n ≥ 2, so the biggest possible value is at n = 2.','IE(2) = 13.6/4','= 3.4 eV'],
+ ['For higher n the value keeps falling.','IE(3) = 13.6/9','= 1.51 eV'],
+ ['So the energy required is 3.4 eV or less. The values 13.6 eV or more belong to the ground state.','Answer: (A)']
+]},
+{id:'ATOM-08-F',parent:'ATOM-08',variant:6,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.283 · p.26',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching quantum numbers to the properties they determine',recoveryPurpose:'Direct retry - the focus is the energy of an electron in a multi-electron atom, the statement that ATOM-08-E tested as wrong when it said “n only”'},question:'The energy of an electron in an atomic orbital of multielectronic atom depends on-',options:['The principal quantum number only.','The principal and azimuthal quantum number','The principal, azimuthal and magnetic quantum number only','All the four quantum numbers'],correct:1,answer:'The principal and azimuthal quantum number',
+short:[['In a multi-electron atom, electron repulsion (shielding) splits the subshells of one shell.','E depends on n and ℓ'],['Without an external field the magnetic and spin quantum numbers do not change the energy.','m and s do not affect E'],['So the energy depends on n and ℓ.','Answer: (B)']],
+detailed:[
+ ['In hydrogen the energy depends on n alone, but in a multi-electron atom the electrons shield each other, so the s, p, d and f subshells of one shell differ in energy.','E = f(n, ℓ)'],
+ ['The orbitals of one subshell (different m) and the two spin states have the same energy when no external field is applied.'],
+ ['Hence the energy depends on the principal and azimuthal quantum numbers.','Answer: (B)']
+]},
+{id:'ATOM-08-G',parent:'ATOM-08',variant:7,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.344 · p.32',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Matching a quantum number to the property it governs',recoveryPurpose:'Direct retry - the property asked is the shape of the orbital rather than its orientation'},question:'The shape of the orbital is given by -',options:['Spin quantum number','Magnetic quantum number','Azimuthal quantum number','Principal quantum number'],correct:2,answer:'Azimuthal quantum number',
+short:[['Each quantum number fixes one property.','n = size and energy','ℓ = shape','m = orientation','s = spin'],['Shape is fixed by ℓ, the azimuthal quantum number.','ℓ = 0','⇒ s orbital (spherical)','ℓ = 1','⇒ p orbital (dumbbell)','Answer: (C)']],
+detailed:[
+ ['The four quantum numbers describe size, shape, orientation and spin.','n = size and energy','ℓ = shape','m = orientation','s = spin'],
+ ['The azimuthal (subsidiary) quantum number decides the shape, for example spherical for ℓ = 0 and dumbbell for ℓ = 1.','Answer: (C) Azimuthal quantum number']
+]},
+{id:'ATOM-08-H',parent:'ATOM-08',variant:8,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.353 · p.32',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'Role of the magnetic quantum number m in distinguishing orbitals of a subshell',recoveryPurpose:'Controlled transfer - see how an external magnetic field makes the m values matter for the energy, instead of naming the property m fixes'},question:'In presence of magnetic field d-sub orbit is -',options:['5-fold degenerate','3-fold degenerate','7-fold degenerate','Non-degenerate'],correct:3,answer:'Non-degenerate',
+short:[['A d subshell has ℓ = 2 and 2ℓ + 1 orbitals.','2ℓ + 1 = 5','m = −2 to +2'],['Without a field all five have the same energy (5-fold degenerate).','5 orbitals, one energy'],['In a magnetic field the energy also depends on m (Zeeman effect), so the five orbitals split.','5 different energies','Answer: (D) non-degenerate']],
+detailed:[
+ ['A d subshell has ℓ = 2, so there are 2ℓ + 1 orbitals, with m from −2 to +2.','2ℓ + 1 = 5'],
+ ['With no external field the five orbitals have equal energy, which is 5-fold degeneracy.'],
+ ['An external magnetic field interacts with the orbital magnetic moment, and the interaction depends on m. Each orbital gets a different energy, so the degeneracy is lifted.','Answer: (D) Non-degenerate']
+]},
+{id:'ATOM-09-E',parent:'ATOM-09',variant:5,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.354 · p.32',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Nodal planes from the angular nodes of an orbital',recoveryPurpose:'Controlled transfer - decide for which p and d orbitals the xy plane is a nodal plane, instead of counting the nodal planes of one orbital'},question:'In which of the following pairs is the probability of finding the electron in xy-plane zero for both orbitals ?',options:['3dyz, 4dx²−y²','2pz, dz²','4dzx, 3pz','All of these'],correct:2,answer:'4dzx, 3pz',
+short:[['Probability is zero throughout the xy plane only if z = 0 is a nodal plane.','nodal plane z = 0'],['pz, dyz and dzx all contain the coordinate z, so the xy plane is a node.','pz: xy is a node','dyz: xy is a node','dzx: xy is a node'],['dx²−y² has its lobes in the xy plane, and dz² has a ring in the xy plane.','dx²−y²: not zero','dz²: not zero'],['Only (C), dzx and pz, has zero for both.','Answer: (C)']],
+detailed:[
+ ['The probability in the whole xy plane is zero only if that plane is a nodal plane, that is z = 0.'],
+ ['The orbitals pz, dyz and dzx have the factor z in their angular part, so they vanish at z = 0.','ψ ∝ z','⇒ ψ = 0 at z','= 0'],
+ ['The dx²−y² orbital has four lobes lying in the xy plane. The dz² orbital has a ring (doughnut) around the nucleus in the xy plane. Neither vanishes there.'],
+ ['Check the pairs. (A) has dx²−y², (B) has dz², (D) includes them, so only (C) has both orbitals with a nodal xy plane.','Answer: (C)']
+]},
+{id:'ATOM-33-D',parent:'ATOM-33',variant:4,topic:'Isoelectronic species and proton count',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.317 · p.30',sourceRef:true,relevance:{parent:'ATOM-33',sharedSkill:'Counting electrons to find isoelectronic species',recoveryPurpose:'Controlled transfer - use electron counts to decide which species has a spectrum like that of the helium atom'},question:'The spectrum of He-atom may be considered similar to the spectrum of -',options:['H','Li⁺','Na','He⁺'],correct:1,answer:'Li⁺',
+short:[['Species with the same number of electrons (isoelectronic) have similar spectra.','He atom: 2 electrons'],['Count the electrons in each option.','H: 1 electron','Li⁺: 3 − 1','= 2 electrons','Na: 11 electrons','He⁺: 2 − 1','= 1 electron'],['Li⁺ is isoelectronic with He.','Answer: (B)']],
+detailed:[
+ ['The spectrum depends on the arrangement of the electrons, so species with the same number of electrons show similar spectra.','He atom: 2 electrons'],
+ ['Count the electrons in each option.','H = 1','Li⁺ = 3 − 1','= 2','Na = 11','He⁺ = 2 − 1','= 1'],
+ ['Only Li⁺ has 2 electrons like He. H and He⁺ are one-electron (hydrogen-like) species.','Answer: (B) Li⁺']
+]},
+{id:'ATOM-74',topic:'Degenerate orbitals: which orbitals have equal energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.359 · p.33',sourceRef:true,question:'The energy of an electron of 2p_y orbital is -',options:['Greater than 2pₓ orbital','Less than 2p_z orbital','Equal to 2s orbital','Same as that of 2pₓ and 2p_z'],correct:3,answer:'Same as that of 2pₓ and 2p_z',
+short:[['The energy of an orbital depends on n and ℓ. All three 2p orbitals have the same n and ℓ.','2pₓ: n = 2','ℓ = 1','2p_y: n = 2','ℓ = 1','2p_z: n = 2','ℓ = 1'],['The three p orbitals differ only in orientation (m), which does not change the energy.','E(2pₓ) = E(2p_y)','= E(2p_z)'],['2s has a different ℓ, so in a many-electron atom it is lower in energy than 2p.','n + ℓ for 2p = 3','n + ℓ for 2s = 2','Answer: (D)']],
+detailed:[
+ ['In an atom the energy of an orbital is fixed by its principal quantum number n and azimuthal quantum number ℓ.','E = f(n and ℓ)'],
+ ['2pₓ, 2p_y and 2p_z all have n = 2 and ℓ = 1. They differ only in the magnetic quantum number m, that is, in direction in space.','n = 2','ℓ = 1 for all three'],
+ ['Orbitals of the same subshell with equal energy are called degenerate, so 2p_y has the same energy as 2pₓ and 2p_z. This holds in every atom, so (A) and (B) are false and (D) is true.','E(2pₓ) = E(2p_y)','= E(2p_z)'],
+ ['(C) is true only in a one-electron species such as hydrogen. In a many-electron atom the 2s orbital is lower than 2p.','2s: n + ℓ = 2','2p: n + ℓ = 3'],
+ ['Answer: (D) Same as that of 2pₓ and 2p_z']
+]},
+{id:'ATOM-74-A',parent:'ATOM-74',variant:1,topic:'Degenerate orbitals: which orbitals have equal energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.379 · p.34',sourceRef:true,relevance:{parent:'ATOM-74',sharedSkill:'Orbitals of equal energy (degenerate orbitals) share the same energy',recoveryPurpose:'Controlled transfer - in the hydrogen atom the energy depends only on n, so the equal-energy groups extend across different ℓ (3s = 3p and 4s = 4p = 4d) and the groups are then ordered by n'},question:'Arrange the orbitals of H-atom in the increasing order of their energy - 3pₓ, 2s, 4d_xy, 3s, 4p_z, 3p_y, 4s',options:['2s < 3s = 3pₓ = 3p_y < 4s = 4p_z = 4d_xy','2s < 3s < 3pₓ = 3p_y < 4s = 4p_z = 4d_xy','2s < 3s < 3pₓ = 3p_y < 4s = 4p_z = 4d_xy','2s < 3s < 3pₓ = 3p_y < 4s < 4p_z < 4d_xy'],correct:0,answer:'2s < 3s = 3pₓ = 3p_y < 4s = 4p_z = 4d_xy',
+short:[['In the hydrogen atom the energy depends only on n.','Eₙ = −13.6/n²'],['Group the given orbitals by n.','n = 2: 2s','n = 3: 3s and 3pₓ and 3p_y','n = 4: 4s and 4p_z and 4d_xy'],['Evaluate the three energies.','E₂ = −13.6/4','= −3.40 eV','E₃ = −13.6/9','= −1.51 eV','E₄ = −13.6/16','= −0.85 eV'],['Orbitals of the same n are equal, and energy rises with n.','2s < (3s = 3pₓ = 3p_y) < (4s = 4p_z = 4d_xy)','Answer: (A)']],
+detailed:[
+ ['A hydrogen atom has only one electron, so there is no repulsion between electrons and the energy depends only on the principal quantum number n. Orbitals of different ℓ but the same n have equal energy.','Eₙ = −13.6/n² eV'],
+ ['Sort the seven orbitals by n.','n = 2: 2s','n = 3: 3s and 3pₓ and 3p_y','n = 4: 4s and 4p_z and 4d_xy'],
+ ['Find the three energies.','E₂ = −13.6/4','= −3.40 eV','E₃ = −13.6/9','= −1.51 eV','E₄ = −13.6/16','= −0.85 eV'],
+ ['A larger n means a higher (less negative) energy, and orbitals with the same n are equal.','2s < (3s = 3pₓ = 3p_y) < (4s = 4p_z = 4d_xy)'],
+ ['Options (B) and (C) place 3s below 3pₓ and 3p_y, and option (D) also splits 4s, 4p_z and 4d_xy. All of these are wrong for hydrogen.','Answer: (A)']
+]},
+{id:'ATOM-75',topic:'Shapes of atomic orbitals (s, p and d)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.391 · p.35',sourceRef:true,question:'Which orbital is dumb-bell shaped -',options:['s-Orbital','p-Orbital','d-Orbital','f-Orbital'],correct:1,answer:'p-Orbital',
+short:[['The shape of an orbital is set by ℓ.','ℓ = 0 (s): spherical','ℓ = 1 (p): dumb-bell (two lobes on opposite sides of the nucleus)','ℓ = 2 (d): mostly four lobes (double dumb-bell)','Answer: (B) p-Orbital']],
+detailed:[
+ ['The azimuthal quantum number ℓ decides the shape of an orbital.','ℓ = 0 (s)','ℓ = 1 (p)','ℓ = 2 (d)','ℓ = 3 (f)'],
+ ['An s orbital is spherical, with the same density in every direction.','s: spherical'],
+ ['A p orbital has two lobes on opposite sides of the nucleus with a nodal plane between them, which is a dumb-bell shape.','p: dumb-bell'],
+ ['Most d orbitals have four lobes (a double dumb-bell) and f orbitals are more complex still.','d: four lobes (double dumb-bell)'],
+ ['Answer: (B) p-Orbital']
+]},
+{id:'ATOM-76',topic:'Pauli exclusion principle: statement and meaning',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.428 · p.37',sourceRef:true,question:'Pauli’s exclusion principle states that -',options:['Nucleus of an atom contains no negative charge','Electrons move in circular orbits around the nucleus','Electrons occupy orbitals of lowest energy','All the four quantum numbers of two electrons in an atom cannot be equal.'],correct:3,answer:'All the four quantum numbers of two electrons in an atom cannot be equal.',
+short:[['Pauli’s exclusion principle: no two electrons in an atom can have the same set of four quantum numbers.','n and ℓ and m and s cannot all be equal for two electrons'],['So an orbital (same n and ℓ and m) holds at most two electrons, and they must have opposite spins.','s = +1/2','s = −1/2'],['(A) is about the nucleus, (B) about the Bohr model and (C) is the Aufbau principle.','Answer: (D)']],
+detailed:[
+ ['Pauli’s exclusion principle says that no two electrons in the same atom can have identical values of all four quantum numbers n, ℓ, m and s.','Not all of n and ℓ and m and s equal'],
+ ['Two electrons in one orbital already share n, ℓ and m, so they must differ in spin.','s = +1/2','s = −1/2'],
+ ['(A) is a statement about the nucleus (Rutherford and Chadwick), (B) is the Bohr picture of circular orbits and (C) is the Aufbau principle.','A, B, C are not Pauli’s principle'],
+ ['Answer: (D)']
+]},
+{id:'ATOM-77',topic:'Energy change when an electron jumps between Bohr shells',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.430 · p.38',sourceRef:true,question:'When an electron jumps from L to K shell -',options:['Energy is absorbed','Energy is released','Energy is neither absorbed nor released','Energy is sometimes absorbed and some times released'],correct:1,answer:'Energy is released',
+short:[['K is the shell n = 1 and L is the shell n = 2. Compare the energies in hydrogen.','E₂ = −13.6/4','= −3.4 eV','E₁ = −13.6/1','= −13.6 eV'],['The K shell is lower in energy, so the jump L → K goes to lower energy.','Energy released = E₂ − E₁','= (−3.4) − (−13.6)','= 10.2 eV'],['The energy leaves as radiation.','Answer: (B) Energy is released']],
+detailed:[
+ ['K is the first shell (n = 1) and L is the second shell (n = 2). Energy is more negative (lower) for smaller n.','K: n = 1','L: n = 2'],
+ ['Example for hydrogen.','E₁ = −13.6 eV','E₂ = −3.4 eV'],
+ ['A jump from L to K takes the electron to a lower energy level, so the energy difference is given out as a photon (Bohr’s postulate). The same is true in every atom, since the inner shell is always lower.','Energy released = E₂ − E₁','= 10.2 eV'],
+ ['Absorption needs the reverse jump (K → L).','Answer: (B) Energy is released']
+]},
+{id:'ATOM-09-F',parent:'ATOM-09',variant:6,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.355 · p.33',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Angular nodes = ℓ (the angular nodes of a p orbital are planes)',recoveryPurpose:'Direct retry - the same ℓ = 1 reading as ATOM-09-D, for a named p orbital of the fourth shell, with the value of ℓ asked as well'},question:'For 4p_y orbital : Number of nodal planes = ........ and azimuthal quantum number ℓ = ........',options:['1, 0','0, 1','1, 1','2, 1'],correct:2,answer:'1, 1',
+short:[['The letter p fixes the azimuthal quantum number.','p subshell','ℓ = 1'],['Angular nodes are planes and their number equals ℓ.','Nodal planes = ℓ','= 1'],['For p_y the plane is y = 0. The other nodes of 4p_y are spherical.','Radial nodes = n − ℓ − 1','= 4 − 1 − 1','= 2 (spherical surfaces, not planes)','Answer: (C) 1, 1']],
+detailed:[
+ ['The letter in an orbital’s name gives ℓ (s = 0, p = 1, d = 2, f = 3).','4p_y: n = 4','p subshell','⇒ ℓ = 1'],
+ ['The number of angular (planar) nodes equals ℓ.','Nodal planes = ℓ','= 1'],
+ ['For p_y that single plane is the xz plane (y = 0). The two radial nodes of 4p are spherical shells and are not counted as planes.','Radial nodes = n − ℓ − 1','= 4 − 1 − 1','= 2'],
+ ['So the blanks are 1 and 1.','Answer: (C) 1, 1']
+]},
+{id:'ATOM-09-G',parent:'ATOM-09',variant:7,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.394 · p.35',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Radial node counting n − ℓ − 1',recoveryPurpose:'Direct retry - the same radial-node formula applied to a single s orbital of a higher shell (4s)'},question:'How many spherical nodes are present in a 4s orbital in hydrogen atom',options:['0','1','2','3'],correct:3,answer:'3',
+short:[['Spherical nodes are the radial nodes. For 4s: n = 4 and ℓ = 0.','Radial nodes = n − ℓ − 1','= 4 − 0 − 1','= 3','Answer: (D) 3']],
+detailed:[
+ ['Spherical (radial) nodes are the surfaces where the radial wave function is zero. Their number is n − ℓ − 1.','Radial nodes = n − ℓ − 1'],
+ ['4s has n = 4 and ℓ = 0.','= 4 − 0 − 1','= 3'],
+ ['An s orbital has no angular node, so all its nodes are spherical.','Total nodes = n − 1','= 3'],
+ ['Answer: (D) 3']
+]},
+{id:'ATOM-21-F',parent:'ATOM-21',variant:6,topic:'Identifying invalid quantum-number sets',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.357 · p.33',sourceRef:true,relevance:{parent:'ATOM-21',sharedSkill:'The magnetic quantum number’s allowed range, −ℓ to +ℓ',recoveryPurpose:'Controlled transfer - use the range −ℓ to +ℓ to decide which subshells can hold a given m value (m = −1), instead of spotting an invalid set'},question:'An electron has a spin quantum number + 1/2 and a magnetic quantum number –1. It cannot be present in -',options:['d-Orbital','f-Orbital','s-Orbital','p-Orbital'],correct:2,answer:'s-Orbital',
+short:[['m runs from −ℓ to +ℓ, so m = −1 needs ℓ ≥ 1.','−ℓ ≤ m ≤ +ℓ','ℓ ≥ 1'],['Test each subshell.','s: ℓ = 0 gives m','= 0 only','p: ℓ = 1 gives m','= −1 or 0 or +1','d: ℓ = 2 includes m','= −1','f: ℓ = 3 includes m','= −1'],['Spin +1/2 is allowed in every subshell. Only s cannot have m = −1.','Answer: (C) s-Orbital']],
+detailed:[
+ ['The magnetic quantum number takes the values −ℓ to +ℓ.','m = −ℓ to +ℓ'],
+ ['m = −1 is possible only if ℓ is at least 1.','ℓ ≥ 1'],
+ ['s has ℓ = 0, so its only value is m = 0. p, d and f (ℓ = 1, 2, 3) all include m = −1.','s: m = 0 only','p: m = −1 and 0 and +1','d: m = −2 to +2','f: m = −3 to +3'],
+ ['The spin value +1/2 is allowed in any orbital.','Answer: (C) s-Orbital']
+]},
+{id:'ATOM-24-B',parent:'ATOM-24',variant:2,topic:'Ordering orbital energies by the (n+ℓ) rule',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.361 · p.33',sourceRef:true,relevance:{parent:'ATOM-24',sharedSkill:'The (n+ℓ) rule, with the tie broken by the lower n',recoveryPurpose:'Controlled transfer - use the rule to pick the next orbital to fill after 4d, instead of ranking four given orbitals'},question:'When 4d orbital is complete, the newly entering electrons go into -',options:['5f','5s','5p','6d Orbital'],correct:2,answer:'5p',
+short:[['Compute n + ℓ for the options and for 4d.','4d: 4 + 2 = 6','5s: 5 + 0 = 5','5p: 5 + 1 = 6','5f: 5 + 3 = 8','6d: 6 + 2 = 8'],['5s (5) is lower than 4d, so it is already filled. 5f and 6d (8) are much higher.','5s is filled before 4d'],['5p ties with 4d at n + ℓ = 6 and has the larger n, so it comes right after 4d.','Order: 4d (6) then 5p (6)','Answer: (C) 5p']],
+detailed:[
+ ['Orbitals are filled in increasing order of n + ℓ, and for equal n + ℓ the orbital with the smaller n is filled first.','Fill order: lower n + ℓ first'],
+ ['Find n + ℓ for 4d and for each option.','4d: 4 + 2 = 6','5s: 5 + 0 = 5','5p: 5 + 1 = 6','5f: 5 + 3 = 8','6d: 6 + 2 = 8'],
+ ['5s has a lower sum than 4d, so it was filled before 4d. 5f and 6d have a higher sum and come much later.','5s: already filled'],
+ ['5p has the same sum as 4d but a larger n, so it is filled just after 4d.','4d (n = 4) then 5p (n = 5)'],
+ ['Answer: (C) 5p']
+]},
+{id:'ATOM-24-C',parent:'ATOM-24',variant:3,topic:'Ordering orbital energies by the (n+ℓ) rule',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.398 · p.35',sourceRef:true,relevance:{parent:'ATOM-24',sharedSkill:'Evaluating n + ℓ for orbitals',recoveryPurpose:'Controlled transfer - the value of n + ℓ is used to select the orbitals (all with n + ℓ not above 3) and their electron capacity is added, instead of ranking a given set'},question:'If the values of (n + ℓ) is not > 3, then the maximum number of electron in all the orbital would be -',options:['12','10','2','6'],correct:0,answer:'12',
+short:[['List every orbital with n + ℓ ≤ 3.','1s: 1 + 0 = 1','2s: 2 + 0 = 2','2p: 2 + 1 = 3','3s: 3 + 0 = 3'],['3p (4) and 3d (5) are excluded. Add the capacities.','1s holds 2','2s holds 2','2p holds 6','3s holds 2'],['Total.','2 + 2 + 6 + 2','= 12','Answer: (A) 12']],
+detailed:[
+ ['Find every orbital whose n + ℓ is 3 or less. For a given n, ℓ runs from 0 to n − 1.','n + ℓ ≤ 3'],
+ ['n + ℓ = 1 gives 1s. n + ℓ = 2 gives 2s. n + ℓ = 3 gives 2p and 3s.','1s: 1 + 0 = 1','2s: 2 + 0 = 2','2p: 2 + 1 = 3','3s: 3 + 0 = 3'],
+ ['Orbitals such as 3p (n + ℓ = 4) and 3d (n + ℓ = 5) are not included.','3p: 3 + 1 = 4'],
+ ['An s subshell holds 2 electrons and the p subshell holds 6.','1s: 2','2s: 2','2p: 6','3s: 2'],
+ ['Add them.','2 + 2 + 6 + 2','= 12'],
+ ['Answer: (A) 12']
+]},
+{id:'ATOM-50-I',parent:'ATOM-50',variant:9,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.381 · p.34',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of the ionization energy of one-electron ions',recoveryPurpose:'Controlled transfer - the reference ion is Li²⁺ and the target is the 6th (last) ionization of carbon, which is also a one-electron ion (C⁵⁺)'},question:'If the I.P. of Li²⁺ is 122.4 eV. Find out 6th I.P. of carbon -',options:['122.4 × 4 eV','122.4 × 2 eV','122.4 × 3 eV','122.4 × 5 eV'],correct:0,answer:'122.4 × 4 eV',
+short:[['Li²⁺ has one electron and Z = 3.','IE(Li²⁺) = 13.6×Z²','= 13.6×3²','= 122.4 eV'],['The 6th IE of carbon removes the last electron from C⁵⁺ (Z = 6).','IE₆(C) = 13.6×6²','= 489.6 eV'],['Compare the two.','IE₆(C)/IE(Li²⁺) = 6²/3²','= 4','IE₆(C) = 122.4×4 eV','Answer: (A)']],
+detailed:[
+ ['For a one-electron species the ionization energy is 13.6 eV × Z².','IE = 13.6×Z²'],
+ ['Li²⁺ has Z = 3.','IE(Li²⁺) = 13.6×9','= 122.4 eV'],
+ ['Carbon has 6 electrons. After 5 are removed only one is left, so the 6th ionization is the ionization of C⁵⁺ with Z = 6.','IE₆(C) = 13.6×6²','= 13.6×36','= 489.6 eV'],
+ ['Express it in terms of 122.4 eV.','IE₆(C)/IE(Li²⁺) = 36/9','= 4','IE₆(C) = 122.4×4 eV'],
+ ['Answer: (A) 122.4 × 4 eV']
+]},
+{id:'ATOM-50-J',parent:'ATOM-50',variant:10,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.396 · p.35',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of the ionization energy of one-electron ions',recoveryPurpose:'Direct retry - the ion is He⁺ (Z = 2) and its ionization energy is asked directly in multiples of 13.6 eV'},question:'I.P. of hydrogen atom is equal to 13.6 eV. What is the energy required for the process : He⁺ + energy —→ He²⁺ + e⁻',options:['2 × 13.6 eV','1 × 13.6 eV','4 × 13.6 eV','None of these'],correct:2,answer:'4 × 13.6 eV',
+short:[['The process removes the only electron of He⁺, so it is the ionization energy of He⁺ (Z = 2).','IE = 13.6×Z²'],['Substitute Z = 2.','IE(He⁺) = 13.6×2²','= 13.6×4','= 54.4 eV','Answer: (C) 4 × 13.6 eV']],
+detailed:[
+ ['He⁺ is hydrogen-like with Z = 2, and the process is the removal of its only electron from n = 1.','He⁺ → He²⁺ + e⁻'],
+ ['The ionization energy of a one-electron species is that of hydrogen multiplied by Z².','IE(He⁺)/IE(H) = 2²/1²','= 4'],
+ ['So the energy required is 4 times 13.6 eV.','IE(He⁺) = 4×13.6','= 54.4 eV'],
+ ['Answer: (C) 4 × 13.6 eV']
+]},
+{id:'ATOM-50-K',parent:'ATOM-50',variant:11,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.435 · p.38',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Bohr energy Eₙ ∝ 1/n² and separation energy of a level = |Eₙ|',recoveryPurpose:'Representation change - the separation energy at n = 3 is given as a number, and the energy at n = 2 follows from the 1/n² ratio without identifying the species'},question:'The energy required to separate an electron from the level n = 3 of an atom is 9.69 × 10⁻¹⁹ Joules. What will be its energy in first excited state -',options:['− 9 × 9.69 × 10⁻¹⁹ J','− (9 × 9.69 × 10⁻¹⁹)/4 J','(4/9) × 9.69 × 10⁻¹⁹ J','None of these'],correct:1,answer:'− (9 × 9.69 × 10⁻¹⁹)/4 J',
+short:[['The energy needed to remove the electron from n = 3 is the magnitude of E₃.','E₃ = −9.69×10⁻¹⁹ J'],['The first excited state is n = 2. For the same atom Eₙ ∝ 1/n².','E₂/E₃ = 3²/2²','= 9/4'],['Multiply.','E₂ = −(9×9.69×10⁻¹⁹)/4 J','= −2.18×10⁻¹⁸ J','Answer: (B)']],
+detailed:[
+ ['Separating the electron from level n means taking it to n = ∞, which needs energy equal to |Eₙ|.','|E₃| = 9.69×10⁻¹⁹ J','E₃ = −9.69×10⁻¹⁹ J'],
+ ['For a given one-electron atom the energy is proportional to 1/n².','Eₙ ∝ 1/n²'],
+ ['The first excited state is n = 2.','E₂/E₃ = (1/2²)/(1/3²)','= 9/4'],
+ ['Substitute.','E₂ = −(9/4)×9.69×10⁻¹⁹ J','= −(9×9.69×10⁻¹⁹)/4 J','= −2.18×10⁻¹⁸ J'],
+ ['Answer: (B) − (9 × 9.69 × 10⁻¹⁹)/4 J']
+]},
+{id:'ATOM-51-B',parent:'ATOM-51',variant:2,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.412 · p.36',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels ΔE = 13.6(1/n₁² − 1/n₂²)',recoveryPurpose:'Direct retry - the same ratio of two level differences as ATOM-51-A, with the pairs 1 → 2 and 3 → 4 instead of 1 → 2 and 2 → 3'},question:'The ratio of E₂ – E₁ to E₄ – E₃ for the hydrogen atom is approximately equal to -',options:['10','15','17','12'],correct:1,answer:'15',
+short:[['Use ΔE = 13.6×(1/n₁² − 1/n₂²) for hydrogen.','E₂ − E₁ = 13.6×(1/1² − 1/2²)','= 13.6×3/4','= 10.2 eV'],['Next pair.','E₄ − E₃ = 13.6×(1/3² − 1/4²)','= 13.6×7/144','= 0.66 eV'],['Ratio (13.6 cancels).','(E₂ − E₁)/(E₄ − E₃) = (3/4)/(7/144)','= (3×144)/(4×7)','= 432/28','= 15.4','≈ 15','Answer: (B)']],
+detailed:[
+ ['Hydrogen energies are Eₙ = −13.6/n² eV, so a difference between two levels is 13.6×(1/n₁² − 1/n₂²).','Eₙ = −13.6/n² eV'],
+ ['First difference.','E₂ − E₁ = 13.6×(1 − 1/4)','= 13.6×3/4','= 10.2 eV'],
+ ['Second difference.','E₄ − E₃ = 13.6×(1/9 − 1/16)','= 13.6×7/144','= 0.66 eV'],
+ ['The factor 13.6 cancels in the ratio.','(E₂ − E₁)/(E₄ − E₃) = (3/4)/(7/144)','= (3×144)/(4×7)','= 432/28','= 15.4','≈ 15'],
+ ['Answer: (B) 15']
+]},
+{id:'ATOM-26-D',parent:'ATOM-26',variant:4,topic:'Applicability of the Bohr model',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.433 · p.38',sourceRef:true,relevance:{parent:'ATOM-26',sharedSkill:'The Bohr model applies only to species with exactly one electron',recoveryPurpose:'Representation change - the rule is stated directly as a statement about which spectra Bohr’s model explains, instead of asking which given species fails'},question:'Bohr’s model can explain -',options:['The spectrum of only hydrogen atom','The spectrum of the atoms of all the elements','The spectrum of only sodium atom','The spectrum of atomic or ionic species having one electron.'],correct:3,answer:'The spectrum of atomic or ionic species having one electron.',
+short:[['Bohr’s model treats one electron moving around a nucleus, so it works for every one-electron species.','H and He⁺ and Li²⁺ and Be³⁺ all have one electron'],['Atoms with more electrons (such as Na) are outside the model because of electron-electron repulsion.','(A) too narrow: He⁺ and Li²⁺ also work','(B) and (C): many-electron atoms fail','Answer: (D)']],
+detailed:[
+ ['The model was built for a single electron in the field of a nucleus of charge Ze.','one electron + nucleus (charge Ze)'],
+ ['It therefore fits H and also ions such as He⁺, Li²⁺ and Be³⁺, so (A) is too restrictive.','H, He⁺, Li²⁺','Be³⁺: one electron each'],
+ ['It cannot handle atoms such as sodium (11 electrons), so (B) and (C) are wrong.','Na: 11 electrons'],
+ ['Answer: (D) The spectrum of atomic or ionic species having one electron.']
+]},
+{id:'ATOM-49-B',parent:'ATOM-49',variant:2,topic:'Kinetic, potential and total energy in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.437 · p.38',sourceRef:true,relevance:{parent:'ATOM-49',sharedSkill:'Potential energy in a Bohr orbit = 2 × total energy ∝ −Z²/n²',recoveryPurpose:'Controlled transfer - compare the potential energies of three orbits of He⁺ in order, instead of finding KE and PE for one orbit'},question:'The potential energies of first, second and third Bohr’s orbits of He⁺ cation are E₁, E₂ and E₃. The correct sequence of these energies is -',options:['E₁ > E₂ > E₃','E₁ = E₂ > E₃','E₁ = E₂ = E₃','E₃ > E₂ > E₁'],correct:3,answer:'E₃ > E₂ > E₁',
+short:[['Potential energy is twice the total energy. For He⁺ Z = 2.','PE = 2×Eₙ','= 2×(−13.6×Z²/n²)','= −108.8/n² eV'],['Evaluate for n = 1 and 2 and 3.','E₁ = −108.8 eV','E₂ = −27.2 eV','E₃ = −12.1 eV'],['E₁ is most negative and E₃ is least negative.','E₃ > E₂ > E₁','Answer: (D)']],
+detailed:[
+ ['In a Bohr orbit PE = 2×(total energy).','PE = 2×Eₙ'],
+ ['For He⁺ (Z = 2) the total energy is −13.6×4/n² eV.','Eₙ = −54.4/n² eV','PE = −108.8/n² eV'],
+ ['Evaluate.','n = 1: −108.8 eV','n = 2: −27.2 eV','n = 3: −12.1 eV'],
+ ['Potential energy becomes less negative (rises) as n increases.','−108.8 < −27.2 < −12.1','E₁ < E₂ < E₃'],
+ ['Answer: (D) E₃ > E₂ > E₁']
+]},
+{id:'ATOM-53-B',parent:'ATOM-53',variant:2,topic:'Statements on ionization energy and orbit radius of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.404 · p.36',sourceRef:true,relevance:{parent:'ATOM-53',sharedSkill:'Checking statements about a Bohr orbit against the Bohr formulas',recoveryPurpose:'Controlled transfer - three standard Bohr relations (radius, KE = −PE/2 and angular momentum) are each verified as a statement'},question:'The correct statement(s) about Bohr’s orbits of hydrogen atom is/are -',options:['r = (n²h²)/(4π²me²)','K.E. of the electron = −1/2 (P. E. of the electron)','Angular momentum (L) = n(h/2π)','All the above'],correct:3,answer:'All the above',
+short:[['(A) Centripetal force equals Coulomb force (CGS form) and mvr = nh/(2π). Eliminate v.','mv²/r = e²/r²','mvr = (nh)/(2π)','r = (n²h²)/(4π²me²)','(A) is correct'],['(B) KE = e²/(2r) and PE = −e²/r.','KE = −1/2 × PE','(B) is correct'],['(C) This is Bohr’s quantization condition.','L = mvr','= n×h/(2π)','(C) is correct'],['All three are correct.','Answer: (D)']],
+detailed:[
+ ['(A) The Coulomb force supplies the centripetal force, and the angular momentum is quantized. This is the CGS form, with no 4πε₀.','mv²/r = e²/r²','mvr = (nh)/(2π)'],
+ ['Put v = nh/(2πmr) into mv²r = e².','(n²h²)/(4π²mr) = e²','r = (n²h²)/(4π²me²)','(A) is correct'],
+ ['(B) From mv² = e²/r the kinetic energy is e²/(2r), while the potential energy is −e²/r.','KE = e²/(2r)','PE = −e²/r','KE = −1/2 × PE','(B) is correct'],
+ ['(C) Bohr’s postulate is that the angular momentum is a whole number multiple of h/(2π).','L = mvr','= n×h/(2π)','(C) is correct'],
+ ['All three statements are correct.','Answer: (D) All the above']
+]},
+{id:'ATOM-08-I',parent:'ATOM-08',variant:9,topic:'Significance of the four quantum numbers',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.390 · p.35',sourceRef:true,relevance:{parent:'ATOM-08',sharedSkill:'What each quantum number defines, and which statements about them are false',recoveryPurpose:'Controlled transfer - the false statement is that n alone fixes the energy of an electron in any atom'},question:'Which one of the statement of quantum numbers is false -',options:['Quantum number were proposed out of necessity in Bohr model of the atom.','Knowing n and ℓ it possible to designated a subshell .','The principal quantum number alone can give the complete energy of an electron in any atom.','Azimuthal quantum number refers to the subshell to which an electron belongs and describes the motion of the electron.'],correct:2,answer:'The principal quantum number alone can give the complete energy of an electron in any atom.',
+short:[['(A) Quantum numbers arose from Bohr’s quantized model. Accepted as true.','n came from Bohr’s model'],['(B) n and ℓ together name a subshell (for example 3p). True.','n and ℓ → subshell'],['(C) Only in one-electron species does n alone fix the energy. In a many-electron atom the energy depends on n and ℓ. False.','H: E = −13.6/n²','many-electron atom: E depends on n and ℓ'],['(D) ℓ gives the subshell and the angular momentum of the electron. True.','Answer: (C)']],
+detailed:[
+ ['(A) The idea of quantum numbers came with Bohr’s model, where the angular momentum is quantized, so this statement is true.','quantization → quantum numbers'],
+ ['(B) The subshell is named by n and ℓ, for example n = 3 and ℓ = 1 is 3p. True.','n and ℓ → subshell'],
+ ['(C) In hydrogen-like species the energy depends only on n. In a many-electron atom the energy also depends on ℓ (through the n + ℓ rule), so n alone is not enough. This statement is false.','one electron: E ∝ −Z²/n²','many electrons: E depends on n and ℓ'],
+ ['(D) ℓ identifies the subshell (s, p, d, f) and is linked to the orbital angular momentum. True.','ℓ → subshell and angular momentum'],
+ ['Answer: (C)']
+]},
+{id:'ATOM-20-C',parent:'ATOM-20',variant:3,topic:'Reading electron-box (orbital) diagrams',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.417 · p.37',sourceRef:true,relevance:{parent:'ATOM-20',sharedSkill:'Applying Hund’s rule to the filling of degenerate orbitals',recoveryPurpose:'Representation change - orbital occupancies are written as pₓ, p_y and p_z electron counts instead of box diagrams, and the arrangement that obeys Hund’s rule is chosen'},question:'If the number of electrons in p-orbital are two, then which one of the following is in accordance with Hund’s rule -',options:['pₓ² p_y⁰ p_z⁰','pₓ⁰ p_y² p_z⁰','pₓ⁰ p_y⁰ p_z²','pₓ¹ p_y¹ p_z⁰'],correct:3,answer:'pₓ¹ p_y¹ p_z⁰',
+short:[['Hund’s rule: degenerate orbitals are occupied singly, with parallel spins, before any pairing.','p has three degenerate orbitals: pₓ and p_y and p_z'],['With 2 electrons and 3 orbitals, each electron goes to a different orbital.','One electron in pₓ','One electron in p_y','pₓ¹ p_y¹ p_z⁰'],['(A), (B) and (C) put both electrons in one orbital (paired) while other orbitals are empty.','Answer: (D)']],
+detailed:[
+ ['Hund’s rule of maximum multiplicity says that electrons fill degenerate orbitals one at a time, with the same spin, before pairing starts.','singly occupied first'],
+ ['The p subshell has three orbitals of equal energy: pₓ, p_y and p_z. Two electrons can go singly into two different orbitals.','pₓ¹ p_y¹ p_z⁰'],
+ ['Options (A), (B) and (C) pair both electrons in one orbital and leave two orbitals empty, which breaks the rule.','pₓ² and p_y² and p_z² are paired'],
+ ['Answer: (D) pₓ¹ p_y¹ p_z⁰']
+]},
+{id:'ATOM-17-B',parent:'ATOM-17',variant:2,topic:'Probability density and radial wave functions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.438 · p.38–39',sourceRef:true,relevance:{parent:'ATOM-17',sharedSkill:'Reading the radial probability distribution 4πr²ψ²: peaks = n − ℓ and nodes = n − ℓ − 1',recoveryPurpose:'Representation change - choose which of four drawn curves is correct for a named orbital, instead of reading n off one curve'},question:'Which of the following is correct radial probability distribution curve (ψ²4πr² against r) for various orbitals ?',options:['3s: three peaks with two nodes between them, each peak taller than the one before','4p: three peaks with two nodes between them, each peak lower than the one before','1s: two peaks with one node between them','3p: a single peak and no node'],correct:0,answer:'3s: three peaks with two nodes between them, each peak taller than the one before',
+short:[['The number of peaks in 4πr²ψ² equals n − ℓ (radial nodes = n − ℓ − 1).','3s: 3 − 0 = 3 peaks','4p: 4 − 1 = 3 peaks','1s: 1 − 0 = 1 peak','3p: 3 − 1 = 2 peaks'],['The outermost peak is the tallest.','3s: 3 peaks and rising heights: correct','4p: 3 peaks but falling heights: wrong','1s drawn with 2 peaks: wrong','3p drawn with 1 peak: wrong','Answer: (A)']],
+detailed:[
+ ['For an orbital with quantum numbers n and ℓ the radial probability curve has n − ℓ maxima, separated by n − ℓ − 1 radial nodes.','peaks = n − ℓ','nodes = n − ℓ − 1'],
+ ['Count for each orbital shown.','3s: 3 − 0 = 3 peaks','4p: 4 − 1 = 3 peaks','1s: 1 − 0 = 1 peak','3p: 3 − 1 = 2 peaks'],
+ ['The peaks grow in height outward, so the outermost peak is the tallest.','peak heights rise with r'],
+ ['(A) 3s has 3 rising peaks: correct. (B) 4p has the right number of peaks but they fall in height: wrong. (C) 1s is drawn with 2 peaks instead of 1: wrong. (D) 3p is drawn with 1 peak instead of 2: wrong.','Answer: (A)']
+]},
+{id:'ATOM-20-D',parent:'ATOM-20',variant:4,topic:'Reading electron-box (orbital) diagrams',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.439 · p.39',sourceRef:true,relevance:{parent:'ATOM-20',sharedSkill:'Reading an electron-box diagram to see which filling rule is broken',recoveryPurpose:'Controlled transfer - decide whether Pauli, Hund or both are broken in each diagram, instead of naming one rule for a single diagram'},question:'In which of the following orbital diagrams are both Pauli\'s exclusion principle and Hund\'s rule violated ?',options:['s: [↑↓]   p: [↑] [↑↓] [↑]','s: [↑↓]   p: [↑] [↑↓] [ ]','s: [↑↓]   p: [↑↓] [↑↑] [↓]','s: [↓↓]   p: [↑↓] [↑] [ ]'],correct:3,answer:'s: [↓↓]   p: [↑↓] [↑] [ ]',
+short:[['Pauli: the two electrons in one box must have opposite spins. Hund: the boxes of a subshell fill singly with parallel spins before any box is paired. Check each option for both.','(A) p: [↑] [↑↓] [↑] follows both rules','(B) p: [↑] [↑↓] [ ] pairs a box while another is empty','⇒ only Hund broken','(C) [↑↑] holds two parallel spins in one box','⇒ only Pauli broken'],['Option (D) breaks both rules.','s: [↓↓] has two parallel spins in one box','⇒ Pauli broken','p: [↑↓] [↑] [ ] pairs a box while another is empty','⇒ Hund broken','Answer: (D)']],
+detailed:[
+ ['Pauli\'s exclusion principle allows at most two electrons in an orbital and they must have opposite spins, so a box written [↑↑] or [↓↓] breaks it.'],
+ ['Hund\'s rule says the boxes of a subshell are each given one electron (all with parallel spins) before any box receives a second one, so a paired box next to an empty box breaks it.'],
+ ['(A) Four electrons in three p boxes as [↑] [↑↓] [↑] means one pair and two parallel singles, which is allowed by both rules.','p: [↑] [↑↓] [↑]'],
+ ['(B) The p boxes are [↑] [↑↓] [ ]. A box is paired while one is still empty, so Hund\'s rule is broken but every box has opposite spins.','p: [↑] [↑↓] [ ]'],
+ ['(C) The [↑↑] box has two parallel spins, so Pauli\'s principle is broken. Every p box holds at least one electron, so no box is paired while another is empty.','p: [↑↓] [↑↑] [↓]'],
+ ['(D) The s box [↓↓] has parallel spins, so Pauli\'s principle is broken. The p boxes [↑↓] [↑] [ ] pair a box while one is empty, so Hund\'s rule is broken as well.','s: [↓↓]','p: [↑↓] [↑] [ ]'],
+ ['Only (D) breaks both.','Answer: (D)']
+]},
+{id:'ATOM-78',topic:'Number of elliptical orbits in a shell (Sommerfeld)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.442 · p.39',sourceRef:true,question:'The number of elliptical orbits excluding circular orbits in the N-shell of an atom is -',options:['3','4','2','1'],correct:0,answer:'3',
+short:[['The N shell is n = 4. In Sommerfeld\'s picture a shell n has n orbits, one for each ℓ = 0 to n−1, and only the ℓ = n−1 orbit is circular.','n = 4','total orbits = n','= 4','circular orbit: ℓ = n−1','= 3 (only 1 orbit)','elliptical orbits = 4 − 1','= 3']],
+detailed:[
+ ['The N shell is the fourth shell.','n = 4'],
+ ['In Sommerfeld\'s extension each shell n contains n orbits with ℓ = 0, 1, 2 up to n−1 (the s, p, d and f subshells for n = 4).','number of orbits = n','= 4'],
+ ['The orbit with the largest ℓ, ℓ = n−1, is the circular one. The rest are ellipses.','circular orbits = 1'],
+ ['Subtract the circular orbit from the total.','elliptical orbits = n − 1','= 4 − 1','= 3','Answer: (A) 3']
+]},
+{id:'ATOM-27-B',parent:'ATOM-27',variant:2,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.444 · p.39',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Counting spectral lines with n(n−1)/2',recoveryPurpose:'Controlled transfer - the count is restricted to levels 2 to 7 (6 levels) instead of all levels from n down to 1, so N is the number of levels involved'},question:'How many lines in the spectrum will be observed when electrons return from 7th shell to 2nd shell ?',options:['13','14','15','16'],correct:2,answer:'15',
+short:[['Every pair of levels between n = 7 and n = 2 gives one line. Count the levels involved first.','levels: n = 7 6 5 4 3 2','number of levels N = 6'],['Number of lines = N(N−1)/2.','= (6×5)/2','= 15']],
+detailed:[
+ ['The electron can return from n = 7 to n = 2 directly or through any of the levels in between, and each different pair of levels gives one spectral line.'],
+ ['The levels involved are 7, 6, 5, 4, 3 and 2 (n = 1 is not reached).','N = 7 − 2 + 1','= 6'],
+ ['Number of lines from N levels is the number of pairs.','lines = N(N−1)/2','= (6×5)/2','= 15','Answer: (C) 15']
+]},
+{id:'ATOM-09-H',parent:'ATOM-09',variant:8,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.449 · p.39',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Angular nodes = ℓ',recoveryPurpose:'Inverse - given the number of nodal planes, identify the type of orbital, instead of finding the nodes of a named orbital'},question:'Which orbital has 1 nodal plane -',options:['s','p','d','f'],correct:1,answer:'p',
+short:[['Nodal planes are angular nodes, and their number equals ℓ.','ℓ = 1 for one nodal plane'],['Match ℓ to the orbital letter.','s: ℓ = 0','p: ℓ = 1','d: ℓ = 2','f: ℓ = 3'],['One nodal plane is a p orbital.','Answer: (B) p']],
+detailed:[
+ ['The number of angular (nodal-plane) nodes of an orbital equals its azimuthal quantum number.','angular nodes = ℓ'],
+ ['Set this equal to one.','ℓ = 1'],
+ ['The letters correspond to ℓ = 0 for s, 1 for p, 2 for d and 3 for f, so ℓ = 1 is a p orbital.','Answer: (B) p']
+]},
+{id:'ATOM-21-G',parent:'ATOM-21',variant:7,topic:'Identifying invalid quantum-number sets',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.461 · p.40',sourceRef:true,relevance:{parent:'ATOM-21',sharedSkill:'Checking a quantum-number quadruple against the n/ℓ/m validity rules',recoveryPurpose:'Inverse - name the orbital from a valid set of quantum numbers, instead of finding the valid set for a named orbital'},question:'Which orbital represents the following set of quantum numbers n = 3, ℓ = 0, m = 0, s = +1/2 -',options:['3p','2s','3s','2p'],correct:2,answer:'3s',
+short:[['n gives the shell and ℓ gives the subshell letter.','n = 3','ℓ = 0','⇒ s'],['m = 0 is allowed for ℓ = 0 and s = +1/2 only gives the spin.','orbital: 3s','Answer: (C) 3s']],
+detailed:[
+ ['The principal quantum number gives the shell number.','n = 3'],
+ ['The azimuthal quantum number gives the subshell, with ℓ = 0 for s, 1 for p, 2 for d and 3 for f.','ℓ = 0','⇒ s subshell'],
+ ['m = 0 is the only value allowed for ℓ = 0 and s = +1/2 only labels the spin of the electron, so neither changes the orbital.','orbital = 3s','Answer: (C) 3s']
+]},
+{id:'ATOM-50-L',parent:'ATOM-50',variant:12,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.464 · p.40',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of Bohr energies of one-electron ions',recoveryPurpose:'Direct retry - ionization energy of Li²⁺ (Z = 3) from the hydrogen value by the Z² factor'},question:'If ionisation energy of hydrogen atom is 13.6 eV. I.E. of Li⁺² will be -',options:['13.6 eV','10.4 eV','40.8 eV','122.4 eV'],correct:3,answer:'122.4 eV',
+short:[['Ionization energy of a one-electron ion from n = 1 is 13.6 eV times Z². Li²⁺ has Z = 3.','I.E. = 13.6×Z²','= 13.6×3²','= 13.6×9','= 122.4 eV']],
+detailed:[
+ ['For a one-electron species the ionization energy from the ground state scales as Z².','I.E. = 13.6×Z² eV'],
+ ['Li²⁺ has one electron and Z = 3.','I.E. = 13.6×3²','= 13.6×9','= 122.4 eV','Answer: (D) 122.4 eV']
+]},
+{id:'ATOM-49-C',parent:'ATOM-49',variant:3,topic:'Kinetic, potential and total energy in a Bohr orbit',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.467 · p.40',sourceRef:true,relevance:{parent:'ATOM-49',sharedSkill:'Virial relation between kinetic, potential and total energy in a Bohr orbit',recoveryPurpose:'Direct retry - kinetic energy from a given potential energy, with the value given as a symbol −x instead of a number'},question:'If potential energy of an electron in hydrogen atom is −x eV, then its kinetic energy will be -',options:['x eV','−x eV','2x eV','x/2 eV'],correct:3,answer:'x/2 eV',
+short:[['Virial relation for a Coulomb orbit: PE = −2×KE.','−x = −2×KE','KE = x/2 eV','Answer: (D) x/2 eV']],
+detailed:[
+ ['For a Coulomb (1/r) force the virial theorem links kinetic and potential energy.','PE = −2×KE'],
+ ['Substitute the given potential energy.','−x = −2×KE','KE = x/2'],
+ ['Kinetic energy is positive and half the magnitude of the potential energy.','Answer: (D) x/2 eV']
+]},
+{id:'ATOM-79',topic:'Number of orbitals in a principal shell',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.468 · p.40',sourceRef:true,question:'The number of orbitals in n = 3 are -',options:['1','3','5','9'],correct:3,answer:'9',
+short:[['For n = 3 the subshells are ℓ = 0, 1 and 2 (3s, 3p, 3d) and a subshell has 2ℓ+1 orbitals.','3s: 2×0 + 1 = 1','3p: 2×1 + 1 = 3','3d: 2×2 + 1 = 5'],['Add them.','total = 1 + 3 + 5','= 9','Answer: (D) 9']],
+detailed:[
+ ['For n = 3 the azimuthal quantum number takes the values ℓ = 0 to n−1.','ℓ = 0','ℓ = 1','ℓ = 2'],
+ ['Each subshell has 2ℓ + 1 orbitals.','3s: 1 orbital','3p: 3 orbitals','3d: 5 orbitals'],
+ ['Add them, which agrees with the shortcut n².','1 + 3 + 5 = 9','n² = 3²','= 9','Answer: (D) 9']
+]},
+{id:'ATOM-06-K',parent:'ATOM-06',variant:11,topic:'Bohr energy levels of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.470 · p.40',sourceRef:true,relevance:{parent:'ATOM-06',sharedSkill:'Bohr energy Eₙ = −13.6 Z²/n² for a named level',recoveryPurpose:'Direct retry - energy of a named excited state (second excited state is n = 3) from the ground-state energy'},question:'Energy of H-atom in the ground state is −13.6 eV, Hence energy in the second excited state is –',options:['−6.8 eV','−3.4 eV','−1.51 eV','−4.3 eV'],correct:2,answer:'−1.51 eV',
+short:[['The ground state is n = 1, the first excited state is n = 2 and the second excited state is n = 3.','n = 3'],['Use Eₙ = −13.6/n².','E₃ = −13.6/3²','= −13.6/9','= −1.51 eV','Answer: (C) −1.51 eV']],
+detailed:[
+ ['Excited states are counted from the ground state n = 1, so the second excited state is the third level.','n = 3'],
+ ['Bohr energy of hydrogen.','Eₙ = −13.6/n² eV'],
+ ['Substitute n = 3.','E₃ = −13.6/9','= −1.51 eV','Answer: (C) −1.51 eV']
+]},
+{id:'ATOM-80',topic:'Degenerate orbitals in a multi-electron atom',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.478 · p.41',sourceRef:true,question:'In a multi-electron atom, which of the following orbitals described by the three quantum numbers will have the same energy in the absence of magnetic and electric fields ? (a) n = 1, ℓ = 0, m = 0 (b) n = 2, ℓ = 0, m = 0 (c) n = 2, ℓ = 1, m = 1 (d) n = 3, ℓ = 2, m = 1 (e) n = 3, ℓ = 2, m = 0',options:['(b) and (c)','(a) and (b)','(d) and (e)','(c) and (d)'],correct:2,answer:'(d) and (e)',
+short:[['In a multi-electron atom the energy depends on n and ℓ, and m only sets the orientation, so orbitals with the same n and ℓ are degenerate when there is no field.','(a) 1s','(b) 2s','(c) 2p','(d) 3d','(e) 3d'],['Only (d) and (e) share both n and ℓ.','n = 3','ℓ = 2 for both','Answer: (C) (d) and (e)']],
+detailed:[
+ ['In a multi-electron atom the orbital energy depends on n and ℓ. The magnetic quantum number m only sets the orientation and has no effect on the energy without a magnetic or electric field.'],
+ ['Name each orbital from n and ℓ.','(a) n = 1','ℓ = 0 give 1s','(b) n = 2','ℓ = 0 give 2s','(c) n = 2','ℓ = 1 give 2p','(d) n = 3','ℓ = 2 give 3d','(e) n = 3','ℓ = 2 give 3d'],
+ ['Only (d) and (e) have the same n and ℓ, so they are the same subshell and are degenerate. The 2s and 2p orbitals of (b) and (c) differ in energy here because ℓ differs.','Answer: (C) (d) and (e)']
+]},
+{id:'ATOM-51-C',parent:'ATOM-51',variant:3,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.483 · p.42',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels of hydrogen',recoveryPurpose:'Representation change - the level energies come from an ionization enthalpy in J mol⁻¹ instead of the value 13.6 eV'},question:'The ionization enthalpy of hydrogen atom is 1.312 × 10⁶ J mol⁻¹. The energy required to excite the electron in the atom from n = 1 to n = 2 is',options:['6.56 × 10⁵ J mol⁻¹','7.56 × 10⁵ J mol⁻¹','9.84 × 10⁵ J mol⁻¹','8.51 × 10⁵ J mol⁻¹'],correct:2,answer:'9.84 × 10⁵ J mol⁻¹',
+short:[['The ionization enthalpy is the energy from n = 1 to n = ∞, so |E₁| = 1.312×10⁶ J mol⁻¹ and Eₙ = E₁/n².','E₁ = −1.312×10⁶ J mol⁻¹','E₂ = E₁/2²','= −3.28×10⁵ J mol⁻¹'],['Energy needed for n = 1 to n = 2.','ΔE = E₂ − E₁','= −3.28×10⁵ − (−13.12×10⁵)','= 9.84×10⁵ J mol⁻¹','Answer: (C) 9.84 × 10⁵ J mol⁻¹']],
+detailed:[
+ ['Removing the electron from n = 1 to n = ∞ costs the ionization enthalpy, so the ground-state energy is its negative.','E₁ = −1.312×10⁶ J mol⁻¹'],
+ ['Level energies scale as 1/n².','E₂ = E₁/4','= −3.28×10⁵ J mol⁻¹'],
+ ['Energy to go from n = 1 to n = 2.','ΔE = E₂ − E₁','= 1.312×10⁶×(1 − 1/4)','= 1.312×10⁶×3/4','= 9.84×10⁵ J mol⁻¹','Answer: (C) 9.84 × 10⁵ J mol⁻¹']
+]},
+{id:'ATOM-50-M',parent:'ATOM-50',variant:13,topic:'Ionization energy of hydrogen-like species',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.504 · p.43',sourceRef:true,relevance:{parent:'ATOM-50',sharedSkill:'Z² scaling of Bohr energies of one-electron ions',recoveryPurpose:'Controlled transfer - compare energies of two different species in different levels, so both Z² and 1/n² change'},question:'The ratio of the energy of the electron in the ground state of hydrogen to the electron in first excited state of Be³⁺ is -',options:['1 : 4','1 : 8','1 : 16','16 : 1'],correct:0,answer:'1 : 4',
+short:[['Bohr energy Eₙ = −13.6 Z²/n². Ground state of H is n = 1 with Z = 1, first excited state of Be³⁺ is n = 2 with Z = 4.','E(H) = −13.6×1²/1²','= −13.6 eV','E(Be³⁺) = −(13.6×4²)/2²','= −54.4 eV'],['Take the ratio.','E(H) : E(Be³⁺) = 13.6 : 54.4','= 1 : 4','Answer: (A) 1 : 4']],
+detailed:[
+ ['Energy of a one-electron species.','Eₙ = −13.6 Z²/n² eV'],
+ ['Hydrogen ground state has Z = 1 and n = 1.','E = −13.6 eV'],
+ ['The first excited state of Be³⁺ has Z = 4 and n = 2.','E = −(13.6×16)/4','= −54.4 eV'],
+ ['Ratio of the two energies.','13.6 : 54.4','= 1 : 4','Answer: (A) 1 : 4']
+]},
+{id:'ATOM-51-D',parent:'ATOM-51',variant:4,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.511 · p.44',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels of hydrogen',recoveryPurpose:'Representation change - compare the energies of several transitions between high levels instead of finding one energy for the n = 1 to 2 jump'},question:'According to Bohr’s theory the energy required for the transition of H-atom from n = 6 to n = 8 state is –',options:['Equal to the energy required for the transition from n = 5 to n = 6 state','Larger than in (A)','Less than in (A)','Equal to the energy required for the transition from n = 7 to n = 9 state.'],correct:2,answer:'Less than in (A)',
+short:[['Energy needed between levels n₁ and n₂ is 13.6×(1/n₁² − 1/n₂²) eV, so compare the brackets.','6 to 8: 1/6² − 1/8²','= 1/36 − 1/64','= 0.01215'],['The reference transition and the option (D) transition.','5 to 6: 1/25 − 1/36','= 0.01222','7 to 9: 1/49 − 1/81','= 0.00806'],['The 6 to 8 value is slightly smaller than 5 to 6 and clearly different from 7 to 9.','Answer: (C) Less than in (A)']],
+detailed:[
+ ['The energy required to go from level n₁ to n₂ in hydrogen is the difference of the level energies.','ΔE = 13.6×(1/n₁² − 1/n₂²) eV'],
+ ['Transition 6 to 8.','1/36 − 1/64','= 28/2304','= 0.01215'],
+ ['Transition 5 to 6, the one in (A).','1/25 − 1/36','= 11/900','= 0.01222'],
+ ['Transition 7 to 9, the one in (D).','1/49 − 1/81','= 0.00806'],
+ ['The 6 to 8 transition needs a little less energy than 5 to 6 (so not equal and not larger) and much more than 7 to 9 (so not equal).','Answer: (C) Less than in (A)']
+]},
+{id:'ATOM-81',topic:'Lobe axes and nodal planes of p and d orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.519 · p.44',sourceRef:true,question:'Which of the following orbitals has/have lobes along y-axis-',options:['d_xy','d_yz','d(x²−y²)','All of these'],correct:2,answer:'d(x²−y²)',
+short:[['Only d(x²−y²) has its lobes along the axes (two on x and two on y). d_xy and d_yz have lobes between the axes.','d_xy: lobes between x and y at 45°','d_yz: lobes between y and z at 45°','d(x²−y²): two lobes on +y and −y (and two on x)'],['Only (C) has lobes along the y-axis.','Answer: (C) d(x²−y²)']],
+detailed:[
+ ['The d orbitals d_xy, d_yz and d_xz have four lobes lying between the axes of their two named coordinates, at 45° to each axis, so no lobe points along an axis.'],
+ ['d_xy has its lobes in the xy plane between the x and y axes.','d_xy: lobes between x and y'],
+ ['d_yz has its lobes in the yz plane between the y and z axes.','d_yz: lobes between y and z'],
+ ['d(x²−y²) has four lobes pointing along the axes, two along x and two along y, so it has two lobes along the y-axis.','d(x²−y²): 2 lobes on the y-axis'],
+ ['So (D) is wrong and only (C) fits.','Answer: (C) d(x²−y²)']
+]},
+{id:'ATOM-09-I',parent:'ATOM-09',variant:9,topic:'Radial and angular nodes',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.520 · p.45',sourceRef:true,relevance:{parent:'ATOM-09',sharedSkill:'Node-counting rules: angular nodes = ℓ, radial nodes = n−ℓ−1',recoveryPurpose:'Direct retry - the same n and ℓ rules, with the nodes reported as planar and spherical instead of angular and radial'},question:'The nodes present in 5p orbital are-',options:['One planar, five spherical','One planar, four spherical','One planar, three spherical','Four spherical'],correct:2,answer:'One planar, three spherical',
+short:[['For 5p: n = 5 and ℓ = 1.','planar (angular) nodes = ℓ','= 1'],['Spherical (radial) nodes.','= n − ℓ − 1','= 5 − 1 − 1','= 3'],['Check with the total number of nodes n − 1 = 4 = 1 + 3.','Answer: (C) One planar, three spherical']],
+detailed:[
+ ['The letter p means ℓ = 1 and the prefix 5 means n = 5.','n = 5','ℓ = 1'],
+ ['Planar (angular) nodes equal ℓ.','planar nodes = 1'],
+ ['Spherical (radial) nodes are n − ℓ − 1.','spherical nodes = 5 − 1 − 1','= 3'],
+ ['Total nodes n − 1 = 4, which is 1 + 3.','Answer: (C) One planar, three spherical']
+]},
+{id:'ATOM-81-A',parent:'ATOM-81',variant:1,topic:'Lobe axes and nodal planes of p and d orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.521 · p.45',sourceRef:true,relevance:{parent:'ATOM-81',sharedSkill:'Relating an orbital label to the axes of its lobes and the planes where it is zero',recoveryPurpose:'Controlled transfer - find which orbital has a nodal plane in the xy plane, instead of which has lobes along the y-axis'},question:'Which of the following orbitals has a nodal plane in xy plane -',options:['d(x²−y²)','d(z²)','d_xy','p_z'],correct:3,answer:'p_z',
+short:[['A nodal plane is where the orbital changes sign and has zero density. Check where each orbital vanishes.','p_z ∝ z','zero on the plane z = 0','z = 0 is the xy plane'],['The others.','d_xy: nodal planes xz and yz','d(x²−y²): nodal planes x = y','x = −y','d(z²): two conical nodes'],['Only p_z has the xy plane as a node.','Answer: (D) p_z']],
+detailed:[
+ ['A nodal plane is a plane on which the orbital has zero probability, and the sign of the wave function changes across it.'],
+ ['p_z has its lobes along the z-axis, one above and one below the xy plane, and it is zero on the plane z = 0, the xy plane.','p_z: nodal plane = xy'],
+ ['d_xy has lobes in the xy plane between the axes, so its nodes are the xz and yz planes.','d_xy: xz and yz planes'],
+ ['d(x²−y²) has nodal planes that bisect the axes, and d(z²) has two conical nodes, so the xy plane is not a plane of zero probability for either.','d(x²−y²): planes x = y','x = −y'],
+ ['Only p_z fits.','Answer: (D) p_z']
+]},
+{id:'ATOM-82',topic:'Probability density of a 1s electron at two distances',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.523 · p.45 (Q.542, p.46, is a verbatim repeat of this item)',sourceRef:true,question:'For an electron in a hydrogen atom, the wave function, ψ is proportional to exp(−r/a₀), where a₀ is the Bohr’s radius. What is the ratio of the probability of finding the electron at the nucleus to the probability of finding it at a₀',options:['e','e²','1/e²','zero'],correct:1,answer:'e²',
+short:[['Probability density is proportional to ψ², so square the wave function.','ψ ∝ e^(−r/a₀)','ψ² ∝ e^(−2r/a₀)'],['At the nucleus r = 0 and at a₀ r = a₀.','ψ²(0) ∝ e^0','= 1','ψ²(a₀) ∝ e^(−2)'],['Ratio of nucleus to a₀.','ψ²(0)/ψ²(a₀) = 1/e^(−2)','= e²','Answer: (B) e²']],
+detailed:[
+ ['The probability of finding the electron at a point is proportional to ψ².','ψ ∝ e^(−r/a₀)','ψ² ∝ e^(−2r/a₀)'],
+ ['At the nucleus r = 0.','ψ² ∝ e^0','= 1'],
+ ['At r = a₀.','ψ² ∝ e^(−2)'],
+ ['The ratio of the nucleus value to the a₀ value is greater than 1.','ratio = 1/e^(−2)','= e²','Answer: (B) e²']
+]},
+{id:'ATOM-48-A',parent:'ATOM-48',variant:1,topic:'Most probable distance from the radial distribution function',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.524 · p.45 (Q.565, p.49, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-48',sharedSkill:'Radial distribution function 4πr²ψ² for a 1s orbital',recoveryPurpose:'Representation change - choose the expression for the actual probability in the shell between r and r + dr, instead of maximizing it to find the most probable distance'},question:'The first orbital of H or H like atom is represented by ψ = (1/√π)×(Z/a₀)^(3/2)×e^(−Zr/a₀), where a₀ = Bohr’s orbit. The actual probability of finding the electron at a distance r from the nucleus is-',options:['ψ² dr','∫ψ² 4πr² dV','ψ² 4πr² dr','∫ψ dV'],correct:2,answer:'ψ² 4πr² dr',
+short:[['The electron is found in a thin spherical shell of radius r and thickness dr.','dV = 4πr² dr'],['Probability = probability density × volume.','P = ψ² dV','= ψ² 4πr² dr','Answer: (C) ψ² 4πr² dr']],
+detailed:[
+ ['The probability of finding the electron at exactly a distance r means finding it in a thin spherical shell between r and r + dr.','shell volume dV = 4πr² dr'],
+ ['Probability equals probability density times volume, and the density is ψ².','P = ψ² dV','= ψ² 4πr² dr'],
+ ['(A) ψ² dr leaves out the 4πr² area factor. (B) is an integral over all space, so it gives the total probability. (D) ψ dV is not a probability since ψ itself has no probability meaning.','Answer: (C) ψ² 4πr² dr']
+]},
+{id:'ATOM-83',topic:'Spin multiplicity 2S + 1 of electronic states',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.527 · p.45',sourceRef:true,question:'The spin multiplicity for the orbital electron is 2S + 1 where S is total electrons spin. The spin multiplicity for stage (I), (II) and (III) are respectively : [Figure: stage (I) is two electrons paired in one level, ↑↓. After absorbing hν, stage (II) has one ↑ electron in the lower level and one ↓ electron in a higher level. After the change of spin, stage (III) has one ↑ electron in the lower level and one ↑ electron in the higher level.]',options:['1, 1, 1','1, 2, 3','1, 1, 3','1, 3, 1'],correct:2,answer:'1, 1, 3',
+short:[['Total spin S is the sum of the spins, taking +1/2 for ↑ and −1/2 for ↓.','(I) ↑↓: S = 1/2 − 1/2','= 0'],['(II) The electrons are ↑ and ↓, so the spins cancel.','S = 1/2 − 1/2','= 0'],['(III) After the change of spin both electrons are ↑.','S = 1/2 + 1/2','= 1'],['Multiplicity = 2S + 1.','(I) 2×0 + 1 = 1','(II) 2×0 + 1 = 1','(III) 2×1 + 1 = 3','Answer: (C) 1, 1, 3']],
+detailed:[
+ ['Add the spins of the two electrons in each stage, with +1/2 for ↑ and −1/2 for ↓, to get the total spin S. Then use 2S + 1.'],
+ ['Stage (I) has the paired electrons ↑↓.','S = 1/2 + (−1/2)','= 0','2S + 1 = 1'],
+ ['Stage (II) is reached by absorbing hν. The electron moves to a higher level without changing its spin, so the spins are still ↑ and ↓.','S = 0','2S + 1 = 1'],
+ ['Stage (III) follows a change of spin and has two parallel spins ↑↑.','S = 1/2 + 1/2','= 1','2S + 1 = 3'],
+ ['The multiplicities are 1, 1 and 3.','Answer: (C) 1, 1, 3']
+]},
+{id:'ATOM-84',topic:'Penetration and the 4s versus 3d energy order',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.528 · p.45',sourceRef:true,question:'The energy level of 4s-orbital is less than 3d- orbital because-',options:['4s-orbital is more near to nucleus than 3d- orbital','4s-orbital penetrates more into the nucleus than 3d-orbital','4s-orbital can have only two electrons whereas 3d can have 10 electrons','4s-orbital is spherical and 3d-orbital is double dumb bell.'],correct:1,answer:'4s-orbital penetrates more into the nucleus than 3d-orbital',
+short:[['Energy in a many-electron atom depends on how well the electron avoids the shielding by inner electrons, which is the penetration of its orbital towards the nucleus.','4s has small density peaks close to the nucleus','4s penetrates more than 3d'],['Better penetration means a larger effective nuclear charge and a lower energy.','Answer: (B)']],
+detailed:[
+ ['In a many-electron atom the energy of an orbital depends on how much of the electron density is close to the nucleus, where it is not shielded by the other electrons.'],
+ ['A 4s electron has small density peaks inside the inner shells, so it penetrates towards the nucleus more than a 3d electron even though its main peak is further out.'],
+ ['Greater penetration gives less shielding, a larger effective nuclear charge and a lower energy, so the 4s orbital lies below the 3d orbital.','Answer: (B) 4s-orbital penetrates more into the nucleus than 3d-orbital']
+]},
+{id:'ATOM-85',topic:'Counting up-spin and down-spin electrons in a configuration',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.529 · p.45',sourceRef:true,question:'In ground state of ₂₄Cr :',options:['13 electrons have spin in one direction and 11 electrons in other direction.','14 electrons have spin in one direction and 10 electrons in other direction.','15 electrons have spin in one direction and 9 electrons in other direction.','15 electrons have clock wise direction and 9 electrons in anticlock wise direction.'],correct:2,answer:'15 electrons have spin in one direction and 9 electrons in other direction.',
+short:[['Ground state of Cr (Z = 24) is the half-filled exception.','1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹'],['The first 18 electrons are all paired, 9 in each direction.','paired electrons = 18','up = 9','down = 9'],['3d⁵ and 4s¹ are 6 unpaired electrons with parallel spins.','up = 9 + 6','= 15','down = 9','Answer: (C) 15 and 9']],
+detailed:[
+ ['Chromium is an exception and has a half-filled 3d subshell and a half-filled 4s.','Cr: [Ar] 3d⁵ 4s¹'],
+ ['The argon core [Ar] has 18 electrons in completely filled orbitals, so half of them have each spin direction.','up = 9','down = 9'],
+ ['The five 3d electrons and the one 4s electron are unpaired and all have parallel spins (Hund\'s rule).','unpaired = 6'],
+ ['Add them to the same direction.','up = 9 + 6','= 15','down = 9','Answer: (C) 15 electrons in one direction and 9 in the other'],
+ ['Option (D) says the same split using clockwise and anticlockwise for the two spin directions, so (C) and (D) describe the same result.']
+]},
+{id:'ATOM-86',topic:'Rydberg constant for a two-body system (positronium)',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.534 · p.46',sourceRef:true,question:'Positronium consists of an electron and a positron (a particle which has the same mass as an electron, but opposite charge) orbiting round their common centre of mass. Calculate the value of the Rydberg constant for this system -',options:['R/2','R/4','2R','R'],correct:0,answer:'R/2',
+short:[['The Rydberg constant is proportional to the reduced mass of the orbiting pair.','R ∝ μ','μ = (m₁m₂)/(m₁+m₂)','μ(positronium) = (m×m)/(m+m)','= m/2','R(positronium)/R = (m/2)/m','= 1/2']],
+detailed:[
+ ['In hydrogen the nucleus is so heavy that the electron effectively orbits a fixed point, so the reduced mass is almost the electron mass m and the Rydberg constant is R.','μ(H) ≈ m'],
+ ['In the Bohr treatment of two bodies orbiting a common centre of mass, the electron mass is replaced by the reduced mass, and the Rydberg constant is proportional to it.','R ∝ μ'],
+ ['In positronium both particles have mass m.','μ = (m₁m₂)/(m₁+m₂)','= (m×m)/(m+m)','= m/2'],
+ ['Compare with the value for hydrogen.','R(positronium)/R = (m/2)/m','= 1/2'],
+ ['Answer: (A) R/2']
+]},
+{id:'ATOM-87',topic:'Degeneracy of a hydrogen energy level from its energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.535 · p.46',sourceRef:true,question:'For a hydrogen atom, what is the orbital degeneracy of the level that has energy = −(hcR∞)/9, where R∞ is the Rydberg constant for the hydrogen atom ?',options:['1','9','36','3'],correct:1,answer:'9',
+short:[['Match the given energy with Eₙ = −(hcR∞)/n² to find n. In hydrogen every orbital of a shell has the same energy, so the degeneracy is the number of orbitals n².','Eₙ = −(hcR∞)/n²','−(hcR∞)/n² = −(hcR∞)/9','n² = 9','n = 3','Orbitals = 3s + 3p + 3d','= 1 + 3 + 5','= 9 (= n²)']],
+detailed:[
+ ['The Bohr energy of hydrogen is Eₙ = −(hcR∞)/n².','Eₙ = −(hcR∞)/n²'],
+ ['Equate it with the given energy to get the shell.','−(hcR∞)/n² = −(hcR∞)/9','n² = 9','n = 3'],
+ ['In a hydrogen atom the energy depends only on n, so all orbitals of the n = 3 shell are degenerate. Count them.','ℓ = 0: 1 orbital','ℓ = 1: 3 orbitals','ℓ = 2: 5 orbitals','Total = 1 + 3 + 5','= 9 (= n²)'],
+ ['Option (D) 3 is the value of n and not the number of orbitals.','Answer: (B) 9']
+]},
+{id:'ATOM-87-A',parent:'ATOM-87',variant:1,topic:'Degeneracy of a hydrogen energy level from its energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.540 · p.46',sourceRef:true,relevance:{parent:'ATOM-87',sharedSkill:'Finding n from E = −R/n² and counting the n² degenerate orbitals of that hydrogen level',recoveryPurpose:'Direct retry - same problem with the energy written as −R_H/9'},question:'What is the degeneracy of level of H-atom that has the energy (−R_H/9) ?',options:['3','6','9','36'],correct:2,answer:'9',
+short:[['Here R_H is the Rydberg energy, so Eₙ = −R_H/n². Match it to the given energy and count the n² orbitals.','−R_H/n² = −R_H/9','n² = 9','n = 3','Degeneracy = n²','= 9']],
+detailed:[
+ ['The energy of hydrogen level n is Eₙ = −R_H/n².','Eₙ = −R_H/n²'],
+ ['Equate it with the given energy.','−R_H/n² = −R_H/9','n² = 9','n = 3'],
+ ['All orbitals of a shell have the same energy in hydrogen, so the degeneracy is the number of orbitals in the shell.','1 + 3 + 5','= 9 (= n²)'],
+ ['Answer: (C) 9']
+]},
+{id:'ATOM-07-F',parent:'ATOM-07',variant:6,topic:'de Broglie wavelength and kinetic energy',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.537 · p.46',sourceRef:true,relevance:{parent:'ATOM-07',sharedSkill:'de Broglie wavelength of the ejected electron from its kinetic energy (energy supplied minus 13.6 eV)',recoveryPurpose:'Direct retry - same 1.50 times ionization-energy balance as Q.215 with the wavelength asked in Å from λ = 12.28/√E'},question:'Energy of the electron in H-atom is 1.50 times as much energy as the minimum required for its escape (13.6 eV) from the atom. Calculate the wavelength of the emitted electron.',options:['4.71 Å','4.17 Å','5.47 Å','5.74 Å'],correct:0,answer:'4.71 Å',
+short:[['The minimum energy needed to free the electron is 13.6 eV. The atom is given 1.5 times this, and the excess is the kinetic energy of the emitted electron.','Energy given = 1.5×13.6','= 20.4 eV','KE = 20.4 − 13.6','= 6.8 eV'],['de Broglie wavelength with the energy in eV (from λ = h/√(2mE)).','λ = 12.28/√6.8 Å','= 12.28/2.608','= 4.71 Å']],
+detailed:[
+ ['Escape needs at least the ionization energy, 13.6 eV for the ground state. The energy beyond this leaves as kinetic energy of the emitted electron.','KE = (energy given) − 13.6'],
+ ['The energy given is 1.5 times the escape energy.','Energy given = 1.5×13.6','= 20.4 eV','KE = 20.4 − 13.6','= 6.8 eV'],
+ ['For an electron with kinetic energy E in eV the de Broglie wavelength is h/√(2mE) = 12.28/√E Å.','λ = 12.28/√6.8','= 12.28/2.608','= 4.71 Å'],
+ ['Answer: (A) 4.71 Å']
+]},
+{id:'ATOM-88',topic:'What the Schrödinger equation does and does not give',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.532 · p.46',sourceRef:true,question:'Which of the following cannot be obtained from the solution of schrodinger wave equation -',options:['wave function of an electron','Energy of an electron in a 1-D box','Energy of an electron in orbitals','Velocity of electrons in circular orbits'],correct:3,answer:'Velocity of electrons in circular orbits',
+short:[['Solving the Schrödinger equation gives the wave function ψ and the allowed energies. It does not give a definite path or velocity, which is a Bohr-model idea.','Ĥψ = Eψ','Gives ψ (A) and allowed E (B and C)','Definite path and speed would violate Δx·Δp ≥ h/(4π)','Circular-orbit velocity (D) is not obtained']],
+detailed:[
+ ['The Schrödinger equation is solved for the wave function ψ and the allowed energies E of a system.','Ĥψ = Eψ'],
+ ['It gives ψ of an electron (A) and the energy of an electron in a 1-D box (B) or in atomic orbitals (C).','(A) obtained','(B) obtained','(C) obtained'],
+ ['A circular orbit with a definite radius and velocity belongs to the Bohr model. The quantum-mechanical treatment gives only probabilities, and a precise path and velocity together would violate the uncertainty principle.','Δx·Δp ≥ h/(4π)'],
+ ['Answer: (D) Velocity of electrons in circular orbits']
+]},
+{id:'ATOM-17-C',parent:'ATOM-17',variant:3,topic:'Probability density and radial wave functions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.546 · p.47 (Q.560, p.48, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-17',sharedSkill:'Reading a radial probability (R² against r) curve for its radial nodes',recoveryPurpose:'Representation change - pick the 2s curve out of four R² graphs using the node count n − ℓ − 1 instead of ranking radii or counting peaks'},question:'Which of the following probability distribution curves represents 2s orbital for H-atom ?',options:['Curve A: R² falls smoothly from its maximum at r = 0 with no node','Curve B: R² starts high at r = 0 and falls to zero at one radius then rises to a second smaller maximum and decays','Curve C: R² starts at zero and rises to a single maximum then falls','Curve D: R (not R²) falls smoothly from its maximum at r = 0 with no node'],correct:1,answer:'Curve B: R² starts high at r = 0 and falls to zero at one radius then rises to a second smaller maximum and decays',
+short:[['The 2s orbital has n = 2 and ℓ = 0. Count its radial nodes and check the value at the nucleus.','Radial nodes = n − ℓ − 1','= 2 − 0 − 1','= 1','s orbital: R² ≠ 0 at r = 0','One zero of R² and finite R² at r = 0: curve B']],
+detailed:[
+ ['The number of radial nodes (radii where R² = 0 apart from r = 0 and infinity) is n − ℓ − 1.','Radial nodes = n − ℓ − 1','= 2 − 0 − 1','= 1'],
+ ['An s orbital has a non-zero value at the nucleus, so the curve starts above zero at r = 0.','s orbital: R² ≠ 0 at r = 0'],
+ ['So the 2s curve starts high at r = 0 and drops to zero at one radius (the node). It then rises to a second maximum and decays. This is curve B.','Curve B'],
+ ['Curve A has no node (1s). Curve C starts at zero (p-type). Curve D plots R and not R² and has no node.','Answer: (B)']
+]},
+{id:'ATOM-66-A',parent:'ATOM-66',variant:1,topic:'Shape and orientation of d orbitals',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.553 · p.47',sourceRef:true,relevance:{parent:'ATOM-66',sharedSkill:'Using the position of the four lobes of dxy between the x and y axes (ψ ∝ xy)',recoveryPurpose:'Controlled transfer - decide what the sign of the lobe wave function means, instead of where the maximum probability lies'},question:'dxy orbital has four lobes between x-and y-axes. The wave functions of two lobes are positive and those of other two are negative. The positive wave function signifies that–',options:['both x and y are positive','both y and z are negative','either x or y is negative','none of these'],correct:3,answer:'none of these',
+short:[['The angular part of dxy is proportional to the product xy, so the sign of ψ in a lobe is the sign of xy.','ψ(dxy) ∝ xy','ψ > 0 when xy > 0','x > 0 and y > 0 (one positive lobe)','x < 0 and y < 0 (the other positive lobe)','(A) is true for only one of the two positive lobes','(B) uses z but ψ(dxy) has no z factor','(C) is false for the lobe with x > 0 and y > 0','Answer: (D)']],
+detailed:[
+ ['The dxy orbital has its four lobes in the xy plane between the axes, and its angular part is proportional to xy.','ψ(dxy) ∝ xy'],
+ ['A positive ψ means xy > 0, which happens in two quadrants.','x > 0 and y > 0','x < 0 and y < 0'],
+ ['The sign of ψ is only the sign (phase) of the wave function in that lobe, and it does not say that both coordinates are positive. Statement (A) holds for only one of the two positive lobes.','(A) incomplete'],
+ ['Statement (B) brings in z, which does not appear in ψ(dxy). Statement (C) is false for the lobe with x > 0 and y > 0.','(B) wrong','(C) wrong'],
+ ['None of the given statements is correct. Answer: (D) none of these']
+]},
+{id:'ATOM-64-B',parent:'ATOM-64',variant:2,topic:'Electron capacity of a shell',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.530 · p.45',sourceRef:true,relevance:{parent:'ATOM-64',sharedSkill:'Counting the 2ℓ+1 orbitals of a subshell and applying the two-electrons-per-orbital limit',recoveryPurpose:'Controlled transfer - count the electrons of one spin in a subshell instead of all electrons in a shell'},question:'The maximum number of electrons in an orbital having same spin quantum number will be –',options:['ℓ + 2','2ℓ + 1','ℓ(ℓ + 1)','√[ℓ(ℓ + 1)]'],correct:1,answer:'2ℓ + 1',
+short:[['A subshell of azimuthal quantum number ℓ has 2ℓ+1 orbitals. Each orbital holds at most one electron of a given spin (the other has the opposite spin).','Orbitals = 2ℓ + 1','Electrons of one spin per orbital = 1','Same-spin electrons = 1×(2ℓ + 1)','= 2ℓ + 1','Check ℓ = 2 (d): 5 orbitals give 5 electrons of one spin']],
+detailed:[
+ ['The stem means a subshell (a set of orbitals with the same n and ℓ). The number of orbitals in it is the number of m values.','m = −ℓ to +ℓ','Orbitals = 2ℓ + 1'],
+ ['By the Pauli principle an orbital can hold two electrons with opposite spins. So each orbital contributes only one electron of a given spin.','1 per orbital'],
+ ['Maximum number of electrons with the same spin.','= 1×(2ℓ + 1)','= 2ℓ + 1'],
+ ['Check for a d subshell (ℓ = 2).','2ℓ + 1 = 5','5 electrons with spin +1/2'],
+ ['Answer: (B) 2ℓ + 1']
+]},
+{id:'ATOM-63-A',parent:'ATOM-63',variant:1,topic:'Postulates of the Bohr model',source:'Institute worksheet · atomic structure.pdf · Q.5 · question p.4 · answer p.52',sourceRef:true,relevance:{parent:'ATOM-63',sharedSkill:'Bohr’s picture of an electron moving in orbits of definite energy',recoveryPurpose:'Representation change - state the postulate as a description of the electron instead of naming the idea'},question:'The electron in an atom',options:['Moves randomly around the nucleus','Has fixed space around the nucleus','Is stationary in various energy levels','Moves around its nucleus in definite energy levels.'],correct:3,answer:'Moves around its nucleus in definite energy levels.',
+short:[['In the Bohr picture the electron revolves only in certain allowed orbits, each with a definite energy.','Allowed orbits: n = 1 2 3 ...','Eₙ = −13.6/n² eV (definite values)','Electron revolves in these orbits','(A) random motion: not Bohr','(C) the electron moves in an orbit: it is not stationary','Answer: (D)']],
+detailed:[
+ ['Bohr proposed that the electron moves around the nucleus only in allowed circular orbits, and each orbit has a definite energy.','Eₙ = −13.6/n² eV'],
+ ['So the electron does not move randomly (A), and it is not confined to a fixed region of space (B).','(A) wrong','(B) wrong'],
+ ['The orbits are the stationary states (fixed energy), but the electron itself keeps revolving in them, so it is not stationary. Statement (C) is wrong.','(C) wrong'],
+ ['Answer: (D) Moves around its nucleus in definite energy levels']
+]},
+{id:'ATOM-63-B',parent:'ATOM-63',variant:2,topic:'Postulates of the Bohr model',source:'Institute worksheet · atomic structure.pdf · Q.49 · question p.32 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-63',sharedSkill:'Knowing what the Bohr model assumes and predicts',recoveryPurpose:'Controlled transfer - judge four statements about the model instead of naming the postulate'},question:'The Bohr model of atoms',options:['Assumes that the angular momentum of electrons is quantized.','Uses Einstein’s photoelectric equation.','Predicts continuous emission spectra for atoms.','Predicts the same emission spectra for all types of atoms.'],correct:0,answer:'Assumes that the angular momentum of electrons is quantized.',
+short:[['Check each statement against Bohr’s postulates and predictions.','(A) mvr = nh/(2π): angular momentum is quantized, true','(B) Bohr uses ΔE = hν: the photoelectric equation is not used, false','(C) Only ΔE = Eᵢ − E_f are allowed: line spectra, not continuous, false','(D) Eₙ depends on Z: each atom has its own lines, false']],
+detailed:[
+ ['Bohr’s key assumption is that the angular momentum of the electron is an integral multiple of h/2π.','mvr = nh/(2π)','(A) true'],
+ ['The frequency of emitted light comes from the energy gap between two levels. The photoelectric equation is not part of the model.','hν = Eᵢ − E_f','(B) false'],
+ ['Only discrete energy gaps are allowed, so the predicted spectrum consists of lines and not a continuum.','(C) false'],
+ ['The energy levels depend on the nuclear charge, so different atoms give different spectra.','Eₙ ∝ Z²/n²','(D) false'],
+ ['Answer: (A)']
+]},
+{id:'ATOM-49-D',parent:'ATOM-49',variant:4,topic:'Kinetic, potential and total energy in a Bohr orbit',source:'Institute worksheet · atomic structure.pdf · Q.37 · question p.25 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-49',sharedSkill:'Virial relation TE = −KE and PE = 2×TE for a Bohr orbit',recoveryPurpose:'Representation change - a ratio KE : TE with no numerical energy given'},question:'The ratio of kinetic energy to the total energy of an electron in a Bohr orbit of the hydrogen atom, is',options:['1 : 1','1 : −1','2 : −1','1 : −2'],correct:1,answer:'1 : −1',
+short:[['For a Coulomb orbit the potential energy is −2 times the kinetic energy. Then the total energy is the negative of the kinetic energy.','PE = −2 KE','TE = KE + PE','= KE − 2 KE','= −KE','KE : TE = KE : (−KE)','= 1 : −1']],
+detailed:[
+ ['For an electron in a Bohr orbit the potential energy is twice the kinetic energy in magnitude and negative.','PE = −2 KE'],
+ ['Add the two to get the total energy.','TE = KE + PE','= KE − 2 KE','= −KE'],
+ ['Form the ratio.','KE : TE = KE : (−KE)','= 1 : −1'],
+ ['Answer: (B) 1 : −1']
+]},
+{id:'ATOM-51-E',parent:'ATOM-51',variant:5,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · atomic structure.pdf · Q.59 · question p.38 · answer p.56',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy between two Bohr levels of hydrogen, ΔE = 13.6×(1/n₁² − 1/n₂²)',recoveryPurpose:'Controlled transfer - the levels are given as third excited and first excited states and the atom emits a photon'},question:'An hydrogen atom (ionisation energy = 13.6 eV) jumps from third excited state to first excited state. The energy of photon emitted in the process is',options:['1.89 eV','2.55 eV','12.09 eV','12.75 eV'],correct:1,answer:'2.55 eV',
+short:[['Third excited state is n = 4 and first excited state is n = 2. The photon energy is the gap between them.','n₂ = 4','n₁ = 2','ΔE = 13.6×(1/2² − 1/4²)','= 13.6×(1/4 − 1/16)','= (13.6×3)/16','= 2.55 eV']],
+detailed:[
+ ['Ground state is n = 1. So the first excited state is n = 2 and the third excited state is n = 4.','Initial n = 4','Final n = 2'],
+ ['The emitted photon carries the energy difference of the two levels.','ΔE = 13.6×(1/n_f² − 1/nᵢ²)','= 13.6×(1/2² − 1/4²)','= 13.6×(1/4 − 1/16)','= (13.6×3)/16','= 2.55 eV'],
+ ['The other options are other transitions: 1.89 eV is 3 → 2 and 12.09 eV is 3 → 1 and 12.75 eV is 4 → 1.','Answer: (B) 2.55 eV']
+]},
+{id:'ATOM-59-A',parent:'ATOM-59',variant:1,topic:'Energy of an electron in a given Bohr orbit',source:'Institute worksheet · atomic structure.pdf · Q.71 · question p.44 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-59',sharedSkill:'Eₙ = E₁/n² for hydrogen',recoveryPurpose:'Direct retry - the second excited state (n = 3) energy from the ground-state value given in the stem'},question:'In a hydrogen atom, if energy of an electron in ground state is 13.6. eV, then that in the 2nd excited state is',options:['1.51 eV','3.4 eV','6.04 eV','13.6 eV.'],correct:0,answer:'1.51 eV',
+short:[['The second excited state of hydrogen is n = 3. Energy scales as 1/n².','Eₙ = E₁/n²','E₃ = 13.6/3²','= 13.6/9','= 1.51 eV']],
+detailed:[
+ ['Ground state is n = 1. So the first excited state is n = 2 and the second excited state is n = 3.','n = 3'],
+ ['Hydrogen energy levels scale as 1/n². The stem gives the ground-state value as 13.6 eV (the magnitude of −13.6 eV).','Eₙ = E₁/n²','E₃ = 13.6/3²','= 13.6/9','= 1.51 eV'],
+ ['With the sign kept this energy is −1.51 eV. The option 3.4 eV is n = 2 and 6.04 eV is not a level.','Answer: (A) 1.51 eV']
+]},
+{id:'ATOM-51-F',parent:'ATOM-51',variant:6,topic:'Excitation energy between Bohr levels of hydrogen',diagram:'hEnergyLevels',source:'Institute worksheet · atomic structure.pdf · Q.74 · question p.47 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Photon energy equals the gap between the two Bohr levels of the transition',recoveryPurpose:'Representation change - four transitions are read off an energy-level diagram and compared, instead of one gap being calculated'},question:'The diagram shows the energy levels for an electron in a certain atom. Which transition shown represents the emission of a photon with the most energy?',options:['iv','iii','ii','i'],correct:1,answer:'iii',
+short:[['Read the four arrows from the diagram: (i) n = 1 → 3 is upward, so it is an absorption. (ii) n = 4 → 3, (iii) n = 2 → 1 and (iv) n = 4 → 2 are emissions.','(i) n = 1 → 3: upward','absorption, not emission','(ii) n = 4 → 3','ΔE = 13.6×(1/3² − 1/4²)','= 0.66 eV'],['Emission energy is the gap between the two levels.','(iii) n = 2 → 1','ΔE = 13.6×(1/1² − 1/2²)','= 10.2 eV','(iv) n = 4 → 2','ΔE = 13.6×(1/2² − 1/4²)','= 2.55 eV','Largest emission: (iii)','Answer: (B)']],
+detailed:[
+ ['The four arrows in the diagram are: (i) up from n = 1 to n = 3, (ii) down from n = 4 to n = 3, (iii) down from n = 2 to n = 1 and (iv) down from n = 4 to n = 2.','(i) 1 → 3','(ii) 4 → 3','(iii) 2 → 1','(iv) 4 → 2'],
+ ['Transition (i) goes up, so it is absorption and not emission.','(i) absorbs a photon'],
+ ['For emission the photon energy is the gap between the two levels. Using the hydrogen-like spacing Eₙ = −13.6/n² eV gives the gaps.','(ii) 13.6×(1/3² − 1/4²)','= 0.66 eV','(iii) 13.6×(1/1² − 1/2²)','= 10.2 eV','(iv) 13.6×(1/2² − 1/4²)','= 2.55 eV'],
+ ['The gap between n = 1 and n = 2 is the widest one in the diagram, so the photon from (iii) has the most energy.','Answer: (B) iii']
+]},
+{id:'ATOM-62-A',parent:'ATOM-62',variant:1,topic:'Bohr quantization for a non-Coulomb potential',source:'Institute worksheet · atomic structure.pdf · Q.75 · question p.48 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-62',sharedSkill:'Centripetal balance from F = −dU/dr plus Bohr quantization mvr = nh/(2π)',recoveryPurpose:'Direct retry - an attractive potential (1/2)kr² asking for both the orbit radius and the energy as functions of n'},question:'A particle of mass m moves in a circular orbit in a central potential field U(r) = 1/2 kr². If Bohr’s quantization conditions are applied, radii of possible orbits and energy levels vary with quantum number n as :',options:['rₙ ∝ √n, Eₙ ∝ n','rₙ ∝ √n, Eₙ ∝ 1/n','rₙ ∝ n, Eₙ ∝ n','rₙ ∝ n², Eₙ ∝ 1/n²'],correct:0,answer:'rₙ ∝ √n, Eₙ ∝ n',
+short:[['The force from the potential supplies the centripetal force. Then apply mvr = nh/(2π).','F = −dU/dr','|F| = kr','mv²/r = kr','v = r√(k/m)','mvr = nh/(2π)','m×r√(k/m)×r = nh/(2π)','r² ∝ n','rₙ ∝ √n'],['Total energy uses mv² = kr².','KE = (mv²)/2','= (kr²)/2','E = KE + PE','= (kr²)/2 + (kr²)/2','= kr²','Eₙ ∝ r² ∝ n']],
+detailed:[
+ ['The force on the particle is the negative gradient of its potential energy, and its magnitude provides the centripetal force.','F = −dU/dr','|F| = kr'],
+ ['Balance with the centripetal requirement.','mv²/r = kr','v = r√(k/m)'],
+ ['Bohr’s quantization of angular momentum.','mvr = nh/(2π)','m×r√(k/m)×r = nh/(2π)','r² ∝ n','rₙ ∝ √n'],
+ ['The total energy is the sum of kinetic and potential energy. From the force balance mv² = kr².','KE = (mv²)/2','= (kr²)/2','PE = (kr²)/2'],
+ ['Add the two.','E = (kr²)/2 + (kr²)/2','= kr²','Eₙ ∝ r²','∝ n'],
+ ['Answer: (A) rₙ ∝ √n and Eₙ ∝ n']
+]},
+{id:'ATOM-89',topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.51 · p.5',sourceRef:true,question:'Calculate the wavelength of the spectral line when the electron in the hydrogen atom undergoes a transition from fourth energy level to second energy level ?',options:['4.86 nm','486 nm','48.6 nm','4860 nm'],correct:1,answer:'486 nm',
+short:[['Rydberg formula for hydrogen (Z = 1), transition 4 → 2 (n₁ = 2, n₂ = 4).','1/λ = R_H(1/n₁² − 1/n₂²)','= 1.097×10⁷ × (1/2² − 1/4²)'],['Evaluate the bracket, then invert.','= 1.097×10⁷ × 3/16','= 2.057×10⁶ m⁻¹','λ = 1/(2.057×10⁶)','= 4.86×10⁻⁷ m','= 486 nm']],
+detailed:[
+ ['The wavelength of a hydrogen line comes from the Rydberg formula, with n₁ the level the electron lands on and n₂ the level it starts from.','1/λ = R_H(1/n₁² − 1/n₂²)','R_H = 1.097×10⁷ m⁻¹'],
+ ['Here the electron falls from n₂ = 4 to n₁ = 2 (a Balmer line).','1/λ = 1.097×10⁷ × (1/4 − 1/16)','= 1.097×10⁷ × 3/16','= 2.057×10⁶ m⁻¹'],
+ ['Invert and convert to nanometres (1 m = 10⁹ nm).','λ = 1/(2.057×10⁶)','= 4.86×10⁻⁷ m','= 486 nm'],
+ ['This is the blue-green Hβ line of the visible Balmer series.','Answer: (B) 486 nm']
+]},
+{id:'ATOM-89-A',parent:'ATOM-89',variant:1,topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.337 · p.31',sourceRef:true,relevance:{parent:'ATOM-89',sharedSkill:'Rydberg formula for the wavelength of a given line of a hydrogen series',recoveryPurpose:'Direct retry - a Paschen line (n₁ = 3) with R given in cm⁻¹ and the answer in ångström'},question:'Wave-length of the first line of Paschen Series hydrogen spectrum is (R = 109700 cm⁻¹)',options:['18750 Å','2854 Å','3452 Å','6243 Å'],correct:0,answer:'18750 Å',
+short:[['First Paschen line: n₁ = 3, n₂ = 4.','1/λ = R(1/3² − 1/4²)','= 109700 × 7/144','= 5332.6 cm⁻¹'],['Invert and convert to ångström (1 cm = 10⁸ Å).','λ = 1/5332.6','= 1.875×10⁻⁴ cm','= 18750 Å']],
+detailed:[
+ ['The Paschen series lands on n₁ = 3, and its first line starts from the next level n₂ = 4.','1/λ = R(1/n₁² − 1/n₂²)','= 109700 × (1/9 − 1/16)'],
+ ['Evaluate the bracket.','1/9 − 1/16 = 7/144','1/λ = 109700 × 7/144','= 5332.6 cm⁻¹'],
+ ['Invert, then convert centimetres to ångström.','λ = 1/5332.6','= 1.875×10⁻⁴ cm','= 1.875×10⁻⁴ × 10⁸ Å','= 18750 Å'],
+ ['The line lies in the infrared, as expected for the Paschen series.','Answer: (A) 18750 Å']
+]},
+{id:'ATOM-89-B',parent:'ATOM-89',variant:2,topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.425 · p.37',sourceRef:true,relevance:{parent:'ATOM-89',sharedSkill:'Rydberg formula for the wavelength of a given line of a hydrogen series',recoveryPurpose:'Controlled transfer - the last (limiting) line of the series, n₂ → ∞, so 1/n₂² drops out'},question:'The wave length of the last line of Paschen series would be -',options:['9540 Å','8204 Å','3650 Å','912 Å'],correct:1,answer:'8204 Å',
+short:[['The last line of a series has n₂ → ∞, so 1/n₂² = 0. For Paschen n₁ = 3.','1/λ = R_H(1/3² − 0)','= R_H/9'],['Invert and substitute R_H = 1.097×10⁷ m⁻¹.','λ = 9/R_H','= 9/(1.097×10⁷)','= 8.204×10⁻⁷ m','= 8204 Å']],
+detailed:[
+ ['The last (limiting) line of a series comes from the electron falling from infinity, so n₂ → ∞ and 1/n₂² = 0.','1/λ = R_H(1/n₁² − 1/n₂²)','n₂ → ∞'],
+ ['For the Paschen series n₁ = 3.','1/λ = R_H × (1/9 − 0)','= R_H/9'],
+ ['Invert and substitute R_H = 1.097×10⁷ m⁻¹.','λ = 9/R_H','= 9/(1.097×10⁷)','= 8.204×10⁻⁷ m'],
+ ['Convert to ångström (1 m = 10¹⁰ Å).','= 8204 Å','Answer: (B) 8204 Å']
+]},
+{id:'ATOM-89-C',parent:'ATOM-89',variant:3,topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.465 · p.40',sourceRef:true,relevance:{parent:'ATOM-89',sharedSkill:'Rydberg formula for the wavelength of a given line of a hydrogen series',recoveryPurpose:'Direct retry - the third line of the Lyman series, so the transition (4 → 1) is found from the line number before the formula is used'},question:'The wavelength of third lyman series of hydrogen atom is approximately -',options:['1 × 10⁻⁷ m','1 × 10⁻⁸ m','1 × 10⁻⁶ m','1 × 10⁻⁵ m'],correct:0,answer:'1 × 10⁻⁷ m',
+short:[['Lyman lines land on n₁ = 1: the first line is 2 → 1, so the third is 4 → 1.','1/λ = R_H(1/1² − 1/4²)','= 1.097×10⁷ × 15/16','= 1.028×10⁷ m⁻¹'],['Invert.','λ = 1/(1.028×10⁷)','= 9.72×10⁻⁸ m','≈ 1×10⁻⁷ m']],
+detailed:[
+ ['Every Lyman line ends at n₁ = 1. Lines are counted by increasing starting level.','1st line: 2 → 1','2nd line: 3 → 1','3rd line: 4 → 1'],
+ ['Apply the Rydberg formula to 4 → 1.','1/λ = R_H(1/1² − 1/4²)','= 1.097×10⁷ × 15/16','= 1.028×10⁷ m⁻¹'],
+ ['Invert to get the wavelength.','λ = 1/(1.028×10⁷)','= 9.72×10⁻⁸ m'],
+ ['This is approximately 1×10⁻⁷ m (about 97 nm, ultraviolet).','Answer: (A) 1 × 10⁻⁷ m']
+]},
+{id:'ATOM-89-D',parent:'ATOM-89',variant:4,topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.334 · p.31',sourceRef:true,relevance:{parent:'ATOM-89',sharedSkill:'Rydberg formula for the wavelength of a given line of a hydrogen series',recoveryPurpose:'Controlled transfer - the third Balmer line (5 → 2) with the answer left symbolic in R_H'},question:'The wavelength of the third line of the Balmer series for a hydrogen atom is',options:['21/(100R_H)','100/(21R_H)','(21R_H)/100','(21R_H)/100'],correct:1,answer:'100/(21R_H)',
+short:[['Balmer lines end at n₁ = 2; the third line is 5 → 2.','1/λ = R_H(1/2² − 1/5²)','= R_H(1/4 − 1/25)','= 21R_H/100'],['Invert.','λ = 100/(21R_H)']],
+detailed:[
+ ['Balmer lines end at n₁ = 2. Counting by increasing starting level gives the third line as 5 → 2.','1st line: 3 → 2','2nd line: 4 → 2','3rd line: 5 → 2'],
+ ['Apply the Rydberg formula.','1/λ = R_H(1/2² − 1/5²)','= R_H(1/4 − 1/25)','= R_H × 21/100','= (21R_H)/100'],
+ ['Invert to get the wavelength.','λ = 100/(21R_H)','Answer: (B) 100/(21R_H)']
+]},
+{id:'ATOM-89-E',parent:'ATOM-89',variant:5,topic:'Wavelength of a numbered line of a hydrogen series',source:'Institute worksheet · atomic structure.pdf · Q.52 · question p.35 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-89',sharedSkill:'Rydberg formula for the wavelength of a given line of a hydrogen series',recoveryPurpose:'Inverse - the wavelength of a Lyman line is given and the starting level n₂ is asked for'},question:'The wavelength of a spectral line emitted by hydrogen atom in the Lyman Series is 16/(15R) cm. What is the value of n₂ ? (R = Rydberg constant)',options:['2','3','4','1'],correct:2,answer:'4',
+short:[['Lyman series: n₁ = 1. Invert the given wavelength to get 1/λ.','1/λ = 15R/16'],['Equate with the Rydberg formula and solve for n₂.','R(1/1² − 1/n₂²) = 15R/16','1 − 1/n₂² = 15/16','1/n₂² = 1/16','⇒ n₂ = 4']],
+detailed:[
+ ['The Lyman series ends at n₁ = 1. Use the Rydberg formula with the wave number obtained by inverting the wavelength.','1/λ = R(1/n₁² − 1/n₂²)','1/λ = 15R/16'],
+ ['Substitute n₁ = 1.','R(1 − 1/n₂²) = 15R/16','1 − 1/n₂² = 15/16'],
+ ['Solve for n₂.','1/n₂² = 1 − 15/16','= 1/16','⇒ n₂ = 4'],
+ ['The line is the 4 → 1 transition (third Lyman line).','Answer: (C) 4']
+]},
+{id:'ATOM-90',topic:'Wave number of a hydrogen spectral line',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.92 · p.9',sourceRef:true,question:'Wave-number of the first line of Paschen Series is - (R = 109700 cm⁻¹)',options:['[18750 Å]⁻¹','[2854 Å]⁻¹','[3452 Å]⁻¹','[6243 Å]⁻¹'],correct:0,answer:'[18750 Å]⁻¹',
+short:[['First Paschen line: n₁ = 3, n₂ = 4.','ν̄ = R(1/3² − 1/4²)','= 109700 × 7/144','= 5332.6 cm⁻¹'],['The options give the wave number as 1/λ in ångström, so convert.','λ = 1/5332.6','= 1.875×10⁻⁴ cm','= 18750 Å','ν̄ = [18750 Å]⁻¹']],
+detailed:[
+ ['The wave number of a line is ν̄ = 1/λ, given by the Rydberg formula. The first Paschen line is 4 → 3.','ν̄ = R(1/n₁² − 1/n₂²)','= 109700 × (1/9 − 1/16)'],
+ ['Evaluate.','1/9 − 1/16 = 7/144','ν̄ = 109700 × 7/144','= 5332.6 cm⁻¹'],
+ ['The options are written as [wavelength]⁻¹ in ångström, so find the wavelength that gives this wave number (1 cm = 10⁸ Å).','λ = 1/5332.6','= 1.875×10⁻⁴ cm','= 18750 Å'],
+ ['So the wave number is the inverse of 18750 Å.','Answer: (A) [18750 Å]⁻¹']
+]},
+{id:'ATOM-90-A',parent:'ATOM-90',variant:1,topic:'Wave number of a hydrogen spectral line',source:'Institute worksheet · atomic structure.pdf · Q.39 · question p.26 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-90',sharedSkill:'Rydberg formula for the wave number of a line of a hydrogen series',recoveryPurpose:'Controlled transfer - the last (limiting) Balmer line, n₂ → ∞, with R given in m⁻¹'},question:'Given the value of Rydberg constant is 10⁷ m⁻¹, the wave number of the last line of the Balmer series in hydrogen spectrum will be',options:['0.25 × 10⁷ m⁻¹','2.5 × 10⁷ m⁻¹','0.025 × 10⁴ m⁻¹','0.5 × 10⁷ m⁻¹'],correct:0,answer:'0.25 × 10⁷ m⁻¹',
+short:[['The last line of a series has n₂ → ∞. Balmer: n₁ = 2.','ν̄ = R(1/2² − 1/n₂²)','= R(1/4 − 0)','= R/4'],['Substitute R = 10⁷ m⁻¹.','ν̄ = 10⁷/4','= 0.25×10⁷ m⁻¹']],
+detailed:[
+ ['The last line of a series comes from n₂ → ∞, so 1/n₂² = 0. The Balmer series has n₁ = 2.','ν̄ = R(1/n₁² − 1/n₂²)','= R(1/4 − 0)'],
+ ['Substitute R = 10⁷ m⁻¹.','ν̄ = 10⁷/4','= 2.5×10⁶ m⁻¹','= 0.25×10⁷ m⁻¹','Answer: (A) 0.25 × 10⁷ m⁻¹']
+]},
+{id:'ATOM-90-B',parent:'ATOM-90',variant:2,topic:'Wave number of a hydrogen spectral line',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.340 · p.31',sourceRef:true,relevance:{parent:'ATOM-90',sharedSkill:'Rydberg formula for the wave number of a line of a hydrogen series',recoveryPurpose:'Representation change - a general expression in n for every Balmer line instead of a number for one line'},question:'Which of the following expressions represents the spectrum of Balmer series (If n is the principal quantum number of higher energy level) -',options:['ν̄ = (R(n−1)(n+1))/n² cm⁻¹','ν̄ = (R(n−2)(n+2))/(4n²) cm⁻¹','ν̄ = (R(n−2)(n+2))/n² cm⁻¹','ν̄ = (R(n−1)(n+1))/(4n²) cm⁻¹'],correct:1,answer:'ν̄ = (R(n−2)(n+2))/(4n²) cm⁻¹',
+short:[['Balmer lines end at n₁ = 2 and start from the higher level n.','ν̄ = R(1/2² − 1/n²)','= R(1/4 − 1/n²)'],['Combine over the common denominator 4n² and factorise n² − 4.','= R(n² − 4)/(4n²)','= (R(n−2)(n+2))/(4n²) cm⁻¹']],
+detailed:[
+ ['For the Balmer series the lower level is n₁ = 2 and the higher level is n.','ν̄ = R(1/n₁² − 1/n²)','= R(1/4 − 1/n²)'],
+ ['Put over the common denominator 4n².','= R(n² − 4)/(4n²)'],
+ ['Factorise the numerator using n² − 4 = (n − 2)(n + 2).','ν̄ = (R(n−2)(n+2))/(4n²) cm⁻¹'],
+ ['The check n = 3 gives R × 5/36, the first Balmer line. Options with n² alone in the denominator or with (n−1)(n+1) belong to other series or have a wrong factor.','Answer: (B)']
+]},
+{id:'ATOM-91',topic:'Line position within a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.57 · p.6',sourceRef:true,question:'To which electronic transition between Bohr orbits in hydrogen, the second line in the Balmer series belongs ?',options:['3 → 2','4 → 2','5 → 2','6 → 2'],correct:1,answer:'4 → 2',
+short:[['Every Balmer line ends at n = 2. Lines are numbered by increasing starting level.','1st line: 3 → 2','2nd line: 4 → 2','Answer: 4 → 2']],
+detailed:[
+ ['The Balmer series consists of transitions that end at n = 2, starting from n = 3, 4, 5 and so on.','1st line: n = 3 → 2 (Hα)'],
+ ['The second line starts one level higher.','2nd line: n = 4 → 2 (Hβ)','Answer: (B) 4 → 2']
+]},
+{id:'ATOM-91-A',parent:'ATOM-91',variant:1,topic:'Line position within a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.473 · p.41',sourceRef:true,relevance:{parent:'ATOM-91',sharedSkill:'Numbering the lines of the Balmer series and finding the transition',recoveryPurpose:'Controlled transfer - lines are counted from the red end (longest wavelength) instead of by starting level'},question:'In Bohr series of lines of hydrogen spectrum, third line from the red end corresponds to where one of the following inter-orbit jumps of electron for Bohr orbits in an atom of hydrogen.',options:['4 → 1','2 → 5','3 → 2','5 → 2'],correct:3,answer:'5 → 2',
+short:[['The visible lines are the Balmer lines (n₁ = 2). Red is the longest wavelength, i.e. the smallest energy gap, and the gap grows with the starting level.','1st from red: 3 → 2','2nd from red: 4 → 2','3rd from red: 5 → 2'],['2 → 5 is an upward jump (absorption), not an emission line.','Answer: 5 → 2']],
+detailed:[
+ ['The visible part of the hydrogen spectrum is the Balmer series (lines ending at n = 2). Red is the longest-wavelength, lowest-energy end.','Longest λ','⇒ smallest energy gap'],
+ ['The energy gap to n = 2 increases with the starting level, so the lines run from red towards violet in the order of increasing starting level.','1st from red: 3 → 2 (Hα)','2nd from red: 4 → 2 (Hβ)','3rd from red: 5 → 2 (Hγ)'],
+ ['Option 2 → 5 is an upward jump (absorption), and 4 → 1 is a Lyman line in the ultraviolet.','Answer: (D) 5 → 2']
+]},
+{id:'ATOM-91-B',parent:'ATOM-91',variant:2,topic:'Line position within a hydrogen series',source:'Institute worksheet · atomic structure.pdf · Q.48 · question p.31 · answer p.55',sourceRef:true,relevance:{parent:'ATOM-91',sharedSkill:'Numbering the lines of the Balmer series and finding the transition',recoveryPurpose:'Inverse - the transition n = 4 → 2 is given and the series and line number are asked for'},question:'When an electron does transition from n = 4 to n = 2, then emitted line spectrum will be',options:['first line of Lyman series','second line of Balmer series','first line of Balmer series','second line of Paschen series.'],correct:1,answer:'second line of Balmer series',
+short:[['The transition ends at n = 2, so it is a Balmer line. Number the Balmer lines by starting level.','1st line: 3 → 2','2nd line: 4 → 2','Answer: second line of Balmer series']],
+detailed:[
+ ['A series is named by the level the electron lands on: n = 1 Lyman, n = 2 Balmer, n = 3 Paschen.','4 → 2 lands on n = 2','⇒ Balmer series'],
+ ['Number the Balmer lines by increasing starting level.','1st line: 3 → 2','2nd line: 4 → 2'],
+ ['So 4 → 2 is the second line of the Balmer series.','Answer: (B) second line of Balmer series']
+]},
+{id:'ATOM-91-C',parent:'ATOM-91',variant:3,topic:'Line position within a hydrogen series',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.55 · p.6',sourceRef:true,relevance:{parent:'ATOM-91',sharedSkill:'Naming hydrogen series by the level they land on',recoveryPurpose:'Representation change - name the series that lies in the visible region instead of naming the transition of a line'},question:'Which of the following series of lines in the atomic spectrum of hydrogen appear in the visible region ?',options:['Lyman','Paschen','Brackett','Balmer'],correct:3,answer:'Balmer',
+short:[['Series are named by the landing level. Only lines ending at n = 2 fall in the visible region.','Lyman (n₁ = 1) → ultraviolet','Balmer (n₁ = 2) → visible','Paschen (n₁ = 3) and Brackett (n₁ = 4) → infrared','Answer: Balmer']],
+detailed:[
+ ['Each hydrogen series ends on a fixed level: Lyman on n = 1, Balmer on n = 2, Paschen on n = 3, Brackett on n = 4.'],
+ ['The larger the energy gaps, the shorter the wavelength. Lyman has the largest gaps and lies in the ultraviolet, while Paschen and Brackett have small gaps and lie in the infrared.','Lyman → ultraviolet','Paschen, Brackett → infrared'],
+ ['The Balmer series (wavelengths 656 nm to 365 nm) lies in the visible region.','Answer: (D) Balmer']
+]},
+{id:'ATOM-92',topic:'Comparing wavelengths of hydrogen lines',source:'Institute worksheet · atomic structure.pdf · Q.25 · question p.17 · no printed answer',sourceRef:true,question:'The ratio of highest possible wavelength to lowest possible wavelength of Lyman series is',options:['4/3','9/8','27/5','16/5'],correct:0,answer:'4/3',
+short:[['Highest wavelength: first Lyman line (2 → 1). Lowest wavelength: series limit (∞ → 1).','1/λ_max = R(1/1² − 1/2²)','= 3R/4','⇒ λ_max = 4/(3R)','1/λ_min = R(1 − 0)','⇒ λ_min = 1/R'],['Ratio.','λ_max/λ_min = (4/(3R))/(1/R)','= 4/3']],
+detailed:[
+ ['In a series the longest wavelength is the smallest energy gap (first line) and the shortest wavelength is the largest gap (series limit, n₂ → ∞).','Lyman: n₁ = 1'],
+ ['First line (2 → 1).','1/λ_max = R(1/1² − 1/2²)','= 3R/4','λ_max = 4/(3R)'],
+ ['Series limit (∞ → 1).','1/λ_min = R(1/1² − 0)','= R','λ_min = 1/R'],
+ ['Divide.','λ_max/λ_min = (4/(3R)) × R','= 4/3','Answer: (A) 4/3']
+]},
+{id:'ATOM-92-A',parent:'ATOM-92',variant:1,topic:'Comparing wavelengths of hydrogen lines',source:'Institute worksheet · atomic structure.pdf · Q.38 · question p.25 · answer p.54',sourceRef:true,relevance:{parent:'ATOM-92',sharedSkill:'Comparing hydrogen lines by 1/λ = R(1/n₁² − 1/n₂²)',recoveryPurpose:'Controlled transfer - the last (limiting) lines of two different series, Balmer and Lyman, are compared'},question:'The ratio of wavelengths of the last line of Balmer series and the last line of Lyman series is',options:['1','4','0.5','2'],correct:1,answer:'4',
+short:[['The last line has n₂ → ∞, so 1/λ = R/n₁².','Balmer (n₁ = 2): λ = 4/R','Lyman (n₁ = 1): λ = 1/R'],['Ratio.','λ(Balmer)/λ(Lyman) = (4/R)/(1/R)','= 4']],
+detailed:[
+ ['The last line of a series is its limit (n₂ → ∞), so 1/n₂² = 0 and 1/λ = R/n₁².','λ = n₁²/R'],
+ ['Balmer has n₁ = 2 and Lyman has n₁ = 1.','λ(Balmer) = 4/R','λ(Lyman) = 1/R'],
+ ['Divide.','λ(Balmer)/λ(Lyman) = (4/R) × R','= 4','Answer: (B) 4']
+]},
+{id:'ATOM-92-B',parent:'ATOM-92',variant:2,topic:'Comparing wavelengths of hydrogen lines',source:'Institute worksheet · atomic structure.pdf · Q.40 · question p.26 · no printed answer',sourceRef:true,relevance:{parent:'ATOM-92',sharedSkill:'Comparing hydrogen lines by 1/λ = R(1/n₁² − 1/n₂²)',recoveryPurpose:'Controlled transfer - two neighbouring transitions that land on different levels (3 → 2 and 4 → 3) are compared'},question:'If an electron in a hydrogen atom jumps from the 3rd orbit to the 2nd orbit, it emits a photon of wavelength λ. When it jumps from the 4th orbit to the 3rd orbit, the corresponding wavelength of the photon will be',options:['16/25 λ','9/16 λ','20/7 λ','20/13 λ'],correct:2,answer:'20/7 λ',
+short:[['Rydberg formula for each jump.','1/λ = R(1/2² − 1/3²)','= 5R/36','1/λ′ = R(1/3² − 1/4²)','= 7R/144'],['Ratio of wavelengths is the inverse ratio of the wave numbers.','λ′/λ = (5/36)/(7/144)','= 5/36 × 144/7','= 20/7','⇒ λ′ = 20/7 λ']],
+detailed:[
+ ['Apply the Rydberg formula to the 3 → 2 jump.','1/λ = R(1/2² − 1/3²)','= R(1/4 − 1/9)','= 5R/36'],
+ ['Apply it to the 4 → 3 jump.','1/λ′ = R(1/3² − 1/4²)','= R(1/9 − 1/16)','= 7R/144'],
+ ['Divide to get λ′ in terms of λ.','λ′/λ = (5R/36)/(7R/144)','= (5/36) × (144/7)','= 720/252','= 20/7'],
+ ['The 4 → 3 gap is smaller, so its wavelength is longer.','Answer: (C) 20/7 λ']
+]},
+{id:'ATOM-92-C',parent:'ATOM-92',variant:3,topic:'Comparing wavelengths of hydrogen lines',source:'Institute worksheet · atomic structure.pdf · Q.55 · question p.36 · no printed answer',sourceRef:true,relevance:{parent:'ATOM-92',sharedSkill:'Comparing hydrogen lines by 1/λ = R(1/n₁² − 1/n₂²)',recoveryPurpose:'Representation change - rank four given transitions by wavelength instead of forming a ratio'},question:'In which of the following transition will the wavelength be minimum?',options:['n = 6 to n = 4','n = 4 to n = 2','n = 3 to n = 1','n = 2 to n = 1'],correct:2,answer:'n = 3 to n = 1',
+short:[['Minimum wavelength means the largest 1/λ, that is the largest value of 1/n₁² − 1/n₂².','6 → 4: 1/16 − 1/36 = 0.035','4 → 2: 1/4 − 1/16 = 0.188','3 → 1: 1 − 1/9 = 0.889','2 → 1: 1 − 1/4 = 0.750'],['The largest is 3 → 1.','Answer: n = 3 to n = 1']],
+detailed:[
+ ['A shorter wavelength means a larger energy gap, since 1/λ = R(1/n₁² − 1/n₂²). Compare the bracket for each transition.','1/λ ∝ 1/n₁² − 1/n₂²'],
+ ['Evaluate each bracket.','6 → 4: 1/16 − 1/36 = 5/144','= 0.035','4 → 2: 1/4 − 1/16 = 3/16','= 0.188'],
+ ['Two transitions to n = 1.','3 → 1: 1 − 1/9 = 8/9','= 0.889','2 → 1: 1 − 1/4 = 3/4','= 0.750'],
+ ['The largest bracket, hence the shortest wavelength, is for 3 → 1.','Answer: n = 3 to n = 1']
+]},
+{id:'ATOM-93',topic:'Rydberg formula Z² scaling between hydrogen-like ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.335 · p.31',sourceRef:true,question:'Wave number of a spectral line for a given transition is x cm⁻¹ for He⁺, then its value for Be³⁺ for the same transition is -',options:['4x cm⁻¹','x cm⁻¹','x/4 cm⁻¹','2x cm⁻¹'],correct:0,answer:'4x cm⁻¹',
+short:[['For a one-electron ion the wave number is ν̄ = R Z²(1/n₁² − 1/n₂²), so for the same transition ν̄ ∝ Z².','Z(He⁺) = 2','Z(Be³⁺) = 4'],['Ratio.','ν̄(Be³⁺)/ν̄(He⁺) = (4/2)²','= 4','⇒ ν̄(Be³⁺) = 4x cm⁻¹']],
+detailed:[
+ ['Be³⁺ has one electron (Z = 4) like He⁺ (Z = 2), so both follow the Rydberg formula with the Z² factor.','ν̄ = R Z²(1/n₁² − 1/n₂²)'],
+ ['The transition is the same, so the bracket is the same and only Z² changes.','ν̄ ∝ Z²'],
+ ['Divide.','ν̄(Be³⁺)/ν̄(He⁺) = 4²/2²','= 16/4','= 4'],
+ ['Answer: (A) 4x cm⁻¹']
+]},
+{id:'ATOM-93-A',parent:'ATOM-93',variant:1,topic:'Rydberg formula Z² scaling between hydrogen-like ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.484 · p.42',sourceRef:true,relevance:{parent:'ATOM-93',sharedSkill:'Rydberg formula 1/λ = R Z²(1/n₁² − 1/n₂²) for different one-electron species',recoveryPurpose:'Controlled transfer - find the hydrogen transition with the same wavelength as a given He⁺ transition by rescaling the bracket with Z² = 4'},question:'What transition in the hydrogen spectrum would have the same wavelength as the Balmer transition n = 4 to n = 2 in the He⁺ spectrum ?',options:['n = 4 to n = 1','n = 3 to n = 2','n = 3 to n = 1','n = 2 to n = 1'],correct:3,answer:'n = 2 to n = 1',
+short:[['Wave number of He⁺ (Z = 2) for 4 → 2.','1/λ = R × 2² × (1/2² − 1/4²)','= 4R × 3/16','= 3R/4'],['Find the hydrogen (Z = 1) transition with the same value.','R(1/n₁² − 1/n₂²) = 3R/4','1/n₁² − 1/n₂² = 1 − 1/4','⇒ n₁ = 1','⇒ n₂ = 2']],
+detailed:[
+ ['Equal wavelength means equal 1/λ. First find it for He⁺ (Z = 2), transition 4 → 2.','1/λ = R Z²(1/n₁² − 1/n₂²)','= 4R(1/4 − 1/16)','= 4R × 3/16','= 3R/4'],
+ ['For hydrogen (Z = 1) the same value needs a bracket equal to 3/4.','1/n₁² − 1/n₂² = 3/4'],
+ ['The choice n₁ = 1, n₂ = 2 gives 1 − 1/4 = 3/4.','n₂ = 2 → n₁','= 1'],
+ ['Check the other options: 4 → 1 gives 15/16, 3 → 2 gives 5/36 and 3 → 1 gives 8/9, none of which is 3/4.','Answer: (D) n = 2 to n = 1']
+]},
+{id:'ATOM-93-B',parent:'ATOM-93',variant:2,topic:'Rydberg formula Z² scaling between hydrogen-like ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.563 · p.48',sourceRef:true,relevance:{parent:'ATOM-93',sharedSkill:'Rydberg formula 1/λ = R Z²(1/n₁² − 1/n₂²) for different one-electron species',recoveryPurpose:'Direct retry - the same question as Q.484 with the options written as n₁ and n₂ pairs'},question:'What transition in the hydrogen spectrum would have the same wavelength as the Balmer transition n = 4 to n = 2 of He⁺ spectrum ?',options:['n₁ = 3; n₂ = 2','n₁ = 4; n₂ = 2','n₁ = 3; n₂ = 4','n₁ = 1; n₂ = 2'],correct:3,answer:'n₁ = 1; n₂ = 2',
+short:[['Wave number of He⁺ (Z = 2) for 4 → 2.','1/λ = 4R(1/2² − 1/4²)','= 4R × 3/16','= 3R/4'],['Hydrogen (Z = 1) needs the same bracket value; n₁ is the lower and n₂ the higher level.','R(1/n₁² − 1/n₂²) = 3R/4','n₁ = 1','n₂ = 2']],
+detailed:[
+ ['Equal wavelength means equal 1/λ. For He⁺ (Z = 2), 4 → 2.','1/λ = 4R(1/4 − 1/16)','= 4R × 3/16','= 3R/4'],
+ ['For hydrogen the bracket must equal 3/4 (n₁ is the lower level, n₂ the higher level).','1/n₁² − 1/n₂² = 3/4'],
+ ['n₁ = 1 and n₂ = 2 gives 1 − 1/4 = 3/4. The pairs (3, 2) and (3, 4) do not describe a jump down to a lower n₁ with n₂ higher, and (4, 2) is the He⁺ jump itself, which has the wrong bracket 3/16 for hydrogen.','Answer: (D) n₁ = 1','n₂ = 2']
+]},
+{id:'ATOM-93-C',parent:'ATOM-93',variant:3,topic:'Rydberg formula Z² scaling between hydrogen-like ions',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.104 · p.10 (Q.339, p.31, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-93',sharedSkill:'Rydberg formula 1/λ = R Z²(1/n₁² − 1/n₂²) for different one-electron species',recoveryPurpose:'Controlled transfer - the hydrogen Lyman limit fixes x = 1/R, and the longest Balmer wavelength of He⁺ is expressed as a multiple of x'},question:'If the shortest wavelength of H atom in Lyman series is x, then longest wavelength in Balmer series of He⁺ is :',options:['(9x)/5','(36x)/5','x/4','(5x)/9'],correct:0,answer:'(9x)/5',
+short:[['Shortest Lyman wavelength of H is the series limit (∞ → 1).','1/x = R(1 − 0)','⇒ x = 1/R'],['Longest Balmer wavelength of He⁺ (Z = 2) is the first line (3 → 2).','1/λ = R × 2² × (1/2² − 1/3²)','= 4R × 5/36','= 5R/9','λ = 9/(5R)','= 9x/5']],
+detailed:[
+ ['The shortest wavelength of a series is its limit (n₂ → ∞). For hydrogen Lyman, n₁ = 1.','1/x = R(1/1² − 0)','x = 1/R'],
+ ['The longest wavelength of a series is its first line. For He⁺ (Z = 2) Balmer this is 3 → 2.','1/λ = R Z²(1/2² − 1/3²)','= 4R × 5/36','= 5R/9'],
+ ['Invert and use R = 1/x.','λ = 9/(5R)','= (9/5) × x','Answer: (A) 9x/5']
+]},
+{id:'ATOM-27-C',parent:'ATOM-27',variant:3,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.169 · p.15 (Q.234, p.20, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Counting the spectral lines emitted as an electron cascades down through the allowed levels',recoveryPurpose:'Controlled transfer - the starting level is given directly and the electron lands on n = 2, not the ground state, so only the levels 5, 4, 3, 2 are counted'},question:'The number of spectral lines produced according to bohr\'s concept when one electron jumps from 5th to 2nd shell are',options:['6','8','10','12'],correct:0,answer:'6',
+short:[['The electron can stop at any level between 5 and 2, so the levels involved are 5, 4, 3, 2 (four levels).','Number of levels = 5 − 2 + 1','= 4'],['Every pair of levels gives one line.','Lines = (4×3)/2','= 6']],
+detailed:[
+ ['Taken over many atoms, the electron can fall from n = 5 to n = 2 directly or in steps through n = 4 and n = 3.','Levels involved: 5, 4, 3, 2'],
+ ['List the possible jumps.','5 → 4, 5 → 3, 5 → 2','4 → 3, 4 → 2','3 → 2'],
+ ['Count them, or use the pair formula for the four levels.','Lines = (4×3)/2','= 6','Answer: (A) 6']
+]},
+{id:'ATOM-27-D',parent:'ATOM-27',variant:4,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.196 · p.17 (Q.237, p.20, is a verbatim repeat of this item)',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Finding n from an absorbed photon’s energy before counting spectral lines',recoveryPurpose:'Controlled transfer - the given energy (8.4 eV) matches no allowed level, so the answer is that no line is emitted'},question:'If each hydrogen atom is excited by giving 8.4 eV of energy, then the number of spectral lines emitted is equal to :',options:['None','Two','Three','Four'],correct:0,answer:'None',
+short:[['The smallest excitation energy of hydrogen is 1 → 2.','ΔE(1→2) = 13.6(1 − 1/4)','= 10.2 eV'],['The given 8.4 eV is smaller than 10.2 eV and matches no allowed level.','13.6(1 − 1/n²) = 8.4','1/n² = 0.382','n² = 2.6','⇒ n is not an integer'],['The atom cannot absorb 8.4 eV, so it is not excited and emits nothing.','Answer: None']],
+detailed:[
+ ['In Bohr’s model an atom absorbs only an energy equal to the gap between two allowed levels. The smallest gap from the ground state is 1 → 2.','ΔE(1→2) = 13.6(1 − 1/2²)','= 10.2 eV'],
+ ['The energy 8.4 eV is below this smallest gap. Check whether it fits any level n.','13.6(1 − 1/n²) = 8.4','1 − 1/n² = 0.618','n² = 2.6'],
+ ['n² is not a perfect square, so no allowed level corresponds to 8.4 eV and the atom does not absorb it.','No excited atoms','⇒ no emission lines'],
+ ['Answer: (A) None']
+]},
+{id:'ATOM-27-E',parent:'ATOM-27',variant:5,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · atomic structure.pdf · Q.72 · question p.45 · answer p.57',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Counting the spectral lines emitted as an electron cascades down through the allowed levels via n(n−1)/2',recoveryPurpose:'Direct retry - the starting level n = 5 is given directly and the electron falls to the ground state'},question:'When the excited electrons of a H atom from n = 5 drops to the ground state, the maximum number of emission lines observed are ........',options:['6','8','10','12'],correct:2,answer:'10',
+short:[['The levels involved are n = 1, 2, 3, 4, 5. Each pair of levels gives one line.','Lines = n(n−1)/2','= (5×4)/2','= 10']],
+detailed:[
+ ['Over many atoms the electron can fall from n = 5 to n = 1 directly or through any of the intermediate levels, so every pair of the five levels gives a line.','Levels: 1, 2, 3, 4, 5'],
+ ['Number of pairs.','Lines = n(n−1)/2','= (5×4)/2','= 10','Answer: (C) 10']
+]},
+{id:'ATOM-27-F',parent:'ATOM-27',variant:6,topic:'Number of spectral lines from de-excitation',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.418 · p.37',sourceRef:true,relevance:{parent:'ATOM-27',sharedSkill:'Counting the spectral lines emitted as an electron cascades down through the allowed levels',recoveryPurpose:'Controlled transfer - only the lines in the ultraviolet region are counted, which are the Lyman lines ending at n = 1'},question:'If there are six energy levels in H–atom then the number of lines its emission spectrum in ultra voilet region will be -',options:['6','5','4','3'],correct:1,answer:'5',
+short:[['In hydrogen the ultraviolet lines are the Lyman lines (ending at n = 1). The Balmer lines of these six levels (largest 6 → 2 at 410 nm) are visible.','Lyman lines: 6 → 1, 5 → 1, 4 → 1, 3 → 1, 2 → 1'],['Count the starting levels 2 to 6.','Number = 6 − 1','= 5']],
+detailed:[
+ ['With six levels the possible emission lines end on n = 5, 4, 3, 2 or 1. Only the Lyman series (ending at n = 1) is in the ultraviolet.','Balmer (ending at n = 2), 6 → 2: 1/λ = R(1/4 − 1/36)','= 2R/9'],
+ ['Its wavelength shows that even the shortest Balmer line here is visible.','λ = 9/(2R)','= 410 nm'],
+ ['The ultraviolet lines all end at n = 1.','6 → 1, 5 → 1, 4 → 1, 3 → 1, 2 → 1','Number of lines = 5','Answer: (B) 5']
+]},
+{id:'ATOM-51-G',parent:'ATOM-51',variant:7,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.63 · p.6',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels, ΔE = 13.6(1/n₁² − 1/n₂²)',recoveryPurpose:'Direct retry - the energy released in a 3 → 2 jump, given in joules per atom instead of eV'},question:'In H–atom electron jumps from 3rd to 2nd energy level, the energy released is',options:['3.03 × 10⁻¹⁹ J atom⁻¹','1.03 × 10⁻¹⁹ J atom⁻¹','3.03 × 10⁻¹² J atom⁻¹','6.06 × 10⁻¹⁹ J atom⁻¹'],correct:0,answer:'3.03 × 10⁻¹⁹ J atom⁻¹',
+short:[['Energy gap between n = 3 and n = 2 in hydrogen.','ΔE = 13.6(1/2² − 1/3²) eV','= 13.6 × 5/36','= 1.89 eV'],['Convert to joules (1 eV = 1.602×10⁻¹⁹ J).','ΔE = 1.89 × 1.602×10⁻¹⁹','= 3.03×10⁻¹⁹ J atom⁻¹']],
+detailed:[
+ ['The energy released equals the gap between the two levels.','ΔE = E₃ − E₂','= 13.6(1/2² − 1/3²) eV'],
+ ['Evaluate.','1/4 − 1/9 = 5/36','ΔE = 13.6 × 5/36','= 1.89 eV'],
+ ['Convert to joules per atom (1 eV = 1.602×10⁻¹⁹ J).','ΔE = 1.89 × 1.602×10⁻¹⁹','= 3.03×10⁻¹⁹ J atom⁻¹','Answer: (A) 3.03 × 10⁻¹⁹ J atom⁻¹']
+]},
+{id:'ATOM-51-H',parent:'ATOM-51',variant:8,topic:'Excitation energy between Bohr levels of hydrogen',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.554 · p.47',sourceRef:true,relevance:{parent:'ATOM-51',sharedSkill:'Energy difference between two Bohr levels, ΔE = 13.6(1/n₁² − 1/n₂²)',recoveryPurpose:'Controlled transfer - the lowest-energy visible line (3 → 2) must be identified first and the energy is scaled to one mole of atoms in kJ'},question:'Calculate the energy emitted when electrons of 1 g atom of hydrogen undergo transition giving spectral lines of lowest energy in the visible region of its atomic spectrum ?',options:['182.5 kJ','125.5 kJ','156.7 kJ','185.7 kJ'],correct:0,answer:'182.5 kJ',
+short:[['The visible lines are Balmer lines (ending at n = 2). The lowest energy is the smallest gap, 3 → 2.','ΔE = 13.6 × 5/36','= 1.89 eV','= 3.03×10⁻¹⁹ J per atom'],['1 g atom of hydrogen is 1 mole (6.022×10²³ atoms).','E = 3.03×10⁻¹⁹ × 6.022×10²³','= 1.825×10⁵ J','= 182.5 kJ']],
+detailed:[
+ ['Visible lines belong to the Balmer series (n₁ = 2). The line of lowest energy is the smallest gap, the first line 3 → 2.','ΔE = 13.6(1/2² − 1/3²) eV','= 13.6 × 5/36','= 1.89 eV'],
+ ['Convert to joules per atom.','ΔE = 1.89 × 1.602×10⁻¹⁹','= 3.03×10⁻¹⁹ J'],
+ ['1 g atom of hydrogen is 1 mole, that is 6.022×10²³ atoms, each emitting this energy.','E = 3.03×10⁻¹⁹ × 6.022×10²³','= 1.825×10⁵ J','= 182.5 kJ','Answer: (A) 182.5 kJ']
+]},
+{id:'ATOM-43-C',parent:'ATOM-43',variant:3,topic:'Origin of atomic line spectra',source:'Institute worksheet · 1.Atomic Structure (S.C.Q.).pdf · Q.386 · p.35',sourceRef:true,relevance:{parent:'ATOM-43',sharedSkill:'Line spectra as transitions between an atom’s own quantised energy levels',recoveryPurpose:'Controlled transfer - explain the fine structure (splitting) of spectral lines instead of the difference between two elements’ spectra'},question:'Multiple of fine structure of spectral lines is due to-',options:['Presence of main energy levels','Presence of sub-levels','Presence of electronic configuration','Is not a characteristics of the atom.'],correct:1,answer:'Presence of sub-levels',
+short:[['Each main energy level n contains sub-levels (s, p, d, f) of slightly different energy, so a transition between main levels gives several closely spaced lines.','Fine structure','⇒ presence of sub-levels','Answer: Presence of sub-levels']],
+detailed:[
+ ['With a spectroscope of high resolving power, a line that looks single is seen to be made of several closely spaced components. This is the fine structure.'],
+ ['The main energy levels (n) are split into sub-levels (s, p, d, f) whose energies differ slightly, so one main-level transition becomes several slightly different transitions.','n splits into sub-levels','⇒ several close lines'],
+ ['The main levels alone give only the coarse lines, and the electronic configuration is not what produces the splitting.','Answer: (B) Presence of sub-levels']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1655,10 +2481,12 @@ const W='#f4f4ef',M='#969b95',G='#55db80',R='#ff8e81';
 const t=(x,y,s,c=W,z=14,a='middle',w=500)=>`<text x="${x}" y="${y}" fill="${c}" font-size="${z}" text-anchor="${a}" font-family="Inter,Arial,sans-serif" font-weight="${w}">${s}</text>`;
 const line=(d,c=M,w=2)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 const arrow=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2-8}L${x} ${y2}L${x+6} ${y2-8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
+const arrowUp=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2+8}L${x} ${y2}L${x+6} ${y2+8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 const orbBox=(cx,cy,arrows,warn=false)=>`<rect x="${cx-22}" y="${cy-22}" width="44" height="44" rx="4" fill="#20221f" stroke="${warn?R:'#565650'}" stroke-width="${warn?3:2}" ${warn?'stroke-dasharray="5,3"':''}/>`+t(cx,cy+6,arrows,warn?R:W,18,'middle',700);
 function wrap(inner,h=280,label='Solution concept diagram'){return `<svg viewBox="0 0 520 ${h}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`}
 function diagram(q,solution=false){
  if(q.diagram==='hOrbitalHund'||q.diagram==='hOrbitalPauli')return orbitalDiagram(q.diagram);
+ if(q.diagram==='hEnergyLevels')return solution?'':energyLevelDiagram();
  if(!solution)return'';
  switch(q.diagram){
  case'hSpectralSeries':return wrap(
@@ -1693,6 +2521,16 @@ function orbitalDiagram(kind){
   t(260,145,'Both arrows in the s orbital point the same way',R,13),
  170,'Proposed electron-box configuration: s orbital shows two same-spin electrons');
  return'';
+}
+
+/* ATOM Q.74 (PDF 2): four labelled transitions between the levels n = 1 to 4. It is part of the question stem
+   (the options are the arrow labels i to iv), so it renders in the question view like the orbital-box diagrams. */
+function energyLevelDiagram(){
+ const lv=[[40,'n = 4'],[72,'n = 3'],[130,'n = 2'],[214,'n = 1']];
+ return `<svg viewBox="0 0 340 260" role="img" aria-label="Energy levels n = 1 to 4 with four labelled transitions: (i) n = 1 to 3 upward, (ii) n = 4 to 3, (iii) n = 2 to 1 and (iv) n = 4 to 2 downward" xmlns="http://www.w3.org/2000/svg">`+
+  lv.map(([y,l])=>line(`M24 ${y}H236`,M,2)+t(248,y+5,l,G,16,'start',600)).join('')+
+  arrowUp(58,214,72,W,2.5)+arrow(100,40,72,W,2.5)+arrow(148,130,214,W,2.5)+arrow(200,40,130,W,2.5)+
+  [['i',58],['ii',100],['iii',148],['iv',200]].map(([l,x])=>t(x,242,l,R,17,'middle',700)).join('')+'</svg>';
 }
 </script>
 <script>/* JEE syllabus order for Atomic Structure, taken directly from the official
@@ -1774,7 +2612,33 @@ const pilotTopicMap={
  'Spherical symmetry of s orbitals':['quantum-model','Shapes of orbitals and nodes'],
  'Shape and orientation of d orbitals':['quantum-model','Shapes of orbitals and nodes'],
  'Nodal planes and zero probability':['quantum-model','Shapes of orbitals and nodes'],
- 'Assessing statements about energy, probability and measurement':['quantum-model','Quantum mechanical ideas: statement checks']
+ 'Assessing statements about energy, probability and measurement':['quantum-model','Quantum mechanical ideas: statement checks'],
+ 'Rydberg formula for hydrogen-like ions (Z² scaling)':['bohr-model','Hydrogen spectrum and spectral series'],
+ 'Identifying an orbital from its wave function':['quantum-model','Probability density and radial wave functions'],
+ 'Symmetry of s orbitals about the nucleus and directional character':['quantum-model','Shapes of orbitals and nodes'],
+ 'Statements on the meaning, region and sign of an atomic orbital':['quantum-model','Shapes of orbitals and nodes'],
+ 'Bohr energy expression for the nth level':['bohr-model','Bohr orbit radius, velocity and energy expressions'],
+ 'Degenerate orbitals: which orbitals have equal energy':['quantum-model','Degenerate orbitals: which orbitals have equal energy'],
+ 'Shapes of atomic orbitals (s, p and d)':['quantum-model','Shapes of atomic orbitals (s, p and d)'],
+ 'Pauli exclusion principle: statement and meaning':['configuration','Pauli exclusion principle: statement and meaning'],
+ 'Energy change when an electron jumps between Bohr shells':['bohr-model','Energy change when an electron jumps between Bohr shells'],
+ 'Number of elliptical orbits in a shell (Sommerfeld)':['bohr-model','Number of elliptical orbits in a shell (Sommerfeld)'],
+ 'Number of orbitals in a principal shell':['quantum-model','Number of orbitals in a principal shell'],
+ 'Degenerate orbitals in a multi-electron atom':['quantum-model','Degenerate orbitals in a multi-electron atom'],
+ 'Lobe axes and nodal planes of p and d orbitals':['quantum-model','Lobe axes and nodal planes of p and d orbitals'],
+ 'Probability density of a 1s electron at two distances':['quantum-model','Probability density of a 1s electron at two distances'],
+ 'Penetration and the 4s versus 3d energy order':['configuration','Penetration and the 4s versus 3d energy order'],
+ 'Counting up-spin and down-spin electrons in a configuration':['configuration','Counting up-spin and down-spin electrons in a configuration'],
+ 'Spin multiplicity 2S + 1 of electronic states':['configuration','Spin multiplicity 2S + 1 of electronic states'],
+ 'Rydberg constant for a two-body system (positronium)':['bohr-model','Rydberg constant for a two-body system (positronium)'],
+ 'Degeneracy of a hydrogen energy level from its energy':['quantum-model','Degeneracy of hydrogen energy levels'],
+ 'What the Schrödinger equation does and does not give':['quantum-model','What the Schrödinger equation does and does not give'],
+ 'Ratio of probability densities from a 1s-type wave function':['quantum-model','Ratio of probability densities from a 1s-type wave function'],
+ 'Wavelength of a numbered line of a hydrogen series':['bohr-model','Wavelength of a numbered line of a hydrogen series'],
+ 'Wave number of a hydrogen spectral line':['bohr-model','Wave number of a hydrogen spectral line'],
+ 'Line position within a hydrogen series':['bohr-model','Line position within a hydrogen series'],
+ 'Comparing wavelengths of hydrogen lines':['bohr-model','Comparing wavelengths of hydrogen lines'],
+ 'Rydberg formula Z² scaling between hydrogen-like ions':['bohr-model','Rydberg formula Z² scaling between hydrogen-like ions']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
@@ -1812,8 +2676,8 @@ questions.sort((a,b)=>{const x=canonicalQuestionOrder(a),y=canonicalQuestionOrde
     optional trailing group, e.g. n(n−1), E(n = 2), 2πr, h, 13.6, λ_max. Compound
     numerators/denominators need explicit brackets in the source: (6.6×10⁻²⁷)/(6×10⁵).
     Anything containing a plain word (size/energy, Paschen/Brackett) is left alone. */
- const grp='\\((?:[^()<>]|\\([^()<>]*\\))*\\)',atom='(?:[A-Za-z0-9α-ωΑ-Ωπℓ√!′\\u0300-\\u036f₀-₉ₐ-ₜ⁰-⁹⁺⁻\\u00b2\\u00b3\\u00b9]|\\.(?=\\d)|_[A-Za-z0-9]+)',operand='(?:'+grp+'|'+atom+'+(?:'+grp+')?)',fracRe=new RegExp('('+operand+')/('+operand+')','g');
- const isWord=s=>/[A-Za-z]{3,}/.test((s[0]==='('?s:s.replace(new RegExp(grp,'g'),'').replace(/_[A-Za-z0-9]+/g,'')).replace(/sin|cos|tan|cot|sec|log|exp/g,''));
+ const grp='\\((?:[^()<>]|\\([^()<>]*\\))*\\)',atom='(?:[A-Za-z0-9α-ωΑ-Ωπℓ√!∞′\\u0300-\\u036f₀-₉ₐ-ₜ⁰-⁹⁺⁻\\u00b2\\u00b3\\u00b9]|\\.(?=\\d)|_[A-Za-z0-9]+)',operand='(?:'+grp+'|'+atom+'+(?:'+grp+')?)',fracRe=new RegExp('('+operand+')/('+operand+')','g');
+ const isWord=s=>/[A-Za-z]{3,}/.test((s[0]==='('?s:s.replace(new RegExp(grp,'g'),'').replace(/_[A-Za-z0-9]+/g,'')).replace(/sin|cos|tan|cot|sec|log|exp|hcR/g,''));
  const stack=text=>text.replace(fracRe,(m,a,b)=>{if(isWord(a)||isWord(b))return m;const open=s=>s[0]==='('?s.slice(1,-1):s;return '<span class="fraction"><span>'+stack(open(a))+'</span><span>'+stack(open(b))+'</span></span>';});
  out=stack(out);
  out=(t=>{let r='',i=0;while(i<t.length){const k=t.indexOf('^(',i);if(k<0){r+=t.slice(i);break}r+=t.slice(i,k);let d=0,j=k+1;for(;j<t.length;j++){if(t[j]==='(')d++;else if(t[j]===')'){d--;if(!d)break}}r+='<sup>'+t.slice(k+2,j)+'</sup>';i=j+1}return r})(out);
