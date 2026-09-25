@@ -775,9 +775,8 @@ const SHAPE={
 // badges touch (checked by the test harness that lays every template out).
 const SHAPE_S={octahedral:54,tbp:56,seesaw:54,sqplanar:52,tetrahedral:52};
 
-// A rounded card that groups everything belonging to one molecule or structure, so a name, its picture
-// and its captions are never mistaken for the neighbouring panel's.
-const card=(x,y,w,h)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="#1a1a19" stroke="#34342f" stroke-width="2"/>`;
+// (Panels are not boxed: name, drawing and caption are grouped by distance alone, with a clear gap between rows.)
+const card=()=>'';
 // Square brackets that span a structure, with the ionic charge at the top right.
 const brackets=(x1,x2,yTop,yBot,charge)=>`<path d="M ${x1+8} ${yTop} H ${x1} V ${yBot} H ${x1+8}" fill="none" stroke="#9a9a94" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M ${x2-8} ${yTop} H ${x2} V ${yBot} H ${x2-8}" fill="none" stroke="#9a9a94" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>`+(charge?t(x2+16,yTop+10,charge,'#f4f4ef',24,'middle',700):'');
 function shapeSvg(sp,cx,cy,S=52){
@@ -808,23 +807,22 @@ function shapesDiagram(spec){
  if(spec.species.length===1)spec.title='';
  const n=spec.species.length,PW=230;
  const extOf=sp=>{const T=SHAPE[sp.g],S=SHAPE_S[sp.g]||52;return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+(sp.rl||18)),...T.lp.map(p=>Math.abs(p[1])*S+8),30);};
- const ext=Math.max(...spec.species.map(extOf)),hasCap2=spec.species.some(sp=>sp.cap2);
- const cyOff=44+ext,capOff=cyOff+ext+30,PH=capOff+(hasCap2?34:0)+24;
- const cols=n===1?1:2,rows=Math.ceil(n/2);
+ const cols=n===1?1:2,rows=Math.ceil(n/2),hasCap2=spec.species.some(sp=>sp.cap2);
+ // Each row is only as tall as its own molecules, so a caption sits right under its molecule.
+ const rowExt=Array.from({length:rows},(_,r)=>Math.max(...spec.species.filter((_,i)=>Math.floor(i/cols)===r).map(extOf)));
+ const rowTop=[];let yy=spec.title?46:8;rowExt.forEach((e,r)=>{rowTop[r]=yy;yy+=44+e+e+30+(hasCap2?34:0)+40;});
  let s=spec.title?t(230,30,spec.title,'#f4f4ef',24,'middle',700):'';
- const top=spec.title?46:8;
  spec.species.forEach((sp,i)=>{
-  const r=Math.floor(i/cols),c=i%cols;
+  const r=Math.floor(i/cols),c=i%cols,ext=rowExt[r];
   const lastRowAlone=(n===3&&i===2);
-  const ox=cols===1?115:(lastRowAlone?115:c*PW),oy=top+r*PH+(cols===1?0:0);
-  const cx=ox+PW/2,S=SHAPE_S[sp.g]||52;
-  if(n>1)s+=card(ox+5,oy+3,PW-10,PH-10);
+  const ox=cols===1?115:(lastRowAlone?115:c*PW),oy=rowTop[r];
+  const cx=ox+PW/2,S=SHAPE_S[sp.g]||52,cyOff=44+ext,capOff=cyOff+ext+30;
   s+=t(cx,oy+26,sp.name,'#f4f4ef',24,'middle',700);
   s+=shapeSvg(sp,cx,oy+cyOff,S);
   s+=t(cx,oy+capOff,sp.cap,'#9a9a94',22,'middle',600);
   if(sp.cap2)s+=t(cx,oy+capOff+34,sp.cap2,'#55db80',22,'middle',600);
  });
- let y=top+rows*PH+14;
+ let y=yy+14;
  const hasLp=spec.species.some(sp=>SHAPE[sp.g].lp.length),hasW=spec.species.some(sp=>SHAPE[sp.g].lig.some(l=>l[2]==='w'));
  if(hasLp||hasW){
   let x=hasLp&&hasW?30:120;
@@ -932,13 +930,13 @@ const arrowPath=(x1,y1,x2,y2,c='#ffd23f',w=4.5,head=13)=>{
 function dipoleDiagram(spec){
  const n=spec.species.length,PW=230,cols=n===1?1:2,rows=Math.ceil(n/2),S=64;
  const extOf=sp=>{const T=SHAPE[sp.g];return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+17),...T.lp.map(p=>Math.abs(p[1])*S+8),30);};
- const ext=Math.max(...spec.species.map(extOf)),cyOff=46+ext,capOff=cyOff+ext+30,PH=capOff+34+24;
+ const rowExt=Array.from({length:rows},(_,r)=>Math.max(...spec.species.filter((_,i)=>Math.floor(i/cols)===r).map(extOf)));
+ const rowTop=[];let yy=spec.title?46:8;rowExt.forEach((e,r)=>{rowTop[r]=yy;yy+=46+e+e+30+34+40;});
  let s=spec.title?t(230,30,spec.title,'#f4f4ef',24,'middle',700):'';
- const top=spec.title?46:8;const markers=spec.title?[spec.title]:[];
+ const markers=spec.title?[spec.title]:[];
  spec.species.forEach((sp,i)=>{
   const r=Math.floor(i/cols),c=i%cols,alone=(n===3&&i===2);
-  const ox=cols===1?115:(alone?115:c*PW),oy=top+r*PH,cx=ox+PW/2,cy=oy+cyOff,T=SHAPE[sp.g],rL=17,rC=22;
-  if(n>1)s+=card(ox+5,oy+3,PW-10,PH-10);
+  const ext=rowExt[r],cyOff=46+ext,capOff=cyOff+ext+30;const ox=cols===1?115:(alone?115:c*PW),oy=rowTop[r],cx=ox+PW/2,cy=oy+cyOff,T=SHAPE[sp.g],rL=17,rC=22;
   s+=t(cx,oy+26,sp.name,'#f4f4ef',24,'middle',700);markers.push(sp.name);
   const ligs=T.lig.map((l,k)=>({x:cx+l[0]*S,y:cy+l[1]*S,lab:Array.isArray(sp.l)?sp.l[k]:sp.l,dir:Array.isArray(sp.dir)?sp.dir[k]:sp.dir}));
   for(const l of ligs){
@@ -957,7 +955,7 @@ function dipoleDiagram(spec){
   s+=t(cx,oy+capOff+34,sp.cap2,sp.net?'#55db80':'#ffd23f',22,'middle',700);
   markers.push(sp.cap,sp.cap2);
  });
- let y=top+rows*PH+14;
+ let y=yy+14;
  const anyNet=spec.species.some(sp=>sp.net),anyArrow=spec.species.some(sp=>sp.dir!=='none');
  if(anyArrow){s+=arrowPath(28,y+6,64,y+6,'#ffd23f',4.5,11)+t(74,y+14,'bond dipole','#9a9a94',22,'start',600);markers.push('bond dipole');}
  if(anyNet){s+=arrowPath(232,y+6,268,y+6,'#55db80',6,14)+t(278,y+14,'net dipole','#9a9a94',22,'start',600);markers.push('net dipole');}
