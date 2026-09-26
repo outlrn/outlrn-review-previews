@@ -7815,30 +7815,32 @@ const DIAGRAMS_eD={
  return wrap(s,235,'Two right triangles: angle A with opposite side 1, adjacent side 3 and hypotenuse root 10; angle B with opposite side 1, adjacent side 2 and hypotenuse root 5')},
 /* E440: |cosec x| against 5pi/4 - |x|/2 on (-2pi, 2pi) */
 'sE440CosecTent':()=>{
- const x0=170,sx=20.5,y0=250,sy=48,ym=4.7;
+ const x0=170,sx=21.5,y0=268,sy=46,ym=5.3,P=Math.PI;
  const px=x=>x0+sx*x,py=y=>y0-sy*y;
- const f=x=>1/Math.abs(Math.sin(x)),g=x=>5*Math.PI/4-Math.abs(x)/2;
- let s=`<line x1="40" y1="${y0}" x2="306" y2="${y0}" stroke="${M}" stroke-width="1.5"/><line x1="${x0}" y1="${py(ym)-6}" x2="${x0}" y2="${y0}" stroke="${M}" stroke-width="1.5"/>`;
- for(const a of [-Math.PI,Math.PI])s+=`<line x1="${px(a)}" y1="${py(ym)}" x2="${px(a)}" y2="${y0}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4"/>`;
- // arches of |cosec x|
- for(const a of [-2*Math.PI,-Math.PI,0,Math.PI]){
-  const e=Math.asin(1/ym);let d='';
-  for(let x=a+e;x<=a+Math.PI-e+1e-9;x+=0.02)d+=(d?'L':'M')+px(x).toFixed(1)+' '+py(f(x)).toFixed(1);
-  d+='L'+px(a+Math.PI-e).toFixed(1)+' '+py(ym).toFixed(1);
-  s+=curve(d);}
+ const f=x=>1/Math.abs(Math.sin(x)),g=x=>5*P/4-Math.abs(x)/2;
+ let s=`<line x1="30" y1="${y0}" x2="312" y2="${y0}" stroke="${M}" stroke-width="1.5"/><line x1="${x0}" y1="${py(ym)-4}" x2="${x0}" y2="${y0+4}" stroke="${M}" stroke-width="1.5"/>`;
+ s+=`<path d="M${x0-5} ${py(ym)+4}L${x0} ${py(ym)-4}L${x0+5} ${py(ym)+4}" fill="none" stroke="${M}" stroke-width="1.5"/><path d="M306 ${y0-5}L314 ${y0}L306 ${y0+5}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ for(const a of [-2*P,-P,0,P,2*P])if(a!==0)s+=`<line x1="${px(a)}" y1="${py(ym)+2}" x2="${px(a)}" y2="${y0}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4"/>`;
+ // arches of |cosec x|, each drawn up to the top of the picture and ending with an arrowhead: the curve keeps rising
+ const e=Math.asin(1/(ym-0.15));
+ for(const a of [-2*P,-P,0,P]){
+  let d='';
+  for(let x=a+e;x<=a+P-e+1e-9;x+=0.02)d+=(d?'L':'M')+px(x).toFixed(1)+' '+py(f(x)).toFixed(1);
+  s+=curve(d);
+  for(const xe of [a+e,a+P-e]){const X=px(xe),Y=py(f(xe));s+=`<path d="M${(X-4).toFixed(1)} ${(Y+6).toFixed(1)}L${X.toFixed(1)} ${(Y-1).toFixed(1)}L${(X+4).toFixed(1)} ${(Y+6).toFixed(1)}" fill="none" stroke="${G}" stroke-width="2.2"/>`}}
  // tent
- s+=`<path d="M${px(-2*Math.PI)} ${py(g(-2*Math.PI))}L${x0} ${py(g(0))}L${px(2*Math.PI)} ${py(g(2*Math.PI))}" fill="none" stroke="${B5}" stroke-width="2.2"/>`;
+ s+=`<path d="M${px(-2*P)} ${py(g(-2*P))}L${x0} ${py(g(0))}L${px(2*P)} ${py(g(2*P))}" fill="none" stroke="${B5}" stroke-width="2.2"/>`;
  // roots
  let n=0;
- for(let x=-2*Math.PI+0.001;x<2*Math.PI;x+=0.002){const h=x=>f(x)-g(x);const x2=x+0.002;
+ for(let x=-2*P+0.001;x<2*P;x+=0.002){const h=x=>f(x)-g(x);const x2=x+0.002;
   if(Math.sin(x)*Math.sin(x2)>0&&h(x)*h(x2)<0){let a=x,b=x2;for(let i=0;i<40;i++){const m=(a+b)/2;(h(a)*h(m)<=0)?b=m:a=m}
    s+=`<circle cx="${px(a).toFixed(1)}" cy="${py(f(a)).toFixed(1)}" r="4.5" fill="${R}"/>`;n++}}
  if(n!==8)throw new Error('E440 roots '+n);
- s+=[['−2π',-2*Math.PI],['−π',-Math.PI],['π',Math.PI],['2π',2*Math.PI]].map(([l,x])=>t(px(x),y0+20,l,M,14)).join('')+t(x0-8,y0+20,'0',M,14,'end');
- for(const [l,v] of [['1',1],['5π/4',g(0)]])s+=`<line x1="36" y1="${py(v)}" x2="${x0}" y2="${py(v)}" stroke="${M}" stroke-width="0.8" stroke-dasharray="2,4"/>`+t(32,py(v)+5,l,M,14,'end');
- s+=t(x0+8,py(ym)+6,'y',M,14,'start')+t(318,y0+5,'x',M,14,'end');
- s+=t(40,y0+52,'|cosec x|',G,15,'start')+t(300,y0+52,'5π/4 − |x|/2',B5,15,'end');
- return wrap(s,310,'Graph on the interval from minus 2 pi to 2 pi of the curve absolute value of cosec x, with vertical asymptotes at minus pi, 0 and pi, and the blue tent-shaped line 5 pi over 4 minus half of absolute x; the two graphs meet at eight marked points')},
+ s+=[['−2π',-2*P],['−π',-P],['π',P],['2π',2*P]].map(([l,x])=>t(px(x),y0+22,l,M,14)).join('')+t(x0-7,y0+18,'0',M,14,'end');
+ for(const [l,v] of [['1',1],['5π/4',g(0)]])s+=`<line x1="34" y1="${py(v)}" x2="${x0}" y2="${py(v)}" stroke="${M}" stroke-width="0.8" stroke-dasharray="2,4"/>`+t(30,py(v)+5,l,M,14,'end');
+ s+=t(x0-9,py(ym)-2,'y',M,14,'end')+t(318,y0+5,'x',M,14,'start');
+ s+=t(30,y0+56,'|cosec x|',G,15,'start')+t(312,y0+56,'5π/4 − |x|/2',B5,15,'end');
+ return wrap(s,340,'Graph on the interval from minus 2 pi to 2 pi of the curve absolute value of cosec x, whose arches rise without bound at the vertical asymptotes at minus pi, 0 and pi, and the blue tent-shaped line 5 pi over 4 minus half of absolute x; the two graphs meet at eight marked points, two on each of the four arches')},
 /* E461 (repeat of E72): sin x = 1/3 on [0, 5 pi] */
 'sE461SineOneThird':()=>{
  const x0=44,sx=272/(5*Math.PI),y0=100,sy=62;
@@ -7856,22 +7858,26 @@ const DIAGRAMS_eD={
  return wrap(s,200,'Graph of sine on the interval from 0 to 5 pi with the dashed horizontal line at height one third; the two graphs meet at six marked points')},
 /* E496: tan x and y = x, first positive crossing in (pi, 3pi/2) */
 'sE496TanAndLine':()=>{
- const x0=44,sx=50,y0=200,sy=32,ymax=6.1,ymin=-1.5;
+ const x0=46,sx=42,y0=150,sy=22,ym=6.3,P=Math.PI;
  const px=x=>x0+sx*x,py=y=>y0-sy*y;
- const P=Math.PI;
- let s=`<line x1="${x0}" y1="${py(ymax)-4}" x2="${x0}" y2="${py(ymin)}" stroke="${M}" stroke-width="1.5"/><line x1="${x0}" y1="${y0}" x2="${px(5.5)}" y2="${y0}" stroke="${M}" stroke-width="1.5"/>`;
- for(const a of [P/2,3*P/2])s+=`<line x1="${px(a)}" y1="${py(ymax)}" x2="${px(a)}" y2="${py(ymin)}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4"/>`;
+ const xr=6.6,yl=6;
+ let s=`<line x1="${x0}" y1="${py(ym)-4}" x2="${x0}" y2="${py(-ym)+4}" stroke="${M}" stroke-width="1.5"/><line x1="${x0-6}" y1="${y0}" x2="${px(xr)+8}" y2="${y0}" stroke="${M}" stroke-width="1.5"/>`;
+ s+=`<path d="M${x0-5} ${py(ym)+4}L${x0} ${py(ym)-4}L${x0+5} ${py(ym)+4}" fill="none" stroke="${M}" stroke-width="1.5"/><path d="M${px(xr)+1} ${y0-5}L${px(xr)+9} ${y0}L${px(xr)+1} ${y0+5}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ for(const a of [P/2,3*P/2])s+=`<line x1="${px(a)}" y1="${py(ym)}" x2="${px(a)}" y2="${py(-ym)}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4"/>`;
+ for(const a of [P,2*P])s+=`<line x1="${px(a)}" y1="${py(-yl)-4}" x2="${px(a)}" y2="${py(-yl)+2}" stroke="${M}" stroke-width="1.5"/>`;
  const br=(x1,x2)=>{let d='';for(let x=x1;x<=x2+1e-9;x+=0.02)d+=(d?'L':'M')+px(x).toFixed(1)+' '+py(Math.tan(x)).toFixed(1);return curve(d)};
- s+=br(0,Math.atan(ymax))+br(P+Math.atan(ymin),P+Math.atan(ymax))+br(2*P+Math.atan(ymin),5.5);
- s+=`<line x1="${x0}" y1="${py(0)}" x2="${px(5.4)}" y2="${py(5.4)}" stroke="${B5}" stroke-width="2"/>`;
+ const at=Math.atan(yl);
+ s+=br(0,at)+br(P-at,P+at)+br(2*P-at,xr);
+ s+=`<line x1="${x0}" y1="${py(0)}" x2="${px(yl)}" y2="${py(yl)}" stroke="${B5}" stroke-width="2"/>`;
  let r=4.4;for(let i=0;i<60;i++)r=Math.atan(r)+P;
  s+=`<circle cx="${px(r).toFixed(1)}" cy="${py(r).toFixed(1)}" r="4.5" fill="${R}"/>`;
- const ty=py(ymin)+20;
- s+=[['π/2',P/2],['π',P],['3π/2',3*P/2]].map(([l,x])=>t(px(x),ty,l,M,14)).join('');
- s+=t(x0-8,y0+17,'O',M,14,'end')+t(x0+8,py(ymax)+14,'y',M,14,'start')+t(px(5.5),ty,'x',M,14,'end');
- s+=t(px(r)-14,py(r)-8,'x₁',R,15,'end',700);
- s+=t(px(3.0),py(4.1),'y = x',B5,15,'middle')+t(px(1.25)-8,py(3.6),'tan x',G,15,'end');
- return wrap(s,285,'Graph of tan x and the line y equals x for x from 0 to about 5.4, with vertical asymptotes at pi over 2 and 3 pi over 2; the curve and the line meet at a marked point between pi and 3 pi over 2')},
+ s+=`<circle cx="${px(0)}" cy="${py(0)}" r="4" fill="${R}"/>`;
+ const ty=py(-yl)+22;
+ s+=[['π/2',P/2],['π',P],['3π/2',3*P/2],['2π',2*P]].map(([l,x])=>t(px(x),ty,l,M,14)).join('');
+ s+=t(x0-9,y0+18,'O',M,14,'end')+t(x0+10,py(ym)+8,'y',M,14,'start')+t(px(xr)+14,y0+20,'x',M,14,'end');
+ s+=t(px(r)-10,py(r)-9,'x₁',R,15,'end',700);
+ s+=t(px(5.75),py(3.1),'y = x',B5,15,'middle')+t(px(1.05)-6,py(3.4),'tan x',G,15,'end');
+ return wrap(s,320,'Graph of tan x and the line y equals x for x from 0 to about 6.6, with vertical asymptotes at pi over 2 and 3 pi over 2; besides the origin, the curve and the line meet at one marked point x one between pi and 3 pi over 2')},
 };
 
 const SOL=Object.assign({},DIAGRAMS_rA,DIAGRAMS_rB,DIAGRAMS_eA,DIAGRAMS_eB,DIAGRAMS_eC,DIAGRAMS_eD);
