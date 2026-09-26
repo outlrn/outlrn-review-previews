@@ -973,8 +973,13 @@ const badge=(x,y,r,label,fill=elemColor(label))=>{
   `<text x="${x}" y="${y+size*0.34}" fill="${elemText(label)}" font-size="${size}" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700">${label}</text>`;
 };
 const lpDots=(x,y,c='#f4f4ef',o)=>o==='v'?`<circle cx="${x}" cy="${y-8}" r="5" fill="${c}"/><circle cx="${x}" cy="${y+8}" r="5" fill="${c}"/>`:`<circle cx="${x-8}" cy="${y}" r="5" fill="${c}"/><circle cx="${x+8}" cy="${y}" r="5" fill="${c}"/>`;
+// A lone pair drawn as a small lobe that touches its own atom, in that atom's colour, with the two dots inside, so it can never be mistaken for a neighbour's.
+const LP_GAP=13;
+function lpPair(cx,cy,rC,dx,dy,label){const len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len,d=rC+LP_GAP,x=cx+ux*d,y=cy+uy*d,tx=-uy*8.5,ty=ux*8.5,col=elemColor(String(label||'').replace(/[₀-₉⁺⁻²³]/g,'')),ang=Math.atan2(uy,ux)*180/Math.PI;
+ return `<ellipse cx="${x}" cy="${y}" rx="11" ry="17" transform="rotate(${ang} ${x} ${y})" fill="${col}" fill-opacity="0.3" stroke="${col==='#2a2b28'?'#9a9a94':col}" stroke-width="2.5"/><circle cx="${x-tx}" cy="${y-ty}" r="5" fill="#f4f4ef"/><circle cx="${x+tx}" cy="${y+ty}" r="5" fill="#f4f4ef"/>`;}
+const lpExt=(p,rC=22)=>{const l=Math.hypot(p[0],p[1])||1;return Math.abs(p[1])/l*(rC+LP_GAP+11)+Math.abs(p[0])/l*17+2;};
 const wedge=(x1,y1,x2,y2,c='#f4f4ef',w=9)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;
-const hashed=(x1,y1,x2,y2,c='#9a9a94')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="4 7"/>`;
+const hashed=(x1,y1,x2,y2,c='#9a9a94')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 8"/>`;
 
 // ---- Shape templates: ligand positions and lone-pair positions in unit
 // coordinates around the central atom (y points down). Style: p = in the
@@ -986,19 +991,21 @@ const SHAPE={
  bent2lp2:{lig:[[-0.8,0.62,'p'],[0.8,0.62,'p']],lp:[[-0.6,-0.6],[0.6,-0.6]]},
  trigplanar:{lig:[[0,-1,'p'],[0.87,0.5,'p'],[-0.87,0.5,'p']],lp:[]},
  pyramidal:{lig:[[-0.9,0.62,'p'],[0.9,0.62,'p'],[0,1.02,'w']],lp:[[0,-0.78]]},
- tetrahedral:{lig:[[0,-1,'p'],[-0.9,0.56,'p'],[0.9,0.56,'w'],[0.78,-0.5,'d']],lp:[]},
- seesaw:{lig:[[0,-1,'p'],[0,1,'p'],[-0.98,0.15,'p'],[0.72,0.58,'w']],lp:[[0.8,-0.42]]},
+ tetrahedral:{lig:[[0,-1,'p'],[-0.9,0.56,'p'],[0.9,0.56,'w'],[0.9,-0.58,'d']],lp:[]},
+ seesaw:{lig:[[0,-1,'p'],[0,1,'p'],[-0.98,0.15,'p'],[0.84,0.68,'w']],lp:[[0.8,-0.42]]},
  tshape:{lig:[[0,-1,'p'],[0,1,'p'],[-0.98,0.15,'p']],lp:[[0.72,0.58],[0.8,-0.42]]},
  sqplanar:{lig:[[0,-1,'p'],[0,1,'p'],[-1,0,'p'],[1,0,'p']],lp:[]},
- tbp:{lig:[[0,-1,'p'],[0,1,'p'],[-0.98,0.15,'p'],[0.72,0.58,'w'],[0.8,-0.42,'d']],lp:[]},
- octahedral:{lig:[[0,-1.05,'p'],[0,1.05,'p'],[-1.05,0.1,'p'],[1.05,0.1,'p'],[-0.5,0.62,'w'],[0.58,-0.55,'d']],lp:[]},
+ sqplanar2lp:{lig:[[0,-1,'p'],[0,1,'p'],[-1,0,'p'],[1,0,'p']],lp:[[0.7,-0.7],[-0.7,0.7]]},
+ tbp:{lig:[[0,-1,'p'],[0,1,'p'],[-0.98,0.15,'p'],[0.84,0.68,'w'],[0.94,-0.5,'d']],lp:[]},
+ octahedral:{lig:[[0,-1.05,'p'],[0,1.05,'p'],[-1.05,0.1,'p'],[1.05,0.1,'p'],[-0.68,0.82,'w'],[0.8,-0.76,'d']],lp:[]},
  sqpyr:{lig:[[0,-1,'p'],[-1,0.3,'p'],[1,0.3,'p'],[-0.5,0.95,'w'],[0.8,-0.5,'d']],lp:[[0.55,0.9]]},
  pentplanar:{lig:[[0,-1,'p'],[0.95,-0.31,'p'],[0.59,0.81,'p'],[-0.59,0.81,'p'],[-0.95,-0.31,'p']],lp:[]},
- pentbipyr:{lig:[[0,-1.05,'p'],[0,1.05,'p'],[1,0,'p'],[0.31,0.52,'w'],[-0.81,0.32,'w'],[-0.81,-0.32,'d'],[0.31,-0.52,'d']],lp:[]}
+ pentbipyr:{lig:[[0,-1.05,'p'],[0,1.05,'p'],[1,0,'p'],[0.36,0.66,'w'],[-0.88,0.4,'w'],[-0.88,-0.4,'d'],[0.36,-0.66,'d']],lp:[]}
 };
 // Radius of ligand badges and bond length, chosen per template so no two
 // badges touch (checked by the test harness that lays every template out).
-const SHAPE_S={octahedral:54,tbp:56,seesaw:54,sqplanar:52,tetrahedral:52,sqpyr:56,pentplanar:56,pentbipyr:70};
+// Templates that show wedge or dashed bonds get longer bonds, so the wedge and the dashes stay visible outside the two atom badges.
+const SHAPE_S={octahedral:68,tbp:72,seesaw:70,sqplanar:52,sqplanar2lp:64,linear3lp:68,tshape:64,bent2lp1:58,bent2lp2:58,tetrahedral:70,pyramidal:66,sqpyr:72,pentplanar:56,pentbipyr:84};
 
 // (Panels are not boxed: name, drawing and caption are grouped by distance alone, with a clear gap between rows.)
 const card=()=>'';
@@ -1019,7 +1026,7 @@ function shapeSvg(sp,cx,cy,S=52){
   else if(l.st==='d')s+=hashed(x1,y1,x2,y2);
   else s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#f4f4ef" stroke-width="3.5" stroke-linecap="round"/>`;
  }
- for(const p of T.lp)s+=lpDots(cx+p[0]*S,cy+p[1]*S);
+ for(const p of T.lp)s+=lpPair(cx,cy,rC,p[0],p[1],sp.c);
  for(const l of ligs)s+=badge(l.x,l.y,rL,l.lab);
  s+=badge(cx,cy,rC,sp.c);
  return s;
@@ -1031,7 +1038,7 @@ function shapeSvg(sp,cx,cy,S=52){
 function shapesDiagram(spec){
  if(spec.species.length===1)spec.title='';
  const n=spec.species.length,PW=230;
- const extOf=sp=>{const T=SHAPE[sp.g],S=sp.S||SHAPE_S[sp.g]||52;return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+(sp.rl||18)),...T.lp.map(p=>Math.abs(p[1])*S+8),30);};
+ const extOf=sp=>{const T=SHAPE[sp.g],S=sp.S||SHAPE_S[sp.g]||52;return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+(sp.rl||18)),...T.lp.map(p=>lpExt(p,sp.rc||22)),30);};
  const cols=n===1?1:(spec.cols||2),rows=Math.ceil(n/cols),hasCap2=spec.species.some(sp=>sp.cap2);
  // Each row is only as tall as its own molecules, so a caption sits right under its molecule.
  const rowExt=Array.from({length:rows},(_,r)=>Math.max(...spec.species.filter((_,i)=>Math.floor(i/cols)===r).map(extOf)));
@@ -1049,14 +1056,9 @@ function shapesDiagram(spec){
  });
  let y=yy+14;
  const hasLp=spec.species.some(sp=>SHAPE[sp.g].lp.length),hasW=spec.species.some(sp=>SHAPE[sp.g].lig.some(l=>l[2]==='w'));
- if(hasLp||hasW){
-  let x=hasLp&&hasW?30:120;
-  if(hasLp){s+=lpDots(x+18,y+4);s+=t(x+40,y+12,'lone pair','#9a9a94',22,'start',600);x+=190;}
-  if(hasW){s+=wedge(x,y+4,x+34,y+4)+t(x+46,y+12,'towards you','#9a9a94',22,'start',600);}
-  y+=34;
-  if(hasW){s+=hashed(hasLp?30:120,y+4,(hasLp?30:120)+34,y+4)+t((hasLp?30:120)+46,y+12,'away from you','#9a9a94',22,'start',600);y+=34;}
- }
- spec._markers=[...(spec.title?[spec.title]:[]),...spec.species.flatMap(sp=>[sp.name,sp.cap,...(sp.cap2?[sp.cap2]:[]),sp.c]),...(hasLp?['lone pair']:[]),...(hasW?['towards you','away from you']:[])];
+ if(hasLp){s+=lpDots(48,y+4)+t(70,y+12,'lone pair on the central atom','#9a9a94',22,'start',600);y+=34;}
+ if(hasW){s+=wedge(30,y+4,64,y+4)+t(76,y+12,'towards you','#9a9a94',22,'start',600);y+=34;s+=hashed(30,y+4,64,y+4)+t(76,y+12,'away from you','#9a9a94',22,'start',600);y+=34;}
+ spec._markers=[...(spec.title?[spec.title]:[]),...spec.species.flatMap(sp=>[sp.name,sp.cap,...(sp.cap2?[sp.cap2]:[]),sp.c]),...(hasLp?['lone pair on the central atom']:[]),...(hasW?['towards you','away from you']:[])];
  return {svg:wrap(s,y+10,spec.aria||'Molecular shapes from electron-pair repulsion'),markers:spec._markers};
 }
 
@@ -1154,7 +1156,7 @@ const arrowPath=(x1,y1,x2,y2,c='#ffd23f',w=4.5,head=13)=>{
 // dipoles do not cancel, a green net-dipole arrow beside the molecule.
 function dipoleDiagram(spec){
  const n=spec.species.length,PW=230,cols=n===1?1:2,rows=Math.ceil(n/2),S=64;
- const extOf=sp=>{const T=SHAPE[sp.g];return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+17),...T.lp.map(p=>Math.abs(p[1])*S+8),30);};
+ const extOf=sp=>{const T=SHAPE[sp.g];return Math.max(...T.lig.map(l=>Math.abs(l[1])*S+17),...T.lp.map(p=>lpExt(p)),30);};
  const rowExt=Array.from({length:rows},(_,r)=>Math.max(...spec.species.filter((_,i)=>Math.floor(i/cols)===r).map(extOf)));
  const rowTop=[];let yy=spec.title?46:8;rowExt.forEach((e,r)=>{rowTop[r]=yy;yy+=46+e+e+30+34+40;});
  let s=spec.title?t(230,30,spec.title,'#f4f4ef',24,'middle',700):'';
@@ -1170,8 +1172,8 @@ function dipoleDiagram(spec){
    else if(l.dir==='out')s+=arrowPath(cx+ux*(rC+2),cy+uy*(rC+2),l.x-ux*(rL+2),l.y-uy*(rL+2));
    else s+=arrowPath(l.x-ux*(rL+2),l.y-uy*(rL+2),cx+ux*(rC+2),cy+uy*(rC+2));
   }
-  for(const p of T.lp)s+=lpDots(cx+p[0]*S,cy+p[1]*S);
-  if(sp.odd){s+=`<circle cx="${cx+T.lp[0][0]*S+18}" cy="${cy+T.lp[0][1]*S}" r="5" fill="#f4f4ef"/>`;}
+  for(const p of T.lp)s+=lpPair(cx,cy,rC,p[0],p[1],sp.c);
+  if(sp.odd){const q=T.lp[0],ql=Math.hypot(q[0],q[1])||1,ux=q[0]/ql,uy=q[1]/ql,d=rC+LP_GAP;s+=`<circle cx="${cx+ux*d-uy*20}" cy="${cy+uy*d+ux*20}" r="5" fill="#f4f4ef"/>`;}
   for(const l of ligs)s+=badge(l.x,l.y,rL,l.lab);
   s+=badge(cx,cy,rC,sp.c);
   if(sp.net){const [nx,ny,len]=sp.net,ax=cx+1.5*S*(sp.netSide||1);
@@ -1184,6 +1186,7 @@ function dipoleDiagram(spec){
  const anyNet=spec.species.some(sp=>sp.net),anyArrow=spec.species.some(sp=>sp.dir!=='none');
  if(anyArrow){s+=arrowPath(28,y+6,64,y+6,'#ffd23f',4.5,11)+t(74,y+14,'bond dipole','#9a9a94',22,'start',600);markers.push('bond dipole');}
  if(anyNet){s+=arrowPath(232,y+6,268,y+6,'#55db80',6,14)+t(278,y+14,'net dipole','#9a9a94',22,'start',600);markers.push('net dipole');}
+ if(spec.species.some(sp=>SHAPE[sp.g].lp.length)){y+=34;s+=lpDots(48,y+6)+t(70,y+14,'lone pair on the central atom','#9a9a94',22,'start',600);markers.push('lone pair on the central atom');}
  return {svg:wrap(s,y+34,spec.aria||'Bond dipoles and the net dipole of each molecule'),markers};
 }
 
@@ -1271,10 +1274,15 @@ function structDiagram(spec){
   else if(b.o==='p'){s+=arrowPath(x1,y1,x2-ux*2,y2-uy*2,'#ffd23f',4.5,13);}
   else for(const o of offs)s+=`<line x1="${x1+px*o}" y1="${y1+py*o}" x2="${x2+px*o}" y2="${y2+py*o}" stroke="${b.c||'#f4f4ef'}" stroke-width="3.5" stroke-linecap="round"/>`;
  }
- for(const l of spec.lps||[])s+=lpDots(l[0],l[1],l[2]||'#f4f4ef',l[3]);
+ // Each hand-placed lone pair is snapped to the rim of the atom it is nearest to (keeping its direction) and drawn as that atom's lobe.
+ for(const l of spec.lps||[]){const near=Object.values(A).filter(a=>!a.hide).sort((p,q)=>(Math.hypot(l[0]-p.x,l[1]-p.y)-p.r)-(Math.hypot(l[0]-q.x,l[1]-q.y)-q.r))[0];
+  s+=near?lpPair(near.x,near.y,near.r,l[0]-near.x,l[1]-near.y||-1,near.l):lpDots(l[0],l[1]);}
  for(const a of Object.values(A)){if(a.hide)continue;s+=badge(a.x,a.y,a.r,a.l,a.c);markers.push(a.l);}
  for(const n of spec.notes||[]){s+=t(n.x,n.y,n.text,n.c||'#9a9a94',n.size||22,n.anchor||'middle',n.w||600);markers.push(n.text);}
- return {svg:wrap(s,spec.h,spec.aria||'Structural formula'),markers:[...new Set(markers)]};
+ // Audit: a hand-placed lone pair (snapped to its nearest atom when drawn) must not be nearly as close to a second atom.
+ const lpIssues=[];for(const l of spec.lps||[]){const ds=Object.values(A).filter(a=>!a.hide).map(a=>({l:a.l,d:Math.hypot(l[0]-a.x,l[1]-a.y)-a.r})).sort((p,q)=>p.d-q.d);
+  if(ds[1]&&ds[1].d-ds[0].d<12)lpIssues.push('lone pair at '+l[0]+','+l[1]+' is nearly as close to '+ds[1].l+' ('+Math.round(ds[1].d)+'px) as to '+ds[0].l+' ('+Math.round(ds[0].d)+'px)');}
+ return {svg:wrap(s,spec.h,spec.aria||'Structural formula'),markers:[...new Set(markers)],lpIssues};
 }
 
 // ---- Nodal planes of bonding and antibonding orbitals (side view; the
@@ -1469,9 +1477,9 @@ const SPC={
  'ICl₂⁻':['ICl₂⁻','linear3lp','I','Cl','linear','sp³d'],
  'PCl₅':['PCl₅','tbp','P','Cl','trigonal bipyramidal','sp³d'],
  'SF₆':['SF₆','octahedral','S','F','octahedral','sp³d²'],
- 'XeF₄':['XeF₄','sqplanar','Xe','F','square planar','sp³d², 2 lone pairs'],
- 'ICl₄⁻':['ICl₄⁻','sqplanar','I','Cl','square planar','sp³d², 2 lone pairs'],
- 'ClF₄⁻':['ClF₄⁻','sqplanar','Cl','F','square planar','sp³d², 2 lone pairs'],
+ 'XeF₄':['XeF₄','sqplanar2lp','Xe','F','square planar','sp³d², 2 lone pairs'],
+ 'ICl₄⁻':['ICl₄⁻','sqplanar2lp','I','Cl','square planar','sp³d², 2 lone pairs'],
+ 'ClF₄⁻':['ClF₄⁻','sqplanar2lp','Cl','F','square planar','sp³d², 2 lone pairs'],
  'BrF₅':['BrF₅','sqpyr','Br','F','square pyramidal','sp³d²'],
  '[Al(H₂O)₆]³⁺':['[Al(H₂O)₆]³⁺','octahedral','Al','O','octahedral','six H₂O bound through O',{S:60}],
  'XeO₆⁴⁻':['XeO₆⁴⁻','octahedral','Xe','O','octahedral','sp³d²'],
@@ -1488,7 +1496,7 @@ const SPC={
  'IF₄⁺':['IF₄⁺','seesaw','I','F','see-saw','sp³d'],
  'PCl₄⁺':['PCl₄⁺','tetrahedral','P','Cl','tetrahedral','sp³'],
  'PCl₆⁻':['PCl₆⁻','octahedral','P','Cl','octahedral','sp³d²'],
- 'BrF₄⁻':['BrF₄⁻','sqplanar','Br','F','square planar','sp³d², 2 lone pairs'],
+ 'BrF₄⁻':['BrF₄⁻','sqplanar2lp','Br','F','square planar','sp³d², 2 lone pairs'],
  'BrO₃⁻':['BrO₃⁻','pyramidal','Br','O','pyramidal','sp³'],
  'IF₇':['IF₇','pentbipyr','I','F','pentagonal bipyramid','sp³d³'],
  'XeF₅⁻':['XeF₅⁻','pentplanar','Xe','F','pentagonal planar','sp³d³, 2 lone pairs'],
@@ -1754,7 +1762,7 @@ reg('08',()=>structDiagram({title:'Hydrogen bond between two H₂O',h:290,
 reg('71-A',()=>structDiagram({title:'NH₃ molecules linked by H-bonds',h:300,
  atoms:[at('n1','N',105,150,22),at('h1','H',60,110,14),at('h2','H',60,190,14),at('h3','H',165,150,14),at('n2','N',290,150,22),at('h4','H',335,110,14),at('h5','H',335,190,14),at('h6','H',290,215,14)],
  bonds:[{a:'n1',b:'h1',o:1},{a:'n1',b:'h2',o:1},{a:'n1',b:'h3',o:1},{a:'n2',b:'h4',o:1},{a:'n2',b:'h5',o:1},{a:'n2',b:'h6',o:1},{a:'h3',b:'n2',o:'h'}],
- lps:[[290,96]],
+ lps:[[268,98]],
  notes:[N_(230,270,'N–H···N hydrogen bond',GRN,22)]}));
 reg('71',()=>structDiagram({title:'Methanol can hydrogen-bond',h:300,
  atoms:[at('m1','CH₃',45,150,27),at('o1','O',120,150,19),at('h','H',186,150,14),at('o2','O',270,150,19),at('m2','CH₃',345,105,27),at('h2','H',345,195,14)],
