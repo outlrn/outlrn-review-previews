@@ -1868,7 +1868,7 @@ detailed:[
  ['Check with θ = π/3: a = √3, b = tan(2π/3) = −√3, so a + b = 0 and tan 3θ = tan π = 0, so the condition holds.','tan θ + tan 2θ = √3 − √3','= 0','tan 3θ = 0'],
  ['Option (A) a = b would need tan θ = tan 2θ, so θ = nπ and a = 0, which is excluded. Option (B) makes tan 3θ undefined, and (D) leads to a³ = 0, again excluded. The common trap is to cancel a + b without noting it could be zero.','Answer: (C) a + b = 0']
 ]},
-{id:'TRIG-121',topic:'Ratios of allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.197 · p.13 (Q.216, p.16, is a verbatim repeat of this item)',sourceRef:true,question:'If x = y cos(2π/3) = z cos(4π/3), then xy + yz + zx is equal to -',options:['−1','0','1','2'],correct:1,answer:'0',
+{id:'TRIG-121',topic:'Ratios of allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.197 · p.13 (Q.216, p.16, is a verbatim repeat of this item; Q.355, p.36)',sourceRef:true,question:'If x = y cos(2π/3) = z cos(4π/3), then xy + yz + zx is equal to -',options:['−1','0','1','2'],correct:1,answer:'0',
 short:[['Both angles are allied to π/3, and the cosine is negative in the second and third quadrants.','cos(2π/3) = −1/2','cos(4π/3) = −1/2'],['So y and z are both −2x, and the three products cancel.','xy + yz + zx = −2x² + 4x² − 2x²','= 0','Answer: (B) 0']],
 detailed:[
  ['Reduce each cosine to an acute angle. The angle 2π/3 lies in the second quadrant, where cosine is negative.','cos(2π/3) = cos(π − π/3)','= −cos(π/3)','= −1/2'],
@@ -3165,7 +3165,7 @@ detailed:[
  ['Check with θ = π/3: tan²θ = 3 and sec²θ = 4, so 4 × 3 = 12 = 3 × 4. Here cos θ ≠ 0 at every solution, so tan and sec are defined.','4 tan²(π/3) = 12','3 sec²(π/3) = 12'],
  ['Options (A) and (B) give tan²θ = 1 and tan²θ = 1/3, and neither satisfies 4 tan²θ = 3 sec²θ.','Answer: (C) nπ ± π/3, n ∈ Z']
 ]},
-{id:'TRIG-223',topic:'Factorised trigonometric equation in an interval with a rejected value',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.9 · p.1 (Q.186, p.20, is a verbatim repeat of this item; Q.274, p.28)',sourceRef:true,question:'The solution set of (2 cos x − 1)(3 + 2 cos x) = 0 in the interval 0 ≤ x ≤ 2π is',options:['{π/3}','{π/3, 5π/3}','{π/3, 5π/3, cos⁻¹(−3/2)}','None of these'],correct:1,answer:'{π/3, 5π/3}',
+{id:'TRIG-223',topic:'Factorised trigonometric equation in an interval with a rejected value',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.9 · p.1 (Q.186, p.20, is a verbatim repeat of this item; Q.274, p.28; Q.346, p.34)',sourceRef:true,question:'The solution set of (2 cos x − 1)(3 + 2 cos x) = 0 in the interval 0 ≤ x ≤ 2π is',options:['{π/3}','{π/3, 5π/3}','{π/3, 5π/3, cos⁻¹(−3/2)}','None of these'],correct:1,answer:'{π/3, 5π/3}',
 short:[['A product is zero when a factor is zero.','2 cos x − 1 = 0','3 + 2 cos x = 0'],['The first gives cos x = 1/2, so x = π/3 and 5π/3 in [0, 2π]. The second gives cos x = −3/2, which is impossible because |cos x| ≤ 1.','x ∈ {π/3, 5π/3}','Answer: (B) {π/3, 5π/3}']],
 detailed:[
  ['Set each factor equal to zero, since a product vanishes only when one of its factors does.','2 cos x − 1 = 0','3 + 2 cos x = 0'],
@@ -5931,6 +5931,189 @@ detailed:[
  ['Since sin(π − θ₁) = sin θ₁, the term for k = n equals cosec²θ₁, so the doubled angles give the same list of cosecant squares as θ₂, ..., θₙ, θ₁.','Σ cosec²(2θₖ) = cosec²θ₂ + ... + cosec²θₙ + cosec²θ₁','= S'],
  ['Therefore P + S = 4S, and P = 3S. The ratio does not depend on n.','P/S = 3'],
  ['Check numerically for n = 6: the two sums are about 1718.83 and 572.94, whose ratio is 3.000. The condition n > 5 plays no role. The trap is expecting a ratio that depends on n.','Answer: 3']
+]},
+{id:'TRIG-428',topic:'System of r sin θ = 3 and r = 4(1 + sin θ) with r > 0',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.341 · p.33',sourceRef:true,question:'If r > 0, −π ≤ θ ≤ π and r > 0 satisfy r sin θ = 3 and r = 4(1 + sin θ) then the number of possible solution of pair (r, θ) is -',options:['2','4','0','Infinite'],correct:0,answer:'2',
+short:[['Eliminate sin θ by using sin θ = 3/r in the second equation.','r = 4(1 + 3/r)','⇒ r² − 4r − 12 = 0'],['Factorise and keep the positive root, because r > 0.','(r − 6)(r + 2) = 0','r = 6'],['Now sin θ = 1/2 has exactly two angles in [−π, π], so there are two pairs.','θ ∈ {π/6, 5π/6}','(r, θ) = (6, π/6), (6, 5π/6)','Answer: (A) 2']],
+detailed:[
+ ['The first equation gives sin θ in terms of r and the second contains sin θ, so eliminating sin θ leaves an equation in r alone.','sin θ = 3/r','r = 4(1 + sin θ)','= 4(1 + 3/r)'],
+ ['Multiply by r (which is not zero) and bring all terms to one side.','r² = 4r + 12','⇒ r² − 4r − 12 = 0'],
+ ['Factorise the quadratic.','(r − 6)(r + 2) = 0','r = 6','r = −2'],
+ ['The condition r > 0 rejects r = −2, so r = 6 is the only value of r.','r = 6'],
+ ['Put r = 6 back into r sin θ = 3, then list the angles with this sine in the allowed range −π ≤ θ ≤ π.','sin θ = 3/6','= 1/2','θ ∈ {π/6, 5π/6}'],
+ ['Check both pairs in the second equation: 4(1 + 1/2) = 6, which equals r.','(r, θ) = (6, π/6)','(r, θ) = (6, 5π/6)'],
+ ['The trap is to write the general solution of sin θ = 1/2, which suggests infinitely many pairs, option (D). The range −π ≤ θ ≤ π allows only two angles.','Answer: (A) 2']
+]},
+{id:'TRIG-429',topic:'Logarithmic equation with a logarithm and its reciprocal',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.342 · p.34',sourceRef:true,question:'If log to the base cos x of sin x + log to the base sin x of cos x = 2, 0 < x < π/2, then x is equal to -',options:['π/3','π/4','π/6','None of these'],correct:1,answer:'π/4',
+short:[['Let t be the first logarithm. The second one is its reciprocal, because the two logarithms swap the base and the argument.','t + 1/t = 2'],['Multiply by t and form a perfect square.','t² − 2t + 1 = 0','⇒ (t − 1)² = 0','t = 1'],['So sin x equals the base cos x, which gives tan x = 1 in the interval.','sin x = cos x','⇒ x = π/4','Answer: (B) π/4']],
+detailed:[
+ ['In 0 < x < π/2 both sin x and cos x lie in (0, 1), so both bases are valid (positive and not 1) and both arguments are positive.','0 < sin x < 1','0 < cos x < 1'],
+ ['Write the first logarithm as t. Swapping base and argument gives the reciprocal, so the equation is in t alone.','t = log to the base cos x of sin x','log to the base sin x of cos x = 1/t','t + 1/t = 2'],
+ ['Clear the denominator (t ≠ 0 because sin x ≠ 1) and factorise.','t² − 2t + 1 = 0','⇒ (t − 1)² = 0','t = 1'],
+ ['t = 1 means sin x = (cos x)¹, so sin x = cos x.','sin x = cos x','⇒ tan x = 1'],
+ ['In (0, π/2) the only angle with tan x = 1 is π/4.','x = π/4'],
+ ['Check: at x = π/4 both logarithms are log to the base 1/√2 of 1/√2 = 1, and 1 + 1 = 2. For x = π/3 or π/6 the two logarithms are about 0.21 and 4.82, whose sum is about 5.03.','Answer: (B) π/4']
+]},
+{id:'TRIG-430',topic:'Sum of tan(α/2) and tan(β/2) from a substitution t = tan(x/2)',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.343 · p.34',sourceRef:true,question:'If α, β satisfy the equation cos x − (cot p sin x)/2 = √3/2 then the value of tan(α/2) + tan(β/2) is-',options:['(√3 − 2)/(√3 + 2)','2(√3 − 2) cot p','2(2 − √3) cot p','None of these'],correct:1,answer:'2(√3 − 2) cot p',
+short:[['Put t = tan(x/2), so cos x = (1 − t²)/(1 + t²) and sin x = 2t/(1 + t²), and clear the denominator.','2(1 − t²) − 2t cot p = √3(1 + t²)','⇒ (2 + √3)t² + 2t cot p + (√3 − 2) = 0'],['The two solutions α and β give the two roots t = tan(α/2) and t = tan(β/2), so their sum is minus the ratio of the coefficients.','tan(α/2) + tan(β/2) = −(2 cot p)/(2 + √3)'],['Rationalise, using (2 + √3)(2 − √3) = 1.','= −2(2 − √3) cot p','= 2(√3 − 2) cot p','Answer: (B) 2(√3 − 2) cot p']],
+detailed:[
+ ['An equation in cos x and sin x can be turned into a quadratic with t = tan(x/2). Use cos x = (1 − t²)/(1 + t²) and sin x = 2t/(1 + t²).','(1 − t²)/(1 + t²) − (t cot p)/(1 + t²) = √3/2'],
+ ['Multiply by 2(1 + t²) (never zero) and expand.','2(1 − t²) − 2t cot p = √3(1 + t²)'],
+ ['Collect the terms of the quadratic in t.','(2 + √3)t² + 2t cot p + (√3 − 2) = 0'],
+ ['The discriminant is positive, so there are two real roots, and two solutions α and β (not differing by a multiple of 2π) give these two roots.','D = 4cot²p − 4(2 + √3)(√3 − 2)','= 4cot²p + 4','> 0'],
+ ['Use the sum of the roots, −b/a.','tan(α/2) + tan(β/2) = −(2 cot p)/(2 + √3)'],
+ ['Multiply the top and bottom by 2 − √3.','= −2 cot p (2 − √3)/((2 + √3)(2 − √3))','= −2(2 − √3) cot p','= 2(√3 − 2) cot p'],
+ ['Numerical check with cot p = 1: cos x − (sin x)/2 = √3/2 has x ≈ 12.66° and x ≈ −65.8°, so the tangents of the half angles are 0.111 and −0.647, sum −0.536, and 2(√3 − 2) = −0.536. Option (C) has the wrong sign, and (A) has no cot p.','Answer: (B) 2(√3 − 2) cot p']
+]},
+{id:'TRIG-431',topic:'Maximum of an exponential expression through a cos 2x + b sin 2x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.344 · p.34',sourceRef:true,question:'The maximum value of 27^(cos 2x) · 81^(sin 2x) is-',options:['243','81','1/243','1/81'],correct:0,answer:'243',
+short:[['Write both numbers as powers of 3 and add the exponents.','27^(cos 2x) · 81^(sin 2x) = 3^(3 cos 2x + 4 sin 2x)'],['The exponent is a cos 2x + b sin 2x, whose largest value is √(a² + b²).','3 cos 2x + 4 sin 2x ≤ √(3² + 4²)','= 5'],['Since 3 raised to a power increases with the power, the maximum is 3⁵.','3⁵ = 243','Answer: (A) 243']],
+detailed:[
+ ['Use 27 = 3³ and 81 = 3⁴ so that the whole product becomes one power of 3.','27^(cos 2x) = 3^(3 cos 2x)','81^(sin 2x) = 3^(4 sin 2x)','product = 3^(3 cos 2x + 4 sin 2x)'],
+ ['The base 3 is greater than 1, so the product is largest when the exponent is largest.','3ᵐ increases as m increases'],
+ ['Bound the exponent with the amplitude formula for a cos θ + b sin θ.','−√(3² + 4²) ≤ 3 cos 2x + 4 sin 2x ≤ √(3² + 4²)','−5 ≤ 3 cos 2x + 4 sin 2x ≤ 5'],
+ ['The value 5 is reached, because 3 cos 2x + 4 sin 2x = 5 cos(2x − φ) with tan φ = 4/3, and this equals 5 when 2x = φ.','3 cos 2x + 4 sin 2x = 5 cos(2x − φ)'],
+ ['So the maximum of the product is 3⁵ and the minimum is 3⁻⁵.','maximum = 3⁵','= 243','minimum = 3⁻⁵','= 1/243'],
+ ['The trap is to take 3 + 4 = 7 as the maximum exponent (3⁷), or to pick 1/243, which is the minimum.','Answer: (A) 243']
+]},
+{id:'TRIG-432',topic:'Equation of the form u + 1/u + 2 = 0 with u = tan x/tan 2x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.345 · p.34',sourceRef:true,question:'The general solution of equation (tan x)/(tan 2x) + (tan 2x)/(tan x) + 2 = 0 is nπ ± kπ/3 then the least positive integer value of k is -',options:['4','3','2','1'],correct:3,answer:'1',
+short:[['Let u = (tan x)/(tan 2x). The equation is u + 1/u + 2 = 0, which is a perfect square.','(u + 1)² = 0','⇒ u = −1'],['Write tan 2x = 2t/(1 − t²) with t = tan x, so u = (1 − t²)/2.','(1 − t²)/2 = −1','⇒ t² = 3'],['Then tan x = ±√3, so x = nπ ± π/3 and k = 1 is the least positive value.','x = nπ ± π/3','Answer: (D) 1']],
+detailed:[
+ ['Both fractions are reciprocals of each other, so put u = (tan x)/(tan 2x). Then the equation is as below (u ≠ 0).','u + 1/u + 2 = 0'],
+ ['Multiply by u and factorise.','u² + 2u + 1 = 0','⇒ (u + 1)² = 0','⇒ u = −1'],
+ ['Use tan 2x = 2t/(1 − t²) with t = tan x (t ≠ 0), so the factor t cancels.','u = t(1 − t²)/(2t)','= (1 − t²)/2'],
+ ['Solve for t.','(1 − t²)/2 = −1','⇒ t² = 3','⇒ tan x = ±√3'],
+ ['Hence x = nπ ± π/3. Check x = π/3: tan(π/3) = √3 and tan(2π/3) = −√3, so u = −1 and the left side is −1 − 1 + 2 = 0.','x = nπ ± π/3'],
+ ['The set nπ ± 2π/3 is the same set as nπ ± π/3, and so are the sets for k = 4 and other k, but k = 1 is the least positive integer. The trap is to stop at x = nπ/3, which includes x = nπ where tan x = 0 is not allowed.','Answer: (D) 1']
+]},
+{id:'TRIG-433',topic:'Logarithmic equation reduced by change of base',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.347 · p.34',sourceRef:true,question:'The general solution of the equation log₅ tan θ = log₅ 4 · log₄(3 sin θ) is -',options:['nπ','2nπ + cos⁻¹(1/3)','2nπ − cos⁻¹(1/3)','All are correct'],correct:1,answer:'2nπ + cos⁻¹(1/3)',
+short:[['Change of base gives log₅ 4 · log₄(3 sin θ) = log₅(3 sin θ), so the arguments are equal, with tan θ > 0 and sin θ > 0.','tan θ = 3 sin θ'],['Factorise and reject sin θ = 0, because the logarithm of 0 is not defined.','sin θ (1 − 3 cos θ) = 0','⇒ cos θ = 1/3'],['Since sin θ > 0, θ is in the first quadrant, so θ = 2nπ + cos⁻¹(1/3).','Answer: (B) 2nπ + cos⁻¹(1/3)']],
+detailed:[
+ ['Use the change-of-base rule log_a b · log_b c = log_a c to combine the right side.','log₅ 4 · log₄(3 sin θ) = log₅(3 sin θ)'],
+ ['The logarithms have the same base 5, so the arguments are equal, and the domain needs tan θ > 0 and 3 sin θ > 0.','tan θ = 3 sin θ'],
+ ['Write tan θ = (sin θ)/(cos θ) and factorise.','(sin θ)/(cos θ) − 3 sin θ = 0','⇒ sin θ (1/(cos θ) − 3) = 0'],
+ ['The factor sin θ = 0 makes 3 sin θ = 0, whose logarithm does not exist, so it is rejected. The other factor gives cos θ = 1/3.','cos θ = 1/3'],
+ ['Now sin θ > 0 must hold, so θ cannot be in the fourth quadrant. Then θ = 2nπ + cos⁻¹(1/3), and tan θ > 0 is satisfied in the first quadrant.','θ = 2nπ + cos⁻¹(1/3)'],
+ ['Check at θ = cos⁻¹(1/3) ≈ 1.231: tan θ = 2√2 ≈ 2.83 and 3 sin θ = 3 × (2√2/3) ≈ 2.83, and both logarithms equal 0.646. The value θ = 2nπ − cos⁻¹(1/3) has sin θ < 0, so it fails.','Answer: (B) 2nπ + cos⁻¹(1/3)']
+]},
+{id:'TRIG-434',topic:'Equation with cot 2θ and cot²θ − tan²θ',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.348 · p.35',sourceRef:true,question:'The general solution of equation 4 cot 2θ = cot²θ − tan²θ is -',options:['nπ ± 2π/3','nπ ± π/3','nπ ± π/4','None of these'],correct:2,answer:'nπ ± π/4',
+short:[['Factorise the right side as a difference of squares, using cot θ − tan θ = 2 cot 2θ and cot θ + tan θ = 2/(sin 2θ).','cot²θ − tan²θ = (cot θ − tan θ)(cot θ + tan θ)','= (4 cot 2θ)/(sin 2θ)'],['Then 4 cot 2θ (1 − 1/(sin 2θ)) = 0, so cot 2θ = 0 or sin 2θ = 1, and the second one also gives cot 2θ = 0.','cos 2θ = 0'],['So 2θ is an odd multiple of π/2, and θ = nπ ± π/4.','2θ = (2n + 1)π/2','Answer: (C) nπ ± π/4']],
+detailed:[
+ ['Factorise the right side, because a difference of squares appears.','cot²θ − tan²θ = (cot θ − tan θ)(cot θ + tan θ)'],
+ ['Use the standard results cot θ − tan θ = 2 cot 2θ and cot θ + tan θ = 1/(sin θ cos θ) = 2/(sin 2θ).','(cot θ − tan θ)(cot θ + tan θ) = 2 cot 2θ × 2/(sin 2θ)','= (4 cot 2θ)/(sin 2θ)'],
+ ['Bring everything to one side and take out the common factor.','4 cot 2θ = (4 cot 2θ)/(sin 2θ)','⇒ 4 cot 2θ (1 − 1/(sin 2θ)) = 0'],
+ ['Either cot 2θ = 0, or sin 2θ = 1. But sin 2θ = 1 already gives cos 2θ = 0, so it adds nothing new.','cot 2θ = 0','⇒ cos 2θ = 0'],
+ ['Solve cos 2θ = 0.','2θ = (2n + 1)π/2','⇒ θ = nπ/2 + π/4'],
+ ['The values π/4, 3π/4, 5π/4, 7π/4, ... are exactly the family nπ ± π/4, and all of them keep tan θ, cot θ and cot 2θ defined.','θ ∈ {π/4, 3π/4, 5π/4, 7π/4, ...}'],
+ ['Check θ = π/4: cot(π/2) = 0 on the left, and cot²(π/4) − tan²(π/4) = 1 − 1 = 0 on the right. The trap is nπ ± π/3, which fails since cot(2π/3) is not 0.','Answer: (C) nπ ± π/4']
+]},
+{id:'TRIG-435',topic:'Squaring and adding sums of sines and cosines of two angles',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.349 · p.35',sourceRef:true,question:'If cos α + cos β = a, sin α + sin β = b and α − β = 2θ then (cos 3θ)/(cos θ) equals -',options:['a² + b² − 2','a² + b² − 3','3 − a² − b²','(a² + b²)/4'],correct:1,answer:'a² + b² − 3',
+short:[['Square and add the two given relations, and use cos(α − β) = cos 2θ.','a² + b² = 2 + 2 cos(α − β)','= 2 + 2 cos 2θ','= 4cos²θ'],['Use cos 3θ = 4cos³θ − 3 cos θ and divide by cos θ.','(cos 3θ)/(cos θ) = 4cos²θ − 3'],['Replace 4cos²θ by a² + b².','= a² + b² − 3','Answer: (B) a² + b² − 3']],
+detailed:[
+ ['Square both given relations and add, so that the cross terms combine into cos(α − β).','a² + b² = (cos²α + sin²α) + (cos²β + sin²β) + 2(cos α cos β + sin α sin β)','= 2 + 2 cos(α − β)'],
+ ['Put α − β = 2θ and use 1 + cos 2θ = 2cos²θ.','a² + b² = 2 + 2 cos 2θ','= 2 + 2(2cos²θ − 1)','= 4cos²θ'],
+ ['Write the triple angle formula for the required ratio (cos θ ≠ 0).','cos 3θ = 4cos³θ − 3 cos θ','(cos 3θ)/(cos θ) = 4cos²θ − 3'],
+ ['Substitute 4cos²θ = a² + b².','(cos 3θ)/(cos θ) = a² + b² − 3'],
+ ['Check with θ = 20°, α = 40° and β = 0, where a = 1 + cos 40° and b = sin 40°.','a² + b² = 2 + 2 cos 40°','= 3.532','a² + b² − 3 = 0.532','(cos 60°)/(cos 20°) = 0.532'],
+ ['The trap is to subtract 2 instead of 3 (option A) after reading a² + b² = 2 + 2 cos 2θ. The triple angle constant is 3.','Answer: (B) a² + b² − 3']
+]},
+{id:'TRIG-436',topic:'Values of a for which cos 2x + a sin x = 2a − 7 is solvable',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.350 · p.35',sourceRef:true,question:'Sum of number of integral values of a for which the equation cos 2x + a sin x = 2a − 7 possesses solution is -',options:['14','15','17','20'],correct:3,answer:'20',
+short:[['Use cos 2x = 1 − 2sin²x and bring all terms to one side to get a quadratic in sin x.','2sin²x − a sin x + 2a − 8 = 0'],['The discriminant is a perfect square, so the roots are sin x = 2 and sin x = (a − 4)/2.','D = a² − 8(2a − 8)','= (a − 8)²'],['The root 2 is impossible, so we need −1 ≤ (a − 4)/2 ≤ 1, which gives 2 ≤ a ≤ 6, and the integers 2, 3, 4, 5, 6 add up to 20.','Answer: (D) 20']],
+detailed:[
+ ['Replace cos 2x by 1 − 2sin²x, so that only sin x remains.','1 − 2sin²x + a sin x = 2a − 7','⇒ 2sin²x − a sin x + 2a − 8 = 0'],
+ ['Compute the discriminant of this quadratic in s = sin x.','D = a² − 8(2a − 8)','= a² − 16a + 64','= (a − 8)²'],
+ ['Then the roots are:','s = (a ± (a − 8))/4','s = 2','s = (a − 4)/2'],
+ ['Since |sin x| ≤ 1, the root s = 2 is rejected for every a. The equation has a solution only when the other root is in [−1, 1].','−1 ≤ (a − 4)/2 ≤ 1','⇒ 2 ≤ a ≤ 6'],
+ ['The integral values are 2, 3, 4, 5, 6, and the question asks for their sum.','2 + 3 + 4 + 5 + 6 = 20'],
+ ['Check a = 6: (a − 4)/2 = 1, so x = π/2 gives cos π + 6 = 5 and 2a − 7 = 5. The trap is to give the number of values, 5, or to add the wrong range 1 to 5, which gives 15, option (B).','Answer: (D) 20']
+]},
+{id:'TRIG-437',topic:'Sum of multiples of sines equal to its maximum value',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.351 · p.35',sourceRef:true,question:'Number of solution of sin θ + 2 sin 2θ + 3 sin 3θ + 4 sin 4θ = 10, 0 < θ < π -',options:['0','1','2','4'],correct:0,answer:'0',
+short:[['Each sine is at most 1, so the left side is at most 1 + 2 + 3 + 4 = 10.','sin θ + 2 sin 2θ + 3 sin 3θ + 4 sin 4θ ≤ 10'],['Equality needs all four sines to be 1 at the same θ.','sin θ = 1','sin 2θ = 1','sin 3θ = 1','sin 4θ = 1'],['sin θ = 1 forces θ = π/2 in (0, π), but then sin 2θ = sin π = 0, so no θ works.','Answer: (A) 0']],
+detailed:[
+ ['Bound each term separately, since sin kθ ≤ 1 for every k.','sin θ ≤ 1','2 sin 2θ ≤ 2','3 sin 3θ ≤ 3','4 sin 4θ ≤ 4'],
+ ['Add: the left side is at most 10, which is the given right side, so equality is the only way to get 10.','LHS ≤ 1 + 2 + 3 + 4','= 10'],
+ ['Equality holds only when every sine is 1 at the same value of θ.','sin θ = 1','sin 2θ = 1','sin 3θ = 1','sin 4θ = 1'],
+ ['In (0, π), sin θ = 1 gives only θ = π/2.','θ = π/2'],
+ ['At θ = π/2 the other terms fail: sin 2θ = sin π = 0 and sin 4θ = sin 2π = 0. Also sin 3θ = sin(3π/2) = −1.','LHS = 1 + 0 − 3 + 0','= −2'],
+ ['So no θ makes all four terms maximal, and the equation has no solution. The trap is to solve each equation separately and count the angles found for each.','Answer: (A) 0']
+]},
+{id:'TRIG-438',topic:'System 3 sin²θ + 2 sin²φ = 1 and 3 sin 2θ = 2 sin 2φ',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.352 · p.35',sourceRef:true,question:'If 3sin²θ + 2sin²φ = 1 and 3sin 2θ = 2sin 2φ, 0 < θ < π/2 and 0 < φ < π/2 then value of θ + 2φ is -',options:['π/3','π/2','π/6','π/4'],correct:1,answer:'π/2',
+short:[['Rewrite both equations with 1 − 2sin²φ = cos 2φ and sin 2θ = 2 sin θ cos θ.','3sin²θ = cos 2φ','3 sin θ cos θ = sin 2φ'],['Square and add. The right side becomes 1, so sin θ = 1/3 and cos θ = 2√2/3 in the first quadrant.','9sin⁴θ + 9sin²θ cos²θ = 1','⇒ 9sin²θ = 1'],['Then cos 2φ = 1/3 and sin 2φ = 2√2/3, so cos(θ + 2φ) = 0 and θ + 2φ = π/2.','Answer: (B) π/2']],
+detailed:[
+ ['The first equation gives 3sin²θ = 1 − 2sin²φ = cos 2φ. The second, 3 sin 2θ = 2 sin 2φ, gives 3 sin θ cos θ = sin 2φ.','3sin²θ = cos 2φ','3 sin θ cos θ = sin 2φ'],
+ ['Square both equations and add, to use cos²2φ + sin²2φ = 1.','9sin⁴θ + 9sin²θ cos²θ = cos²2φ + sin²2φ','⇒ 9sin²θ (sin²θ + cos²θ) = 1','⇒ sin²θ = 1/9'],
+ ['Since θ is acute, sin θ = 1/3 and cos θ = 2√2/3.','sin θ = 1/3','cos θ = 2√2/3'],
+ ['Find 2φ from the two relations.','cos 2φ = 3sin²θ','= 1/3','sin 2φ = 3 sin θ cos θ','= 3 × (1/3) × (2√2/3)','= 2√2/3'],
+ ['Expand the cosine of the sum θ + 2φ.','cos(θ + 2φ) = cos θ cos 2φ − sin θ sin 2φ','= (2√2/3)(1/3) − (1/3)(2√2/3)','= 0'],
+ ['Range check: 0 < θ + 2φ < π/2 + π = 3π/2, and the only angle there with cosine 0 is π/2.','θ + 2φ = π/2'],
+ ['Numerical check: θ ≈ 19.47°, 2φ ≈ 70.53°, and their sum is 90°. The trap is to forget the range and accept 3π/2, or to guess π/3 from the values 1/3.','Answer: (B) π/2']
+]},
+{id:'TRIG-439',topic:'Infinite geometric series inside an equation',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.353 · p.36',sourceRef:true,question:'If 1 + sin θ + sin²θ + …. ∞ = 4 + 2√3, 0 < θ < π, θ ≠ π/2 then -',options:['θ = π/6','θ = π/3','θ = π/3 or π/6','θ = π/3 or 2π/3'],correct:3,answer:'θ = π/3 or 2π/3',
+short:[['The left side is a geometric series with ratio sin θ, and 0 < sin θ < 1 here, so the sum is 1/(1 − sin θ).','1/(1 − sin θ) = 4 + 2√3'],['Invert and rationalise.','1 − sin θ = 1/(4 + 2√3)','= (4 − 2√3)/4','= (2 − √3)/2'],['So sin θ = √3/2, which gives two angles in (0, π).','θ = π/3 or 2π/3','Answer: (D) θ = π/3 or 2π/3']],
+detailed:[
+ ['The series has first term 1 and common ratio r = sin θ. In 0 < θ < π with θ ≠ π/2 we have 0 < sin θ < 1, so the series converges and the sum is 1/(1 − sin θ).','1/(1 − sin θ) = 4 + 2√3'],
+ ['Take the reciprocal and rationalise, using (4 + 2√3)(4 − 2√3) = 16 − 12 = 4.','1 − sin θ = 1/(4 + 2√3)','= (4 − 2√3)/((4 + 2√3)(4 − 2√3))','= (4 − 2√3)/4','= (2 − √3)/2'],
+ ['Solve for sin θ.','sin θ = 1 − (2 − √3)/2','= √3/2'],
+ ['In (0, π) the sine is √3/2 at π/3 and at π − π/3.','θ = π/3','θ = 2π/3'],
+ ['Both angles have sin θ = √3/2 between 0 and 1, so the series converges for both. Check: 1/(1 − √3/2) = 2/(2 − √3) = 2(2 + √3) = 4 + 2√3.','θ = π/3 or 2π/3'],
+ ['The trap is to give only the acute angle π/3, or to write π/6 (whose sum is 2, not 4 + 2√3).','Answer: (D) θ = π/3 or 2π/3']
+]},
+{id:'TRIG-440',topic:'Vanishing of a compound-angle expression reduced to sin(x − y) + cos(x − y)',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.354 · p.36',sourceRef:true,question:'The value of cos y cos(π/2 − x) − cos(π/2 − y) cos x + sin y cos(π/2 − x) + cos x sin(π/2 − y) is zero if',options:['x = 0','y = 0','x = y','x = nπ − π/4 + y'],correct:3,answer:'x = nπ − π/4 + y',
+short:[['Reduce the complementary angles: cos(π/2 − x) = sin x, cos(π/2 − y) = sin y and sin(π/2 − y) = cos y.','cos y sin x − sin y cos x + sin y sin x + cos x cos y'],['Group the terms into a sine and a cosine of x − y.','= sin(x − y) + cos(x − y)'],['It is zero when tan(x − y) = −1, so x − y = nπ − π/4.','x = nπ − π/4 + y','Answer: (D) x = nπ − π/4 + y']],
+detailed:[
+ ['Replace the complementary angles first.','cos(π/2 − x) = sin x','cos(π/2 − y) = sin y','sin(π/2 − y) = cos y'],
+ ['The expression becomes:','cos y sin x − sin y cos x + sin y sin x + cos x cos y'],
+ ['Group the first two terms as sin(x − y) and the last two as cos(x − y).','sin x cos y − cos x sin y = sin(x − y)','cos x cos y + sin x sin y = cos(x − y)'],
+ ['So the value is sin(x − y) + cos(x − y). If it is zero and cos(x − y) = 0, then sin(x − y) = ±1, which is impossible, so divide by cos(x − y).','tan(x − y) = −1'],
+ ['Solve tan(x − y) = −1.','x − y = nπ − π/4','⇒ x = nπ − π/4 + y'],
+ ['Check with y = 0.3 and n = 1: x = π − π/4 + 0.3, the value is sin(3π/4) + cos(3π/4) = 0. Option (C), x = y, gives 0 + 1 = 1, and x = 0 or y = 0 gives a value that still depends on the other variable.','Answer: (D) x = nπ − π/4 + y']
+]},
+{id:'TRIG-441',topic:'Least value of a sum of reciprocal squares by AM–GM',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.356 · p.36',sourceRef:true,question:'If y = sec²θ + cos²θ, θ ≠ 0, then',options:['y = 0','y ≤ 2','y ≥ − 2','y > 2'],correct:2,answer:'y ≥ − 2',
+short:[['The two terms are positive and their product is 1, so AM–GM applies.','y = sec²θ + cos²θ ≥ 2√(sec²θ cos²θ)','= 2'],['Equality needs sec²θ = cos²θ, so cos²θ = 1, which happens at θ = π, 2π, ... even though θ ≠ 0.','y = 2'],['So y ≥ 2 is the exact range, and y ≥ −2 is true, but y ≤ 2 and y > 2 are false, since y = 2 at θ = π and y > 2 at other angles.','Answer: (C) y ≥ − 2']],
+detailed:[
+ ['Both sec²θ and cos²θ are positive and their product is 1, so AM–GM gives a lower bound.','sec²θ + cos²θ ≥ 2√(sec²θ × cos²θ)','= 2','⇒ y ≥ 2'],
+ ['Equality holds when sec²θ = cos²θ, that is cos⁴θ = 1, so cos²θ = 1 and θ = nπ.','θ = nπ'],
+ ['The only excluded value is θ = 0, and the value θ = π (and every other nπ) is still allowed, so y = 2 is attained.','sec²π + cos²π = 1 + 1','= 2'],
+ ['Test the options: (A) y = 0 fails since y ≥ 2. (B) y ≤ 2 fails at θ = π/3, where y = 17/4. (D) y > 2 fails at θ = π, where y = 2.','(B): y = 17/4','(D): y = 2'],
+ ['(C) y ≥ −2 is true for every allowed θ, because y ≥ 2 > −2.','y ≥ 2','⇒ y ≥ −2'],
+ ['The trap is to think θ ≠ 0 removes the equality case, which gives option (D). It removes only θ = 0, and the equality also holds at θ = π.','Answer: (C) y ≥ − 2']
+]},
+{id:'TRIG-442',topic:'Using sec²θ ≥ 1 to restrict the variables',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.357 · p.36',sourceRef:true,question:'cosec²θ = (4xy)/((x + y)²) is true if and only if',options:['x + y ≠ 0','x = y, x ≠ 0','x = y','x ≠ 0, y ≠ 0'],correct:1,answer:'x = y, x ≠ 0',
+short:[['cosec²θ ≥ 1 wherever it is defined, so the right side must be at least 1 (with (x + y)² > 0).','4xy ≥ (x + y)²'],['This means (x − y)² ≤ 0, so x = y.','(x − y)² ≤ 0','⇒ x = y'],['Also x + y ≠ 0 is needed, so x ≠ 0. Then the right side is 1 and cosec²θ = 1 is possible.','(4xy)/((x + y)²) = (4x²)/(4x²)','= 1','Answer: (B) x = y, x ≠ 0']],
+detailed:[
+ ['For real θ with sin θ ≠ 0, cosec²θ ≥ 1, so the fraction 4xy/(x + y)² must be at least 1, and the denominator must be non-zero.','(4xy)/((x + y)²) ≥ 1'],
+ ['Multiply by the positive number (x + y)² and rearrange.','4xy ≥ (x + y)²','⇒ (x + y)² − 4xy ≤ 0','⇒ (x − y)² ≤ 0'],
+ ['A square is at most 0 only when it is 0, so x = y.','x = y'],
+ ['The denominator must not be 0, so x + y = 2x ≠ 0, which means x ≠ 0.','x + y = 2x','⇒ x ≠ 0'],
+ ['Then the fraction is 4x²/(4x²) = 1, so cosec²θ = 1 and θ = (2n + 1)π/2 works. So the condition is necessary and sufficient.','(4x²)/(4x²) = 1','cosec²θ = 1'],
+ ['Wrong options: x + y ≠ 0 alone fails for x = 1, y = 2, where the fraction is 8/9 < 1. Option (C), x = y, allows x = y = 0, where the fraction is undefined. Option (D) also fails for x = 1, y = 2.','Answer: (B) x = y, x ≠ 0']
+]},
+{id:'TRIG-443',topic:'tan(A + B) from given tangents',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.358 · p.36',sourceRef:true,question:'If tan α = x/(x + 1) and tan β = 1/(2x + 1), then α + β is',options:['0','π/4','π/3','π/2'],correct:1,answer:'π/4',
+short:[['Use tan(α + β) = (tan α + tan β)/(1 − tan α tan β) and put both the sum and the difference over a common denominator.','tan α + tan β = (x(2x + 1) + (x + 1))/((x + 1)(2x + 1))','1 − tan α tan β = ((x + 1)(2x + 1) − x)/((x + 1)(2x + 1))'],['Both numerators equal 2x² + 2x + 1, which is never 0, so the two fractions are equal.','(2x² + 2x + 1)/((x + 1)(2x + 1))','tan(α + β) = 1'],['So tan(α + β) = 1, and the option with this tangent is π/4.','α + β = π/4','Answer: (B) π/4']],
+detailed:[
+ ['Apply the formula for the tangent of a sum.','tan(α + β) = (tan α + tan β)/(1 − tan α tan β)'],
+ ['Numerator over a common denominator.','x/(x + 1) + 1/(2x + 1) = (x(2x + 1) + (x + 1))/((x + 1)(2x + 1))','= (2x² + 2x + 1)/((x + 1)(2x + 1))'],
+ ['Denominator: put 1 − tan α tan β over the same common denominator.','1 − (x)/((x + 1)(2x + 1)) = ((x + 1)(2x + 1) − x)/((x + 1)(2x + 1))','(x + 1)(2x + 1) − x = 2x² + 2x + 1'],
+ ['The common quantity 2x² + 2x + 1 has discriminant 4 − 8 < 0, so it is never 0 and the division is valid.','tan(α + β) = 1'],
+ ['So α + β = π/4 + nπ. Among the options only π/4 has tangent 1 (the others have tangent 0, √3 or undefined).','α + β = π/4'],
+ ['Check x = 1: tan α = 1/2 and tan β = 1/3, so tan(α + β) = (5/6)/(1 − 1/6) = 1. The trap is to assume α + β = 0 or π/2 from a partial simplification.','Answer: (B) π/4']
+]},
+{id:'TRIG-444',topic:'Reducing powers from a given relation between sin x and cos x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.359 · p.36',sourceRef:true,question:'If sin x + sin²x = 1, then cos⁸x + 2cos⁶x + cos⁴x is equal to',options:['0','−1','2','1'],correct:3,answer:'1',
+short:[['From the condition, sin x = 1 − sin²x, so sin x = cos²x.','sin x = cos²x'],['Factorise the expression as cos⁴x times a perfect square.','cos⁸x + 2cos⁶x + cos⁴x = cos⁴x (cos²x + 1)²'],['Replace cos²x by sin x and use the condition again.','= sin²x (sin x + 1)²','= (sin x + sin²x)²','= 1','Answer: (D) 1']],
+detailed:[
+ ['Rearrange the condition using sin²x + cos²x = 1.','sin x = 1 − sin²x','= cos²x'],
+ ['Take cos⁴x out of every term of the expression. The bracket is a perfect square.','cos⁸x + 2cos⁶x + cos⁴x = cos⁴x (cos⁴x + 2cos²x + 1)','= cos⁴x (cos²x + 1)²'],
+ ['Now write cos²x = sin x, so cos⁴x = sin²x.','= sin²x (sin x + 1)²'],
+ ['Combine into a single square, and use the given condition.','= (sin x (sin x + 1))²','= (sin²x + sin x)²','= 1²','= 1'],
+ ['Check with sin x = (√5 − 1)/2 ≈ 0.618: cos²x = 0.618, so cos⁴x = 0.382 and (cos²x + 1)² = 2.618, and the product is 1.000.','0.382 × 2.618 = 1.000'],
+ ['The trap is to expand everything in sin x without the perfect square, which gets long. Option (A) 0 is the value if the sign of a term is wrong.','Answer: (D) 1']
+]},
+{id:'TRIG-445',topic:'Constant value of a combination of powers of sin θ and cos θ',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.360 · p.36',sourceRef:true,question:'The value of the expression 3(sin θ − cos θ)⁴ + 6(sin θ + cos θ)² + 4(sin⁶θ + cos⁶θ) is',options:['1','−1','13','0'],correct:2,answer:'13',
+short:[['Let p = sin θ cos θ. Then (sin θ − cos θ)² = 1 − 2p, (sin θ + cos θ)² = 1 + 2p and sin⁶θ + cos⁶θ = 1 − 3p².','(sin θ − cos θ)⁴ = 1 − 4p + 4p²'],['Substitute into the expression.','3(1 − 4p + 4p²) + 6(1 + 2p) + 4(1 − 3p²)','= 3 − 12p + 12p² + 6 + 12p + 4 − 12p²'],['All terms with p cancel.','= 13','Answer: (C) 13']],
+detailed:[
+ ['Introduce p = sin θ cos θ, because all three groups can be written with p using sin²θ + cos²θ = 1.','(sin θ − cos θ)² = 1 − 2p','(sin θ + cos θ)² = 1 + 2p'],
+ ['Square the first one, and use a³ + b³ = (a + b)³ − 3ab(a + b) with a = sin²θ and b = cos²θ for the sixth powers.','(sin θ − cos θ)⁴ = (1 − 2p)²','= 1 − 4p + 4p²','sin⁶θ + cos⁶θ = 1 − 3p²'],
+ ['Substitute into each group.','3(sin θ − cos θ)⁴ = 3 − 12p + 12p²','6(sin θ + cos θ)² = 6 + 12p','4(sin⁶θ + cos⁶θ) = 4 − 12p²'],
+ ['Add the three groups. The terms in p and p² cancel.','Sum = (3 + 6 + 4) + (−12p + 12p) + (12p² − 12p²)','= 13'],
+ ['Check at θ = 0: 3(−1)⁴ + 6(1)² + 4(0 + 1) = 3 + 6 + 4 = 13. The trap is to expect a value depending on θ: the p terms cancel, so the value is constant.','Answer: (C) 13']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -6320,7 +6503,19 @@ const pilotTopicMap={
  'Simplifying 3(cos θ − sin θ)⁴ + 6(sin θ + cos θ)² + 4 sin⁶θ into a power of cos θ':['identities','Simplifying 3(cos θ − sin θ)⁴ + 6(sin θ + cos θ)² + 4 sin⁶θ into a power of cos θ'],
  'Perfect square from 10 sin⁴θ + 15 cos⁴θ = 6 gives tan²θ':['identities','Perfect square from 10 sin⁴θ + 15 cos⁴θ = 6 gives tan²θ'],
  'Solving for cos 2x when tan²x and cos²x are written in cos 2x':['multiple-angles','Solving for cos 2x when tan²x and cos²x are written in cos 2x'],
- 'Sum of sec² and cosec² over doubling angles using sec²θ + cosec²θ = 4 cosec²2θ':['multiple-angles','Sum of sec² and cosec² over doubling angles using sec²θ + cosec²θ = 4 cosec²2θ']
+ 'Sum of sec² and cosec² over doubling angles using sec²θ + cosec²θ = 4 cosec²2θ':['multiple-angles','Sum of sec² and cosec² over doubling angles using sec²θ + cosec²θ = 4 cosec²2θ'],
+ 'System of r sin θ = 3 and r = 4(1 + sin θ) with r > 0':['eq-special','System of r sin θ = 3 and r = 4(1 + sin θ) with r > 0'],
+ 'Logarithmic equation with a logarithm and its reciprocal':['eq-methods','Logarithmic equation with a logarithm and its reciprocal'],
+ 'Sum of tan(α/2) and tan(β/2) from a substitution t = tan(x/2)':['eq-methods','Sum of tan(α/2) and tan(β/2) from a substitution t = tan(x/2)'],
+ 'Maximum of an exponential expression through a cos 2x + b sin 2x':['extrema','Maximum of an exponential expression through a cos 2x + b sin 2x'],
+ 'Equation of the form u + 1/u + 2 = 0 with u = tan x/tan 2x':['eq-methods','Equation of the form u + 1/u + 2 = 0 with u = tan x/tan 2x'],
+ 'Logarithmic equation reduced by change of base':['eq-methods','Logarithmic equation reduced by change of base'],
+ 'Equation with cot 2θ and cot²θ − tan²θ':['eq-methods','Equation with cot 2θ and cot²θ − tan²θ'],
+ 'Values of a for which cos 2x + a sin x = 2a − 7 is solvable':['eq-special','Values of a for which cos 2x + a sin x = 2a − 7 is solvable'],
+ 'Sum of multiples of sines equal to its maximum value':['eq-special','Sum of multiples of sines equal to its maximum value'],
+ 'System 3 sin²θ + 2 sin²φ = 1 and 3 sin 2θ = 2 sin 2φ':['eq-special','System 3 sin²θ + 2 sin²φ = 1 and 3 sin 2θ = 2 sin 2φ'],
+ 'Vanishing of a compound-angle expression reduced to sin(x − y) + cos(x − y)':['eq-methods','Vanishing of a compound-angle expression reduced to sin(x − y) + cos(x − y)'],
+ 'Constant value of a combination of powers of sin θ and cos θ':['identities','Constant value of a combination of powers of sin θ and cos θ']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
