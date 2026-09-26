@@ -2204,7 +2204,7 @@ detailed:[
  ['Add the two parts.','cos(2π/7) + cos(4π/7) + cos(6π/7) + cos(7π/7) = −1/2 − 1','= −3/2'],
  ['Check numerically: 0.6235 − 0.2225 − 0.9010 − 1 = −1.5. The common trap is to stop at −1/2 or to forget the term cos π.','Answer: (D) −3/2']
 ]},
-{id:'TRIG-149',topic:'Maximum and minimum of a cos θ + b sin θ',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.287 · p.25',sourceRef:true,question:'The equation a sin x + b cos x = c, where |c| > √(a² + b²) has -',options:['a unique solution','infinite number of solutions','no solution','none of these'],correct:2,answer:'no solution',
+{id:'TRIG-149',topic:'Maximum and minimum of a cos θ + b sin θ',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.287 · p.25 (Q.22, p.3, is a verbatim repeat of this item)',sourceRef:true,question:'The equation a sin x + b cos x = c, where |c| > √(a² + b²) has -',options:['a unique solution','infinite number of solutions','no solution','none of these'],correct:2,answer:'no solution',
 short:[['Write the left side as a single sine, a sin x + b cos x = √(a² + b²) sin(x + φ) with a and b real.','|a sin x + b cos x| ≤ √(a² + b²)'],['The right side has a larger absolute value than the left side can reach.','|c| > √(a² + b²) ≥ |a sin x + b cos x|','Answer: (C) no solution']],
 detailed:[
  ['For real a and b, the left side can be written as a single sine wave with amplitude √(a² + b²).','a sin x + b cos x = √(a² + b²) sin(x + φ)'],
@@ -3514,6 +3514,210 @@ detailed:[
  ['Use cos 2x = (1 − tan²x)/(1 + tan²x) with tan²x = 1/4. Both signs of tan x give the same value.','cos 2x = (1 − 1/4)/(1 + 1/4)','= (3/4)/(5/4)','= 3/5'],
  ['Numerical check with tan x = 1/2: cos²x = 0.8 and sin 2x = 0.8, so both sides equal 2 sin²(0.4π) = 1.809. Also cos 2x = 0.6.','2 sin²(0.4π) = 1.809','1 − cos(0.8π) = 1.809'],
  ['Option (A) 1/5 and (C) 4/5 correspond to other values of tan x, and (D) 1 would need tan x = 0. The common trap is to divide by sin²B or drop the case sin 2x < 0.','Answer: (B) 3/5']
+]},
+{id:'TRIG-239',topic:'Sum of tangents equal to their product',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.21 · p.2',sourceRef:true,question:'If tan θ + tan 4θ + tan 7θ = tan θ tan 4θ tan 7θ, then θ =',options:['nπ/4, n ∈ Z','nπ/7, n ∈ Z','nπ/12, n ∈ Z','nπ, n ∈ Z'],correct:2,answer:'nπ/12, n ∈ Z',
+short:[['Put A = θ, B = 4θ, C = 7θ. Expanding sin(A + B + C) gives a factor form of the difference between the sum and the product of the tangents.','sin(A + B + C) = cos A cos B cos C (tan A + tan B + tan C − tan A tan B tan C)'],['The given equation says the bracket is zero, so with the cosines non-zero it is equivalent to sin 12θ = 0.','sin 12θ = 0','⇒ 12θ = nπ','⇒ θ = nπ/12'],['The only members of the family where a tangent is undefined are θ = π/2 + kπ (n = 6 + 12k). The other values work.','Answer: (C) nπ/12, n ∈ Z']],
+detailed:[
+ ['The condition tan A + tan B + tan C = tan A tan B tan C is the tangent identity for A + B + C = a multiple of π, so look at sin(A + B + C) with A = θ, B = 4θ, C = 7θ.','A + B + C = 12θ'],
+ ['Expand sin(A + B + C) with the compound-angle formula and factor out cos A cos B cos C.','sin(A + B + C) = sin A cos B cos C + cos A sin B cos C + cos A cos B sin C − sin A sin B sin C','= cos A cos B cos C (tan A + tan B + tan C − tan A tan B tan C)'],
+ ['When cos θ, cos 4θ and cos 7θ are all non-zero, the bracket vanishes exactly when the left side vanishes.','tan θ + tan 4θ + tan 7θ − tan θ tan 4θ tan 7θ = 0','⇔ sin 12θ = 0'],
+ ['Solve sin 12θ = 0 for θ, with n an integer.','12θ = nπ','⇒ θ = nπ/12'],
+ ['Domain check: cos 4θ = cos(nπ/3) is never zero. The other two cosines vanish only when n = 6 + 12k, that is θ = π/2 + kπ, where tan θ does not exist, so those values are excluded.','cos(nπ/3) ≠ 0 for every integer n'],
+ ['Numerical check with n = 1, θ = 15°: the sum and the product agree, both equal −√3.','tan 15° + tan 60° + tan 105° = 0.2679 + 1.7321 − 3.7321','= −1.7321','tan 15° tan 60° tan 105° = −1.7321'],
+ ['Options (A) nπ/4 and (D) nπ satisfy the equation but only give some of the solutions, for example θ = 15° is missing. Option (B) nπ/7 fails, for θ = π/7 the sum is not zero while the product is.','Answer: (C) nπ/12, n ∈ Z']
+]},
+{id:'TRIG-240',topic:'Solvability of cos x + sin x = c by the amplitude √2',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.23 · p.3',sourceRef:true,question:'The equation cos x + sin x = 2 has –',options:['Only one solution','Two solutions','No solution','Infinite number of solutions'],correct:2,answer:'No solution',
+short:[['Write the left side as a single cosine with amplitude √2.','cos x + sin x = √2 cos(x − π/4)'],['Its largest value is √2, which is less than 2, so the equation is impossible.','cos x + sin x ≤ √2 < 2','Answer: (C) No solution']],
+detailed:[
+ ['An expression cos x + sin x is a single sine wave. Use the formula for a cos x + b sin x with a = b = 1, whose amplitude is √(a² + b²).','√(1² + 1²) = √2'],
+ ['Write it as one cosine by taking out √2.','cos x + sin x = √2 ((1/√2) cos x + (1/√2) sin x)','= √2 (cos x cos(π/4) + sin x sin(π/4))','= √2 cos(x − π/4)'],
+ ['Since cos(x − π/4) lies between −1 and 1, the left side lies between −√2 and √2.','−√2 ≤ cos x + sin x ≤ √2'],
+ ['The right side is 2 and √2 ≈ 1.414 < 2, so the left side can never reach 2.','cos x + sin x ≤ √2 < 2'],
+ ['A second check by squaring: the square of the left side is at most 2, but the square of the right side is 4.','(cos x + sin x)² = 1 + sin 2x ≤ 2 < 4'],
+ ['Options (A), (B) and (D) all claim that some x exists. The common trap is to think cos x = 1 and sin x = 1 can happen together, which is impossible because sin²x + cos²x = 1.','Answer: (C) No solution']
+]},
+{id:'TRIG-241',topic:'Sum of two trigonometric terms at its extreme value forces each term to be extreme',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.24 · p.3',sourceRef:true,question:'Find the general solution for x when sin x (cos(x/4) − 2 sin x) + (1 + sin(x/4) − 2 cos x) cos x = 0',options:['2pπ, p ∈ Z','(8p − 6)π, p ∈ Z','(3p − 2)π, p ∈ Z','(2p + 1)π, p ∈ Z'],correct:1,answer:'(8p − 6)π, p ∈ Z',
+short:[['Expand and group the terms into a sine of a sum and a sum of squares.','sin x cos(x/4) + cos x sin(x/4) = sin(5x/4)','−2 sin²x − 2 cos²x = −2'],['The equation becomes sin(5x/4) + cos x = 2, which needs both terms to equal 1.','sin(5x/4) = 1','cos x = 1'],['From cos x = 1 we get x = 2mπ. From sin(5x/4) = 1 we get x = 2(1 + 4k)π/5. Equating gives 5m = 1 + 4k, so m = 4p − 3.','x = 2(4p − 3)π','= (8p − 6)π','Answer: (B) (8p − 6)π, p ∈ Z']],
+detailed:[
+ ['Open the brackets first, since the terms sin x cos(x/4) and cos x sin(x/4) look like a compound angle.','sin x cos(x/4) − 2 sin²x + cos x + sin(x/4) cos x − 2 cos²x = 0'],
+ ['Combine the two mixed terms with sin(A + B) and the squares with sin²x + cos²x = 1.','sin x cos(x/4) + cos x sin(x/4) = sin(x + x/4)','= sin(5x/4)','−2 sin²x − 2 cos²x = −2'],
+ ['The equation is now sin(5x/4) + cos x − 2 = 0.','sin(5x/4) + cos x = 2'],
+ ['Each term is at most 1, so the sum equals 2 only when both equal 1.','sin(5x/4) = 1','cos x = 1'],
+ ['Solve each with an integer parameter.','cos x = 1','⇒ x = 2mπ','sin(5x/4) = 1','⇒ 5x/4 = π/2 + 2kπ','⇒ x = 2(1 + 4k)π/5'],
+ ['Equate the two families. Then 5m = 1 + 4k, so 5m leaves remainder 1 on division by 4, which means m leaves remainder 1, and m = 4p − 3 with k = 5p − 4.','2mπ = 2(1 + 4k)π/5','⇒ 5m = 1 + 4k','⇒ m = 4p − 3','x = 2(4p − 3)π','= (8p − 6)π'],
+ ['Check p = 1, x = 2π: cos 2π = 1 and sin(5π/2) = 1, so the sum is 2. Also p = 0, x = −6π: cos(−6π) = 1 and sin(−15π/2) = 1.','x = (8p − 6)π','x ∈ {..., −6π, 2π, 10π, ...}'],
+ ['Options (A) and (C) both contain x = 4π, where sin(5π) = 0, and option (D) has cos x = −1. The trap is to accept the family of cos x = 1 alone, which is 2pπ.','Answer: (B) (8p − 6)π, p ∈ Z']
+]},
+{id:'TRIG-241-A',parent:'TRIG-241',variant:1,topic:'Sum of two trigonometric terms at its extreme value forces each term to be extreme',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.25 · p.3',sourceRef:true,relevance:{parent:'TRIG-241',sharedSkill:'A sum of two trigonometric terms equals the extreme value of the sum, so each term is at its extreme and the two solution families must be intersected.',recoveryPurpose:'Same both-terms-extreme argument as the previous question, now with the value −2 and with sin 3x and cos 2x.'},question:'Find the general solution for x when sin 3x + cos 2x = −2',options:['(4p − 3)π/3, p ∈ Z','(4p − 2)π/3, p ∈ Z','(4p + 1)π/7, p ∈ Z','None of these'],correct:3,answer:'None of these',
+short:[['The sum is −2 only when both terms equal −1.','sin 3x = −1','cos 2x = −1'],['Solve each equation and intersect the families.','sin 3x = −1','⇒ x = (4k − 1)π/6','cos 2x = −1','⇒ x = (2m + 1)π/2'],['Equating gives 2k = 3m + 2, so m is even, m = 2j, and the common solution is x = (4j + 1)π/2. None of the listed options has this form.','x = (4j + 1)π/2','Answer: (D) None of these']],
+detailed:[
+ ['Each of sin 3x and cos 2x is at least −1, so their sum is −2 only when both are −1.','sin 3x = −1','cos 2x = −1'],
+ ['From sin 3x = −1 we get 3x = −π/2 + 2kπ.','x = −π/6 + 2kπ/3','= (4k − 1)π/6'],
+ ['From cos 2x = −1 we get 2x = (2m + 1)π.','x = (2m + 1)π/2'],
+ ['The solution must be in both families, so equate them.','(4k − 1)π/6 = (2m + 1)π/2','⇒ 4k − 1 = 6m + 3','⇒ 2k = 3m + 2'],
+ ['The right side 3m + 2 must be even, so m is even. Put m = 2j, which gives k = 3j + 1.','x = (2(2j) + 1)π/2','= (4j + 1)π/2'],
+ ['Check x = π/2 (j = 0): sin(3π/2) = −1 and cos π = −1, so the sum is −2. Check x = −3π/2 (j = −1): sin(−9π/2) = −1 and cos(−3π) = −1.','x = (4j + 1)π/2'],
+ ['Test the options. For (A) with p = 1, x = π/3 gives sin π + cos(2π/3) = −1/2. For (B) with p = 1, x = 2π/3 gives sin 2π + cos(4π/3) = −1/2. For (C) the denominator 7 gives values such as x = π/7 for which sin 3x > 0.','sin 3x + cos 2x ≠ −2'],
+ ['So none of the printed forms is the general solution. The trap is to combine the two families as if they were independent.','Answer: (D) None of these']
+]},
+{id:'TRIG-242',topic:'Common solution of a cosine equation and a tangent equation',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.26 · p.3',sourceRef:true,question:'The common solution of the equations cos θ = √3/2 and tan θ = 1/√3 is',options:['θ = 2nπ + π/6, n ∈ Z','θ = 2nπ + π/2, n ∈ Z','θ = 2nπ + π/3, n ∈ Z','None of these'],correct:0,answer:'θ = 2nπ + π/6, n ∈ Z',
+short:[['Find the quadrants: cos θ is positive in the first and fourth quadrants, tan θ is positive in the first and third.','common quadrant: first'],['In the first quadrant cos θ = √3/2 gives the angle π/6, and tan(π/6) = 1/√3 agrees. Add the period 2π.','θ = 2nπ + π/6','Answer: (A) θ = 2nπ + π/6, n ∈ Z']],
+detailed:[
+ ['Solve the first equation. The general solution of cos θ = cos α is 2nπ ± α, and √3/2 = cos(π/6).','θ = 2nπ ± π/6'],
+ ['Solve the second equation. The general solution of tan θ = tan α is nπ + α, and 1/√3 = tan(π/6).','θ = kπ + π/6'],
+ ['The common values must lie in both sets. The set 2nπ − π/6 has tan θ = −1/√3, so it fails. The set 2nπ + π/6 is inside kπ + π/6 (take k = 2n).','θ = 2nπ + π/6'],
+ ['The two sets can also be compared by quadrants. cos θ > 0 gives quadrants I and IV, tan θ > 0 gives quadrants I and III, so only quadrant I remains.','θ = π/6 + 2nπ'],
+ ['Check θ = π/6: cos(π/6) = √3/2 and tan(π/6) = 1/√3, both correct. Option (B) π/2 has cos = 0. Option (C) π/3 has cos = 1/2 and tan = √3.','Answer: (A) θ = 2nπ + π/6, n ∈ Z']
+]},
+{id:'TRIG-242-A',parent:'TRIG-242',variant:1,topic:'Common solution of a cosine equation and a tangent equation',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.27 · p.3',sourceRef:true,relevance:{parent:'TRIG-242',sharedSkill:'Find the common solution of a cosine equation and a tangent equation by intersecting the quadrants and the periods.',recoveryPurpose:'Same intersection method as the previous question, now with tan θ negative so that the fourth quadrant is the common one.'},question:'If cos θ = 1/√2 and tan θ = −1, then the most general value of θ which satisfies both the equations is',options:['θ = 2nπ + π/4, n ∈ Z','θ = 2nπ + 7π/4, n ∈ Z','θ = nπ + 7π/4, n ∈ Z','None of these'],correct:1,answer:'θ = 2nπ + 7π/4, n ∈ Z',
+short:[['cos θ > 0 puts θ in the first or fourth quadrant, and tan θ < 0 puts it in the second or fourth. The common quadrant is the fourth.','θ = 7π/4'],['Since cos θ = 1/√2 repeats every 2π, the common solutions are','θ = 2nπ + 7π/4','Answer: (B) θ = 2nπ + 7π/4, n ∈ Z']],
+detailed:[
+ ['Solve cos θ = 1/√2 = cos(π/4).','θ = 2nπ ± π/4'],
+ ['Solve tan θ = −1 = tan(−π/4).','θ = kπ − π/4'],
+ ['In the family 2nπ ± π/4, the value 2nπ + π/4 has tan θ = 1, which is wrong. The value 2nπ − π/4 has tan θ = −1, which is correct.','θ = 2nπ − π/4'],
+ ['Write it with a positive angle, since −π/4 + 2π = 7π/4.','θ = 2nπ + 7π/4'],
+ ['Check θ = 7π/4: cos = 1/√2 and tan = −1. In option (A) tan(π/4) = 1. In option (C) taking n = 1 gives 11π/4 = 3π/4 + 2π, where cos = −1/√2, so it fails.','Answer: (B) θ = 2nπ + 7π/4, n ∈ Z']
+]},
+{id:'TRIG-243',topic:'Values of λ for which sin⁶x + cos⁶x = λ is solvable',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.28 · p.3',sourceRef:true,question:'The equation sin⁶x + cos⁶x = λ, has a solution if -',options:['λ ∈ [1/2, 1]','λ ∈ [1/4, 1]','λ ∈ [−1, 1]','λ ∈ [0, 1/2]'],correct:1,answer:'λ ∈ [1/4, 1]',
+short:[['Use a³ + b³ = (a + b)³ − 3ab(a + b) with a = sin²x and b = cos²x.','sin⁶x + cos⁶x = 1 − 3 sin²x cos²x','= 1 − (3/4) sin²2x'],['Since 0 ≤ sin²2x ≤ 1, the left side takes every value from 1/4 to 1.','1/4 ≤ λ ≤ 1','Answer: (B) λ ∈ [1/4, 1]']],
+detailed:[
+ ['The sum of cubes of sin²x and cos²x can be rewritten using their sum, which is 1.','sin⁶x + cos⁶x = (sin²x)³ + (cos²x)³'],
+ ['Apply a³ + b³ = (a + b)³ − 3ab(a + b) and use a + b = 1.','= (sin²x + cos²x)³ − 3 sin²x cos²x (sin²x + cos²x)','= 1 − 3 sin²x cos²x'],
+ ['Use sin 2x = 2 sin x cos x to get a single function.','sin²x cos²x = (sin²2x)/4','⇒ sin⁶x + cos⁶x = 1 − (3/4) sin²2x'],
+ ['As x varies, sin²2x takes every value between 0 and 1. So the expression takes every value from 1 − 3/4 to 1.','λ_min = 1 − 3/4','= 1/4','λ_max = 1 − 0','= 1'],
+ ['Check: x = 0 gives 0 + 1 = 1, and x = π/4 gives 1/8 + 1/8 = 1/4.','sin⁶(π/4) + cos⁶(π/4) = 1/8 + 1/8','= 1/4'],
+ ['Option (A) leaves out λ = 1/4 which is reached at x = π/4. Option (C) contains negative values, impossible for a sum of sixth powers. Option (D) misses λ = 1 at x = 0.','Answer: (B) λ ∈ [1/4, 1]']
+]},
+{id:'TRIG-244',topic:'Trigonometric inequality in |sin x| solved by factoring',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.29 · p.3',sourceRef:true,question:'Set of values of x lying in [0, 2π] satisfying the inequality |sin x| > 2 sin²x contains',options:['(0, π/6) ∪ (π, 7π/6)','(0, 7π/6)','π/6','None of these'],correct:0,answer:'(0, π/6) ∪ (π, 7π/6)',
+short:[['Put s = |sin x|, so sin²x = s², and factor.','s > 2s²','⇒ s(1 − 2s) > 0','⇒ 0 < s < 1/2'],['So sin x ≠ 0 and |sin x| < 1/2. On [0, 2π] the solution set is the four intervals below, and (A) lies inside it.','(0, π/6) ∪ (5π/6, π) ∪ (π, 7π/6) ∪ (11π/6, 2π)','Answer: (A) (0, π/6) ∪ (π, 7π/6)']],
+detailed:[
+ ['Since sin²x = |sin x|², write s = |sin x| ≥ 0 and the inequality becomes a quadratic in s.','s > 2s²'],
+ ['Bring all terms to one side and factor.','s − 2s² > 0','⇒ s(1 − 2s) > 0'],
+ ['A product of s ≥ 0 and 1 − 2s is positive only when both factors are positive.','s > 0','1 − 2s > 0','⇒ s < 1/2'],
+ ['So sin x ≠ 0 and |sin x| < 1/2. On [0, 2π], |sin x| < 1/2 holds for x in [0, π/6), (5π/6, 7π/6) and (11π/6, 2π].','x ∈ [0, π/6) ∪ (5π/6, 7π/6) ∪ (11π/6, 2π]'],
+ ['Remove the zeros of sin x, that is x = 0, π and 2π.','solution set = (0, π/6) ∪ (5π/6, π) ∪ (π, 7π/6) ∪ (11π/6, 2π)'],
+ ['Test x = π/12 (sin = 0.259 > 2 × 0.067 = 0.134, true) and x = π + 0.1 (true). The set contains (0, π/6) and (π, 7π/6), which is option (A).','(0, π/6) ∪ (π, 7π/6) ⊂ solution set'],
+ ['Option (B) fails at x = π/2 where 1 > 2 is false. Option (C) fails at x = π/6 where both sides equal 1/2, but the inequality is strict.','Answer: (A) (0, π/6) ∪ (π, 7π/6)']
+]},
+{id:'TRIG-245',topic:'Exponential equation in sin²x and cos²x by substitution',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.30 · p.3',sourceRef:true,question:'Number of solutions of the equation 2^(sin²x) + 5·2^(cos²x) = 7 in the interval [−π, π] is',options:['4','2','6','0'],correct:1,answer:'2',
+short:[['Put u = 2^(sin²x). Since sin²x + cos²x = 1, we get 2^(cos²x) = 2/u.','u + 10/u = 7','⇒ u² − 7u + 10 = 0','⇒ u ∈ {2, 5}'],['Because 0 ≤ sin²x ≤ 1, u lies between 1 and 2, so u = 2 and sin²x = 1. This gives x = −π/2 and x = π/2 in [−π, π].','x = ±π/2','Answer: (B) 2']],
+detailed:[
+ ['The exponents add up to 1, so one exponential can be written through the other. Put u = 2^(sin²x).','2^(cos²x) = 2^(1 − sin²x)','= 2/u'],
+ ['Substitute into the equation.','u + 5 × (2/u) = 7','⇒ u² − 7u + 10 = 0','⇒ (u − 2)(u − 5) = 0'],
+ ['The roots are u = 2 and u = 5.','u ∈ {2, 5}'],
+ ['Range check: 0 ≤ sin²x ≤ 1 gives 2⁰ ≤ u ≤ 2¹, so 1 ≤ u ≤ 2. Reject u = 5.','1 ≤ u ≤ 2'],
+ ['With u = 2, sin²x = 1, so sin x = ±1.','2^(sin²x) = 2','⇒ sin²x = 1'],
+ ['In [−π, π] the solutions of sin x = ±1 are exactly two.','x ∈ {−π/2, π/2}'],
+ ['Check x = π/2: the terms are 2 and 5 × 1, which add to 7. At x = 0 the terms are 1 and 5 × 2, which add to 11, so 0 is not a root.','Answer: (B) 2']
+]},
+{id:'TRIG-246',topic:'Homogeneous quadratic in sin x and cos x reduced to tan x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.31 · p.3',sourceRef:true,question:'The general solution of the equation 7 cos²x + sin x cos x − 3 = 0 is given by',options:['nπ + π/2 (n ∈ Z)','nπ − π/4 (n ∈ Z)','nπ + tan⁻¹(4/3) (n ∈ Z)','nπ + 3π/4, kπ + tan⁻¹(4/3) (n, k ∈ Z)'],correct:3,answer:'nπ + 3π/4, kπ + tan⁻¹(4/3) (n, k ∈ Z)',
+short:[['Write 3 = 3(sin²x + cos²x) so that every term is of degree two, then divide by cos²x (cos x = 0 is not a root).','4 cos²x + sin x cos x − 3 sin²x = 0','⇒ 3 tan²x − tan x − 4 = 0'],['Factorise and solve for tan x.','(3 tan x − 4)(tan x + 1) = 0','⇒ tan x ∈ {4/3, −1}','Answer: (D) nπ + 3π/4, kπ + tan⁻¹(4/3)']],
+detailed:[
+ ['The terms 7cos²x, sin x cos x and the constant 3 can all be made degree two in sin x and cos x by writing 3 = 3 sin²x + 3 cos²x.','7 cos²x + sin x cos x − 3 sin²x − 3 cos²x = 0','⇒ 4 cos²x + sin x cos x − 3 sin²x = 0'],
+ ['If cos x = 0 the left side is −3 sin²x = −3 ≠ 0, so dividing by cos²x loses no roots.','4 + tan x − 3 tan²x = 0'],
+ ['Rearrange into a quadratic in t = tan x and factorise.','3t² − t − 4 = 0','⇒ (3t − 4)(t + 1) = 0'],
+ ['So there are two values of tan x, each giving one family.','tan x ∈ {4/3, −1}'],
+ ['Solve each family with the general solution of tan x = tan α, which is x = nπ + α.','tan x = −1','⇒ x = nπ − π/4','= nπ + 3π/4','tan x = 4/3','⇒ x = kπ + tan⁻¹(4/3)'],
+ ['Check x = 3π/4: cos²x = 1/2 and sin x cos x = −1/2, so 7/2 − 1/2 − 3 = 0. Check tan x = 4/3: cos²x = 9/25 and sin x cos x = 12/25, so 63/25 + 12/25 − 3 = 0.','7 cos²x + sin x cos x − 3 = 0'],
+ ['Options (A), (B) and (C) each give at most one family, so they are incomplete. Option (A) has cos x = 0 and gives −3.','Answer: (D) nπ + 3π/4, kπ + tan⁻¹(4/3) (n, k ∈ Z)']
+]},
+{id:'TRIG-247',topic:'Both sides bounded on opposite sides so equality holds at one point',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.32 · p.4',sourceRef:true,question:'The number of solutions of the equation sin(πx/(2√3)) = x² − 2√3 x + 4',options:['Forms an empty set','is only one','is only two','is greater than 2'],correct:1,answer:'is only one',
+short:[['Complete the square on the right side, which is at least 1, while the sine on the left is at most 1.','x² − 2√3 x + 4 = (x − √3)² + 1 ≥ 1','sin(πx/(2√3)) ≤ 1'],['Equality needs x = √3, and there sin(π/2) = 1 does hold. So there is exactly one solution.','x = √3','Answer: (B) is only one']],
+detailed:[
+ ['The right side is a quadratic, so complete the square to find its least value.','x² − 2√3 x + 4 = (x − √3)² + 3 − 3 + 1','= (x − √3)² + 1'],
+ ['Hence the right side is at least 1, with equality only at x = √3.','(x − √3)² + 1 ≥ 1'],
+ ['The left side is a sine, so it is at most 1.','sin(πx/(2√3)) ≤ 1'],
+ ['The two sides can be equal only if both are equal to 1, which forces x = √3 from the right side.','(x − √3)² + 1 = 1','⇒ x = √3'],
+ ['Check that the left side is 1 at x = √3.','sin(π√3/(2√3)) = sin(π/2)','= 1'],
+ ['So x = √3 is a root and there is no other root. Option (A) is wrong because there is a root, and options (C) and (D) are wrong because no other x can satisfy both bounds.','Answer: (B) is only one']
+]},
+{id:'TRIG-247-A',parent:'TRIG-247',variant:1,topic:'Both sides bounded on opposite sides so equality holds at one point',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.33 · p.4',sourceRef:true,relevance:{parent:'TRIG-247',sharedSkill:'Show that the left side is at least a value and the right side at most the same value, so equality holds only at one point.',recoveryPurpose:'Same opposite-bounds argument as the previous question, now with tan²θ + cot²θ ≥ 2 against 1 + √(2x/(1 + x²)) ≤ 2.'},question:'If tan²[π(x + y)] + cot²[π(x + y)] = 1 + √(2x/(1 + x²)) where x, y ∈ R, then least positive value of y is',options:['5/4','1/4','3/4','2'],correct:1,answer:'1/4',
+short:[['Put θ = π(x + y). By AM–GM the left side is at least 2, and since 1 + x² ≥ 2x the right side is at most 2.','tan²θ + cot²θ ≥ 2','1 + √(2x/(1 + x²)) ≤ 2'],['Equality needs x = 1 and tan²θ = 1. Then tan²(π + πy) = tan²(πy) = 1.','πy = π/4 + kπ/2','y = 1/4 + k/2','Answer: (B) 1/4']],
+detailed:[
+ ['Put θ = π(x + y). Since tan²θ and cot²θ are positive with product 1, AM–GM gives a lower bound for the left side.','tan²θ + cot²θ ≥ 2√(tan²θ cot²θ)','= 2'],
+ ['For the right side, 1 + x² − 2x = (1 − x)² ≥ 0, so 2x/(1 + x²) ≤ 1. The root exists only if x ≥ 0, so the right side is at most 1 + 1.','1 + √(2x/(1 + x²)) ≤ 2'],
+ ['The two sides meet only if both equal 2.','tan²θ + cot²θ = 2','⇒ tan²θ = 1','2x/(1 + x²) = 1','⇒ (x − 1)² = 0','⇒ x = 1'],
+ ['With x = 1, θ = π(1 + y), and tan(π + πy) = tan(πy).','tan²(πy) = 1'],
+ ['Solve tan²(πy) = 1.','πy = π/4 + kπ/2','⇒ y = 1/4 + k/2'],
+ ['The values are ... −1/4, 1/4, 3/4, 5/4 ..., so the least positive one is 1/4. Check: tan²(5π/4) + cot²(5π/4) = 1 + 1 = 2 and the right side is 1 + 1.','y = 1/4'],
+ ['Options (A) 5/4 and (C) 3/4 are also solutions but not the least. Option (D) 2 gives tan(3π) = 0 and is not a solution.','Answer: (B) 1/4']
+]},
+{id:'TRIG-248',topic:'Radical equation with 1 − sin 2x as a perfect square',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.34 · p.4',sourceRef:true,question:'If cos x = √(1 − sin 2x), 0 < x < π, then a value of x is-',options:['tan⁻¹ 2','0','π','None of these'],correct:0,answer:'tan⁻¹ 2',
+short:[['Write 1 − sin 2x as a perfect square, so the root becomes an absolute value.','1 − sin 2x = (sin x − cos x)²','cos x = |sin x − cos x|'],['The left side is non-negative, so x is in (0, π/2). For sin x ≥ cos x the equation gives cos x = sin x − cos x, that is tan x = 2.','x = tan⁻¹ 2','Answer: (A) tan⁻¹ 2']],
+detailed:[
+ ['Use sin²x + cos²x = 1 and sin 2x = 2 sin x cos x.','1 − sin 2x = sin²x + cos²x − 2 sin x cos x','= (sin x − cos x)²'],
+ ['The square root of a square is an absolute value.','cos x = |sin x − cos x|'],
+ ['The left side must be non-negative, so cos x ≥ 0, which in 0 < x < π means x is in (0, π/2). At x = π/2 the right side is 1 while cos x = 0, so x is in (0, π/2).','0 < x < π/2'],
+ ['Case sin x ≥ cos x: the equation is cos x = sin x − cos x.','2 cos x = sin x','⇒ tan x = 2'],
+ ['Case sin x < cos x: the equation is cos x = cos x − sin x, which needs sin x = 0, impossible in (0, π/2).','sin x = 0'],
+ ['Check x = tan⁻¹ 2: cos x = 1/√5 and sin 2x = 2 × (2/√5)(1/√5) = 4/5, so √(1 − 4/5) = 1/√5. Also tan x = 2 > 1 puts x above π/4, consistent with the case.','cos x = 1/√5','√(1 − 4/5) = 1/√5'],
+ ['Options (B) 0 and (C) π are outside the open interval 0 < x < π (and cos π = −1 is negative). The trap is squaring and accepting x with cos x < 0.','Answer: (A) tan⁻¹ 2']
+]},
+{id:'TRIG-249',topic:'Equal sines with linear arguments in x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.35 · p.4',sourceRef:true,question:'Which of the following can be a root of the equation; sin(x − 2) = sin(3x − 4) in (−π, π)',options:['−7π/2 + 3/2','−5π/4 + 3/2','−3π/4 + 3/2','None of these'],correct:2,answer:'−3π/4 + 3/2',
+short:[['Use sin A = sin B ⇒ B = kπ + (−1)ᵏ A. The even k gives x = 1 + mπ. The odd k gives 4x = (2m + 1)π + 6.','x = 1 + mπ','x = (2m + 1)π/4 + 3/2'],['Option (C) has 2m + 1 = −3 and lies in (−π, π). Option (B) has 2m + 1 = −5 and is also a root, but the printed key is (C).','x = −3π/4 + 3/2','≈ −0.856','Answer: (C) −3π/4 + 3/2']],
+detailed:[
+ ['Equal sines mean the two angles are related by the general solution of sin A = sin B, which is B = kπ + (−1)ᵏ A.','3x − 4 = kπ + (−1)ᵏ (x − 2)'],
+ ['Even k = 2m: the angles differ by a multiple of 2π.','3x − 4 = 2mπ + x − 2','⇒ x = 1 + mπ'],
+ ['Odd k = 2m + 1: the angles add to an odd multiple of π.','3x − 4 = (2m + 1)π − (x − 2)','⇒ 4x = (2m + 1)π + 6','⇒ x = (2m + 1)π/4 + 3/2'],
+ ['All options have the form aπ + 3/2, so compare with the second family. Option (A) needs 2m + 1 = −14, which is even, so (A) is not a root (and −9.5 is outside (−π, π) as well).','−7π/2 = (2m + 1)π/4','⇒ 2m + 1 = −14'],
+ ['Option (B) has 2m + 1 = −5, so m = −3 and x ≈ −2.427. Option (C) has 2m + 1 = −3, so m = −2 and x ≈ −0.856. Both are inside (−π, π) = (−3.14, 3.14).','−3.14 < −2.427 < 3.14','−3.14 < −0.856 < 3.14'],
+ ['Numerical check for x = −3π/4 + 3/2: both sides of the equation take the same value.','sin(x − 2) = −0.2815','sin(3x − 4) = −0.2815'],
+ ['So the equation has roots in this interval given by options (B) and (C) both. The printed key picks (C), and the question says "can be", so (C) is a valid answer. Option (A) fails.','Answer: (C) −3π/4 + 3/2']
+]},
+{id:'TRIG-250',topic:'Exponential equation 3^a + 3^(−a) = 2 with logarithms of tan x and cot x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.36 · p.4',sourceRef:true,question:'3^(log tan x) + 3^(log cot x) = 2 then x is -',options:['nπ + π/2','(4n + 1)π/4','nπ − π/4','nπ'],correct:1,answer:'(4n + 1)π/4',
+short:[['Since cot x = 1/tan x, log cot x = −log tan x. Put a = log tan x, then 3ᵃ + 3⁻ᵃ = 2.','y = 3ᵃ','y + 1/y = 2','⇒ (y − 1)² = 0'],['So 3ᵃ = 1, a = 0 and tan x = 1, that is x = nπ + π/4 = (4n + 1)π/4.','x = (4n + 1)π/4','Answer: (B) (4n + 1)π/4']],
+detailed:[
+ ['The logarithm needs tan x > 0, and then log cot x = log(1/tan x) = −log tan x (for any base). Put a = log tan x.','3^(log tan x) + 3^(log cot x) = 3^(a) + 3^(−a)'],
+ ['Let y = 3^(a), which is positive, so 3^(−a) = 1/y.','y + 1/y = 2'],
+ ['Multiply by y and collect.','y² − 2y + 1 = 0','⇒ (y − 1)² = 0','⇒ y = 1'],
+ ['Then 3^(a) = 1 gives a = 0, so the logarithm of tan x is zero and tan x = 1.','log tan x = 0','⇒ tan x = 1'],
+ ['Solve tan x = tan(π/4).','x = nπ + π/4','= (4n + 1)π/4'],
+ ['Domain check: at x = π/4, tan x = cot x = 1 > 0, so the logarithms exist. Check: 3⁰ + 3⁰ = 2.','3⁰ + 3⁰ = 2'],
+ ['Option (A) has tan x undefined, option (C) has tan x = −1 < 0 so the logarithm does not exist, option (D) has cot x undefined.','Answer: (B) (4n + 1)π/4']
+]},
+{id:'TRIG-251',topic:'Counting solutions of 30|sin x| = x by graphs',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.37 · p.4',sourceRef:true,question:'Find the number of solutions of the equation 30|sin x| = x in 0 ≤ x ≤ 2π',options:['4','2','8','6'],correct:0,answer:'4',
+short:[['Compare y = |sin x| with the line y = x/30, which stays below 0.21 on [0, 2π]. The point x = 0 is a root.','x = 0'],['In (0, π) the sine rises above the line and falls below it once, giving one more root. In (π, 2π) the arch of |sin x| crosses the line twice.','roots ≈ 0, 3.04, 3.25, 6.08','Answer: (A) 4']],
+detailed:[
+ ['Divide by 30 and compare the graphs of y = |sin x| and y = x/30 on [0, 2π]. The line rises slowly from 0 to 2π/30 ≈ 0.21.','y = x/30 ≤ 0.21'],
+ ['At x = 0 both sides are 0, so x = 0 is a root.','x = 0'],
+ ['On (0, π): near 0 the slope of sin x is 1, larger than 1/30, so sin x is above the line. At x = π the sine is 0 and the line is π/30 ≈ 0.105, so the sine is below. The difference sin x − x/30 is concave, so it has exactly one more zero.','sin x − x/30 > 0 near 0','sin π − π/30 < 0'],
+ ['On (π, 2π): |sin x| = −sin x is an arch from 0 to 1 and back to 0. At π and at 2π the arch is below the line, at 3π/2 it is 1, far above 0.157. The difference is concave here too, so there are exactly two zeros.','|sin(3π/2)| = 1','3π/60 ≈ 0.157','π/30 ≈ 0.105','2π/30 ≈ 0.209'],
+ ['Count: x = 0, one root in (0, π), two in (π, 2π). A numerical solution gives approximately 0, 3.040, 3.250 and 6.079.','1 + 1 + 2 = 4'],
+ ['The trap is to forget x = 0 (which gives 3) or to count two arches with two crossings each, ignoring that the first arch meets the line only once besides 0.','Answer: (A) 4']
+]},
+{id:'TRIG-252',topic:'Counting solutions of tan(5π cos α) = cot(5π sin α)',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.38 · p.4',sourceRef:true,question:'The number of solutions of tan(5π cos α) = cot(5π sin α) for α in (0, 2π) is',options:['7','14','21','28'],correct:3,answer:'28',
+short:[['Write cot B as tan(π/2 − B), so the angles differ by a multiple of π, which gives a linear equation in cos α and sin α.','5π cos α = π/2 − 5π sin α + kπ','⇒ cos α + sin α = (2k + 1)/10'],['Since cos α + sin α = √2 sin(α + π/4) lies in [−√2, √2], the value (2k + 1)/10 must satisfy |2k + 1| ≤ 14, giving 14 odd values, each with two solutions in (0, 2π).','14 × 2 = 28','Answer: (D) 28']],
+detailed:[
+ ['Use cot B = tan(π/2 − B) and the general solution of tan A = tan C, which is A = C + kπ.','5π cos α = π/2 − 5π sin α + kπ'],
+ ['Divide by 5π and collect.','cos α + sin α = 1/10 + k/5','= (2k + 1)/10'],
+ ['Domain check: the roots are extraneous only if cos(5π cos α) = 0 or sin(5π sin α) = 0. With the equation these come together, giving 5 cos α = m + 1/2 and 5 sin α = j, integers m and j. Then (2m + 1)² + 4j² = 100, which is impossible since the left side is odd.','(2m + 1)² + 4j² = 100'],
+ ['So every solution of the linear equation is a genuine solution. Now find the allowed k with cos α + sin α = √2 sin(α + π/4).','√2 sin(α + π/4) = (2k + 1)/10'],
+ ['The amplitude is √2 ≈ 1.414, so |2k + 1| ≤ 14.14, which allows the odd integers −13, −11, ..., 13.','|2k + 1| ≤ 13','⇒ 14 values'],
+ ['For each such value, sin(α + π/4) lies strictly between −1 and 1, and α + π/4 runs over (π/4, 9π/4), one full period. Each value of the sine is taken twice (the end value sin(π/4) = 1/√2 would need (2k + 1)/10 = 1, impossible).','2 solutions for each value'],
+ ['Total number of solutions.','14 × 2 = 28'],
+ ['Options (A) 7 and (C) 21 would come from counting one solution or missing an odd number, and (B) 14 counts only one solution per k.','Answer: (D) 28']
+]},
+{id:'TRIG-253',topic:'Radical equation with √(cos²x) = |cos x|',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.39 · p.4',sourceRef:true,question:'The values of x between 0 and 2π which satisfy the equation sin x √(8cos²x) = 1 are in A.P. with common difference',options:['π/4','π/8','3π/8','5π/8'],correct:0,answer:'π/4',
+short:[['Since √(cos²x) = |cos x|, the equation is 2√2 sin x |cos x| = 1, so sin x > 0 and x is in (0, π).','2√2 sin x |cos x| = 1'],['For cos x > 0: sin 2x = 1/√2 gives π/8 and 3π/8. For cos x < 0: sin 2x = −1/√2 gives 5π/8 and 7π/8. The common difference is π/4.','x ∈ {π/8, 3π/8, 5π/8, 7π/8}','Answer: (A) π/4']],
+detailed:[
+ ['Write √(8cos²x) = 2√2 |cos x|, since the square root of a square is an absolute value.','sin x √(8cos²x) = 2√2 sin x |cos x|','= 1'],
+ ['The right side is positive, so sin x > 0 and cos x ≠ 0. Hence x is in (0, π).','0 < x < π'],
+ ['Case cos x > 0 (0 < x < π/2): the equation is 2√2 sin x cos x = 1.','√2 sin 2x = 1','⇒ sin 2x = 1/√2','⇒ 2x = π/4 or 3π/4'],
+ ['So in this quadrant x = π/8 and x = 3π/8.','x = π/8, 3π/8'],
+ ['Case cos x < 0 (π/2 < x < π): the equation is −2√2 sin x cos x = 1.','−√2 sin 2x = 1','⇒ sin 2x = −1/√2','⇒ 2x = 5π/4 or 7π/4'],
+ ['So in this quadrant x = 5π/8 and x = 7π/8.','x = 5π/8, 7π/8'],
+ ['The four values are π/8, 3π/8, 5π/8, 7π/8, an A.P. whose common difference is 2π/8.','d = 3π/8 − π/8','= π/4'],
+ ['Check x = 7π/8: sin x ≈ 0.3827 and |cos x| ≈ 0.9239, and 2√2 × 0.3827 × 0.9239 = 1.0000. Ignoring the absolute value would give x = 9π/8, 11π/8 as well, which are not roots, and π/8 is only the first term.','Answer: (A) π/4']
+]},
+{id:'TRIG-254',topic:'Logarithmic inequality with base 1/2 reduced to sin x < cos x',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.40 · p.4',sourceRef:true,question:'The solution of the inequality log to the base 1/2 of sin x > log to the base 1/2 of cos x in (0, 2π) is',options:['x ∈ (5π/4, 2π)','x ∈ (0, π/4)','x ∈ (0, π/4) ∪ (5π/4, 2π)','None of these'],correct:1,answer:'x ∈ (0, π/4)',
+short:[['Both logarithms need sin x > 0 and cos x > 0, so x is in (0, π/2).','x ∈ (0, π/2)'],['The base 1/2 is less than 1, so the inequality reverses when the logarithms are removed, and sin x < cos x means tan x < 1.','sin x < cos x','⇒ 0 < x < π/4','Answer: (B) x ∈ (0, π/4)']],
+detailed:[
+ ['A logarithm exists only for a positive argument, so both sin x and cos x must be positive. This holds only in the first quadrant.','sin x > 0 and cos x > 0','⇒ x ∈ (0, π/2)'],
+ ['The function log to the base 1/2 is decreasing, because the base is less than 1. So the inequality sign reverses when the logarithms are dropped.','log(sin x) > log(cos x) ⇔ sin x < cos x'],
+ ['In the first quadrant cos x > 0, so divide by cos x.','tan x < 1'],
+ ['Since tan x is increasing on (0, π/2), this gives x below π/4.','0 < x < π/4'],
+ ['Check x = π/6: the left side is log to the base 1/2 of 1/2, which is 1, and the right side is log to the base 1/2 of √3/2, about 0.21, so 1 > 0.21 is true.','x = π/6 satisfies it'],
+ ['Options (A) and (C) contain (5π/4, 2π) where sin x < 0 (and cos x < 0 up to 3π/2), so the logarithms are undefined. The trap is to forget the domain, since sin x < cos x holds in (5π/4, 2π) but sin x is negative there.','Answer: (B) x ∈ (0, π/4)']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -3764,7 +3968,23 @@ const pilotTopicMap={
  'Integer values of the constant for which a cos x + b sin x = c is solvable':['eq-special','Integer values of the constant for which a cos x + b sin x = c is solvable'],
  'Greatest integer function inside a trigonometric equation':['eq-special','Greatest integer function inside a trigonometric equation'],
  'Rewriting cos 2x as (1 − tan²x)/(1 + tan²x) in an equation':['eq-methods','Rewriting cos 2x as (1 − tan²x)/(1 + tan²x) in an equation'],
- 'Equal squares of sines forcing equal arguments':['eq-methods','Equal squares of sines forcing equal arguments']
+ 'Equal squares of sines forcing equal arguments':['eq-methods','Equal squares of sines forcing equal arguments'],
+ 'Sum of tangents equal to their product':['eq-methods','Sum of tangents equal to their product'],
+ 'Solvability of cos x + sin x = c by the amplitude √2':['eq-special','Solvability of cos x + sin x = c by the amplitude √2'],
+ 'Sum of two trigonometric terms at its extreme value forces each term to be extreme':['eq-special','Sum of two trigonometric terms at its extreme value forces each term to be extreme'],
+ 'Common solution of a cosine equation and a tangent equation':['eq-special','Common solution of a cosine equation and a tangent equation'],
+ 'Values of λ for which sin⁶x + cos⁶x = λ is solvable':['eq-special','Values of λ for which sin⁶x + cos⁶x = λ is solvable'],
+ 'Trigonometric inequality in |sin x| solved by factoring':['eq-special','Trigonometric inequality in |sin x| solved by factoring'],
+ 'Exponential equation in sin²x and cos²x by substitution':['eq-methods','Exponential equation in sin²x and cos²x by substitution'],
+ 'Homogeneous quadratic in sin x and cos x reduced to tan x':['eq-methods','Homogeneous quadratic in sin x and cos x reduced to tan x'],
+ 'Both sides bounded on opposite sides so equality holds at one point':['eq-special','Both sides bounded on opposite sides so equality holds at one point'],
+ 'Radical equation with 1 − sin 2x as a perfect square':['eq-methods','Radical equation with 1 − sin 2x as a perfect square'],
+ 'Equal sines with linear arguments in x':['eq-general','Equal sines with linear arguments in x'],
+ 'Exponential equation 3^a + 3^(−a) = 2 with logarithms of tan x and cot x':['eq-methods','Exponential equation 3^a + 3^(−a) = 2 with logarithms of tan x and cot x'],
+ 'Counting solutions of 30|sin x| = x by graphs':['eq-special','Counting solutions of 30|sin x| = x by graphs'],
+ 'Counting solutions of tan(5π cos α) = cot(5π sin α)':['eq-special','Counting solutions of tan(5π cos α) = cot(5π sin α)'],
+ 'Radical equation with √(cos²x) = |cos x|':['eq-methods','Radical equation with √(cos²x) = |cos x|'],
+ 'Logarithmic inequality with base 1/2 reduced to sin x < cos x':['eq-special','Logarithmic inequality with base 1/2 reduced to sin x < cos x']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
