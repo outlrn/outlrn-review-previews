@@ -5767,6 +5767,32 @@ detailed:[
  ['The five sums are all different, so the tie-breaking rule (lower n means lower energy) is not needed here.'],
  ['Arrange from the smallest sum to the largest, since the question asks for increasing energy.','E (3) < B (4) < A (5) < D (6) < C (7)'],
  ['Option (A) is the decreasing order, and option (B) puts 2p above 4s and 3d. Option (C) puts 6p too low. The trap is to think that a lower n always means lower energy, which fails for 4s and 3d.','Answer: (D) E<B<A<D<C']
+]},
+{id:'ATOM-98-36',parent:'ATOM-98',variant:36,topic:'Photoelectric effect: work function and kinetic energy',diagram:'hPhotoGraphs',source:'ExamSIDE · JEE Main 2019 (Online) 10th January Morning Slot · questions.examside.com (question id 7u6zwv5xqcfx4nud)',sourceRef:true,relevance:{parent:'ATOM-98',sharedSkill:'Photoelectric equation KE = hν − W and the threshold frequency',recoveryPurpose:'Representation change - the relations between kinetic energy, frequency, intensity and electron number are read from four graphs instead of being calculated'},question:'Which of the graphs shown below does not represent the relationship between incident light and the electron ejected from metal surface ?',options:['Graph (A)','Graph (B)','Graph (C)','Graph (D)'],correct:1,answer:'Graph (B)',
+short:[['The photoelectric equation gives KE = hν − W, so no electron is ejected below the threshold frequency and above it KE grows linearly with ν.','KE = hν − W'],['Compare each graph with this. (A) shows KE against light energy with a threshold, (C) shows KE independent of intensity, and (D) shows the number of electrons switching on at the threshold.','(A) correct: zero, then a rising line','(C) correct: KE does not depend on intensity','(D) correct: emission starts at the threshold frequency'],['Graph (B) starts at the origin, which would mean electrons leave at any frequency. That does not match the threshold.','Answer: (B)']],
+detailed:[
+ ['Einstein\'s equation for the photoelectric effect says a photon of energy hν ejects an electron only if hν is at least the work function W, and the electron leaves with the excess as kinetic energy.','KE = hν − W','No emission for ν < ν₀ = W/h'],
+ ['Graph (A) plots KE against the energy of the light. The line stays at zero until the energy reaches W and then rises with slope 1, which is what the equation gives.','(A) is a valid graph'],
+ ['Graph (C) plots KE against intensity. Intensity only changes how many photons arrive, so KE stays constant, as drawn.','(C) is a valid graph'],
+ ['Graph (D) plots the number of electrons against frequency. Nothing is emitted below the threshold frequency, and above it a constant number leaves for a fixed intensity.','(D) is a valid graph'],
+ ['Graph (B) plots KE against frequency as a straight line through the origin. That would mean electrons with kinetic energy appear at every frequency, but KE is zero up to the threshold ν₀ and only then rises. A correct line would cut the frequency axis at ν₀.','Line through the origin: wrong','Answer: (B)']
+]},
+{id:'ATOM-17-M',parent:'ATOM-17',variant:13,topic:'Probability density and radial wave functions',diagram:'hWaveRegions',source:'ExamSIDE · JEE Main 2019 (Online) 12th April Morning Slot · questions.examside.com (question id s2wpstiowt4zmozm)',sourceRef:true,relevance:{parent:'ATOM-17',sharedSkill:'Probability density is ψ², and nodes are where ψ = 0',recoveryPurpose:'Representation change - a plot of ψ(x) with a positive and a negative hump is turned into where the electron is likely to be found'},question:'The electrons are more likely to be found :',options:['only in the region a','in the region a and c','only in the region c','in the region a and b'],correct:1,answer:'in the region a and c',
+short:[['The probability of finding the electron is proportional to ψ², so look at where |ψ| is large, whatever its sign.','P ∝ ψ²'],['Region a has a large positive ψ, region c has a large negative ψ, and at b the wave function is zero.','a: ψ large and positive','c: ψ large and negative','b: ψ = 0'],['Squaring makes both humps positive and leaves none at b, so the electron is likely to be found in a and c.','Answer: (B) in the region a and c']],
+detailed:[
+ ['The wave function ψ(x) itself can be positive or negative, but only its square has a physical meaning: the probability density is ψ².','Probability density ∝ ψ²'],
+ ['Read the graph. Region a is a hump above the axis, so ψ is large and positive. Region c is a hump below the axis, so ψ is large and negative. At b the curve crosses the axis, so ψ = 0 there.','a: ψ > 0 and large','c: ψ < 0 and large','b: ψ = 0 (a node)'],
+ ['The sign of ψ does not matter once it is squared, so regions a and c both give a large ψ² and region b gives zero.','ψ² (a) > 0','ψ² (c) > 0','ψ² (b) = 0'],
+ ['So the electron is most likely found in regions a and c and never at b.','Answer: (B) in the region a and c']
+]},
+{id:'ATOM-31-G',parent:'ATOM-31',variant:7,topic:'Particle and wave nature of the electron',diagram:'hQuantumFigures',source:'ExamSIDE · JEE Main 2020 (Online) 2nd September Morning Slot · questions.examside.com (question id sstishbdunbzi89x)',sourceRef:true,relevance:{parent:'ATOM-31',sharedSkill:'Recognising experimental evidence for the quantum nature of matter and radiation',recoveryPurpose:'Controlled transfer - four figures are judged and the one explainable classically is picked'},question:'The figure that is not a direct manifestation of the quantum nature of atoms is :',options:['Figure (A)','Figure (B)','Figure (C)','Figure (D)'],correct:0,answer:'Figure (A)',
+short:[['Quantum effects show up as discrete energy levels, threshold behaviour or energy quantisation.','(B) absorption lines: discrete energy levels','(C) photoelectric effect: threshold frequency','(D) black-body radiation: quantised energy'],['Figure (A) shows the internal energy of argon rising linearly with temperature, which is the classical result for a gas and needs no quantisation.','Answer: (A)']],
+detailed:[
+ ['A direct manifestation of quantum nature is an observation that classical physics cannot explain: discrete spectra, a threshold in the photoelectric effect and the shape of black-body radiation.','Quantum evidence: line spectra, photoelectric threshold, black-body curves'],
+ ['Figure (B) is an absorption spectrum with sharp dark lines. Atoms absorb only at wavelengths matching the gaps between their energy levels, so it shows quantised energy levels.','(B) is quantum'],
+ ['Figure (C) shows the kinetic energy of photoelectrons against frequency for three metals. Each line starts at its own threshold frequency, which is the photoelectric effect and shows quantised photons.','(C) is quantum'],
+ ['Figure (D) shows black-body intensity against wavelength for two temperatures. The peaked shape could only be explained by Planck\'s quantisation of energy.','(D) is quantum'],
+ ['Figure (A) shows the internal energy of argon rising in a straight line with temperature. For a monatomic gas this follows from classical kinetic theory (3/2 RT per mole), so it is not a direct manifestation of quantum nature.','Answer: (A)']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -5792,7 +5818,7 @@ const arrowUp=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} $
 const orbBox=(cx,cy,arrows,warn=false)=>`<rect x="${cx-22}" y="${cy-22}" width="44" height="44" rx="4" fill="#20221f" stroke="${warn?R:'#565650'}" stroke-width="${warn?3:2}" ${warn?'stroke-dasharray="5,3"':''}/>`+t(cx,cy+6,arrows,warn?R:W,18,'middle',700);
 function wrap(inner,h=280,label='Solution concept diagram',w=520){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`}
 /* Diagrams that are part of the question stem (the options refer to them) render in the question view only. */
-const STEM={hEnergyLevels:()=>energyLevelDiagram(),hAufbauBoxes:()=>aufbauBoxes(),hRadialCurves:()=>radialCurves(),hR2Curves:()=>r2Curves(),hSpinStages:()=>spinStages(),hR2Curves2:()=>r2Curves2(),hPsiCurves:()=>psiCurves(),hPsi2Curve:()=>psi2Curve(),hMnBoxes:()=>mnBoxes(),hNeBoxes:()=>boxRows([['1s',['↑↓']],['2s',['↑↓']],['2p',['↑↓','↑↓','↑↓']]],'Electron-box diagram: 1s, 2s and 2p boxes all filled with paired electrons'),hMixedBoxes:()=>boxRows([['3d',['↑','↑','↑','↑','↑']],['4s',['↑']],['4p',['↑↑','↑','↑']]],'Electron-box diagram: 3d with five single up electrons, 4s with one up electron, 4p with two up electrons in the first box and one up electron in each of the other two'),hSpdBoxes:()=>boxRows([['s',['↑↑']],['p',['↑↓','↑','↓']],['d',['','','','','']]],'Electron-box diagram: s box with two up electrons, p boxes with a pair then one up and one down, and five empty d boxes'),hRemovalLevels:()=>removalLevels(),hAbsorbLevels:()=>absorbLevels(),hRdfCurves:()=>rdfCurves(),hPsi2Curve1s:()=>psi2Curve1s(),hVisibleStrip:()=>visibleStrip(),hWaveQuarter:()=>waveQuarter(),hVisibleWavelengthBar:()=>visibleWavelengthBar(),hMoseleyVnZ:()=>moseleyVnZ(),hMoseleyGraphs:()=>moseleyGraphs(),hAccelPlates:()=>accelPlates(),hLambdaPGraphs:()=>lambdaPGraphs(),hPxBoundary:()=>pxBoundary(),hEnergyZCurves:()=>energyZCurves(),hPsi2Curves2s:()=>psi2Curves2s(),h2sNodalPsi:()=>nodal2s()};
+const STEM={hEnergyLevels:()=>energyLevelDiagram(),hAufbauBoxes:()=>aufbauBoxes(),hRadialCurves:()=>radialCurves(),hR2Curves:()=>r2Curves(),hSpinStages:()=>spinStages(),hR2Curves2:()=>r2Curves2(),hPsiCurves:()=>psiCurves(),hPsi2Curve:()=>psi2Curve(),hMnBoxes:()=>mnBoxes(),hNeBoxes:()=>boxRows([['1s',['↑↓']],['2s',['↑↓']],['2p',['↑↓','↑↓','↑↓']]],'Electron-box diagram: 1s, 2s and 2p boxes all filled with paired electrons'),hMixedBoxes:()=>boxRows([['3d',['↑','↑','↑','↑','↑']],['4s',['↑']],['4p',['↑↑','↑','↑']]],'Electron-box diagram: 3d with five single up electrons, 4s with one up electron, 4p with two up electrons in the first box and one up electron in each of the other two'),hSpdBoxes:()=>boxRows([['s',['↑↑']],['p',['↑↓','↑','↓']],['d',['','','','','']]],'Electron-box diagram: s box with two up electrons, p boxes with a pair then one up and one down, and five empty d boxes'),hRemovalLevels:()=>removalLevels(),hAbsorbLevels:()=>absorbLevels(),hRdfCurves:()=>rdfCurves(),hPsi2Curve1s:()=>psi2Curve1s(),hVisibleStrip:()=>visibleStrip(),hWaveQuarter:()=>waveQuarter(),hVisibleWavelengthBar:()=>visibleWavelengthBar(),hMoseleyVnZ:()=>moseleyVnZ(),hMoseleyGraphs:()=>moseleyGraphs(),hAccelPlates:()=>accelPlates(),hLambdaPGraphs:()=>lambdaPGraphs(),hPxBoundary:()=>pxBoundary(),hEnergyZCurves:()=>energyZCurves(),hPsi2Curves2s:()=>psi2Curves2s(),h2sNodalPsi:()=>nodal2s(),hPhotoGraphs:()=>photoGraphs(),hWaveRegions:()=>waveRegions(),hQuantumFigures:()=>quantumFigures()};
 function diagram(q,solution=false){
  if(q.diagram==='hOrbitalHund'||q.diagram==='hOrbitalPauli')return orbitalDiagram(q.diagram);
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
@@ -6052,6 +6078,30 @@ function nodal2s(){
   `<circle cx="178" cy="336" r="4" fill="${R}"/>`+t(178,358,'C',R,15,'middle',700)+
   `<circle cx="300" cy="306" r="4" fill="${R}"/>`+t(292,340,'D',R,15,'end',700),
  400,'Figure 1: the electron probability density of a 2s orbital as a disc with a thin spherical nodal ring inside. Figure 2: the wave function of 2s plotted against x, starting high at A, crossing the axis at B, reaching a minimum at C and rising to D just below the axis',340);
+}
+
+/* ExamSIDE (JEE Main 2019, 10th January morning): four graphs (A) to (D) of photoelectric relations; (B), a line through the origin, is the wrong one. */
+function photoGraphs(){
+ return wrap(miniGraph(10,8,'(A)','KE','energy','M56 84H90L138 40')+miniGraph(180,8,'(B)','KE','ν','M226 84L312 34')+
+  miniGraph(10,132,'(C)','KE','intensity','M56 176H136')+miniGraph(180,132,'(D)','number','ν','M226 210H262V176H312'),
+ 254,'Four graphs: (A) kinetic energy against light energy, zero then rising; (B) kinetic energy against frequency as a line from the origin; (C) kinetic energy against intensity, horizontal; (D) number of electrons against frequency, zero then a constant step',340);
+}
+/* ExamSIDE (JEE Main 2019, 12th April morning): psi(x) with a positive hump a, a node b at the origin and a negative hump c. */
+function waveRegions(){
+ return wrap(line('M30 100H310',M,1.6)+line('M170 20V180',M,1.6)+t(178,32,'ψ(x)',W,14,'start',600)+t(316,106,'x',W,14,'start',600)+
+  curve('M34 96C60 90 84 58 110 52C132 48 150 70 170 100C186 130 200 152 226 150C252 148 274 124 300 104')+
+  t(110,42,'a',R,16,'middle',700)+t(146,120,'b',R,16,'end',700)+t(230,172,'c',R,16,'middle',700),
+ 200,'Graph of psi against x: a positive hump labelled a on the left, a node b at the origin and a negative hump c on the right',340);
+}
+/* ExamSIDE (JEE Main 2020, 2nd September morning): four figures; (A) argon internal energy against temperature is classical. */
+function quantumFigures(){
+ const lab=(x,y,l)=>t(x,y,l,R,15,'start',700);
+ return wrap(
+  lab(10,20,'(A)')+line('M40 118V44M40 118H150',M,1.5)+line('M62 100L140 56',G,2.2)+t(96,140,'Temperature',W,13,'middle',500)+t(48,42,'Internal energy',W,13,'start',500)+
+  lab(180,20,'(B)')+`<rect x="184" y="34" width="140" height="60" fill="#20221f" stroke="${M}" stroke-width="1.5"/>`+[204,212,218,246,262,290,306].map(x=>line(`M${x} 34V94`,W,1.3)).join('')+t(254,116,'Absorption spectrum',W,13,'middle',500)+
+  lab(10,168,'(C)')+line('M40 250V190M40 250H150',M,1.5)+line('M54 250L80 204M72 250L98 204M90 250L116 204',G,2.2)+t(96,272,'Frequency',W,13,'middle',500)+
+  lab(180,168,'(D)')+line('M212 250V190M212 250H324',M,1.5)+`<path d="M216 248C230 214 244 196 256 198C280 202 296 228 320 240M222 248C236 230 248 222 260 226C280 232 300 242 320 246" fill="none" stroke="${G}" stroke-width="2.2"/>`+t(268,272,'Wavelength',W,13,'middle',500),
+ 286,'Four figures: (A) internal energy of argon rising linearly with temperature, (B) an absorption spectrum with dark lines, (C) photoelectron kinetic energy against frequency for three metals, (D) black-body intensity against wavelength at two temperatures',340);
 }
 </script>
 <script>/* JEE syllabus order for Atomic Structure, taken directly from the official
