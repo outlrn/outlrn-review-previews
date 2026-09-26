@@ -4618,7 +4618,7 @@ detailed:[
  ['Check with x = 0.75: the arguments are 1.5 and 0.5, the base is cos²(0.75) ≈ 0.535, and the logarithms are about −0.65 and 1.11, so −0.65 < 1.11 as required. With x = 1.25 the order is reversed, so it fails.','x = 0.75: −0.65 < 1.11','x = 1.25: 1.5 > 0.5 for the arguments'],
  ['The trap is to treat the base as greater than 1, which gives x > 1 and leads to the wrong options (C) and (D). Option (B) ignores the domain of the logarithms.','Answer: (A) (1/2, 1)']
 ]},
-{id:'TRIG-318',topic:'Counting solutions of tan x = mx by graphs',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.150 · p.16',sourceRef:true,question:'Number of solution of equation tan x = mx where m > 1 and x ∈ [−3π/2, 3π/2] is',options:['1','3','5','7'],correct:2,answer:'5',
+{id:'TRIG-318',topic:'Counting solutions of tan x = mx by graphs',diagram:'sE150TanLine',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.150 · p.16',sourceRef:true,question:'Number of solution of equation tan x = mx where m > 1 and x ∈ [−3π/2, 3π/2] is',options:['1','3','5','7'],correct:2,answer:'5',
 short:[['Both sides are odd functions, so the roots come in pairs ±x, and x = 0 is a root.','x = 0 is a root'],['For x > 0 consider f(x) = tan x − mx: one root in (0, π/2) because the slope of tan x at 0 is 1 < m, none in (π/2, π], and one in (π, 3π/2).','2 positive roots'],['Adding the two negative roots and x = 0 gives five solutions.','2 + 2 + 1 = 5','Answer: (C) 5']],
 detailed:[
  ['Let f(x) = tan x − mx. It is an odd function, so roots other than 0 occur in pairs ±x, and f(0) = 0 shows that x = 0 is a root.','f(−x) = −f(x)'],
@@ -4851,7 +4851,7 @@ detailed:[
  ['Add: x + y = 2008 + π/2 ≈ 2008 + 1.5708 = 2009.5708, and the greatest integer not exceeding it is 2009.','[2009.57] = 2009'],
  ['Option (A) is [x] and forgets y. Option (D) rounds up. Option (C) is not near the value.','Answer: (B) 2009']
 ]},
-{id:'TRIG-336',topic:'Counting solutions of ln|sin x| = −x² + 2x by monotonic pieces',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.172 · p.19',sourceRef:true,question:'The total number of solutions of ℓn|sin x| = −x² + 2x in [−π/2, 3π/2] is equal to -',options:['1','2','4','None of these'],correct:2,answer:'4',
+{id:'TRIG-336',topic:'Counting solutions of ln|sin x| = −x² + 2x by monotonic pieces',diagram:'sE172LnSineParabola',source:'Institute worksheet · Trigonometrical Equations.pdf · Q.172 · p.19',sourceRef:true,question:'The total number of solutions of ℓn|sin x| = −x² + 2x in [−π/2, 3π/2] is equal to -',options:['1','2','4','None of these'],correct:2,answer:'4',
 short:[['Let g(x) = ln|sin x| + x² − 2x, with x ≠ 0 and x ≠ π. On (0, 2) the right side x(2 − x) is positive but ln|sin x| ≤ 0, and at x = 2 the right side is 0 but ln sin 2 < 0, so g has no zero in (0, 2].','g(x) < 0 on (0, 2]'],['On [−π/2, 0) and on (π, 3π/2] the function g is strictly monotonic and changes sign once, so one root in each. On (2, π) it rises and falls with a positive maximum, so two roots.','g′(x) = cot x + 2x − 2','g(3π/4) ≈ 0.49 > 0'],['Total number of roots: 1 + 0 + 2 + 1 = 4, at x ≈ −0.397, 2.061, 3.110, 3.166.','Answer: (C) 4']],
 detailed:[
  ['Move everything to one side and define g. The equation needs sin x ≠ 0, so x = 0 and x = π are excluded. Roots of the equation are zeros of g.','g(x) = ln|sin x| + x² − 2x','g′(x) = cot x + 2x − 2'],
@@ -7633,7 +7633,7 @@ const DIAGRAMS_eA={
  const g=v=>f(v)-v,bis=(a,b)=>{for(let k=0;k<60;k++){const m=(a+b)/2;if(g(a)*g(m)<=0)b=m;else a=m}return (a+b)/2};
  roots[1]=bis(0.2,1);roots[3]=bis(8.5,9.3);
  for(const r of roots)s+=`<circle cx="${X(r)}" cy="${Y(r)}" r="4.5" fill="${R}"/>`;
- s+=t(x0-8,Number(Y(3*P))+5,'3π',W,14,'end');
+ s+=t(x0-13,Number(Y(3*P))+5,'3π',W,14,'end');
  s+=line(`M${x0-4} ${Y(3*P)}H${x0+4}`,M,1.5);
  s+=t(x0-8,22,'y',M,14,'end');s+=t(x0+3*P*u+22,base+5,'x',M,14,'start');
  [[1,'π'],[1.5,'3π/2'],[2,'2π'],[3,'3π']].forEach(([k,l])=>{s+=line(`M${X(k*P)} ${base}V${base+5}`,M,1.5)+t(X(k*P),base+22,l,W,14)});
@@ -7641,6 +7641,118 @@ const DIAGRAMS_eA={
  s+=t(Number(X(3*P))+12,Number(Y(3*P))+5,'y = x',B,14,'start',600);
  s+=t(x0+34,22,'y = 3π sin²(x/2)',G,14,'start',600);
  return wrap(s,290,'Graph for x from 0 to 3π of the green curve y equals 3π times sine squared of x over 2, a wave between 0 and 3π with peaks at π and 3π, and the blue straight line y equals x. The line and the curve meet at five red points: at x equal to 0, at a small value of x below 1, at 3π over 2, at a value of x just below 3π, and at 3π.')}
+};
+
+/* diagrams-eB.js */
+const DIAGRAMS_eB={
+'sE150TanLine':()=>{
+ const PI=Math.PI,m=1.15,cy=142,sy=19,x0=26,sx=28,cx=170,ymax=5.6;
+ const X=v=>cx+v*sx,Y=v=>cy-v*sy,f=v=>v.toFixed(1);
+ const root=(a,b)=>{const g=x=>Math.tan(x)-m*x;let lo=a,hi=b;for(let i=0;i<60;i++){const md=(lo+hi)/2;if(g(lo)*g(md)<=0)hi=md;else lo=md}return (lo+hi)/2};
+ const r1=root(0.3,PI/2-0.01),r2=root(PI+0.01,1.5*PI-0.01);
+ let s='';
+ // asymptotes
+ for(const k of [-1.5,-0.5,0.5,1.5]){s+=`<path d="M${f(X(k*PI))} ${Y(ymax)}V${Y(-ymax)}" stroke="${M}" stroke-width="1.5" stroke-dasharray="5,4" fill="none"/>`}
+ // axes
+ s+=line(`M${X(-1.5*PI-0.32)} ${cy}H${X(1.5*PI+0.5)}`,M,1.5)+`<path d="M${X(1.5*PI+0.5)-8} ${cy-5}L${X(1.5*PI+0.5)} ${cy}L${X(1.5*PI+0.5)-8} ${cy+5}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ s+=line(`M${cx} ${Y(-ymax)}V${Y(ymax)-6}`,M,1.5)+`<path d="M${cx-5} ${Y(ymax)+2}L${cx} ${Y(ymax)-6}L${cx+5} ${Y(ymax)+2}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ // tan branches clipped
+ for(const k of [-1,0,1]){let d='',pen=false;const a=k*PI-PI/2,b=k*PI+PI/2;
+  for(let i=1;i<400;i++){const x=a+(b-a)*i/400,y=Math.tan(x);
+   if(Math.abs(y)>ymax){pen=false;continue}
+   d+=(pen?'L':'M')+f(X(x))+' '+f(Y(y));pen=true}
+  s+=curve(d)}
+ // line y=mx
+ const xe=ymax/m;s+=line(`M${X(-xe)} ${Y(-ymax)}L${X(xe)} ${Y(ymax)}`,'#5ab0ff',2);
+ // dots
+ for(const x of [-r2,-r1,r1,r2]){s+=`<circle cx="${f(X(x))}" cy="${f(Y(m*x))}" r="4.5" fill="${R}"/>`}
+ s+=`<circle cx="${cx}" cy="${cy}" r="4.5" fill="${R}"/>`;
+ // labels
+ s+=t(cx+10,Y(ymax)+10,'y',M,14,'start');
+ s+=t(X(1.5*PI+0.5)-2,cy-15,'x',M,14,'end');
+ s+=t(cx+12,cy+19,'O',W,14,'start');
+ s+=t(X(2.6),Y(1.0),'y = mx','#5ab0ff',15,'middle',600);
+ const yl=Y(-ymax)+18;
+ s+=t(X(-1.5*PI),yl,'−3π/2',W,14);s+=t(X(-0.5*PI),yl,'−π/2',W,14);s+=t(X(0.5*PI),yl,'π/2',W,14);s+=t(X(1.5*PI),yl,'3π/2',W,14);
+ return wrap(s,Y(-ymax)+30,'Graph of y = tan x with its vertical asymptotes at odd multiples of pi over 2 between minus 3 pi over 2 and 3 pi over 2, and the line y = mx through the origin with slope greater than 1. The line meets the curve at five points: the origin, one point on each side of it in the central branch, and one point in each of the two outer branches.')
+},
+'sE172LnSineParabola':()=>{
+ const PI=Math.PI,f=v=>v.toFixed(1),sx=46,top=30,sy=17,ymaxV=1.6,yminV=-6;
+ const xs=v=>24+(v+PI/2)*sx,Y=v=>top+(ymaxV-v)*sy,ax=Y(0),bot=Y(yminV);
+ let s='';
+ // guides and axes
+ for(const v of [-PI/2,PI/2,PI,1.5*PI])s+=`<path d="M${f(xs(v))} ${ax}V${bot}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4" fill="none"/>`;
+ const xe=xs(1.5*PI)+14;
+ s+=line(`M${xs(-PI/2)-6} ${ax}H${xe}`,M,1.5)+`<path d="M${xe-8} ${ax-5}L${xe} ${ax}L${xe-8} ${ax+5}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ s+=line(`M${xs(0)} ${bot}V${Y(ymaxV)-4}`,M,1.5);
+ for(const [a,b] of [[-PI/2,0],[0,PI],[PI,1.5*PI]]){let d='',pen=false;for(let i=0;i<=800;i++){const x=a+(b-a)*i/800,y=Math.log(Math.abs(Math.sin(x)));if(!isFinite(y)||y<yminV){pen=false;continue}d+=(pen?'L':'M')+f(xs(x))+' '+f(Y(y));pen=true}s+=curve(d)}
+ {let d='',pen=false;for(let i=0;i<=400;i++){const x=-PI/2+(2*PI)*i/400,y=2*x-x*x;if(y<yminV){pen=false;continue}d+=(pen?'L':'M')+f(xs(x))+' '+f(Y(y));pen=true}s+=line(d,'#5ab0ff',2)}
+ const g=x=>Math.log(Math.abs(Math.sin(x)))-(2*x-x*x);
+ const bis=(a,b)=>{let lo=a,hi=b;for(let i=0;i<60;i++){const md=(lo+hi)/2;if(g(lo)*g(md)<=0)hi=md;else lo=md}return (lo+hi)/2};
+ const rs=[bis(-0.6,-0.2),bis(2.0,2.2),bis(3.05,3.13),bis(3.15,3.3)];
+ for(const r of rs)s+=`<circle cx="${f(xs(r))}" cy="${f(Y(2*r-r*r))}" r="4" fill="${R}"/>`;
+ s+=t(xs(0)-8,Y(ymaxV)+8,'y',M,14,'end');
+ s+=t(xe-4,ax+24,'x',M,14,'end');
+ for(const [v,l] of [[-PI/2,'\u2212\u03c0/2'],[PI/2,'\u03c0/2'],[PI,'\u03c0'],[1.5*PI,'3\u03c0/2']])s+=t(v==-PI/2?xs(v)+6:v==1.5*PI?xs(v)-6:xs(v),bot+18,l,W,14);
+ s+=t(xs(rs[0])-24,Y(2*rs[0]-rs[0]**2)+20,'x\u2081',R,15,'end',700);
+ s+=t(xs(rs[1])+4,Y(0)+36,'x\u2082',R,15,'middle',700);
+ s+=t(xs(3.0),Y(-4.8),'x\u2083, x\u2084',R,15,'end',700);
+ // inset zoom near pi
+ const iy=bot+62,ih=96,ix=52,iw=236,a=3.06,b=3.22,lo=-5.2,hi=-2.4;
+ const IX=v=>ix+(v-a)/(b-a)*iw,IY=v=>iy+ih-(v-lo)/(hi-lo)*ih;
+ s+=`<rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" fill="none" stroke="${M}" stroke-width="1.2"/>`;
+ {let d='',pen=false;for(let i=0;i<=800;i++){const x=a+(b-a)*i/800,y=Math.log(Math.abs(Math.sin(x)));if(!isFinite(y)||y<lo){pen=false;continue}d+=(pen?'L':'M')+f(IX(x))+' '+f(IY(y));pen=true}s+=curve(d)}
+ s+=line(`M${IX(a)} ${IY(2*a-a*a)}L${IX(b)} ${IY(2*b-b*b)}`,'#5ab0ff',2);
+ s+=`<path d="M${IX(PI)} ${iy}V${iy+ih}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4" fill="none"/>`;
+ for(const r of rs.slice(2))s+=`<circle cx="${f(IX(r))}" cy="${f(IY(2*r-r*r))}" r="4" fill="${R}"/>`;
+ s+=t(IX(rs[2])-6,IY(2*rs[2]-rs[2]**2)+22,'x\u2083',R,15,'end',700);
+ s+=t(IX(rs[3])+8,IY(2*rs[3]-rs[3]**2)+22,'x\u2084',R,15,'start',700);
+ s+=t(IX(PI),iy+ih+18,'\u03c0',W,14);
+ s+=t(ix-6,iy+16,'zoom',M,13,'end');
+ return wrap(s,iy+ih+28,'Graph of y = ln|sin x| in green and the parabola y = 2x minus x squared in blue on the interval from minus pi over 2 to 3 pi over 2. The curve ln|sin x| is zero at pi over 2 and falls to minus infinity at 0 and at pi. The two graphs cross four times: at x one between minus pi over 2 and 0, at x two just after 2, and at x three and x four very close to pi on either side of it. A magnified panel shows the last two crossings on either side of pi.')
+},
+'sE261CircleFourPoints':()=>{
+ const PI=Math.PI,cx=170,cy=152,u=50,f=v=>v.toFixed(1);
+ let s='';
+ s+=line(`M${cx-u*2-14} ${cy}H${cx+u*2+14}`,M,1.5)+line(`M${cx} ${cy+u*2+26}V${cy-u*2-22}`,M,1.5);
+ s+=`<circle cx="${cx}" cy="${cy}" r="${2*u}" fill="none" stroke="${G}" stroke-width="2.2"/>`;
+ const px=PI/4*u,py=PI/2*u;
+ s+=`<path d="M${cx-px} ${cy-py}L${cx-px-42} ${cy-py-46}M${cx+px} ${cy-py}L${cx+px+42} ${cy-py-46}M${cx-px} ${cy+py}L${cx-px-42} ${cy+py+46}M${cx+px} ${cy+py}L${cx+px+42} ${cy+py+46}" stroke="${M}" stroke-width="1" fill="none"/>`;
+ for(const sx of [-1,1])for(const sy of [-1,1])s+=`<circle cx="${cx+sx*px}" cy="${cy+sy*py}" r="4.5" fill="${R}"/>`;
+ s+=t(cx+u*2+14,cy-8,'x',M,14,'end');
+ s+=t(cx+10,cy-u*2-14,'y',M,14,'start');
+ s+=t(cx+u*2+10,cy+20,'2',W,14);s+=t(cx-u*2-17,cy+20,'\u22122',W,14);
+ s+=t(cx-8,cy-u*2-5,'2',W,14,'end');s+=t(cx-8,cy+u*2+24,'\u22122',W,14,'end');
+ s+=t(cx+px+44,cy-py-52,'(\u03c0/4, \u03c0/2)',R,15,'start',600);
+ s+=t(cx-px-44,cy-py-52,'(\u2212\u03c0/4, \u03c0/2)',R,15,'end',600);
+ s+=t(cx+px+44,cy+py+66,'(\u03c0/4, \u2212\u03c0/2)',R,15,'start',600);
+ s+=t(cx-px-44,cy+py+66,'(\u2212\u03c0/4, \u2212\u03c0/2)',R,15,'end',600);
+ s+=t(cx,cy+u*2+50,'x\u00b2 + y\u00b2 = 4',W,15,'middle',600);
+ return wrap(s,cy+u*2+64,'The circle x squared plus y squared equals 4 with radius 2 centred at the origin, and four marked points inside it: (pi over 4, pi over 2), (minus pi over 4, pi over 2), (pi over 4, minus pi over 2) and (minus pi over 4, minus pi over 2). These are the only points of the circle and its interior where both sides of the equation can equal 3.')
+},
+'sE262CosineLine':()=>{
+ const PI=Math.PI,x0=40,sx=29,cy=190,sy=72,f=v=>v.toFixed(1);
+ const X=v=>x0+v*sx,Y=v=>cy-v*sy;
+ let s='';
+ s+=`<path d="M${X(0)} ${Y(2)}H${X(3*PI)}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4" fill="none"/>`;
+ s+=`<path d="M${X(PI)} ${Y(0)}V${Y(2)}M${X(2*PI)} ${Y(0)}V${Y(2)}M${X(3*PI)} ${Y(0)}V${Y(2)}" stroke="${M}" stroke-width="1" stroke-dasharray="4,4" fill="none"/>`;
+ s+=line(`M${X(0)} ${cy}H${X(3*PI)+22}`,M,1.5)+`<path d="M${X(3*PI)+14} ${cy-5}L${X(3*PI)+22} ${cy}L${X(3*PI)+14} ${cy+5}" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ s+=line(`M${X(0)} ${Y(-0.35)}V${Y(2.45)}`,M,1.5);
+ let d='';for(let i=0;i<=500;i++){const x=(3*PI)*i/500;d+=(i?'L':'M')+f(X(x))+' '+f(Y(1-Math.cos(x)))}s+=curve(d);
+ s+=line(`M${X(0)} ${Y(0)}L${X(3*PI)+4} ${Y((3*PI+4/sx)*2/(3*PI))}`,'#5ab0ff',2);
+ const g=x=>1-Math.cos(x)-2*x/(3*PI);
+ const bis=(a,b)=>{let lo=a,hi=b;for(let i=0;i<60;i++){const md=(lo+hi)/2;if(g(lo)*g(md)<=0)hi=md;else lo=md}return (lo+hi)/2};
+ const rs=[0,bis(0.2,1),1.5*PI,bis(8.5,9.2),3*PI];
+ for(const r of rs)s+=`<circle cx="${f(X(r))}" cy="${f(Y(2*r/(3*PI)))}" r="4.5" fill="${R}"/>`;
+ s+=t(X(0)-8,Y(2.45)+8,'y',M,14,'end');
+ s+=t(X(3*PI)+22,cy+22,'x',M,14,'end');
+ s+=t(X(0)-8,Y(2)+5,'2',W,14,'end');
+ s+=t(X(0)-6,cy+18,'O',W,14,'end');
+ for(const [v,l] of [[PI,'π'],[1.5*PI,'3π/2'],[2*PI,'2π'],[3*PI,'3π']])s+=t(X(v),cy+22,l,W,14);
+ s+=t(X(2.4),Y(2.3),'y = 1 − cos x',G,15,'middle',600);
+ s+=t(X(3*PI)+22,Y(2.3),'y = 2x/(3π)','#5ab0ff',15,'end',600);
+ return wrap(s,cy+34,'Graph of y = 1 minus cos x, which oscillates between 0 and 2, together with the straight line y = 2x over 3 pi through the origin, which reaches the height 2 at x = 3 pi. The graphs meet at five points: x = 0, one point a little above 0.4, x = 3 pi over 2, one point just before 3 pi, and x = 3 pi.')
+}
 };
 
 /* diagrams-eC.js */
@@ -7762,7 +7874,7 @@ const DIAGRAMS_eD={
  return wrap(s,285,'Graph of tan x and the line y equals x for x from 0 to about 5.4, with vertical asymptotes at pi over 2 and 3 pi over 2; the curve and the line meet at a marked point between pi and 3 pi over 2')},
 };
 
-const SOL=Object.assign({},DIAGRAMS_rA,DIAGRAMS_rB,DIAGRAMS_eA,DIAGRAMS_eC,DIAGRAMS_eD);
+const SOL=Object.assign({},DIAGRAMS_rA,DIAGRAMS_rB,DIAGRAMS_eA,DIAGRAMS_eB,DIAGRAMS_eC,DIAGRAMS_eD);
 /* GENERATED SOLUTION DIAGRAMS END */
 /* Diagrams that are part of the question stem (the options refer to them) render in the question view only. */
 const STEM={};
