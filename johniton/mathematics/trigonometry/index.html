@@ -5202,6 +5202,199 @@ detailed:[
  ['In the interval [0, 2π] the equation sin t = 1 has the single solution π/2 (the next one, 5π/2, is outside the range).','x = π/2','y = π/2'],
  ['Add the two values.','x + y = π/2 + π/2','= π'],
  ['Check: sin(π/2) + sin(π/2) = 2. Option (B) would need x + y = π/2, for example x = y = π/4, which gives √2, not 2. Option (C), 3π, would need x = y = 3π/2 where the sines are −1. The trap is to solve sin x + sin y = 2 by sum to product without using the bound.','Answer: (A) π']
+]},
+{id:'TRIG-368',topic:'Equation satisfied by sin 36° from sin 3θ = sin 2θ with 5θ = 180°',source:'ExamSIDE · JEE Main 2022 (Online) 27th June Evening Shift · questions.examside.com (question id cipbr7sapytcyjeu)',sourceRef:true,question:'β = sin 36° is a root of which of the following equation?',options:['16x⁴ − 10x² − 5 = 0','16x⁴ + 20x² − 5 = 0','16x⁴ − 20x² + 5 = 0','4x⁴ − 10x² + 5 = 0'],correct:2,answer:'16x⁴ − 20x² + 5 = 0',
+short:[['Since 3 × 36° + 2 × 36° = 180°, sin 3θ = sin 2θ at θ = 36°. Expand and cancel sin θ, which is not zero.','3 sin θ − 4 sin³θ = 2 sin θ cos θ','3 − 4 sin²θ = 2 cos θ'],['Square to remove cos θ, with β = sin 36° and cos²θ = 1 − β².','(3 − 4β²)² = 4(1 − β²)','9 − 24β² + 16β⁴ = 4 − 4β²','16β⁴ − 20β² + 5 = 0','Answer: (C) 16x⁴ − 20x² + 5 = 0']],
+detailed:[
+ ['The angles 3 × 36° = 108° and 2 × 36° = 72° add up to 180°, so their sines are equal. This is the standard route to the exact value of sin 36°.','sin 108° = sin(180° − 72°)','= sin 72°'],
+ ['Put θ = 36° and use sin 3θ = 3 sin θ − 4 sin³θ and sin 2θ = 2 sin θ cos θ.','3 sin θ − 4 sin³θ = 2 sin θ cos θ'],
+ ['Divide by sin θ, which is not zero, to get a relation that contains cos θ once.','3 − 4 sin²θ = 2 cos θ'],
+ ['Square both sides so that only sin²θ remains, using cos²θ = 1 − sin²θ and β = sin θ.','(3 − 4β²)² = 4 cos²θ','= 4(1 − β²)'],
+ ['Expand and collect the terms.','9 − 24β² + 16β⁴ = 4 − 4β²','16β⁴ − 20β² + 5 = 0'],
+ ['Numerical check: β = sin 36° = 0.5878, so β² = 0.3455 and β⁴ = 0.1194. Option (C) gives zero.','16 × 0.1194 − 20 × 0.3455 + 5 = 1.910 − 6.910 + 5','= 0'],
+ ['The other options fail at the same value. Option (A) gives about −6.55, option (B) about 3.82 and option (D) about 2.02. Squaring can add roots but never removes β, so the quartic must contain sin 36°.','Answer: (C) 16x⁴ − 20x² + 5 = 0']
+]},
+{id:'TRIG-369',topic:'Range of an expression reduced to a quadratic in one ratio',source:'ExamSIDE · AIEEE 2011 · questions.examside.com (question id ckkzx75qlg5auvav)',sourceRef:true,question:'If A = sin²x + cos⁴x, then for all real x:',options:['13/16 ≤ A ≤ 1','1 ≤ A ≤ 2','3/4 ≤ A ≤ 13/16','3/4 ≤ A ≤ 1'],correct:3,answer:'3/4 ≤ A ≤ 1',
+short:[['Replace sin²x by 1 − cos²x and put t = cos²x, which takes every value in [0, 1].','A = 1 − t + t²'],['Complete the square to find the least value, then compare with the end values.','A = (t − 1/2)² + 3/4','A_min = 3/4','A(0) = 1','A(1) = 1','Answer: (D) 3/4 ≤ A ≤ 1']],
+detailed:[
+ ['Make A a quadratic in one ratio: use sin²x = 1 − cos²x and put t = cos²x.','A = 1 − cos²x + cos⁴x','= 1 − t + t²'],
+ ['As x runs over the reals, cos²x takes every value from 0 to 1, so t ∈ [0, 1].','0 ≤ t ≤ 1'],
+ ['Complete the square. The parabola opens upwards, so the minimum is at the vertex t = 1/2, which lies inside [0, 1].','A = (t − 1/2)² + 3/4','A_min = 3/4'],
+ ['The maximum of an upward parabola on an interval is at an end. Both ends give the same value.','A(0) = 1','A(1) = 1'],
+ ['Check with x = π/4: sin²x = 1/2 and cos⁴x = 1/4, so A = 3/4. With x = 0, A = 1.','1/2 + 1/4 = 3/4'],
+ ['Option (A) takes 13/16 as the least value, but 13/16 is only the value at t = 1/4 (or 3/4), not the minimum. Option (C) has an upper bound below A(0) = 1. Option (B) has a least value above the attained 3/4. The trap is to stop at the value of A for a convenient t.','Answer: (D) 3/4 ≤ A ≤ 1']
+]},
+{id:'TRIG-369-A',parent:'TRIG-369',variant:1,topic:'Range of an expression reduced to a quadratic in one ratio',source:'ExamSIDE · JEE Main 2016 (Online) 9th April Morning Slot · questions.examside.com (question id dbifizz9byixhixw)',sourceRef:true,relevance:{parent:'TRIG-369',sharedSkill:'Reduce a trigonometric expression to a quadratic in one ratio (here cos 2x) and read its range over [−1, 1].',recoveryPurpose:'Same quadratic-in-one-ratio method as the core, but the vertex now lies inside the interval and gives the maximum, so the two ends of the interval must be compared with the vertex.'},question:'If m and M are the minimum and the maximum values of 4 + (1/2) sin²2x − 2cos⁴x, x ∈ R, then M − m is equal to :',options:['15/4','9/4','7/4','1/4'],correct:1,answer:'9/4',
+short:[['Use sin²2x = 4 sin²x cos²x and cos²x = (1 + cos 2x)/2 to write everything in c = cos 2x.','(1/2) sin²2x − 2cos⁴x = 2cos²x (sin²x − cos²x)','= −2cos²x cos 2x','= −(1 + c)c'],['The expression is a quadratic in c ∈ [−1, 1]. Its vertex is at c = −1/2.','f(c) = 4 − c − c²','= 17/4 − (c + 1/2)²'],['Compare the vertex and the ends.','M = 17/4','m = 2','M − m = 9/4','Answer: (B) 9/4']],
+detailed:[
+ ['Rewrite the sine term with the double-angle formula so that only cos²x and sin²x remain.','(1/2) sin²2x = (1/2)(4 sin²x cos²x)','= 2 sin²x cos²x'],
+ ['Factor cos²x from the two terms.','2 sin²x cos²x − 2cos⁴x = 2cos²x (sin²x − cos²x)','= −2cos²x cos 2x'],
+ ['Put c = cos 2x and use cos²x = (1 + cos 2x)/2. The whole expression becomes a quadratic in c.','−2cos²x cos 2x = −(1 + c)c','f(c) = 4 − c − c²'],
+ ['Complete the square. As x varies, c takes every value in [−1, 1], and the parabola opens downwards, so the vertex c = −1/2 is the maximum.','f(c) = 17/4 − (c + 1/2)²','M = 17/4'],
+ ['The minimum is at the end of the interval farther from the vertex.','f(1) = 4 − 1 − 1','= 2','f(−1) = 4 + 1 − 1','= 4'],
+ ['So m = 2. Numerical check: x = 0 gives 4 + 0 − 2 = 2. At x = π/3, cos 2x = −1/2, and the expression is 4 + 3/8 − 1/8 = 17/4.','4 + 3/8 − 1/8 = 17/4'],
+ ['Difference of the extreme values.','M − m = 17/4 − 2','= 9/4'],
+ ['If the vertex is ignored and only the ends are used, the maximum is wrongly taken as 4 and the difference is 2, which is not an option. The other options do not match a consistent pair of extreme values.','Answer: (B) 9/4']
+]},
+{id:'TRIG-370',topic:'Reducing powers from a given relation between sin x and cos x',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Evening Shift · questions.examside.com (question id cvgum2hsjsjdeybm)',sourceRef:true,question:'If sin x + sin²x = 1, x ∈ (0, π/2), then (cos¹²x + tan¹²x) + 3(cos¹⁰x + tan¹⁰x + cos⁸x + tan⁸x) + (cos⁶x + tan⁶x) is equal to :',options:['3','4','2','1'],correct:2,answer:'2',
+short:[['From sin x = 1 − sin²x we get sin x = cos²x, and then tan²x = sin²x/(cos²x) equals sin x as well. So cos²x = tan²x = u.','sin x = cos²x','tan²x = sin x','u = sin x'],['Every power collapses to a power of u, and the expression is a perfect cube factor.','2u⁶ + 6u⁵ + 6u⁴ + 2u³ = 2u³(u + 1)³','= 2(u + u²)³'],['The given relation says u + u² = 1.','2(u + u²)³ = 2','Answer: (C) 2']],
+detailed:[
+ ['Use sin²x + cos²x = 1 to turn the condition into a relation between sin x and cos²x.','sin x = 1 − sin²x','sin x = cos²x'],
+ ['Divide sin²x by cos²x and replace cos²x by sin x. Then tan²x is also sin x.','tan²x = (sin²x)/(cos²x)','= (sin²x)/(sin x)','= sin x'],
+ ['Put u = sin x = cos²x = tan²x. Then cos¹²x = u⁶ and tan¹²x = u⁶, and similarly for the other powers.','cos¹²x + tan¹²x = 2u⁶','cos¹⁰x + tan¹⁰x = 2u⁵','cos⁸x + tan⁸x = 2u⁴','cos⁶x + tan⁶x = 2u³'],
+ ['Substitute into the expression.','2u⁶ + 3(2u⁵ + 2u⁴) + 2u³ = 2u⁶ + 6u⁵ + 6u⁴ + 2u³'],
+ ['Factor 2u³ and recognise the expansion of a cube.','= 2u³(u³ + 3u² + 3u + 1)','= 2u³(u + 1)³','= 2(u(u + 1))³','= 2(u + u²)³'],
+ ['The condition says u + u² = 1 (u = sin x), so the value is 2.','2(1)³ = 2'],
+ ['Numerical check: sin x = (√5 − 1)/2 = 0.618, so u = 0.618 and u³(u + 1)³ = (0.618 × 1.618)³ = 1. The trap is to expand all the powers separately; the other options come from missing the factor 2 or the cube pattern.','Answer: (C) 2']
+]},
+{id:'TRIG-371',topic:'Perfect-square condition fixing tan²β from a fourth-power relation',source:'ExamSIDE · JEE Main 2021 (Online) 18th March Evening Shift · questions.examside.com (question id di7etkihtahdrxxy)',sourceRef:true,question:'If 15 sin⁴β + 10 cos⁴β = 6, for some β ∈ R, then the value of 27 sec⁶β + 8 cosec⁶β is equal to :',options:['500','400','250','350'],correct:2,answer:'250',
+short:[['Write 6 as 6(sin²β + cos²β)² and collect terms; the result is a perfect square.','15 sin⁴β + 10 cos⁴β = 6(sin⁴β + cos⁴β + 2 sin²β cos²β)','9 sin⁴β − 12 sin²β cos²β + 4 cos⁴β = 0','(3 sin²β − 2 cos²β)² = 0'],['So tan²β = 2/3, and cot²β = 3/2.','sec²β = 1 + 2/3','= 5/3','cosec²β = 1 + 3/2','= 5/2'],['Cube these values.','27 (5/3)³ + 8 (5/2)³ = 125 + 125','= 250','Answer: (C) 250']],
+detailed:[
+ ['The relation is homogeneous of degree 4 apart from the constant 6, so replace 6 by 6(sin²β + cos²β)², which equals 6.','15 sin⁴β + 10 cos⁴β = 6(sin²β + cos²β)²'],
+ ['Expand the square and bring all terms to one side.','6(sin⁴β + cos⁴β + 2 sin²β cos²β) = 6 sin⁴β + 6 cos⁴β + 12 sin²β cos²β','9 sin⁴β − 12 sin²β cos²β + 4 cos⁴β = 0'],
+ ['Recognise a perfect square of 3 sin²β − 2 cos²β.','(3 sin²β − 2 cos²β)² = 0','3 sin²β = 2 cos²β','tan²β = 2/3'],
+ ['Then find sec²β and cosec²β from tan²β and cot²β.','sec²β = 1 + tan²β','= 5/3','cosec²β = 1 + cot²β','= 1 + 3/2','= 5/2'],
+ ['Write the sixth powers as cubes of these squares.','27 sec⁶β = 27 (5/3)³','= 125','8 cosec⁶β = 8 (5/2)³','= 125'],
+ ['Add the two results.','125 + 125 = 250'],
+ ['Numerical check: sin²β = 2/5 and cos²β = 3/5 give 15 × 4/25 + 10 × 9/25 = 6, and 27/(3/5)³ + 8/(2/5)³ = 125 + 125 = 250. Options (A), (B) and (D) come from mis-cubing 5/3 or 5/2.','Answer: (C) 250']
+]},
+{id:'TRIG-372',topic:'Sum of an infinite geometric series in powers of tan²θ and cos²θ',source:'ExamSIDE · JEE Main 2021 (Online) 24th February Morning Shift · questions.examside.com (question id e5zeddjidipz9yo3)',sourceRef:true,question:'If e to the power ((cos²x + cos⁴x + cos⁶x + ... ∞) logₑ 2) satisfies the equation t² − 9t + 8 = 0, then the value of (2 sin x)/(sin x + √3 cos x) (0 < x < π/2) is :',options:['√3','3/2','2√3','1/2'],correct:3,answer:'1/2',
+short:[['The series is geometric with ratio cos²x, and e to the power (k logₑ 2) equals 2 to the power k, so the number is 2 to the power cot²x.','cos²x + cos⁴x + ... = (cos²x)/(1 − cos²x)','= cot²x'],['The number is a root of t² − 9t + 8 = 0, so it is 1 or 8. It cannot be 1, because cot²x = 0 would need x = π/2.','(t − 1)(t − 8) = 0','cot²x = 3','cot x = √3'],['Divide the required fraction by sin x.','(2 sin x)/(sin x + √3 cos x) = 2/(1 + √3 cot x)','= 2/(1 + 3)','= 1/2','Answer: (D) 1/2']],
+detailed:[
+ ['For 0 < x < π/2 the ratio cos²x lies in (0, 1), so the infinite geometric series converges to first term over 1 minus ratio.','cos²x + cos⁴x + cos⁶x + ... = (cos²x)/(1 − cos²x)','= (cos²x)/(sin²x)','= cot²x'],
+ ['Since e to the power (logₑ 2) is 2, the number equals 2 raised to the power of the sum.','t = 2 to the power cot²x'],
+ ['Solve the quadratic for t.','t² − 9t + 8 = (t − 1)(t − 8)','t ∈ {1, 8}'],
+ ['Reject t = 1: it would need cot²x = 0, that is x = π/2, which is outside (0, π/2). So t = 8 = 2³.','2 to the power cot²x = 2³','cot²x = 3'],
+ ['In the first quadrant cot x is positive.','cot x = √3','x = π/6'],
+ ['Divide numerator and denominator by sin x, then substitute.','(2 sin x)/(sin x + √3 cos x) = 2/(1 + √3 cot x)','= 2/(1 + √3 × √3)','= 2/4','= 1/2'],
+ ['Numerical check at x = π/6: (2 × 1/2)/(1/2 + √3 × √3/2) = 1/(1/2 + 3/2) = 1/2. Option (B) 3/2 would need 1 + √3 cot x = 4/3, and (A) and (C) are √3 and 2√3, which are not what the fraction gives at x = π/6. The trap is keeping t = 1.','Answer: (D) 1/2']
+]},
+{id:'TRIG-373',topic:'Difference of squares of a cosine and a sine',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · questions.examside.com (question id falivqhxew9zcsxu)',sourceRef:true,question:'If (cos²48° − sin²12°)/(sin²24° − sin²6°) = (α + β√5)/2, where α, β ∈ N, then α + β is equal to ........',type:'numerical',answer:'4',
+short:[['Use cos²A − sin²B = cos(A + B) cos(A − B) and sin²A − sin²B = sin(A + B) sin(A − B).','cos²48° − sin²12° = cos 60° cos 36°','sin²24° − sin²6° = sin 30° sin 18°'],['Insert cos 60° = sin 30° = 1/2, cos 36° = (√5 + 1)/4 and sin 18° = (√5 − 1)/4. The 1/2 cancels.','ratio = (cos 36°)/(sin 18°)','= (√5 + 1)/(√5 − 1)'],['Rationalise.','(√5 + 1)²/4 = (6 + 2√5)/4','= (3 + √5)/2','α = 3','β = 1','Answer: 4']],
+detailed:[
+ ['Both the numerator and the denominator are differences of squares of a cosine and a sine, and of two sines. The identities are cos²A − sin²B = cos(A + B) cos(A − B) and sin²A − sin²B = sin(A + B) sin(A − B).','cos²48° − sin²12° = cos 60° cos 36°','sin²24° − sin²6° = sin 30° sin 18°'],
+ ['Insert the standard values.','cos 60° = 1/2','sin 30° = 1/2','cos 36° = (√5 + 1)/4','sin 18° = (√5 − 1)/4'],
+ ['The factor 1/2 cancels from the ratio, leaving the ratio of cos 36° to sin 18°.','ratio = ((1/2)(√5 + 1)/4)/((1/2)(√5 − 1)/4)','= (√5 + 1)/(√5 − 1)'],
+ ['Multiply top and bottom by √5 + 1 to rationalise the denominator.','(√5 + 1)/(√5 − 1) = (√5 + 1)²/(5 − 1)','= (6 + 2√5)/4','= (3 + √5)/2'],
+ ['Compare with (α + β√5)/2. Since √5 is irrational, the rational and irrational parts match separately, so α = 3 and β = 1.','α = 3','β = 1'],
+ ['Numerical check: cos²48° − sin²12° = 0.4477 − 0.0432 = 0.4045 and sin²24° − sin²6° = 0.1654 − 0.0109 = 0.1545, whose ratio is 2.618 = (3 + 2.236)/2. The trap is to forget that both α and β must be natural, so the sum is 3 + 1.','α + β = 4','Answer: 4']
+]},
+{id:'TRIG-374',topic:'Product of sines at multiples of π/8 by pairing allied angles',source:'ExamSIDE · JEE Main 2021 (Online) 26th August Evening Shift · questions.examside.com (question id fhrn7sd8bt2z497x)',sourceRef:true,question:'The value of 2 sin(π/8) sin(2π/8) sin(3π/8) sin(5π/8) sin(6π/8) sin(7π/8) is :',options:['1/(4√2)','1/4','1/8','1/(8√2)'],correct:2,answer:'1/8',
+short:[['Pair allied angles with sin(π − θ) = sin θ.','sin(5π/8) = sin(3π/8)','sin(6π/8) = sin(2π/8)','sin(7π/8) = sin(π/8)'],['The product becomes a square, and sin(3π/8) = cos(π/8) turns the pair into a double angle.','2 (sin(π/8) sin(3π/8))² sin²(π/4)','sin(π/8) cos(π/8) = (1/2) sin(π/4)','= 1/(2√2)'],['Substitute.','2 × (1/(2√2))² × (1/√2)² = 2 × 1/8 × 1/2','= 1/8','Answer: (C) 1/8']],
+detailed:[
+ ['The angles are multiples of π/8 and the last three are supplements of the first three, so use sin(π − θ) = sin θ.','sin(5π/8) = sin(π − 3π/8)','= sin(3π/8)','sin(6π/8) = sin(2π/8)','sin(7π/8) = sin(π/8)'],
+ ['Regroup the expression: each sine appears twice.','2 sin(π/8) sin(2π/8) sin(3π/8) sin(5π/8) sin(6π/8) sin(7π/8) = 2 (sin(π/8) sin(3π/8))² (sin(2π/8))²'],
+ ['Since 3π/8 = π/2 − π/8, sin(3π/8) = cos(π/8), and the pair sin(π/8) cos(π/8) is half of sin(π/4).','sin(π/8) sin(3π/8) = sin(π/8) cos(π/8)','= (1/2) sin(π/4)','= 1/(2√2)'],
+ ['Square the pair and the middle factor.','(sin(π/8) sin(3π/8))² = 1/8','(sin(2π/8))² = sin²(π/4)','= 1/2'],
+ ['Multiply everything together with the leading 2.','2 × 1/8 × 1/2','= 1/8'],
+ ['Numerical check: the six sines are 0.3827, 0.7071, 0.9239, 0.9239, 0.7071 and 0.3827, and their product times 2 is 0.1250. Options (A) and (D) keep a √2 that cancels here, because every factor is squared; option (B) forgets a factor 1/2.','Answer: (C) 1/8']
+]},
+{id:'TRIG-375',topic:'Product sin θ sin(60° − θ) sin(60° + θ)',source:'ExamSIDE · JEE Main 2022 (Online) 26th June Evening Shift · questions.examside.com (question id fiqmsw4syikaicab)',sourceRef:true,question:'16 sin(20°) sin(40°) sin(80°) is equal to :',options:['√3','2√3','3','4√3'],correct:1,answer:'2√3',
+short:[['The angles are θ, 60° − θ and 60° + θ with θ = 20°, so the identity sin θ sin(60° − θ) sin(60° + θ) = (sin 3θ)/4 applies.','sin 20° sin 40° sin 80° = (sin 60°)/4','= √3/8'],['Multiply by 16.','16 × √3/8 = 2√3','Answer: (B) 2√3']],
+detailed:[
+ ['Recognise the pattern: 40° = 60° − 20° and 80° = 60° + 20°, so with θ = 20° the three sines are sin θ, sin(60° − θ) and sin(60° + θ).','sin 20° sin 40° sin 80° = sin θ sin(60° − θ) sin(60° + θ)'],
+ ['Prove the identity: the last two factors give a difference of squares of sines.','sin(60° − θ) sin(60° + θ) = sin²60° − sin²θ','= 3/4 − sin²θ'],
+ ['Multiply by sin θ and use the triple-angle formula.','sin θ (3/4 − sin²θ) = (3 sin θ − 4 sin³θ)/4','= (sin 3θ)/4'],
+ ['Put θ = 20°.','sin 20° sin 40° sin 80° = (sin 60°)/4','= (√3/2)/4','= √3/8'],
+ ['Multiply by 16.','16 × √3/8 = 2√3'],
+ ['Numerical check: sin 20° sin 40° sin 80° = 0.3420 × 0.6428 × 0.9848 = 0.2165 and √3/8 = 0.2165, so the product is 3.464 = 2√3. Option (A) is the value of 8 times the product and option (D) of 32 times it.','Answer: (B) 2√3']
+]},
+{id:'TRIG-375-A',parent:'TRIG-375',variant:1,topic:'Product sin θ sin(60° − θ) sin(60° + θ)',source:'ExamSIDE · JEE Main 2019 (Online) 9th April Evening Slot · questions.examside.com (question id js0rp679c4a3fe8o)',sourceRef:true,relevance:{parent:'TRIG-375',sharedSkill:'Spot the triple sin θ, sin(60° − θ), sin(60° + θ) and replace it by (sin 3θ)/4.',recoveryPurpose:'Same identity as the core at θ = 10°, with the extra known factor sin 30° = 1/2 to be carried along.'},question:'The value of sin 10° sin 30° sin 50° sin 70° is :-',options:['1/36','1/16','1/32','1/18'],correct:1,answer:'1/16',
+short:[['The sines at 10°, 50° and 70° are sin θ, sin(60° − θ) and sin(60° + θ) with θ = 10°.','sin 10° sin 50° sin 70° = (sin 30°)/4','= 1/8'],['Multiply by the remaining factor sin 30° = 1/2.','1/2 × 1/8 = 1/16','Answer: (B) 1/16']],
+detailed:[
+ ['Set aside sin 30° = 1/2 and look at the other three: 50° = 60° − 10° and 70° = 60° + 10°.','sin 10° sin 30° sin 50° sin 70° = (1/2) sin 10° sin 50° sin 70°'],
+ ['Use sin θ sin(60° − θ) sin(60° + θ) = (sin 3θ)/4, which follows from sin(60° − θ) sin(60° + θ) = 3/4 − sin²θ and 3 sin θ − 4 sin³θ = sin 3θ.','sin 10° sin 50° sin 70° = (sin 30°)/4'],
+ ['Insert sin 30° = 1/2.','(1/2)/4 = 1/8'],
+ ['Multiply by the extra factor 1/2.','(1/2) × (1/8) = 1/16'],
+ ['Numerical check: sin 10° = 0.17365, sin 50° = 0.76604 and sin 70° = 0.93969, so the four-factor product is 0.5 × 0.12500 = 0.0625 = 1/16.','0.5 × 0.125 = 0.0625'],
+ ['The trap is to forget the extra sin 30°, which gives 1/8, or to apply the identity with sin 30° inside it. Options (A), (C) and (D) are not values of this product.','Answer: (B) 1/16']
+]},
+{id:'TRIG-376',topic:'Product of cosines by repeated doubling',source:'ExamSIDE · JEE Main 2022 (Online) 25th July Evening Shift · questions.examside.com (question id fjmett5yb7feydwy)',sourceRef:true,question:'2 sin(π/22) sin(3π/22) sin(5π/22) sin(7π/22) sin(9π/22) is equal to :',options:['3/16','1/16','1/32','9/32'],correct:1,answer:'1/16',
+short:[['Write each sine as a cosine with sin(kπ/22) = cos((11 − k)π/22), and put θ = π/11.','sin(π/22) sin(3π/22) sin(5π/22) sin(7π/22) sin(9π/22) = cos 5θ cos 4θ cos 3θ cos 2θ cos θ'],['Double repeatedly: cos θ cos 2θ cos 4θ cos 8θ cos 16θ = (sin 32θ)/(32 sin θ) = 1/32, since sin 32θ = sin(3π − θ) = sin θ. Here cos 8θ = −cos 3θ and cos 16θ = −cos 5θ.','cos θ cos 2θ cos 3θ cos 4θ cos 5θ = 1/32'],['Multiply by 2.','2 × 1/32 = 1/16','Answer: (B) 1/16']],
+detailed:[
+ ['Turn every sine into a cosine of a multiple of θ = π/11, using sin(π/2 − φ) = cos φ.','sin(π/22) = cos(10π/22)','= cos 5θ','sin(3π/22) = cos 4θ','sin(5π/22) = cos 3θ','sin(7π/22) = cos 2θ','sin(9π/22) = cos θ'],
+ ['The five cosines are cos θ, cos 2θ, cos 3θ, cos 4θ, cos 5θ. Use the doubling chain cos θ cos 2θ cos 4θ cos 8θ cos 16θ, which telescopes with 2 sin x cos x = sin 2x.','32 sin θ cos θ cos 2θ cos 4θ cos 8θ cos 16θ = sin 32θ'],
+ ['Reduce the right side: 32θ = 32π/11 = 3π − π/11.','sin 32θ = sin(3π − θ)','= sin θ'],
+ ['So the chain product equals 1/32, after dividing by 32 sin θ, which is not zero.','cos θ cos 2θ cos 4θ cos 8θ cos 16θ = 1/32'],
+ ['Bring 8θ and 16θ back to 3θ and 5θ. Since 8θ = π − 3θ and 16θ = 2π − 6θ, with 6θ = π − 5θ, both cosines are negative of the wanted ones, and the two minus signs cancel.','cos 8θ = −cos 3θ','cos 16θ = cos 6θ','= −cos 5θ','cos θ cos 2θ cos 4θ cos 3θ cos 5θ = 1/32'],
+ ['The original expression is twice this product.','2 × 1/32 = 1/16'],
+ ['Numerical check: the five sines are 0.1423, 0.4154, 0.6549, 0.8413 and 0.9595, whose product is 0.03125, so twice it is 0.0625 = 1/16. Forgetting the leading 2 gives 1/32, option (C).','Answer: (B) 1/16']
+]},
+{id:'TRIG-377',topic:'Telescoping sum of 1/(sin a sin b) using cot a − cot b',source:'ExamSIDE · JEE Main 2025 (Online) 28th January Evening Shift · questions.examside.com (question id fiqq220vzgvxrfju)',sourceRef:true,question:'If the sum, for r = 1 to 13, of 1 divided by the product of sin(π/4 + (r − 1)π/6) and sin(π/4 + rπ/6) is equal to a√3 + b, where a, b ∈ Z, then a² + b² is equal to :',options:['10','4','8','2'],correct:2,answer:'8',
+short:[['For consecutive angles p and q = p + π/6, cot p − cot q = sin(q − p)/(sin p sin q) = 1/(2 sin p sin q). So each term is 2(cot p − cot q).','cot p − cot q = (sin(π/6))/(sin p sin q)','1/(sin p sin q) = 2(cot p − cot q)'],['The sum telescopes from the first angle π/4 to the last angle π/4 + 13π/6.','sum = 2(cot(π/4) − cot(π/4 + 13π/6))','= 2(1 − cot(5π/12))'],['Use cot 75° = 2 − √3.','= 2(1 − (2 − √3))','= 2√3 − 2','a = 2','b = −2','a² + b² = 8','Answer: (C) 8']],
+detailed:[
+ ['A product of two sines of consecutive angles is turned into a difference of cotangents by cot p − cot q = sin(q − p)/(sin p sin q). Here q − p = π/6.','cot p − cot q = (cos p sin q − cos q sin p)/(sin p sin q)','= (sin(q − p))/(sin p sin q)'],
+ ['With sin(π/6) = 1/2, each term of the sum becomes twice a difference of cotangents.','1/(sin p sin q) = (cot p − cot q)/(1/2)','= 2(cot p − cot q)'],
+ ['Call the angles p₁ = π/4, p₂ = π/4 + π/6, and so on up to p₁₄, so term r is 2(cot pᵣ − cot pᵣ₊₁). All middle cotangents cancel.','sum = 2(cot p₁ − cot p₂) + 2(cot p₂ − cot p₃) + ... + 2(cot p₁₃ − cot p₁₄)','= 2(cot p₁ − cot p₁₄)'],
+ ['Find the end angles: p₁ = π/4 and p₁₄ = π/4 + 13π/6, which equals 29π/12 = 2π + 5π/12. Cotangent has period π.','cot p₁₄ = cot(5π/12)','= cot 75°','= 2 − √3'],
+ ['Substitute cot(π/4) = 1.','sum = 2(1 − (2 − √3))','= 2(√3 − 1)','= 2√3 − 2'],
+ ['Since √3 is irrational and a, b are integers, compare parts.','a = 2','b = −2','a² + b² = 4 + 4','= 8'],
+ ['Numerical check: adding the 13 terms directly gives 1.4641, and 2√3 − 2 = 1.4641. The traps are stopping at the wrong last angle (12 instead of 13 terms) and forgetting the factor 2 from sin(π/6) = 1/2.','Answer: (C) 8']
+]},
+{id:'TRIG-378',topic:'Squaring and adding sums of sines and cosines of three angles',source:'ExamSIDE · AIEEE 2009 · questions.examside.com (question id hd48ocskzmqcbgff)',sourceRef:true,question:'Let A and B denote the statements A: cos α + cos β + cos γ = 0 and B: sin α + sin β + sin γ = 0. If cos(β − γ) + cos(γ − α) + cos(α − β) = −3/2, then:',options:['A is false and B is true','both A and B are true','both A and B are false','A is true and B is false'],correct:1,answer:'both A and B are true',
+short:[['Put P = cos α + cos β + cos γ and Q = sin α + sin β + sin γ, and expand P² + Q². Each pair gives 2(cos α cos β + sin α sin β) = 2 cos(α − β).','P² + Q² = 3 + 2[cos(α − β) + cos(β − γ) + cos(γ − α)]'],['Use the given value −3/2.','P² + Q² = 3 + 2(−3/2)','= 0'],['A sum of two real squares is zero only when both are zero.','P = 0','Q = 0','Answer: (B) both A and B are true']],
+detailed:[
+ ['Introduce P and Q, the two sums in statements A and B, and study P² + Q², which is at least 0.','P = cos α + cos β + cos γ','Q = sin α + sin β + sin γ'],
+ ['Expand the squares. The squared terms give cos²α + sin²α = 1 three times.','P² + Q² = (cos²α + sin²α) + (cos²β + sin²β) + (cos²γ + sin²γ) + cross terms','= 3 + cross terms'],
+ ['The cross terms come in pairs, and cos α cos β + sin α sin β = cos(α − β) by the difference formula.','cross terms = 2(cos α cos β + sin α sin β) + 2(cos β cos γ + sin β sin γ) + 2(cos γ cos α + sin γ sin α)','= 2[cos(α − β) + cos(β − γ) + cos(γ − α)]'],
+ ['Insert the given sum, which equals −3/2.','P² + Q² = 3 + 2(−3/2)','= 0'],
+ ['Both P² and Q² are non-negative, so their sum is zero only if each is zero. Hence both statements are true.','P = 0','Q = 0'],
+ ['Check with α = 0, β = 2π/3 and γ = 4π/3: the three cosines add to 1 − 1/2 − 1/2 = 0, the sines add to 0 + √3/2 − √3/2 = 0, and each cos(difference) is cos(2π/3) = −1/2, which sum to −3/2. The trap is to conclude only one statement holds; options (A), (C) and (D) all deny one of the two zero sums.','Answer: (B) both A and B are true']
+]},
+{id:'TRIG-379',topic:'Auxiliary angle for √3 cosec 20° − sec 20°',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Morning Shift · questions.examside.com (question id hhykajrtwolktsrw)',sourceRef:true,question:'The value of cosec 10° − √3 sec 10° is equal to :',options:['2','6','8','4'],correct:3,answer:'4',
+short:[['Put the two terms over the common denominator sin 10° cos 10° and write the numerator with an auxiliary angle.','cosec 10° − √3 sec 10° = (cos 10° − √3 sin 10°)/(sin 10° cos 10°)','cos 10° − √3 sin 10° = 2 cos(10° + 60°)','= 2 sin 20°'],['The denominator is half of sin 20°.','sin 10° cos 10° = (sin 20°)/2','value = (2 sin 20°)/((sin 20°)/2)','= 4','Answer: (D) 4']],
+detailed:[
+ ['Write both terms over one denominator so that the numerator is a linear combination of cos 10° and sin 10°.','cosec 10° − √3 sec 10° = 1/(sin 10°) − √3/(cos 10°)','= (cos 10° − √3 sin 10°)/(sin 10° cos 10°)'],
+ ['Factor 2 from the numerator: 1/2 = cos 60° and √3/2 = sin 60°, then use the cosine addition formula.','cos 10° − √3 sin 10° = 2(cos 60° cos 10° − sin 60° sin 10°)','= 2 cos 70°'],
+ ['Since 70° = 90° − 20°, the numerator is 2 sin 20°.','2 cos 70° = 2 sin 20°'],
+ ['Use the double-angle formula in the denominator.','sin 10° cos 10° = (sin 20°)/2'],
+ ['Divide, cancelling sin 20°, which is not zero.','value = (2 sin 20°)/((sin 20°)/2)','= 4'],
+ ['Numerical check: cosec 10° = 5.7588 and √3 sec 10° = 1.7588, so the difference is 4.0000. Option (A) is the numerator\'s factor 2 alone; the trap is to forget the half in sin 10° cos 10° = (sin 20°)/2.','Answer: (D) 4']
+]},
+{id:'TRIG-380',topic:'Range of a from a quadratic in sin x, with tan 9° − tan 27° − tan 63° + tan 81°',source:'ExamSIDE · JEE Main 2024 (Online) 27th January Morning Shift · questions.examside.com (question id hsu25u2utpwj57p6)',sourceRef:true,question:'Let the set of all a ∈ R such that the equation cos 2x + a sin x = 2a − 7 has a solution be [p, q] and r = tan 9° − tan 27° − 1/(cot 63°) + tan 81°, then pqr is equal to .........',type:'numerical',answer:'48',
+short:[['Write cos 2x = 1 − 2 sin²x and put s = sin x ∈ [−1, 1]. The equation becomes a quadratic in s.','2s² − as + 2a − 8 = 0','a(2 − s) = 2(2 − s)(2 + s)'],['Since s ≤ 1, 2 − s ≠ 0, so a = 4 + 2s, and a covers [2, 6] as s covers [−1, 1].','p = 2','q = 6'],['For r, 1/cot 63° = tan 63° = cot 27° and tan 81° = cot 9°, so r = (tan 9° + cot 9°) − (tan 27° + cot 27°) = 2/(sin 18°) − 2/(sin 54°).','r = 2(√5 + 1) − 2(√5 − 1)','= 4'],['Multiply.','pqr = 2 × 6 × 4','= 48','Answer: 48']],
+detailed:[
+ ['Reduce the equation to one ratio: cos 2x = 1 − 2 sin²x. Put s = sin x, where s ranges over [−1, 1].','1 − 2s² + as = 2a − 7','2s² − as + 2a − 8 = 0'],
+ ['Isolate a. The right side factors with a common factor 2 − s.','a(2 − s) = 8 − 2s²','= 2(2 − s)(2 + s)'],
+ ['Because s ≤ 1, the factor 2 − s is never zero, so it can be cancelled.','a = 2(2 + s)','= 4 + 2s'],
+ ['As s runs over [−1, 1], a runs over every value from 2 to 6. Check the ends: a = 2 with x = −π/2 gives −1 − 2 = −3 = 4 − 7, and a = 6 with x = π/2 gives −1 + 6 = 5 = 12 − 7.','[p, q] = [2, 6]','p = 2','q = 6'],
+ ['Now r. Use 1/(cot 63°) = tan 63° and the complementary angle relations tan 81° = cot 9° and tan 63° = cot 27°.','r = tan 9° − tan 27° − tan 63° + tan 81°','= (tan 9° + cot 9°) − (tan 27° + cot 27°)'],
+ ['Use tan θ + cot θ = 1/(sin θ cos θ) = 2/(sin 2θ).','r = 2/(sin 18°) − 2/(sin 54°)'],
+ ['Insert sin 18° = (√5 − 1)/4 and sin 54° = cos 36° = (√5 + 1)/4, then rationalise.','2/(sin 18°) = 8/(√5 − 1)','= 2(√5 + 1)','2/(sin 54°) = 8/(√5 + 1)','= 2(√5 − 1)','r = 2(√5 + 1) − 2(√5 − 1)','= 4'],
+ ['Numerical check: tan 9° − tan 27° − tan 63° + tan 81° = 0.1584 − 0.5095 − 1.9626 + 6.3138 = 4.0000. The trap is to read 1/(cot 63°) as a reciprocal that changes sign, or to forget the endpoint check of [p, q].','pqr = 2 × 6 × 4','= 48','Answer: 48']
+]},
+{id:'TRIG-381',topic:'Simplifying (tan A)/(1 − cot A) + (cot A)/(1 − tan A)',source:'ExamSIDE · JEE Main 2013 (Offline) · questions.examside.com (question id i5tjd3wubiugmhss)',sourceRef:true,question:'The expression (tan A)/(1 − cot A) + (cot A)/(1 − tan A) can be written as:',options:['sin A cos A + 1','sec A cosec A + 1','tan A + cot A','sec A + cosec A'],correct:1,answer:'sec A cosec A + 1',
+short:[['Put t = tan A, so cot A = 1/t, and simplify each fraction.','(tan A)/(1 − cot A) = (t²)/(t − 1)','(cot A)/(1 − tan A) = −1/(t(t − 1))'],['Add over the common denominator t(t − 1) and factor the difference of cubes.','sum = (t³ − 1)/(t(t − 1))','= (t² + t + 1)/t','= t + 1 + 1/t'],['Use tan A + cot A = 1/(sin A cos A) = sec A cosec A.','sum = tan A + cot A + 1','= sec A cosec A + 1','Answer: (B) sec A cosec A + 1']],
+detailed:[
+ ['Write in terms of t = tan A, so cot A = 1/t. The expression is defined for t ≠ 0 and t ≠ 1.','(tan A)/(1 − cot A) = t/(1 − 1/t)','= (t²)/(t − 1)'],
+ ['Simplify the second fraction in the same way, noting 1 − t = −(t − 1).','(cot A)/(1 − tan A) = (1/t)/(1 − t)','= −1/(t(t − 1))'],
+ ['Combine over t(t − 1).','sum = (t³ − 1)/(t(t − 1))'],
+ ['Factor t³ − 1 = (t − 1)(t² + t + 1) and cancel t − 1, which is not zero.','sum = (t² + t + 1)/t','= t + 1 + 1/t','= tan A + 1 + cot A'],
+ ['Use tan A + cot A = (sin²A + cos²A)/(sin A cos A) = 1/(sin A cos A) = sec A cosec A.','tan A + cot A = sec A cosec A'],
+ ['So the expression equals sec A cosec A + 1.','sum = sec A cosec A + 1'],
+ ['Numerical check at A = 30°: the sum is −0.7887 + 4.0981 = 3.3094, and sec A cosec A + 1 = 2.3094 + 1 = 3.3094. Option (C) is 2.3094 (it lacks the 1), option (A) is 1.433 and option (D) is 3.1547. The trap is to drop the constant 1.','Answer: (B) sec A cosec A + 1']
+]},
+{id:'TRIG-382',topic:'Tangent of a sum from given ratios and quadrants',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Evening Shift · questions.examside.com (question id jcfonokkxaim3cqd)',sourceRef:true,question:'Let cos(α + β) = −1/10 and sin(α − β) = 3/8, where 0 < α < π/3 and 0 < β < π/4. If tan 2α = (3(1 − r√5))/(√11(s + √5)), r, s ∈ N, then r + s is equal to ........ .',type:'numerical',answer:'20',
+short:[['The ranges fix the quadrants: α + β ∈ (π/2, 7π/12) since its cosine is negative, and α − β ∈ (0, π/3) since its sine is positive. Get both tangents.','sin(α + β) = 3√11/10','tan(α + β) = −3√11','cos(α − β) = √55/8','tan(α − β) = 3/√55'],['Write 2α = (α + β) + (α − β) and use the tangent addition formula.','tan 2α = (−3√11 + 3/√55)/(1 + 9/√5)','= (3(1 − 11√5)/√55)/((9 + √5)/√5)'],['Simplify with √55 = √5 √11 and compare with the given form.','tan 2α = (3(1 − 11√5))/(√11(9 + √5))','r = 11','s = 9','r + s = 20','Answer: 20']],
+detailed:[
+ ['Since 2α = (α + β) + (α − β), the tangent addition formula needs tan(α + β) and tan(α − β), so find those from the given cosine and sine.','2α = (α + β) + (α − β)'],
+ ['From 0 < α + β < 7π/12 and cos(α + β) < 0, the angle α + β is in (π/2, 7π/12), so its sine is positive.','sin²(α + β) = 1 − 1/100','sin(α + β) = 3√11/10','tan(α + β) = (3√11/10)/(−1/10)','= −3√11'],
+ ['From −π/4 < α − β < π/3 and sin(α − β) > 0, the angle α − β is in (0, π/3), so its cosine is positive.','cos²(α − β) = 1 − 9/64','cos(α − β) = √55/8','tan(α − β) = 3/√55'],
+ ['Apply tan(P + Q) = (tan P + tan Q)/(1 − tan P tan Q). The product term is −3√11 × 3/√55 = −9/√5.','tan 2α = (−3√11 + 3/√55)/(1 + 9/√5)'],
+ ['Simplify the numerator, using √11 × √55 = 11√5, and the denominator.','−3√11 + 3/√55 = (3(1 − 11√5))/√55','1 + 9/√5 = (√5 + 9)/√5'],
+ ['Divide, using √55 = √5 × √11 so that √5 cancels.','tan 2α = (3(1 − 11√5))/√55 × √5/(9 + √5)','= (3(1 − 11√5))/(√11(9 + √5))'],
+ ['Compare with the given form 3(1 − r√5)/(√11(s + √5)): r = 11 and s = 9. Numerical check: the given values give α = 1.0277 rad (below π/3 = 1.0472) and tan 2α = −1.8996. The formula gives 3(1 − 24.597)/(3.3166 × 11.236) = −70.79/37.27 = −1.8996.','r = 11','s = 9','r + s = 20'],
+ ['The traps are taking α + β in the first quadrant (which flips the sign of tan(α + β)) and dropping √5 in the product 3√11 × 3/√55.','Answer: 20']
+]},
+{id:'TRIG-383',topic:'Using (sin x + cos x)² = 1 + 2 sin x cos x',source:'ExamSIDE · JEE Main 2021 (Online) 27th July Morning Shift · questions.examside.com (question id js1rdlmbf5zeauyo)',sourceRef:true,question:'If sin θ + cos θ = 1/2, then 16(sin 2θ + cos 4θ + sin 6θ) is equal to :',options:['23','−27','−23','27'],correct:2,answer:'−23',
+short:[['Square the condition to get sin 2θ.','1 + sin 2θ = 1/4','sin 2θ = −3/4'],['Find cos 4θ and sin 6θ from sin 2θ with the double-angle and triple-angle formulas.','cos 4θ = 1 − 2 sin²2θ','= −1/8','sin 6θ = 3 sin 2θ − 4 sin³2θ','= −9/16'],['Add and multiply by 16.','16(−3/4 − 1/8 − 9/16) = 16 × (−23/16)','= −23','Answer: (C) −23']],
+detailed:[
+ ['Use (sin θ + cos θ)² = 1 + 2 sin θ cos θ = 1 + sin 2θ. Such θ exists, since 1/2 lies between −√2 and √2.','(1/2)² = 1 + sin 2θ','sin 2θ = −3/4'],
+ ['For cos 4θ use the double-angle formula in the form cos 2φ = 1 − 2 sin²φ with φ = 2θ.','cos 4θ = 1 − 2 sin²2θ','= 1 − 2 × 9/16','= −1/8'],
+ ['For sin 6θ use the triple-angle formula sin 3φ = 3 sin φ − 4 sin³φ with φ = 2θ.','sin 6θ = 3 sin 2θ − 4 sin³2θ','= −9/4 + 27/16','= −9/16'],
+ ['Add the three values over the common denominator 16.','sin 2θ + cos 4θ + sin 6θ = −12/16 − 2/16 − 9/16','= −23/16'],
+ ['Multiply by 16.','16 × (−23/16) = −23'],
+ ['Numerical check: sin θ + cos θ = 1/2 is met by θ = −0.4240 radians, where sin 2θ = −0.75, and 16 times the sum evaluates to −23.0. The traps are a sign slip in sin 3φ, which gives −27 or 27 style values, and using cos 4θ = 2 sin²2θ − 1.','Answer: (C) −23']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -5556,7 +5749,13 @@ const pilotTopicMap={
  'General solution of sec θ = c through cos θ':['eq-general','General solution of sec θ = c through cos θ'],
  'tan θ + tan 2θ + tan θ tan 2θ = 1 reduces to tan 3θ = 1 with rejected values':['eq-methods','tan θ + tan 2θ + tan θ tan 2θ = 1 reduces to tan 3θ = 1 with rejected values'],
  'Sum of four cosines: pair into products and combine the families':['eq-methods','Sum of four cosines: pair into products and combine the families'],
- 'Quadratic in cos α with a quadrant restriction, then sin 2α':['eq-methods','Quadratic in cos α with a quadrant restriction, then sin 2α']
+ 'Quadratic in cos α with a quadrant restriction, then sin 2α':['eq-methods','Quadratic in cos α with a quadrant restriction, then sin 2α'],
+ 'Equation satisfied by sin 36° from sin 3θ = sin 2θ with 5θ = 180°':['multiple-angles','Equation satisfied by sin 36° from sin 3θ = sin 2θ with 5θ = 180°'],
+ 'Perfect-square condition fixing tan²β from a fourth-power relation':['identities','Perfect-square condition fixing tan²β from a fourth-power relation'],
+ 'Product of sines at multiples of π/8 by pairing allied angles':['multiple-angles','Product of sines at multiples of π/8 by pairing allied angles'],
+ 'Telescoping sum of 1/(sin a sin b) using cot a − cot b':['compound-angles','Telescoping sum of 1/(sin a sin b) using cot a − cot b'],
+ 'Squaring and adding sums of sines and cosines of three angles':['transformations','Squaring and adding sums of sines and cosines of three angles'],
+ 'Range of a from a quadratic in sin x, with tan 9° − tan 27° − tan 63° + tan 81°':['extrema','Range of a from a quadratic in sin x, with tan 9° − tan 27° − tan 63° + tan 81°']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
