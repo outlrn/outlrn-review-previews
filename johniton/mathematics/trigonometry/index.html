@@ -932,7 +932,7 @@ detailed:[
  ['Option (C) has S = 5, which is possible when sin²2θ = 4/5, so a real θ exists with cosec²θ + sec²θ = 5.','sin²2θ = 4/5','⇒ sin²θ cos²θ = 1/5','⇒ S = 5'],
  ['The common trap is to test only sum = product and accept the first option.','Answer: (C) x² − 5x + 5 = 0']
 ]},
-{id:'TRIG-54',topic:'Simplifying expressions with allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.86 · p.7',sourceRef:true,question:'The expression (tan(x − π/2) · cos(3π/2 + x) − sin³(7π/2 − x))/(cos(x − π/2) · tan(3π/2 + x)) simplifies to',options:['1 + cos²x','sin²x','−(1 + cos²x)','cos²x'],correct:1,answer:'sin²x',
+{id:'TRIG-54',topic:'Simplifying expressions with allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.86 · p.7 (Q.210, p.15, is a verbatim repeat of this item)',sourceRef:true,question:'The expression (tan(x − π/2) · cos(3π/2 + x) − sin³(7π/2 − x))/(cos(x − π/2) · tan(3π/2 + x)) simplifies to',options:['1 + cos²x','sin²x','−(1 + cos²x)','cos²x'],correct:1,answer:'sin²x',
 short:[['Reduce every allied angle to a ratio of x, using the quadrant sign.','tan(x − π/2)','= −cot x','cos(3π/2 + x)','= sin x','sin(7π/2 − x)','= −cos x','cos(x − π/2)','= sin x','tan(3π/2 + x)','= −cot x'],['Substitute and simplify the numerator and the denominator.','Numerator','= (−cot x)(sin x) − (−cos x)³','= −cos x + cos³x','= −cos x sin²x','Denominator','= (sin x)(−cot x)','= −cos x'],['Divide, the common factor −cos x cancels.','(−cos x sin²x)/(−cos x)','= sin²x','Answer: (B) sin²x']],
 detailed:[
  ['Each angle is a multiple of π/2 plus or minus x, so use the allied-angle rules: the sign comes from the quadrant of the angle, and the function name changes only for odd multiples of π/2.','sin(π/2 + x)','= cos x'],
@@ -1866,6 +1866,202 @@ detailed:[
  ['Since a ≠ 0 and b ≠ 0, the product ab is not zero, so the other factor must be zero.','a + b = 0'],
  ['Check with θ = π/3: a = √3, b = tan(2π/3) = −√3, so a + b = 0 and tan 3θ = tan π = 0, so the condition holds.','tan θ + tan 2θ = √3 − √3','= 0','tan 3θ = 0'],
  ['Option (A) a = b would need tan θ = tan 2θ, so θ = nπ and a = 0, which is excluded. Option (B) makes tan 3θ undefined, and (D) leads to a³ = 0, again excluded. The common trap is to cancel a + b without noting it could be zero.','Answer: (C) a + b = 0']
+]},
+{id:'TRIG-121',topic:'Ratios of allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.197 · p.13',sourceRef:true,question:'If x = y cos(2π/3) = z cos(4π/3), then xy + yz + zx is equal to -',options:['−1','0','1','2'],correct:1,answer:'0',
+short:[['Both angles are allied to π/3, and the cosine is negative in the second and third quadrants.','cos(2π/3) = −1/2','cos(4π/3) = −1/2'],['So y and z are both −2x, and the three products cancel.','xy + yz + zx = −2x² + 4x² − 2x²','= 0','Answer: (B) 0']],
+detailed:[
+ ['Reduce each cosine to an acute angle. The angle 2π/3 lies in the second quadrant, where cosine is negative.','cos(2π/3) = cos(π − π/3)','= −cos(π/3)','= −1/2'],
+ ['The angle 4π/3 lies in the third quadrant, where cosine is also negative.','cos(4π/3) = cos(π + π/3)','= −cos(π/3)','= −1/2'],
+ ['Use the two equal ratios to express y and z in terms of x.','x = y × (−1/2)','⇒ y = −2x','x = z × (−1/2)','⇒ z = −2x'],
+ ['Form the three products in terms of x.','xy = −2x²','yz = (−2x)(−2x)','= 4x²','zx = −2x²'],
+ ['Add them, and every x² term cancels.','xy + yz + zx = −2x² + 4x² − 2x²','= 0'],
+ ['Check with x = 1: y = z = −2, so the products are −2, 4 and −2, and their sum is 0. Since the sum is 0 for every x, the non-zero constants in (A), (C) and (D) cannot be right.','−2 + 4 − 2 = 0'],
+ ['The common trap is a wrong sign for cos(4π/3), which would make z = 2x and give a sum that depends on x.','Answer: (B) 0']
+]},
+{id:'TRIG-121-A',parent:'TRIG-121',variant:1,topic:'Ratios of allied angles',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.209 · p.15',sourceRef:true,relevance:{parent:'TRIG-121',sharedSkill:'Reduce angles larger than π/2 to acute angles with allied-angle rules, then use a Pythagorean pair.',recoveryPurpose:'Practises allied-angle reduction where the squares hide the quadrant signs.'},question:'sin²(π/8) + sin²(3π/8) + sin²(5π/8) − sin²(13π/8) is equal to :',options:['1','0','2','none of these'],correct:0,answer:'1',
+short:[['Reduce 5π/8 and 13π/8 to allied angles of 3π/8, and the squares remove the signs.','sin²(5π/8) = sin²(π − 3π/8)','= sin²(3π/8)','sin²(13π/8) = sin²(2π − 3π/8)','= sin²(3π/8)'],['The last two terms cancel, and the first two form a Pythagorean pair because 3π/8 = π/2 − π/8.','sin²(π/8) + sin²(3π/8) = sin²(π/8) + cos²(π/8)','= 1','Answer: (A) 1']],
+detailed:[
+ ['Two of the angles exceed π/2, so reduce them to acute angles with allied-angle rules. First, 5π/8 = π − 3π/8 and sine is positive in the second quadrant.','sin(5π/8) = sin(π − 3π/8)','= sin(3π/8)'],
+ ['Next, 13π/8 = 2π − 3π/8 lies in the fourth quadrant, where sine is negative.','sin(13π/8) = sin(2π − 3π/8)','= −sin(3π/8)'],
+ ['Squaring removes the sign, so the third and fourth terms are equal and cancel because of the minus in front of the fourth.','sin²(5π/8) − sin²(13π/8) = sin²(3π/8) − sin²(3π/8)','= 0'],
+ ['What is left is a sum of two sines whose angles add to π/2, so sin(3π/8) = cos(π/8).','sin(3π/8) = sin(π/2 − π/8)','= cos(π/8)'],
+ ['Apply sin²θ + cos²θ = 1.','sin²(π/8) + sin²(3π/8) = sin²(π/8) + cos²(π/8)','= 1'],
+ ['Check numerically: sin²(22.5°) ≈ 0.1464 and sin²(67.5°) ≈ 0.8536, which add to 1, so 0 and 2 are wrong.','0.1464 + 0.8536 = 1'],
+ ['The common trap is to add all four terms as if they were positive, which would give 2.','Answer: (A) 1']
+]},
+{id:'TRIG-122',topic:'Ratios from a given tangent and the quadrant',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.213 · p.15',sourceRef:true,question:'If A lies in the third quadrant and 3 tan A − 4 = 0, then 5 sin 2A + 3 sin A + 4 cos A is equal to-',options:['0','−24/5','24/5','48/5'],correct:0,answer:'0',
+short:[['Find sin A and cos A from tan A = 4/3, with both negative in the third quadrant.','sec²A = 1 + tan²A','= 25/9','cos A = −3/5','sin A = tan A cos A','= −4/5'],['Use sin 2A = 2 sin A cos A and substitute.','sin 2A = 2 × (−4/5) × (−3/5)','= 24/25','5 sin 2A + 3 sin A + 4 cos A = 24/5 − 12/5 − 12/5','= 0','Answer: (A) 0']],
+detailed:[
+ ['The condition gives the tangent. In the third quadrant both sine and cosine are negative.','tan A = 4/3'],
+ ['Get the cosine from 1 + tan²A = sec²A and choose the negative root.','sec²A = 1 + 16/9','= 25/9','cos A = −3/5'],
+ ['Then the sine follows from sin A = tan A × cos A, and it is also negative.','sin A = (4/3)(−3/5)','= −4/5'],
+ ['Use the double-angle formula sin 2A = 2 sin A cos A.','sin 2A = 2 × (−4/5) × (−3/5)','= 24/25'],
+ ['Substitute all three values.','5 sin 2A = 24/5','3 sin A = −12/5','4 cos A = −12/5'],
+ ['Add them.','24/5 − 12/5 − 12/5 = 0'],
+ ['Check the sign trap: taking sin A = 4/5 and cos A = 3/5 gives 24/5 + 12/5 + 12/5 = 48/5, which is option (D). Option (C) is only the first term, and (B) is its negative.','Answer: (A) 0']
+]},
+{id:'TRIG-123',topic:'Double-angle product sin θ cos θ at 15°',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.195 · p.13',sourceRef:true,question:'Which of the following is a rational number ?',options:['sin 15°','cos 15°','sin 15° cos 15°','sin 15° cos 75°'],correct:2,answer:'sin 15° cos 15°',
+short:[['Use 2 sin θ cos θ = sin 2θ, so the product of sin 15° and cos 15° is a value at 30°.','sin 15° cos 15° = (1/2) sin 30°','= 1/4'],['The other three options are irrational.','sin 15° = (√6 − √2)/4','cos 15° = (√6 + √2)/4','sin 15° cos 75° = sin²15°','= (2 − √3)/4','Answer: (C) sin 15° cos 15°']],
+detailed:[
+ ['A product of sine and cosine of the same angle suggests the double-angle formula 2 sin θ cos θ = sin 2θ.','sin 15° cos 15° = (1/2)(2 sin 15° cos 15°)','= (1/2) sin 30°','= 1/4'],
+ ['So option (C) is rational. Now show the rest are not, starting with the single values from the compound-angle formulas.','sin 15° = sin(45° − 30°)','= (√6 − √2)/4'],
+ ['Similarly the cosine is a sum of two different surds, which is not a rational number.','cos 15° = cos(45° − 30°)','= (√6 + √2)/4'],
+ ['For option (D) use cos 75° = sin 15°, so the product is a square, and sin²15° = (1 − cos 30°)/2.','sin 15° cos 75° = sin²15°','= (1 − cos 30°)/2','= (2 − √3)/4'],
+ ['Since √3 is irrational, (2 − √3)/4 is irrational, and (A) and (B) are irrational too.','(2 − √3)/4 ≈ 0.067'],
+ ['The common trap is to test each factor separately: both sin 15° and cos 15° are irrational, but their product is not.','Answer: (C) sin 15° cos 15°']
+]},
+{id:'TRIG-124',topic:'Squaring and adding to eliminate the angle',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.196 · p.13',sourceRef:true,question:'If a cos θ + b sin θ = 3 and a sin θ − b cos θ = 4 then a² + b² has the value =',options:['25','14','7','None of these'],correct:0,answer:'25',
+short:[['Square both equations and add, so that the cross terms cancel.','(a cos θ + b sin θ)² + (a sin θ − b cos θ)² = 3² + 4²'],['Group the terms with sin²θ + cos²θ = 1.','a²(cos²θ + sin²θ) + b²(sin²θ + cos²θ) = 25','a² + b² = 25','Answer: (A) 25']],
+detailed:[
+ ['The angle θ has to disappear, so square both equations and add them. This works because the two expressions are a rotation pair.','(a cos θ + b sin θ)² = 9','(a sin θ − b cos θ)² = 16'],
+ ['Expand the squares.','a²cos²θ + 2ab sin θ cos θ + b²sin²θ = 9','a²sin²θ − 2ab sin θ cos θ + b²cos²θ = 16'],
+ ['Add them, so the terms in ab sin θ cos θ cancel.','a²(cos²θ + sin²θ) + b²(sin²θ + cos²θ) = 25'],
+ ['Use sin²θ + cos²θ = 1.','a² + b² = 25'],
+ ['Check with a = 3 cos θ + 4 sin θ and b = 3 sin θ − 4 cos θ for any θ: these satisfy both equations and a² + b² = 9 + 16 = 25 for every θ.','a cos θ + b sin θ = 3(cos²θ + sin²θ)','= 3'],
+ ['The value 25 is fixed, so (D) does not apply, and 14 or 7 would come from adding 3 and 4 or from a sign slip.','Answer: (A) 25']
+]},
+{id:'TRIG-124-A',parent:'TRIG-124',variant:1,topic:'Squaring and adding to eliminate the angle',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.208 · p.15',sourceRef:true,relevance:{parent:'TRIG-124',sharedSkill:'Square two given sums and add, so that the squares become 1 and the cross terms form a single sine or cosine.',recoveryPurpose:'Practises the square-and-add method with two angles and a compound-angle result.'},question:'If sin A + cos B = a and sin B + cos A = b, then sin (A + B) is equal to:',options:['(a² + b²)/2','(a² − b² + 2)/2','(a² + b² − 2)/2','none of these'],correct:2,answer:'(a² + b² − 2)/2',
+short:[['Square both equations and add.','a² + b² = (sin²A + cos²A) + (sin²B + cos²B) + 2 sin A cos B + 2 cos A sin B'],['Use sin²θ + cos²θ = 1 and sin(A + B) = sin A cos B + cos A sin B.','a² + b² = 2 + 2 sin(A + B)','sin(A + B) = (a² + b² − 2)/2','Answer: (C) (a² + b² − 2)/2']],
+detailed:[
+ ['Squaring and adding makes the squares pair up into sin²θ + cos²θ, and the cross terms pair into a compound angle.','a² = sin²A + cos²B + 2 sin A cos B','b² = sin²B + cos²A + 2 sin B cos A'],
+ ['Add the two squares and regroup by angle.','a² + b² = (sin²A + cos²A) + (sin²B + cos²B) + 2(sin A cos B + cos A sin B)'],
+ ['Use sin²θ + cos²θ = 1 twice and sin(A + B) = sin A cos B + cos A sin B.','a² + b² = 1 + 1 + 2 sin(A + B)'],
+ ['Solve for sin(A + B).','sin(A + B) = (a² + b² − 2)/2'],
+ ['Check with A = B = 30°: a = b = (1 + √3)/2, so a² + b² = 2 + √3 and (2 + √3 − 2)/2 = √3/2 = sin 60°.','a² = (4 + 2√3)/4','= 1 + √3/2'],
+ ['At the same angles (A) gives (2 + √3)/2 and (B) gives 1, neither equal to √3/2. The common trap is to write a² + b² as 1 + 2 sin(A + B), missing the second 1.','Answer: (C) (a² + b² − 2)/2']
+]},
+{id:'TRIG-125',topic:'Simplifying a sum of trigonometric fractions',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.204 · p.15',sourceRef:true,question:'The value of the expression 1 − (sin²y)/(1 + cos y) + (1 + cos y)/(sin y) − (sin y)/(1 − cos y) is equal to -',options:['0','1','sin y','cos y'],correct:3,answer:'cos y',
+short:[['Write sin²y = (1 − cos y)(1 + cos y) in the second term.','(sin²y)/(1 + cos y) = 1 − cos y','1 − (1 − cos y) = cos y'],['Rationalise the last term so that it matches the third term, and the two cancel.','(sin y)/(1 − cos y) = (sin y (1 + cos y))/(sin²y)','= (1 + cos y)/(sin y)','Answer: (D) cos y']],
+detailed:[
+ ['Look for pairs that simplify. The second term has sin²y over 1 + cos y, and sin²y = 1 − cos²y factors.','sin²y = (1 − cos y)(1 + cos y)'],
+ ['Cancel 1 + cos y.','(sin²y)/(1 + cos y) = 1 − cos y'],
+ ['So the first two terms give cos y.','1 − (1 − cos y) = cos y'],
+ ['For the last term multiply top and bottom by 1 + cos y, using (1 − cos y)(1 + cos y) = sin²y.','(sin y)/(1 − cos y) = (sin y (1 + cos y))/((1 − cos y)(1 + cos y))','= (sin y (1 + cos y))/(sin²y)','= (1 + cos y)/(sin y)'],
+ ['This equals the third term, so the third and fourth terms cancel.','(1 + cos y)/(sin y) − (1 + cos y)/(sin y) = 0'],
+ ['Check with y = 60°: the terms are 1, −1/2, √3 and −√3, and they sum to 1/2 = cos 60°. Also y = 90° gives 0 = cos 90°, so (B) and (C) fail.','1 − 1/2 + √3 − √3 = 1/2'],
+ ['The common trap is to simplify only the first two terms and forget that the last two cancel.','Answer: (D) cos y']
+]},
+{id:'TRIG-126',topic:'Root of a perfect square and its sign in a quadrant',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.206 · p.15',sourceRef:true,question:'If 3π/4 < α < π, then √(2 cot α + 1/(sin²α)) is equal to',options:['1 + cot α','−1 − cot α','1 − cot α','−1 + cot α'],correct:1,answer:'−1 − cot α',
+short:[['Replace 1/(sin²α) with 1 + cot²α, so the radicand is a perfect square.','2 cot α + 1/(sin²α) = 1 + 2 cot α + cot²α','= (1 + cot α)²'],['The root is |1 + cot α|. For 3π/4 < α < π we have cot α < −1, so 1 + cot α is negative.','√((1 + cot α)²) = −(1 + cot α)','= −1 − cot α','Answer: (B) −1 − cot α']],
+detailed:[
+ ['Use the identity 1/(sin²α) = cosec²α = 1 + cot²α to write the radicand in cot α alone.','1/(sin²α) = 1 + cot²α'],
+ ['Now the radicand is a perfect square.','2 cot α + 1 + cot²α = (1 + cot α)²'],
+ ['A square root is never negative, so the root is the absolute value.','√((1 + cot α)²) = |1 + cot α|'],
+ ['Decide the sign. In the second quadrant cot α decreases from −1 at 3π/4 towards −∞ at π, so on this interval cot α < −1.','cot(3π/4) = −1','cot α < −1'],
+ ['Therefore 1 + cot α is negative, and the absolute value changes its sign.','|1 + cot α| = −(1 + cot α)','= −1 − cot α'],
+ ['Check with α = 5π/6: cot α = −√3, the radicand is 4 − 2√3 = (√3 − 1)², and the root is √3 − 1, which equals −1 − cot α. Options (A) and (D) would be negative and (C) equals 1 + √3, so they fail.','−1 − (−√3) = √3 − 1'],
+ ['The common trap is to write the root as 1 + cot α without checking its sign.','Answer: (B) −1 − cot α']
+]},
+{id:'TRIG-127',topic:'cos A + cos B − cos C when A + B + C = π',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.198 · p.14',sourceRef:true,question:'If A + B + C = π, then cos A + cos B − cos C =',options:['−1 + 4 sin(A/2) cos(B/2) sin(C/2)','−1 + 4 cos(A/2) sin(B/2) sin(C/2)','4 cos(A/2) sin(B/2) sin(C/2)','−1 + 4 cos(A/2) cos(B/2) sin(C/2)'],correct:3,answer:'−1 + 4 cos(A/2) cos(B/2) sin(C/2)',
+short:[['Use the sum-to-product formula on cos A + cos B, and write cos C = 1 − 2 sin²(C/2). Also (A + B)/2 = π/2 − C/2.','cos A + cos B = 2 sin(C/2) cos((A − B)/2)','−cos C = −1 + 2 sin²(C/2)'],['Take out 2 sin(C/2) and replace sin(C/2) by cos((A + B)/2).','cos A + cos B − cos C = −1 + 2 sin(C/2) (cos((A − B)/2) + cos((A + B)/2))','= −1 + 4 cos(A/2) cos(B/2) sin(C/2)','Answer: (D) −1 + 4 cos(A/2) cos(B/2) sin(C/2)']],
+detailed:[
+ ['With A + B + C = π, half the angle sum is π/2, so cos((A + B)/2) = sin(C/2). Start with the sum-to-product formula.','(A + B)/2 = π/2 − C/2','cos A + cos B = 2 cos((A + B)/2) cos((A − B)/2)','= 2 sin(C/2) cos((A − B)/2)'],
+ ['Write −cos C with the half-angle form so that sin(C/2) appears again.','cos C = 1 − 2 sin²(C/2)','−cos C = −1 + 2 sin²(C/2)'],
+ ['Add and take out the common factor 2 sin(C/2).','cos A + cos B − cos C = −1 + 2 sin(C/2) cos((A − B)/2) + 2 sin²(C/2)','= −1 + 2 sin(C/2) (cos((A − B)/2) + sin(C/2))'],
+ ['Replace the last sin(C/2) by cos((A + B)/2).','= −1 + 2 sin(C/2) (cos((A − B)/2) + cos((A + B)/2))'],
+ ['Combine the two cosines with cos P + cos Q = 2 cos((P + Q)/2) cos((P − Q)/2).','cos((A − B)/2) + cos((A + B)/2) = 2 cos(A/2) cos(B/2)','cos A + cos B − cos C = −1 + 4 cos(A/2) cos(B/2) sin(C/2)'],
+ ['Check with A = B = C = 60°: the left side is 1/2 + 1/2 − 1/2 = 1/2 and the right side is −1 + 4 × (√3/2) × (√3/2) × (1/2) = 1/2. Options (A) and (B) both give −1 + √3/2 and (C) gives √3/2, so they fail.','−1 + 4 × (3/4) × (1/2) = 1/2'],
+ ['The common trap is to drop the −1, or to keep sin(C/2) on the wrong pair of angles.','Answer: (D) −1 + 4 cos(A/2) cos(B/2) sin(C/2)']
+]},
+{id:'TRIG-128',topic:'Product of (1 + tan θ) over angles that add to 45°',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.199 · p.14',sourceRef:true,question:'If (1 + tan 1°)(1 + tan 2°)(1 + tan 3°) … (1 + tan 45°) = 2ⁿ then n is equal to -',options:['21','24','23','22'],correct:2,answer:'23',
+short:[['For k + m = 45°, tan 45° = 1 gives tan k + tan m = 1 − tan k tan m, so each such pair has product 2.','(1 + tan k)(1 + tan m) = 1 + (tan k + tan m) + tan k tan m','= 2'],['Pair 1° with 44°, 2° with 43°, and so on. That is 22 pairs, and the last factor 1 + tan 45° is 2.','product = 2²² × 2','= 2²³','Answer: (C) 23']],
+detailed:[
+ ['Look for a pair rule. If k + m = 45°, then tan(k + m) = 1, and the tangent addition formula links tan k and tan m.','1 = (tan k + tan m)/(1 − tan k tan m)','⇒ tan k + tan m = 1 − tan k tan m'],
+ ['Expand a pair of factors and use that relation.','(1 + tan k)(1 + tan m) = 1 + tan k + tan m + tan k tan m','= 1 + (1 − tan k tan m) + tan k tan m','= 2'],
+ ['Group the factors for k = 1 to 44 into pairs (k, 45° − k). The 44 factors make 22 pairs.','(1 + tan 1°)(1 + tan 44°) = 2','(1 + tan 22°)(1 + tan 23°) = 2'],
+ ['The factor for 45° is left alone, and tan 45° = 1 makes it 2.','1 + tan 45° = 2'],
+ ['Multiply everything.','product = 2²² × 2','= 2²³','⇒ n = 23'],
+ ['Check one pair, k = 15°, where tan 15° = 2 − √3 and tan 30° = 1/√3.','(1 + 2 − √3)(1 + 1/√3) = (3 − √3)(√3 + 1)/√3','= 2√3/√3','= 2'],
+ ['The common trap is to forget the unpaired factor 1 + tan 45°, which gives 22, or to count 45 factors as 45/2 pairs.','Answer: (C) 23']
+]},
+{id:'TRIG-129',topic:'Sum of two angles from their tangents',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.202 · p.14',sourceRef:true,question:'If tan α = 1/7 and sin β = 1/√10 where 0 < α, β < π/2, then 2β is equal to',options:['π/4 − α','3π/4 − α','π/8 − α/2','3π/8 − α/2'],correct:0,answer:'π/4 − α',
+short:[['Find tan β and tan 2β from sin β, using cos β = 3/√10 in the first quadrant.','tan β = 1/3','tan 2β = (2 tan β)/(1 − tan²β)','= 3/4'],['Then tan(α + 2β) = 1, and the range fixes the angle.','tan(α + 2β) = (1/7 + 3/4)/(1 − (1/7)(3/4))','= (25/28)/(25/28)','= 1','Answer: (A) π/4 − α']],
+detailed:[
+ ['Convert sin β to a tangent. The angle is in the first quadrant, so the cosine is positive.','cos β = √(1 − 1/10)','= 3/√10','tan β = 1/3'],
+ ['Apply the double-angle formula for tangent.','tan 2β = (2 × 1/3)/(1 − 1/9)','= (2/3)/(8/9)','= 3/4'],
+ ['Combine with α using the compound-angle formula.','tan(α + 2β) = (tan α + tan 2β)/(1 − tan α tan 2β)','= (1/7 + 3/4)/(1 − 3/28)','= (25/28)/(25/28)','= 1'],
+ ['Now fix the angle. Since tan 2β > 0 and 0 < 2β < π, we get 0 < 2β < π/2. Also 0 < α < π/2, so α + 2β lies in (0, π), where tan = 1 only at π/4.','α + 2β = π/4'],
+ ['So 2β = π/4 − α.','2β = π/4 − α'],
+ ['Check numerically: α ≈ 0.1419 and 2β ≈ 0.6435, and their sum is 0.7854 = π/4. The values of the other options are 2.214, 0.321 and 1.107, none of which equals 0.6435.','0.1419 + 0.6435 = 0.7854'],
+ ['The common trap is to stop at tan(α + 2β) = 1 and choose 5π/4 or 3π/4 without using the range.','Answer: (A) π/4 − α']
+]},
+{id:'TRIG-130',topic:'Sum of cosines of three angles by expanding cos(A ± B)',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.205 · p.15',sourceRef:true,question:'If θ lies in the first quadrant and cos θ = 8/17, then the value of cos (30° + θ) + cos (45° − θ) + cos (120° − θ) is -',options:['((√3 − 1)/2 + 1/√2) × (23/17)','((√3 + 1)/2 + 1/√2) × (23/17)','((√3 − 1)/2 − 1/√2) × (23/17)','((√3 + 1)/2 − 1/√2) × (23/17)'],correct:0,answer:'((√3 − 1)/2 + 1/√2) × (23/17)',
+short:[['Get sin θ = 15/17 and expand the first and third terms with cos(A ± B).','cos(30° + θ) = (√3/2)(8/17) − (1/2)(15/17)','cos(120° − θ) = −(1/2)(8/17) + (√3/2)(15/17)'],['Add these two and expand the middle term.','cos(30° + θ) + cos(120° − θ) = (23/17) × (√3 − 1)/2','cos(45° − θ) = (1/√2)(8/17 + 15/17)','= (23/17) × 1/√2','Answer: (A) ((√3 − 1)/2 + 1/√2) × (23/17)']],
+detailed:[
+ ['The angle is in the first quadrant, so sine is positive.','sin θ = √(1 − 64/289)','= 15/17'],
+ ['Expand cos(30° + θ) with cos A cos B − sin A sin B.','cos(30° + θ) = (√3/2)(8/17) − (1/2)(15/17)','= (8√3 − 15)/34'],
+ ['Expand cos(45° − θ) with cos A cos B + sin A sin B, where cos 45° = sin 45° = 1/√2.','cos(45° − θ) = (1/√2)(8/17) + (1/√2)(15/17)','= (23/17) × 1/√2'],
+ ['Expand cos(120° − θ) with cos 120° = −1/2 and sin 120° = √3/2.','cos(120° − θ) = −(1/2)(8/17) + (√3/2)(15/17)','= (15√3 − 8)/34'],
+ ['Add the first and third results; the numerators have 23 as a common factor.','(8√3 − 15 + 15√3 − 8)/34 = (23√3 − 23)/34','= (23/17) × (√3 − 1)/2'],
+ ['Add the middle term.','total = (23/17) × ((√3 − 1)/2 + 1/√2)'],
+ ['Check numerically with θ = arccos(8/17): the sum of the three cosines is 1.4519 and option (A) gives 1.4519. The other signs, in (B), (C) and (D), give different values.','1.4519 = 1.4519'],
+ ['The common trap is a sign error in cos 120° = −1/2, or using the wrong sign in cos(A ± B).','Answer: (A) ((√3 − 1)/2 + 1/√2) × (23/17)']
+]},
+{id:'TRIG-131',topic:'sin(x + y) from a product and a tangent relation',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.207 · p.15',sourceRef:true,question:'If sin x cos y = 1/4 and 3 tan x = 4 tan y, then sin (x + y) is equal to-',options:['1/4','3/4','1','none of these'],correct:3,answer:'none of these',
+short:[['Clear the tangents to get the second product cos x sin y.','3 sin x cos y = 4 cos x sin y','cos x sin y = (3/4)(1/4)','= 3/16'],['Add the two products to form sin(x + y).','sin(x + y) = sin x cos y + cos x sin y','= 1/4 + 3/16','= 7/16','Answer: (D) none of these']],
+detailed:[
+ ['The target sin(x + y) = sin x cos y + cos x sin y needs cos x sin y as well. Multiply the tangent relation by cos x cos y.','3 tan x = 4 tan y','⇒ 3 sin x cos y = 4 cos x sin y'],
+ ['Substitute sin x cos y = 1/4.','3/4 = 4 cos x sin y','cos x sin y = 3/16'],
+ ['Add the two products.','sin(x + y) = 1/4 + 3/16','= 7/16'],
+ ['This is not 1/4, 3/4 or 1, so option (D) holds. Check that such angles exist: sin(x − y) = 1/4 − 3/16 = 1/16, so both sin(x + y) = 7/16 and sin(x − y) = 1/16 are attainable.','sin(x − y) = 1/16'],
+ ['Also sin x cos y = (sin(x + y) + sin(x − y))/2 = (7/16 + 1/16)/2 = 1/4, so the data are consistent.','(8/16)/2 = 1/4'],
+ ['The common trap is to pick 1/4 or 3/4 because those numbers appear in the data, or to forget the second product.','Answer: (D) none of these']
+]},
+{id:'TRIG-132',topic:'Points on the unit circle at arc distances θ and 3θ',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.203 · p.14',sourceRef:true,question:'On the circle x² + y² = 1, the point (p, q) is at an arc distance θ from (1, 0) along the circumference in the anticlockwise direction, and (r, s) is at an arc distance 2θ from (p, q) along the circumference in the anticlockwise direction. Then the expression s p³ + q³ r equals',options:['(3/4) sin 2θ','sin 2θ','(3/4) sin 4θ','sin 4θ'],correct:2,answer:'(3/4) sin 4θ',
+short:[['On the unit circle an arc of length θ from (1, 0) gives the point (cos θ, sin θ), and the second point is at arc 3θ.','(p, q) = (cos θ, sin θ)','(r, s) = (cos 3θ, sin 3θ)'],['Expand sin 3θ and cos 3θ with the triple-angle formulas and simplify.','s p³ + q³ r = (3 sin θ − 4 sin³θ) cos³θ + sin³θ (4 cos³θ − 3 cos θ)','= 3 sin θ cos θ (cos²θ − sin²θ)','= (3/4) sin 4θ','Answer: (C) (3/4) sin 4θ']],
+detailed:[
+ ['Arc length equals angle on a circle of radius 1, so the point at arc θ from (1, 0) is (cos θ, sin θ). The second point is a further 2θ on, at total angle 3θ.','(p, q) = (cos θ, sin θ)','(r, s) = (cos 3θ, sin 3θ)'],
+ ['Substitute into the expression.','s p³ + q³ r = sin 3θ cos³θ + sin³θ cos 3θ'],
+ ['Use the triple-angle formulas sin 3θ = 3 sin θ − 4 sin³θ and cos 3θ = 4 cos³θ − 3 cos θ.','sin 3θ cos³θ = 3 sin θ cos³θ − 4 sin³θ cos³θ','sin³θ cos 3θ = 4 sin³θ cos³θ − 3 sin³θ cos θ'],
+ ['Add: the terms 4 sin³θ cos³θ cancel.','s p³ + q³ r = 3 sin θ cos³θ − 3 sin³θ cos θ'],
+ ['Factor out 3 sin θ cos θ.','= 3 sin θ cos θ (cos²θ − sin²θ)'],
+ ['Use 2 sin θ cos θ = sin 2θ and cos²θ − sin²θ = cos 2θ, then 2 sin 2θ cos 2θ = sin 4θ.','= (3/2) sin 2θ cos 2θ','= (3/4) sin 4θ'],
+ ['Check: θ = 30° gives s = 1, p = √3/2, r = 0, so the value is 3√3/8, which equals (3/4) sin 120° but not sin 120° in (B) or (D). At θ = 45° the value is 1/4 − 1/4 = 0, while (3/4) sin 90° in (A) is not 0.','s p³ + q³ r at 30° = 3√3/8','(3/4) sin 120° = 3√3/8'],
+ ['The common trap is to use the angle 2θ for the second point instead of 3θ, since it is 2θ from (p, q), not from (1, 0).','Answer: (C) (3/4) sin 4θ']
+]},
+{id:'TRIG-133',topic:'Number of roots of a cubic in tan θ by sign changes',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.200 · p.14',sourceRef:true,question:'If −π/2 < α₁ < α₂ < α₃ < π/2, then the number of values of θ ∈ (−π/2, π/2) satisfying (tan θ − tan α₁)(tan θ − tan α₂)(tan θ − tan α₃) − (tan θ − tan α₁) − (tan θ − tan α₂) − (tan θ − tan α₃) = 0 is',options:['0','1','2','3'],correct:3,answer:'3',
+short:[['Put t = tan θ, which takes each real value once, and let a < b < c be the three tangents (tan is increasing).','g(t) = (t − a)(t − b)(t − c) − (t − a) − (t − b) − (t − c)'],['Look at signs. Here g(a) is positive, g(c) is negative, and g goes from −∞ to +∞.','g(a) = (b − a) + (c − a) > 0','g(c) = −(c − a) − (c − b) < 0'],['That gives a root in each of (−∞, a), (a, c) and (c, ∞), and a cubic has at most three roots, so exactly 3 values of θ.','Answer: (D) 3']],
+detailed:[
+ ['Substitute t = tan θ. As θ runs over (−π/2, π/2), t takes every real value once, so counting θ is counting real t. Also a = tan α₁, b = tan α₂, c = tan α₃ satisfy a < b < c.','g(t) = (t − a)(t − b)(t − c) − (t − a) − (t − b) − (t − c)'],
+ ['The function g is a cubic with leading coefficient 1, so it has at most three real roots. It tends to −∞ as t → −∞ and to +∞ as t → +∞.','g(t) → −∞ as t → −∞','g(t) → +∞ as t → +∞'],
+ ['Evaluate g at a, where the product vanishes and the subtracted terms include (a − b) and (a − c), both negative.','g(a) = −(a − b) − (a − c)','= (b − a) + (c − a)','g(a) > 0'],
+ ['Evaluate g at c in the same way.','g(c) = −(c − a) − (c − b)','g(c) < 0'],
+ ['Read the sign changes: negative to positive on (−∞, a), positive to negative on (a, c), and negative to positive on (c, ∞), so g has a root in each interval.','g(−∞) < 0 < g(a)','g(a) > 0 > g(c)','g(c) < 0 < g(∞)'],
+ ['These three intervals do not overlap, so the roots are distinct, and a cubic cannot have more than three. Each real root t gives exactly one θ with tan θ = t in the interval.','number of roots = 3'],
+ ['Options 0, 1 and 2 undercount the sign changes. The common trap is to think tan θ → ±∞ removes roots, when it only fixes the sign of g near the ends.','Answer: (D) 3']
+]},
+{id:'TRIG-134',topic:'Range of tan 3α cot α',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.201 · p.14',sourceRef:true,question:'The value of tan 3α cot α cannot lie in',options:['] 0, 2/3 [','] 1/3, 3 [','] 4/3, 4 [','] 2, 10/3 ['],correct:1,answer:'] 1/3, 3 [',
+short:[['Write tan 3α with t = tan α, and let x be the value of the expression.','x = tan 3α cot α','= (3 − t²)/(1 − 3t²)'],['Solve for t² and require t² > 0, since tan α ≠ 0 because cot α exists.','t² = (3 − x)/(1 − 3x) > 0','⇒ (x − 3)/(3x − 1) > 0','⇒ x < 1/3 or x > 3'],['So no x in ] 1/3, 3 [ is possible, while the other three intervals contain attainable values such as 0.1, 3.5 and 3.2.','Answer: (B) ] 1/3, 3 [']],
+detailed:[
+ ['Use tan 3α = (3 tan α − tan³α)/(1 − 3tan²α) and cot α = 1/(tan α), with t = tan α ≠ 0.','x = ((3t − t³)/(1 − 3t²)) × (1/t)','= (3 − t²)/(1 − 3t²)'],
+ ['Solve for t² in terms of x.','x(1 − 3t²) = 3 − t²','t²(1 − 3x) = 3 − x','t² = (3 − x)/(1 − 3x)'],
+ ['A real α needs t² > 0, since t ≠ 0. Write the fraction with positive leading terms.','(3 − x)/(1 − 3x) = (x − 3)/(3x − 1)','(x − 3)/(3x − 1) > 0'],
+ ['Solve by sign of numerator and denominator: both positive for x > 3, both negative for x < 1/3.','x < 1/3 or x > 3'],
+ ['Hence x = 1/3 and x = 3 are also not attained, and no value in ] 1/3, 3 [ is attained. Inside that interval x − 3 is negative and 3x − 1 is positive, so t² would be negative.','x = 2','t² = (3 − 2)/(1 − 6)','= −1/5'],
+ ['Check the other options: ] 0, 2/3 [ contains 0.1 (t² = 2.9/0.7), ] 4/3, 4 [ contains 3.5 (t² = 0.5/9.5) and ] 2, 10/3 [ contains 3.2 (t² = 0.2/8.6), each of which is attained. Read the wording as: the whole interval is unattainable.','t² > 0 in each case'],
+ ['The common trap is to check only the endpoints. The set of values is x < 1/3 or x > 3, so only (B) lies entirely outside it.','Answer: (B) ] 1/3, 3 [']
+]},
+{id:'TRIG-135',topic:'Equality case of sin θ + cosec θ = 2',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.212 · p.15',sourceRef:true,question:'If sin θ + cosec θ = 2, then the value of (sin θ)⁸ + (cosec θ)⁸ is equal to -',options:['2','2⁸','2⁹','2⁴'],correct:0,answer:'2',
+short:[['Put t = sin θ, so that t + 1/t = 2, and clear the denominator.','t² − 2t + 1 = 0','(t − 1)² = 0'],['So sin θ = 1 and cosec θ = 1, and each eighth power is 1.','1⁸ + 1⁸ = 2','Answer: (A) 2']],
+detailed:[
+ ['Write t = sin θ, then cosec θ = 1/t, and the condition becomes t + 1/t = 2.','t + 1/t = 2'],
+ ['Multiply by t (t ≠ 0) and collect terms.','t² − 2t + 1 = 0'],
+ ['This is a perfect square, so the equation has a single root.','(t − 1)² = 0','t = 1'],
+ ['This is also the equality case of t + 1/t ≥ 2 for t > 0 (AM–GM), where the minimum 2 occurs only at t = 1.','sin θ = 1','cosec θ = 1'],
+ ['Substitute into the eighth powers.','(sin θ)⁸ + (cosec θ)⁸ = 1 + 1','= 2'],
+ ['Check with θ = 90°: sin 90° + cosec 90° = 2, and the sum of eighth powers is 2, not 2⁸, 2⁹ or 2⁴, which are 256, 512 and 16.','1 + 1 = 2'],
+ ['The common trap is to compute with t + 1/t = 2 and then raise 2 to the power 8.','Answer: (A) 2']
+]},
+{id:'TRIG-136',topic:'Sums of sines and cosines bounded by monotonicity',source:'Institute worksheet · Trigonometrical Ratio (A).pdf · Q.214 · p.15',sourceRef:true,question:'If 0 < α < β < γ < π/2, then (sin α + sin β + sin γ)/(cos α + cos β + cos γ) lies between',options:['cos α and cos γ','sin α and sin γ','tan α and tan γ','cot α and cot γ'],correct:2,answer:'tan α and tan γ',
+short:[['On (0, π/2) sine increases and cosine decreases, and both are positive.','3 sin α < sin α + sin β + sin γ < 3 sin γ','3 cos γ < cos α + cos β + cos γ < 3 cos α'],['Divide the smallest numerator by the largest denominator, and the largest numerator by the smallest denominator.','(3 sin α)/(3 cos α) < (sin α + sin β + sin γ)/(cos α + cos β + cos γ) < (3 sin γ)/(3 cos γ)','tan α < ratio < tan γ','Answer: (C) tan α and tan γ']],
+detailed:[
+ ['Use monotonicity on (0, π/2): sine is increasing and cosine is decreasing, and all values are positive.','sin α < sin β < sin γ','cos α > cos β > cos γ'],
+ ['Bound the numerator by the smallest and the largest sine.','3 sin α < sin α + sin β + sin γ < 3 sin γ'],
+ ['Bound the denominator by the largest and the smallest cosine.','3 cos γ < cos α + cos β + cos γ < 3 cos α'],
+ ['A fraction of positive numbers is smallest when its numerator is smallest and its denominator is largest.','ratio > (3 sin α)/(3 cos α)','= tan α'],
+ ['It is largest when the numerator is largest and the denominator is smallest.','ratio < (3 sin γ)/(3 cos γ)','= tan γ'],
+ ['Check with α, β, γ = 60°, 70°, 80°: the ratio is about 2.75, tan 60° ≈ 1.73 and tan 80° ≈ 5.67. The sine values run from 0.87 to 0.98, the cosines from 0.17 to 0.5 and the cotangents from 0.18 to 0.58, so (A), (B) and (D) fail.','1.73 < 2.75 < 5.67'],
+ ['The common trap is to think the ratio is between the sines, which can happen for particular angles but not in general.','Answer: (C) tan α and tan γ']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -2030,7 +2226,21 @@ const pilotTopicMap={
  'Sign of sin x − cos x on an interval':['extrema','Sign of sin x − cos x on an interval'],
  'Comparing trigonometric values of degrees and radians':['extrema','Comparing trigonometric values of degrees and radians'],
  'Product (1 + tan A)(1 + tan B) when A + B = π/4':['compound-angles','Product (1 + tan A)(1 + tan B) when A + B = π/4'],
- 'Relation from tan θ + tan 2θ = tan 3θ':['compound-angles','Relation from tan θ + tan 2θ = tan 3θ']
+ 'Relation from tan θ + tan 2θ = tan 3θ':['compound-angles','Relation from tan θ + tan 2θ = tan 3θ'],
+ 'Ratios from a given tangent and the quadrant':['angles-ratios','Ratios from a given tangent and the quadrant'],
+ 'Double-angle product sin θ cos θ at 15°':['multiple-angles','Double-angle product sin θ cos θ at 15°'],
+ 'Squaring and adding to eliminate the angle':['identities','Squaring and adding to eliminate the angle'],
+ 'Simplifying a sum of trigonometric fractions':['identities','Simplifying a sum of trigonometric fractions'],
+ 'Root of a perfect square and its sign in a quadrant':['identities','Root of a perfect square and its sign in a quadrant'],
+ 'cos A + cos B − cos C when A + B + C = π':['conditional','cos A + cos B − cos C when A + B + C = π'],
+ 'Product of (1 + tan θ) over angles that add to 45°':['compound-angles','Product of (1 + tan θ) over angles that add to 45°'],
+ 'Sum of two angles from their tangents':['compound-angles','Sum of two angles from their tangents'],
+ 'Sum of cosines of three angles by expanding cos(A ± B)':['compound-angles','Sum of cosines of three angles by expanding cos(A ± B)'],
+ 'sin(x + y) from a product and a tangent relation':['compound-angles','sin(x + y) from a product and a tangent relation'],
+ 'Points on the unit circle at arc distances θ and 3θ':['multiple-angles','Points on the unit circle at arc distances θ and 3θ'],
+ 'Number of roots of a cubic in tan θ by sign changes':['extrema','Number of roots of a cubic in tan θ by sign changes'],
+ 'Range of tan 3α cot α':['extrema','Range of tan 3α cot α'],
+ 'Sums of sines and cosines bounded by monotonicity':['extrema','Sums of sines and cosines bounded by monotonicity']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
