@@ -207,6 +207,801 @@
  ['Pair each root with its conjugate to get two real quadratic factors.','f(x) = (x² + 4)(x² − 4x + 5)'],
  ['Expand the product.','f(x) = x⁴ − 4x³ + 5x² + 4x² − 16x + 20 = x⁴ − 4x³ + 9x² − 16x + 20'],
  ['Read off a, b, c, d and add them.','a = −4  b = 9  c = −16  d = 20 ⇒ a + b + c + d = −4 + 9 − 16 + 20 = 9','Correct answer: (C)']
+]},
+{id:'QUAD-01-A',parent:'QUAD-01',variant:1,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q57 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:57,questionPage:5,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If x = 2 + 2^((1)/(3)) + 2^((2)/(3)), then the value of x^(3) − 6x^(2) + 6x is-',options:['−2','3','4','2'],correct:3,answer:'2',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['Write a = 2^((1)/(3)), so a^(3) = 2, and note x = 2 + a + a^(2) means x − 1 = a^(2) + a + 1.','a^(3) = 2   x − 1 = a^(2) + a + 1'],
+ ['Use the difference-of-cubes identity.','a^(3) − 1 = (a − 1)(a^(2) + a + 1)'],
+ ['Substitute a^(3) = 2 and a^(2) + a + 1 = x − 1, then solve for a.','2 − 1 = (a − 1)(x − 1) ⇒ a = 1 + (1)/(x − 1) = (x)/(x − 1)'],
+ ['State the standard expansion of a cube of a difference.','(p − 1)^(3) = p^(3) − 3p^(2) + 3p − 1'],
+ ['Cube a = (x)/(x − 1) and use a^(3) = 2, then substitute the expansion of (x − 1)^(3) with p = x.','((x)/(x − 1))^(3) = 2 ⇒ x^(3) = 2(x − 1)^(3) = 2(x^(3) − 3x^(2) + 3x − 1)'],
+ ['Expand and collect.','x^(3) = 2x^(3) − 6x^(2) + 6x − 2'],
+ ['Rearrange to isolate the required expression.','x^(3) − 6x^(2) + 6x = 2','Correct answer: (D)']
+]},
+{id:'QUAD-01-B',parent:'QUAD-01',variant:2,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q152 · question p.11-12',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:152,questionPage:11,printedOptionKey:'C',verifiedOptionKey:'C'},question:'In the equation (√(3) − √(2))Ax^(2) + (Bx)/(√(2) + √(3)) + C = 0 where A = (49 + 20√(6))^((1)/(4)), B is the sum of the infinite G.P. 8√(3) + 8√(2) + (16)/(√(3)) + ...... and the difference of the roots is (6√(6))^(log(10 − 2log√(5) + log√(log18 + log472))) where the base of the logarithm is 6. Then C = 2^(n) where n =',options:['5','6','7','8'],correct:2,answer:'7',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'controlled transfer'},short:[
+ ['Simplify A by writing 49 + 20√(6) as a perfect square, then take the fourth root as two nested square roots.','A = (49 + 20√(6))^((1)/(4)) = √(5 + 2√(6)) = √(2) + √(3)'],
+ ['Sum an infinite G.P. using S = (a)/(1 − r).','S = (a)/(1 − r)'],
+ ['Substitute the first term 8√(3) and common ratio (√(2))/(√(3)) of the given G.P. to get B.','B = (8√(3))/(1 − (√(2))/(√(3))) = (24)/(√(3) − √(2))'],
+ ['Simplify the x^(2) and x coefficients of the equation, using (√(3) − √(2))(√(2) + √(3)) = 1.','(√(3) − √(2))·A = 1   (B)/(√(2) + √(3)) = 24'],
+ ['The equation reduces to x^(2) + 24x + C = 0, giving the sum of its roots directly, while the problem statement fixes the difference of its roots at 8.','α + β = −24   α − β = 8'],
+ ['Use the identity for the square of the difference of the roots.','(α − β)^(2) = (α + β)^(2) − 4αβ'],
+ ['Substitute the sum and difference, and solve for C = αβ.','64 = 576 − 4C ⇒ C = 128 = 2^(7)','Correct answer: (C)']
+]},
+{id:'QUAD-01-C',parent:'QUAD-01',variant:3,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q275 · question p.24',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:275,questionPage:24,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If x + (1)/(x) = √(√(5) + 2) and y + (1)/(y) = 2, then x^(16) + (1)/(x^(16)) + y^(20) + (1)/(y^(20)) is',options:['49','51','2209','102'],correct:0,answer:'49',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['Solve for y: y + (1)/(y) = 2 rearranges into a perfect square, forcing y = 1.','y^(2) − 2y + 1 = 0 ⇒ (y − 1)^(2) = 0 ⇒ y = 1'],
+ ['Since y = 1, every power of y is 1.','y^(20) + (1)/(y^(20)) = 1 + 1 = 2'],
+ ['Use the identity relating p^(2)+(1)/(p^(2)) to p+(1)/(p).','p^(2) + (1)/(p^(2)) = (p + (1)/(p))^(2) − 2'],
+ ['Substitute p = x + (1)/(x) = √(√(5) + 2).','x^(2) + (1)/(x^(2)) = (√(5) + 2) − 2 = √(5)'],
+ ['Apply the same identity again, doubling the power from x^(2) to x^(4).','x^(4) + (1)/(x^(4)) = (x^(2) + (1)/(x^(2)))^(2) − 2 = 5 − 2 = 3'],
+ ['Apply it again, from x^(4) to x^(8).','x^(8) + (1)/(x^(8)) = (x^(4) + (1)/(x^(4)))^(2) − 2 = 9 − 2 = 7'],
+ ['Apply it once more, from x^(8) to x^(16).','x^(16) + (1)/(x^(16)) = (x^(8) + (1)/(x^(8)))^(2) − 2 = 49 − 2 = 47'],
+ ['Add the x and y contributions.','47 + 2 = 49','Correct answer: (A)']
+]},
+{id:'QUAD-01-D',parent:'QUAD-01',variant:4,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q330 · question p.30',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:330,questionPage:30,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If (21.4)^(a) = (0.00214)^(b) = 100, then the value of (1)/(a) − (1)/(b) is:',options:['rational but not integral','prime','irrational','composite'],correct:1,answer:'prime',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['Write each base as a power of 100 using the given equalities.','21.4 = 100^((1)/(a))   0.00214 = 100^((1)/(b))'],
+ ['Use the exponent rule for dividing powers of the same base.','(p^(m))/(p^(n)) = p^(m − n)'],
+ ['Divide the two expressions, noting 21.4 ÷ 0.00214 = 10000 = 100^(2).','(21.4)/(0.00214) = 100^((1)/(a) − (1)/(b)) ⇒ 100^(2) = 100^((1)/(a) − (1)/(b))'],
+ ['Equate the exponents.','(1)/(a) − (1)/(b) = 2'],
+ ['2 is a prime number.','(1)/(a) − (1)/(b) = 2','Correct answer: (B)']
+]},
+{id:'QUAD-01-E',parent:'QUAD-01',variant:5,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q369 · question p.33',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:369,questionPage:33,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The value of √(|40√(2) − 57|) − √(40√(2) + 57) is equal to -',options:['10','4','−4','−10'],correct:3,answer:'−10',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['Look for a, b with a^(2) + 2b^(2) = 57 and 2ab = 40; a = 5, b = 4 fits both.','a^(2) + 2b^(2) = 57   2ab = 40   a = 5, b = 4'],
+ ['State the square of a sum of a rational and a surd term.','(a + b√(2))^(2) = a^(2) + 2b^(2) + 2ab√(2)'],
+ ['Substitute a = 5, b = 4.','(5 + 4√(2))^(2) = 25 + 32 + 40√(2) = 57 + 40√(2)'],
+ ['The same a, b give the other radicand, using the square of the difference.','(5 − 4√(2))^(2) = a^(2) + 2b^(2) − 2ab√(2) = 57 − 40√(2)'],
+ ['Since 40√(2) < 57, the first radicand equals 57 − 40√(2), and since 4√(2) > 5, its square root is 4√(2) − 5.','√(|40√(2) − 57|) = √((5 − 4√(2))^(2)) = 4√(2) − 5'],
+ ['The second square root is immediate since 5 + 4√(2) > 0.','√(40√(2) + 57) = √((5 + 4√(2))^(2)) = 5 + 4√(2)'],
+ ['Subtract.','(4√(2) − 5) − (5 + 4√(2)) = −10','Correct answer: (D)']
+]},
+{id:'QUAD-01-F',parent:'QUAD-01',variant:6,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q440 · question p.40',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:440,questionPage:40,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If x, y are rational numbers such that (x + y) + (x − 2y)√(2) = 2x − y + (x − y − 1)√(6) then -',options:['x = 1, y = 1','x = 2, y = 1','x = 5, y = 1','x & y can take infinitely many values'],correct:1,answer:'x = 2, y = 1',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'inverse or representation check'},short:[
+ ['Since x, y are rational, 1, √(2) and √(6) are linearly independent over the rationals, so the rational part and each surd coefficient must match separately on the two sides.','rational: x + y = 2x − y   √(2) coeff: x − 2y = 0   √(6) coeff: 0 = x − y − 1'],
+ ['The rational-part equation and the √(2)-coefficient equation give the same relation.','x + y = 2x − y ⇒ x = 2y'],
+ ['Substitute x = 2y into the √(6)-coefficient equation.','2y − y − 1 = 0 ⇒ y = 1'],
+ ['So x = 2y = 2.','x = 2, y = 1','Correct answer: (B)']
+]},
+{id:'QUAD-01-G',parent:'QUAD-01',variant:7,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q442 · question p.40',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:442,questionPage:40,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If x = 3 − √(8), then x^(3) + (1)/(x^(3)) is equal to -',options:['6','198','6√(2)','102'],correct:1,answer:'198',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['Rationalise (1)/(x).','(1)/(x) = (1)/(3 − √(8)) = (3 + √(8))/((3)^(2) − 8) = 3 + √(8)'],
+ ['Add x and (1)/(x).','x + (1)/(x) = (3 − √(8)) + (3 + √(8)) = 6'],
+ ['Use the identity for the sum of cubes in terms of p + (1)/(p).','p^(3) + (1)/(p^(3)) = (p + (1)/(p))^(3) − 3(p + (1)/(p))'],
+ ['Substitute p + (1)/(p) = 6.','x^(3) + (1)/(x^(3)) = 6^(3) − 3(6) = 216 − 18 = 198','Correct answer: (B)']
+]},
+{id:'QUAD-01-H',parent:'QUAD-01',variant:8,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q466 · question p.46',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:466,questionPage:46,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If x = 1 + (1)/(3 + (1)/(2 + (1)/(3 + (1)/(2 + ...∞)))) Then value of x is –',options:['√((3)/(5))','√((3)/(2))','√((2)/(3))','√((5)/(3))'],correct:3,answer:'√((5)/(3))',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'controlled transfer'},short:[
+ ['Let the repeating tail starting at the first "3+" be y, so y = 3 + (1)/(z) with z = 2 + (1)/(y), since the pattern 3, 2, 3, 2, ... repeats every two steps.','y = 3 + (1)/(z)   z = 2 + (1)/(y)'],
+ ['Substitute z into the equation for y.','y = 3 + (1)/(2 + (1)/(y)) = 3 + (y)/(2y + 1)'],
+ ['Cross-multiply and collect terms into a quadratic in y.','y(2y + 1) = 3(2y + 1) + y ⇒ 2y^(2) − 6y − 3 = 0'],
+ ['Solve with the quadratic formula, y = (−B ± √(B^(2) − 4AC))/(2A).','y = (6 ± √(36 + 24))/(4) = (3 ± √(15))/(2)'],
+ ['y must exceed 3 (it starts with "3 +" of a positive tail), so take the positive root.','y = (3 + √(15))/(2)'],
+ ['Substitute back into x = 1 + (1)/(y), then rationalise.','x = 1 + (2)/(3 + √(15)) = 1 + (2(3 − √(15)))/(9 − 15) = 1 − (3 − √(15))/(3)'],
+ ['Simplify.','x = (√(15))/(3) = √((15)/(9)) = √((5)/(3))','Correct answer: (D)']
+]},
+{id:'QUAD-01-I',parent:'QUAD-01',variant:9,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q468 · question p.46',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:468,questionPage:46,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If (x)/(a) + (y)/(b) = 1 and (x^(2))/(a) + (y^(2))/(b) = (ab)/(a + b) then value of (x^(n+1))/(a) + (y^(n+1))/(b) = ((√(a + b))/(√(ab)))^(k), find the relation between n and k.',options:['2n = k','n = 2k','2n + k = 0','none of these'],correct:2,answer:'2n + k = 0',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'controlled transfer'},short:[
+ ['From the first equation solve for y in terms of x.','y = (b(a − x))/(a)'],
+ ['Substitute into the second equation; simplifying shows x and y must both equal the same value.','x = y = (ab)/(a + b)'],
+ ['Since x = y = p where p = (ab)/(a + b), factor the common power out of the target sum.','(x^(n+1))/(a) + (y^(n+1))/(b) = p^(n+1)((1)/(a) + (1)/(b))'],
+ ['Simplify (1)/(a) + (1)/(b) using a common denominator, and note that this is (1)/(p).','(1)/(a) + (1)/(b) = (a + b)/(ab) = (1)/(p)'],
+ ['Combine the powers of p.','p^(n+1)·(1)/(p) = p^(n) ⇒ (x^(n+1))/(a) + (y^(n+1))/(b) = ((ab)/(a + b))^(n)'],
+ ['Rewrite ((ab)/(a + b))^(n) as a power of (√(a + b))/(√(ab)), since that ratio is the reciprocal square root of (ab)/(a + b).','((ab)/(a + b))^(n) = (((√(a + b))/(√(ab)))^(−2))^(n) = ((√(a + b))/(√(ab)))^(−2n)'],
+ ['Match exponents with k.','k = −2n ⇒ 2n + k = 0','Correct answer: (C)']
+]},
+{id:'QUAD-01-J',parent:'QUAD-01',variant:10,topic:'Surds, indices and algebraic simplification',source:'Institute module · Q628 · question p.60',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:628,questionPage:60,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If x = √(6 + √(6 + √(6 + ...))), then -',options:['−2 < x < 3','2 < x < 3','x = 3','x > 3'],correct:2,answer:'x = 3',diagram:'',relevance:{parent:'QUAD-01',sharedSkill:'Surds, indices and algebraic simplification',recoveryPurpose:'direct retry'},short:[
+ ['The expression repeats inside itself, so squaring gives an equation in x alone.','x^(2) = 6 + x'],
+ ['Rearrange into standard quadratic form and factorise.','x^(2) − x − 6 = 0 ⇒ (x − 3)(x + 2) = 0'],
+ ['x is a square root, so it cannot be negative; reject x = −2.','x = 3','Correct answer: (C)']
+]},
+{id:'QUAD-02-A',parent:'QUAD-02',variant:1,topic:'Nature of roots via the discriminant',source:'Institute module · Q58 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:58,questionPage:5,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If b and c are odd integers, then the equation x^(2) + bx + c = 0 has-',options:['two odd roots','two integer roots, one odd and one even','no integer roots','None of these'],correct:2,answer:'no integer roots',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'controlled transfer'},short:[
+ ['Suppose r is an integer root, so it satisfies the equation.','r^(2) + br + c = 0'],
+ ['Check parity when r is even: r^(2) and br are then both even, while c is odd.','r even ⇒ r^(2) + br + c = even + even + odd = odd'],
+ ['Check parity when r is odd: r^(2) and br are then both odd (odd × odd = odd), while c is odd.','r odd ⇒ r^(2) + br + c = odd + odd + odd = odd'],
+ ['Either way the sum is odd, never 0, so no integer value of r can be a root.','no integer r satisfies r^(2) + br + c = 0','Correct answer: (C)']
+]},
+{id:'QUAD-02-B',parent:'QUAD-02',variant:2,topic:'Nature of roots via the discriminant',source:'Institute module · Q110 · question p.8 · IIT-1987',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:110,questionPage:8,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If a, b, c, d and p are distinct real numbers such that (a^(2) + b^(2) + c^(2))p^(2) − 2(ab + bc + cd)p + (b^(2) + c^(2) + d^(2)) ≤ 0, then a, b, c, d -',options:['are in A.P.','are in G.P.','are in H.P.','satisfy ab = cd'],correct:1,answer:'are in G.P.',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'controlled transfer'},short:[
+ ['Recognise the left side as a sum of three perfect squares.','(ap − b)^(2) + (bp − c)^(2) + (cp − d)^(2) = (a^(2)+b^(2)+c^(2))p^(2) − 2(ab+bc+cd)p + (b^(2)+c^(2)+d^(2))'],
+ ['A sum of squares is ≤ 0 only when it is 0, forcing every square to vanish.','(ap − b)^(2) = (bp − c)^(2) = (cp − d)^(2) = 0'],
+ ['Each bracket gives the same common ratio p.','ap = b ⇒ (b)/(a) = p   bp = c ⇒ (c)/(b) = p   cp = d ⇒ (d)/(c) = p'],
+ ['Equal consecutive ratios mean a, b, c, d form a geometric progression.','a, b, c, d are in G.P.','Correct answer: (B)']
+]},
+{id:'QUAD-02-C',parent:'QUAD-02',variant:3,topic:'Nature of roots via the discriminant',source:'Institute module · Q112 · question p.8 · IIT-1989',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:112,questionPage:8,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If α & β are the roots of x^(2) + px + q = 0 and α^(4), β^(4) are the roots of x^(2) − rx + s = 0, then the equation x^(2) − 4qx + 2q^(2) − r = 0 has always',options:['two real roots','two positive roots','two negative roots','one positive and one negative root'],correct:0,answer:'two real roots',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'direct retry'},short:[
+ ['Read off the relations from each quadratic’s coefficients.','αβ = q   α^(4) + β^(4) = r'],
+ ['State the discriminant of a quadratic Ax^(2)+Bx+C.','D = B^(2) − 4AC'],
+ ['Substitute the coefficients of x^(2) − 4qx + (2q^(2) − r).','D = 16q^(2) − 4(2q^(2) − r) = 8q^(2) + 4r'],
+ ['Substitute q = αβ and r = α^(4)+β^(4), then use (α^(2)+β^(2))^(2) = α^(4) + 2α^(2)β^(2) + β^(4) to rewrite D as a single square.','D = 8α^(2)β^(2) + 4α^(4) + 4β^(4) = 4(α^(4) + 2α^(2)β^(2) + β^(4)) = 4(α^(2) + β^(2))^(2)'],
+ ['D is 4 times a real square: α^(2)+β^(2) is real even when α, β are a complex-conjugate pair, so D ≥ 0 always and the equation always has real roots.','D = 4(α^(2) + β^(2))^(2) ≥ 0','Correct answer: (A)']
+]},
+{id:'QUAD-02-D',parent:'QUAD-02',variant:4,topic:'Nature of roots via the discriminant',source:'Institute module · Q128 · question p.9 · IIT-2006',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:128,questionPage:9,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let a, b, c be sides of a triangle and any two of them are not equal, and λ ∈ R. If the roots of the equation x^(2) + 2(a + b + c)x + 3λ(ab + bc + ca) = 0 are real then-',options:['(4)/(3) < λ < (5)/(3)','(1)/(3) < λ < (5)/(3)','λ > (5)/(3)','λ < (4)/(3)'],correct:3,answer:'λ < (4)/(3)',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'controlled transfer'},short:[
+ ['State the discriminant condition for real roots of Ax^(2)+Bx+C.','D = B^(2) − 4AC ≥ 0'],
+ ['Substitute the coefficients of the given equation.','4(a + b + c)^(2) − 12λ(ab + bc + ca) ≥ 0 ⇒ λ ≤ ((a + b + c)^(2))/(3(ab + bc + ca))'],
+ ['For a triangle, each side is less than the sum of the other two; squaring and adding the three inequalities gives a bound on the sum of squares.','a^(2) + b^(2) + c^(2) < 2(ab + bc + ca)'],
+ ['Add 2(ab + bc + ca) to both sides and use (a + b + c)^(2) = a^(2)+b^(2)+c^(2) + 2(ab + bc + ca).','(a + b + c)^(2) < 4(ab + bc + ca)'],
+ ['Divide by 3(ab + bc + ca), so the upper bound on λ is strictly below (4)/(3).','λ ≤ ((a + b + c)^(2))/(3(ab + bc + ca)) < (4)/(3)','Correct answer: (D)']
+]},
+{id:'QUAD-02-E',parent:'QUAD-02',variant:5,topic:'Nature of roots via the discriminant',source:'Institute module · Q133 · question p.10',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:133,questionPage:10,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If the roots of the equation x^(2) + 2cx + ab = 0 are real and unequal, then the roots of the equation x^(2) − 2(a+b)x + (a^(2) + b^(2) + 2c^(2)) = 0 are :',options:['real and unequal','real and equal','imaginary','rational'],correct:2,answer:'imaginary',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'direct retry'},short:[
+ ['State the discriminant condition for real, unequal roots of Ax^(2)+Bx+C.','D = B^(2) − 4AC > 0'],
+ ['Apply it to the first equation.','(2c)^(2) − 4ab > 0 ⇒ c^(2) > ab'],
+ ['Compute the discriminant of the second equation with the same formula.','D_(2) = [−2(a+b)]^(2) − 4(a^(2)+b^(2)+2c^(2))'],
+ ['Expand and simplify.','D_(2) = 4(a+b)^(2) − 4(a^(2)+b^(2)+2c^(2)) = 4(2ab − 2c^(2)) = 8(ab − c^(2))'],
+ ['Since c^(2) > ab, ab − c^(2) is negative, so D_(2) < 0 and the roots are imaginary.','D_(2) = 8(ab − c^(2)) < 0','Correct answer: (C)']
+]},
+{id:'QUAD-02-F',parent:'QUAD-02',variant:6,topic:'Nature of roots via the discriminant',source:'Institute module · Q143 · question p.10',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:143,questionPage:10,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The number of real roots of the equation, (x − 1)^(2) + (x − 2)^(2) + (x − 3)^(2) = 0 is -',options:['0','1','2','3'],correct:0,answer:'0',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'direct retry'},short:[
+ ['A sum of real squares equals 0 only if every square is individually 0.','(x−1)^(2) = (x−2)^(2) = (x−3)^(2) = 0'],
+ ['No real x can equal 1, 2 and 3 at once, so the sum is never 0 for any real x.','no real x satisfies all three simultaneously','Correct answer: (A)']
+]},
+{id:'QUAD-02-G',parent:'QUAD-02',variant:7,topic:'Nature of roots via the discriminant',source:'Institute module · Q168 · question p.13',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:168,questionPage:13,printedOptionKey:'C',verifiedOptionKey:'C'},question:'Let a,b,c be the three sides of a triangle, then the quadratic equation b^(2)x^(2) + (b^(2) + c^(2) − a^(2))x + c^(2) = 0 has',options:['both roots positive','both roots negative','both roots imaginary','None of these'],correct:2,answer:'both roots imaginary',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'controlled transfer'},short:[
+ ['Use the law of cosines for angle A opposite side a.','a^(2) = b^(2) + c^(2) − 2bc cosA'],
+ ['So b^(2)+c^(2)−a^(2) = 2bc cosA; substitute into the equation.','b^(2)x^(2) + 2bc cosA·x + c^(2) = 0'],
+ ['State the discriminant of a quadratic Ax^(2)+Bx+C.','D = B^(2) − 4AC'],
+ ['Substitute the coefficients.','D = (2bc cosA)^(2) − 4b^(2)c^(2) = 4b^(2)c^(2)(cos^(2)A − 1)'],
+ ['cos^(2)A − 1 = −sin^(2)A < 0 for a triangle angle (0 < A < π), so D < 0 and the roots are imaginary.','D = −4b^(2)c^(2)sin^(2)A < 0','Correct answer: (C)']
+]},
+{id:'QUAD-02-H',parent:'QUAD-02',variant:8,topic:'Nature of roots via the discriminant',source:'Institute module · Q171 · question p.14',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:171,questionPage:14,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If p,q ∈ {1, 2, 3, 4, 5} then number of equations of form p^(2)x^(2) + q^(2)x + 1 = 0 having real roots is',options:['15','13','16','17'],correct:2,answer:'16',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'inverse or representation check'},short:[
+ ['State the discriminant condition for real roots.','D = B^(2) − 4AC ≥ 0'],
+ ['Substitute the coefficients p^(2), q^(2), 1.','q^(4) − 4p^(2) ≥ 0 ⇒ q^(2) ≥ 2p'],
+ ['Check each p from 1 to 5 and count the q from 1 to 5 satisfying q^(2) ≥ 2p.','p=1: q=2,3,4,5 (4)   p=2: q=2,3,4,5 (4)   p=3: q=3,4,5 (3)'],
+ ['Continue for p = 4 and p = 5.','p=4: q=3,4,5 (3)   p=5: q=4,5 (2)'],
+ ['Add the counts.','4 + 4 + 3 + 3 + 2 = 16','Correct answer: (C)']
+]},
+{id:'QUAD-02-I',parent:'QUAD-02',variant:9,topic:'Nature of roots via the discriminant',source:'Institute module · Q218 · question p.20',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:218,questionPage:20,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If p, q ∈ {1, 2, 3, 4}, the number of equations of the form px^(2) + qx + 1 = 0 having real roots is –',options:['15','9','7','8'],correct:2,answer:'7',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'direct retry'},short:[
+ ['State the discriminant condition for real roots.','D = B^(2) − 4AC ≥ 0'],
+ ['Substitute the coefficients p, q, 1.','q^(2) − 4p ≥ 0 ⇒ q^(2) ≥ 4p'],
+ ['Check each p from 1 to 4 and count the q from 1 to 4 satisfying q^(2) ≥ 4p.','p=1: q=2,3,4 (3)   p=2: q=3,4 (2)   p=3: q=4 (1)   p=4: q=4 (1)'],
+ ['Add the counts.','3 + 2 + 1 + 1 = 7','Correct answer: (C)']
+]},
+{id:'QUAD-02-J',parent:'QUAD-02',variant:10,topic:'Nature of roots via the discriminant',source:'Institute module · Q499 · question p.52',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:499,questionPage:52,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The roots of the equation (a^(2) + b^(2)) x^(2) − 2(bc + ad)x + (c^(2) + d^(2)) = 0 are equal, if -',options:['ab = cd','ac = bd','ad + bc = 0','None of these'],correct:1,answer:'ac = bd',diagram:'',relevance:{parent:'QUAD-02',sharedSkill:'Nature of roots via the discriminant',recoveryPurpose:'direct retry'},short:[
+ ['Equal roots means the discriminant is 0.','D = B^(2) − 4AC = 0'],
+ ['Substitute the coefficients of the given equation.','4(bc + ad)^(2) − 4(a^(2)+b^(2))(c^(2)+d^(2)) = 0'],
+ ['Expand both products.','(bc+ad)^(2) = b^(2)c^(2) + 2abcd + a^(2)d^(2)   (a^(2)+b^(2))(c^(2)+d^(2)) = a^(2)c^(2)+a^(2)d^(2)+b^(2)c^(2)+b^(2)d^(2)'],
+ ['Subtract; the difference collapses to a single perfect square.','(bc+ad)^(2) − (a^(2)+b^(2))(c^(2)+d^(2)) = 2abcd − a^(2)c^(2) − b^(2)d^(2) = −(ac − bd)^(2)'],
+ ['Setting this to 0 forces the square to vanish.','(ac − bd)^(2) = 0 ⇒ ac = bd','Correct answer: (B)']
+]},
+{id:'QUAD-03-A',parent:'QUAD-03',variant:1,topic:'Relation between the roots and the coefficients',source:'Institute module · Q511 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:511,questionPage:53,printedOptionKey:'A',verifiedOptionKey:'A'},question:'For what value of a, the difference of roots of the equation (a – 2)x^(2) – (a – 4)x – 2 = 0 is equal to 3',options:['3, (3)/(2)','3, 1','1, (3)/(2)','None of these'],correct:0,answer:'3, (3)/(2)',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'inverse or representation check'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = (a − 4)/(a − 2)  αβ = −(2)/(a − 2)'],
+ ['The square of the difference of the roots is (α + β)^(2) − 4αβ.','(α − β)^(2) = (α + β)^(2) − 4αβ'],
+ ['Substitute the sum and product, and set the difference equal to 3, so square both sides.','[(a − 4)/(a − 2)]^(2) + (8)/(a − 2) = 9'],
+ ['Clear the denominator by multiplying through by (a − 2)^(2).','(a − 4)^(2) + 8(a − 2) = 9(a − 2)^(2)'],
+ ['Expand both sides.','a^(2) − 8a + 16 + 8a − 16 = 9a^(2) − 36a + 36'],
+ ['Collect every term on one side, so simplify.','8a^(2) − 36a + 36 = 0'],
+ ['Divide by 4, then factor the resulting quadratic in a.','2a^(2) − 9a + 9 = (2a − 3)(a − 3) = 0'],
+ ['So a equals.','a = 3, (3)/(2)','Correct answer: (A)']
+]},
+{id:'QUAD-03-B',parent:'QUAD-03',variant:2,topic:'Relation between the roots and the coefficients',source:'Institute module · Q515 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:515,questionPage:53,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If product of roots of the equation mx^(2) + 6x + (2m – 1) = 0 is – 1, then m equals-',options:['– 1','1','(1)/(3)','– (1)/(3)'],correct:2,answer:'(1)/(3)',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'inverse or representation check'},short:[
+ ['State the product-of-roots formula for ax^(2) + bx + c = 0.','αβ = (c)/(a)'],
+ ['Substitute the coefficients from the given equation.','αβ = (2m − 1)/(m)'],
+ ['Set the product equal to −1.','(2m − 1)/(m) = −1'],
+ ['Clear the denominator.','2m − 1 = −m'],
+ ['Collect the m terms, so solve.','3m = 1'],
+ ['Divide by 3.','m = (1)/(3)','Correct answer: (C)']
+]},
+{id:'QUAD-03-C',parent:'QUAD-03',variant:3,topic:'Relation between the roots and the coefficients',source:'Institute module · Q516 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:516,questionPage:53,printedOptionKey:'B',verifiedOptionKey:'B'},question:'For what value of a the sum of roots of the equation x^(2) + 2(2 – a – a^(2))x – a^(2) = 0 is zero -',options:['1, 2','1, – 2','– 1, 2','– 1, – 2'],correct:1,answer:'1, – 2',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'inverse or representation check'},short:[
+ ['State the sum-of-roots formula for x^(2) + bx + c = 0.','α + β = −b'],
+ ['Substitute the coefficient of x from the given equation.','α + β = −2(2 − a − a^(2))'],
+ ['Set the sum equal to zero, so drop the constant factor.','2 − a − a^(2) = 0'],
+ ['Rewrite in standard form.','a^(2) + a − 2 = 0'],
+ ['Factor.','a^(2) + a − 2 = (a + 2)(a − 1) = 0'],
+ ['So a equals.','a = 1, – 2','Correct answer: (B)']
+]},
+{id:'QUAD-03-D',parent:'QUAD-03',variant:4,topic:'Relation between the roots and the coefficients',source:'Institute module · Q518 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:518,questionPage:53,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The HM of the roots of the equation x^(2) – 8x + 4 = 0 is -',options:['1','2','3','None of these'],correct:0,answer:'1',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = 8  αβ = 4'],
+ ['State the harmonic mean of two numbers.','HM = (2αβ)/(α + β)'],
+ ['Substitute the sum and product.','HM = (2 × 4)/(8)'],
+ ['Simplify.','HM = (8)/(8) = 1','Correct answer: (A)']
+]},
+{id:'QUAD-03-E',parent:'QUAD-03',variant:5,topic:'Relation between the roots and the coefficients',source:'Institute module · Q519 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:519,questionPage:53,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If the sum of the roots of the equation ax^(2) + 4x + c = 0 is half of their difference, then the value of ac is-',options:['4','8','12','– 12'],correct:3,answer:'– 12',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'inverse or representation check'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = −(4)/(a)  αβ = (c)/(a)'],
+ ['Write the given condition, the sum is half the difference, then square both sides to avoid a sign ambiguity.','(α + β)^(2) = (1)/(4)(α − β)^(2)'],
+ ['The square of the difference of the roots is (α + β)^(2) − 4αβ.','(α − β)^(2) = (α + β)^(2) − 4αβ'],
+ ['Substitute this into the condition.','(α + β)^(2) = (1)/(4)[(α + β)^(2) − 4αβ]'],
+ ['Multiply both sides by 4.','4(α + β)^(2) = (α + β)^(2) − 4αβ'],
+ ['Collect the (α + β)^(2) terms, so isolate αβ.','3(α + β)^(2) = −4αβ'],
+ ['Substitute the sum and product in terms of a and c.','3 × (16)/(a^(2)) = −4 × (c)/(a)'],
+ ['Simplify the left side, so clear the denominators.','(48)/(a^(2)) = −(4c)/(a)'],
+ ['Multiply both sides by a^(2).','48 = −4ac'],
+ ['Divide by −4.','ac = −12','Correct answer: (D)']
+]},
+{id:'QUAD-03-F',parent:'QUAD-03',variant:6,topic:'Relation between the roots and the coefficients',source:'Institute module · Q520 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:520,questionPage:53,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If the sum of the roots of the equation (a + 1)x^(2) + (2a + 3) x + (3a + 4) = 0 is –1, then the product of the roots is -',options:['0','1','2','3'],correct:2,answer:'2',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'inverse or representation check'},short:[
+ ['State the sum-of-roots formula for Ax^(2) + Bx + C = 0.','α + β = −(B)/(A)'],
+ ['Substitute the coefficients from the given equation.','α + β = −(2a + 3)/(a + 1)'],
+ ['Set the sum equal to −1.','−(2a + 3)/(a + 1) = −1'],
+ ['Clear the denominator.','2a + 3 = a + 1'],
+ ['Solve for a.','a = −2'],
+ ['State the product-of-roots formula.','αβ = (C)/(A)'],
+ ['Substitute a = −2 and the coefficients.','αβ = (3(−2) + 4)/(−2 + 1)'],
+ ['Simplify.','αβ = (−2)/(−1) = 2','Correct answer: (C)']
+]},
+{id:'QUAD-03-G',parent:'QUAD-03',variant:7,topic:'Relation between the roots and the coefficients',source:'Institute module · Q522 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:522,questionPage:53,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α, β are roots of the equation 2x^(2) – 5x + 3 = 0, then α^(2)β + β^(2)α is equal to-',options:['(15)/(2)','– (15)/(4)','(15)/(4)','– (15)/(2)'],correct:2,answer:'(15)/(4)',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = (5)/(2)  αβ = (3)/(2)'],
+ ['Factor the expression as a product of the product and sum of the roots.','α^(2)β + β^(2)α = αβ(α + β)'],
+ ['Substitute the sum and product.','α^(2)β + β^(2)α = (3)/(2) × (5)/(2)'],
+ ['Simplify.','α^(2)β + β^(2)α = (15)/(4)','Correct answer: (C)']
+]},
+{id:'QUAD-03-H',parent:'QUAD-03',variant:8,topic:'Relation between the roots and the coefficients',source:'Institute module · Q524 · question p.53',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:524,questionPage:53,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α and β are roots of ax^(2) – bx + c = 0, then (α + 1) (β + 1) is equal to -',options:['(a – b + c)/(a)','(a + b – c)/(a)','(a + b + c)/(a)','(b – a + c)/(a)'],correct:2,answer:'(a + b + c)/(a)',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = (b)/(a)  αβ = (c)/(a)'],
+ ['Expand the product.','(α + 1)(β + 1) = αβ + α + β + 1'],
+ ['Substitute the sum and product.','(α + 1)(β + 1) = (c)/(a) + (b)/(a) + 1'],
+ ['Combine over a common denominator.','(α + 1)(β + 1) = (a + b + c)/(a)','Correct answer: (C)']
+]},
+{id:'QUAD-03-I',parent:'QUAD-03',variant:9,topic:'Relation between the roots and the coefficients',source:'Institute module · Q131 · question p.9',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:131,questionPage:9,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If the difference of the roots of the equation, x^(2) + px + q = 0 be unity, then (p^(2) + 4q^(2)) equals :',options:['(1 + 2q)^(2)','(1 – 2q)^(2)','4(p – q)^(2)','2(p – q)^(2)'],correct:0,answer:'(1 + 2q)^(2)',diagram:'',relevance:{parent:'QUAD-03',sharedSkill:'Relation between the roots and the coefficients',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = −p  αβ = q'],
+ ['The square of the difference of the roots is (α + β)^(2) − 4αβ.','(α − β)^(2) = (α + β)^(2) − 4αβ'],
+ ['Substitute the sum and product, and set the difference equal to 1.','1 = p^(2) − 4q'],
+ ['Rearrange, so isolate p^(2).','p^(2) = 1 + 4q'],
+ ['Add 4q^(2) to both sides.','p^(2) + 4q^(2) = 1 + 4q + 4q^(2)'],
+ ['Recognise the right side as a perfect square.','p^(2) + 4q^(2) = (1 + 2q)^(2)','Correct answer: (A)']
+]},
+{id:'QUAD-04-A',parent:'QUAD-04',variant:1,topic:'Symmetric functions of the roots',source:'Institute module · Q62 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:62,questionPage:5,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α, β are roots of the equation 2x^(2) – 35x + 2 = 0, then the value of (2α – 35)^(3).(2β – 35)^(3) is equal to-',options:['1','8','64','None of these'],correct:2,answer:'64',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'direct retry'},short:[
+ ['Read the product of the roots off the coefficients.','αβ = (2)/(2) = 1'],
+ ['Since α satisfies the equation, divide it through by α.','2α^(2) − 35α + 2 = 0, so 2α − 35 + (2)/(α) = 0'],
+ ['Isolate 2α − 35.','2α − 35 = −(2)/(α)'],
+ ['The same argument for β gives.','2β − 35 = −(2)/(β)'],
+ ['Multiply the two results.','(2α − 35)(2β − 35) = (4)/(αβ)'],
+ ['Substitute the product of the roots.','(2α − 35)(2β − 35) = (4)/(1) = 4'],
+ ['Cube both sides.','(2α − 35)^(3)(2β − 35)^(3) = 4^(3)'],
+ ['Simplify.','(2α − 35)^(3)(2β − 35)^(3) = 64','Correct answer: (C)']
+]},
+{id:'QUAD-04-B',parent:'QUAD-04',variant:2,topic:'Symmetric functions of the roots',source:'Institute module · Q64 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:64,questionPage:5,printedOptionKey:'B',verifiedOptionKey:'B'},question:"The value of 'a' for which the sum of the squares of the roots of 2x^(2) – 2(a –2)x – a – 1 = 0 is least is",options:['1','(3)/(2)','2','–1'],correct:1,answer:'(3)/(2)',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'direct retry'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = (a − 2)  αβ = −(a + 1)/(2)'],
+ ['Write the sum of squares in terms of the sum and product.','α^(2) + β^(2) = (α + β)^(2) − 2αβ'],
+ ['Substitute.','α^(2) + β^(2) = (a − 2)^(2) − 2 × [−(a + 1)/(2)]'],
+ ['Simplify the second term.','α^(2) + β^(2) = (a − 2)^(2) + (a + 1)'],
+ ['Expand and collect in a.','α^(2) + β^(2) = a^(2) − 4a + 4 + a + 1 = a^(2) − 3a + 5'],
+ ['Complete the square to find the minimising value of a.','α^(2) + β^(2) = (a − (3)/(2))^(2) + (11)/(4)'],
+ ['The minimum occurs at.','a = (3)/(2)','Correct answer: (B)']
+]},
+{id:'QUAD-04-C',parent:'QUAD-04',variant:3,topic:'Symmetric functions of the roots',source:'Institute module · Q204 · question p.18',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:204,questionPage:18,printedOptionKey:'D',verifiedOptionKey:'D'},question:"The value of 'a' so that the sum of the squares of the roots of the equation x^(2) – (a–2)x – a + 1 = 0. assume the least value, is",options:['2','0','3','1'],correct:3,answer:'1',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'direct retry'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = (a − 2)  αβ = (1 − a)'],
+ ['Write the sum of squares in terms of the sum and product.','α^(2) + β^(2) = (α + β)^(2) − 2αβ'],
+ ['Substitute.','α^(2) + β^(2) = (a − 2)^(2) − 2(1 − a)'],
+ ['Expand and collect in a.','α^(2) + β^(2) = a^(2) − 4a + 4 − 2 + 2a = a^(2) − 2a + 2'],
+ ['Complete the square to find the minimising value of a.','α^(2) + β^(2) = (a − 1)^(2) + 1'],
+ ['The minimum occurs at.','a = 1','Correct answer: (D)']
+]},
+{id:'QUAD-04-D',parent:'QUAD-04',variant:4,topic:'Symmetric functions of the roots',source:'Institute module · Q219 · question p.20',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:219,questionPage:20,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If the sum of squares of roots of equation x^(2) – (sin α –2)x – (1 + sin α) = 0 is the least, then α is equal to -',options:['(π)/(4)','(π)/(3)','(π)/(2)','(π)/(6)'],correct:2,answer:'(π)/(2)',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','p + q = (sin α − 2)  pq = −(1 + sin α)'],
+ ['Write the sum of squares in terms of the sum and product.','p^(2) + q^(2) = (p + q)^(2) − 2pq'],
+ ['Substitute.','p^(2) + q^(2) = (sin α − 2)^(2) + 2(1 + sin α)'],
+ ['Expand and collect in sin α.','p^(2) + q^(2) = sin^(2)α − 4sin α + 4 + 2 + 2sin α = sin^(2)α − 2sin α + 6'],
+ ['Complete the square in sin α.','p^(2) + q^(2) = (sin α − 1)^(2) + 5'],
+ ['Since sin α ranges over [−1, 1], the square is smallest when sin α = 1.','sin α = 1'],
+ ['So α equals.','α = (π)/(2)','Correct answer: (C)']
+]},
+{id:'QUAD-04-E',parent:'QUAD-04',variant:5,topic:'Symmetric functions of the roots',source:'Institute module · Q426 · question p.38',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:426,questionPage:38,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α, β are the roots of the equation 4x^(2) + 3x + 7 = 0, then the value of (1)/(α^(3)) + (1)/(β^(3)) is equal to -',options:['– (27)/(64)','(63)/(16)','(225)/(343)','None of these'],correct:2,answer:'(225)/(343)',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = −(3)/(4)  αβ = (7)/(4)'],
+ ['State the sum-of-cubes identity.','α^(3) + β^(3) = (α + β)^(3) − 3αβ(α + β)'],
+ ['Combine reciprocal cubes over the common denominator (αβ)^(3).','(1)/(α^(3)) + (1)/(β^(3)) = (α^(3) + β^(3))/((αβ)^(3))'],
+ ['Substitute the sum and product into the sum-of-cubes identity.','α^(3) + β^(3) = (−(3)/(4))^(3) − 3 × (7)/(4) × (−(3)/(4))'],
+ ['Simplify.','α^(3) + β^(3) = −(27)/(64) + (63)/(16) = (225)/(64)'],
+ ['Compute the denominator (αβ)^(3).','(αβ)^(3) = ((7)/(4))^(3) = (343)/(64)'],
+ ['Divide; the common denominator 64 cancels.','(1)/(α^(3)) + (1)/(β^(3)) = (225)/(343)','Correct answer: (C)']
+]},
+{id:'QUAD-04-F',parent:'QUAD-04',variant:6,topic:'Symmetric functions of the roots',source:'Institute module · Q529 · question p.54',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:529,questionPage:54,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If α, β are roots of the equation x^(2) – mx + n = 0, then value of (1 + α + α^(2)) (1+ β + β^(2)) is -',options:['1 + (m + n) + (m^(2) – mn + n^(2))','1 + (m + n) + (m^(2) + mn + n^(2))','1 – (m– n) + (m^(2) + mn + n^(2))','None of these'],correct:3,answer:'None of these',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = m  αβ = n'],
+ ['Expand the product into nine terms.','(1 + α + α^(2))(1 + β + β^(2)) = 1 + (α + β) + (α^(2) + β^(2)) + αβ + (α^(2)β + αβ^(2)) + α^(2)β^(2)'],
+ ['Write the sum of squares in terms of the sum and product.','α^(2) + β^(2) = (α + β)^(2) − 2αβ'],
+ ['Write the mixed term as a product of the product and sum of the roots.','α^(2)β + αβ^(2) = αβ(α + β)'],
+ ['Substitute m and n into every symmetric piece.','(1 + α + α^(2))(1 + β + β^(2)) = 1 + m + (m^(2) − 2n) + n + nm + n^(2)'],
+ ['Collect like terms.','(1 + α + α^(2))(1 + β + β^(2)) = 1 + m − n + m^(2) + mn + n^(2)'],
+ ['This does not match option (A), (B) or (C) for general m, n — for example m = 3, n = 2 gives 21, while (A) gives 13, (B) gives 25 and (C) gives 19.','Correct answer: (D)']
+]},
+{id:'QUAD-04-G',parent:'QUAD-04',variant:7,topic:'Symmetric functions of the roots',source:'Institute module · Q657 · question p.62 · [AIEEE-2002]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:657,questionPage:62,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If α^(2) = 5α – 3, β^(2) = 5β – 3 then the value of (α)/(β) + (β)/(α) is',options:['(19)/(3)','(25)/(3)','– (19)/(3)','None of these'],correct:0,answer:'(19)/(3)',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'controlled transfer'},short:[
+ ['Both α and β satisfy the same relation x^(2) = 5x − 3, so they are the two roots of the quadratic x^(2) − 5x + 3 = 0.','x^(2) − 5x + 3 = 0'],
+ ['Read the sum and product of the roots off the coefficients.','α + β = 5  αβ = 3'],
+ ['Combine the reciprocal terms over the common denominator αβ.','(α)/(β) + (β)/(α) = (α^(2) + β^(2))/(αβ)'],
+ ['Write the sum of squares in terms of the sum and product.','α^(2) + β^(2) = (α + β)^(2) − 2αβ'],
+ ['Substitute.','α^(2) + β^(2) = 5^(2) − 2 × 3 = 19'],
+ ['Divide by the product.','(α)/(β) + (β)/(α) = (19)/(3)','Correct answer: (A)']
+]},
+{id:'QUAD-04-H',parent:'QUAD-04',variant:8,topic:'Symmetric functions of the roots',source:'Institute module · Q539 · question p.54',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:539,questionPage:54,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If roots of quadratic equation ax^(2) + bx + c = 0 are α and β then symmetric expression of its roots is -',options:['(α)/(β) + (β^(2))/(α)','α^(2)β^(-2) + α^(-2)β^(2)','α^(2)β + 2αβ^(2)','(α + (1)/(α))(β + (1)/(α))'],correct:1,answer:'α^(2)β^(-2) + α^(-2)β^(2)',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'inverse or representation check'},short:[
+ ['A function of α and β is symmetric when swapping α and β leaves it unchanged.','f(α, β) = f(β, α)'],
+ ['Swap α and β in option (A).','(α)/(β) + (β^(2))/(α)  →  (β)/(α) + (α^(2))/(β)'],
+ ['These are not equal in general, so option (A) is not symmetric.','(α)/(β) + (β^(2))/(α) ≠ (β)/(α) + (α^(2))/(β)'],
+ ['Swap α and β in option (B).','α^(2)β^(-2) + α^(-2)β^(2)  →  β^(2)α^(-2) + β^(-2)α^(2)'],
+ ['The swapped expression is the same two terms in the same order, so option (B) is symmetric.','α^(2)β^(-2) + α^(-2)β^(2) = β^(2)α^(-2) + β^(-2)α^(2)'],
+ ['Swap α and β in option (C).','α^(2)β + 2αβ^(2)  →  αβ^(2) + 2α^(2)β'],
+ ['This is not the same expression as the original, so option (C) is not symmetric.','α^(2)β + 2αβ^(2) ≠ αβ^(2) + 2α^(2)β'],
+ ['Option (D) pairs β with (1)/(α) instead of (1)/(β), so it is not even a symmetric-looking function of the pair {α, β}.','(α + (1)/(α))(β + (1)/(α))'],
+ ['Only option (B) is unchanged under the swap.','Correct answer: (B)']
+]},
+{id:'QUAD-04-I',parent:'QUAD-04',variant:9,topic:'Symmetric functions of the roots',source:'Institute module · Q658 · question p.62 · [AIEEE-2003]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:658,questionPage:62,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If the sum of the roots of the quadratic equation ax^(2) + bx + c = 0 is equal to the sum of the squares of their reciprocals, then (a)/(c), (b)/(a) and (c)/(b) are in-',options:['Arithmetic Geometric Progression','Arithmetic Progression','Geometric Progression','Harmonic Progression'],correct:3,answer:'Harmonic Progression',diagram:'',relevance:{parent:'QUAD-04',sharedSkill:'Symmetric functions of the roots',recoveryPurpose:'controlled transfer'},short:[
+ ['Read the sum and product of the roots off the coefficients.','α + β = −(b)/(a)  αβ = (c)/(a)'],
+ ['Write the sum of squares in terms of the sum and product.','α^(2) + β^(2) = (α + β)^(2) − 2αβ'],
+ ['Combine the sum of the squares of the reciprocals over the common denominator (αβ)^(2).','(1)/(α^(2)) + (1)/(β^(2)) = (α^(2) + β^(2))/((αβ)^(2))'],
+ ['Apply the given condition, that α + β equals this sum of squared reciprocals.','α + β = (α^(2) + β^(2))/((αβ)^(2))'],
+ ['Substitute a, b, c for every piece and simplify to a single fraction, clearing the common a^(2).','−(b)/(a) = (b^(2) − 2ac)/(c^(2))'],
+ ['Cross-multiply.','−bc^(2) = a(b^(2) − 2ac)'],
+ ['Expand and collect terms.','2a^(2)c = ab^(2) + bc^(2)'],
+ ['Divide every term by abc.','(2a)/(b) = (b)/(c) + (c)/(a)'],
+ ['State the condition for three numbers x, y, z to be in Harmonic Progression: their reciprocals are in Arithmetic Progression.','(2)/(y) = (1)/(x) + (1)/(z)'],
+ ['With x = (a)/(c), y = (b)/(a), z = (c)/(b), the reciprocals are (1)/(x) = (c)/(a), (1)/(y) = (a)/(b), (1)/(z) = (b)/(c), and the relation just derived is exactly (2)/(y) = (1)/(x) + (1)/(z) rearranged.','(2a)/(b) = (c)/(a) + (b)/(c)','Correct answer: (D)']
+]},
+{id:'QUAD-05-A',parent:'QUAD-05',variant:1,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q66 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:66,questionPage:5,printedOptionKey:'B',verifiedOptionKey:'C'},question:'If α, β are roots of the equation x^(2) – 5x + 6 = 0 then the equation whose roots are α + 3 and β + 3 is-',options:['x^(2) – 11x + 30 = 0','(x – 3)^(2) – 5(x – 3) + 6 = 0','Both (A) and (B)','None of these'],correct:2,answer:'Both (A) and (B)',diagram:'',short:[
+ ['Factor the given equation to find α and β directly.','x^(2) – 5x + 6 = 0 ⇒ (x – 2)(x – 3) = 0 ⇒ α = 2, β = 3'],
+ ['The new roots are α + 3 and β + 3.','α + 3 = 5, β + 3 = 6'],
+ ['Build the equation from these two roots: x^(2) − (sum)x + (product) = 0.','x^(2) − (5 + 6)x + (5)(6) = 0','x^(2) − 11x + 30 = 0'],
+ ['A quadratic with roots shifted by h is obtained by substituting (x − h) for x in the original equation.','f(x) = 0 has roots α, β ⇒ f(x − h) = 0 has roots α + h, β + h'],
+ ['Substitute h = 3 into x^(2) – 5x + 6 = 0.','(x – 3)^(2) – 5(x – 3) + 6 = 0'],
+ ['Expand this to compare it with the first form.','(x – 3)^(2) – 5(x – 3) + 6 = x^(2) – 6x + 9 – 5x + 15 + 6','= x^(2) – 11x + 30'],
+ ['Since the expansion of the substitution form is exactly the same polynomial as the directly-built equation, options (A) and (B) are two ways of writing the identical equation, so both are correct.','Correct answer: (C)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'direct retry'}},
+{id:'QUAD-05-B',parent:'QUAD-05',variant:2,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q68 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:68,questionPage:5,printedOptionKey:'B',verifiedOptionKey:'B'},question:'Let α, β, γ, δ be the roots of x^(4) + x^(2) + 1 = 0. Then the equation whose roots are α^(2), β^(2), γ^(2), δ^(2) is-',options:['(x^(4) – x + 1)^(2) = 0','(x^(2) + x + 1)^(2) = 0','x^(4) – x^(2) + 1 = 0','x^(2) + x + 1 = 0'],correct:1,answer:'(x^(2) + x + 1)^(2) = 0',diagram:'',short:[
+ ['Substitute y = x^(2) into the quartic to reduce it to a quadratic in y.','x^(4) + x^(2) + 1 = 0 ⇒ y^(2) + y + 1 = 0, where y = x^(2)'],
+ ['This quadratic has two roots for y; each one corresponds to two values of x (its two square roots), and both of those x-values square back to that same y.','y^(2) + y + 1 = 0 has roots y_(1), y_(2), and each is the square of two of α, β, γ, δ'],
+ ['So the list {α^(2), β^(2), γ^(2), δ^(2)} is exactly {y_(1), y_(2)} each repeated twice — the equation satisfied by this list is the y-equation counted with double multiplicity.','Required equation: (y^(2) + y + 1)^(2) = 0'],
+ ['Rename y back to x.','(x^(2) + x + 1)^(2) = 0','Correct answer: (B)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-05-C',parent:'QUAD-05',variant:3,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q106 · question p.8',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:106,questionPage:8,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α, β are the roots of the equation ax^(2) + bx + c = 0, then the roots of the equation a(2x + 1)^(2) + b(2x + 1)(x – 1) + c(x – 1)^(2) = 0 are',options:['(2α+1)/(α–1), (2β+1)/(β–1)','(2α–1)/(α+1), (2β–1)/(β+1)','(α+1)/(α–2), (β+1)/(β–2)','(2α+3)/(α–1), (2β+3)/(β–1)'],correct:2,answer:'(α+1)/(α–2), (β+1)/(β–2)',diagram:'',short:[
+ ['Divide the given equation through by (x – 1)^(2), which packages it into a single ratio y = (2x+1)/(x–1).','a(2x+1)^(2) + b(2x+1)(x–1) + c(x–1)^(2) = 0 ⇒ a((2x+1)/(x–1))^(2) + b((2x+1)/(x–1)) + c = 0'],
+ ['Let y = (2x+1)/(x–1); the equation becomes the original equation with x replaced by y.','a y^(2) + b y + c = 0'],
+ ['Since ax^(2)+bx+c=0 has roots α, β, this y-equation has the same roots, so y = α or y = β.','y = α or y = β'],
+ ['Solve y = (2x+1)/(x–1) = α for x.','2x + 1 = α(x – 1) ⇒ x(2 – α) = –α – 1 ⇒ x = (α+1)/(α–2)'],
+ ['The same steps with β give the other root.','x = (β+1)/(β–2)','Correct answer: (C)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'inverse or representation check'}},
+{id:'QUAD-05-D',parent:'QUAD-05',variant:4,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q132 · question p.10',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:132,questionPage:10,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α & β are the roots of the quadratic equation ax^(2) + bx + c = 0, then the quadratic equation, ax^(2) – bx(x – 1) + c(x – 1)^(2) = 0 has roots :',options:['(α)/(1–α), (β)/(1–β)','α–1, β–1','(α)/(α+1), (β+1)/(β+1)','(1–α)/(α), (1–β)/(β)'],correct:2,answer:'(α)/(α+1), (β+1)/(β+1)',diagram:'',short:[
+ ['Divide the equation through by (x – 1)^(2) to write it in terms of a single ratio y = (x)/(x–1).','ax^(2) – bx(x–1) + c(x–1)^(2) = 0 ⇒ a((x)/(x–1))^(2) – b((x)/(x–1)) + c = 0'],
+ ['Let y = (x)/(x–1); the equation becomes a y^(2) – b y + c = 0, which has the sign of the middle term flipped relative to ay^(2)+by+c = 0.','a y^(2) – b y + c = 0'],
+ ['Flipping the sign of the middle coefficient of a quadratic negates its roots, so if ay^(2)+by+c=0 has roots α, β, then ay^(2)–by+c=0 has roots –α, –β.','y = –α or y = –β'],
+ ['Solve y = (x)/(x–1) = –α for x.','x = –α(x–1) ⇒ x(1+α) = α ⇒ x = (α)/(α+1)'],
+ ['The same steps with β give the other root.','x = (β)/(β+1)'],
+ ['This is option (C) once its second entry is read as (β)/(β+1); as printed, "(β+1)/(β+1)" always equals 1 and cannot be a root here, so it is taken as a transcription slip for (β)/(β+1).','Correct answer: (C)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'inverse or representation check'}},
+{id:'QUAD-05-E',parent:'QUAD-05',variant:5,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q227 · question p.21',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:227,questionPage:21,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The equation whose roots are two times the roots of the equation 3x^(2) – 8x – 3 = 0 is',options:['3x^(2) + 16x + 12 = 0','3x^(2) – 16x – 12 = 0','3x^(2) + 16x – 12 = 0','None of these'],correct:1,answer:'3x^(2) – 16x – 12 = 0',diagram:'',short:[
+ ['If a quadratic has roots α, β, the equation with roots 2α, 2β is obtained by substituting (x)/(2) for x in the original equation.','f(x) = 0 has roots α, β ⇒ f((x)/(2)) = 0 has roots 2α, 2β'],
+ ['Substitute (x)/(2) into 3x^(2) – 8x – 3 = 0.','3((x)/(2))^(2) – 8((x)/(2)) – 3 = 0','(3x^(2))/(4) – 4x – 3 = 0'],
+ ['Clear the fraction by multiplying through by 4.','3x^(2) – 16x – 12 = 0','Correct answer: (B)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'direct retry'}},
+{id:'QUAD-05-F',parent:'QUAD-05',variant:6,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q346 · question p.31',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:346,questionPage:31,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The quadratic equation, whose roots are A.M. and H.M. between the roots of the equation ax^(2) + bx + c = 0 is-',options:['abx^(2) + (b^(2)+ac)x + bc = 0','2abx^(2) + (b^(2)+4ac)x + 2bc = 0','2abx^(2) + (b^(2)+ac)x + bc = 0','abx^(2) + (b^(2)+4ac)x + 2bc = 0'],correct:1,answer:'2abx^(2) + (b^(2)+4ac)x + 2bc = 0',diagram:'',short:[
+ ['The sum and product of the roots follow from the standard relations for ax^(2)+bx+c=0.','α + β = (–b)/(a), αβ = (c)/(a)'],
+ ['The arithmetic mean of two numbers is half their sum; the harmonic mean is twice their product divided by their sum.','A.M. = (α+β)/(2), H.M. = (2αβ)/(α+β)'],
+ ['Substitute the sum and product of the original roots; dividing by (–b)/(a) is the same as multiplying by (a)/(–b), which cancels the a.','A.M. = (–b)/(2a)','H.M. = 2·(c)/(a)·(a)/(–b) = (–2c)/(b)'],
+ ['Build the equation from these two new roots using the standard sum–product form.','x^(2) − (A.M. + H.M.)x + (A.M.)(H.M.) = 0'],
+ ['Substitute the values found above and combine into single fractions over 2ab.','A.M. + H.M. = (–b)/(2a) + (–2c)/(b) = (–(b^(2)+4ac))/(2ab)','(A.M.)(H.M.) = (–b)/(2a)·(–2c)/(b) = (c)/(a)'],
+ ['Substitute these into the equation and multiply through by 2ab to clear denominators.','x^(2) + (b^(2)+4ac)/(2ab) x + (c)/(a) = 0','2ab x^(2) + (b^(2)+4ac) x + 2bc = 0','Correct answer: (B)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-05-G',parent:'QUAD-05',variant:7,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q537 · question p.54',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:537,questionPage:54,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If α and β are roots of 2x^(2) – 3x – 6 = 0, then the equation whose roots are α^(2) + 2 and β^(2) + 2 will be -',options:['4x^(2) + 49x – 118 = 0','4x^(2) – 49x – 118 = 0','4x^(2) – 49x + 118 = 0','4x^(2) + 49x + 118 = 0'],correct:2,answer:'4x^(2) – 49x + 118 = 0',diagram:'',short:[
+ ['The sum and product of the roots follow from the standard relations for ax^(2)+bx+c=0.','α + β = (3)/(2), αβ = –3'],
+ ['The sum-of-squares identity converts α^(2)+β^(2) into the known sum and product.','α^(2) + β^(2) = (α+β)^(2) – 2αβ'],
+ ['Substitute the values found above.','α^(2) + β^(2) = ((3)/(2))^(2) – 2(–3) = (9)/(4) + 6 = (33)/(4)'],
+ ['The new roots are α^(2)+2 and β^(2)+2; their sum follows directly.','Sum = (α^(2)+2) + (β^(2)+2) = (33)/(4) + 4 = (49)/(4)'],
+ ['Their product expands using (αβ)^(2) and α^(2)+β^(2).','Product = (α^(2)+2)(β^(2)+2) = (αβ)^(2) + 2(α^(2)+β^(2)) + 4'],
+ ['Substitute the known values.','Product = (–3)^(2) + 2·(33)/(4) + 4 = 9 + (33)/(2) + 4 = (59)/(2)'],
+ ['Build the equation from the new sum and product: x^(2) − (sum)x + (product) = 0, then clear denominators by multiplying by 4.','x^(2) – (49)/(4) x + (59)/(2) = 0','4x^(2) – 49x + 118 = 0','Correct answer: (C)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'direct retry'}},
+{id:'QUAD-05-H',parent:'QUAD-05',variant:8,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q635 · question p.61',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:635,questionPage:61,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If the roots of the equation (x – a)(x – b) – k = 0 be c & d then find the equation whose roots are a & b',options:['(x – c)(x – d) + k = 0','(x + c)(x – a) + k = 0','(x – c) + (x – a) = 0','None of these'],correct:0,answer:'(x – c)(x – d) + k = 0',diagram:'',short:[
+ ['Since (x–a)(x–b)–k is a monic quadratic in x with roots c and d, it is identical as a polynomial to (x–c)(x–d).','(x–a)(x–b) – k = (x–c)(x–d), for all x'],
+ ['Rearrange this identity to isolate (x–a)(x–b).','(x–a)(x–b) = (x–c)(x–d) + k'],
+ ['This identity holds for every x, so plugging in x = a or x = b makes the left side zero, which forces the right side to be zero at exactly those two values.','(x–c)(x–d) + k = 0 exactly when x = a or x = b'],
+ ['So the equation whose roots are a and b is (x–c)(x–d)+k = 0.','(x – c)(x – d) + k = 0','Correct answer: (A)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'inverse or representation check'}},
+{id:'QUAD-05-I',parent:'QUAD-05',variant:9,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q678 · question p.64 · IIT-1994',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:678,questionPage:64,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let α and β be the roots of the equation x^(2) + x + 1 = 0. The equation whose roots are α^(19), β^(7) is',options:['x^(2) – x – 1 = 0','x^(2) – x + 1 = 0','x^(2) + x – 1 = 0','x^(2) + x + 1 = 0'],correct:3,answer:'x^(2) + x + 1 = 0',diagram:'',short:[
+ ['Solve the quadratic to identify the roots as the two complex cube roots of unity, using ω^(3) = 1 and 1 + ω + ω^(2) = 0.','α = ω, β = ω^(2)'],
+ ['Reduce the exponent 19 modulo 3, since ω^(3) = 1.','19 = 3(6) + 1 ⇒ ω^(19) = (ω^(3))^(6)·ω = ω'],
+ ['Reduce the exponent 7 modulo 3 in the same way.','7 = 3(2) + 1 ⇒ (ω^(2))^(7) = ω^(14) = (ω^(3))^(4)·ω^(2) = ω^(2)'],
+ ['So α^(19) = ω and β^(7) = ω^(2), which is exactly the original pair of roots.','α^(19) = ω = α, β^(7) = ω^(2) = β'],
+ ['The equation with these roots is therefore the original equation.','x^(2) + x + 1 = 0','Correct answer: (D)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-05-J',parent:'QUAD-05',variant:10,topic:'Forming a quadratic equation from its roots',source:'Institute module · Q629 · question p.60',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:629,questionPage:60,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If α, β are roots of the equation (3x + 2)^(2) + p(3x + 2) + q = 0, then roots of x^(2) + px + q = 0 are -',options:['α, β','3α + 2, 3β + 2','(1)/(3)(α – 2), (1)/(3)(β – 2)','α – 2, β – 2'],correct:1,answer:'3α + 2, 3β + 2',diagram:'',short:[
+ ['Let y = 3x + 2; substituting turns the given equation into the same equation with x replaced by y.','(3x+2)^(2) + p(3x+2) + q = 0 ⇒ y^(2) + py + q = 0, where y = 3x+2'],
+ ['The given equation is stated to have roots α, β, meaning x = α and x = β satisfy it, so y = 3α+2 and y = 3β+2 are the values of y at those roots.','y = 3α+2 and y = 3β+2 both satisfy y^(2) + py + q = 0'],
+ ['So 3α+2 and 3β+2 are the two roots of y^(2)+py+q=0, and renaming y back to x gives the roots of x^(2)+px+q=0.','Roots of x^(2) + px + q = 0 are 3α+2, 3β+2','Correct answer: (B)']
+],relevance:{parent:'QUAD-05',sharedSkill:'Forming a quadratic equation from its roots',recoveryPurpose:'inverse or representation check'}},
+{id:'QUAD-06-A',parent:'QUAD-06',variant:1,topic:'Common roots of two quadratic equations',source:'Institute module · Q161 · question p.13',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:161,questionPage:13,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If the quadratic equations, ax^(2) + 2cx + b = 0 & ax^(2) + 2bx + c = 0 (b ≠ c) have a common roots, then a + 4b + 4c is equal to :',options:['– 2','2','0','1'],correct:2,answer:'0',diagram:'',short:[
+ ['Let r be the common root and substitute it into both equations.','ar^(2) + 2cr + b = 0','ar^(2) + 2br + c = 0'],
+ ['Subtract the second equation from the first to eliminate ar^(2).','2cr + b – 2br – c = 0','2r(c–b) + (b–c) = 0'],
+ ['Factor out (c–b), then divide by it since b ≠ c.','(c–b)(2r–1) = 0 ⇒ 2r – 1 = 0 ⇒ r = (1)/(2)'],
+ ['Substitute r = (1)/(2) back into the first equation.','a((1)/(2))^(2) + 2c(1)/(2) + b = 0','(a)/(4) + c + b = 0'],
+ ['Multiply through by 4.','a + 4b + 4c = 0','Correct answer: (C)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'direct retry'}},
+{id:'QUAD-06-B',parent:'QUAD-06',variant:2,topic:'Common roots of two quadratic equations',source:'Institute module · Q174 · question p.14',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:174,questionPage:14,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let f(x) = x^(2) + bx + c where b, c ∈ R. If f(x) is a factor of both x^(4) + 6x^(2) + 25 and 3x^(4) + 4x^(2) + 28x + 5 then the least value of f(x) is',options:['2','3','(5)/(2)','4'],correct:3,answer:'4',diagram:'',short:[
+ ['If f(x) divides two polynomials, it divides any combination of them, so eliminate the x^(4) terms by combining 3 times the first with the second.','3(x^(4)+6x^(2)+25) – (3x^(4)+4x^(2)+28x+5) = 14x^(2) – 28x + 70'],
+ ['Factor out the constant.','14x^(2) – 28x + 70 = 14(x^(2) – 2x + 5)'],
+ ['f(x) must divide this degree-2 result, and since both f(x) and x^(2)–2x+5 are monic quadratics, dividing one into the other forces them to be equal.','f(x) = x^(2) – 2x + 5, so b = –2, c = 5'],
+ ['Complete the square, using the identity x^(2) + px + q = (x + (p)/(2))^(2) + q – (p^(2))/(4), to find the minimum.','x^(2) – 2x + 5 = (x–1)^(2) + 4'],
+ ['A square is never negative, so the minimum occurs at x = 1.','f(x) ≥ 4, minimum value 4','Correct answer: (D)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-06-C',parent:'QUAD-06',variant:3,topic:'Common roots of two quadratic equations',source:'Institute module · Q206 · question p.18',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:206,questionPage:18,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If a, b, c be the sides of ΔABC and equations ax^(2) + bx + c = 0 and 5x^(2) + 12x + 13 = 0 have a common root, then ∠C is-',options:['60°','90°','120°','45°'],correct:1,answer:'90°',diagram:'',short:[
+ ['Compute the discriminant of the second equation, using D = b^(2) – 4ac.','D = 12^(2) – 4(5)(13) = 144 – 260 = –116 < 0'],
+ ['A negative discriminant with real coefficients means the roots of 5x^(2)+12x+13=0 are a non-real conjugate pair.','5x^(2)+12x+13=0 has non-real roots'],
+ ['Since ax^(2)+bx+c=0 has real coefficients and shares one root with an equation whose roots are non-real conjugates, the shared root and its conjugate must both be roots of ax^(2)+bx+c=0 too, so the two equations share both roots.','ax^(2)+bx+c=0 and 5x^(2)+12x+13=0 have identical roots'],
+ ['Two quadratics with identical roots have proportional coefficients.','(a)/(5) = (b)/(12) = (c)/(13) = k, so a=5k, b=12k, c=13k'],
+ ['Check the Pythagorean relation among the sides.','a^(2) + b^(2) = 25k^(2) + 144k^(2) = 169k^(2) = c^(2)'],
+ ['By the converse of the Pythagorean theorem, the angle opposite side c is a right angle.','∠C = 90°','Correct answer: (B)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-06-D',parent:'QUAD-06',variant:4,topic:'Common roots of two quadratic equations',source:'Institute module · Q239 · question p.22',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:239,questionPage:22,printedOptionKey:'B',verifiedOptionKey:'B'},question:'x^(2) – 11x + a and x^(2) – 14x + 2a will have a common factor, if a =',options:['24','0, 24','3, 24','0, 3'],correct:1,answer:'0, 24',diagram:'',short:[
+ ['Let r be the common root and substitute it into both equations.','r^(2) – 11r + a = 0','r^(2) – 14r + 2a = 0'],
+ ['Solve the first equation for a.','a = 11r – r^(2)'],
+ ['Substitute this into the second equation.','r^(2) – 14r + 2(11r – r^(2)) = 0','–r^(2) + 8r = 0'],
+ ['Factor and solve for r.','r(8–r) = 0 ⇒ r = 0 or r = 8'],
+ ['Substitute each value of r back into a = 11r – r^(2).','r=0 ⇒ a = 0','r=8 ⇒ a = 88 – 64 = 24','Correct answer: (B)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'direct retry'}},
+{id:'QUAD-06-E',parent:'QUAD-06',variant:5,topic:'Common roots of two quadratic equations',source:'Institute module · Q262 · question p.23',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:262,questionPage:23,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If the equations 2x^(2) – 7x + 1 = 0 and ax^(2) + bx + 2 = 0 have a common root then',options:['a = 2, b = – 7','a = (–7)/(2), b = 1','a = 4, b = –14','None of these'],correct:2,answer:'a = 4, b = –14',diagram:'',short:[
+ ['Compare the constant terms of the two equations: the first ends in 1, the second in 2, so check whether the second equation is simply twice the first.','2(2x^(2)–7x+1) = 4x^(2) – 14x + 2'],
+ ['If ax^(2)+bx+2 is identical to 4x^(2)–14x+2, matching coefficients gives a and b directly, and every root would then be common, not just one.','a = 4, b = –14'],
+ ['Verify: with a=4, b=–14 the equation ax^(2)+bx+2=0 reduces to the original equation itself, so both roots are shared.','4x^(2) – 14x + 2 = 2(2x^(2) – 7x + 1) = 0','Correct answer: (C)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'direct retry'}},
+{id:'QUAD-06-F',parent:'QUAD-06',variant:6,topic:'Common roots of two quadratic equations',source:'Institute module · Q309 · question p.28',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:309,questionPage:28,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If the equations ax^(2) + bx + c = 0 and 5x^(2) + 12x + 13 = 0 have a common root, where a, b and c are the sides of a triangle ABC, then',options:['ΔABC is acute angled','ΔABC is right angled','ΔABC is isosceles','ΔABC is right angled isosceles'],correct:1,answer:'ΔABC is right angled',diagram:'',short:[
+ ['A common root between a real-coefficient equation and one with a negative discriminant (5x^(2)+12x+13=0 has D = 144–260 < 0) forces both roots to be shared, so the sides are proportional to 5, 12, 13.','(a)/(5) = (b)/(12) = (c)/(13) = λ ⇒ a=5λ, b=12λ, c=13λ'],
+ ['Check the Pythagorean relation among these sides.','a^(2) + b^(2) = 25λ^(2) + 144λ^(2) = 169λ^(2) = c^(2)'],
+ ['Since the square of the longest side equals the sum of the squares of the other two, the triangle satisfies the Pythagorean theorem and so is right-angled.','ΔABC is right angled','Correct answer: (B)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'inverse or representation check'}},
+{id:'QUAD-06-G',parent:'QUAD-06',variant:7,topic:'Common roots of two quadratic equations',source:'Institute module · Q314 · question p.28',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:314,questionPage:28,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If the quadratic equations, 3x^(2) + ax + 1 = 0 and 2x^(2) + bx + 1 = 0 have a common root, then the value of the expression 5ab – 2a^(2) – 3b^(2) is:',options:['0','1','– 1','None of these'],correct:1,answer:'1',diagram:'',short:[
+ ['State the general condition for two quadratics a_(1)x^(2)+b_(1)x+c_(1)=0 and a_(2)x^(2)+b_(2)x+c_(2)=0 to have a common root.','(a_(1)c_(2) – a_(2)c_(1))^(2) = (b_(1)c_(2) – b_(2)c_(1))(a_(1)b_(2) – a_(2)b_(1))'],
+ ['Substitute a_(1)=3, b_(1)=a, c_(1)=1, a_(2)=2, b_(2)=b, c_(2)=1.','(3·1 – 2·1)^(2) = (a·1 – b·1)(3b – 2a)'],
+ ['Simplify the left side and expand the right side.','1 = (a–b)(3b–2a)','1 = 3ab – 2a^(2) – 3b^(2) + 2ab'],
+ ['Combine like terms.','1 = 5ab – 2a^(2) – 3b^(2)','Correct answer: (B)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'direct retry'}},
+{id:'QUAD-06-H',parent:'QUAD-06',variant:8,topic:'Common roots of two quadratic equations',source:'Institute module · Q554 · question p.55',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:554,questionPage:55,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The equation ax^(2) + bx + a = 0 & x^(3) – 2x^(2) + 2x – 1 = 0 have two roots in common, then (a + b) is equal to -',options:['1','0','–1','2'],correct:1,answer:'0',diagram:'',short:[
+ ['Factor the cubic by testing the obvious root x = 1.','1^(3) – 2(1)^(2) + 2(1) – 1 = 0, so (x–1) is a factor'],
+ ['Divide the cubic by (x–1) to find the remaining quadratic factor.','x^(3) – 2x^(2) + 2x – 1 = (x–1)(x^(2) – x + 1)'],
+ ['ax^(2)+bx+a=0 must share two roots with the cubic. Since it is a full quadratic (only two roots total) with real coefficients, its two roots cannot be one real and one complex, so both of its roots must be the conjugate pair of x^(2)–x+1=0, not the real root 1.','ax^(2) + bx + a ≡ k(x^(2) – x + 1) for some constant k'],
+ ['Match the x^(2) coefficient and the constant term: both equal a on the left, and both equal k on the right, so k = a.','a = k(1), a = k(1) ⇒ k = a'],
+ ['Match the x coefficient using this value of k.','b = k(–1) = –a ⇒ a + b = 0','Correct answer: (B)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-06-I',parent:'QUAD-06',variant:9,topic:'Common roots of two quadratic equations',source:'Institute module · Q671 · question p.63 · AIEEE-2008',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:671,questionPage:63,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The quadratic equations x^(2) – 6x + a = 0 and x^(2) – cx + 6 = 0 have one root in common. The other roots of the first and second equations are integers in the ratio 4 : 3. Then the common root is',options:['4','3','2','1'],correct:2,answer:'2',diagram:'',short:[
+ ['Let α be the common root, with the first equation’s other root 4k and the second’s other root 3k.','x^(2)–6x+a=0 has roots α, 4k','x^(2)–cx+6=0 has roots α, 3k'],
+ ['Apply the product-of-roots relation to the second equation.','α(3k) = 6 ⇒ αk = 2'],
+ ['Apply the sum-of-roots relation to the first equation.','α + 4k = 6 ⇒ α = 6 – 4k'],
+ ['Substitute α = 6–4k into αk = 2.','(6–4k)k = 2','6k – 4k^(2) = 2','2k^(2) – 3k + 1 = 0'],
+ ['Factor and solve for k.','(2k–1)(k–1) = 0 ⇒ k = (1)/(2) or k = 1'],
+ ['Since 3k must be an integer (the other root of the second equation), k = (1)/(2) is rejected (3k = 1.5); only k = 1 keeps both 4k and 3k integers.','k = 1 ⇒ 4k = 4, 3k = 3'],
+ ['Substitute k = 1 back to find the common root.','α = 6 – 4(1) = 2','Correct answer: (C)']
+],relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'}},
+{id:'QUAD-07-A',parent:'QUAD-07',variant:1,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'controlled transfer'},source:'Institute module · Q105 · question p.8',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:105,questionPage:8,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The real values of λ for which the equation 4x^(3) + 3x^(2) − 6x + λ = 0 has two distinct real roots in [0, 1] lie in the interval-',options:['(0, ∞)','(3, ∞)','(−5, (7)/(4))','[0, (7)/(4))'],correct:3,answer:'[0, (7)/(4))',diagram:'',short:[
+ ['Move every term except λ to the right-hand side to express λ as a function of x.','4x^(3) + 3x^(2) − 6x + λ = 0 ⇒ λ = −4x^(3) − 3x^(2) + 6x'],
+ ["Define g(x) = −4x^(3) − 3x^(2) + 6x. Two distinct real roots of the given equation in [0, 1] means the horizontal line y = λ meets y = g(x) at two points of [0, 1], so locate the turning point of g on [0, 1] with its derivative.","g'(x) = −12x^(2) − 6x + 6 = −6(2x − 1)(x + 1)"],
+ ['The only critical point of g inside [0, 1] is x = (1)/(2) (the other, x = −1, lies outside); g increases on [0, (1)/(2)] and decreases on [(1)/(2), 1].','g(0) = 0, g((1)/(2)) = (7)/(4), g(1) = −1'],
+ ['g rises from 0 to (7)/(4) on the first half of [0, 1] and then falls from (7)/(4) to −1 on the second half, so a horizontal line y = λ cuts this rise-then-fall shape at two points exactly when it sits at or above the lower starting value 0 and strictly below the peak (7)/(4).','0 ≤ λ < (7)/(4)','Correct answer: (D)']
+]},
+{id:'QUAD-07-B',parent:'QUAD-07',variant:2,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q111 · question p.8 · [IIT-1989]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:111,questionPage:8,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let a, b, c be real numbers, a ≠ 0. If α is a root of a^(2)x^(2) + bx + c = 0, β is a root of a^(2)x^(2) − bx − c = 0, and 0 < α < β, then the equation a^(2)x^(2) + 2bx + 2c = 0 has a root γ that always satisfies-',options:['γ = (α + β)/(2)','γ = α + (β)/(2)','γ = α','α < γ < β'],correct:3,answer:'α < γ < β',diagram:'',short:[
+ ['Let f(x) = a^(2)x^(2) + 2bx + 2c, the polynomial whose root γ is sought, and rewrite bα + c and bβ + c using the two given root conditions.','a^(2)α^(2) + bα + c = 0 ⇒ bα + c = −a^(2)α^(2)','a^(2)β^(2) − bβ − c = 0 ⇒ bβ + c = a^(2)β^(2)'],
+ ['Evaluate f at α by splitting 2bx + 2c into 2(bα + c) and substituting the first identity.','f(α) = a^(2)α^(2) + 2(bα + c) = a^(2)α^(2) − 2a^(2)α^(2) = −a^(2)α^(2)'],
+ ['Evaluate f at β the same way, substituting the second identity.','f(β) = a^(2)β^(2) + 2(bβ + c) = a^(2)β^(2) + 2a^(2)β^(2) = 3a^(2)β^(2)'],
+ ['Since a ≠ 0 and 0 < α < β, both α^(2) and β^(2) are strictly positive, so f(α) < 0 and f(β) > 0; a continuous function changing sign on [α, β] must vanish inside it.','f(α) < 0 and f(β) > 0 ⇒ f(γ) = 0 for some γ with α < γ < β','Correct answer: (D)']
+]},
+{id:'QUAD-07-C',parent:'QUAD-07',variant:3,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'direct retry'},source:'Institute module · Q119 · question p.9 · [IIT-1999]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:119,questionPage:9,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If the roots of the equation x^(2) − 2ax + a^(2) + a − 3 = 0 are real and less than 3, then-',options:['a < 2','2 ≤ a ≤ 3','3 < a ≤ 4','a > 4'],correct:0,answer:'a < 2',diagram:'',short:[
+ ['Let f(x) = x^(2) − 2ax + a^(2) + a − 3. Since the leading coefficient is positive, the parabola opens upward, so two real roots both less than 3 require the discriminant non-negative, f(3) positive (3 lies outside the roots), and the vertex to sit left of 3.','D ≥ 0, f(3) > 0, and vertex x-coordinate a < 3'],
+ ['Apply D ≥ 0 to the coefficients of f.','D = (2a)^(2) − 4(a^(2) + a − 3) = −4a + 12 ≥ 0 ⇒ a ≤ 3'],
+ ['Apply f(3) > 0.','f(3) = 9 − 6a + a^(2) + a − 3 = a^(2) − 5a + 6 > 0 ⇒ (a − 2)(a − 3) > 0 ⇒ a < 2 or a > 3'],
+ ['Intersect all three conditions: a ≤ 3, a < 3, and (a < 2 or a > 3). The branch a > 3 is eliminated by a < 3, leaving only a < 2.','a < 2','Correct answer: (A)']
+]},
+{id:'QUAD-07-D',parent:'QUAD-07',variant:4,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q122 · question p.9 · [IIT Sc.-2000]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:122,questionPage:9,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If α and β (α < β) are the roots of the equation x^(2) + bx + c = 0, where c < 0 < b, then-',options:['0 < α < β','α < 0 < β < |α|','α < β < 0','α < 0 < |α| < β'],correct:1,answer:'α < 0 < β < |α|',diagram:'',short:[
+ ["State Vieta's formulas for x^(2) + bx + c = 0.",'αβ = c, α + β = −b'],
+ ['Since c < 0, the product αβ is negative, so α and β have opposite signs; with α < β this forces α < 0 < β.','αβ < 0 ⇒ α < 0 < β'],
+ ['Since b > 0, the sum α + β = −b is negative, so the negative root α has strictly larger magnitude than the positive root β.','α + β < 0 ⇒ |α| > β ⇒ β < |α|'],
+ ['Combine the two results.','α < 0 < β < |α|','Correct answer: (B)']
+]},
+{id:'QUAD-07-E',parent:'QUAD-07',variant:5,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'direct retry'},source:'Institute module · Q123 · question p.9 · [IIT Sc.-2000]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:123,questionPage:9,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If b > a, then the equation (x − a)(x − b) − 1 = 0 has-',options:['both roots in [a, b]','both roots in (−∞, a)','both roots in (b, +∞)','one root in (−∞, a) and other in (b, +∞)'],correct:3,answer:'one root in (−∞, a) and other in (b, +∞)',diagram:'',short:[
+ ['Let f(x) = (x − a)(x − b) − 1, an upward-opening parabola since its x^(2) coefficient is 1. Evaluate f at the two given constants.','f(a) = (0)(a − b) − 1 = −1','f(b) = (b − a)(0) − 1 = −1'],
+ ['Both f(a) and f(b) are negative, and an upward parabola is negative only strictly between its two real roots, so a and b both lie between the roots.','f(a) < 0 and f(b) < 0 ⇒ root₁ < a < b < root₂'],
+ ['Therefore one root lies to the left of a and the other lies to the right of b.','root₁ ∈ (−∞, a), root₂ ∈ (b, +∞)','Correct answer: (D)']
+]},
+{id:'QUAD-07-F',parent:'QUAD-07',variant:6,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'direct retry'},source:'Institute module · Q155 · question p.11',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:155,questionPage:11,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If both roots of the equation x^(2) − ax − 8 = 0 lie in the interval (−2, 2) then the set of all values of a is-',options:['(0, 5)','(−∞, 2)','(−∞, −2)','φ'],correct:3,answer:'φ',diagram:'',short:[
+ ['Let f(x) = x^(2) − ax − 8. Both roots lying in (−2, 2) requires the discriminant non-negative, f(−2) > 0 and f(2) > 0 (the endpoints lie outside the roots, and the parabola opens upward), and the vertex between −2 and 2.','D ≥ 0, f(−2) > 0, f(2) > 0, and −2 < (a)/(2) < 2'],
+ ['Apply f(−2) > 0.','f(−2) = 4 + 2a − 8 = 2a − 4 > 0 ⇒ a > 2'],
+ ['Apply f(2) > 0.','f(2) = 4 − 2a − 8 = −2a − 4 > 0 ⇒ a < −2'],
+ ['These two requirements, a > 2 and a < −2, cannot hold at once, so no value of a satisfies every condition simultaneously.','a > 2 and a < −2 have no common solution ⇒ set is empty','Correct answer: (D)']
+]},
+{id:'QUAD-07-G',parent:'QUAD-07',variant:7,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'direct retry'},source:'Institute module · Q159 · question p.13',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:159,questionPage:13,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The values of m for which exactly one root of the equation x^(2) − 2mx + m^(2) − 1 = 0 lies in the interval (−2, 4) is-',options:['(−∞,∞)','(−3, −1)','(3, 5)','(−3, −1) ∪ (3, 5)'],correct:3,answer:'(−3, −1) ∪ (3, 5)',diagram:'',short:[
+ ['Let f(x) = x^(2) − 2mx + m^(2) − 1. Exactly one root lies strictly inside (−2, 4) exactly when f changes sign between the endpoints.','f(−2)·f(4) < 0'],
+ ['Evaluate f at each endpoint.','f(−2) = 4 + 4m + m^(2) − 1 = (m + 3)(m + 1)','f(4) = 16 − 8m + m^(2) − 1 = (m − 3)(m − 5)'],
+ ['Substitute into the sign-change condition.','(m + 3)(m + 1)(m − 3)(m − 5) < 0'],
+ ['The four roots −3, −1, 3, 5 split the number line into intervals of alternating sign for this quartic, starting positive as m → −∞; it is negative on the second and fourth intervals.','m ∈ (−3, −1) ∪ (3, 5)','Correct answer: (D)']
+]},
+{id:'QUAD-07-H',parent:'QUAD-07',variant:8,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'direct retry'},source:'Institute module · Q198 · question p.17',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:198,questionPage:17,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If the roots of the equation x^(2) − 2mx + m^(2) − 1 = 0 lie in the interval (−2, 4), then-',options:['m∈(−1, 3)','m∈(1, 5)','m∈(1, 3)','m∈(−1, 5)'],correct:0,answer:'m∈(−1, 3)',diagram:'',short:[
+ ['Complete the square: x^(2) − 2mx + m^(2) − 1 = (x − m)^(2) − 1, so its two roots are m − 1 and m + 1 for every real m (the discriminant is always 4 > 0).','roots = m − 1, m + 1'],
+ ['Both roots must lie in (−2, 4), so impose the interval condition on each root separately.','−2 < m − 1 < 4 ⇒ −1 < m < 5','−2 < m + 1 < 4 ⇒ −3 < m < 3'],
+ ['Intersect the two ranges.','(−1, 5) ∩ (−3, 3) = (−1, 3)','Correct answer: (A)']
+]},
+{id:'QUAD-07-I',parent:'QUAD-07',variant:9,topic:'Location of the roots relative to a parameter',relevance:{parent:'QUAD-07',sharedSkill:'Location of the roots relative to a parameter',recoveryPurpose:'controlled transfer'},source:'Institute module · Q474 · question p.48',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:474,questionPage:48,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If 0 < a < b < c < d, then the quadratic equation ax^(2) + {1 − a(b + c)}x + abc − d = 0 has-',options:['real and distinct roots out of which one lies between c and d','real and distinct roots out of which one lies between a and b','real and distinct roots out of which one lies between b and c','non-real roots'],correct:0,answer:'real and distinct roots out of which one lies between c and d',diagram:'',short:[
+ ['Rewrite the left side as a(x − b)(x − c) plus a linear remainder, and confirm it expands back to the given equation.','a(x − b)(x − c) + x − d = ax^(2) − a(b + c)x + abc + x − d = ax^(2) + {1 − a(b + c)}x + abc − d'],
+ ['Let f(x) = a(x − b)(x − c) + x − d. Since a > 0, f is an upward-opening parabola in x. Evaluate f at b, c and d.','f(b) = b − d < 0 (since b < d)','f(c) = c − d < 0 (since c < d)','f(d) = a(d − b)(d − c) > 0 (since d > b, d > c, a > 0)'],
+ ['As x → −∞ an upward parabola tends to +∞ while f(b) < 0, so a root lies left of b; and f(c) < 0 with f(d) > 0 gives a sign change, so a root lies between c and d.','one root < b, and one root ∈ (c, d)','Correct answer: (A)']
+]},
+{id:'QUAD-10-A',parent:'QUAD-10',variant:1,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'controlled transfer'},source:'Institute module · Q117 · question p.9 · [IIT-97 can.]',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:117,questionPage:9,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The equation √(x + 1) − √(x − 1) = √(4x − 1) has-',options:['no Solution','one solution','two solutions','more than 2 solutions'],correct:0,answer:'no Solution',diagram:'',short:[
+ ['The three radicands x + 1, x − 1 and 4x − 1 must all be non-negative at once.','domain: x ≥ 1'],
+ ['Square both sides of √(x + 1) − √(x − 1) = √(4x − 1).','(x + 1) − 2√((x + 1)(x − 1)) + (x − 1) = 4x − 1 ⇒ 2x − 2√(x^(2) − 1) = 4x − 1'],
+ ['Isolate the remaining radical.','2√(x^(2) − 1) = 1 − 2x'],
+ ['For x ≥ 1, the right side 1 − 2x ≤ −1 is negative while the left side 2√(x^(2) − 1) is never negative, so the two sides can never be equal.','2√(x^(2) − 1) ≥ 0 > 1 − 2x for every x ≥ 1 ⇒ no solution','Correct answer: (A)']
+]},
+{id:'QUAD-10-B',parent:'QUAD-10',variant:2,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'direct retry'},source:'Institute module · Q142 · question p.10',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:142,questionPage:10,printedOptionKey:'A',verifiedOptionKey:'A'},question:'Number of values of x for which (8^(x) + 27^(x))/(12^(x) + 18^(x)) = (7)/(6)',options:['2','3','1','no value of x'],correct:0,answer:'2',diagram:'',short:[
+ ['Divide numerator and denominator by 2^(2x)·3^(x), writing the result in terms of t = ((3)/(2))^(x).','(8^(x) + 27^(x))/(2^(2x)·3^(x)) = ((2)/(3))^(x) + ((3)/(2))^(2x) = (1)/(t) + t^(2)'],
+ ['Simplify the denominator the same way.','(12^(x) + 18^(x))/(2^(2x)·3^(x)) = 1 + ((3)/(2))^(x) = 1 + t'],
+ ['Substitute both simplified forms into the given equation and combine the left side into a single fraction.','((1)/(t) + t^(2))/(1 + t) = (7)/(6) ⇒ (1 + t^(3))/(t(1 + t)) = (7)/(6)'],
+ ['State the sum-of-cubes identity for the numerator.','1 + t^(3) = (1 + t)(1 − t + t^(2))'],
+ ['Substitute the identity and cancel the common factor (1 + t).','(1 − t + t^(2))/(t) = (7)/(6)'],
+ ['Clear denominators and solve the resulting quadratic in t.','6(1 − t + t^(2)) = 7t ⇒ 6t^(2) − 13t + 6 = 0 ⇒ t = (3)/(2) or t = (2)/(3)'],
+ ['Convert each value of t = ((3)/(2))^(x) back to x.','t = (3)/(2) ⇒ x = 1','t = (2)/(3) ⇒ x = −1','Correct answer: (A)']
+]},
+{id:'QUAD-10-C',parent:'QUAD-10',variant:3,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q170 · question p.14',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:170,questionPage:14,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If 9^(x) + a·3^(x) + 1 = 0 has no real solution for x then the set of all real values of a is-',options:['(−2, 2)','(−2, ∞)','(−∞, 2)','None'],correct:1,answer:'(−2, ∞)',diagram:'',short:[
+ ['Substitute t = 3^(x) (t > 0), noting 9^(x) = (3^(x))^(2).','t^(2) + at + 1 = 0'],
+ ['Divide by t and isolate a.','t + a + (1)/(t) = 0 ⇒ a = −(t + (1)/(t))'],
+ ['State the AM-GM inequality for a positive number and its reciprocal.','t + (1)/(t) ≥ 2 for every t > 0, with equality at t = 1'],
+ ['Apply it: since a = −(t + (1)/(t)), every attainable value of a satisfies a ≤ −2, so the equation has a real solution x exactly when a ≤ −2.','a ≤ −2 ⇒ a real solution t > 0 exists'],
+ ['The equation has NO real solution exactly for the complementary range of a.','a > −2, i.e. a ∈ (−2, ∞)','Correct answer: (B)']
+]},
+{id:'QUAD-10-D',parent:'QUAD-10',variant:4,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'controlled transfer'},source:'Institute module · Q186 · question p.16',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:186,questionPage:16,printedOptionKey:'C',verifiedOptionKey:'D'},question:'The equation 2^(2x) + (a − 1)2^(x+1) + a = 0 has roots of opposite signs, then the exhaustive set of values of a is-',options:['a < 0','a ∈ (−1, 0)','a ∈ (−∞, (1)/(3))','a ∈ (0, (1)/(3))'],correct:3,answer:'a ∈ (0, (1)/(3))',diagram:'',short:[
+ ['Substitute t = 2^(x) (t > 0); then 2^(2x) = t^(2) and 2^(x+1) = 2t.','t^(2) + 2(a − 1)t + a = 0'],
+ ['Since t = 2^(x) is an increasing bijection from ℝ to (0, ∞), x < 0 ⇔ 0 < t < 1 and x > 0 ⇔ t > 1. Two roots of the original equation of opposite sign therefore require the quadratic in t to have two real roots that are both positive, one below 1 and the other above 1.','need: 0 < t₁ < 1 < t₂'],
+ ['Let g(t) = t^(2) + 2(a − 1)t + a. Since g opens upward, t = 1 lies strictly between its roots exactly when g(1) < 0.','g(1) = 1 + 2(a − 1) + a = 3a − 1 < 0 ⇒ a < (1)/(3)'],
+ ['g(1) < 0 alone only guarantees the two roots bracket 1 — it does not rule out the smaller root being zero or negative. The smaller root is positive exactly when 0 also lies outside the bracket, i.e. g(0) > 0.','g(0) = a > 0'],
+ ["FLAG — disagreement with the printed key: the printed solution stops at g(1) < 0 ⇒ a < (1)/(3) and picks option (C) a ∈ (−∞, (1)/(3)). That test alone allows a ≤ 0, but for such a the product of the t-roots is a ≤ 0, so one root of g is ≤ 0 — an invalid value of 2^(x) — leaving only ONE real x, not two of opposite sign. Direct check: at a = −1, g(t) = t^(2) − 4t − 1 = 0 gives t = 2 ± √(5), i.e. one negative and one positive root, so only one real x exists there, and \"roots of opposite sign\" fails.",'a = −1 ⇒ only one real x ⇒ printed option (C) is too wide'],
+ ['Intersecting g(1) < 0 with the missing condition g(0) > 0 gives the correct exhaustive set.','0 < a < (1)/(3)','Correct answer: (D) — not the printed (C)']
+]},
+{id:'QUAD-10-E',parent:'QUAD-10',variant:5,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q220 · question p.20',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:220,questionPage:20,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The number of real values of the parameter k for which (log₁₆x)^(2) − (log₁₆x) + (log₁₆k) = 0 with real coefficients will have exactly one solution is-',options:['2','1','4','None'],correct:1,answer:'1',diagram:'',short:[
+ ['Let y = log₁₆x, turning the equation into a quadratic in y.','y^(2) − y + log₁₆k = 0'],
+ ['Since x = 16^(y) is a bijection, each real y gives exactly one x, so the original equation has exactly one solution in x exactly when this quadratic in y has exactly one real value of y, i.e. a repeated root.','need discriminant = 0'],
+ ['Apply the discriminant condition to the coefficients of the quadratic in y.','1 − 4log₁₆k = 0 ⇒ log₁₆k = (1)/(4)'],
+ ['Solve for k.','k = 16^((1)/(4)) = 2'],
+ ['This is a single positive real value of k, so exactly one value of k works.','number of values of k = 1','Correct answer: (B)']
+]},
+{id:'QUAD-10-F',parent:'QUAD-10',variant:6,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'controlled transfer'},source:'Institute module · Q241 · question p.22',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:241,questionPage:22,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If x = √(1 + √(1 + √(1 + ........... to infinity))), then x =',options:['(1 + √(5))/(2)','(1 − √(5))/(2)','(1 ± √(5))/(2)','None of these'],correct:0,answer:'(1 + √(5))/(2)',diagram:'',short:[
+ ['The expression under the outermost root repeats itself infinitely, so it equals x again; square both sides of x = √(1 + x).','x^(2) = 1 + x ⇒ x^(2) − x − 1 = 0'],
+ ['State the quadratic formula for ay^(2) + by + c = 0.','y = (−b ± √(b^(2) − 4ac))/(2a)'],
+ ['Substitute a = 1, b = −1, c = −1.','x = (1 ± √(1 + 4))/(2) = (1 ± √(5))/(2)'],
+ ['x is built from nested square roots, so x ≥ 0; the minus root is negative and must be rejected.','(1 − √(5))/(2) < 0 ⇒ rejected'],
+ ['The remaining root is the answer.','x = (1 + √(5))/(2)','Correct answer: (A)']
+]},
+{id:'QUAD-10-G',parent:'QUAD-10',variant:7,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'direct retry'},source:'Institute module · Q411 · question p.36',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:411,questionPage:36,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The product of real roots of the equation |2x + 3|^(2) − 3|2x + 3| + 2 = 0 is-',options:['(5)/(4)','(5)/(2)','5','2'],correct:1,answer:'(5)/(2)',diagram:'',short:[
+ ['Substitute t = |2x + 3| (t ≥ 0).','t^(2) − 3t + 2 = 0'],
+ ['Factorise.','(t − 1)(t − 2) = 0 ⇒ t = 1 or t = 2'],
+ ['Convert each value of t back to x using the two cases of the absolute value.','|2x + 3| = 1 ⇒ x = −1 or x = −2','|2x + 3| = 2 ⇒ x = −(1)/(2) or x = −(5)/(2)'],
+ ['Multiply the four real roots together.','(−1)(−2)(−(1)/(2))(−(5)/(2)) = (2)·((5)/(4)) = (5)/(2)','Correct answer: (B)']
+]},
+{id:'QUAD-10-H',parent:'QUAD-10',variant:8,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'controlled transfer'},source:'Institute module · Q467 · question p.46',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:467,questionPage:46,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The equation x^((3)/(4)·(log₂x)^(2) + log₂x − (5)/(4)) = √(2) has-',options:['exactly two real roots','no real root','one irrational root','none of these'],correct:2,answer:'one irrational root',diagram:'',short:[
+ ['Take log base 2 of both sides.','[(3)/(4)·(log₂x)^(2) + log₂x − (5)/(4)]·log₂x = log₂(√(2)) = (1)/(2)'],
+ ['Let y = log₂x and clear denominators.','(3)/(4)·y^(3) + y^(2) − (5)/(4)·y = (1)/(2) ⇒ 3y^(3) + 4y^(2) − 5y − 2 = 0'],
+ ['y = 1 satisfies this cubic, so factor it out.','3(1) + 4(1) − 5(1) − 2 = 0 ⇒ (y − 1)(3y^(2) + 7y + 2) = 0'],
+ ['Solve the remaining quadratic factor.','3y^(2) + 7y + 2 = 0 ⇒ y = (−7 ± 5)/(6) ⇒ y = −(1)/(3) or y = −2'],
+ ['Convert all three y-values back to x = 2^(y).','y = 1 ⇒ x = 2','y = −2 ⇒ x = (1)/(4)','y = −(1)/(3) ⇒ x = 2^(−(1)/(3)), irrational'],
+ ['Two of the three roots, 2 and (1)/(4), are rational; exactly one, 2^(−(1)/(3)), is irrational.','one irrational root','Correct answer: (C)']
+]},
+{id:'QUAD-10-I',parent:'QUAD-10',variant:9,topic:'Equations reducible to quadratic form',relevance:{parent:'QUAD-10',sharedSkill:'Equations reducible to quadratic form',recoveryPurpose:'controlled transfer'},source:'Institute module · Q610 · question p.59',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:610,questionPage:59,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The number of real solutions of the equation x^((log₃x)^(2) − (9)/(2)·log₃x + 5) = 3√(3) is-',options:['0','1','2','3'],correct:3,answer:'3',diagram:'',short:[
+ ['Note 3√(3) = 3^((3)/(2)), then take log base 3 of both sides.','[(log₃x)^(2) − (9)/(2)·log₃x + 5]·log₃x = log₃(3^((3)/(2))) = (3)/(2)'],
+ ['Let y = log₃x and clear denominators.','y^(3) − (9)/(2)·y^(2) + 5y = (3)/(2) ⇒ 2y^(3) − 9y^(2) + 10y − 3 = 0'],
+ ['y = 1 satisfies this cubic, so factor it out.','2(1) − 9(1) + 10(1) − 3 = 0 ⇒ (y − 1)(2y^(2) − 7y + 3) = 0'],
+ ['Solve the remaining quadratic factor.','2y^(2) − 7y + 3 = 0 ⇒ y = (7 ± 5)/(4) ⇒ y = 3 or y = (1)/(2)'],
+ ['Convert all three y-values back to x = 3^(y); each is a valid positive value.','y = 1 ⇒ x = 3','y = 3 ⇒ x = 27','y = (1)/(2) ⇒ x = √(3)'],
+ ['Three distinct real solutions.','number of real solutions = 3','Correct answer: (D)']
+]},
+{id:'QUAD-08-A',parent:'QUAD-08',variant:1,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q188 · question p.16',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:188,questionPage:16,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If x is real and y = (x^(2) + 6x + 1)/(2x), then which of the following is true:',options:['2 < y < 4','(5)/(2) < y < (7)/(2)','either y ≤ 2 or y ≥ 4','None of these'],correct:2,answer:'either y ≤ 2 or y ≥ 4',diagram:'',short:[
+ ['Multiply both sides by 2x and collect terms as a quadratic in x.','x^(2) + (6 − 2y)x + 1 = 0'],
+ ['Since x is real, this quadratic’s discriminant must be non-negative, with a = 1, b = 6 − 2y and c = 1.','D = b^(2) − 4ac ≥ 0'],
+ ['Substitute.','(6 − 2y)^(2) − 4(1)(1) ≥ 0'],
+ ['Expand and simplify.','36 − 24y + 4y^(2) − 4 ≥ 0 ⇒ 4y^(2) − 24y + 32 ≥ 0 ⇒ y^(2) − 6y + 8 ≥ 0'],
+ ['Factor.','(y − 2)(y − 4) ≥ 0'],
+ ['A product of two factors is non-negative when both factors share the same sign, or one of them is zero.','y ≤ 2 or y ≥ 4','Correct answer: (C)']
+]},
+{id:'QUAD-08-B',parent:'QUAD-08',variant:2,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'controlled transfer'},source:'Institute module · Q216 · question p.20',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:216,questionPage:20,printedOptionKey:'B',verifiedOptionKey:'B'},question:'For any real x the expression 2(k − x)[x + √(x^(2) + k^(2))] cannot exceed -',options:['k^(2)','2k^(2)','3k^(2)','None of these'],correct:1,answer:'2k^(2)',diagram:'',short:[
+ ['Introduce u = x + √(x^(2)+k^(2)). Since √(x^(2)+k^(2)) ≥ |x| ≥ −x for every real x, u ≥ 0 always, and u > 0 whenever k ≠ 0.','u = x + √(x^(2) + k^(2))'],
+ ['Multiplying u by its conjugate expression gives a difference of squares equal to k^(2).','u × (√(x^(2)+k^(2)) − x) = (x^(2)+k^(2)) − x^(2) = k^(2)'],
+ ['So the conjugate expression is (k^(2))/(u); adding it to u isolates x.','√(x^(2)+k^(2)) − x = (k^(2))/(u) ⇒ 2x = u − (k^(2))/(u) ⇒ x = (u^(2) − k^(2))/(2u)'],
+ ['Substitute this x into k − x.','k − x = k − (u^(2) − k^(2))/(2u) = (2ku − u^(2) + k^(2))/(2u)'],
+ ['The original expression equals 2(k−x)u; substitute and simplify.','2(k−x)u = 2u × (2ku − u^(2) + k^(2))/(2u) = 2ku − u^(2) + k^(2)'],
+ ['Complete the square in u.','2ku − u^(2) + k^(2) = 2k^(2) − (u − k)^(2)'],
+ ['Since (u − k)^(2) ≥ 0 for every real u, the expression is at most 2k^(2), with equality when u = k.','2(k − x)[x + √(x^(2)+k^(2))] ≤ 2k^(2)','Correct answer: (B)']
+]},
+{id:'QUAD-08-C',parent:'QUAD-08',variant:3,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q251 · question p.22',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:251,questionPage:22,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If x ∈ R, then (x^(2) − x + 1)/(x^(2) + x + 1) takes values in the interval :',options:['((1)/(3), 3)','[(1)/(3), 3]','(0, 3)','none of the above'],correct:1,answer:'[(1)/(3), 3]',diagram:'',short:[
+ ['Let y equal the expression. Since x^(2)+x+1 has discriminant 1−4 < 0 with positive leading coefficient, it is never zero, so cross-multiplying is valid for every x.','y = (x^(2) − x + 1)/(x^(2) + x + 1) ⇒ y(x^(2)+x+1) = x^(2)−x+1'],
+ ['Collect into a quadratic in x.','(y−1)x^(2) + (y+1)x + (y−1) = 0'],
+ ['If y ≠ 1 this is a genuine quadratic in x, so its discriminant must be non-negative for x to be real.','D = (y+1)^(2) − 4(y−1)^(2) ≥ 0'],
+ ['Expand and simplify.','y^(2)+2y+1 − 4y^(2)+8y−4 ≥ 0 ⇒ −3y^(2)+10y−3 ≥ 0 ⇒ 3y^(2)−10y+3 ≤ 0'],
+ ['Factor.','(3y−1)(y−3) ≤ 0 ⇒ (1)/(3) ≤ y ≤ 3'],
+ ['If y = 1, the quadratic in x degenerates to a linear equation with the real solution x = 0, which already lies inside the interval just found.','2x = 0 ⇒ x = 0, and y = 1 ∈ [(1)/(3), 3]'],
+ ['Both endpoints are attained (y = 3 at x = −1, and y = (1)/(3) at x = 1), so the interval is closed.','(x^(2)−x+1)/(x^(2)+x+1) ∈ [(1)/(3), 3]','Correct answer: (B)']
+]},
+{id:'QUAD-08-D',parent:'QUAD-08',variant:4,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'controlled transfer'},source:'Institute module · Q273 · question p.24',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:273,questionPage:24,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If the product of two positive numbers is 9, then the possible value of the sum of their reciprocals lies in the interval:',options:['[(1)/(3), ∞)','[1, ∞)','[(4)/(3), ∞)','[(2)/(3), ∞)'],correct:3,answer:'[(2)/(3), ∞)',diagram:'',short:[
+ ['Let the two positive numbers be p and (9)/(p), so their product is fixed at 9. The sum of their reciprocals is then a function of p alone.','S = (1)/(p) + (p)/(9), p > 0'],
+ ['For positive quantities a and b, the AM–GM inequality states a + b ≥ 2√(ab), with equality when a = b.','a + b ≥ 2√(ab)'],
+ ['Apply it with a = (1)/(p) and b = (p)/(9).','S ≥ 2√((1)/(p) × (p)/(9)) = 2√((1)/(9)) = (2)/(3)'],
+ ['Equality holds when the two terms are equal; this is achievable at a positive p, and S grows without bound as p → 0⁺ or p → ∞, so this minimum is attained and there is no upper bound.','(1)/(p) = (p)/(9) ⇒ p^(2) = 9 ⇒ p = 3, giving S = (2)/(3)'],
+ ['So the sum of reciprocals ranges over.','S ∈ [(2)/(3), ∞)','Correct answer: (D)']
+]},
+{id:'QUAD-08-E',parent:'QUAD-08',variant:5,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'controlled transfer'},source:'Institute module · Q310 · question p.28',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:310,questionPage:28,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If x+y+z=5 and xy+yz+zx=3, then least and largest value of x are:',options:['(10)/(3), 5','−1, (13)/(3)','(17)/(3), 7','None of these'],correct:1,answer:'−1, (13)/(3)',diagram:'',short:[
+ ['From x+y+z=5, express y+z in terms of x.','y + z = 5 − x'],
+ ['From xy+yz+zx=3, factor out x from the terms containing it to get yz in terms of x.','x(y+z) + yz = 3 ⇒ yz = 3 − x(5−x) = x^(2) − 5x + 3'],
+ ['y and z are the two roots of the quadratic built from their sum and product.','t^(2) − (y+z)t + yz = 0'],
+ ['Substitute.','t^(2) − (5−x)t + (x^(2)−5x+3) = 0'],
+ ['Since y and z are real, this quadratic in t must have a non-negative discriminant.','D = (5−x)^(2) − 4(x^(2)−5x+3) ≥ 0'],
+ ['Expand and simplify.','25 − 10x + x^(2) − 4x^(2) + 20x − 12 ≥ 0 ⇒ −3x^(2) + 10x + 13 ≥ 0 ⇒ 3x^(2) − 10x − 13 ≤ 0'],
+ ['Factor.','(3x − 13)(x + 1) ≤ 0 ⇒ −1 ≤ x ≤ (13)/(3)'],
+ ['So x ranges between these two bounds, giving its least and largest values.','least value = −1, largest value = (13)/(3)','Correct answer: (B)']
+]},
+{id:'QUAD-08-F',parent:'QUAD-08',variant:6,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'controlled transfer'},source:'Institute module · Q392 · question p.35',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:392,questionPage:35,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The inequalities y(−1) ≥ −4, y(1) ≤ 0 & y(3) ≥ 5 are known to hold for y=ax^(2)+bx+c then the least value of ‘a’ is :',options:['−(1)/(4)','−(1)/(3)','(1)/(4)','(1)/(8)'],correct:3,answer:'(1)/(8)',diagram:'',short:[
+ ['Write each condition in terms of a, b, c using y(x) = ax^(2)+bx+c.','y(−1) = a − b + c ≥ −4   y(1) = a + b + c ≤ 0   y(3) = 9a + 3b + c ≥ 5'],
+ ['Multiply the middle inequality by −2 (this reverses its direction), so that adding it to the other two cancels the b- and c-terms.','−2(a+b+c) ≥ 0 ⇒ −2a − 2b − 2c ≥ 0'],
+ ['Add this to the first and third inequalities.','(a−b+c) + (9a+3b+c) + (−2a−2b−2c) ≥ −4 + 5 + 0'],
+ ['Simplify the left side.','8a ≥ 1'],
+ ['Divide by 8; the three original inequalities can hold as equalities simultaneously (e.g. a=(1)/(8), b=2, c=−(17)/(8)), so this bound is attained and is the least value.','a ≥ (1)/(8)','Correct answer: (D)']
+]},
+{id:'QUAD-08-G',parent:'QUAD-08',variant:7,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q558 · question p.56',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:558,questionPage:56,printedOptionKey:'A',verifiedOptionKey:'A'},question:'For all real values of x, the maximum value of the expression (x)/(x^(2) − 5x + 9) is-',options:['1','45','90','None of these'],correct:0,answer:'1',diagram:'',short:[
+ ['x^(2)−5x+9 has discriminant 25−36 < 0 with positive leading coefficient, so it is never zero and the expression is defined for every real x. Let y equal the expression and cross-multiply.','y = (x)/(x^(2)−5x+9) ⇒ y(x^(2)−5x+9) = x'],
+ ['Collect into a quadratic in x.','yx^(2) − (5y+1)x + 9y = 0'],
+ ['If y = 0, this reduces to −x = 0, giving x = 0. If y ≠ 0, it is a genuine quadratic in x, so its discriminant must be non-negative for x to be real.','D = (5y+1)^(2) − 36y^(2) ≥ 0'],
+ ['Expand and simplify.','25y^(2)+10y+1−36y^(2) ≥ 0 ⇒ −11y^(2)+10y+1 ≥ 0 ⇒ 11y^(2)−10y−1 ≤ 0'],
+ ['Factor.','(11y+1)(y−1) ≤ 0 ⇒ −(1)/(11) ≤ y ≤ 1'],
+ ['The value y = 0 found above already lies inside this interval, so the range is unaffected; the upper end is attained at x = 3.','maximum value of y = 1, attained at x = 3','Correct answer: (A)']
+]},
+{id:'QUAD-08-H',parent:'QUAD-08',variant:8,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'direct retry'},source:'Institute module · Q573 · question p.57',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:573,questionPage:57,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The maximum value of the function y = (1)/(4x^(2) + 2x + 1) is-',options:['(4)/(3)','(5)/(2)','(13)/(4)','None of these'],correct:0,answer:'(4)/(3)',diagram:'',short:[
+ ['y is largest when the denominator 4x^(2)+2x+1 is smallest. For an upward-opening quadratic ax^(2)+bx+c (a > 0), the minimum value is c − (b^(2))/(4a).','minimum of denominator = c − (b^(2))/(4a)'],
+ ['Read off a, b and c.','a = 4  b = 2  c = 1'],
+ ['Substitute into the formula.','minimum = 1 − (2^(2))/(4 × 4) = 1 − (4)/(16)'],
+ ['Simplify.','minimum = 1 − (1)/(4) = (3)/(4)'],
+ ['The denominator is always positive, since its minimum (3)/(4) is positive, so the maximum of y is the reciprocal of this minimum.','maximum of y = (4)/(3)','Correct answer: (A)']
+]},
+{id:'QUAD-08-I',parent:'QUAD-08',variant:9,topic:'Maximum or minimum value of a quadratic expression',relevance:{parent:'QUAD-08',sharedSkill:'Maximum or minimum value of a quadratic expression',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q669 · question p.63 · AIEEE-2006',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:669,questionPage:63,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If x is real, the maximum value of (3x^(2) + 9x + 17)/(3x^(2) + 9x + 7) is –',options:['41','1','(17)/(7)','(1)/(4)'],correct:0,answer:'41',diagram:'',short:[
+ ['Let t = 3x^(2)+9x, so the expression becomes a function of t alone.','(3x^(2)+9x+17)/(3x^(2)+9x+7) = (t+17)/(t+7) = 1 + (10)/(t+7)'],
+ ['For an upward-opening quadratic ax^(2)+bx+c (a > 0), the minimum value is c − (b^(2))/(4a); apply it to t = 3x^(2)+9x with a=3, b=9, c=0.','minimum of t = 0 − (9^(2))/(4 × 3) = −(81)/(12) = −(27)/(4)'],
+ ['So t ranges over all values from this minimum upward, with no upper bound.','t ∈ [−(27)/(4), ∞)'],
+ ['Then t+7 ranges over.','t + 7 ∈ [(1)/(4), ∞)'],
+ ['Since t+7 is always positive here, (10)/(t+7) is largest when t+7 is smallest, i.e. at t+7 = (1)/(4).','maximum of (10)/(t+7) = 40'],
+ ['Add 1 to get the maximum of the original expression.','maximum value = 1 + 40 = 41','Correct answer: (A)']
+]},
+{id:'QUAD-09-A',parent:'QUAD-09',variant:1,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'direct retry'},source:'Institute module · Q160 · question p.13',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:160,questionPage:13,printedOptionKey:'C',verifiedOptionKey:'D'},question:'The least integral value of ‘m’ for which the expression mx^(2) − 4x + 3m + 1 is positive for every x ∈ R is :',options:['1','−2','−1','2'],correct:3,answer:'2',diagram:'',short:[
+ ['For an upward-opening quadratic ax^(2)+bx+c to stay positive for every real x, it needs two conditions: a > 0 (opens upward) and discriminant D < 0 (no real roots, so it never touches or crosses zero).','a > 0 and D = b^(2) − 4ac < 0'],
+ ['Read off a, b and c from mx^(2) − 4x + (3m+1).','a = m  b = −4  c = 3m + 1'],
+ ['Apply the discriminant condition.','D = (−4)^(2) − 4m(3m+1) < 0 ⇒ 16 − 12m^(2) − 4m < 0'],
+ ['Divide by −4, reversing the inequality, and simplify.','3m^(2) + m − 4 > 0'],
+ ['Factor.','(3m + 4)(m − 1) > 0 ⇒ m < −(4)/(3) or m > 1'],
+ ['Combine with the requirement a = m > 0: only m > 1 survives, since m < −(4)/(3) is negative.','m > 1'],
+ ['FLAG: the printed key marks option (C), m = −1, but that value makes the leading coefficient negative, so the expression opens downward and is negative for large |x| — it is not positive for every real x (check: at m=−1 the expression is −x^(2)−4x−2, which → −∞ as x → ∞). Also m = 1 fails, since it gives (x−2)^(2), which is 0 (not positive) at x = 2. The verified least integer satisfying m > 1 is m = 2.','least integral m = 2','Correct answer: (D)']
+]},
+{id:'QUAD-09-B',parent:'QUAD-09',variant:2,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q185 · question p.16',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:185,questionPage:16,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If √(2 + x − x^(2)) > x − 4 then –',options:['−1 ≤ x ≤ 2','(−∞, ∞)','(−1, 4)','[2, ∞)'],correct:0,answer:'−1 ≤ x ≤ 2',diagram:'',short:[
+ ['The square root is defined only where its radicand is non-negative.','2 + x − x^(2) ≥ 0 ⇒ x^(2) − x − 2 ≤ 0'],
+ ['Factor.','(x − 2)(x + 1) ≤ 0 ⇒ −1 ≤ x ≤ 2'],
+ ['On this domain, check the largest value the right side x − 4 can take; it occurs at x = 2.','maximum of (x − 4) on [−1,2] = 2 − 4 = −2 < 0'],
+ ['So x − 4 is negative throughout the domain, while the square root on the left is always ≥ 0, so the inequality holds automatically at every point where the square root is defined.','√(2+x−x^(2)) ≥ 0 > x − 4 for all x ∈ [−1, 2]','Correct answer: (A)']
+]},
+{id:'QUAD-09-C',parent:'QUAD-09',variant:3,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q222 · question p.20',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:222,questionPage:20,printedOptionKey:'A',verifiedOptionKey:'A'},question:'Set of all real values of ‘a’ such that f(x) = ((2a−1)x^(2) + 2(a+1)x + (2a−1))/(x^(2) − 2x + 40) is always negative is',options:['(−∞, 0)','(0, ∞)','(−∞, (1)/(2))','None'],correct:0,answer:'(−∞, 0)',diagram:'',short:[
+ ['Check the denominator first: with a = 1, b = −2, c = 40, its discriminant is negative and its leading coefficient is positive, so it is always positive and never zero; the sign of f(x) is therefore the sign of the numerator N(x) = (2a−1)x^(2)+2(a+1)x+(2a−1).','D = (−2)^(2) − 4(1)(40) = 4 − 160 = −156 < 0'],
+ ['For N(x) to be negative for every x, its leading coefficient must be negative, and (since it must then be a genuine downward-opening quadratic that never touches zero) its own discriminant must also be negative.','2a − 1 < 0 and D_N = [2(a+1)]^(2) − 4(2a−1)^(2) < 0'],
+ ['The leading-coefficient condition gives.','a < (1)/(2)'],
+ ['Simplify the discriminant condition by dividing by 4 and factoring as a difference of squares.','(a+1)^(2) − (2a−1)^(2) < 0 ⇒ [(a+1)−(2a−1)][(a+1)+(2a−1)] < 0 ⇒ (2−a)(3a) < 0'],
+ ['Solve this product inequality.','3a(2−a) < 0 ⇒ a < 0 or a > 2'],
+ ['Intersect with a < (1)/(2) from the leading-coefficient condition: only a < 0 survives.','a ∈ (−∞, 0)','Correct answer: (A)']
+]},
+{id:'QUAD-09-D',parent:'QUAD-09',variant:4,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q258 · question p.23',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:258,questionPage:23,printedOptionKey:'A',verifiedOptionKey:'A'},question:'Set of all values of x satisfying the inequality √(x^(2) − 7x + 6) > x + 2 is -',options:['x ∈ (−∞, (2)/(11))','x ∈ ((2)/(11), ∞)','x ∈ (−∞, 1] ∪ [6, ∞)','x ∈ [6, ∞)'],correct:0,answer:'x ∈ (−∞, (2)/(11))',diagram:'',short:[
+ ['The square root needs a non-negative radicand.','x^(2) − 7x + 6 ≥ 0 ⇒ (x−1)(x−6) ≥ 0 ⇒ x ≤ 1 or x ≥ 6'],
+ ['Case 1: x + 2 < 0, i.e. x < −2. This already lies in the domain (x ≤ 1), and the square root is always ≥ 0 while x+2 is negative, so the inequality holds automatically throughout this case.','x < −2 all satisfy the inequality'],
+ ['Case 2: x + 2 ≥ 0, i.e. x ≥ −2. Combined with the domain, this restricts to.','x ∈ [−2, 1] ∪ [6, ∞)'],
+ ['Both sides are non-negative here, so squaring preserves the inequality.','x^(2) − 7x + 6 > (x+2)^(2) ⇒ x^(2)−7x+6 > x^(2)+4x+4'],
+ ['Simplify.','−7x+6 > 4x+4 ⇒ 2 > 11x ⇒ x < (2)/(11)'],
+ ['Intersect with the case-2 domain [−2,1] ∪ [6,∞); since (2)/(11) < 1, this gives.','x ∈ [−2, (2)/(11))'],
+ ['Union Case 1 (x < −2) with Case 2 to get the full solution set.','x ∈ (−∞, (2)/(11))','Correct answer: (A)']
+]},
+{id:'QUAD-09-E',parent:'QUAD-09',variant:5,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'direct retry'},source:'Institute module · Q409 · question p.36',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:409,questionPage:36,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If x^(2) + 6x − 27 > 0 and x^(2) − 3x − 4 < 0, then -',options:['x > 3','x < 4','3 < x < 4','x = 3.5'],correct:2,answer:'3 < x < 4',diagram:'',short:[
+ ['Factor the first inequality.','x^(2)+6x−27 > 0 ⇒ (x+9)(x−3) > 0 ⇒ x < −9 or x > 3'],
+ ['Factor the second inequality.','x^(2)−3x−4 < 0 ⇒ (x−4)(x+1) < 0 ⇒ −1 < x < 4'],
+ ['Both inequalities must hold simultaneously, so intersect the two solution sets; the branch x < −9 does not overlap −1 < x < 4 at all.','(x < −9 or x > 3) ∩ (−1 < x < 4) = (3, 4)','Correct answer: (C)']
+]},
+{id:'QUAD-09-F',parent:'QUAD-09',variant:6,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q484 · question p.50',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:484,questionPage:50,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If (λ^(2) + λ − 2)x^(2) + (λ + 2)x < 1 for all x ∈ R then λ belongs to the interval -',options:['(−2, 1)','(−2, (2)/(5))','((2)/(5), 1)','none of these'],correct:1,answer:'(−2, (2)/(5))',diagram:'',short:[
+ ['Move everything to one side, so the inequality reads as a quadratic in x that must stay negative for every x.','(λ^(2)+λ−2)x^(2) + (λ+2)x − 1 < 0 for all x ∈ R'],
+ ['For a downward-opening quadratic Ax^(2)+Bx+C to be negative for every real x, it needs two conditions: A < 0 and discriminant D < 0.','A = λ^(2)+λ−2 < 0 and D = B^(2) − 4AC < 0'],
+ ['The leading-coefficient condition factors directly.','λ^(2)+λ−2 < 0 ⇒ (λ+2)(λ−1) < 0 ⇒ −2 < λ < 1'],
+ ['Apply the discriminant condition with A = λ^(2)+λ−2, B = λ+2, C = −1.','D = (λ+2)^(2) − 4(λ^(2)+λ−2)(−1) < 0'],
+ ['Expand and simplify.','(λ+2)^(2) + 4(λ^(2)+λ−2) < 0 ⇒ λ^(2)+4λ+4+4λ^(2)+4λ−8 < 0 ⇒ 5λ^(2)+8λ−4 < 0'],
+ ['Factor.','(5λ−2)(λ+2) < 0 ⇒ −2 < λ < (2)/(5)'],
+ ['Intersect the leading-coefficient interval (−2,1) with the discriminant interval (−2, (2)/(5)).','λ ∈ (−2, (2)/(5))','Correct answer: (B)']
+]},
+{id:'QUAD-09-G',parent:'QUAD-09',variant:7,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'direct retry'},source:'Institute module · Q569 · question p.56',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:569,questionPage:56,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If for real values of x, x^(2) − 3x + 2 > 0 and x^(2) − 3x − 4 ≤ 0, then-',options:['−1 ≤ x < 1','−1 ≤ x < 4','−1 ≤ x < 1 and 2 < x ≤ 4','2 < x ≤ 4'],correct:2,answer:'−1 ≤ x < 1 and 2 < x ≤ 4',diagram:'',short:[
+ ['Factor the first inequality.','x^(2)−3x+2 > 0 ⇒ (x−1)(x−2) > 0 ⇒ x < 1 or x > 2'],
+ ['Factor the second inequality.','x^(2)−3x−4 ≤ 0 ⇒ (x−4)(x+1) ≤ 0 ⇒ −1 ≤ x ≤ 4'],
+ ['Intersect the two solution sets.','(x < 1 or x > 2) ∩ [−1, 4] = [−1, 1) ∪ (2, 4]','Correct answer: (C)']
+]},
+{id:'QUAD-09-H',parent:'QUAD-09',variant:8,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'inverse or representation check'},source:'Institute module · Q634 · question p.61',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:634,questionPage:61,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The expression y = ax^(2) + bx + c has always the same sign as c if -',options:['4ac < b^(2)','4ac > b^(2)','ac < b^(2)','ac > b^(2)'],correct:1,answer:'4ac > b^(2)',diagram:'',short:[
+ ['"Always the same sign as c" means y(x) never crosses or touches zero for any real x, i.e. ax^(2)+bx+c = 0 has no real roots.','discriminant D = b^(2) − 4ac < 0'],
+ ['Rearrange the discriminant condition.','b^(2) < 4ac ⇒ 4ac > b^(2)'],
+ ['Since b^(2) ≥ 0, this also forces ac > 0, i.e. a and c share the same sign; combined with D < 0, y keeps the sign of a — and hence of c — for every real x, including at x = 0 where y(0) = c.','4ac > b^(2) ⇒ ac > 0','Correct answer: (B)']
+]},
+{id:'QUAD-09-I',parent:'QUAD-09',variant:9,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q673 · question p.63 · AIEEE-2009',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:673,questionPage:63,printedOptionKey:'A',verifiedOptionKey:'C'},question:'If the roots of the equation bx^(2) + cx + a = 0 be imaginary, then for all real values of x, the expression 3b^(2)x^(2) + 6bcx + 2c^(2) is-',options:['greater than 4ab','less than 4ab','greater than −4ab','less than −4ab'],correct:2,answer:'greater than −4ab',diagram:'',short:[
+ ['Imaginary (non-real) roots of bx^(2)+cx+a=0 mean its discriminant is negative.','c^(2) − 4ab < 0 ⇒ c^(2) < 4ab'],
+ ['Complete the square on 3b^(2)x^(2)+6bcx+2c^(2), grouping the first two terms as 3[(bx)^(2)+2(bx)(c)].','3b^(2)x^(2)+6bcx+2c^(2) = 3[(bx)^(2) + 2(bx)(c)] + 2c^(2) = 3[(bx+c)^(2) − c^(2)] + 2c^(2)'],
+ ['Simplify.','3b^(2)x^(2)+6bcx+2c^(2) = 3(bx+c)^(2) − c^(2)'],
+ ['Since (bx+c)^(2) ≥ 0 for every real x, the expression is at least −c^(2), with equality only at x = −(c)/(b).','3b^(2)x^(2)+6bcx+2c^(2) ≥ −c^(2)'],
+ ['Use c^(2) < 4ab from the imaginary-roots condition to bound −c^(2) from below.','−c^(2) > −4ab'],
+ ['FLAG: the printed key marks option (A), "greater than 4ab", but this fails a direct check — take b=1, c=0, a>0 (so bx^(2)+cx+a = x^(2)+a has imaginary roots); at x=0 the expression 3b^(2)x^(2)+6bcx+2c^(2) equals 0, which is NOT greater than 4ab=4a>0, yet 0 is greater than −4ab=−4a. Chaining the two verified inequalities gives the correct bound for every real x.','3b^(2)x^(2)+6bcx+2c^(2) ≥ −c^(2) > −4ab','Correct answer: (C)']
+]},
+{id:'QUAD-11-A',parent:'QUAD-11',variant:1,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'controlled transfer'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q167 · question p.13',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:167,questionPage:13,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If p, q, r, s are rational numbers and the roots of f(x) = 0 are the eccentricities of a parabola and a rectangular hyperbola, where f(x) = px^(3) + qx^(2) + rx + s, then p + q + r + s =',options:['p','−p','2p','0'],correct:3,answer:'0',diagram:'',short:[
+ ['A parabola has eccentricity 1 and a rectangular hyperbola has eccentricity √(2); since f has rational coefficients, irrational roots occur in conjugate pairs, so the third root is −√(2).','Roots: 1, √(2), −√(2)'],
+ ['Write f as p times the product of linear factors for its three known roots.','f(x) = p(x − r1)(x − r2)(x − r3)'],
+ ['Substitute the specific roots found above.','f(x) = p(x − 1)(x − √(2))(x + √(2))'],
+ ['Multiply the conjugate surd factors first, then expand.','f(x) = p(x − 1)(x^(2) − 2) = p(x^(3) − x^(2) − 2x + 2)'],
+ ['Read off q, r, s in terms of p, then add all four coefficients.','q = −p  r = −2p  s = 2p ⇒ p + q + r + s = p − p − 2p + 2p = 0','Correct answer: (D)']
+]},
+{id:'QUAD-11-B',parent:'QUAD-11',variant:2,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'inverse or representation check'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q192 · question p.17',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:192,questionPage:17,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The remainder obtained when the polynomial x + x^(3) + x^(9) + x^(27) + x^(81) + x^(2^(243)) is divided by x^(2) − 1 is:',options:['6x + 1','5x + 1','4x','6x'],correct:1,answer:'5x + 1',diagram:'',short:[
+ ['Modulo x^(2) − 1, x^(2) ≡ 1, so any even power of x reduces to 1 and any odd power reduces to x.','x^(2) ≡ 1 ⇒ x^(even) ≡ 1, x^(odd) ≡ x'],
+ ['Check the parity of each of the first five exponents: 1, 3, 9, 27, 81 are all odd, so each term reduces to x.','x + x^(3) + x^(9) + x^(27) + x^(81) ≡ x + x + x + x + x = 5x'],
+ ['The last exponent 2^(243) is a power of 2, hence even, so that term reduces to 1.','x^(2^(243)) ≡ 1'],
+ ['Add the reduced terms to get the remainder.','Remainder ≡ 5x + 1','Correct answer: (B)']
+]},
+{id:'QUAD-11-C',parent:'QUAD-11',variant:3,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'inverse or representation check'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q257 · question p.23',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:257,questionPage:23,printedOptionKey:'C',verifiedOptionKey:'B'},question:'The value of the expression x^(4) − 8x^(3) + 18x^(2) − 8x + 2 when x = 2 + √(3) is -',options:['0','1','2','3'],correct:1,answer:'1',diagram:'',short:[
+ ['From x = 2 + √(3), isolate the surd and square both sides to get a quadratic satisfied by x.','x − 2 = √(3) ⇒ (x − 2)^(2) = 3 ⇒ x^(2) − 4x + 1 = 0'],
+ ['Divide the quartic by this quadratic; the quotient comes out equal to the same quadratic, with a constant remainder.','x^(4) − 8x^(3) + 18x^(2) − 8x + 2 = (x^(2) − 4x + 1)(x^(2) − 4x + 1) + 1'],
+ ['So the quartic equals (x^(2) − 4x + 1)^(2) + 1, which only needs x^(2) − 4x + 1 = 0 to evaluate at this x.','(x^(2) − 4x + 1)^(2) + 1 = 0^(2) + 1 = 1'],
+ ['Flag: this contradicts the printed key of (C); the printed key appears incorrect. Both the algebraic reduction above and a direct numeric check at x ≈ 3.7320508 give the value 1, confirming (B).','Correct answer: (B)']
+]},
+{id:'QUAD-11-D',parent:'QUAD-11',variant:4,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'controlled transfer'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q267 · question p.24',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:267,questionPage:24,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The number of values of the pair (a, b) for which a(x + 1)^(2) + b(x^(2) − 3x − 2) + x + 1 = 0 is an identity in x is:',options:['0','1','2','infinite'],correct:0,answer:'0',diagram:'',short:[
+ ['Expand the squared term and the product term, then collect by powers of x.','a(x + 1)^(2) + b(x^(2) − 3x − 2) + x + 1 = (a + b)x^(2) + (2a − 3b + 1)x + (a − 2b + 1)'],
+ ['An identity in x forces every coefficient to vanish, giving three simultaneous equations in a, b.','a + b = 0   2a − 3b + 1 = 0   a − 2b + 1 = 0'],
+ ['Solve the first two equations for a and b.','a = −b ⇒ −2b − 3b + 1 = 0 ⇒ b = (1)/(5), a = −(1)/(5)'],
+ ['Check this pair against the third equation; it fails, so no pair (a, b) satisfies all three at once.','a − 2b + 1 = −(1)/(5) − (2)/(5) + 1 = (2)/(5) ≠ 0','Correct answer: (A)']
+]},
+{id:'QUAD-11-E',parent:'QUAD-11',variant:5,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'inverse or representation check'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q335 · question p.30',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:335,questionPage:30,printedOptionKey:'C',verifiedOptionKey:'C'},question:'There is only one way to choose real numbers M and N such that when the polynomial 5x^(4) + 4x^(3) + 3x^(2) + Mx + N is divided by the polynomial x^(2) + 1, the remainder is 0. If M and N assume these unique values, then M − N is',options:['−6','−2','6','2'],correct:2,answer:'6',diagram:'',short:[
+ ['Modulo x^(2) + 1, x^(2) ≡ −1, so x^(4) ≡ 1 and x^(3) ≡ −x.','x^(2) ≡ −1 ⇒ x^(4) = (x^(2))^(2) ≡ 1, x^(3) = x·x^(2) ≡ −x'],
+ ['Reduce every term of the quartic using these congruences and collect by power of x.','5x^(4) + 4x^(3) + 3x^(2) + Mx + N ≡ 5(1) + 4(−x) + 3(−1) + Mx + N = (M − 4)x + (N + 2)'],
+ ['For the remainder to be identically 0, both the x-coefficient and the constant term must vanish.','M − 4 = 0 ⇒ M = 4   N + 2 = 0 ⇒ N = −2'],
+ ['Compute M − N.','M − N = 4 − (−2) = 6','Correct answer: (C)']
+]},
+{id:'QUAD-11-F',parent:'QUAD-11',variant:6,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'direct retry'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q455 · question p.43',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:455,questionPage:43,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If an unknown polynomial is divided by (x − 1) and (x − 2) we obtain the remainder 2 and 1 respectively, then the remainder resulting from the division of this polynomial by (x − 1)(x − 2) is -',options:['3','−3','3 − x','3 − 2x'],correct:2,answer:'3 − x',diagram:'',short:[
+ ['Dividing by a quadratic leaves a remainder of degree less than 2, so write it as a linear expression.','R(x) = ax + b'],
+ ['Use the remainder theorem on each given factor.','P(1) = a + b = 2   P(2) = 2a + b = 1'],
+ ['Subtract the first equation from the second to eliminate b.','(2a + b) − (a + b) = 1 − 2 ⇒ a = −1'],
+ ['Back-substitute to find b, then write the remainder.','b = 2 − (−1) = 3 ⇒ R(x) = 3 − x','Correct answer: (C)']
+]},
+{id:'QUAD-11-G',parent:'QUAD-11',variant:7,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'controlled transfer'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q479 · question p.49',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:479,questionPage:49,printedOptionKey:'C',verifiedOptionKey:'C'},question:'Let f(x) = ax^(3) + 5x^(2) − bx + 1. If f(x) when divided by 2x + 1 leaves 5 as remainder, and f′(x) is divisible by 3x − 1 then -',options:['a = 26, b = 10','a = 24, b = 12','a = 26, b = 12','none of these'],correct:2,answer:'a = 26, b = 12',diagram:'',short:[
+ ['Differentiate f(x) once, since the second condition involves f′.','f′(x) = 3ax^(2) + 10x − b'],
+ ['By the remainder theorem, leaving remainder 5 on division by 2x + 1 means f(−(1)/(2)) = 5.','f(−(1)/(2)) = −(a)/(8) + (5)/(4) + (b)/(2) + 1 = 5 ⇒ −a + 4b = 22'],
+ ['Divisibility by 3x − 1 means f′((1)/(3)) = 0.','f′((1)/(3)) = (a)/(3) + (10)/(3) − b = 0 ⇒ a − 3b = −10'],
+ ['Solve the two linear equations in a and b simultaneously.','a = 4b − 22 ⇒ (4b − 22) − 3b = −10 ⇒ b = 12, a = 26','Correct answer: (C)']
+]},
+{id:'QUAD-11-H',parent:'QUAD-11',variant:8,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'direct retry'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q563 · question p.56',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:563,questionPage:56,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If α − x is a factor of x^(2) − ax + b, then α(a − α) is equal to-',options:['−b','b','a','−a'],correct:1,answer:'b',diagram:'',short:[
+ ['α − x is a factor means x = α is a root, so the factor theorem gives a relation between α, a and b.','α^(2) − aα + b = 0'],
+ ['Rearrange to isolate the product α(a − α).','b = aα − α^(2) = α(a − α)','Correct answer: (B)']
+]},
+{id:'QUAD-11-I',parent:'QUAD-11',variant:9,relevance:{parent:'QUAD-11',sharedSkill:'Remainder theorem and polynomial remainders',recoveryPurpose:'controlled transfer'},topic:'Remainder theorem and polynomial remainders',source:'Institute module · Q593 · question p.58',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:593,questionPage:58,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The number of quadratic equations which are unchanged by squaring their roots are -',options:['2','3','4','None of these'],correct:2,answer:'4',diagram:'',short:[
+ ['Let α, β be the roots; "unchanged by squaring" means {α^(2), β^(2)} = {α, β} as a set. First take the case where each root is individually fixed by squaring.','α^(2) = α and β^(2) = β ⇒ α, β ∈ {0, 1}'],
+ ['The unordered pairs from {0, 1} give three quadratics.','Roots {0,0}: x^(2) = 0   Roots {0,1}: x^(2) − x = 0   Roots {1,1}: x^(2) − 2x + 1 = 0'],
+ ['Now take the case where the two roots swap under squaring instead of each being individually fixed.','α^(2) = β and β^(2) = α with α ≠ β ⇒ α^(4) = α ⇒ α(α − 1)(α^(2) + α + 1) = 0'],
+ ['α = 0 and α = 1 both force α = β, already counted, so only the remaining factor gives a genuinely new pair; solving it gives the primitive cube roots of unity, which do swap under squaring.','α^(2) + α + 1 = 0 ⇒ roots ω, ω^(2) ⇒ equation x^(2) + x + 1 = 0'],
+ ['Count the equations found: three from the fixed-root case plus one from the swapping case.','Total = 3 + 1 = 4','Correct answer: (C)']
+]},
+{id:'QUAD-12-A',parent:'QUAD-12',variant:1,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'direct retry'},topic:'Complex roots of a real polynomial',source:'Institute module · Q134 · question p.10',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:134,questionPage:10,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If −3 + 5i is a root of the equation x^(2) + px + q = 0, then the ordered pair (p, q) is (p, q ∈ R)',options:['(−6, 34)','(6, 34)','(34, −6)','(34, 6)'],correct:1,answer:'(6, 34)',diagram:'',short:[
+ ['Real coefficients force non-real roots to occur in conjugate pairs.','Roots: −3 + 5i and −3 − 5i'],
+ ['For x^(2) + px + q = 0, state Vieta\'s relations linking the roots to p and q.','sum of roots = −p     product of roots = q'],
+ ['Substitute the two roots into both relations.','p = −[(−3+5i)+(−3−5i)] = −(−6) = 6     q = (−3+5i)(−3−5i) = 9+25 = 34','Correct answer: (B)']
+]},
+{id:'QUAD-12-B',parent:'QUAD-12',variant:2,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'controlled transfer'},topic:'Complex roots of a real polynomial',source:'Institute module · Q151 · question p.11',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:151,questionPage:11,printedOptionKey:'C',verifiedOptionKey:'C'},question:'If f(x) = x^(4) + ax^(3) + bx^(2) + cx + d be polynomial with real coefficient and real roots. If |f(i)| = 1, i = √(−1), then a + b + c + d is equal to',options:['−1','1','0','cann\'t be determined'],correct:2,answer:'0',diagram:'',short:[
+ ['Write f in terms of its four real roots and use |i − xk| = √(1 + xk^(2)) for each real root xk to evaluate the modulus at i.','f(x) = (x−x1)(x−x2)(x−x3)(x−x4) ⇒ |f(i)| = √(1+x1^(2))·√(1+x2^(2))·√(1+x3^(2))·√(1+x4^(2))'],
+ ['Each factor √(1 + xk^(2)) ≥ 1, with equality only when xk = 0, so the product can equal 1 only if every root is 0.','|f(i)| = 1 ⇒ x1 = x2 = x3 = x4 = 0'],
+ ['With all roots zero, f(x) = x^(4), so a, b, c, d are all 0.','f(x) = x^(4) ⇒ a = b = c = d = 0 ⇒ a + b + c + d = 0','Correct answer: (C)']
+]},
+{id:'QUAD-12-C',parent:'QUAD-12',variant:3,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'inverse or representation check'},topic:'Complex roots of a real polynomial',source:'Institute module · Q183 · question p.15',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:183,questionPage:15,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The roots of the equation x^(4) − 2x^(2) + 4 = 0 are the vertices of a',options:['square inscribed in a circle of radius 2','rectangle inscribed in a circle of radius 2','square inscribed in a circle of r = √(2)','rectangle in a circle of r = √(2)'],correct:3,answer:'rectangle in a circle of r = √(2)',diagram:'',short:[
+ ['Treat the biquadratic as a quadratic in x^(2) and complete the square to solve for it.','Let u = x^(2): u^(2) − 2u + 4 = 0 ⇒ (u−1)^(2) = 1 − 4 = −3 ⇒ u = 1 ± i√(3)'],
+ ['Write 1 + i√(3) in polar form, then take square roots to get x.','1 + i√(3) = 2(cos60° + i sin60°) ⇒ x = √(2)·e^(i30°) or √(2)·e^(i210°)'],
+ ['Similarly take square roots of the conjugate value 1 − i√(3).','1 − i√(3) = 2(cos(−60°) + i sin(−60°)) ⇒ x = √(2)·e^(−i30°) or √(2)·e^(i150°)'],
+ ['All four roots have modulus √(2), so they lie on a circle of that radius; check the angle spacing between consecutive vertices.','Angles: 30°, 150°, 210°, 330° ⇒ gaps 120°, 60°, 120°, 60°'],
+ ['Equal but alternating gaps (not all 90°), with opposite vertices diametrically apart, is the signature of a rectangle, not a square.','Vertices form a rectangle inscribed in a circle of radius √(2)','Correct answer: (D)']
+]},
+{id:'QUAD-12-D',parent:'QUAD-12',variant:4,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'direct retry'},topic:'Complex roots of a real polynomial',source:'Institute module · Q229 · question p.21',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:229,questionPage:21,printedOptionKey:'B',verifiedOptionKey:'B'},question:'The roots of the equation x^(4) − 8x^(2) − 9 = 0 are',options:['± 3, ± 1','± 3, ± i','± 2, ± i','None of these'],correct:1,answer:'± 3, ± i',diagram:'',short:[
+ ['Treat the biquadratic as a quadratic in x^(2) and factor it.','Let u = x^(2): u^(2) − 8u − 9 = 0 ⇒ (u − 9)(u + 1) = 0'],
+ ['Solve each factor for u, then take square roots to get x.','u = 9 ⇒ x = ±3     u = −1 ⇒ x^(2) = −1 ⇒ x = ±i','Correct answer: (B)']
+]},
+{id:'QUAD-12-E',parent:'QUAD-12',variant:5,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'direct retry'},topic:'Complex roots of a real polynomial',source:'Institute module · Q230 · question p.21',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:230,questionPage:21,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If 2 + i√(3) is a root of the equation x^(2) + px + q = 0, where p and q are real, then (p, q) =',options:['(−4, 7)','(4, −7)','(4, 7)','(−4, −7)'],correct:0,answer:'(−4, 7)',diagram:'',short:[
+ ['Real coefficients force the other root to be the conjugate.','Roots: 2 + i√(3) and 2 − i√(3)'],
+ ['For x^(2) + px + q = 0, state Vieta\'s relations linking the roots to p and q.','sum of roots = −p     product of roots = q'],
+ ['Substitute the two roots into both relations.','p = −[(2+i√(3))+(2−i√(3))] = −4     q = (2+i√(3))(2−i√(3)) = 4+3 = 7','Correct answer: (A)']
+]},
+{id:'QUAD-12-F',parent:'QUAD-12',variant:6,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'controlled transfer'},topic:'Complex roots of a real polynomial',source:'Institute module · Q350 · question p.32',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:350,questionPage:32,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If 3 and 1 + √(2) are two roots of a cubic equation with rational coefficients then the equation is',options:['x^(3) − 5x^(2) + 9x − 9 = 0','x^(3) − 3x^(2) − 4x + 12 = 0','x^(3) − 5x^(2) + 7x + 3 = 0','None of these'],correct:3,answer:'None of these',diagram:'',short:[
+ ['Rational coefficients force the surd conjugate of 1 + √(2) to be the third root.','Roots: 3, 1 + √(2), 1 − √(2)'],
+ ['State Vieta\'s relations for a monic cubic in terms of the sum, sum of pairwise products, and product of its roots.','x^(3) − (Σroots)x^(2) + (Σpairwise)x − (Πroots) = 0'],
+ ['Compute the sum of the three roots.','Σroots = 3 + (1+√(2)) + (1−√(2)) = 5'],
+ ['Compute the sum of pairwise products.','Σpairwise = 3(1+√(2)) + 3(1−√(2)) + (1+√(2))(1−√(2)) = 6 + (1−2) = 5'],
+ ['Compute the product of all three roots.','Πroots = 3(1+√(2))(1−√(2)) = 3(1−2) = −3'],
+ ['Assemble the cubic from these values.','x^(3) − 5x^(2) + 5x + 3 = 0'],
+ ['This matches none of the three printed options exactly, so the answer is (D).','Correct answer: (D)']
+]},
+{id:'QUAD-12-G',parent:'QUAD-12',variant:7,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'inverse or representation check'},topic:'Complex roots of a real polynomial',source:'Institute module · Q478 · question p.49',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:478,questionPage:49,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If α, β, γ, σ are the roots of the equation x^(4) + 4x^(3) − 6x^(2) + 7x − 9 = 0, then the value of (1 + α^(2))(1 + β^(2))(1 + γ^(2))(1 + σ^(2)) is -',options:['5','9','11','13'],correct:3,answer:'13',diagram:'',short:[
+ ['Factor each term as a difference of squares using i, then group into two products over all roots.','1 + α^(2) = (α − i)(α + i)   ⇒ ∏(1+αk^(2)) = [∏(αk−i)]·[∏(αk+i)]'],
+ ['Since P(x) = ∏(x − αk) is the given quartic, relate each product to P evaluated at ±i.','P(x) = x^(4) + 4x^(3) − 6x^(2) + 7x − 9 ⇒ ∏(αk−i) = P(i),  ∏(αk+i) = P(−i)'],
+ ['Evaluate P at i.','P(i) = i^(4) + 4i^(3) − 6i^(2) + 7i − 9 = 1 − 4i + 6 + 7i − 9 = −2 + 3i'],
+ ['Evaluate P at −i.','P(−i) = (−i)^(4) + 4(−i)^(3) − 6(−i)^(2) + 7(−i) − 9 = 1 + 4i + 6 − 7i − 9 = −2 − 3i'],
+ ['Multiply the two conjugate values.','P(i)·P(−i) = (−2+3i)(−2−3i) = 4 + 9 = 13','Correct answer: (D)']
+]},
+{id:'QUAD-12-H',parent:'QUAD-12',variant:8,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'direct retry'},topic:'Complex roots of a real polynomial',source:'Institute module · Q585 · question p.57',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:585,questionPage:57,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The imaginary roots of the equation (x^(2) + 2)^(2) + 8x^(2) = 6x(x^(2) + 2) are -',options:['1 ± i','2 ± i','−1 ± i','None of these'],correct:0,answer:'1 ± i',diagram:'',short:[
+ ['Substitute y = x^(2) + 2 to turn the equation into a quadratic in y.','y = x^(2) + 2 ⇒ y^(2) + 8x^(2) = 6xy ⇒ y^(2) − 6xy + 8x^(2) = 0'],
+ ['Factor this quadratic in y directly.','y^(2) − 6xy + 8x^(2) = (y − 4x)(y − 2x) = 0'],
+ ['Each factor gives a linear relation for y in terms of x; substitute back into y = x^(2) + 2.','y = 4x ⇒ x^(2) − 4x + 2 = 0     y = 2x ⇒ x^(2) − 2x + 2 = 0'],
+ ['Complete the square on the first quadratic; it gives real roots.','x^(2) − 4x + 2 = 0 ⇒ (x−2)^(2) = 2 ⇒ x = 2 ± √(2)  (real)'],
+ ['Complete the square on the second quadratic to isolate the non-real roots.','x^(2) − 2x + 2 = 0 ⇒ (x−1)^(2) = −1 ⇒ x − 1 = ±i ⇒ x = 1 ± i','Correct answer: (A)']
+]},
+{id:'QUAD-12-I',parent:'QUAD-12',variant:9,relevance:{parent:'QUAD-12',sharedSkill:'Complex roots of a real polynomial',recoveryPurpose:'inverse or representation check'},topic:'Complex roots of a real polynomial',source:'Institute module · Q633 · question p.61',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:633,questionPage:61,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If x = −5 + 2√(−4) then the value of the expression x^(4) + 9x^(3) + 35x^(2) − x + 4 is equal to -',options:['160','−160','120','−120'],correct:1,answer:'−160',diagram:'',short:[
+ ['Simplify the surd: √(−4) = 2i, so x = −5 + 4i. Isolate and square to get a quadratic satisfied by x.','x + 5 = 4i ⇒ (x+5)^(2) = −16 ⇒ x^(2) + 10x + 41 = 0'],
+ ['Divide the quartic by this quadratic.','x^(4)+9x^(3)+35x^(2)−x+4 = (x^(2)+10x+41)(x^(2)−x+4) − 160'],
+ ['Since x^(2) + 10x + 41 = 0 at this x, the quotient term vanishes, leaving only the remainder.','x^(4)+9x^(3)+35x^(2)−x+4 = 0 − 160 = −160','Correct answer: (B)']
 ]}
 ];
 if(typeof module!=='undefined'&&module.exports)module.exports={questions};
