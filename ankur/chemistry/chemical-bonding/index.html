@@ -2427,7 +2427,7 @@ questions.forEach(q=>{
  q.type=q.type||'mcq';q.family=family;q.variant=q.variant||0;q.title=familyTitle[coreId]||core.title||core.topic;q.topic=subtopic;q.syllabusKey=key;q.syllabus=sectionByKey[key].title;q.brief=q.short;
  q.display=q.parent&&!q.sourceRef?{origin:'Original practice',kind:q.relevance?.recoveryPurpose||'Practice',url:null}:{origin:q.source,kind:q.url?'PYQ':'Institute question',url:q.url||null};
 });
-coreIds.forEach((id,i)=>{const items=questions.filter(q=>(q.parent||q.id)===id).sort((a,b)=>a.variant-b.variant),q=items[0];if(items.length>27)throw new Error('Family '+id+' has more than a core and twenty-six practice questions');families.push({n:i+1,title:q.title,items,topic:q.topic,syllabusKey:q.syllabusKey,syllabus:q.syllabus});});
+coreIds.forEach((id,i)=>{const items=questions.filter(q=>(q.parent||q.id)===id).sort((a,b)=>a.variant-b.variant),q=items[0];if(items.length>27)throw new Error('Family '+id+' has more than a core and twenty-six practice questions');families.push({n:i+1,no:Number((String(id).match(/(\d+)$/)||[0,i+1])[1]),title:q.title,items,topic:q.topic,syllabusKey:q.syllabusKey,syllabus:q.syllabus});});
 const syllabus=baseSections.map(s=>({...s,subtopics:(subtopicPlan[s.key]||[]).map(x=>x[0]).filter(t=>families.some(f=>f.topic===t))}));
 const subtopics=syllabus.flatMap(s=>s.subtopics);
 const canonicalQuestionOrder=q=>{const sectionIndex=syllabus.findIndex(s=>s.key===q.syllabusKey),section=syllabus[sectionIndex];return [sectionIndex,section.subtopics.indexOf(q.topic),q.family,q.variant];};
@@ -2608,7 +2608,7 @@ function renderIndex(q){
       +`<span class="chev" aria-hidden="true"></span><span class="navtopicname">${esc(t)}</span>${navCount(tQs)}</button>`
       +(topen?tFams.map(f=>{const d=reviewedIn(f.items);
         return `<button class="familybtn ${f.n===q.family?'active':''}" onclick="familyGo(${f.n})">`
-         +`<span class="num">${String(f.n).padStart(2,'0')}</span><span class="name">${esc(f.title)}</span>`
+         +`<span class="num">${String(f.no).padStart(2,'0')}</span><span class="name">${esc(f.title)}</span>`
          +`<span class="count ${d===f.items.length?'full':d?'part':''}">${d}/${f.items.length}</span></button>`;}).join(''):'')
       +`</div>`;}).join('')}</div>`:'')
    +`</section>`;}).join('')}</div>`;
