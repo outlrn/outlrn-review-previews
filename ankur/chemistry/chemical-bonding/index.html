@@ -2434,7 +2434,13 @@ const canonicalQuestionOrder=q=>{const sectionIndex=syllabus.findIndex(s=>s.key=
 questions.sort((a,b)=>{const x=canonicalQuestionOrder(a),y=canonicalQuestionOrder(b);for(let i=0;i<x.length;i++)if(x[i]!==y[i])return x[i]-y[i];return 0;});
 </script>
 <script>// One equation row per item: a row that lists several items (I, II, III ...) separated by two spaces is shown one item to a line.
-const eqRows=line=>String(line).split(/ {2,}/).filter(x=>x.trim()).map(seg=>`<div class="equation">${mathHtml(seg)}</div>`).join('');
+// A calculation (or a long sentence) followed by its conclusion (", so ...", ", then ...") puts the conclusion on the next line. Short sentences and lists of items after a comma stay on one line.
+const CONCLUDES=/^(so|then|thus|hence|therefore|giving|whereas|while|but|and)\b/i;
+function splitConclusions(seg){const out=[];let depth=0,cur='',hasEq=false;
+ for(let i=0;i<seg.length;i++){const c=seg[i];if('(['.includes(c))depth++;if(')]'.includes(c))depth--;if(c==='='||c==='≈')hasEq=true;
+  if(c===','&&depth===0&&seg[i+1]===' '&&(hasEq||seg.length>75)&&CONCLUDES.test(seg.slice(i+2))){out.push(cur);cur='';i++;continue;}cur+=c;}
+ out.push(cur);return out;}
+const eqRows=line=>String(line).split(/ {2,}/).filter(x=>x.trim()).flatMap(splitConclusions).filter(x=>x.trim()).map(seg=>`<div class="equation">${mathHtml(seg)}</div>`).join('');
 function mathHtml(value){
  let source=String(value??'')
   .replace(/\s*([=+×≤≥⇒∴])\s*/g,' $1 ')
