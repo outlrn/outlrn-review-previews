@@ -1118,6 +1118,187 @@ detailed:[
  ['With x = 0, equate the power of L to get y.','x + y = 1','y = 1'],
  ['Equate the power of T to get z.','−2x − 2y + z = 0','z = 2'],
  ['So length is F⁰a¹T² — force does not appear at all, which makes sense since force already carries mass, and length has no mass dimension.','Answer: (A) F⁰aT²']
+]},
+{id:'UD-117',topic:'Deriving length (L) from G, h and c by dimensional analysis',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.121 · p.9',sourceRef:true,question:'Express L (length) in terms of G, h and c –',options:['G⁻¹ᐟ² h¹ᐟ² c¹ᐟ²','G¹ᐟ² h¹ᐟ² c⁻³ᐟ²','G¹ᐟ² h¹ᐟ² c⁻⁵ᐟ²','G h c'],correct:1,answer:'G¹ᐟ² h¹ᐟ² c⁻³ᐟ²',
+short:[['Let L = Gᵃ hᵇ cᵈ and substitute the known dimensions.','[G] = M⁻¹L³T⁻²','[h] = ML²T⁻¹','[c] = LT⁻¹'],['Match the powers of M, L and T with [L] = M⁰L¹T⁰.','M: −a + b = 0','L: 3a + 2b + d = 1','T: −2a − b − d = 0'],['Solve the three simultaneous equations.','a = 1/2','b = 1/2','d = −3/2','Answer: (B) G¹ᐟ² h¹ᐟ² c⁻³ᐟ²']],
+detailed:[
+ ['Assume L is a product of powers of G, h and c, and write down the standard dimensional formula of each.','L = Gᵃ hᵇ cᵈ','[G] = M⁻¹L³T⁻²','[h] = ML²T⁻¹','[c] = LT⁻¹'],
+ ['Substitute and collect the total power of each base dimension on the right.','[L] = M^(−a+b) L^(3a+2b+d) T^(−2a−b−d)'],
+ ['Equate this with L\'s own dimension, M⁰L¹T⁰, giving one equation per base dimension.','−a + b = 0','3a + 2b + d = 1','−2a − b − d = 0'],
+ ['The first equation gives b = a. Substituting into the third equation gives d in terms of a.','b = a','d = −2a − b','= −3a'],
+ ['Put b = a and d = −3a into the second equation and solve for a, then back-substitute.','3a + 2a − 3a = 1','a = 1/2','b = 1/2','d = −3/2'],
+ ['So L ∝ G¹ᐟ² h¹ᐟ² c⁻³ᐟ², option (B) — this is exactly the Planck-length combination.','Answer: (B) G¹ᐟ² h¹ᐟ² c⁻³ᐟ²']
+]},
+{id:'UD-118',topic:'Dimension of force in a non-standard base system (density, velocity, area)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.122 · p.9',sourceRef:true,question:'A system has basic dimensions as density [D], velocity [V] and area [A]. The dimensional representation of force in this system is –',options:['A V² D','A² V D','A V D²','A⁰ V D'],correct:0,answer:'A V² D',
+short:[['Let Force = Dᵃ Vᵇ Aᶜ and substitute the known dimensions.','[D] = ML⁻³','[V] = LT⁻¹','[A] = L²'],['Match powers with [F] = M¹L¹T⁻².','M: a = 1','T: −b = −2','⇒ b = 2','L: −3a + b + 2c = 1','⇒ c = 1'],['So Force = D¹V²A¹.','Answer: (A) A V² D']],
+detailed:[
+ ['Let force be a product of powers of the new base quantities density, velocity and area, and write their standard dimensions.','F = Dᵃ Vᵇ Aᶜ','[D] = ML⁻³','[V] = LT⁻¹','[A] = L²'],
+ ['Substitute and collect the total power of M, L, T on the right.','[F] = M^(a) L^(−3a+b+2c) T^(−b)'],
+ ['Equate with force\'s own dimension, M¹L¹T⁻².','M: a = 1','T: −b = −2'],
+ ['The mass and time equations give a and b directly.','a = 1','b = 2'],
+ ['Substitute a = 1, b = 2 into the length equation and solve for c.','−3(1) + 2 + 2c = 1','c = 1'],
+ ['So Force = D¹ V² A¹ = A V² D, option (A).','Answer: (A) A V² D']
+]},
+{id:'UD-119',topic:'Dimension of mass in a non-standard base system (E, V, F)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.123 · p.9',sourceRef:true,question:'If energy (E), velocity (V) and force (F) be taken as fundamental quantities, then the dimensions of mass are –',options:['E V²','E V⁻²','F V⁻¹','F V⁻²'],correct:1,answer:'E V⁻²',
+short:[['Let M = Eᵃ Vᵇ Fᶜ and substitute the known dimensions.','[E] = ML²T⁻²','[V] = LT⁻¹','[F] = MLT⁻²'],['Match powers with [M] = M¹L⁰T⁰.','M: a + c = 1','L: 2a + b + c = 0','T: −2a − b − 2c = 0'],['Solving gives c = 0, a = 1, b = −2.','M = E V⁻²','Answer: (B) E V⁻²']],
+detailed:[
+ ['Let mass be a product of powers of energy, velocity and force, and write their standard dimensions.','M = Eᵃ Vᵇ Fᶜ','[E] = ML²T⁻²','[V] = LT⁻¹','[F] = MLT⁻²'],
+ ['Substitute and collect the total power of each base dimension.','[M] = M^(a+c) L^(2a+b+c) T^(−2a−b−2c)'],
+ ['Equate with mass\'s own dimension, M¹L⁰T⁰.','M: a + c = 1','L: 2a + b + c = 0','T: 2a + b + 2c = 0'],
+ ['Subtract the length equation from the time equation to isolate c.','(2a + b + 2c) − (2a + b + c) = 0','c = 0'],
+ ['With c = 0, the mass equation gives a = 1, and the length equation gives b.','a = 1','b = −2a − c','= −2'],
+ ['So M = E¹ V⁻² F⁰ = E V⁻², option (B).','Answer: (B) E V⁻²']
+]},
+{id:'UD-120',topic:'Deriving the time period of a liquid drop from density, radius and surface tension',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.124 · p.9',sourceRef:true,question:'The time period T of a small drop of liquid due to surface tension depends on density ρ, radius r and surface tension σ, then –',options:['T ∝ √(ρr³/σ)','T ∝ ρrσ','T ∝ ρr/σ','T ∝ σ/(ρr)'],correct:0,answer:'T ∝ √(ρr³/σ)',
+short:[['Let T = ρᵃ rᵇ σᶜ and substitute the known dimensions.','[ρ] = ML⁻³','[r] = L','[σ] = MT⁻²'],['Match powers with [T] = M⁰L⁰T¹.','M: a + c = 0','L: −3a + b = 0','T: −2c = 1'],['Solving gives a = 1/2, b = 3/2, c = −1/2.','T ∝ ρ¹ᐟ² r³ᐟ² σ⁻¹ᐟ²','= √(ρr³/σ)','Answer: (A) T ∝ √(ρr³/σ)']],
+detailed:[
+ ['Assume the time period is a product of powers of density, radius and surface tension, and write their standard dimensions.','T = ρᵃ rᵇ σᶜ','[ρ] = ML⁻³','[r] = L','[σ] = MT⁻²'],
+ ['Substitute and collect the total power of each base dimension.','[T] = M^(a+c) L^(−3a+b) T^(−2c)'],
+ ['Equate with time\'s own dimension, M⁰L⁰T¹.','M: a + c = 0','L: −3a + b = 0','T: −2c = 1'],
+ ['The time equation gives c directly, then the mass equation gives a, and the length equation gives b.','c = −1/2','a = −c','= 1/2','b = 3a','= 3/2'],
+ ['So T ∝ ρ¹ᐟ² r³ᐟ² σ⁻¹ᐟ², the same as the square root of ρr³/σ.','T ∝ √(ρr³/σ)'],
+ ['This matches option (A).','Answer: (A) T ∝ √(ρr³/σ)']
+]},
+{id:'UD-121',topic:'Checking S = ut - (1/3)at^2 for dimensional and numerical correctness',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.125 · p.9',sourceRef:true,question:'The formula S = ut − (1/3)at², where S is the distance travelled, u is the initial velocity, a is the acceleration and t is the time, is –',options:['dimensionally correct only','dimensionally incorrect only','dimensionally and numerically correct','dimensionally and numerically wrong'],correct:0,answer:'dimensionally correct only',
+short:[['Check that every term has the dimension of distance, L; a pure-number coefficient like 1/3 does not affect dimensions.','[ut] = (LT⁻¹)(T)','= L','[at²] = (LT⁻²)(T²)','= L'],['Both terms match [S] = L, so the equation is dimensionally correct regardless of the coefficient.','Compare with the correct kinematic relation, S = ut − (1/2)at².'],['The numerical coefficient 1/3 is wrong in place of 1/2.','Answer: (A) dimensionally correct only']],
+detailed:[
+ ['Dimensional homogeneity only requires every added or subtracted term to share the same dimension; a pure-number coefficient like 1/3 cannot affect that.','S = ut − (1/3)at²'],
+ ['Check the dimension of each term on the right against [S] = L.','[ut] = (LT⁻¹)(T)','= L','[at²] = (LT⁻²)(T²)','= L'],
+ ['Both terms equal L, matching [S], so the equation passes the dimensional check.','[ut] = [at²]','= [S]'],
+ ['Numerically, however, integrating a = dv/dt with constant acceleration gives S = ut − (1/2)at², with a factor of one-half, not one-third.','S = ut − (1/2)at² (correct)'],
+ ['Since the printed formula uses 1/3 in place of 1/2, it gives the wrong numerical value even though it is dimensionally sound.','1/3 ≠ 1/2'],
+ ['So the formula is dimensionally correct only.','Answer: (A) dimensionally correct only']
+]},
+{id:'UD-122',topic:'Dimension of a constant in an additive force relation Force = x/density + C',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.126 · p.9',sourceRef:true,question:'If Force = x/ρ + C is dimensionally correct, where ρ is density, the dimension of x is –',options:['MLT⁻²','MLT⁻³','ML²T⁻³','M²L⁻²T⁻²'],correct:3,answer:'M²L⁻²T⁻²',
+short:[['Every added term must have the dimension of force.','x/ρ has dimension [F]','x = F × ρ'],['Substitute the dimensions of force and density.','[x] = (MLT⁻²)(ML⁻³)','= M²L⁻²T⁻²','Answer: (D) M²L⁻²T⁻²']],
+detailed:[
+ ['For the equation to be dimensionally correct, C and the term x/ρ must each independently carry the dimension of force, since they are added to give a force.','Force = x/ρ + C','[x/ρ] = [F]'],
+ ['Rearranging, x equals force multiplied by density.','x = F × ρ'],
+ ['Substitute the standard dimensions of force and density.','[F] = MLT⁻²','[ρ] = ML⁻³'],
+ ['Multiply the two.','[x] = (MLT⁻²)(ML⁻³)','= M²L⁻²T⁻²'],
+ ['This matches option (D).','Answer: (D) M²L⁻²T⁻²']
+]},
+{id:'UD-123',topic:'Effect on the unit of Power when length, velocity and force units are doubled',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.127 · p.9',sourceRef:true,question:'If the units of length, velocity and force are doubled, then the unit of Power will be –',options:['doubled','halved','quadrupled','remain unaffected'],correct:2,answer:'quadrupled',
+short:[['Express Power in terms of Force, Velocity and Length by dimensional analysis.','P = Fᵃ Vᵇ Lᶜ'],['Match powers with [P] = ML²T⁻³.','M: a = 1','T: −2a − b = −3','⇒ b = 1','L: a + b + c = 2','⇒ c = 0'],['So Power = F¹V¹L⁰ = FV, independent of length.','new Power = (2F)(2V)','= 4(FV)','Answer: (C) quadrupled']],
+detailed:[
+ ['First find how Power is built from Force, Velocity and Length by writing it as a product of powers and matching dimensions.','P = Fᵃ Vᵇ Lᶜ','[F] = MLT⁻²','[V] = LT⁻¹','[L] = L'],
+ ['Substitute and collect the total power of each base dimension, then equate with [P] = ML²T⁻³.','[P] = M^(a) L^(a+b+c) T^(−2a−b)','M: a = 1','T: −2a − b = −3'],
+ ['Solve for b from the time equation, then for c from the length equation.','b = 3 − 2a','= 1','a + b + c = 2','⇒ c = 0'],
+ ['So Power = F¹V¹L⁰ = F V — the unit of length does not enter the formula for power at all.','P = F V'],
+ ['Doubling both force and velocity (length is irrelevant) multiplies power by 2 × 2 = 4.','new P = (2F)(2V)','= 4 F V'],
+ ['So the unit of Power is quadrupled.','Answer: (C) quadrupled']
+]},
+{id:'UD-124',topic:'Significant figures in the volume of 25 identical spheres',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.128 · p.9',sourceRef:true,question:'The volume of one sphere is 1.76 c.c. The volume of 25 such spheres (according to the idea of significant figures) is –',options:['44.00 cc','44.0 c.c','44 c.c','0.44 × 10² c.c.'],correct:1,answer:'44.0 c.c',
+short:[['25 is an exact count, so the precision of the product is set by 1.76, which has 3 significant figures.','1.76 × 25 = 44.00 (exact arithmetic)'],['Round the arithmetic result to 3 significant figures.','44.00 → 44.0 c.c','Answer: (B) 44.0 c.c']],
+detailed:[
+ ['The multiplier 25 is an exact count of spheres, not a measured quantity, so it carries no uncertainty; the reported precision must follow the measured volume 1.76 c.c, which has 3 significant figures.','1.76 c.c (3 s.f.)'],
+ ['Carry out the multiplication in full first.','1.76 × 25 = 44.00'],
+ ['Round 44.00 to 3 significant figures, matching the precision of the measured value.','44.00 → 44.0 c.c'],
+ ['Option (A) keeps too many figures (5), option (C) drops a figure, and option (D) is a needless power-of-ten rewrite of a 2-s.f. value; only (B) reports exactly 3 significant figures.','Answer: (B) 44.0 c.c']
+]},
+{id:'UD-125',topic:'Identifying the least accurate measurement from relative error',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.129 · p.9',sourceRef:true,question:'The length, breadth and thickness of a block are measured as 125.5 cm, 5.6 cm and 0.32 cm respectively. Which measurement is least accurate?',options:['of thickness','of length','of breadth','all have the same inaccuracy'],correct:0,answer:'of thickness',
+short:[['Accuracy is judged by relative (percentage) error: the least count divided by the measured value.','length: 0.1/125.5 ≈ 0.08%','breadth: 0.1/5.6 ≈ 1.8%','thickness: 0.01/0.32 ≈ 3.1%'],['Thickness has the largest relative error.','Answer: (A) of thickness']],
+detailed:[
+ ['A measurement\'s accuracy is judged not by its absolute least count alone but by its relative (percentage) error, the least count divided by the measured value itself.','relative error ∝ least count of the value'],
+ ['Length is given to 0.1 cm, but on a large value, so its relative error is small.','length = 125.5 cm','least count = 0.1 cm','0.1/125.5 ≈ 0.08%'],
+ ['Breadth is also given to 0.1 cm, but on a much smaller value, so its relative error is larger.','breadth = 5.6 cm','least count = 0.1 cm','0.1/5.6 ≈ 1.8%'],
+ ['Thickness is given to 0.01 cm, but on the smallest value of the three, giving the largest relative error of all.','thickness = 0.32 cm','least count = 0.01 cm','0.01/0.32 ≈ 3.1%'],
+ ['Comparing the three, thickness has by far the largest relative error, making it the least accurate measurement.','3.1% > 1.8% > 0.08%','Answer: (A) of thickness']
+]},
+{id:'UD-126',topic:'Rounding a multiplication result to the correct significant figures',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.130 · p.10',sourceRef:true,question:'In arithmetic 17.8 × 3.1143 = 55.4354... . But as a result of experimental measurements, the best way to express the product is –',options:['55.3454','55.4','55.44','55.435'],correct:1,answer:'55.4',
+short:[['17.8 has 3 significant figures, 3.1143 has 5; the product must be rounded to the fewer, 3.','17.8 × 3.1143 = 55.4345… (full arithmetic)'],['Round to 3 significant figures.','55.4345… → 55.4','Answer: (B) 55.4']],
+detailed:[
+ ['In multiplication, the result cannot be more precise than the least precise measured factor: 17.8 has 3 significant figures while 3.1143 has 5, so the answer must be rounded to 3.','17.8 (3 s.f.), 3.1143 (5 s.f.)'],
+ ['Carry out the full arithmetic first.','17.8 × 3.1143 = 55.4345…'],
+ ['Round this to 3 significant figures.','55.4345… → 55.4'],
+ ['Option (A) is a scrambled digit order, and options (C) and (D) both keep more figures than the data justify.','Answer: (B) 55.4']
+]},
+{id:'UD-127',topic:'Significant figures in a mass difference (E.C.E. experiment)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.131 · p.10',sourceRef:true,question:'In an experiment to determine the E.C.E. of a metal, the mass of the plate before and after deposit came to be 57.736 g and 58.426 g. The number of significant places in the value of E.C.E. (assuming that other measurements do not limit it) is –',options:['5','4','3','2'],correct:2,answer:'3',
+short:[['E.C.E. is proportional to the mass deposited, the difference of the two readings.','deposited mass = 58.426 − 57.736','= 0.690 g'],['In subtraction, the result keeps the decimal places common to both readings (3 here); 0.690 has 3 significant figures.','Answer: (C) 3']],
+detailed:[
+ ['E.C.E. (electrochemical equivalent) is found from the mass actually deposited on the plate, the difference of the two weighings.','deposited mass = (mass after) − (mass before)','= 58.426 − 57.736'],
+ ['Carry out the subtraction.','= 0.690 g'],
+ ['Subtraction is governed by decimal places, not significant figures: both readings have 3 decimal places, so the difference is reported to 3 decimal places, which is already what the subtraction gives.','0.690 g (3 decimal places)'],
+ ['Counting significant figures in 0.690: the leading zero is not significant, but the trailing zero after the decimal point is, since it is a stated digit, giving 3 significant figures — 6, 9 and 0.','0.690 → 3 s.f.'],
+ ['Since no other measurement limits the precision (as stated), the E.C.E. itself is known to 3 significant figures.','Answer: (C) 3']
+]},
+{id:'UD-128',topic:'Counting significant figures in 0.0030 m, 2.40 m and 3000 m',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.132 · p.10',sourceRef:true,question:'Given P = 0.0030 m, Q = 2.40 m and R = 3000 m, the number of significant figures in P, Q, R are respectively –',options:['1, 2, 1','2, 3, 4','4, 2, 1','4, 2, 4'],correct:1,answer:'2, 3, 4',
+short:[['P: leading zeros are not significant; only the 3 and the trailing zero after it count.','0.0030 → 2 s.f.'],['Q: every digit, including the trailing zero after the decimal point, is significant.','2.40 → 3 s.f.'],['R: taking the zeros as recorded (measured) digits rather than mere placeholders, all four digits count.','3000 → 4 s.f.','Answer: (B) 2, 3, 4']],
+detailed:[
+ ['Count P\'s significant figures: in 0.0030, the two zeros before the 3 are leading zeros that only fix the decimal position, so they are not significant; the 3 and the zero after it are both significant since they follow the decimal point.','0.0030 → 2 s.f.'],
+ ['Count Q\'s significant figures: in 2.40, all three digits (2, 4, 0) are significant, since a trailing zero after a decimal point is always a recorded digit, not a placeholder.','2.40 → 3 s.f.'],
+ ['Count R\'s significant figures: 3000 has no decimal point shown, the ambiguous case, but the zeros here are read as recorded (measured) digits rather than placeholders used only to fix magnitude, so all four digits are taken as significant.','3000 → 4 s.f.'],
+ ['This is the one reading that reproduces a full answer choice on all three counts together.','P, Q, R → 2, 3, 4','Answer: (B) 2, 3, 4']
+]},
+{id:'UD-129',topic:'Rounding a circle\'s area to the correct significant figures',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.133 · p.10',sourceRef:true,question:'The radius of a circle is stated as 2.12 cm. Its area should be written as –',options:['14 cm²','14.1 cm²','14.11 cm²','14.1124 cm²'],correct:1,answer:'14.1 cm²',
+short:[['r = 2.12 cm has 3 significant figures.','area = πr²','= π(2.12)²','= 14.1124… cm²'],['Round to 3 significant figures, matching r\'s precision.','14.1124… → 14.1 cm²','Answer: (B) 14.1 cm²']],
+detailed:[
+ ['The radius, 2.12 cm, has 3 significant figures, so the computed area cannot be reported to more precision than that.','r = 2.12 cm (3 s.f.)'],
+ ['Compute the area with the full arithmetic first.','area = πr²','= π(2.12)²','= 14.1124 cm²'],
+ ['Round this result to 3 significant figures.','14.1124… → 14.1 cm²'],
+ ['Option (A) under-rounds to 2 figures, and options (C) and (D) both keep more figures than the single measured radius justifies.','Answer: (B) 14.1 cm²']
+]},
+{id:'UD-130',topic:'Maximum percentage error in kinetic energy from mass and speed errors',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.134 · p.10',sourceRef:true,question:'The percentage errors in the measurement of mass and speed are 2% and 3% respectively. How much will be the maximum error in the estimate of kinetic energy obtained by measuring mass and speed –',options:['11%','8%','5%','4%'],correct:1,answer:'8%',
+short:[['Kinetic energy K = (1/2)mv², so relative errors add with speed\'s error doubled.','ΔK/K = Δm/m + 2(Δv/v)'],['Substitute the given percentages.','= 2% + 2(3%)','= 8%','Answer: (B) 8%']],
+detailed:[
+ ['Kinetic energy depends on mass to the first power and speed to the second power; for such a product-of-powers relation, percentage errors combine by adding, each multiplied by its power.','K = (1/2)mv²','ΔK/K = Δm/m + 2(Δv/v)'],
+ ['Substitute the given percentage errors: 2% in mass and 3% in speed, the latter doubled because speed is squared.','Δm/m = 2%','Δv/v = 3%'],
+ ['Add them.','ΔK/K = 2% + 2(3%)','= 2% + 6%'],
+ ['The total maximum error is 8%.','Answer: (B) 8%']
+]},
+{id:'UD-131',topic:'Checking unit consistency of terms in a stationary wave equation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.135 · p.10',sourceRef:true,question:'The equation of the stationary wave is y = 2A sin(2πct/λ) cos(2πx/λ). Which of the following statements is wrong?',options:['the unit of ct is same as that of λ','the unit of x is same as that of λ','the unit of 2πc/λ is same as that of 2πx/(λt)','the unit of c/λ is same as that of x/λ'],correct:3,answer:'the unit of c/λ is same as that of x/λ',
+short:[['The arguments of sin and cos must be dimensionless, so ct and x each share λ\'s dimension, length.','[ct] = [x]','= [λ]','= L (statements A, B true)'],['Check (C): 2πc/λ and 2πx/(λt) both come out T⁻¹, so (C) is also true.','[2πc/λ] = T⁻¹','[2πx/(λt)] = T⁻¹'],['Check (D): c/λ is T⁻¹ but x/λ is dimensionless — these are not equal.','[c/λ] = T⁻¹','[x/λ] = M⁰L⁰T⁰','Answer: (D) the unit of c/λ is same as that of x/λ']],
+detailed:[
+ ['Since y = 2A sin(2πct/λ) cos(2πx/λ), and the argument of a sine or cosine must be a pure number, both 2πct/λ and 2πx/λ are dimensionless; since 2π is a pure number, ct/λ and x/λ are each dimensionless on their own.','[ct/λ] = [x/λ]','= M⁰L⁰T⁰'],
+ ['This means ct and x each carry the same dimension as λ, namely length — so statements (A) and (B) are both true.','[ct] = [x]','= [λ]','= L'],
+ ['Check statement (C): c/λ has dimension (LT⁻¹)/L = T⁻¹, and x/(λt) has dimension L/(LT) = T⁻¹, the same, so (C) is also true.','[c/λ] = T⁻¹','[x/(λt)] = T⁻¹'],
+ ['Check statement (D): c/λ has dimension T⁻¹ as just found, but x/λ has dimension L/L, which is dimensionless — these are not the same.','[c/λ] = T⁻¹','[x/λ] = M⁰L⁰T⁰'],
+ ['Since (A), (B) and (C) all hold but (D) does not, (D) is the wrong statement.','Answer: (D) the unit of c/λ is same as that of x/λ']
+]},
+{id:'UD-132',topic:'Unit of mass in a non-standard base system (speed of light, g, pressure)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.136 · p.10',sourceRef:true,question:'If the velocity of light c, acceleration due to gravity g, and the atmospheric pressure P are taken as the fundamental units, then the unit of mass will be –',options:['1 kg','81 kg','9 × 10¹⁸ kg','81 × 10³⁴ kg'],correct:3,answer:'81 × 10³⁴ kg',
+short:[['Let M = cᵃ gᵇ Pᶜ and substitute the known dimensions.','[c] = LT⁻¹','[g] = LT⁻²','[P] = ML⁻¹T⁻²'],['Match powers with [M] = M¹L⁰T⁰.','M: c = 1','L: a + b − c = 0','T: −a − 2b − 2c = 0'],['Solving gives a = 4, b = −3, c = 1.','M = c⁴ g⁻³ P'],['Substitute c ≈ 3×10⁸ m s⁻¹, g ≈ 10 m s⁻², P ≈ 10⁵ N m⁻².','M = (81×10³² × 10⁵)/10³','= 81 × 10³⁴ kg','Answer: (D) 81 × 10³⁴ kg']],
+detailed:[
+ ['Let the unit of mass be built from the new fundamental quantities c, g and P, and write down their standard SI dimensions.','M = cᵃ gᵇ Pᶜ','[c] = LT⁻¹','[g] = LT⁻²','[P] = ML⁻¹T⁻²'],
+ ['Substitute and collect the total power of each base dimension, then equate with M¹L⁰T⁰.','[M] = M^(c) L^(a+b−c) T^(−a−2b−2c)','M: c = 1','L: a + b − c = 0','T: a + 2b + 2c = 0'],
+ ['From the length equation, a + b = 1 (using c = 1). Substitute into the time equation to solve for b, then find a.','a + b = 1','a + 2b = −2','b = −3','a = 4'],
+ ['So M = c⁴ g⁻³ P¹ is the combination whose numerical value in kg is the new unit of mass.','M = c⁴ P/g³'],
+ ['Substitute the approximate SI values used for such fundamental-constant problems: c = 3×10⁸ m s⁻¹, g = 10 m s⁻², P = 10⁵ N m⁻².','c⁴ = (3×10⁸)⁴','= 81×10³²','g³ = 10³'],
+ ['Combine.','M = (81×10³² × 10⁵)/10³','= 81 × 10³⁴ kg','Answer: (D) 81 × 10³⁴ kg']
+]},
+{id:'UD-133',topic:'Dimension of a constant k from a dimensionless wave-equation argument',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.137 · p.10',sourceRef:true,question:'The equation of a wave is given by y = A sin ω(x/v − k), where ω is the angular velocity and v is the linear velocity. The dimensions of k are –',options:['LT','T','T⁻¹','T²'],correct:1,answer:'T',
+short:[['Inside the bracket, x/v and k must share a dimension (only like quantities subtract).','[x/v] = L/(LT⁻¹)','= T'],['So [k] = T.','Answer: (B) T']],
+detailed:[
+ ['The argument of the sine, ω(x/v − k), must be a pure number; since ω only multiplies the whole bracket, its two terms, x/v and k, must be subtracted from each other, which is only valid if they share the same dimension.','y = A sin ω(x/v − k)','[x/v] = [k]'],
+ ['Compute the dimension of x/v: x is a length and v is a linear velocity.','[x] = L','[v] = LT⁻¹','[x/v] = L/(LT⁻¹)','= T'],
+ ['Since k must match this, k has the dimension of time.','[k] = T'],
+ ['This also makes ω(x/v − k) dimensionless overall provided ω itself carries dimension T⁻¹, consistent with ω being an angular velocity.','Answer: (B) T']
+]},
+{id:'UD-134',topic:'Dimension of a constant alpha from a dimensionless exponential argument',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.138 · p.10',sourceRef:true,question:'The time dependence of a physical quantity P is found to be of the form P = P₀ e^(−αt²), where t is time and α is some constant. Then the constant α will –',options:['be dimensionless','have dimensions of T⁻²','have dimensions of P','have dimensions of P multiplied by T⁻²'],correct:1,answer:'have dimensions of T⁻²',
+short:[['The exponent of e must be dimensionless.','[αt²] = M⁰L⁰T⁰'],['Solve for α\'s dimension.','[α] = T⁻²','Answer: (B) have dimensions of T⁻²']],
+detailed:[
+ ['Exponential functions only take a dimensionless argument, so the whole exponent, −αt², must be dimensionless.','P = P₀ e^(−αt²)','[αt²] = M⁰L⁰T⁰'],
+ ['t² has dimension T², so α must exactly cancel it.','[t²] = T²','[α] = T⁻²'],
+ ['So α has dimensions of T⁻².','[α] = T⁻²'],
+ ['This rules out (A) (α is not dimensionless) and (C)/(D) (α does not carry P\'s dimension, since P and P₀ already match dimensionally on the two sides of the equation).','Answer: (B) have dimensions of T⁻²']
+]},
+{id:'UD-135',topic:'Dimensions of A and B in Cauchy\'s formula for refractive index',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.139 · p.10',sourceRef:true,question:'In Cauchy\'s formula for the refractive index, n = A + B/λ², the dimensions of A and B are –',options:['both are dimensionless','A is dimensionless, B has dimension M⁰L⁻²T⁰','A is dimensionless; B has dimensions M⁰L²T⁰','both A and B have dimension M⁰L²T⁰'],correct:2,answer:'A is dimensionless; B has dimensions M⁰L²T⁰',
+short:[['Refractive index n is dimensionless, so every added term must be too.','[A] = M⁰L⁰T⁰'],['B/λ² must also be dimensionless, so B shares λ²\'s dimension.','[B] = [λ²]','= M⁰L²T⁰','Answer: (C) A is dimensionless, B has dimension M⁰L²T⁰']],
+detailed:[
+ ['Refractive index n is a pure ratio of speeds, so it is dimensionless; every term added to give n must also be dimensionless.','n = A + B/λ²','[n] = M⁰L⁰T⁰'],
+ ['Since A is added directly to n, A itself must be dimensionless.','[A] = M⁰L⁰T⁰'],
+ ['Since B/λ² is also added to n, this whole term must be dimensionless too.','[B/λ²] = M⁰L⁰T⁰'],
+ ['λ is a wavelength, with dimension L, so λ² has dimension L²; B must cancel this to leave the ratio dimensionless, so B itself has dimension L².','[λ²] = L²','[B] = M⁰L²T⁰'],
+ ['This matches option (C).','Answer: (C) A is dimensionless, B has dimension M⁰L²T⁰']
+]},
+{id:'UD-136',topic:'Checking tan(theta) = rg/v^2 for dimensional and numerical correctness',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.140 · p.10',sourceRef:true,question:'With the usual notation, a student wrote the following relation for the angle of banking θ: tanθ = rg/v². Then the relation is –',options:['numerically correct only','dimensionally correct only','both numerically and dimensionally correct','neither numerically nor dimensionally correct'],correct:1,answer:'dimensionally correct only',
+short:[['tanθ is dimensionless; check rg/v².','[rg] = (L)(LT⁻²)','= L²T⁻²','[v²] = L²T⁻²'],['rg/v² is dimensionless too, so the relation is dimensionally consistent.','the correct banking formula is tanθ = v²/(rg)'],['The printed relation is the reciprocal of the correct one, so it is numerically wrong.','Answer: (B) dimensionally correct only']],
+detailed:[
+ ['tanθ is a ratio of two lengths (or of sine to cosine), so it is dimensionless; check whether the student\'s expression rg/v² is also dimensionless.','tanθ = rg/v²'],
+ ['Compute the dimension of the numerator, rg (radius times acceleration due to gravity), and the denominator, v² (velocity squared).','[rg] = (L)(LT⁻²)','= L²T⁻²','[v²] = (LT⁻¹)²','= L²T⁻²','(numerator and denominator match)'],
+ ['The two match, so rg/v² is dimensionless, matching [tanθ]; the relation passes the dimensional check.','[rg/v²] = M⁰L⁰T⁰'],
+ ['However, the correct physics of banking (resolving forces on a vehicle on a banked curve) gives tanθ = v²/(rg), the reciprocal of what the student wrote.','correct: tanθ = v²/(rg)'],
+ ['Since the student\'s formula is inverted, it gives the wrong numerical value in general, even though both sides are dimensionally consistent.','rg/v² ≠ v²/(rg)'],
+ ['So the relation is dimensionally correct only.','Answer: (B) dimensionally correct only']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1278,7 +1459,27 @@ const pilotTopicMap={
  'Dimension of permeability of free space':['dimensional-analysis','Dimension of permeability of free space'],
  'Dimension of the universal gas constant from PV = nRT':['dimensional-analysis','Dimension of the universal gas constant from PV = nRT'],
  'Dimension of force in a non-standard base system (A, v, ρ)':['dimensional-analysis','Dimension of force in a non-standard base system (A, v, ρ)'],
- 'Dimension of length in a non-standard base system (F, a, T)':['dimensional-analysis','Dimension of length in a non-standard base system (F, a, T)']
+ 'Dimension of length in a non-standard base system (F, a, T)':['dimensional-analysis','Dimension of length in a non-standard base system (F, a, T)'],
+ 'Deriving length (L) from G, h and c by dimensional analysis':['dimensional-analysis','Deriving length (L) from G, h and c by dimensional analysis'],
+ 'Dimension of force in a non-standard base system (density, velocity, area)':['dimensional-analysis','Dimension of force in a non-standard base system (density, velocity, area)'],
+ 'Dimension of mass in a non-standard base system (E, V, F)':['dimensional-analysis','Dimension of mass in a non-standard base system (E, V, F)'],
+ 'Deriving the time period of a liquid drop from density, radius and surface tension':['dimensional-analysis','Deriving the time period of a liquid drop from density, radius and surface tension'],
+ 'Checking S = ut - (1/3)at^2 for dimensional and numerical correctness':['dimensional-analysis','Checking S = ut - (1/3)at^2 for dimensional and numerical correctness'],
+ 'Dimension of a constant in an additive force relation Force = x/density + C':['dimensional-analysis','Dimension of a constant in an additive force relation Force = x/density + C'],
+ 'Effect on the unit of Power when length, velocity and force units are doubled':['dimensional-analysis','Effect on the unit of Power when length, velocity and force units are doubled'],
+ 'Significant figures in the volume of 25 identical spheres':['significant-figures','Significant figures in the volume of 25 identical spheres'],
+ 'Identifying the least accurate measurement from relative error':['errors','Identifying the least accurate measurement from relative error'],
+ 'Rounding a multiplication result to the correct significant figures':['significant-figures','Rounding a multiplication result to the correct significant figures'],
+ 'Significant figures in a mass difference (E.C.E. experiment)':['significant-figures','Significant figures in a mass difference (E.C.E. experiment)'],
+ 'Counting significant figures in 0.0030 m, 2.40 m and 3000 m':['significant-figures','Counting significant figures in 0.0030 m, 2.40 m and 3000 m'],
+ 'Rounding a circle\'s area to the correct significant figures':['significant-figures','Rounding a circle\'s area to the correct significant figures'],
+ 'Maximum percentage error in kinetic energy from mass and speed errors':['errors','Maximum percentage error in kinetic energy from mass and speed errors'],
+ 'Checking unit consistency of terms in a stationary wave equation':['dimensional-analysis','Checking unit consistency of terms in a stationary wave equation'],
+ 'Unit of mass in a non-standard base system (speed of light, g, pressure)':['dimensional-analysis','Unit of mass in a non-standard base system (speed of light, g, pressure)'],
+ 'Dimension of a constant k from a dimensionless wave-equation argument':['dimensional-analysis','Dimension of a constant k from a dimensionless wave-equation argument'],
+ 'Dimension of a constant alpha from a dimensionless exponential argument':['dimensional-analysis','Dimension of a constant alpha from a dimensionless exponential argument'],
+ 'Dimensions of A and B in Cauchy\'s formula for refractive index':['dimensional-analysis','Dimensions of A and B in Cauchy\'s formula for refractive index'],
+ 'Checking tan(theta) = rg/v^2 for dimensional and numerical correctness':['dimensional-analysis','Checking tan(theta) = rg/v^2 for dimensional and numerical correctness']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
