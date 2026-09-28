@@ -1299,6 +1299,160 @@ detailed:[
  ['However, the correct physics of banking (resolving forces on a vehicle on a banked curve) gives tanθ = v²/(rg), the reciprocal of what the student wrote.','correct: tanθ = v²/(rg)'],
  ['Since the student\'s formula is inverted, it gives the wrong numerical value in general, even though both sides are dimensionally consistent.','rg/v² ≠ v²/(rg)'],
  ['So the relation is dimensionally correct only.','Answer: (B) dimensionally correct only']
+]},
+{id:'UD-137',topic:'Dimensional formula of G in a c-g-p fundamental system',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.141 · p.10',sourceRef:true,question:'If the speed of light (c), acceleration due to gravity (g) and pressure (p) are taken as fundamental units, the dimensions of gravitational constant (G) are –',options:['c⁰gp⁻³','c²g³p⁻²','c⁰g²p⁻¹','c²g²p⁻²'],correct:2,answer:'c⁰g²p⁻¹',
+short:[['Write G in terms of the ordinary M,L,T dimension and match it to cᵃgᵇpᵈ.','[G] = M⁻¹L³T⁻²','c = LT⁻¹','g = LT⁻²','p = ML⁻¹T⁻²'],['Only p carries M, so its exponent is fixed by matching M; match L and T to get the rest.','M: d = −1','L: a+b+1 = 3','⇒ a+b = 2','T: −a−2b+2 = −2','⇒ a+2b = 4'],['Solve the two equations.','b = 2','a = 0','G = c⁰g²p⁻¹','Answer: (C) c⁰g²p⁻¹']],
+detailed:[
+ ['Take G = cᵃgᵇpᵈ and equate its ordinary [M⁻¹L³T⁻²] dimensional formula to the dimensions of c, g and p raised to unknown powers.','[G] = M⁻¹L³T⁻²','[c] = LT⁻¹','[g] = LT⁻²','[p] = ML⁻¹T⁻²'],
+ ['Only pressure carries a mass dimension, so matching the M power on both sides fixes d immediately.','M⁻¹ = pᵈ','⇒ M⁻¹ = Mᵈ','⇒ d = −1'],
+ ['Expand cᵃgᵇp⁻¹ into powers of M, L, T and match the L and T exponents to the target L³T⁻².','cᵃgᵇp⁻¹ = M⁻¹ L^(a+b+1) T^(−a−2b+2)','L: a+b+1 = 3','T: −a−2b+2 = −2'],
+ ['Simplify to two linear equations and solve them together.','a+b = 2','a+2b = 4','⇒ b = 2','⇒ a = 0'],
+ ['So G = c⁰g²p⁻¹, option (C).','Answer: (C) c⁰g²p⁻¹']
+]},
+{id:'UD-138',topic:'Dimension of velocity gradient',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.142 · p.11',sourceRef:true,question:'Dimensions of velocity gradient are same as that of –',options:['Time period','Frequency','Angular acceleration','Linear acceleration'],correct:1,answer:'Frequency',
+short:[['Velocity gradient is dv/dx, the ratio of velocity to distance.','[dv/dx] = (LT⁻¹)(L⁻¹)','= T⁻¹'],['This is the dimension of frequency.','Answer: (B) Frequency']],
+detailed:[
+ ['Velocity gradient is the rate of change of velocity with distance, dv/dx, so its dimension is velocity\'s dimension times distance\'s inverse.','[dv/dx] = [v][x]⁻¹','= (LT⁻¹)(L⁻¹)'],
+ ['The L powers cancel, leaving only inverse time.','= T⁻¹'],
+ ['T⁻¹ is exactly the dimension of frequency.','Time period: T','Angular acceleration: T⁻²','Linear acceleration: LT⁻²'],
+ ['Only frequency matches, since time period, angular acceleration and linear acceleration each have a different dimension.','Answer: (B) Frequency']
+]},
+{id:'UD-139',topic:'Exponents for a dimensionless P-Q-C combination',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.143 · p.11',sourceRef:true,question:'If P is radiation pressure, C represents speed of light and Q is radiation energy striking a unit area per second, then non zero integers x, y and z such that PˣQʸCᶻ is dimensionless are –',options:['x = 1, y = 1, z = –1','x = 1, y = –1, z = 1','x = –1, y = 1, z = 1','x = 1, y = 1, z = 1'],correct:1,answer:'x = 1, y = –1, z = 1',
+short:[['Write the dimension of each quantity.','[P] = ML⁻¹T⁻²','[Q] = MT⁻³ (energy per area per second)','[C] = LT⁻¹'],['Set the M, L, T powers of PˣQʸCᶻ each to zero.','M: x+y = 0','L: −x+z = 0','T: −2x−3y−z = 0'],['Solve for y and z in terms of x.','y = −x','z = x'],['Taking x = 1 satisfies the options given.','x = 1','⇒ y = −1','⇒ z = 1','Answer: (B) x = 1, y = –1, z = 1']],
+detailed:[
+ ['Radiation pressure P has the dimension of ordinary pressure, C is a speed, and Q (energy striking unit area per second) is an intensity — power per area.','[P] = ML⁻¹T⁻²','[C] = LT⁻¹','[Q] = (ML²T⁻³)(L⁻²)','= MT⁻³'],
+ ['For PˣQʸCᶻ to be dimensionless, the combined powers of M, L and T must each vanish.','PˣQʸCᶻ = M^(x+y) L^(−x+z) T^(−2x−3y−z)','M: x+y=0','L: −x+z=0','T: −2x−3y−z=0'],
+ ['The M and L equations give y and z directly in terms of x.','y = −x','z = x'],
+ ['Substituting into the T equation shows it is automatically satisfied for any x.','−2x−3(−x)−x = 0'],
+ ['Checking the given options against y = −x and z = x, only x = 1 fits, giving y = −1 and z = 1.','x = 1','⇒ y = −1','⇒ z = 1','Answer: (B) x = 1, y = –1, z = 1']
+]},
+{id:'UD-140',topic:'Dimensional formula of viscosity from a Poiseuille-type relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.144 · p.11',sourceRef:true,question:'Turpentine oil is flowing through a tube of length l, radius r, the pressure difference between the two ends of the tube is p. The viscosity of the oil is given by η = p(r²−x²)/(4vl), where v is velocity at distance x from the axis of the tube. Then the dimension of η are –',options:['M⁰L⁰T⁰','MLT⁻¹','ML²T⁻²','ML⁻¹T⁻¹'],correct:3,answer:'ML⁻¹T⁻¹',
+short:[['Substitute the dimension of each factor into η = p(r²−x²)(4vl)⁻¹.','[p] = ML⁻¹T⁻²','[r²−x²] = L²','[v] = LT⁻¹','[l] = L'],['Combine as a product, writing v and l as inverses.','[η] = (ML⁻¹T⁻²)(L²)(LT⁻¹)⁻¹(L)⁻¹','= (ML¹T⁻²)(L⁻¹T¹)(L⁻¹)','= ML⁻¹T⁻¹','Answer: (D) ML⁻¹T⁻¹']],
+detailed:[
+ ['The numerator (r²−x²) is a difference of two lengths-squared, so it has dimension L²; p is a pressure difference and v, l are velocity and length.','[p] = ML⁻¹T⁻²','[r²−x²] = L²','[v] = LT⁻¹','[l] = L'],
+ ['Substitute all four into the formula, writing the division by v and l as multiplication by their inverses.','η = p(r²−x²)(4vl)⁻¹','[η] = (ML⁻¹T⁻²)(L²)(LT⁻¹)⁻¹(L)⁻¹'],
+ ['Combine the powers of M, L and T term by term.','= (ML¹T⁻²)(L⁻¹T¹)(L⁻¹)','= ML^(1−1−1)T^(−2+1)','= ML⁻¹T⁻¹'],
+ ['This is option (D), the standard dimensional formula of the coefficient of viscosity.','Answer: (D) ML⁻¹T⁻¹']
+]},
+{id:'UD-141',topic:'Homogeneity in the argument of y = a cos(t/p - qx)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.145 · p.11',sourceRef:true,question:'Given that y = a cos(t/p − qx) where t is time in second and x represents distance in metre. Which of the following is true?',options:['The unit of x is same as that of q','The unit of x is same as that of p','The unit of t is same as that of q','The unit of t is same as that of p'],correct:3,answer:'The unit of t is same as that of p',
+short:[['The cosine argument must be dimensionless, so t/p and qx must each separately be dimensionless.','t/p: dimensionless','⇒ [p] = [t]','[t] = T'],['Likewise, qx must be dimensionless.','qx: dimensionless','⇒ [q] = [x]⁻¹','[x] = L'],['Compare: t and p both equal T, while x and q do not match anything else.','[t] = T','[p] = T','Answer: (D) The unit of t is same as that of p']],
+detailed:[
+ ['An angle passed to cosine must be a pure number, so both t/p and qx — the two terms being subtracted — must each individually be dimensionless.','argument = t/p − qx'],
+ ['From t/p being dimensionless, p must carry the same dimension as t, which is time.','t/p: dimensionless','⇒ [p] = [t]','[t] = T'],
+ ['From qx being dimensionless, q must be the reciprocal of x\'s dimension, which is length.','qx: dimensionless','⇒ [q] = [x]⁻¹','[x] = L'],
+ ['Now compare each option: x and q do not match, t and q do not match, but t and p are both time.','[x] = L','[q] = L⁻¹','[t] = T','[p] = T','Answer: (D) The unit of t is same as that of p']
+]},
+{id:'UD-142',topic:'Identifying which units match in y = A sin[(2π/λ)(ct−x)]',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.146 · p.11',sourceRef:true,question:'Given that y = A sin[(2π/λ)(ct − x)] where y and x are measured in meters. Which of the following is true –',options:['The unit of λ is same as that of x and A','The unit of λ is same as that of x but not of A','The unit of c is same as that of 2π/λ','The unit of (ct − x) is same as that of 2π/λ'],correct:0,answer:'The unit of λ is same as that of x and A',
+short:[['The sine argument must be dimensionless, so ct−x and λ must both carry the dimension of length.','[ct−x] = [x]','[x] = L','⇒ [λ] = L'],['y = A sin(...) and y is in metres, so amplitude A also has the dimension of length.','[A] = [y]','[y] = L'],['So λ, x and A all share the length unit; c and (ct−x) do not match 2π/λ.','Answer: (A) The unit of λ is same as that of x and A']],
+detailed:[
+ ['Since y = A sin(angle), the whole angle (2π/λ)(ct − x) must be dimensionless, and since 2π is a pure number, (ct−x)/λ alone must be dimensionless.','(2π/λ)(ct−x): dimensionless'],
+ ['x is given to be in metres, and ct must have the same dimension as x for the subtraction (ct − x) to make sense, so ct − x has the dimension of length.','[ct−x] = [x]','[x] = L'],
+ ['For (ct−x)/λ to then be dimensionless, λ must also be a length.','⇒ [λ] = L'],
+ ['y is also stated to be measured in metres, and y = A sin(...) with sin(...) a pure number, so A must carry the same dimension as y.','[A] = [y]','[y] = L'],
+ ['So λ, x and A are all lengths — matching option (A). Check the others: c is a velocity while 2π/λ is L⁻¹, not the same; and (ct−x) is a length while 2π/λ is L⁻¹, the reciprocal, not the same.','[c] = LT⁻¹','[2π/λ] = L⁻¹','[ct−x] = L','Answer: (A) The unit of λ is same as that of x and A']
+]},
+{id:'UD-143',topic:'Finding the exponent n by dimensional homogeneity in a stated integral',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.147 · p.11',sourceRef:true,question:'You may not know integration. But using dimensional analysis you can check or prove results. In the integral ∫dx/√(2ax−x²) = aⁿ sin⁻¹(x/a − 1), the value of n should be –',options:['1','–1','0','1/2'],correct:2,answer:'0',
+short:[['For 2ax and x² to be added, a must have the dimension of x.','[a] = [x]','[x] = L'],['Then √(2ax−x²) has dimension L, matching dx, so the left side is dimensionless.','[√(2ax−x²)] = L','LHS = M⁰L⁰T⁰'],['sin⁻¹(...) returns a dimensionless angle, so the right side\'s dimension is just aⁿ.','RHS = Lⁿ'],['Equate the two sides.','Lⁿ = L⁰','⇒ n = 0','Answer: (C) 0']],
+detailed:[
+ ['Inside the square root, 2ax is added to x², so a must share x\'s dimension for the two terms to combine.','[a] = [x]','[x] = L'],
+ ['This makes the square root itself have dimension L, the same as dx in the numerator, so the whole left side is a ratio of two equal dimensions.','[√(2ax−x²)] = L','LHS = M⁰L⁰T⁰'],
+ ['On the right, sin⁻¹ of a dimensionless argument (x/a − 1 is dimensionless since a and x share a dimension) returns a pure number, so the only dimension-carrying part is aⁿ.','RHS = Lⁿ'],
+ ['Equating the two sides\' dimensions forces n to be zero.','Lⁿ = L⁰','⇒ n = 0','Answer: (C) 0']
+]},
+{id:'UD-144',topic:'Maximum percentage error in x = M⁻¹L³T⁻²',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.148 · p.11',sourceRef:true,question:'The dimensional formula of a physical quantity x is [M⁻¹L³T⁻²]. The error in measuring the quantities M, L, and T are 2%, 3% and 4%. The maximum percentage of error that occurs in measuring the quantity x is –',options:['9','10','14','19'],correct:3,answer:'19',
+short:[['Each exponent\'s magnitude multiplies its quantity\'s percentage error; add them all (errors always add for max error).','Δx/x = |−1|(2%) + |3|(3%) + |−2|(4%)','= 2% + 9% + 8%'],['Sum the three contributions.','= 19%','Answer: (D) 19']],
+detailed:[
+ ['For a quantity x = MᵃLᵇTᶜ, the maximum fractional error is the sum of each base quantity\'s fractional error weighted by the magnitude of its exponent, since errors always add in the worst case regardless of sign.','Δx/x = |a|(ΔM/M) + |b|(ΔL/L) + |c|(ΔT/T)'],
+ ['Here a = −1, b = 3, c = −2, and the given percentage errors are 2%, 3%, 4% respectively.','Δx/x = 1(2%) + 3(3%) + 2(4%)'],
+ ['Add the three contributions.','= 2% + 9% + 8%','= 19%','Answer: (D) 19']
+]},
+{id:'UD-145',topic:'Maximum percentage error in dissipated heat H = I²Rt',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.149 · p.11',sourceRef:true,question:'The heat dissipated in a resistance can be obtained by the measurement of resistance, current and time. If the maximum error in the measurement of these quantities is 1%, 2%, and 1% respectively, the maximum error in the determination of the dissipated heat is –',options:['4%','6%','4/3%','2%'],correct:1,answer:'6%',
+short:[['Heat dissipated H = I²Rt; the current\'s error doubles since it is squared.','ΔH/H = 2(ΔI/I) + ΔR/R + Δt/t'],['Substitute.','= 2(2%) + 1% + 1%','= 6%','Answer: (B) 6%']],
+detailed:[
+ ['Heat dissipated in a resistor over time t is H = I²Rt, so H depends on current squared, resistance to the first power, and time to the first power.','H = I²Rt'],
+ ['The maximum fractional error is the sum of each factor\'s error weighted by its exponent; current\'s exponent is 2, so its 2% error is counted twice.','ΔH/H = 2(ΔI/I) + (ΔR/R) + (Δt/t)'],
+ ['Substitute the given errors: 2% for current, 1% for resistance, 1% for time.','= 2(2%) + 1% + 1%','= 4% + 1% + 1%','= 6%','Answer: (B) 6%']
+]},
+{id:'UD-146',topic:'Proportionality of the period of a nonlinear oscillator via dimensional analysis',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.150 · p.11',sourceRef:true,question:'The period of oscillation of a non linear oscillator depends on the mass \'m\', with dimensions of M, a restoring force constant \'K\', with dimensions of ML⁻²T⁻² and the amplitude A, with dimensions of L. Dimensional analysis shows that the period of oscillation should be proportional to –',options:['A√(m/k)','A²m/k','A⁻¹√(m/k)','A²K³/m'],correct:2,answer:'A⁻¹√(m/k)',
+short:[['Let T ∝ mᵃKᵇAᶜ and match dimensions.','T¹ = Mᵃ(ML⁻²T⁻²)ᵇLᶜ','= M^(a+b) L^(−2b+c) T^(−2b)'],['Match powers of M, L, T.','a+b=0','−2b+c=0','−2b=1','⇒ b=−1/2'],['Solve: b=−1/2 ⇒ a=1/2, c=−1.','T ∝ m^(1/2)K^(−1/2)A^(−1)','= A⁻¹√(m/K)','Answer: (C) A⁻¹√(m/k)']],
+detailed:[
+ ['Assume the period is a product of powers of the three given quantities, T ∝ mᵃKᵇAᶜ, and substitute each one\'s dimension.','T ∝ mᵃKᵇAᶜ','[m] = M','[K] = ML⁻²T⁻²','[A] = L'],
+ ['Expand the right side into combined powers of M, L, T.','mᵃKᵇAᶜ = M^(a+b) L^(−2b+c) T^(−2b)'],
+ ['Match this to the dimension of period, T¹ = M⁰L⁰T¹, giving three equations.','M: a+b=0','L: −2b+c=0','T: −2b=1'],
+ ['Solve the T equation first, then substitute back.','b=−1/2','a=−b','=1/2','c=2b','=−1'],
+ ['So T ∝ m^(1/2) K^(−1/2) A^(−1) = A⁻¹√(m/K), option (C).','Answer: (C) A⁻¹√(m/k)']
+]},
+{id:'UD-147',topic:'Dimension of Boltzmann\'s constant',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.151 · p.11',sourceRef:true,question:'The dimension of Boltzmann\'s constant are same as that of –',options:['Pressure density','Stefan\'s constant','Planck\'s constant','Entropy'],correct:3,answer:'Entropy',
+short:[['Boltzmann\'s constant is energy per unit temperature.','[k_B] = ML²T⁻²K⁻¹'],['Entropy S = Q/T has the identical dimensional structure.','[S] = ML²T⁻²K⁻¹','Answer: (D) Entropy']],
+detailed:[
+ ['Boltzmann\'s constant appears in the ideal-gas relation as energy per unit temperature per molecule.','[k_B] = ML²T⁻²K⁻¹'],
+ ['Entropy is defined by S = Q/T, heat absorbed per unit temperature — the identical dimensional structure.','S = Q/T','[S] = ML²T⁻²K⁻¹'],
+ ['Check the other options: pressure and density combined is not a standard quantity with this dimension; Stefan\'s constant has dimension MT⁻³K⁻⁴ (from power = σAT⁴); Planck\'s constant has dimension ML²T⁻¹ (action) — none match k_B.','[σ] = MT⁻³K⁻⁴','[h] = ML²T⁻¹'],
+ ['Only entropy shares Boltzmann\'s constant\'s dimension.','Answer: (D) Entropy']
+]},
+{id:'UD-148',topic:'Time period of a block oscillating on a rigidity-modulus foundation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.152 · p.11',sourceRef:true,question:'A highly rigid cubical block A of small mass M and side L is fixed rigidly on another cubical block of the same dimensions and of low modulus of rigidity η such that the lower face of A completely covers the upper face of B. The lower face of B is rigidly held on a horizontal surface. A small force F is applied perpendicular to one of the side faces of A. After the force is withdrawn, block A executes small oscillations, the time period of which is given by –',options:['2π√(MηL)','2π√(Mη/L)','2π√(ML/η)','2π√(M/(Lη))'],correct:3,answer:'2π√(M/(Lη))',
+short:[['Shear stress = η × shear strain gives an effective spring constant k = ηL for block A\'s small oscillation.','F/L² = η(x/L)','⇒ F = ηLx','⇒ k = ηL'],['Period of a mass-spring system.','T = 2π√(M/k)','= 2π√(M/(ηL))','Answer: (D) 2π√(M/(Lη))']],
+detailed:[
+ ['Block A behaves like a mass on a spring, where the restoring force comes from the shear elasticity of block B. Shear stress equals rigidity modulus times shear strain, with the shear strain being the small lateral displacement x divided by the block\'s side L.','stress = η × strain','F/L² = η(x/L)'],
+ ['Rearranging isolates the effective spring constant k = F/x for this shear-spring system.','F = ηLx','k = F/x','= ηL'],
+ ['The time period of small oscillations of mass M on an effective spring of constant k follows the standard formula.','T = 2π√(M/k)'],
+ ['Substitute k = ηL. A quick dimension check confirms it: [η]=ML⁻¹T⁻², so ηL has dimension MT⁻², and M/(ηL) has dimension T², whose square root is T, consistent with a period.','T = 2π√(M/(ηL))','Answer: (D) 2π√(M/(Lη))']
+]},
+{id:'UD-149',topic:'Exponents in the frequency-mass-spring relation f = Cmˣ Kʸ',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.153 · p.12',sourceRef:true,question:'The frequency of oscillation of an object of mass m suspended by means of a spring of force constant K is given by f = CmˣKʸ, where C is a dimensionless constant. The value of x and y are –',options:['x = 1/2, y = 1/2','x = −1/2, y = 1/2','x = 1/2, y = −1/2','x = −1/2, y = −1/2'],correct:1,answer:'x = −1/2, y = 1/2',
+short:[['Match dimensions: [f]=T⁻¹, [m]=M, [K]=MT⁻².','T⁻¹ = Mˣ(MT⁻²)ʸ','= M^(x+y)T^(−2y)'],['Match powers.','x+y=0','−2y=−1','⇒ y=1/2','⇒ x=−1/2','Answer: (B) x = −1/2, y = 1/2']],
+detailed:[
+ ['Frequency has dimension T⁻¹; mass has dimension M; the spring constant K (from F=−Kx) has dimension MT⁻². Substitute all three into the given relation.','[f] = T⁻¹','[m] = M','[K] = MT⁻²','f = CmˣKʸ','⇒ T⁻¹ = Mˣ(MT⁻²)ʸ'],
+ ['Combine the right side into single powers of M and T.','T⁻¹ = M^(x+y) T^(−2y)'],
+ ['Match the M and T exponents on both sides.','M: x+y=0','T: −2y=−1'],
+ ['Solve: the T equation gives y directly, then the M equation gives x. This matches the familiar f = (1/2π)√(K/m).','y=1/2','x=−y','=−1/2','Answer: (B) x = −1/2, y = 1/2']
+]},
+{id:'UD-150',topic:'Dimension of Y in X = 3YZ² (MKSQ system, X=capacitance, Z=magnetic induction)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.155 · p.12',sourceRef:true,question:'In the formula X = 3YZ², X and Z have dimensions of capacitance and magnetic induction respectively. What are the dimensions of Y in the MKSQ system?',options:['[M⁻³L⁻¹T³Q⁴]','[M⁻³L⁻²T⁴Q⁴]','[M⁻²L⁻²T⁴Q⁴]','[M⁻³L⁻²T⁴Q¹]'],correct:1,answer:'[M⁻³L⁻²T⁴Q⁴]',
+short:[['Write [X] (capacitance) and [Z] (magnetic induction) in the MKSQ system.','[X] = M⁻¹L⁻²T²Q²','[Z] = MT⁻¹Q⁻¹'],['Y = X/Z², so subtract twice Z\'s exponents from X\'s.','[Y] = (M⁻¹L⁻²T²Q²)(M⁻²T²Q²)','= M⁻³L⁻²T⁴Q⁴','Answer: (B) [M⁻³L⁻²T⁴Q⁴]']],
+detailed:[
+ ['Capacitance relates charge and energy by C = Q²(Energy)⁻¹, and has a standard dimensional formula in the MKSQ system (mass, length, time, charge).','[X] = M⁻¹L⁻²T²Q²'],
+ ['Magnetic induction B, from F = QvB, has dimension force times (charge × velocity) inverse.','B = F(Qv)⁻¹','[Z] = (MLT⁻²)(Q·LT⁻¹)⁻¹','= MT⁻¹Q⁻¹'],
+ ['From X = 3YZ², Y = X Z⁻² (the numerical factor 3 is dimensionless).','Y = X Z⁻²'],
+ ['Substitute, using Z⁻² for the inverse-square factor.','[Z⁻²] = M⁻²T²Q²','[Y] = (M⁻¹L⁻²T²Q²)(M⁻²T²Q²)','= M^(−1−2)L⁻²T^(2+2)Q^(2+2)','= M⁻³L⁻²T⁴Q⁴'],
+ ['This is option (B).','Answer: (B) [M⁻³L⁻²T⁴Q⁴]']
+]},
+{id:'UD-14-A',parent:'UD-14',variant:1,topic:'Dimension of the energy-density term (1/2)e0E2',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.156 · p.12',sourceRef:true,relevance:{parent:'UD-14',sharedSkill:'Reduce (1/2)ε₀E² to energy per unit volume and substitute the dimensions of energy and volume.',recoveryPurpose:'Retries the same reduction with the options in a different order (an IIT-2000 phrasing of the same question), so the skill cannot be answered from memorised option position.'},question:'The dimension of (1/2)ε₀E² (ε₀: permittivity of free space, E electric field) is –',options:['MLT⁻¹','ML²T⁻²','ML⁻¹T⁻²','ML²T⁻¹'],correct:2,answer:'ML⁻¹T⁻²',
+short:[['(1/2)ε₀E² is the energy density of an electric field: energy per unit volume.','Energy density = Energy × Volume⁻¹'],['Substitute the dimensions.','(ML²T⁻²)(L⁻³) = ML⁻¹T⁻²','Answer: (C) ML⁻¹T⁻²']],
+detailed:[
+ ['(1/2)ε₀E² is the standard expression for energy stored per unit volume in an electric field, so its dimension is simply energy times volume\'s inverse, without needing ε₀ and E\'s individual dimensions.','Energy density = Energy × Volume⁻¹'],
+ ['Substitute the dimension of energy (ML²T⁻²) and volume (L³) as a product with a negative exponent.','(ML²T⁻²)(L⁻³) = ML⁻¹T⁻²'],
+ ['This is option (C) — the same dimensional formula as pressure or stress.','Answer: (C) ML⁻¹T⁻²']
+]},
+{id:'UD-151',topic:'Identifying the quantity with dimension ε₀L(ΔV/Δt)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.157 · p.12',sourceRef:true,question:'A quantity X is given by X = ε₀L(ΔV/Δt), where ε₀ is permittivity of free space, L is length, ΔV is a potential difference and Δt is a time interval. The dimensional formula for X is same as that of –',options:['Resistance','Charge','Voltage','Current'],correct:3,answer:'Current',
+short:[['Write the dimension of each factor: permittivity, length, potential difference and time interval.','[ε₀] = M⁻¹L⁻³T⁴A²','[L] = L','[ΔV] = ML²T⁻³A⁻¹','[Δt] = T'],['Multiply them together, using Δt\'s inverse instead of dividing.','[X] = (M⁻¹L⁻³T⁴A²)(L)(ML²T⁻³A⁻¹)(T⁻¹)','= M⁰L⁰T⁰A¹','Answer: (D) Current']],
+detailed:[
+ ['The permittivity of free space, from Coulomb\'s law, has a standard formula; length, potential difference and time interval each have their usual dimensions.','[ε₀] = M⁻¹L⁻³T⁴A²','[L] = L','[ΔV] = ML²T⁻³A⁻¹','[Δt] = T'],
+ ['Multiply ε₀, L and ΔV together and by the inverse of Δt, tracking each base exponent separately.','[X] = [ε₀][L][ΔV][Δt]⁻¹','M: −1+1 = 0','L: −3+1+2 = 0','T: 4−3−1 = 0','A: 2−1 = 1'],
+ ['All the M, L, T exponents cancel to zero, leaving only a single power of current.','[X] = A¹'],
+ ['A bare power of current (ampere) with no other base dimension is exactly the dimension of electric current itself.','Answer: (D) Current']
+]},
+{id:'UD-152',topic:'Significant figures in a cube\'s computed volume',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.158 · p.12',sourceRef:true,question:'A cube has a side 1.2 × 10⁻² m. Its volume will be recorded as –',options:['1.728 × 10⁻⁶ m³','1.72 × 10⁻⁶ m³','1.7 × 10⁻⁶ m³','.72 × 10⁻⁶ m³'],correct:2,answer:'1.7 × 10⁻⁶ m³',
+short:[['Volume = side³; the raw arithmetic gives more digits than are justified.','V = (1.2×10⁻²)³','= 1.728×10⁻⁶ m³'],['The side has only 2 significant figures, so the volume must also be rounded to 2 significant figures.','1.728 → 1.7','Answer: (C) 1.7 × 10⁻⁶ m³']],
+detailed:[
+ ['Compute the volume directly by cubing the given side length.','V = (1.2×10⁻²m)³','= 1.728×10⁻⁶ m³'],
+ ['The measured side, 1.2×10⁻², has only 2 significant figures. A calculated result can never carry more significant figures than the least-precise measurement that produced it, even though the raw multiplication produces more digits.','sig figs in 1.2 = 2'],
+ ['So the volume must be rounded to 2 significant figures, dropping the extra digits of 1.728 down to 1.7.','1.728×10⁻⁶ → 1.7×10⁻⁶ m³','Answer: (C) 1.7 × 10⁻⁶ m³']
+]},
+{id:'UD-153',topic:'Maximum percentage error in density from mass, radius and length',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.159 · p.12',sourceRef:true,question:'A wire is of mass (0.3 ± 0.003) gm. The radius is (0.5 ± 0.005) cm and length is (6 ± 0.06) cm. The maximum percentage error in density is –',options:['3%','4%','8%','16%'],correct:1,answer:'4%',
+short:[['Density ρ = m/(πr²l); the radius\'s error counts twice since it is squared.','Δρ/ρ = Δm/m + 2(Δr/r) + Δl/l'],['Substitute each percentage.','= 1% + 2(1%) + 1%','= 4%','Answer: (B) 4%']],
+detailed:[
+ ['Density of the wire is mass divided by volume, and the volume of a cylindrical wire is πr²l, so density depends on r squared.','ρ = m/(πr²l)'],
+ ['The maximum fractional error is the sum of each measured quantity\'s fractional error, with radius counted twice for its square.','Δρ/ρ = Δm/m + 2(Δr/r) + Δl/l'],
+ ['Compute each individual percentage error from the given absolute errors.','Δm/m = 0.003/0.3','= 1%','Δr/r = 0.005/0.5','= 1%','Δl/l = 0.06/6','= 1%'],
+ ['Substitute, doubling the radius term.','Δρ/ρ = 1% + 2(1%) + 1%','= 4%','Answer: (B) 4%']
+]},
+{id:'UD-154',topic:'Dimension of β in P = (α/β) exp(−αz/(K_B θ))',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.160 · p.12',sourceRef:true,question:'P = (α/β) exp(−αz/(K_B θ)); θ → Temperature, P → Pressure, K_B → Boltzmann constant, z → Distance. Dimension of β is –',options:['M⁰L⁰T⁰','M⁻¹L¹T²','M⁰L²T⁰','ML⁻¹T⁻²'],correct:2,answer:'M⁰L²T⁰',
+short:[['The exponent must be dimensionless, giving α\'s dimension from K_B θ (an energy) times z\'s inverse (a length).','αz/(K_B θ): dimensionless','⇒ [α] = [K_B θ][z]⁻¹','= (ML²T⁻²)(L⁻¹)','= MLT⁻²'],['α/β = P (pressure), so β = α/P.','[β] = (MLT⁻²)(ML⁻¹T⁻²)⁻¹','= L²','Answer: (C) M⁰L²T⁰']],
+detailed:[
+ ['Since the exponent of an exponential must be a pure number, αz/(K_B θ) is dimensionless.','[K_B θ] = ML²T⁻²','αz/(K_B θ): dimensionless'],
+ ['K_B θ has the dimension of energy (Boltzmann\'s constant times temperature always gives an energy), so α must equal that energy times z\'s inverse dimension, length.','⇒ [α] = [K_B θ][z]⁻¹','= (ML²T⁻²)(L⁻¹)','= MLT⁻²'],
+ ['The prefactor α/β must have the same dimension as P itself, since exp(...) is dimensionless; so β = α/P.','α/β = P','⇒ β = α P⁻¹'],
+ ['Substitute the dimension of α found above and of pressure.','[β] = (MLT⁻²)(ML⁻¹T⁻²)⁻¹'],
+ ['The M and T powers cancel exactly, and the L powers combine to give L².','= M^(1−1)L^(1−(−1))T^(−2−(−2))','= L²','Answer: (C) M⁰L²T⁰']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1479,7 +1633,25 @@ const pilotTopicMap={
  'Dimension of a constant k from a dimensionless wave-equation argument':['dimensional-analysis','Dimension of a constant k from a dimensionless wave-equation argument'],
  'Dimension of a constant alpha from a dimensionless exponential argument':['dimensional-analysis','Dimension of a constant alpha from a dimensionless exponential argument'],
  'Dimensions of A and B in Cauchy\'s formula for refractive index':['dimensional-analysis','Dimensions of A and B in Cauchy\'s formula for refractive index'],
- 'Checking tan(theta) = rg/v^2 for dimensional and numerical correctness':['dimensional-analysis','Checking tan(theta) = rg/v^2 for dimensional and numerical correctness']
+ 'Checking tan(theta) = rg/v^2 for dimensional and numerical correctness':['dimensional-analysis','Checking tan(theta) = rg/v^2 for dimensional and numerical correctness'],
+ 'Dimensional formula of G in a c-g-p fundamental system':['dimensional-analysis','Dimensional formula of G in a c-g-p fundamental system'],
+ 'Dimension of velocity gradient':['dimensional-formula','Dimension of velocity gradient'],
+ 'Exponents for a dimensionless P-Q-C combination':['dimensional-analysis','Exponents for a dimensionless P-Q-C combination'],
+ 'Dimensional formula of viscosity from a Poiseuille-type relation':['dimensional-formula','Dimensional formula of viscosity from a Poiseuille-type relation'],
+ 'Homogeneity in the argument of y = a cos(t/p - qx)':['dimensional-analysis','Homogeneity in the argument of y = a cos(t/p - qx)'],
+ 'Identifying which units match in y = A sin[(2π/λ)(ct−x)]':['dimensional-analysis','Identifying which units match in y = A sin[(2π/λ)(ct−x)]'],
+ 'Finding the exponent n by dimensional homogeneity in a stated integral':['dimensional-analysis','Finding the exponent n by dimensional homogeneity in a stated integral'],
+ 'Maximum percentage error in x = M⁻¹L³T⁻²':['errors','Maximum percentage error in x = M⁻¹L³T⁻²'],
+ 'Maximum percentage error in dissipated heat H = I²Rt':['errors','Maximum percentage error in dissipated heat H = I²Rt'],
+ 'Proportionality of the period of a nonlinear oscillator via dimensional analysis':['dimensional-analysis','Proportionality of the period of a nonlinear oscillator via dimensional analysis'],
+ 'Dimension of Boltzmann\'s constant':['dimensional-formula','Dimension of Boltzmann\'s constant'],
+ 'Time period of a block oscillating on a rigidity-modulus foundation':['dimensional-analysis','Time period of a block oscillating on a rigidity-modulus foundation'],
+ 'Exponents in the frequency-mass-spring relation f = Cmˣ Kʸ':['dimensional-analysis','Exponents in the frequency-mass-spring relation f = Cmˣ Kʸ'],
+ 'Dimension of Y in X = 3YZ² (MKSQ system, X=capacitance, Z=magnetic induction)':['dimensional-formula','Dimension of Y in X = 3YZ² (MKSQ system, X=capacitance, Z=magnetic induction)'],
+ 'Identifying the quantity with dimension ε₀L(ΔV/Δt)':['dimensional-formula','Identifying the quantity with dimension ε₀L(ΔV/Δt)'],
+ 'Significant figures in a cube\'s computed volume':['significant-figures','Significant figures in a cube\'s computed volume'],
+ 'Maximum percentage error in density from mass, radius and length':['errors','Maximum percentage error in density from mass, radius and length'],
+ 'Dimension of β in P = (α/β) exp(−αz/(K_B θ))':['dimensional-analysis','Dimension of β in P = (α/β) exp(−αz/(K_B θ))']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
