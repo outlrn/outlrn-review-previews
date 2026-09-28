@@ -1351,7 +1351,7 @@ detailed:[
  ['y is also stated to be measured in metres, and y = A sin(...) with sin(...) a pure number, so A must carry the same dimension as y.','[A] = [y]','[y] = L'],
  ['So λ, x and A are all lengths — matching option (A). Check the others: c is a velocity while 2π/λ is L⁻¹, not the same; and (ct−x) is a length while 2π/λ is L⁻¹, the reciprocal, not the same.','[c] = LT⁻¹','[2π/λ] = L⁻¹','[ct−x] = L','Answer: (A) The unit of λ is same as that of x and A']
 ]},
-{id:'UD-143',topic:'Finding the exponent n by dimensional homogeneity in a stated integral',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.147 · p.11',sourceRef:true,question:'You may not know integration. But using dimensional analysis you can check or prove results. In the integral ∫dx/√(2ax−x²) = aⁿ sin⁻¹(x/a − 1), the value of n should be –',options:['1','–1','0','1/2'],correct:2,answer:'0',
+{id:'UD-143',topic:'Finding the exponent n by dimensional homogeneity in a stated integral',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.147 · p.11 (Q.210, p.17, is a verbatim repeat of this item)',sourceRef:true,question:'You may not know integration. But using dimensional analysis you can check or prove results. In the integral ∫dx/√(2ax−x²) = aⁿ sin⁻¹(x/a − 1), the value of n should be –',options:['1','–1','0','1/2'],correct:2,answer:'0',
 short:[['For 2ax and x² to be added, a must have the dimension of x.','[a] = [x]','[x] = L'],['Then √(2ax−x²) has dimension L, matching dx, so the left side is dimensionless.','[√(2ax−x²)] = L','LHS = M⁰L⁰T⁰'],['sin⁻¹(...) returns a dimensionless angle, so the right side\'s dimension is just aⁿ.','RHS = Lⁿ'],['Equate the two sides.','Lⁿ = L⁰','⇒ n = 0','Answer: (C) 0']],
 detailed:[
  ['Inside the square root, 2ax is added to x², so a must share x\'s dimension for the two terms to combine.','[a] = [x]','[x] = L'],
@@ -1373,7 +1373,7 @@ detailed:[
  ['The maximum fractional error is the sum of each factor\'s error weighted by its exponent; current\'s exponent is 2, so its 2% error is counted twice.','ΔH/H = 2(ΔI/I) + (ΔR/R) + (Δt/t)'],
  ['Substitute the given errors: 2% for current, 1% for resistance, 1% for time.','= 2(2%) + 1% + 1%','= 4% + 1% + 1%','= 6%','Answer: (B) 6%']
 ]},
-{id:'UD-146',topic:'Proportionality of the period of a nonlinear oscillator via dimensional analysis',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.150 · p.11',sourceRef:true,question:'The period of oscillation of a non linear oscillator depends on the mass \'m\', with dimensions of M, a restoring force constant \'K\', with dimensions of ML⁻²T⁻² and the amplitude A, with dimensions of L. Dimensional analysis shows that the period of oscillation should be proportional to –',options:['A√(m/k)','A²m/k','A⁻¹√(m/k)','A²K³/m'],correct:2,answer:'A⁻¹√(m/k)',
+{id:'UD-146',topic:'Proportionality of the period of a nonlinear oscillator via dimensional analysis',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.150 · p.11 (Q.213, p.17, is a verbatim repeat of this item)',sourceRef:true,question:'The period of oscillation of a non linear oscillator depends on the mass \'m\', with dimensions of M, a restoring force constant \'K\', with dimensions of ML⁻²T⁻² and the amplitude A, with dimensions of L. Dimensional analysis shows that the period of oscillation should be proportional to –',options:['A√(m/k)','A²m/k','A⁻¹√(m/k)','A²K³/m'],correct:2,answer:'A⁻¹√(m/k)',
 short:[['Let T ∝ mᵃKᵇAᶜ and match dimensions.','T¹ = Mᵃ(ML⁻²T⁻²)ᵇLᶜ','= M^(a+b) L^(−2b+c) T^(−2b)'],['Match powers of M, L, T.','a+b=0','−2b+c=0','−2b=1','⇒ b=−1/2'],['Solve: b=−1/2 ⇒ a=1/2, c=−1.','T ∝ m^(1/2)K^(−1/2)A^(−1)','= A⁻¹√(m/K)','Answer: (C) A⁻¹√(m/k)']],
 detailed:[
  ['Assume the period is a product of powers of the three given quantities, T ∝ mᵃKᵇAᶜ, and substitute each one\'s dimension.','T ∝ mᵃKᵇAᶜ','[m] = M','[K] = ML⁻²T⁻²','[A] = L'],
@@ -2913,15 +2913,6 @@ detailed:[
  ['Solve in order: y = 1 directly, then x = −y = −1, then z = x + 2y = −1 + 2 = 1.','y = 1','x = −1','z = 1'],
  ['So mass is expressed as M = KV⁻¹FT, option (B).','Answer: (B) KV⁻¹FT']
 ]},
-{id:'UD-332',topic:'Finding exponent n in a stated inverse-sine integral by dimensional homogeneity (batch 11 repeat)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.210 · p.17 (verbatim repeat of Q.147, p.11, already in the bank as UD-143)',sourceRef:true,question:'You may not know integration. But using dimensional analysis you can check or prove results. In the integral ∫dx/(2ax−x²)^(1/2) = aⁿ sin⁻¹(x/a − 1), the value of n should be –',options:['1','−1','0','1/2'],correct:2,answer:'0',
-short:[['On the right, a appears alongside x inside sin⁻¹, so a is a length like x.','[x] = L','⇒ [a] = L'],['On the left, [dx] = L and [(2ax−x²)^(1/2)] = L, since 2ax and x² are both L².','[LHS] = L/L','= L⁰'],['Equate the two sides.','aⁿ = L⁰','⇒ n = 0','Answer: (C) 0']],
-detailed:[
- ['On the right-hand side, a appears inside sin⁻¹(x/a − 1); since x is a length, a must also be a length for the argument to be dimensionless.','[x] = L','⇒ [a] = L'],
- ['On the left-hand side, dx has dimension L, and 2ax and x² inside the square root are both L² (a length times a length), so (2ax−x²)^(1/2) has dimension L.','[dx] = L','[(2ax−x²)^(1/2)] = L'],
- ['So the whole integral has dimension L divided by L, which is dimensionless.','[LHS] = L/L','= L⁰'],
- ['On the right, sin⁻¹(...) is itself dimensionless (an angle), so the entire dimension of the right side rests on aⁿ; equating L⁰ = aⁿ = Lⁿ forces n = 0.','L⁰ = Lⁿ','⇒ n = 0'],
- ['This matches option (C).','Answer: (C) 0']
-]},
 {id:'UD-333',topic:'Relating the exponents in V proportional to A^alpha v^beta t^gamma by dimensional homogeneity',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.211 · p.17',sourceRef:true,question:'The volume V of water passing any point of a uniform tube during t seconds is related to the cross-sectional area A of the tube and the velocity v of water by the relation V ∝ Aᵅvᵝtᵞ. Which one of the following will be true?',options:['α = β = γ','α ≠ β = γ','α = β ≠ γ','α ≠ β ≠ γ'],correct:1,answer:'α ≠ β = γ',
 short:[['Write the dimension of each side.','[V] = L³','[Aᵅvᵝtᵞ] = (L²)ᵅ(LT⁻¹)ᵝ(T)ᵞ','= L^(2α+β) T^(γ−β)'],['Equate powers of L and T.','2α + β = 3','γ − β = 0','⇒ γ = β'],['The T-equation forces γ = β; the single L-equation does not force α = β (many (α,β) pairs satisfy it).','Answer: (B) α ≠ β = γ']],
 detailed:[
@@ -2930,17 +2921,6 @@ detailed:[
  ['Equate the exponent of L on both sides (3 on the left) and the exponent of T on both sides (0 on the left).','L: 2α + β = 3','T: γ − β = 0'],
  ['The T-equation forces γ = β, always. The L-equation is one relation between α and β and does not force α = β — α=1, β=γ=1 satisfies both (the familiar V = Avt), but so does α=0, β=γ=3, where α ≠ β. So the only relation dimensional analysis guarantees in general is β = γ, with α left unconstrained relative to it.','2α + β = 3 has many (α,β) solutions','γ = β always'],
  ['Of the four options, only (B) states exactly this.','Answer: (B) α ≠ β = γ']
-]},
-{id:'UD-334',topic:'Proportionality of a non-linear oscillator\'s period from mass, a restoring-force constant and amplitude (repeat of an earlier item)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.213 · p.17 (verbatim repeat of Q.150, p.11, already in the bank as UD-146)',sourceRef:true,question:'The period of oscillation of a non-linear oscillator depends on the mass m, with dimension M, a restoring-force constant K, with dimension ML⁻²T⁻², and the amplitude A, with dimension L. Dimensional analysis shows that the period of oscillation should be proportional to –',options:['A√(m/k)','A²m/k','A⁻¹√(m/k)','A²K³/m'],correct:2,answer:'A⁻¹√(m/k)',
-short:[['Let T ∝ mᵃKᵇAᶜ.','T¹ = Mᵃ(ML⁻²T⁻²)ᵇLᶜ','= M^(a+b) L^(c−2b) T^(−2b)'],['Match M, L, T.','a + b = 0','c − 2b = 0','−2b = 1','⇒ b = −1/2','a = 1/2','c = −1'],['So T ∝ m^(1/2)K^(−1/2)A⁻¹ = A⁻¹√(m/K).','Answer: (C) A⁻¹√(m/k)']],
-detailed:[
- ['Assume the period depends on mass m, restoring-force constant K, and amplitude A, as a power-law combination.','T ∝ mᵃ Kᵇ Aᶜ'],
- ['Substitute the given dimensions: [T]=T, [m]=M, [K]=ML⁻²T⁻², [A]=L.','T¹ = Mᵃ(ML⁻²T⁻²)ᵇ Lᶜ'],
- ['Expand and collect powers.','= M^(a+b) L^(c−2b) T^(−2b)'],
- ['Equate exponents on both sides.','M: a + b = 0','L: c − 2b = 0','T: −2b = 1'],
- ['Solve in order.','b = −1/2','a = −b','= 1/2','c = 2b','= −1'],
- ['So T ∝ m^(1/2) K^(−1/2) A⁻¹, the same as A⁻¹√(m/K).','T ∝ A⁻¹√(m/K)'],
- ['This matches option (C).','Answer: (C) A⁻¹√(m/k)']
 ]},
 {id:'UD-335',topic:'Time period of an oscillator with a cubic potential energy U(x) = K|x|^3 as a function of amplitude',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.214 · p.17',sourceRef:true,question:'A particle of mass m is executing oscillations about the origin on the x-axis. Its potential energy is U(x) = K|x|³, where K is a positive constant. If the amplitude of oscillation is a, then its time period T is –',options:['Proportional to 1/√a','Independent of a','Proportional to √a','Proportional to a^(3/2)'],correct:0,answer:'Proportional to 1/√a',
 short:[['From U = K|x|³, K has dimension energy times length⁻³.','[K] = ML²T⁻² L⁻³','= ML⁻¹T⁻²'],['Let T ∝ mᵃKᵇaᶜ.','T¹ = Mᵃ(ML⁻¹T⁻²)ᵇLᶜ','= M^(a+b) L^(c−b) T^(−2b)'],['Match M, L, T.','a + b = 0','c − b = 0','−2b = 1','⇒ b = −1/2','a = 1/2','c = −1/2'],['So T ∝ a^(−1/2) = 1/√a.','Answer: (A) Proportional to 1/√a']],
