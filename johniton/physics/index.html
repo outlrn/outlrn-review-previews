@@ -755,7 +755,7 @@ detailed:[
  ['In the term Bv, B multiplies velocity v, so B\'s dimension is acceleration divided by velocity.','B = (dv/dt)/v','⇒ [B] = LT⁻²/(LT⁻¹)','= T⁻¹'],
  ['So A and B have dimensions LT⁻³ and T⁻¹ respectively, option (B).','Answer: (B) LT⁻³, T⁻¹']
 ]},
-{id:'UD-73',topic:'Maximum percentage error formula for a difference x = a - b',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.35 · p.3',sourceRef:true,question:'If x = a – b, the maximum percentage error in the measurement of x will be -',options:['(Δa/a + Δb/b) × 100%','(Δa/a − Δb/b) × 100%','(Δa/(a−b) + Δb/(a−b)) × 100%','(Δa/(a−b) − Δb/(a−b)) × 100%'],correct:2,answer:'(Δa/(a−b) + Δb/(a−b)) × 100%',
+{id:'UD-73',topic:'Maximum percentage error formula for a difference x = a - b',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.35 · p.3 (Q.18, p.12, is a verbatim repeat of this item)',sourceRef:true,question:'If x = a – b, the maximum percentage error in the measurement of x will be -',options:['(Δa/a + Δb/b) × 100%','(Δa/a − Δb/b) × 100%','(Δa/(a−b) + Δb/(a−b)) × 100%','(Δa/(a−b) − Δb/(a−b)) × 100%'],correct:2,answer:'(Δa/(a−b) + Δb/(a−b)) × 100%',
 short:[['For a difference, absolute errors add in the worst case: Δx = Δa + Δb.','x = a − b','⇒ Δx = Δa + Δb'],['Percentage error is Δx/x × 100%, with x = a−b.','Δx/x × 100% = (Δa/(a−b) + Δb/(a−b)) × 100%','Answer: (C) (Δa/(a−b) + Δb/(a−b)) × 100%']],
 detailed:[
  ['For both addition and subtraction, absolute errors always add in the worst case, since either measurement could be off in the direction that increases the discrepancy.','x = a − b','Δx = Δa + Δb'],
@@ -1462,7 +1462,7 @@ detailed:[
  ['Evaluate each term and add.','= 3% + 4% + 3% + 4%','= 14%'],
  ['This is option (D).','Answer: (D) 14%']
 ]},
-{id:'UD-156',topic:'Maximum percentage error in S = ab²/c³',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.35 · p.23',sourceRef:true,question:'A student measures quantities a, b and c and then calculates S by the formula S = ab²/c³. If the errors in a, b, c are 1%, 3% and 2% respectively, the maximum error in S can be:',options:['13%','7%','4%','1%'],correct:0,answer:'13%',
+{id:'UD-156',topic:'Maximum percentage error in S = ab²/c³',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.35 · p.23 (Q.22, p.14, is a verbatim repeat of this item)',sourceRef:true,question:'A student measures quantities a, b and c and then calculates S by the formula S = ab²/c³. If the errors in a, b, c are 1%, 3% and 2% respectively, the maximum error in S can be:',options:['13%','7%','4%','1%'],correct:0,answer:'13%',
 short:[['Sum the exponent-weighted percentage errors.','%errorS = 1(%a) + 2(%b) + 3(%c)'],['Substitute.','= 1% + 2(3%) + 3(2%)','= 1% + 6% + 6%','= 13%','Answer: (A) 13%']],
 detailed:[
  ['S is the first power of a, the second power of b, and the inverse cube of c, so the maximum percentage error is the sum of each error weighted by its exponent.','S = ab²/c³','%errorS = 1(%a) + 2(%b) + 3(%c)'],
@@ -2312,6 +2312,232 @@ detailed:[
  ['For this power-law dependence, the relative uncertainty in M is the sum of the relative uncertainties in r and T, weighted by their powers (3 and 2).','ΔM/M = 3(Δr/r) + 2(ΔT/T)'],
  ['The relative uncertainty in the orbital radius is given as negligible, so only the period\'s uncertainty of 10⁻² contributes.','Δr/r ≈ 0','ΔT/T = 10⁻²'],
  ['Substituting gives the relative uncertainty in mass.','ΔM/M = 3(0) + 2(10⁻²)','= 2×10⁻²','Answer: (B) 2 × 10⁻²']
+]},
+{id:'UD-257',topic:'Converting a force value between unit systems (mass, length, time all changed)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.1 · p.1',sourceRef:true,question:'In a new system of units, unit of mass is 5 kg, unit of length is 2 m and unit of time is 10 s. The value of 5 N in the new system of units is',options:['30','40','50','60'],correct:2,answer:'50',
+short:[['Force has dimension MLT⁻²; use n₂ = n₁(M₁/M₂)(L₁/L₂)(T₁/T₂)⁻².','n₂ = 5 × (1/5) × (1/2) × (1/10)⁻²'],['Simplify.','= 5 × 0.2 × 0.5 × 100','= 50','Answer: (C) 50']],
+detailed:[
+ ['The numerical value of a physical quantity changes between unit systems as n₂ = n₁(M₁/M₂)ᵃ(L₁/L₂)ᵇ(T₁/T₂)ᶜ, where a, b, c are the powers of mass, length and time in the quantity\'s dimensional formula; for force [MLT⁻²], a=1, b=1, c=−2.','[F] = MLT⁻²'],
+ ['Take the SI units as the old system (M₁=1 kg, L₁=1 m, T₁=1 s) and the given new units as M₂=5 kg, L₂=2 m, T₂=10 s, and substitute into the conversion formula with n₁=5.','n₂ = 5 × (1/5)¹ × (1/2)¹ × (1/10)⁻²'],
+ ['Evaluate each factor: (1/5) = 0.2, (1/2) = 0.5, and (1/10)⁻² = 100.','n₂ = 5 × 0.2 × 0.5 × 100'],
+ ['Multiplying these together gives the value of 5 N expressed in the new system.','n₂ = 50','Answer: (C) 50']
+]},
+{id:'UD-258',topic:'Dimension of a/b from a pressure relation P = (a − t²)/(bx)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.2 · p.2',sourceRef:true,question:'Write the dimensions of a/b in the relation P = (a − t²)/(bx), where P is the pressure, x is the distance, and t is the time.',options:['[M⁻¹L⁰T⁻²]','[ML⁰T⁻²]','[ML⁰T²]','[MLT⁻²]'],correct:1,answer:'[ML⁰T⁻²]',
+short:[['Since a is subtracted from t², a must share t²\'s dimension.','[a] = T²'],['Treat the relation as [P][b][x] equal to [a], a quantity of dimension T², and solve for [b] using negative exponents.','[b] = [a] [P]⁻¹ [x]⁻¹','= T² (ML⁻¹T⁻²)⁻¹ L⁻¹','= T² (M⁻¹LT²) L⁻¹','= M⁻¹T⁴'],['Now form the ratio a/b directly.','a/b = T² (M⁻¹T⁴)⁻¹','= T² MT⁻⁴','= MT⁻²','= ML⁰T⁻²','Answer: (B) [ML⁰T⁻²]']],
+detailed:[
+ ['Only terms with the same dimension can be subtracted, so a must have the same dimension as t².','[a] = [t²]','= T²'],
+ ['Since a and t² share the same dimension, the whole numerator (a − t²) also carries dimension T², so the relation behaves dimensionally as pressure times (bx) equal to a quantity of dimension T².','[P][b][x] = T²'],
+ ['Rearrange to isolate [b], using the dimension of pressure (ML⁻¹T⁻²) and of distance x (L), writing each reciprocal with a negative exponent.','[b] = T² [P]⁻¹ [x]⁻¹','= T² (ML⁻¹T⁻²)⁻¹ L⁻¹','= T² (M⁻¹LT²) L⁻¹','= M⁻¹T⁴'],
+ ['Now form the ratio a/b by dividing [a] by [b].','a/b = T² (M⁻¹T⁴)⁻¹','= T² MT⁻⁴','= MT⁻²'],
+ ['This is M¹L⁰T⁻², option (B).','Answer: (B) [ML⁰T⁻²]']
+]},
+{id:'UD-259',topic:'Dimensional formula of force expressed in a base system of area, velocity and density',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.3 · p.2',sourceRef:true,question:'If area (A), velocity (v) and density (ρ) are taken as base (fundamental) units, then the dimensional formula of force can be represented as',options:['[Avρ]','[Av²ρ]','[Avρ²]','[A²vρ]'],correct:1,answer:'[Av²ρ]',
+short:[['Let F = Aᵃvᵇρᶜ and match M, L, T on both sides.','MLT⁻² = (L²)ᵃ(LT⁻¹)ᵇ(ML⁻³)ᶜ'],['Match powers of M, L and T in turn.','M: c = 1','T: −b = −2','⇒ b = 2','L: 2a + b − 3c = 1','⇒ a = 1'],['So a=1, b=2, c=1, giving F = A v² ρ.','F = Av²ρ','Answer: (B) [Av²ρ]']],
+detailed:[
+ ['Assume force is a product of powers of the three chosen base quantities, and write each base quantity\'s standard M, L, T dimension.','F = Aᵃvᵇρᶜ','[A] = L²','[v] = LT⁻¹','[ρ] = ML⁻³'],
+ ['Substitute into F = Aᵃvᵇρᶜ and combine into single powers of M, L and T on the right, matching the left side MLT⁻².','MLT⁻² = (L²)ᵃ(LT⁻¹)ᵇ(ML⁻³)ᶜ','= Mᶜ L^(2a+b−3c) T^(−b)'],
+ ['Match the M, L and T exponents on both sides to get three equations.','M: c = 1','T: −b = −2','⇒ b = 2','L: 2a + b − 3c = 1'],
+ ['Substitute b=2, c=1 into the L equation and solve for a.','2a + 2 − 3 = 1','⇒ 2a = 2','⇒ a = 1'],
+ ['So a=1, b=2, c=1, giving F = A v² ρ, option (B).','Answer: (B) [Av²ρ]']
+]},
+{id:'UD-260',topic:'Dimension of work in a force–velocity–time fundamental system',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.4 · p.3',sourceRef:true,question:'In force, velocity and time are taken as fundamental quantities, find the dimension of work.',options:['[F⁰VT⁻¹]','[FVT²]','[FV²T⁻¹]','[FVT]'],correct:3,answer:'[FVT]',
+short:[['Work = force × distance, and distance = velocity × time, so Work = F v t.','W = F(vt)'],['Substitute dimensions of F, v, t directly (they are the base quantities here).','[W] = F¹V¹T¹','Answer: (D) [FVT]']],
+detailed:[
+ ['Work is force times displacement, and displacement itself can be written as velocity times time.','W = F × d','d = v t','⇒ W = F v t'],
+ ['Since F, v and t are themselves the fundamental (base) quantities in this system, the dimensional formula of work is read off directly as the product of their first powers.','[W] = F¹ V¹ T¹'],
+ ['This is [FVT], option (D). A quick check by converting to the usual M, L, T system confirms it: with force MLT⁻² and velocity LT⁻¹, multiplying force, velocity and time together gives energy\'s usual formula.','[F][V][T] = (MLT⁻²)(LT⁻¹)(T)','= ML²T⁻²','Answer: (D) [FVT]']
+]},
+{id:'UD-261',topic:'Dimensional formula of energy',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.5 · p.3',sourceRef:true,question:'The dimensional formula for energy is',options:['[MLT⁻²]','[ML²T⁻²]','[M⁻¹L²T]','[ML²T]'],correct:1,answer:'[ML²T⁻²]',
+short:[['Energy = (1/2)mv².','[E] = M(LT⁻¹)²','= ML²T⁻²','Answer: (B) [ML²T⁻²]']],
+detailed:[
+ ['Kinetic energy, the standard form used to derive energy\'s dimensional formula, is (1/2)mv², a numerical constant times mass times velocity squared.','E = (1/2)mv²'],
+ ['Substitute the dimension of mass (M) and velocity (LT⁻¹), squaring the latter.','[E] = M × (LT⁻¹)²','= ML²T⁻²'],
+ ['This is option (B); the same formula also applies to potential energy, heat, and work, since all are forms of energy.','Answer: (B) [ML²T⁻²]']
+]},
+{id:'UD-262',topic:'Dimension of the exponent constant in P = P₀e^(−αt²)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.6 · p.4',sourceRef:true,question:'A physical quantity P is given by the relation P = P₀e^(−αt²). If t denotes time, the dimensions of the constant α are',options:['[T]','[T²]','[T⁻¹]','[T⁻²]'],correct:3,answer:'[T⁻²]',
+short:[['The exponent of e must be dimensionless.','[αt²] = M⁰L⁰T⁰'],['Solve for [α].','[α] = 1/T²','= T⁻²','Answer: (D) [T⁻²]']],
+detailed:[
+ ['The argument of an exponential function must always be a pure (dimensionless) number, since e raised to a power only makes sense for a number.','[αt²] = M⁰L⁰T⁰'],
+ ['Since [t²] = T², solve for the dimension of α that cancels it.','[α][t²] = 1','⇒ [α] = 1/T²','= T⁻²'],
+ ['This is option (D).','Answer: (D) [T⁻²]']
+]},
+{id:'UD-263',topic:'Dimensions of a and b in F = at + bt²',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.7 · p.5',sourceRef:true,question:'A force F is given by F = at + bt², where t is time. What are the dimensions of a and b?',options:['[MLT⁻³] and [ML²T⁻⁴]','[MLT⁻³] and [MLT⁻⁴]','[MLT⁻¹] and [MLT⁰]','[MLT⁻⁴] and [MLT¹]'],correct:1,answer:'[MLT⁻³] and [MLT⁻⁴]',
+short:[['Both terms must share force\'s dimension, MLT⁻².','[a] = MLT⁻² T⁻¹','= MLT⁻³'],['Similarly for b, using T⁻² since bt² carries an extra time factor.','[b] = MLT⁻² T⁻²','= MLT⁻⁴','Answer: (B) [MLT⁻³] and [MLT⁻⁴]']],
+detailed:[
+ ['Since at and bt² are added to give F, each term must independently carry the dimension of force, MLT⁻².','[F] = MLT⁻²'],
+ ['In the term at, a multiplies t, so a\'s dimension is force multiplied by time to the power −1.','a = F t⁻¹','[a] = MLT⁻² T⁻¹','= MLT⁻³'],
+ ['In the term bt², b multiplies t², so b\'s dimension is force multiplied by time to the power −2.','b = F t⁻²','[b] = MLT⁻² T⁻²','= MLT⁻⁴'],
+ ['So a and b have dimensions MLT⁻³ and MLT⁻⁴ respectively, option (B).','Answer: (B) [MLT⁻³] and [MLT⁻⁴]']
+]},
+{id:'UD-264',topic:'Converting a density value between unit systems',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.8 · p.5',sourceRef:true,question:'The density of a material in the CGS system of units is 4 g/cm³. In a system of units in which the unit of length is 10 cm and the unit of mass is 100 g, the value of the density of the material will be',options:['400','0.04','0.4','40'],correct:3,answer:'40',
+short:[['Density has dimension ML⁻³; use n₂ = n₁(M₁/M₂)(L₁/L₂)⁻³.','n₂ = 4 × (1/100) × (1/10)⁻³'],['Simplify.','= 4 × 0.01 × 1000','= 40','Answer: (D) 40']],
+detailed:[
+ ['Density has dimensional formula ML⁻³, so between the CGS system (M₁=1 g, L₁=1 cm) and the new system (M₂=100 g, L₂=10 cm), the numerical value transforms as n₂ = n₁(M₁/M₂)¹(L₁/L₂)⁻³.','[ρ] = ML⁻³'],
+ ['Substitute n₁=4 with the two sets of units.','n₂ = 4 × (1/100)¹ × (1/10)⁻³'],
+ ['Evaluate: (1/100) = 0.01, and (1/10)⁻³ = 1000.','n₂ = 4 × 0.01 × 1000'],
+ ['Multiplying gives the density\'s value in the new unit system.','n₂ = 40','Answer: (D) 40']
+]},
+{id:'UD-265',topic:'Percentage error in resistance from errors in voltage and current',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.9 · p.6',sourceRef:true,question:'The percentage error in the measurement of the voltage V is 3% and in the measurement of the current is 2%. The percentage error in the measurement of the resistance is',options:['3%','2%','1%','5%'],correct:3,answer:'5%',
+short:[['Resistance R = V/I, so percentage errors add.','ΔR/R × 100 = ΔV/V × 100 + ΔI/I × 100'],['Substitute.','= 3% + 2%','= 5%','Answer: (D) 5%']],
+detailed:[
+ ['By Ohm\'s law, resistance is voltage divided by current.','R = V/I'],
+ ['Taking logs and differentiating, the percentage error in a quotient is the sum of the percentage errors in the numerator and denominator.','ΔR/R × 100% = ΔV/V × 100% + ΔI/I × 100%'],
+ ['Substitute the given percentage errors.','= 3% + 2%','= 5%','Answer: (D) 5%']
+]},
+{id:'UD-266',topic:'Percentage error in the volume of a sphere from the error in its radius',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.10 · p.7',sourceRef:true,question:'The radius of a sphere is (2.6 ± 0.1) cm. The percentage error in its volume is',options:['(0.1/2.6) × 100%','3 × (0.1/2.6) × 100%','(0.1/(3×2.6)) × 100%','(0.1/2.6)%'],correct:1,answer:'3 × (0.1/2.6) × 100%',
+short:[['Volume V = (4/3)πr³, so percentage error triples that of r.','ΔV/V × 100% = 3 × (Δr/r) × 100%'],['Substitute.','= 3 × (0.1/2.6) × 100%','Answer: (B) 3 × (0.1/2.6) × 100%']],
+detailed:[
+ ['Volume is proportional to the cube of the radius.','V = (4/3)πr³'],
+ ['Taking logs and differentiating, a power of n on a variable multiplies its fractional error by n; here r is cubed, so its error is tripled.','ΔV/V = 3(Δr/r)'],
+ ['Substitute the given radius and its uncertainty and express as a percentage.','ΔV/V × 100% = 3 × (0.1/2.6) × 100%'],
+ ['This is option (B).','Answer: (B) 3 × (0.1/2.6) × 100%']
+]},
+{id:'UD-267',topic:'Significant figures in 0.0204 (leading zeros and a captive zero)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.11 · p.7',sourceRef:true,question:'The number of significant figures in the measured value 0.0204 is',options:['Five','Three','Four','Two'],correct:1,answer:'Three',
+short:[['Leading zeros before the first nonzero digit are not significant; the zero between 2 and 4 is captive and counts.','Significant digits: 2, 0, 4'],['Three significant figures.','Answer: (B) Three']],
+detailed:[
+ ['In 0.0204, the two zeros before the digit 2 are leading zeros, used only to fix the decimal point, so they are not significant.','Leading zeros (not significant): 0.0'],
+ ['The zero between 2 and 4 is a captive zero (sandwiched between nonzero digits), and captive zeros are always significant.','Captive zero (significant): 0'],
+ ['So the significant digits are 2, 0 and 4 — three significant figures in total.','Significant figures: 2, 0, 4 = 3','Answer: (B) Three']
+]},
+{id:'UD-268',topic:'Rounding 2.845 to three significant figures using the round-half-to-even rule',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.12 · p.8',sourceRef:true,question:'Round off the value 2.845 to three significant figures.',options:['2.85','2.84','2.80','2.83'],correct:1,answer:'2.84',
+short:[['Rounding to three significant figures means deciding the fate of the third kept digit, 4, since the digit being dropped is exactly 5.','Digits kept: 2, 8, 4','Digit dropped: 5'],['The standard rule for a dropped digit of exactly 5 is round-half-to-even: leave the preceding digit unchanged if it is already even.','Preceding digit: 4 (even)','Answer: (B) 2.84']],
+detailed:[
+ ['Rounding 2.845 to three significant figures means keeping the digits 2, 8 and a third digit, and deciding whether that third digit changes based on the digit being dropped, which is 5.','Digits kept: 2, 8, 4','Digit dropped: 5'],
+ ['The standard convention for rounding when the dropped digit is exactly 5 with nothing nonzero after it is to round to the nearest even digit, raising the preceding digit by 1 if it is odd and leaving it unchanged if it is even, which avoids a systematic upward bias.','Rule: round half to even'],
+ ['Here the preceding (third) digit is 4, which is already even, so it stays unchanged.','Preceding digit: 4 (even, unchanged)'],
+ ['The rounded value is therefore 2.84.','2.845 rounds to 2.84','Answer: (B) 2.84']
+]},
+{id:'UD-269',topic:'Percentage error in P = a³b²/(cd) from four measured errors',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.13 · p.9',sourceRef:true,question:'In an experiment, four quantities a, b, c and d are measured with percentage errors 1%, 2%, 3% and 4% respectively. A quantity P is calculated as P = a³b²/(cd). Then the percentage error in P is',options:['10%','7%','4%','14%'],correct:3,answer:'14%',
+short:[['Each exponent multiplies its variable\'s percentage error; all errors add for a product or quotient.','ΔP/P × 100% = 3(1%) + 2(2%) + 1(3%) + 1(4%)'],['Simplify.','= 3% + 4% + 3% + 4%','= 14%','Answer: (D) 14%']],
+detailed:[
+ ['For a quantity built from products and quotients of measured variables raised to powers, the percentage error is the sum of each variable\'s percentage error weighted by the magnitude of its power, whether that variable is in the numerator or the denominator.','P = a³b²c⁻¹d⁻¹'],
+ ['Here a and b appear with powers 3 and 2, and c and d appear with power 1 each (written with a negative exponent since they sit in the denominator); every contribution adds.','ΔP/P × 100% = 3(Δa/a×100%) + 2(Δb/b×100%) + 1(Δc/c×100%) + 1(Δd/d×100%)'],
+ ['Substitute the given percentage errors 1%, 2%, 3%, 4% for a, b, c, d.','= 3(1%) + 2(2%) + 1(3%) + 1(4%)','= 3% + 4% + 3% + 4%'],
+ ['Add them up.','= 14%','Answer: (D) 14%']
+]},
+{id:'UD-270',topic:'Significant figures in 23.023, 0.0003 and 2.1 × 10⁻³ compared',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.16 · p.10',sourceRef:true,question:'The respective number of significant figures for the numbers 23.023, 0.0003 and 2.1 × 10⁻³ are respectively',options:['5, 1 and 2','5, 1 and 5','5, 5 and 2','4, 4 and 2'],correct:0,answer:'5, 1 and 2',
+short:[['23.023: every digit is significant (no leading zeros).','= 5 sig figs'],['0.0003: only the trailing nonzero digit is significant.','= 1 sig fig'],['2.1×10⁻³: in scientific notation, all digits in the coefficient are significant.','= 2 sig figs','Answer: (A) 5, 1 and 2']],
+detailed:[
+ ['In 23.023, all five digits are between/after nonzero digits with no leading zeros, so all five are significant.','23.023 → 5 significant figures'],
+ ['In 0.0003, the three zeros before the 3 are leading zeros (not significant), leaving only the digit 3 as significant.','0.0003 → 1 significant figure'],
+ ['In 2.1 × 10⁻³, the power of ten only fixes the decimal place; every digit in the coefficient 2.1 is significant, giving two significant figures.','2.1 × 10⁻³ → 2 significant figures'],
+ ['So the counts are 5, 1 and 2 respectively, option (A).','Answer: (A) 5, 1 and 2']
+]},
+{id:'UD-271',topic:'Percentage error in kinetic energy from errors in mass and speed (UND set)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.17 · p.11',sourceRef:true,question:'The percentage errors in the measurement of mass and speed are 3% and 2% respectively. The error in kinetic energy will be',options:['6%','7%','10%','12%'],correct:1,answer:'7%',
+short:[['KE = (1/2)mv², so percentage error = error in m + 2×error in v.','ΔK/K × 100% = 3% + 2(2%)'],['Simplify.','= 3% + 4%','= 7%','Answer: (B) 7%']],
+detailed:[
+ ['Kinetic energy is (1/2)mv²; taking logs and differentiating, the fractional error in K is the fractional error in m plus twice the fractional error in v, since v is squared.','K = (1/2)mv²','ΔK/K = Δm/m + 2(Δv/v)'],
+ ['Substitute the given percentage errors.','ΔK/K × 100% = 3% + 2(2%)'],
+ ['Add.','= 3% + 4%','= 7%','Answer: (B) 7%']
+]},
+{id:'UD-272',topic:'Maximum percentage error in a product x = a²b',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.19 · p.12',sourceRef:true,question:'If x = a²b, the maximum percentage error in the measurement of x will be',options:['((2Δa/a) × 100%) × ((Δb/b) × 100%)','((2Δa/a) × 100%) ÷ ((Δb/b) × 100%)','((2Δa/a) − (Δb/b)) × 100%','((2Δa/a) + (Δb/b)) × 100%'],correct:3,answer:'((2Δa/a) + (Δb/b)) × 100%',
+short:[['Taking logs of x = a²b and differentiating gives the standard product rule.','Δx/x = 2(Δa/a) + Δb/b'],['Express as a percentage.','Δx/x × 100% = (2Δa/a + Δb/b) × 100%','Answer: (D) ((2Δa/a) + (Δb/b)) × 100%']],
+detailed:[
+ ['Taking logs of x = a²b and differentiating gives the standard rule for a product with powers: the fractional error in x is the sum of each factor\'s fractional error weighted by its power.','x = a²b','⇒ Δx/x = 2(Δa/a) + Δb/b'],
+ ['Expressed as a percentage, this becomes the sum of (2Δa/a)×100% and (Δb/b)×100%.','Δx/x × 100% = (2Δa/a + Δb/b) × 100%'],
+ ['This is option (D); (A) and (B) wrongly multiply/divide the two error terms instead of adding them, and (C) wrongly subtracts.','Answer: (D) ((2Δa/a) + (Δb/b)) × 100%']
+]},
+{id:'UD-273',topic:'Maximum percentage error in the area of a rectangular plate',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.20 · p.13',sourceRef:true,question:'A rectangular plate has length (2 ± 0.02) cm and width (1 ± 0.01) cm. The maximum percentage error in the measurement of its area is',options:['1%','2%','3%','5%'],correct:1,answer:'2%',
+short:[['Area = length × width, so percentage errors add.','ΔA/A × 100% = (0.02/2)×100% + (0.01/1)×100%'],['Simplify.','= 1% + 1%','= 2%','Answer: (B) 2%']],
+detailed:[
+ ['Area of the rectangle is length times width, so the percentage error in area is the sum of the percentage errors in length and width.','A = l w'],
+ ['Compute each percentage error from the given uncertainties.','Δl/l × 100% = (0.02/2)×100%','= 1%','Δw/w × 100% = (0.01/1)×100%','= 1%'],
+ ['Add the two.','ΔA/A × 100% = 1% + 1%','= 2%','Answer: (B) 2%']
+]},
+{id:'UD-274',topic:'Maximum percentage error in the density of a cube from mass and side-length errors',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.21 · p.14',sourceRef:true,question:'The maximum errors in the measurement of mass and the length of the side of a cube are 2% and 1% respectively. The maximum error in its density is',options:['2%','1%','3%','5%'],correct:3,answer:'5%',
+short:[['Density is mass divided by the cube of the side length, so the percentage error in mass adds to 3 times the percentage error in the side.','Δρ/ρ × 100% = 2% + 3(1%)'],['Simplify.','= 2% + 3%','= 5%','Answer: (D) 5%']],
+detailed:[
+ ['Density of a cube is its mass divided by the cube of its side length.','ρ = m/L³'],
+ ['The percentage error in a quotient is the sum of the percentage errors in numerator and denominator, and the side length\'s error is tripled because it is cubed.','Δρ/ρ × 100% = Δm/m×100% + 3(ΔL/L×100%)'],
+ ['Substitute the given errors.','= 2% + 3(1%)'],
+ ['Add.','= 2% + 3%','= 5%','Answer: (D) 5%']
+]},
+{id:'UD-275',topic:'Identifying the quantity with dimensional formula ML²T⁻³',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.23 · p.15',sourceRef:true,question:'The dimensional formula ML²T⁻³ represents',options:['Force','Power','Energy','Work'],correct:1,answer:'Power',
+short:[['Power = Energy/Time.','[Power] = ML²T⁻²/T','= ML²T⁻³','Answer: (B) Power']],
+detailed:[
+ ['Power is the rate of doing work, energy divided by time.','P = E/t'],
+ ['Energy has dimension ML²T⁻²; dividing by time (T) reduces the time exponent by one more.','[P] = ML²T⁻²/T','= ML²T⁻³'],
+ ['This matches the given formula exactly; force (MLT⁻²), energy and work (both ML²T⁻²) do not.','Answer: (B) Power']
+]},
+{id:'UD-276',topic:'Dimension of the viscosity coefficient η from Stokes\' law F = 6πηav',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.24 · p.15',sourceRef:true,question:'The force F on a sphere of radius a moving in a medium with velocity v is given by F = 6πηav. The dimensions of η are',options:['[ML⁻¹T⁻¹]','[MT⁻¹]','[MLT⁻²]','[ML⁻³]'],correct:0,answer:'[ML⁻¹T⁻¹]',
+short:[['Rearrange for η; 6π is a pure number.','η = F a⁻¹v⁻¹'],['Substitute dimensions.','[η] = MLT⁻² L⁻¹(LT⁻¹)⁻¹','= MLT⁻² L⁻¹L⁻¹T','= ML⁻¹T⁻¹','Answer: (A) [ML⁻¹T⁻¹]']],
+detailed:[
+ ['Stokes\' law gives the viscous drag force on a sphere; solving for η (the coefficient of viscosity), the numerical factor 6π is dimensionless and drops out.','F = 6πηav','⇒ η = F a⁻¹v⁻¹'],
+ ['Substitute the dimension of force (MLT⁻²), radius a (L) and velocity v (LT⁻¹), writing each reciprocal with a negative exponent.','[η] = MLT⁻² L⁻¹(LT⁻¹)⁻¹'],
+ ['Expand the bracketed reciprocal and combine like terms.','= MLT⁻² L⁻¹ L⁻¹T','= ML⁻¹T⁻¹'],
+ ['This is option (A), the standard dimensional formula of the coefficient of viscosity.','Answer: (A) [ML⁻¹T⁻¹]']
+]},
+{id:'UD-277',topic:'Dimensions of constants in u = at + b/(t² + c)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.25 · p.16',sourceRef:true,question:'The velocity u of a particle is given in terms of time t by the equation u = at + b/(t² + c). The dimensions of a, b and c are',options:['L², T, LT²','LT², LT, L','LT⁻², LT, T²','L, LT, T²'],correct:2,answer:'LT⁻², LT, T²',
+short:[['Every term must have velocity\'s dimension, LT⁻¹.','[u] = LT⁻¹'],['From at: a is velocity multiplied by time to the power −1. From (t²+c): c shares t²\'s dimension.','[a] = LT⁻¹ T⁻¹','= LT⁻²','[c] = T²'],['From b/(t²+c): b is velocity multiplied by (t²+c)\'s dimension.','[b] = LT⁻¹ T²','= LT','Answer: (C) LT⁻², LT, T²']],
+detailed:[
+ ['Only quantities with the dimension of velocity can be added to give u, so at and b/(t²+c) must each independently carry the dimension LT⁻¹.','[u] = LT⁻¹'],
+ ['In at, a multiplies t, so a\'s dimension is velocity multiplied by time to the power −1.','[a] = [u][t]⁻¹','= LT⁻¹ T⁻¹','= LT⁻²'],
+ ['Inside the denominator, c is added to t², so it must share t²\'s dimension, T².','[c] = [t²]','= T²'],
+ ['The whole fraction b/(t²+c) must also carry the dimension of velocity, so b is velocity multiplied by (t²+c)\'s dimension.','[b] = [u][t²+c]','= LT⁻¹ T²','= LT'],
+ ['So a, b, c have dimensions LT⁻², LT, T² respectively — option (C).','Answer: (C) LT⁻², LT, T²']
+]},
+{id:'UD-278',topic:'Dimensions of the Van der Waals constant a from (P + a/V²)(V − b) = RT',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.26 · p.17',sourceRef:true,question:'The Van der Waals gas equation is (P + a/V²)(V − b) = RT, where P and V are pressure and volume. The dimensions of the constant a are',options:['ML⁴T⁻²','ML⁵T⁻²','ML³T⁻²','ML²T⁻²'],correct:1,answer:'ML⁵T⁻²',
+short:[['a/V² must share pressure\'s dimension, so [a]=[P][V]².','[a] = ML⁻¹T⁻² × (L³)²'],['Simplify.','= ML⁻¹T⁻² × L⁶','= ML⁵T⁻²','Answer: (B) ML⁵T⁻²']],
+detailed:[
+ ['Since a/V² is added to pressure P inside the bracket, it must share pressure\'s dimension.','[a/V²] = [P]','= ML⁻¹T⁻²'],
+ ['Solve for [a] by multiplying both sides by [V]² = (L³)² = L⁶.','[a] = ML⁻¹T⁻² × L⁶'],
+ ['Simplify the power of L.','= ML^(−1+6)T⁻²','= ML⁵T⁻²'],
+ ['This is option (B).','Answer: (B) ML⁵T⁻²']
+]},
+{id:'UD-279',topic:'Dimension of X defined by Force = X/Density',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.27 · p.17',sourceRef:true,question:'The dimensions of physical quantity X in the equation Force = X Density⁻¹ is given by',options:['[M¹L⁴T⁻²]','[M²L⁻²T⁻¹]','[M²L⁻²T⁻²]','[M¹L⁻²T⁻¹]'],correct:2,answer:'[M²L⁻²T⁻²]',
+short:[['Solve for X.','X = Force × Density'],['Substitute dimensions.','[X] = MLT⁻² × ML⁻³','= M²L⁻²T⁻²','Answer: (C) [M²L⁻²T⁻²]']],
+detailed:[
+ ['Rearranging the given relation, X is force multiplied by density.','Force = X Density⁻¹','⇒ X = Force × Density'],
+ ['Substitute the dimension of force (MLT⁻²) and density (ML⁻³) and multiply.','[X] = (MLT⁻²)(ML⁻³)'],
+ ['Simplify the exponents.','= M^(1+1) L^(1−3) T⁻²','= M²L⁻²T⁻²'],
+ ['This is option (C).','Answer: (C) [M²L⁻²T⁻²]']
+]},
+{id:'UD-280',topic:'Dimension of density in a force–length–time fundamental system',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.28 · p.18',sourceRef:true,question:'If force (F), length (L) and time (T) are taken as the fundamental quantities, then what will be the dimension of density?',options:['[FL⁻⁴T²]','[FL⁻³T²]','[FL⁻⁵T²]','[FL⁻³T³]'],correct:0,answer:'[FL⁻⁴T²]',
+short:[['Express mass using F=ma: M = FL⁻¹T².','M = F L⁻¹T²'],['Density = M/L³ (standard); substitute M.','[ρ] = (FL⁻¹T²)/L³','= FL⁻⁴T²','Answer: (A) [FL⁻⁴T²]']],
+detailed:[
+ ['Force is mass times acceleration, F = Ma, where a has dimension LT⁻², so mass can be re-expressed in terms of F, L, T.','F = M(LT⁻²)','⇒ M = FL⁻¹T²'],
+ ['Density in the usual system is mass divided by volume, ML⁻³; substitute the new expression for M.','ρ = M/L³','[ρ] = (FL⁻¹T²)/L³'],
+ ['Combine the powers of L.','= F L^(−1−3) T²','= FL⁻⁴T²'],
+ ['This is option (A).','Answer: (A) [FL⁻⁴T²]']
+]},
+{id:'UD-281',topic:'Relative error in Z = A²B³/C⁴',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.29 · p.19',sourceRef:true,question:'If Z = A²B³/C⁴, then the relative error in Z will be',options:['ΔA/A + ΔB/B + ΔC/C','2ΔA/A + 3ΔB/B − 4ΔC/C','2ΔA/A + 3ΔB/B + 4ΔC/C','ΔA/A + ΔB/B − ΔC/C'],correct:2,answer:'2ΔA/A + 3ΔB/B + 4ΔC/C',
+short:[['Each exponent weights its variable\'s relative error; all add.','ΔZ/Z = 2(ΔA/A) + 3(ΔB/B) + 4(ΔC/C)','Answer: (C) 2ΔA/A + 3ΔB/B + 4ΔC/C']],
+detailed:[
+ ['Taking logs of Z = A²B³/C⁴ and differentiating gives the general rule that each variable\'s relative error is weighted by the magnitude of its power.','Z = A²B³C⁻⁴'],
+ ['Since C appears with a negative power after moving it to the numerator, its error still adds rather than subtracts, because only the magnitude of the power matters for a maximum (worst-case) error estimate.','ΔZ/Z = 2(ΔA/A) + 3(ΔB/B) + 4(ΔC/C)'],
+ ['This is option (C); the other options either omit the weighting powers or subtract the C term instead of adding it.','Answer: (C) 2ΔA/A + 3ΔB/B + 4ΔC/C']
+]},
+{id:'UD-282',topic:'Matching four measured values to their number of significant figures',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.30 · p.20',sourceRef:true,question:'Match the measurements given in List-I with the number of significant figures given in List-II. List-I: a. 74.083, b. 0.029, c. 0.002407, d. 2.74 × 10⁷. List-II: I. 3, II. 4, III. 2, IV. 5. The correct answer is',options:['a-IV; b-II; c-III; d-I','a-IV; b-III; c-II; d-I','a-III; b-IV; c-II; d-I','a-I; b-II; c-III; d-IV'],correct:1,answer:'a-IV; b-III; c-II; d-I',
+short:[['74.083: all five digits significant.','= 5 (IV)'],['0.029: leading zero excluded, 2 sig figs.','= 2 (III)'],['0.002407: leading zeros excluded, captive zero counts, 4 sig figs.','= 4 (II)'],['2.74×10⁷: 3 sig figs in the coefficient.','= 3 (I)','Answer: (B) a-IV, b-III, c-II, d-I']],
+detailed:[
+ ['In 74.083, every digit is between or after nonzero digits with no leading zeros, so all five digits are significant.','74.083 → 5 sig figs → IV'],
+ ['In 0.029, the leading zero before 2 is not significant, leaving only 2 and 9 as significant — two figures.','0.029 → 2 sig figs → III'],
+ ['In 0.002407, the three leading zeros are not significant, but the zero between 4 and 7 is a captive zero and counts, giving digits 2, 4, 0, 7 — four figures.','0.002407 → 4 sig figs → II'],
+ ['In 2.74 × 10⁷, the power of ten only places the decimal; the coefficient 2.74 has three significant digits.','2.74 × 10⁷ → 3 sig figs → I'],
+ ['So a-IV, b-III, c-II, d-I, option (B).','Answer: (B) a-IV, b-III, c-II, d-I']
+]},
+{id:'UD-283',topic:'Unit of the coefficient b in x = at + bt² (distance in km, time in s)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.31 · p.21',sourceRef:true,question:'If x = at + bt², where x is the distance travelled by the body in kilometres while t is the time in seconds, then the unit of b is',options:['km s⁻¹','km s','km s⁻²','km s²'],correct:2,answer:'km s⁻²',
+short:[['bt² must carry the same unit as x, which is km.','unit(bt²) = km'],['Since t is in seconds, t² is in seconds squared, so b\'s unit is km multiplied by s⁻².','unit(b) = km × s⁻²','Answer: (C) km s⁻²']],
+detailed:[
+ ['Only quantities with the same unit can be added, so bt² must carry the unit of x, which is km.','x = at + bt²','unit(bt²) = km'],
+ ['Since t is measured in seconds, t² is in seconds squared; b is therefore km multiplied by the reciprocal of seconds squared.','unit(b) = km × s⁻²'],
+ ['This is option (C).','Answer: (C) km s⁻²']
+]},
+{id:'UD-284',topic:'Matching mass–length–time exponents to the correct physical quantity',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.32 · p.21',sourceRef:true,question:'If the dimensions of a physical quantity are given by MᵃLᵇTᶜ, then the physical quantity will be',options:['Velocity if a = 1, b = 0, c = −1','Acceleration if a = 1, b = 1, c = −2','Force if a = 0, b = −1, c = −2','Pressure if a = 1, b = −1, c = −2'],correct:3,answer:'Pressure if a = 1, b = −1, c = −2',
+short:[['Write the actual dimensional formula of velocity, acceleration, force and pressure for comparison.','Velocity: M⁰LT⁻¹','Acceleration: M⁰LT⁻²','Force: MLT⁻²','Pressure: ML⁻¹T⁻²'],['Only pressure\'s stated exponents (a=1, b=−1, c=−2) match its true formula; the other three each misstate one exponent.','Answer: (D) Pressure if a=1, b=−1, c=−2']],
+detailed:[
+ ['Work out the true dimensional formula of each named quantity for comparison.','Velocity: M⁰L¹T⁻¹','Acceleration: M⁰L¹T⁻²','Force: M¹L¹T⁻²','Pressure: M¹L⁻¹T⁻²'],
+ ['Option (A) claims velocity has a=1 (mass power 1), but velocity is actually M⁰, so this is wrong.','Velocity a should be 0, not 1'],
+ ['Option (B) claims acceleration has a=1, but acceleration is actually M⁰, so this is wrong too.','Acceleration a should be 0, not 1'],
+ ['Option (C) claims force has a=0, but force is actually M¹, so this is wrong as well.','Force a should be 1, not 0'],
+ ['Option (D) states pressure has a=1, b=−1, c=−2, which matches pressure\'s true dimensional formula ML⁻¹T⁻² exactly.','Pressure: M¹L⁻¹T⁻² ✓','Answer: (D) Pressure if a=1, b=−1, c=−2']
+]},
+{id:'UD-285',topic:'Maximum percentage error in X = A²B^(1/2)/(C^(1/3)D³)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.33 · p.22',sourceRef:true,question:'In an experiment, the percentage errors in the measurement of physical quantities A, B, C and D are 1%, 2%, 3% and 4% respectively. The maximum percentage error in the measurement of X, where X = A²√B (∛C · D³)⁻¹, will be',options:['(3/13)%','16%','−10%','10%'],correct:1,answer:'16%',
+short:[['Each exponent weights its variable\'s percentage error; all add.','ΔX/X×100% = 2(1%) + (1/2)(2%) + (1/3)(3%) + 3(4%)'],['Simplify.','= 2% + 1% + 1% + 12%','= 16%','Answer: (B) 16%']],
+detailed:[
+ ['For X built from powers of A, B, C, D, the maximum percentage error is the sum of each variable\'s percentage error weighted by the magnitude of its power, whether it appears in the numerator or the denominator.','X = A²√B (∛C · D³)⁻¹'],
+ ['Write out each term using the given powers: 2 for A, 1/2 for B (a square root), 1/3 for C (a cube root), and 3 for D.','ΔX/X×100% = 2(ΔA/A×100%) + (1/2)(ΔB/B×100%) + (1/3)(ΔC/C×100%) + 3(ΔD/D×100%)'],
+ ['Substitute the given percentage errors 1%, 2%, 3%, 4% for A, B, C, D.','= 2(1%) + (1/2)(2%) + (1/3)(3%) + 3(4%)'],
+ ['Evaluate each term and add.','= 2% + 1% + 1% + 12%','= 16%','Answer: (B) 16%']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -2615,7 +2841,38 @@ const pilotTopicMap={
  'Screw gauge least count after changing pitch and divisions':['measuring-instruments','Screw gauge least count from pitch and division changes'],
  'Dimensional formula of the energy-density term (1/2)ε0E²':['dimensional-formula','Dimensional formula of an energy-density expression'],
  'Dimension of mass in a system with c, G, h as fundamental':['dimensional-analysis','Dimension of a quantity in a new fundamental system'],
- 'Relative uncertainty in Earth\'s mass from Kepler\'s third law':['errors','Relative uncertainty via a derived power-law relation']
+ 'Relative uncertainty in Earth\'s mass from Kepler\'s third law':['errors','Relative uncertainty via a derived power-law relation'],
+ 'Converting a force value between unit systems (mass, length, time all changed)':['dimensional-analysis','Converting a force value between unit systems (mass, length, time all changed)'],
+ 'Dimension of a/b from a pressure relation P = (a − t²)/(bx)':['dimensional-analysis','Dimension of a/b from a pressure relation P = (a − t²)/(bx)'],
+ 'Dimensional formula of force expressed in a base system of area, velocity and density':['dimensional-analysis','Dimensional formula of force expressed in a base system of area, velocity and density'],
+ 'Dimension of work in a force–velocity–time fundamental system':['dimensional-analysis','Dimension of work in a force–velocity–time fundamental system'],
+ 'Dimensional formula of energy':['dimensional-formula','Dimensional formula of energy'],
+ 'Dimension of the exponent constant in P = P₀e^(−αt²)':['dimensional-analysis','Dimension of the exponent constant in P = P₀e^(−αt²)'],
+ 'Dimensions of a and b in F = at + bt²':['dimensional-analysis','Dimensions of a and b in F = at + bt²'],
+ 'Converting a density value between unit systems':['dimensional-analysis','Converting a density value between unit systems'],
+ 'Percentage error in resistance from errors in voltage and current':['errors','Percentage error in resistance from errors in voltage and current'],
+ 'Percentage error in the volume of a sphere from the error in its radius':['errors','Percentage error in the volume of a sphere from the error in its radius'],
+ 'Significant figures in 0.0204 (leading zeros and a captive zero)':['significant-figures','Significant figures in 0.0204 (leading zeros and a captive zero)'],
+ 'Rounding 2.845 to three significant figures using the round-half-to-even rule':['significant-figures','Rounding 2.845 to three significant figures using the round-half-to-even rule'],
+ 'Percentage error in P = a³b²/(cd) from four measured errors':['errors','Percentage error in P = a³b²/(cd) from four measured errors'],
+ 'Significant figures in 23.023, 0.0003 and 2.1 × 10⁻³ compared':['significant-figures','Significant figures in 23.023, 0.0003 and 2.1 × 10⁻³ compared'],
+ 'Percentage error in kinetic energy from errors in mass and speed (UND set)':['errors','Percentage error in kinetic energy from errors in mass and speed (UND set)'],
+ 'Maximum percentage error in a difference x = a − b':['errors','Maximum percentage error in a difference x = a − b'],
+ 'Maximum percentage error in a product x = a²b':['errors','Maximum percentage error in a product x = a²b'],
+ 'Maximum percentage error in the area of a rectangular plate':['errors','Maximum percentage error in the area of a rectangular plate'],
+ 'Maximum percentage error in the density of a cube from mass and side-length errors':['errors','Maximum percentage error in the density of a cube from mass and side-length errors'],
+ 'Maximum percentage error in S = ab²/c³ from three measured errors':['errors','Maximum percentage error in S = ab²/c³ from three measured errors'],
+ 'Identifying the quantity with dimensional formula ML²T⁻³':['dimensional-formula','Identifying the quantity with dimensional formula ML²T⁻³'],
+ 'Dimension of the viscosity coefficient η from Stokes\' law F = 6πηav':['dimensional-analysis','Dimension of the viscosity coefficient η from Stokes\' law F = 6πηav'],
+ 'Dimensions of constants in u = at + b/(t² + c)':['dimensional-analysis','Dimensions of constants in u = at + b/(t² + c)'],
+ 'Dimensions of the Van der Waals constant a from (P + a/V²)(V − b) = RT':['dimensional-analysis','Dimensions of the Van der Waals constant a from (P + a/V²)(V − b) = RT'],
+ 'Dimension of X defined by Force = X/Density':['dimensional-analysis','Dimension of X defined by Force = X/Density'],
+ 'Dimension of density in a force–length–time fundamental system':['dimensional-analysis','Dimension of density in a force–length–time fundamental system'],
+ 'Relative error in Z = A²B³/C⁴':['errors','Relative error in Z = A²B³/C⁴'],
+ 'Matching four measured values to their number of significant figures':['significant-figures','Matching four measured values to their number of significant figures'],
+ 'Unit of the coefficient b in x = at + bt² (distance in km, time in s)':['dimensional-analysis','Unit of the coefficient b in x = at + bt² (distance in km, time in s)'],
+ 'Matching mass–length–time exponents to the correct physical quantity':['dimensional-formula','Matching mass–length–time exponents to the correct physical quantity'],
+ 'Maximum percentage error in X = A²B^(1/2)/(C^(1/3)D³)':['errors','Maximum percentage error in X = A²B^(1/2)/(C^(1/3)D³)']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
