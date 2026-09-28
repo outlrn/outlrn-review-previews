@@ -1453,6 +1453,274 @@ detailed:[
  ['The prefactor α/β must have the same dimension as P itself, since exp(...) is dimensionless; so β = α/P.','α/β = P','⇒ β = α P⁻¹'],
  ['Substitute the dimension of α found above and of pressure.','[β] = (MLT⁻²)(ML⁻¹T⁻²)⁻¹'],
  ['The M and T powers cancel exactly, and the L powers combine to give L².','= M^(1−1)L^(1−(−1))T^(−2−(−2))','= L²','Answer: (C) M⁰L²T⁰']
+]},
+{id:'UD-155',topic:'Percentage error in a product/quotient of four measured quantities (a³b²/(cd))',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.34 · p.23',sourceRef:true,question:'In an experiment four quantities a, b, c and d are measured with percentage errors 1%, 2%, 3% and 4% respectively. Quantity P is calculated as P = a³b²/(cd). The percentage error in P is:',options:['10%','7%','4%','14%'],correct:3,answer:'14%',
+short:[['Add exponent-weighted percentage errors for each factor.','%errorP = 3(%a) + 2(%b) + 1(%c) + 1(%d)'],['Substitute the given errors.','= 3(1%) + 2(2%) + 3% + 4%','= 3% + 4% + 3% + 4%','= 14%','Answer: (D) 14%']],
+detailed:[
+ ['P is a product/quotient of powers of a, b, c and d, so its percentage error is the sum of each factor\'s percentage error weighted by its exponent, with denominator terms treated the same as numerator terms.','P = a³b²/(cd)','= a³b²c⁻¹d⁻¹','%errorP = 3(%a) + 2(%b) + 1(%c) + 1(%d)'],
+ ['Substitute the given percentage errors for a, b, c and d.','%errorP = 3(1%) + 2(2%) + 1(3%) + 1(4%)'],
+ ['Evaluate each term and add.','= 3% + 4% + 3% + 4%','= 14%'],
+ ['This is option (D).','Answer: (D) 14%']
+]},
+{id:'UD-156',topic:'Maximum percentage error in S = ab²/c³',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.35 · p.23',sourceRef:true,question:'A student measures quantities a, b and c and then calculates S by the formula S = ab²/c³. If the errors in a, b, c are 1%, 3% and 2% respectively, the maximum error in S can be:',options:['13%','7%','4%','1%'],correct:0,answer:'13%',
+short:[['Sum the exponent-weighted percentage errors.','%errorS = 1(%a) + 2(%b) + 3(%c)'],['Substitute.','= 1% + 2(3%) + 3(2%)','= 1% + 6% + 6%','= 13%','Answer: (A) 13%']],
+detailed:[
+ ['S is the first power of a, the second power of b, and the inverse cube of c, so the maximum percentage error is the sum of each error weighted by its exponent.','S = ab²/c³','%errorS = 1(%a) + 2(%b) + 3(%c)'],
+ ['Substitute the given errors of 1%, 3% and 2% for a, b and c.','%errorS = 1(1%) + 2(3%) + 3(2%)'],
+ ['Evaluate.','= 1% + 6% + 6%','= 13%'],
+ ['This is option (A).','Answer: (A) 13%']
+]},
+{id:'UD-157',topic:'Percentage error in A = √(pq)/(r²s³) with several exponents',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.36 · p.24',sourceRef:true,question:'A physical quantity A = √(pq)/(r²s³) is dependent on the other quantities p, q, r and s. The percentage errors of measurement in p, q, r and s are 1%, 3%, 0.5% and 0.33% respectively. The maximum percentage error in A is:',options:['2%','4%','3%','0%'],correct:1,answer:'4%',
+short:[['Write A as powers and sum exponent-weighted errors.','A = p^(1/2)q^(1/2)r⁻²s⁻³','%errorA = ½(%p) + ½(%q) + 2(%r) + 3(%s)'],['Substitute.','= ½(1%) + ½(3%) + 2(0.5%) + 3(0.33%)','= 0.5% + 1.5% + 1% + 0.99%','≈ 4%','Answer: (B) 4%']],
+detailed:[
+ ['Rewrite A as a product of powers of p, q, r and s so each factor\'s contribution to the error can be read off from its exponent.','A = √(pq)/(r²s³)','= p^(1/2)q^(1/2)r⁻²s⁻³'],
+ ['The maximum percentage error is the sum of each quantity\'s percentage error weighted by the magnitude of its exponent.','%errorA = ½(%p) + ½(%q) + 2(%r) + 3(%s)'],
+ ['Substitute the given percentage errors 1%, 3%, 0.5% and 0.33% for p, q, r and s.','%errorA = ½(1%) + ½(3%) + 2(0.5%) + 3(0.33%)'],
+ ['Evaluate each term and add.','= 0.5% + 1.5% + 1% + 0.99%','≈ 3.99%','≈ 4%'],
+ ['This is option (B).','Answer: (B) 4%']
+]},
+{id:'UD-158',topic:'Matching gravitational constant, torque, momentum and pressure to their dimensions and SI units',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.37 · p.25',sourceRef:true,question:'Match the following physical quantities with their dimensional formula and SI unit. Physical quantity: (1) Gravitational constant G (2) Torque (3) Momentum (4) Pressure. Dimension: (P) M¹L¹T⁻¹ (Q) M⁻¹L³T⁻² (R) M¹L⁻¹T⁻² (S) M¹L²T⁻². Unit: (a) N·m (b) N·s (c) N·m²·kg⁻² (d) Pascal. Choose the correct match:',options:['1-Q-c, 2-S-a, 3-P-b, 4-R-d','1-Q-a, 2-S-c, 3-P-b, 4-R-d','1-Q-c, 2-S-a, 3-P-d, 4-R-b','1-S-c, 2-Q-a, 3-P-b, 4-R-d'],correct:0,answer:'1-Q-c, 2-S-a, 3-P-b, 4-R-d',
+short:[['Find each quantity\'s dimensional formula and SI unit.','G: M⁻¹L³T⁻² (Q), unit N·m²·kg⁻² (c)','Torque: M¹L²T⁻² (S), unit N·m (a)','Momentum: M¹L¹T⁻¹ (P), unit N·s (b)','Pressure: M¹L⁻¹T⁻² (R), unit Pascal (d)'],['Combine.','1-Q-c, 2-S-a, 3-P-b, 4-R-d','Answer: (A) 1-Q-c, 2-S-a, 3-P-b, 4-R-d']],
+detailed:[
+ ['G\'s dimension follows from F = Gm₁m₂/r² rearranged for G, then substituting the dimensions of force, mass and distance; its SI unit is newton-metre squared per kilogram squared, so G is (Q) with unit (c).','G = Fr²/(m₁m₂)','[G] = (MLT⁻²)(L²)(M⁻²)','= M⁻¹L³T⁻²'],
+ ['Torque is force times a perpendicular distance, giving it the same dimension as energy, with SI unit newton-metre, so torque is (S) with unit (a).','τ = F × r','[τ] = (MLT⁻²)(L)','= M¹L²T⁻²'],
+ ['Momentum is mass times velocity, with SI unit newton-second (equivalent to kg·m·s⁻¹), so momentum is (P) with unit (b).','p = mv','[p] = M(LT⁻¹)','= M¹L¹T⁻¹'],
+ ['Pressure is force per unit area, with SI unit pascal, so pressure is (R) with unit (d).','P = F/A','[P] = (MLT⁻²)(L⁻²)','= M¹L⁻¹T⁻²'],
+ ['Putting these together gives 1-Q-c, 2-S-a, 3-P-b, 4-R-d.','Answer: (A) 1-Q-c, 2-S-a, 3-P-b, 4-R-d']
+]},
+{id:'UD-159',topic:'Rounding a three-term sum of measurements to the correct decimal place',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.38 · p.25',sourceRef:true,question:'The value of 24.36 + 0.0623 + 256.2, expressed to the correct number of significant digits, will be:',options:['280.6','280.8','280.7','280.6224'],correct:0,answer:'280.6',
+short:[['Add the numbers exactly first.','24.36 + 0.0623 + 256.2 = 280.6223'],['In addition, round to the least number of decimal places among the terms — here 1 decimal place (from 256.2).','280.6223 → 280.6','Answer: (A) 280.6']],
+detailed:[
+ ['Add the three numbers as given, without rounding yet.','24.36 + 0.0623 + 256.2 = 280.6223'],
+ ['The addition rule for significant figures says the sum must be rounded to the same number of decimal places as the least precisely known term.','24.36: 2 decimal places','0.0623: 4 decimal places','256.2: 1 decimal place (least precise)'],
+ ['Round the exact sum to 1 decimal place.','280.6223 → 280.6'],
+ ['This is option (A).','Answer: (A) 280.6']
+]},
+{id:'UD-160',topic:'Significant figures in a small velocity value with trailing zeros after the decimal point',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.39 · p.26',sourceRef:true,question:'The velocity of a particle measured from an instrument is 0.00204300 m s⁻¹. The number of significant figures is:',options:['8','4','6','3'],correct:2,answer:'6',
+short:[['Leading zeros before the first non-zero digit are never significant; trailing zeros after the decimal point are significant.','0.00204300 → significant digits: 2,0,4,3,0,0'],['Count them.','6 significant figures','Answer: (C) 6']],
+detailed:[
+ ['In 0.00204300, the zeros before the first non-zero digit (2) only fix the decimal position and are not significant.','0.00204300','leading zeros 0.00 are not significant'],
+ ['Starting from the first non-zero digit, every digit up to and including the trailing zeros after the decimal point is significant, since a decimal point makes trailing zeros meaningful (they show measured precision).','significant digits: 2, 0, 4, 3, 0, 0'],
+ ['Count these digits.','6 significant figures'],
+ ['This is option (C).','Answer: (C) 6']
+]},
+{id:'UD-161',topic:'Dimension of the phase (ωt + φ0) in a derivative relation',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.40 · p.26',sourceRef:true,question:'In the relation dy/dx = 2ω sin(ωt + φ₀), the dimensional formula for (ωt + φ₀) is:',options:['MLT','MLT⁰','ML⁰T⁰','M⁰L⁰T⁰'],correct:3,answer:'M⁰L⁰T⁰',
+short:[['The argument of a sine function must be a pure number (dimensionless).','(ωt + φ₀) is dimensionless'],['Write this as a dimensional formula.','[ωt + φ₀] = M⁰L⁰T⁰','Answer: (D) M⁰L⁰T⁰']],
+detailed:[
+ ['A trigonometric function such as sin(...) only makes sense when its argument is a pure number, since sine is defined as a ratio/series in that number.','sin(ωt + φ₀) requires (ωt + φ₀) dimensionless'],
+ ['A dimensionless quantity has zero powers of mass, length and time.','[ωt + φ₀] = M⁰L⁰T⁰'],
+ ['This is option (D); individually ω has dimension T⁻¹ and φ₀ is also dimensionless, consistent with their sum being dimensionless.','Answer: (D) M⁰L⁰T⁰']
+]},
+{id:'UD-162',topic:'Dimensions of the constants in v = at + b/(t+c)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.41 · p.27',sourceRef:true,question:'The velocity v of a particle at time t is given by v = at + b/(t + c), where a, b and c are constants. The dimensions of a, b and c are respectively:',options:['L², T and LT²','LT², LT and L','L, LT and T²','LT⁻², L and T'],correct:3,answer:'LT⁻², L and T',
+short:[['c is added directly to t, so it must share t\'s dimension.','[c] = T'],['at must carry the dimension of v.','[a][t] = LT⁻¹','[a] = LT⁻²'],['b/(t+c) must carry the dimension of v; since (t+c) has dimension T, b equals v times (t+c).','b = v × (t+c)','[b] = (LT⁻¹)(T)','= L','Answer: (D) LT⁻², L and T']],
+detailed:[
+ ['Since c is added directly to t inside the bracket (t + c), by the principle of homogeneity c must carry the same dimension as t, namely time.','[c] = T'],
+ ['Both terms on the right of v = at + b/(t+c) must individually carry the dimension of v; from at, a multiplies t, so a\'s dimension is velocity divided by time.','[a][t] = LT⁻¹','[a] = LT⁻²'],
+ ['From b/(t+c): since (t+c) has dimension T, b must equal v times (t+c), giving b the dimension of length.','b = v × (t+c)','[b] = (LT⁻¹)(T)','= L'],
+ ['So a, b, c have dimensions LT⁻², L, T respectively.','Answer: (D) LT⁻², L and T']
+]},
+{id:'UD-163',topic:'Identifying quantities with the same dimensions as solid angle',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.42 · p.28',sourceRef:true,question:'The quantities which have the same dimensions as those of solid angle are:',options:['strain and angle','stress and angle','strain and arc','angular speed and stress'],correct:0,answer:'strain and angle',
+short:[['Solid angle (steradian) is dimensionless.','[solid angle] = M⁰L⁰T⁰'],['Strain (ratio of lengths) and plane angle (ratio of arc to radius) are also dimensionless; stress, arc length and angular speed are not.','Answer: (A) strain and angle']],
+detailed:[
+ ['Solid angle is defined as area subtended divided by radius squared, a ratio of two areas, so it is dimensionless.','Ω = A/r²','[Ω] = L²/L²','= M⁰L⁰T⁰'],
+ ['Strain is a ratio of two lengths, also dimensionless; plane angle is a ratio of arc length to radius, also dimensionless.','strain = ΔL/L: dimensionless','angle = arc/radius: dimensionless'],
+ ['By contrast, stress (force/area) has dimension ML⁻¹T⁻², arc length has dimension L, and angular speed has dimension T⁻¹ — none matches the dimensionless solid angle.','[stress] = ML⁻¹T⁻²','[arc] = L','[angular speed] = T⁻¹'],
+ ['Only strain and angle share the dimensionless character of solid angle.','Answer: (A) strain and angle']
+]},
+{id:'UD-164',topic:'Identifying the dimensionless factor in F = αt² + βt',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.43 · p.29',sourceRef:true,question:'A force defined by F = αt² + βt acts on a particle at a given time t. The factor which is dimensionless, if α and β are constants, is:',options:['βt/α','αt/β','αβt','αβ/t'],correct:1,answer:'αt/β',
+short:[['Each term must have the dimension of force, MLT⁻².','[α][t²] = MLT⁻²','[α] = MLT⁻⁴','[β][t] = MLT⁻²','[β] = MLT⁻³'],['Compare αt against β: both come out to the same dimension, so their ratio is dimensionless.','[αt] = MLT⁻³','[β] = MLT⁻³ (same as [αt])','[αt/β] = M⁰L⁰T⁰','Answer: (B) αt/β']],
+detailed:[
+ ['By the principle of homogeneity, both terms making up F must individually have the dimension of force.','[αt²] = MLT⁻²','[βt] = MLT⁻²'],
+ ['From αt², solve for the dimension of α.','[α][t]² = MLT⁻²','[α] = MLT⁻⁴'],
+ ['From βt, solve for the dimension of β.','[β][t] = MLT⁻²','[β] = MLT⁻³'],
+ ['Now check the candidate factor αt/β: multiply out αt and compare it directly with β.','[αt] = [α][t]','= MLT⁻⁴ × T','= MLT⁻³'],
+ ['Since [αt] and [β] come out equal, their ratio is a pure number.','[αt/β] = M⁰L⁰T⁰'],
+ ['This is option (B); the other combinations (βt/α, αβt, αβ/t) each leave a leftover power of T.','Answer: (B) αt/β']
+]},
+{id:'UD-165',topic:'Rounding the mean of several vernier calliper diameter readings',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.44 · p.30',sourceRef:true,question:'The diameter of a spherical bob, when measured with vernier callipers, yielded the following values: 3.33 cm, 3.32 cm, 3.34 cm, 3.33 cm and 3.32 cm. The mean diameter to appropriate significant figures is:',options:['3.328 cm','3.3 cm','3.33 cm','3.32 cm'],correct:2,answer:'3.33 cm',
+short:[['Average the five readings.','mean = (3.33+3.32+3.34+3.33+3.32)/5','= 16.64/5','= 3.328 cm'],['Round to match the precision (2 decimal places) of the individual readings.','3.328 cm → 3.33 cm','Answer: (C) 3.33 cm']],
+detailed:[
+ ['Add the five recorded diameters and divide by the number of readings to get the arithmetic mean.','sum = 3.33+3.32+3.34+3.33+3.32','= 16.64 cm','mean = 16.64/5','= 3.328 cm'],
+ ['The mean cannot be reported to more decimal places than the individual measurements it was computed from — each reading is known only to 2 decimal places (0.01 cm, the vernier\'s least count), so the mean must be rounded to the same precision.','3.328 cm rounds to 2 decimal places'],
+ ['Round 3.328 to 2 decimal places.','3.328 → 3.33'],
+ ['This is option (C).','Answer: (C) 3.33 cm']
+]},
+{id:'UD-166',topic:'Percentage error in density of a metal wire from mass, radius and length',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.45 · p.31',sourceRef:true,question:'A metal wire has mass (0.4 ± 0.002) g, radius (0.3 ± 0.001) mm and length (5 ± 0.02) cm. The maximum possible percentage error in the measurement of density will nearly be:',options:['1.3%','1.6%','1.4%','1.2%'],correct:1,answer:'1.6%',
+short:[['Density ρ = m/(πr²l), so % error adds mass, 2×radius and length errors.','%errorρ = %m + 2(%r) + %l'],['Substitute.','%m = 0.002/0.4×100','= 0.5%','%r = 0.001/0.3×100','≈ 0.33%','%l = 0.02/5×100','= 0.4%','%errorρ = 0.5% + 2(0.33%) + 0.4%','≈ 1.57%','≈ 1.6%','Answer: (B) 1.6%']],
+detailed:[
+ ['The wire is a cylinder, so its density is mass divided by volume, where volume = πr²l; taking percentage errors, radius contributes twice (from r²) and mass, length once each.','ρ = m/(πr²l)','%errorρ = %m + 2(%r) + %l'],
+ ['Compute each individual percentage error from the given uncertainties.','%m = (0.002/0.4)×100','= 0.5%','%r = (0.001/0.3)×100','≈ 0.33%','%l = (0.02/5)×100','= 0.4%'],
+ ['Add them, weighting the radius term by 2.','%errorρ = 0.5% + 2(0.33%) + 0.4%','≈ 0.5% + 0.67% + 0.4%','≈ 1.57%'],
+ ['This rounds to nearly 1.6%, option (B).','Answer: (B) 1.6%']
+]},
+{id:'UD-167',topic:'Percentage error in g from g = 4π²L/T²',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.46 · p.32',sourceRef:true,question:'The percentage error in the measurement of g is: (given that g = 4π²L/T², L = (10 ± 0.1) cm, T = (100 ± 1) s)',options:['7%','2%','5%','3%'],correct:3,answer:'3%',
+short:[['From g = 4π²L/T², % error adds L\'s error and twice T\'s error.','%errorg = %L + 2(%T)'],['Substitute.','%L = 0.1/10×100','= 1%','%T = 1/100×100','= 1%','%errorg = 1% + 2(1%)','= 3%','Answer: (D) 3%']],
+detailed:[
+ ['g = 4π²L/T² is a product of L to the first power and T to the power −2 (with a dimensionless constant 4π²), so its percentage error is the sum of L\'s percentage error and twice T\'s percentage error.','g = 4π²L/T²','%errorg = %L + 2(%T)'],
+ ['Compute each individual percentage error.','%L = (0.1/10)×100','= 1%','%T = (1/100)×100','= 1%'],
+ ['Add, weighting the T term by 2.','%errorg = 1% + 2(1%)','= 3%'],
+ ['This is option (D).','Answer: (D) 3%']
+]},
+{id:'UD-168',topic:'Rounding the area of a rectangular field to the correct significant digits',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.47 · p.33',sourceRef:true,question:'The area of a rectangular field (in m²) of length 55.3 m and breadth 25 m, after rounding off the value for correct significant digits, is:',options:['138 × 10¹','1382','1382.5','14 × 10²'],correct:3,answer:'14 × 10²',
+short:[['Multiply exactly first.','55.3 × 25 = 1382.5 m²'],['Round to the least number of significant figures among the factors — breadth (25) has 2 sig figs.','1382.5 → 1.4 × 10³ = 14 × 10²','Answer: (D) 14 × 10²']],
+detailed:[
+ ['Multiply the two given dimensions exactly, before applying any rounding.','Area = 55.3 m × 25 m','= 1382.5 m²'],
+ ['The multiplication rule for significant figures says the result can have no more significant figures than the least precise factor; length (55.3) has 3 sig figs, breadth (25) has only 2, so the answer must be rounded to 2 sig figs.','55.3: 3 sig figs','25: 2 sig figs (least)'],
+ ['Round 1382.5 to 2 significant figures.','1382.5 → 1.4 × 10³ m² = 14 × 10² m²'],
+ ['This is option (D).','Answer: (D) 14 × 10²']
+]},
+{id:'UD-169',topic:'Matching numbers to their number of significant figures',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.48 · p.34',sourceRef:true,question:'List I (Number): (A) 1001 (B) 010.1 (C) 100.100 (D) 0.0010010. List II (Significant figures): (I) 3 (II) 4 (III) 5 (IV) 6. Choose the correct answer from the options given below:',options:['(A)-(II), (B)-(I), (C)-(IV), (D)-(III)','(A)-(IV), (B)-(III), (C)-(I), (D)-(II)','(A)-(I), (B)-(II), (C)-(III), (D)-(IV)','(A)-(III), (B)-(IV), (C)-(II), (D)-(I)'],correct:0,answer:'(A)-(II), (B)-(I), (C)-(IV), (D)-(III)',
+short:[['Count significant figures for each, using: leading zeros never significant, trailing zeros after a decimal point are significant, zeros between non-zero digits are significant.','1001: 4 sig figs','010.1: 3 sig figs (leading 0 dropped)','100.100: 6 sig figs (decimal point present)','0.0010010: 5 sig figs (leading zeros dropped)'],['Match to List II: A has 4 (II), B has 3 (I), C has 6 (IV), D has 5 (III).','Answer: (A) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)']],
+detailed:[
+ ['1001 has no decimal point, but its zeros lie between two non-zero digits (1 and 1), so all four digits count.','1001 → 1,0,0,1 = 4 sig figs'],
+ ['010.1 has a leading zero before the first non-zero digit, which is never significant; the remaining digits 1, 0, 1 are all significant since the decimal point makes the internal and trailing digits count.','010.1 → 1,0,1 = 3 sig figs'],
+ ['100.100 has a decimal point, so every digit from the first non-zero digit onward — including trailing zeros — is significant.','100.100 → 1,0,0,1,0,0 = 6 sig figs'],
+ ['0.0010010 has leading zeros (0.00) that are not significant; from the first non-zero digit onward, 1,0,0,1,0 are all significant.','0.0010010 → 1,0,0,1,0 = 5 sig figs'],
+ ['So A=4(II), B=3(I), C=6(IV), D=5(III), which is option (A).','Answer: (A) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)']
+]},
+{id:'UD-170',topic:'Percentage error in resistance from errors in length and diameter of a wire',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.49 · p.35',sourceRef:true,question:'If the percentage errors in measuring the length and the diameter of a wire are 0.1% each, the percentage error in measuring its resistance will be:',options:['0.144%','0.2%','0.1%','0.3%'],correct:3,answer:'0.3%',
+short:[['Resistance R = ρL/A ∝ L/d², so % error adds length error and twice diameter error.','%errorR = %L + 2(%d)'],['Substitute.','= 0.1% + 2(0.1%)','= 0.3%','Answer: (D) 0.3%']],
+detailed:[
+ ['Resistance of a wire is R = ρL/A, and the cross-section area A = πd²/4 depends on the square of the diameter, so R is proportional to L and to d⁻².','R = ρL/A','= ρL/(πd²/4) ∝ L d⁻²'],
+ ['The percentage error in R is therefore the percentage error in L plus twice the percentage error in d.','%errorR = %L + 2(%d)'],
+ ['Substitute the given 0.1% error for both L and d.','%errorR = 0.1% + 2(0.1%)'],
+ ['Evaluate.','= 0.1% + 0.2%','= 0.3%'],
+ ['This is option (D).','Answer: (D) 0.3%']
+]},
+{id:'UD-171',topic:'Dimension of b²/a in F = ax² + b√t',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.50 · p.36',sourceRef:true,question:'A force is represented by F = ax² + b√t, where x = distance and t = time. The dimensions of b²/a are:',options:['[ML²T⁻³]','[ML³T⁻³]','[MLT⁻²]','[ML⁻¹T⁻¹]'],correct:1,answer:'[ML³T⁻³]',
+short:[['Each term must have the dimension of force.','[a][x²] = MLT⁻²','⇒ [a]','= ML⁻¹T⁻²','[b][t^(1/2)] = MLT⁻²','⇒ [b]','= MLT⁻⁵ᐟ²'],['Compute b²/a.','[b²] = M²L²T⁻⁵','[b²/a] = M²L²T⁻⁵/(ML⁻¹T⁻²)','= ML³T⁻³','Answer: (B) [ML³T⁻³]']],
+detailed:[
+ ['By homogeneity, both terms of F must individually carry the dimension of force.','[ax²] = [b√t]','= [F]','= MLT⁻²'],
+ ['From ax², solve for the dimension of a.','[a][x]² = MLT⁻²','[a] = ML⁻¹T⁻²'],
+ ['From b√t, solve for the dimension of b.','[b][t]^(1/2) = MLT⁻²','[b] = MLT⁻²·T⁻¹ᐟ²','= MLT⁻⁵ᐟ²'],
+ ['Now form b²/a using these dimensions.','[b²] = (MLT⁻⁵ᐟ²)²','= M²L²T⁻⁵','[b²/a] = M²L²T⁻⁵/(ML⁻¹T⁻²)','= M¹L³T⁻³'],
+ ['This is option (B).','Answer: (B) [ML³T⁻³]']
+]},
+{id:'UD-172',topic:'Percentage error in resistance R = V/I from voltage and current',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.51 · p.37',sourceRef:true,question:'The resistance R = V/I, where V = (200 ± 5) V and I = (20 ± 0.2) A. The percentage error in the measurement of R is:',options:['5.5%','3%','7%','3.5%'],correct:3,answer:'3.5%',
+short:[['% error in a quotient adds the percentage errors.','%errorR = %V + %I'],['Substitute.','%V = 5/200×100','= 2.5%','%I = 0.2/20×100','= 1%','%errorR = 2.5% + 1%','= 3.5%','Answer: (D) 3.5%']],
+detailed:[
+ ['R is the quotient V/I, so its maximum percentage error is the sum of the percentage errors of V and I.','R = V/I','%errorR = %V + %I'],
+ ['Compute the individual percentage errors.','%V = (5/200)×100','= 2.5%','%I = (0.2/20)×100','= 1%'],
+ ['Add them.','%errorR = 2.5% + 1%','= 3.5%'],
+ ['This is option (D).','Answer: (D) 3.5%']
+]},
+{id:'UD-173',topic:'Dimensional formula of density in a non-standard base system (F, V, T)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.52 · p.38',sourceRef:true,question:'If force (F), velocity (V) and time (T) are considered as fundamental physical quantities, then the dimensional formula of density will be:',options:['FV⁻²T²','FV⁴T⁻⁶','F²V⁻²T⁶','FV⁻⁴T⁻²'],correct:3,answer:'FV⁻⁴T⁻²',
+short:[['Express mass and length in terms of F, V, T.','[F] = MLT⁻²','[V] = LT⁻¹','L = VT','M = FT²/L','M = FT/V'],['Density = M/L³.','ρ = (FT/V)(VT)⁻³','= FT(V⁻⁴T⁻³)','= FV⁻⁴T⁻²','Answer: (D) FV⁻⁴T⁻²']],
+detailed:[
+ ['Start from the standard dimensions of force and velocity in terms of mass M, length L and time T, and invert them to express M and L in terms of F, V and T.','[F] = MLT⁻²','[V] = LT⁻¹','L = VT'],
+ ['Substitute L = VT into the force relation to solve for M.','F = MLT⁻²','F = M(VT)T⁻²','F = MVT⁻¹'],
+ ['Solve this for M.','M = FT/V'],
+ ['Density is mass divided by volume (length cubed); substitute the expressions for M and L found above.','ρ = M/L³','ρ = (FT/V)(VT)⁻³'],
+ ['Simplify by multiplying out the powers of V and T.','ρ = FT(V⁻¹)(V⁻³T⁻³)','= FV⁻⁴T⁻²'],
+ ['This is option (D).','Answer: (D) FV⁻⁴T⁻²']
+]},
+{id:'UD-174',topic:'Percentage error in P = a²b³/(c√d)',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.53 · p.39',sourceRef:true,question:'A physical quantity P is given as P = a²b³/(c√d). The percentage errors in the measurement of a, b, c and d are 1%, 2%, 3% and 4% respectively. The percentage error in the measurement of quantity P will be:',options:['12%','13%','16%','14%'],correct:1,answer:'13%',
+short:[['Sum exponent-weighted percentage errors.','%errorP = 2(%a) + 3(%b) + 1(%c) + ½(%d)'],['Substitute.','= 2(1%) + 3(2%) + 3% + ½(4%)','= 2% + 6% + 3% + 2%','= 13%','Answer: (B) 13%']],
+detailed:[
+ ['Write P as a product of powers of a, b, c and d so each quantity\'s exponent gives its weight in the error formula.','P = a²b³/(c√d)','= a²b³c⁻¹d⁻¹ᐟ²','%errorP = 2(%a) + 3(%b) + 1(%c) + ½(%d)'],
+ ['Substitute the given percentage errors.','%errorP = 2(1%) + 3(2%) + 1(3%) + ½(4%)'],
+ ['Evaluate each term and add.','= 2% + 6% + 3% + 2%','= 13%'],
+ ['This is option (B).','Answer: (B) 13%']
+]},
+{id:'UD-175',topic:'Maximum error in density of a cylindrical wire from mass, length and radius',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.54 · p.40',sourceRef:true,question:'A cylindrical wire of mass (0.4 ± 0.01) g has length (8 ± 0.04) cm and radius (6 ± 0.03) mm. The maximum error in its density will be:',options:['1%','5%','4%','3.5%'],correct:2,answer:'4%',
+short:[['Density ρ = m/(πr²l).','%errorρ = %m + 2(%r) + %l'],['Substitute.','%m = 0.01/0.4×100','= 2.5%','%r = 0.03/6×100','= 0.5%','%l = 0.04/8×100','= 0.5%','%errorρ = 2.5% + 2(0.5%) + 0.5%','= 4%','Answer: (C) 4%']],
+detailed:[
+ ['Density of a cylindrical wire is mass divided by volume, volume = πr²l, so radius contributes twice to the percentage error.','ρ = m/(πr²l)','%errorρ = %m + 2(%r) + %l'],
+ ['Compute the individual percentage errors.','%m = (0.01/0.4)×100','= 2.5%','%r = (0.03/6)×100','= 0.5%','%l = (0.04/8)×100','= 0.5%'],
+ ['Add them, weighting radius by 2.','%errorρ = 2.5% + 2(0.5%) + 0.5%','= 2.5% + 1% + 0.5%','= 4%'],
+ ['This is option (C).','Answer: (C) 4%']
+]},
+{id:'UD-176',topic:'Maximum percentage error in density of a silver wire from mass, radius and length',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.55 · p.41',sourceRef:true,question:'A silver wire has a mass (0.6 ± 0.006) g, radius (0.5 ± 0.005) mm and length (4 ± 0.04) cm. The maximum percentage error in the measurement of its density will be:',options:['4%','3%','6%','7%'],correct:0,answer:'4%',
+short:[['Density ρ = m/(πr²l).','%errorρ = %m + 2(%r) + %l'],['Substitute.','%m = 0.006/0.6×100','= 1%','%r = 0.005/0.5×100','= 1%','%l = 0.04/4×100','= 1%','%errorρ = 1% + 2(1%) + 1%','= 4%','Answer: (A) 4%']],
+detailed:[
+ ['Density of the wire is mass divided by volume (πr²l), so the radius term is weighted by 2 in the error formula.','ρ = m/(πr²l)','%errorρ = %m + 2(%r) + %l'],
+ ['Compute the individual percentage errors.','%m = (0.006/0.6)×100','= 1%','%r = (0.005/0.5)×100','= 1%','%l = (0.04/4)×100','= 1%'],
+ ['Add them, weighting radius by 2.','%errorρ = 1% + 2(1%) + 1%','= 4%'],
+ ['This is option (A).','Answer: (A) 4%']
+]},
+{id:'UD-177',topic:'Least count of a vernier calliper from coinciding main and vernier scale divisions',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.56 · p.41',sourceRef:true,question:'One centimetre on the main scale of a vernier callipers is divided into ten equal parts. If 8 divisions of the main scale coincide with 10 small divisions of the vernier scale, the least count of the callipers is:',options:['0.01 cm','0.02 cm','0.05 cm','0.005 cm'],correct:1,answer:'0.02 cm',
+short:[['1 MSD = 1 cm/10 = 0.1 cm. Repaired reading: 8 MSD coincide with 10 VSD.','8 × 0.1 cm = 10 × (1 VSD)','1 VSD = 0.08 cm'],['Least count = 1 MSD − 1 VSD.','LC = 0.1 cm − 0.08 cm','= 0.02 cm','Answer: (B) 0.02 cm']],
+detailed:[
+ ['Each main scale division is 1 cm split into 10 equal parts, so one main scale division (MSD) is 0.1 cm.','1 MSD = 1 cm/10','= 0.1 cm'],
+ ['Reading the (repaired) coincidence condition, the length spanned by 8 main scale divisions equals the length spanned by 10 vernier scale divisions (VSD).','8 × (1 MSD) = 10 × (1 VSD)','8 × 0.1 cm = 10 × (1 VSD)'],
+ ['Solve for 1 VSD.','1 VSD = 0.8 cm/10','= 0.08 cm'],
+ ['The least count (vernier constant) is the difference between one main scale division and one vernier scale division.','LC = 1 MSD − 1 VSD','= 0.1 cm − 0.08 cm','= 0.02 cm'],
+ ['This is option (B).','Answer: (B) 0.02 cm']
+]},
+{id:'UD-178',topic:'Evaluating true/false statements about vernier scale divisions and the vernier constant',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.57 · p.42',sourceRef:true,question:'Given below are two statements. Statement I: In a vernier callipers, one vernier scale division is always smaller than one main scale division. Statement II: The vernier constant is given by one main scale division multiplied by the number of vernier scale divisions. In the light of the above statements, choose the correct answer from the options given below:',options:['Both Statement I and Statement II are false','Statement I is true but Statement II is false','Both Statement I and Statement II are true','Statement I is false but Statement II is true'],correct:1,answer:'Statement I is true but Statement II is false',
+short:[['Statement I: by design, 1 VSD < 1 MSD (this is what makes the vernier able to resolve smaller than the main scale) — true.','1 VSD < 1 MSD'],['Statement II: the vernier constant (least count) is 1 MSD − 1 VSD, not 1 MSD × (number of vernier divisions) — false.','Answer: (B) Statement I is true but Statement II is false']],
+detailed:[
+ ['A vernier scale is constructed so that its divisions are slightly smaller than the main scale\'s divisions; this small mismatch is exactly what lets it resolve fractions of a main scale division, so Statement I is true.','1 VSD < 1 MSD (by design)'],
+ ['The vernier constant (least count) is defined as the difference between one main scale division and one vernier scale division, not a main scale division multiplied by the number of vernier divisions; Statement II\'s formula is not the correct one.','Correct: VC = 1 MSD − 1 VSD','Statement II claims: VC = 1 MSD × N (incorrect)'],
+ ['So Statement I is true and Statement II is false.','Answer: (B) Statement I is true but Statement II is false']
+]},
+{id:'UD-179',topic:'Least count of a vernier calliper when the nth main division coincides with the (n+1)th vernier division',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.58 · p.43',sourceRef:true,question:'One main scale division of a vernier calliper is equal to m units. If the nth division of the main scale coincides with the (n+1)th division of the vernier scale, the least count of the vernier calliper is:',options:['1/(n+1)','m/(n+1)','n/(n+1)','m/(n(n+1))'],correct:1,answer:'m/(n+1)',
+short:[['Equal lengths: n main divisions = (n+1) vernier divisions.','n·m = (n+1)·(1 VSD)','1 VSD = nm/(n+1)'],['Least count = 1 MSD − 1 VSD.','LC = m − nm/(n+1)','= m/(n+1)','Answer: (B) m/(n+1)']],
+detailed:[
+ ['The coincidence condition means the length spanned by n main scale divisions equals the length spanned by (n+1) vernier scale divisions.','n × m = (n+1) × (1 VSD)'],
+ ['Solve for one vernier scale division.','1 VSD = nm/(n+1)'],
+ ['Least count is the difference between one main scale division and one vernier scale division.','LC = m − nm/(n+1)','= m/(n+1)'],
+ ['This is option (B).','Answer: (B) m/(n+1)']
+]},
+{id:'UD-180',topic:'Least count of a vernier calliper from 10 main divisions coinciding with 11 vernier divisions',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.59 · p.44',sourceRef:true,question:'10 divisions on the main scale of a vernier calliper coincide with 11 divisions on the vernier scale. If each division on the main scale is 5 units, the least count of the instrument is:',options:['5/11','10/11','50/11','1/2'],correct:0,answer:'5/11',
+short:[['10 MSD = 11 VSD.','10 × 5 = 11 × (1 VSD)','1 VSD = 50/11'],['Least count = 1 MSD − 1 VSD.','LC = 5 − 50/11','= (55−50)/11','= 5/11','Answer: (A) 5/11']],
+detailed:[
+ ['The coincidence condition equates the length of 10 main scale divisions to the length of 11 vernier scale divisions.','10 × (1 MSD) = 11 × (1 VSD)','10 × 5 = 11 × (1 VSD)'],
+ ['Solve for one vernier scale division.','1 VSD = 50/11 units'],
+ ['Least count is the difference between one main scale division and one vernier scale division.','LC = 5 − 50/11','= (55 − 50)/11','= 5/11 units'],
+ ['This is option (A).','Answer: (A) 5/11']
+]},
+{id:'UD-181',topic:'Correcting a vernier calliper reading for a positive zero error',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.60 · p.45',sourceRef:true,question:'The vernier scale used for measurement has a positive zero error of 0.2 mm. While taking a measurement, the \'0\' of the vernier scale lies between 8.5 cm and 8.6 cm, and the vernier coincidence is 6 (least count = 0.01 cm). The correct value of the measurement is:',options:['8.58 cm','8.54 cm','8.56 cm','8.36 cm'],correct:1,answer:'8.54 cm',
+short:[['Observed reading = main scale reading + (coincidence × least count).','MSR = 8.5 cm','VSR = 6 × 0.01 cm','= 0.06 cm','Observed = 8.5 + 0.06','= 8.56 cm'],['Subtract the positive zero error (0.2 mm = 0.02 cm).','Correct value = 8.56 − 0.02','= 8.54 cm','Answer: (B) 8.54 cm']],
+detailed:[
+ ['The main scale reading is the last full mark before the vernier zero, 8.5 cm, and the vernier scale reading adds the coincidence count times the least count.','MSR = 8.5 cm','VSR = 6 × 0.01 cm','= 0.06 cm'],
+ ['Add these to get the raw (uncorrected) observed reading.','Observed = MSR + VSR','= 8.5 + 0.06','= 8.56 cm'],
+ ['A positive zero error means the instrument over-reads by that amount for every measurement, so it must be subtracted; 0.2 mm = 0.02 cm.','Zero error = +0.02 cm'],
+ ['Subtract the zero error from the observed reading to get the true (correct) value.','Correct value = 8.56 − 0.02','= 8.54 cm'],
+ ['This is option (B).','Answer: (B) 8.54 cm']
+]},
+{id:'UD-182',topic:'True reading of a screw gauge with a positive zero error',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.61 · p.46',sourceRef:true,question:'In a screw gauge, the fifth division of the circular scale coincides with the reference line when the ratchet is closed. There are 50 divisions on the circular scale, and the main scale moves 0.5 mm for a complete rotation. For a particular observation, the reading on the main scale is 5 mm and the 20th division of the circular scale coincides with the reference line. Calculate the true reading.',options:['5.00 mm','5.25 mm','5.15 mm','5.20 mm'],correct:2,answer:'5.15 mm',
+short:[['Least count = pitch/divisions.','LC = 0.5 mm/50','= 0.01 mm'],['Zero error = +5 × LC = 0.05 mm (positive, since the circular scale doesn\'t read zero when closed).','Observed = MSR + CSR×LC','= 5 + 20(0.01)','= 5.20 mm'],['True reading = observed − zero error.','= 5.20 − 0.05','= 5.15 mm','Answer: (C) 5.15 mm']],
+detailed:[
+ ['The least count of a screw gauge is the pitch divided by the number of circular scale divisions.','LC = pitch/divisions','= 0.5 mm/50','= 0.01 mm'],
+ ['When the jaws are closed with nothing between them, the circular scale should ideally show zero at the reference line; here it shows the 5th division, a positive zero error of that many least counts.','Zero error = +5 × 0.01 mm','= +0.05 mm'],
+ ['For the actual observation, the observed reading is the main scale reading plus the circular scale reading times the least count.','MSR = 5 mm','CSR = 20 divisions','Observed = 5 + 20 × 0.01','= 5.20 mm'],
+ ['Subtract the positive zero error to get the true reading.','True reading = 5.20 − 0.05','= 5.15 mm'],
+ ['This is option (C).','Answer: (C) 5.15 mm']
+]},
+{id:'UD-183',topic:'Assertion-Reason on the least count of a screw gauge from pitch and circular scale divisions',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.62 · p.47',sourceRef:true,question:'Assertion A: If in five complete rotations of the circular scale, the distance travelled on the main scale of the screw gauge is 5 mm and there are 50 total divisions on the circular scale, then the least count is 0.001 cm. Reason R: Least Count = Pitch/Total divisions on circular scale. In the light of the above statements, choose the most appropriate answer from the options given below:',options:['A is not correct but R is correct.','Both A and R are correct and R is the correct explanation of A.','A is correct but R is not correct.','Both A and R are correct and R is NOT the correct explanation of A.'],correct:0,answer:'A is not correct but R is correct.',
+short:[['Pitch = distance moved per rotation = 5 mm/5 = 1 mm = 0.1 cm.','LC = pitch/divisions','= 0.1 cm/50','= 0.002 cm'],['Assertion claims LC = 0.001 cm — wrong (actual value 0.002 cm). Reason (LC = pitch/divisions) is correct.','Answer: (A) A is not correct but R is correct.']],
+detailed:[
+ ['The pitch is the distance the main scale advances per one complete rotation of the circular scale; five rotations move it 5 mm, so one rotation moves it 1 mm.','pitch = 5 mm/5 rotations','= 1 mm','= 0.1 cm'],
+ ['Apply the correct least-count formula (which is exactly what Reason R states) using this pitch and the given 50 divisions.','LC = pitch/divisions','= 0.1 cm/50','= 0.002 cm'],
+ ['The Assertion\'s claimed value, 0.001 cm, does not match this correctly computed 0.002 cm, so the Assertion is false even though the Reason\'s formula is correct and was used to disprove it.','Assertion claims LC = 0.001 cm (wrong)','Correct LC = 0.002 cm'],
+ ['So A is not correct but R is correct.','Answer: (A) A is not correct but R is correct.']
+]},
+{id:'UD-184',topic:'Radius of a wire from a screw gauge reading with a positive zero error',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.63 · p.48',sourceRef:true,question:'The pitch of the screw gauge is 1 mm and there are 100 divisions on the circular scale. When nothing is put between the jaws, the zero of the circular scale lies 8 divisions below the reference line. When a wire is placed between the jaws, the first linear scale division is clearly visible while the 72nd division on the circular scale coincides with the reference line. The radius of the wire is:',options:['1.80 mm','0.90 mm','0.82 mm','1.64 mm'],correct:2,answer:'0.82 mm',
+short:[['LC = pitch/divisions = 1/100 = 0.01 mm; the zero of the circular scale lies below the reference line, giving a positive zero error of 8 divisions.','Zero error = +8 × 0.01','= 0.08 mm'],['Observed diameter = MSR + CSR×LC = 1(1 mm) + 72(0.01) = 1.72 mm.','True diameter = 1.72 − 0.08','= 1.64 mm'],['Radius is half the diameter.','= 1.64/2','= 0.82 mm','Answer: (C) 0.82 mm']],
+detailed:[
+ ['The least count is the pitch divided by the number of circular scale divisions.','LC = 1 mm/100','= 0.01 mm'],
+ ['With nothing between the jaws, the circular scale\'s zero mark lies 8 divisions below (past) the reference line, meaning the gauge already over-reads by that many divisions; this is a positive zero error.','Zero error = +8 × 0.01 mm','= +0.08 mm'],
+ ['With the wire in place, the main scale shows one full division visible (equal to one pitch, 1 mm), and the 72nd circular division coincides with the reference line.','MSR = 1 × 1 mm','= 1 mm','CSR = 72 × 0.01 mm','= 0.72 mm','Observed diameter = 1 + 0.72','= 1.72 mm'],
+ ['Subtract the positive zero error to get the true diameter, then halve it to get the radius.','True diameter = 1.72 − 0.08','= 1.64 mm','Radius = 1.64/2','= 0.82 mm'],
+ ['This is option (C).','Answer: (C) 0.82 mm']
+]},
+{id:'UD-185',topic:'Thickness of a sheet from a screw gauge reading with a positive zero error',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.64 · p.49',sourceRef:true,question:'The pitch and the number of divisions on the circular scale of a screw gauge are 0.5 mm and 100 respectively. When the screw gauge is fully tightened without any object, the zero of its circular scale lies 3 divisions below the mean (reference) line. The readings of the main scale and the circular scale, for a thin sheet, are 5.5 mm and 48 respectively. The thickness of this sheet is:',options:['5.755 mm','5.950 mm','5.725 mm','5.740 mm'],correct:2,answer:'5.725 mm',
+short:[['LC = pitch/divisions = 0.5/100 = 0.005 mm; the zero lies below the reference line, giving a positive zero error of 3 divisions.','Zero error = +3 × 0.005','= 0.015 mm'],['Observed = MSR + CSR×LC = 5.5 + 48(0.005) = 5.5 + 0.24 = 5.74 mm.','True thickness = 5.74 − 0.015','= 5.725 mm','Answer: (C) 5.725 mm']],
+detailed:[
+ ['Compute the least count from the pitch and the number of circular scale divisions.','LC = 0.5 mm/100','= 0.005 mm'],
+ ['With the gauge fully closed and nothing in the jaws, the circular scale\'s zero lies 3 divisions below the reference line, a positive zero error.','Zero error = +3 × 0.005 mm','= +0.015 mm'],
+ ['For the sheet, add the main scale reading to the circular scale reading times the least count to get the observed thickness.','Observed = 5.5 + 48 × 0.005','= 5.5 + 0.24','= 5.74 mm'],
+ ['Subtract the positive zero error to get the true thickness.','True thickness = 5.74 − 0.015','= 5.725 mm'],
+ ['This is option (C).','Answer: (C) 5.725 mm']
+]},
+{id:'UD-186',topic:'Diameter of a wire from a screw gauge reading with a given divisions-per-mm ratio',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.65 · p.50',sourceRef:true,question:'A screw gauge gives the following reading when used to measure the diameter of a wire: main scale reading = 0 mm, circular scale reading = 52 divisions, where 1 mm on the main scale corresponds to 100 divisions of the circular scale. The diameter of the wire from this data is:',options:['0.052 cm','0.026 cm','0.005 cm','0.52 cm'],correct:0,answer:'0.052 cm',
+short:[['LC = 1 mm/100 = 0.01 mm.','Diameter = MSR + CSR×LC','= 0 + 52(0.01)','= 0.52 mm'],['Convert to cm.','0.52 mm = 0.052 cm','Answer: (A) 0.052 cm']],
+detailed:[
+ ['The least count is 1 mm divided by the 100 circular scale divisions.','LC = 1 mm/100','= 0.01 mm'],
+ ['The diameter is the main scale reading plus the circular scale reading multiplied by the least count.','Diameter = 0 + 52 × 0.01 mm','= 0.52 mm'],
+ ['Convert millimetres to centimetres.','0.52 mm = 0.052 cm'],
+ ['This is option (A).','Answer: (A) 0.052 cm']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -1651,7 +1919,39 @@ const pilotTopicMap={
  'Identifying the quantity with dimension ε₀L(ΔV/Δt)':['dimensional-formula','Identifying the quantity with dimension ε₀L(ΔV/Δt)'],
  'Significant figures in a cube\'s computed volume':['significant-figures','Significant figures in a cube\'s computed volume'],
  'Maximum percentage error in density from mass, radius and length':['errors','Maximum percentage error in density from mass, radius and length'],
- 'Dimension of β in P = (α/β) exp(−αz/(K_B θ))':['dimensional-analysis','Dimension of β in P = (α/β) exp(−αz/(K_B θ))']
+ 'Dimension of β in P = (α/β) exp(−αz/(K_B θ))':['dimensional-analysis','Dimension of β in P = (α/β) exp(−αz/(K_B θ))'],
+ 'Percentage error in a product/quotient of four measured quantities (a³b²/(cd))':['errors','Percentage error in a product/quotient of four measured quantities'],
+ 'Maximum percentage error in S = ab²/c³':['errors','Maximum percentage error in S = ab²/c³'],
+ 'Percentage error in A = √(pq)/(r²s³) with several exponents':['errors','Percentage error in A = √(pq)/(r²s³) with several exponents'],
+ 'Matching gravitational constant, torque, momentum and pressure to their dimensions and SI units':['dimensional-formula','Matching gravitational constant, torque, momentum and pressure to their dimensions and SI units'],
+ 'Rounding a three-term sum of measurements to the correct decimal place':['significant-figures','Rounding a three-term sum of measurements to the correct decimal place'],
+ 'Significant figures in a small velocity value with trailing zeros after the decimal point':['significant-figures','Significant figures in a small velocity value with trailing zeros after the decimal point'],
+ 'Dimension of the phase (ωt + φ0) in a derivative relation':['dimensional-analysis','Dimension of the phase (ωt + φ0) in a derivative relation'],
+ 'Dimensions of the constants in v = at + b/(t+c)':['dimensional-analysis','Dimensions of the constants in v = at + b/(t+c)'],
+ 'Identifying quantities with the same dimensions as solid angle':['dimensional-formula','Identifying quantities with the same dimensions as solid angle'],
+ 'Identifying the dimensionless factor in F = αt² + βt':['dimensional-analysis','Identifying the dimensionless factor in F = αt² + βt'],
+ 'Rounding the mean of several vernier calliper diameter readings':['significant-figures','Rounding the mean of several vernier calliper diameter readings'],
+ 'Percentage error in density of a metal wire from mass, radius and length':['errors','Percentage error in density of a metal wire from mass, radius and length'],
+ 'Percentage error in g from g = 4π²L/T²':['errors','Percentage error in g from g = 4π²L/T²'],
+ 'Rounding the area of a rectangular field to the correct significant digits':['significant-figures','Rounding the area of a rectangular field to the correct significant digits'],
+ 'Matching numbers to their number of significant figures':['significant-figures','Matching numbers to their number of significant figures'],
+ 'Percentage error in resistance from errors in length and diameter of a wire':['errors','Percentage error in resistance from errors in length and diameter of a wire'],
+ 'Dimension of b²/a in F = ax² + b√t':['dimensional-analysis','Dimension of b²/a in F = ax² + b√t'],
+ 'Percentage error in resistance R = V/I from voltage and current':['errors','Percentage error in resistance R = V/I from voltage and current'],
+ 'Dimensional formula of density in a non-standard base system (F, V, T)':['dimensional-analysis','Dimensional formula of density in a non-standard base system (F, V, T)'],
+ 'Percentage error in P = a²b³/(c√d)':['errors','Percentage error in P = a²b³/(c√d)'],
+ 'Maximum error in density of a cylindrical wire from mass, length and radius':['errors','Maximum error in density of a cylindrical wire from mass, length and radius'],
+ 'Maximum percentage error in density of a silver wire from mass, radius and length':['errors','Maximum percentage error in density of a silver wire from mass, radius and length'],
+ 'Least count of a vernier calliper from coinciding main and vernier scale divisions':['measuring-instruments','Least count of a vernier calliper from coinciding main and vernier scale divisions'],
+ 'Evaluating true/false statements about vernier scale divisions and the vernier constant':['measuring-instruments','Evaluating true/false statements about vernier scale divisions and the vernier constant'],
+ 'Least count of a vernier calliper when the nth main division coincides with the (n+1)th vernier division':['measuring-instruments','Least count of a vernier calliper when the nth main division coincides with the (n+1)th vernier division'],
+ 'Least count of a vernier calliper from 10 main divisions coinciding with 11 vernier divisions':['measuring-instruments','Least count of a vernier calliper from 10 main divisions coinciding with 11 vernier divisions'],
+ 'Correcting a vernier calliper reading for a positive zero error':['measuring-instruments','Correcting a vernier calliper reading for a positive zero error'],
+ 'True reading of a screw gauge with a positive zero error':['measuring-instruments','True reading of a screw gauge with a positive zero error'],
+ 'Assertion-Reason on the least count of a screw gauge from pitch and circular scale divisions':['measuring-instruments','Assertion-Reason on the least count of a screw gauge from pitch and circular scale divisions'],
+ 'Radius of a wire from a screw gauge reading with a positive zero error':['measuring-instruments','Radius of a wire from a screw gauge reading with a positive zero error'],
+ 'Thickness of a sheet from a screw gauge reading with a positive zero error':['measuring-instruments','Thickness of a sheet from a screw gauge reading with a positive zero error'],
+ 'Diameter of a wire from a screw gauge reading with a given divisions-per-mm ratio':['measuring-instruments','Diameter of a wire from a screw gauge reading with a given divisions-per-mm ratio']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
