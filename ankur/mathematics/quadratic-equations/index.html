@@ -4165,6 +4165,180 @@
  ['For a > 0, f is continuous, so f(t) > 0 for all t > 0 forces f(0) ≥ 0 (letting t → 0 from the right).','f(0) = a – 1 ≥ 0 ⟹ a ≥ 1'],
  ['Conversely, if a ≥ 1 then a, 4(a – 1) and a – 1 are all non-negative, so for every t > 0 the inequality holds.','f(t) ≥ a t^(2) > 0'],
  ['The value a = 1 is included, since then f(t) = t^(2) > 0 for t > 0. So (A) a > 1 wrongly excludes it, (C) fails as shown, and (D) is too restrictive because a = 1 also works.','a ≥ 1','Correct answer: (B)']
+]},
+{id:'QUAD-45-J',parent:'QUAD-45',variant:10,topic:'Equations containing a modulus',relevance:{parent:'QUAD-45',sharedSkill:'Equations containing a modulus',recoveryPurpose:'controlled transfer'},source:'Institute module · Q660 · question p.63 · stem corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:660,questionPage:63,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The number of real solutions of the equation x^(2) – 3 |x| + 2 = 0 is',options:['3','2','4','1'],correct:2,answer:'4',diagram:'',short:[
+ ['Since x^(2) = |x|^(2), put t = |x| with t ≥ 0; the equation becomes a quadratic in t.','t^(2) – 3t + 2 = 0'],
+ ['Factorise the quadratic (the roots add to 3 and multiply to 2).','(t – 1)(t – 2) = 0, so t = 1 or t = 2'],
+ ['Both values of t are positive, so both are admissible, and each positive value of |x| gives two real values of x, namely +t and –t.','|x| = 1 gives x = 1 or x = –1; |x| = 2 gives x = 2 or x = –2'],
+ ['Verify one from each pair: x = 2 gives 4 – 6 + 2 = 0 and x = 1 gives 1 – 3 + 2 = 0, and the equation is even in x, so the negatives work too. The real solutions are –2, –1, 1, 2, so the count is 4 (3 or 2 would lose a sign pair, 1 is far too few).','Number of real solutions = 4','Correct answer: (C)']
+]},
+{id:'QUAD-45-K',parent:'QUAD-45',variant:11,topic:'Equations containing a modulus',relevance:{parent:'QUAD-45',sharedSkill:'Equations containing a modulus',recoveryPurpose:'controlled transfer'},source:'Institute module · Q1 · question p.1 · options corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:1,questionPage:1,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If the equation |x^(2) + 4x + 3| –mx + 2m = 0 has exactly three roots then the value of m is equal to -',options:['(–16 + 4√(15))/(2)','(–16 – 4√(15))/(2)','3','None of these'],correct:0,answer:'(–16 + 4√(15))/(2)',diagram:'',short:[
+ ['Rewrite the equation as an intersection of a curve and a line: y = |x^(2) + 4x + 3| against y = m(x – 2), which always passes through (2, 0).','|x^(2) + 4x + 3| = m(x – 2)'],
+ ['Split the modulus at the zeros x = –3 and x = –1: the curve is the upward parabola outside [–3, –1] and the hump –(x^(2) + 4x + 3) (maximum 1 at x = –2) inside it; also the curve is 15 at x = 2.','x^(2) + 4x + 3 = m(x – 2) for x ≤ –3 or x ≥ –1;  –(x^(2) + 4x + 3) = m(x – 2) for –3 ≤ x ≤ –1'],
+ ['Case m ≥ 0: the curve is never negative, so a root needs m(x – 2) ≥ 0, i.e. x > 2 (x = 2 gives 0 ≠ 15), and there the equation is one quadratic, so there are at most 2 roots (m = 0 gives exactly the two roots –3, –1). Three roots are impossible.','m ≥ 0: at most 2 roots'],
+ ['Case m < 0: every root has x < 2. On the outer part put g(x) = x^(2) + (4 – m)x + 3 + 2m and evaluate at the junction points.','g(–3) = 5m < 0 and g(–1) = 3m < 0'],
+ ['Both values are negative, so g has exactly one root below –3 and exactly one root above –1 (that root is below 2 because g(2) = 15 > 0): always 2 roots from the outer parts.','outer parts: exactly 2 roots for every m < 0'],
+ ['On [–3, –1] put h(x) = x^(2) + (4 + m)x + 3 – 2m (the hump equation) and evaluate at the ends.','h(–3) = –5m > 0 and h(–1) = –3m > 0'],
+ ['Both end values are positive, so h has 0 roots, a double root, or 2 roots inside [–3, –1]. Exactly three roots in all means h has a double root (tangent line) whose location lies inside [–3, –1].','total roots = 2 + (number of roots of h in [–3, –1]) = 3 ⇒ h has a double root'],
+ ['Discriminant of ax^(2) + bx + c = 0 is Δ = b^(2) – 4ac; set it to zero for h.','Δ = b^(2) – 4ac'],
+ ['Substitute a = 1, b = 4 + m, c = 3 – 2m and solve.','Δ = (4 + m)^(2) – 4(3 – 2m) = m^(2) + 16m + 4 = 0 ⇒ m = –8 ± 2√(15)'],
+ ['The double root sits at the vertex of h; it must lie in [–3, –1], i.e. –2 ≤ m ≤ 2. For m = –8 + 2√(15) ≈ –0.25 the tangent point x ≈ –1.87 is inside; for m = –8 – 2√(15) ≈ –15.75 the point x ≈ 5.87 is outside, so that value gives only 2 roots (a numerical root count over all m also gives exactly 3 roots only at m ≈ –0.254).','x = –(4 + m)/(2) ∈ [–3, –1] ⇔ –2 ≤ m ≤ 2'],
+ ['Distractors: m = 3 > 0 gives no root at all (x^(2) + x + 9 = 0 has Δ < 0), and the other tangent value (–16 – 4√(15))/(2) gives 2 roots. Hence the unique value is the first one.','m = –8 + 2√(15) = (–16 + 4√(15))/(2)','Correct answer: (A)']
+]},
+{id:'QUAD-03-V',parent:'QUAD-03',variant:22,topic:'Sum and product of the roots',relevance:{parent:'QUAD-03',sharedSkill:'Sum and product of the roots',recoveryPurpose:'controlled transfer'},source:'Institute module · Q526 · question p.54 · stem corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:526,questionPage:54,printedOptionKey:'A',verifiedOptionKey:'A'},question:'If α and β (β ≠ 0) are the roots of the equation x^(2) + ( √(α) )x + β = 0 then the values of α and β are',options:['α = 1, β = –2','α = 2, β = –2','α = 1, β = –1','α = –1, β = 1'],correct:0,answer:'α = 1, β = –2',diagram:'',short:[
+ ['Vieta\'s relations for x^(2) + bx + c = 0 with roots α and β: the sum of the roots is –b and the product is c.','α + β = –b, αβ = c'],
+ ['Here b = √(α) (so α ≥ 0 for the coefficient to be real) and c = β.','α + β = –√(α), αβ = β'],
+ ['Since β ≠ 0, divide the product relation by β.','αβ = β ⇒ α = 1'],
+ ['Substitute α = 1 into the sum relation.','1 + β = –√(1) = –1 ⇒ β = –2'],
+ ['Check: the equation becomes x^(2) + x – 2 = 0, whose roots are 1 and –2, i.e. α and β.','x^(2) + x – 2 = (x – 1)(x + 2) = 0'],
+ ['The other options fail: α = 2 would force 2β = β, i.e. β = 0 (excluded); α = 1, β = –1 gives α + β = 0 ≠ –1; α = –1 makes √(α) non-real.','only α = 1, β = –2 satisfies both relations','Correct answer: (A)']
+]},
+{id:'QUAD-50-E',parent:'QUAD-50',variant:5,topic:'Exponential equations with a parameter',relevance:{parent:'QUAD-50',sharedSkill:'Exponential equations with a parameter',recoveryPurpose:'controlled transfer'},source:'Institute module · Q366 · question p.33 · option corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:366,questionPage:33,printedOptionKey:'A',verifiedOptionKey:'A'},question:'Let S be the set of values of \'a\' for which all the real solution of the 4^(x) – (a – 3).2^(x) + (a – 4) = 0 are non-positive, then -',options:['a ≤ 5','0 < a < 4','a > 4','a < 3'],correct:0,answer:'a ≤ 5',diagram:'',short:[
+ ['Put t = 2^(x) with t > 0, so 4^(x) = t^(2); the equation becomes a quadratic in t.','t^(2) – (a – 3)t + (a – 4) = 0'],
+ ['Factorise using sum of roots = a – 3 and product = a – 4; the roots are 1 and a – 4.','(t – 1)(t – (a – 4)) = 0, so t = 1 or t = a – 4'],
+ ['The root t = 1 gives 2^(x) = 1, so x = 0, which is non-positive for every value of a.','t = 1 gives x = 0 (always allowed)'],
+ ['The root t = a – 4 gives a real x only if a – 4 > 0. A solution x ≤ 0 needs 0 < t ≤ 1, that is 0 < a – 4 ≤ 1, so 4 < a ≤ 5. If a ≤ 4 there is no second real solution, so the only solution is x = 0, which is fine. If a > 5 then t = a – 4 > 1 gives x > 0, which is not allowed.','a ≤ 4 (only x = 0) together with 4 < a ≤ 5 (both solutions non-positive)'],
+ ['Combining the two cases, S is exactly a ≤ 5. Check a = 5: t = 1 (double), x = 0. Check a = 6: t = 2 gives x = 1 > 0, so a = 6 fails. Options 0 < a < 4 and a < 3 are only sub-ranges of S (they leave out valid values such as a = 5), and a > 4 wrongly includes a = 6.','S = { a : a ≤ 5 }','Correct answer: (A)']
+]},
+{id:'QUAD-39-H',parent:'QUAD-39',variant:8,topic:'Logarithmic equations reducible to a quadratic',relevance:{parent:'QUAD-39',sharedSkill:'Logarithmic equations reducible to a quadratic',recoveryPurpose:'controlled transfer'},source:'Institute module · Q473 · question p.47 · option corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:473,questionPage:47,printedOptionKey:'D',verifiedOptionKey:'D'},question:'The set of real roots of the equation log(5x + 4) (2x + 3)^(3) – log(2x + 3) (10x^(2) + 23x + 12) = 1 is -',options:['{– 1}','{– (3)/(5)}','empty set','{– (1)/(3)} together with one more root, x ≈ – 0.7425'],correct:3,answer:'{– (1)/(3)} together with one more root, x ≈ – 0.7425',diagram:'',short:[
+ ['The argument of the second logarithm factorises: 10x^(2) + 23x + 12 = (5x + 4)(2x + 3).','10x^(2) + 23x + 12 = (5x + 4)(2x + 3)'],
+ ['Domain: both bases and arguments must be positive and both bases must differ from 1. From 5x + 4 > 0 and 2x + 3 > 0 we get x > – (4)/(5); the bases must not equal 1, so x ≠ – (3)/(5) and x ≠ –1.','x > – (4)/(5), x ≠ – (3)/(5) (x = –1 is already outside x > – (4)/(5))'],
+ ['Change of base identity: log_b(a) · log_a(b) = 1, so log_(2x+3)(5x + 4) = (1)/(u) when u = log_(5x+4)(2x + 3). Also log_a(mn) = log_a(m) + log_a(n).','Let u = log_(5x+4)(2x + 3); then log_(2x+3)(10x^(2) + 23x + 12) = 1 + (1)/(u)'],
+ ['Substitute into the given equation: 3u – (1 + (1)/(u)) = 1. Multiply by u (u ≠ 0 since the argument 2x + 3 ≠ 1) to get a quadratic in u.','3u^(2) – 2u – 1 = 0, so (3u + 1)(u – 1) = 0'],
+ ['Case u = 1: the argument equals the base, 2x + 3 = 5x + 4, so x = – (1)/(3). This is in the domain. Check: log_((7)/(3))((7)/(3))^(3) = 3 and log_((7)/(3))((49)/(9)) = 2, and 3 – 2 = 1.','x = – (1)/(3)'],
+ ['Case u = – (1)/(3): 2x + 3 = (5x + 4)^(– (1)/(3)), i.e. (2x + 3)^(3)(5x + 4) = 1. On the domain x > – (4)/(5) the left side is increasing, so there is exactly one root; numerically it is x ≈ –0.7425 (check: 2x + 3 ≈ 1.5150, 5x + 4 ≈ 0.2876, and 1.5150^(3) × 0.2876 ≈ 1.000). It lies in the domain and is not – (3)/(5).','x ≈ –0.7425 (second root)'],
+ ['So the roots are – (1)/(3) and about –0.7425. Option {–1} fails since 2x + 3 = 1 is an invalid base, {– (3)/(5)} fails since 5x + 4 = 1 is an invalid base, and the empty set fails because – (1)/(3) works.','Roots: x = – (1)/(3) and x ≈ –0.7425','Correct answer: (D)']
+]},
+{id:'QUAD-39-I',parent:'QUAD-39',variant:9,topic:'Logarithmic equations reducible to a quadratic',relevance:{parent:'QUAD-39',sharedSkill:'Logarithmic equations reducible to a quadratic',recoveryPurpose:'controlled transfer'},source:'Institute module · Q641 · question p.61 · option corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:641,questionPage:61,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The roots of the equation log_2 (x^(2) – 4x + 5) = (x – 2) are -',options:['4, 5','2, –3','2, 3 and one more root, x ≈ 6.257','3, 5'],correct:2,answer:'2, 3 and one more root, x ≈ 6.257',diagram:'',short:[
+ ['Put y = x – 2. Since x^(2) – 4x + 5 = (x – 2)^(2) + 1, the equation becomes log_2(y^(2) + 1) = y, i.e. y^(2) + 1 = 2^(y). The argument is always positive, so there is no domain restriction.','x^(2) – 4x + 5 = (x – 2)^(2) + 1, so y^(2) + 1 = 2^(y)'],
+ ['Negative y is impossible: the left side is at least 1 while 2^(y) < 1. Try small integers.','y = 0: 0 + 1 = 1 = 2^(0); y = 1: 1 + 1 = 2 = 2^(1)'],
+ ['These give x = 2 and x = 3. Check in the original: x = 2 gives log_2(1) = 0 = x – 2, and x = 3 gives log_2(2) = 1 = x – 2.','x = 2 and x = 3'],
+ ['Let F(y) = log_2(y^(2) + 1) – y. Then F(0) = 0, F(1) = 0, F(0.5) ≈ –0.18 < 0, F(4) ≈ +0.09 > 0 and F(5) ≈ –0.30 < 0, so there is one more sign change between y = 4 and y = 5, and F keeps decreasing after that. Solving numerically gives y ≈ 4.2575, hence x ≈ 6.2575 (check: (4.2575)^(2) + 1 ≈ 19.13 and 2^(4.2575) ≈ 19.13).','Third root: x ≈ 6.257'],
+ ['So the equation has exactly three real roots. Options 4, 5 and 2, –3 and 3, 5 each contain a value that is not a root (e.g. x = 4 gives log_2(5) ≈ 2.32 ≠ 2).','Roots: x = 2, x = 3, x ≈ 6.257','Correct answer: (C)']
+]},
+{id:'QUAD-47-H',parent:'QUAD-47',variant:8,topic:'Roots of opposite sign',relevance:{parent:'QUAD-47',sharedSkill:'Roots of opposite sign',recoveryPurpose:'controlled transfer'},source:'Institute module · Q373 · question p.33 · stem corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:373,questionPage:33,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If 0 < θ < π and the roots of the equation 2x^(2) + 4x + 2sinθ – 1 = 0 are of opposite signs, then θ belongs to -',options:['((π)/(6), (5π)/(6))','(0, (π)/(6)) ∪ ((5π)/(6), π)','((13π)/(6), (17π)/(6))','None of these'],correct:1,answer:'(0, (π)/(6)) ∪ ((5π)/(6), π)',diagram:'',short:[
+ ['For ax^(2) + bx + c = 0 the roots have opposite signs exactly when the product of the roots is negative (then the discriminant is automatically positive). Vieta\'s product of roots is c divided by a.','Product of roots = (c)/(a) < 0'],
+ ['Here a = 2 and c = 2sinθ – 1, so the product is (2sinθ – 1)/(2).','(2sinθ – 1)/(2) < 0'],
+ ['Multiply by 2 and solve for sinθ.','sinθ < (1)/(2)'],
+ ['On 0 < θ < π, sinθ is positive and equals (1)/(2) at θ = (π)/(6) and θ = (5π)/(6); it is smaller than (1)/(2) near the two ends of the interval.','θ ∈ (0, (π)/(6)) ∪ ((5π)/(6), π)'],
+ ['The interval ((π)/(6), (5π)/(6)) is where sinθ > (1)/(2), which gives roots of the same sign; ((13π)/(6), (17π)/(6)) lies outside 0 < θ < π. So only the second option is right.','θ ∈ (0, (π)/(6)) ∪ ((5π)/(6), π)','Correct answer: (B)']
+]},
+{id:'QUAD-09-Z',parent:'QUAD-09',variant:26,topic:'Sign of a quadratic expression for real x',relevance:{parent:'QUAD-09',sharedSkill:'Sign of a quadratic expression for real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q341 · question p.31 · stem clarified',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:341,questionPage:31,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If m is a real number for which some real x satisfies both the inequality log_((1)/(2)) x^(2) ≥ log_((1)/(2)) (x + 2) and 49x^(2) – 4m^(4) ≤ 0, then m necessarily lies in',options:['m ∈ (– ∞, 1) ∪ (1, ∞)','m ∈ (– ∞, – √(5) ) ∪ ( √(5) , ∞)','m ∈ (– ∞, – √(7) ) ∪ [ √(7) , ∞)','None'],correct:3,answer:'None',diagram:'',short:[
+ ['The logarithm needs a positive argument on each side, which restricts x before any inequality is solved.','x^(2) > 0 gives x ≠ 0, and x + 2 > 0 gives x > –2'],
+ ['The base (1)/(2) is less than 1, so log_((1)/(2)) is a decreasing function. The rule is that for such a base, log_((1)/(2)) u ≥ log_((1)/(2)) v is equivalent to u ≤ v (with u, v > 0).','x^(2) ≤ x + 2'],
+ ['Bring everything to one side and factorise.','x^(2) – x – 2 = (x – 2)(x + 1) ≤ 0, so –1 ≤ x ≤ 2'],
+ ['Intersect with the domain x ≠ 0 and x > –2. The x that satisfy the first condition are:','x ∈ [–1, 0) ∪ (0, 2], so 0 < |x| ≤ 2'],
+ ['Now the second condition. Since 49x^(2) = (7x)^(2), rewrite it as a comparison with m^(4) = (m^(2))^(2), and m^(2) ≥ 0.','49x^(2) ≤ 4m^(4) means (7|x|)^(2) ≤ (2m^(2))^(2), so 7|x| ≤ 2m^(2)'],
+ ['So some admissible x exists when there is a value of |x| in (0, 2] with |x| ≤ (2m^(2))/(7). This can be arranged by taking |x| small enough exactly when m^(2) > 0.','Condition on m: m^(2) > 0, that is m ≠ 0'],
+ ['So every real m other than 0 is possible, and the possible values of m form (– ∞, 0) ∪ (0, ∞). Option A fails: m = 1 is possible (take x = 0.1, since 49 × 0.01 = 0.49 ≤ 4), yet 1 is not in (– ∞, 1) ∪ (1, ∞). Option B fails: m = 2 is possible (take x = 1, since 49 ≤ 4 × 16 = 64), yet 2 < √(5) so 2 is outside B. Option C fails: m = –2 is possible (take x = 1 again), yet |–2| < √(7) so –2 is outside C. Hence none of A–C is forced.','Possible m: all real m ≠ 0, so none of A, B, C is forced','Correct answer: (D)']
+]},
+{id:'QUAD-13-O',parent:'QUAD-13',variant:15,topic:'Rationality of the roots',relevance:{parent:'QUAD-13',sharedSkill:'Rationality of the roots',recoveryPurpose:'controlled transfer'},source:'Institute module · Q276 · question p.24 · stem clarified',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:276,questionPage:24,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let A = {x : 2x^(2) + 3x + 1 = 0} and let B be a set that contains no rational number (B ∩ Q = φ). Then A ∩ B is',options:['{(1)/(2), 1}','{2, 1}','{–(1)/(2), –1}','φ'],correct:3,answer:'φ',diagram:'',short:[
+ ['Find the elements of A by solving the quadratic.','2x^(2) + 3x + 1 = (2x + 1)(x + 1) = 0'],
+ ['The roots are –(1)/(2) and –1, both rational.','A = {–(1)/(2), –1} ⊂ Q'],
+ ['B contains no rational number, so no element of A (all rational) can belong to B.','x ∈ A ⇒ x ∈ Q ⇒ x ∉ B, so A ∩ B = φ'],
+ ['Check the other options: {(1)/(2), 1} and {2, 1} are not even subsets of A, and {–(1)/(2), –1} = A would need A ⊆ B, contradicting B ∩ Q = φ.','A ∩ B ⊆ A ∩ (complement of Q) = φ','Correct answer: (D)']
+]},
+{id:'QUAD-31-M',parent:'QUAD-31',variant:13,topic:'Conditions imposed on the roots of a quadratic',relevance:{parent:'QUAD-31',sharedSkill:'Conditions imposed on the roots of a quadratic',recoveryPurpose:'controlled transfer'},source:'Institute module · Q127 · question p.9 · stem clarified',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:127,questionPage:9,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Let α, β be the roots of ax^(2) + bx + c = 0 (a ≠ 0, c ≠ 0) and let Δ = b^(2) – 4ac. The numbers α + β, α^(2) + β^(2), α^(3) + β^(3) are in G.P. (with non-zero terms) if and only if',options:['Δb = 0','bc ≠ 0','Δ ≠ 0','Δ = 0'],correct:3,answer:'Δ = 0',diagram:'',short:[
+ ['Vieta\'s relations for ax^(2) + bx + c = 0, and the power-sum identities.','α + β = – (b)/(a), αβ = (c)/(a), α^(2) + β^(2) = (α + β)^(2) – 2αβ, α^(3) + β^(3) = (α + β)^(3) – 3αβ(α + β)'],
+ ['Substitute the values of this question.','α^(2) + β^(2) = (b^(2) – 2ac)/(a^(2)), α^(3) + β^(3) = – (b(b^(2) – 3ac))/(a^(3))'],
+ ['Three non-zero numbers p, q, r are in G.P. exactly when q^(2) = pr. Apply this with p = α + β, q = α^(2) + β^(2), r = α^(3) + β^(3).','(α^(2) + β^(2))^(2) = (α + β)(α^(3) + β^(3))'],
+ ['Substitute: the left side is (b^(2) – 2ac)^(2)/(a^(4)) and the right side is b^(2)(b^(2) – 3ac)/(a^(4)). Multiply by a^(4).','(b^(2) – 2ac)^(2) = b^(2)(b^(2) – 3ac)'],
+ ['Expand: b^(4) – 4ab^(2)c + 4a^(2)c^(2) = b^(4) – 3ab^(2)c, which simplifies to 4a^(2)c^(2) – ab^(2)c = 0, i.e. ac(4ac – b^(2)) = 0.','ac(4ac – b^(2)) = – acΔ = 0'],
+ ['Since a ≠ 0 and c ≠ 0, this holds exactly when Δ = 0. Conversely, if Δ = 0 then b^(2) = 4ac ≠ 0, so α = β = – (b)/(2a) ≠ 0 and the three terms 2α, 2α^(2), 2α^(3) are non-zero and in G.P. with ratio α. So the condition is necessary and sufficient.','Δ = 0'],
+ ['Reject the others: Δb = 0 allows b = 0, which makes α + β = 0 (zero term); bc ≠ 0 does not force Δ = 0 (for x^(2) – 3x + 2 = 0 the terms 3, 5, 9 are not in G.P.); Δ ≠ 0 is the opposite of what is needed.','Δ = 0','Correct answer: (D)']
+]},
+{id:'QUAD-06-X',parent:'QUAD-06',variant:24,topic:'Common roots of two quadratic equations',relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'},source:'Institute module · Q74 · question p.6 · stem clarified',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:74,questionPage:6,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If the equations x^(2) + ax + bc = 0 and x^(2) + bx + ca = 0 (c ≠ 0) have one root common, then their remaining roots, taken in the order first equation, second equation, are-',options:['a, b','b, a','b, c','c, a'],correct:1,answer:'b, a',diagram:'',short:[
+ ['Let α be the common root. It satisfies both equations, so subtract them to remove x^(2).','(α^(2) + aα + bc) – (α^(2) + bα + ca) = 0'],
+ ['Simplify and factor the difference.','(a – b)α + c(b – a) = 0, so (a – b)(α – c) = 0'],
+ ['The equations are different (a ≠ b; if a = b they coincide), so the common root is c. Put it in the first equation.','c^(2) + ac + bc = 0, so c(c + a + b) = 0, so a + b + c = 0 (as c ≠ 0)'],
+ ['For x^(2) + px + q = 0 the product of the roots is q, so the other root is q divided by the known root.','Other root = (q)/(known root)'],
+ ['First equation has constant term bc and known root c; second has constant term ca and known root c.','First: (bc)/(c) = b, Second: (ca)/(c) = a'],
+ ['The remaining roots, first equation then second, are b and a. Options A, C, D give a different pair or order.','b, a','Correct answer: (B)']
+]},
+{id:'QUAD-06-Y',parent:'QUAD-06',variant:25,topic:'Common roots of two quadratic equations',relevance:{parent:'QUAD-06',sharedSkill:'Common roots of two quadratic equations',recoveryPurpose:'controlled transfer'},source:'Institute module · Q358 · question p.32 · options corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:358,questionPage:32,printedOptionKey:'B',verifiedOptionKey:'B'},question:'If p, q, r are distinct non-zero real numbers and every pair from among the equations x^(2) + px + qr = 0, x^(2) + qx + rp = 0 and x^(2) + rx + pq = 0 has a common root, then the sum of the three common roots is -',options:['pq + qr + rp','p + q + r','p^(2) + q^(2) + r^(2)','pqr'],correct:1,answer:'p + q + r',diagram:'',short:[
+ ['Take the first two equations. A common root satisfies both, so subtract them.','(x^(2) + px + qr) – (x^(2) + qx + rp) = (p – q)x + r(q – p) = 0'],
+ ['Factor. Since p ≠ q, the common root is r.','(p – q)(x – r) = 0, so x = r'],
+ ['Put x = r in the first equation, using r ≠ 0.','r^(2) + pr + qr = 0, so r(r + p + q) = 0, so p + q + r = 0'],
+ ['By the same argument the other two pairs have common roots p and q.','Common roots: r, p, q'],
+ ['Sum of the three common roots.','r + p + q = p + q + r'],
+ ['Since p + q + r = 0, the sum is 0. Options A, C, D are not zero: pq + qr + rp = ((p + q + r)^(2) – (p^(2) + q^(2) + r^(2)))/(2) = (–(p^(2) + q^(2) + r^(2)))/(2) ≠ 0, p^(2) + q^(2) + r^(2) > 0, pqr ≠ 0.','Sum = p + q + r','Correct answer: (B)']
+]},
+{id:'QUAD-23-O',parent:'QUAD-23',variant:15,topic:'Condition for a quadratic expression to keep one sign for all real x',relevance:{parent:'QUAD-23',sharedSkill:'Condition for a quadratic expression to keep one sign for all real x',recoveryPurpose:'controlled transfer'},source:'Institute module · Q347 · question p.31 · option corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:347,questionPage:31,printedOptionKey:'B',verifiedOptionKey:'B'},question:'Let f(x) be a polynomial of the second degree which is positive definite. If g(x) = f(x) + f ′(x) + f ″(x) then for any real x',options:['g(x) < 0','g(x) > 0','g(x) = 0','g(x) ≤ 0'],correct:1,answer:'g(x) > 0',diagram:'',short:[
+ ['Write the quadratic and its condition to be positive definite.','f(x) = ax^(2) + bx + c with a > 0 and D = b^(2) – 4ac < 0'],
+ ['Differentiate twice.','f ′(x) = 2ax + b, f ″(x) = 2a'],
+ ['Add the three terms.','g(x) = ax^(2) + (b + 2a)x + (c + b + 2a)'],
+ ['A quadratic Ax^(2) + Bx + C with A > 0 and discriminant B^(2) – 4AC < 0 is positive for all real x. Compute this discriminant for g.','(b + 2a)^(2) – 4a(c + b + 2a) = b^(2) + 4ab + 4a^(2) – 4ac – 4ab – 8a^(2)'],
+ ['Simplify. D < 0, so the discriminant of g is negative.','= (b^(2) – 4ac) – 4a^(2) = D – 4a^(2) < 0'],
+ ['The leading coefficient of g is a > 0 and its discriminant is negative, so g(x) > 0 for every real x. Options A, C, D all need g to be zero or negative somewhere, which never happens.','g(x) > 0','Correct answer: (B)']
+]},
+{id:'QUAD-20-P',parent:'QUAD-20',variant:16,topic:'Trigonometric functions as the roots of an equation',relevance:{parent:'QUAD-20',sharedSkill:'Trigonometric functions as the roots of an equation',recoveryPurpose:'controlled transfer'},source:'Institute module · Q686 · question p.64',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:686,questionPage:64,printedOptionKey:'A',verifiedOptionKey:'A'},question:'In a ΔPQR, ∠R = (π)/(2). If tan (P)/(2) and tan (Q)/(2) are the roots of ax^(2) + bx + c = 0 (a ≠ 0), then-',options:['a + b = c','b + c = a','c + a = b','b = c'],correct:0,answer:'a + b = c',diagram:'',short:[
+ ['Since ∠R = (π)/(2), the other two angles satisfy P + Q = (π)/(2).','(P)/(2) + (Q)/(2) = (π)/(4)'],
+ ['Tangent addition formula.','tan (A + B) = (tan A + tan B)/(1 – tan A tan B)'],
+ ['Vieta\'s relations for ax^(2) + bx + c = 0 with roots tan (P)/(2) and tan (Q)/(2).','Sum = –(b)/(a), Product = (c)/(a)'],
+ ['Apply the addition formula with A = (P)/(2), B = (Q)/(2), where tan (π)/(4) = 1.','1 = (–(b)/(a))/(1 – (c)/(a))'],
+ ['Multiply numerator and denominator by a and cross-multiply.','1 = (–b)/(a – c), so a – c = –b, so a + b = c'],
+ ['This is option A. The other options do not follow: for example b = c together with a + b = c would force a = 0.','a + b = c','Correct answer: (A)']
+]},
+{id:'QUAD-20-Q',parent:'QUAD-20',variant:17,topic:'Trigonometric functions as the roots of an equation',relevance:{parent:'QUAD-20',sharedSkill:'Trigonometric functions as the roots of an equation',recoveryPurpose:'controlled transfer'},source:'Institute module · Q337 · question p.30 · stem clarified',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:337,questionPage:30,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The quadratic equation whose two distinct roots are sec^(2)θ and cosec^(2)θ can be',options:['x^(2) – 3x + 3 = 0','x^(2) – 4x + 4 = 0','x^(2) – 9x + 9 = 0','x^(2) + 5x – 5 = 0'],correct:2,answer:'x^(2) – 9x + 9 = 0',diagram:'',short:[
+ ['Formula: the quadratic with roots p and q is x^(2) – (p + q)x + pq = 0.','x^(2) – (p + q)x + pq = 0'],
+ ['Take p = sec^(2)θ and q = cosec^(2)θ and compute the sum, using sin^(2)θ + cos^(2)θ = 1.','sec^(2)θ + cosec^(2)θ = (sin^(2)θ + cos^(2)θ)/(sin^(2)θ cos^(2)θ) = (1)/(sin^(2)θ cos^(2)θ)'],
+ ['Compute the product.','sec^(2)θ · cosec^(2)θ = (1)/(sin^(2)θ cos^(2)θ)'],
+ ['The sum equals the product; call it P. Since sin 2θ = 2 sin θ cos θ, P = (4)/(sin^(2)2θ), so every such equation has the form below and 0 < sin^(2)2θ ≤ 1 forces P ≥ 4.','x^(2) – Px + P = 0, P = (4)/(sin^(2)2θ) ≥ 4'],
+ ['Discriminant of ax^(2) + bx + c = 0 is Δ = b^(2) – 4ac; distinct roots need Δ > 0.','Δ = b^(2) – 4ac'],
+ ['Substitute b = –P, a = 1, c = P: distinct roots require P > 4 (P = 4 means θ = (π)/(4) and both roots equal 2).','Δ = P^(2) – 4P = P(P – 4) > 0 ⇒ P > 4'],
+ ['Test the options: x^(2) – 3x + 3 has P = 3 < 4; x^(2) – 4x + 4 has P = 4 (equal roots, excluded); x^(2) + 5x – 5 has sum –5 < 0 but sec^(2)θ > 0 and cosec^(2)θ > 0.','options A, B, D fail'],
+ ['Option C has P = 9 > 4, attained when sin^(2)2θ = (4)/(9); its roots (9 ± 3√(5))/(2) are distinct and both at least 1, as sec^(2)θ and cosec^(2)θ must be.','x^(2) – 9x + 9 = 0, x = (9 ± 3√(5))/(2)','Correct answer: (C)']
+]},
+{id:'QUAD-10-J',parent:'QUAD-10',variant:10,topic:'Exponential equations reducible to a quadratic',relevance:{parent:'QUAD-10',sharedSkill:'Exponential equations reducible to a quadratic',recoveryPurpose:'controlled transfer'},source:'Institute module · Q318 · question p.29 · typography',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:318,questionPage:29,printedOptionKey:'A',verifiedOptionKey:'A'},question:'The solution of the inequation 4^(–x + 0.5) – 7 · 2^(–x) < 4, x ∈ R, is :',options:['(–2, ∞)','(2, ∞)','(2, (7)/(2))','None of these'],correct:0,answer:'(–2, ∞)',diagram:'',short:[
+ ['Rewrite 4^(–x + 0.5) using base 2.','4^(–x + 0.5) = 2^(–2x + 1) = 2 · (2^(–x))^(2)'],
+ ['Put t = 2^(–x), which is positive for every real x.','2t^(2) – 7t < 4, t > 0'],
+ ['Bring everything to one side and factor.','2t^(2) – 7t – 4 < 0, so (2t + 1)(t – 4) < 0'],
+ ['Since t > 0, the factor 2t + 1 is positive, so the inequality holds only when t – 4 < 0. Hence 0 < t < 4.','2^(–x) < 4 = 2^(2)'],
+ ['The base 2 is greater than 1, so compare the exponents.','–x < 2, so x > –2'],
+ ['The solution set is (–2, ∞), which is option A.','x ∈ (–2, ∞)','Correct answer: (A)']
+]},
+{id:'QUAD-44-E',parent:'QUAD-44',variant:5,topic:'Value of an expression in the roots of two quadratics',relevance:{parent:'QUAD-44',sharedSkill:'Value of an expression in the roots of two quadratics',recoveryPurpose:'controlled transfer'},source:'Institute module · Q61 · question p.5',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:61,questionPage:5,printedOptionKey:'D',verifiedOptionKey:'D'},question:'If α, β are roots of the equation x^(2) + px – q = 0 & γ, δ are roots of x^(2)+ px + r = 0, then the value of (α–γ)(α–δ) is-',options:['p + r','p – r','q – r','q + r'],correct:3,answer:'q + r',diagram:'',short:[
+ ['γ and δ are the roots of x^(2) + px + r = 0, so the polynomial factorises with these roots.','x^(2) + px + r = (x – γ)(x – δ)'],
+ ['Put x = α on both sides.','(α – γ)(α – δ) = α^(2) + pα + r'],
+ ['α is a root of x^(2) + px – q = 0, so it satisfies this equation.','α^(2) + pα – q = 0, so α^(2) + pα = q'],
+ ['Substitute α^(2) + pα = q.','(α – γ)(α – δ) = q + r'],
+ ['The value is q + r, which is option D. Options A and B involve p, and option C has the wrong sign of r.','q + r','Correct answer: (D)']
+]},
+{id:'QUAD-51',topic:'Reading and identifying the graph of a quadratic function',source:'Institute module · Q572 · question p.56 · figure redrawn',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:572,questionPage:56,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The diagram shows the graph of y = ax^(2) + bx + c. Then-',options:['a > 0','b^(2) – 4ac < 0','c > 0','b^(2) – 4ac = 0'],correct:2,answer:'c > 0',diagram:'',figure:'roots-down-q572',short:[
+ ['The curve is a downward-opening parabola, and the rule is that a parabola y = ax^(2) + bx + c opens downward exactly when a < 0.','a < 0, so option A (a > 0) is false'],
+ ['The parabola cuts the x-axis at two different points (x₂, 0) and (x₁, 0). The rule is that two distinct real roots occur exactly when the discriminant is positive.','Discriminant = b^(2) – 4ac > 0, so options B and D are false'],
+ ['The y-intercept is found by putting x = 0 in the function, which gives the height where the curve meets the y-axis.','y(0) = a(0)^(2) + b(0) + c = c'],
+ ['The curve crosses the y-axis above the x-axis, since the vertex is above the x-axis and the y-axis lies between the two roots, so the y-intercept is positive.','c = y(0) > 0','Correct answer: (C)']
+]},
+{id:'QUAD-51-A',parent:'QUAD-51',variant:1,topic:'Reading and identifying the graph of a quadratic function',relevance:{parent:'QUAD-51',sharedSkill:'Reading and identifying the graph of a quadratic function',recoveryPurpose:'controlled transfer'},source:'Institute module · Q638 · question p.61 · figure redrawn · option corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:638,questionPage:61,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The diagram shows the graph of y = ax^(2) + bx + c. Then -',options:['a > 0','b > 0','c > 0','b^(2) – 4ac = 0'],correct:2,answer:'c > 0',diagram:'',figure:'roots-down-q638',short:[
+ ['The curve is a downward-opening parabola, and the rule is that y = ax^(2) + bx + c opens downward exactly when a < 0.','a < 0, so option A (a > 0) is false'],
+ ['The parabola cuts the x-axis at two different points, and the rule is that two distinct real roots need a positive discriminant.','b^(2) – 4ac > 0, so option D (b^(2) – 4ac = 0) is false'],
+ ['The vertex of the parabola has x-coordinate given by the vertex formula. In the figure the vertex lies to the left of the y-axis.','x_vertex = (–b)/(2a) < 0'],
+ ['Since a < 0, the fraction (–b)/(2a) is negative only when –b is positive, so b is negative and option B (b > 0) is false.','(–b)/(2a) < 0 with 2a < 0 gives –b > 0, so b < 0'],
+ ['The y-intercept is y(0) = c. The curve meets the y-axis above the x-axis, so the intercept is positive.','y(0) = c > 0','Correct answer: (C)']
+]},
+{id:'QUAD-51-B',parent:'QUAD-51',variant:2,topic:'Reading and identifying the graph of a quadratic function',relevance:{parent:'QUAD-51',sharedSkill:'Reading and identifying the graph of a quadratic function',recoveryPurpose:'controlled transfer'},source:'Institute module · Q380 · question p.34 · figure redrawn',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:380,questionPage:34,printedOptionKey:'C',verifiedOptionKey:'C'},question:'The graph of a quadratic polynomial y = ax^(2) + bx + c (a, b , c ∈ R) with vertex on y-axis is as shown in the figure. Then which one of the following statement is INCORRECT ?',options:['Product of the roots of the corresponding quadratic equation is positive','Discriminant of the quadratic equation is negative','Nothing definite can be said about the sum of the roots, whether positive, negative or zero','Both roots of the quadratic equation are purely imaginary'],correct:2,answer:'Nothing definite can be said about the sum of the roots, whether positive, negative or zero',diagram:'',figure:'graph-q380',short:[
+ ['The parabola opens upward and its vertex lies on the y-axis, so the axis of symmetry is x = 0. The rule is that the vertex has x-coordinate given by the vertex formula.','x_vertex = (–b)/(2a) = 0, so b = 0'],
+ ['The whole curve lies above the x-axis, so it never meets the x-axis. The rule is that a parabola with no real roots has a negative discriminant.','Discriminant = b^(2) – 4ac < 0, so statement B is correct'],
+ ['The curve opens upward and lies above the x-axis, so a > 0 and c > 0. The product of the roots follows from Vieta\'s relations, which we state first.','Product of roots = (c)/(a) and sum of roots = (–b)/(a)'],
+ ['Substituting a > 0, c > 0 and b = 0 gives a positive product, so statement A is correct, and a sum equal to exactly zero.','Product = (c)/(a) > 0 and sum = (0)/(a) = 0'],
+ ['With b = 0 the equation is ax^(2) + c = 0, so the roots are x = ± i√((c)/(a)), which are purely imaginary, so statement D is correct.','x^(2) = (–c)/(a) < 0, so x = ± i√((c)/(a))'],
+ ['The sum of the roots is definitely zero, so statement C, which says nothing definite can be said about it, is the INCORRECT one.','Sum of roots = 0 is definite, so statement C is incorrect','Correct answer: (C)']
+]},
+{id:'QUAD-51-C',parent:'QUAD-51',variant:3,topic:'Reading and identifying the graph of a quadratic function',relevance:{parent:'QUAD-51',sharedSkill:'Reading and identifying the graph of a quadratic function',recoveryPurpose:'controlled transfer'},source:'Institute module · Q96 · question p.7 · figure redrawn · key corrected',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:96,questionPage:7,printedOptionKey:'D',verifiedOptionKey:'B'},question:'Graph of the function f(x) = Ax^(2) – Bx + C, where A = (sec θ – cos θ)(cosec θ – sin θ)(tan θ + cot θ), B = (sin θ + cosec θ)^(2) + (cos θ + sec θ)^(2) – (tan^(2) θ + cot^(2) θ) and C = 12, is represented by',options:['Sketch A','Sketch B','Sketch C','Sketch D'],correct:1,answer:'Sketch B',diagram:'',figure:'sketches-q96',short:[
+ ['Simplify A by writing every factor in sine and cosine.','sec θ – cos θ = (sin^(2) θ)/(cos θ), cosec θ – sin θ = (cos^(2) θ)/(sin θ), tan θ + cot θ = (1)/(sin θ cos θ)'],
+ ['Multiply the three factors together; every power of sin θ and cos θ cancels.','A = (sin^(2) θ)/(cos θ) × (cos^(2) θ)/(sin θ) × (1)/(sin θ cos θ) = 1'],
+ ['For B, use the identity (p + q)^(2) = p^(2) + 2pq + q^(2) on the first two brackets, with sin θ · cosec θ = 1 and cos θ · sec θ = 1.','(sin θ + cosec θ)^(2) + (cos θ + sec θ)^(2) = (sin^(2) θ + cos^(2) θ) + 4 + cosec^(2) θ + sec^(2) θ'],
+ ['Now use the identities cosec^(2) θ = 1 + cot^(2) θ and sec^(2) θ = 1 + tan^(2) θ, together with sin^(2) θ + cos^(2) θ = 1.','= 1 + 4 + (1 + cot^(2) θ) + (1 + tan^(2) θ) = 7 + tan^(2) θ + cot^(2) θ'],
+ ['Subtracting tan^(2) θ + cot^(2) θ leaves a constant, so the function is an ordinary quadratic.','B = 7 and f(x) = x^(2) – 7x + 12 = (x – 3)(x – 4)'],
+ ['Read the graph from f: A = 1 > 0 so the parabola opens upward, the roots 3 and 4 are both positive, and f(0) = 12 > 0. Only sketch B is an upward parabola crossing the x-axis twice on the positive side and cutting the y-axis above the origin. Sketches A and C open downward, and sketch D opens upward but never meets the x-axis (it would need a negative discriminant, but here the discriminant is 1). The printed key (D) is therefore wrong.','Discriminant = 49 – 48 = 1 > 0, so the graph is sketch B','Correct answer: (B)']
+]},
+{id:'QUAD-51-D',parent:'QUAD-51',variant:4,topic:'Reading and identifying the graph of a quadratic function',relevance:{parent:'QUAD-51',sharedSkill:'Reading and identifying the graph of a quadratic function',recoveryPurpose:'controlled transfer'},source:'Institute module · Q162 · question p.13 · figure redrawn',sourceRef:{documentName:'Quadratic Equation (A)',questionNumber:162,questionPage:13,printedOptionKey:'D',verifiedOptionKey:'D'},question:'Which of the following is the graph of y = |x^(2) – 10x + 24|',options:['Sketch A','Sketch B','Sketch C','Sketch D'],correct:3,answer:'Sketch D',diagram:'',figure:'sketches-q162',short:[
+ ['Factorise the quadratic inside the modulus to find where it meets the x-axis.','x^(2) – 10x + 24 = (x – 4)(x – 6), so the roots are x = 4 and x = 6'],
+ ['The inner parabola opens upward and is negative between its roots, since a product of two factors of opposite sign is negative there.','x^(2) – 10x + 24 < 0 for 4 < x < 6'],
+ ['The modulus definition says |g(x)| = g(x) where g(x) ≥ 0 and |g(x)| = –g(x) where g(x) < 0. So the graph outside [4, 6] is the original parabola, and between 4 and 6 the dipping part is reflected upward.','y = –(x^(2) – 10x + 24) for 4 ≤ x ≤ 6, and y = x^(2) – 10x + 24 otherwise'],
+ ['The reflected arch has its top at the midpoint of the roots, where the original vertex was at (5, –1).','At x = 5, y = |25 – 50 + 24| = 1'],
+ ['Thus the graph is an upward parabola touching the axis at 4 and 6 with a small arch peaking at x = 5 between them, and the curve stays on or above the x-axis. Sketch A is the plain parabola dipping below the axis, sketch B shows both the parabola and its reflection, and sketch C is symmetric about the y-axis with roots ±4 and ±6, which is the graph of y = |x|^(2) – 10|x| + 24. Only sketch D fits.','Sketch D shows roots 4 and 6 with the arch at 5','Correct answer: (D)']
 ]}
 ];
 if(typeof module!=='undefined'&&module.exports)module.exports={questions};
@@ -4216,6 +4390,7 @@ const subtopicPlan={
  'quadratic-expressions':[
   ['Maximum, minimum and range of quadratic-related expressions',['QUAD-08','QUAD-22']],
   ['Sign of a quadratic expression for real x',['QUAD-09','QUAD-23']],
+  ['Graphs of quadratic functions',['QUAD-51']],
   ['Factorising a two-variable quadratic expression',['QUAD-19']],
   ['Condition for a quadratic to be an identity (more than two roots)',['QUAD-24']]],
  'reducible-to-quadratic':[['Equations reducible to quadratic form',['QUAD-10','QUAD-49','QUAD-50','QUAD-39','QUAD-40','QUAD-41','QUAD-42','QUAD-45','QUAD-46']]],
@@ -4371,8 +4546,67 @@ function locationOfRootsDiagram(){
  s+=t(230,26,'One root < λ < the other root ⇔ f(λ) < 0',null,22);
  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Upward parabola with λ marked strictly between its two roots, where the curve dips below the x-axis">${s}</svg>`;
 }
+// ---- Question figures: the source questions Q96, Q162, Q380, Q572 and Q638 are
+// about a printed graph, so the graph is part of the QUESTION (shown before the
+// options, not only in the solution). Each figure is redrawn from the source
+// page with real functions (see qa/evidence for the comparison with the page).
+const FIG_GREEN='#55db80',FIG_AXIS='#9a9a94',FIG_TEXT='#f4f4ef',FIG_DIM='#9a9a94';
+let figureClip=0;
+function figText(x,y,text,o){o=o||{};return `<text x="${x}" y="${y}" font-family="Inter,Arial,sans-serif" font-size="${o.size||15}" font-weight="${o.weight||500}" fill="${o.color||FIG_TEXT}" text-anchor="${o.anchor||'middle'}"${o.italic?' font-style="italic"':''}>${esc(text)}</text>`;}
+// One coordinate panel: axes with arrows, optional curves (each a function of x, clipped to the panel), labelled points.
+function figPanel(px,py,w,h,xr,yr,curves,opts){
+ opts=opts||{};const [xmin,xmax]=xr,[ymin,ymax]=yr,id='figclip'+(++figureClip);
+ const X=x=>px+(x-xmin)/(xmax-xmin)*w,Y=y=>py+h-(y-ymin)/(ymax-ymin)*h;
+ let s=`<clipPath id="${id}"><rect x="${px}" y="${py}" width="${w}" height="${h}"/></clipPath>`;
+ const ax=X(0),ay=Y(0);
+ s+=`<line x1="${px-4}" y1="${ay}" x2="${px+w}" y2="${ay}" stroke="${FIG_AXIS}" stroke-width="2"/><polygon points="${px+w+6},${ay} ${px+w-4},${ay-4} ${px+w-4},${ay+4}" fill="${FIG_AXIS}"/>`;
+ s+=`<line x1="${ax}" y1="${py+h+4}" x2="${ax}" y2="${py-2}" stroke="${FIG_AXIS}" stroke-width="2"/><polygon points="${ax},${py-8} ${ax-4},${py+2} ${ax+4},${py+2}" fill="${FIG_AXIS}"/>`;
+ if(!opts.noAxisNames){s+=figText(px+w+4,ay+18,'x',{size:14,color:FIG_DIM,italic:1,anchor:'end'});s+=figText(ax+13,py-2,'y',{size:14,color:FIG_DIM,italic:1});}
+ curves.forEach(c=>{const f=c.f,pts=[];const n=c.n||160;for(let i=0;i<=n;i++){const x=xmin+(xmax-xmin)*i/n;pts.push(X(x).toFixed(1)+' '+Y(f(x)).toFixed(1));}
+  s+=`<path clip-path="url(#${id})" d="M ${pts.join(' L ')}" fill="none" stroke="${c.color||FIG_GREEN}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"${c.dash?' stroke-dasharray="4 5"':''}/>`;});
+ (opts.marks||[]).forEach(m=>{if(m.r!==0)s+=`<circle cx="${X(m.x)}" cy="${Y(m.y||0)}" r="${m.r||4}" fill="${m.color||FIG_TEXT}"/>`;if(m.label)s+=figText(X(m.x)+(m.dx||0),Y(m.y||0)+(m.dy===undefined?20:m.dy),m.label,{size:m.size||14,color:m.lc||FIG_TEXT,anchor:m.anchor||'middle'});});
+ (opts.vlines||[]).forEach(v=>{s+=`<line x1="${X(v.x)}" y1="${Y(v.y1)}" x2="${X(v.x)}" y2="${Y(v.y0||0)}" stroke="${FIG_DIM}" stroke-width="2" stroke-dasharray="3 4"/>`;});
+ if(opts.origin)s+=figText(ax-11,ay+17,'O',{size:15,anchor:'end'});
+ if(opts.title)s+=figText(px-6,py+8,opts.title,{size:16,weight:700,color:'#ffd23f',anchor:'end'});
+ return s;
+}
+function figSvg(w,h,inner,label){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(label)}">${inner}</svg>`;}
+// Q96: four sketches of a parabola; the graph of f(x) = x^2 - 7x + 12 is sketch B.
+function figureSketchesQ96(){
+ const W=470,H=400,pw=170,ph=140;let s='';
+ const xr=[-1.5,7];
+ s+=figPanel(40,26,pw,ph,xr,[-7.5,3.6],[{f:x=>-0.55*(x-2)*(x-6)}],{title:'(A)'});
+ s+=figPanel(285,26,pw,ph,xr,[-2.6,7],[{f:x=>0.6*(x-2)*(x-5)}],{title:'(B)'});
+ s+=figPanel(40,226,pw,ph,xr,[-1.3,4.6],[{f:x=>-0.6*(x+0.5)*(x-4.5)}],{title:'(C)'});
+ s+=figPanel(285,226,pw,ph,xr,[-1.6,6.4],[{f:x=>0.5*(x-3)*(x-3)+1}],{title:'(D)'});
+ return figSvg(W,H,s,'Four parabola sketches labelled A, B, C and D');
+}
+// Q162: four sketches (schematic, not to scale, as printed); the graph of y = |x^2 - 10x + 24| is sketch D.
+// Schematic coordinates: the roots 4 and 6 sit at 1.2 and 2.6 so that the y-intercept of every curve is visible.
+function figureSketchesQ162(){
+ const W=470,H=410,pw=180,ph=130,r1=1.2,r2=2.6,mid=(r1+r2)/2,par=x=>(x-r1)*(x-r2);let s='';
+ const lab=(x,t,dy)=>({x:x,label:t,r:0,dy:dy||18});
+ s+=figPanel(40,26,pw,ph,[-0.5,3.6],[-0.9,3.7],[{f:par}],{title:'(A)',marks:[lab(r1,'4'),lab(r2,'6')]});
+ s+=figPanel(285,26,pw,ph,[-0.5,3.6],[-3.7,3.7],[{f:par},{f:x=>-par(x)}],{title:'(B)',marks:[lab(r1,'4',-8),lab(r2,'6',-8)]});
+ s+=figPanel(40,226,pw+30,ph+10,[-3.7,3.7],[-0.9,3.7],[{f:x=>par(Math.abs(x))}],{title:'(C)',marks:[lab(-r2,'–6'),lab(-r1,'–4'),lab(r1,'4'),lab(r2,'6')]});
+ s+=figPanel(285,226,pw,ph,[-0.5,3.6],[-0.9,3.7],[{f:x=>Math.abs(par(x))}],{title:'(D)',origin:true,marks:[lab(r1,'4'),lab(mid,'5'),lab(r2,'6')],vlines:[{x:mid,y1:Math.abs(par(mid))}]});
+ return figSvg(W,H,s,'Four graph sketches labelled A, B, C and D');
+}
+// Q380: y = ax^2 + bx + c with its vertex on the y-axis, entirely above the x-axis.
+function figureQ380(){
+ return figSvg(320,250,figPanel(50,24,220,180,[-3,3],[-1,5.2],[{f:x=>0.5*x*x+1}],{origin:true}),'Upward parabola with its vertex on the positive y-axis, entirely above the x-axis');
+}
+// Q572 and Q638: y = ax^2 + bx + c, a downward parabola meeting the x-axis at (x2, 0) left of O and (x1, 0) right of O
+// (vertex to the left of the y-axis in both printed figures; x1 is closer to O in Q638 than in Q572).
+function figureTwoRootsDown(x2,x1){
+ return ()=>{const f=x=>-0.5*(x-x2)*(x-x1);
+  let inner=figPanel(40,24,280,180,[-4.2,2.8],[-1.2,2.6],[{f:f}],{origin:true,marks:[{x:x2,label:'(x₂, 0)',dy:22,dx:-8,r:0,anchor:'end'},{x:x1,label:'(x₁, 0)',dy:22,dx:8,r:0,anchor:'start'}]});
+  inner+=figText(44,24+180*(2.6/3.8)-8,'x′',{size:15,anchor:'start'});
+  return figSvg(360,250,inner,'Downward parabola meeting the x-axis at (x2, 0) to the left of the origin and (x1, 0) to the right');};
+}
+const FIGURES={'sketches-q96':figureSketchesQ96,'sketches-q162':figureSketchesQ162,'graph-q380':figureQ380,'roots-down-q572':figureTwoRootsDown(-2.2,1.3),'roots-down-q638':figureTwoRootsDown(-2.6,0.6)};
 const DIAGRAMS={'location-of-roots':locationOfRootsDiagram};
-function diagram(q,solution){if(!solution)return'';const build=DIAGRAMS[q.diagram];return build?build():'';}
+function diagram(q,solution){if(!solution){const fig=FIGURES[q.figure];return fig?fig():'';}const build=DIAGRAMS[q.diagram];return build?build():'';}
 </script>
 <script>let reviewPdfUrl=null,reviewPdfFile=null;
 function reviewDefinition(){
