@@ -640,6 +640,484 @@ detailed:[
  ['From b/t: b divided by t must give velocity, so b\'s dimension is velocity times time.','[b/t] = LT⁻¹','[b] = L'],
  ['c is added directly to the other velocity terms, so it must itself carry the dimension of velocity.','[c] = LT⁻¹'],
  ['So a, b, c have dimensions LT⁻², L, LT⁻¹ respectively.','Answer: (C) LT⁻², L, LT⁻¹']
+]},
+{id:'UD-59',topic:'Identifying the vector quantity among scalar physical quantities',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.21 · p.2',sourceRef:true,question:'Choose the physical quantity that is different from others –',options:['Moment of Inertia','Electric current','Pressure energy','Rate of change of velocity'],correct:3,answer:'Rate of change of velocity',
+short:[['Moment of inertia, electric current and pressure energy are all scalar quantities.','Moment of inertia, current','pressure energy: scalars'],['Rate of change of velocity is acceleration, which has a direction, so it is a vector.','Rate of change of velocity = acceleration: vector','Answer: (D) Rate of change of velocity']],
+detailed:[
+ ['Compare the four options by their scalar or vector character rather than by a formula, since that is what actually separates them here.','Moment of inertia I: scalar','Electric current i: scalar (by convention in circuit analysis)','Pressure energy pV: scalar (energy is always scalar)'],
+ ['Rate of change of velocity is, by definition, acceleration — a vector quantity, since it inherits velocity\'s direction.','Rate of change of velocity = dv/dt','= a','a is a vector'],
+ ['So three of the four options are scalars and only one, rate of change of velocity, is a vector; that is the quantity that is \'different from the others\'.','Answer: (D) Rate of change of velocity']
+]},
+{id:'UD-60',topic:'Dimension of mass per unit length in the vibrating-string frequency formula',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.22 · p.2',sourceRef:true,question:'The frequency (n) of vibration of a string is given as n = (1/2l)√(T/m), where T is tension and l is the length of vibrating string, then the dimensional formula for m is –',options:['[M⁰L¹T¹]','[M⁰L⁰T⁰]','[M¹L⁻¹T⁰]','[ML⁰T⁰]'],correct:2,answer:'[M¹L⁻¹T⁰]',
+short:[['Square both sides and solve for m.','n = (1/2l)√(T/m)','⇒ 4l²n² = T/m','⇒ m = T/(4l²n²)'],['Substitute the dimensions of tension T (a force), length l, and frequency n.','[m] = (MLT⁻²)/(L²T⁻²)','= M¹L⁻¹T⁰','Answer: (C) [M¹L⁻¹T⁰]']],
+detailed:[
+ ['Start from the given frequency formula and isolate m algebraically before substituting any dimensions.','n = (1/2l)√(T/m)','⇒ 2ln = √(T/m)','⇒ (2ln)² = T/m','⇒ m = T/(4l²n²)'],
+ ['Tension T is a force, length l is a length, and frequency n has dimension T⁻¹; substitute each.','[T] = MLT⁻²','[l] = L','[n] = T⁻¹'],
+ ['Divide T by (2l)²n² using these dimensions.','[m] = (MLT⁻²)/(L²·T⁻²)','= MLT⁻²·L⁻²T²','= M¹L⁻¹T⁰'],
+ ['This is option (C); m here is mass per unit length (linear mass density), which is why the L exponent is −1.','Answer: (C) [M¹L⁻¹T⁰]']
+]},
+{id:'UD-61',topic:'Dimension of the ratio omega/k in a travelling-wave equation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.23 · p.2',sourceRef:true,question:'In the relation y = r sin(ωt – kx), the dimensions of ω/k are –',options:['[M⁰L⁰T⁰]','[M⁰L¹T⁻¹]','[M⁰L⁰T¹]','[M⁰L¹T⁰]'],correct:1,answer:'[M⁰L¹T⁻¹]',
+short:[['The argument of sin must be dimensionless, so ωt and kx are each dimensionless.','[ω][t] = 1','⇒ [ω] = T⁻¹','[k][x] = 1','⇒ [k] = L⁻¹'],['Divide.','[ω/k] = T⁻¹/L⁻¹','= L¹T⁻¹','Answer: (B) [M⁰L¹T⁻¹]']],
+detailed:[
+ ['The argument of a trigonometric function must be a pure number, so every term inside the sine, ωt and kx, is individually dimensionless.','ωt: dimensionless','kx: dimensionless'],
+ ['Since t is time and x is length, this fixes the dimensions of ω and k.','ω = 1/t','= T⁻¹','k = 1/x','= L⁻¹'],
+ ['Divide ω by k.','[ω/k] = T⁻¹/L⁻¹','= L¹T⁻¹'],
+ ['This is option (B); physically ω/k is the wave speed, which indeed has dimension LT⁻¹.','Answer: (B) [M⁰L¹T⁻¹]']
+]},
+{id:'UD-62',topic:'Dimension of the product epsilon0 mu0',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.24 · p.2',sourceRef:true,question:'Dimensions of ε₀μ₀ are –',options:['[L T⁻¹]','[L T⁻²]','[L²T⁻²]','[L⁻²T²]'],correct:3,answer:'[L⁻²T²]',
+short:[['The speed of light is c = 1/√(ε₀μ₀), so ε₀μ₀ = 1/c².','ε₀μ₀ = c⁻²'],['Substitute the dimension of speed.','[c] = LT⁻¹','[ε₀μ₀] = (LT⁻¹)⁻²','= L⁻²T²','Answer: (D) [L⁻²T²]']],
+detailed:[
+ ['The speed of light in free space is related to the permittivity and permeability of free space by the standard electromagnetic relation.','c = 1/√(ε₀μ₀)'],
+ ['Square and invert this relation to isolate the product ε₀μ₀.','c² = 1/(ε₀μ₀)','⇒ ε₀μ₀ = 1/c²','= c⁻²'],
+ ['Substitute the dimension of speed, LT⁻¹.','[ε₀μ₀] = (LT⁻¹)⁻²','= L⁻²T²'],
+ ['This is option (D).','Answer: (D) [L⁻²T²]']
+]},
+{id:'UD-63',topic:'Dimensions of the Van der Waals constant a',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.25 · p.2',sourceRef:true,question:'The equation of state of a real gas can be expressed as (P + a/V²)(V – b) = cT, where P is the pressure, V the volume, T the absolute temperature and a, b, c are constants. What are the dimensions of \'a\' –',options:['M⁰ L³ T⁻²','M L⁻² T⁵','M L⁵ T⁻²','M⁰ L³ T⁰'],correct:2,answer:'M L⁵ T⁻²',
+short:[['Only quantities with the same dimension can be added, so a/V² must have the dimension of pressure P.','a/V² = P','⇒ [a] = [P][V]²'],['Substitute.','[a] = (ML⁻¹T⁻²)(L³)²','= ML⁻¹T⁻²·L⁶','= ML⁵T⁻²','Answer: (C) M L⁵ T⁻²']],
+detailed:[
+ ['Inside the bracket (P + a/V²), the two terms P and a/V² are added, so they must share the same dimension, that of pressure.','a/V² = P','= ML⁻¹T⁻²'],
+ ['Solve this for the dimension of a by multiplying both sides by [V²].','[a] = [P]·[V]²'],
+ ['Substitute the dimension of pressure and of volume (length cubed).','[a] = (ML⁻¹T⁻²)(L³)²','= (ML⁻¹T⁻²)(L⁶)','= ML⁵T⁻²'],
+ ['This is option (C); this is the standard dimensional formula of the Van der Waals constant \'a\'.','Answer: (C) M L⁵ T⁻²']
+]},
+{id:'UD-64',topic:'Identifying a quantity from its dimensional formula ML2T-2',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.26 · p.2',sourceRef:true,question:'What is the physical quantity whose dimensions are M L² T⁻² –',options:['Pressure','Kinetic energy','Power','Momentum'],correct:1,answer:'Kinetic energy',
+short:[['Write the dimension of each option.','Pressure = ML⁻¹T⁻²','Kinetic energy = (1/2)mv²','= ML²T⁻²','Power = ML²T⁻³','Momentum = MLT⁻¹'],['Only kinetic energy matches.','Answer: (B) Kinetic energy']],
+detailed:[
+ ['Work out the dimension of each option from its defining relation.','Pressure = force/area','⇒ ML⁻¹T⁻²','Kinetic energy = (1/2)mv²','⇒ ML²T⁻²'],
+ ['Continue with the remaining two options.','Power = work/time','⇒ ML²T⁻³','Momentum = mv','⇒ MLT⁻¹'],
+ ['Comparing all four with the target ML²T⁻², only kinetic energy matches exactly.','Answer: (B) Kinetic energy']
+]},
+{id:'UD-65',topic:'Dimension of Young\'s modulus in a non-standard base system (F, A, V)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.27 · p.2',sourceRef:true,question:'If the velocity (V), acceleration (A) and force (F) are taken as fundamental quantities instead of mass (M), length (L) and time (T), the dimensions of Young\'s modulus would be –',options:['FA²V⁻⁴','FA²V⁻⁵','FA²V⁻³','FA²V⁻²'],correct:0,answer:'FA²V⁻⁴',
+short:[['Young\'s modulus has the usual dimension ML⁻¹T⁻² (same as pressure/stress). Express M, L, T in terms of F, A, V.','From v = at: T','= V A⁻¹','From a = LT⁻²: L','= A T²','= A(V A⁻¹)²','= V²A⁻¹','From F = ma: M','= F A⁻¹'],['Substitute into ML⁻¹T⁻².','[Y] = (FA⁻¹)(V²A⁻¹)⁻¹(VA⁻¹)⁻²','= (FA⁻¹)(V⁻²A)(V⁻²A²)','= FA²V⁻⁴','Answer: (A) FA²V⁻⁴']],
+detailed:[
+ ['Young\'s modulus has dimension ML⁻¹T⁻² in the usual M, L, T system; the task is to re-express M, L and T in terms of the new fundamental quantities F, A and V.','[Y] = ML⁻¹T⁻²'],
+ ['Since acceleration is velocity per unit time, time can be written in terms of V and A.','A = V/T','⇒ T = V A⁻¹'],
+ ['Since acceleration is length per unit time squared, length can then be written using A and this T.','L = A T²','= A(V A⁻¹)²','= V²A⁻¹'],
+ ['Since force is mass times acceleration, mass follows directly.','F = M A','⇒ M = F A⁻¹'],
+ ['Substitute all three into ML⁻¹T⁻² and simplify the powers of A.','[Y] = (F A⁻¹)(V²A⁻¹)⁻¹(V A⁻¹)⁻²','= (F A⁻¹)(V⁻²A)(V⁻²A²)','= F A^(−1+1+2) V^(−2−2)','= FA²V⁻⁴'],
+ ['This is option (A).','Answer: (A) FA²V⁻⁴']
+]},
+{id:'UD-66',topic:'Dimension of the combination L/(RCV)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.28 · p.2',sourceRef:true,question:'If L, R, C and V respectively represent inductance, resistance, capacitance and potential difference then the dimensions of L(RCV)⁻¹ are the same as those of –',options:['Charge','Charge⁻¹','Current','Current⁻¹'],correct:3,answer:'Current⁻¹',
+short:[['Write the dimension of each quantity.','[L] = ML²T⁻²A⁻²','[R] = ML²T⁻³A⁻²','[C] = M⁻¹L⁻²T⁴A²','[V] = ML²T⁻³A⁻¹'],['Multiply R, C, V, then divide L by the product.','[RCV] = ML²T⁻²A⁻¹','L(RCV)⁻¹ = (ML²T⁻²A⁻²)(ML²T⁻²A⁻¹)⁻¹','= A⁻¹','Answer: (D) Current⁻¹']],
+detailed:[
+ ['Write down the standard dimensional formula of each of the four quantities in terms of M, L, T and current A.','[L] = ML²T⁻²A⁻²','[R] = ML²T⁻³A⁻²','[C] = M⁻¹L⁻²T⁴A²','[V] = ML²T⁻³A⁻¹'],
+ ['Multiply R, C and V together first.','[RCV] = (ML²T⁻³A⁻²)(M⁻¹L⁻²T⁴A²)(ML²T⁻³A⁻¹)','= M¹L²T⁻²A⁻¹'],
+ ['Divide the dimension of L by this product.','L(RCV)⁻¹ = (ML²T⁻²A⁻²)(ML²T⁻²A⁻¹)⁻¹','= A⁻¹'],
+ ['A⁻¹ is the dimension of current⁻¹, option (D).','Answer: (D) Current⁻¹']
+]},
+{id:'UD-67',topic:'Finding exponents in a gas-bubble oscillation period relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.29 · p.2',sourceRef:true,question:'A gas bubble from an explosion under water oscillates with a period proportional to Pᵃ dᵇ Eᶜ, where P is the static pressure, d is the density of water and E is the energy of explosion. Then a, b, c are respectively –',options:['1, 1, 1','1/3, 1/2, −5/6','−5/6, 1/2, 1/3','1/2, −5/6, 1/3'],correct:2,answer:'−5/6, 1/2, 1/3',
+short:[['Write the dimension equation: T ∝ PᵃdᵇEᶜ, with [T]=T, [P]=ML⁻¹T⁻², [d]=ML⁻³, [E]=ML²T⁻².','M⁰L⁰T¹ = (ML⁻¹T⁻²)ᵃ(ML⁻³)ᵇ(ML²T⁻²)ᶜ'],['Match powers of M, L, T.','M: a+b+c = 0','L: −a−3b+2c = 0','T: −2a−2c = 1'],['Solve the three equations together.','From M and T: b = 1/2','Then: a = −5/6','c = 1/3','Answer: (C) −5/6, 1/2, 1/3']],
+detailed:[
+ ['Set the dimension of the period equal to the combined dimension of Pᵃ, dᵇ and Eᶜ, using the standard dimensional formulas of pressure, density and energy.','[T] = T¹','[P] = ML⁻¹T⁻², [d]','= ML⁻³, [E]','= ML²T⁻²','M⁰L⁰T¹ = (ML⁻¹T⁻²)ᵃ(ML⁻³)ᵇ(ML²T⁻²)ᶜ'],
+ ['Match the exponent of M, of L and of T on both sides to get three simultaneous equations in a, b, c.','M: a+b+c = 0','L: −a−3b+2c = 0','T: −2a−2c = 1'],
+ ['From the M and T equations, b can be found without needing a or c individually.','a+c = −1/2 (from T)','b = −(a+c)','= 1/2 (from M)'],
+ ['Substitute b = 1/2 into the L equation and combine with a+c = −1/2 to solve for a and c.','−a − 3/2 + 2c = 0','⇒ c = a/2 + 3/4','Also c = −1/2 − a','⇒ a = −5/6','c = 1/3'],
+ ['So a = −5/6, b = 1/2, c = 1/3, which is option (C). Checking: a+b+c = 0 ✓, −a−3b+2c = 0 ✓, −2a−2c = 1 ✓ — all three homogeneity equations are satisfied. Option (A), 1,1,1, fails even the mass equation (1+1+1=3≠0), so the printed key must be a transcription error.','Answer: (C) −5/6, 1/2, 1/3']
+]},
+{id:'UD-68',topic:'Subtracting measured values and rounding to correct significant figures',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.30 · p.2',sourceRef:true,question:'Subtract 0.2 J from 5.27 J and express the result with correct number of significant figures -',options:['5.1 J','5.06 J','5.0 J','5 J'],correct:0,answer:'5.1 J',
+short:[['In addition/subtraction, the result is rounded to the least number of decimal places among the terms.','5.27 J (2 decimal places) − 0.2 J (1 decimal place)','= 5.07 J'],['Round to 1 decimal place (matching 0.2 J).','= 5.1 J','Answer: (A) 5.1 J']],
+detailed:[
+ ['In addition or subtraction, the number of decimal places in the result is limited to the smallest number of decimal places among the values being combined — not the number of significant figures.','5.27 J: 2 decimal places','0.2 J: 1 decimal place'],
+ ['Carry out the subtraction first, keeping extra digits.','5.27 J − 0.2 J = 5.07 J'],
+ ['Round this to 1 decimal place, since that is the least precise of the two inputs.','5.07 J → 5.1 J'],
+ ['This is option (A).','Answer: (A) 5.1 J']
+]},
+{id:'UD-69',topic:'Error in volume from error in radius of a sphere (2%)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.31 · p.2',sourceRef:true,question:'Error in the measurement of radius of a sphere is 2%. Then error in the measurement of volume is -',options:['2%','4%','8%','6%'],correct:3,answer:'6%',
+short:[['Volume of a sphere depends on r³, so relative error in V is 3× relative error in r.','V = (4/3)πr³','ΔV/V = 3(Δr/r)'],['Substitute.','ΔV/V = 3(2%)','= 6%','Answer: (D) 6%']],
+detailed:[
+ ['Volume of a sphere is proportional to the cube of the radius, so by the power rule for error propagation, the relative error in V is 3 times the relative error in r.','V = (4/3)πr³','ΔV/V = 3(Δr/r)'],
+ ['Substitute the given 2% error in r.','ΔV/V = 3 × 2%','= 6%'],
+ ['This is option (D).','Answer: (D) 6%']
+]},
+{id:'UD-70',topic:'Finding the dependence of water-wave speed on wavelength, density and gravity',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.32 · p.3',sourceRef:true,question:'The velocity v of waves produced in water depends on their wavelength λ, the density of water ρ, and acceleration due to gravity g. The square of velocity is proportional to -',options:['λ⁻¹g⁻¹ρ⁻¹','λg','λρg','λ²g⁻²ρ⁻¹'],correct:1,answer:'λg',
+short:[['Let v = k λᵃρᵇgᶜ and match dimensions.','LT⁻¹ = Lᵃ(ML⁻³)ᵇ(LT⁻²)ᶜ'],['Match powers of M, L, T.','M: b = 0','T: −2c = −1','⇒ c = 1/2','L: a−3b+c = 1','⇒ a = 1/2'],['So v ∝ λ¹ᐟ²g¹ᐟ², independent of ρ; squaring gives v² ∝ λg.','Answer: (B) λg']],
+detailed:[
+ ['Assume a power-law dependence and write the dimension of each factor: wavelength is a length, density is ML⁻³, and gravitational acceleration is LT⁻².','v = k λᵃρᵇgᶜ','[v] = LT⁻¹','LT⁻¹ = Lᵃ(ML⁻³)ᵇ(LT⁻²)ᶜ'],
+ ['Match the exponent of M on both sides; the left side has no M, so b must be zero.','M: 0 = b','⇒ b = 0'],
+ ['Match the exponent of T next.','T: −1 = −2c','⇒ c = 1/2'],
+ ['Match the exponent of L, using b = 0.','L: 1 = a + c','⇒ a = 1 − 1/2','= 1/2'],
+ ['So v ∝ λ¹ᐟ²g¹ᐟ²ρ⁰ — the density drops out entirely. Squaring both sides gives the square of velocity.','v² ∝ λg'],
+ ['This is option (B).','Answer: (B) λg']
+]},
+{id:'UD-71',topic:'Error in density from errors in mass and side length of a cube',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.33 · p.3',sourceRef:true,question:'The maximum error in the measurement of mass and length of the side of a cube are 2% and 1% respectively. The maximum error in its density is-',options:['2%','1%','3%','5%'],correct:3,answer:'5%',
+short:[['Density ρ = m/L³, so relative error adds: mass\'s error plus 3× length\'s error.','Δρ/ρ = Δm/m + 3(ΔL/L)'],['Substitute.','Δρ/ρ = 2% + 3(1%)','= 5%','Answer: (D) 5%']],
+detailed:[
+ ['Density is mass divided by volume, and for a cube volume is the cube of the side length, so density depends on mass to the first power and on length to the power −3.','ρ = m/L³'],
+ ['For a product/quotient of powers, relative errors add, each scaled by its power\'s magnitude.','Δρ/ρ = Δm/m + 3(ΔL/L)'],
+ ['Substitute the given errors: 2% in mass, 1% in length.','Δρ/ρ = 2% + 3(1%)','= 2% + 3%','= 5%'],
+ ['This is option (D).','Answer: (D) 5%']
+]},
+{id:'UD-72',topic:'Dimensions of constants in a falling-body equation of motion',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.34 · p.3',sourceRef:true,question:'The equation dv/dt = At – Bv is describing the rate of change of velocity of a body falling from rest in a resisting medium. The dimensions of A and B are -',options:['LT⁻³, T','LT⁻³, T⁻¹','LT, T','LT, T⁻¹'],correct:1,answer:'LT⁻³, T⁻¹',
+short:[['Both terms on the right must have the dimension of dv/dt, which is LT⁻².','At: [A] = LT⁻²/T','= LT⁻³'],['Bv: [B] = LT⁻²/(LT⁻¹)','= T⁻¹','Answer: (B) LT⁻³, T⁻¹']],
+detailed:[
+ ['The left side, dv/dt, is acceleration, so it has dimension LT⁻²; since At and Bv combine to give this, each must independently share that dimension.','[dv/dt] = LT⁻²'],
+ ['In the term At, A multiplies time t, so A\'s dimension is acceleration divided by time.','A = (dv/dt)/t','⇒ [A] = LT⁻²/T','= LT⁻³'],
+ ['In the term Bv, B multiplies velocity v, so B\'s dimension is acceleration divided by velocity.','B = (dv/dt)/v','⇒ [B] = LT⁻²/(LT⁻¹)','= T⁻¹'],
+ ['So A and B have dimensions LT⁻³ and T⁻¹ respectively, option (B).','Answer: (B) LT⁻³, T⁻¹']
+]},
+{id:'UD-73',topic:'Maximum percentage error formula for a difference x = a - b',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.35 · p.3',sourceRef:true,question:'If x = a – b, the maximum percentage error in the measurement of x will be -',options:['(Δa/a + Δb/b) × 100%','(Δa/a − Δb/b) × 100%','(Δa/(a−b) + Δb/(a−b)) × 100%','(Δa/(a−b) − Δb/(a−b)) × 100%'],correct:2,answer:'(Δa/(a−b) + Δb/(a−b)) × 100%',
+short:[['For a difference, absolute errors add in the worst case: Δx = Δa + Δb.','x = a − b','⇒ Δx = Δa + Δb'],['Percentage error is Δx/x × 100%, with x = a−b.','Δx/x × 100% = (Δa/(a−b) + Δb/(a−b)) × 100%','Answer: (C) (Δa/(a−b) + Δb/(a−b)) × 100%']],
+detailed:[
+ ['For both addition and subtraction, absolute errors always add in the worst case, since either measurement could be off in the direction that increases the discrepancy.','x = a − b','Δx = Δa + Δb'],
+ ['The percentage error in x is this absolute error divided by x itself (which is a−b, not a or b separately), times 100%.','Percentage error = (Δx/x) × 100%','= (Δa+Δb)/(a−b) × 100%'],
+ ['Splitting the sum over the common denominator gives the answer in the form the options use.','= (Δa/(a−b) + Δb/(a−b)) × 100%'],
+ ['This is option (C).','Answer: (C) (Δa/(a−b) + Δb/(a−b)) × 100%']
+]},
+{id:'UD-74',topic:'Dividing measured values and rounding to correct significant figures',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.36 · p.3',sourceRef:true,question:'When 96.54 is divided by 2.40, the correct result is -',options:['40.2250','40.225','40.23','40.2'],correct:3,answer:'40.2',
+short:[['In multiplication/division, the result keeps the least number of significant figures among the inputs.','96.54 (4 s.f.) ÷ 2.40 (3 s.f.)'],['Raw quotient is 40.225; round to 3 significant figures.','= 40.2','Answer: (D) 40.2']],
+detailed:[
+ ['In multiplication or division, the result is limited to the number of significant figures of the least precise input — not the number of decimal places.','96.54 has 4 significant figures','2.40 has 3 significant figures'],
+ ['Carry out the division first, keeping extra digits.','96.54/2.40 = 40.225'],
+ ['Round this to 3 significant figures, matching 2.40\'s precision.','40.225 → 40.2'],
+ ['This is option (D).','Answer: (D) 40.2']
+]},
+{id:'UD-75',topic:'Dimensions of constants in a velocity-time relation with an additive denominator term',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.37 · p.3',sourceRef:true,question:'The velocity \'v\' of a particle at time t is given by, v = a/t + bt/(t²+c). The dimensions of a, b, c are respectively -',options:['LT⁻², L, T','L, L, T²','L, LT, T⁻²','L, L, LT²'],correct:1,answer:'L, L, T²',
+short:[['a/t must have the dimension of v, so a = v·t.','[a] = (LT⁻¹)(T)','= L'],['(t²+c) forces c to share t²\'s dimension.','[c] = T²'],['bt/(t²+c) must also equal [v], so b = v·(t²+c)/t.','[b] = (LT⁻¹)(T²)/T','= L','Answer: (B) L, L, T²']],
+detailed:[
+ ['Every term added to give v must itself have the dimension of velocity, LT⁻¹. Start with a/t.','a/t = LT⁻¹','⇒ [a] = LT⁻¹·T','= L'],
+ ['Inside the second term\'s denominator, c is added to t², so it must share t²\'s dimension.','[c] = [t²]','= T²'],
+ ['The whole second term, bt/(t²+c), must also equal LT⁻¹; since (t²+c) has dimension T², solve for b.','bt/(t²+c) = LT⁻¹','[b]·T/T² = LT⁻¹','⇒ [b] = LT⁻¹·T','= L'],
+ ['So a = L, b = L, c = T², which is option (B).','Answer: (B) L, L, T²']
+]},
+{id:'UD-76',topic:'Dimensions of constants in an exponential time-dependence relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.38 · p.3',sourceRef:true,question:'The time dependence of physical quantity P is given by P = P₀ e^(−αt²+βt+γ), where α, β, γ are constants and their dimensions are given by (where t is time) -',options:['M⁰ L⁰ T⁻², M⁰ L⁰ T⁻¹, M⁰ L⁰ T⁰','M⁰ L⁻¹,T⁻², M⁰ L⁰ T⁻¹, M⁰ L⁰ T','M⁰ L⁰ T⁻¹, M L T⁻², M⁰ L⁰ T⁻¹','M, L, T, M L T⁰, M⁰ L⁰ T⁰'],correct:0,answer:'M⁰ L⁰ T⁻², M⁰ L⁰ T⁻¹, M⁰ L⁰ T⁰',
+short:[['The exponent of e must be dimensionless, so each of αt², βt, γ is individually dimensionless.','[α][t²] = 1','⇒ [α] = T⁻²','[β][t] = 1','⇒ [β] = T⁻¹','[γ] = 1','⇒ M⁰L⁰T⁰','Answer: (A) M⁰L⁰T⁻², M⁰L⁰T⁻¹, M⁰L⁰T⁰']],
+detailed:[
+ ['An exponent of e can only ever be a pure number, so the whole exponent −αt²+βt+γ is dimensionless, and since the three terms are added, each one must independently be dimensionless too.','αt²: dimensionless','βt: dimensionless','γ: dimensionless'],
+ ['Solve each for the corresponding constant\'s dimension.','α = 1/t²','= T⁻²','β = 1/t','= T⁻¹','[γ] = M⁰L⁰T⁰ (already dimensionless)'],
+ ['So α, β, γ have dimensions M⁰L⁰T⁻², M⁰L⁰T⁻¹, M⁰L⁰T⁰ respectively, option (A).','Answer: (A) M⁰L⁰T⁻², M⁰L⁰T⁻¹, M⁰L⁰T⁰']
+]},
+{id:'UD-77',topic:'Dimension of the product AB in a potential-energy relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.39 · p.3',sourceRef:true,question:'The potential energy of a particle varies with distance x from a fixed origin as V = A√x/(x+B) where A and B are constants. The dimensions of AB are -',options:['ML⁵ᐟ²T⁻²','M¹L²T⁻²','M³ᐟ²L⁵ᐟ²T⁻²','M¹L⁷ᐟ²T⁻²'],correct:3,answer:'M¹L⁷ᐟ²T⁻²',
+short:[['(x+B) must share x\'s dimension, so [B] = L. V is potential energy, ML²T⁻².','[B] = L'],['A√x = V(x+B), so solve for A.','A = V(x+B)/x¹ᐟ²','= (ML²T⁻²)(L)/L¹ᐟ²','= ML⁵ᐟ²T⁻²'],['Multiply A by B.','[AB] = (ML⁵ᐟ²T⁻²)(L)','= ML⁷ᐟ²T⁻²','Answer: (D) M¹L⁷ᐟ²T⁻²']],
+detailed:[
+ ['Since B is added directly to x in the denominator, it must share x\'s dimension, length.','[B] = [x]','= L'],
+ ['V is a potential energy, so it has the standard energy dimension.','[V] = ML²T⁻²'],
+ ['Cross-multiply the defining equation to isolate A, then substitute the dimensions of V, x and (x+B).','V(x+B) = A√x','A = V(x+B)/x¹ᐟ²','= (ML²T⁻²)(L)/L¹ᐟ²','= ML³T⁻²/L¹ᐟ²','= ML⁵ᐟ²T⁻²'],
+ ['Multiply the dimension of A by that of B to get AB.','[AB] = (ML⁵ᐟ²T⁻²)(L)','= ML⁷ᐟ²T⁻²'],
+ ['This is option (D).','Answer: (D) M¹L⁷ᐟ²T⁻²']
+]},
+{id:'UD-78',topic:'Error in surface area from error in radius of a sphere (1%)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.40 · p.3',sourceRef:true,question:'Error in measurement of radius of a sphere is 1%. Then error in measurement of area is-',options:['2%','3%','4 %','5%'],correct:0,answer:'2%',
+short:[['Surface area of a sphere depends on r², so relative error in area is 2× relative error in r.','A = 4πr²','ΔA/A = 2(Δr/r)'],['Substitute.','ΔA/A = 2(1%)','= 2%','Answer: (A) 2%']],
+detailed:[
+ ['Surface area of a sphere is proportional to the square of the radius, so by the power rule for error propagation, the relative error in A is twice the relative error in r.','A = 4πr²','ΔA/A = 2(Δr/r)'],
+ ['Substitute the given 1% error in r.','ΔA/A = 2 × 1%','= 2%'],
+ ['This is option (A).','Answer: (A) 2%']
+]},
+{id:'UD-79',topic:'error-propagation-difference',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.61 · p.5',sourceRef:true,question:'If x = a – b, then the maximum percentage error in the measurement of x will be –',options:['(Δa/a + Δb/b) × 100%','(Δa/a − Δb/b) × 100%','(Δa/(a−b) + Δb/(a−b)) × 100%','(Δa/(a−b) − Δb/(a−b)) × 100%'],correct:2,answer:'(Δa/(a−b) + Δb/(a−b)) × 100%',
+short:[['Absolute errors add for a sum or a difference','Δx = Δa + Δb'],['Percentage error is Δx over x, times 100','%error = (Δx/x) × 100%'],['Substitute x = a − b and split the fraction','%error = (Δa/(a−b) + Δb/(a−b)) × 100%','Answer: (C) (Δa/(a−b) + Δb/(a−b)) × 100%']],
+detailed:[
+ ['For a difference of two measured quantities, the absolute errors always add — the minus sign in x = a − b never reduces the uncertainty.','Δx = Δa + Δb'],
+ ['The percentage error is the absolute error in x divided by the value of x itself, times 100.','%error = (Δx/x) × 100%'],
+ ['Substitute x = a − b for the value of x in the denominator.','%error = (Δa+Δb)/(a−b) × 100%'],
+ ['Splitting the single fraction into two terms gives the printed form of the answer.','%error = (Δa/(a−b) + Δb/(a−b)) × 100%','Answer: (C) (Δa/(a−b) + Δb/(a−b)) × 100%']
+]},
+{id:'UD-80',topic:'relative-error-power-law',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.62 · p.5',sourceRef:true,question:'If f = x², then the relative error in f is –',options:['2Δx/x','(Δx)²/x','Δx/x','(Δx)²'],correct:0,answer:'2Δx/x',
+short:[['Take natural log of both sides','f = x²','⇒ ln f = 2 ln x'],['Differentiate to get relative error','Δf/f = 2 Δx/x','Answer: (A) 2Δx/x']],
+detailed:[
+ ['A power-law relation lets you convert to relative errors by taking logs of both sides.','f = x²','⇒ ln f = 2 ln x'],
+ ['Differentiating a log converts an absolute change into a relative (fractional) change.','Δf/f = 2 Δx/x'],
+ ['This is the general rule: the relative error in xⁿ is n times the relative error in x. Here n = 2.','Δf/f = 2 Δx/x','Answer: (A) 2Δx/x']
+]},
+{id:'UD-81',topic:'dimensional-formula-mksq-capacitance-magnetic-induction',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.63 · p.5',sourceRef:true,question:'In the equation X = 3YZ², X and Z have dimensions of capacitance and magnetic induction respectively. In MKSQ system, the dimensional formula of Y is –',options:['[M⁻³L⁻²T⁻²Q⁻⁴]','[ML⁻²]','[M⁻³L⁻²Q⁴T⁸]','[M⁻³L⁻²Q⁴T⁴]'],correct:3,answer:'[M⁻³L⁻²Q⁴T⁴]',
+short:[['Capacitance dimension','[C] = Q² (ML²T⁻²)⁻¹','= M⁻¹L⁻²Q²T²'],['Magnetic induction dimension','[B] = (MLT⁻²)(QLT⁻¹)⁻¹','= MT⁻¹Q⁻¹'],['Solve Y = X(3Z²)⁻¹','[Y] = [C][B]⁻²','= (M⁻¹L⁻²Q²T²)(M²T⁻²Q⁻²)⁻¹','= M⁻³L⁻²Q⁴T⁴','Answer: (D) [M⁻³L⁻²Q⁴T⁴]']],
+detailed:[
+ ['Capacitance is charge squared over energy, since the energy stored in a capacitor is Q²/(2C).','[C] = Q² (ML²T⁻²)⁻¹'],
+ ['Simplify the exponents.','[C] = M⁻¹L⁻²Q²T²'],
+ ['Magnetic induction follows from the force on a moving charge, F = QvB.','[B] = (MLT⁻²)(QLT⁻¹)⁻¹'],
+ ['Simplify the exponents.','[B] = MT⁻¹Q⁻¹'],
+ ['From X = 3YZ², Y is X divided by Z² (the numeral 3 is dimensionless).','[Y] = [C][B]⁻²'],
+ ['Substitute the two dimensional formulas and combine exponents.','[Y] = (M⁻¹L⁻²Q²T²)(M²T⁻²Q⁻²)⁻¹','= M⁻³L⁻²Q⁴T⁴','Answer: (D) [M⁻³L⁻²Q⁴T⁴]']
+]},
+{id:'UD-82',topic:'dimensional-homogeneity-additive-terms',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.64 · p.5',sourceRef:true,question:'Given that force (F) is given F = Pt⁻¹ + Qt. Here t is time. The unit of P is same as that of –',options:['displacement','velocity','acceleration','momentum'],correct:3,answer:'momentum',
+short:[['P t⁻¹ must have the dimension of F','[P] = [F][t]'],['Substitute F = MLT⁻², t = T','[P] = (MLT⁻²)(T)','= MLT⁻¹','Answer: (D) momentum']],
+detailed:[
+ ['Every term added to a force must itself carry the dimension of force, by dimensional homogeneity.','[P][t]⁻¹ = [F]'],
+ ['Solve for the dimension of P by multiplying both sides by t.','[P] = [F][t]'],
+ ['Substitute the dimensional formulas of force and time.','[P] = (MLT⁻²)(T)','= MLT⁻¹'],
+ ['MLT⁻¹ is the dimensional formula of momentum (mass × velocity), unlike displacement, velocity or acceleration.','[momentum] = (M)(LT⁻¹)','= MLT⁻¹','Answer: (D) momentum']
+]},
+{id:'UD-83',topic:'dimensional-formula-non-standard-base-FAT',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.65 · p.5',sourceRef:true,question:'If time T, acceleration A and force F are regarded as base units, then the dimensional formula of work is –',options:['[FA]','[FAT]','[FAT²]','[FA²T]'],correct:2,answer:'[FAT²]',
+short:[['Express L using A = LT⁻²','L = A T²'],['Work = Force × distance','[Work] = [F][L]','= (F)(AT²)','= FAT²','Answer: (C) [FAT²]']],
+detailed:[
+ ['With acceleration taken as a base unit, length must be re-expressed in terms of A and T.','A = L T⁻²','⇒ L = A T²'],
+ ['Work is force times distance.','W = F L'],
+ ['Substitute the new expression for L.','W = F (A T²)'],
+ ['Multiply out.','W = F A T²','Answer: (C) [FAT²]']
+]},
+{id:'UD-84',topic:'dimensionless-trig-argument',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.66 · p.5',sourceRef:true,question:'In the relation dy/dt = 2a sin(ωt + φ₀), the dimensional formula for (ωt + φ₀) is –',options:['[M⁰L⁰T⁰]','[ML⁰T⁰]','[MLT⁰]','[MLT]'],correct:0,answer:'[M⁰L⁰T⁰]',
+short:[['A sine only accepts a pure number','sin(θ) needs θ dimensionless'],['So the bracket term is dimensionless','[ωt + φ0] = M0L0T0','Answer: (A) [M0L0T0]']],
+detailed:[
+ ['The sine function only accepts a pure number as its argument, since its series expansion mixes powers of the argument.','sin(θ) is defined only for dimensionless θ'],
+ ['Therefore whatever combination (ωt + φ₀) works out to, its dimension must be M⁰L⁰T⁰.','[ωt + φ0] = M0L0T0'],
+ ['No other exponents are consistent with this requirement.','Answer: (A) [M0L0T0]']
+]},
+{id:'UD-85',topic:'identify-quantity-from-dimensional-formula-G',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.67 · p.5',sourceRef:true,question:'[M⁻¹L³T⁻²] is the dimensional formula of –',options:['gravitational constant','Planck\'s constant','surface tension','modulus of rigidity'],correct:0,answer:'gravitational constant',
+short:[['From F = Gm1m2 r⁻²','G = F r² (m1 m2)⁻¹'],['Substitute dimensions','[G] = (MLT⁻²)(L²)(M⁻²)','= M⁻¹L³T⁻²','Answer: (A) gravitational constant']],
+detailed:[
+ ['Newton\'s law of gravitation gives F = Gm1m2 r⁻², so G can be isolated.','G = F r² (m1 m2)⁻¹'],
+ ['Substitute the dimensional formulas of force, distance and mass.','[G] = (MLT⁻²)(L²)(M⁻²)'],
+ ['Combine the exponents.','[G] = M⁻¹L³T⁻²'],
+ ['This matches the gravitational constant; Planck\'s constant, surface tension and the modulus of rigidity all have different formulas.','Answer: (A) gravitational constant']
+]},
+{id:'UD-86',topic:'shear-oscillation-time-period',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.68 · p.5',sourceRef:true,question:'A highly rigid cubical block A of small mass M and side L is fixed rigidly on to another cubical block of same dimensions and of low modulus of rigidity η such that the lower face of A completely covers the upper face of B. The lower face of B is rigidly held on a horizontal surface. A small force F is applied perpendicular to one of the side faces of A. After the force is withdrawn, block A executes small oscillations, the time period of which is given by –',options:['2π√(MηL)','2π√(Mη/L)','2π√(ML/η)','2π√(M/(ηL))'],correct:3,answer:'2π√(M/(ηL))',
+short:[['Shear restoring force behaves like a spring','F = η(xL⁻¹)(L²)','= (ηL) x'],['Effective spring constant','k = ηL'],['Time period of the oscillator','T = 2π√(M k⁻¹)','= 2π√(M(ηL)⁻¹)','Answer: (D) 2π√(M/(ηL))']],
+detailed:[
+ ['Block A undergoes small shear oscillations because the low-rigidity block B beneath it behaves like a spring.','shear stress = η(xL⁻¹)'],
+ ['The restoring force is this stress acting over the contact area L².','F = η(xL⁻¹)(L²)','= (ηL) x'],
+ ['Comparing this to F = −kx identifies the effective spring constant.','k = ηL'],
+ ['The time period of any linear oscillator is 2π√(mass/spring constant).','T = 2π√(M k⁻¹)'],
+ ['Substituting k = ηL gives the final formula.','T = 2π√(M(ηL)⁻¹)','Answer: (D) 2π√(M/(ηL))']
+]},
+{id:'UD-87',topic:'Identifying the spherometer radius-of-curvature formula',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.69 · p.5',sourceRef:true,question:'To measure the radius of curvature with a spherometer, we use the formula –',options:['R = h²/6 + 1/ℓ','R = ℓ²/(6h) + h/2','R = h²/(2ℓ) + ℓ/h','R = 2ℓ²/h + 6/ℓ'],correct:1,answer:'R = ℓ²/(6h) + h/2',
+short:[['Standard spherometer formula relates ℓ and h','R = ℓ²/(6h) + h/2'],['No other combination matches this derivation','Answer: (B) R = ℓ²/(6h) + h/2']],
+detailed:[
+ ['The spherometer\'s radius-of-curvature formula relates the distance ℓ between the three legs and the height h read off the central screw.','R = ℓ²/(6h) + h/2'],
+ ['This is the standard result derived from the geometry of a spherical cap of height h whose base circle (through the three legs) has radius ℓ divided by root 3.','R = ℓ²/(6h) + h/2'],
+ ['No other listed combination of ℓ and h matches this derivation.','Answer: (B) R = ℓ²/(6h) + h/2']
+]},
+{id:'UD-88',topic:'dimensional-formula-non-standard-base-EVT',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.70 · p.5',sourceRef:true,question:'If energy E, velocity V and time T are chosen as fundamental quantities, then the dimensional formula of surface tension is –',options:['[EV⁻²T⁻²]','[EV⁻¹T⁻²]','[EV⁻²T⁻¹]','[E²V⁻¹T⁻²]'],correct:0,answer:'[EV⁻²T⁻²]',
+short:[['Surface tension has dimension MT⁻² normally','[γ] = MT⁻²'],['Express M via E, V, T','M = E V⁻²'],['Substitute','[γ] = (EV⁻²)(T⁻²)','= EV⁻²T⁻²','Answer: (A) [EV⁻²T⁻²]']],
+detailed:[
+ ['Surface tension has dimension MT⁻² (force per unit length) in the usual M, L, T system.','[γ] = MT⁻²'],
+ ['Re-express length in terms of the new base quantities: from V = LT⁻¹, length is L = VT.','L = V T'],
+ ['Substitute L = VT into E = ML²T⁻².','E = M (VT)²T⁻²'],
+ ['Simplify and isolate M.','E = M V²','⇒ M = E V⁻²'],
+ ['Substitute this M back into γ = MT⁻²; the T exponent is unaffected since T is still a base quantity.','[γ] = (E V⁻²)(T⁻²)','= EV⁻²T⁻²','Answer: (A) [EV⁻²T⁻²]']
+]},
+{id:'UD-89',topic:'unit-scaling-with-base-unit-change',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.71 · p.6',sourceRef:true,question:'If the units of M and L are increased three times, then the unit of energy will be increased by –',options:['3 times','6 times','27 times','81 times'],correct:2,answer:'27 times',
+short:[['Energy\'s dimensional formula','[E] = ML²T⁻²'],['Scale M and L by 3, T unchanged','new unit = (3)¹(3)²[E]','= 27 [E]','Answer: (C) 27 times']],
+detailed:[
+ ['Energy has the dimensional formula ML²T⁻².','[E] = ML²T⁻²'],
+ ['If the unit of mass is enlarged 3 times and the unit of length is enlarged 3 times, with time unchanged, substitute these scale factors into the formula.','new unit = (3)¹(3)²[E]'],
+ ['Multiply out the powers: mass contributes a factor of 3, length contributes a factor of 3² = 9.','new unit = 27 [E]'],
+ ['This means the unit of energy increases 27-fold.','Answer: (C) 27 times']
+]},
+{id:'UD-90',topic:'dimensional-analysis-wave-velocity',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.72 · p.6',sourceRef:true,question:'The velocity v of water waves may depend on their wavelength (λ), the density of water (ρ) and the acceleration due to gravity (g). The method of dimensions gives the relation between these quantities as –',options:['v² ∝ λ⁻¹ρ⁻¹','v² ∝ gλ','v² ∝ gλρ','g⁻¹ ∝ λ³'],correct:1,answer:'v² ∝ gλ',
+short:[['Assume a power law','v = k λ^(a) ρ^(b) g^(c)'],['Match M, T, L powers (b = 0, c = ½, a = ½)','v ∝ λ^(½) g^(½)'],['Square both sides','v² ∝ gλ','Answer: (B) v² ∝ gλ']],
+detailed:[
+ ['Assume the velocity depends on the three quantities as a power law, and write the dimensions of each.','v = k λ^(a) ρ^(b) g^(c)'],
+ ['Since v carries no mass dimension, the exponent on density must be zero — density cannot appear in the relation.','b = 0'],
+ ['Match the powers of T on both sides to find the exponent on g.','c = ½'],
+ ['Match the powers of L, using b = 0 and c = ½, to find the exponent on λ.','a = ½'],
+ ['So v is proportional to the square root of both λ and g; squaring both sides gives the printed relation.','v ∝ λ^(½) g^(½)'],
+ ['Square both sides.','v² ∝ gλ','Answer: (B) v² ∝ gλ']
+]},
+{id:'UD-91',topic:'unit-of-constant-in-equation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.73 · p.6',sourceRef:true,question:'What is the unit of k in the relation U = ky/(y² + a²), where U represents the potential energy, y represents the displacement and a represents the maximum displacement i.e., amplitude?',options:['m s⁻¹','m s','J m','J s⁻¹'],correct:2,answer:'J m',
+short:[['y² + a² has the unit of length²','unit(y² + a²) = m²'],['Substitute into U = ky(y²+a²)⁻¹','J = unit(k) (m)(m⁻²)','= unit(k) m⁻¹'],['Solve for unit(k)','unit(k) = J m','Answer: (C) Jm']],
+detailed:[
+ ['y and a are both displacements, so y² + a² has the unit of length squared.','unit(y² + a²) = m²'],
+ ['U is potential energy, measured in joules; equate units on both sides of U = ky(y²+a²)⁻¹.','J = unit(k) (m)(m⁻²)'],
+ ['Simplify the length powers on the right.','J = unit(k) m⁻¹'],
+ ['Solve for the unit of k by multiplying both sides by m.','unit(k) = J m','Answer: (C) Jm']
+]},
+{id:'UD-92',topic:'dimensional-formula-not-representing-quantity',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.74 · p.6',sourceRef:true,question:'Dimensional formula ML⁻¹T⁻² does not represent the physical quantity –',options:['Young\'s modulus of elasticity','stress','strain','Pressure'],correct:2,answer:'strain',
+short:[['Stress, Pressure and Young\'s modulus are all force per area','[stress] = (MLT⁻²)(L⁻²)','= ML⁻¹T⁻²'],['Strain is a ratio of two lengths — dimensionless','[strain] = M0L0T0','Answer: (C) strain']],
+detailed:[
+ ['Young\'s modulus, stress and pressure are all defined as force per unit area, so all three share the same dimensional formula.','[stress] = (MLT⁻²)(L⁻²)','= ML⁻¹T⁻²'],
+ ['Strain, by contrast, is the ratio of a change in length to an original length — a ratio of two identical dimensions, so it is dimensionless.','strain = ΔL L⁻¹'],
+ ['Its dimensional formula is therefore all zeroes.','[strain] = M0L0T0'],
+ ['Only strain fails to match ML⁻¹T⁻².','Answer: (C) strain']
+]},
+{id:'UD-93',topic:'dimensional-formula-of-heat',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.75 · p.6',sourceRef:true,question:'The dimensions of heat are –',options:['ML²T⁻²','MLT⁻²','ML²T⁻¹','ML²T⁻³'],correct:0,answer:'ML²T⁻²',
+short:[['Heat is a form of energy','[heat] = [energy]'],['Energy = force × distance','[energy] = (MLT⁻²)(L)','= ML²T⁻²','Answer: (A) ML²T⁻²']],
+detailed:[
+ ['Heat is a form of energy (it is measured in joules, same as work), so it carries the same dimensional formula as energy.','[heat] = [energy]'],
+ ['Energy equals force times distance.','[energy] = (MLT⁻²)(L)','= ML²T⁻²'],
+ ['This is different from the formula for force, angular momentum or power.','Answer: (A) ML²T⁻²']
+]},
+{id:'UD-94',topic:'dimensional-formula-gravitational-constant',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.77 · p.6',sourceRef:true,question:'The dimensions of universal gravitational constant are –',options:['M⁻²L²T⁻²','M⁻¹L³T⁻²','ML⁻¹T⁻²','ML²T⁻²'],correct:1,answer:'M⁻¹L³T⁻²',
+short:[['From F = Gm1m2 r⁻²','G = F r² (m1 m2)⁻¹'],['Substitute dimensions','[G] = (MLT⁻²)(L²)(M⁻²)','= M⁻¹L³T⁻²','Answer: (B) M⁻¹L³T⁻²']],
+detailed:[
+ ['Newton\'s law of gravitation gives F = Gm1m2 r⁻², so G can be isolated by rearranging.','G = F r² (m1 m2)⁻¹'],
+ ['Substitute the dimensional formulas of force, distance and mass.','[G] = (MLT⁻²)(L²)(M⁻²)'],
+ ['Combine the exponents.','[G] = M⁻¹L³T⁻²','Answer: (B) M⁻¹L³T⁻²']
+]},
+{id:'UD-95',topic:'identify-odd-one-out-dimension',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.78 · p.6 (Q.94, p.7, is a verbatim repeat of this item)',sourceRef:true,question:'Of the following quantities, which one has dimensions different from the remaining three?',options:['energy per unit volume','force per unit area','product of voltage and charge per unit volume','angular momentum per unit mass'],correct:3,answer:'angular momentum per unit mass',
+short:[['Energy/volume, force/area and (voltage×charge)/volume all reduce to the same formula','[energy][volume]⁻¹ = (ML²T⁻²)(L⁻³)','= ML⁻¹T⁻²'],['Angular momentum per unit mass does not','[L][M]⁻¹ = (ML²T⁻¹)(M⁻¹)','= L²T⁻¹','Answer: (D) angular momentum per unit mass']],
+detailed:[
+ ['Energy per unit volume has this dimension.','[energy][volume]⁻¹ = (ML²T⁻²)(L⁻³)','= ML⁻¹T⁻²'],
+ ['Force per unit area is simply pressure, which has the same dimension.','[force][area]⁻¹ = (MLT⁻²)(L⁻²)','= ML⁻¹T⁻²'],
+ ['Voltage times charge equals energy, since W = QV, so this quantity per unit volume matches the first two as well.','[voltage][charge][volume]⁻¹ = (ML²T⁻²)(L⁻³)','= ML⁻¹T⁻²'],
+ ['Angular momentum per unit mass instead reduces to a different formula.','[angular momentum][mass]⁻¹ = (ML²T⁻¹)(M⁻¹)','= L²T⁻¹','Answer: (D) angular momentum per unit mass']
+]},
+{id:'UD-96',topic:'dimensionless-combination-vrg',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.79 · p.6',sourceRef:true,question:'Given that v is speed, r is the radius and g is the acceleration due to gravity. Which of the following is dimensionless?',options:['v²/rg','v²r/g','v²g/r','v²rg'],correct:0,answer:'v²/rg',
+short:[['v² and rg have the same dimension','[v²] = L²T⁻²','[r][g] = (L)(LT⁻²)','= L²T⁻²'],['Their ratio is dimensionless','[v²][rg]⁻¹ = (L²T⁻²)(L⁻²T²)','= M0L0T0','Answer: (A) v²/rg']],
+detailed:[
+ ['Write the dimensions of v², and of the product rg.','[v²] = L²T⁻²','[r][g] = (L)(LT⁻²)','= L²T⁻²'],
+ ['Divide the two; the result leaves no leftover dimension.','[v²][rg]⁻¹ = (L²T⁻²)(L⁻²T²)','= M0L0T0'],
+ ['The other combinations each leave a nonzero power of L or T, so only v²/rg is dimensionless.','Answer: (A) v²/rg']
+]},
+{id:'UD-97',topic:'identify-group-with-different-dimension',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.80 · p.6',sourceRef:true,question:'Which of the following group have different dimension?',options:['potential difference, EMF, voltage','pressure, stress, Young\'s modulus','heat, energy, work-done','dipole moment, electric flux, electric field'],correct:3,answer:'dipole moment, electric flux, electric field',
+short:[['Potential difference, EMF and voltage share one formula','[V] = ML²T⁻³A⁻¹'],['Pressure, stress and Young\'s modulus share one formula','[P] = ML⁻¹T⁻²'],['Heat, energy and work-done share one formula','[heat] = ML²T⁻²'],['Dipole moment and electric field do not match','[p] = (A)(T)(L)','[E] = (MLT⁻²)(A⁻¹)(T⁻¹)','Answer: (D) dipole moment, electric flux, electric field']],
+detailed:[
+ ['Potential difference, EMF and voltage are the same physical quantity by different names, so they share one formula.','[V] = ML²T⁻³A⁻¹'],
+ ['Pressure, stress and Young\'s modulus are all force per unit area, so they too share one formula.','[P] = ML⁻¹T⁻²'],
+ ['Heat, energy and work-done are all forms of energy, so they also share one formula.','[heat] = ML²T⁻²'],
+ ['Dipole moment is charge times length, while electric field is force per unit charge — these do not match, so group (D) is the one whose members do not share a single dimension.','[p] = (A)(T)(L)','[E] = (MLT⁻²)(A⁻¹)(T⁻¹)','Answer: (D) dipole moment, electric flux, electric field']
+]},
+{id:'UD-98',topic:'Identifying the pair without identical dimensions (moment of inertia vs moment of force)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.81 · p.6',sourceRef:true,question:'Out of the following pair, which one does not have identical dimensions?',options:['Moment of inertia and moment of force','Work and torque','Angular momentum and Planck\'s constant','Impulse and momentum'],correct:0,answer:'Moment of inertia and moment of force',
+short:[['Moment of inertia is mass times length squared.','[I] = ML²'],['Moment of force (torque) is force times distance.','[τ] = ML²T⁻²'],['These do not match, while work equals torque, angular momentum equals Planck\'s constant, and impulse equals momentum all do.','[I] ≠ [τ]','Answer: (A) Moment of inertia and moment of force']],
+detailed:[
+ ['Moment of inertia is mass distributed over the square of a distance, so it carries no time factor.','[I] = ML²'],
+ ['Moment of force is another name for torque, which is force times distance.','[τ] = [F][r]','= (MLT⁻²)(L)','= ML²T⁻²'],
+ ['Comparing the two shows they are not the same.','[I] ≠ [τ]'],
+ ['Checking the remaining pairs for contrast, work and torque share the same combination.','[Work] = (MLT⁻²)(L)','= ML²T⁻²'],
+ ['Angular momentum and Planck\'s constant also reduce to the same formula, and impulse equals momentum by Newton\'s second law.','[L] = M(LT⁻¹)(L)','= ML²T⁻¹','[h] = ML²T⁻¹','[Impulse] = (MLT⁻²)(T)','= MLT⁻¹','[Momentum] = MLT⁻¹'],
+ ['Only the first pair fails to match.','Answer: (A) Moment of inertia and moment of force']
+]},
+{id:'UD-99',topic:'Dimensional formula of charge',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.82 · p.6',sourceRef:true,question:'Dimensions of charge are -',options:['M⁰L⁰T⁻¹A⁻¹','MLTA⁻¹','T⁻¹A','TA'],correct:3,answer:'TA',
+short:[['Charge is current times time.','q = I t'],['Substitute dimensions.','[q] = (A)(T)','= TA','Answer: (D) TA']],
+detailed:[
+ ['Electric charge is defined as the current flowing multiplied by the time for which it flows.','q = I t'],
+ ['Current is a base SI quantity with dimension A, and time has dimension T.','[I] = A','[t] = T'],
+ ['Multiplying the two gives charge\'s dimensional formula.','[q] = [I][t]','= A × T','= TA'],
+ ['The other options either flip the sign of the T exponent or add stray M and L factors that charge does not carry.','Answer: (D) TA']
+]},
+{id:'UD-100',topic:'Unit of light year',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.83 · p.6',sourceRef:true,question:'Light year is a unit of -',options:['Time','Mass','Distance','Energy'],correct:2,answer:'Distance',
+short:[['A light year is the distance light travels in one year.','1 ly = c × (1 year)'],['Speed times time gives length.','[c][t] = (LT⁻¹)(T)','= L'],['So light year measures distance.','Answer: (C) Distance']],
+detailed:[
+ ['A light year is defined as the distance travelled by light in vacuum in one year, despite the word \'year\' in its name.','1 ly = c × (1 year)'],
+ ['Speed has dimension LT⁻¹ and time has dimension T.','[c] = LT⁻¹','[t] = T'],
+ ['Multiplying speed by time gives a length.','[c][t] = (LT⁻¹)(T)','= L'],
+ ['So a light year is a unit of distance, not time.','Answer: (C) Distance']
+]},
+{id:'UD-101',topic:'Identifying the correct statement about the unit of power',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.84 · p.6',sourceRef:true,question:'The unit of power is -',options:['Joule','Joule per second only','Joule per second and watt both','Only watt'],correct:2,answer:'Joule per second and watt both',
+short:[['Power is energy per unit time.','P = E t⁻¹'],['Its SI unit is joule per second, also called the watt.','1 W = 1 J s⁻¹'],['Both names refer to the same unit.','Answer: (C) Joule per second and watt both']],
+detailed:[
+ ['Power is the rate of doing work or transferring energy, so its unit is energy divided by time.','P = E t⁻¹'],
+ ['In SI this combination is joule per second, and joule-per-second has its own derived name, the watt.','[P] = J s⁻¹','1 W = 1 J s⁻¹'],
+ ['The two names describe the same unit, not two different units.','1 J s⁻¹ = 1 W'],
+ ['So calling it \'joule per second only\' or \'only watt\' is each too narrow, and joule alone is an energy unit, not a power unit.','Answer: (C) Joule per second and watt both']
+]},
+{id:'UD-102',topic:'Converting nanometre to other length units',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.85 · p.6',sourceRef:true,question:'One nanometre is equal to -',options:['10⁹ mm','10⁻⁶ cm','10⁻⁷ cm','10⁻⁹ cm'],correct:2,answer:'10⁻⁷ cm',
+short:[['Start from the definition of nano.','1 nm = 10⁻⁹ m'],['Convert metres to centimetres.','1 nm = 10⁻⁹ × 10² cm','= 10⁻⁷ cm','Answer: (C) 10⁻⁷ cm']],
+detailed:[
+ ['The prefix \'nano\' means 10⁻⁹, so one nanometre is 10⁻⁹ of a metre.','1 nm = 10⁻⁹ m'],
+ ['To express this in centimetres, use 1 m = 10² cm.','1 nm = 10⁻⁹ × 10² cm'],
+ ['Simplify the power of ten.','= 10⁻⁷ cm'],
+ ['This matches option (C); option (B) is actually the value in millimetres, not centimetres, a common mix-up.','Answer: (C) 10⁻⁷ cm']
+]},
+{id:'UD-103',topic:'Identifying a suitable unit for the gravitational constant',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.86 · p.6',sourceRef:true,question:'A suitable unit for gravitational constant is -',options:['kg-m s⁻¹','N m⁻¹ s','N m² kg⁻²','kg m s⁻¹'],correct:2,answer:'N m² kg⁻²',
+short:[['Newton\'s law of gravitation gives F; solve for G.','F = G m₁m₂ r⁻²'],['Rearrange for G.','G = F r² (m₁m₂)⁻¹'],['Its SI unit is force times length squared over mass squared.','unit(G) = N m² kg⁻²','Answer: (C) N m² kg⁻²']],
+detailed:[
+ ['Newton\'s law of gravitation gives the force between two masses in terms of G.','F = G m₁m₂ r⁻²'],
+ ['Rearranging isolates G.','G = F r² (m₁m₂)⁻¹'],
+ ['Substituting the SI unit of each quantity gives G\'s unit.','unit(G) = N m² kg⁻²'],
+ ['This matches option (C). Options (A) and (D) both read as kg m s⁻¹ (momentum\'s unit, just formatted differently), and (B) does not match G\'s dimensional formula either.','Answer: (C) N m² kg⁻²']
+]},
+{id:'UD-104',topic:'SI unit of pressure',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.87 · p.7',sourceRef:true,question:'SI unit of pressure is -',options:['Pascal','Dynes cm⁻²','cm of Hg','Atmosphere'],correct:0,answer:'Pascal',
+short:[['Pressure is force per unit area.','P = F A⁻¹'],['Its SI combination newton per square metre is named the pascal.','1 Pa = 1 N m⁻²','Answer: (A) Pascal']],
+detailed:[
+ ['Pressure is defined as force per unit area.','P = F A⁻¹'],
+ ['In SI, force is in newtons and area in square metres, and this combination is given the special name pascal.','1 Pa = 1 N m⁻²'],
+ ['Dynes per square centimetre is the CGS unit of pressure, not SI.','1 dyne cm⁻² = 10⁻¹ Pa'],
+ ['cm of mercury and atmosphere are practical, non-SI pressure units, so only pascal is the SI unit.','Answer: (A) Pascal']
+]},
+{id:'UD-105',topic:'SI unit of energy',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.88 · p.7',sourceRef:true,question:'Unit of energy in SI system is -',options:['Erg','Calorie','Joule','Electron volt'],correct:2,answer:'Joule',
+short:[['The SI unit of energy is the joule.','1 J = 1 N × 1 m'],['Erg, calorie and electron volt are all non-SI energy units.','Answer: (C) Joule']],
+detailed:[
+ ['Energy in SI is measured in joules.','1 J = 1 N × 1 m'],
+ ['The joule is defined as the work done by a force of one newton acting through one metre.','W = F d'],
+ ['Erg is the CGS unit of energy, and calorie is a practical heat unit, neither is SI.','1 erg = 10⁻⁷ J'],
+ ['Electron volt is convenient for atomic-scale energies but is likewise not the SI unit.','Answer: (C) Joule']
+]},
+{id:'UD-106',topic:'Correct unit for measuring nuclear radii',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.89 · p.7',sourceRef:true,question:'Which is the correct unit for measuring nuclear radii -',options:['Micron','Millimetre','Angstrom','Fermi'],correct:3,answer:'Fermi',
+short:[['Nuclear radii are of order femtometres.','R ≈ 10⁻¹⁵ m'],['The fermi is defined at exactly this scale.','1 fermi = 10⁻¹⁵ m','Answer: (D) Fermi']],
+detailed:[
+ ['Nuclear radii are extremely small, on the order of a few femtometres.','R ≈ 10⁻¹⁵ m'],
+ ['The fermi is defined as exactly this scale.','1 fermi = 10⁻¹⁵ m'],
+ ['Micron, millimetre and angstrom are all far larger scales.','1 micron = 10⁻⁶ m'],
+ ['So fermi is the conventional unit for nuclear size.','Answer: (D) Fermi']
+]},
+{id:'UD-107',topic:'SI unit of momentum',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.90 · p.7',sourceRef:true,question:'The SI unit of momentum is -',options:['kg m⁻¹','kg m s⁻¹','kg m² s⁻¹','kg × N'],correct:1,answer:'kg m s⁻¹',
+short:[['Momentum is mass times velocity.','p = mv'],['Substitute SI units.','unit(p) = kg × m s⁻¹','Answer: (B) kg m s⁻¹']],
+detailed:[
+ ['Momentum is defined as mass times velocity.','p = mv'],
+ ['The SI unit of mass is kg and of velocity is m s⁻¹, so momentum\'s unit is their product.','unit(p) = kg × m s⁻¹'],
+ ['This matches option (B). Option (D), kg times newton, mixes mass with a force unit and does not reduce to momentum\'s dimension at all.','Answer: (B) kg m s⁻¹']
+]},
+{id:'UD-108',topic:'Kilowatt-hour as a unit of energy',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.91 · p.7',sourceRef:true,question:'Kilowatt-hour is a unit of',options:['Electrical charge','Energy','Power','Force'],correct:1,answer:'Energy',
+short:[['Kilowatt-hour is power multiplied by time.','kWh = (power) × (time)'],['Power times time is energy.','E = P t','Answer: (B) Energy']],
+detailed:[
+ ['A kilowatt-hour is defined as the energy delivered by a power of one kilowatt sustained for one hour.','1 kWh = 1 kW × 1 h'],
+ ['Power is energy per unit time, so power multiplied by a time interval gives back energy.','E = P t'],
+ ['This is not power, charge or force.','Answer: (B) Energy']
+]},
+{id:'UD-109',topic:'Dimension of √(ab) in x = at² + b',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.92 · p.7',sourceRef:true,question:'For a body moving along the x-axis, the distance travelled by the body from a reference point is given as a function of time t as x = at² + b, where a and b are constants. Then the dimension of √(ab) is the same as -',options:['Speed','Distance travelled','Acceleration','None of these'],correct:0,answer:'Speed',
+short:[['Every added term must have the dimension of x, which is length.','[at²] = L'],['So a and b\'s dimensions follow.','[a] = LT⁻²','[b] = L'],['Combine and take the square root.','[ab] = (LT⁻²)(L)','= L²T⁻²','[√(ab)] = LT⁻¹','Answer: (A) Speed']],
+detailed:[
+ ['Since x = at² + b and x itself has the dimension of length, both terms on the right must independently be a length, since only like dimensions can be added.','[x] = L'],
+ ['From the term at², dividing the length dimension by t² gives a\'s dimension.','[a] = LT⁻²'],
+ ['b is added directly to at², so it must itself be a length.','[b] = L'],
+ ['Multiply a and b together.','[ab] = (LT⁻²)(L)','= L²T⁻²'],
+ ['Take the square root.','[√(ab)] = LT⁻¹'],
+ ['LT⁻¹ is the dimension of speed.','Answer: (A) Speed']
+]},
+{id:'UD-110',topic:'Finding exponents in a resistive-force power-law relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.93 · p.7',sourceRef:true,question:'The resistive force on a very-high-velocity object of area A passing through a gas of density ρ at a velocity v is Force ~ Aʳρˢvᵗ. Then -',options:['r = 2, s = 1, t = 1','r = 2, s = 1, t = 2','r = 1, s = 1, t = 2','r = 1, s = 1, t = 1'],correct:2,answer:'r = 1, s = 1, t = 2',
+short:[['Write the dimensional equation.','[F] = [A]ʳ[ρ]ˢ[v]ᵗ'],['Substitute each dimension.','MLT⁻² = (L²)ʳ(ML⁻³)ˢ(LT⁻¹)ᵗ'],['Equate the powers of M and of T on both sides.','s = 1','t = 2'],['Equate the powers of L using s and t.','2r − 3s + t = 1','r = 1','Answer: (C) r = 1, s = 1, t = 2']],
+detailed:[
+ ['Write the resistive force as a power-law product of area, density and velocity, then substitute each quantity\'s dimensional formula.','[F] = [A]ʳ[ρ]ˢ[v]ᵗ'],
+ ['Substitute the dimensions of area, density, velocity and force.','MLT⁻² = (L²)ʳ(ML⁻³)ˢ(LT⁻¹)ᵗ'],
+ ['Equate the power of M on both sides, since only ρ contributes one.','s = 1'],
+ ['Equate the power of T on both sides, since only v contributes one.','t = 2'],
+ ['Equate the power of L on both sides, using the values of s and t just found.','2r − 3s + t = 1','r = 1'],
+ ['So r = 1, s = 1, t = 2 — the option printed \'r = 1, s = 1, t = 2\'; the source mislabels a second option (C) too, which should read (D).','Answer: (C) r = 1, s = 1, t = 2']
+]},
+{id:'UD-111',topic:'Dimensional formula of Wien\'s constant',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.95 · p.7',sourceRef:true,question:'Wien\'s constant is given by b = λₘT, where λₘ is the wavelength and T is the absolute temperature. Then the dimensional formula of Wien\'s constant is -',options:['[L]','[L T K]','[L K⁻¹]','[L K]'],correct:3,answer:'[L K]',
+short:[['Wien\'s constant is wavelength times absolute temperature.','b = λₘ T'],['Substitute dimensions.','[λₘ] = L','[T] = K','[b] = L × K','= LK','Answer: (D) [L K]']],
+detailed:[
+ ['Wien\'s displacement law states that the wavelength of peak emission times the absolute temperature is a constant, b.','b = λₘ T'],
+ ['Wavelength has the dimension of length.','[λₘ] = L'],
+ ['Absolute temperature is a base quantity with dimension K.','[T] = K'],
+ ['Multiplying them gives b\'s dimensional formula.','[b] = L × K','= LK'],
+ ['This matches option (D); the other options drop K, invert it, or add a spurious extra T.','Answer: (D) [L K]']
+]},
+{id:'UD-112',topic:'Dimension of permittivity of free space from Coulomb\'s law',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.96 · p.7',sourceRef:true,question:'The force between two charged particles placed at a distance r is given by F = (1/4πε₀)(q²/r²), where q is the charge of each particle and ε₀ is the permittivity of free space. Then the dimension of ε₀ is -',options:['M⁻¹L⁻³T⁴A²','ML²T⁴A²','ML²T⁻²','None of these'],correct:0,answer:'M⁻¹L⁻³T⁴A²',
+short:[['Rearrange Coulomb\'s law for ε₀.','ε₀ = q² (4πFr²)⁻¹'],['Substitute [q]=AT, [F]=MLT⁻², [r²]=L².','[ε₀] = (AT)² (MLT⁻²)⁻¹(L²)⁻¹'],['Simplify.','= A²T² (ML³T⁻²)⁻¹','= M⁻¹L⁻³T⁴A²','Answer: (A) M⁻¹L⁻³T⁴A²']],
+detailed:[
+ ['Coulomb\'s law relates the electrostatic force to the two charges, separation and ε₀; isolate ε₀.','F = q² (4πε₀r²)⁻¹'],
+ ['Rearranging gives ε₀ in terms of the other quantities.','ε₀ = q² (4πFr²)⁻¹'],
+ ['Charge has dimension AT, force has dimension MLT⁻², and r² has dimension L² (4π is a pure number and drops out).','[ε₀] = (AT)² (MLT⁻²)⁻¹(L²)⁻¹'],
+ ['Combine the mass, length and time factors in the denominator.','= (AT)² (ML³T⁻²)⁻¹'],
+ ['Simplify the powers and combine the T exponents.','= A²T² M⁻¹L⁻³T²','= M⁻¹L⁻³T⁴A²'],
+ ['This is the standard dimensional formula for permittivity of free space.','Answer: (A) M⁻¹L⁻³T⁴A²']
+]},
+{id:'UD-113',topic:'Dimension of permeability of free space',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.97 · p.7',sourceRef:true,question:'Permeability of free space is given by μ₀ = (Force per unit length)(I₁I₂)⁻¹(2πr), where I₁ and I₂ represent the current in two wires and r is the distance between the two parallel wires. Then the dimension of μ₀ is -',options:['MLT⁻²','MLT⁻²A⁻²','MLT⁻²A','ML²T⁻²A'],correct:1,answer:'MLT⁻²A⁻²',
+short:[['Force per unit length is F L⁻¹.','[F L⁻¹] = MT⁻²'],['Divide by I₁I₂ and multiply by r (2π is a pure number).','[μ₀] = (MT⁻²)(A⁻²)(L)'],['Simplify.','= MLT⁻²A⁻²','Answer: (B) MLT⁻²A⁻²']],
+detailed:[
+ ['μ₀ is defined from the force per unit length between two current-carrying wires, divided by the product of the two currents, times the separation.','μ₀ = (F L⁻¹)(I₁I₂)⁻¹(2πr)'],
+ ['Force per unit length has dimension MLT⁻² times L⁻¹.','[F L⁻¹] = MT⁻²'],
+ ['Divide by the two currents, each of dimension A.','[μ₀] = (MT⁻²)(A⁻²)(L)'],
+ ['2π is dimensionless, so only r\'s length dimension remains to multiply in.','= MLT⁻²A⁻²'],
+ ['This matches option (B), the standard dimensional formula for the permeability of free space.','Answer: (B) MLT⁻²A⁻²']
+]},
+{id:'UD-114',topic:'Dimension of the universal gas constant from PV = nRT',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.98 · p.7',sourceRef:true,question:'The universal gas constant is given by R = PV/(nT), where P is pressure, V is the volume, n is the number of moles and T represents the absolute temperature. Then the dimensions of R are -',options:['ML²T⁻²K⁻¹mol⁻¹','ML²T⁻¹K⁻¹','ML²T⁻¹','ML³T⁻²K⁻¹mol⁻¹'],correct:0,answer:'ML²T⁻²K⁻¹mol⁻¹',
+short:[['Substitute [P]=ML⁻¹T⁻² and [V]=L³.','[PV] = ML²T⁻²'],['Divide by n (mol) and T (K).','[R] = (ML²T⁻²)(mol⁻¹)(K⁻¹)','= ML²T⁻²K⁻¹mol⁻¹','Answer: (A) ML²T⁻²K⁻¹mol⁻¹']],
+detailed:[
+ ['Rearranging the ideal gas law PV = nRT for R gives the defining relation used here.','R = PV(nT)⁻¹'],
+ ['Pressure has dimension ML⁻¹T⁻² and volume has dimension L³.','[P] = ML⁻¹T⁻²','[V] = L³'],
+ ['Multiplying gives energy\'s dimensional formula, as expected since PV has units of energy.','[PV] = ML²T⁻²'],
+ ['Dividing by the number of moles and the temperature gives R\'s dimensional formula, including the mol and K base quantities that don\'t appear in the M, L, T system.','[R] = (ML²T⁻²)(mol⁻¹)(K⁻¹)','= ML²T⁻²K⁻¹mol⁻¹'],
+ ['This matches option (A).','Answer: (A) ML²T⁻²K⁻¹mol⁻¹']
+]},
+{id:'UD-115',topic:'Dimension of force in a non-standard base system (A, v, ρ)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.99 · p.7',sourceRef:true,question:'If area (A), velocity (v) and density (ρ) are taken as the fundamental units, what is the dimensional formula for force?',options:['Av²ρ','A²vρ','Avρ²','Avρ'],correct:0,answer:'Av²ρ',
+short:[['Let F = Aˣvʸρᶻ and substitute dimensions.','MLT⁻² = (L²)ˣ(LT⁻¹)ʸ(ML⁻³)ᶻ'],['Equate the powers of M and of T.','z = 1','y = 2'],['Equate the powers of L using y and z.','2x + y − 3z = 1','x = 1'],['So F = A¹v²ρ¹.','Answer: (A) Av²ρ']],
+detailed:[
+ ['Write force as a power-law combination of the new base quantities and substitute each one\'s usual M, L, T dimension.','F = Aˣvʸρᶻ'],
+ ['Substitute the dimensions of area, velocity and density.','MLT⁻² = (L²)ˣ(LT⁻¹)ʸ(ML⁻³)ᶻ'],
+ ['Equate the power of M, since only ρ contributes one.','z = 1'],
+ ['Equate the power of T, since only v contributes one.','y = 2'],
+ ['Equate the power of L, using y and z.','2x + y − 3z = 1','x = 1'],
+ ['So force is A¹v²ρ¹.','Answer: (A) Av²ρ']
+]},
+{id:'UD-116',topic:'Dimension of length in a non-standard base system (F, a, T)',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.100 · p.8',sourceRef:true,question:'If force (F), acceleration (a) and time (T) are used as the fundamental units, the dimensional formula for length will be -',options:['F⁰aT²','Fa⁰T²','Fa²T⁰','FaT'],correct:0,answer:'F⁰aT²',
+short:[['Let length = Fˣaʸ Tᶻ and substitute dimensions.','M⁰L¹T⁰ = (MLT⁻²)ˣ(LT⁻²)ʸ(T)ᶻ'],['Equate the power of M.','x = 0'],['Equate the power of L.','x + y = 1','y = 1'],['Equate the power of T.','−2x − 2y + z = 0','z = 2'],['So length = F⁰a¹T².','Answer: (A) F⁰aT²']],
+detailed:[
+ ['Write length as a power-law combination of force, acceleration and time, and substitute each quantity\'s usual M, L, T dimension.','length = Fˣaʸ Tᶻ'],
+ ['Substitute the dimensions of force, acceleration and time.','M⁰L¹T⁰ = (MLT⁻²)ˣ(LT⁻²)ʸ(T)ᶻ'],
+ ['The left side has no mass factor, so equate the power of M first.','x = 0'],
+ ['With x = 0, equate the power of L to get y.','x + y = 1','y = 1'],
+ ['Equate the power of T to get z.','−2x − 2y + z = 0','z = 2'],
+ ['So length is F⁰a¹T² — force does not appear at all, which makes sense since force already carries mass, and length has no mass dimension.','Answer: (A) F⁰aT²']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -743,7 +1221,64 @@ const pilotTopicMap={
  'Unit of a coefficient in x = at + bt2 by homogeneity':['dimensional-analysis','Unit of a coefficient in x = at + bt2 by homogeneity'],
  'Whether a dimensionless quantity can carry a unit':['dimensional-formula','Whether a dimensionless quantity can carry a unit'],
  'Dimension of gamma in the speed-of-sound relation v = root(gammaP/rho)':['dimensional-analysis','Dimension of gamma in the speed-of-sound relation v = root(gammaP/rho)'],
- 'Dimensions of the constants in v = at + b/t + c':['dimensional-analysis','Dimensions of the constants in v = at + b/t + c']
+ 'Dimensions of the constants in v = at + b/t + c':['dimensional-analysis','Dimensions of the constants in v = at + b/t + c'],
+ 'Identifying the vector quantity among scalar physical quantities':['dimensional-formula','Identifying the vector quantity among scalar physical quantities'],
+ 'Dimension of mass per unit length in the vibrating-string frequency formula':['dimensional-analysis','Dimension of mass per unit length in the vibrating-string frequency formula'],
+ 'Dimension of the ratio omega/k in a travelling-wave equation':['dimensional-analysis','Dimension of the ratio omega/k in a travelling-wave equation'],
+ 'Dimension of the product epsilon0 mu0':['dimensional-formula','Dimension of the product epsilon0 mu0'],
+ 'Dimensions of the Van der Waals constant a':['dimensional-analysis','Dimensions of the Van der Waals constant a'],
+ 'Identifying a quantity from its dimensional formula ML2T-2':['dimensional-formula','Identifying a quantity from its dimensional formula ML2T-2'],
+ 'Dimension of Young\'s modulus in a non-standard base system (F, A, V)':['dimensional-analysis','Dimension of Young\'s modulus in a non-standard base system (F, A, V)'],
+ 'Dimension of the combination L/(RCV)':['dimensional-formula','Dimension of the combination L/(RCV)'],
+ 'Finding exponents in a gas-bubble oscillation period relation':['dimensional-analysis','Finding exponents in a gas-bubble oscillation period relation'],
+ 'Subtracting measured values and rounding to correct significant figures':['significant-figures','Subtracting measured values and rounding to correct significant figures'],
+ 'Error in volume from error in radius of a sphere (2%)':['errors','Error in volume from error in radius of a sphere (2%)'],
+ 'Finding the dependence of water-wave speed on wavelength, density and gravity':['dimensional-analysis','Finding the dependence of water-wave speed on wavelength, density and gravity'],
+ 'Error in density from errors in mass and side length of a cube':['errors','Error in density from errors in mass and side length of a cube'],
+ 'Dimensions of constants in a falling-body equation of motion':['dimensional-analysis','Dimensions of constants in a falling-body equation of motion'],
+ 'Maximum percentage error formula for a difference x = a - b':['errors','Maximum percentage error formula for a difference x = a - b'],
+ 'Dividing measured values and rounding to correct significant figures':['significant-figures','Dividing measured values and rounding to correct significant figures'],
+ 'Dimensions of constants in a velocity-time relation with an additive denominator term':['dimensional-analysis','Dimensions of constants in a velocity-time relation with an additive denominator term'],
+ 'Dimensions of constants in an exponential time-dependence relation':['dimensional-analysis','Dimensions of constants in an exponential time-dependence relation'],
+ 'Dimension of the product AB in a potential-energy relation':['dimensional-analysis','Dimension of the product AB in a potential-energy relation'],
+ 'Error in surface area from error in radius of a sphere (1%)':['errors','Error in surface area from error in radius of a sphere (1%)'],
+ 'error-propagation-difference':['errors','Error propagation in a difference (x = a − b)'],
+ 'relative-error-power-law':['errors','Relative error in a power of a measured quantity'],
+ 'dimensional-formula-mksq-capacitance-magnetic-induction':['dimensional-formula','Deriving a dimensional formula from an MKSQ relation'],
+ 'dimensional-homogeneity-additive-terms':['dimensional-formula','Dimensional homogeneity of terms added in an equation'],
+ 'dimensional-formula-non-standard-base-FAT':['dimensional-formula','Dimensional formula in a non-standard base system (F, A, T)'],
+ 'dimensionless-trig-argument':['dimensional-formula','Dimension of the argument of a trigonometric function'],
+ 'identify-quantity-from-dimensional-formula-G':['dimensional-formula','Identifying a quantity from its dimensional formula'],
+ 'shear-oscillation-time-period':['dimensional-analysis','Using dimensional reasoning to derive a time-period formula'],
+ 'dimensional-formula-non-standard-base-EVT':['dimensional-formula','Dimensional formula in a non-standard base system (E, V, T)'],
+ 'unit-scaling-with-base-unit-change':['units-systems','Effect of scaling base units on a derived unit'],
+ 'dimensional-analysis-wave-velocity':['dimensional-analysis','Method of dimensions to find a relation between physical quantities'],
+ 'unit-of-constant-in-equation':['dimensional-formula','Finding the unit of a constant from a physical equation'],
+ 'dimensional-formula-not-representing-quantity':['dimensional-formula','Identifying which quantity a dimensional formula does NOT represent'],
+ 'dimensional-formula-of-heat':['dimensional-formula','Dimensional formula of heat'],
+ 'dimensional-formula-gravitational-constant':['dimensional-formula','Dimensional formula of the universal gravitational constant'],
+ 'identify-odd-one-out-dimension':['dimensional-formula','Identifying the quantity with a different dimension from the rest'],
+ 'dimensionless-combination-vrg':['dimensional-analysis','Identifying a dimensionless combination of quantities'],
+ 'identify-group-with-different-dimension':['dimensional-formula','Identifying the group whose members do NOT share a dimension'],
+ 'Identifying the spherometer radius-of-curvature formula':['measuring-instruments','Spherometer: radius-of-curvature formula'],
+ 'Identifying the pair without identical dimensions (moment of inertia vs moment of force)':['dimensional-formula','Identifying the pair without identical dimensions (moment of inertia vs moment of force)'],
+ 'Dimensional formula of charge':['dimensional-formula','Dimensional formula of charge'],
+ 'Unit of light year':['units-systems','Unit of light year'],
+ 'Identifying the correct statement about the unit of power':['units-systems','Identifying the correct statement about the unit of power'],
+ 'Converting nanometre to other length units':['units-systems','Converting nanometre to other length units'],
+ 'Identifying a suitable unit for the gravitational constant':['units-systems','Identifying a suitable unit for the gravitational constant'],
+ 'Correct unit for measuring nuclear radii':['units-systems','Correct unit for measuring nuclear radii'],
+ 'SI unit of momentum':['units-systems','SI unit of momentum'],
+ 'Kilowatt-hour as a unit of energy':['units-systems','Kilowatt-hour as a unit of energy'],
+ 'Dimension of √(ab) in x = at² + b':['dimensional-analysis','Dimension of √(ab) in x = at² + b'],
+ 'Finding exponents in a resistive-force power-law relation':['dimensional-analysis','Finding exponents in a resistive-force power-law relation'],
+ 'Identifying the one quantity with a different dimension (energy-density group)':['dimensional-formula','Identifying the one quantity with a different dimension (energy-density group)'],
+ 'Dimensional formula of Wien\'s constant':['dimensional-analysis','Dimensional formula of Wien\'s constant'],
+ 'Dimension of permittivity of free space from Coulomb\'s law':['dimensional-analysis','Dimension of permittivity of free space from Coulomb\'s law'],
+ 'Dimension of permeability of free space':['dimensional-analysis','Dimension of permeability of free space'],
+ 'Dimension of the universal gas constant from PV = nRT':['dimensional-analysis','Dimension of the universal gas constant from PV = nRT'],
+ 'Dimension of force in a non-standard base system (A, v, ρ)':['dimensional-analysis','Dimension of force in a non-standard base system (A, v, ρ)'],
+ 'Dimension of length in a non-standard base system (F, a, T)':['dimensional-analysis','Dimension of length in a non-standard base system (F, a, T)']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
