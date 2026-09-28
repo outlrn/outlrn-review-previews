@@ -5333,7 +5333,11 @@ function splitConclusions(seg){const out=[];let depth=0,cur='',hasEq=false;
  for(let i=0;i<seg.length;i++){const c=seg[i];if('(['.includes(c))depth++;if(')]'.includes(c))depth--;if(c==='='||c==='≈')hasEq=true;
   if(c===','&&depth===0&&seg[i+1]===' '&&(hasEq||seg.length>75)&&CONCLUDES.test(seg.slice(i+2))){out.push(cur);cur='';i++;continue;}cur+=c;}
  out.push(cur);return out;}
-const eqRows=line=>String(line).split(/ {2,}/).filter(x=>x.trim()).flatMap(splitConclusions).filter(x=>x.trim()).map(seg=>`<div class="equation">${mathHtml(seg)}</div>`).join('');
+// A connector that stands alone between two double-spaced parts (an implication
+// arrow) belongs to the line that follows it, so it is never drawn as a row of its own.
+const eqRows=line=>{const parts=String(line).split(/ {2,}/).map(x=>x.trim()).filter(Boolean);
+ for(let i=0;i<parts.length-1;i++){if(/^[⇒⟹⇔→∴]$/.test(parts[i])){parts[i+1]=parts[i]+' '+parts[i+1];parts[i]='';}}
+ return parts.filter(Boolean).flatMap(splitConclusions).filter(x=>x.trim()).map(seg=>`<div class="equation">${mathHtml(seg)}</div>`).join('');};
 function briefSolution(q){
  return `<div class="equationsteps">${q.brief.flatMap(([, ...equations])=>equations).map(eqRows).join('')}</div>`;
 }
