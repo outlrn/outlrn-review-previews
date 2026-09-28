@@ -304,6 +304,162 @@ detailed:[
  ['Impulse is defined as the product of force and the time for which it acts; it is also equal to the resulting change in momentum, so it must share momentum\'s dimension.','Impulse = F × t'],
  ['Substitute the dimension of force and of time.','[Impulse] = (MLT⁻²)(T)','= MLT⁻¹'],
  ['This matches momentum\'s dimension exactly, as expected from the impulse–momentum theorem.','Answer: (A) [MLT⁻¹]']
+]},
+{id:'UD-20',topic:'Finding exponents in a time-period relation with pressure, density and surface tension',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.41 · p.3',sourceRef:true,question:'The time period of a body under S.H.M. is represented by T = P^(α) D^(β) S^(γ), where P is pressure, D is density and S is surface tension (S = F/ℓ). The values of α, β and γ are –',options:['−3/2, 1/2, 1','1, 2, 1/3','−1, −2, 3','1/2, −3/2, −1/2'],correct:0,answer:'−3/2, 1/2, 1',
+short:[['Write the dimension of pressure, density and surface tension.','[P] = ML⁻¹T⁻²','[D] = ML⁻³','[S] = MT⁻²'],['Substitute into T = P^(α) D^(β) S^(γ) and equate powers of M, L, T with the left side M⁰L⁰T¹.','α + β + γ = 0','−α − 3β = 0','−2α − 2γ = 1'],['Solve the three equations together.','β = 1/2','γ = 1','α = −3/2','Answer: (A) −3/2, 1/2, 1']],
+detailed:[
+ ['Pressure is force per area, density is mass per volume, and surface tension is force per length, so their dimensions are known directly.','[P] = ML⁻¹T⁻²','[D] = ML⁻³','[S] = MT⁻² (S = F/ℓ)'],
+ ['Time period T has dimension T¹ only, so substitute the three dimensions into the given relation and collect the powers of M, L, T on the right.','T = P^(α) D^(β) S^(γ)','⇒ M⁰L⁰T¹ = M^(α+β+γ) L^(−α−3β) T^(−2α−2γ)'],
+ ['Equate the exponents of M, L and T on both sides, giving three simultaneous equations in α, β, γ.','α + β + γ = 0','−α − 3β = 0','−2α − 2γ = 1'],
+ ['From the L-equation, α = −3β; substituting into the M-equation gives γ = 2β; substituting both into the T-equation solves for β.','α = −3β','γ = 2β','−2(−3β) − 2(2β) = 1','⇒ 2β = 1'],
+ ['This gives β = 1/2, then γ = 1 and α = −3/2, matching option (A).','β = 1/2','γ = 1','α = −3/2','Answer: (A) −3/2, 1/2, 1']
+]},
+{id:'UD-21',topic:'Maximum percentage error in a product of two measured quantities',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.42 · p.3',sourceRef:true,question:'If x = ab, the maximum percentage error in the measurement of x will be–',options:['(Δa/a×100%)×(Δb/b×100%)','(Δa/a×100%)÷(Δb/b×100%)','(Δa/a−Δb/b)×100%','(Δa/a×100%)+(Δb/b×100%)'],correct:3,answer:'(Δa/a×100%)+(Δb/b×100%)',
+short:[['For a product, the fractional error in x is the sum of the fractional errors in a and b.','Δx/x = Δa/a + Δb/b'],['Convert to percentage error by multiplying by 100%.','(Δx/x)×100% = (Δa/a×100%) + (Δb/b×100%)','Answer: (D) (Δa/a×100%)+(Δb/b×100%)']],
+detailed:[
+ ['Taking logs of x = ab and differentiating gives the standard rule for a product: the fractional error in x is the sum of the fractional errors in the two factors.','x = ab','⇒ ln x = ln a + ln b','⇒ Δx/x = Δa/a + Δb/b'],
+ ['For the maximum possible error, the two individual errors are taken to add rather than cancel, since either could independently be at its worst case in the same direction.','Δx/x (max) = Δa/a + Δb/b'],
+ ['Multiplying by 100% converts each fractional error to a percentage error, so the percentage error in x is the sum of the two percentage errors.','(Δx/x)×100% = (Δa/a×100%) + (Δb/b×100%)'],
+ ['This matches option (D); options (A) and (B) describe a product or ratio of the two percentage errors, which is not how errors combine, and (C) wrongly subtracts, which would understate the worst-case error.','Answer: (D) (Δa/a×100%)+(Δb/b×100%)']
+]},
+{id:'UD-22',topic:'Percentage error in kinetic energy from errors in mass and speed',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.43 · p.4',sourceRef:true,question:'The percentage errors in measurement of mass and speed are 3% and 2% respectively. The error in kinetic energy will be–',options:['6%','7%','10%','12%'],correct:1,answer:'7%',
+short:[['Kinetic energy depends on mass to the first power and speed to the second power.','K = (1/2) m v²'],['The percentage error in K is the percentage error in m plus twice the percentage error in v.','ΔK/K×100% = (Δm/m×100%) + 2(Δv/v×100%)','= 3% + 2(2%)','= 7%','Answer: (B) 7%']],
+detailed:[
+ ['Kinetic energy is K = (1/2)mv², so it varies as the first power of mass and the second power of speed.','K = (1/2) m v²'],
+ ['Taking logs and differentiating, the fractional error in K is the fractional error in m plus twice the fractional error in v, since the power 2 on v doubles its contribution.','ΔK/K = Δm/m + 2(Δv/v)'],
+ ['Converting to percentages and substituting the given values, mass contributes 3% directly and speed contributes 2% doubled to 4%.','ΔK/K×100% = (Δm/m×100%) + 2(Δv/v×100%)','= 3% + 2(2%)'],
+ ['Adding these gives the total maximum percentage error in kinetic energy.','= 3% + 4%','= 7%','Answer: (B) 7%']
+]},
+{id:'UD-23',topic:'Fractional error in g from the simple pendulum formula',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.44 · p.4',sourceRef:true,question:'What is the fractional error in g calculated from T = 2π√(ℓ/g)? Given fractional errors in T and ℓ are ±x and ±y respectively–',options:['x + y','2x − y','2x + y','x − 2y'],correct:2,answer:'2x + y',
+short:[['Rearrange the pendulum formula to make g the subject.','T = 2π√(ℓ/g)','⇒ g = 4π²ℓ/T²'],['The fractional error in g is the fractional error in ℓ plus twice the fractional error in T.','Δg/g = Δℓ/ℓ + 2(ΔT/T)','= y + 2x','Answer: (C) 2x + y']],
+detailed:[
+ ['Start from the simple-pendulum period formula and solve it for g, since g is the quantity whose error is wanted.','T = 2π√(ℓ/g)','⇒ g = 4π²ℓ/T²'],
+ ['In this expression, g varies as the first power of ℓ and the −2 power of T; the constant 4π² is exact and carries no error.','g = 4π² ℓ¹ T⁻²'],
+ ['Applying the power rule for errors, the fractional error in g is the fractional error in ℓ plus 2 times the fractional error in T.','Δg/g = Δℓ/ℓ + 2(ΔT/T)'],
+ ['Substituting the given fractional errors, ΔT/T = ±x and Δℓ/ℓ = ±y, gives the maximum fractional error in g.','Δg/g = y + 2x','= 2x + y','Answer: (C) 2x + y']
+]},
+{id:'UD-24',topic:'Dimensional formula (unit) of the van der Waals constant a',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.45 · p.4',sourceRef:true,question:'In the equation (P + a/V²)(V−b) = constant, the unit(s) of a is/are–',options:['N m⁵','N m⁴','N m³','N m²'],correct:1,answer:'N m⁴',
+short:[['For the sum P + a/V² to be valid, a/V² must have the same dimension as pressure.','[a/V²] = [P]','⇒ [a] = [P][V²]'],['Substitute the dimension of pressure and of volume squared.','[a] = (ML⁻¹T⁻²)(L⁶)','= ML⁵T⁻²'],['Write this as a force (N) times a length⁴, since N = MLT⁻².','[a] = (MLT⁻²)(L⁴)','= N m⁴','Answer: (B) N m⁴']],
+detailed:[
+ ['By the principle of homogeneity, only quantities of the same dimension can be added, so a/V² must carry the dimension of pressure P.','(P + a/V²)','⇒ [a/V²] = [P]'],
+ ['Solve for the dimension of a by multiplying both sides by [V²].','[a] = [P][V]²'],
+ ['Substitute the known dimension of pressure, ML⁻¹T⁻², and of volume squared, (L³)² = L⁶.','[P] = ML⁻¹T⁻²','[V²] = L⁶','[a] = (ML⁻¹T⁻²)(L⁶)','= ML⁵T⁻²'],
+ ['Regroup ML⁵T⁻² as a force (MLT⁻², the newton) times a remaining L⁴, to express the unit in the newton-metre form the options use.','ML⁵T⁻² = (MLT⁻²)(L⁴)','= N m⁴','Answer: (B) N m⁴']
+]},
+{id:'UD-25',topic:'Rounding a sum of measurements to the correct decimal place',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.46 · p.4',sourceRef:true,question:'If P = 2.347 cm, Q = 2.4 cm, then P + Q =',options:['4.747','4.75','4.8','4.7'],correct:3,answer:'4.7',
+short:[['Add the two values exactly first.','P + Q = 2.347 + 2.4','= 4.747'],['In addition, round the result to the least number of decimal places among the terms; Q has only 1 decimal place, so round 4.747 to 1 decimal place.','4.747 → 4.7 (hundredths digit 4 rounds down)','Answer: (D) 4.7']],
+detailed:[
+ ['Add the two measured lengths exactly, without rounding yet.','P + Q = 2.347 cm + 2.400 cm','= 4.747 cm'],
+ ['The addition rule for significant figures says the sum can only be as precise (as many decimal places) as the least precise term being added; here Q = 2.4 cm has just 1 decimal place, while P = 2.347 cm has 3.','P: 3 decimal places','Q: 1 decimal place'],
+ ['Round 4.747 to 1 decimal place by looking at the digit in the hundredths place (4), which is less than 5, so the tenths digit stays the same.','4.747 → 4.7'],
+ ['This gives 4.7, option (D). The printed key marks (C) 4.8, but 4.747 is closer to 4.7 than to 4.8 (only 0.047 above 4.7, against 0.053 below 4.8), so 4.8 is not the correctly rounded value under the standard addition rule.','Answer: (D) 4.7']
+]},
+{id:'UD-26',topic:'Identifying the pair of quantities with the same dimensions',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.47 · p.4',sourceRef:true,question:'Which physical quantities have same dimensions?',options:['Torque and work','Force and power','Latent heat and specific heat','Work and power'],correct:0,answer:'Torque and work',
+short:[['Write the dimension of each pair. Torque and work are both a force times a distance.','Torque = F×r','= ML²T⁻²','Work = F×d','= ML²T⁻²'],['Force = MLT⁻², power = ML²T⁻³, latent heat = L²T⁻², specific heat = L²T⁻²K⁻¹ — none of the other pairs match.','Answer: (A) Torque and work']],
+detailed:[
+ ['Torque is a force times a perpendicular distance, and work is also a force times a distance, so both reduce to the same product of dimensions.','Torque = F × r','Work = F × d','[Torque] = ML²T⁻²','[Work] = ML²T⁻²'],
+ ['Check the remaining options: force has dimension MLT⁻², while power (energy per time) has dimension ML²T⁻³ — these differ.','[Force] = MLT⁻²','[Power] = ML²T⁻³'],
+ ['Latent heat is energy per unit mass, L²T⁻², while specific heat is energy per unit mass per kelvin, L²T⁻²K⁻¹ — these also differ, by a factor of K⁻¹.','[Latent heat] = L²T⁻²','[Specific heat] = L²T⁻²K⁻¹'],
+ ['Work and power were already shown to differ (ML²T⁻² versus ML²T⁻³), so torque and work is the only matching pair.','Answer: (A) Torque and work']
+]},
+{id:'UD-27',topic:'Finding exponents in the de Broglie wavelength relation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.48 · p.4',sourceRef:true,question:'The wavelength associated with a moving particle depends upon power p of its mass m, qth power of its velocity v and rth power of Planck\'s constant h. Then the correct set of values of p, q and r is –',options:['p=1, q=−1, r=1','p=1, q=1, r=1','p=−1, q=−1, r=−1','p=−1, q=−1, r=1'],correct:3,answer:'p=−1, q=−1, r=1',
+short:[['The de Broglie relation gives wavelength directly in terms of mass, velocity and Planck\'s constant.','λ = h/(mv)','= h¹ m⁻¹ v⁻¹'],['Compare exponents with λ ∝ m^(p) v^(q) h^(r).','p = −1','q = −1','r = 1','Answer: (D) p=−1, q=−1, r=1']],
+detailed:[
+ ['The de Broglie wavelength of a moving particle is given directly by λ = h/(mv), a standard relation (also derivable by dimensional analysis, since it is the unique combination of m, v, h with the dimension of length).','λ = h/(mv)'],
+ ['Rewrite this as a product of powers to compare with the assumed form λ ∝ m^(p) v^(q) h^(r).','λ = h¹ m⁻¹ v⁻¹'],
+ ['Matching exponents term by term gives p (on m), q (on v) and r (on h).','p = −1','q = −1','r = 1'],
+ ['This is option (D); option (C) has the same magnitudes but the wrong sign on r, and options (A) and (B) get the sign of p and/or q wrong.','Answer: (D) p=−1, q=−1, r=1']
+]},
+{id:'UD-28',topic:'Identifying the most precise measurement among decimal and power-of-ten forms',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.49 · p.4',sourceRef:true,question:'Which of the following is the most accurate?',options:['200.0m','20×10¹m','2×10²m','Data is inadequate'],correct:0,answer:'200.0m',
+short:[['Count the significant figures each form actually shows.','200.0m → 4 s.f.','20×10¹m → 2 s.f.','2×10²m → 1 s.f.'],['More significant figures means a more precise (accurate) measurement.','Answer: (A) 200.0m']],
+detailed:[
+ ['All three forms represent the same numerical value, 200 m, but they are written with different precision, so compare their significant figures.','200.0m, 20×10¹m and 2×10²m all equal 200 m'],
+ ['200.0 m has a trailing zero after the decimal point, which is significant, giving 4 significant figures (2, 0, 0, 0).','200.0m → 4 s.f.'],
+ ['20×10¹ m has only the digits 2 and 0 as significant (2 s.f.), and 2×10² m has only the digit 2 as significant (1 s.f.).','20×10¹m → 2 s.f.','2×10²m → 1 s.f.'],
+ ['The measurement with the most significant figures is the most precisely (accurately) known, so 200.0 m is the most accurate.','Answer: (A) 200.0m']
+]},
+{id:'UD-29',topic:'Significant figures in a number less than one with an internal and a trailing zero',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.50 · p.4',sourceRef:true,question:'The number of significant figures in 0.01020 is',options:['3','4','5','6'],correct:1,answer:'4',
+short:[['Leading zeros before the first non-zero digit are never significant; all digits from the first non-zero digit onward are.','0.01020 → 1, 0, 2, 0 are significant'],['Count them.','4 significant figures','Answer: (B) 4']],
+detailed:[
+ ['In 0.01020, the zeros before the digit 1 (0.0...) only fix the decimal position and are not significant.','0.01020 → leading zeros not significant'],
+ ['Starting from the first non-zero digit, 1, every digit that follows is significant, including internal and trailing zeros after the decimal point.','significant digits: 1, 0, 2, 0'],
+ ['Counting these gives 4 significant figures.','= 4','Answer: (B) 4']
+]},
+{id:'UD-30',topic:'Significant figures in a number with trailing zeros after the decimal point',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.51 · p.4',sourceRef:true,question:'The number of significant figures in 0.900 is –',options:['1','2','3','4'],correct:2,answer:'3',
+short:[['Leading zeros are not significant; every digit from the first non-zero digit onward counts, including trailing zeros after a decimal point.','0.900 → digits 9, 0, 0'],['Count them.','3 significant figures','Answer: (C) 3']],
+detailed:[
+ ['In 0.900, the zero before the 9 only marks the decimal position and is not significant.','0.900 → leading zero not significant'],
+ ['The digit 9 is significant, and so are both zeros after it, because trailing zeros written after a decimal point are always taken as significant (they show the measurement was made to that precision).','significant digits: 9, 0, 0'],
+ ['Counting these gives 3 significant figures.','= 3','Answer: (C) 3']
+]},
+{id:'UD-31',topic:'Significant figures in a small number with only leading zeros',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.52 · p.4',sourceRef:true,question:'The number of significant figures in 0.007 is –',options:['4','3','2','1'],correct:3,answer:'1',
+short:[['All the zeros in 0.007 come before the first non-zero digit, so none of them are significant.','0.007 → only the digit 7 is significant'],['Count it.','1 significant figure','Answer: (D) 1']],
+detailed:[
+ ['In 0.007, every zero appears before the first non-zero digit (7), and such leading zeros never count as significant — they only locate the decimal point.','0.007 → leading zeros not significant'],
+ ['The only significant digit is 7 itself.','significant digits: 7'],
+ ['So the number has just 1 significant figure.','= 1','Answer: (D) 1']
+]},
+{id:'UD-32',topic:'Significant figures in two numbers with trailing zeros, one below and one above one',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.53 · p.4',sourceRef:true,question:'The number of significant figures in (i) 0.03800 and (ii) 90.00 is –',options:['(i) 4 (ii) 4','(i) 2 (ii) 1','(i) 3 (ii) 3','(i) 2 (ii) 4'],correct:0,answer:'(i) 4 (ii) 4',
+short:[['In 0.03800, the leading zeros are not significant, but 3, 8, 0, 0 all are (trailing zeros after the decimal count).','0.03800 → 4 significant figures'],['In 90.00, all four digits are significant, since the number is written with a decimal point and trailing zeros.','90.00 → 4 significant figures','Answer: (A) (i) 4 (ii) 4']],
+detailed:[
+ ['In 0.03800, the two zeros before the 3 are leading zeros and are not significant; they only fix the decimal position.','0.03800 → leading zeros (0.0) not significant'],
+ ['From the digit 3 onward, 3, 8, 0, 0 are all significant, since trailing zeros written after a decimal point are always counted.','significant digits: 3, 8, 0, 0','→ 4 significant figures'],
+ ['In 90.00, the number is written with an explicit decimal point, so every digit shown, including both trailing zeros, is significant.','90.00 → digits 9, 0, 0, 0','→ 4 significant figures'],
+ ['Both parts give 4 significant figures, matching option (A).','Answer: (A) (i) 4 (ii) 4']
+]},
+{id:'UD-33',topic:'Significant figures in a number written in scientific notation',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.54 · p.4',sourceRef:true,question:'The number of significant figures in 3.04 × 10²³ is –',options:['2','3','23','25'],correct:1,answer:'3',
+short:[['In scientific notation a×10ⁿ, only the digits in the coefficient a are significant; the power of ten is not counted.','3.04×10²³ → coefficient 3.04 has digits 3, 0, 4'],['Count them.','3 significant figures','Answer: (B) 3']],
+detailed:[
+ ['For a number written in scientific notation, significance is decided entirely by the digits in the coefficient; the exponent on 10 only fixes magnitude and contributes no significant digits of its own.','3.04 × 10²³'],
+ ['The coefficient 3.04 contains the digits 3, 0, 4, and the zero here is an internal zero (between two non-zero digits), so it is significant.','significant digits: 3, 0, 4'],
+ ['Counting these gives 3 significant figures; the exponent 23 is not a count of significant figures, ruling out options (C) and (D).','= 3','Answer: (B) 3']
+]},
+{id:'UD-34',topic:'Significant figures in a small coefficient multiplied by a power of ten',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.55 · p.4',sourceRef:true,question:'The number of significant figures in 0.0060 × 10⁻¹⁸ m is –',options:['1','2','4','5'],correct:1,answer:'2',
+short:[['Only the coefficient 0.0060 carries significant digits; its leading zeros are not significant but its trailing zero after the decimal point is.','0.0060 → digits 6, 0 significant'],['Count them.','2 significant figures','Answer: (B) 2']],
+detailed:[
+ ['The power-of-ten factor 10⁻¹⁸ only scales the value and contributes no significant digits; significance is decided by the coefficient 0.0060 alone.','0.0060 × 10⁻¹⁸ m'],
+ ['Within 0.0060, the zeros before the 6 are leading zeros (not significant), but the zero after the 6 is a trailing zero written after the decimal point, so it is significant.','0.0060 → leading zeros not significant','→ 6 and the trailing 0 are significant'],
+ ['This gives 2 significant digits, 6 and 0.','significant digits: 6, 0 = 2','Answer: (B) 2']
+]},
+{id:'UD-35',topic:'Significant figures in a decimal length and a small mass with leading zeros',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.56 · p.4',sourceRef:true,question:'The number of significant figures in (i) 10.85 meter (ii) 0.0001234 kg is –',options:['(i) 4 (ii) 4','(i) 3 (ii) 7','(i) 4 (ii) 7','(i) 2 (ii) 7'],correct:0,answer:'(i) 4 (ii) 4',
+short:[['In 10.85, every digit is significant (the internal zero counts too).','10.85 → digits 1, 0, 8, 5 → 4 significant figures'],['In 0.0001234, the leading zeros are not significant, leaving 1, 2, 3, 4.','0.0001234 → 4 significant figures','Answer: (A) (i) 4 (ii) 4']],
+detailed:[
+ ['In 10.85 metre, all four digits are significant: 1, 8 and 5 are non-zero, and the 0 lies between two non-zero digits (1 and 8), so it is an internal zero and is significant too.','10.85 → digits 1, 0, 8, 5','→ 4 significant figures'],
+ ['In 0.0001234 kg, the four zeros immediately after the decimal point, before the first non-zero digit 1, are leading zeros and are not significant.','0.0001234 → leading zeros (0.0001...) not significant'],
+ ['From the digit 1 onward, 1, 2, 3, 4 are all significant.','significant digits: 1, 2, 3, 4 = 4 significant figures'],
+ ['Both parts give 4 significant figures, matching option (A).','Answer: (A) (i) 4 (ii) 4']
+]},
+{id:'UD-36',topic:'Identifying the most accurate measurement among equal values in different power-of-ten forms',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.57 · p.4',sourceRef:true,question:'Which of the following measurements is most accurate?',options:['9×10⁻²m','90×10⁻³m','900×10⁻⁴m','0.090m'],correct:2,answer:'900×10⁻⁴m',
+short:[['All four equal 0.09 m; compare significant figures in each written form.','9×10⁻²m → 1 s.f.','90×10⁻³m → 2 s.f.','900×10⁻⁴m → 3 s.f.','0.090m → 2 s.f.'],['The form with the most significant figures is the most accurate.','Answer: (C) 900×10⁻⁴m']],
+detailed:[
+ ['All four options represent the same physical length, 0.09 m, so the comparison is about how precisely each is written, not about the value itself.','9×10⁻²m = 0.09m','90×10⁻³m = 0.09m','900×10⁻⁴m = 0.09m','0.090m = 0.09m'],
+ ['9×10⁻² m has only the digit 9 as significant, giving 1 significant figure. 90×10⁻³ m has the digits 9, 0 significant, giving 2 significant figures.','9×10⁻²m → 1 s.f.','90×10⁻³m → 2 s.f.'],
+ ['900×10⁻⁴ m has all three digits 9, 0, 0 significant (they are written explicitly in the coefficient before the power of ten), giving 3 significant figures. 0.090 m has its leading zero not significant but its trailing zero after the decimal significant, giving 2 significant figures.','900×10⁻⁴m → 3 s.f.','0.090m → 2 s.f.'],
+ ['The measurement written with the most significant figures, 900×10⁻⁴ m, is the most accurate.','Answer: (C) 900×10⁻⁴m']
+]},
+{id:'UD-37',topic:'Rounding an addition of measurements with very different precision',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.58 · p.4',sourceRef:true,question:'When 999 mm is added to 100 m, we get –',options:['101m','100.999m','100.99m','100.9m'],correct:0,answer:'101m',
+short:[['Convert to the same unit and add exactly.','999 mm = 0.999 m','100m + 0.999m = 100.999m'],['100 m is known only to the nearest metre (0 decimal places), so round the sum to 0 decimal places.','100.999m → 101m','Answer: (A) 101m']],
+detailed:[
+ ['Convert 999 mm to metres so both lengths are in the same unit, then add exactly.','999 mm = 0.999 m','100m + 0.999m = 100.999m'],
+ ['100 m, as written, is measured only to the nearest whole metre — it has 0 decimal places — so it is the less precise of the two terms being added.','100m → 0 decimal places'],
+ ['The addition rule requires the sum to be rounded to the same number of decimal places as the least precise term, here 0 decimal places.','100.999m → round to 0 decimal places'],
+ ['Rounding 100.999 to the nearest whole number gives 101.','100.999m → 101m','Answer: (A) 101m']
+]},
+{id:'UD-38',topic:'Significant figures when multiplying a measured volume by an exact count',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.59 · p.4',sourceRef:true,question:'If 1.76 cm³ is the volume of one cube, then the volume of twenty-five such cubes is –',options:['44 cm³','44.0 cm³','44.00 cm³','44.000 cm³'],correct:1,answer:'44.0 cm³',
+short:[['Twenty-five is an exact count, not a measurement, so it does not limit precision; only 1.76 cm³ (3 s.f.) does.','25 × 1.76cm³ = 44.00cm³ (exact product)'],['Round the product to 3 significant figures, matching 1.76.','44.00 → 44.0cm³','Answer: (B) 44.0 cm³']],
+detailed:[
+ ['Multiply the volume of one cube by the (exact) number of cubes to get the raw product.','25 × 1.76cm³ = 44.00cm³'],
+ ['The count 25 is an exact number (cubes are counted, not measured), so it carries no uncertainty and does not limit the number of significant figures in the result.','25 → exact, unlimited significant figures'],
+ ['The only measured quantity is 1.76 cm³, which has 3 significant figures, so the final answer must also be rounded to 3 significant figures.','1.76cm³ → 3 s.f.'],
+ ['44.00 rounded to 3 significant figures is 44.0.','44.00 → 44.0cm³','Answer: (B) 44.0 cm³']
+]},
+{id:'UD-39',topic:'Maximum absolute error in a sum of two measured quantities',source:'Institute worksheet · 1. Unit & dimension (S.C.Q.)E.pdf · Q.60 · p.5',sourceRef:true,question:'If X = A + B and ΔX, ΔA and ΔB are maximum errors in X, A and B respectively, then –',options:['ΔX = ΔA + ΔB','ΔX = ΔA − ΔB','ΔX/X = ΔA/A − ΔB/B','ΔX/X = ΔA/A + ΔB/B'],correct:0,answer:'ΔX = ΔA + ΔB',
+short:[['For a sum, the errors of the two terms add directly, since in the worst case both measurement errors act in the same direction.','X = A + B'],['The maximum absolute error in X is therefore the sum of the two absolute errors.','ΔX = ΔA + ΔB','Answer: (A) ΔX = ΔA + ΔB']],
+detailed:[
+ ['X is defined as the sum of two measured quantities A and B.','X = A + B'],
+ ['Differentiating (or perturbing each quantity by its own error) gives the error in X in terms of the errors in A and B.','ΔX = ΔA ± ΔB'],
+ ['For the maximum possible error, the two errors are taken to add rather than cancel, since either could independently be at its largest value in the same direction.','ΔX (max) = ΔA + ΔB'],
+ ['This is option (A); options involving ΔX/X, ΔA/A, ΔB/B (the fractional-error combination rule) apply to products or quotients, not to a sum, which is why (C) and (D) are wrong here, and (B) wrongly subtracts, understating the worst case.','Answer: (A) ΔX = ΔA + ΔB']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -368,7 +524,27 @@ const pilotTopicMap={
  'Dimension of the product PV':['dimensional-formula','Dimension of the product PV'],
  'Identifying the SI unit from a combination kg m/s2':['units-systems','Identifying the SI unit from a combination kg m/s2'],
  'SI unit of temperature':['units-systems','SI unit of temperature'],
- 'Dimensional formula of impulse':['dimensional-formula','Dimensional formula of impulse']
+ 'Dimensional formula of impulse':['dimensional-formula','Dimensional formula of impulse'],
+ 'Finding exponents in a time-period relation with pressure, density and surface tension':['dimensional-analysis','Finding exponents in a time-period relation with pressure, density and surface tension'],
+ 'Maximum percentage error in a product of two measured quantities':['errors','Maximum percentage error in a product of two measured quantities'],
+ 'Percentage error in kinetic energy from errors in mass and speed':['errors','Percentage error in kinetic energy from errors in mass and speed'],
+ 'Fractional error in g from the simple pendulum formula':['errors','Fractional error in g from the simple pendulum formula'],
+ 'Dimensional formula (unit) of the van der Waals constant a':['dimensional-formula','Dimensional formula (unit) of the van der Waals constant a'],
+ 'Rounding a sum of measurements to the correct decimal place':['significant-figures','Rounding a sum of measurements to the correct decimal place'],
+ 'Identifying the pair of quantities with the same dimensions':['dimensional-formula','Identifying the pair of quantities with the same dimensions'],
+ 'Finding exponents in the de Broglie wavelength relation':['dimensional-analysis','Finding exponents in the de Broglie wavelength relation'],
+ 'Identifying the most precise measurement among decimal and power-of-ten forms':['significant-figures','Identifying the most precise measurement among decimal and power-of-ten forms'],
+ 'Significant figures in a number less than one with an internal and a trailing zero':['significant-figures','Significant figures in a number less than one with an internal and a trailing zero'],
+ 'Significant figures in a number with trailing zeros after the decimal point':['significant-figures','Significant figures in a number with trailing zeros after the decimal point'],
+ 'Significant figures in a small number with only leading zeros':['significant-figures','Significant figures in a small number with only leading zeros'],
+ 'Significant figures in two numbers with trailing zeros, one below and one above one':['significant-figures','Significant figures in two numbers with trailing zeros, one below and one above one'],
+ 'Significant figures in a number written in scientific notation':['significant-figures','Significant figures in a number written in scientific notation'],
+ 'Significant figures in a small coefficient multiplied by a power of ten':['significant-figures','Significant figures in a small coefficient multiplied by a power of ten'],
+ 'Significant figures in a decimal length and a small mass with leading zeros':['significant-figures','Significant figures in a decimal length and a small mass with leading zeros'],
+ 'Identifying the most accurate measurement among equal values in different power-of-ten forms':['significant-figures','Identifying the most accurate measurement among equal values in different power-of-ten forms'],
+ 'Rounding an addition of measurements with very different precision':['significant-figures','Rounding an addition of measurements with very different precision'],
+ 'Significant figures when multiplying a measured volume by an exact count':['significant-figures','Significant figures when multiplying a measured volume by an exact count'],
+ 'Maximum absolute error in a sum of two measured quantities':['errors','Maximum absolute error in a sum of two measured quantities']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
