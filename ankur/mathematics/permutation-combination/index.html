@@ -529,11 +529,22 @@ async function shareReviewPdf(){if(!reviewPdfFile)return;try{await navigator.sha
 <script>/* Chapter-wide Level and Question-type filters, shared by every library app.
 
    A filter acts on question sets: a core question together with all of its
-   practice variants. A set is shown whole or not at all, and it matches through
-   its core. Level is read from the core's numeric `level` (1, 2 or 3); practice
-   variants never carry their own. Question type is never stored — it is derived
-   from the provenance fields each library already has (see MIGRATE.md §1.2), so
-   it cannot drift from the source record.
+   practice variants. Level is read from the core's numeric `level` (1, 2 or
+   3); practice variants never carry their own, so a set matches the Level
+   filter through its core alone, and Level filtering shows a matching set
+   whole (there is nothing per-item to narrow — a practice has no level of
+   its own to fail the check).
+
+   Question type is never stored — it is derived from the provenance fields
+   each library already has (see MIGRATE.md §1.2) — and a practice variant's
+   provenance can differ from its core's (a PYQ added as practice under an
+   institute-sourced core, say). A set's row still APPEARS if any of its
+   questions has the filtered type, so it is never dropped from the index
+   just because its core doesn't match. But once a Type filter is active,
+   only the questions that themselves have that type are shown, counted and
+   walked by Prev/Next inside that set — a PYQ practice under an institute
+   core surfaces alone, not with the rest of that core's practices along for
+   the ride. The set tag lists only the types actually on display.
 
    Nothing here renders inside `.questionstage`. The filter rows and set tags live
    in the pinned index, so the per-question render composites stay unchanged.
@@ -565,17 +576,37 @@ const QF=(()=>{
  const coreOf=f=>f.items.find(x=>!x.variant)||f.items[0];
  const familyOf=q=>families.find(f=>f.n===q.family);
  const levelOfSet=f=>{const l=coreOf(f).level;return LEVELS.includes(l)?l:null;};
+ // The set's own reference type, for classification tooling (qa/levels/*):
+ // the core's type, as MIGRATE.md §1.2 defines it. Unchanged by the filter
+ // fix below, which is a browser-only concern.
  const typeOfSet=f=>typeOf(coreOf(f));
+ // Every type actually present in the set (core or any practice). A PYQ
+ // added as a practice under an institute-sourced core must still turn up
+ // under the PYQ chip -- the set is still shown whole, just matched by any
+ // member's type rather than the core's alone.
+ const typesInSet=f=>new Set(f.items.map(typeOf).filter(Boolean));
+ // Items of a set that satisfy the active Type filter. Level narrows which
+ // SETS appear (via matches, below), never which items inside one -- a
+ // practice has no level of its own, it inherits the core's -- so with no
+ // Type filter every item qualifies. With one, only the matching items do:
+ // a PYQ filed as a practice under an institute core must surface alone,
+ // not drag its whole family's other practices along.
+ const visibleItems=f=>state.type.length?f.items.filter(it=>state.type.includes(typeOf(it))):f.items;
  const active=()=>state.level.length>0||state.type.length>0;
  function matches(f){
   if(state.level.length&&!state.level.includes(levelOfSet(f)))return false;
-  if(state.type.length&&!state.type.includes(typeOfSet(f)))return false;
+  if(state.type.length){const present=typesInSet(f);if(!state.type.some(t=>present.has(t)))return false;}
   return true;
  }
  function build(){
   const ok=new Set(families.filter(matches).map(f=>f.n));
-  const indices=[];questions.forEach((q,i)=>{if(ok.has(q.family))indices.push(i);});
-  cache={ok,indices,pos:new Map(indices.map((i,k)=>[i,k]))};
+  const indices=[],visible=new Set();
+  questions.forEach((q,i)=>{
+   if(!ok.has(q.family))return;
+   if(state.type.length&&!state.type.includes(typeOf(q)))return;
+   indices.push(i);visible.add(q);
+  });
+  cache={ok,indices,visible,pos:new Map(indices.map((i,k)=>[i,k]))};
  }
  const view=()=>{if(!cache)build();return cache;};
  function persist(){if(!key)return;try{localStorage.setItem(key,JSON.stringify(state));}catch{}}
@@ -593,10 +624,14 @@ const QF=(()=>{
  function clear(){state={level:[],type:[]};cache=null;persist();onChange();}
 
  return {
-  LEVELS,TYPES,typeOf,levelOfSet,typeOfSet,coreOf,active,
+  LEVELS,TYPES,typeOf,levelOfSet,typeOfSet,coreOf,visibleItems,active,
   // Sets and questions that survive the filter, preserving the caller's order.
+  // fams keeps a set (row) if any item matches; qs keeps only the items that
+  // themselves match -- a set is a row in the index, but Prev/Next and the
+  // counter walk questions, and those must not include a sibling that only
+  // rode along because it shares a family with a matching one.
   fams:list=>active()?list.filter(f=>view().ok.has(f.n)):list,
-  qs:list=>active()?list.filter(q=>view().ok.has(q.family)):list,
+  qs:list=>active()?list.filter(q=>view().visible.has(q)):list,
   inView:i=>!active()||view().pos.has(i),
   first:()=>{const v=view().indices;return v.length?v[0]:-1;},
   // Neighbour of `i` inside the filtered order, or -1 at either end.
@@ -624,11 +659,15 @@ const QF=(()=>{
     +(active()?`<div class="qf-row qf-status"><span>${sets?`${sets} of ${families.length} sets`:'No sets match'}</span><button class="qf-clear" onclick="QF.clear()">Clear</button></div>`:'')
     +`</div>`;
   },
-  // Compact set tag for index entries: "L2 · PYQ", or just the type while a
-  // chapter's levels are still being migrated.
+  // Compact set tag for index entries: "L2 · PYQ", or "L2 · INST/PYQ" when
+  // more than one type is actually on display for this set right now (no
+  // Type filter active, so every item shows) -- under an active Type
+  // filter this lists only the type(s) of the items that survive it, since
+  // that's what the row now shows, not the full family's mix.
   tags(f){
-   const l=levelOfSet(f),t=typeOfSet(f);
-   const text=[l?'L'+l:'',t?TYPE_LABEL[t]:''].filter(Boolean).join(' · ');
+   const l=levelOfSet(f),present=new Set(visibleItems(f).map(typeOf).filter(Boolean));
+   const t=TYPES.map(([k])=>k).filter(k=>present.has(k)).map(k=>TYPE_LABEL[k]).join('/');
+   const text=[l?'L'+l:'',t].filter(Boolean).join(' · ');
    return text?`<span class="qf-tag">${text}</span>`:'';
   }
  };
