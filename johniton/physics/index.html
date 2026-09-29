@@ -1622,7 +1622,7 @@ detailed:[
  ['Evaluate each term and add.','= 2% + 6% + 3% + 2%','= 13%'],
  ['This is option (B).','Answer: (B) 13%']
 ]},
-{id:'UD-175',topic:'Maximum error in density of a cylindrical wire from mass, length and radius',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.54 · p.40',sourceRef:true,question:'A cylindrical wire of mass (0.4 ± 0.01) g has length (8 ± 0.04) cm and radius (6 ± 0.03) mm. The maximum error in its density will be:',options:['1%','5%','4%','3.5%'],correct:2,answer:'4%',
+{id:'UD-175',topic:'Maximum error in density of a cylindrical wire from mass, length and radius',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.54 · p.40 (ExamSIDE, JEE Main, Units and Measurements · questions.examside.com (question id Ximuzk6ts0m1q2m6a), is a verbatim repeat of this item)',sourceRef:true,question:'A cylindrical wire of mass (0.4 ± 0.01) g has length (8 ± 0.04) cm and radius (6 ± 0.03) mm. The maximum error in its density will be:',options:['1%','5%','4%','3.5%'],correct:2,answer:'4%',
 short:[['Density ρ = m/(πr²l).','%errorρ = %m + 2(%r) + %l'],['Substitute.','%m = 0.01/0.4×100','= 2.5%','%r = 0.03/6×100','= 0.5%','%l = 0.04/8×100','= 0.5%','%errorρ = 2.5% + 2(0.5%) + 0.5%','= 4%','Answer: (C) 4%']],
 detailed:[
  ['Density of a cylindrical wire is mass divided by volume, volume = πr²l, so radius contributes twice to the percentage error.','ρ = m/(πr²l)','%errorρ = %m + 2(%r) + %l'],
@@ -4511,6 +4511,146 @@ detailed:[
  ['Substitute the given percentage errors for P, Q, R and S.','%P = 0.5%','%Q = 1%','%R = 3%','%S = 1.5%'],
  ['Compute each weighted term.','3 × 0.5% = 1.5%','2 × 1% = 2%','(1/2) × 3% = 1.5%','1 × 1.5% = 1.5%'],
  ['Add them for the maximum percentage error.','%error(A) = 1.5% + 2% + 1.5% + 1.5%','= 6.5%','Answer: (D) 6.5%']
+]},
+{id:'UD-522',topic:'Dimension of b²/a in the force relation F = ax² + bt^(1/2)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xinpird0wtjnhdc5o)',sourceRef:true,question:'A force is represented by F=ax²+bt^(1/2) where x= distance and t= time. The dimensions of b²/a are:',options:['[ML² T⁻³]','[ML³ T⁻³]','[MLT⁻²]','[ML⁻¹T⁻¹]'],correct:1,answer:'[ML³ T⁻³]',
+short:[['Both terms added to F must carry the dimension of force; isolate [a] from ax² and [b] from bt^(1/2).','[a] = [F][x]⁻²','= (MLT⁻²)(L⁻²)','= ML⁻¹T⁻²'],['Do the same for b.','[b] = [F][t]^(−1/2)','= (MLT⁻²)(T^(−1/2))','= MLT^(−5/2)'],['Square [b] and multiply by the inverse of [a] to get b²/a.','b² = M²L²T⁻⁵','[a]⁻¹ = M⁻¹LT²','b²/a = (M²L²T⁻⁵)(M⁻¹LT²)','= ML³T⁻³','Answer: (B) [ML³T⁻³]']],
+detailed:[
+ ['By the principle of homogeneity, each term added to F must itself carry the dimension of force, MLT⁻².','F = ax² + bt^(1/2)','[ax²] = [F]','[bt^(1/2)] = [F]'],
+ ['Solve the first condition for the dimension of a, multiplying force by the inverse of x².','[a] = [F][x]⁻²','= (MLT⁻²)(L⁻²)','= ML⁻¹T⁻²'],
+ ['Solve the second condition for the dimension of b, multiplying force by the inverse of t^(1/2).','[b] = [F][t]^(−1/2)','= (MLT⁻²)(T^(−1/2))','= MLT^(−5/2)'],
+ ['Square [b], take the inverse of [a], and multiply to get the dimension of b²/a.','b² = M²L²T⁻⁵','[a]⁻¹ = M⁻¹LT²','b²/a = (M²L²T⁻⁵)(M⁻¹LT²)','= ML³T⁻³','Answer: (B) [ML³T⁻³]']
+]},
+{id:'UD-523',topic:'Percentage error in the equivalent resistance of two resistors in parallel',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xirhecyrl18jx5qk1)',sourceRef:true,question:'Two resistances are given as R₁=(10±0.5)Ω and R₂=(15±0.5)Ω. The percentage error in the measurement of equivalent resistance when they are connected in parallel is -',options:['2.33','5.33','4.33','6.33'],correct:2,answer:'4.33',
+short:[['For resistors in parallel, 1/R = 1/R1 + 1/R2; differentiating gives the absolute error in R in terms of the errors in R1 and R2.','1/R = 1/R1 + 1/R2','dR/R² = dR1/R1² + dR2/R2²'],['Find R itself, then substitute R1=10, R2=15, dR1=dR2=0.5.','R = R1R2/(R1+R2)','= 150/25','= 6Ω','dR = R²(dR1/R1² + dR2/R2²)','= 36(0.5/100 + 0.5/225)'],['Simplify to get the percentage error.','= 36(0.005 + 0.002222)','= 0.26 Ω','dR/R×100% = (0.26/6)×100%','= 4.33%','Answer: (C) 4.33']],
+detailed:[
+ ['For two resistors in parallel, the equivalent resistance satisfies 1/R = 1/R1 + 1/R2; differentiating both sides relates the errors.','1/R = 1/R1 + 1/R2','−dR/R² = −dR1/R1² − dR2/R2²','dR/R² = dR1/R1² + dR2/R2²'],
+ ['First compute the equivalent resistance itself from the given values.','R = R1R2/(R1+R2)','= (10×15)/(10+15)','= 150/25','= 6Ω'],
+ ['Substitute R=6Ω, R1=10Ω, R2=15Ω and the given absolute errors dR1=dR2=0.5Ω, to get the absolute error in R.','dR = R²(dR1/R1² + dR2/R2²)','= 36×(0.005 + 0.002222)','= 0.26 Ω'],
+ ['Convert to a percentage error by dividing by R and multiplying by 100%.','dR/R×100% = (0.26/6)×100%','= 4.33%','Answer: (C) 4.33']
+]},
+{id:'UD-524',topic:'Dimension of 1/(μ0ε0), the permeability–permittivity combination',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xiskngtbdz5tf87fp)',sourceRef:true,question:'If μ₀ and ε₀ are the permeability and permittivity of free space, respectively, then the dimension of (1/μ₀ε₀) is :',options:['T²/L','L²/T²','T²/L²','L/T²'],correct:1,answer:'L²/T²',
+short:[['The speed of light in vacuum satisfies c² = 1/(μ0ε0), so this combination has the dimension of speed squared.','1/(μ0ε0) = c²','[c²] = (LT⁻¹)²'],['Simplify.','= L²T⁻²','Answer: (B) L²/T²']],
+detailed:[
+ ['From electromagnetic theory, the speed of light in free space is related to the permittivity and permeability of free space by c = 1/√(μ0ε0).','c = 1/√(μ0ε0)'],
+ ['Squaring both sides shows 1/(μ0ε0) is simply the square of the speed of light.','c² = 1/(μ0ε0)'],
+ ['Substitute the dimension of speed, LT⁻¹, and square it.','[c²] = (LT⁻¹)²','= L²T⁻²'],
+ ['This matches option (B).','Answer: (B) L²/T²']
+]},
+{id:'UD-525',topic:'Percentage change in resistance of a wire stretched at constant volume',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xiupugwg3mvfoeesd)',sourceRef:true,question:'A copper wire is stretched to make it 0.5% longer. The percentage change in its electrical resistance if its volume remains unchanged is :',options:['2.0 %','2.5 %','1.0 %','0.5 %'],correct:2,answer:'1.0 %',
+short:[['With volume constant, R = ρL/A can be rewritten using A = V/L, giving R proportional to L².','R = ρL/A','= ρL²/V'],['A percentage change in L produces twice that percentage change in R.','ΔR/R×100% = 2×(ΔL/L×100%)','= 2×0.5%','= 1.0%','Answer: (C) 1.0 %']],
+detailed:[
+ ['Resistance of a wire is R = ρL/A; since the volume V = AL stays fixed while stretching, the cross-section can be replaced with A = V/L.','R = ρL/A','V = AL (constant)','A = V/L'],
+ ['Substituting eliminates A, showing R depends on the square of L.','R = ρL/(V/L)','= ρL²/V'],
+ ['For this power-law dependence, the percentage change in R is twice the percentage change in L.','ΔR/R×100% = 2×(ΔL/L×100%)'],
+ ['The wire is stretched 0.5% longer, so ΔL/L×100% = 0.5%.','ΔR/R×100% = 2×0.5%','= 1.0%','Answer: (C) 1.0 %']
+]},
+{id:'UD-526',topic:'Least count of a screw gauge from six rotations moving 3 mm on the main scale',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xiveud90yfhdw2sli)',sourceRef:true,question:'If the screw on a screw-gauge is given six rotations, it moves by 3 mm on the main scale. If there are 50 divisions on the circular scale the least count of the screw gauge is :',options:['0.001 mm','0.01 cm','0.02 mm','0.001 cm'],correct:3,answer:'0.001 cm',
+short:[['Pitch is the main-scale distance moved per rotation; six rotations move 3 mm, so one rotation moves 0.5 mm.','Pitch = 3 mm/6','= 0.5 mm'],['Least count is pitch divided by the number of circular scale divisions.','LC = Pitch/divisions','= 0.5 mm/50','= 0.01 mm','= 0.001 cm','Answer: (D) 0.001 cm']],
+detailed:[
+ ['The pitch of a screw gauge is the distance the spindle advances on the main scale in one complete rotation.','Six rotations move 3 mm on the main scale.'],
+ ['Divide the total distance by the number of rotations to get the pitch of one rotation.','Pitch = 3 mm/6','= 0.5 mm'],
+ ['The least count is the pitch divided by the number of divisions on the circular scale, here 50.','LC = Pitch/divisions','= 0.5 mm/50','= 0.01 mm'],
+ ['Converting to centimetres (1 mm = 0.1 cm) matches option (D).','0.01 mm = 0.001 cm','Answer: (D) 0.001 cm']
+]},
+{id:'UD-527',topic:'Percentage error in a screw-gauge thickness measurement from four readings (mean deviation)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xj1zphrpaqhvpxzau)',sourceRef:true,question:'A student in the laboratory measures thickness of a wire using screw gauge. The readings are 1.22 mm, 1.23 mm, 1.19 mm and 1.20 mm. The percentage error is x/121%. The value of x is ........',type:'numerical',answer:'150',
+short:[['Find the mean of the four readings.','Mean = (1.22+1.23+1.19+1.20)/4','= 4.84/4','= 1.21 mm'],['Find the mean absolute deviation of the readings from this mean.','Mean deviation = (0.01+0.02+0.02+0.01)/4','= 0.06/4','= 0.015 mm'],['Percentage error is the mean deviation over the mean, ×100%; express as x/121.','%error = (0.015/1.21)×100%','= 150/121 %','Answer: x = 150']],
+detailed:[
+ ['The best estimate of the thickness is the mean of the four screw-gauge readings.','Mean = (1.22+1.23+1.19+1.20)/4 mm','= 4.84/4','= 1.21 mm'],
+ ['Find how much each reading deviates from this mean, ignoring sign.','|1.22−1.21| = 0.01','|1.23−1.21| = 0.02','|1.19−1.21| = 0.02','|1.20−1.21| = 0.01'],
+ ['Average these absolute deviations to get the mean absolute error.','Mean deviation = (0.01+0.02+0.02+0.01)/4','= 0.06/4','= 0.015 mm'],
+ ['The percentage error is the mean deviation divided by the mean value, times 100%; writing 1.21 as 121/100 turns the denominator into 121.','%error = (0.015/1.21)×100%','= (1.5/1.21) %','= (150/121) %'],
+ ['Comparing with the given form x/121%, x = 150.','Answer: x = 150']
+]},
+{id:'UD-528',topic:'Percentage error in C = pq²/(r³∜s) from the percentage errors in p, q, r and s',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xj6zahftz4til6dnw)',sourceRef:true,question:'A physical quantity C is related to four other quantities p,q,r and s as follows C=pq²/(r³√(√s)). The percentage errors in the measurement of p,q,r and s are 1%,2%,3% and 2%, respectively. The percentage error in the measurement of C will be ........%',type:'numerical',answer:'14.5',
+short:[['Write C as a product of powers: C = p q² r⁻³ s^(−1/4), since √(√s) = s^(1/4).','C = p q² r⁻³ s^(−1/4)'],['Percentage error in C is the sum of each quantity\'s percentage error weighted by its power.','%error(C) = 1(%p) + 2(%q) + 3(%r) + (1/4)(%s)','= 1% + 2(2%) + 3(3%) + (1/4)(2%)','= 1% + 4% + 9% + 0.5%','= 14.5%','Answer: 14.5']],
+detailed:[
+ ['Rewrite C as a single power-law product, noting that the nested square roots on s mean the fourth root.','C = pq²/(r³√(√s))','= p q² r⁻³ s^(−1/4)'],
+ ['For a product of powers, the percentage error in C is the sum of each factor\'s percentage error multiplied by the magnitude of its exponent.','%error(C) = 1(%p) + 2(%q) + 3(%r) + (1/4)(%s)'],
+ ['Substitute the given percentage errors: 1% in p, 2% in q, 3% in r, 2% in s.','%error(C) = 1(1%) + 2(2%) + 3(3%) + (1/4)(2%)','= 1% + 4% + 9% + 0.5%'],
+ ['Add these contributions.','= 14.5%','Answer: 14.5']
+]},
+{id:'UD-529',topic:'Fractional error in Young\'s modulus from measured radius, length, mass and elongation',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjaaz02rkzl63bll8)',sourceRef:true,question:'In order to determine the Young\'s Modulus of a wire of radius 0.2 cm (measured using a scale of least count = 0.001 cm) and length 1m (measured using a scale of least count = 1 mm), a weight of mass 1 kg (measured using a scale of least count = 1 g) was hanged to get the elongation of 0.5 cm (measured using a scale of least count 0.001 cm). What will be the fractional error in the value of Young\'s Modulus determined by this experiment?',options:['0.14%','9%','1.4%','0.9%'],correct:2,answer:'1.4%',
+short:[['Young\'s modulus is Y = (Mg)L(πr²e)⁻¹, where e is the elongation; g is exact, so the fractional error in Y is the sum of the fractional errors in M, L and e, plus twice that in r.','Y = MgL(πr²e)⁻¹','ΔY/Y = ΔM/M + ΔL/L + 2(Δr/r) + Δe/e'],['Compute each term from the given least counts and measured values.','ΔM/M×100% = (1/1000)×100%','= 0.1%','Δr/r×100% = (0.001/0.2)×100%','= 0.5%','ΔL/L×100% = (0.1/100)×100%','= 0.1%','Δe/e×100% = (0.001/0.5)×100%','= 0.2%'],['Add these percentage errors, doubling the radius term.','ΔY/Y×100% = 0.1% + 2(0.5%) + 0.1% + 0.2%','= 1.4%','Answer: (C) 1.4%']],
+detailed:[
+ ['Young\'s modulus from this experiment is Y = (Mg)L(πr²e)⁻¹, where M is the hung mass, L the wire\'s length, r its radius and e the elongation; g is a fixed constant with no measurement error.','Y = MgL(πr²e)⁻¹'],
+ ['Taking logs and differentiating, the fractional error in Y is the fractional error in M, plus that in L, plus twice that in r (since r is squared), plus that in e.','ΔY/Y = ΔM/M + ΔL/L + 2(Δr/r) + Δe/e'],
+ ['The mass 1 kg = 1000 g is measured to a least count of 1 g, giving a 0.1% error; the radius 0.2 cm to a least count of 0.001 cm gives 0.5%, doubled to 1%.','ΔM/M×100% = (1/1000)×100%','= 0.1%','Δr/r×100% = (0.001/0.2)×100%','= 0.5%','2(Δr/r×100%) = 1%'],
+ ['The length 1 m = 100 cm measured to a least count of 1 mm = 0.1 cm gives 0.1%; the elongation 0.5 cm measured to a least count of 0.001 cm gives 0.2%.','ΔL/L×100% = (0.1/100)×100%','= 0.1%','Δe/e×100% = (0.001/0.5)×100%','= 0.2%'],
+ ['Adding all four contributions gives the total fractional error in Y.','ΔY/Y×100% = 0.1% + 1% + 0.1% + 0.2%','= 1.4%','Answer: (C) 1.4%']
+]},
+{id:'UD-530',topic:'Assertion-Reason on positive zero error in a vernier calliper',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjcakwwc7aes7yks0)',sourceRef:true,question:'Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A) : In Vernier calliper if positive zero error exists, then while taking measurements, the reading taken will be more than the actual reading. Reason (R) : The zero error in Vernier Calliper might have happened due to manufacturing defect or due to rough handling. In the light of the above statements, choose the correct answer from the options given below :',options:['Both (A) and (R) are correct and (R) is the correct explanation of (A)','Both (A) and (R) are correct but (R) is not the correct explanation of (A)','(A) is true but (R) is false','(A) is false but (R) is true'],correct:1,answer:'Both (A) and (R) are correct but (R) is not the correct explanation of (A)',
+short:[['A positive zero error means the vernier reads a nonzero value with the jaws closed, so this fixed offset adds to every raw reading; hence Assertion A is true.','Raw reading = True reading + (positive zero error)','So raw reading > true reading — A is true'],['Reason R (manufacturing defect or rough handling causes the zero error) is a true general fact, but it explains the cause of zero error, not why the reading comes out larger — that follows from the sign of the offset, not from R.','R is true but does not explain A','Answer: (B) Both (A) and (R) are correct but (R) is not the correct explanation of (A)']],
+detailed:[
+ ['A positive zero error means that with the jaws fully closed (nothing between them), the vernier calliper already shows a small positive reading instead of zero.','Zero error > 0 when jaws closed'],
+ ['Since every subsequent measurement carries this same fixed positive offset, the raw (uncorrected) reading taken from the instrument will always be larger than the true value, which is recovered only after subtracting the zero error.','Raw reading = True reading + zero error','True reading = Raw reading − zero error'],
+ ['This confirms Assertion A: the reading taken is indeed more than the actual reading, when a positive zero error is present.','A is true'],
+ ['Reason R states that zero error arises from manufacturing defects or rough handling — this is a true statement about the physical origin of zero error, so R is also correct.','R is true'],
+ ['However, R explains where zero error comes from, not why a positive zero error specifically makes the reading exceed the true value (that follows purely from the sign of the offset and the correction formula); so R does not correctly explain A.','Answer: (B) Both (A) and (R) are correct but (R) is not the correct explanation of (A)']
+]},
+{id:'UD-531',topic:'Percentage accuracy in g from a simple pendulum\'s period and length measurements',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjfuulied5io7soaj)',sourceRef:true,question:'In an experiment to find acceleration due to gravity (g) using simple pendulum, time period of 0.5 s is measured from time of 100 oscillation with a watch of 1 s resolution. If measured value of length is 10 cm known to 1 mm accuracy, The accuracy in the determination of g is found to be x%. The value of x is ........',type:'numerical',answer:'5',
+short:[['g = 4π²l/T², so the fractional error in g is the fractional error in l plus twice the fractional error in T.','g = 4π²l/T²','Δg/g×100% = (Δl/l×100%) + 2(ΔT/T×100%)'],['Length: Δl/l = 0.1 cm/10 cm = 1%. Period: the timer resolves the total 100-oscillation time (50 s) to 1 s, so ΔT/T = 1/50 = 2%, the same ratio as for T itself.','Δl/l×100% = 1%','ΔT/T×100% = (1/50)×100%','= 2%'],['Substitute.','Δg/g×100% = 1% + 2(2%)','= 1% + 4%','= 5%','Answer: x = 5']],
+detailed:[
+ ['From the simple pendulum formula T = 2π√(l/g), solving for g shows it depends on l to the first power and T to the −2 power.','T = 2π√(l/g)','g = 4π²l/T²'],
+ ['For this power-law form, the fractional (percentage) error in g is the percentage error in l plus twice the percentage error in T.','Δg/g×100% = (Δl/l×100%) + 2(ΔT/T×100%)'],
+ ['The length 10 cm is known to an accuracy of 1 mm = 0.1 cm, giving a 1% error.','Δl/l×100% = (0.1/10)×100%','= 1%'],
+ ['The period was found from timing 100 oscillations with a watch whose resolution is 1 s, so the total time of 100×0.5 s carries an absolute error of 1 s; this same fractional error, 1/50, applies to the period T itself since dividing by the exact count 100 doesn\'t change a ratio.','Total time = 100×0.5 s','= 50 s','ΔT/T×100% = (1/50)×100%','= 2%'],
+ ['Combine: the length contributes 1% and the (doubled) period error contributes 4%.','Δg/g×100% = 1% + 2(2%)','= 1% + 4%','= 5%','Answer: x = 5']
+]},
+{id:'UD-532',topic:'Correcting a screw gauge reading for a zero error shown above the reference line',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjis8h2tqloupzyk0)',sourceRef:true,question:'In a screw gauge, the zero of the circular scale lies 3 divisions above the horizontal pitch line when their metallic studs are brought in contact. Using this instrument thickness of a sheet is measured. If pitch scale reading is 1 mm and the circular scale reading is 51 then the correct thickness of the sheet is ........ mm. [Assume least count is 0.01 mm ]',options:['1.54','1.50','1.51','1.48'],correct:0,answer:'1.54',
+short:[['The circular scale\'s zero lies above (past) the pitch line when closed, so this is a negative zero error of 3 divisions; the correction must be added back.','Zero error = −3×LC','= −0.03 mm','Correction = +0.03 mm'],['Raw reading = main scale reading + circular reading × LC.','Raw = 1 mm + 51(0.01 mm)','= 1.51 mm'],['Add the correction.','Correct thickness = 1.51 + 0.03','= 1.54 mm','Answer: (A) 1.54']],
+detailed:[
+ ['With the studs in contact (zero gap), the circular scale\'s zero mark lies 3 divisions above the horizontal pitch (reference) line rather than exactly on it; when the zero has already moved past the reference line this way, the gauge under-reads, which is a negative zero error.','Zero error = −(3×LC)','= −(3×0.01 mm)','= −0.03 mm'],
+ ['A negative zero error means the true reading is obtained by adding its magnitude to the raw reading, not subtracting.','Correction to add = +0.03 mm'],
+ ['The raw (uncorrected) reading is the main scale reading plus the circular scale division times the least count.','Raw reading = Pitch scale reading + (Circular scale reading)×LC','= 1 mm + 51×0.01 mm','= 1 mm + 0.51 mm','= 1.51 mm'],
+ ['Add the correction for the negative zero error to get the true thickness.','Correct thickness = 1.51 mm + 0.03 mm','= 1.54 mm','Answer: (A) 1.54']
+]},
+{id:'UD-533',topic:'Exponent of c in mass expressed through c, G and h (Planck mass form)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjj0kdc2d2ymzcr3q)',sourceRef:true,question:'If mass is written as m=kc^(P)G^(−1/2)h^(1/2) then the value of P will be : (Constants have their usual meaning with k a dimensionless constant)',options:['1/3','−1/3','1/2','2'],correct:2,answer:'1/2',
+short:[['Write m = c^(P) G^(−1/2) h^(1/2) and match the dimension of length (L) on both sides, using [c]=LT⁻¹, [G]=M⁻¹L³T⁻², [h]=ML²T⁻¹.','m = c^(P) G^(−1/2) h^(1/2)','L: P(1) + (−1/2)(3) + (1/2)(2) = 0'],['Solve for P.','P − 3/2 + 1 = 0','P = 1/2','Answer: (C) 1/2']],
+detailed:[
+ ['With c, G and h as fundamental constants, mass is written m = k c^(P) G^(−1/2) h^(1/2); substitute each constant\'s M-L-T dimension.','m = k c^(P) G^(−1/2) h^(1/2)','[c] = LT⁻¹','[G] = M⁻¹L³T⁻²','[h] = ML²T⁻¹'],
+ ['Match the power of L on both sides: m has L⁰, so the L-exponents from c, G and h must sum to zero.','L: P(1) + (−1/2)(3) + (1/2)(2) = 0'],
+ ['Simplify and solve for P.','P − 3/2 + 1 = 0','P = 1/2'],
+ ['(Matching M and T independently gives the same value, confirming consistency.)','Answer: (C) 1/2']
+]},
+{id:'UD-534',topic:'Dimension of 1/(μ0ε0), the permeability–permittivity combination',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjj7zwn7jpux2dusl)',sourceRef:true,question:'Dimension of 1/(μ₀ε₀) should be equal to',options:['T²/L²','T/L','L²/T²','L/T'],correct:2,answer:'L²/T²',
+short:[['1/(μ0ε0) = c², the square of the speed of light in free space.','1/(μ0ε0) = c²'],['Substitute [c]=LT⁻¹ and square.','[c²] = (LT⁻¹)²','= L²T⁻²','Answer: (C) L²/T²']],
+detailed:[
+ ['The speed of light in vacuum is c = 1/√(μ0ε0), where μ0 is the permeability and ε0 the permittivity of free space.','c = 1/√(μ0ε0)'],
+ ['Squaring both sides isolates the required combination.','c² = 1/(μ0ε0)'],
+ ['Substitute the dimension of speed, LT⁻¹, and square it.','[c²] = (LT⁻¹)²','= L²T⁻²'],
+ ['This matches option (C).','Answer: (C) L²/T²']
+]},
+{id:'UD-535',topic:'Least count of an angle-measuring vernier instrument (29 main divisions = 30 vernier divisions)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjonkaflxcrfblo7m)',sourceRef:true,question:'In an experiment the angles are required to be measured using an instrument, 29 divisions of the main scale exactly coincide with the 30 divisions of the vernier scale. If the smallest division of the main scale is half-a degree(=0.5°), then the least count of the instrument is:',options:['one minute','half minute','one degree','half degree'],correct:0,answer:'one minute',
+short:[['29 main scale divisions equal 30 vernier divisions, so one vernier division is (29/30) of one main division.','29 MSD = 30 VSD','1 VSD = (29/30) MSD'],['Least count is 1 MSD minus 1 VSD, which leaves a factor of 1/30 of one main division.','LC = 1 MSD − 1 VSD','= MSD × (1/30)'],['Substitute MSD = 0.5° and convert to minutes.','LC = 0.5° × (1/30)','= (1/60)°','= 1 minute','Answer: (A) one minute']],
+detailed:[
+ ['The coincidence condition states that 29 main scale divisions span the same length as 30 vernier scale divisions.','29 MSD = 30 VSD'],
+ ['Solving gives one vernier scale division as a fraction of one main scale division.','1 VSD = (29/30) MSD'],
+ ['The least count of a vernier-type instrument is one main scale division minus one vernier scale division; substituting 1 VSD from above leaves a factor of 1/30 of one main scale division.','LC = 1 MSD − 1 VSD','= MSD − (29/30)MSD','= MSD × (1/30)'],
+ ['Substitute the given smallest main scale division of 0.5°, and convert to minutes (1° = 60′).','LC = 0.5° × (1/30)','= (1/60)°','= 1′ (one minute)','Answer: (A) one minute']
+]},
+{id:'UD-536',topic:'Dimensional formula of permittivity of free space (ε0)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjsyfxzwcg2nbvfip)',sourceRef:true,question:'Let [ε₀] denote the dimensional formula of the permittivity of vacuum. If M = mass, L = length, T = time and A = electric current, then:',options:['ε₀=[M⁻¹L⁻³T²A]','ε₀=[M⁻¹L⁻³T⁴A²]','ε₀=[M¹L²T¹A²]','ε₀=[M¹L²T¹A]'],correct:1,answer:'ε₀=[M⁻¹L⁻³T⁴A²]',
+short:[['From Coulomb\'s law, F = q²(4πε0r²)⁻¹, so ε0 = q²(4πFr²)⁻¹.','ε0 = q²(4π)⁻¹F⁻¹r⁻²'],['Substitute [q]=AT (current×time), [F]=MLT⁻², [r²]=L²; the numeric factor 4π is dimensionless.','[ε0] = (AT)²(MLT⁻²)⁻¹(L²)⁻¹','= (A²T²)(M⁻¹L⁻¹T²)(L⁻²)','= M⁻¹L⁻³T⁴A²','Answer: (B) [M⁻¹L⁻³T⁴A²]']],
+detailed:[
+ ['Coulomb\'s law gives the force between two charges as F = q²(4πε0r²)⁻¹; rearranging isolates ε0.','F = q²(4πε0r²)⁻¹','ε0 = q²(4πFr²)⁻¹'],
+ ['Charge has dimension AT (current × time); force is MLT⁻² and distance-squared is L².','[q] = AT','[F] = MLT⁻²','[r²] = L²'],
+ ['Substitute these into the expression for ε0 (the numerical factor 4π is dimensionless), writing each factor\'s inverse as a negative power.','[ε0] = (AT)²(MLT⁻²)⁻¹(L²)⁻¹','= (A²T²)(M⁻¹L⁻¹T²)(L⁻²)'],
+ ['Simplify the powers of each base dimension.','= M⁻¹L⁻³T²⁺²A²','= M⁻¹L⁻³T⁴A²','Answer: (B) [M⁻¹L⁻³T⁴A²]']
+]},
+{id:'UD-537',topic:'Adding three measured masses to the correct significant figures',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjxc4byqvylwzx2xz)',sourceRef:true,question:'A person measures mass of 3 different particles as 435.42 g,226.3 g and 0.125 g . According to the rules for arithmetic operations with significant figures, the addition of the masses of 3 particles will be.',options:['661.845 g','661.84 g','662 g','661.8 g'],correct:3,answer:'661.8 g',
+short:[['Add the three masses directly.','435.42 + 226.3 + 0.125','= 661.845 g'],['The least precise measurement (226.3 g) is known only to one decimal place, so the sum must be rounded to one decimal place.','661.845 g → 661.8 g','Answer: (D) 661.8 g']],
+detailed:[
+ ['Adding measured quantities is done on the raw values first, then rounded according to the precision rule for addition.','435.42 g + 226.3 g + 0.125 g','= 661.845 g'],
+ ['For addition/subtraction, the result can only be as precise (in decimal places) as the least precise measurement among those added.','435.42 g: 2 decimal places','226.3 g: 1 decimal place','0.125 g: 3 decimal places'],
+ ['The least precise is 226.3 g, with only 1 decimal place, so the sum must be rounded to 1 decimal place.','661.845 g rounds to 661.8 g'],
+ ['This matches option (D).','Answer: (D) 661.8 g']
+]},
+{id:'UD-538',topic:'Diameter of a wire from screw gauge readings with a negative zero error',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xjxxbiroshrwygs42)',sourceRef:true,question:'In an experiment to find out the diameter of wire using screw gauge, the following observations were noted: Screw moves 0.5 mm on main scale in one complete rotation. Total divisions on circular scale = 50. Main scale reading is 2.5 mm. 45th division of circular scale is in the pitch line. Instrument has 0.03 mm negative error. Then the diameter of wire is :',options:['2.92 mm','2.54 mm','2.98 mm','3.45 mm'],correct:2,answer:'2.98 mm',
+short:[['Least count = pitch/divisions.','LC = 0.5 mm/50','= 0.01 mm'],['Raw reading = main scale reading + circular reading × LC = 2.5 + 45(0.01) = 2.95 mm.','Raw = 2.5 mm + 45(0.01 mm)','= 2.95 mm'],['The instrument has a 0.03 mm negative error, so add the correction.','Diameter = 2.95 + 0.03','= 2.98 mm','Answer: (C) 2.98 mm']],
+detailed:[
+ ['The screw moves 0.5 mm on the main scale per complete rotation, and there are 50 divisions on the circular scale, so the least count is their ratio.','LC = Pitch/divisions','= 0.5 mm/50','= 0.01 mm'],
+ ['The main scale reading is 2.5 mm, and the 45th division of the circular scale lies on the pitch line, adding 45 least counts.','Raw reading = MSR + (CSR)×LC','= 2.5 mm + 45×0.01 mm','= 2.95 mm'],
+ ['The instrument has a stated 0.03 mm negative error, meaning it under-reads by this amount, so the correction must be added.','Correction = +0.03 mm'],
+ ['Add the correction to the raw reading to get the true diameter.','Diameter = 2.95 mm + 0.03 mm','= 2.98 mm','Answer: (C) 2.98 mm']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -5073,7 +5213,24 @@ const pilotTopicMap={
  'Matching spring constant, thermal conductivity, Boltzmann constant and inductive reactance to dimensional formulas':['dimensional-formula','Matching spring constant, thermal conductivity, Boltzmann constant and inductive reactance to dimensional formulas'],
  'Matching torque, energy density, pressure gradient and impulse to SI units':['dimensional-formula','Matching torque, energy density, pressure gradient and impulse to SI units'],
  'Minimum circular scale divisions for a target screw-gauge least count':['measuring-instruments','Minimum circular scale divisions for a target screw-gauge least count'],
- 'Maximum percentage error in a combination of four measured quantities':['errors','Maximum percentage error in a combination of four measured quantities']
+ 'Maximum percentage error in a combination of four measured quantities':['errors','Maximum percentage error in a combination of four measured quantities'],
+ 'Maximum percentage error in the density of a cylindrical wire from mass, length and radius':['errors','Maximum percentage error in the density of a cylindrical wire from mass, length and radius'],
+ 'Dimension of b²/a in the force relation F = ax² + bt^(1/2)':['dimensional-analysis','Dimension of b²/a in the force relation F = ax² + bt^(1/2)'],
+ 'Percentage error in the equivalent resistance of two resistors in parallel':['errors','Percentage error in the equivalent resistance of two resistors in parallel'],
+ 'Dimension of 1/(μ0ε0), the permeability–permittivity combination':['dimensional-formula','Dimension of 1/(μ0ε0), the permeability–permittivity combination'],
+ 'Percentage change in resistance of a wire stretched at constant volume':['errors','Percentage change in resistance of a wire stretched at constant volume'],
+ 'Least count of a screw gauge from six rotations moving 3 mm on the main scale':['measuring-instruments','Least count of a screw gauge from six rotations moving 3 mm on the main scale'],
+ 'Percentage error in a screw-gauge thickness measurement from four readings (mean deviation)':['errors','Percentage error in a screw-gauge thickness measurement from four readings (mean deviation)'],
+ 'Percentage error in C = pq²/(r³∜s) from the percentage errors in p, q, r and s':['errors','Percentage error in C = pq²/(r³∜s) from the percentage errors in p, q, r and s'],
+ 'Fractional error in Young\'s modulus from measured radius, length, mass and elongation':['errors','Fractional error in Young\'s modulus from measured radius, length, mass and elongation'],
+ 'Assertion-Reason on positive zero error in a vernier calliper':['measuring-instruments','Assertion-Reason on positive zero error in a vernier calliper'],
+ 'Percentage accuracy in g from a simple pendulum\'s period and length measurements':['errors','Percentage accuracy in g from a simple pendulum\'s period and length measurements'],
+ 'Correcting a screw gauge reading for a zero error shown above the reference line':['measuring-instruments','Correcting a screw gauge reading for a zero error shown above the reference line'],
+ 'Exponent of c in mass expressed through c, G and h (Planck mass form)':['dimensional-analysis','Exponent of c in mass expressed through c, G and h (Planck mass form)'],
+ 'Least count of an angle-measuring vernier instrument (29 main divisions = 30 vernier divisions)':['measuring-instruments','Least count of an angle-measuring vernier instrument (29 main divisions = 30 vernier divisions)'],
+ 'Dimensional formula of permittivity of free space (ε0)':['dimensional-formula','Dimensional formula of permittivity of free space (ε0)'],
+ 'Adding three measured masses to the correct significant figures':['significant-figures','Adding three measured masses to the correct significant figures'],
+ 'Diameter of a wire from screw gauge readings with a negative zero error':['measuring-instruments','Diameter of a wire from screw gauge readings with a negative zero error']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
