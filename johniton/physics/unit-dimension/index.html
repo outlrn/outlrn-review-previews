@@ -4651,6 +4651,157 @@ detailed:[
  ['The main scale reading is 2.5 mm, and the 45th division of the circular scale lies on the pitch line, adding 45 least counts.','Raw reading = MSR + (CSR)×LC','= 2.5 mm + 45×0.01 mm','= 2.95 mm'],
  ['The instrument has a stated 0.03 mm negative error, meaning it under-reads by this amount, so the correction must be added.','Correction = +0.03 mm'],
  ['Add the correction to the raw reading to get the true diameter.','Diameter = 2.95 mm + 0.03 mm','= 2.98 mm','Answer: (C) 2.98 mm']
+]},
+{id:'UD-539',topic:'Percentage error in volume from error in radius',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpfiond5c0pkcyb3g)',sourceRef:true,question:'The radius of a sphere is measured to be (7.50 ± 0.85) cm. Suppose the percentage error in its volume is x. The value of x, to the nearest integer, is ........',type:'numerical',answer:'34',
+short:[['Volume of a sphere scales with the cube of the radius, so the percentage error scales the same way.','V = (4/3)πr³','%error in V = 3 × (%error in r)'],['Substitute the measured values and evaluate.','%error in r = (0.85/7.50) × 100','%error in V = 3 × (0.85/7.50) × 100','= 34','Answer: 34']],
+detailed:[
+ ['Volume of a sphere depends on the radius raised to the third power, so by the rule for propagation of errors in a power, the percentage error in V is three times the percentage error in r.','V = (4/3)πr³','ΔV/V = 3(Δr/r)'],
+ ['Compute the percentage error in the measured radius from the given values.','Δr/r = 0.85/7.50','%error in r = 11.33%'],
+ ['Multiply by 3 to get the percentage error in the volume.','%error in V = 3 × 11.33%','= 34.0%'],
+ ['Rounded to the nearest integer, x = 34.','Answer: 34']
+]},
+{id:'UD-540',topic:'Screw gauge diameter with a positive zero error',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpii33vyhgiegfssl)',sourceRef:true,question:'In a screw gauge, there are 100 divisions on the circular scale and the main scale moves by 0.5 mm on a complete rotation of the circular scale. The zero of circular scale lies 6 divisions below the line of graduation when two studs are brought in contact with each other. When a wire is placed between the studs, 4 linear scale divisions are clearly visible while the 46th division of the circular scale coincides with the reference line. The diameter of the wire is ........ ×10⁻² mm.',type:'numerical',answer:'220',
+short:[['Least count is the pitch divided by the number of circular divisions.','LC = 0.5 mm ÷ 100','= 0.005 mm'],['Zero error: circular zero lies 6 divisions below the reference line at closure, a positive zero error to subtract.','Zero error = 6 × LC','= 0.03 mm'],['Main scale and circular scale readings with the wire in place.','MSR = 4 × 0.5 mm','= 2.00 mm','CSR = 46 × 0.005 mm','= 0.23 mm'],['Observed reading is their sum, and the diameter is that minus the zero error.','Observed = MSR + CSR','= 2.23 mm','Diameter = Observed − Zero error','= 2.20 mm','= 220 × 10⁻² mm','Answer: 220']],
+detailed:[
+ ['The least count of the screw gauge is the pitch (linear travel per full rotation) divided by the number of divisions on the circular scale.','LC = pitch ÷ n','= 0.5 mm ÷ 100','= 0.005 mm'],
+ ['At zero gap (studs touching), the circular scale\'s zero mark sits 6 divisions past the reference line, so the instrument reads +6 divisions when the true gap is zero — a positive zero error, which must be subtracted from every reading.','Zero error = 6 × LC','= 6 × 0.005 mm','= 0.03 mm'],
+ ['With the wire in place, the main scale shows 4 divisions of 0.5 mm each, and the 46th circular division coincides with the reference line.','MSR = 4 × 0.5 mm','= 2.00 mm','CSR = 46 × 0.005 mm','= 0.23 mm'],
+ ['Add the two scale readings to get the observed reading, then subtract the positive zero error to get the true diameter.','Observed = MSR + CSR','= 2.23 mm','Diameter = Observed − Zero error','= 2.20 mm'],
+ ['Express the diameter in the asked units of 10⁻² mm.','220 × 10⁻² mm','Answer: 220']
+]},
+{id:'UD-541',topic:'Percentage error in a quantity Q = ab⁴/(cd)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpik17mypblqpwhnc)',sourceRef:true,question:'A physical quantity Q is related to four observables a, b, c, d as follows: Q = ab⁴/cd, where a = (60±3) Pa, b = (20±0.1) m, c = (40±0.2) N s m⁻², and d = (50±0.1) m. The percentage error in Q is x/1000, where x = ........',type:'numerical',answer:'7700',
+short:[['For a product/quotient of powers, percentage errors add, each weighted by its exponent.','Q = ab⁴/(cd)','%error in Q = %error(a) + 4×%error(b) + %error(c) + %error(d)'],['Compute each observable\'s percentage error.','%error(a) = (3/60)×100','= 5%','%error(b) = (0.1/20)×100','= 0.5%','%error(c) = (0.2/40)×100','= 0.5%','%error(d) = (0.1/50)×100','= 0.2%'],['Weight b\'s error by its exponent 4, then add all four contributions.','4 × 0.5% = 2%','%error in Q = 5% + 2% + 0.5% + 0.2%','= 7.7%'],['The question states this equals x/1000; solve for x.','x/1000 = 7.7','x = 7700','Answer: 7700']],
+detailed:[
+ ['Q is a product of powers of the four observables, so the maximum fractional error in Q is the sum of each observable\'s fractional error scaled by its exponent in the formula.','Q = a b⁴ c⁻¹ d⁻¹','ΔQ/Q = Δa/a + 4(Δb/b) + Δc/c + Δd/d'],
+ ['Work out each fractional error as a percentage from the given values.','Δa/a = 3/60','= 5%','Δb/b = 0.1/20','= 0.5%','Δc/c = 0.2/40','= 0.5%','Δd/d = 0.1/50','= 0.2%'],
+ ['b\'s contribution is scaled by its exponent 4 before summing.','4 × (Δb/b) = 4 × 0.5%','= 2%'],
+ ['Add all four contributions to get the total percentage error in Q.','%error in Q = 5% + 2% + 0.5% + 0.2%','= 7.7%'],
+ ['The question states this equals x/1000, so solve for x.','x/1000 = 7.7','x = 7700','Answer: 7700']
+]},
+{id:'UD-542',topic:'Dimensional formula of √(ε₀/μ₀)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpnhwgiww0bxt3nd4)',sourceRef:true,question:'In SI units, the dimensions of √(ε₀/μ₀) is:',options:['A⁻¹TML³','A²T³M⁻¹L⁻²','AT⁻³ML³ᐟ²','AT²M⁻¹L⁻¹'],correct:1,answer:'A²T³M⁻¹L⁻²',
+short:[['Repair the OCR glitches: the doubled radical and \'ν₀\' both resolve to a single √(ε₀/μ₀).','X = √(ε₀/μ₀)'],['Use the standard dimensional formulas of ε₀ and μ₀.','[ε₀] = M⁻¹L⁻³T⁴A²','[μ₀] = MLT⁻²A⁻²'],['Divide and take the square root.','ε₀/μ₀ = M⁻²L⁻⁴T⁶A⁴','√(ε₀/μ₀) = M⁻¹L⁻²T³A²','Answer: (B) A²T³M⁻¹L⁻²']],
+detailed:[
+ ['The printed expression has two known ExamSIDE transcription glitches — a doubled radical, and \'ν₀\' standing in for μ₀ — so the physically sensible reading is a single square root of the ratio ε₀/μ₀.','X = √(√(ε₀)/μ₀)  (as printed)','X = √(ε₀/μ₀)  (repaired)'],
+ ['Recall the standard dimensional formulas of the permittivity and permeability of free space, both expressed in terms of mass, length, time and current.','[ε₀] = M⁻¹L⁻³T⁴A²','[μ₀] = MLT⁻²A⁻²'],
+ ['Divide ε₀ by μ₀, combining the exponents of each base dimension.','ε₀/μ₀ = M^(−1−1)L^(−3−1)T^(4−(−2))A^(2−(−2))','= M⁻²L⁻⁴T⁶A⁴'],
+ ['Take the square root of the ratio, halving each exponent.','√(ε₀/μ₀) = M⁻¹L⁻²T³A²'],
+ ['This matches option (B).','Answer: (B) A²T³M⁻¹L⁻²']
+]},
+{id:'UD-543',topic:'Maximum percentage error in the density of a wire',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpqrruhcxizwzyomf)',sourceRef:true,question:'The maximum percentage error in the measurement of density of a wire is [Given, mass of wire = (0.60±0.003) g, radius of wire = (0.50±0.01) cm, length of wire = (10.00±0.05) cm]',options:['7','8','5','4'],correct:2,answer:'5',
+short:[['Density of a wire (cylinder) is mass over volume; volume uses radius squared and length.','ρ = m/(πr²l)'],['Percentage error adds, with the radius term doubled for its square.','%error in ρ = %error(m) + 2×%error(r) + %error(l)'],['Substitute the given values.','%error(m) = (0.003/0.60)×100','= 0.5%','%error(r) = (0.01/0.50)×100','= 2%','2 × 2% = 4%','%error(l) = (0.05/10.00)×100','= 0.5%'],['Add them up.','%error in ρ = 0.5 + 4 + 0.5','= 5%','Answer: (C) 5']],
+detailed:[
+ ['A wire is a cylinder, so its density is its mass divided by the volume of a cylinder, π times radius-squared times length.','ρ = m/(πr²l)'],
+ ['Since ρ is a product of powers of m, r and l, the maximum percentage error is the sum of each measured quantity\'s percentage error, with the radius term counted twice because it enters squared.','Δρ/ρ = Δm/m + 2(Δr/r) + Δl/l'],
+ ['Evaluate each term from the given data.','Δm/m = 0.003/0.60','= 0.5%','Δr/r = 0.01/0.50','= 2%','Δl/l = 0.05/10.00','= 0.5%'],
+ ['Double the radius term and add everything together.','2 × 2% = 4%','Δρ/ρ = 0.5% + 4% + 0.5%','= 5%'],
+ ['This matches option (C).','Answer: (C) 5']
+]},
+{id:'UD-544',topic:'Significant figures of 23.023, 0.0003 and 2.1×10⁻³',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xqj0wnabg6uwris74)',sourceRef:true,question:'The respective number of significant figures for the numbers 23.023, 0.0003 and 2.1 × 10⁻³ are',options:['5, 1, 2','5, 1, 5','5, 5, 2','4, 4, 2'],correct:0,answer:'5, 1, 2',
+short:[['Count digits in 23.023: all non-zero digits and the internal/trailing zero after a non-zero digit count.','23.023 → 5 significant figures'],['0.0003: leading zeros before the first non-zero digit never count.','0.0003 → 1 significant figure'],['2.1×10⁻³: only the digits in the coefficient count, not the power of ten.','2.1×10⁻³ → 2 significant figures','Answer: (A) 5, 1, 2']],
+detailed:[
+ ['In 23.023, every digit shown — the two before the decimal point and the three after — is significant, since all are either non-zero or sandwiched between non-zero digits.','23.023 → 5 significant figures'],
+ ['In 0.0003, the three zeros before the 3 are purely placeholders fixing the decimal point\'s position and are never counted; only the final 3 is significant.','0.0003 → 1 significant figure'],
+ ['In 2.1×10⁻³, the power of ten only scales the value and carries no significance; only the digits 2 and 1 in the coefficient count.','2.1×10⁻³ → 2 significant figures'],
+ ['So the respective counts are 5, 1, 2, matching option (A).','Answer: (A) 5, 1, 2']
+]},
+{id:'UD-545',topic:'Radius of a spherical bob from a vernier calliper with positive zero error',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xqpdb1rftshcgnlv7)',sourceRef:true,question:'The diameter of a spherical bob is measured using a vernier callipers. 9 divisions of the main scale, in the vernier callipers, are equal to 10 divisions of the vernier scale. One main scale division is 1 mm. The main scale reading is 10 mm and the 8th division of the vernier scale was found to coincide exactly with one of the main scale divisions. If the given vernier callipers has a positive zero error of 0.04 cm, then the radius of the bob is ........ × 10⁻² cm.',type:'numerical',answer:'52',
+short:[['9 MSD = 10 VSD gives the vernier scale division, and the least count follows.','1 VSD = 0.9 mm','LC = 1 MSD − 1 VSD','= 0.1 mm','= 0.01 cm'],['Observed diameter reading from the main and vernier scales.','MSR = 10 mm','= 1.00 cm','Observed = MSR + 8 × LC','= 1.08 cm'],['Subtract the given positive zero error to get the true diameter, then halve it for the radius.','Diameter = 1.08 − 0.04','= 1.04 cm','Radius = 1.04 ÷ 2','= 0.52 cm','= 52 × 10⁻² cm','Answer: 52']],
+detailed:[
+ ['Nine main scale divisions span the same length as ten vernier scale divisions, so one vernier division is 9/10 of one main scale division.','9 MSD = 10 VSD','1 VSD = 0.9 mm'],
+ ['The least count is the difference between one main scale division and one vernier scale division.','LC = 1 MSD − 1 VSD','= 1 − 0.9','= 0.1 mm','= 0.01 cm'],
+ ['The observed reading combines the main scale reading with the coinciding vernier division times the least count.','MSR = 10 mm','= 1.00 cm','Observed = 1.00 + 8 × 0.01','= 1.08 cm'],
+ ['The instrument has a positive zero error, which must be subtracted from every observed reading to get the true diameter.','True diameter = Observed − zero error','= 1.08 − 0.04','= 1.04 cm'],
+ ['The radius is half the diameter, expressed in the asked units of 10⁻² cm.','Radius = 1.04 ÷ 2','= 0.52 cm','= 52 × 10⁻² cm','Answer: 52']
+]},
+{id:'UD-546',topic:'Dimension of β in an exponential workdone expression',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xqrkd8alljbynctiv)',sourceRef:true,question:'In a typical combustion engine the workdone by a gas molecule is given by W = β²γ e^(−γx²/kT), where x is the displacement, k is the Boltzmann constant and T is the temperature. If β and γ are constants, the dimensions of β will be:',options:['M⁰LT⁰','MLT⁻¹','MLT⁻²','M²LT⁻²'],correct:0,answer:'M⁰LT⁰',
+short:[['The exponent of e must be dimensionless, so γx²/(kT) is dimensionless.','γ = kT/x²'],['kT has the dimension of energy; divide by x² (length squared).','[γ] = ML²T⁻²/L²','= MT⁻²'],['W itself is energy and equals β²γ, so solve for β².','β² = W/γ','= ML²T⁻²/MT⁻²','= L²'],['Take the square root.','β = L','Answer: (A) M⁰LT⁰']],
+detailed:[
+ ['The argument of an exponential must always be dimensionless, so γx²/(kT) has no dimension, which lets us solve for the dimension of γ.','[γ] = [kT][x]⁻²'],
+ ['kT (Boltzmann constant times temperature) has the dimension of energy, and x is a displacement (length), so x² is length-squared.','[kT] = ML²T⁻²','[x²] = L²'],
+ ['Substitute to get the dimension of γ.','[γ] = ML²T⁻² × L⁻²','= MT⁻²'],
+ ['W is workdone, i.e. energy, and equals β²γ, so isolate β² and substitute the known dimensions of W and γ.','[W] = ML²T⁻²','β² = W/γ','[β²] = ML²T⁻² × (MT⁻²)⁻¹','= L²'],
+ ['Taking the square root gives β\'s dimension, with zero powers of M and T.','β = L¹','= M⁰L¹T⁰','Answer: (A) M⁰LT⁰']
+]},
+{id:'UD-547',topic:'Length of a cylinder from a vernier calliper with positive zero error (9-division vernier)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xr0wvccjlwepit4ap)',sourceRef:true,question:'The least count of the main scale of a vernier callipers is 1 mm. Its vernier scale is divided into 10 divisions and coincides with 9 divisions of the main scale. When jaws are touching each other, the 7th division of vernier scale coincides with a division of main scale, and the zero of vernier scale lies right side of the zero of main scale. When this vernier is used to measure the length of a cylinder, the zero of the vernier scale lies between 3.1 cm and 3.2 cm, and the 4th VSD coincides with a main scale division. The length of the cylinder is: (VSD is vernier scale division)',options:['3.21 cm','2.99 cm','3.07 cm','3.2 cm'],correct:2,answer:'3.07 cm',
+short:[['10 VSD = 9 MSD gives the vernier division and least count.','1 VSD = 0.9 mm','LC = 1 MSD − 1 VSD','= 0.1 mm','= 0.01 cm'],['Vernier zero to the right of main scale zero, with the 7th VSD coinciding, is a positive zero error.','Zero error = 7 × 0.01 cm','= 0.07 cm'],['Observed length from the main scale reading and the coinciding division.','MSR = 3.1 cm','Observed = 3.1 + 4 × 0.01','= 3.14 cm'],['Subtract the zero error to get the true length.','Length = 3.14 − 0.07','= 3.07 cm','Answer: (C) 3.07 cm']],
+detailed:[
+ ['Ten vernier scale divisions span the same length as nine main scale divisions, so one vernier division is 9/10 of one main scale division (1 mm).','10 VSD = 9 MSD','1 VSD = 0.9 mm'],
+ ['The least count is the difference between one main scale division and one vernier scale division.','LC = 1 MSD − 1 VSD','= 1 − 0.9','= 0.1 mm','= 0.01 cm'],
+ ['With jaws touching, the vernier zero sits to the right of the main scale zero and the 7th vernier division coincides with a main scale line — this is a positive zero error equal to that division number times the least count.','Zero error = 7 × LC','= 7 × 0.01 cm','= 0.07 cm'],
+ ['For the cylinder, the main scale reading is 3.1 cm (the vernier zero lies just past this mark) and the 4th vernier division coincides, giving the observed reading.','MSR = 3.1 cm','Observed = MSR + 4 × LC','= 3.14 cm'],
+ ['Since the zero error is positive, it is subtracted from the observed reading to get the true length.','Length = Observed − zero error','= 3.07 cm','Answer: (C) 3.07 cm']
+]},
+{id:'UD-548',topic:'Diameter of a spherical bob from a vernier calliper of least count 0.1 mm',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xr1u4mp3wcacfudff)',sourceRef:true,question:'In an experiment with vernier callipers of least count 0.1 mm, when the two jaws are joined together, the zero of the vernier scale lies to the right of the zero of the main scale and the 6th division of vernier scale coincides with a main scale division. While measuring the diameter of a spherical bob, the zero of the vernier scale lies between the 3.2 cm and 3.3 cm marks, and the 4th division of vernier scale coincides with a main scale division. The diameter of the bob is measured as:',options:['3.18 cm','3.22 cm','3.26 cm','3.25 cm'],correct:0,answer:'3.18 cm',
+short:[['Vernier zero right of main scale zero, with the 6th division coinciding, gives a positive zero error.','Zero error = 6 × 0.1 mm','= 0.06 cm'],['Observed diameter from the main scale reading and the coinciding division.','MSR = 3.2 cm','Observed = 3.2 + 4 × 0.01','= 3.24 cm'],['Subtract the zero error.','Diameter = 3.24 − 0.06','= 3.18 cm','Answer: (A) 3.18 cm']],
+detailed:[
+ ['With the jaws joined, the vernier zero sits to the right of the main scale zero and the 6th division coincides with a main scale line — this is a positive zero error equal to that division number times the least count.','Zero error = 6 × LC','= 6 × 0.1 mm','= 0.06 cm'],
+ ['For the bob, the main scale reading is 3.2 cm and the 4th vernier division coincides, giving the raw observed reading.','MSR = 3.2 cm','Observed = 3.2 + 4 × 0.01','= 3.24 cm'],
+ ['Since this is a positive zero error, it is subtracted from the observed reading to get the true diameter.','Diameter = Observed − zero error','= 3.18 cm','Answer: (A) 3.18 cm']
+]},
+{id:'UD-549',topic:'Dimension of P = EL²M⁻⁵G⁻²',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrbycycv6g8g5nqtc)',sourceRef:true,question:'If E, L, M and G denote the quantities energy, angular momentum, mass and the constant of gravitation respectively, then the dimensions of P in the formula P = EL²M⁻⁵G⁻² are:',options:['M⁰L¹T⁰','M⁻¹L⁻¹T²','M¹L¹T⁻²','M⁰L⁰T⁰'],correct:3,answer:'M⁰L⁰T⁰',
+short:[['Write each quantity\'s dimensional formula.','[E] = ML²T⁻²','[L]² = (ML²T⁻¹)²','= M²L⁴T⁻²','[M]⁻⁵ = M⁻⁵','[G]⁻² = (M⁻¹L³T⁻²)⁻²','= M²L⁻⁶T⁴'],['Multiply all four together, combining exponents.','[P] = M^(1+2−5+2) L^(2+4+0−6) T^(−2−2+0+4)','= M⁰L⁰T⁰','Answer: (D) M⁰L⁰T⁰']],
+detailed:[
+ ['List the standard dimensional formula of each quantity that makes up P: energy, angular momentum squared, mass to the −5, and the gravitational constant to the −2.','[E] = ML²T⁻²','[L] = ML²T⁻¹','[L]² = M²L⁴T⁻²','[M]⁻⁵ = M⁻⁵','[G] = M⁻¹L³T⁻²','[G]⁻² = M²L⁻⁶T⁴'],
+ ['Multiply the four factors, adding exponents of each base dimension separately.','M: 1 + 2 − 5 + 2 = 0','L: 2 + 4 + 0 − 6 = 0','T: −2 − 2 + 0 + 4 = 0'],
+ ['Every exponent cancels to zero, so P is dimensionless.','[P] = M⁰L⁰T⁰'],
+ ['This matches option (D); P is in fact (up to a numerical constant) the dimensionless combination behind Chandrasekhar-type mass limits.','Answer: (D) M⁰L⁰T⁰']
+]},
+{id:'UD-550',topic:'SI unit of the ratio of electric field to magnetising field',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrculbr0wcoavosev)',sourceRef:true,question:'If E and H represent the intensity of the electric field and the magnetising field respectively, then the unit of E/H will be:',options:['ohm','mho','joule','newton'],correct:0,answer:'ohm',
+short:[['Write the SI unit of each field.','[E] = V m⁻¹','[H] = A m⁻¹'],['Divide, treating the division as multiplication by the inverse.','E/H = (V m⁻¹)(A m⁻¹)⁻¹','= V A⁻¹','= ohm','Answer: (A) ohm']],
+detailed:[
+ ['Electric field intensity is measured in volts per metre, and the magnetising field intensity is measured in amperes per metre.','[E] = V m⁻¹','[H] = A m⁻¹'],
+ ['Dividing the two, write the division as multiplication by the inverse so the per-metre factor cancels cleanly, leaving volts per ampere.','E/H = (V m⁻¹)(A m⁻¹)⁻¹','= V A⁻¹'],
+ ['Volts per ampere is, by definition, the ohm — this ratio is in fact the impedance of free space up to a numerical factor.','V A⁻¹ = ohm','Answer: (A) ohm']
+]},
+{id:'UD-551',topic:'Least count of a vernier calliper when the nth main division coincides with the (n+1)th vernier division',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrd6u0g77iyhbhp12)',sourceRef:true,question:'One main scale division of a vernier calliper is equal to m units. If the nth division of main scale coincides with the (n+1)th division of vernier scale, the least count of the vernier calliper is:',options:['1/(n+1)','m/(n+1)','n/(n+1)','m/(n(n+1))'],correct:1,answer:'m/(n+1)',
+short:[['Equal lengths: n main divisions equal (n+1) vernier divisions.','n·m = (n+1)·(1 VSD)','1 VSD = nm/(n+1)'],['Least count is one main division minus one vernier division.','LC = m − nm/(n+1)','= m/(n+1)','Answer: (B) m/(n+1)']],
+detailed:[
+ ['The coincidence condition means the physical length spanned by n main scale divisions equals the length spanned by (n+1) vernier scale divisions.','n × m = (n+1) × (1 VSD)'],
+ ['Solve for the length of one vernier scale division.','1 VSD = nm/(n+1)'],
+ ['The least count is the difference between one main scale division and one vernier scale division; combining over the common denominator (n+1) simplifies neatly.','LC = m − nm/(n+1)','= m/(n+1)','Answer: (B) m/(n+1)']
+]},
+{id:'UD-552',topic:'Accuracy of pendulum energy from errors in g and T',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xreqj6krzk30kv8n4)',sourceRef:true,question:'The acceleration due to gravity is found up to an accuracy of 4% on a planet. The energy supplied to a simple pendulum of known mass m to undertake oscillations of time period T is being estimated. If the time period is measured to an accuracy of 3%, the accuracy to which E is known is ........%',type:'numerical',answer:'14',
+short:[['Eliminate the pendulum\'s length using T = 2π√(L/g), so L ∝ gT².','T² = 4π²L/g','L = gT²/4π²'],['The energy supplied is essentially m g L (up to a constant), so substitute L.','E ∝ mgL','∝ mg(gT²)','= mg²T²'],['Percentage error in E adds twice the error in g and twice the error in T.','%error in E = 2×%error(g) + 2×%error(T)','= 2×4 + 2×3','= 14','Answer: 14']],
+detailed:[
+ ['For a simple pendulum, the time period relates the length to g, so the length can be eliminated in favour of g and T.','T = 2π√(L/g)','T² = 4π²L/g','L = gT²/4π²'],
+ ['The energy supplied to sustain the oscillations is (up to a constant depending on the amplitude and mass) proportional to m g L, so substitute L in terms of g and T.','E ∝ mgL','∝ mg × (gT²)','= m g² T²'],
+ ['E is now a product of powers of g and T (mass is exact), so the percentage errors add, each weighted by its exponent — 2 for both g and T.','%error in E = 2(%error in g) + 2(%error in T)'],
+ ['Substitute the given accuracies to get the final answer.','%error in E = 2(4%) + 2(3%)','= 8% + 6%','= 14%','Answer: 14']
+]},
+{id:'UD-553',topic:'Matching Young\'s modulus, viscosity, Planck\'s constant and work function to dimensional formulas',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrfy12yjak0zwt03u)',sourceRef:true,question:'Match List I with List II. List I: A. Young\'s Modulus (Y); B. Coefficient of Viscosity (η); C. Planck\'s Constant (h); D. Work function (χ). List II: I. [ML⁻¹T⁻¹]; II. [ML²T⁻¹]; III. [ML⁻¹T⁻²]; IV. [ML²T⁻²]. Choose the correct answer from the options given below:',options:['A-II, B-III, C-IV, D-I','A-I, B-II, C-III, D-IV','A-I, B-III, C-IV, D-II','A-III, B-I, C-II, D-IV'],correct:3,answer:'A-III, B-I, C-II, D-IV',
+short:[['Write the dimensional formula of each quantity in List I.','Y = stress/strain','[Y] = ML⁻¹T⁻²  (III)','η: F = ηA(dv/dx)','[η] = ML⁻¹T⁻¹  (I)','h: E = hν','[h] = ML²T⁻¹  (II)','χ = energy','[χ] = ML²T⁻²  (IV)'],['Match: A-III, B-I, C-II, D-IV.','Answer: (D) A-III, B-I, C-II, D-IV']],
+detailed:[
+ ['Young\'s modulus is stress divided by strain (strain is dimensionless), and stress is force per area.','Y = stress/strain','[Y] = ML⁻¹T⁻²  → III'],
+ ['The coefficient of viscosity is defined from F = ηA(dv/dx), so η equals F divided by (A times the velocity gradient).','η = F/(A·dv/dx)','[η] = ML⁻¹T⁻¹  → I'],
+ ['Planck\'s constant relates energy to frequency, E = hν, so h = E/ν.','h = E/ν','[h] = ML²T⁻¹  → II'],
+ ['Work function is an energy (the minimum energy to eject an electron).','[χ] = ML²T⁻²  → IV'],
+ ['So A pairs with III, B with I, C with II, and D with IV, which is option (D).','Answer: (D) A-III, B-I, C-II, D-IV']
+]},
+{id:'UD-554',topic:'Matching Rydberg constant, Planck\'s constant, magnetic energy density and viscosity to SI units',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrioo3ppumtvmru1v)',sourceRef:true,question:'Match List-I with List-II. List-I: (a) RH (Rydberg constant); (b) h (Planck\'s constant); (c) uB (Magnetic field energy density); (d) η (coefficient of viscosity). List-II: (i) kg m⁻¹ s⁻¹; (ii) kg m² s⁻¹; (iii) m⁻¹; (iv) kg m⁻¹ s⁻². Choose the most appropriate answer from the options given below:',options:['(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)','(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)','(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)','(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)'],correct:1,answer:'(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)',
+short:[['Write the SI unit of each quantity in List-I.','Rydberg constant = 1/λ → m⁻¹  (iii)','Planck\'s constant: E=hν → h = E/ν → kg m² s⁻¹  (ii)','Magnetic energy density = energy/volume → kg m⁻¹ s⁻²  (iv)','Viscosity: F=ηA(dv/dx) → kg m⁻¹ s⁻¹  (i)'],['Match: (a)-iii, (b)-ii, (c)-iv, (d)-i.','Answer: (B) (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)']],
+detailed:[
+ ['The Rydberg constant appears in 1/λ = RH(...), so it has the unit of inverse length.','[RH] = m⁻¹  → (iii)'],
+ ['Planck\'s constant relates photon energy to frequency, so its unit is energy divided by frequency.','h = E/ν','[h] = kg m² s⁻¹  → (ii)'],
+ ['Magnetic field energy density is energy stored per unit volume.','[uB] = kg m⁻¹ s⁻²  → (iv)'],
+ ['The coefficient of viscosity comes from F = ηA(dv/dx).','[η] = kg m⁻¹ s⁻¹  → (i)'],
+ ['So (a)-iii, (b)-ii, (c)-iv, (d)-i, matching option (B).','Answer: (B) (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)']
+]},
+{id:'UD-555',topic:'Dimension of the product ABC from a velocity-time relation',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrjh0iha8w06lkwgz)',sourceRef:true,question:'The expression given below shows the variation of velocity (v) with time (t): v = At² + Bt/(C+t). The dimension of ABC is:',options:['M⁰L¹T⁻²','M⁰L²T⁻³','M⁰L²T⁻²','M⁰L¹T⁻³'],correct:1,answer:'M⁰L²T⁻³',
+short:[['C is added to t, so it shares its dimension.','[C] = T'],['At² has the dimension of velocity.','[A] = LT⁻¹/T²','= LT⁻³'],['Bt/(C+t): since t/(C+t) is dimensionless, B alone must carry the dimension of velocity.','[B] = LT⁻¹'],['Multiply the three.','[ABC] = (LT⁻³)(LT⁻¹)(T)','= L²T⁻³','Answer: (B) M⁰L²T⁻³']],
+detailed:[
+ ['Since C is added directly to t inside (C+t), it must have the same dimension as time.','[C] = [t]','= T'],
+ ['Every additive term on the right must have the dimension of velocity; in At², A multiplies t², so A is velocity divided by time-squared.','[At²] = [v]','[A] = [v][t]⁻²','= LT⁻¹T⁻²','= LT⁻³'],
+ ['The fraction t/(C+t) is a ratio of two times and so is dimensionless; the whole term Bt/(C+t) therefore takes its dimension entirely from B, which must equal the dimension of velocity.','t(C+t)⁻¹ = M⁰L⁰T⁰','[B] = [v]','= LT⁻¹'],
+ ['Multiply the three dimensional formulas together to get ABC.','[ABC] = [A][B][C]','= (LT⁻³)(LT⁻¹)(T)','= L²T⁻³'],
+ ['This matches option (B).','Answer: (B) M⁰L²T⁻³']
+]},
+{id:'UD-556',topic:'Reporting the mean time period with an appropriate error',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xrnk6nsjy2atvlzuw)',sourceRef:true,question:'A student measures the time period of 100 oscillations of a simple pendulum four times. The data set is 90 s, 91 s, 95 s and 92 s. If the minimum division in the measuring clock is 1 s, then the reported mean time should be:',options:['92 ± 1.8 s','92 ± 3 s','92 ± 2 s','92 ± 5.0 s'],correct:2,answer:'92 ± 2 s',
+short:[['Mean of the four readings.','Mean = (90+91+95+92)/4','= 92 s'],['Mean absolute deviation from the mean.','Deviations = 2, 1, 3, 0','Mean deviation = (2+1+3+0)/4','= 1.5 s'],['Since the clock\'s least count is 1 s, the error can\'t be reported finer than that, so round up to the next whole second.','Reported = 92 ± 2 s','Answer: (C) 92 ± 2 s']],
+detailed:[
+ ['Compute the mean of the four measured time periods.','Mean = (90+91+95+92)/4','= 368/4','= 92 s'],
+ ['Find the absolute deviation of each reading from the mean, then average them to get the mean absolute deviation.','Deviations = 2, 1, 3, 0 (s)','Mean deviation = (2+1+3+0)/4','= 1.5 s'],
+ ['The measuring clock\'s least count is 1 s, so the reported error cannot claim a precision finer than the instrument allows; 1.5 s is rounded up to the next whole second consistent with this least count.','Least count = 1 s','Reported error = 2 s'],
+ ['So the mean time should be reported as 92 ± 2 s, matching option (C).','Answer: (C) 92 ± 2 s']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -5230,7 +5381,23 @@ const pilotTopicMap={
  'Least count of an angle-measuring vernier instrument (29 main divisions = 30 vernier divisions)':['measuring-instruments','Least count of an angle-measuring vernier instrument (29 main divisions = 30 vernier divisions)'],
  'Dimensional formula of permittivity of free space (ε0)':['dimensional-formula','Dimensional formula of permittivity of free space (ε0)'],
  'Adding three measured masses to the correct significant figures':['significant-figures','Adding three measured masses to the correct significant figures'],
- 'Diameter of a wire from screw gauge readings with a negative zero error':['measuring-instruments','Diameter of a wire from screw gauge readings with a negative zero error']
+ 'Diameter of a wire from screw gauge readings with a negative zero error':['measuring-instruments','Diameter of a wire from screw gauge readings with a negative zero error'],
+ 'Percentage error in volume from error in radius':['errors','Percentage error in volume from error in radius'],
+ 'Screw gauge diameter with a positive zero error':['measuring-instruments','Screw gauge diameter with a positive zero error'],
+ 'Percentage error in a quantity Q = ab⁴/(cd)':['errors','Percentage error in a quantity Q = ab⁴/(cd)'],
+ 'Dimensional formula of √(ε₀/μ₀)':['dimensional-formula','Dimensional formula of √(ε₀/μ₀)'],
+ 'Significant figures of 23.023, 0.0003 and 2.1×10⁻³':['significant-figures','Significant figures of 23.023, 0.0003 and 2.1×10⁻³'],
+ 'Radius of a spherical bob from a vernier calliper with positive zero error':['measuring-instruments','Radius of a spherical bob from a vernier calliper with positive zero error'],
+ 'Dimension of β in an exponential workdone expression':['dimensional-analysis','Dimension of β in an exponential workdone expression'],
+ 'Length of a cylinder from a vernier calliper with positive zero error (9-division vernier)':['measuring-instruments','Length of a cylinder from a vernier calliper with positive zero error (9-division vernier)'],
+ 'Diameter of a spherical bob from a vernier calliper of least count 0.1 mm':['measuring-instruments','Diameter of a spherical bob from a vernier calliper of least count 0.1 mm'],
+ 'Dimension of P = EL²M⁻⁵G⁻²':['dimensional-formula','Dimension of P = EL²M⁻⁵G⁻²'],
+ 'SI unit of the ratio of electric field to magnetising field':['units-systems','SI unit of the ratio of electric field to magnetising field'],
+ 'Accuracy of pendulum energy from errors in g and T':['errors','Accuracy of pendulum energy from errors in g and T'],
+ 'Matching Young\'s modulus, viscosity, Planck\'s constant and work function to dimensional formulas':['dimensional-formula','Matching Young\'s modulus, viscosity, Planck\'s constant and work function to dimensional formulas'],
+ 'Matching Rydberg constant, Planck\'s constant, magnetic energy density and viscosity to SI units':['units-systems','Matching Rydberg constant, Planck\'s constant, magnetic energy density and viscosity to SI units'],
+ 'Dimension of the product ABC from a velocity-time relation':['dimensional-analysis','Dimension of the product ABC from a velocity-time relation'],
+ 'Reporting the mean time period with an appropriate error':['errors','Reporting the mean time period with an appropriate error']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
