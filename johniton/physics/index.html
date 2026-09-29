@@ -2491,7 +2491,7 @@ detailed:[
  ['Simplify the exponents.','= M^(1+1) L^(1−3) T⁻²','= M²L⁻²T⁻²'],
  ['This is option (C).','Answer: (C) [M²L⁻²T⁻²]']
 ]},
-{id:'UD-280',topic:'Dimension of density in a force–length–time fundamental system',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.28 · p.18',sourceRef:true,question:'If force (F), length (L) and time (T) are taken as the fundamental quantities, then what will be the dimension of density?',options:['[FL⁻⁴T²]','[FL⁻³T²]','[FL⁻⁵T²]','[FL⁻³T³]'],correct:0,answer:'[FL⁻⁴T²]',
+{id:'UD-280',topic:'Dimension of density in a force–length–time fundamental system',source:'Institute worksheet · unit n dimension.pdf (UND test export) · Q.28 · p.18 (ExamSIDE, JEE Main, Units and Measurements · questions.examside.com (question id Xmd6a4yr2mfttslk5), is a verbatim repeat of this item)',sourceRef:true,question:'If force (F), length (L) and time (T) are taken as the fundamental quantities, then what will be the dimension of density?',options:['[FL⁻⁴T²]','[FL⁻³T²]','[FL⁻⁵T²]','[FL⁻³T³]'],correct:0,answer:'[FL⁻⁴T²]',
 short:[['Express mass using F=ma: M = FL⁻¹T².','M = F L⁻¹T²'],['Density = M/L³ (standard); substitute M.','[ρ] = (FL⁻¹T²)/L³','= FL⁻⁴T²','Answer: (A) [FL⁻⁴T²]']],
 detailed:[
  ['Force is mass times acceleration, F = Ma, where a has dimension LT⁻², so mass can be re-expressed in terms of F, L, T.','F = M(LT⁻²)','⇒ M = FL⁻¹T²'],
@@ -3414,6 +3414,176 @@ detailed:[
  ['This gives the length of one vernier division.','1 VSD = (n−1)a/n'],
  ['The least count is the difference between one main-scale division and one vernier division.','LC = a − (n−1)a/n'],
  ['Simplifying and converting from cm to mm (×10).','LC = a/n cm','= 10a/n mm','Answer: (A) 10a/n']
+]},
+{id:'UD-396',topic:'Percentage error in resistivity from radius, resistance and length errors',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmbdovoaf2ecr31mn)',sourceRef:true,question:'The radius (r), length (l) and resistance (R) of a metal wire was measured in the laboratory as r = (0.35 ± 0.05) cm, R = (100 ± 10) Ω, l = (15 ± 0.2) cm. The percentage error in resistivity of the material of the wire is:',options:['37.3%','25.6%','35.6%','39.9%'],correct:3,answer:'39.9%',
+short:[['Write resistivity in terms of R, r and l.','ρ = R·(πr²)/l'],['Take the percentage-error formula for a product/quotient of powers.','Δρ/ρ = ΔR/R + 2·Δr/r + Δl/l'],['Substitute the given values.','ΔR/R = 10/100','= 10%','2·Δr/r = 2×(0.05/0.35)','= 28.57%','Δl/l = 0.2/15','= 1.33%'],['Add the three contributions.','Δρ/ρ = 10 + 28.57 + 1.33','= 39.9%','Answer: (D) 39.9%']],
+detailed:[
+ ['Resistivity is defined from R = ρl/A with A = πr², so ρ = Rπr²/l — a product of R and r² divided by l.','ρ = R·(πr²)/l'],
+ ['For a quantity built from powers of measured quantities, the maximum fractional error is the sum of each quantity\'s fractional error weighted by its power (2 for r, since it appears squared).','Δρ/ρ = ΔR/R + 2·(Δr/r) + Δl/l'],
+ ['Compute each term from the given absolute errors: ΔR/R = 10/100, Δr/r = 0.05/0.35 (doubled for the square), and Δl/l = 0.2/15.','ΔR/R = 10%','2·Δr/r = 2×0.05/0.35','= 28.57%','Δl/l = 0.2/15','= 1.33%'],
+ ['Adding all three gives the total percentage error in resistivity.','Δρ/ρ = 10% + 28.57% + 1.33%','= 39.9%'],
+ ['This matches option (D).','Answer: (D) 39.9%']
+]},
+{id:'UD-397',topic:'Number of main-scale divisions coinciding with N vernier divisions from a given least count',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmiwupoc7abwa2lv0)',sourceRef:true,question:'Least count of a vernier callipers is 1/(20N) cm. The value of one division on the main scale is 1 mm. Then the number of divisions of main scale that coincide with N divisions of vernier scale is:',options:['(2N−1)/(2N)','(2N−1)/(20N)','(2N−1)','(2N−1)/2'],correct:3,answer:'(2N−1)/2',
+short:[['Let n main-scale divisions (MSD) coincide with N vernier divisions (VSD).','N·VSD = n·MSD','⇒ VSD = (n/N)·MSD'],['Least count is the difference of one MSD and one VSD.','LC = MSD − VSD','= MSD·(N−n)/N'],['Substitute MSD = 1 mm = 0.1 cm and the given LC.','0.1·(N−n)/N = 1/(20N)'],['Solve for n.','0.1(N−n) = 1/20','= 0.05','N − n = 0.5','n = N − 0.5','= (2N−1)/2','Answer: (D) (2N−1)/2']],
+detailed:[
+ ['Suppose n main-scale divisions span exactly the same length as N vernier-scale divisions, which is the physical condition that defines the vernier\'s coincidence mark.','N·VSD = n·MSD'],
+ ['Dividing by N gives the size of one vernier division in terms of one main-scale division.','VSD = (n/N)·MSD'],
+ ['The least count of a vernier instrument is, by definition, the difference between one main-scale division and one vernier division.','LC = MSD − VSD','= MSD(1 − n/N)','= MSD·(N−n)/N'],
+ ['Substitute the given main-scale division (1 mm = 0.1 cm) and the given least count 1/(20N) cm, then simplify.','0.1·(N−n)/N = 1/(20N)','⇒ 0.1(N−n) = 1/20'],
+ ['Solving this equation for n gives the number of main-scale divisions that coincide with N vernier divisions.','N − n = 0.5','n = N − 0.5','= (2N−1)/2'],
+ ['This matches option (D).','Answer: (D) (2N−1)/2']
+]},
+{id:'UD-398',topic:'Matching torque, magnetic field, magnetic moment and permeability of free space to their dimensional formulas',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmk00hrhgv3s0ij7w)',sourceRef:true,question:'Match List I with List II.\nLIST I\nA. Torque\nB. Magnetic field\nC. Magnetic moment\nD. Permeability of free space\nLIST II\nI. [M¹L¹T⁻²A⁻²]\nII. [L²A¹]\nIII. [M¹T⁻²A⁻¹]\nIV. [M¹L²T⁻²]\nChoose the correct answer from the options given below:',options:['A-I, B-III, C-II, D-IV','A-IV, B-II, C-III, D-I','A-III, B-I, C-II, D-IV','A-IV, B-III, C-II, D-I'],correct:3,answer:'A-IV, B-III, C-II, D-I',
+short:[['Torque = force × distance.','Torque = ML²T⁻²','= IV'],['Magnetic field from F = qvB.','B = F/(qv)','= MT⁻²A⁻¹','= III'],['Magnetic moment = current × area.','m = A¹L²','= II'],['Permeability of free space from the force-per-length law F L⁻¹ = μ₀I²r⁻¹ (L and r both have dimension length, so they cancel).','μ₀ = F I⁻²','= MLT⁻²A⁻²','= I','Answer: (D) A-IV, B-III, C-II, D-I']],
+detailed:[
+ ['Torque is force times a lever-arm distance, so its dimension follows directly from force (MLT⁻²) times length.','Torque = MLT⁻²·L','= ML²T⁻²','⇒ matches IV'],
+ ['Magnetic field is defined through the magnetic force on a moving charge, F = qvB, so B = F/(qv).','B = (MLT⁻²)/(A·T·LT⁻¹)','= MT⁻²A⁻¹','⇒ matches III'],
+ ['Magnetic moment of a current loop is current times the enclosed area.','m = A¹·L²','= L²A¹','⇒ matches II'],
+ ['Permeability of free space appears in the force-per-length law between two current-carrying wires, F L⁻¹ = μ₀I²r⁻¹; both the wire length L and the separation r have dimension length, so they cancel when solving for μ₀.','μ₀ = F I⁻²','= MLT⁻²A⁻²','⇒ matches I'],
+ ['Putting the four matches together gives A-IV, B-III, C-II, D-I, which is option (D).','Answer: (D) A-IV, B-III, C-II, D-I']
+]},
+{id:'UD-399',topic:'Dimension of energy in a non-standard base system (P, A, T)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmkxbffrgkrmw99ko)',sourceRef:true,question:'If momentum (P), area (A) and time (T) are taken to be the fundamental quantities then the dimensional formula for energy is:',options:['[P²AT⁻²]','[P^(1/2)AT⁻¹]','[PA^(1/2)T⁻¹]','[PA⁻¹T⁻²]'],correct:2,answer:'[PA^(1/2)T⁻¹]',
+short:[['Let energy = P^(a) A^(b) T^(c) and match M, L, T powers.','E = ML²T⁻²','P = MLT⁻¹','A = L²','T = T'],['Match powers of M, L, T.','M: a = 1','L: a + 2b = 2','⇒ b = 1/2','T: −a + c = −2','⇒ c = −1'],['Combine the exponents found above.','E = P¹A^(1/2)T⁻¹','Answer: (C) [PA^(1/2)T⁻¹]']],
+detailed:[
+ ['Write energy as an unknown power product of the new fundamental quantities momentum, area and time.','E = P^(a) A^(b) T^(c)'],
+ ['Express each new fundamental quantity, and energy itself, in the standard M-L-T system.','P = MLT⁻¹','A = L²','T = T','E = ML²T⁻²'],
+ ['Matching the power of M on both sides fixes a.','M: a = 1'],
+ ['Matching the power of L, using a = 1, fixes b.','L: a + 2b = 2','⇒ 1 + 2b = 2','⇒ b = 1/2'],
+ ['Matching the power of T, using a = 1, fixes c.','T: −a + c = −2','⇒ c = −1'],
+ ['So energy in this system is P¹A^(1/2)T⁻¹, which is option (C).','E = PA^(1/2)T⁻¹','Answer: (C) [PA^(1/2)T⁻¹]']
+]},
+{id:'UD-400',topic:'Percentage error in a quantity with a fourth-root factor',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmmsszrgion6vr4od)',sourceRef:true,question:'A physical quantity P is given as P = a²b³/(c√(√d)). The percentage errors in the measurement of a, b, c and d are 1%, 2%, 3% and 4% respectively. The percentage error in the measurement of quantity P will be:',options:['12%','13%','16%','14%'],correct:0,answer:'12%',
+short:[['Rewrite the nested root as a power.','P = a²b³c⁻¹d^(−1/4)'],['Percentage error is the weighted sum of each factor\'s error.','ΔP/P = 2·(Δa/a) + 3·(Δb/b) + 1·(Δc/c) + (1/4)·(Δd/d)'],['Substitute the given percentage errors.','= 2(1%) + 3(2%) + 1(3%) + (1/4)(4%)','= 2 + 6 + 3 + 1','= 12%','Answer: (A) 12%']],
+detailed:[
+ ['The nested square root √(√d) is the same as the fourth root of d, so P is a pure product of powers of a, b, c and d.','P = a²b³c⁻¹d^(−1/4)'],
+ ['For a quantity that is a product of powers of measured quantities, the maximum percentage error is the sum of each quantity\'s percentage error multiplied by the magnitude of its exponent.','ΔP/P = 2(Δa/a) + 3(Δb/b) + 1(Δc/c) + (1/4)(Δd/d)'],
+ ['Substituting the given percentage errors for a, b, c and d.','= 2(1%) + 3(2%) + 1(3%) + (1/4)(4%)'],
+ ['Adding the terms gives the total percentage error in P.','= 2% + 6% + 3% + 1%','= 12%'],
+ ['This matches option (A).','Answer: (A) 12%']
+]},
+{id:'UD-401',topic:'Dimension of coefficient of viscosity in a non-standard base system (P, A, T)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmnim399uwnq5ux5h)',sourceRef:true,question:'If momentum [P], area [A] and time [T] are taken as fundamental quantities, then the dimensional formula for coefficient of viscosity is:',options:['[PA⁻¹T⁰]','[PAT⁻¹]','[PA⁻¹T]','[PA⁻¹T⁻¹]'],correct:0,answer:'[PA⁻¹T⁰]',
+short:[['Let viscosity = P^(a) A^(b) T^(c) and match M, L, T powers.','η = ML⁻¹T⁻¹','P = MLT⁻¹','A = L²','T = T'],['Match powers of M, L, T.','M: a = 1','L: a + 2b = −1','⇒ b = −1','T: −a + c = −1','⇒ c = 0'],['Combine the exponents found above.','η = P¹A⁻¹T⁰','Answer: (A) [PA⁻¹T⁰]']],
+detailed:[
+ ['Coefficient of viscosity is defined from F = ηA(dv/dx), which gives its standard M-L-T dimensional formula ML⁻¹T⁻¹.','η = ML⁻¹T⁻¹'],
+ ['Write η as an unknown power product of the new fundamentals and express each in the M-L-T system.','η = P^(a) A^(b) T^(c)','P = MLT⁻¹','A = L²','T = T'],
+ ['Matching the power of M fixes a.','M: a = 1'],
+ ['Matching the power of L, with a = 1, fixes b.','L: a + 2b = −1','⇒ 1 + 2b = −1','⇒ b = −1'],
+ ['Matching the power of T, with a = 1, fixes c.','T: −a + c = −1','⇒ −1 + c = −1','⇒ c = 0'],
+ ['So η = P¹A⁻¹T⁰, matching option (A).','η = PA⁻¹T⁰','Answer: (A) [PA⁻¹T⁰]']
+]},
+{id:'UD-402',topic:'Dimensional formula of angular impulse',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xmy77klulcoqydhap)',sourceRef:true,question:'The dimensional formula of angular impulse is:',options:['[ML²T⁻²]','[ML⁻²T⁻¹]','[ML²T⁻¹]','[MLT⁻¹]'],correct:2,answer:'[ML²T⁻¹]',
+short:[['Angular impulse is torque × time.','Angular impulse = Torque × T'],['Write the dimension of torque and multiply.','Torque = ML²T⁻²','Angular impulse = ML²T⁻²·T','= ML²T⁻¹','Answer: (C) [ML²T⁻¹]']],
+detailed:[
+ ['Angular impulse is defined, by analogy with linear impulse (force × time), as torque acting over a time interval.','Angular impulse = Torque × T'],
+ ['Torque has the dimensional formula ML²T⁻², as it is force times a lever-arm distance.','Torque = ML²T⁻²'],
+ ['Multiplying by the dimension of time gives the dimensional formula of angular impulse.','Angular impulse = ML²T⁻²·T','= ML²T⁻¹'],
+ ['This matches option (C).','Answer: (C) [ML²T⁻¹]']
+]},
+{id:'UD-403',topic:'Least count of a vernier callipers from vernier-to-main-scale division ratio',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xn3enc5edo26fksbd)',sourceRef:true,question:'In a vernier callipers, 50 vernier scale divisions are equal to 48 main scale divisions. If one main scale division = 0.05 mm, then the least count of the vernier callipers is ........ mm.',options:['0.002','0.02','0.05','0.005'],correct:0,answer:'0.002',
+short:[['Find one vernier division from the given ratio.','50 VSD = 48 MSD','⇒ 1 VSD = (48/50)·MSD','= 0.96·MSD'],['Substitute MSD = 0.05 mm.','1 VSD = 0.96×0.05','= 0.048 mm'],['Least count = MSD − VSD.','LC = 0.05 − 0.048','= 0.002 mm','Answer: (A) 0.002']],
+detailed:[
+ ['The given relation between vernier and main-scale divisions lets us express one vernier division in terms of one main-scale division.','50 VSD = 48 MSD','⇒ 1 VSD = (48/50) MSD','= 0.96 MSD'],
+ ['Substitute the given size of one main-scale division.','1 VSD = 0.96 × 0.05 mm','= 0.048 mm'],
+ ['The least count of a vernier instrument is the difference between one main-scale division and one vernier division.','LC = MSD − VSD','= 0.05 − 0.048','= 0.002 mm'],
+ ['This matches option (A).','Answer: (A) 0.002']
+]},
+{id:'UD-404',topic:'Correcting a vernier callipers reading for a positive zero error',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xnok8vj6oams80gky)',sourceRef:true,question:'The vernier scale used for measurement has a positive zero error of 0.2 mm. If while taking a measurement it was noted that \'0\' on the vernier scale lies between 8.5 cm and 8.6 cm, vernier coincidence is 6, then the correct value of measurement is ........ cm. (least count = 0.01 cm)',options:['8.58 cm','8.54 cm','8.56 cm','8.36 cm'],correct:1,answer:'8.54 cm',
+short:[['Observed reading = main-scale reading + (coincidence × least count).','Observed = 8.5 + 6×0.01','= 8.56 cm'],['Subtract the positive zero error (0.2 mm = 0.02 cm).','Correct = 8.56 − 0.02','= 8.54 cm','Answer: (B) 8.54 cm']],
+detailed:[
+ ['Since the vernier zero lies just after the 8.5 cm mark, the main-scale reading is 8.5 cm; the observed reading adds the vernier coincidence times the least count.','Observed = 8.5 cm + 6 × 0.01 cm','= 8.56 cm'],
+ ['A positive zero error means the instrument reads too high, so it must be subtracted from the observed reading to get the true value; the given zero error 0.2 mm equals 0.02 cm.','Correct reading = Observed − zero error','= 8.56 − 0.02'],
+ ['Carrying out the subtraction gives the corrected measurement.','Correct reading = 8.54 cm'],
+ ['This matches option (B).','Answer: (B) 8.54 cm']
+]},
+{id:'UD-405',topic:'Convention for order of magnitude of a×10^(b)',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xnqvun8s9ildfhpmz)',sourceRef:true,question:'In an expression a×10^(b):',options:['a is order of magnitude for b ≤ 5','b is order of magnitude for a ≤ 5','b is order of magnitude for a ≥ 5','b is order of magnitude for 5 < a ≤ 10'],correct:1,answer:'b is order of magnitude for a ≤ 5',
+short:[['State the rounding convention for order of magnitude.','If a ≤ 5','round a down to 1','⇒ value ≈ 10^(b)'],['So the order of magnitude is the exponent b itself.','Answer: (B) b is order of magnitude for a ≤ 5']],
+detailed:[
+ ['The order of magnitude of a number written as a×10^(b) (with 1 ≤ a < 10) is found by rounding the coefficient a to the nearest power of ten.','a×10^(b), 1 ≤ a < 10'],
+ ['By convention, if the coefficient a is 5 or less, it is rounded down to 1, so the number\'s order of magnitude stays at the given power of ten, b.','a ≤ 5','⇒ round a → 1','⇒ order of magnitude = b'],
+ ['If instead a is greater than 5, it would round up to 10, raising the order of magnitude to b+1 — but that case is not what any option other than (B) correctly states.','a > 5','⇒ order of magnitude = b+1'],
+ ['So the statement that b is the order of magnitude precisely when a ≤ 5 is the correct one.','Answer: (B) b is order of magnitude for a ≤ 5']
+]},
+{id:'UD-406',topic:'Error in density from errors in mass and edge length of a cube',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xo2go4sgas7vvwxkc)',sourceRef:true,question:'In the density measurement of a cube, the mass and edge length are measured as (10.00 ± 0.10) kg and (0.10 ± 0.01) m, respectively. The error in the measurement of density is:',options:['0.01 kg/m³','0.10 kg/m³','0.31 kg/m³','0.07 kg/m³'],correct:2,answer:'0.31 kg/m³',
+short:[['Density is mass divided by the cube of the edge length.','ρ = m/a³'],['Fractional error adds the mass error and 3× the edge-length error.','Δρ/ρ = Δm/m + 3·(Δa/a)'],['Substitute the given values.','= 0.10/10.00 + 3×(0.01/0.10)','= 0.01 + 0.30','= 0.31','Answer: (C) 0.31 kg/m³']],
+detailed:[
+ ['Density of a cube is its mass divided by the cube of its edge length.','ρ = m/a³'],
+ ['Since ρ is a quotient of powers, the maximum fractional error is the mass\'s fractional error plus three times the edge length\'s fractional error (because a is cubed).','Δρ/ρ = Δm/m + 3(Δa/a)'],
+ ['Substituting the given absolute and mean values.','Δm/m = 0.10/10.00','= 0.01','3(Δa/a) = 3×(0.01/0.10)','= 0.30'],
+ ['Adding the two contributions gives the fractional error in density, reported here as the value of the error.','Δρ/ρ = 0.01 + 0.30','= 0.31'],
+ ['This matches option (C); the option\'s units are as printed in the source.','Answer: (C) 0.31 kg/m³']
+]},
+{id:'UD-407',topic:'Expression for Planck time from G, h and c by dimensional analysis',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xo3c8x8eyaqihlzxl)',sourceRef:true,question:'Expression for time in terms of G (universal gravitational constant), h (Planck constant) and c (speed of light) is proportional to:',options:['√(hc⁵/G)','√(c³/(Gh))','√(Gh/c⁵)','√(Gh/c³)'],correct:2,answer:'√(Gh/c⁵)',
+short:[['Let t = G^(a) h^(b) c^(d) and write each in M, L, T.','G = M⁻¹L³T⁻²','h = ML²T⁻¹','c = LT⁻¹','t = T'],['Match powers of M, L, T.','M: −a+b = 0','⇒ b = a','L: 3a+2b+d = 0','T: −2a−b−d = 1'],['Solve the system.','5a + d = 0','⇒ d = −5a','−3a − d = 1','⇒ 2a = 1','⇒ a = 1/2','b = 1/2','d = −5/2'],['Combine the exponents found above.','t = G^(1/2)h^(1/2)c^(−5/2)','= √(Gh/c⁵)','Answer: (C) √(Gh/c⁵)']],
+detailed:[
+ ['Write time as an unknown power product of G, h and c, and express each quantity\'s dimensional formula in the M-L-T system.','t = G^(a) h^(b) c^(d)','G = M⁻¹L³T⁻²','h = ML²T⁻¹','c = LT⁻¹','t = M⁰L⁰T¹'],
+ ['Matching the power of M on both sides relates b to a.','M: −a + b = 0','⇒ b = a'],
+ ['Matching the power of L gives a second equation.','L: 3a + 2b + d = 0','⇒ 5a + d = 0'],
+ ['Matching the power of T gives a third equation; combining it with the L-equation solves for a.','T: −2a − b − d = 1','⇒ −3a − d = 1','With d = −5a: −3a+5a','= 1','⇒ a = 1/2'],
+ ['Back-substituting gives all three exponents.','a = 1/2','b = 1/2','d = −5/2'],
+ ['So time is proportional to the square root of Gh/c⁵, matching option (C) once the source\'s doubled radical is read as a single square root.','t ∝ G^(1/2)h^(1/2)c^(−5/2) = √(Gh/c⁵)','Answer: (C) √(Gh/c⁵)']
+]},
+{id:'UD-408',topic:'Rounding the mean of several time-period readings to correct significant figures',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xogkdydpiepgwaafw)',sourceRef:true,question:'Time periods of oscillation of the same simple pendulum measured using four different measuring clocks were recorded as 4.62 s, 4.632 s, 4.6 s and 4.64 s. The arithmetic mean of these readings in correct significant figure is:',options:['5 s','4.6 s','4.62 s','4.623 s'],correct:1,answer:'4.6 s',
+short:[['Compute the plain mean.','Mean = (4.62+4.632+4.6+4.64)/4','= 18.492/4','= 4.623 s'],['Round to the least-precise reading\'s decimal place (4.6 s has 1 decimal place).','Answer: (B) 4.6 s']],
+detailed:[
+ ['Add the four recorded time periods and divide by 4 to get the raw arithmetic mean.','Sum = 4.62+4.632+4.6+4.64','= 18.492','Mean = 18.492/4','= 4.623 s'],
+ ['A mean (like a sum) can only be reported to the decimal place of the least precisely known reading; here 4.6 s has only one digit after the decimal point, the least among the four readings.','Least precise reading: 4.6 s (1 decimal place)'],
+ ['Rounding the raw mean 4.623 s to one decimal place gives the correctly reported mean.','Mean (correct s.f.) = 4.6 s'],
+ ['This matches option (B).','Answer: (B) 4.6 s']
+]},
+{id:'UD-409',topic:'Matching mass density, impulse, power and moment of inertia to their dimensional formulas',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xot6g5mfcgkp9ccfx)',sourceRef:true,question:'Match List - I with List - II.\nList - I\n(A) Mass density\n(B) Impulse\n(C) Power\n(D) Moment of inertia\nList - II\n(I) [ML²T⁻³]\n(II) [MLT⁻¹]\n(III) [ML²T⁰]\n(IV) [ML⁻³T⁰]\nChoose the correct answer from the options given below:',options:['(A)-(IV), (B)-(II), (C)-(III), (D)-(I)','(A)-(II), (B)-(III), (C)-(IV), (D)-(I)','(A)-(IV), (B)-(III), (C)-(I), (D)-(II)','(A)-(IV), (B)-(II), (C)-(I), (D)-(III)'],correct:3,answer:'(A)-(IV), (B)-(II), (C)-(I), (D)-(III)',
+short:[['Mass density.','Density = ML⁻³','= IV'],['Impulse = force × time.','Impulse = MLT⁻¹','= II'],['Power = energy/time.','Power = ML²T⁻³','= I'],['Moment of inertia = mass × (distance)².','MOI = ML²T⁰','= III','Answer: (D) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)']],
+detailed:[
+ ['Mass density is mass per unit volume.','Density = ML⁻³','⇒ matches IV'],
+ ['Impulse equals force acting over a time interval.','Impulse = MLT⁻²·T','= MLT⁻¹','⇒ matches II'],
+ ['Power is energy delivered per unit time.','Power = ML²T⁻²/T','= ML²T⁻³','⇒ matches I'],
+ ['Moment of inertia is mass times the square of a distance from the axis.','MOI = M·L²','= ML²T⁰','⇒ matches III'],
+ ['Combining all four matches gives A-IV, B-II, C-I, D-III, which is option (D).','Answer: (D) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)']
+]},
+{id:'UD-410',topic:'Whether Planck\'s constant and angular momentum share a dimension, and momentum and torque do not',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xotjfbc8pi9hscvad)',sourceRef:true,question:'Given below are two statements:\nStatement (I): Planck\'s constant and angular momentum have same dimensions.\nStatement (II): Linear momentum and moment of force have same dimensions.\nIn the light of the above statements, choose the correct answer from the options given below:',options:['Statement I is true but Statement II is false','Both Statement I and Statement II are false','Both Statement I and Statement II are true','Statement I is false but Statement II is true'],correct:0,answer:'Statement I is true but Statement II is false',
+short:[['Compare Planck\'s constant and angular momentum.','h = ML²T⁻¹ (from E = hν)','Angular momentum = ML²T⁻¹ — same','⇒ Statement I true'],['Compare linear momentum and moment of force (torque).','Momentum = MLT⁻¹','Torque = ML²T⁻² — different','⇒ Statement II false'],['Only Statement I holds.','Answer: (A) Statement I is true but Statement II is false']],
+detailed:[
+ ['Planck\'s constant appears in E = hν, so its dimension is energy divided by frequency.','h = ML²T⁻²/T⁻¹','= ML²T⁻¹'],
+ ['Angular momentum is mass times velocity times distance (L = mvr), giving the same dimensional formula.','Angular momentum = M·(LT⁻¹)·L','= ML²T⁻¹'],
+ ['Since both come out to ML²T⁻¹, Statement I is true.','h and angular momentum: both ML²T⁻¹'],
+ ['Linear momentum is mass times velocity, while moment of force (torque) is force times distance — these are dimensionally different quantities.','Momentum = MLT⁻¹','Torque = ML²T⁻²'],
+ ['Since MLT⁻¹ ≠ ML²T⁻², Statement II is false, so only Statement I holds, matching option (A).','Answer: (A) Statement I is true but Statement II is false']
+]},
+{id:'UD-411',topic:'Change in longitudinal wave speed from percentage changes in density and Young\'s modulus',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xowovbm4ukowo46uk)',sourceRef:true,question:'The speed of a longitudinal wave in a metallic bar is 400 m s⁻¹. If the density and Young\'s modulus of the bar material are increased by 0.5% and 1%, respectively then the speed of the wave is changed approximately to ........ m s⁻¹.',options:['398','402','401','399'],correct:2,answer:'401',
+short:[['Wave speed formula.','v = √(Y/ρ)'],['Fractional change in v from fractional changes in Y and ρ.','Δv/v = (1/2)(ΔY/Y) − (1/2)(Δρ/ρ)'],['Substitute the given percentage changes.','= (1/2)(1%) − (1/2)(0.5%)','= 0.5% − 0.25%','= 0.25%'],['Apply to v = 400 m s⁻¹.','Δv = 400×0.0025','= 1 m s⁻¹','New v ≈ 401 m s⁻¹','Answer: (C) 401']],
+detailed:[
+ ['The speed of a longitudinal wave in a solid bar is the square root of Young\'s modulus divided by density.','v = √(Y/ρ)'],
+ ['For a quantity that is a square root of a ratio, the fractional change is half the fractional change of the numerator minus half that of the denominator.','Δv/v = (1/2)(ΔY/Y) − (1/2)(Δρ/ρ)'],
+ ['Substituting the given percentage increases (Y by 1%, ρ by 0.5%).','Δv/v = (1/2)(1%) − (1/2)(0.5%)','= 0.5% − 0.25%','= 0.25%'],
+ ['Apply this fractional change to the original speed of 400 m s⁻¹.','Δv = 400 m s⁻¹ × 0.0025','= 1 m s⁻¹'],
+ ['Adding this to the original speed gives the new, approximate speed.','New v = 400 + 1','= 401 m s⁻¹'],
+ ['This matches option (C).','Answer: (C) 401']
+]},
+{id:'UD-412',topic:'Matching Planck\'s constant, stopping potential, work function and threshold frequency to their dimensional formulas',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xp3mrklr0i0lagp2e)',sourceRef:true,question:'Match the LIST-I with LIST-II.\nList - I\nA. Planck\'s constant\nB. Stopping potential\nC. Work function\nD. Threshold frequency\nList - II\nI. ML²T⁻²\nII. T⁻¹\nIII. ML²T⁻¹\nIV. ML²T⁻³A⁻¹\nChoose the correct answer from the options given below:',options:['A-III, B-IV, C-I, D-II','A-I, B-II, C-III, D-IV','A-IV, B-III, C-I, D-II','A-I, B-IV, C-III, D-II'],correct:0,answer:'A-III, B-IV, C-I, D-II',
+short:[['Planck\'s constant, from E = hν.','h = ML²T⁻¹','= III'],['Stopping potential = potential = energy/charge.','V = ML²T⁻³A⁻¹','= IV'],['Work function = energy.','W = ML²T⁻²','= I'],['Threshold frequency = frequency.','f = T⁻¹','= II','Answer: (A) A-III, B-IV, C-I, D-II']],
+detailed:[
+ ['Planck\'s constant relates photon energy to frequency, E = hν, so h is energy divided by frequency.','h = ML²T⁻²/T⁻¹','= ML²T⁻¹','⇒ matches III'],
+ ['Stopping potential is a potential difference, which has the dimension of energy per unit charge.','V = ML²T⁻²/(AT)','= ML²T⁻³A⁻¹','⇒ matches IV'],
+ ['Work function is an energy (the minimum energy to eject a photoelectron).','W = ML²T⁻²','⇒ matches I'],
+ ['Threshold frequency is simply a frequency, with dimension inverse time.','f = T⁻¹','⇒ matches II'],
+ ['Combining all four matches gives A-III, B-IV, C-I, D-II, which is option (A).','Answer: (A) A-III, B-IV, C-I, D-II']
+]},
+{id:'UD-413',topic:'Rounding a product-and-quotient expression to the correct significant figures',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpavzdqxhk7kigtst)',sourceRef:true,question:'For an experimental expression y = (32.3×1125)/27.4, where all the digits are significant. Then to report the value of y we should write:',options:['y = 1326.186','y = 1326.2','y = 1326.19','y = 1330'],correct:3,answer:'y = 1330',
+short:[['Identify the least number of significant figures among the operands.','32.3 → 3 s.f., 1125 → 4 s.f., 27.4 → 3 s.f.','⇒ least = 3 s.f.'],['Compute the raw value.','y = (32.3×1125)/27.4','= 36337.5/27.4','= 1326.186'],['Round to 3 significant figures.','y = 1330','Answer: (D) y = 1330']],
+detailed:[
+ ['In a product/quotient, the result can only be reported to as many significant figures as the operand with the fewest — here 32.3 and 27.4 each have 3 significant figures, less than 1125\'s 4.','32.3: 3 s.f.','1125: 4 s.f.','27.4: 3 s.f.','⇒ 3 s.f. governs'],
+ ['Carry out the raw arithmetic first, without rounding.','y = (32.3×1125)/27.4','= 36337.5/27.4','= 1326.186…'],
+ ['Now round this raw value to 3 significant figures, which lands on the thousands and hundreds digit with the rest replaced by a rounding zero.','y ≈ 1330 (3 s.f.)'],
+ ['This matches option (D).','Answer: (D) y = 1330']
+]},
+{id:'UD-414',topic:'Estimated error in resistance from Ohm\'s law using voltmeter and ammeter least counts',source:'ExamSIDE · JEE Main, Units and Measurements · questions.examside.com (question id Xpdom4hyamm1gprov)',sourceRef:true,question:'In an experiment to determine the resistance of a given wire using Ohm\'s law, the voltmeter and ammeter readings are noted as 10 V and 5 A, respectively. The least counts of voltmeter and ammeter are 500 mV and 200 mA, respectively. The estimated error in the resistance measurement is ........ Ω',options:['0.25','2','2.5','0.18'],correct:3,answer:'0.18',
+short:[['Resistance and its fractional error.','R = V/I','= 10/5','= 2 Ω','ΔR/R = ΔV/V + ΔI/I'],['Substitute least counts as the errors.','ΔV/V = 0.5/10','= 0.05','ΔI/I = 0.2/5','= 0.04'],['Compute ΔR.','ΔR/R = 0.09','⇒ ΔR = 0.09×2','= 0.18 Ω','Answer: (D) 0.18']],
+detailed:[
+ ['By Ohm\'s law, resistance is voltage divided by current; using the given readings gives the measured resistance.','R = V/I','= 10 V/5 A','= 2 Ω'],
+ ['For a quotient of two measured quantities, the maximum fractional error is the sum of the fractional errors of each — here the least counts of the instruments are taken as the absolute errors in V and I.','ΔR/R = ΔV/V + ΔI/I'],
+ ['Substitute the given least counts (500 mV = 0.5 V, 200 mA = 0.2 A) and the measured values.','ΔV/V = 0.5/10','= 0.05','ΔI/I = 0.2/5','= 0.04'],
+ ['Adding these fractional errors and multiplying by R gives the absolute error in the resistance.','ΔR/R = 0.05+0.04','= 0.09','ΔR = 0.09×2 Ω','= 0.18 Ω'],
+ ['This matches option (D).','Answer: (D) 0.18']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -3854,7 +4024,27 @@ const pilotTopicMap={
  'Error propagation: solve unknown exponent and error':['errors','Error propagation: solve unknown exponent and error'],
  'Dimensionless quantities identification':['dimensional-formula','Dimensionless quantities identification'],
  'Error propagation: spring constant from SHM period':['errors','Error propagation: spring constant from SHM period'],
- 'Vernier calliper least count derivation':['measuring-instruments','Vernier calliper least count derivation']
+ 'Vernier calliper least count derivation':['measuring-instruments','Vernier calliper least count derivation'],
+ 'Percentage error in resistivity from radius, resistance and length errors':['errors','Percentage error in resistivity from radius, resistance and length errors'],
+ 'Dimension of density in a non-standard base system (F, L, T)':['dimensional-analysis','Dimension of density in a non-standard base system (F, L, T)'],
+ 'Number of main-scale divisions coinciding with N vernier divisions from a given least count':['measuring-instruments','Number of main-scale divisions coinciding with N vernier divisions from a given least count'],
+ 'Matching torque, magnetic field, magnetic moment and permeability of free space to their dimensional formulas':['dimensional-formula','Matching torque, magnetic field, magnetic moment and permeability of free space to their dimensional formulas'],
+ 'Dimension of energy in a non-standard base system (P, A, T)':['dimensional-analysis','Dimension of energy in a non-standard base system (P, A, T)'],
+ 'Percentage error in a quantity with a fourth-root factor':['errors','Percentage error in a quantity with a fourth-root factor'],
+ 'Dimension of coefficient of viscosity in a non-standard base system (P, A, T)':['dimensional-analysis','Dimension of coefficient of viscosity in a non-standard base system (P, A, T)'],
+ 'Dimensional formula of angular impulse':['dimensional-formula','Dimensional formula of angular impulse'],
+ 'Least count of a vernier callipers from vernier-to-main-scale division ratio':['measuring-instruments','Least count of a vernier callipers from vernier-to-main-scale division ratio'],
+ 'Correcting a vernier callipers reading for a positive zero error':['measuring-instruments','Correcting a vernier callipers reading for a positive zero error'],
+ 'Convention for order of magnitude of a×10^(b)':['significant-figures','Convention for order of magnitude of a×10^(b)'],
+ 'Error in density from errors in mass and edge length of a cube':['errors','Error in density from errors in mass and edge length of a cube'],
+ 'Expression for Planck time from G, h and c by dimensional analysis':['dimensional-analysis','Expression for Planck time from G, h and c by dimensional analysis'],
+ 'Rounding the mean of several time-period readings to correct significant figures':['significant-figures','Rounding the mean of several time-period readings to correct significant figures'],
+ 'Matching mass density, impulse, power and moment of inertia to their dimensional formulas':['dimensional-formula','Matching mass density, impulse, power and moment of inertia to their dimensional formulas'],
+ 'Whether Planck\'s constant and angular momentum share a dimension, and momentum and torque do not':['dimensional-formula','Whether Planck\'s constant and angular momentum share a dimension, and momentum and torque do not'],
+ 'Change in longitudinal wave speed from percentage changes in density and Young\'s modulus':['errors','Change in longitudinal wave speed from percentage changes in density and Young\'s modulus'],
+ 'Matching Planck\'s constant, stopping potential, work function and threshold frequency to their dimensional formulas':['dimensional-formula','Matching Planck\'s constant, stopping potential, work function and threshold frequency to their dimensional formulas'],
+ 'Rounding a product-and-quotient expression to the correct significant figures':['significant-figures','Rounding a product-and-quotient expression to the correct significant figures'],
+ 'Estimated error in resistance from Ohm\'s law using voltmeter and ammeter least counts':['errors','Estimated error in resistance from Ohm\'s law using voltmeter and ammeter least counts']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
