@@ -5517,6 +5517,131 @@ function exportReviewPdf(){
 function downloadReviewPdf(){if(!reviewPdfUrl)return;const a=document.createElement('a');a.href=reviewPdfUrl;a.download='Trigonometry-Verdicts.pdf';a.click();}
 async function shareReviewPdf(){if(!reviewPdfFile)return;try{await navigator.share({files:[reviewPdfFile],title:'Trigonometry review'});}catch(e){if(e.name!=='AbortError')document.querySelector('#pdf-status').textContent='Sharing is unavailable here. Download the PDF and attach it to your message.';}}
 </script>
+<script>/* Chapter-wide Level and Question-type filters, shared by every library app.
+
+   A filter acts on question sets: a core question together with all of its
+   practice variants. A set is shown whole or not at all, and it matches through
+   its core. Level is read from the core's numeric `level` (1, 2 or 3); practice
+   variants never carry their own. Question type is never stored — it is derived
+   from the provenance fields each library already has (see MIGRATE.md §1.2), so
+   it cannot drift from the source record.
+
+   Nothing here renders inside `.questionstage`. The filter rows and set tags live
+   in the pinned index, so the per-question render composites stay unchanged.
+
+   The app keeps `current` as an index into the full `questions` array; this file
+   only supplies the ordered list of visible indices and steps through it. With
+   no filter active that list is every question, so counters and Prev/Next
+   behave exactly as before. */
+const QF=(()=>{
+ const LEVELS=[1,2,3];
+ const TYPES=[['pyq','PYQ'],['institute','INST'],['original','ORIG']];
+ const TYPE_LABEL=Object.fromEntries(TYPES);
+ const LEVEL_TITLE={1:'Level 1 · JEE Main easy, NEET',2:'Level 2 · JEE Main medium',3:'Level 3 · JEE Main hard, JEE Advanced'};
+ let key=null,onChange=()=>{},state={level:[],type:[]},cache=null;
+
+ // Provenance text in priority order: explicit kind (P&C, sequence-series),
+ // derived display kind, then the root bank's legacy provenance string.
+ // Institute is tested first so an institute paper can never read as a PYQ.
+ function typeOf(q){
+  const text=[q.kind,q.display&&q.display.kind,q.provenance].filter(x=>typeof x==='string').join(' | ');
+  if(/institute/i.test(text))return 'institute';
+  if(/\bPYQ\b|past-year/i.test(text)||/^ExamSIDE/.test(String(q.source||'')))return 'pyq';
+  if(/original|AI-authored/i.test(text))return 'original';
+  // mole-concept labels unsourced practice with its recovery purpose; an item
+  // with no source reference at all is authored practice.
+  if(q.parent&&!q.sourceRef)return 'original';
+  return null;
+ }
+ const coreOf=f=>f.items.find(x=>!x.variant)||f.items[0];
+ const familyOf=q=>families.find(f=>f.n===q.family);
+ const levelOfSet=f=>{const l=coreOf(f).level;return LEVELS.includes(l)?l:null;};
+ const typeOfSet=f=>typeOf(coreOf(f));
+ const active=()=>state.level.length>0||state.type.length>0;
+ function matches(f){
+  if(state.level.length&&!state.level.includes(levelOfSet(f)))return false;
+  if(state.type.length&&!state.type.includes(typeOfSet(f)))return false;
+  return true;
+ }
+ function build(){
+  const ok=new Set(families.filter(matches).map(f=>f.n));
+  const indices=[];questions.forEach((q,i)=>{if(ok.has(q.family))indices.push(i);});
+  cache={ok,indices,pos:new Map(indices.map((i,k)=>[i,k]))};
+ }
+ const view=()=>{if(!cache)build();return cache;};
+ function persist(){if(!key)return;try{localStorage.setItem(key,JSON.stringify(state));}catch{}}
+ function init(storageKey,changed){
+  key=storageKey;if(changed)onChange=changed;
+  try{const saved=JSON.parse(localStorage.getItem(key)||'{}');
+   state={level:(saved.level||[]).filter(l=>LEVELS.includes(l)),type:(saved.type||[]).filter(t=>t in TYPE_LABEL)};}catch{}
+  cache=null;
+ }
+ function toggle(dim,value){
+  const list=state[dim],i=list.indexOf(value);
+  i<0?list.push(value):list.splice(i,1);
+  cache=null;persist();onChange();
+ }
+ function clear(){state={level:[],type:[]};cache=null;persist();onChange();}
+
+ return {
+  LEVELS,TYPES,typeOf,levelOfSet,typeOfSet,coreOf,active,
+  // Sets and questions that survive the filter, preserving the caller's order.
+  fams:list=>active()?list.filter(f=>view().ok.has(f.n)):list,
+  qs:list=>active()?list.filter(q=>view().ok.has(q.family)):list,
+  inView:i=>!active()||view().pos.has(i),
+  first:()=>{const v=view().indices;return v.length?v[0]:-1;},
+  // Neighbour of `i` inside the filtered order, or -1 at either end.
+  step(i,d){
+   if(!active()){const n=i+d;return n>=0&&n<questions.length?n:-1;}
+   const v=view().indices,k=view().pos.get(i);
+   if(k===undefined){const next=d>0?v.find(x=>x>i):[...v].reverse().find(x=>x<i);return next===undefined?-1:next;}
+   const n=k+d;return n>=0&&n<v.length?v[n]:-1;
+  },
+  counter(i){
+   if(!active())return `${i+1} / ${questions.length}`;
+   const v=view(),k=v.pos.get(i);return `${k===undefined?0:k+1} / ${v.indices.length}`;
+  },
+  init,toggle,clear,
+  bar(){
+   const on=(dim,v)=>state[dim].includes(v);
+   // Until a chapter's levels are migrated its Level chips are shown disabled
+   // rather than offering a filter that can only return nothing.
+   const levelled=families.some(f=>levelOfSet(f));
+   const chip=(dim,v,label,title,disabled)=>`<button class="qf-chip ${on(dim,v)?'on':''}" aria-pressed="${on(dim,v)}" title="${title}" ${disabled?'disabled':''} onclick="QF.toggle('${dim}',${typeof v==='number'?v:`'${v}'`})">${label}</button>`;
+   const sets=active()?view().ok.size:families.length;
+   return `<div class="qf-bar ${active()?'qf-on':''}" role="group" aria-label="Filter question sets">`
+    +`<div class="qf-row"><span class="qf-dim">Level</span>${LEVELS.map(l=>chip('level',l,'L'+l,levelled?LEVEL_TITLE[l]:'Levels not yet assigned for this chapter',!levelled&&!on('level',l))).join('')}</div>`
+    +`<div class="qf-row"><span class="qf-dim">Type</span>${TYPES.map(([t,label])=>chip('type',t,label,label)).join('')}</div>`
+    +(active()?`<div class="qf-row qf-status"><span>${sets?`${sets} of ${families.length} sets`:'No sets match'}</span><button class="qf-clear" onclick="QF.clear()">Clear</button></div>`:'')
+    +`</div>`;
+  },
+  // Compact set tag for index entries: "L2 · PYQ", or just the type while a
+  // chapter's levels are still being migrated.
+  tags(f){
+   const l=levelOfSet(f),t=typeOfSet(f);
+   const text=[l?'L'+l:'',t?TYPE_LABEL[t]:''].filter(Boolean).join(' · ');
+   return text?`<span class="qf-tag">${text}</span>`:'';
+  }
+ };
+})();
+/* Filter styles are injected here rather than copied into nine stylesheets.
+   Every selector targets qf- elements or index entries that contain one, so
+   nothing inside `.questionstage` can match. */
+(()=>{const css=`.qf-bar{display:grid;gap:6px;margin:0 0 12px;padding:0 0 12px;border-bottom:1px solid var(--line,#333)}
+.qf-row{display:flex;flex-wrap:wrap;align-items:center;gap:5px;min-width:0}
+.qf-dim{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted,#999);width:40px;flex:none}
+.qf-chip{font-size:11px;line-height:1;padding:6px 8px;border-radius:99px;min-height:0}
+.qf-chip.on{background:var(--soft,#26342a);border-color:var(--accent,var(--green,#70e58f));color:var(--text,#eee)}
+.qf-status{justify-content:space-between;font-size:11px;color:var(--muted,#999)}
+.qf-clear{font-size:11px;padding:4px 8px;border-radius:8px;min-height:0}
+.qf-tag{flex:none;font-size:9px;letter-spacing:.3px;color:var(--muted,#999);white-space:nowrap}
+.familybtn:has(>.qf-tag){flex-wrap:wrap;row-gap:1px}
+.qf-bar.qf-on+.navindex .navsection.navempty{display:none}
+.familybtn:has(>.qf-tag)>.count{order:2}
+.familybtn>.qf-tag{order:3;flex-basis:100%;padding-left:28px}
+@media(max-width:720px){.qf-chip{padding:8px 10px}}`;
+ const style=document.createElement('style');style.textContent=css;document.head.appendChild(style);})();
+</script>
 <script>/* Adapted from mathematics/trigonometry/pilot/app.js (shared review engine, unchanged in behavior). Only the storage-key prefix, the subject and chapter navigation and the header copy differ for this chapter. */
 let current=0,revealed=false,feedback={},selections={},drafts={},noteFor=null,mobileNavOpen=false;
 const variantLabel=v=>{if(!v)return 'Core';const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ';return 'Practice '+(v<=letters.length?letters[v-1]:v);};
@@ -5549,7 +5674,7 @@ function toggleSection(i){const sec=syllabus[i];
  keepRowInPlace(`[data-sec="${sec.key}"]`,()=>{
   if(openSection===sec.key){openSection=null;openTopic=null;}
   else{openSection=sec.key;
-   const here=questions[current],mine=families.filter(f=>f.syllabusKey===sec.key);
+   const here=questions[current],mine=QF.fams(families.filter(f=>f.syllabusKey===sec.key));
    openTopic=mine.some(f=>f.topic===here.topic)?here.topic:(mine[0]&&mine[0].topic)||null;}
   persistNavigation();render();});}
 function toggleTopic(i){
@@ -5557,8 +5682,8 @@ function toggleTopic(i){
 const reviewedIn=list=>list.filter(x=>feedback[x.id]).length;
 const navCount=list=>{const d=reviewedIn(list);return `<span class="navcount ${d===list.length?'full':d?'part':''}">${d}/${list.length}</span>`;};
 function renderIndex(q){
- return `<div class="navindex">${syllabus.map((sec,si)=>{
-  const secFams=families.filter(f=>f.syllabusKey===sec.key),secQs=questions.filter(x=>x.syllabusKey===sec.key);
+ return QF.bar()+`<div class="navindex">${syllabus.map((sec,si)=>{
+  const secFams=QF.fams(families.filter(f=>f.syllabusKey===sec.key)),secQs=QF.qs(questions.filter(x=>x.syllabusKey===sec.key));
   const empty=!secFams.length,open=openSection===sec.key&&!empty,here=q.syllabusKey===sec.key;
   return `<section class="navsection ${open?'open':''} ${here?'here':''} ${empty?'navempty':''}" data-sec="${sec.key}">`
    +`<button class="navsectionbtn" aria-expanded="${open}" ${empty?'disabled':''} onclick="toggleSection(${si})">`
@@ -5573,7 +5698,7 @@ function renderIndex(q){
       +(topen?tFams.map(f=>{const d=reviewedIn(f.items);
         return `<button class="familybtn ${f.n===q.family?'active':''}" onclick="familyGo(${f.n})">`
          +`<span class="num">${String(f.n).padStart(2,'0')}</span><span class="name">${esc(f.title)}</span>`
-         +`<span class="count ${d===f.items.length?'full':d?'part':''}">${d}/${f.items.length}</span></button>`;}).join(''):'')
+         +`${QF.tags(f)}<span class="count ${d===f.items.length?'full':d?'part':''}">${d}/${f.items.length}</span></button>`;}).join(''):'')
       +`</div>`;}).join('')}</div>`:'')
    +`</section>`;}).join('')}</div>`;
 }
@@ -5605,7 +5730,11 @@ function persistVerdict(id,verdict,notes){
  feedback=next;delete drafts[id];
  try{localStorage.setItem('outlrn-preview-johniton-ud-review-drafts-v1',JSON.stringify(drafts));}catch{}
  return true;}
-function advance(){noteFor=null;if(current<questions.length-1)go(current+1);else render();}
+function advance(){noteFor=null;const next=QF.step(current,1);if(next>=0)go(next);else render();}
+/* Level/Type filters (shared/question-filters.js). A filter change keeps the
+   current question when its set still matches, otherwise moves to the first
+   matching question. An unsaved note stays with its own question as before. */
+function filtersChanged(){if(!QF.inView(current)&&QF.first()>=0){current=QF.first();revealed=false;syncIndex();}persistNavigation();render();keepActiveVisible();}
 function approve(){if(persistVerdict(questions[current].id,'Approved',''))advance();}
 function openNote(){noteFor=questions[current].id;render();document.querySelector('#notes')?.focus();}
 function cancelNote(){noteFor=null;delete drafts[questions[current].id];try{localStorage.setItem('outlrn-preview-johniton-ud-review-drafts-v1',JSON.stringify(drafts));}catch{}render();}
@@ -5622,10 +5751,12 @@ if(visibleIndex)indexScroll=visibleIndex.scrollTop;if(visibleVariants)variantScr
 const q=questions[current],f=families.find(x=>x.n===q.family),saved=feedback[q.id],draft=drafts[q.id]||{},done=reviewed(),noting=noteFor===q.id||Boolean(draft.notes);
 /* Navigation links are relative to the site root of whichever route serves this page (local server, the branch preview route or production), so they work under a prefix such as /johniton/ or /outlrn-preview-johniton-review-previews/johniton/ */
 const NAVBASE=(()=>{const m=location.pathname.match(/^(.*?)physics\/unit-dimension\//);return m?m[1]:'/'})();
-document.body.innerHTML=`<nav class="subjectswitch" aria-label="Subjects"><a class="active" href="${NAVBASE}physics/">Physics</a><a href="${NAVBASE}chemistry/">Chemistry</a><a href="${NAVBASE}mathematics/">Mathematics</a></nav><nav class="chapterswitch" aria-label="Physics chapters"><span class="chapterlabel">Chapters</span><a href="${NAVBASE}">Laws of Motion</a><a href="${NAVBASE}physics/motion-in-1d/">Motion in 1D</a><a class="active" href="${NAVBASE}physics/unit-dimension/">Unit and Dimension</a></nav><header class="libraryheader"><div><span class="muted small">Question library</span><h1>Unit and Dimension</h1></div><span class="muted small">${current+1} / ${questions.length}</span></header><main><button class="navtrigger ${mobileNavOpen?'open':''}" data-sec="${q.syllabusKey}" onclick="toggleMobileNav()" aria-haspopup="true" aria-expanded="${mobileNavOpen}"><span class="dot" aria-hidden="true"></span><span class="navtriggertext"><span class="navtriggersyl">${esc(q.syllabus)}</span><span class="navtriggerfam">${f.n}. ${esc(f.title)}</span></span><span class="chev" aria-hidden="true"></span></button><div class="navoverlay ${mobileNavOpen?'open':''}" onclick="closeMobileNav()"></div><nav class="navdrawer ${mobileNavOpen?'open':''}" aria-hidden="${!mobileNavOpen}" aria-label="Browse topics"><div class="navdrawerhead"><strong>Browse topics</strong><button class="navdrawerclose" onclick="closeMobileNav()" aria-label="Close">&times;</button></div><div class="navdrawerbody">${renderIndex(q)}</div></nav><div class="workspace"><aside class="familynav">${renderIndex(q)}</aside><section>${f.items.length>1?`<div class="variantbar" data-sec="${q.syllabusKey}">${f.items.map(v=>`<button class="${v.id===q.id?'active':''}" onclick="go(${questions.indexOf(v)})">${variantLabel(v.variant)}</button>`).join('')}</div>`:''}<article class="questionstage"><div class="row between"><strong class="small">${q.id}</strong><span class="pill">${q.type==='mcq'?'MCQ':'Numerical'}</span></div><div class="subtopic"><span class="syl">${esc(q.syllabus)}</span>${esc(q.topic)}</div>${sourceLine(q)}<p class="questiontext">${mathHtml(q.question)}</p><div class="diagram">${diagram(q)}</div>${q.type==='mcq'?`<div class="options" role="group" aria-label="Answer options">${q.options.map((o,i)=>`<button class="option ${selections[q.id]===i?'selected':''} ${revealed&&i===q.correct?'correct':''} ${revealed&&selections[q.id]===i&&i!==q.correct?'wrong':''}" aria-pressed="${selections[q.id]===i}" onclick="selections['${q.id}']=${i};render()"><span class="optionletter">${'ABCD'[i]}</span><span>${mathHtml(o)}</span></button>`).join('')}</div>`:''}<button class="wide revealbutton" onclick="revealed=!revealed;render()">${revealed?'Hide solution':'Show solution'}</button>${revealed?`<section class="answerreveal"><h3>Solution</h3><div class="answer">${q.type==='mcq'?'('+ 'ABCD'[q.correct]+') '+mathHtml(q.answer):mathHtml(q.answer)+(q.unit?' '+mathHtml(q.unit):'')}</div><div class="diagram solutiondiagram">${diagram(q,true)}</div>${briefSolution(q)}${detailedSolution(q)}</section>`:''}</article><div class="row between pagination"><button onclick="go(current-1)" ${current===0?'disabled':''}>← Previous</button><button onclick="go(current+1)" ${current===questions.length-1?'disabled':''}>Next →</button></div></section><aside class="reviewcolumn"><section class="panel reviewform"><h3>Your verdict</h3>${saved?`<div class="verdictnow ${saved.verdict==='Approved'?'ok':'revise'}">${saved.verdict==='Approved'?'Approved':'Needs changes'}${saved.notes?`<p>${esc(saved.notes)}</p>`:''}</div>`:''}${noting?`<label for="notes">What needs changing?</label><textarea id="notes" oninput="stageNote()" placeholder="Describe the change you want.">${esc(draft.notes??saved?.notes??'')}</textarea><button class="wide save-note" id="save-note" onclick="saveNote()" ${(draft.notes??saved?.notes??'').trim()?'':'disabled'}>Save and next</button><button class="wide ghost" onclick="cancelNote()">Cancel</button>`:`<button class="wide approve" onclick="approve()">${saved?.verdict==='Approved'?'Approved ✓ · next':'Approve and next'}</button><button class="wide reject" onclick="openNote()">Needs changes…</button>`}<div class="savehint" id="saved" aria-live="polite">${draft.notes?'Not saved yet':saved?'Saved '+new Date(saved.savedAt).toLocaleString('en-IN'):''}</div></section><section class="panel reviewform exportpanel"><div class="reviewprogress"><strong>${done}</strong> of ${questions.length} reviewed${done===questions.length?' · all done':''}</div><div class="reviewbar"><span style="width:${Math.round(100*done/questions.length)}%"></span></div><button class="wide ${done===questions.length?'approve':''}" id="export-pdf" onclick="exportReviewPdf()">Export review · PDF</button><div class="savehint" id="export-status" aria-live="polite">${Object.keys(drafts).length?'Finish the open note before exporting.':''}</div></section></aside></div></main>`;
+document.body.innerHTML=`<nav class="subjectswitch" aria-label="Subjects"><a class="active" href="${NAVBASE}physics/">Physics</a><a href="${NAVBASE}chemistry/">Chemistry</a><a href="${NAVBASE}mathematics/">Mathematics</a></nav><nav class="chapterswitch" aria-label="Physics chapters"><span class="chapterlabel">Chapters</span><a href="${NAVBASE}">Laws of Motion</a><a href="${NAVBASE}physics/motion-in-1d/">Motion in 1D</a><a class="active" href="${NAVBASE}physics/unit-dimension/">Unit and Dimension</a></nav><header class="libraryheader"><div><span class="muted small">Question library</span><h1>Unit and Dimension</h1></div><span class="muted small">${QF.counter(current)}</span></header><main><button class="navtrigger ${mobileNavOpen?'open':''}" data-sec="${q.syllabusKey}" onclick="toggleMobileNav()" aria-haspopup="true" aria-expanded="${mobileNavOpen}"><span class="dot" aria-hidden="true"></span><span class="navtriggertext"><span class="navtriggersyl">${esc(q.syllabus)}</span><span class="navtriggerfam">${f.n}. ${esc(f.title)}</span></span><span class="chev" aria-hidden="true"></span></button><div class="navoverlay ${mobileNavOpen?'open':''}" onclick="closeMobileNav()"></div><nav class="navdrawer ${mobileNavOpen?'open':''}" aria-hidden="${!mobileNavOpen}" aria-label="Browse topics"><div class="navdrawerhead"><strong>Browse topics</strong><button class="navdrawerclose" onclick="closeMobileNav()" aria-label="Close">&times;</button></div><div class="navdrawerbody">${renderIndex(q)}</div></nav><div class="workspace"><aside class="familynav">${renderIndex(q)}</aside><section>${f.items.length>1?`<div class="variantbar" data-sec="${q.syllabusKey}">${f.items.map(v=>`<button class="${v.id===q.id?'active':''}" onclick="go(${questions.indexOf(v)})">${variantLabel(v.variant)}</button>`).join('')}</div>`:''}<article class="questionstage"><div class="row between"><strong class="small">${q.id}</strong><span class="pill">${q.type==='mcq'?'MCQ':'Numerical'}</span></div><div class="subtopic"><span class="syl">${esc(q.syllabus)}</span>${esc(q.topic)}</div>${sourceLine(q)}<p class="questiontext">${mathHtml(q.question)}</p><div class="diagram">${diagram(q)}</div>${q.type==='mcq'?`<div class="options" role="group" aria-label="Answer options">${q.options.map((o,i)=>`<button class="option ${selections[q.id]===i?'selected':''} ${revealed&&i===q.correct?'correct':''} ${revealed&&selections[q.id]===i&&i!==q.correct?'wrong':''}" aria-pressed="${selections[q.id]===i}" onclick="selections['${q.id}']=${i};render()"><span class="optionletter">${'ABCD'[i]}</span><span>${mathHtml(o)}</span></button>`).join('')}</div>`:''}<button class="wide revealbutton" onclick="revealed=!revealed;render()">${revealed?'Hide solution':'Show solution'}</button>${revealed?`<section class="answerreveal"><h3>Solution</h3><div class="answer">${q.type==='mcq'?'('+ 'ABCD'[q.correct]+') '+mathHtml(q.answer):mathHtml(q.answer)+(q.unit?' '+mathHtml(q.unit):'')}</div><div class="diagram solutiondiagram">${diagram(q,true)}</div>${briefSolution(q)}${detailedSolution(q)}</section>`:''}</article><div class="row between pagination"><button onclick="go(QF.step(current,-1))" ${QF.step(current,-1)<0?'disabled':''}>← Previous</button><button onclick="go(QF.step(current,1))" ${QF.step(current,1)<0?'disabled':''}>Next →</button></div></section><aside class="reviewcolumn"><section class="panel reviewform"><h3>Your verdict</h3>${saved?`<div class="verdictnow ${saved.verdict==='Approved'?'ok':'revise'}">${saved.verdict==='Approved'?'Approved':'Needs changes'}${saved.notes?`<p>${esc(saved.notes)}</p>`:''}</div>`:''}${noting?`<label for="notes">What needs changing?</label><textarea id="notes" oninput="stageNote()" placeholder="Describe the change you want.">${esc(draft.notes??saved?.notes??'')}</textarea><button class="wide save-note" id="save-note" onclick="saveNote()" ${(draft.notes??saved?.notes??'').trim()?'':'disabled'}>Save and next</button><button class="wide ghost" onclick="cancelNote()">Cancel</button>`:`<button class="wide approve" onclick="approve()">${saved?.verdict==='Approved'?'Approved ✓ · next':'Approve and next'}</button><button class="wide reject" onclick="openNote()">Needs changes…</button>`}<div class="savehint" id="saved" aria-live="polite">${draft.notes?'Not saved yet':saved?'Saved '+new Date(saved.savedAt).toLocaleString('en-IN'):''}</div></section><section class="panel reviewform exportpanel"><div class="reviewprogress"><strong>${done}</strong> of ${questions.length} reviewed${done===questions.length?' · all done':''}</div><div class="reviewbar"><span style="width:${Math.round(100*done/questions.length)}%"></span></div><button class="wide ${done===questions.length?'approve':''}" id="export-pdf" onclick="exportReviewPdf()">Export review · PDF</button><div class="savehint" id="export-status" aria-live="polite">${Object.keys(drafts).length?'Finish the open note before exporting.':''}</div></section></aside></div></main>`;
 const navHost=navScrollHost();if(navHost)navHost.scrollTop=indexScroll;
 const variantHost=document.querySelector('.variantbar');if(variantHost)variantHost.scrollLeft=variantScroll;
 if(window.scrollY!==keepPage)window.scrollTo(0,keepPage);}
 if(!openSection||!syllabus.some(s=>s.key===openSection)||openSection!==questions[current].syllabusKey)syncIndex();
+QF.init(navigationKey+'-filters',filtersChanged);
+if(!QF.inView(current)&&QF.first()>=0){current=QF.first();syncIndex();}
 render();keepActiveVisible();keepActiveVariantVisible();persistNavigation();
 </script></body></html>
