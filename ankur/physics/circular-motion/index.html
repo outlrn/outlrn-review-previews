@@ -1867,6 +1867,69 @@ const questions=[
  ["the spiral is traced outward, so its radius of curvature grows as the particle goes",`r increasing · |a| = ${fraction('v²','r')} decreasing`],
  ["neither velocity nor acceleration is constant as a vector, since both keep turning",'so (A) and (B) fail, and (D) is wrong for the helix'],
  ["Correct answer",'(C)']
+]},
+{id:'CIRC-07-X',parent:'CIRC-07',variant:24,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.7',printedAnswer:'B',verifiedAnswer:'B'},question:'A stone hangs from a massless string of length 15 m and is projected horizontally with speed √147 m/s. The speed of the particle at the point where the tension in the string equals the weight of the particle is',options:['10 m/s','7 m/s','12 m/s','None of these'],correct:1,answer:'7 m/s',diagram:'',relevance:{parent:'CIRC-07',sharedSkill:'eliminating the deflection between the radial equation and energy conservation',recoveryPurpose:'the tension is set equal to the weight rather than given, so the angle has to be removed rather than evaluated'},short:[
+ ["at deflection θ the radial equation carries the tension and the weight component",`T − mg cos θ = ${fraction('mv²','L')}`],
+ ["setting the tension equal to the weight leaves the speed in terms of the angle",`mg(1 − cos θ) = ${fraction('mv²','L')} · v² = gL(1 − cos θ)`],
+ ["energy conservation from the lowest point gives a second relation",`v² = u² − 2gL(1 − cos θ)`],
+ ["eliminate the angle between the two",`3gL(1 − cos θ) = u² · v² = ${fraction('u²','3')}`],
+ ["substitute the launch speed, whose square is 147",`v² = ${fraction('147','3')} = 49 · v = 7 m/s`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-08-T',parent:'CIRC-08',variant:20,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.220',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle suspended from a fixed point by a light inextensible thread of length L is projected horizontally from its lowest position with velocity √(7gL/2). The thread will go slack after swinging through an angle θ, where θ equals',options:['30°','135°','120°','150°'],correct:2,answer:'120°',diagram:'',relevance:{parent:'CIRC-08',sharedSkill:'the thread going slack as the condition T = 0 above the horizontal',recoveryPurpose:'the launch speed is below what completes the circle, so the motion ends in slack thread rather than at the top'},short:[
+ ["above the horizontal the weight has a component towards the centre, and the thread adds to it",`T + mg|cos θ| = ${fraction('mv²','L')} · written for all θ as T = ${fraction('mv²','L')} + mg cos θ`],
+ ["the thread goes slack the instant its tension reaches zero",`T = 0 · v² = −gL cos θ, which needs θ past the horizontal`],
+ ["energy conservation from the lowest point gives the speed there",`v² = u² − 2gL(1 − cos θ) = ${fraction('7gL','2')} − 2gL(1 − cos θ))`],
+ ["equate the two expressions for the speed",`−gL cos θ = ${fraction('7gL','2')} − 2gL + 2gL cos θ · −3cos θ = ${fraction('3','2')}`],
+ ["solve for the angle",`cos θ = −${fraction('1','2')} · θ = 120°`],
+ ["Correct answer",'(C)']
+]},
+{id:'CIRC-34-C',parent:'CIRC-34',variant:3,topic:'Where a body leaves a convex surface',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.307',printedAnswer:'B',verifiedAnswer:'D'},question:'A small block slides with velocity 0.5√(gr) on a horizontal frictionless surface and then passes over a fixed smooth convex surface of radius r. The block leaves the surface at the point C, where the radius to C makes an angle θ with the upward vertical. The angle θ is',options:['cos⁻¹(4/9)','cos⁻¹(3/5)','cos⁻¹(1/2)','none of the above'],correct:3,answer:'none of the above',diagram:'',relevance:{parent:'CIRC-34',sharedSkill:'the leaving condition N = 0 combined with energy conservation, then checking the result against the options offered',recoveryPurpose:'the computed cosine matches none of the three numbers, so the none-of-the-above option is the one the working supports'},short:[
+ ["contact is lost the instant the surface stops pushing",`N = 0 · mg cos θ = ${fraction('mv²','r')} · v² = gr cos θ`],
+ ["energy conservation from the top, where the block arrives with the given speed",`v² = v₀² + 2gr(1 − cos θ) · v₀² = ${fraction('gr','4')}`],
+ ["equate the two and collect the cosine terms",`gr cos θ = ${fraction('gr','4')} + 2gr − 2gr cos θ · 3cos θ = ${fraction('9','4')}`],
+ ["solve, and the value is not one of the three numbers offered",`cos θ = ${fraction('3','4')} · θ ≈ 41.4°`],
+ ["the printed key reads (B), which this derivation does not give",`derived cos θ = ${fraction('3','4')} · offered: ${fraction('4','9')}, ${fraction('3','5')}, ${fraction('1','2')}`],
+ ["Correct answer",'(D)']
+]},
+{id:'CIRC-14-K',parent:'CIRC-14',variant:11,topic:'Average acceleration over part of a revolution',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.78',printedAnswer:'B',verifiedAnswer:'D'},question:'Assume that the earth goes round the sun in a circular orbit with a constant speed of 30 km/s. Then',options:['the average velocity of the earth from 1 June to 30 June is zero','the average acceleration during that period is 60 km/s²','the average speed during that time is zero','the instantaneous acceleration of the earth points towards the sun'],correct:3,answer:'the instantaneous acceleration of the earth points towards the sun',diagram:'',relevance:{parent:'CIRC-14',sharedSkill:'separating average velocity, average speed and average acceleration from the instantaneous value',recoveryPurpose:'four statements about the same orbit, three of which fail for different reasons; the printed key picks one that is off by six orders of magnitude'},short:[
+ ["a month is about a twelfth of the orbit, so the earth does not return to where it began",'the displacement is not zero, so (A) fails'],
+ ["average speed is path length over time, and the earth keeps moving at 30 km/s",'the average speed is 30 km/s, so (C) fails'],
+ ["average acceleration is the change in velocity over the elapsed time",`|Δv| = 2v sin ${fraction('θ','2')} ≈ 15 km/s over about 2.6 × 10⁶ s`],
+ ["that is six millionths of a kilometre per second squared, nowhere near sixty",`ā ≈ 6 × 10⁻⁶ km/s² · (B) fails`],
+ ["in a circular orbit at constant speed the acceleration is purely centripetal",'it points at the sun at every instant'],
+ ["Correct answer",'(D)']
+]},
+{id:'CIRC-13-E',parent:'CIRC-13',variant:5,topic:'Angular velocity of one particle about another',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.80',printedAnswer:'A',verifiedAnswer:'C'},question:'A spotlight S rotates in a horizontal plane with a constant angular velocity of 0.1 rad/s. The spot of light P moves along a wall at a perpendicular distance of 3 m from the lamp. The velocity of the spot P when the beam makes 45° with the perpendicular is',options:['0.2 m/s','0.4 m/s','0.6 m/s','0.8 m/s'],correct:2,answer:'0.6 m/s',diagram:'',relevance:{parent:'CIRC-13',sharedSkill:'the spot on a wall moving faster than the beam turns, by a factor of secant squared',recoveryPurpose:'the rotation is uniform but the spot is not, so the rate has to be differentiated rather than read as ωr'},short:[
+ ["measure the spot along the wall from the foot of the perpendicular",`x = h tan φ, with h = 3 m and φ the beam angle from the perpendicular`],
+ ["differentiate, the lamp turning at a steady rate",`${fraction('dx','dt')} = h sec²φ ${fraction('dφ','dt')} = hω sec²φ`],
+ ["at 45° the secant squared is two",`sec²45° = 2`],
+ ["substitute",`${fraction('dx','dt')} = 3(0.1)(2) = 0.6 m/s`],
+ ["the printed key reads (A), which the same geometry does not give",`0.2 m/s would need hω sec²φ = 0.2, and hω alone is already 0.3`],
+ ["Correct answer",'(C)']
+]},
+{id:'CIRC-09-N',parent:'CIRC-09',variant:14,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.203',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle moves in a horizontal circle on the smooth inner surface of a cone whose axis is vertical and vertex downwards. The plane of the circle is 80 cm above the vertex. Taking g = 9.8 m/s², the speed of the particle is',options:['2.82 m/s','2.8 m/s','1.42 m/s','1.4 m/s'],correct:1,answer:'2.8 m/s',diagram:'particle-in-cone',relevance:{parent:'CIRC-09',sharedSkill:'the cone geometry supplying the second relation, so that the speed depends on the height alone',recoveryPurpose:'the two closest options are the answers for g = 9.8 and g = 10, so the value of g stated in the question is what separates them'},short:[
+ ["on a smooth cone only the normal force and the weight act",`N sin θ = mg · N cos θ = ${fraction('mv²','r')}`],
+ ["divide to remove the normal force",`tan θ = ${fraction('rg','v²')}`],
+ ["the cone fixes the same angle through the radius and the height above the vertex",`tan θ = ${fraction('r','h')}`],
+ ["equate the two, and the radius cancels",`${fraction('r','h')} = ${fraction('rg','v²')} · v = √(gh)`],
+ ["substitute the height and the stated value of g",`v = √(9.8 × 0.8) = √7.84 = 2.8 m/s`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-07-Y',parent:'CIRC-07',variant:25,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.265',printedAnswer:'A',verifiedAnswer:'A'},question:'A small sphere suspended by a thread is taken aside so that the thread forms a right angle with the vertical, and is then released. The total acceleration of the sphere and the thread tension, as functions of θ, the angle of deflection of the thread from the vertical, are',options:[`g√(1 + 3cos²θ), T = 3mg cos θ`,`g cos θ, T = 3mg cos θ`,`g√(1 + 3sin²θ), T = 5mg cos θ`,`g sin θ, T = 5mg cos θ`],correct:0,answer:`g√(1 + 3cos²θ), T = 3mg cos θ`,diagram:'',relevance:{parent:'CIRC-07',sharedSkill:'building both the total acceleration and the tension as functions of the deflection',recoveryPurpose:'two quantities are asked at once, and the distractors pair a right expression for one with a wrong one for the other'},short:[
+ ["released from the horizontal, the sphere has fallen ℓ cos θ by the time it reaches θ",`v² = 2gℓ cos θ`],
+ ["that gives the radial acceleration, and gravity across the thread gives the tangential one",`aᵣ = ${fraction('v²','ℓ')} = 2g cos θ · aₜ = g sin θ`],
+ ["combine the two perpendicular components",`a = g√(4cos²θ + sin²θ) = g√(1 + 3cos²θ)`],
+ ["the radial equation then gives the tension",`T = mg cos θ + ${fraction('mv²','ℓ')} = 3mg cos θ`],
+ ["Correct answer",'(A)']
+]},
+{id:'CIRC-07-Z',parent:'CIRC-07',variant:26,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.265',printedAnswer:'C',verifiedAnswer:'C'},question:'A small sphere suspended by a thread of length ℓ is taken aside so that the thread forms a right angle with the vertical, and is then released. The thread tension at the moment when the vertical component of the sphere’s velocity is maximum is',options:['mg','mg√2','mg√3',`${fraction('mg','√3')}`],correct:2,answer:'mg√3',diagram:'',relevance:{parent:'CIRC-07',sharedSkill:'maximising a component of the velocity, then evaluating the tension where it peaks',recoveryPurpose:'an optimisation inside a circular-motion problem, with the tension formula reused at the angle it finds'},short:[
+ ["at deflection θ the speed follows from the drop since release",`v² = 2gℓ cos θ`],
+ ["the velocity is tangential, so its vertical part carries a factor sin θ",`vᵧ² = v²sin²θ = 2gℓ cos θ (1 − cos²θ)`],
+ ["maximise that over the deflection",`write c = cos θ · ${fraction('d','dc')}(c − c³) = 1 − 3c² = 0`],
+ ["so the vertical component peaks where the cosine is one over root three",`cos θ = ${fraction('1','√3')}`],
+ ["feed that into the tension found for a release from the horizontal",`T = 3mg cos θ = ${fraction('3mg','√3')} = mg√3`],
+ ["Correct answer",'(C)']
 ]}
 ];
 </script>
@@ -2631,6 +2694,25 @@ function diagram(q,solution=false){
   s+=arrow(sx+4,sy-4,sx+18,sy+8,'',GREEN);
   s+=txt(sx,244,'(ii) spiral, traced outward',M,15);
   s+=txt(230,268,'both are described at constant speed',M,14);
+  break;
+ }
+ case 'particle-in-cone':{
+  height=320;
+  const vx=230,vy=268,halfw=118,h=150;      // vertex at the bottom, opening upward
+  s+=line(vx,vy,vx-halfw,vy-h,W,2.4)+line(vx,vy,vx+halfw,vy-h,W,2.4);
+  s+=`<ellipse cx="${vx}" cy="${vy-h}" rx="${halfw}" ry="26" fill="none" stroke="${W}" stroke-width="2"/>`;
+  // the circle the particle travels on, and the height of its plane above the vertex
+  const ph=96,pr=halfw*ph/h;
+  s+=`<ellipse cx="${vx}" cy="${vy-ph}" rx="${pr}" ry="17" fill="none" stroke="${M}" stroke-width="1.5" stroke-dasharray="5 5"/>`;
+  s+=dot(vx+pr,vy-ph,Y);
+  s+=line(vx,vy,vx,vy-ph,M,1.3,true);
+  s+=line(vx-10,vy,vx+10,vy,M,1.4)+line(vx-10,vy-ph,vx+10,vy-ph,M,1.4);
+  s+=txt(vx-16,vy-ph/2+5,'80 cm',M,15,'end');
+  s+=txt(230,vy+34,'the inner surface is smooth',M,14);
+  if(solution){
+   s+=txt(230,vy+56,'tan \u03b8 = r \u00f7 h from the cone, and tan \u03b8 = v\u00b2 \u00f7 rg from the forces',GREEN,14);
+   s+=txt(230,vy+78,'r cancels, leaving v = \u221a(gh)',GREEN,15);
+  }
   break;
  }
 lt: return '';
