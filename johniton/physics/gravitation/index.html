@@ -282,7 +282,7 @@ detailed:[
  ['Substitute to find the fractional period difference.','ΔT/T = (3/2)(0.02)','= 0.03'],
  ['So the percentage difference in time period is about 3%.','Answer: (D) 3.0']
 ]},
-{id:'GRAV-13',level:3,topic:'Net gravitational force at the centre of symmetric point masses (cube arrangement)',diagram:'gravCubeAltCornersCentre',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.13 · p.2',sourceRef:true,question:'Four identical point masses m are placed at three alternating corners A, B and C of a cube of edge a (so AB, BC and CA are each a face diagonal of the cube), with the fourth mass m at the cube\'s centre D. Find the magnitude of the gravitational force on the mass at D due to the masses at A, B and C.',options:['3G·m²/a²','12G·m²/a²','4G·m²/a²','4G·m²/(3a²)'],correct:3,answer:'4G·m²/(3a²)',
+{id:'GRAV-13',level:3,topic:'Net gravitational force at the centre of symmetric point masses (cube arrangement)',diagram:'gravCubeAltCornersCentre',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.13 · p.2',sourceRef:true,question:'Four identical masses m each are kept at points A, B, C and D of a cube of edge a, as shown in the figure. Find the magnitude of the gravitational force on the mass at D (the body centre) due to the masses at A, B and C.',options:['3G·m²/a²','12G·m²/a²','4G·m²/a²','4G·m²/(3a²)'],correct:3,answer:'4G·m²/(3a²)',
 short:[["A, B, C are 3 of 4 alternating cube vertices forming a tetrahedron; add a 4th mass at missing vertex E for symmetry."], ["Full tetrahedron symmetry ⇒ net force at centre D is zero.", "F(A,B,C) = −F(E)"], ["DE = (√3/2)a; compute the single-mass force there.", "F(E) = G·m²/((√3/2)a)²", "= 4G·m²/(3a²)", "Answer: (D) 4G·m²/(3a²)"]],
 detailed:[
  ['A, B, C are three of the four alternating vertices of the cube that form a regular tetrahedron with centre D equidistant from all of them. Completing the symmetry makes the problem tractable: imagine a fourth identical mass at the missing vertex E.','Tetrahedron vertices: A, B, C, E'],
@@ -308,7 +308,7 @@ detailed:[
  ['The work done by the agent moving it equals the change in PE.','W = U_f − U_i','= G·M·m/R'],
  ['This positive work must be supplied against the ring\'s attraction.','Answer: (A) G·M·m/R']
 ]},
-{id:'GRAV-16',level:3,topic:'Gravitational field at the centre of a spherical cavity (superposition)',diagram:'gravSphereOffsetCavity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.16 · p.3',sourceRef:true,question:'A spherical cavity of radius R/2 is hollowed out from a solid sphere of radius R, positioned so the cavity\'s surface touches the outer surface of the sphere at one point and passes through the sphere\'s centre. Before hollowing, the sphere\'s mass was M. Find the magnitude of the gravitational field at the centre of the cavity due to the remaining mass.',options:['zero','G·M/(8R²)','G·M/(2R²)','G·M/R²'],correct:2,answer:'G·M/(2R²)',
+{id:'GRAV-16',level:3,topic:'Gravitational field at the centre of a spherical cavity (superposition)',diagram:'gravSphereOffsetCavity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.16 · p.3',sourceRef:true,question:'A spherical hole is made in a solid sphere of radius R, as shown in the figure. The mass of the sphere before hollowing was M. The gravitational field at the centre of the hole due to the remaining mass is -',options:['zero','G·M/(8R²)','G·M/(2R²)','G·M/R²'],correct:2,answer:'G·M/(2R²)',
 short:[["Superpose: full sphere (field grows linearly inside) minus a cavity-mass sphere.", "E_full(r) = (G·M/R³)r"], ["At the cavity's own centre (r=R/2), the cavity piece contributes zero field.", "E = E_full(R/2)", "= G·M/(2R²)", "Answer: (C) G·M/(2R²)"]],
 detailed:[
  ['Treat the hollowed sphere as a full uniform sphere of mass M plus a sphere of the cavity\'s size carrying negative mass filling the cavity. Inside a uniform sphere, the field grows linearly with distance from its centre.','E_full(r) = (G·M/R³) r  (for r < R)'],
@@ -552,7 +552,7 @@ detailed:[
  ['Taking the ratio of the two periods using Kepler\'s third law eliminates the proportionality constant.','T_s/T_m = (r_s/r_m)·√(r_s/r_m)','= (1/2)·√(1/2)'],
  ['Since T_m = 1 lunar month, the satellite\'s period follows directly.','T_s = 2^(-3/2) lunar month','Answer: (A) 2^(-3/2) lunar month']
 ]},
-{id:'GRAV-43',level:3,topic:'Weight variation during constant-velocity interplanetary travel',diagram:'weightVsTimeEarthMars',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.43 · p.6',sourceRef:true,question:'Imagine the acceleration due to gravity on earth is 10 m s⁻² and on mars is 4 m s⁻². A traveller of mass 60 kg goes from earth to mars by a rocket moving with constant velocity. If the effect of other planets is assumed to be negligible, which one of the following graphs (A, B, C or D, each starting at 600 N at t = 0 and ending at the same point) correctly shows the variation of the traveller\'s weight with time?',options:['A','B','C','D'],correct:2,answer:'C',
+{id:'GRAV-43',level:3,topic:'Weight variation during constant-velocity interplanetary travel',diagram:'weightVsTimeEarthMars',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.43 · p.6',sourceRef:true,question:'Imagine the acceleration due to gravity on earth is 10 m s⁻² and on mars is 4 m s⁻². A traveller of mass 60 kg goes from earth to mars by a rocket moving with constant velocity. If the effect of other planets is assumed to be negligible, which one of the following graphs shows the variation of weight of the traveller with time?',options:['A','B','C','D'],correct:2,answer:'C',
 short:[['At launch, on constant-velocity travel, the apparent weight equals the net gravitational pull, which starts as just earth\'s pull.','W(0) = m·g_earth','= 60×10','= 600 N'],['Initially earth\'s pull dominates, so the weight decreases from 600 N.','g_earth(t) decreases with distance from earth'],['There is an intermediate point where the two pulls balance, giving zero weight.','W = 0 at the null point'],['Beyond that point mars\'s pull dominates and grows, so the weight rises again approaching mars\'s surface value.','W → 60×4 = 240 N near mars'],['Only the curve that dips to zero and then rises again matches this behaviour.','Answer: (C)']],
 detailed:[
  ['At the start, on earth\'s surface, the only gravitational pull acting is earth\'s, so the weight is simply mass times earth\'s surface gravity.','W(0) = m·g_earth','= 60×10','= 600 N'],
@@ -2425,7 +2425,7 @@ detailed:[
  ['The period of revolution relates to angular velocity by T = 2π/ω, and since ω is common to both stars, their periods must be equal.','T₁ = 2π/ω','= T₂'],
  ['This equality holds independently of the individual masses or radii, which instead satisfy m₁r₁ = m₂r₂ from the centre-of-mass condition, so options A, B and C don\'t hold in general.','Answer: (D) T₁ = T₂']
 ]},
-{id:'GRAV-257',level:3,topic:'Orbital speed inside and outside a uniform sphere',diagram:'gravFieldSpeedGraphs',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.263 · p.27',sourceRef:true,question:'A spherically symmetric gravitational system of particles has mass density ρ = ρ₀ for r ≤ R and ρ = 0 for r > R, where ρ₀ is a constant. A test mass can undergo circular motion under the influence of the gravitational field of these particles. Its speed V as a function of distance r (0 < r < ∞) from the centre of the system is represented by which graph?',options:['V increases linearly with r up to r = R, then stays constant for r > R','V decreases monotonically with r throughout, very large near r = 0 and continuing to fall smoothly through and beyond r = R','V increases linearly with r up to r = R, reaching its maximum there, then decreases as r increases beyond R','V stays constant up to r = R, then decreases as r increases beyond R'],correct:2,answer:'V increases linearly with r up to r = R, reaching its maximum there, then decreases as r increases beyond R',
+{id:'GRAV-257',level:3,topic:'Orbital speed inside and outside a uniform sphere',diagram:'gravFieldSpeedGraphs',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.263 · p.27',sourceRef:true,question:'A spherically symmetric gravitational system of particles has mass density ρ = ρ₀ for r ≤ R and ρ = 0 for r > R, where ρ₀ is a constant. A test mass can undergo circular motion under the influence of the gravitational field of these particles. Its speed V as a function of distance r (0 < r < ∞) from the centre of the system is represented by -',options:['A','B','C','D'],correct:2,answer:'C',
 short:[['Inside the sphere only the mass within radius r pulls on the test mass, and that enclosed mass grows as r³.','M_enc = (4/3)π r³ ρ₀ for r ≤ R'],['Circular-orbit speed comes from equating gravity to the centripetal requirement, giving V² proportional to enclosed mass over r.','V² = G·M_enc/r'],['Inside: V² ∝ r² so V grows linearly with r. Outside: enclosed mass is fixed at M, so V² ∝ 1/r.','V ∝ r for r ≤ R','V ∝ 1/√r for r > R'],['So V rises linearly to a peak at r = R, then falls off.','Answer: (C)']],
 detailed:[
  ['Because the density is uniform out to R and zero beyond, the mass enclosed within a sphere of radius r ≤ R grows with the volume, i.e. as r³, while beyond R the enclosed mass stays fixed at the total mass M.','M_enc(r) = (4/3)π r³ ρ₀ for r ≤ R, M_enc(r)','= M','= (4/3)π R³ ρ₀ for r > R'],
@@ -2618,7 +2618,7 @@ detailed:[
  ['Square both sides to remove the square root.','T² = 4π²R³/(G·M)'],
  ['Solve this equation for the planet\'s mass M.','M = 4π²R³/(G·T²)','Answer: (D) 4π²R³/(GT²)']
 ]},
-{id:'GRAV-278',level:3,topic:'Gravitational field at the centroid of a tetrahedral mass arrangement (cube geometry)',diagram:'cubeTetrahedronMasses',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.287 · p.31',sourceRef:true,question:'Four identical point masses m are kept at points A, B, C and D of a cube of edge a, as shown in the figure: A, B and C are three vertices of the cube chosen so that, together with a fourth (unmarked) vertex, they form a regular tetrahedron inscribed in the cube, and D is the body-centre of the cube, equidistant from every vertex of that tetrahedron. The gravitational force on the mass kept at D, due to the masses at A, B and C, is -',options:['3G·m²/a²','12G·m²/a²','4G·m²/a²','4G·m²/(3a²)'],correct:3,answer:'4G·m²/(3a²)',
+{id:'GRAV-278',level:3,topic:'Gravitational field at the centroid of a tetrahedral mass arrangement (cube geometry)',diagram:'cubeTetrahedronMasses',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.287 · p.31',sourceRef:true,question:'Four identical masses m each are kept at points A, B, C and D of a cube of edge a, as shown in the figure. The gravitational force on the mass kept at D, due to the masses at A, B and C, is -',options:['3G·m²/a²','12G·m²/a²','4G·m²/a²','4G·m²/(3a²)'],correct:3,answer:'4G·m²/(3a²)',
 short:[['By symmetry, four equal masses at the vertices of a regular tetrahedron produce zero net force at its centroid.','F_A + F_B + F_C + F_E = 0 at D'],['Add a hypothetical fourth mass at E, the missing tetrahedral vertex, so A, B, C, E are symmetric about D.','E completes the regular tetrahedron'],['So the combined force from A, B, C alone equals the force from E alone in magnitude.','|F_A+F_B+F_C| = |F_E|'],['Each vertex sits at distance (√3 a)/2 from the cube\'s centre D.','F_E = G·m²/((√3 a/2)²)','= 4G·m²/(3a²)','Answer: (D) 4G·m²/(3a²)']],
 detailed:[
  ['The three masses m at A, B and C, together with a fourth imagined mass m at the remaining tetrahedral vertex E, form a regular tetrahedron whose centroid is the point D.','tetrahedron vertices: A, B, C, E'],
@@ -3405,7 +3405,7 @@ detailed:[
  ['This matches the quick estimate that a small fractional change in R produces about twice that fractional change in g, with the opposite sign.','Δg/g ≈ −2×(ΔR/R)','= −2×(−0.02)','= 0.04'],
  ['Stating the final answer.','Answer: (D) increase by 4%']
 ]},
-{id:'GRAV-359',level:3,topic:'Gravitational field inside a sphere with density varying as 1/r',source:'ExamSIDE · JEE Main 2017 (Online) 9th April Morning Slot · Xckbh72usw9ax2fta',sourceRef:true,question:'The mass density of a spherical body varies as ρ(r) = k/r for r ≤ R and ρ(r) = 0 for r > R, where r is the distance from the centre and k is a constant. Which of the following best describes, qualitatively, the gravitational acceleration a of a test particle as a function of r?',options:['a rises linearly from zero at r=0 to a peak value at r=R, then falls off smoothly (∝1/r²) for r>R','a stays constant from r=0 up to r=R, then falls off smoothly (∝1/r²) for r>R','a rises along a concave curve from zero at r=0 to a peak at r=R, then falls off smoothly for r>R','a starts at a finite nonzero value at r=0, decreases smoothly with a kink at r=R, and keeps decreasing for r>R'],correct:1,answer:'a stays constant from r=0 up to r=R, then falls off smoothly (∝1/r²) for r>R',
+{id:'GRAV-359',level:3,topic:'Gravitational field inside a sphere with density varying as 1/r',diagram:'gravFieldFlatThenDecay',source:'ExamSIDE · JEE Main 2017 (Online) 9th April Morning Slot · Xckbh72usw9ax2fta',sourceRef:true,question:'The mass density of a spherical body varies as ρ(r) = k/r for r ≤ R and ρ(r) = 0 for r > R, where r is the distance from the centre and k is a constant. The gravitational acceleration a of a test particle as a function of r is best represented by -',options:['A','B','C','D'],correct:1,answer:'B',
 short:[['Find the mass enclosed within radius r for the given density ρ=k/r.','M(r) = ∫₀ʳ 4π·r′²·(k/r′) dr′','= 2π·k·r²  (r≤R)'],['The gravitational acceleration is G·M(r)/r², and the r² factors cancel.','a(r) = G·M(r)/r²','= 2π·G·k  (constant, r≤R)'],['Outside the sphere the enclosed mass is fixed at M(R), so a falls off as 1/r².','a(r) = G·M(R)/r² ∝ 1/r²  (r>R)'],['So a is flat up to R, then decreases smoothly beyond it.','Answer: (B) constant for r≤R, then ∝1/r² for r>R']],
 detailed:[
  ['To find the field inside the sphere, first find the mass enclosed within radius r by integrating the given density over spherical shells.','M(r) = ∫₀ʳ 4π·r′²·ρ(r′) dr′','= ∫₀ʳ 4π·r′²·(k/r′) dr′'],
@@ -4209,7 +4209,7 @@ detailed:[
  ['Simplify the bracket to a common form, then substitute m = 1 kg, R = 1 m.','1/4 + 1/√2 = (1+2√2)/4','v² = (G/4)(1+2√2)'],
  ['Take the square root for the final speed.','v = (1/2)√(G(1+2√2))','Answer: (D) (1/2)√(G(1+2√2))']
 ]},
-{id:'GRAV-444',level:3,topic:'Variation of g with distance from Earth\'s centre — graph identification',diagram:'gVariationWithDistanceGraphs',source:'ExamSIDE · JEE Main 2022 (Online) 26th June Morning Shift · Xq3ngoblpi5enyi7k',sourceRef:true,question:'The variation of acceleration due to gravity (g) with distance (r) from the centre of the earth is correctly represented by which of these g–r graphs? (R = radius of earth)',options:['g rises in a straight line from zero at the centre to a maximum at r = R, then falls off smoothly (curving, like 1/r²) for r > R','g stays constant from the centre out to r = R, then falls off smoothly (curving) for r > R','g rises along a concave curve from zero at the centre to a maximum at r = R, then falls off in a straight line for r > R','g rises along a concave curve from zero at the centre to a maximum at r = R, then falls off along a similarly curved path for r > R'],correct:0,answer:'g rises in a straight line from zero at the centre to a maximum at r = R, then falls off smoothly (curving, like 1/r²) for r > R',
+{id:'GRAV-444',level:3,topic:'Variation of g with distance from Earth\'s centre — graph identification',diagram:'gVariationWithDistanceGraphs',source:'ExamSIDE · JEE Main 2022 (Online) 26th June Morning Shift · Xq3ngoblpi5enyi7k',sourceRef:true,question:'The variation of acceleration due to gravity (g) with distance (r) from the centre of the earth is correctly represented by - (R = radius of earth)',options:['A','B','C','D'],correct:0,answer:'A',
 short:[['Inside the earth, enclosed mass grows as r³, making g rise linearly with r.','g = G·M·r/R³ for r ≤ R'],['Outside the earth, the full mass acts as if concentrated at the centre, so g falls as the inverse square of r.','g = G·M/r² for r > R'],['So g rises linearly to a peak at r = R, then decays smoothly beyond — the shape in option A.','Answer: (A)']],
 detailed:[
  ['Inside a uniform earth of radius R, only the mass enclosed within radius r contributes to gravity there, and that enclosed mass is proportional to r³ for uniform density.','M_enc(r) = M·(R)³ for r ≤ R'],
@@ -4258,7 +4258,7 @@ detailed:[
  ['Squaring the period ratio gives the value the radius ratio must cube to.','(T_A/T_B)² = 4'],
  ['Equate this to the radius-ratio cube and clear the ratio to get the relation between the two radii.','(r_A/r_B)³ = 4','r_A³ = 4·r_B³','Answer: (C) r_A³ = 4r_B³']
 ]},
-{id:'GRAV-449',level:3,topic:'Graph of acceleration due to gravity g versus distance d from earth\'s centre',diagram:'gVsDistanceGraphs',source:'ExamSIDE · JEE Main 2017 (Offline) · Xz2tadzppqdmcvspt',sourceRef:true,question:'The variation of acceleration due to gravity g with distance d from the centre of the earth is best represented by which of the following graphs? (R = earth\'s radius)',options:['g rises in a straight line from the centre but keeps rising past d = R, reaching its peak only beyond the surface, then decreases','g rises along a curve (not a straight line) from the centre to a peak exactly at d = R, then decreases along a similar curve','g rises along a curve from the centre and keeps increasing throughout, with no peak or decrease at all','g rises in a straight line from the centre to a peak exactly at d = R, then decreases smoothly as d increases beyond R'],correct:3,answer:'g rises in a straight line from the centre to a peak exactly at d = R, then decreases smoothly as d increases beyond R',
+{id:'GRAV-449',level:3,topic:'Graph of acceleration due to gravity g versus distance d from earth\'s centre',diagram:'gVsDistanceGraphs',source:'ExamSIDE · JEE Main 2017 (Offline) · Xz2tadzppqdmcvspt',sourceRef:true,question:'The variation of acceleration due to gravity g with distance d from the centre of the earth is best represented by - (R = earth\'s radius)',options:['A','B','C','D'],correct:3,answer:'D',
 short:[['Inside, enclosed mass grows as d³ so g itself grows linearly with d — a straight line.','g = G·M·d/R³ for d ≤ R'],['Outside, g follows the usual inverse-square law.','g = G·M/d² for d ≥ R'],['The two expressions match at d = R, giving one peak exactly at the surface.','g is continuous, maximum at d = R'],['So the correct graph is a straight line up to R then a curved fall beyond it.','Answer: (D)']],
 detailed:[
  ['Inside the earth, only the mass enclosed within radius d pulls on a point there, and for a uniform sphere that enclosed mass grows as d³ while the inverse-square factor contributes d⁻², so their ratio grows linearly with d.','g(d) = G·M·d/R³ for d ≤ R'],
@@ -4705,20 +4705,152 @@ if(typeof module!=='undefined')module.exports=questions;
    diagrams are drawn in diagram() when q.diagram names them. Helpers below match the ones used by
    chemistry/atomic-structure/pilot/diagrams.js and mathematics/trigonometry/pilot/diagrams.js: viewBox width 340,
    text at least 13 px, no answer in captions, no worked calculation inside the picture (calculations stay in the
-   solution rows). */
+   solution rows).
+
+   2026-10-02: every multi-graph MCQ in this chapter used to ship with its options rewritten as full prose curve
+   descriptions instead of a real figure -- that was wrong (see qa/evidence/NEW_CHAPTER_PLAYBOOK.md section 6 and
+   feedback_always_build_diagrams in memory). These are now real SVGs, built with the same miniGraph 2x2-panel
+   helper already proven against the mobile-width/label-overlap QA in atomic-structure and trigonometry's
+   diagrams.js (copied verbatim, not reinvented) -- the affected questions' options went back to plain
+   (A)/(B)/(C)/(D) letters referencing the figure, matching how the source actually presents them. The caption text
+   lives in the `aria-label` passed to wrap(), not as rendered SVG text -- a long rendered caption at 340px wide is
+   exactly what caused clipping on the first attempt here. */
 const W='#f4f4ef',M='#969b95',G='#55db80',R='#ff8e81';
 const t=(x,y,s,c=W,z=14,a='middle',w=500)=>`<text x="${x}" y="${y}" fill="${c}" font-size="${z}" text-anchor="${a}" font-family="Inter,Arial,sans-serif" font-weight="${w}">${s}</text>`;
 const line=(d,c=M,w=2)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
+const dash=(d,c=M,w=1.5)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-dasharray="4,3"/>`;
 const arrow=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2-8}L${x} ${y2}L${x+6} ${y2-8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 const arrowUp=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2+8}L${x} ${y2}L${x+6} ${y2+8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 function wrap(inner,h=280,label='Solution concept diagram',w=340){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`}
 function axes(x,y,w,h,label,yl,xl='x'){const base=y+h;return line(`M${x} ${y}V${base}H${x+w}`,M,1.5)+t(x-6,y+14,yl,M,13,'end')+t(x+w-2,base+22,xl,M,13,'end')+(label?t(x-12,base-h/2,label,R,16,'end',700):'');}
 const curve=d=>`<path d="${d}" fill="none" stroke="${G}" stroke-width="2.2"/>`;
+/* Proven 2x2-panel mini-graph helper, copied verbatim from
+   mathematics/trigonometry/pilot/diagrams.js and chemistry/atomic-structure/pilot/diagrams.js: axis box from
+   (x+46,y+24) to (x+136,y+80), letter label top-left, axis labels clear of the strokes. Already passes the
+   label-stroke / mobile-text-size / clipping checks in qa/layout.js at 320/390/1200px. */
+function miniGraph(x,y,label,yl,xl,path,dashed){
+ return line(`M${x+46} ${y+24}V${y+80}H${x+136}`,M,1.5)+`<path d="${path}" fill="none" stroke="${G}" stroke-width="2.4"${dashed?' stroke-dasharray="6,4"':''}/>`+t(x+42,y+44,yl,W,14,'end',600)+t(x+136,y+102,xl,W,14,'end',600)+t(x+10,y+22,label,R,15,'start',700);
+}
+
+/* ---------- 1. weightVsTimeEarthMars: GRAV-43, GRAV-170 ----------
+   Traveller's weight (600N at t=0 on earth, 240N on mars) vs time; correct curve (C) dips to exactly zero at the
+   earth-mars gravitational null point, then rises to 240N. Panel plot box per miniGraph: x 56..146, y 24(top)..80(base). */
+function weightVsTimeEarthMars(){
+ return wrap(
+  miniGraph(10,8,'(A)','W','t','M56 28C90 42 130 48 146 50')+
+  miniGraph(180,8,'(B)','W','t','M226 28L270 76L312 50')+
+  miniGraph(10,132,'(C)','W','t','M56 28C80 48 92 76 101 78C110 76 128 60 146 52')+
+  miniGraph(180,132,'(D)','W','t','M226 28C250 46 266 76 275 78C284 76 285 90 275 94C266 96 266 86 275 78C284 70 300 58 312 50'),
+  254,'Weight of the traveller vs time, 4 candidate graphs (A) to (D): earth to mars by constant-velocity rocket, weight dips toward zero near the gravitational null point then rises to the lower value on mars',340);
+}
+
+/* ---------- 2. gravFieldSpeedGraphs: GRAV-257 ----------
+   Orbital speed V vs distance r from centre, uniform sphere mass density for r<=R, 0 beyond. Correct (C): V rises
+   linearly to a peak at r=R, then falls off as 1/sqrt(r) beyond (a gentler fall than 1/r2). */
+function gravFieldSpeedGraphs(){
+ return wrap(
+  miniGraph(10,8,'(A)','V','r','M56 28L146 28')+
+  miniGraph(180,8,'(B)','V','r','M226 30C250 48 280 66 312 76')+
+  miniGraph(10,132,'(C)','V','r','M56 78L101 30C115 30 130 42 146 56')+
+  miniGraph(180,132,'(D)','V','r','M226 50L271 50C285 54 298 64 312 76'),
+  254,'Orbital speed V vs distance r from the centre, uniform-density sphere, 4 candidate graphs (A) to (D): correct curve rises linearly to a peak at r=R, then falls off gently as 1/√r beyond',340);
+}
+
+/* ---------- 3. gravFieldFlatThenDecay (new key): GRAV-359 ----------
+   Field a(r) vs r for a sphere with density proportional to 1/r. Correct (B): a stays constant from r=0 to r=R,
+   then falls off as 1/r^2 beyond -- genuinely different shape from the uniform-density case. */
+function gravFieldFlatThenDecay(){
+ return wrap(
+  miniGraph(10,8,'(A)','a','r','M56 28L101 28C115 28 130 40 146 54')+
+  miniGraph(180,8,'(B)','a','r','M226 50L271 50C285 54 298 64 312 76')+
+  miniGraph(10,132,'(C)','a','r','M56 78C70 50 85 28 101 28L146 46')+
+  miniGraph(180,132,'(D)','a','r','M226 32C250 50 266 60 271 62C285 66 298 72 312 76'),
+  254,'Field a vs distance r from the centre, density ρ(r)=k/r for r≤R, 4 candidate graphs (A) to (D): correct curve stays constant from the centre to R, then falls off as 1/r² beyond',340);
+}
+
+/* ---------- 4. gVariationWithDistanceGraphs (GRAV-444) and gVsDistanceGraphs (GRAV-449) ----------
+   Standard uniform-sphere g-vs-r shape: correct curve rises linearly from 0 at the centre to a peak at r=R, then
+   falls off as 1/r^2 beyond. The two source questions present the same 4 underlying shapes with the correct
+   letter in a different position, matching each question's own printed key. */
+function gVsDistanceGraphs444(){
+ return wrap(
+  miniGraph(10,8,'(A)','g','r','M56 78L101 30C115 30 130 42 146 54')+
+  miniGraph(180,8,'(B)','g','r','M226 50L271 50C285 54 298 64 312 76')+
+  miniGraph(10,132,'(C)','g','r','M56 78C70 50 85 28 101 28L146 54')+
+  miniGraph(180,132,'(D)','g','r','M226 78C240 50 255 28 271 28C285 28 298 40 312 54'),
+  254,'Acceleration due to gravity g vs distance r from the centre, R = radius of earth, 4 candidate graphs (A) to (D): correct curve rises linearly from zero to a peak at r=R, then falls off as 1/r² beyond',340);
+}
+function gVsDistanceGraphs449(){
+ return wrap(
+  miniGraph(10,8,'(A)','g','d','M56 78L116 26C122 24 136 20 146 18')+
+  miniGraph(180,8,'(B)','g','d','M226 78C240 50 255 28 271 28C285 28 298 40 312 54')+
+  miniGraph(10,132,'(C)','g','d','M56 78C75 54 95 34 115 28C128 24 138 20 146 18')+
+  miniGraph(180,132,'(D)','g','d','M226 78L271 28C285 28 298 40 312 54'),
+  254,'Acceleration due to gravity g vs distance d from the centre, R = earth’s radius, 4 candidate graphs (A) to (D): correct curve rises linearly from zero to a peak at d=R, then falls off smoothly as d increases beyond R',340);
+}
+
+/* ---------- 5. gravCubeAltCornersCentre / cubeTetrahedronMasses: GRAV-13, GRAV-278 ----------
+   Four equal masses m at alternating cube corners A, B, C and the cube's body-centre D. A, B, C are three of the
+   four vertices of a regular tetrahedron inscribed in the cube (each pair a face diagonal apart, never a plain
+   cube edge); the fourth tetrahedron vertex is left unmarked -- the symmetry trick (adding a mass there) is
+   explained in the solution text, not drawn here. */
+function cubeTetrahedronMasses(){
+ const FBL=[90,220],FBR=[210,220],FTL=[90,100],FTR=[210,100];
+ const BBL=[150,180],BBR=[270,180],BTL=[150,60],BTR=[270,60];
+ const Dc=[180,140];
+ const edge=(p,q,c=M,w=1.5,dashed=false)=>(dashed?dash:line)(`M${p[0]} ${p[1]}L${q[0]} ${q[1]}`,c,w);
+ let body='';
+ body+=edge(BBL,BBR,'#4a4d45',1.3,true)+edge(BBL,BTL,'#4a4d45',1.3,true)+edge(BTL,BTR,'#4a4d45',1.3,true)+edge(BBR,BTR,'#4a4d45',1.3,true);
+ body+=edge(FBL,BBL,'#4a4d45',1.3,true)+edge(FTL,BTL,'#4a4d45',1.3,true)+edge(FBR,BBR,'#4a4d45',1.3,true)+edge(FTR,BTR,'#4a4d45',1.3,true);
+ body+=edge(FBL,FBR,M,2)+edge(FBR,FTR,M,2)+edge(FTR,FTL,M,2)+edge(FTL,FBL,M,2);
+ body+=line(`M${FBL[0]} ${FBL[1]}L${FTR[0]} ${FTR[1]}`,G,1.6)
+      +line(`M${FTR[0]} ${FTR[1]}L${BTL[0]} ${BTL[1]}`,G,1.6)
+      +line(`M${BTL[0]} ${BTL[1]}L${FBL[0]} ${FBL[1]}`,G,1.6);
+ // No lines drawn from D to A/B/C -- the dot alone marks D, keeping every vertex free of converging strokes so
+ // its label has clear space (qa/layout.js flags any stroke that passes through a label's own bounding box).
+ // Labels sit in the clear margins outside the cube's own bounding box (x<90 or x>270, y<60 or y>220), each with a
+ // short leader line to its dot, so no cube/diagonal edge can ever sweep through a label's bounding box.
+ const dot=(p,c=W)=>`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="${c}"/>`;
+ const leader=(p,lx,ly)=>dash(`M${p[0]} ${p[1]}L${lx} ${ly}`,'#5c5f57',1);
+ body+=dot(FBL,G)+leader(FBL,26,222)+t(30,240,'A·m',G,14,'start',700);
+ body+=dot(FTR,G)+leader(FTR,296,92)+t(300,80,'B·m',G,14,'end',700);
+ body+=dot(BTL,G)+leader(BTL,100,42)+t(96,30,'C·m',G,14,'start',700);
+ body+=dot(Dc,R)+leader(Dc,262,150)+t(300,174,'D·m',R,14,'end',700);
+ body+=t((FBL[0]+FBR[0])/2,FBL[1]+22,'edge = a',M,13,'middle');
+ return wrap(body,280,'Cube of edge a with equal masses m at alternating vertices A, B, C and the body-centre D; A, B and C are three vertices of a regular tetrahedron inscribed in the cube',340);
+}
+
+/* ---------- 6. gravSphereOffsetCavity: GRAV-16 ----------
+   Spherical cavity of radius R/2 hollowed from a solid sphere of radius R, cavity surface tangent to the outer
+   surface at one point and passing through the sphere's centre (so the cavity centre sits at R/2 from O, along
+   that same radius). */
+function gravSphereOffsetCavity(){
+ const Ox=140,Oy=130,Rpx=85;
+ const cavCx=Ox+Rpx/2,cavCy=Oy,cavRpx=Rpx/2;
+ let body='';
+ body+=`<circle cx="${Ox}" cy="${Oy}" r="${Rpx}" fill="none" stroke="${M}" stroke-width="2"/>`;
+ body+=`<circle cx="${cavCx}" cy="${cavCy}" r="${cavRpx}" fill="#14160f" stroke="${R}" stroke-width="1.8" stroke-dasharray="5,3"/>`;
+ body+=`<circle cx="${Ox}" cy="${Oy}" r="2.5" fill="${W}"/>`+t(Ox-10,Oy-10,'O',W,14,'end',700);
+ body+=`<circle cx="${cavCx}" cy="${cavCy}" r="2" fill="${R}"/>`;
+ body+=line(`M${Ox} ${Oy}L${Ox} ${Oy-Rpx}`,G,1.6)+t(Ox+8,Oy-Rpx/2,'R',G,14,'start',700);
+ body+=line(`M${Ox} ${Oy+10}L${cavCx+cavRpx} ${Oy+10}`,R,1.4)+t((Ox+cavCx+cavRpx)/2,Oy+28,'R/2',R,13,'middle');
+ return wrap(body,230,'Sphere of radius R with a spherical cavity of radius R/2 whose surface touches the outer surface and passes through the centre O',300);
+}
+
 /* GENERATED SOLUTION DIAGRAMS BEGIN (qa/atomic-helpers/ud-integrate-diagrams.cjs) */
 const SOL={};
 /* GENERATED SOLUTION DIAGRAMS END */
 /* Diagrams that are part of the question stem (the options refer to them) render in the question view only. */
-const STEM={};
+const STEM={
+ weightVsTimeEarthMars:()=>weightVsTimeEarthMars(),
+ gravFieldSpeedGraphs:()=>gravFieldSpeedGraphs(),
+ gravFieldFlatThenDecay:()=>gravFieldFlatThenDecay(),
+ gVariationWithDistanceGraphs:()=>gVsDistanceGraphs444(),
+ gVsDistanceGraphs:()=>gVsDistanceGraphs449(),
+ gravCubeAltCornersCentre:()=>cubeTetrahedronMasses(),
+ cubeTetrahedronMasses:()=>cubeTetrahedronMasses(),
+ gravSphereOffsetCavity:()=>gravSphereOffsetCavity(),
+};
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
  if(SOL[q.diagram])return solution?SOL[q.diagram]():"";

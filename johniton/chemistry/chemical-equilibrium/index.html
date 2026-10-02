@@ -1303,7 +1303,30 @@ const line=(d,c=M,w=2)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="
 const arrow=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2-8}L${x} ${y2}L${x+6} ${y2-8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 const arrowUp=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2+8}L${x} ${y2}L${x+6} ${y2+8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 function wrap(inner,h=280,label='Solution concept diagram',w=520){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`}
-const STEM={};
+
+/* EQ-28 (ExamSIDE, JEE Main 2020 9th Jan Evening): particle-count box for
+   A(g) <=> B(g). Reactant A drawn as squares, product B as circles; K is
+   read directly from the count of each shape in the same box (same
+   volume, so count is proportional to concentration). The source figure
+   has 6 squares and 11 circles (K = 11/6 ~ 1.83, closest to option 2) --
+   counted and verified independently in this core's own detailed
+   solution before this SVG was built. */
+function eqSquaresCirclesBox(){
+ const sq=(cx,cy,s=20)=>`<rect x="${cx-s/2}" y="${cy-s/2}" width="${s}" height="${s}" rx="3" fill="none" stroke="${G}" stroke-width="2.4"/>`;
+ const ci=(cx,cy,r=11)=>`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${R}" stroke-width="2.4"/>`;
+ const squares=[[90,75],[220,60],[340,95],[120,170],[290,185],[410,150]];
+ const circles=[[60,130],[160,55],[250,120],[380,70],[440,110],[90,210],[200,195],[320,55],[400,200],[170,135],[450,170]];
+ let body='<rect x="30" y="30" width="460" height="200" rx="10" fill="none" stroke="'+M+'" stroke-width="2"/>';
+ for(const [x,y] of squares)body+=sq(x,y);
+ for(const [x,y] of circles)body+=ci(x,y);
+ body+=sq(60,260)+t(80,266,`= A, g (${squares.length} squares)`,G,15,'start',600);
+ body+=ci(290,260)+t(312,266,`= B, g (${circles.length} circles)`,R,15,'start',600);
+ return wrap(body,300,`Box showing reactant A as ${squares.length} squares and product B as ${circles.length} circles at equilibrium, A(g) ⇌ B(g)`,520);
+}
+
+const STEM={
+ eqSquaresCirclesBox:()=>eqSquaresCirclesBox(),
+};
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
  if(!solution)return'';
