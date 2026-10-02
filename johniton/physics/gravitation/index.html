@@ -180,7 +180,7 @@
 }; var _global = typeof window === 'object' ? window : typeof global === 'object' ? global : typeof self === 'object' ? self : this; if (typeof _global.pdfMake !== 'undefined' && typeof _global.pdfMake.addVirtualFileSystem !== 'undefined') { _global.pdfMake.addVirtualFileSystem(vfs); } if (typeof module !== 'undefined') { module.exports = vfs; }</script>
 <script>const questions=[
 {id:'GRAV-1',level:2,topic:'Maximum height from a fraction of escape velocity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.1 · p.1',sourceRef:true,question:'A body is projected upward from the surface of the earth with a speed equal to (3/4) of the escape velocity. What is the maximum distance of the body from the centre of the earth? (Radius of the earth = R)',options:['10R/9','16R/7','9R/8','10R/3'],correct:1,answer:'16R/7',
-short:[['The projection speed is three-quarters of the escape speed, and v_e² = 2G·M/R for the earth.','v = (3/4) v_e','v_e² = 2G·M/R'],['Compute the kinetic energy at launch and substitute for v_e².','KE = ½m·v²','= (9/32) m v_e²','= (9/16) G·M·m/R'],['Add the gravitational PE at the surface to get the total mechanical energy, which stays constant as the body rises.','PE = −G·M·m/R','Total E = KE + PE','= −(7/16) G·M·m/R'],['At the highest point the speed is zero, so total energy there equals the PE at that distance r from the centre.','At max distance r from centre, Total E = −G·M·m/r','−(7/16) G·M·m/R = −G·M·m/r','r = 16R/7'],['Solve for r.','Answer: (B) 16R/7']],
+short:[["Launch speed is (3/4)v_e, with v_e² = 2G·M/R.", "v = (3/4)v_e"], ["KE at launch in terms of v_e².", "KE = ½mv²", "= (9/16)G·M·m/R"], ["Total energy stays constant; at max height v=0.", "E = KE + PE", "= −(7/16)G·M·m/R", "= −G·M·m/r at r_max"], ["Solve for r.", "r = 16R/7", "Answer: (B) 16R/7"]],
 detailed:[
  ['The projection speed is three-quarters of the escape speed, and v_e² = 2G·M/R for the earth.','v = (3/4) v_e','v_e² = 2G·M/R'],
  ['Compute the kinetic energy at launch and substitute for v_e².','KE = ½m·v²','= (9/32) m v_e²','= (9/16) G·M·m/R'],
@@ -189,7 +189,7 @@ detailed:[
  ['Solve for r.','r = 16R/7','Answer: (B) 16R/7']
 ]},
 {id:'GRAV-2',level:3,topic:'Mutual orbital speed of symmetric mass system (square arrangement)',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.2 · p.1',sourceRef:true,question:'Four particles, each of mass M, move along a circle of radius R under the action of their mutual gravitational attraction, staying at the corners of a square inscribed in the circle. Find the speed of each particle.',options:['G·M/R','√(2√2 G·M/R)','√(G·M(2√2+1)/R)','√(G·M(2√2+1)/(4R))'],correct:3,answer:'√(G·M(2√2+1)/(4R))',
-short:[['The four equal masses can move on a common circle only if they sit at the corners of a square inscribed in it, since mutual attraction must supply a purely centripetal force.','Side of inscribed square = R√2','Diagonal distance = 2R'],['Each particle feels a pull from the diagonally opposite mass and from the two adjacent masses.','F(diagonal) = G·M²/(2R)²','F(adjacent, each) = G·M²/(R√2)²'],['Only the components along the radius add up to the required centripetal force, the two adjacent pulls each contribute at 45° to the radius.','Net radial force = F(diagonal) + 2F(adjacent)cos45°','= (G·M²/R²)·(2√2+1)/4'],['Set this net force equal to Mv²/R for circular motion and solve for v².','Mv²/R = (G·M²/R²)·(2√2+1)/4','v² = (G·M/R)·(2√2+1)/4'],['Take the square root.','Answer: (D) √(G·M(2√2+1)/(4R))']],
+short:[["Four equal masses sit at corners of a square inscribed in the circle.", "side = R√2", "diagonal = 2R"], ["Diagonal + two adjacent forces (45° each) give the net radial pull.", "F_net = (G·M²/R²)·(2√2+1)/4"], ["Set equal to Mv²/R and solve.", "v² = (G·M/R)·(2√2+1)/4", "Answer: (D) √(G·M(2√2+1)/(4R))"]],
 detailed:[
  ['The four equal masses can move on a common circle only if they sit at the corners of a square inscribed in it, since mutual attraction must supply a purely centripetal force.','Side of square = R√2','Diagonal distance = 2R'],
  ['Each particle feels a pull from the diagonally opposite mass and from the two adjacent masses.','F(diagonal) = G·M²/(2R)²','F(adjacent) = G·M²/(R√2)² (each)'],
@@ -198,7 +198,7 @@ detailed:[
  ['Take the square root.','v = √(G·M(2√2+1)/(4R))','Answer: (D) √(G·M(2√2+1)/(4R))']
 ]},
 {id:'GRAV-3',level:3,topic:'Work done by a uniform gravitational field',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.3 · p.1',sourceRef:true,question:'The gravitational field in a region is uniform and equal to 10 N kg⁻¹ (î − ĵ). Find the work done by the gravitational force in slowly moving a particle of mass 1 kg from the point (1 m, 1 m) to the point (2 m, −2 m).',options:['10 J','−10 J','−40 J','+40 J'],correct:3,answer:'+40 J',
-short:[['The field is uniform, so the force on the 1 kg particle is just its mass times the field.','F = mE','= 1 × 10(î − ĵ)','= 10î − 10ĵ N'],['Find the displacement vector between the two points.','Δr = (2−1)î + (−2−1)ĵ','= î − 3ĵ m'],['Work done by a constant force equals the dot product of force and displacement.','W = F · Δr','= (10)(1) + (−10)(−3)','= 10 + 30','= 40 J'],['The result is positive, so the field does positive work along this path.','Answer: (D) +40 J']],
+short:[["Uniform field: F = mE = 10î−10ĵ N.", "Δr = î−3ĵ m"], ["W = F·Δr.", "W = 10(1) + (−10)(−3)", "= 40 J", "Answer: (D) +40 J"]],
 detailed:[
  ['The field is uniform, so the force on the 1 kg particle is just its mass times the field.','F = mE','= 10î − 10ĵ N'],
  ['Find the displacement vector between the two points.','Δr = (2−1)î + (−2−1)ĵ','= î − 3ĵ m'],
@@ -206,7 +206,7 @@ detailed:[
  ['The result is positive, so the field does positive work along this path.','Answer: (D) +40 J']
 ]},
 {id:'GRAV-4',level:3,topic:'Relative velocity from energy and momentum conservation (mutual fall from infinity)',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.4 · p.1',sourceRef:true,question:'Two bodies of masses m₁ and m₂, initially at rest at infinite separation, are released and move towards each other under their mutual gravitational attraction. Find their relative velocity when they are a distance r apart.',options:['√(2G(m₁+m₂)/r)','√(2G·m₁m₂/((m₁+m₂)r))','√(G(m₁+m₂)/r)','√(G·m₁m₂/((m₁+m₂)r))'],correct:0,answer:'√(2G(m₁+m₂)/r)',
-short:[['No external force acts on the pair, so their momenta stay equal and opposite throughout the fall.','m₁v₁ = m₂v₂  (momentum conservation)'],['Total mechanical energy is conserved from infinity, where KE and PE are both zero, to separation r.','½m₁v₁² + ½m₂v₂² = G·m₁m₂/r  (energy conservation)'],['Eliminate v₂ using the momentum relation and solve for each speed.','v₁ = m₂√(2G/(r(m₁+m₂)))','v₂ = m₁√(2G/(r(m₁+m₂)))'],['The relative velocity is the sum of the two speeds, since they move toward each other.','v_rel = v₁ + v₂','= (m₁+m₂)√(2G/(r(m₁+m₂)))','= √(2G(m₁+m₂)/r)'],['This is the only option with the correct dimensions and dependence on both masses.','Answer: (A) √(2G(m₁+m₂)/r)']],
+short:[["Momentum conservation: m₁v₁ = m₂v₂."], ["Energy conservation from infinity (zero total E).", "½m₁v₁² + ½m₂v₂² = G·m₁m₂/r"], ["Eliminate v₂, add the two speeds for relative velocity.", "v_rel = v₁ + v₂", "= √(2G(m₁+m₂)/r)", "Answer: (A) √(2G(m₁+m₂)/r)"]],
 detailed:[
  ['No external force acts on the pair, so their momenta stay equal and opposite throughout the fall.','m₁v₁ = m₂v₂'],
  ['Total mechanical energy is conserved from infinity, where KE and PE are both zero, to separation r.','½m₁v₁² + ½m₂v₂² = G·m₁m₂/r'],
@@ -215,7 +215,7 @@ detailed:[
  ['This is the only option with the correct dimensions and dependence on both masses.','Answer: (A) √(2G(m₁+m₂)/r)']
 ]},
 {id:'GRAV-5',level:2,topic:'Variation of g with height above Earth\'s surface',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.5 · p.1',sourceRef:true,question:'The acceleration due to the earth\'s gravitational attraction at a distance 2R from the earth\'s surface is: (R = radius of the earth, g = acceleration due to gravity at the surface)',options:['g/9','g/3','g/4','g'],correct:0,answer:'g/9',
-short:[['A distance 2R above the surface means the distance from the earth\'s centre is 3R.','r = R + 2R','= 3R'],['Gravitational acceleration falls off as 1/r²; substitute r = 3R.','g\' = g(r)²','= g(R/3R)²','= g/9'],['This is the acceleration at that location.','Answer: (A) g/9']],
+short:[["Distance 2R above surface ⇒ r = 3R from centre.", "g' = g(R/r)²"], ["Substitute r = 3R.", "g' = g/9", "Answer: (A) g/9"]],
 detailed:[
  ['A distance 2R above the surface means the distance from the earth\'s centre is 3R.','r = R + 2R','= 3R'],
  ['Gravitational acceleration outside a sphere falls off as 1/r², referenced to the surface value g.','g\' = g(r)²'],
@@ -223,7 +223,7 @@ detailed:[
  ['This is the acceleration at that location.','Answer: (A) g/9']
 ]},
 {id:'GRAV-6',level:2,topic:'Orbital speed of a satellite in terms of surface g',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.6 · p.2',sourceRef:true,question:'A satellite of mass m revolves around the earth of radius R in a circular orbit at height x above the surface. If g is the acceleration due to gravity at the earth\'s surface, find the orbital speed of the satellite.',options:['√(gx)','√(gR/(R−x))','gR²/(R+x)','√(gR²/(R+x))'],correct:3,answer:'√(gR²/(R+x))',
-short:[['Express the earth\'s G·M using the known surface value of g.','g = G·M/R²','G·M = gR²'],['At height x the orbital radius is R+x, and gravity supplies the centripetal force for the circular orbit.','G·M·m/(R+x)² = m·v²/(R+x)  (gravity supplies centripetal force)'],['Cancel m and one power of (R+x), then substitute G·M = gR².','v² = G·M/(R+x)','= gR²/(R+x)'],['Take the square root for the orbital speed.','Answer: (D) √(gR²/(R+x))']],
+short:[["Write G·M via surface g.", "G·M = gR²"], ["Gravity supplies centripetal force at orbit radius R+x.", "v² = G·M/(R+x)", "= gR²/(R+x)", "Answer: (D) √(gR²/(R+x))"]],
 detailed:[
  ['Express the earth\'s G·M using the known surface value of g.','g = G·M/R²','G·M = gR²'],
  ['At height x the orbital radius is R+x, and gravity supplies the centripetal force for the circular orbit.','G·M·m/(R+x)² = m·v²/(R+x)'],
@@ -231,7 +231,7 @@ detailed:[
  ['Take the square root for the orbital speed.','Answer: (D) √(gR²/(R+x))']
 ]},
 {id:'GRAV-7',level:2,topic:'Kepler\'s third law for elliptical orbits (semi-major axis)',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.7 · p.2',sourceRef:true,question:'A planet revolves around the sun in an elliptical orbit whose semi-major and semi-minor axes are a and b respectively. The time period of revolution is related to the axes as:',options:['T² ∝ b³','T² ∝ ((a+b)/2)³','T² ∝ a³','T² ∝ ((a−b)/2)³'],correct:2,answer:'T² ∝ a³',
-short:[['Kepler\'s third law comes from equating the sun\'s gravitational pull to the centripetal requirement for the orbit, applied with the time-averaged orbital radius.','T² ∝ r³  (circular orbit, radius r)'],['For an elliptical orbit the same law holds with the semi-major axis a taking the place of r.','For an ellipse','r is replaced by the semi-major axis a'],['This covers the limiting circular case too, where a = b = r, recovering T² ∝ r³.','T² ∝ a³'],['The semi-minor axis b, or any combination of a and b, does not enter the law.','Answer: (C) T² ∝ a³']],
+short:[["Kepler's third law uses the semi-major axis a in place of r, even for an ellipse.", "T² ∝ a³"], ["b (or a combination with b) plays no role.", "Answer: (C) T² ∝ a³"]],
 detailed:[
  ['Kepler\'s third law comes from equating the sun\'s gravitational pull to the centripetal requirement for the orbit, applied with the time-averaged orbital radius.','G·M·m/r² = mω²r for a circular orbit','T² ∝ r³'],
  ['For an elliptical orbit the same law holds with the semi-major axis a taking the place of r.','T² ∝ a³'],
@@ -239,7 +239,7 @@ detailed:[
  ['The semi-minor axis b, or any combination of a and b, does not enter the law.','Options built from b³ or (a±b)³ are incorrect','Answer: (C) T² ∝ a³']
 ]},
 {id:'GRAV-8',level:1,topic:'Residual velocity after exceeding escape velocity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.8 · p.2',sourceRef:true,question:'The escape velocity of a body from the surface of the earth is 11.2 km s⁻¹. If the body is thrown upward with a speed 4 times the escape velocity, find its speed when it has escaped the earth\'s gravitational pull (ignore all other heavenly bodies).',options:['4 × 11.2 km s⁻¹','√15 × 11.2 km s⁻¹','zero','3 × 11.2 km s⁻¹'],correct:1,answer:'√15 × 11.2 km s⁻¹',
-short:[['The launch speed is 4 times the escape speed v_e, where v_e² = 2G·M/R.','v = 4v_e'],['Apply energy conservation from the surface to infinity, the final KE is whatever survives after escaping.','½m·v² − G·M·m/R = ½m·v_f²  (energy conservation to infinity)'],['Since v_e² = 2G·M/R, the term G·M·m/R equals ½m·v_e², which cancels neatly.','v_f² = v² − v_e²','= 16v_e² − v_e²','= 15v_e²'],['Take the square root and substitute the numeric escape speed.','v_f = √15 v_e','= √15 × 11.2 km s⁻¹'],['This is the residual speed once the body is far from the earth.','Answer: (B) √15 × 11.2 km s⁻¹']],
+short:[["Launch speed v = 4v_e, with v_e² = 2G·M/R."], ["Energy conservation to infinity; G·M·m/R = ½m·v_e² cancels neatly.", "v_f² = v² − v_e²", "= 15v_e²"], ["Take the square root.", "v_f = √15 × 11.2 km s⁻¹", "Answer: (B) √15 × 11.2 km s⁻¹"]],
 detailed:[
  ['The launch speed is 4 times the escape speed v_e, where v_e² = 2G·M/R.','v = 4v_e'],
  ['Apply energy conservation from the surface to infinity, the final KE is whatever survives after escaping.','½m·v² − G·M·m/R = ½m·v_f²'],
@@ -248,7 +248,7 @@ detailed:[
  ['This is the residual speed once the body is far from the earth.','Answer: (B) √15 × 11.2 km s⁻¹']
 ]},
 {id:'GRAV-9',level:2,topic:'Escape velocity scaling with radius at constant density',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.9 · p.2',sourceRef:true,question:'The escape velocity from the earth\'s surface is about 11 km s⁻¹. Find the escape velocity from a planet having twice the earth\'s radius and the same mean density as the earth.',options:['11 km s⁻¹','22 km s⁻¹','5.5 km s⁻¹','16.5 km s⁻¹'],correct:1,answer:'22 km s⁻¹',
-short:[['Write escape velocity in terms of density by substituting M = (4/3)πR³ρ.','v_e = √(2G·M/R)','= √((8/3)πGρR²)'],['At constant density, escape velocity scales linearly with radius.','ρ fixed','v_e ∝ R'],['Doubling R doubles v_e.','v_e\' = 2 × 11 km s⁻¹'],['So the new planet\'s escape speed is twice the earth\'s.','Answer: (B) 22 km s⁻¹']],
+short:[["v_e = √((8/3)πGρR²), so at constant density v_e ∝ R."], ["Doubling R doubles v_e.", "v_e' = 2 × 11 km s⁻¹", "Answer: (B) 22 km s⁻¹"]],
 detailed:[
  ['Write escape velocity in terms of density by substituting M = (4/3)πR³ρ.','v_e = √(2G·M/R)','= √((8/3)πGρR²)'],
  ['At constant density, escape velocity scales linearly with radius.','v_e ∝ R√ρ','v_e ∝ R  (ρ unchanged)'],
@@ -256,7 +256,7 @@ detailed:[
  ['So the new planet\'s escape speed is twice the earth\'s.','Answer: (B) 22 km s⁻¹']
 ]},
 {id:'GRAV-10',level:2,topic:'Launch velocity from energy conservation to reach a given height',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.10 · p.2',sourceRef:true,question:'What minimum velocity should a body be thrown vertically upward from the surface of the earth (mass M, radius R) so that it reaches a height of 7R above the surface?',options:['√(20G·M/(11R))','√(20G·M/(9R))','√(17G·M/(9R))','√(7G·M/(4R))'],correct:3,answer:'√(7G·M/(4R))',
-short:[['A height of 7R above the surface means a distance of 8R from the earth\'s centre.','r_max = R + 7R','= 8R'],['At the highest point the speed is zero, so equate total energy at launch and at r_max.','½m·v² − G·M·m/R = −G·M·m/(8R)  (energy conservation)'],['Solve for v².','v² = 2G·M(1/R − 1/(8R))','= 7G·M/(4R)'],['Take the square root.','v = √(7G·M/(4R))'],['This is the minimum launch speed needed.','Answer: (D) √(7G·M/(4R))']],
+short:[["Height 7R above surface ⇒ r_max = 8R from centre."], ["Energy conservation: v=0 at r_max.", "½v² − G·M/R = −G·M/(8R)"], ["Solve for v.", "v² = 7G·M/(4R)", "Answer: (D) √(7G·M/(4R))"]],
 detailed:[
  ['A height of 7R above the surface means a distance of 8R from the earth\'s centre.','r_max = R + 7R','= 8R'],
  ['At the highest point the speed is zero, so equate total energy at launch and at r_max.','½m·v² − G·M·m/R = −G·M·m/(8R)'],
@@ -265,7 +265,7 @@ detailed:[
  ['This is the minimum launch speed needed.','Answer: (D) √(7G·M/(4R))']
 ]},
 {id:'GRAV-11',level:3,topic:'Energy to transfer a satellite between circular orbits',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.11 · p.2',sourceRef:true,question:'Find the energy required to transfer a satellite of mass m from a circular orbit of radius 2R to a circular orbit of radius 3R around a planet of mass M.',options:['G·M·m/(12R)','G·M·m/(3R²)','G·M·m/(8R)','G·M·m/(6R)'],correct:0,answer:'G·M·m/(12R)',
-short:[['A satellite in a circular orbit has total mechanical energy equal to minus half its gravitational PE, so it is −G·M·m/2r at radius r.','E(r) = −G·M·m/(2r)  (total energy of a circular orbit)'],['Evaluate this at the two orbital radii.','E(2R) = −G·M·m/(4R)','E(3R) = −G·M·m/(6R)'],['The energy that must be supplied is the increase in total energy, not just the increase in PE, because orbital KE also falls as the radius grows (a satellite moves slower in a larger orbit).','ΔE = E(3R) − E(2R)','= G·M·m/(4R) − G·M·m/(6R)'],['Combine over a common denominator.','= G·M·m/(12R)'],['The printed key\'s G·M·m/6R is just ΔU, the PE difference alone, it misses the simultaneous KE drop. Using total mechanical energy gives the correct transfer energy.','Answer: (A) G·M·m/(12R)']],
+short:[["Orbital total energy at radius r is E(r) = −G·M·m/(2r), not just PE.", "E(2R) = −G·M·m/4R", "E(3R) = −G·M·m/6R"], ["ΔE is what must be supplied (KE also drops as radius grows).", "ΔE = G·M·m/4R − G·M·m/6R", "= G·M·m/(12R)"], ["The printed G·M·m/6R is only ΔU, missing the KE drop.", "Answer: (A) G·M·m/(12R)"]],
 detailed:[
  ['A satellite in a circular orbit has total mechanical energy equal to minus half its gravitational PE, so it is −G·M·m/2r at radius r.','E(r) = −G·M·m/(2r)'],
  ['Evaluate this at the two orbital radii.','E(2R) = −G·M·m/(4R)','E(3R) = −G·M·m/(6R)'],
@@ -274,7 +274,7 @@ detailed:[
  ['The printed key\'s G·M·m/6R is just ΔU, the PE difference alone, it misses the simultaneous KE drop. Using total mechanical energy gives the correct transfer energy.','Answer: (A) G·M·m/(12R)']
 ]},
 {id:'GRAV-12',level:2,topic:'Percentage change in orbital period with orbital radius (Kepler\'s third law)',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.12 · p.2',sourceRef:true,question:'A satellite is launched into a circular orbit of radius R around the earth, while a second satellite is launched into a circular orbit of radius 1.02R. Find the percentage difference in their time periods.',options:['0.7','1.0','1.5','3.0'],correct:3,answer:'3.0',
-short:[['Kepler\'s third law for a circular orbit relates period and radius.','T² ∝ r³'],['Taking a small logarithmic variation gives the fractional-change relation between period and radius.','2(ΔT/T) = 3(Δr/r)','ΔT/T = (3/2)(Δr/r)'],['The second orbit is 2% larger in radius.','Δr/r = 0.02'],['Substitute to find the fractional period difference.','ΔT/T = (3/2)(0.02)','= 0.03'],['So the percentage difference in time period is about 3%.','Answer: (D) 3.0']],
+short:[["Kepler's third law, log-differentiated.", "2(ΔT/T) = 3(Δr/r)"], ["Δr/r = 0.02 for the 2% larger orbit.", "ΔT/T = (3/2)(0.02)", "= 0.03", "Answer: (D) 3.0"]],
 detailed:[
  ['Kepler\'s third law for a circular orbit relates period and radius.','T² ∝ r³'],
  ['Taking a small logarithmic variation gives the fractional-change relation between period and radius.','2(ΔT/T) = 3(Δr/r)','ΔT/T = (3/2)(Δr/r)'],
@@ -283,7 +283,7 @@ detailed:[
  ['So the percentage difference in time period is about 3%.','Answer: (D) 3.0']
 ]},
 {id:'GRAV-13',level:3,topic:'Net gravitational force at the centre of symmetric point masses (cube arrangement)',diagram:'gravCubeAltCornersCentre',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.13 · p.2',sourceRef:true,question:'Four identical point masses m are placed at three alternating corners A, B and C of a cube of edge a (so AB, BC and CA are each a face diagonal of the cube), with the fourth mass m at the cube\'s centre D. Find the magnitude of the gravitational force on the mass at D due to the masses at A, B and C.',options:['3G·m²/a²','12G·m²/a²','4G·m²/a²','4G·m²/(3a²)'],correct:3,answer:'4G·m²/(3a²)',
-short:[['A, B, C are three of the four alternating vertices of the cube that form a regular tetrahedron with centre D equidistant from all of them. Completing the symmetry makes the problem tractable: imagine a fourth identical mass at the missing vertex E.','Add an imaginary 4th equal mass at vertex E, completing the regular tetrahedron A, B, C, E'],['With all four tetrahedron vertices occupied by equal masses, the arrangement is fully symmetric about the centre D, so the net force there must vanish.','By symmetry, net force on D from (A,B,C,E) together = 0'],['Rearranging shows the force from the real three masses is equal and opposite to the force a lone mass at E would produce.','Force from (A,B,C) = −Force from E alone'],['The centre of a cube of edge a is at distance (√3/2)a from every vertex, so compute the single-mass force at that distance.','DE = (√3/2)a','F = G·m²/((√3/2)a)²','= 4G·m²/(3a²)'],['Simplify.','Answer: (D) 4G·m²/(3a²)']],
+short:[["A, B, C are 3 of 4 alternating cube vertices forming a tetrahedron; add a 4th mass at missing vertex E for symmetry."], ["Full tetrahedron symmetry ⇒ net force at centre D is zero.", "F(A,B,C) = −F(E)"], ["DE = (√3/2)a; compute the single-mass force there.", "F(E) = G·m²/((√3/2)a)²", "= 4G·m²/(3a²)", "Answer: (D) 4G·m²/(3a²)"]],
 detailed:[
  ['A, B, C are three of the four alternating vertices of the cube that form a regular tetrahedron with centre D equidistant from all of them. Completing the symmetry makes the problem tractable: imagine a fourth identical mass at the missing vertex E.','Tetrahedron vertices: A, B, C, E'],
  ['With all four tetrahedron vertices occupied by equal masses, the arrangement is fully symmetric about the centre D, so the net force there must vanish.','F(A) + F(B) + F(C) + F(E) = 0 at D'],
@@ -292,7 +292,7 @@ detailed:[
  ['Simplify.','= 4G·m²/(3a²)','Answer: (D) 4G·m²/(3a²)']
 ]},
 {id:'GRAV-14',level:3,topic:'Gravitational potential at the centre of a sphere with a concentric cavity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.14 · p.2',sourceRef:true,question:'A solid sphere of radius 2R has a concentric spherical hole of radius R scooped out of it. If the mass of the remaining portion is M, find the gravitational potential at the centre.',options:['−5G·M/(7R)','−7G·M/(14R)','−3G·M/(7R)','−9G·M/(14R)'],correct:3,answer:'−9G·M/(14R)',
-short:[['Both the full sphere (radius 2R) and the scooped-out piece (radius R) have the same density, so their masses scale as the cube of the radius.','M_full/M_hole = (2R)³/R³','= 8','M_full = (8/7)M','M_hole = M/7'],['Use superposition: the actual remaining shell is a full sphere of mass M_full minus a solid sphere of mass M_hole occupying the cavity, both potentials taken at the common centre.','V(centre) of solid sphere (μ, r) = −3Gμ/(2r)'],['Apply this to the full sphere and to the hole sphere.','V_full = −3G(8M/7)/(4R)','= −6G·M/(7R)','V_hole = −3G(M/7)/(2R)','= −3G·M/(14R)'],['Subtract to get the potential due to the remaining material.','V = V_full − V_hole','= −6G·M/(7R) + 3G·M/(14R)','= −9G·M/(14R)'],['This is the required potential at the centre.','Answer: (D) −9G·M/(14R)']],
+short:[["Same density ⇒ masses scale as R³.", "M_full = (8/7)M", "M_hole = M/7"], ["Superpose: full sphere minus the hole-sphere's own potential at the centre.", "V_full = −6G·M/7R", "V_hole = −3G·M/14R"], ["Subtract.", "V = −6G·M/7R + 3G·M/14R", "= −9G·M/(14R)", "Answer: (D) −9G·M/(14R)"]],
 detailed:[
  ['Both the full sphere (radius 2R) and the scooped-out piece (radius R) have the same density, so their masses scale as the cube of the radius.','M_full/M_hole = 8','M_full = (8/7)M','M_hole = M/7'],
  ['Use superposition: the actual remaining shell is a full sphere of mass M_full minus a solid sphere of mass M_hole occupying the cavity, both potentials taken at the common centre.','V(centre) of solid sphere (μ, r) = −3Gμ/(2r)'],
@@ -301,7 +301,7 @@ detailed:[
  ['This is the required potential at the centre.','Answer: (D) −9G·M/(14R)']
 ]},
 {id:'GRAV-15',level:3,topic:'Work to remove a particle from the centre of a ring to infinity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.15 · p.3',sourceRef:true,question:'A particle of mass m is placed at the centre of curvature of a fixed, uniform semicircular ring of radius R and mass M. Find the work required to slowly move the particle from the centre to infinity (consider only the gravitational interaction between the ring and the particle).',options:['G·M·m/R','−G·M·m/R','G·M·m/(πR)','−G·M·m/(πR)'],correct:0,answer:'G·M·m/R',
-short:[['Whether the ring is a full circle or a semicircle, every bit of it lies at the same distance R from the centre of curvature, so the potential there depends only on the total mass M.','Every element of the ring is at distance R from its centre of curvature'],['The particle\'s initial PE is its mass times this potential, and its final PE at infinity is zero.','U_i = −G·M·m/R','U_f = 0'],['The work done by the agent moving it equals the change in PE.','W = U_f − U_i','= G·M·m/R'],['This positive work must be supplied against the ring\'s attraction.','Answer: (A) G·M·m/R']],
+short:[["Every point of the ring (full circle or semicircle) is at distance R from the centre of curvature.", "V(centre) = −G·M/R"], ["Work to remove the particle to infinity equals −ΔU.", "W = U_f − U_i", "= G·M·m/R", "Answer: (A) G·M·m/R"]],
 detailed:[
  ['Whether the ring is a full circle or a semicircle, every bit of it lies at the same distance R from the centre of curvature, so the potential there depends only on the total mass M.','V(centre) = −G·M/R'],
  ['The particle\'s initial PE is its mass times this potential, and its final PE at infinity is zero.','U_i = −G·M·m/R','U_f = 0'],
@@ -309,7 +309,7 @@ detailed:[
  ['This positive work must be supplied against the ring\'s attraction.','Answer: (A) G·M·m/R']
 ]},
 {id:'GRAV-16',level:3,topic:'Gravitational field at the centre of a spherical cavity (superposition)',diagram:'gravSphereOffsetCavity',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.16 · p.3',sourceRef:true,question:'A spherical cavity of radius R/2 is hollowed out from a solid sphere of radius R, positioned so the cavity\'s surface touches the outer surface of the sphere at one point and passes through the sphere\'s centre. Before hollowing, the sphere\'s mass was M. Find the magnitude of the gravitational field at the centre of the cavity due to the remaining mass.',options:['zero','G·M/(8R²)','G·M/(2R²)','G·M/R²'],correct:2,answer:'G·M/(2R²)',
-short:[['Treat the hollowed sphere as a full uniform sphere of mass M plus a sphere of the cavity\'s size carrying negative mass filling the cavity. Inside a uniform sphere, the field grows linearly with distance from its centre.','Field inside uniform sphere (M, R) at position r from its centre: E(r) = (G·M/R³) r'],['The point of interest, the cavity\'s own centre, is at distance R/2 from the main sphere\'s centre.','Cavity centre is at r = R/2 from the main sphere\'s centre'],['Evaluated at the cavity\'s own centre, the field from the cancelling cavity-mass piece is exactly zero, since that point is the centre of the cavity sphere itself.','Field from the (negative, hole-filling) mass at its own centre = 0'],['So the entire field there comes from the full, uncut sphere alone.','E = (G·M/R³)(R/2)','= G·M/(2R²)'],['This is the field due to the remaining (hollowed) mass.','Answer: (C) G·M/(2R²)']],
+short:[["Superpose: full sphere (field grows linearly inside) minus a cavity-mass sphere.", "E_full(r) = (G·M/R³)r"], ["At the cavity's own centre (r=R/2), the cavity piece contributes zero field.", "E = E_full(R/2)", "= G·M/(2R²)", "Answer: (C) G·M/(2R²)"]],
 detailed:[
  ['Treat the hollowed sphere as a full uniform sphere of mass M plus a sphere of the cavity\'s size carrying negative mass filling the cavity. Inside a uniform sphere, the field grows linearly with distance from its centre.','E_full(r) = (G·M/R³) r  (for r < R)'],
  ['The point of interest, the cavity\'s own centre, is at distance R/2 from the main sphere\'s centre.','r = R/2'],
@@ -318,7 +318,7 @@ detailed:[
  ['This is the field due to the remaining (hollowed) mass.','Answer: (C) G·M/(2R²)']
 ]},
 {id:'GRAV-17',level:2,topic:'Potential from a given radial gravitational field (integration)',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.17 · p.3',sourceRef:true,question:'The gravitational field due to a certain mass distribution is E = A/x² along the x-direction, where A is a constant. Taking the gravitational potential to be zero at infinity, find the potential at x.',options:['2A/x','2A/x³','A/x','A/(2x²)'],correct:2,answer:'A/x',
-short:[['Potential and field are related by integrating from the reference point (infinity, where V = 0) to x.','V(x) − V(∞) = −∫(∞ to x) E dx′'],['Substitute the given field.','= −∫(∞ to x) (A/x′²) dx′'],['Carry out the integral using ∫x′⁻² dx′ = −x′⁻¹.','= A/x'],['Check by differentiating back, E = −dV/dx = A/x², which matches the given field.','Answer: (C) A/x']],
+short:[["V(x) = −∫E dx from ∞ to x, with E = A/x².", "V(x) = A/x"], ["Check: −dV/dx = A/x² matches E.", "Answer: (C) A/x"]],
 detailed:[
  ['Potential and field are related by integrating from the reference point (infinity, where V = 0) to x.','V(x) − V(∞) = −∫(∞ to x) E dx′'],
  ['Substitute the given field.','V(x) = −∫(∞ to x) (A/x′²) dx′'],
@@ -326,7 +326,7 @@ detailed:[
  ['Check by differentiating back, E = −dV/dx = A/x², which matches the given field.','Answer: (C) A/x']
 ]},
 {id:'GRAV-18',level:2,topic:'Inverse-square scaling of gravitational force with distance',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.18 · p.3',sourceRef:true,question:'If the distance between the sun and the earth is made 3 times its present value, the gravitational force between them becomes:',options:['9 times','1/9 times','1/3 times','3 times'],correct:1,answer:'1/9 times',
-short:[['Newton\'s law of gravitation gives an inverse-square dependence on separation.','F ∝ 1/r²'],['Write the new force with r replaced by 3r, then compare to the original.','F′/F = (1/3)²','= 1/9'],['So the new force is one-ninth of the original.','Answer: (B) 1/9 times']],
+short:[["F ∝ 1/r²; tripling r.", "F_new/F = (r/3r)²",'= 1/9', "Answer: (B) 1/9 times"]],
 detailed:[
  ['Newton\'s law of gravitation gives an inverse-square dependence on separation.','F = G·M·m/r²','F ∝ 1/r²'],
  ['Write the new force in terms of the old, with r replaced by 3r.','F′ = G·M·m/(3r)²'],
@@ -334,7 +334,7 @@ detailed:[
  ['So the new force is one-ninth of the original.','Answer: (B) 1/9 times']
 ]},
 {id:'GRAV-19',level:2,topic:'Qualitative variation of weight between Earth and Moon',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.19 · p.3',sourceRef:true,question:'If a body is carried from the surface of the earth towards the moon, then:',options:['the weight of the body continuously increases','the mass of the body continuously increases','the weight of the body decreases first, becomes zero, and then increases','the mass of the body decreases first, becomes zero, and then increases'],correct:2,answer:'the weight of the body decreases first, becomes zero, and then increases',
-short:[['As the body moves away from the earth, earth\'s pull weakens with distance, while the moon\'s pull strengthens as the body approaches it, the two act in opposite directions along the line joining them.','Net field = g_Earth(r) − g_Moon(d−r)  (opposing directions)'],['Somewhere along the path the two pulls exactly cancel, this is the gravitational neutral point.','Net field = 0 at the neutral point between Earth and Moon'],['Before the neutral point earth\'s weakening pull dominates, so weight falls to zero, beyond it the moon\'s strengthening pull takes over and weight rises again.','Before it: Earth dominates and weakens','weight falls','After it: Moon dominates and strengthens','weight rises'],['Mass is an intrinsic property and never changes, so the options about mass changing are both wrong.','Answer: (C) weight decreases first, becomes zero, then increases']],
+short:[["Earth's pull weakens, moon's strengthens, in opposite directions.", "Net field = 0 at the neutral point"], ["Weight falls to zero there, then rises as the moon's pull takes over.", "Mass itself never changes", "Answer: (C) weight decreases first, becomes zero, then increases"]],
 detailed:[
  ['As the body moves away from the earth, earth\'s pull weakens with distance, while the moon\'s pull strengthens as the body approaches it, the two act in opposite directions along the line joining them.','Net field = g_Earth(r) − g_Moon(d−r)'],
  ['Somewhere along the path the two pulls exactly cancel, this is the gravitational neutral point.','Net field = 0 at that point'],
@@ -342,7 +342,7 @@ detailed:[
  ['Mass is an intrinsic property and never changes, so the options about mass changing are both wrong.','Mass stays constant throughout','Answer: (C) weight decreases first, becomes zero, then increases']
 ]},
 {id:'GRAV-20',level:2,topic:'Mean density of Earth from g and R',source:'Institute worksheet · 1. Gravitation (S.C.Q.) E.pdf · Q.20 · p.3',sourceRef:true,question:'If R is the radius of the earth and g the acceleration due to gravity at the earth\'s surface, the mean density of the earth is:',options:['4πG/(3gR)','3πR/(4gG)','3g/(4πRG)','πRg/(12G)'],correct:2,answer:'3g/(4πRG)',
-short:[['Write the surface gravity in terms of the earth\'s mass, then express the mass via its mean density.','g = G·M/R²','M = (4/3)πR³ρ'],['Substitute and simplify.','g = (4/3)πGRρ'],['Solve for the density.','ρ = 3g/(4πRG)'],['This is the mean density of the earth.','Answer: (C) 3g/(4πRG)']],
+short:[["g = G·M/R², with M = (4/3)πR³ρ.", "g = (4/3)πGRρ"], ["Solve for ρ.", "ρ = 3g/(4πRG)", "Answer: (C) 3g/(4πRG)"]],
 detailed:[
  ['Write the surface gravity in terms of the earth\'s mass, then express the mass via its mean density.','g = G·M/R²','M = (4/3)πR³ρ'],
  ['Substitute and simplify.','g = G(4/3)πR³ρ/R²','= (4/3)πGRρ'],
