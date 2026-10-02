@@ -362,6 +362,213 @@ const questions=[
  ['The velocity is vertical a quarter of the way round, at the side of the shell, which is a height R above the start. Use energy to get the speed there.','v² = u² − 2gR = 5gR − 2gR = 3gR'],
  ['At that point the centre lies horizontally, so the centripetal acceleration is horizontal while gravity, being vertical, is now entirely tangential.',`a(c) = ${fraction('v²','R')} = 3g · a(t) = g`],
  ['The two are perpendicular, so combine them as a right triangle.','a = √(a(c)² + a(t)²) = √(9g² + g²) = g√10 · Correct answer: (A)']
+]},
+/* ---- Batch 02: the next forty from the institute exercise ----------------
+   Nine new cores filling the remaining subtopic slots -- a force that stays
+   perpendicular to the velocity, angular acceleration at constant speed,
+   relative angular velocity, average acceleration over part of a turn, a
+   kinetic energy that grows with distance, acceleration from an arc and a
+   turning angle, friction on an unbanked road, tension along a rotating rod,
+   and losing contact on a convex bridge -- plus thirty-one practice variants
+   under them and under the pilot's cores. Every statement, option and key was
+   read off the rendered PDF page rather than its text layer, and every answer
+   was derived here before the printed key was read. */
+{id:'CIRC-11',level:2,topic:'A force that stays perpendicular to the velocity',title:'A force that stays perpendicular to the velocity',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.139',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle is acted upon by a force of constant magnitude which is always perpendicular to the velocity of the particle. The motion of the particle takes place in a plane. it follows that–',options:['its velocity is constant','its acceleration is constant','its kinetic energy is constant','it moves in circular path'],correct:2,answer:'its kinetic energy is constant',diagram:'perpendicular-force',short:[
+ ['A force at right angles to the velocity has no component along the displacement, so it does no work at any instant.','W = F⋅s = 0'],
+ ['No work means no change in kinetic energy, so the speed never changes.','ΔK = W = 0 ⇒ K constant'],
+ ['The velocity itself is not constant, since its direction keeps turning, and neither is the acceleration, which turns with the force. A constant-magnitude perpendicular force does force a circular path only if its magnitude is also constant in the right way, so (D) overreaches what the statement guarantees.','K constant · Correct answer: (C)']
+]},
+{id:'CIRC-11-A',parent:'CIRC-11',variant:1,topic:'A force that stays perpendicular to the velocity',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.128',printedAnswer:'A',verifiedAnswer:'A'},question:'When a body moves with a constant speed along a circle-',options:['no work is done on it','no acceleration is produced in the body','no force acts on the body','its velocity remains constant'],correct:0,answer:'no work is done on it',diagram:'',noDiagramReason:'Same statement as its core, which carries the diagram showing the force at right angles to the velocity.',relevance:{parent:'CIRC-11',sharedSkill:'A force that stays perpendicular to the velocity',recoveryPurpose:'direct retry'},short:[
+ ['The centripetal force is always along the radius and the displacement is always along the tangent, so the two are perpendicular throughout.','F ⊥ ds ⇒ W = 0'],
+ ['There is still a force and still an acceleration, both pointing at the centre, and the velocity still turns; only the work vanishes.','W = 0 · Correct answer: (A)']
+]},
+{id:'CIRC-11-B',parent:'CIRC-11',variant:2,topic:'A force that stays perpendicular to the velocity',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.130',printedAnswer:'B',verifiedAnswer:'B'},question:'A body of mass m is moving in a circle of radius r with a constant speed v. The force on the body is mv²/r and is directed towards the centre. What is the work done by this force in moving the body over half the circumference of the circle?',options:['mv²/r × πr','zero','mv²/r','πr²/mv²'],correct:1,answer:'zero',diagram:'',noDiagramReason:'Same perpendicularity argument as its core; the half circumference is a decoy, since the distance travelled never enters a zero-work result.',relevance:{parent:'CIRC-11',sharedSkill:'A force that stays perpendicular to the velocity',recoveryPurpose:'controlled transfer'},short:[
+ ['The force stays perpendicular to the motion over every element of the path, however long the path is.','dW = F⋅ds = 0 at every point'],
+ ['So the half circumference in the stem is a decoy: multiplying force by distance, as option (A) does, assumes they are parallel.','W = 0 · Correct answer: (B)']
+]},
+{id:'CIRC-11-C',parent:'CIRC-11',variant:3,topic:'A force that stays perpendicular to the velocity',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.131',printedAnswer:'C',verifiedAnswer:'C'},question:'Centrifugal force is considerd as pseudo force when',options:['An observer at the centre of circular motion','An outside observe','An observer who is moving with the particle which is experiencing the force','None of the above'],correct:2,answer:'An observer who is moving with the particle which is experiencing the force',diagram:'',noDiagramReason:'The distinction is between two observers rather than two geometries; a drawing would show the same circle in both cases.',relevance:{parent:'CIRC-11',sharedSkill:'A force that stays perpendicular to the velocity',recoveryPurpose:'controlled transfer'},short:[
+ ["A pseudo force is one introduced to make Newton's laws work in an accelerating frame.",'needed only in a non-inertial frame'],
+ ['The frame that rotates with the particle is accelerating, so an observer riding along must invent an outward force to explain why the particle stays put in that frame.','observer moving with the particle · Correct answer: (C)']
+]},
+{id:'CIRC-12',level:1,topic:'Angular acceleration when the speed is constant',title:'Angular acceleration when the speed is constant',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.136',printedAnswer:'A',verifiedAnswer:'A'},question:'A body is moving with a constant speed v in a circle of radius r. Its angular acceleration is-',options:['Zero','v/r','v²/r²','v²/r'],correct:0,answer:'Zero',diagram:'',noDiagramReason:'The answer is that one rate of change vanishes; a drawing of the circle would show the quantities that do not vanish and invite exactly the confusion the distractors trade on.',short:[
+ ['Angular acceleration is the rate of change of angular velocity, not of position or of linear velocity.',`α = ${fraction('dω','dt')}`],
+ ['A constant speed on a fixed radius means a constant angular velocity, so that rate is zero.',`ω = ${fraction('v','r')} is constant ⇒ α = 0`],
+ ['The distractors are the other standard quantities: v/r is the angular velocity itself and v²/r is the centripetal acceleration, neither of which is an angular acceleration.','α = 0 · Correct answer: (A)']
+]},
+{id:'CIRC-12-A',parent:'CIRC-12',variant:1,topic:'Angular acceleration when the speed is constant',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.145',printedAnswer:'B',verifiedAnswer:'B'},question:'A body is revolving with a uniform speed V in a circle of radius r. The angular acceleration of the body is -',options:['V/r','Zero','V²/r along the radius and towards the centre','V²/r along the radius and away from the centre'],correct:1,answer:'Zero',diagram:'',noDiagramReason:'Identical reasoning to its core, which records why a picture would not help.',relevance:{parent:'CIRC-12',sharedSkill:'Angular acceleration when the speed is constant',recoveryPurpose:'direct retry'},short:[
+ ['Uniform speed on a fixed circle again fixes the angular velocity.',`ω = ${fraction('V','r')} constant`],
+ ['Its rate of change is therefore zero. The two options carrying a direction are describing the centripetal acceleration, which is a linear quantity.','α = 0 · Correct answer: (B)']
+]},
+{id:'CIRC-13',level:3,topic:'Angular velocity of one particle about another',title:'Angular velocity of one particle about another',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.35',printedAnswer:'D',verifiedAnswer:'D'},question:'Two moving particles P and Q are 10 m apart at a certain instant. The velocity of P is 8m/s making an angle 30° with the line joining P and Q and that of Q is 6m/s making an angle 30° with PQ. Then angular velocity of P with respect to Q is-',options:['Zero','0.1 rad/sec','0.4 rad/sec','0.7 rad/sec'],correct:3,answer:'0.7 rad/sec',diagram:'relative-angular-velocity',short:[
+ ["Only the part of the relative velocity across the line PQ turns that line. The part along PQ changes the separation instead, and contributes nothing to the angular rate.",`ω = ${fraction('v(⊥ to PQ)','separation')}`],
+ ["Resolve each velocity perpendicular to PQ. The two particles move to opposite sides of the line, so their perpendicular parts add rather than cancel.",'8 sin30° = 4 m/s · 6 sin30° = 3 m/s'],
+ ["Add them to get the relative velocity across the line.",'v(⊥) = 4 + 3 = 7 m/s'],
+ ["Divide by the separation. Using the along-PQ components instead would give the rate at which the gap closes, not an angular velocity.",`ω = ${fraction('7','10')} = 0.7 rad/s · Correct answer: (D)`]
+]},
+{id:'CIRC-14',level:2,topic:'Average acceleration over part of a revolution',title:'Average acceleration over part of a revolution',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.140',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle is moving along a circular path of radius 6 m with uniform speed of 8 ms⁻¹. The average acceleration when the particle completes one half of the revolution is -',options:['16/(3π) m/s²','32/(3π) m/s²','64/(3π) m/s²','None of these'],correct:2,answer:'64/(3π) m/s²',diagram:'average-acceleration-half-turn',short:[
+ ["Average acceleration is the change in velocity over the time taken, not the instantaneous centripetal value v²/r.",`a(avg) = ${fraction('|Δv|','Δt')}`],
+ ["After half a revolution the speed is unchanged but the direction has reversed, so the change in velocity has magnitude 2v.",'|Δv| = 2(8) = 16 m/s'],
+ ["The time for half a revolution is half the circumference over the speed.",`Δt = ${fraction('πr','v')} = ${fraction('6π','8')} = ${fraction('3π','4')} s`],
+ ["Divide. The instantaneous centripetal acceleration here would be v²/r = 10.7 m/s², a different quantity entirely.",`a(avg) = ${fraction('16(4)','3π')} = ${fraction('64','3π')} m/s² · Correct answer: (C)`]
+]},
+{id:'CIRC-15',level:3,topic:'Force from a kinetic energy that grows with the distance covered',title:'Force from a kinetic energy that grows with the distance covered',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.70',printedAnswer:'B',verifiedAnswer:'B'},question:'The kinetic energy of a particle moving along a circle of radius r depends on distance covered s as K.E. = As², where A is constant. The force acting on the particle as the function of A is-',options:['F = 2As√(1+(r/s)²)','F = 2As√(1+(s/r)²)','F = As√(1+(r/s)²)','F = 2As'],correct:1,answer:'F = 2As√(1+(s/r)²)',diagram:'',noDiagramReason:'The content is a chain of derivatives relating the kinetic energy to the distance covered; a circle with a force arrow would show neither the dependence on s nor the two perpendicular parts it produces.',short:[
+ ["Read the speed off the given kinetic energy.",`${fraction('1','2')}mv² = As² ⇒ v² = ${fraction('2As²','m')}`],
+ ["The centripetal part follows at once from that speed.",`a(c) = ${fraction('v²','r')} = ${fraction('2As²','mr')}`],
+ ["For the tangential part the speed is given against distance, not time, so differentiate along the path and use the chain rule.",`v = s√(${fraction('2A','m')}) ⇒ a(t) = v${fraction('dv','ds')} = ${fraction('2As','m')}`],
+ ["The two are perpendicular, so combine them and multiply by the mass. Note it is s/r that appears under the root, not r/s.",'F = m√(a(c)² + a(t)²) = 2As√(1 + (s/r)²) · Correct answer: (B)']
+]},
+{id:'CIRC-16',level:3,topic:'Acceleration on a curve from its arc and turning angle',title:'Acceleration on a curve from its arc and turning angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.63',printedAnswer:'B',verifiedAnswer:'B'},question:'A car moves round a turn of constant curvature between A and B (curve AB = 100m) with a steady speed 72 km/hr. If angle between tangent at point A and B is 45° then magnitude of acceleration of car between A and B is -',options:['Zero','3.14 m/s²','31.4 m/s²','6.28 m/s²'],correct:1,answer:'3.14 m/s²',diagram:'arc-and-turning-angle',short:[
+ ["The speed is steady, so the only acceleration is centripetal and the radius is what has to be found.",`a = ${fraction('v²','R')} · v = 72 km/h = 20 m/s`],
+ ["The angle between the tangents equals the angle the arc subtends at the centre. Convert it to radians before using the arc relation, or the radius comes out wildly wrong.",`θ = 45° = ${fraction('π','4')} rad`],
+ ["Now the arc length gives the radius.",`s = Rθ ⇒ R = ${fraction('100(4)','π')} = ${fraction('400','π')} ≈ 127.3 m`],
+ ["Substitute.",`a = ${fraction('400','127.3')} ≈ 3.14 m/s² · Correct answer: (B)`]
+]},
+{id:'CIRC-17',level:2,topic:'Maximum speed on an unbanked road, set by friction',title:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.54',printedAnswer:'C',verifiedAnswer:'C'},question:'A car has to move on a level turn of radius (R = 45 m). If the coefficient of static friction between tyre and road is μ = 0.2, Find the maximum speed the car can take without skidding is given by -',options:['20 m/s','10 m/s','9.39 m/s','25 m/s'],correct:2,answer:'9.39 m/s',diagram:'friction-level-turn',short:[
+ ["On a level road nothing is tilted, so friction is the only horizontal force available and it is what bends the car round the turn.",`f = ${fraction('mv²','R')}`],
+ ["Skidding begins when friction reaches its limiting value, which sets the largest speed the turn allows.",`${fraction('mv²','R')} ≤ μmg ⇒ v ≤ √(μgR)`],
+ ["Substitute. The option list is computed with g = 9.8 m/s²; taking g = 10 would give 9.49 m/s, which is not offered.",'v = √(0.2 × 9.8 × 45) = √88.2 ≈ 9.39 m/s · Correct answer: (C)']
+]},
+{id:'CIRC-18',level:3,topic:'How tension varies along a rotating rod',title:'How tension varies along a rotating rod',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.47',printedAnswer:'A',verifiedAnswer:'A'},question:'A rod of length L is pivoted at one end and is rotated with a uniform angular velocity in a horizontal plane. Let T₁ and T₂ be the tension at the points L/4 and 3L/4 away from the pivoted ends, then-',options:['T₁ > T₂','T₂ > T₁','T₁ = T₂','inadequate information'],correct:0,answer:'T₁ > T₂',diagram:'rotating-rod-tension',short:[
+ ["Cut the rod at any point. The tension there is the only force pulling the whole outer piece towards the pivot, so it must supply that entire piece's centripetal requirement.",'T(x) = centripetal demand of the rod beyond x'],
+ ["Nearer the pivot the outer piece is longer and heavier, so the tension there has more to hold. At the free end there is nothing left beyond it, so the tension falls to zero.",'T(L) = 0 · T grows towards the pivot'],
+ ["The point at L/4 is nearer the pivot than the one at 3L/4. Expecting the opposite, because the far end moves faster, is the trap here: the far end moves faster but has less mass beyond it to hold.",'T₁ > T₂ · Correct answer: (A)']
+]},
+{id:'CIRC-19',level:2,topic:'Losing contact at the top of a convex bridge',title:'Losing contact at the top of a convex bridge',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.62',printedAnswer:'B',verifiedAnswer:'B'},question:'The vertical section of a road over a canal bridge in the direction of its length is in the form of circle of radius 8.9 metre, Then the greatest speed at which the car can cross this bridge without losing contact with the road at its highest point, the centre of gravity of the car being at a height h = 1.1 metre from the ground is- (Take g = 10 m/sec²)',options:['5 m/sec','10 m/sec','15 m/sec','20 m/sec'],correct:1,answer:'10 m/sec',diagram:'convex-bridge',short:[
+ ["At the top of a convex bridge the centre of the circle lies below the car, so gravity and the road's push act against each other and the shortfall supplies the centripetal force.",`mg − N = ${fraction('mv²','R')}`],
+ ["Contact is lost when the road stops pushing, which is the limiting case.",'N = 0 ⇒ v(max) = √(gR)'],
+ ["The car's centre of gravity travels on a circle of its own, larger than the road's by the height of that centre above the ground. Using 8.9 m alone gives 9.4 m/s, which is not offered.",'R(eff) = 8.9 + 1.1 = 10 m'],
+ ["Substitute.",'v(max) = √(10 × 10) = 10 m/s · Correct answer: (B)']
+]},
+{id:'CIRC-17-A',parent:'CIRC-17',variant:1,topic:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.134',printedAnswer:'B',verifiedAnswer:'B'},question:'A car of mass m is taking a circular turn of radius \'r\' on a frictional level road with a speed v. In order that the car does not skid-',options:['mv²/r ≥ μmg','mv²/r ≤ μmg','mv²/r = μmg','v/r = μmg'],correct:1,answer:'mv²/r ≤ μmg',diagram:'',noDiagramReason:'Same condition as its core, which carries the diagram of friction acting inward on a level turn.',relevance:{parent:'CIRC-17',sharedSkill:'Maximum speed on an unbanked road, set by friction',recoveryPurpose:'direct retry'},short:[
+ ["Friction has to provide the whole centripetal force on a level road.",`f = ${fraction('mv²','r')}`],
+ ["It can do so only up to its limiting value, so the requirement must not exceed what friction can supply. Option (C) is the boundary case alone, which is the fastest safe speed rather than the condition for safety.",`${fraction('mv²','r')} ≤ μmg · Correct answer: (B)`]
+]},
+{id:'CIRC-17-B',parent:'CIRC-17',variant:2,topic:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.143',printedAnswer:'D',verifiedAnswer:'D'},question:'When the road is dry and the coefficient of friction is μ, the maximum speed of a car in a circular path is 10 m/s, if the road becomes wet and μ\' = μ/2. What is the maximum speed permitted ?',options:['5 m/s','10 m/s','10√2 m/s','5√2 m/s'],correct:3,answer:'5√2 m/s',diagram:'',noDiagramReason:'Scales the core relation rather than changing the picture; the core\'s diagram already shows the friction that is being halved.',relevance:{parent:'CIRC-17',sharedSkill:'Maximum speed on an unbanked road, set by friction',recoveryPurpose:'controlled transfer'},short:[
+ ["The limiting speed goes as the square root of the coefficient, so halving the coefficient does not halve the speed.",'v = √(μgr) ⇒ v ∝ √μ'],
+ ["Take the ratio of the wet case to the dry one, where μ′ = μ/2 is the wet coefficient.",`${fraction('v′','v')} = √(${fraction('μ′','μ')}) = ${fraction('1','√2')}`],
+ ["So the permitted speed falls by a factor of √2, not by a factor of 2 as option (A) assumes.",`v′ = ${fraction('10','√2')} = 5√2 m/s · Correct answer: (D)`]
+]},
+{id:'CIRC-17-C',parent:'CIRC-17',variant:3,topic:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.147',printedAnswer:'B',verifiedAnswer:'B'},question:'A car of mass 1000 kg moves on a circular track of radius 20 m. if the coefficient of friction is 0.64, what is the maximum velocity with which the car can be moved?',options:['1.12 m/s','11.2 m/s','(0.64 × 20)/1000 m/s','1000/(0.64 × 20) m/s'],correct:1,answer:'11.2 m/s',diagram:'',noDiagramReason:'A direct retry of the core relation with different numbers; the setup is unchanged.',relevance:{parent:'CIRC-17',sharedSkill:'Maximum speed on an unbanked road, set by friction',recoveryPurpose:'direct retry'},short:[
+ ["The same limiting-friction condition as the core, and the mass cancels out of it.",'v(max) = √(μgr)'],
+ ["Substitute, with g = 9.8 m/s² as the option list assumes.",'v = √(0.64 × 9.8 × 20) = √125.44'],
+ ["The two options that keep the mass in them cannot be speeds at all, which is a quick way to discard them.",'v = 11.2 m/s · Correct answer: (B)']
+]},
+{id:'CIRC-17-D',parent:'CIRC-17',variant:4,topic:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.144',printedAnswer:'A',verifiedAnswer:'A'},question:'A person with a mass of M kg stands in contact against the wall of the cylindrical drum of radius r rotating with an angular velocity ω. The coefficient of friction between the wall and the clothing is μ. The minimum rotational speed of the cylinder which enables the person to remain stuck to the wall when the floor is suddenly removed is -',options:['ω(min) = √(g/(μr))','ω(min) = √(μr/g)','ω(min) = √(2g/(μr))','ω(min) = √(gr/μ)'],correct:0,answer:'ω(min) = √(g/(μr))',diagram:'',noDiagramReason:'The same limiting-friction idea as the core, turned on its side: here the normal reaction is horizontal and friction acts vertically, which the steps state directly.',relevance:{parent:'CIRC-17',sharedSkill:'Maximum speed on an unbanked road, set by friction',recoveryPurpose:'controlled transfer'},short:[
+ ["The wall pushes inward, and that push is what bends the person round the circle, so it plays the part the normal reaction plays on a road.",'N = Mω²r'],
+ ["Here friction acts vertically, along the wall, and it is what holds the person up once the floor is gone.",'f = Mg, with f ≤ μN'],
+ ["Put the two together at the limiting case.",'Mg ≤ μMω²r'],
+ ["Solve for the slowest rotation that still works.",`ω(min) = √(${fraction('g','μr')}) · Correct answer: (A)`]
+]},
+{id:'CIRC-17-E',parent:'CIRC-17',variant:5,topic:'Maximum speed on an unbanked road, set by friction',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.68',printedAnswer:'A',verifiedAnswer:'A'},question:'A coin placed on a rotating turntable just slips if it is placed at a distance of 4 cm from the centre. If the angular velocity of the turntable is doubled, it will just slip at a distance of -',options:['1 cm','2 cm','4 cm','8 cm'],correct:0,answer:'1 cm',diagram:'',noDiagramReason:'The same limiting-friction balance as the core, rearranged to show which quantity is held fixed; no new geometry appears.',relevance:{parent:'CIRC-17',sharedSkill:'Maximum speed on an unbanked road, set by friction',recoveryPurpose:'controlled transfer'},short:[
+ ["At the point of slipping the limiting friction is exactly the centripetal requirement, and the mass cancels.",'μmg = mω²r ⇒ ω²r = μg, a constant'],
+ ["So the product of the squared angular velocity and the radius cannot change.",`r ∝ ${fraction('1','ω²')}`],
+ ["Doubling the angular velocity therefore quarters the radius, rather than doubling or halving it.",`r′ = ${fraction('4','4')} = 1 cm · Correct answer: (A)`]
+]},
+{id:'CIRC-18-A',parent:'CIRC-18',variant:1,topic:'How tension varies along a rotating rod',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.142',printedAnswer:'B',verifiedAnswer:'B'},question:'A chain of 125 links is 1.25 m long and has a mass of 2 kg with the ends fastened together it is set rotating at 3000 rev/min. Find the centripetal force on each link -',options:['3.14 N','314 N','1/3.14 N','1/314 N'],correct:1,answer:'314 N',diagram:'',noDiagramReason:'A ring of links rather than a rod, but the quantity wanted is the centripetal force on one element, which the arithmetic states directly.',relevance:{parent:'CIRC-18',sharedSkill:'How tension varies along a rotating rod',recoveryPurpose:'controlled transfer'},short:[
+ ["The chain closes on itself, so its length is the circumference and that fixes the radius.",`r = ${fraction('1.25','2π')} ≈ 0.199 m`],
+ ["Convert the rotation rate and share the mass equally between the links.",`ω = 2π(50) = 100π rad/s · m(link) = ${fraction('2','125')} = 0.016 kg`],
+ ["Apply the centripetal formula to a single link.",'F = m(link)ω²r = 0.016 (100π)² (0.199) ≈ 314 N · Correct answer: (B)']
+]},
+{id:'CIRC-19-A',parent:'CIRC-19',variant:1,topic:'Losing contact at the top of a convex bridge',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.46',printedAnswer:'A',verifiedAnswer:'A'},question:'A motorcycle is going on an over bridge of radius R. The driver maintain a constant speed. As the motorcycle is ascending on the over bridge, the normal force on it -',options:['increases','decreases','remains same','fluctuates'],correct:0,answer:'increases',diagram:'',noDiagramReason:'Uses the same convex-bridge balance its core draws, now asked as a trend rather than a limiting value.',relevance:{parent:'CIRC-19',sharedSkill:'Losing contact at the top of a convex bridge',recoveryPurpose:'controlled transfer'},short:[
+ ["Part way up the bridge the radius is tilted, so only the component of the weight along that radius competes with the normal reaction.",`mg cos θ − N = ${fraction('mv²','R')}, θ measured from the top`],
+ ["Rearranged, the normal reaction follows the cosine.",`N = mg cos θ − ${fraction('mv²','R')}`],
+ ["Ascending means θ shrinks towards zero, so its cosine grows and the normal reaction grows with it, reaching its smallest value at the very top rather than on the way up.",'θ decreases ⇒ N increases · Correct answer: (A)']
+]},
+{id:'CIRC-01-A',parent:'CIRC-01',variant:1,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.129',printedAnswer:'A',verifiedAnswer:'A'},question:'What happens to the centripetal acceleration of a revolving body if you double the orbital speed v and halve the angular velocity ω ?',options:['the centripetal acceleration remains unchanged','the centripetal acceleration is halved','the centripetal acceleration is doubled','the centripetal acceleration is quadrupled'],correct:0,answer:'the centripetal acceleration remains unchanged',diagram:'',noDiagramReason:'The question is which form of the centripetal acceleration to use; a drawing shows the vector but not its dependence on the two quantities being changed.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'controlled transfer'},short:[
+ ["Of the several forms of the centripetal acceleration, pick the one written in the two quantities the question changes.",'a = ωv'],
+ ["Apply both changes at once.",`a′ = (${fraction('ω','2')})(2v) = ωv`],
+ ["The halving and the doubling cancel exactly. Reaching for a = v²/r instead hides this, because r is not held fixed here.",'a\' = a · Correct answer: (A)']
+]},
+{id:'CIRC-01-B',parent:'CIRC-01',variant:2,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.135',printedAnswer:'A',verifiedAnswer:'A'},question:'What happens to centripitral force of a revolving body if you double the orbital speed v and halve the angular velocity ω-',options:['Centripetal force remains unchanged','Centripital force is halved','Centripital force is doubled','Centripital force is quadrupled'],correct:0,answer:'Centripetal force remains unchanged',diagram:'',noDiagramReason:'The same substitution as the previous variant, now for the force rather than the acceleration.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'direct retry'},short:[
+ ["The force is the mass times the same acceleration, so write it in the same two quantities.",'F = mωv'],
+ ["The same halving and doubling cancel.",`F′ = m(${fraction('ω','2')})(2v) = mωv · Correct answer: (A)`]
+]},
+{id:'CIRC-01-C',parent:'CIRC-01',variant:3,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.138',printedAnswer:'B',verifiedAnswer:'B'},question:'If both the speed and radius of circular path of a revolving body are doubled, the magnitude of centripetal force will be-',options:['equal to the former','twice the former','4 times the former','8 times the former'],correct:1,answer:'twice the former',diagram:'',noDiagramReason:'Another scaling of the same relation; the geometry is unchanged apart from a factor the arithmetic states.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'controlled transfer'},short:[
+ ["Here the speed and the radius are the quantities being changed, so use the form written in those.",`F = ${fraction('mv²','r')}`],
+ ["Double both.",`F′ = ${fraction('m(2v)²','2r')} = ${fraction('4mv²','2r')}`],
+ ["The square on the speed beats the single power of the radius, leaving a factor of two rather than four.",'F\' = 2F · Correct answer: (B)']
+]},
+{id:'CIRC-03-B',parent:'CIRC-03',variant:2,topic:'Centripetal acceleration, angular velocity and radius',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.146',printedAnswer:'A',verifiedAnswer:'A'},question:'A particle completes 3 revolutions per second on a circular path of radius 8 cm. Find the values of angular velocity and centripetal acceleration of the particle -',options:['6π rad/s ; 288π² cm/s²','π rad/s ; 275π² cm/s²','6π rad/s ; 288 cm/s²','None'],correct:0,answer:'6π rad/s ; 288π² cm/s²',diagram:'',noDiagramReason:'Same two-step chain as its core, from a revolution rate to an angular velocity and then to an acceleration.',relevance:{parent:'CIRC-03',sharedSkill:'Centripetal acceleration, angular velocity and radius',recoveryPurpose:'direct retry'},short:[
+ ["Three revolutions a second is three times a full turn.",'ω = 2π(3) = 6π rad/s'],
+ ["Feed that into the core relation, keeping the radius in centimetres so the answer matches the options.",'a = ω²r = (6π)²(8) = 288π² cm/s²'],
+ ["Option (C) drops the π² by squaring only the number, which is the error to avoid.",'ω = 6π rad/s · a = 288π² cm/s² · Correct answer: (A)']
+]},
+{id:'CIRC-03-C',parent:'CIRC-03',variant:3,topic:'Centripetal acceleration, angular velocity and radius',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.148',printedAnswer:'B',verifiedAnswer:'B'},question:'The earth, radius 6400 km, makes one revolution about its own axis in 24 hours. The centripetal acceleration of a point on its equator is nearly -',options:['340 cm/sec²','3.4 cm/sec²','34 cm/sec²','0.34 cm/sec²'],correct:1,answer:'3.4 cm/sec²',diagram:'',noDiagramReason:'The same relation applied to a very large radius and a very slow rotation; the scale is in the numbers, not in a picture.',relevance:{parent:'CIRC-03',sharedSkill:'Centripetal acceleration, angular velocity and radius',recoveryPurpose:'controlled transfer'},short:[
+ ["One turn in 24 hours fixes the angular velocity.",`ω = ${fraction('2π','86400')} ≈ 7.27 × 10⁻⁵ rad/s`],
+ ["Work in centimetres, since the options are in centimetres per second squared.",'r = 6400 km = 6.4 × 10⁸ cm'],
+ ["Apply the core relation.",'a = ω²r ≈ (5.29 × 10⁻⁹)(6.4 × 10⁸) ≈ 3.4 cm/s² · Correct answer: (B)']
+]},
+{id:'CIRC-03-D',parent:'CIRC-03',variant:4,topic:'Centripetal acceleration, angular velocity and radius',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.132',printedAnswer:'B',verifiedAnswer:'B'},question:'A stone of mass 0.5 kg tied with a string of length 1 metre is moving in a circular path with a speed of 4 m s⁻¹. The tension acting on the string in newton is -',options:['2','8','0.2','0.8'],correct:1,answer:'8',diagram:'',noDiagramReason:'A single substitution into the same relation, with the string tension playing the part of the centripetal force.',relevance:{parent:'CIRC-03',sharedSkill:'Centripetal acceleration, angular velocity and radius',recoveryPurpose:'controlled transfer'},short:[
+ ["The string tension is what holds the stone on its circle, so it equals the centripetal force.",`T = ${fraction('mv²','r')}`],
+ ["Substitute.",`T = ${fraction('0.5 (4)²','1')} = 8 N · Correct answer: (B)`]
+]},
+{id:'CIRC-03-E',parent:'CIRC-03',variant:5,topic:'Centripetal acceleration, angular velocity and radius',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.133',printedAnswer:'B',verifiedAnswer:'B'},question:'The breaking tension of a string is 10 N. A particle of mass 0.1 kg tied to it is rotated along a horizontal circle of radius 0.5 metre. The maximum speed with which the particle can be rotated without breaking the string is-',options:['√5 m/sec','√50 m/sec','√500 m/sec','√1000 m/sec'],correct:1,answer:'√50 m/sec',diagram:'',noDiagramReason:'Inverts the same relation to solve for a speed; the setup is the one the core already describes.',relevance:{parent:'CIRC-03',sharedSkill:'Centripetal acceleration, angular velocity and radius',recoveryPurpose:'controlled transfer'},short:[
+ ["The string can supply centripetal force only up to its breaking tension, so that sets the fastest rotation.",`T(max) = ${fraction('mv²','r')}`],
+ ["Rearrange for the speed.",`v² = ${fraction('T(max) r','m')} = ${fraction('10 (0.5)','0.1')}`],
+ ["Take the root.",'v² = 50 ⇒ v = √50 m/s · Correct answer: (B)']
+]},
+{id:'CIRC-06-A',parent:'CIRC-06',variant:1,topic:'Banking of a circular track',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.103',printedAnswer:'C',verifiedAnswer:'C'},question:'Keeping the angle of banking of the road constant, the maximum speed of the vehicles is to be increased by 10%. The radius of curvature of the road will have to be changed from 20 m to-',options:['22 m','40 m','24.2 m','14.4 m'],correct:2,answer:'24.2 m',diagram:'',noDiagramReason:'Scales the core relation; the banked geometry the core draws is unchanged, only the numbers move.',relevance:{parent:'CIRC-06',sharedSkill:'Banking of a circular track',recoveryPurpose:'controlled transfer'},short:[
+ ["Holding the banking angle fixed holds the whole ratio fixed, so the radius must follow the square of the speed.",`tan θ = ${fraction('v²','rg')} is fixed ⇒ r ∝ v²`],
+ ["A 10% faster design speed multiplies the square by 1.21.",`${fraction('r′','r')} = (1.1)² = 1.21`],
+ ["So the radius grows by 21%, not by 10% as option (A) assumes.",'r\' = 20 (1.21) = 24.2 m · Correct answer: (C)']
+]},
+{id:'CIRC-06-B',parent:'CIRC-06',variant:2,topic:'Banking of a circular track',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.177',printedAnswer:'C',verifiedAnswer:'C'},question:'A cyclist taking turn bends inwards while a car passenger taking the same turn is thrown outwards. The reason is -',options:['that car is heavier than cycle','that car has four wheels, while cycle has only two','that cyclist has to counteract the centrifugal force, while the passenger is only thrown by it','the difference in the speed of the two'],correct:2,answer:'that cyclist has to counteract the centrifugal force, while the passenger is only thrown by it',diagram:'',noDiagramReason:'A comparison of two situations rather than one geometry, and the lean itself is already drawn in this family\'s core.',relevance:{parent:'CIRC-06',sharedSkill:'Banking of a circular track',recoveryPurpose:'controlled transfer'},short:[
+ ["The cyclist leans so that the ground's reaction acquires an inward component, which is what turns him.",'leaning supplies the centripetal force'],
+ ["The passenger supplies nothing: the car turns beneath him and, in the car's rotating frame, he appears pushed outwards until the seat and door provide the inward force.",'passenger is acted on, rather than acting'],
+ ["Neither the mass nor the number of wheels enters the argument, which rules out the other options.",'Correct answer: (C)']
+]},
+{id:'CIRC-06-C',parent:'CIRC-06',variant:3,topic:'Banking of a circular track',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.57',printedAnswer:'C',verifiedAnswer:'C'},question:'While turning a corner a cyclist bends inwards because -',options:['It is a fashion to do','He feels comfort in it','He wants to get suitable centripetal force','He wants to obey Newton’s laws of motion'],correct:2,answer:'He wants to get suitable centripetal force',diagram:'',noDiagramReason:'The same lean the core diagram already shows, asked qualitatively.',relevance:{parent:'CIRC-06',sharedSkill:'Banking of a circular track',recoveryPurpose:'direct retry'},short:[
+ ["Upright, the ground's reaction on the cyclist is vertical and has no inward component at all.",'upright: no horizontal force available'],
+ ["Leaning tilts that reaction so part of it points at the centre of the turn, which is exactly the force the turn requires.",'leaning gives the reaction an inward component · Correct answer: (C)']
+]},
+{id:'CIRC-06-D',parent:'CIRC-06',variant:4,topic:'Banking of a circular track',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.61',printedAnswer:'A',verifiedAnswer:'A'},question:'A car sometimes overturns while taking a turn. When it overturns, it is -',options:['The inner wheel which leaves the ground first','The outer wheel which leaves the ground first','Both the wheels leave the ground simultaneously','Either wheel leaves the ground first'],correct:0,answer:'The inner wheel which leaves the ground first',diagram:'',noDiagramReason:'Turns on how the load shifts between two wheels; the tilt involved is the same one the core diagram shows.',relevance:{parent:'CIRC-06',sharedSkill:'Banking of a circular track',recoveryPurpose:'controlled transfer'},short:[
+ ["Turning requires an inward friction force at the road, applied below the car's centre of gravity.",'friction acts inward, at ground level'],
+ ["That force, acting below the centre of gravity, tends to tip the car outwards, pressing the outer wheel harder into the road and relieving the inner one.",'load transfers to the outer wheel'],
+ ["The wheel that is being unloaded is the one that lifts first.",'the inner wheel leaves first · Correct answer: (A)']
+]},
+{id:'CIRC-07-C',parent:'CIRC-07',variant:3,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.48',printedAnswer:'C',verifiedAnswer:'C'},question:'Let θ denote the angular displacement of a simple pendulum oscillating in a vertical plane. If the mass of the bob is m. The tension in the string is mg cos θ -',options:['always','never','at extreme position','at mean position'],correct:2,answer:'at extreme position',diagram:'',noDiagramReason:'Asks when the core relation loses its second term; the pendulum geometry is already drawn there.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'controlled transfer'},short:[
+ ["The core relation carries two terms, the weight component and the centripetal demand.",`T = mg cos θ + ${fraction('mv²','L')}`],
+ ["The tension reduces to mg cos θ only when the second term vanishes, which needs the speed to be zero.",'T = mg cos θ ⇔ v = 0'],
+ ["The bob is momentarily at rest at the ends of its swing, not at the lowest point, where it is moving fastest.",'at the extreme position · Correct answer: (C)']
+]},
+{id:'CIRC-07-D',parent:'CIRC-07',variant:4,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.60',printedAnswer:'B',verifiedAnswer:'B'},question:'A 2 kg stone at the end of a string 1m long is whirled in a vertical circle at a constant speed. The speed of the stone is 4 m/sec. The tension in the string will be 52N. when the stone is-',options:['At the top of the circle','At the bottom of the circle','Half way down','None of the above'],correct:1,answer:'At the bottom of the circle',diagram:'',noDiagramReason:'Identifies a position from a tension value using the core relation; no new geometry is involved.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'controlled transfer'},short:[
+ ["The centripetal requirement is the same everywhere, since the speed is constant.",`${fraction('mv²','r')} = ${fraction('2 (4)²','1')} = 32 N`],
+ ["The tension exceeds that requirement by the component of the weight along the string, which is largest and positive at the lowest point.",'T(bottom) = 32 + mg = 32 + 20 = 52 N'],
+ ["At the top the weight helps instead, giving 32 − 20 = 12 N, so 52 N can only be the bottom.",'at the bottom · Correct answer: (B)']
+]},
+{id:'CIRC-07-E',parent:'CIRC-07',variant:5,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.137',printedAnswer:'C',verifiedAnswer:'C'},question:'A body of mass 10 kg is rotated in vertical circle of radius 4 cm at constant angular velocity of 5 rad/sec. The maximum tension in the string is-',options:['100 N','600 N','110 N','1100 N'],correct:2,answer:'110 N',diagram:'',noDiagramReason:'Applies the core relation at the point where it is largest; the vertical circle is the one the core already draws.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'controlled transfer'},short:[
+ ["With the angular velocity given, write the centripetal requirement in terms of it, and keep the radius in metres.",'mω²r = 10 (5)² (0.04) = 10 N'],
+ ["The tension is largest at the lowest point, where the weight adds to that requirement rather than subtracting from it.",'T(max) = mω²r + mg = 10 + 100'],
+ ["The 4 cm radius makes the centripetal part small, so the weight dominates here.",'T(max) = 110 N · Correct answer: (C)']
+]},
+{id:'CIRC-08-A',parent:'CIRC-08',variant:1,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.55',printedAnswer:'A',verifiedAnswer:'A'},question:'A bucket tied at the end of a 1.6 m long string is whirled in a vertical circle with constant speed. What should be the minimum speed so that the water from the bucket does not spill, When the bucket is at the highest position - (Take g = 10 m/sec²)',options:['4 m/sec','6.25 m/sec','16 m/sec','None of the above'],correct:0,answer:'4 m/sec',diagram:'',noDiagramReason:'A direct retry of the core\'s critical condition with numbers in place of symbols.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'direct retry'},short:[
+ ["At the highest point the water stays in only while something still pushes it round; the limiting case is where gravity alone does the bending.",`mg = ${fraction('mv²','r')} ⇒ v = √(gr)`],
+ ["Substitute.",'v = √(10 × 1.6) = √16 = 4 m/s · Correct answer: (A)']
+]},
+{id:'CIRC-08-B',parent:'CIRC-08',variant:2,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.49',printedAnswer:'C',verifiedAnswer:'C'},question:'Water in a bucket is whirled in a vertical circle with a string attached to it. The water does not fall down even when the bucket is inverted at the top of its path. We conclude that-',options:['mg = mv²/R','mg > mv²/R','mg < mv²/R','none of these'],correct:2,answer:'mg < mv²/R',diagram:'',noDiagramReason:'States the core\'s condition as an inequality rather than a limiting equality; the same vertical circle applies.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["At the top both the weight and the bucket's push act downwards, towards the centre, and together they supply the centripetal force.",`mg + N = ${fraction('mv²','R')}`],
+ ["The bucket can only push, never pull, so its contribution cannot be negative.",'N ≥ 0'],
+ ["That makes the weight at most the centripetal requirement. Equality is the limiting case; water that stays in while the bucket is genuinely inverted and still pressed satisfies the strict inequality.",`mg < ${fraction('mv²','R')} · Correct answer: (C)`]
+]},
+{id:'CIRC-08-C',parent:'CIRC-08',variant:3,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.59',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle tied to one end of a string is being rotated in a vertical circle with constant frequency. The tension in the string at points A, B, C and D are T₁, T₂, T₃ and T₄ respectively, where A is the lowest point, C the highest, and B and D the two ends of the horizontal diameter. Then-',options:['T₁ = T₂ = T₃ = T₄','T₁ > T₂ > T₃ , T₂ = T₄','T₁ > T₃ > T₂ , T₂ = T₄','T₁ < T₂ < T₃ , T₂ = T₄'],correct:1,answer:'T₁ > T₂ > T₃ , T₂ = T₄',diagram:'',noDiagramReason:'Compares the core\'s relation at four points of the same circle; the vertical circle is already drawn there.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["The frequency is constant, so the speed and hence the centripetal requirement are the same at all four points.",`${fraction('mv²','r')} is the same everywhere`],
+ ["What changes is the component of the weight along the string. At the lowest point it adds, at the highest it subtracts, and on the horizontal diameter it is perpendicular to the string and so contributes nothing.",`T₁ = ${fraction('mv²','r')} + mg · T₃ = ${fraction('mv²','r')} − mg · T₂ = T₄ = ${fraction('mv²','r')}`],
+ ["Ordering the three values puts the two side points exactly between the bottom and the top, and equal to each other.",'T₁ > T₂ = T₄ > T₃ · Correct answer: (B)']
+]},
+{id:'CIRC-09-B',parent:'CIRC-09',variant:2,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.141',printedAnswer:'B',verifiedAnswer:'B'},question:'A string of length 1 m is fixed at one end and carries a mass of 100 gm at the other end. The string makes (2/π) revolutions per second around vertical axis through the fixed end. Calculate the tension in the string-',options:['1.0 N','1.6 N','2 N','4 N'],correct:1,answer:'1.6 N',diagram:'',noDiagramReason:'The same conical geometry as its core, which draws the string, the cone angle and the swept circle.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'direct retry'},short:[
+ ["Convert the revolution rate to an angular velocity; the π cancels against the one in 2π.",`ω = 2π(${fraction('2','π')}) = 4 rad/s`],
+ ["In the core's derivation the radius is ℓ sin θ, and the sine cancels from the horizontal equation, leaving the tension in terms of the full string length.",'T = mω²ℓ'],
+ ["Substitute, with the mass in kilograms. The angle never has to be found.",'T = 0.1 (4)² (1) = 1.6 N · Correct answer: (B)']
+]},
+{id:'CIRC-09-C',parent:'CIRC-09',variant:3,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.56',printedAnswer:'B',verifiedAnswer:'B'},question:'A stone is rotated steadily in a horizontal circle with a time period T by means of a string of length ℓ. If the tension in the string is kept constant and length ℓ increases by 1 %, then percentage change in time period T is-',options:['1 %','0.5 %','2 %','0.25 %'],correct:1,answer:'0.5 %',diagram:'',noDiagramReason:'A scaling argument on the core relation; the conical geometry it draws is unchanged.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'controlled transfer'},short:[
+ ["From the core, a constant tension fixes the product of the angular velocity squared and the length.",`T(tension) = mω²ℓ ⇒ ω² ∝ ${fraction('1','ℓ')}`],
+ ["The period is inversely proportional to the angular velocity, so it follows the square root of the length.",'T(period) ∝ √ℓ'],
+ ["A square root halves a small percentage change, so 1 % in the length becomes half that in the period.",`${fraction('ΔT','T')} = ${fraction('1','2')}(${fraction('Δℓ','ℓ')}) = 0.5 % · Correct answer: (B)`]
+]},
+{id:'CIRC-09-D',parent:'CIRC-09',variant:4,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.178',printedAnswer:'D',verifiedAnswer:'D'},question:'A rubber band of length ℓ has a stone of mass m tied to its one end. It is whirled with speed v so that the stone describes a horizontal circular path. The tension T in the rubber band is -',options:['zero','mv²/ℓ','> (mv²)/ℓ','< mv²/ℓ'],correct:3,answer:'< mv²/ℓ',diagram:'',noDiagramReason:'The reasoning is that the radius is not the quoted length; a drawing at one fixed radius would work against that point.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'controlled transfer'},short:[
+ ["The centripetal force is set by the radius actually swept, not by the unstretched length of the band.",`T = ${fraction('mv²','r')}`],
+ ["A rubber band stretches under tension, so the stone travels on a circle larger than ℓ.",'r > ℓ'],
+ ["A larger radius in the denominator makes the tension smaller than the value computed from ℓ alone.",`T = ${fraction('mv²','r')} < ${fraction('mv²','ℓ')} · Correct answer: (D)`]
 ]}
 ];
 </script>
@@ -663,6 +870,146 @@ function diagram(q,solution=false){
   }
   break;
  }
+ case 'perpendicular-force':{
+  height=420;
+  const cx=230,cy=176,R=104;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
+  for(const ang of [-Math.PI/2,0]){
+   const px=cx+R*Math.cos(ang),py=cy+R*Math.sin(ang);
+   s+=dot(px,py,Y);
+   s+=arrow(px,py,px-62*Math.sin(ang),py+62*Math.cos(ang),'',B);
+   if(solution)s+=arrow(px,py,px-54*Math.cos(ang),py-54*Math.sin(ang),'',GREEN);
+  }
+  s+=txt(cx,cy-R-14,'v',B,16);
+  s+=txt(cx+R+16,cy-18,'v',B,16,'start');
+  if(solution){
+   s+=txt(cx-8,cy-54,'F',GREEN,16,'end');
+   s+=txt(cx+52,cy-14,'F',GREEN,16,'start');
+   s+=txt(cx,cy+R+44,'F ⊥ v at every instant, so F does no work',GREEN,15);
+   s+=txt(cx,cy+R+68,'speed, and so kinetic energy, cannot change',M,15);
+  }
+  break;
+ }
+ case 'relative-angular-velocity':{
+  height=360;
+  const px=74,qx=346,y=180,ang=30*Math.PI/180;
+  s+=line(px,y,qx,y,M,1.6,true);
+  s+=span(px,qx,y-96,'10 m',M);
+  s+=dot(px,y,Y)+txt(px-16,y+6,'P',Y,17,'end');
+  s+=dot(qx,y,GREEN)+txt(qx+4,y+28,'Q',GREEN,17,'middle');
+  // P's 8 m/s points below PQ, Q's 6 m/s above it: opposite sides of the line
+  const LP=96,LQ=54;
+  const pxT=px+LP*Math.cos(ang),pyT=y+LP*Math.sin(ang);
+  const qxT=qx+LQ*Math.cos(-ang),qyT=y+LQ*Math.sin(-ang);
+  s+=arrow(px,y,pxT,pyT,'',Y)+txt(pxT+10,pyT+18,'8 m/s',Y,15,'start');
+  s+=arrow(qx,y,qxT,qyT,'',GREEN)+txt(qxT-8,qyT-12,'6 m/s',GREEN,15,'end');
+  // each angle is measured from the line PQ itself, to that particle's own
+  // velocity -- so Q's arc opens towards P's side of Q, not behind it
+  s+=`<path d="${arcPath(px,y,42,0,ang)}" fill="none" stroke="${M}" stroke-width="2"/>`;
+  s+=txt(px+40,y+30,'30°',M,15,'middle');
+  s+=`<path d="${arcPath(qx,y,38,0,-ang)}" fill="none" stroke="${M}" stroke-width="2"/>`;
+  s+=txt(qx+58,y-14,'30°',M,15,'start');
+  if(solution){
+   // only the components across PQ turn the line
+   s+=line(pxT,y,pxT,pyT,B,1.4,true);
+   s+=txt(pxT+10,(y+pyT)/2+4,'4 m/s',B,15,'start');
+   s+=line(qxT,y,qxT,qyT,B,1.4,true);
+   s+=txt(qxT,y+24,'3 m/s',B,15,'middle');
+   s+=txt(230,y+108,'opposite sides of PQ, so these add: 7 m/s',M,15);
+  }
+  break;
+ }
+ case 'average-acceleration-half-turn':{
+  height=380;
+  const cx=200,cy=168,R=96;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
+  s+=dot(cx,cy-R,Y)+dot(cx,cy+R,GREEN);
+  s+=arrow(cx,cy-R,cx+74,cy-R,'',B)+txt(cx+80,cy-R-10,'v (start)',B,15,'start');
+  s+=arrow(cx,cy+R,cx-74,cy+R,'',B)+txt(cx-74,cy+R+22,'v, half a turn later',B,15,'middle');
+  if(solution){
+   // the velocity has simply reversed, so the change has magnitude 2v
+   s+=arrow(392,168,306,168,'',GREEN);
+   s+=txt(349,152,'Δv = v(final) − v(start)',GREEN,14,'middle');
+   s+=txt(349,192,'|Δv| = 2v = 16 m/s',GREEN,15,'middle');
+   s+=txt(230,cy+R+72,'same speed, reversed direction, over half the period',M,15);
+  }
+  break;
+ }
+ case 'arc-and-turning-angle':{
+  height=344;
+  const cx=230,cy=296,R=150,half=22.5*Math.PI/180;
+  const a1=-Math.PI/2-half,a2=-Math.PI/2+half;
+  s+=`<path d="${arcPath(cx,cy,R,a1,a2)}" fill="none" stroke="${W}" stroke-width="3"/>`;
+  const ax=cx+R*Math.cos(a1),ay=cy+R*Math.sin(a1),bx=cx+R*Math.cos(a2),by=cy+R*Math.sin(a2);
+  s+=dot(ax,ay,Y)+txt(ax-14,ay-8,'A',Y,17,'end');
+  s+=dot(bx,by,Y)+txt(bx+14,by-8,'B',Y,17,'start');
+  s+=span(ax,bx,ay-34,'arc AB = 100 m',M);
+  if(solution){
+   s+=line(cx,cy,ax,ay,M,1.4,true)+line(cx,cy,bx,by,M,1.4,true);
+   s+=dot(cx,cy,W);
+   s+=`<path d="${arcPath(cx,cy,52,a1,a2)}" fill="none" stroke="${M}" stroke-width="2"/>`;
+   s+=txt(cx,cy-74,'45°',M,16);
+   s+=txt(cx+16,cy+22,'R',M,15,'start');
+   s+=txt(230,cy+44,'the angle between the tangents equals the angle at the centre',M,15);
+  }
+  break;
+ }
+ case 'friction-level-turn':{
+  height=420;
+  const cx=230,cy=178,R=110;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
+  s+=dot(cx,cy,W)+txt(cx-14,cy+6,'O',W,16,'end');
+  s+=line(cx,cy,cx+R,cy,M,1.3,true)+txt(cx+R/2,cy-10,'R = 45 m',M,15);
+  const px=cx,py=cy-R;
+  s+=rect(px-22,py-11,44,22,'',Y);
+  s+=arrow(px+26,py,px+96,py,'',B)+txt(px+100,py-12,'v',B,16,'start');
+  s+=txt(230,cy+R+34,'seen from above: the road is level, nothing is banked',M,15);
+  if(solution){
+   s+=arrow(px,py+14,px,py+88,'',GREEN);
+   s+=txt(px+12,py+62,'friction, the only inward force',GREEN,15,'start');
+   s+=txt(230,cy+R+58,'skidding begins when it reaches μmg',GREEN,15);
+  }
+  break;
+ }
+ case 'rotating-rod-tension':{
+  height=320;
+  const x0=70,y=170,L=320;
+  s+=line(x0,y,x0+L,y,W,4);
+  s+=dot(x0,y,W)+txt(x0-6,y+28,'pivot',W,15,'middle');
+  s+=txt(x0+L,y-22,'free end',M,15,'middle');
+  const p1=x0+L*0.25,p2=x0+L*0.75;
+  s+=line(p1,y-22,p1,y+22,M,1.6,true)+txt(p1,y-30,'L/4',M,15);
+  s+=line(p2,y-22,p2,y+22,M,1.6,true)+txt(p2,y-30,'3L/4',M,15);
+  if(solution){
+   // the tension at a cut holds everything beyond that cut
+   s+=span(p1,x0+L,y+54,'T₁ holds all of this',M);
+   s+=span(p2,x0+L,y+90,'T₂ holds only this',M);
+   s+=txt(230,y+124,'more rod beyond the cut nearer the pivot, so T₁ > T₂',GREEN,15);
+   s+=txt(230,y+148,'at the free end there is nothing left to hold, so T = 0',M,15);
+  }
+  break;
+ }
+ case 'convex-bridge':{
+  height=400;
+  const cx=230,cy=320,R=190,half=0.72;
+  const a1=-Math.PI/2-half,a2=-Math.PI/2+half;
+  s+=`<path d="${arcPath(cx,cy,R,a1,a2)}" fill="none" stroke="${W}" stroke-width="3"/>`;
+  const topY=cy-R;
+  s+=rect(cx-24,topY-22,48,22,'',Y);
+  if(solution){
+   s+=line(cx,cy,cx,topY,M,1.3,true)+dot(cx,cy,W);
+   const mid=topY-11;
+   s+=arrow(cx,mid,cx,mid-80,'',B)+txt(cx-10,mid-84,'N',B,16,'end');
+   s+=arrow(cx,mid,cx,mid+84,'',Y)+txt(cx+12,mid+66,'mg',Y,16,'start');
+   s+=txt(cx+10,cy-54,'R = 8.9 m',M,15,'start');
+   s+=line(cx-24,topY-22,cx-96,topY-22,M,1.2,true);
+   s+=line(cx-24,topY,cx-96,topY,M,1.2,true);
+   s+=txt(cx-100,topY-6,'h = 1.1 m',M,14,'end');
+   s+=txt(230,topY-104,'contact is lost when N falls to zero',GREEN,15);
+   s+=txt(230,cy+22,'the centre lies below, so mg − N bends the car round',M,15);
+  }
+  break;
+ }
  default: return '';
  }
  const subject=p.figure||q.title;
@@ -691,19 +1038,28 @@ const baseSections=[
 const subtopicPlan={
  'ucm-basics':[
   ['What stays constant in uniform circular motion',['CIRC-01']],
-  ['Direction of motion when the centripetal force is removed',['CIRC-02']]],
+  ['Direction of motion when the centripetal force is removed',['CIRC-02']],
+  ['A force that stays perpendicular to the velocity',['CIRC-11']],
+  ['Angular acceleration when the speed is constant',['CIRC-12']]],
  'angular-kinematics':[
   ['Centripetal acceleration, angular velocity and radius',['CIRC-03']],
-  ['Rotational kinematics: angular acceleration, speed and revolutions',['CIRC-04']]],
+  ['Rotational kinematics: angular acceleration, speed and revolutions',['CIRC-04']],
+  ['Angular velocity of one particle about another',['CIRC-13']],
+  ['Average acceleration over part of a revolution',['CIRC-14']]],
  'non-uniform':[
-  ['Combining tangential and centripetal acceleration',['CIRC-05']]],
+  ['Combining tangential and centripetal acceleration',['CIRC-05']],
+  ['Force from a kinetic energy that grows with the distance covered',['CIRC-15']],
+  ['Acceleration on a curve from its arc and turning angle',['CIRC-16']]],
  'horizontal-circles':[
   ['Banking of a circular track',['CIRC-06']],
-  ['The conical pendulum',['CIRC-09']]],
+  ['The conical pendulum',['CIRC-09']],
+  ['Maximum speed on an unbanked road, set by friction',['CIRC-17']],
+  ['How tension varies along a rotating rod',['CIRC-18']]],
  'vertical-circles':[
   ['Tension in a vertical circle at a general angle',['CIRC-07']],
   ['The minimum speed at the top of a vertical circle',['CIRC-08']],
-  ['Acceleration on a vertical circle traversed with the least possible speed',['CIRC-10']]]
+  ['Acceleration on a vertical circle traversed with the least possible speed',['CIRC-10']],
+  ['Losing contact at the top of a convex bridge',['CIRC-19']]]
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const routeByCore={};
