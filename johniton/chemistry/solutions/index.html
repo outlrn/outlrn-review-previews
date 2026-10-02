@@ -750,6 +750,393 @@ detailed:[
  ['Rearrange to isolate the molar mass.','M = (20×8.3×300)/0.8'],
  ['Compute the value in g mol⁻¹.','M = 49800/0.8','M = 62250 g mol⁻¹'],
  ['Convert to kg mol⁻¹ as asked.','M = 62.25 kg mol⁻¹','Answer: 62 kg mol⁻¹']
+]},
+{id:'SOL-56',level:2,topic:'Relative vapour-pressure lowering with electrolyte dissociation',source:'ExamSIDE · JEE Main 2023 (Online) 12th April Morning Shift · questions.examside.com (question id 1lgrl9cee)',sourceRef:true,question:'80% of the MgCl₂ in a 1.0 molal aqueous solution is dissociated. If the vapour pressure of pure water at 38°C is 50 mm Hg, find the vapour pressure of the solution (nearest integer, in mm Hg).',type:'numerical',answer:'48',unit:'mm Hg',
+short:[['MgCl₂ dissociates as MgCl₂ ⇌ Mg²⁺ + 2Cl⁻, with 80% of 1 mol dissociating in the 1 molal solution.','Total solute particles = (1 − 0.8) + 0.8 + 1.6','= 2.6 mol in 1 kg water (55.56 mol water)'],['Apply the relative vapour-pressure lowering law for a dilute solution.','(P° − P)/(P°) = (2.6)/(55.56)'],['Substitute P° = 50 mm Hg and solve for the lowering.','P° − P = 50 × 0.0468','= 2.34 mm Hg'],['Subtract the lowering from P° and round to the nearest integer.','P = 50 − 2.34','= 47.66 mm Hg','Answer: 48 mm Hg']],
+detailed:[
+ ['Relative lowering of vapour pressure is a colligative property equal to the mole fraction of solute particles (Raoult\'s law for a non-volatile solute).','(P° − P)/(P°) = n_solute ÷ (n_solute + n_solvent)'],
+ ['MgCl₂ dissociates as MgCl₂ ⇌ Mg²⁺ + 2Cl⁻. With 80% dissociation of 1 mol MgCl₂ in the 1 molal solution, the undissociated and ionic species add up to the effective solute particles.','n_solute = (1 − 0.8) + 0.8 + 1.6','= 0.2 + 0.8 + 1.6','= 2.6 mol'],
+ ['A 1 molal solution contains 1 kg of water as solvent.','n_solvent = 1000/18','= 55.56 mol'],
+ ['Since n_solvent is much larger than n_solute, use the dilute-solution approximation.','(P° − P)/(P°) = (2.6)/(55.56)','= 0.0468'],
+ ['Substitute the pure-water vapour pressure P° = 50 mm Hg.','P° − P = 50 × 0.0468','= 2.34 mm Hg'],
+ ['Solve for the solution\'s vapour pressure and round to the nearest integer.','P = 50 − 2.34','= 47.66 mm Hg','Answer: 48 mm Hg']
+]},
+{id:'SOL-57',level:2,topic:'Freezing point depression to find solute volume',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Evening Shift · questions.examside.com (question id lvb2acph)',sourceRef:true,question:'x×10⁻² mL of methanol (molar mass 32 g mol⁻¹, density 0.792 g cm⁻³) is added to 100 mL of water (density 1 g cm⁻³). A vapour-pressure–temperature diagram of the mixture shows the freezing curve of pure water meeting the temperature axis at 273.15 K and the freezing curve of the frozen methanolic solution meeting it at 270.65 K. Given K_f of water = 1.86 K kg mol⁻¹, find x (nearest integer).',type:'numerical',answer:'543',
+short:[['Read the depression in freezing point from the diagram: pure water freezes at 273.15 K and the methanolic solution at 270.65 K.','ΔTf = 273.15 − 270.65','= 2.50 K'],['Find the molality using ΔTf = K_f × m (methanol is a non-electrolyte).','m = (2.50)/(1.86)','= 1.344 mol kg⁻¹'],['Find the moles and mass of methanol in 0.1 kg (100 g) of water.','n = 1.344 × 0.1','= 0.1344 mol','mass = 0.1344 × 32','= 4.30 g'],['Convert mass to volume using density 0.792 g cm⁻³.','V = (4.30 g)/(0.792 g cm⁻³)','= 5.43 mL'],['Match to the given form V = x×10⁻² mL and round.','x = (5.43)/(10⁻²)','= 543','Answer: 543']],
+detailed:[
+ ['This is a freezing-point depression problem read off a vapour-pressure–temperature diagram: the two curves cross the temperature axis at the respective freezing points of pure water and the methanol–water solution.','ΔTf = T_f(water) − T_f(solution)','= 273.15 K − 270.65 K','= 2.50 K'],
+ ['Freezing-point depression follows ΔTf = i·K_f·m. Methanol is a covalent, non-dissociating solute in water, so i = 1.','m = (ΔTf)/(K_f)','= (2.50)/(1.86)','= 1.344 mol kg⁻¹'],
+ ['The solvent is 100 mL of water at density 1 g cm⁻³, i.e. 100 g = 0.1 kg. Use the molality to find moles of methanol.','n(methanol) = 1.344 × 0.1','= 0.1344 mol'],
+ ['Convert moles to mass using the given molar mass 32 g mol⁻¹.','mass = 0.1344 × 32','= 4.30 g'],
+ ['Convert mass to volume using the given density 0.792 g cm⁻³.','V = (4.30 g)/(0.792 g cm⁻³)','= 5.43 mL'],
+ ['The volume added was stated as x×10⁻² mL, so equate and solve for x, rounding to the nearest integer.','x × 10⁻² = 5.43','x = (5.43)/(10⁻²)','= 543','Answer: 543']
+]},
+{id:'SOL-58',level:3,topic:'Van\'t Hoff factor from coordination-complex ionisation',source:'ExamSIDE · JEE Main 2018 (Offline) · questions.examside.com (question id fCjLdX3ZvP16d4k3)',sourceRef:true,question:'For a 1 molal aqueous solution of each of the following coordination compounds, which one will show the highest freezing point?',options:['[Co(H₂O)₃Cl₃]·3H₂O','[Co(H₂O)₆]Cl₃','[Co(H₂O)₅Cl]Cl₂·H₂O','[Co(H₂O)₄Cl₂]Cl·2H₂O'],correct:0,answer:'[Co(H₂O)₃Cl₃]·3H₂O',
+short:[['Freezing-point depression is ΔTf = i·K_f·m, so at equal molality the highest freezing point belongs to the complex with the smallest van\'t Hoff factor i.','Lowest i','smallest ΔTf','highest freezing point'],['Find how many ions each complex releases outside the coordination sphere.','[Co(H₂O)₃Cl₃]: neutral complex, i = 1','[Co(H₂O)₆]Cl₃: i = 4','[Co(H₂O)₅Cl]Cl₂: i = 3','[Co(H₂O)₄Cl₂]Cl: i = 2'],['Waters of crystallisation outside the bracket do not change the particle count.','Smallest i = 1 for [Co(H₂O)₃Cl₃]·3H₂O'],['Smallest i gives the smallest depression and hence the highest freezing point.','Answer: (A) [Co(H₂O)₃Cl₃]·3H₂O']],
+detailed:[
+ ['All four compounds are cobalt(III) coordination compounds with six groups bound to Co, plus chloride ions and water molecules outside the coordination sphere that determine ionisation.','Coordination number of Co = 6 in each'],
+ ['[Co(H₂O)₃Cl₃]·3H₂O: the three Cl⁻ are all inside the coordination sphere, balancing the Co³⁺ charge, so the complex is neutral and does not ionise.','i = 1'],
+ ['[Co(H₂O)₆]Cl₃: all three Cl⁻ are outside the sphere as free counter-ions.','[Co(H₂O)₆]³⁺ + 3Cl⁻','i = 4'],
+ ['[Co(H₂O)₅Cl]Cl₂·H₂O: two Cl⁻ are outside the sphere.','[Co(H₂O)₅Cl]²⁺ + 2Cl⁻','i = 3'],
+ ['[Co(H₂O)₄Cl₂]Cl·2H₂O: one Cl⁻ is outside the sphere.','[Co(H₂O)₄Cl₂]⁺ + Cl⁻','i = 2'],
+ ['At equal molality, ΔTf = i·K_f·m, so ΔTf is directly proportional to i, and the freezing point is highest for the smallest i.','i values — A: 1','D: 2','C: 3','B: 4'],
+ ['The smallest i, 1, belongs to [Co(H₂O)₃Cl₃]·3H₂O, giving the smallest depression and the highest freezing point.','Answer: (A) [Co(H₂O)₃Cl₃]·3H₂O']
+]},
+{id:'SOL-59',level:1,topic:'Osmotic pressure to isotonic glucose concentration',source:'ExamSIDE · JEE Main 2022 (Online) 24th June Morning Shift · questions.examside.com (question id 1l5c74iui)',sourceRef:true,question:'The osmotic pressure of blood is 7.47 bar at 300 K. For an intravenous glucose solution to be isotonic with blood, find the required concentration in g L⁻¹. (Molar mass of glucose = 180 g mol⁻¹, R = 0.083 L bar K⁻¹ mol⁻¹, nearest integer)',type:'numerical',answer:'54',unit:'g L⁻¹',
+short:[['Glucose is a non-electrolyte, so osmotic pressure follows π = CRT.','C = (π)/(RT)'],['Substitute π = 7.47 bar, R = 0.083 L bar K⁻¹ mol⁻¹, T = 300 K.','C = (7.47)/(0.083 × 300)','= 0.300 mol L⁻¹'],['Convert molarity to concentration in g L⁻¹ using molar mass 180 g mol⁻¹.','C(g L⁻¹) = 0.300 × 180','= 54 g L⁻¹','Answer: 54 g L⁻¹']],
+detailed:[
+ ['For an isotonic intravenous solution, the glucose solution\'s osmotic pressure must equal the osmotic pressure of blood at the same temperature. Glucose is a non-electrolyte (i = 1), so π = CRT.','π(solution) = π(blood)','= 7.47 bar'],
+ ['Rearrange for molar concentration C.','C = (π)/(RT)'],
+ ['Substitute the given values.','C = (7.47)/(0.083 × 300)','= (7.47)/(24.9)','= 0.300 mol L⁻¹'],
+ ['Convert molar concentration to mass concentration using the molar mass of glucose, 180 g mol⁻¹.','C(g L⁻¹) = 0.300 mol L⁻¹ × 180 g mol⁻¹','= 54 g L⁻¹'],
+ ['Check magnitude: a 0.3 M sugar solution at about 54 g L⁻¹ is a reasonable physiological concentration.','Answer: 54 g L⁻¹']
+]},
+{id:'SOL-60',level:2,topic:'Raoult\'s law for a two-component volatile mixture',source:'ExamSIDE · JEE Main 2025 (Online) 2nd April Morning Shift · questions.examside.com (question id m9dunpde)',sourceRef:true,question:'A solution is made by mixing 1 mol of volatile liquid A with 3 mol of volatile liquid B. The vapour pressure of pure A is 200 mm Hg and the vapour pressure of the solution is 500 mm Hg. Find the vapour pressure of pure B and identify the less volatile of the two components.',options:['1400 mm Hg, A','1400 mm Hg, B','600 mm Hg, A','600 mm Hg, B'],correct:2,answer:'600 mm Hg, A',
+short:[['Find the mole fractions in the mixture.','xA = 1/4','= 0.25','xB = 3/4','= 0.75'],['Apply Raoult\'s law for the total vapour pressure of an ideal solution.','P = xA·P°A + xB·P°B','500 = 0.25×200 + 0.75×P°B'],['Solve for P°B.','500 − 50 = 0.75×P°B','P°B = (450)/(0.75)','= 600 mm Hg'],['Compare the two vapour pressures to decide which component is less volatile.','P°A = 200 mm Hg','P°B = 600 mm Hg','Since P°A < P°B','A is the less volatile component.','Answer: (C) 600 mm Hg, A']],
+detailed:[
+ ['In a liquid mixture, mole fractions come from the given moles: 1 mol A and 3 mol B, total 4 mol.','xA = 1/4','= 0.25','xB = 3/4','= 0.75'],
+ ['For an ideal solution, Raoult\'s law gives the total vapour pressure as the mole-fraction-weighted sum of the pure-component vapour pressures.','P = xA·P°A + xB·P°B'],
+ ['Substitute the known values.','500 = 0.25×200 + 0.75×P°B','500 = 50 + 0.75×P°B'],
+ ['Solve for P°B.','0.75×P°B = 450','P°B = (450)/(0.75)','= 600 mm Hg'],
+ ['The more volatile component has the higher pure vapour pressure, so the less volatile component has the lower one.','P°A = 200 mm Hg','P°B = 600 mm Hg','P°A < P°B','A is less volatile'],
+ ['So the vapour pressure of pure B is 600 mm Hg, and A is the least volatile component of the solution.','Answer: (C) 600 mm Hg, A']
+]},
+{id:'SOL-61',level:1,topic:'Freezing point depression in a binary liquid mixture',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · questions.examside.com (question id lv2eryip)',sourceRef:true,question:'2.7 kg each of water and acetic acid are mixed. Acetic acid neither dimerises nor dissociates in the mixture. If the freezing point of the solution is −x°C, find x (nearest integer). [Given: molar mass of water = 18 g mol⁻¹, molar mass of acetic acid = 60 g mol⁻¹, K_f(water) = 1.86 K kg mol⁻¹]',type:'numerical',answer:'31',unit:'(freezing point = −31°C)',
+short:[['Take water (2.7 kg) as the solvent and acetic acid as the solute, since K_f of water is given.','n(acetic acid) = (2700 g) ÷ (60 g mol⁻¹)','= 45 mol'],['Find the molality of acetic acid in the 2.7 kg of water.','m = (45)/(2.7)','= 16.67 mol kg⁻¹'],['Acetic acid neither dissociates nor dimerises here, so i = 1. Apply ΔTf = K_f·m.','ΔTf = 1.86 × 16.67','= 31.0 K'],['The freezing point drops by 31 K below pure water\'s 0°C.','Answer: x = 31 (freezing point = −31°C)']],
+detailed:[
+ ['Water and acetic acid are mixed in equal masses (2.7 kg each). Since the freezing-point depression constant given is for water, water is treated as the solvent and acetic acid as the solute.','Solvent: 2.7 kg H₂O','Solute: 2.7 kg CH₃COOH'],
+ ['Convert the mass of acetic acid to moles using its molar mass, 60 g mol⁻¹.','n(acetic acid) = (2700 g) ÷ (60 g mol⁻¹)','= 45 mol'],
+ ['Compute the molality, moles of solute per kg of solvent.','m = (45 mol) ÷ (2.7 kg)','= 16.67 mol kg⁻¹'],
+ ['The problem states acetic acid neither dimerises nor dissociates in this mixture, so the van\'t Hoff factor i = 1.','ΔTf = i·K_f·m','= 1 × 1.86 × 16.67'],
+ ['Evaluate the depression.','ΔTf = 31.0 K'],
+ ['Pure water freezes at 0°C (273 K). Subtract the depression to get the solution\'s freezing point.','T_f(solution) = 0°C − 31.0 K','= −31°C'],
+ ['So x = 31.','Answer: x = 31 (freezing point = −31°C)']
+]},
+{id:'SOL-62',level:1,topic:'Van\'t Hoff factor for a strong electrolyte\'s freezing point depression',source:'ExamSIDE · AIEEE 2010 · questions.examside.com (question id FNZbeT7PKHNHVm0r)',sourceRef:true,question:'If sodium sulphate is considered to be completely dissociated into cations and anions in aqueous solution, find the depression in freezing point of water, ΔTf, when 0.01 mol of sodium sulphate is dissolved in 1 kg of water. (K_f = 1.86 K kg mol⁻¹)',options:['0.0372 K','0.0558 K','0.0744 K','0.0186 K'],correct:1,answer:'0.0558 K',
+short:[['Sodium sulphate dissociates completely.','Na₂SO₄ → 2Na⁺ + SO₄²⁻','i = 3'],['Molality here is 0.01 mol in 1 kg water.','m = 0.01 mol kg⁻¹'],['Apply ΔTf = i·K_f·m.','ΔTf = 3 × 1.86 × 0.01','= 0.0558 K','Answer: (B) 0.0558 K']],
+detailed:[
+ ['Sodium sulphate is a strong electrolyte that is given to dissociate completely in water.','Na₂SO₄ → 2Na⁺ + SO₄²⁻'],
+ ['Count the total ions produced per formula unit to get the van\'t Hoff factor.','i = 2 + 1','= 3'],
+ ['0.01 mol of Na₂SO₄ is dissolved in 1 kg of water, so the molality is directly 0.01 mol kg⁻¹.','m = 0.01 mol kg⁻¹'],
+ ['Freezing-point depression for an electrolyte solution is ΔTf = i·K_f·m.','ΔTf = 3 × 1.86 × 0.01'],
+ ['Evaluate.','ΔTf = 0.0558 K'],
+ ['Check the distractors: using i = 1 (ignoring dissociation) gives 0.0186 K, option D.','Using i = 2 gives 0.0372 K, option A.','Using i = 4 gives 0.0744 K, option C.','Only i = 3 for Na₂SO₄ gives the correct value.','Answer: (B) 0.0558 K']
+]},
+{id:'SOL-63',level:2,topic:'Comparing freezing points via van\'t Hoff factor',source:'ExamSIDE · JEE Main 2021 (Online) 22th July Evening Shift · questions.examside.com (question id 1krt64s80)',sourceRef:true,question:'Which one of the following 0.06 M aqueous solutions has the lowest freezing point?',options:['Al₂(SO₄)₃','C₆H₁₂O₆','KI','K₂SO₄'],correct:0,answer:'Al₂(SO₄)₃',
+short:[['Freezing-point depression is ΔTf = i·K_f·m, so at equal molarity the solution with the largest i has the lowest freezing point.','Compare i for each solute'],['Count ions per formula unit for each option.','Al₂(SO₄)₃ → 2Al³⁺ + 3SO₄²⁻, i = 5','C₆H₁₂O₆: non-electrolyte','i = 1','KI → K⁺ + I⁻, i = 2','K₂SO₄ → 2K⁺ + SO₄²⁻, i = 3'],['The largest i, 5, belongs to Al₂(SO₄)₃, giving the greatest depression and hence the lowest freezing point.','Answer: (A) Al₂(SO₄)₃']],
+detailed:[
+ ['At the same molarity (0.06 M), with molality approximated by molarity for a dilute solution, ΔTf = i·K_f·m, so the solution with the largest van\'t Hoff factor i has the lowest freezing point.','Compare i across the four solutes'],
+ ['Al₂(SO₄)₃ is a strong electrolyte that dissociates fully.','Al₂(SO₄)₃ → 2Al³⁺ + 3SO₄²⁻','i = 2 + 3','= 5'],
+ ['C₆H₁₂O₆ (glucose) is a covalent non-electrolyte and does not dissociate.','i = 1'],
+ ['KI dissociates into two ions.','KI → K⁺ + I⁻','i = 2'],
+ ['K₂SO₄ dissociates into three ions.','K₂SO₄ → 2K⁺ + SO₄²⁻','i = 3'],
+ ['Comparing the four values of i, Al₂(SO₄)₃ has the largest, so it produces the greatest freezing-point depression and has the lowest freezing point.','i values — glucose: 1','KI: 2','K₂SO₄: 3','Al₂(SO₄)₃: 5','Answer: (A) Al₂(SO₄)₃']
+]},
+{id:'SOL-64',level:1,topic:'Osmotic pressure of an isotonic electrolyte solution',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Evening Shift · questions.examside.com (question id ml7r7rg1)',sourceRef:true,question:'The osmotic pressure of a living cell is 12 atm at 300 K. Assuming complete dissociation of NaCl, find the strength (in g L⁻¹) of a sodium chloride solution that is isotonic with the living cell at this temperature. (R = 0.08 L atm K⁻¹ mol⁻¹, molar mass of Na = 23 g mol⁻¹, Cl = 35.5 g mol⁻¹, nearest integer)',type:'numerical',answer:'15',unit:'g L⁻¹',
+short:[['NaCl dissociates completely into 2 ions, so i = 2. Osmotic pressure is π = iCRT.','C = (π)/(i·R·T)'],['Substitute π = 12 atm, i = 2, R = 0.08 L atm K⁻¹ mol⁻¹, T = 300 K.','C = (12)/(2×0.08×300)','= 0.25 mol L⁻¹'],['Convert to g L⁻¹ using molar mass of NaCl = 23 + 35.5 = 58.5 g mol⁻¹.','C(g L⁻¹) = 0.25 × 58.5','= 14.625 g L⁻¹','Answer: 15 g L⁻¹']],
+detailed:[
+ ['For an isotonic solution, the osmotic pressure of the NaCl solution must equal that of the living cell at the same temperature.','π(NaCl solution) = π(cell)','= 12 atm'],
+ ['NaCl is a strong electrolyte that dissociates completely into Na⁺ and Cl⁻, so the van\'t Hoff factor i = 2. Osmotic pressure follows π = iCRT.','NaCl → Na⁺ + Cl⁻, i = 2','C = (π)/(i·R·T)'],
+ ['Substitute π = 12 atm, i = 2, R = 0.08 L atm K⁻¹ mol⁻¹, T = 300 K.','C = (12)/(2×0.08×300)','= (12)/(48)','= 0.25 mol L⁻¹'],
+ ['Find the molar mass of NaCl from the given atomic masses.','M(NaCl) = 23 + 35.5','= 58.5 g mol⁻¹'],
+ ['Convert the molar concentration to mass concentration.','C(g L⁻¹) = 0.25 mol L⁻¹ × 58.5 g mol⁻¹','= 14.625 g L⁻¹'],
+ ['Round to the nearest integer.','Answer: 15 g L⁻¹']
+]},
+{id:'SOL-65',level:3,topic:'Boiling point elevation to determine atomic mass',source:'ExamSIDE · JEE Main 2025 (Online) 2nd April Evening Shift · questions.examside.com (question id m9e5j5np)',sourceRef:true,question:'1 g each of compounds AB and AB₂ is dissolved separately in 15 g of water, raising the boiling point by 2.7 K and 1.5 K respectively. Treating both as non-electrolytes, the atomic mass of A is (........ × 10⁻¹) amu. Find the number before ×10⁻¹ (nearest integer). (Molal boiling point elevation constant of water = 0.5 K kg mol⁻¹)',type:'numerical',answer:'25',unit:'(atomic mass of A ≈ 2.5 amu)',
+short:[['For AB, find its molality from ΔTb = K_b·m.','m(AB) = (2.7)/(0.5)','= 5.4 mol kg⁻¹'],['Find moles and then molar mass of AB using 1 g in 0.015 kg of water.','n(AB) = 5.4 × 0.015','= 0.081 mol','M(AB) = (1)/(0.081)','= 12.35 g mol⁻¹'],['Repeat for AB₂.','m(AB₂) = (1.5)/(0.5)','= 3 mol kg⁻¹','n(AB₂) = 3 × 0.015','= 0.045 mol','M(AB₂) = (1)/(0.045)','= 22.22 g mol⁻¹'],['Let a and b be the atomic masses of A and B. Solve a + b = 12.35 and a + 2b = 22.22.','b = 22.22 − 12.35','= 9.87','a = 12.35 − 9.87','= 2.48'],['Express as required and round.','a × 10 = 24.8','≈ 25','Answer: 25 (atomic mass of A ≈ 2.5 amu)']],
+detailed:[
+ ['Both AB and AB₂ are treated as non-electrolytes (i = 1). Boiling-point elevation follows ΔTb = K_b·m.','ΔTb = K_b × m'],
+ ['For AB: ΔTb = 2.7 K, K_b = 0.5 K kg mol⁻¹.','m(AB) = (2.7)/(0.5)','= 5.4 mol kg⁻¹'],
+ ['1 g of AB is dissolved in 15 g (0.015 kg) of water, so moles of AB follow from the molality.','n(AB) = 5.4 × 0.015','= 0.081 mol'],
+ ['Molar mass is mass divided by moles.','M(AB) = (1 g) ÷ (0.081 mol)','= 12.35 g mol⁻¹'],
+ ['Repeat the same steps for AB₂: ΔTb = 1.5 K.','m(AB₂) = (1.5)/(0.5)','= 3 mol kg⁻¹','n(AB₂) = 3 × 0.015','= 0.045 mol','M(AB₂) = (1 g) ÷ (0.045 mol)','= 22.22 g mol⁻¹'],
+ ['Let a and b be the atomic masses of A and B respectively. The formula masses give two simultaneous equations.','a + b = 12.35','a + 2b = 22.22'],
+ ['Subtract the first equation from the second to isolate b, then back-substitute for a.','b = 22.22 − 12.35','= 9.87','a = 12.35 − 9.87','= 2.48'],
+ ['The question asks for a in the form (value)×10⁻¹, so multiply a by 10 and round to the nearest integer.','a × 10 = 24.8','≈ 25','Answer: 25 (atomic mass of A ≈ 2.5 amu)']
+]},
+{id:'SOL-66',level:3,topic:'Boiling and freezing point data to find a solubility product',source:'ExamSIDE · JEE Main 2023 (Online) 29th January Morning Shift · questions.examside.com (question id 1ldste4zz)',sourceRef:true,question:'Solid lead nitrate is dissolved in 1 litre of water, and the resulting solution boils at 100.15°C. When 0.2 mol of NaCl is added to this solution, it is found to freeze at −0.8°C. Find the solubility product of the PbCl₂ that forms, expressed as ........ × 10⁻⁶ at 298 K. (K_b = 0.5 K kg mol⁻¹, K_f = 1.8 K kg mol⁻¹. Assume molality equals molarity throughout.)',type:'numerical',answer:'13',unit:'(Ksp ≈ 13 × 10⁻⁶)',
+short:[['Pb(NO₃)₂ dissociates into 3 ions, i = 3. Use the boiling-point elevation to find its molarity.','0.15 = 3 × 0.5 × M','M = (0.15)/(1.5)','= 0.1 mol L⁻¹'],['0.2 mol NaCl reacts with the 0.1 mol Pb(NO₃)₂ in 1:2 ratio, precipitating PbCl₂ and leaving 0.2 mol NaNO₃ in solution, with a small amount s of PbCl₂ redissolving.','Pb(NO₃)₂ + 2NaCl → PbCl₂↓ + 2NaNO₃'],['Apply ΔTf = K_f × (total ion molality) to the final solution: NaNO₃ (i=2, 0.2 mol) plus redissolved PbCl₂ (i=3, s mol).','0.8 = 1.8 × (2×0.2 + 3s)'],['Solve for s.','0.4 + 3s = (0.8)/(1.8)','= 0.444','s = 0.0148 mol L⁻¹'],['Find Ksp = [Pb²⁺][Cl⁻]² = 4s³.','Ksp = 4 × (0.0148)³','≈ 13 × 10⁻⁶','Answer: 13 (Ksp ≈ 13 × 10⁻⁶)']],
+detailed:[
+ ['First find the concentration of the original lead nitrate solution from its boiling-point elevation. Pb(NO₃)₂ is a strong electrolyte dissociating into 3 ions.','Pb(NO₃)₂ → Pb²⁺ + 2NO₃⁻, i = 3'],
+ ['Apply ΔTb = i·K_b·M, with ΔTb = 100.15 − 100 = 0.15 K (molality ≈ molarity).','0.15 = 3 × 0.5 × M','M = (0.15)/(1.5)','= 0.1 mol L⁻¹'],
+ ['0.2 mol NaCl is added to the 1 L solution containing 0.1 mol Pb(NO₃)₂. The reaction proceeds in a 1:2 ratio, so the NaCl is just enough to convert essentially all the Pb(NO₃)₂ to solid PbCl₂, releasing 0.2 mol NaNO₃ into solution, with PbCl₂ redissolving slightly (solubility s mol L⁻¹).','Pb(NO₃)₂ + 2NaCl → PbCl₂↓ + 2NaNO₃'],
+ ['The freezing-point depression of the resulting solution comes from the dissolved NaNO₃ (fully dissociated, i = 2, 0.2 mol) plus the small amount of PbCl₂ that redissolves (i = 3, s mol).','ΔTf = K_f × (i_NaNO3·0.2 + i_PbCl2·s)','0.8 = 1.8 × (2×0.2 + 3s)'],
+ ['Solve for s.','0.4 + 3s = (0.8)/(1.8)','= 0.4444','3s = 0.0444','s = 0.0148 mol L⁻¹'],
+ ['The solubility equilibrium is PbCl₂ ⇌ Pb²⁺ + 2Cl⁻, so [Pb²⁺] = s and [Cl⁻] = 2s.','Ksp = s × (2s)²','= 4s³'],
+ ['Substitute s = 0.0148 mol L⁻¹.','Ksp = 4 × (0.0148)³','≈ 1.3 × 10⁻⁵','= 13 × 10⁻⁶'],
+ ['So the solubility product is approximately 13 × 10⁻⁶.','Answer: 13 (Ksp ≈ 13 × 10⁻⁶)']
+]},
+{id:'SOL-67',level:3,topic:'Van\'t Hoff factor from boiling point elevation',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Morning Shift · questions.examside.com (question id m6qokewl)',sourceRef:true,question:'1.24 g of AX₂ (molar mass 124 g mol⁻¹) is dissolved in 1 kg of water, giving a boiling point of 100.015°C. Separately, 25.4 g of AY₂ (molar mass 250 g mol⁻¹) is dissolved in 2 kg of water, giving a boiling point of 100.026°C. (K_b of water = 0.52 K kg mol⁻¹) Which statement is correct?',options:['AX₂ and AY₂ are both completely unionised.','AX₂ and AY₂ are both fully ionised.','AX₂ is completely unionised while AY₂ is fully ionised.','AX₂ is fully ionised while AY₂ is completely unionised.'],correct:3,answer:'AX₂ is fully ionised while AY₂ is completely unionised.',
+short:[['Find the molality of AX₂ and its van\'t Hoff factor from ΔTb = i·K_b·m, with ΔTb = 100.015 − 100 = 0.015 K.','n(AX₂) = (1.24)/(124)','= 0.01 mol','m(AX₂) = (0.01 mol) ÷ (1 kg)','= 0.01 mol kg⁻¹','i = (0.015)/(0.52×0.01)','≈ 3'],['i = 3 means AX₂ splits fully into 3 particles, so it is fully ionised.','AX₂ → A⁺ + 2X⁻'],['Find AY₂\'s molality and van\'t Hoff factor the same way, with ΔTb = 100.026 − 100 = 0.026 K.','n(AY₂) = (25.4)/(250)','= 0.1016 mol','m(AY₂) = (0.1016 mol) ÷ (2 kg)','= 0.0508 mol kg⁻¹','i = (0.026)/(0.52×0.0508)','≈ 1'],['i = 1 means AY₂ does not dissociate at all, so it remains completely unionised.','Answer: (D) AX₂ is fully ionised while AY₂ is completely unionised.']],
+detailed:[
+ ['The van\'t Hoff factor i measures how many particles a solute produces in solution, found from the observed boiling-point elevation against the ideal (undissociated) prediction.','ΔTb = i·K_b·m'],
+ ['For AX₂: 1.24 g in 1 kg water gives its molality.','n(AX₂) = (1.24)/(124)','= 0.01 mol','m(AX₂) = (0.01 mol) ÷ (1 kg)','= 0.01 mol kg⁻¹'],
+ ['The observed elevation is ΔTb = 100.015 − 100 = 0.015 K. Solve for i.','i(AX₂) = (0.015)/(0.52 × 0.01)','≈ 3'],
+ ['AX₂ dissociating into A and 2X gives exactly 3 particles, matching i ≈ 3, so AX₂ is fully (completely) ionised in water.','AX₂ → A⁺ + 2X⁻ (3 particles)'],
+ ['For AY₂: 25.4 g in 2 kg water gives its molality.','n(AY₂) = (25.4)/(250)','= 0.1016 mol','m(AY₂) = (0.1016 mol) ÷ (2 kg)','= 0.0508 mol kg⁻¹'],
+ ['The observed elevation is ΔTb = 100.026 − 100 = 0.026 K. Solve for i.','i(AY₂) = (0.026)/(0.52 × 0.0508)','≈ 1'],
+ ['i ≈ 1 means AY₂ behaves as a single undissociated particle in solution, i.e. it is completely unionised, unlike a salt that would split into 3 ions.','AY₂ stays as one molecular unit'],
+ ['So AX₂ is fully ionised while AY₂ is completely unionised, matching option D (not A, which would need both i = 1, nor B, which would need both fully ionised, nor C, which reverses the two).','Answer: (D) AX₂ is fully ionised while AY₂ is completely unionised.']
+]},
+{id:'SOL-68',level:3,topic:'Raoult\'s law relation between liquid and vapour mole fractions',source:'ExamSIDE · JEE Main 2025 (Online) 7th April Evening Shift · questions.examside.com (question id m9f8evov)',sourceRef:true,question:'Liquids A and B form an ideal solution. The vapour pressures of pure A and B are 350 mm Hg and 750 mm Hg respectively at the same temperature. If xA, xB are the mole fractions of A and B in the solution, and yA, yB are their mole fractions in the vapour phase, which relation holds?',options:['(xA − yA) < (xB − yB)','xA/xB = yA/yB','xA/xB < yA/yB','xA/xB > yA/yB'],correct:3,answer:'xA/xB > yA/yB',
+short:[['For an ideal solution, Raoult\'s and Dalton\'s laws give the vapour-phase ratio in terms of the liquid-phase ratio.','yA/yB = (xA·P°A)/(xB·P°B)'],['Substitute P°A = 350 mm Hg and P°B = 750 mm Hg.','yA/yB = (xA/xB) × (350/750)','= (xA/xB) × 0.467'],['Since 350/750 is less than 1, the vapour ratio is smaller than the liquid ratio.','yA/yB < xA/xB','Answer: (D) xA/xB > yA/yB']],
+detailed:[
+ ['In an ideal solution, Raoult\'s law gives each component\'s partial pressure as its liquid mole fraction times its pure vapour pressure, and Dalton\'s law gives the vapour mole fraction as partial pressure over total pressure.','pA = xA·P°A','pB = xB·P°B','yA = pA/P','yB = pB/P'],
+ ['Divide yA by yB to eliminate the total pressure P.','yA/yB = pA/pB','= (xA·P°A)/(xB·P°B)'],
+ ['This can be rearranged to compare with xA/xB.','yA/yB = (xA/xB) × (P°A/P°B)'],
+ ['Substitute the given vapour pressures.','P°A/P°B = 350/750','= 0.467'],
+ ['Since this factor is less than 1, multiplying xA/xB by it gives a smaller number.','yA/yB = (xA/xB) × 0.467','< xA/xB'],
+ ['So the liquid-phase ratio exceeds the vapour-phase ratio, because the less volatile component (A, lower P°) is relatively enriched in the liquid compared to the vapour.','xA/xB > yA/yB','Answer: (D) xA/xB > yA/yB']
+]},
+{id:'SOL-69',level:1,topic:'Raoult\'s law for an equimolar ideal mixture',source:'ExamSIDE · JEE Main 2024 (Online) 9th April Evening Shift · questions.examside.com (question id luy1mwup)',sourceRef:true,question:'The vapour pressures of pure benzene and methylbenzene (toluene) at 27°C are 80 Torr and 24 Torr respectively. For an equimolar mixture of the two liquids (ideal solution) at the same temperature, find the mole fraction of methylbenzene in the vapour phase, expressed as ........ × 10⁻² (nearest integer).',type:'numerical',answer:'23',unit:'(mole fraction ≈ 0.23)',
+short:[['Equimolar mixture means equal mole fractions in the liquid.','xA (benzene) = xB (toluene)','= 0.5'],['Find each partial pressure using Raoult\'s law.','pA = 0.5 × 80','= 40 Torr','pB = 0.5 × 24','= 12 Torr'],['Total pressure and vapour-phase mole fraction of toluene follow from Dalton\'s law.','P = 40 + 12','= 52 Torr','yB = (12)/(52)','= 0.2308'],['Express as required and round.','yB × 10² = 23.08','≈ 23','Answer: 23 (mole fraction ≈ 0.23)']],
+detailed:[
+ ['An equimolar mixture of benzene and toluene has equal liquid-phase mole fractions.','xA (benzene) = xB (toluene)','= 0.5'],
+ ['Raoult\'s law gives each component\'s partial vapour pressure in the ideal solution.','pA = xA·P°A','= 0.5 × 80','= 40 Torr','pB = xB·P°B','= 0.5 × 24','= 12 Torr'],
+ ['The total vapour pressure is the sum of the partial pressures.','P = pA + pB','= 40 + 12','= 52 Torr'],
+ ['By Dalton\'s law, each component\'s vapour-phase mole fraction is its partial pressure over the total.','yB (toluene) = pB/P','= (12)/(52)','= 0.2308'],
+ ['The question asks for the value in the form (value)×10⁻², so multiply by 100 and round.','yB × 10² = 23.08','≈ 23'],
+ ['So the mole fraction of methylbenzene in the vapour is about 0.23.','Answer: 23 (mole fraction ≈ 0.23)']
+]},
+{id:'SOL-70',level:3,topic:'Van\'t Hoff factor comparison across electrolytes',source:'ExamSIDE · JEE Main 2021 (Online) 26th August Morning Shift · questions.examside.com (question id 1ktb5v79w)',sourceRef:true,question:'Of the following four 0.10 M aqueous solutions, find how many have a freezing point lower than that of 0.10 M C₂H₅OH. (i) 0.10 M Ba₃(PO₄)₂ (ii) 0.10 M Na₂SO₄ (iii) 0.10 M KCl (iv) 0.10 M Li₃PO₄',type:'numerical',answer:'4',
+short:[['C₂H₅OH is a non-electrolyte, i = 1, so its effective particle concentration is 0.10 M. Any solute with i > 1 at the same 0.10 M gives a lower freezing point.','Need i > 1 for each option'],['Find i for each salt by counting ions per formula unit.','Ba₃(PO₄)₂ → 3Ba²⁺ + 2PO₄³⁻, i = 5','Na₂SO₄ → 2Na⁺ + SO₄²⁻, i = 3','KCl → K⁺ + Cl⁻, i = 2','Li₃PO₄ → 3Li⁺ + PO₄³⁻, i = 4'],['All four values of i exceed 1, so all four solutions freeze below 0.10 M ethanol.','Answer: 4']],
+detailed:[
+ ['Freezing-point depression is ΔTf = i·K_f·m. At the same molarity, a larger van\'t Hoff factor i gives a larger depression and hence a lower freezing point.','Reference: 0.10 M C₂H₅OH','i = 1 (non-electrolyte)'],
+ ['Ba₃(PO₄)₂ is a strong electrolyte that dissociates fully.','Ba₃(PO₄)₂ → 3Ba²⁺ + 2PO₄³⁻','i = 3 + 2','= 5'],
+ ['Na₂SO₄ dissociates into three ions.','Na₂SO₄ → 2Na⁺ + SO₄²⁻','i = 2 + 1','= 3'],
+ ['KCl dissociates into two ions.','KCl → K⁺ + Cl⁻','i = 1 + 1','= 2'],
+ ['Li₃PO₄ dissociates into four ions.','Li₃PO₄ → 3Li⁺ + PO₄³⁻','i = 3 + 1','= 4'],
+ ['Every one of the four salts has i greater than ethanol\'s i = 1, so every one of them gives a greater depression and a lower freezing point than 0.10 M ethanol.','i values — KCl: 2','Na₂SO₄: 3','Li₃PO₄: 4','Ba₃(PO₄)₂: 5','All exceed ethanol\'s i = 1'],
+ ['So all four solutions qualify.','Answer: 4']
+]},
+{id:'SOL-71',level:1,topic:'Raoult\'s law to find liquid-phase composition from vapour composition',source:'ExamSIDE · JEE Main 2026 (Online) 24th January Evening Shift · questions.examside.com (question id ml98p52x)',sourceRef:true,question:'Two liquids A and B form an ideal solution at temperature T K. The vapour pressures of pure A and B are 55 kN m⁻² and 15 kN m⁻² respectively. If the mole fraction of A in the vapour phase in equilibrium with the solution is 0.8, find the mole fraction of A in the liquid.',options:['0.5217','0.480','0.340','0.663'],correct:0,answer:'0.5217',
+short:[['Raoult\'s and Dalton\'s laws give the vapour mole fraction in terms of the liquid mole fraction.','yA = (xA·P°A)/(xA·P°A + (1−xA)·P°B)'],['Substitute yA = 0.8, P°A = 55, P°B = 15.','0.8 = (55xA)/(40xA + 15)'],['Solve for xA.','0.8(40xA + 15) = 55xA','32xA + 12 = 55xA','23xA = 12'],['Divide.','xA = 12/23','= 0.5217','Answer: (A) 0.5217']],
+detailed:[
+ ['For an ideal solution, each component\'s partial pressure follows Raoult\'s law and the vapour-phase mole fraction follows Dalton\'s law.','pA = xA·P°A','pB = (1−xA)·P°B','yA = pA/(pA+pB)'],
+ ['Substitute P°A = 55 kN m⁻² and P°B = 15 kN m⁻².','yA = (55xA)/(55xA + 15(1−xA))','= (55xA)/(40xA + 15)'],
+ ['Set yA = 0.8 and cross-multiply.','0.8 = (55xA)/(40xA + 15)','0.8(40xA + 15) = 55xA'],
+ ['Expand the left side.','32xA + 12 = 55xA'],
+ ['Collect terms in xA.','55xA − 32xA = 12','23xA = 12'],
+ ['Solve for xA.','xA = 12/23','= 0.5217'],
+ ['This matches option A, distinct from mis-rearrangements that would give options B, C or D.','Answer: (A) 0.5217']
+]},
+{id:'SOL-72',level:3,topic:'Isotonic solution pairs via van\'t Hoff factor',source:'ExamSIDE · JEE Main 2023 (Online) 6th April Evening Shift · questions.examside.com (question id 1lh338j26)',sourceRef:true,question:'Consider the following pairs of aqueous solutions at the same temperature. Find the number of pairs that are isotonic. A. 1 M NaCl and 2 M urea. B. 1 M CaCl₂ and 1.5 M KCl. C. 1.5 M AlCl₃ and 2 M Na₂SO₄. D. 2.5 M KCl and 1 M Al₂(SO₄)₃.',type:'numerical',answer:'4',
+short:[['Two solutions are isotonic when they have equal osmotic pressure, i.e. equal i×M (at the same T).','Compare i×M for each pair'],['Pair A: NaCl (i=2) vs urea (i=1).','1×2 = 2','2×1 = 2','Equal','isotonic'],['Pair B: CaCl₂ (i=3) vs KCl (i=2).','1×3 = 3','1.5×2 = 3','Equal','isotonic'],['Pair C: AlCl₃ (i=4) vs Na₂SO₄ (i=3).','1.5×4 = 6','2×3 = 6','Equal','isotonic'],['Pair D: KCl (i=2) vs Al₂(SO₄)₃ (i=5).','2.5×2 = 5','1×5 = 5','Equal','isotonic','Answer: 4']],
+detailed:[
+ ['Osmotic pressure is π = iMRT, so at the same temperature two solutions are isotonic exactly when their i×M products are equal.','Check i×M for both members of each pair'],
+ ['Pair A: NaCl dissociates into 2 ions, urea does not dissociate. Compare i×M for each.','i×M (NaCl) = 2 × 1','= 2','i×M (urea) = 1 × 2','= 2','Equal','so A is isotonic'],
+ ['Pair B: CaCl₂ dissociates into 3 ions, KCl into 2. Compare i×M for each.','i×M (CaCl₂) = 3 × 1','= 3','i×M (KCl) = 2 × 1.5','= 3','Equal','so B is isotonic'],
+ ['Pair C: AlCl₃ dissociates into 4 ions, Na₂SO₄ into 3. Compare i×M for each.','i×M (AlCl₃) = 4 × 1.5','= 6','i×M (Na₂SO₄) = 3 × 2','= 6','Equal','so C is isotonic'],
+ ['Pair D: KCl dissociates into 2 ions, Al₂(SO₄)₃ into 5. Compare i×M for each.','i×M (KCl) = 2 × 2.5','= 5','i×M (Al₂(SO₄)₃) = 5 × 1','= 5','Equal','so D is isotonic'],
+ ['All four pairs have matching i×M, so all four are isotonic.','Answer: 4']
+]},
+{id:'SOL-73',level:2,topic:'Kb to Kf ratio from boiling and freezing point data',source:'ExamSIDE · JEE Main 2022 (Online) 26th July Evening Shift · questions.examside.com (question id 1l6i6acld)',sourceRef:true,question:'The elevation in boiling point for a 1 molal solution of a non-volatile solute A is 3 K. The depression in freezing point for a 2 molal solution of A in the same solvent is 6 K. If K_b/K_f = 1 : X, find X (nearest integer).',type:'numerical',answer:'1',
+short:[['Use ΔTb = K_b·m for the 1 molal solution.','3 = K_b × 1','K_b = 3 K kg mol⁻¹'],['Use ΔTf = K_f·m for the 2 molal solution.','6 = K_f × 2','K_f = 3 K kg mol⁻¹'],['Find the ratio.','K_b/K_f = 3/3','= 1','Answer: X = 1']],
+detailed:[
+ ['Boiling-point elevation is ΔTb = K_b·m. For the 1 molal solution, ΔTb = 3 K.','3 = K_b × 1'],
+ ['Solve for K_b.','K_b = 3 K kg mol⁻¹'],
+ ['Freezing-point depression is ΔTf = K_f·m. For the 2 molal solution, ΔTf = 6 K.','6 = K_f × 2'],
+ ['Solve for K_f.','K_f = 3 K kg mol⁻¹'],
+ ['Form the ratio K_b/K_f and compare to the given form 1 : X.','K_b/K_f = 3/3','= 1','So K_b : K_f = 1 : 1'],
+ ['Hence X = 1.','Answer: X = 1']
+]},
+{id:'SOL-74',level:1,topic:'Van\'t Hoff factor from percentage ionisation',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Morning Shift · questions.examside.com (question id m6qrqq03)',sourceRef:true,question:'A₂B is 30% ionised in aqueous solution. If the van\'t Hoff factor is i, find the value of i × 10 (nearest integer).',type:'numerical',answer:'16',unit:'(i = 1.6)',
+short:[['A₂B dissociates into 3 ions per formula unit.','A₂B → 2A⁺ + B²⁻, n = 3'],['Apply i = 1 + (n−1)α with α = 0.30.','i = 1 + (3−1)×0.30','= 1 + 0.6','= 1.6'],['Express as required and round.','i × 10 = 16','Answer: 16 (i = 1.6)']],
+detailed:[
+ ['A₂B dissociates in water as a strong electrolyte, releasing 3 ions per formula unit when fully ionised.','A₂B → 2A⁺ + B²⁻','n (ions per formula unit) = 3'],
+ ['For partial dissociation with degree of ionisation α, the van\'t Hoff factor follows i = 1 + (n−1)α.','i = 1 + (n−1)×α'],
+ ['Substitute n = 3 and α = 0.30 (30% ionised).','i = 1 + (3−1)×0.30','= 1 + 2×0.30','= 1 + 0.6'],
+ ['Evaluate.','i = 1.6'],
+ ['The question asks for i×10, rounded to the nearest integer.','i × 10 = 16','Answer: 16 (i = 1.6)']
+]},
+{id:'SOL-75',level:2,topic:'Freezing point depression with dimeric association (benzene-acetic acid)',source:'ExamSIDE · JEE Main 2017 (Offline) · questions.examside.com (question id 0NrKLjtuON0zWg9M)',sourceRef:true,question:'The freezing point of benzene decreases by 0.45°C when 0.2 g of acetic acid is dissolved in 20 g of benzene. Acetic acid associates to form a dimer in benzene. What is the percentage association of acetic acid? (K_f for benzene = 5.12 K kg mol⁻¹)',options:['80.4%','74.6%','94.6%','64.6%'],correct:2,answer:'94.6%',
+short:[['Find the molality of acetic acid treating it as the unassociated monomer.','moles of acetic acid = 0.2 g ÷ 60 g mol⁻¹','= 0.00333 mol','molality m = 0.00333 mol ÷ 0.020 kg','= 0.1667 mol kg⁻¹'],['Apply ΔT_f = i × K_f × m to get the observed van\'t Hoff factor.','0.45 = i × 5.12 × 0.1667','i = 0.527'],['Relate i to the degree of association β for 2CH₃COOH ⇌ (CH₃COOH)₂.','i = 1 - (β ÷ 2)','0.527 = 1 - (β ÷ 2)'],['Solve for β and convert to a percentage.','β = 0.946','Answer: (C) 94.6%']],
+detailed:[
+ ['Acetic acid (molar mass 60 g mol⁻¹) is dissolved in benzene and partly dimerises there, so its effective van\'t Hoff factor is below 1.','mass of acetic acid = 0.2 g','mass of benzene (solvent) = 20 g, i.e. 0.020 kg'],
+ ['Compute the molality based on the undimerised (monomer) formula mass.','moles of CH₃COOH = 0.2 g ÷ 60 g mol⁻¹','= 0.00333 mol','m = 0.00333 mol ÷ 0.020 kg','= 0.1667 mol kg⁻¹'],
+ ['Use the freezing-point depression law to extract the van\'t Hoff factor i.','ΔT_f = i × K_f × m','0.45 = i × 5.12 × 0.1667','i = 0.527'],
+ ['Set up the association equilibrium 2CH₃COOH ⇌ (CH₃COOH)₂ with degree of association β.','starting from 1 mol monomer, at equilibrium (1 − β) mol monomer and (β ÷ 2) mol dimer remain','total particles = 1 − β + (β ÷ 2)','which simplifies to 1 − (β ÷ 2)'],
+ ['The van\'t Hoff factor is this total particle count relative to the 1 mol of undissociated solute taken.','i = 1 − (β ÷ 2)','0.527 = 1 − (β ÷ 2)'],
+ ['Solve for β.','β ÷ 2 = 0.473','β = 0.946','Answer: (C) 94.6%']
+]},
+{id:'SOL-76',level:3,topic:'Relative vapour pressure lowering from a dissociating solute (SO2-NaOH product)',source:'ExamSIDE · JEE Main 2021 (Online) 26th February Morning Shift · questions.examside.com (question id ErkMDtDt9VNWviRbL81kluefvo5)',sourceRef:true,question:'224 mL of SO₂ gas at 298 K and 1 atm is passed into 100 mL of 0.1 M NaOH solution. The non-volatile solute formed is then dissolved in 36 g of water. Given the vapour pressure of pure water P° = 24 mm Hg, the lowering of vapour pressure of the resulting (dilute) solution is x × 10⁻² mm Hg. Find x.',type:'numerical',answer:'18',
+short:[['Find the limiting reagent between SO₂ and NaOH.','moles SO₂ = 224 mL ÷ 22400 mL mol⁻¹','= 0.01 mol','moles NaOH = 0.1 mol L⁻¹ × 0.1 L','= 0.01 mol'],['SO₂ + 2NaOH → Na₂SO₃ + H₂O needs 2 mol NaOH per mol SO₂, so NaOH is limiting.','moles Na₂SO₃ formed = 0.01 mol ÷ 2','= 0.005 mol'],['Na₂SO₃ dissociates fully into 3 ions, and the solvent present is 36 g of water.','i = 3','moles H₂O = 36 g ÷ 18 g mol⁻¹','= 2 mol'],['Apply the relative lowering of vapour pressure for a dilute solution.','(P° − P_s) ÷ P° = (i × n_solute) ÷ n_solvent','= (3 × 0.005) ÷ 2','= 0.0075','ΔP = 0.0075 × 24 mm Hg','= 0.18 mm Hg, i.e. 18 × 10⁻² mm Hg','Answer: 18']],
+detailed:[
+ ['SO₂ gas is absorbed by NaOH solution to form sodium sulfite, an electrolyte that then lowers the vapour pressure of the water it is dissolved in.','moles SO₂ = 224 mL ÷ 22400 mL mol⁻¹','= 0.01 mol','moles NaOH = 0.1 mol L⁻¹ × 0.100 L','= 0.01 mol'],
+ ['Write the balanced reaction and identify the limiting reagent.','SO₂ + 2NaOH → Na₂SO₃ + H₂O','0.01 mol NaOH needs only 0.005 mol SO₂ to react completely','so NaOH is limiting and SO₂ is left in excess'],
+ ['Find the moles of sodium sulfite produced.','moles Na₂SO₃ = moles NaOH ÷ 2','= 0.01 ÷ 2','= 0.005 mol'],
+ ['Na₂SO₃ is a strong electrolyte that dissociates completely into 3 ions, so its van\'t Hoff factor is 3.','Na₂SO₃ → 2Na⁺ + SO₃²⁻','i = 3'],
+ ['Find the moles of solvent water that the sulfite is dissolved in.','moles H₂O = 36 g ÷ 18 g mol⁻¹','= 2 mol'],
+ ['Apply the relative lowering of vapour pressure formula for a dilute solution, scaling the solute moles by i.','(P° − P_s) ÷ P° ≈ (i × n_solute) ÷ n_solvent','= (3 × 0.005) ÷ 2','= 0.0075'],
+ ['Convert the fractional lowering to an absolute pressure using P° = 24 mm Hg.','ΔP = 0.0075 × 24 mm Hg','= 0.18 mm Hg','0.18 mm Hg is 18 × 10⁻² mm Hg','Answer: 18']
+]},
+{id:'SOL-77',level:2,topic:'Comparing freezing point depression by van\'t Hoff factor across solutes',source:'ExamSIDE · JEE Main 2021 (Online) 31st August Morning Shift · questions.examside.com (question id 1ktiereev)',sourceRef:true,question:'Which one of the following 0.10 M aqueous solutions will show the largest freezing point depression?',options:['Hydrazine','Glucose','Glycine','KHSO₄'],correct:3,answer:'KHSO₄',
+short:[['Freezing point depression ΔT_f = i × K_f × m, and all four solutions share the same molarity, so compare their van\'t Hoff factors i.','hydrazine and glucose are molecular non-electrolytes','so i = 1 for each','glycine exists mainly as a neutral zwitterion','so i ≈ 1'],['KHSO₄ is a strong electrolyte that dissociates into K⁺ and HSO₄⁻.','i for KHSO₄ ≈ 2, clearly higher than the other three'],['The solute with the largest i gives the largest ΔT_f at the same molarity.','Answer: (D) KHSO₄']],
+detailed:[
+ ['At the same molar concentration, ΔT_f = i × K_f × m depends directly on the van\'t Hoff factor i, since K_f and m are otherwise identical for all four options.','we need the solute that produces the most particles per formula unit in solution'],
+ ['Hydrazine (N₂H₄) is a weak molecular base and does not ionise appreciably in dilute solution.','i for hydrazine ≈ 1'],
+ ['Glucose is a non-electrolyte that stays as intact molecules in water.','i for glucose = 1'],
+ ['Glycine is an amino acid that exists mainly as a neutral zwitterion (⁺H₃N–CH₂–COO⁻) rather than separate ions, so it behaves as a single particle.','i for glycine ≈ 1'],
+ ['KHSO₄ is a strong electrolyte: KHSO₄ → K⁺ + HSO₄⁻, and HSO₄⁻ can ionise further, giving close to 2 (or slightly more) particles per formula unit.','i for KHSO₄ ≈ 2, clearly the largest of the four'],
+ ['Since ΔT_f ∝ i at fixed molarity, the solute with the highest i gives the largest freezing point depression.','Answer: (D) KHSO₄']
+]},
+{id:'SOL-78',level:2,topic:'Raoult\'s law partial vapour pressure of an ideal benzene-toluene solution',source:'ExamSIDE · AIEEE 2005 · questions.examside.com (question id 1u1t3ZHohgiyEWLX)',sourceRef:true,question:'Benzene and toluene form a nearly ideal solution. At 20°C the vapour pressure of pure benzene is 75 torr and that of pure toluene is 22 torr. A solution contains 78 g of benzene and 46 g of toluene. What is the partial vapour pressure of benzene above this solution at 20°C?',options:['50 torr','25 torr','53.5 torr','37.5 torr'],correct:0,answer:'50 torr',
+short:[['Convert masses to moles using the molar mass of benzene (78 g mol⁻¹) and toluene (92 g mol⁻¹).','moles benzene = 78 g ÷ 78 g mol⁻¹','= 1 mol','moles toluene = 46 g ÷ 92 g mol⁻¹','= 0.5 mol'],['Find the mole fraction of benzene in the liquid.','X(benzene) = 1 ÷ (1 + 0.5)','= 2/3'],['Apply Raoult\'s law for the ideal solution.','P(benzene) = P°(benzene) × X(benzene)','= 75 × (2/3)','Answer: (A) 50 torr']],
+detailed:[
+ ['In an ideal solution, Raoult\'s law gives each component\'s partial vapour pressure as its pure vapour pressure times its mole fraction in the liquid.','P°(benzene) = 75 torr','P°(toluene) = 22 torr'],
+ ['Convert the given masses to moles using the molar masses of benzene (78 g mol⁻¹) and toluene (92 g mol⁻¹).','moles benzene = 78 g ÷ 78 g mol⁻¹','= 1 mol','moles toluene = 46 g ÷ 92 g mol⁻¹','= 0.5 mol'],
+ ['Find the total moles and the mole fraction of benzene.','total moles = 1 + 0.5','= 1.5 mol','X(benzene) = 1 ÷ 1.5','= 2/3'],
+ ['Apply Raoult\'s law to get the partial pressure of benzene.','P(benzene) = P°(benzene) × X(benzene)','= 75 torr × (2/3)','= 50 torr'],
+ ['This matches option A.','Answer: (A) 50 torr']
+]},
+{id:'SOL-79',level:1,topic:'Molar mass from relative lowering of vapour pressure (acetone solution)',source:'ExamSIDE · JEE Main 2015 (Offline) · questions.examside.com (question id 1xgTTVc3tihLuKOr)',sourceRef:true,question:'The vapour pressure of acetone at 20°C is 185 torr. When 1.2 g of a non-volatile solute is dissolved in 100 g of acetone at 20°C, the vapour pressure drops to 183 torr. What is the molar mass of the solute? (molar mass of acetone = 58 g mol⁻¹)',options:['64 g mol⁻¹','128 g mol⁻¹','488 g mol⁻¹','32 g mol⁻¹'],correct:0,answer:'64 g mol⁻¹',
+short:[['For a dilute solution, the relative lowering of vapour pressure equals the solute-to-solvent mole ratio, written via masses and molar masses.','(P° − P_s) ÷ P_s = (w₂ × M₁) ÷ (w₁ × M₂)','here w₁, M₁ are the solvent\'s mass and molar mass, and w₂, M₂ are the solute\'s'],['Substitute the known values.','(185 − 183) ÷ 183 = (1.2 × 58) ÷ (100 × M₂)'],['Solve for M₂.','M₂ = (1.2 × 58 × 183) ÷ (100 × 2)','= 64 g mol⁻¹','Answer: (A) 64 g mol⁻¹']],
+detailed:[
+ ['For a dilute solution of a non-volatile solute, the relative lowering of vapour pressure equals the mole ratio of solute to solvent.','(P° − P_s) ÷ P_s = n_solute ÷ n_solvent','n_solute ÷ n_solvent = (w₂ ÷ M₂) ÷ (w₁ ÷ M₁)','which rearranges to (w₂ × M₁) ÷ (w₁ × M₂)'],
+ ['List the known quantities.','P° = 185 torr','P_s = 183 torr','w₁ = 100 g (acetone)','M₁ = 58 g mol⁻¹ (molar mass of acetone)','w₂ = 1.2 g (solute)','with M₂ unknown'],
+ ['Substitute into the relation.','(185 − 183) ÷ 183 = (1.2 × 58) ÷ (100 × M₂)','2 ÷ 183 = 69.6 ÷ (100 × M₂)'],
+ ['Cross-multiply and solve for M₂.','2 × 100 × M₂ = 69.6 × 183','M₂ = 12736.8 ÷ 200'],
+ ['Compute the final value.','M₂ ≈ 64 g mol⁻¹','Answer: (A) 64 g mol⁻¹']
+]},
+{id:'SOL-80',level:1,topic:'Osmotic pressure ratio to find molar mass ratio of two proteins',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Evening Slot · questions.examside.com (question id Nzt3ZgqFSlbHmzGHYpjgy2xukf3nq87t)',sourceRef:true,question:'250 cm³ of an aqueous solution containing 0.73 g of protein A is isotonic with 1 litre of another aqueous solution containing 1.65 g of protein B, at 298 K. The ratio of the molar masses (M_A ÷ M_B) is ........ × 10⁻² (nearest integer).',type:'numerical',answer:'177',
+short:[['Isotonic solutions have equal osmotic pressure at the same temperature, where osmotic pressure π = (w ÷ (M × V)) × RT.','set π(A) = π(B) and cancel RT from both sides'],['Write the resulting equality.','0.73 ÷ (M_A × 0.250) = 1.65 ÷ (M_B × 1.000)'],['Solve for the ratio M_A ÷ M_B.','M_A ÷ M_B = 0.73 ÷ (0.250 × 1.65)','= 1.77','i.e. 177 × 10⁻²','Answer: 177']],
+detailed:[
+ ['Two solutions are isotonic when they exert the same osmotic pressure at the same temperature.','π = (n ÷ V) × RT','writing n as w ÷ M gives π = (w ÷ (M × V)) × RT','where w is mass, M is molar mass and V is solution volume'],
+ ['Write the osmotic pressure expressions for both protein solutions.','π(A) = 0.73 g ÷ (M_A × 0.250 L) × RT','π(B) = 1.65 g ÷ (M_B × 1.000 L) × RT'],
+ ['Since the solutions are isotonic, set π(A) = π(B) and cancel RT from both sides.','0.73 ÷ (M_A × 0.250) = 1.65 ÷ (M_B × 1.000)'],
+ ['Rearrange to isolate the molar mass ratio M_A ÷ M_B.','M_A ÷ M_B = 0.73 ÷ (0.250 × 1.65)'],
+ ['Compute the numeric value.','M_A ÷ M_B = 0.73 ÷ 0.4125','= 1.7697'],
+ ['Express in the requested ×10⁻² form and round.','1.77 is 177 × 10⁻²','Answer: 177']
+]},
+{id:'SOL-81',level:3,topic:'Ranking boiling points of dilute NaCl and urea solutions by van\'t Hoff factor',source:'ExamSIDE · JEE Main 2025 (Online) 22nd January Morning Shift · questions.examside.com (question id m6qvbtay)',sourceRef:true,question:'Arrange the following solutions in order of increasing boiling point: (i) 10⁻⁴ M NaCl, (ii) 10⁻⁴ M urea, (iii) 10⁻³ M NaCl, (iv) 10⁻² M NaCl.',options:['(i) < (ii) < (iii) < (iv)','(ii) < (i) < (iii) < (iv)','(iv) < (iii) < (i) < (ii)','(ii) < (i) ≡ (iii) < (iv)'],correct:1,answer:'(ii) < (i) < (iii) < (iv)',
+short:[['Boiling point elevation increases with the effective particle concentration i × C.','NaCl dissociates into 2 ions','so i = 2 for it','urea does not dissociate','so i = 1 for it'],['Compute i × C for each solution.','(ii) urea: i × C = 1 × 10⁻⁴','(i) NaCl: i × C = 2 × 10⁻⁴','(iii) NaCl: i × C = 2 × 10⁻³','(iv) NaCl: i × C = 2 × 10⁻²'],['Order these from smallest to largest to get increasing boiling points.','(ii) < (i) < (iii) < (iv)','Answer: (B) (ii) < (i) < (iii) < (iv)']],
+detailed:[
+ ['Boiling point elevation is a colligative property, ΔT_b = i × K_b × m, so it depends on the effective particle molarity i × C, not on C alone.','urea is a non-electrolyte','so i = 1 for it','NaCl is a strong electrolyte that fully dissociates into Na⁺ and Cl⁻','so i = 2 for it'],
+ ['Compute the effective concentration i × C for solution (ii), 10⁻⁴ M urea.','i × C = 1 × 10⁻⁴ mol L⁻¹'],
+ ['Compute it for solution (i), 10⁻⁴ M NaCl.','i × C = 2 × 10⁻⁴ mol L⁻¹'],
+ ['Compute it for solution (iii), 10⁻³ M NaCl.','i × C = 2 × 10⁻³ mol L⁻¹'],
+ ['Compute it for solution (iv), 10⁻² M NaCl.','i × C = 2 × 10⁻² mol L⁻¹'],
+ ['Rank the four values from smallest to largest — this gives the order of increasing boiling point.','1×10⁻⁴ < 2×10⁻⁴ < 2×10⁻³ < 2×10⁻²','i.e. (ii) < (i) < (iii) < (iv)'],
+ ['This matches option B.','Answer: (B) (ii) < (i) < (iii) < (iv)']
+]},
+{id:'SOL-82',level:2,topic:'Boiling point elevation of a partially dissociated AB2 electrolyte',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Morning Shift · questions.examside.com (question id ZuLYXy4UjO0ejqLCfW1kmhv2pib)',sourceRef:true,question:'AB₂ is 10% dissociated in water into A²⁺ and 2B⁻. Find the boiling point (in °C, nearest integer) of a 10.0 molal aqueous solution of AB₂. (K_b of water = 0.5 K kg mol⁻¹, boiling point of pure water = 100°C)',type:'numerical',answer:'106',
+short:[['AB₂ dissociates into 3 ions, so write the van\'t Hoff factor in terms of the degree of dissociation β.','AB₂ ⇌ A²⁺ + 2B⁻, number of particles n = 3','i = 1 + (n − 1) × β','= 1 + 2 × 0.10','= 1.2'],['Apply the boiling point elevation formula.','ΔT_b = i × K_b × m','= 1.2 × 0.5 × 10.0','= 6.0°C'],['Add this to the pure solvent\'s boiling point.','T_b = 100 + 6','= 106°C','Answer: 106']],
+detailed:[
+ ['AB₂ is a weak electrolyte that only partly dissociates, AB₂ ⇌ A²⁺ + 2B⁻, giving up to 3 particles per formula unit if fully dissociated.','degree of dissociation β = 0.10 (10%)'],
+ ['The van\'t Hoff factor for partial dissociation into n particles is i = 1 + (n − 1)β.','here n = 3 (one A²⁺ and two B⁻ per formula unit)','i = 1 + (3 − 1) × 0.10','= 1 + 0.20','= 1.20'],
+ ['Apply the boiling point elevation law with the molality given directly.','ΔT_b = i × K_b × m','= 1.20 × 0.5 K kg mol⁻¹ × 10.0 mol kg⁻¹'],
+ ['Compute the elevation.','ΔT_b = 6.0°C'],
+ ['Add this elevation to the normal boiling point of water.','T_b = 100°C + 6.0°C','= 106°C','Answer: 106']
+]},
+{id:'SOL-83',level:3,topic:'Reading vapour pressure-temperature curves for intermolecular forces',source:'ExamSIDE · JEE Main 2020 (Online) 8th January Morning Slot · questions.examside.com (question id e75DUB2jBZE6rrFwjx7k9k2k5h15kp6)',sourceRef:true,question:'A graph of vapour pressure against temperature is plotted for three liquids X, Y and Z. All three curves rise steeply from near-zero pressure, but X\'s curve reaches a given vapour pressure at the lowest temperature (around 293-313 K), Y\'s curve reaches it at an intermediate temperature (around 313-333 K), and Z\'s curve reaches it at the highest temperature (around 333-353 K). Based on this graph, consider the inferences: (A) X has higher intermolecular interactions compared to Y. (B) X has lower intermolecular interactions compared to Y. (C) Z has lower intermolecular interactions compared to Y. Which inference(s) is/are correct?',options:['(B)','(A)','(C)','(A) and (C)'],correct:0,answer:'(B)',
+short:[['At a fixed temperature, the liquid with the highest vapour pressure is the most volatile, meaning it has the weakest intermolecular forces.','X reaches a given vapour pressure at the lowest temperature, then Y, then Z','so X is most volatile and Z is least volatile'],['Compare X and Y: X is more volatile, so X has weaker intermolecular interactions than Y.','statement (B) is correct, statement (A) is wrong'],['Compare Z and Y: Z is less volatile than Y, so Z has stronger (not lower) intermolecular interactions than Y.','statement (C) is incorrect'],['Only statement (B) holds.','Answer: (A) (B)']],
+detailed:[
+ ['Vapour pressure at a fixed temperature is inversely related to the strength of intermolecular forces — weaker forces let more molecules escape into the vapour, giving a higher vapour pressure and a lower boiling point.','the graph shows X\'s curve rising earliest (lowest temperature) and Z\'s curve rising latest (highest temperature) to reach the same vapour pressure level','with Y in between'],
+ ['Since X reaches a given vapour pressure at the lowest temperature, X is the most volatile of the three, i.e. it has the weakest intermolecular interactions.','order of volatility: X > Y > Z','order of intermolecular interaction strength: Z > Y > X'],
+ ['Check statement (A): \'X has higher intermolecular interactions than Y.\'','this is false — X has lower interactions than Y, not higher'],
+ ['Check statement (B): \'X has lower intermolecular interactions than Y.\'','this matches the order found above — true'],
+ ['Check statement (C): \'Z has lower intermolecular interactions than Y.\'','Z is the least volatile of the three','so Z actually has higher (stronger) interactions than Y','statement (C) is false'],
+ ['Only statement (B) is correct, matching option A in the given list.','Answer: (A) (B)']
+]},
+{id:'SOL-84',level:2,topic:'Percentage increase in observed freezing point depression from acid dissociation',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Morning Shift · questions.examside.com (question id 1lgyhw1k3)',sourceRef:true,question:'The degree of dissociation of an aqueous solution of a weak monobasic acid is 0.3. By what percentage is the observed freezing point depression higher than the theoretical (non-dissociating) value? (nearest integer)',type:'numerical',answer:'30',
+short:[['A weak monobasic acid HA dissociates as HA ⇌ H⁺ + A⁻, giving a van\'t Hoff factor i = 1 + α.','the degree of dissociation α = 0.3','i = 1 + 0.3','= 1.3'],['ΔT_f(observed) = i × ΔT_f(theoretical), so the ratio of observed to theoretical equals i.','observed ÷ theoretical = 1.3'],['This means the observed value is 30% higher than theoretical.','Answer: 30']],
+detailed:[
+ ['For a weak monobasic acid HA, dissociation HA ⇌ H⁺ + A⁻ produces 2 particles from 1 if fully dissociated, so the van\'t Hoff factor is i = 1 + α, where α is the degree of dissociation.','α = 0.3','i = 1 + 0.3','= 1.3'],
+ ['The theoretical (non-dissociating) freezing point depression assumes i = 1.','ΔT_f(theory) = K_f × m'],
+ ['The actual (observed) depression includes the van\'t Hoff factor.','ΔT_f(observed) = i × K_f × m'],
+ ['Divide the observed value by the theoretical value — K_f and m cancel.','ΔT_f(observed) ÷ ΔT_f(theory) = i','= 1.3'],
+ ['An observed-to-theoretical ratio of 1.3 means the observed freezing point depression is 30% larger than the theoretical one.','Answer: 30']
+]},
+{id:'SOL-85',level:2,topic:'Combined relative lowering of vapour pressure and boiling point elevation to find solvent moles',source:'ExamSIDE · JEE Main 2026 (Online) 4th April Morning Shift · questions.examside.com (question id mnt2t78p)',sourceRef:true,question:'A non-volatile, non-electrolyte solute is dissolved in 40 g of a solvent. This lowers the solvent\'s vapour pressure from 760 mm Hg to 750 mm Hg. The same solution boils at 320 K. Find the number of moles of solvent present in the solution (nearest integer). [boiling point of pure solvent = 319.5 K, K_b of the solvent = 0.3 K kg mol⁻¹]',type:'numerical',answer:'5',
+short:[['Use the relative lowering of vapour pressure to relate the solute\'s mole fraction x₂ to the mole ratio.','x₂ = (760 − 750) ÷ 760','= 1/76','x₂ = n₂ ÷ (n₁ + n₂)','n₁ = 75 n₂'],['Use the boiling point elevation to find the molality, and hence n₂.','ΔT_b = 320 − 319.5','= 0.5 K','m = ΔT_b ÷ K_b','= 0.5 ÷ 0.3','= 5/3 mol kg⁻¹'],['Solvent mass is 40 g, i.e. 0.040 kg, so find n₂ and then n₁.','n₂ = (5/3) × 0.040','= 0.0667 mol','n₁ = 75 × 0.0667','≈ 5','Answer: 5']],
+detailed:[
+ ['For a non-volatile, non-electrolyte solute, the relative lowering of vapour pressure equals the mole fraction of the solute.','x₂ = (P° − P) ÷ P°','= (760 − 750) ÷ 760','= 10 ÷ 760','= 1/76'],
+ ['Express x₂ in terms of moles of solvent (n₁) and solute (n₂), and solve for the ratio.','x₂ = n₂ ÷ (n₁ + n₂)','1/76 = n₂ ÷ (n₁ + n₂)','76 n₂ = n₁ + n₂','n₁ = 75 n₂'],
+ ['Separately use the boiling point elevation to find the solute\'s molality.','ΔT_b = 320 K − 319.5 K','= 0.5 K','ΔT_b = K_b × m','m = 0.5 ÷ 0.3','m = 5/3 mol kg⁻¹'],
+ ['Convert molality to moles of solute using the solvent mass (40 g, i.e. 0.040 kg).','m = n₂ ÷ (mass of solvent in kg)','n₂ = (5/3) × 0.040','= 0.0667 mol'],
+ ['Use the relation n₁ = 75 n₂ found from the vapour pressure data.','n₁ = 75 × 0.0667','≈ 5.00 mol'],
+ ['Round to the nearest integer.','Answer: 5']
+]},
+{id:'SOL-86',level:1,topic:'Lowering of vapour pressure of a dilute urea solution',source:'ExamSIDE · JEE Main 2019 (Online) 10th April Morning Slot · questions.examside.com (question id KWklP8kxZBhWq5Gzjo3rsa0w2w9jwvebznx)',sourceRef:true,question:'At room temperature, a dilute solution of urea is prepared by dissolving 0.60 g of urea in 360 g of water. If the vapour pressure of pure water is 35 mm Hg, what is the lowering of vapour pressure of this solution? (molar mass of urea = 60 g mol⁻¹)',options:['0.031 mm Hg','0.017 mm Hg','0.028 mm Hg','0.027 mm Hg'],correct:1,answer:'0.017 mm Hg',
+short:[['Convert masses to moles.','n(urea) = 0.60 g ÷ 60 g mol⁻¹','= 0.01 mol','n(water) = 360 g ÷ 18 g mol⁻¹','= 20 mol'],['For a dilute solution, the lowering of vapour pressure equals the solute\'s mole fraction times P°.','Δp = (n(urea) ÷ n(water)) × P°','= (0.01 ÷ 20) × 35'],['Compute the value.','Δp = 0.0175','≈ 0.017 mm Hg','Answer: (B) 0.017 mm Hg']],
+detailed:[
+ ['Urea is a non-volatile, non-electrolyte solute, so Raoult\'s law gives the vapour pressure lowering directly from the solute\'s mole fraction.','n(urea) = 0.60 g ÷ 60 g mol⁻¹','= 0.01 mol','n(water) = 360 g ÷ 18 g mol⁻¹','= 20 mol'],
+ ['Since the solution is dilute, n(urea) is much smaller than n(water), so the mole fraction of urea is well approximated by n(urea) ÷ n(water).','x(urea) ≈ 0.01 ÷ 20','= 5×10⁻⁴'],
+ ['Apply Δp = x(urea) × P°, taking P° as 35 mm Hg.','Δp = 5×10⁻⁴ × 35 mm Hg'],
+ ['Compute the final value.','Δp = 0.0175 mm Hg','≈ 0.017 mm Hg','Answer: (B) 0.017 mm Hg']
+]},
+{id:'SOL-87',level:1,topic:'Freezing point depression of acetic acid contaminated with ascorbic acid',source:'ExamSIDE · JEE Main 2022 (Online) 28th July Morning Shift · questions.examside.com (question id 1l6me4949)',sourceRef:true,question:'150 g of acetic acid is contaminated with 10.2 g of ascorbic acid (C₆H₈O₆). This lowers the freezing point of the acetic acid by (x × 10⁻¹)°C. Find x (nearest integer). [K_f of acetic acid = 3.9 K kg mol⁻¹, molar mass of ascorbic acid = 176 g mol⁻¹]',type:'numerical',answer:'15',
+short:[['Ascorbic acid is the solute, acetic acid is the solvent — compute the molality.','m = (10.2 g ÷ 176 g mol⁻¹) ÷ (150 g ÷ 1000 g kg⁻¹)','≈ 0.386 mol kg⁻¹'],['Apply ΔT_f = K_f × m.','ΔT_f = 3.9 × 0.386','≈ 1.506°C'],['Express in the form x × 10⁻¹.','1.506°C is 15.06 × 10⁻¹ °C','Answer: 15']],
+detailed:[
+ ['Ascorbic acid, a non-electrolyte, is dissolved in acetic acid as the solvent, so the freezing point depression follows ΔT_f = K_f × m.','mass of solute (ascorbic acid) = 10.2 g','with molar mass 176 g mol⁻¹','mass of solvent (acetic acid) = 150 g, i.e. 0.150 kg'],
+ ['Compute the molality of the solution.','m = (10.2 ÷ 176) mol ÷ 0.150 kg','= 0.05795 mol ÷ 0.150 kg','≈ 0.386 mol kg⁻¹'],
+ ['Apply the freezing point depression formula with K_f = 3.9 K kg mol⁻¹.','ΔT_f = K_f × m','= 3.9 × 0.386'],
+ ['Compute the depression.','ΔT_f ≈ 1.506°C'],
+ ['Write this in the form x × 10⁻¹ °C as the question asks.','1.506°C is 15.06 × 10⁻¹ °C','Answer: 15']
+]},
+{id:'SOL-88',level:2,topic:'Ratio of molar masses from freezing point depression ratio',source:'ExamSIDE · JEE Main 2022 (Online) 25th July Evening Shift · questions.examside.com (question id 1l6f64rq1)',sourceRef:true,question:'Two solutions A and B are prepared by dissolving 1 g each of non-volatile solutes X and Y respectively in 1 kg of water. The ratio of their freezing point depressions, solution A to solution B, is 1 : 4. What is the ratio of molar masses M_X : M_Y?',options:['1 : 4','1 : 0.25','1 : 0.20','1 : 5'],correct:1,answer:'1 : 0.25',
+short:[['Both solutions use the same solute mass (1 g) and the same solvent mass (1 kg), and i = 1 for both, so ΔT_f is inversely proportional to the solute\'s molar mass M.','depression(A) ÷ depression(B) = M_Y ÷ M_X','1/4 = M_Y ÷ M_X'],['Rearrange to find M_X ÷ M_Y.','M_X ÷ M_Y = 4'],['Express as a ratio matching the option format M_X : M_Y.','M_X : M_Y = 4 : 1','4 : 1 is the same ratio as 1 : 0.25','Answer: (B) 1 : 0.25']],
+detailed:[
+ ['Both solutions use the same mass of solute (1 g) dissolved in the same mass of solvent (1 kg water), and both solutes are non-volatile, non-dissociating, so i = 1 for both.','ΔT_f = K_f × m','m = (w ÷ M) ÷ w_solvent','with w and w_solvent identical for A and B'],
+ ['Since K_f, w, and w_solvent are common to both, ΔT_f is inversely proportional to the solute\'s molar mass alone.','depression(A) ÷ depression(B) = M_Y ÷ M_X'],
+ ['Substitute the given ratio of depressions (A to B is 1:4).','1/4 = M_Y ÷ M_X'],
+ ['Solve for M_X ÷ M_Y.','M_X ÷ M_Y = 4','i.e. M_X : M_Y = 4 : 1'],
+ ['Rewrite 4 : 1 in the \'1 : ...\' format used by the options.','4 : 1 is the same ratio as 1 : 0.25'],
+ ['This matches option B.','Answer: (B) 1 : 0.25']
+]},
+{id:'SOL-89',level:2,topic:'Henry\'s law constant assertion-reason over concentration range and solvent dependence',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · questions.examside.com (question id ml89h65h)',sourceRef:true,question:'Statement I: The Henry\'s law constant K_H stays constant over the concentration range for which the solution is ideally dilute. Statement II: K_H does not differ for the same solute in different solvents. Choose the correct option.',options:['Both Statement I and Statement II are true','Statement I is true but Statement II is false','Statement I is false but Statement II is true','Both Statement I and Statement II are false'],correct:1,answer:'Statement I is true but Statement II is false',
+short:[['Henry\'s law, p = K_H × x, holds with a constant K_H as long as the solution stays in the dilute, ideal regime for that solute-solvent pair.','Statement I is true'],['K_H depends on the identity of both the gas (solute) and the solvent, and also on temperature, so the same gas has different K_H values in different solvents.','Statement II is false'],['Statement I true, Statement II false.','Answer: (B) Statement I is true but Statement II is false']],
+detailed:[
+ ['Henry\'s law states that for a dilute, ideal solution of a gas in a liquid, the partial pressure of the gas is proportional to its mole fraction in the solution.','p = K_H × x','where K_H is characteristic of the particular gas-solvent pair at a given temperature'],
+ ['As long as the solution remains within the concentration range where it behaves ideally dilute, K_H stays the same — it doesn\'t vary with concentration within that regime.','so Statement I','which says exactly this, is true'],
+ ['K_H is not a universal constant for a gas — it depends on which solvent the gas is dissolved in, because it reflects the specific gas-solvent interaction, and also depends on temperature.','the same gas (e.g. CO₂) has a different K_H in water than in another solvent'],
+ ['So Statement II, which claims K_H doesn\'t differ across solvents, is false.','overall Statement I is true and Statement II is false'],
+ ['This matches option B.','Answer: (B) Statement I is true but Statement II is false']
+]},
+{id:'SOL-90',level:3,topic:'Log-log plot of Henry\'s law for CO2 in water',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · questions.examside.com (question id ml89h7dp)',sourceRef:true,question:'CO₂(g) is dissolved in water in a closed container at 25°C, so that p(CO₂) = K_H × X(CO₂), where X is the mole fraction of CO₂ dissolved in water. Four candidate graphs of log[p(CO₂)] (y-axis) against log[X(CO₂)] (x-axis) are offered: (A) a straight line of slope 1 passing exactly through the origin. (B) a straight line of negative slope with a positive y-intercept. (C) a straight line of slope 1, offset above the line through the origin (a positive y-intercept). (D) two disconnected, nearly horizontal line segments, not a single straight line of slope 1. Which plot correctly represents the relationship?',options:['A straight line through the origin, slope 1, zero y-intercept','A straight line of negative slope with a positive y-intercept','A straight line of slope 1 with a positive y-intercept','Two disconnected near-horizontal segments, not a slope-1 line'],correct:2,answer:'A straight line of slope 1 with a positive y-intercept',
+short:[['Take logs of Henry\'s law p = K_H × X.','log p = log K_H + log X','this is a straight line in log p vs log X with slope 1 and y-intercept log K_H'],['For CO₂ in water, K_H is a large number, much greater than 1 bar, so log K_H is positive.','the line must have slope 1 and a positive y-intercept, not pass through the origin'],['Only the graph showing a slope-1 line offset above the origin matches this.','Answer: (C) a straight line of slope 1 with a positive y-intercept']],
+detailed:[
+ ['Henry\'s law relates the partial pressure of a dissolved gas to its mole fraction, p = K_H × X.','taking logs of both sides linearises it into log p = log K_H + log X'],
+ ['This is a straight line of the form y = c + x, with y standing for log p and x for log X.','the slope must be exactly 1, and the y-intercept equals log K_H'],
+ ['This rules out the graph with a negative slope (that would mean p decreases as X increases, contradicting Henry\'s law) and the graph made of disconnected near-horizontal segments (not a straight line of slope 1 at all).','remaining candidates are the slope-1 line through the origin, and the slope-1 line offset above the origin'],
+ ['The y-intercept equals log K_H. For CO₂ dissolved in water, K_H is known to be large (of order 10³ bar or more), so log K_H is clearly positive, not zero.','a line through the origin would imply K_H = 1','which is not the case for CO₂ in water'],
+ ['So the correct plot is the slope-1 straight line offset above the origin, i.e. with a positive y-intercept.','Answer: (C) a straight line of slope 1 with a positive y-intercept']
+]},
+{id:'SOL-91',level:1,topic:'Vapour pressure of a glucose solution using relative lowering',source:'ExamSIDE · AIEEE 2008 · questions.examside.com (question id 5uJrBAVb3j7ItlHp)',sourceRef:true,question:'The vapour pressure of water at 20°C is 17.5 mm Hg. 18 g of glucose (C₆H₁₂O₆) is dissolved in 178.2 g of water at 20°C. What is the vapour pressure of the resulting solution?',options:['17.675 mm Hg','15.750 mm Hg','16.500 mm Hg','17.325 mm Hg'],correct:3,answer:'17.325 mm Hg',
+short:[['Convert to moles (glucose molar mass 180 g mol⁻¹).','n(glucose) = 18 ÷ 180','= 0.1 mol','n(water) = 178.2 ÷ 18','= 9.9 mol'],['Apply Raoult\'s law, P_s = P° × X(water).','X(water) = 9.9 ÷ (9.9 + 0.1)','= 0.99'],['Compute P_s.','P_s = 17.5 × 0.99','= 17.325 mm Hg','Answer: (D) 17.325 mm Hg']],
+detailed:[
+ ['Glucose is a non-volatile, non-electrolyte solute, so by Raoult\'s law the solution\'s vapour pressure equals the pure solvent\'s vapour pressure times the solvent\'s mole fraction.','n(glucose) = 18 g ÷ 180 g mol⁻¹','= 0.1 mol','n(water) = 178.2 g ÷ 18 g mol⁻¹','= 9.9 mol'],
+ ['Find the mole fraction of water in the solution.','X(water) = n(water) ÷ (n(water) + n(glucose))','= 9.9 ÷ 10.0','= 0.99'],
+ ['Apply Raoult\'s law.','P_s = P° × X(water)','= 17.5 mm Hg × 0.99'],
+ ['Compute the vapour pressure of the solution.','P_s = 17.325 mm Hg','Answer: (D) 17.325 mm Hg']
+]},
+{id:'SOL-92',level:3,topic:'Interpreting a table of Henry\'s law constants for gas solubility',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Morning Slot · questions.examside.com (question id jo1LfOJz8I06ykYcybjgy2xukf2bn9id)',sourceRef:true,question:'Henry\'s law constants (K_H, in kbar) for four gases at 298 K in water are: β = 50, γ = 2, δ = 2×10⁻⁵, ε = 0.5. Which of the following statements about this table is correct?',options:['Solubility of δ at 308 K is lower than at 298 K','The pressure of a 55.5 molal solution of ε is 250 bar','β has the highest solubility in water at a given pressure','The pressure of a 55.5 molal solution of δ is 1 bar'],correct:1,answer:'The pressure of a 55.5 molal solution of ε is 250 bar',
+short:[['In Henry\'s law p = K_H × x, a smaller K_H means higher solubility at a given pressure, so β, with the largest K_H (50 kbar), has the lowest solubility, not the highest.','this rules out option (C)'],['A 55.5 molal solution has 55.5 mol solute per 1000 g (55.5 mol) of water, so the solute mole fraction is about 55.5 ÷ (55.5 + 55.5).','x ≈ 0.5'],['Check option (B), pressure for ε.','p = K_H(ε) × x','= 0.5 kbar × 0.5','= 0.25 kbar, i.e. 250 bar — matches option (B) exactly'],['Check option (D) similarly for δ.','p = K_H(δ) × x','= 2×10⁻⁵ kbar × 0.5','= 1×10⁻⁵ kbar','1×10⁻⁵ kbar is 0.01 bar, not 1 bar','so option (D) is false'],['Option (B) is the correct statement.','Answer: (B) The pressure of a 55.5 molal solution of ε is 250 bar']],
+detailed:[
+ ['Henry\'s law states p = K_H × x — at a fixed pressure, a gas with a smaller K_H has a larger equilibrium mole fraction in solution, i.e. it is more soluble.','since β has the largest K_H (50 kbar) among the four, it is the least soluble, not the most','option (C) is false'],
+ ['A 55.5 molal solution contains 55.5 mol of solute per kg (1000 g) of water.','moles of water = 1000 g ÷ 18 g mol⁻¹','≈ 55.5 mol','mole fraction of solute x = 55.5 ÷ (55.5 + 55.5)','= 0.5'],
+ ['Test option (D), the pressure of a 55.5 molal solution of δ, using K_H(δ) = 2×10⁻⁵ kbar.','p = K_H(δ) × x','= 2×10⁻⁵ kbar × 0.5','= 1×10⁻⁵ kbar','1×10⁻⁵ kbar is 1×10⁻² bar, i.e. 0.01 bar — not 1 bar','so option (D) is false'],
+ ['Test option (B), the pressure of a 55.5 molal solution of ε, using K_H(ε) = 0.5 kbar.','p = K_H(ε) × x','= 0.5 kbar × 0.5','= 0.25 kbar','0.25 kbar is 250 bar — exactly matching option (B)'],
+ ['Option (A) restates a general solubility-temperature trend without being backed by a specific computation from this table, while option (B) is directly verified by the numbers given.','option (B) is the correct statement'],
+ ['This confirms the answer.','Answer: (B) The pressure of a 55.5 molal solution of ε is 250 bar']
+]},
+{id:'SOL-93',level:1,topic:'Total vapour pressure of an ideal A-B solution via Raoult\'s law',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Evening Shift · questions.examside.com (question id 0OLQ5S531KFDgV60XJ1kmiv4jg3)',sourceRef:true,question:'At 363 K, the vapour pressure of pure liquid A is 21 kPa and that of pure liquid B is 18 kPa. 1 mole of A is mixed with 2 moles of B to form an ideal solution. Find the total vapour pressure of the mixture (in kPa, nearest integer).',type:'numerical',answer:'19',
+short:[['Find the mole fractions.','X(A) = 1 ÷ (1+2)','= 1/3','X(B) = 2 ÷ (1+2)','= 2/3'],['Apply Raoult\'s law for an ideal solution.','P_total = P°(A) × X(A) + P°(B) × X(B)','= 21×(1/3) + 18×(2/3)'],['Compute.','P_total = 7 + 12','= 19 kPa','Answer: 19']],
+detailed:[
+ ['For an ideal solution, Raoult\'s law gives the total vapour pressure as the sum of each component\'s partial pressure, P°ᵢ × Xᵢ.','1 mol A and 2 mol B are mixed','so total moles = 3'],
+ ['Compute the mole fractions.','X(A) = 1 ÷ 3','≈ 0.333','X(B) = 2 ÷ 3','≈ 0.667'],
+ ['Apply Raoult\'s law to each component.','P(A) = P°(A) × X(A)','= 21 kPa × (1/3)','= 7 kPa','P(B) = P°(B) × X(B)','= 18 kPa × (2/3)','= 12 kPa'],
+ ['Add the two partial pressures to get the total vapour pressure of the mixture.','P_total = P(A) + P(B)','= 7 + 12','= 19 kPa','Answer: 19']
+]},
+{id:'SOL-94',level:2,topic:'Percentage association of a solute from freezing point depression',source:'ExamSIDE · JEE Main 2022 (Online) 25th June Evening Shift · questions.examside.com (question id 1l59qkfik)',sourceRef:true,question:'Solute A associates in water. When 0.7 g of solute A is dissolved in 42.0 g of water, it depresses the freezing point by 0.2°C. What is the percentage association of solute A in water? [molar mass of A = 93 g mol⁻¹, K_f of water = 1.86 K kg mol⁻¹]',options:['50%','60%','70%','80%'],correct:3,answer:'80%',
+short:[['Find the molality of A (as the unassociated formula unit).','m = (0.7 g ÷ 93 g mol⁻¹) ÷ (42.0 g ÷ 1000 g kg⁻¹)','≈ 0.1796 mol kg⁻¹'],['Apply ΔT_f = i × K_f × m to get i.','0.2 = i × 1.86 × 0.1796','i = 0.6'],['For association into an n-mer, β = (i − 1) ÷ ((1 ÷ n) − 1), assuming dimerisation (n is 2 here).','β = (0.6 − 1) ÷ (0.5 − 1)','= (−0.4) ÷ (−0.5)','= 0.8'],['Convert to a percentage.','Answer: (D) 80%']],
+detailed:[
+ ['Solute A (molar mass 93 g mol⁻¹) partly associates in water, so its effective van\'t Hoff factor is below 1.','mass of A = 0.7 g','mass of water (solvent) = 42.0 g, i.e. 0.0420 kg'],
+ ['Compute the molality based on the unassociated formula mass.','moles of A = 0.7 g ÷ 93 g mol⁻¹','≈ 0.00753 mol','m = 0.00753 mol ÷ 0.0420 kg','≈ 0.1796 mol kg⁻¹'],
+ ['Use the freezing-point depression law to extract the van\'t Hoff factor i.','ΔT_f = i × K_f × m','0.2 = i × 1.86 × 0.1796','i = 0.6'],
+ ['For association of n monomers into one n-mer with degree of association β, the van\'t Hoff factor is i = 1 − β + (β ÷ n).','rearranged, β = (i − 1) ÷ ((1 ÷ n) − 1)'],
+ ['Take the usual case of dimerisation, where n is 2, and substitute i = 0.6.','β = (0.6 − 1) ÷ ((1 ÷ 2) − 1)','= (−0.4) ÷ (−0.5)','= 0.8'],
+ ['Convert β to a percentage.','Answer: (D) 80%']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -845,7 +1232,46 @@ const pilotTopicMap={
  'Degree of dissociation of a weak acid from freezing point depression':['vant-hoff-factor','Degree of dissociation of a weak acid from freezing point depression'],
  'Mole fraction calculation and deviation from Raoult\'s law in methanol-CCl4':['ideal-nonideal','Mole fraction calculation and deviation from Raoult\'s law in methanol-CCl4'],
  'Henry\'s law and solubility of a gas with partial pressure':['raoults-law','Henry\'s law and solubility of a gas with partial pressure'],
- 'Molar mass of hemoglobin from osmotic pressure (height method)':['colligative-properties','Molar mass of hemoglobin from osmotic pressure (height method)']
+ 'Molar mass of hemoglobin from osmotic pressure (height method)':['colligative-properties','Molar mass of hemoglobin from osmotic pressure (height method)'],
+ 'Relative vapour-pressure lowering with electrolyte dissociation':['colligative-properties','Relative vapour-pressure lowering with electrolyte dissociation'],
+ 'Freezing point depression to find solute volume':['colligative-properties','Freezing point depression to find solute volume'],
+ 'Van\'t Hoff factor from coordination-complex ionisation':['vant-hoff-factor','Van\'t Hoff factor from coordination-complex ionisation'],
+ 'Osmotic pressure to isotonic glucose concentration':['colligative-properties','Osmotic pressure to isotonic glucose concentration'],
+ 'Raoult\'s law for a two-component volatile mixture':['raoults-law','Raoult\'s law for a two-component volatile mixture'],
+ 'Freezing point depression in a binary liquid mixture':['colligative-properties','Freezing point depression in a binary liquid mixture'],
+ 'Van\'t Hoff factor for a strong electrolyte\'s freezing point depression':['vant-hoff-factor','Van\'t Hoff factor for a strong electrolyte\'s freezing point depression'],
+ 'Comparing freezing points via van\'t Hoff factor':['vant-hoff-factor','Comparing freezing points via van\'t Hoff factor'],
+ 'Osmotic pressure of an isotonic electrolyte solution':['colligative-properties','Osmotic pressure of an isotonic electrolyte solution'],
+ 'Boiling point elevation to determine atomic mass':['colligative-properties','Boiling point elevation to determine atomic mass'],
+ 'Boiling and freezing point data to find a solubility product':['colligative-properties','Boiling and freezing point data to find a solubility product'],
+ 'Van\'t Hoff factor from boiling point elevation':['vant-hoff-factor','Van\'t Hoff factor from boiling point elevation'],
+ 'Raoult\'s law relation between liquid and vapour mole fractions':['raoults-law','Raoult\'s law relation between liquid and vapour mole fractions'],
+ 'Raoult\'s law for an equimolar ideal mixture':['raoults-law','Raoult\'s law for an equimolar ideal mixture'],
+ 'Van\'t Hoff factor comparison across electrolytes':['vant-hoff-factor','Van\'t Hoff factor comparison across electrolytes'],
+ 'Raoult\'s law to find liquid-phase composition from vapour composition':['raoults-law','Raoult\'s law to find liquid-phase composition from vapour composition'],
+ 'Isotonic solution pairs via van\'t Hoff factor':['vant-hoff-factor','Isotonic solution pairs via van\'t Hoff factor'],
+ 'Kb to Kf ratio from boiling and freezing point data':['colligative-properties','Kb to Kf ratio from boiling and freezing point data'],
+ 'Van\'t Hoff factor from percentage ionisation':['vant-hoff-factor','Van\'t Hoff factor from percentage ionisation'],
+ 'Freezing point depression with dimeric association (benzene-acetic acid)':['vant-hoff-factor','Freezing point depression with dimeric association (benzene-acetic acid)'],
+ 'Relative vapour pressure lowering from a dissociating solute (SO2-NaOH product)':['colligative-properties','Relative vapour pressure lowering from a dissociating solute (SO2-NaOH product)'],
+ 'Comparing freezing point depression by van\'t Hoff factor across solutes':['vant-hoff-factor','Comparing freezing point depression by van\'t Hoff factor across solutes'],
+ 'Raoult\'s law partial vapour pressure of an ideal benzene-toluene solution':['raoults-law','Raoult\'s law partial vapour pressure of an ideal benzene-toluene solution'],
+ 'Molar mass from relative lowering of vapour pressure (acetone solution)':['colligative-properties','Molar mass from relative lowering of vapour pressure (acetone solution)'],
+ 'Osmotic pressure ratio to find molar mass ratio of two proteins':['colligative-properties','Osmotic pressure ratio to find molar mass ratio of two proteins'],
+ 'Ranking boiling points of dilute NaCl and urea solutions by van\'t Hoff factor':['vant-hoff-factor','Ranking boiling points of dilute NaCl and urea solutions by van\'t Hoff factor'],
+ 'Boiling point elevation of a partially dissociated AB2 electrolyte':['vant-hoff-factor','Boiling point elevation of a partially dissociated AB2 electrolyte'],
+ 'Reading vapour pressure-temperature curves for intermolecular forces':['ideal-nonideal','Reading vapour pressure-temperature curves for intermolecular forces'],
+ 'Percentage increase in observed freezing point depression from acid dissociation':['vant-hoff-factor','Percentage increase in observed freezing point depression from acid dissociation'],
+ 'Combined relative lowering of vapour pressure and boiling point elevation to find solvent moles':['colligative-properties','Combined relative lowering of vapour pressure and boiling point elevation to find solvent moles'],
+ 'Lowering of vapour pressure of a dilute urea solution':['colligative-properties','Lowering of vapour pressure of a dilute urea solution'],
+ 'Freezing point depression of acetic acid contaminated with ascorbic acid':['colligative-properties','Freezing point depression of acetic acid contaminated with ascorbic acid'],
+ 'Ratio of molar masses from freezing point depression ratio':['colligative-properties','Ratio of molar masses from freezing point depression ratio'],
+ 'Henry\'s law constant assertion-reason over concentration range and solvent dependence':['raoults-law','Henry\'s law constant assertion-reason over concentration range and solvent dependence'],
+ 'Log-log plot of Henry\'s law for CO2 in water':['raoults-law','Log-log plot of Henry\'s law for CO2 in water'],
+ 'Vapour pressure of a glucose solution using relative lowering':['colligative-properties','Vapour pressure of a glucose solution using relative lowering'],
+ 'Interpreting a table of Henry\'s law constants for gas solubility':['raoults-law','Interpreting a table of Henry\'s law constants for gas solubility'],
+ 'Total vapour pressure of an ideal A-B solution via Raoult\'s law':['raoults-law','Total vapour pressure of an ideal A-B solution via Raoult\'s law'],
+ 'Percentage association of a solute from freezing point depression':['vant-hoff-factor','Percentage association of a solute from freezing point depression']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
