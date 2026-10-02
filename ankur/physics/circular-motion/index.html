@@ -1659,7 +1659,7 @@ const questions=[
  ["Correct answer",'(D)']
 ]},
 {id:'CIRC-19-H',parent:'CIRC-19',variant:8,topic:'Losing contact at the top of a convex bridge',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.45',printedAnswer:'C',verifiedAnswer:'C'},question:'A car moves at a constant speed on a road that rises into a hump at A and dips into a hollow at B. The normal force by the road on the car is N₁ at the hump A and N₂ in the hollow B. Then',options:['N₁ = N₂','N₁ > N₂','N₁ < N₂','insufficient information'],correct:2,answer:'N₁ < N₂',diagram:'',relevance:{parent:'CIRC-19',sharedSkill:'the sign of the radial equation flipping between a convex and a concave stretch of road',recoveryPurpose:'both cases appear in one question, so the direction to the centre has to be read separately at each point'},short:[
- ["at the hump the centre of the circle is below the car, so the net force points downward",`mg − N₁ = ${fraction('mv²','r')} · Nᴀ = mg − ${fraction('mv²','r')}`],
+ ["at the hump the centre of the circle is below the car, so the net force points downward",`mg − N₁ = ${fraction('mv²','r')} · N₁ = mg − ${fraction('mv²','r')}`],
  ["in the hollow the centre is above the car, so the net force points upward",`N₂ − mg = ${fraction('mv²','r')} · N₂ = mg + ${fraction('mv²','r')}`],
  ["one sits below the weight and the other above it",`N₁ < mg < N₂`],
  ["Correct answer",'(C)']
@@ -2295,6 +2295,113 @@ const questions=[
  ["write X for mvₜ² over L and solve",`X + 5mg = 5X − 5mg · X = 2.5mg · vₜ² = 2.5gL`],
  ["put in the numbers",`vₜ² = 2.5(10)(1) = 25 · vₜ = 5 m/s`],
  ["Correct answer",'5']
+]},
+{id:'CIRC-33-E',parent:'CIRC-33',variant:5,topic:'The minimum height that lets a body complete a loop',source:'ExamSide · JEE Main 2026 (Online) 6th April Morning Shift',url:'https://questions.examside.com/past-years/jee/question/pa-smooth-inclined-plane-ends-in-a-vertical-circular-loop-jee-main-physics-units-and-measurements-0obwqqchqlrttf9g',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2026 (Online) 6th April Morning Shift',questionNumber:'ExamSide #1',printedAnswer:'B',verifiedAnswer:'B'},question:'A smooth inclined plane ends in a vertical circular loop of radius R, as shown. A small body is released from a height h. If the body exerts a force of three times its weight on the track at the highest point of the circle, then h = αR, and the value of α is',options:['2','4','3','6'],correct:1,answer:'4',diagram:'incline-into-loop',relevance:{parent:'CIRC-33',sharedSkill:'the radial equation at the top of a loop, then energy back to the release height',recoveryPurpose:'the push at the top is given as a multiple of the weight rather than as a speed, so the radial equation comes first'},short:[
+ ["at the top the track pushes down and so does the weight",`N + mg = ${fraction('mvₜ²','R')}`],
+ ["the stated push is three times the weight",`3mg + mg = ${fraction('mvₜ²','R')} · vₜ² = 4gR`],
+ ["energy conservation from the release height down to the top of the loop at 2R",`gh = g(2R) + ${fraction('1','2')}vₜ² = 2gR + 2gR`],
+ ["so the height is four radii",`h = 4R · α = 4`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-08-V',parent:'CIRC-08',variant:22,topic:'The minimum speed at the top of a vertical circle',source:'ExamSide · JEE Main 2026 (Online) 24th January Evening Shift',url:'https://questions.examside.com/past-years/jee/question/pin-case-of-vertical-circular-motion-of-a-particle-by-a-th-jee-main-physics-units-and-measurements-loalqqu2dim4vj0p',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2026 (Online) 24th January Evening Shift',questionNumber:'ExamSide #4',printedAnswer:'A',verifiedAnswer:'A'},question:'In vertical circular motion of a particle on a thread of length r, the tension in the thread is zero at the position shown, 30° above the horizontal. The velocity at the bottom point A of the circular path is (g the gravitational acceleration)',options:[`√(${fraction('7','2')}gr)`,'√(4gr)',`√(${fraction('5','2')}gr)`,'√(5gr)'],correct:0,answer:`√(${fraction('7','2')}gr)`,diagram:'thread-slack-at-30',relevance:{parent:'CIRC-08',sharedSkill:'locating the slack point by its angle, then carrying energy back to the lowest point',recoveryPurpose:'the angle is quoted from the horizontal while the radial equation wants it from the vertical, which is the step that trips the 5gr answer'},short:[
+ ["measure the position from the upward vertical: 30° above the horizontal is 60° from the top",`φ = 60°`],
+ ["with the thread slack only gravity’s radial part turns the particle",`mg cos φ = ${fraction('mv²','r')} · v² = gr cos 60° = ${fraction('gr','2')}`],
+ ["that point stands above the bottom by r plus r sin 30°",`h = r + ${fraction('r','2')} = ${fraction('3r','2')}`],
+ ["energy conservation back down to A",`vₐ² = v² + 2gh = ${fraction('gr','2')} + 3gr = ${fraction('7gr','2')}`],
+ ["Correct answer",'(A)']
+]},
+{id:'CIRC-21-H',parent:'CIRC-21',variant:29,topic:'Speed at the bottom of a curved track from energy conservation',source:'ExamSide · JEE Main 2025 (Online) 22nd January Evening Shift',url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-100-g-is-moving-in-circular-path-of-radius-jee-main-physics-units-and-measurements-jshhjlkkhsznc9ab',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2025 (Online) 22nd January Evening Shift',questionNumber:'ExamSide #11',printedAnswer:'D',verifiedAnswer:'D'},question:'A body of mass 100 g moves in a circular path of radius 2 m in a vertical plane, as shown. The velocity of the body at the lowest point A is 10 m/s. Taking g = 10 m/s², the ratio of its kinetic energies at the points B and C is',options:[`${fraction('3 − √2','2')}`,`${fraction('2 + √3','3')}`,`${fraction('2 + √2','3')}`,`${fraction('3 + √3','2')}`],correct:3,answer:`${fraction('3 + √3','2')}`,diagram:'vertical-circle-abc',relevance:{parent:'CIRC-21',sharedSkill:'two heights read off one figure, each fed through energy conservation',recoveryPurpose:'the two points sit at different angles on the same circle, so each height has to be built separately before the ratio is taken'},short:[
+ ["B sits 30° below the horizontal, so its height h₁ above A is R minus R cos 30°",`h₁ = R − ${fraction('R√3','2')}`],
+ ["energy conservation from A gives the speed at B, written v₁",`v₁² = 100 − 2gR(1 − ${fraction('√3','2')}) = 100 − 40 + 20√3 = 60 + 20√3`],
+ ["C stands three halves of R above A, and its speed is written v₂",`v₂² = 100 − 2g(${fraction('3R','2')}) = 100 − 60 = 40`],
+ ["kinetic energy goes as the square of the speed, so divide",`${fraction('KE₁','KE₂')} = ${fraction('60 + 20√3','40')} = ${fraction('3 + √3','2')}`],
+ ["Correct answer",'(D)']
+]},
+{id:'CIRC-21-I',parent:'CIRC-21',variant:30,topic:'Speed at the bottom of a curved track from energy conservation',source:'ExamSide · JEE Main 2025 (Online) 22nd January Morning Shift',url:'https://questions.examside.com/past-years/jee/question/pa-bob-of-mass-m-is-suspended-at-a-point-o-by-a-light-jee-main-physics-units-and-measurements-zz3h8h1mrvglerhy',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2025 (Online) 22nd January Morning Shift',questionNumber:'ExamSide #12',printedAnswer:'C',verifiedAnswer:'C'},question:'A bob of mass m is suspended at a point O by a light string of length ℓ and left to perform vertical circular motion, as shown. A horizontal velocity v₀ is applied at the point A, and the string becomes slack when the bob reaches the point D at the top. The ratio of the kinetic energy of the bob at the points B and C is',options:['4','1','2','3'],correct:2,answer:'2',diagram:'slack-at-top-bc',relevance:{parent:'CIRC-21',sharedSkill:'the slack condition at the top setting the whole energy budget for the circle',recoveryPurpose:'the launch speed is never given; it has to be recovered from the condition at the top before either point can be reached'},short:[
+ ["the string going slack at the very top fixes the speed there, written vₜ",`vₜ² = gℓ`],
+ ["energy conservation back to the lowest point A, a drop of 2ℓ",`vₐ² = gℓ + 4gℓ = 5gℓ`],
+ ["B stands 60° from the bottom (height h₁), C stands 60° from the top (height h₂)",`h₁ = ℓ − ℓcos60° = ${fraction('ℓ','2')} · h₂ = ℓ + ℓcos60° = ${fraction('3ℓ','2')}`],
+ ["energy conservation to B then C, writing their speeds v₁ and v₂",`v₁² = 5gℓ − gℓ = 4gℓ · v₂² = 5gℓ − 3gℓ = 2gℓ`],
+ ["divide the kinetic energies",`${fraction('KE₁','KE₂')} = ${fraction('4gℓ','2gℓ')} = 2`],
+ ["Correct answer",'(C)']
+]},
+{id:'CIRC-14-Q',parent:'CIRC-14',variant:17,topic:'Average acceleration over part of a revolution',source:'ExamSide · JEE Main 2023 (Online) 6th April Evening Shift',url:'https://questions.examside.com/past-years/jee/question/pas-shown-in-the-figure-a-particle-is-moving-with-constan-jee-main-physics-motion-btnlyy0fu7m4qljh',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2023 (Online) 6th April Evening Shift',questionNumber:'ExamSide #25',printedAnswer:'B',verifiedAnswer:'B'},question:'As shown in the figure, a particle moves with constant speed π m/s round a circle. Considering its motion from A to B, through 120° at the centre, the magnitude of the average velocity is',options:['π m/s','1.5√3 m/s','√3 m/s','2√3 m/s'],correct:1,answer:'1.5√3 m/s',diagram:'arc-A-to-B',relevance:{parent:'CIRC-14',sharedSkill:'average velocity as chord over arc time, with the radius cancelling',recoveryPurpose:'the radius is never given, and the speed π is chosen so that it drops out entirely'},short:[
+ ["average velocity is the straight displacement over the time taken",`v̄ = ${fraction('chord','time')}`],
+ ["the chord across 120° at the centre",`chord = 2r sin 60° = r√3`],
+ ["the time is the arc divided by the constant speed",`t = ${fraction('(2πr) × 120 ÷ 360','π')} = ${fraction('2r','3')}`],
+ ["divide, and the radius cancels",`v̄ = r√3 ÷ ${fraction('2r','3')} = ${fraction('3√3','2')} = 1.5√3 m/s`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-14-R',parent:'CIRC-14',variant:18,topic:'Average acceleration over part of a revolution',source:'ExamSide · JEE Main 2022 (Online) 25th July Morning Shift',url:'https://questions.examside.com/past-years/jee/question/pa-person-moved-from-a-to-b-on-a-circular-path-as-shown-in-jee-main-physics-motion-7709kkxghmjg66xt',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2022 (Online) 25th July Morning Shift',questionNumber:'ExamSide #36',printedAnswer:'B',verifiedAnswer:'B'},question:'A person moved from A to B on a circular path as shown in the figure, through 135° at the centre. If the distance travelled by him is 60 m, the magnitude of the displacement would be (given cos 135° = −0.7)',options:['42 m','47 m','19 m','40 m'],correct:1,answer:'47 m',diagram:'arc-A-to-B',relevance:{parent:'CIRC-14',sharedSkill:'recovering the radius from an arc, then the chord by the cosine rule',recoveryPurpose:'the angle is obtuse, so the cosine is negative and the chord comes out longer than the radius'},short:[
+ ["the arc and the angle at the centre give the radius",`s = rθ · 60 = r${fraction('3π','4')} · r = ${fraction('80','π')} ≈ 25.5 m`],
+ ["the displacement is the chord across that angle",`d² = r² + r² − 2r²cos 135°`],
+ ["with the cosine given as minus seven tenths",`d² = 2r²(1 + 0.7) = 3.4r²`],
+ ["take the root",`d = r√3.4 ≈ 25.5(1.844) ≈ 47 m`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-27-B',parent:'CIRC-27',variant:2,topic:'A bead on a rod with angular acceleration',source:'ExamSide · JEE Main 2020 (Online) 2nd September Morning Slot',url:'https://questions.examside.com/past-years/jee/question/a-bead-of-mass-m-stays-at-point-pa-b-on-a-wire-bent-in-th-jee-main-physics-rotational-motion-bn0ydpcxmn2z29vs',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2020 (Online) 2nd September Morning Slot',questionNumber:'ExamSide #54',printedAnswer:'A',verifiedAnswer:'A'},question:'A bead of mass m stays at the point P(a, b) on a wire bent in the shape of the parabola y = 4Cx² and rotating with angular speed ω about the y-axis, as shown. Neglecting friction, the value of ω is',options:['2√(2gC)','2√(gC)',`√(${fraction('2gC','ab')})`,`√(${fraction('2g','C')})`],correct:0,answer:'2√(2gC)',diagram:'bead-on-parabola',relevance:{parent:'CIRC-27',sharedSkill:'matching the wire’s slope to the ratio of centripetal to gravitational acceleration',recoveryPurpose:'the x cancels, which is why a parabola is the one shape where the bead is in balance everywhere at a single ω'},short:[
+ ["on a smooth wire the bead sits where the slope matches the ratio of the two accelerations",`tan θ = ${fraction('ω²x','g')}, with tan θ the slope of the wire`],
+ ["differentiate the parabola for that slope",`${fraction('dy','dx')} = 8Cx`],
+ ["equate the two expressions for the slope",`8Cx = ${fraction('ω²x','g')}`],
+ ["the position cancels, so the balance holds at every point of the wire",`ω² = 8gC · ω = 2√(2gC)`],
+ ["Correct answer",'(A)']
+]},
+{id:'CIRC-09-P',parent:'CIRC-09',variant:16,topic:'The conical pendulum',source:'ExamSide · JEE Main 2019 (Online) 9th January Evening Slot',url:'https://questions.examside.com/past-years/jee/question/a-conical-pendulum-of-length-1-m-makes-an-angle-theta-jee-main-physics-units-and-measurements-jscpy7gduactllri',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2019 (Online) 9th January Evening Slot',questionNumber:'ExamSide #60',printedAnswer:'D',verifiedAnswer:'D'},question:'A conical pendulum of length 1 m makes an angle θ = 45° with the Z-axis and moves in a circle in the XY plane. The radius of the circle is 0.4 m and its centre is vertically below O. Taking g = 10 ms⁻², the speed of the pendulum in its circular path will be',options:['0.4 m/s','4 m/s','0.2 m/s','2 m/s'],correct:3,answer:'2 m/s',diagram:'conical-45-circle',relevance:{parent:'CIRC-09',sharedSkill:'the conical balance worked from the radius of the circle rather than the string length',recoveryPurpose:'the source over-specifies the geometry and the two data disagree, so the question turns on which one the answer uses'},short:[
+ ["resolve the string tension along and across the vertical",`T cos θ = mg · T sin θ = ${fraction('mv²','r')}`],
+ ["divide to remove the tension",`tan θ = ${fraction('v²','rg')}`],
+ ["with the stated angle the tangent is one",`v² = rg tan 45° = rg`],
+ ["use the radius the question gives for the circle",`v² = 0.4(10) = 4 · v = 2 m/s`],
+ ["the stated length and angle would give a wider circle, so the radius given is the one used",`ℓ sin 45° ≈ 0.71 m ≠ 0.4 m, a conflict in the source`],
+ ["Correct answer",'(D)']
+]},
+{id:'CIRC-16-D',parent:'CIRC-16',variant:4,topic:'Acceleration on a curve from its arc and turning angle',source:'ExamSide · AIEEE 2010',url:'https://questions.examside.com/past-years/jee/question/a-point-p-moves-in-counter-clockwise-direction-on-a-circ-2010-marks-4-4cfnbjnfyjkoznxk.htm',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'AIEEE 2010',questionNumber:'ExamSide #63',printedAnswer:'D',verifiedAnswer:'D'},question:'A point P moves in the anticlockwise direction on a circular path of radius 20 m, as shown. The movement of P is such that it sweeps out a length s = t³ + 5, where s is in metres and t in seconds. The acceleration of P when t = 2 s is nearly',options:['13 m/s²','12 m/s²','7.2 m/s²','14 m/s²'],correct:3,answer:'14 m/s²',diagram:'quarter-arc-P',relevance:{parent:'CIRC-16',sharedSkill:'both acceleration components from an arc length given as a function of time',recoveryPurpose:'each component on its own appears among the distractors, so neither can be mistaken for the whole'},short:[
+ ["differentiate the arc length for the speed",`v = ${fraction('ds','dt')} = 3t² · v = 12 m/s at t = 2 s`],
+ ["differentiate again for the tangential acceleration",`aₜ = ${fraction('dv','dt')} = 6t = 12 m/s²`],
+ ["the speed gives the radial part",`aᵣ = ${fraction('v²','R')} = ${fraction('144','20')} = 7.2 m/s²`],
+ ["the two are perpendicular, so combine them in quadrature",`a = √(12² + 7.2²) = √195.84 ≈ 14 m/s²`],
+ ["Correct answer",'(D)']
+]},
+{id:'CIRC-09-Q',parent:'CIRC-09',variant:17,topic:'The conical pendulum',source:'ExamSide · JEE Main 2025 (Online) 24th January Evening Shift',url:'https://questions.examside.com/past-years/jee/question/pimg-srchttpsapp-contentfly-assetsukflywidthim-jee-main-physics-units-and-measurements-dtquj5nlqc3c2dpv',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2025 (Online) 24th January Evening Shift',questionNumber:'ExamSide #66',printedAnswer:'36',verifiedAnswer:'36'},question:'A string of length L is fixed at one end and carries a mass M at the other end, which makes 3/π rotations per second about the vertical axis through the fixed end, as shown. The tension in the string is ______ ML.',type:'numerical',answer:36,diagram:'conical-string-R',relevance:{parent:'CIRC-09',sharedSkill:'the conical result T = Mω²L, with the cone angle cancelling out',recoveryPurpose:'the rate is given as 3 over π precisely so that ω comes out a whole number and the π disappears'},short:[
+ ["resolve the tension along and across the vertical",`T cos θ = Mg · T sin θ = Mω²R`],
+ ["the circle radius is the string length projected",`R = L sin θ`],
+ ["substitute it into the horizontal equation, and the sine cancels",`T sin θ = Mω²L sin θ · T = Mω²L`],
+ ["turn the rate of rotation into radians per second",`ω = 2π${fraction('3','π')} = 6 rad/s`],
+ ["so the tension is thirty-six times ML",`T = M(36)L`],
+ ["Correct answer",'36']
+]},
+{id:'CIRC-14-S',parent:'CIRC-14',variant:19,topic:'Average acceleration over part of a revolution',source:'ExamSide · JEE Main 2022 (Online) 30th June Morning Shift',url:'https://questions.examside.com/past-years/jee/question/pa-person-starts-his-journey-from-centre-o-of-the-park-a-jee-main-physics-motion-2qhn4x4ij4xgvkl7',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2022 (Online) 30th June Morning Shift',questionNumber:'ExamSide #71',printedAnswer:'3',verifiedAnswer:'3'},question:'A person starts his journey from the centre O of a park and comes back to the same position following the path OPQO, as shown, where PQ is a quarter of the circumference. The radius of the path is 200 m and he takes 3 min 58 s to complete his journey. Taking π = 3.14, the average speed of the person is ______ ms⁻¹.',type:'numerical',answer:3,diagram:'park-OPQO',relevance:{parent:'CIRC-14',sharedSkill:'average speed over a closed path, using distance rather than displacement',recoveryPurpose:'the journey returns to its start, so the displacement is zero and only the path length can give a speed'},short:[
+ ["the journey is out along a radius, round a quarter arc, and back along a radius",`s = R + ${fraction('2πR','4')} + R = 2R + ${fraction('πR','2')}`],
+ ["substitute the radius",`s = 400 + ${fraction('3.14(200)','2')} = 400 + 314 = 714 m`],
+ ["convert the time",`t = 3 min 58 s = 238 s`],
+ ["average speed is path length over time",`v̄ = ${fraction('714','238')} = 3 ms⁻¹`],
+ ["Correct answer",'3']
+]},
+{id:'CIRC-26-J',parent:'CIRC-26',variant:10,topic:'Force at the end of a rotating tube',source:'ExamSide · JEE Main 2022 (Online) 26th June Evening Shift',url:'https://questions.examside.com/past-years/jee/question/pa-smooth-circular-groove-has-a-smooth-vertical-wall-as-sh-jee-main-physics-motion-esap7bvxqwtvsu1e',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2022 (Online) 26th June Evening Shift',questionNumber:'ExamSide #35',printedAnswer:'A',verifiedAnswer:'A'},question:'A smooth circular groove has a smooth vertical wall. A block of mass m moves against the wall with a speed v. Which curve represents the correct relation between the normal reaction N on the block by the wall and the speed v of the block?',options:['a curve rising ever more steeply, N growing as the square of v','a straight line through the origin, N growing in proportion to v','a horizontal line, N not depending on v at all','a curve starting high and falling away as v grows'],correct:0,answer:'a curve rising ever more steeply, N growing as the square of v',diagram:'',optionFigures:'normal-vs-speed',relevance:{parent:'CIRC-26',sharedSkill:'recognising the shape of N against v from N = mv² over r',recoveryPurpose:'the answer is a curve rather than a value, so the relation has to be read as a shape'},short:[
+ ["the wall is the only thing pushing the block towards the centre of the groove",`N = ${fraction('mv²','r')}`],
+ ["with m and r fixed, the whole dependence is on the speed squared",`N ∝ v²`],
+ ["that is a parabola through the origin, steepening as v grows",'not a line, not a constant, and not a falling curve'],
+ ["Correct answer",'(A)']
+]},
+{id:'CIRC-23-C',parent:'CIRC-23',variant:3,topic:'Total energy for a given centripetal force law',source:'ExamSide · JEE Main 2021 (Online) 18th March Evening Shift',url:'https://questions.examside.com/past-years/jee/question/a-particle-of-mass-m-moves-in-a-circular-orbit-under-the-cen-jee-main-physics-units-and-measurements-bhno3bus6r6rgxwk',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2021 (Online) 18th March Evening Shift',questionNumber:'ExamSide #48',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle of mass m moves in a circular orbit under the central potential field U(r) = −C/r, where C is a positive constant. The correct radius–velocity graph of the particle’s motion is',options:['a straight line, the radius growing in proportion to the speed','a falling curve, the radius dropping away as the speed grows','a curve that rises ever more steeply with speed','a quarter-circle shape falling to meet the speed axis'],correct:1,answer:'a falling curve, the radius dropping away as the speed grows',diagram:'',optionFigures:'radius-vs-speed',relevance:{parent:'CIRC-23',sharedSkill:'getting the force from a potential, then reading the r against v shape',recoveryPurpose:'the potential has to be differentiated before any circular-motion relation can be written'},short:[
+ ["the force is the negative gradient of the potential",`F = −${fraction('dU','dr')} = −${fraction('C','r²')}, an attraction of size ${fraction('C','r²')}`],
+ ["that force is what holds the particle on its circle",`${fraction('C','r²')} = ${fraction('mv²','r')}`],
+ ["solve for the radius",`r = ${fraction('C','mv²')}`],
+ ["so the radius falls as the inverse square of the speed, a hyperbola-like decay",`r ∝ ${fraction('1','v²')}`],
+ ["Correct answer",'(B)']
+]},
+{id:'CIRC-19-J',parent:'CIRC-19',variant:10,topic:'Losing contact at the top of a convex bridge',source:'ExamSide · JEE Main 2022 (Online) 26th June Morning Shift',url:'https://questions.examside.com/past-years/jee/question/pa-ball-is-released-from-rest-from-point-p-of-a-smooth-sem-jee-main-physics-motion-9zndewg576pbruov',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2022 (Online) 26th June Morning Shift',questionNumber:'ExamSide #39',printedAnswer:'C',verifiedAnswer:'C'},question:'A ball is released from rest from the point P of a smooth hemispherical vessel. The ratio of the centripetal force on the ball to the normal reaction at a point Q is A, where α is the angular position of Q measured from P. Which graph represents the correct relation between A and α as the ball goes from Q to R?',options:['a falling curve, the ratio dropping steeply as α grows','a curve rising and then flattening off','a horizontal line, the ratio not changing with α','a curve rising ever more steeply with α'],correct:2,answer:'a horizontal line, the ratio not changing with α',diagram:'',optionFigures:'ratio-vs-angle',relevance:{parent:'CIRC-19',sharedSkill:'forming a ratio in which the angle cancels, leaving a constant',recoveryPurpose:'both quantities vary with α yet their ratio does not, which is exactly what the three curved options miss'},short:[
+ ["released from the rim, the ball has descended R sin α by the time it reaches α",`v² = 2gR sin α`],
+ ["the centripetal force follows from that speed",`Fᵣ = ${fraction('mv²','R')} = 2mg sin α`],
+ ["the radial equation gives the normal reaction",`N − mg sin α = ${fraction('mv²','R')} · N = 3mg sin α`],
+ ["divide, and the angle cancels completely",`A = ${fraction('2mg sin α','3mg sin α')} = ${fraction('2','3')}, whatever α is`],
+ ["Correct answer",'(C)']
+]},
+{id:'CIRC-03-X',parent:'CIRC-03',variant:24,topic:'Centripetal acceleration, angular velocity and radius',source:'ExamSide · JEE Main 2023 (Online) 30th January Evening Shift',url:'https://questions.examside.com/past-years/jee/question/a-stone-tied-to-180-mathrmcm-long-string-at-its-end-is-jee-main-physics-1ulhnsmydpoyc8zl',sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Circular Motion',paper:'JEE Main 2023 (Online) 30th January Evening Shift',questionNumber:'ExamSide #69',printedAnswer:'125',verifiedAnswer:'125'},question:'A stone tied to a 180 cm long string at its end is making 28 revolutions in a horizontal circle every minute. The magnitude of the acceleration of the stone is 1936/x ms⁻². Taking π = 22/7, the value of x is',type:'numerical',answer:125,diagram:'',relevance:{parent:'CIRC-03',sharedSkill:'keeping the arithmetic in fractions so the stated numerator appears exactly',recoveryPurpose:'π is given as 22 over 7 precisely so that 1936 comes out whole, which only survives if nothing is rounded on the way'},short:[
+ ["turn the rate into radians per second",`ω = ${fraction('28(2π)','60')} = ${fraction('14π','15')} rad/s`],
+ ["square it, using the stated value of π",`ω² = ${fraction('196π²','225')} = ${fraction('196','225')}${fraction('484','49')} = ${fraction('1936','225')}`],
+ ["the acceleration is ω² times the radius in metres",`a = ${fraction('1936','225')}(1.8) = ${fraction('1936','125')}`],
+ ["compare with the form the question gives",`x = 125`],
+ ["Correct answer",'125']
 ]}
 ];
 </script>
@@ -3061,6 +3168,161 @@ function diagram(q,solution=false){
   s+=txt(230,268,'both are described at constant speed',M,14);
   break;
  }
+ case 'incline-into-loop':{
+  height=330;
+  const gy=272,lx=58,R=58,cx=330;
+  s+=ground(30,gy,400);
+  s+=line(lx,gy-168,cx-R-26,gy,W,3);                       // the smooth incline
+  s+=dot(lx+6,gy-162,Y);
+  s+=line(lx-18,gy-168,lx-18,gy,M,1.3,true)+txt(lx-26,gy-84,'h',M,16,'end');
+  s+=line(lx-26,gy-168,lx-10,gy-168,M,1.3)+line(lx-26,gy,lx-10,gy,M,1.3);
+  s+=`<path d="${arcPath(cx,gy-R,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="2.6"/>`;
+  s+=line(cx,gy-R,cx+R,gy-R,M,1.3,true)+txt(cx+R/2,gy-R-8,'R',M,15);
+  s+=dot(cx,gy-R,M);
+  if(solution){
+   s+=txt(230,gy+32,'at the top the track pushes down with three times the weight',GREEN,14);
+   s+=txt(230,gy+54,'N + mg = mv\u00b2 \u00f7 R with N = 3mg \u00b7 v\u00b2 = 4gR \u00b7 h = 4R',GREEN,15);
+  }
+  break;
+ }
+ case 'thread-slack-at-30':{
+  height=330;
+  const cx=230,cy=160,R=104,a=Math.PI/6;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="1.8" stroke-dasharray="5 6"/>`;
+  s+=dot(cx,cy,W)+line(cx,cy,cx,cy+R,W,2)+txt(cx-14,cy+R/2,'r',M,15,'end');
+  s+=dot(cx,cy+R,Y)+txt(cx,cy+R+22,'A',Y,16);
+  s+=line(cx,cy,cx+R,cy,M,1.2,true);
+  s+=line(cx,cy,cx+R*Math.cos(-a),cy+R*Math.sin(-a),M,1.6,true);
+  s+=dot(cx+R*Math.cos(-a),cy+R*Math.sin(-a),B);
+  s+=`<path d="${arcPath(cx,cy,46,0,-a)}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(cx+58,cy-14,'30\u00b0',M,15,'start');
+  s+=txt(230,cy+R+54,'the tension falls to zero at the marked position',M,14);
+  break;
+ }
+ case 'vertical-circle-abc':{
+  height=336;
+  const cx=230,cy=166,R=104;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=dot(cx,cy,W)+txt(cx-16,cy+5,'O',W,16,'end');
+  s+=line(cx,cy,cx,cy-R,M,1.3,true)+dot(cx,cy-R,B)+txt(cx,cy-R-12,'D',B,16);
+  s+=dot(cx,cy+R,Y)+txt(cx,cy+R+22,'A',Y,16);
+  const ac=-Math.PI/4, ab=Math.PI/6;
+  s+=line(cx,cy,cx+R*Math.cos(ac),cy+R*Math.sin(ac),W,1.8)+dot(cx+R*Math.cos(ac),cy+R*Math.sin(ac),B)
+    +txt(cx+R*Math.cos(ac)+14,cy+R*Math.sin(ac)-6,'C',B,16,'start');
+  s+=line(cx,cy,cx+R*Math.cos(ab),cy+R*Math.sin(ab),W,1.8)+dot(cx+R*Math.cos(ab),cy+R*Math.sin(ab),B)
+    +txt(cx+R*Math.cos(ab)+14,cy+R*Math.sin(ab)+10,'B',B,16,'start');
+  s+=`<path d="${arcPath(cx,cy,44,-Math.PI/2,ac)}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(cx+30,cy-44,'90\u00b0',M,14,'start');
+  s+=`<path d="${arcPath(cx,cy,62,ac,ab)}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(cx+70,cy+6,'30\u00b0',M,14,'start');
+  s+=arrow(cx+8,cy+R,cx+62,cy+R,'',GREEN)+txt(cx+70,cy+R+5,'v',GREEN,16,'start');
+  break;
+ }
+ case 'slack-at-top-bc':{
+  height=336;
+  const cx=230,cy=166,R=104;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=dot(cx,cy,W)+txt(cx-16,cy+5,'O',W,16,'end');
+  s+=line(cx,cy,cx,cy-R,W,2)+dot(cx,cy-R,B)+txt(cx,cy-R-12,'D',B,16);
+  s+=dot(cx,cy+R,Y)+txt(cx,cy+R+22,'A',Y,16);
+  const ac=-Math.PI/6, ab=Math.PI/3;
+  s+=line(cx,cy,cx+R*Math.cos(ac),cy+R*Math.sin(ac),W,1.8)+dot(cx+R*Math.cos(ac),cy+R*Math.sin(ac),B)
+    +txt(cx+R*Math.cos(ac)+14,cy+R*Math.sin(ac)-4,'C',B,16,'start');
+  s+=line(cx,cy,cx+R*Math.cos(ab),cy+R*Math.sin(ab),W,1.8)+dot(cx+R*Math.cos(ab),cy+R*Math.sin(ab),B)
+    +txt(cx+R*Math.cos(ab)+14,cy+R*Math.sin(ab)+10,'B',B,16,'start');
+  s+=`<path d="${arcPath(cx,cy,46,-Math.PI/2,ac)}" fill="none" stroke="${M}" stroke-width="1.4"/>`+txt(cx+26,cy-48,'60\u00b0',M,14,'start');
+  s+=`<path d="${arcPath(cx,cy,46,Math.PI/2,ab)}" fill="none" stroke="${M}" stroke-width="1.4"/>`+txt(cx+26,cy+50,'60\u00b0',M,14,'start');
+  s+=arrow(cx+8,cy+R,cx+62,cy+R,'',GREEN)+txt(cx+70,cy+R+5,'v\u2080',GREEN,16,'start');
+  s+=txt(230,cy+R+56,'the string goes slack when the bob reaches D',M,14);
+  break;
+ }
+ case 'arc-A-to-B':{
+  height=322;
+  const cx=230,cy=160,R=100;
+  const ang=(q.diagram==='arc-A-to-B'&&/135/.test(q.question))?135:120;
+  const a2=-ang*Math.PI/180;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=dot(cx,cy,W)+txt(cx,cy+22,'O',W,16);
+  s+=line(cx,cy,cx+R,cy,W,1.8)+dot(cx+R,cy,Y)+txt(cx+R+16,cy+6,'A',Y,16,'start');
+  s+=line(cx,cy,cx+R*Math.cos(a2),cy+R*Math.sin(a2),W,1.8)+dot(cx+R*Math.cos(a2),cy+R*Math.sin(a2),B)
+    +txt(cx+R*Math.cos(a2)-14,cy+R*Math.sin(a2)-10,'B',B,16,'end');
+  s+=`<path d="${arcPath(cx,cy,46,0,a2)}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(cx+22,cy-50,ang+'\u00b0',M,16,'start');
+  break;
+ }
+ case 'bead-on-parabola':{
+  height=320;
+  // scale chosen so the arm reaches about 170 px at the widest x drawn
+  const ox=206,oy=250,k=170/(150*150);
+  const pts=[];for(let x=-150;x<=150;x+=4)pts.push([ox+x,oy-k*x*x]);
+  s+=`<path d="${curvePath(pts)}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=line(ox,oy+24,ox,oy-176,M,1.6)+txt(ox+12,oy-180,'y',M,16,'start');
+  s+=line(ox-160,oy,ox+180,oy,M,1.6)+txt(ox+188,oy+6,'x',M,16,'start');
+  s+=txt(ox-12,oy+20,'O',M,15,'end');
+  const px=130,py=oy-k*px*px;
+  s+=dot(ox+px,py,Y)+txt(ox+px+12,py-8,'P(a, b)',Y,15,'start');
+  s+=line(ox,py,ox+px,py,M,1.2,true)+line(ox+px,oy,ox+px,py,M,1.2,true);
+  s+=arrow(ox-12,oy-150,ox+12,oy-150,'',GREEN)+txt(ox+22,oy-154,'\u03c9',GREEN,16,'start');
+  s+=txt(230,oy+48,'the wire is spun about the y-axis \u00b7 friction is neglected',M,14);
+  break;
+ }
+ case 'conical-45-circle':{
+  height=330;
+  const ax=230,top=52,cy=250,r=96;
+  s+=line(ax,top-18,ax,cy+16,M,1.6)+txt(ax+12,top-20,'Z',M,16,'start');
+  s+=dot(ax,top,W)+txt(ax+14,top+16,'O',W,16,'start');
+  s+=line(ax,top,ax-r,cy,W,2.2);
+  s+=`<ellipse cx="${ax}" cy="${cy}" rx="${r}" ry="26" fill="none" stroke="${M}" stroke-width="1.6" stroke-dasharray="5 5"/>`;
+  s+=dot(ax,cy,M)+txt(ax+12,cy+18,'C',M,16,'start');
+  s+=dot(ax-r,cy,Y);
+  s+=`<path d="${arcPath(ax,top,46,Math.PI/2,Math.PI-Math.atan2(cy-top,r))}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(ax-30,top+56,'\u03b8',M,16,'end');
+  s+=txt(230,cy+58,'the bob sweeps the dashed circle, whose centre C is below O',M,14);
+  break;
+ }
+ case 'quarter-arc-P':{
+  height=320;
+  const ox=92,oy=262,R=176;
+  s+=line(ox,oy+14,ox,oy-R-24,M,1.6)+txt(ox+10,oy-R-28,'y',M,16,'start');
+  s+=line(ox-14,oy,ox+R+30,oy,M,1.6)+txt(ox+R+38,oy+6,'x',M,16,'start');
+  s+=txt(ox-10,oy+20,'O',M,15,'end');
+  s+=`<path d="${arcPath(ox,oy,R,0,-Math.PI/2)}" fill="none" stroke="${W}" stroke-width="2.6"/>`;
+  s+=dot(ox+R,oy,M)+txt(ox+R,oy+20,'A',M,16);
+  s+=dot(ox,oy-R,M)+txt(ox-14,oy-R,'B',M,16,'end');
+  const a=-Math.PI/4;
+  s+=line(ox,oy,ox+R*Math.cos(a),oy+R*Math.sin(a),M,1.3,true)+txt(ox+70,oy-56,'20 m',M,14,'start');
+  s+=dot(ox+R*Math.cos(a),oy+R*Math.sin(a),Y)+txt(ox+R*Math.cos(a)+14,oy+R*Math.sin(a)-10,'P',Y,16,'start');
+  s+=arrow(ox+R*Math.cos(a-0.3),oy+R*Math.sin(a-0.3),ox+R*Math.cos(a-0.5),oy+R*Math.sin(a-0.5),'',GREEN);
+  s+=txt(230,oy+42,'P runs anticlockwise, sweeping an arc s along the circle',M,14);
+  break;
+ }
+ case 'conical-string-R':{
+  height=330;
+  const ax=230,top=54,cy=236,r=100;
+  s+=ground(ax-56,top,112,false);
+  s+=line(ax,top,ax,cy,M,1.3,true);
+  s+=line(ax,top,ax+r,cy,W,2.2)+txt(ax+66,top+76,'L',W,16,'start');
+  s+=`<ellipse cx="${ax}" cy="${cy}" rx="${r}" ry="26" fill="none" stroke="${M}" stroke-width="1.6" stroke-dasharray="5 5"/>`;
+  s+=dot(ax+r,cy,Y)+txt(ax+r+14,cy+6,'M',Y,16,'start');
+  s+=`<path d="${arcPath(ax,top,42,Math.PI/2,Math.atan2(cy-top,r))}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=txt(ax+16,top+52,'\u03b8',M,16,'start');
+  s+=span(ax,ax+r,cy+40,'R');
+  s+=arrow(ax+r*0.56,cy-62,ax+r*0.44,cy-86,'',GREEN)+txt(ax+r*0.42,cy-94,'T',GREEN,15,'end');
+  break;
+ }
+ case 'park-OPQO':{
+  height=330;
+  const cx=230,cy=166,R=104;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=dot(cx,cy,W)+txt(cx-16,cy+6,'O',W,16,'end');
+  s+=arrow(cx,cy,cx+R-6,cy,'',GREEN)+txt(cx+R+16,cy+6,'P',GREEN,16,'start');
+  const q2=-Math.PI/2;
+  s+=`<path d="${arcPath(cx,cy,R,0,q2)}" fill="none" stroke="${GREEN}" stroke-width="2.6"/>`;
+  s+=txt(cx,cy-R-14,'Q',GREEN,16);
+  s+=arrow(cx,cy-R+6,cx,cy-6,'',GREEN);
+  s+=txt(230,cy+R+42,'out along OP, round the quarter arc PQ, then back along QO',M,14);
+  break;
+ }
  case 'particle-in-cone':{
   height=320;
   const vx=230,vy=268,halfw=118,h=150;      // vertex at the bottom, opening upward
@@ -3153,6 +3415,33 @@ function optionFigure(key,i){
    const loop=[];for(let k=0;k<=48;k++){const a=-Math.PI/2+2*Math.PI*(k/48);
     loop.push([cx+wide*Math.sin(a), (top+84)/2 - ((84-top)/2)*Math.cos(a)]);}
    s+=ln(28,84,cx-wide,84,W,2)+pth(loop,W,2);
+   break;}
+  /* ExamSide #35 -- how the wall's normal reaction grows with the block's speed. */
+  case 'normal-vs-speed':{
+   s+=axes('N','v');
+   const curve=f=>{const p=[];for(let k=0;k<=50;k++){const u=k/50;p.push([26+124*u,f(u)]);}return p;};
+   if(i===0) s+=pth(curve(u=>80-68*u*u),G);                 // N proportional to v squared
+   else if(i===1) s+=pth([[26,80],[150,16]],G);             // straight line through the origin
+   else if(i===2) s+=ln(26,34,150,34,G,2.4);                // constant
+   else s+=pth(curve(u=>16+64*u*u),G);                      // falling away from a high start
+   break;}
+  /* ExamSide #48 -- radius against speed for a particle in a 1/r potential. */
+  case 'radius-vs-speed':{
+   s+=axes('r','v');
+   const curve=f=>{const p=[];for(let k=0;k<=60;k++){const u=0.08+0.92*k/60;p.push([26+124*u,f(u)]);}return p;};
+   if(i===0) s+=pth([[26,80],[150,16]],G);                  // straight line
+   else if(i===1) s+=pth(curve(u=>80-64*Math.min(1,0.04/(u*u))),G);  // r falling as 1 over v squared
+   else if(i===2) s+=pth(curve(u=>80-64*u*u*u),G);          // concave rise
+   else s+=pth(curve(u=>16+64*Math.sqrt(Math.max(0,u-0.08))),G);
+   break;}
+  /* ExamSide #39 -- the ratio of centripetal force to normal reaction, against angle. */
+  case 'ratio-vs-angle':{
+   s+=axes('A','\u03b1');
+   const curve=f=>{const p=[];for(let k=0;k<=50;k++){const u=0.05+0.95*k/50;p.push([26+124*u,f(u)]);}return p;};
+   if(i===0) s+=pth(curve(u=>80-62*Math.min(1,0.06/u)),G);  // falling hyperbola
+   else if(i===1) s+=pth(curve(u=>80-60*Math.sqrt(u)),G);   // rising and flattening
+   else if(i===2) s+=ln(26,46,150,46,G,2.4);                // constant -- the true behaviour
+   else s+=pth(curve(u=>80-58*u*u),G);   // rising ever more steeply
    break;}
   /* Q.88 -- the direction of the acceleration of a pendulum bob between its
      extremes: along the string, tangential, a combination, or straight down. */
