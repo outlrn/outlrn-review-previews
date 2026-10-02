@@ -546,7 +546,7 @@ function diagram(q,solution=false){
   height=350;
   const cx=230,cy=176,R=108;
   s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
-  s+=dot(cx,cy,W)+txt(cx+14,cy+6,'O',W,16,'start');
+  s+=dot(cx,cy,W)+txt(cx-14,cy+6,'O',W,16,'end');
   // radius drawn horizontally, leaving the vertical free for the forces,
   // which must act AT the bucket rather than float beside the circle
   s+=line(cx,cy,cx+R,cy,M,1.3,true)+txt(cx+R/2,cy-10,'R',M,15);
@@ -607,12 +607,11 @@ function diagram(q,solution=false){
   break;
  }
  case 'three-bridges':{
-  height=338;
   const ys=214,r=96,half=0.58;
   const sag=r-r*Math.cos(half);           // how far the arc's apex sits off ys
   const panels=[[80,'A','flat'],[230,'B','convex'],[380,'C','concave']];
-  // each car has to stand on ITS OWN surface, which is sag above ys on the
-  // convex bridge and sag below it on the concave one
+  // each car stands on ITS OWN surface: a sagitta above ys on the convex
+  // bridge, the same distance below it on the concave one
   const surfaceY=k=>k==='flat'?ys:(k==='convex'?ys-sag:ys+sag);
   for(const [px,lab,kind] of panels){
    if(kind==='flat') s+=line(px-58,ys,px+58,ys,W,3);
@@ -623,17 +622,23 @@ function diagram(q,solution=false){
     s+=`<path d="M ${pts.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join(' L ')}" fill="none" stroke="${W}" stroke-width="3"/>`;
    }
    s+=rect(px-17,surfaceY(kind)-18,34,18,'',Y);
-   s+=txt(px,ys+58,lab,W,17);
+   s+=txt(px,ys+52,lab,W,17);
   }
+  let top=surfaceY('convex')-18,bottom=ys+58;
   if(solution){
    const arrows=[[80,'flat',54,'N = mg'],[230,'convex',34,'N < mg'],[380,'concave',76,'N > mg']];
    for(const [px,kind,len,lab] of arrows){
-    const top=surfaceY(kind)-18;
-    s+=arrow(px,top,px,top-len,'',B);
-    s+=txt(px,top-len-10,lab,B,15);
+    const carTop=surfaceY(kind)-18;
+    s+=arrow(px,carTop,px,carTop-len,'',B);
+    s+=txt(px,carTop-len-10,lab,B,15);
+    top=Math.min(top,carTop-len-24);
    }
-   s+=txt(230,322,'the centre of the circle is below on B, above on C',M,15);
+   s+=txt(230,ys+92,'the centre of the circle is below on B, above on C',M,15);
+   bottom=ys+100;
   }
+  // crop the box to what this state actually draws, so the question view
+  // does not open with a tall empty band above the bridges
+  viewTop=top-12;height=(bottom-top)+24;
   break;
  }
  case 'flywheel-two-phases':{
@@ -1107,7 +1112,18 @@ document.body.innerHTML=`<nav class="subjectswitch" aria-label="Subjects"><a cla
 const navHost=navScrollHost();if(navHost)navHost.scrollTop=indexScroll;
 const variantHost=document.querySelector('.variantbar');if(variantHost)variantHost.scrollLeft=variantScroll;
 if(q.type!=='mcq'){const ninput=document.querySelector('#numeric-'+q.id);if(ninput){ninput.value=selections[q.id]??'';ninput.oninput=e=>{selections[q.id]=e.target.value;};}}
-if(window.scrollY!==keepPage)window.scrollTo(0,keepPage);}
+if(window.scrollY!==keepPage)window.scrollTo(0,keepPage);
+ fitDiagrams();}
+function fitDiagrams(){
+ for(const svg of document.querySelectorAll('.diagram svg')){
+  const vb=(svg.getAttribute('viewBox')||'').split(/\s+/).map(Number);
+  if(vb.length!==4)continue;
+  let bb;try{bb=svg.getBBox();}catch(e){continue;}
+  if(!bb||!bb.height)continue;
+  const pad=12,top=bb.y-pad,h=bb.height+pad*2;
+  if(h>=vb[3]-1)continue;
+  svg.setAttribute('viewBox',vb[0]+' '+top.toFixed(1)+' '+vb[2]+' '+h.toFixed(1));
+ }}
 if(!openSection||!syllabus.some(s=>s.key===openSection))syncIndex();
 QF.init(navigationKey+'-filters',filtersChanged);
 if(!QF.inView(current)&&QF.first()>=0){current=QF.first();syncIndex();}
