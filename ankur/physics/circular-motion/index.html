@@ -1021,6 +1021,255 @@ const questions=[
  ["The balance reads the tension it carries, and that tension must both hold the block up and supply its centripetal force.",`vertical part = mg · horizontal part = ${fraction('mv²','r')}`],
  ["Those two are perpendicular, so the tension is their resultant rather than their sum.",`T = √((mg)² + (${fraction('mv²','r')})²)`],
  ["A spring balance is graduated in mass, so divide by g; option (C) is the one that wrongly adds the two parts.",'reading = √(m² + (mv²/rg)²) · Correct answer: (D)']
+]},
+/* ---- Batch 05: fifty more from the institute exercise --------------------
+   Every candidate was screened against the already-published questions before
+   being authored, and against the rest of this batch, so nothing here repeats
+   anything already in the bank. Seven new cores: two finish the comparing-
+   bodies section, one finishes loops and tracks, and four open a section on
+   rigid-body rotation -- torque against angular momentum, the work a couple
+   does, a sliding body against a rolling one, and how the placing of mass
+   governs angular acceleration. Forty-three practice variants deepen those
+   and the existing families. */
+{id:'CIRC-36',level:3,topic:'Angular velocity of a point seen from different centres',title:'Angular velocity of a point seen from different centres',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.204',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle P is moving in a circle of radius \'a\' with a uniform speed v. C is the centre of the circle and AP is diameter. The angular velocity of P about A and C are in the ratio-',options:['1 : 1','1 : 2','2 : 1','4 : 1'],correct:1,answer:'1 : 2',diagram:'angle-at-centre-and-rim',short:[
+ ["About the centre the angular velocity is the usual one.",`ω(C) = ${fraction('v','a')}`],
+ ["A lies on the circle itself, and the angle a chord subtends at the circumference is half the angle it subtends at the centre.",`angle at A = ${fraction('1','2')} (angle at C), at every instant`],
+ ["Differentiating that relation carries the factor of a half straight into the rates.",`ω(A) = ${fraction('1','2')} ω(C)`],
+ ["So the ratio asked for, A against C, is one to two rather than two to one.",'ω(A) : ω(C) = 1 : 2 · Correct answer: (B)']
+]},
+{id:'CIRC-37',level:2,topic:'Scaling the centripetal force when every quantity changes',title:'Scaling the centripetal force when every quantity changes',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.202',printedAnswer:'B',verifiedAnswer:'B'},question:'If mass, speed and radius of rotation of a body moving in a circular path are all increased by 50%, the necessary force required to maintain the body moving in the circular path will have to be increased by-',options:['225%','125%','150%','100%'],correct:1,answer:'125%',diagram:'',noDiagramReason:'A pure scaling argument on one formula; nothing about the circle itself changes that a drawing could show.',short:[
+ ["Write the force in the three quantities being changed.",`F = ${fraction('mv²','r')}`],
+ ["Each is multiplied by 1.5, and the speed appears squared.",`F′ = ${fraction('(1.5m)(1.5v)²','1.5r')} = ${fraction('1.5 × 2.25','1.5')}F = 2.25F`],
+ ["The force becomes 2.25 times what it was, so the required increase is the part above the original, not the whole factor. Reading off 2.25 directly gives the 225% trap.",'increase = 2.25F − F = 1.25F, i.e. 125% · Correct answer: (B)']
+]},
+{id:'CIRC-38',level:3,topic:'Speeds at the top, side and bottom of a critical vertical circle',title:'Speeds at the top, side and bottom of a critical vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.318',printedAnswer:'D',verifiedAnswer:'D'},question:'A particle crosses the topmost point C of a vertical circle with critical speed; then the ratio of velocities at points A, B and C is -',options:['3 : 2 : 1','5 : 3 : 1','5² : 3² : 1²','√5 : √3 : √1'],correct:3,answer:'√5 : √3 : √1',diagram:'critical-circle-speeds',short:[
+ ["Critical speed at the top fixes the speed there.",'v(C)² = rg'],
+ ["B is a quarter turn down, a height r below the top.",'v(B)² = rg + 2gr = 3rg'],
+ ["A is the lowest point, a full diameter below it.",'v(A)² = rg + 4gr = 5rg'],
+ ["Those are the squares of the speeds; the ratio asked for is of the speeds themselves, so take roots. Quoting 5 : 3 : 1 answers the wrong question, and it is offered.",'v(A) : v(B) : v(C) = √5 : √3 : 1 · Correct answer: (D)']
+]},
+{id:'CIRC-39',level:1,topic:'Torque as the rate of change of angular momentum',title:'Torque as the rate of change of angular momentum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.324',printedAnswer:'A',verifiedAnswer:'A'},question:'A constant torque acting on a uniform circular wheel changes its angular momentum from A₀ to 4A₀ in 4 seconds. The magnitude of this torque is',options:['3A₀/4','A₀','4A₀','12A₀'],correct:0,answer:'3A₀/4',diagram:'',noDiagramReason:'One relation between a torque and a change in angular momentum over a time; there is no geometry in it.',short:[
+ ["Torque is the rate at which angular momentum changes, exactly as force is for linear momentum.",`τ = ${fraction('ΔL','Δt')}`],
+ ["Take the change, not the final value.",'ΔL = 4A₀ − A₀ = 3A₀'],
+ ["Divide by the time.",`τ = ${fraction('3A₀','4')} · Correct answer: (A)`]
+]},
+{id:'CIRC-40',level:3,topic:'Work done by a couple turning a wheel',title:'Work done by a couple turning a wheel',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.325',printedAnswer:'B',verifiedAnswer:'B'},question:'Part of the tuning arrangement of a radio consists of a wheel which is acted on by two parallel constant forces of 0.1 N as shown in the figure. If the wheel rotates just once, the work done will be about (diameter of the wheel = 0.05 m)',options:['0.062 J','0.031 J','0.015 J','0.057 J'],correct:1,answer:'0.031 J',diagram:'couple-on-a-wheel',short:[
+ ["Two equal and opposite parallel forces form a couple, whose turning effect is one force times the perpendicular distance between them.",'that distance is the diameter, 0.05 m'],
+ ["So the torque is the force times the diameter, not times the radius.",'τ = 0.1 (0.05) = 0.005 N m'],
+ ["Work done by a torque is the torque times the angle turned, and one full turn is 2π radians rather than 1.",'W = τθ = 0.005 (2π)'],
+ ["Evaluate. Using the radius instead would halve this to about 0.015 J, which is offered.",'W ≈ 0.031 J · Correct answer: (B)']
+]},
+{id:'CIRC-41',level:2,topic:'Comparing a sliding body with a rolling one',title:'Comparing a sliding body with a rolling one',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.323',printedAnswer:'C',verifiedAnswer:'C'},question:'A body of mass m slides down an incline and reaches the bottom with a velocity v. If the same mass were in the form of a ring which rolls down this incline, the velocity of the ring at the bottom would have been',options:['v','v√2','v/√2','√(2/5) × v'],correct:2,answer:'v/√2',diagram:'',noDiagramReason:'The content is how the released energy is shared between sliding and rolling; two identical inclines side by side would show nothing of that split.',short:[
+ ["Sliding without friction turns the whole drop into translation.",`${fraction('1','2')}mv² = mgh ⇒ v = √(2gh)`],
+ ["A rolling ring has to spin as well, and for a ring all of its mass sits at the rim, so the rotational share equals the translational one.",`mgh = ${fraction('1','2')}mv′² + ${fraction('1','2')}Iω², with I = mR² ⇒ mgh = mv′²`],
+ ["So the ring arrives with half the kinetic energy in translation, and therefore more slowly.",`v′ = √(gh) = ${fraction('v','√2')} · Correct answer: (C)`]
+]},
+{id:'CIRC-42',level:3,topic:'Where the mass sits: moment of inertia against angular acceleration',title:'Where the mass sits: moment of inertia against angular acceleration',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.322',printedAnswer:'B',verifiedAnswer:'B'},question:'A metre stick, half of which is wood and the other half steel, is pivoted at the wooden end at O and a force is applied to the steel end. In a second arrangement the stick is pivoted at the steel end at O′ and the same force is applied at the wooden end. The angular acceleration',options:['in the first is greater than in the second','in the second is greater than in the first','equal in both','none of the above'],correct:1,answer:'in the second is greater than in the first',diagram:'',noDiagramReason:'The source carries a figure, but all it fixes is which half of the stick is the heavy one and which end is pivoted; the steps state that directly.',short:[
+ ["The force and its distance from the pivot are the same either way, so the torque is the same in both arrangements.",'τ the same in both'],
+ ["What differs is how far the heavy steel half sits from the pivot, and the moment of inertia weights mass by the square of that distance.",'steel far from the pivot in the first, close to it in the second ⇒ I(first) > I(second)'],
+ ["With the torque fixed, the angular acceleration goes inversely with the moment of inertia.",`α = ${fraction('τ','I')}`],
+ ["So the arrangement with the steel near the pivot turns up faster.",'α(second) > α(first) · Correct answer: (B)']
+]},
+{id:'CIRC-36-A',parent:'CIRC-36',variant:1,topic:'Angular velocity of a point seen from different centres',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.217',printedAnswer:'A',verifiedAnswer:'A'},question:'A particle moves along a circle of radius R = 1 m so that its radius vector relative to a point on its circumference rotates with the constant angular velocity ω = 2 rad/s. The linear speed of the particle is:',options:['4 m/s','2 m/s','1 m/s','0.5 m/s'],correct:0,answer:'4 m/s',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-36',sharedSkill:'Angular velocity of a point seen from different centres',recoveryPurpose:'direct retry'},short:[
+ ["The quoted rate is measured from a point on the circumference, which by the core relation is half the rate about the centre.",'ω(centre) = 2ω = 4 rad/s'],
+ ["Linear speed uses the rate about the centre.",'v = ω(centre) R = 4 (1) = 4 m/s · Correct answer: (A)']
+]},
+{id:'CIRC-36-B',parent:'CIRC-36',variant:2,topic:'Angular velocity of a point seen from different centres',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.206',printedAnswer:'C',verifiedAnswer:'C'},question:'In an atom two electrons move round the nucleus in circular orbits of radii r and 4r. The ratio of the time taken by them to complete one revolution is-',options:['4 : 1','1 : 4','1 : 8','8 : 1'],correct:2,answer:'1 : 8',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-36',sharedSkill:'Angular velocity of a point seen from different centres',recoveryPurpose:'controlled transfer'},short:[
+ ["The electrostatic attraction supplies the centripetal force, falling off as the inverse square, which ties the speed to the radius.",`${fraction('v²','r')} ∝ ${fraction('1','r²')} ⇒ v ∝ ${fraction('1','√r')}`],
+ ["The period is the circumference over that speed.",`T = ${fraction('2πr','v')} ∝ r√r = r³ᐟ²`],
+ ["So the ratio of periods follows the three-halves power of the radii.",`${fraction('T₁','T₂')} = (${fraction('1','4')})³ᐟ² = ${fraction('1','8')} · Correct answer: (C)`]
+]},
+{id:'CIRC-37-A',parent:'CIRC-37',variant:1,topic:'Scaling the centripetal force when every quantity changes',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.327',printedAnswer:'C',verifiedAnswer:'C'},question:'A 500 kg car takes a round turn of radius 50 m with a velocity of 36 km/hr. The centripetal force is-',options:['250 N','750 N','1000 N','1200 N'],correct:2,answer:'1000 N',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-37',sharedSkill:'Scaling the centripetal force when every quantity changes',recoveryPurpose:'direct retry'},short:[
+ ["Convert the speed before substituting.",'v = 36 km/h = 10 m/s'],
+ ["Apply the same relation the core scales.",`F = ${fraction('mv²','r')} = ${fraction('500 (100)','50')} = 1000 N · Correct answer: (C)`]
+]},
+{id:'CIRC-38-A',parent:'CIRC-38',variant:1,topic:'Speeds at the top, side and bottom of a critical vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.296',printedAnswer:'B',verifiedAnswer:'B'},question:'A ball from a height h along the slope moves on the perfectly frictionless circular track of radius r. If the ball just moves on the circular track without falling vertically downwards, the minimum height from where the ball should be released is -',options:['(3/2) r','(5/2) r','(7/2) r','r'],correct:1,answer:'(5/2) r',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-38',sharedSkill:'Speeds at the top, side and bottom of a critical vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["Just completing the loop is the critical condition at the top, the same one the core starts from.",'v(top)² = gr'],
+ ["Energy from the release point to the top of the loop, which is 2r above the ground.",`gh = g(2r) + ${fraction('1','2')}v(top)² = 2gr + ${fraction('gr','2')}`],
+ ["Divide through by g. Here the answer is wanted in terms of the radius, so no conversion to a diameter is needed.",`h = ${fraction('5r','2')} · Correct answer: (B)`]
+]},
+{id:'CIRC-38-B',parent:'CIRC-38',variant:2,topic:'Speeds at the top, side and bottom of a critical vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.252',printedAnswer:'A',verifiedAnswer:'A'},question:'A stone tied with a string, is rotated in a vertical circle. The minimum speed with which the string has to be rotated.',options:['is independent of the mass of the stone','is independent of the length of the string','decreases with increasing mass of the stone','decreases with increasing in length of the string'],correct:0,answer:'is independent of the mass of the stone',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-38',sharedSkill:'Speeds at the top, side and bottom of a critical vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["The critical condition at the top has the mass on both sides, so it cancels.",`mg = ${fraction('mv²','ℓ')} ⇒ v = √(gℓ)`],
+ ["What survives is the length, so the speed grows with ℓ rather than falling, and does not depend on the mass at all.",'v independent of m, and increases with ℓ · Correct answer: (A)']
+]},
+{id:'CIRC-38-C',parent:'CIRC-38',variant:3,topic:'Speeds at the top, side and bottom of a critical vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.254',printedAnswer:'A',verifiedAnswer:'A'},question:'A stone is attached to one end of a string and rotated in a vertical circle. If the string breaks at the position of maximum tension, it will break at the lowest point A, the side points B or D, or the topmost point C. It will break at:',options:['A','B','C','D'],correct:0,answer:'A',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-38',sharedSkill:'Speeds at the top, side and bottom of a critical vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["Round the circle the tension is the centripetal requirement plus the component of the weight along the string.",`T = ${fraction('mv²','r')} + mg cos θ, θ from the top`],
+ ["Both parts are largest at the lowest point: the speed is greatest there and the weight pulls directly away from the centre.",'T is greatest at the lowest point'],
+ ["So that is where it gives way.",'breaks at A · Correct answer: (A)']
+]},
+{id:'CIRC-38-D',parent:'CIRC-38',variant:4,topic:'Speeds at the top, side and bottom of a critical vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.253',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle is moving in a vertical circle. The tensions in the string when passing through two positions at angles 30° and 60° from vertical (lowest positions) are T₁ and T₂ respectively. Then',options:['T₁ = T₂','T₂ > T₁','T₁ > T₂','Tension in the string always remains the same'],correct:2,answer:'T₁ > T₂',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-38',sharedSkill:'Speeds at the top, side and bottom of a critical vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["Both terms of the tension shrink as the particle rises: it slows down, and the weight component along the string falls.",`T = ${fraction('mv²','ℓ')} + mg cos θ, θ measured from the lowest point`],
+ ["The 30° position is the lower of the two, so it has both the greater speed and the greater cosine.",'at 30°: larger v and larger cos θ'],
+ ["Hence the tension there is the larger.",'T₁ > T₂ · Correct answer: (C)']
+]},
+{id:'CIRC-41-A',parent:'CIRC-41',variant:1,topic:'Comparing a sliding body with a rolling one',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.321',printedAnswer:'D',verifiedAnswer:'D'},question:'A wheel is rolling uniformly along a level road. The speed of translational motion of the wheel axis is V. What are the speeds of the point A at the bottom of the rim and the point B at the top, relative to the road?',options:['V(A) = V; V(B) = 0','V(A) = 0; V(B) = V','V(A) = 0; V(B) = 0','V(A) = 0; V(B) = 2V'],correct:3,answer:'V(A) = 0; V(B) = 2V',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-41',sharedSkill:'Comparing a sliding body with a rolling one',recoveryPurpose:'controlled transfer'},short:[
+ ["Rolling without slipping means every point carries the axis speed forward plus the rim speed from the spin, and the two are equal in size.",'translation V forward · rotation ωR = V at the rim'],
+ ["At the bottom the spin carries the rim backwards, exactly cancelling the forward motion.",'V(A) = V − V = 0'],
+ ["At the top the spin carries it forwards, so the two add.",'V(B) = V + V = 2V · Correct answer: (D)']
+]},
+{id:'CIRC-01-G',parent:'CIRC-01',variant:7,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.251',printedAnswer:'D',verifiedAnswer:'D'},question:'A particle moving along a circular path due to a centripetal force having constant magnitude is an example of motion with:',options:['constant speed and velocity','variable speed and velocity','variable speed and constant velocity','constant speed and variable velocity'],correct:3,answer:'constant speed and variable velocity',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'direct retry'},short:[
+ ["A centripetal force is always perpendicular to the motion, so it does no work and the speed holds steady.",'|v| constant'],
+ ["Its direction turns continuously, so the velocity vector does not. Option (C) has this exactly backwards.",'v varies in direction · Correct answer: (D)']
+]},
+{id:'CIRC-01-H',parent:'CIRC-01',variant:8,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.227',printedAnswer:'B',verifiedAnswer:'B'},question:'Which of the following statements is FALSE for a particle moving in a circle with a constant angular speed ?',options:['The velocity vector is tangent to the circle','The acceleration vector is tangent to the circle','The acceleration vector points to the centre of the circle','The velocity and acceleration vectors are perpendicular to each other'],correct:1,answer:'The acceleration vector is tangent to the circle',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'controlled transfer'},short:[
+ ["At constant angular speed the acceleration is purely centripetal, so it points along the radius towards the centre.",'a points to the centre'],
+ ["The velocity is tangential, so the two are perpendicular; the false statement is the one calling the acceleration tangential.",'Correct answer: (B)']
+]},
+{id:'CIRC-01-I',parent:'CIRC-01',variant:9,topic:'What stays constant in uniform circular motion',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.226',printedAnswer:'A',verifiedAnswer:'A'},question:'The coordinates of a moving particle at any time \'t\' are given by x = αt³ and y = βt³. The speed of the particle at time \'t\' is given by –',options:['3t²√(α² + β²)','t²√(α² + β²)','√(α² + β²)','3t√(α² + β²)'],correct:0,answer:'3t²√(α² + β²)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-01',sharedSkill:'What stays constant in uniform circular motion',recoveryPurpose:'controlled transfer'},short:[
+ ["Differentiate each coordinate once.",'vₓ = 3αt² · vᵧ = 3βt²'],
+ ["The speed is the magnitude of that vector, and the common factor comes outside the root.",'v = √(9α²t⁴ + 9β²t⁴) = 3t²√(α² + β²) · Correct answer: (A)']
+]},
+{id:'CIRC-04-N',parent:'CIRC-04',variant:14,topic:'Rotational kinematics: angular acceleration, speed and revolutions',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.256',printedAnswer:'C',verifiedAnswer:'C'},question:'A wheel is at rest. Its angular velocity increases uniformly and becomes 80 radian per second after 5 second. The total angular displacement is :',options:['800 rad','400 rad','200 rad','100 rad'],correct:2,answer:'200 rad',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-04',sharedSkill:'Rotational kinematics: angular acceleration, speed and revolutions',recoveryPurpose:'direct retry'},short:[
+ ["With a uniform increase from rest the mean angular velocity is half the final one.",`ω(avg) = ${fraction('0 + 80','2')} = 40 rad/s`],
+ ["Multiply by the time.",'θ = 40 (5) = 200 rad · Correct answer: (C)']
+]},
+{id:'CIRC-04-O',parent:'CIRC-04',variant:15,topic:'Rotational kinematics: angular acceleration, speed and revolutions',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.257',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle moves along a circle of radius (20/π) m with constant tangential acceleration. If the velocity of the particle is 80 m/s at the end of the second revolution after motion has begun, the tangential acceleration is –',options:['160 π m/s²','40 π m/s²','40 m/s²','640 π m/s²'],correct:2,answer:'40 m/s²',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-04',sharedSkill:'Rotational kinematics: angular acceleration, speed and revolutions',recoveryPurpose:'controlled transfer'},short:[
+ ["Two revolutions is a distance along the path, and the π in the radius cancels against the one in the circumference.",`s = 2(2πr) = 4π(${fraction('20','π')}) = 80 m`],
+ ["Use the constant-acceleration relation along the path, from rest.",`v² = 2a(t)s ⇒ a(t) = ${fraction('6400','2 (80)')}`],
+ ["Evaluate; no π survives, which rules out three of the options at a glance.",'a(t) = 40 m/s² · Correct answer: (C)']
+]},
+{id:'CIRC-04-P',parent:'CIRC-04',variant:16,topic:'Rotational kinematics: angular acceleration, speed and revolutions',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.218',printedAnswer:'C',verifiedAnswer:'C'},question:'Starting from rest, a particle rotates in a circle of radius R = √2 m with an angular acceleration α = π/4 rad/s². The magnitude of average velocity of the particle over the time it rotates quarter circle is:',options:['1.5 m/s','2 m/s','1 m/s','1.25 m/s'],correct:2,answer:'1 m/s',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-04',sharedSkill:'Rotational kinematics: angular acceleration, speed and revolutions',recoveryPurpose:'controlled transfer'},short:[
+ ["Find the time to turn a quarter circle from rest.",`θ = ${fraction('1','2')}αt² ⇒ ${fraction('π','2')} = ${fraction('1','2')}(${fraction('π','4')})t² ⇒ t = 2 s`],
+ ["Average velocity uses the straight-line displacement, which for a quarter circle is the chord, not the arc.",'displacement = R√2 = √2 (√2) = 2 m'],
+ ["Divide. Using the arc instead would give the average speed, a different quantity.",`v(avg) = ${fraction('2','2')} = 1 m/s · Correct answer: (C)`]
+]},
+{id:'CIRC-05-F',parent:'CIRC-05',variant:6,topic:'Combining tangential and centripetal acceleration',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.212',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle is moving along a circular path of radius 3 meter in such a way that the distance travelled measured along the circumference is given by S = t²/2 + t³/3. The acceleration of particle when t = 2 sec is-',options:['1.3 m/s²','13 m/s²','3 m/s²','10 m/s²'],correct:1,answer:'13 m/s²',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-05',sharedSkill:'Combining tangential and centripetal acceleration',recoveryPurpose:'controlled transfer'},short:[
+ ["Differentiate the distance once for the speed and again for the tangential acceleration.",'v = t + t² ⇒ v(2) = 6 m/s · a(t) = 1 + 2t ⇒ a(t)(2) = 5 m/s²'],
+ ["The centripetal part follows from that speed.",`a(c) = ${fraction('v²','r')} = ${fraction('36','3')} = 12 m/s²`],
+ ["Combine the two perpendicular parts; this is the 5, 12, 13 triangle.",'a = √(25 + 144) = 13 m/s² · Correct answer: (B)']
+]},
+{id:'CIRC-05-G',parent:'CIRC-05',variant:7,topic:'Combining tangential and centripetal acceleration',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.295',printedAnswer:'B',verifiedAnswer:'B'},question:'A car is travelling along a circular curve that has a radius of 8 m. If its speed is 8 m/s and is increasing uniformly at 8 m/s², the magnitude of its acceleration at this instant is -',options:['8 m/s²','8√2 m/s²','8/√2 m/s²','16 m/s²'],correct:1,answer:'8√2 m/s²',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-05',sharedSkill:'Combining tangential and centripetal acceleration',recoveryPurpose:'direct retry'},short:[
+ ["The centripetal part happens to equal the tangential one here.",`a(c) = ${fraction('64','8')} = 8 m/s² · a(t) = 8 m/s²`],
+ ["Two equal perpendicular parts combine to √2 times either.",'a = √(64 + 64) = 8√2 m/s² · Correct answer: (B)']
+]},
+{id:'CIRC-06-G',parent:'CIRC-06',variant:7,topic:'Banking of a circular track',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.328',printedAnswer:'C',verifiedAnswer:'C'},question:'Keeping the banking angle same to increase the maximum speed with which a vehicle can travel on a curved road by 10%, the radius of curvature of road has to be changed from 20 m to-',options:['16 m','18 m','24.2 m','30.5 m'],correct:2,answer:'24.2 m',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-06',sharedSkill:'Banking of a circular track',recoveryPurpose:'direct retry'},short:[
+ ["A fixed banking angle fixes the whole ratio, so the radius must follow the square of the speed.",`tan θ = ${fraction('v²','rg')} fixed ⇒ r ∝ v²`],
+ ["Raising the speed by a tenth multiplies its square by 1.21.",'r′ = 20 (1.1)² = 20 (1.21) = 24.2 m · Correct answer: (C)']
+]},
+{id:'CIRC-07-L',parent:'CIRC-07',variant:12,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.293',printedAnswer:'D',verifiedAnswer:'D'},question:'A half kilogram stone, tied to the end of a string of length 1.0 m, is whirled in a vertical circle with the other end of the string as the centre of the circle. If the angular frequency of the stone is 4 rad/s, what is the tension in the string when the stone is at the lowermost position of the circle ? (take g = 10 m/s²)',options:['3 N','5 N','8 N','13 N'],correct:3,answer:'13 N',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'direct retry'},short:[
+ ["With the angular frequency given, write the centripetal requirement through it.",'mω²r = 0.5 (16) (1) = 8 N'],
+ ["At the lowest point the weight pulls away from the centre, so the tension carries both.",'T = mω²r + mg = 8 + 5 = 13 N · Correct answer: (D)']
+]},
+{id:'CIRC-07-M',parent:'CIRC-07',variant:13,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.294',printedAnswer:'A',verifiedAnswer:'A'},question:'For the same stone (half a kilogram on a 1.0 m string, whirled in a vertical circle at an angular frequency of 4 rad/s, with g = 10 m/s²), the tension in the string when the stone is at the topmost position of the circle is -',options:['3 N','5 N','8 N','13 N'],correct:0,answer:'3 N',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'direct retry'},short:[
+ ["The centripetal requirement is the same, since the angular frequency is held constant.",'mω²r = 8 N'],
+ ["At the top the weight points towards the centre and so helps, leaving the string less to do.",'T = mω²r − mg = 8 − 5 = 3 N · Correct answer: (A)']
+]},
+{id:'CIRC-07-N',parent:'CIRC-07',variant:14,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.329',printedAnswer:'C',verifiedAnswer:'C'},question:'In a simple pendulum, the breaking strength of the string is double the weight of the bob. The bob is released from rest when the string is horizontal. The string breaks when it makes an angle θ with the vertical-',options:['θ = cos⁻¹(1/3)','θ = 60°','θ = cos⁻¹(2/3)','θ = 0°'],correct:2,answer:'θ = cos⁻¹(2/3)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'controlled transfer'},short:[
+ ["Released from horizontal, the bob has fallen through ℓ cos θ by the time the string makes θ with the vertical.",'v² = 2gℓ cos θ'],
+ ["Put that into the core relation.",`T = mg cos θ + ${fraction('mv²','ℓ')} = mg cos θ + 2mg cos θ = 3mg cos θ`],
+ ["The string parts when this reaches twice the weight.",`3mg cos θ = 2mg ⇒ cos θ = ${fraction('2','3')} · Correct answer: (C)`]
+]},
+{id:'CIRC-07-O',parent:'CIRC-07',variant:15,topic:'Tension in a vertical circle at a general angle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.225',printedAnswer:'A',verifiedAnswer:'A'},question:'A stone of mass m tied to the end of a string revolves in a vertical circle of radius R. The net forces at the lowest and highest points of the circle directed vertically downwards are, with T₁ and v₁ at the lowest point and T₂ and v₂ at the highest:',options:['mg − T₁ ; mg + T₂','mg + T₁ ; mg − T₂','mg + T₁ − (mv₁²)/R ; mg − T₂ + (mv₁²)/R','mg − T₁ − (mv₁²)/R ; mg + T₂ + (mv₁²)/R'],correct:0,answer:'mg − T₁ ; mg + T₂',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-07',sharedSkill:'Tension in a vertical circle at a general angle',recoveryPurpose:'controlled transfer'},short:[
+ ["At the lowest point the tension pulls up and the weight pulls down, so the net downward force is their difference.",'net down at the lowest = mg − T₁'],
+ ["At the highest point the centre is below, so the tension pulls down alongside the weight and the two add.",'net down at the highest = mg + T₂'],
+ ["The question asks only for these net forces, not for what they equal, so no v²/R term belongs in the answer.",'Correct answer: (A)']
+]},
+{id:'CIRC-08-K',parent:'CIRC-08',variant:11,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.330',printedAnswer:'D',verifiedAnswer:'D'},question:'A simple pendulum of length ℓ and mass m is initially at its lowest position. It is given the minimum horizontal speed necessary to move in a circular path about the point of suspension. The tension in the string at the lowest position of the bob is-',options:['3 mg','4 mg','5 mg','6 mg'],correct:3,answer:'6 mg',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["The minimum speed to complete the circle, carried down to the bottom by energy, gives the speed there.",'v² = 5gℓ at the lowest point'],
+ ["At the lowest point the tension carries the weight and supplies the centripetal force.",`T − mg = ${fraction('mv²','ℓ')} = 5mg`],
+ ["Add the weight back.",'T = 6mg · Correct answer: (D)']
+]},
+{id:'CIRC-08-L',parent:'CIRC-08',variant:12,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.298',printedAnswer:'A',verifiedAnswer:'A'},question:'A particle of mass m is fixed to one end of a light rigid rod of length ℓ and rotated in a vertical circular path about its other end. The minimum speed of the particle at its highest point must be-',options:['zero','√(gℓ)','√(1.5 gℓ)','√(2 gℓ)'],correct:0,answer:'zero',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["A string can only pull, so it needs a minimum speed at the top to stay taut; a rigid rod can also push.",'the rod can hold the particle up from below'],
+ ["With the rod supporting it there is no lower limit on the speed at the top, so it may be brought as close to rest as you like.",'minimum speed at the top = zero · Correct answer: (A)']
+]},
+{id:'CIRC-08-M',parent:'CIRC-08',variant:13,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.221',printedAnswer:'D',verifiedAnswer:'D'},question:'A particle of mass m attached to a string of length ℓ is describing circular motion on a smooth plane inclined at an angle α with the horizontal. For the particle to reach the highest point, its velocity at the lowest point should exceed:',options:['√(5gℓ)','√(5g(cos α + 1))','√(5gℓ tan α)','√(5gℓ sin α)'],correct:3,answer:'√(5gℓ sin α)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["On an inclined plane only the in-plane component of gravity acts along the circle, so it plays the part g plays in a vertical circle.",'effective gravity = g sin α'],
+ ["Use the usual critical condition with that effective gravity.",'v(lowest) > √(5 (g sin α) ℓ)'],
+ ["A vertical plane is the case α = 90°, which recovers the familiar result.",'v > √(5gℓ sin α) · Correct answer: (D)']
+]},
+{id:'CIRC-08-N',parent:'CIRC-08',variant:14,topic:'The minimum speed at the top of a vertical circle',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.223',printedAnswer:'D',verifiedAnswer:'D'},question:'A stone tied to a string of length L is whirled in a vertical circle with the other end of the string at the centre. At a certain instant of time, the stone is at its lowest position and has a speed u. The magnitude of the change in its velocity as it reaches a position where the string is horizontal is :',options:['√(u² − 2gL)','√(2gL)','√(u² − gL)','√(2(u² − gL))'],correct:3,answer:'√(2(u² − gL))',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-08',sharedSkill:'The minimum speed at the top of a vertical circle',recoveryPurpose:'controlled transfer'},short:[
+ ["Energy gives the speed where the string is horizontal, a height L above the lowest point.",'v² = u² − 2gL'],
+ ["At the lowest point the velocity is horizontal; with the string horizontal it is vertical, so the two are perpendicular.",'the two velocities are at right angles'],
+ ["A change between perpendicular vectors is the root of the sum of the squares, not the difference of the speeds.",'|Δv| = √(u² + v²) = √(2u² − 2gL) = √(2(u² − gL)) · Correct answer: (D)']
+]},
+{id:'CIRC-09-E',parent:'CIRC-09',variant:5,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.215',printedAnswer:'A',verifiedAnswer:'A'},question:'A particle P will be in equilibrium inside a hemispherical bowl of radius 0.5 m at a height 0.2 m from the bottom when the bowl is rotated at an angular speed (g = 10 m/sec²)',options:['10/√3 rad/sec','10√3 rad/sec','10 rad/sec','√20 rad/sec'],correct:0,answer:'10/√3 rad/sec',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'controlled transfer'},short:[
+ ["The centre of the bowl sits one radius above its bottom, so the particle hangs a known depth below that centre.",'depth below the centre = 0.5 − 0.2 = 0.3 m'],
+ ["That depth plays the part the height plays for a conical pendulum, with the normal reaction in place of the tension.",`ω² = ${fraction('g','depth')} = ${fraction('10','0.3')}`],
+ ["Take the root; the radius of the circle never has to be found.",`ω = ${fraction('10','√3')} rad/s · Correct answer: (A)`]
+]},
+{id:'CIRC-09-F',parent:'CIRC-09',variant:6,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.299',printedAnswer:'D',verifiedAnswer:'D'},question:'A string of length 1 m is fixed at one end with a bob of mass 100 g and the string makes (2/π) rev/s around a vertical axis through a fixed point. The angle of inclination of the string with vertical is-',options:['tan⁻¹(5/8)','tan⁻¹(3/5)','cos⁻¹(8/5)','cos⁻¹(5/8)'],correct:3,answer:'cos⁻¹(5/8)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'direct retry'},short:[
+ ["Convert the rate; the π cancels against the one in 2π.",`ω = 2π(${fraction('2','π')}) = 4 rad/s`],
+ ["The core derivation gives the cosine directly, with the mass cancelling.",`cos θ = ${fraction('g','ω²ℓ')} = ${fraction('10','16')} = ${fraction('5','8')}`],
+ ["A cosine cannot exceed one, which rules out the 8/5 option at sight.",'θ = cos⁻¹(5/8) · Correct answer: (D)']
+]},
+{id:'CIRC-09-G',parent:'CIRC-09',variant:7,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.207',printedAnswer:'B',verifiedAnswer:'B'},question:'A boy revolves two balls each of mass 100 gm tied with strings of 1 metre length in a horizontal circle, one ball at 1 m and the other at 2 m from the centre. If the speed of the outermost ball is 6 m/s, then tension in string-1, the inner segment, is-',options:['2.4 N','2.7 N','2 N','1.2 N'],correct:1,answer:'2.7 N',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'controlled transfer'},short:[
+ ["Both balls share one angular velocity, which the outer one fixes.",`ω = ${fraction('6','2')} = 3 rad/s`],
+ ["The outer segment holds only the outer ball.",'T₂ = mω²r₂ = 0.1 (9) (2) = 1.8 N'],
+ ["The inner segment holds the inner ball as well as passing that pull along.",'T₁ = 1.8 + 0.1 (9) (1) = 2.7 N · Correct answer: (B)']
+]},
+{id:'CIRC-09-H',parent:'CIRC-09',variant:8,topic:'The conical pendulum',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.208',printedAnswer:'D',verifiedAnswer:'D'},question:'Three small balls each of mass 100 gm are attached at distance of 1 m, 2 m and 3 m from end D of a 3 m length of string. The string is rotated with uniform angular velocity in a horizontal plane about D. If the outside ball is moving at a speed of 6 m/s, the ratio of tension in the three parts of the string from inside-',options:['6 : 5 : 4','3 : 2 : 1','3 : 5 : 6','6 : 5 : 3'],correct:3,answer:'6 : 5 : 3',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-09',sharedSkill:'The conical pendulum',recoveryPurpose:'controlled transfer'},short:[
+ ["The outermost ball fixes the shared angular velocity.",`ω = ${fraction('6','3')} = 2 rad/s`],
+ ["Work inwards, each segment carrying every ball beyond it.",'T₃ = 1.2 N · T₂ = 1.2 + 0.8 = 2.0 N · T₁ = 2.0 + 0.4 = 2.4 N'],
+ ["Take the ratio from the inside outwards.",'2.4 : 2.0 : 1.2 = 6 : 5 : 3 · Correct answer: (D)']
+]},
+{id:'CIRC-14-B',parent:'CIRC-14',variant:2,topic:'Average acceleration over part of a revolution',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.317',printedAnswer:'A',verifiedAnswer:'A'},question:'An aeroplane is moving in a circular path with a speed 250 km/hr; what is the change in velocity in half revolution -',options:['500 km/hr','250 km/hr','125 km/hr','zero'],correct:0,answer:'500 km/hr',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-14',sharedSkill:'Average acceleration over part of a revolution',recoveryPurpose:'direct retry'},short:[
+ ["After half a revolution the speed is unchanged but the direction has exactly reversed.",'v(final) = −v(initial)'],
+ ["The change is therefore twice the speed, not zero.",'|Δv| = 2 (250) = 500 km/h · Correct answer: (A)']
+]},
+{id:'CIRC-14-C',parent:'CIRC-14',variant:3,topic:'Average acceleration over part of a revolution',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.320',printedAnswer:'A',verifiedAnswer:'A'},question:'A vector of magnitude a is rotated through an angle θ. What is the magnitude of the change in the vector ?',options:['2a sin(θ/2)','2a cos(θ/2)','2a sin θ','2a cos θ'],correct:0,answer:'2a sin(θ/2)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-14',sharedSkill:'Average acceleration over part of a revolution',recoveryPurpose:'controlled transfer'},short:[
+ ["The two vectors have the same length and the angle between them is the rotation angle.",'|a| unchanged, angle between them = θ'],
+ ["The change is the third side of an isosceles triangle: twice a side times the sine of half the apex angle.",'|Δa| = 2a sin(θ/2) · Correct answer: (A)']
+]},
+{id:'CIRC-14-D',parent:'CIRC-14',variant:4,topic:'Average acceleration over part of a revolution',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.326',printedAnswer:'C',verifiedAnswer:'C'},question:'A particle is moving on a circular path with constant speed v. What is the change in its velocity after it has described an angle of 60º ?',options:['v√2','v√3','v','2v'],correct:2,answer:'v',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-14',sharedSkill:'Average acceleration over part of a revolution',recoveryPurpose:'direct retry'},short:[
+ ["Apply the same isosceles-triangle result with the angle turned.",'|Δv| = 2v sin 30°'],
+ ["Evaluate.",'|Δv| = v · Correct answer: (C)']
+]},
+{id:'CIRC-15-B',parent:'CIRC-15',variant:2,topic:'Force from a kinetic energy that grows with the distance covered',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.331',printedAnswer:'B',verifiedAnswer:'B'},question:'The kinetic energy of a particle along a circle of radius R is given as K = As where A is a constant and s is the distance travelled. What is the net force acting on the particle -',options:['(A/R)√(1 + R²/s²)','A√(1 + 4s²/R²)','4As√(1 + s²/R²)','none of the above'],correct:1,answer:'A√(1 + 4s²/R²)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-15',sharedSkill:'Force from a kinetic energy that grows with the distance covered',recoveryPurpose:'controlled transfer'},short:[
+ ["Here the kinetic energy grows only linearly with distance, not as its square.",`${fraction('1','2')}mv² = As ⇒ v² = ${fraction('2As','m')}`],
+ ["The centripetal part follows.",`a(c) = ${fraction('v²','R')} = ${fraction('2As','mR')}`],
+ ["Differentiating along the path leaves the tangential part constant, which is what distinguishes this case from the squared one.",`a(t) = v${fraction('dv','ds')} = ${fraction('A','m')}`],
+ ["Combine and multiply by the mass.",'F = A√(1 + 4s²/R²) · Correct answer: (B)']
+]},
+{id:'CIRC-18-B',parent:'CIRC-18',variant:2,topic:'How tension varies along a rotating rod',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.39',printedAnswer:'D',verifiedAnswer:'D'},question:'A uniform rod of mass m and length ℓ rotates in a horizontal plane with an angular velocity ω about a vertical axis passing through one end. The tension in the rod at distance x from the axis is-',options:[`${fraction('1','2')}mω²x`,`${fraction('1','2')}mω²x²/ℓ`,`${fraction('1','2')}mω²ℓ(1 − x²/ℓ)`,`${fraction('1','2')}(mω²/ℓ)(ℓ² − x²)`],correct:3,answer:`${fraction('1','2')}(mω²/ℓ)(ℓ² − x²)`,diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-18',sharedSkill:'How tension varies along a rotating rod',recoveryPurpose:'controlled transfer'},short:[
+ ["As in the core, the tension at a cut holds the whole outer portion, so add up its centripetal requirement.",`T(x) = ∫ ${fraction('m','ℓ')}ω² s ds, from x to ℓ`],
+ ["Carry out the integral.",`T(x) = ${fraction('mω²','2ℓ')}(ℓ² − x²)`],
+ ["It is greatest at the axis and falls to zero at the free end, as the core established.",'T(ℓ) = 0 · Correct answer: (D)']
+]},
+{id:'CIRC-21-D',parent:'CIRC-21',variant:4,topic:'Speed at the bottom of a curved track from energy conservation',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.222',printedAnswer:'D',verifiedAnswer:'D'},question:'A hollow vertical cylinder of radius R and height h has smooth internal surface. A small particle is placed in contact with the inner side of the upper rim at a point P. It is given a horizontal speed v₀ tangential to rim. It leaves the lower rim at point Q, vertically below P. The number of revolutions made by the particle will be -',options:['h/(2πR)','v₀/√(2gh)','2πR/h','(v₀/2πR)√(2h/g)'],correct:3,answer:'(v₀/2πR)√(2h/g)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-21',sharedSkill:'Speed at the bottom of a curved track from energy conservation',recoveryPurpose:'controlled transfer'},short:[
+ ["The wall is smooth and vertical, so it never changes the horizontal speed; the particle circles while it falls.",'horizontal speed stays v₀'],
+ ["The fall time comes from the height alone.",`t = √(${fraction('2h','g')})`],
+ ["The horizontal distance covered, divided by one circumference, is the number of turns.",`n = ${fraction('v₀t','2πR')} = ${fraction('v₀','2πR')}√(${fraction('2h','g')}) · Correct answer: (D)`]
+]},
+{id:'CIRC-22-C',parent:'CIRC-22',variant:3,topic:'The vertical circle on a rigid rod rather than a string',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.216',printedAnswer:'B',verifiedAnswer:'B'},question:'A pendulum of length ℓ = 1 m is released from θ₀ = 60°. The rate of change of speed of the bob at θ = 30° is: (g = 10 m/s²)',options:['5√3 m/s²','5 m/s²','10 m/s²','2.5 m/s²'],correct:1,answer:'5 m/s²',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-22',sharedSkill:'The vertical circle on a rigid rod rather than a string',recoveryPurpose:'controlled transfer'},short:[
+ ["The rate of change of speed is the tangential acceleration, which comes only from the component of gravity along the motion.",'a(t) = g sin θ'],
+ ["The centripetal part is perpendicular to the motion, so it turns the velocity without changing its size and does not enter.",'a(t) = 10 sin 30° = 5 m/s²'],
+ ["The release angle fixes the speed there but not this rate, so the 60° is never needed.",'5 m/s² · Correct answer: (B)']
+]},
+{id:'CIRC-22-D',parent:'CIRC-22',variant:4,topic:'The vertical circle on a rigid rod rather than a string',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.219',printedAnswer:'D',verifiedAnswer:'D'},question:'A ball suspended by a thread swings in a vertical plane so that its acceleration in the extreme position and lowest position are equal. The angle θ of thread deflection in the extreme position will be -',options:['tan⁻¹(2)','tan⁻¹(√2)','tan⁻¹(1/2)','2 tan⁻¹(1/2)'],correct:3,answer:'2 tan⁻¹(1/2)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-22',sharedSkill:'The vertical circle on a rigid rod rather than a string',recoveryPurpose:'controlled transfer'},short:[
+ ["At the extreme the ball is momentarily at rest, so its acceleration is purely tangential.",'a(extreme) = g sin θ'],
+ ["At the lowest point the speed is greatest and the acceleration is purely centripetal.",`a(lowest) = ${fraction('v²','ℓ')} = 2g(1 − cos θ)`],
+ ["Set them equal and rewrite with half angles.",'2 sin(θ/2) cos(θ/2) = 4 sin²(θ/2)'],
+ ["Cancel and rearrange.",`tan(θ/2) = ${fraction('1','2')} ⇒ θ = 2 tan⁻¹(${fraction('1','2')}) · Correct answer: (D)`]
+]},
+{id:'CIRC-24-B',parent:'CIRC-24',variant:2,topic:'Bodies sharing a period on circles of different radii',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.258',printedAnswer:'C',verifiedAnswer:'C'},question:'Two particles P and Q are located at distances rP and rQ respectively from the centre of a rotating disc such that rP > rQ –',options:['Both P and Q have the same acceleration','Both P and Q do not have an acceleration','P has greater acceleration than Q','Q has greater acceleration than P'],correct:2,answer:'P has greater acceleration than Q',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-24',sharedSkill:'Bodies sharing a period on circles of different radii',recoveryPurpose:'direct retry'},short:[
+ ["Points of one rigid disc share a single angular velocity.",'ω the same for both'],
+ ["With ω shared the centripetal acceleration grows with the radius, so the outer point has the greater one.",`a = ω²r ⇒ a(P) > a(Q) · Correct answer: (C)`]
+]},
+{id:'CIRC-26-B',parent:'CIRC-26',variant:2,topic:'Force at the end of a rotating tube',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.38',printedAnswer:'C',verifiedAnswer:'C'},question:'A uniform circular ring of mass per unit length λ and radius R is rotating with angular velocity ω about its own axis in a gravity free space. Tension in the ring is-',options:['Zero',`${fraction('1','2')}λR²ω²`,'λR²ω²','λRω²'],correct:2,answer:'λR²ω²',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-26',sharedSkill:'Force at the end of a rotating tube',recoveryPurpose:'controlled transfer'},short:[
+ ["For a closed ring the tension is the mass per unit length times the square of the rim speed, as for the flowing water in this family.",'T = λv²'],
+ ["The rim speed is set by the rotation.",'v = ωR'],
+ ["Substitute.",'T = λω²R² · Correct answer: (C)']
+]},
+{id:'CIRC-26-C',parent:'CIRC-26',variant:3,topic:'Force at the end of a rotating tube',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.40',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle of mass m is fixed to one end of a light spring of force constant k and unstretched length ℓ. The system is rotated about the other end of the spring with an angular velocity ω, in gravity free space. The increase in length of the spring will be-',options:['mω²ℓ/k','mω²ℓ/(k − mω²)','mω²ℓ/(k + mω²)','None of these'],correct:1,answer:'mω²ℓ/(k − mω²)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-26',sharedSkill:'Force at the end of a rotating tube',recoveryPurpose:'controlled transfer'},short:[
+ ["The spring force turns the mass, and the radius of its circle is the stretched length, not the natural one.",'kx = mω²(ℓ + x)'],
+ ["Collect the extension.",'x(k − mω²) = mω²ℓ'],
+ ["Divide. The denominator warns that the spring cannot hold the mass once mω² reaches k.",`x = ${fraction('mω²ℓ','k − mω²')} · Correct answer: (B)`]
+]},
+{id:'CIRC-29-A',parent:'CIRC-29',variant:1,topic:'Breaking a rotating frame',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.37',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle of mass m rotates in a circle of radius a with a uniform angular speed ω. It is viewed from a frame rotating about the Z-axis with a uniform angular speed ω₀. The centrifugal force on the particle is-',options:['mω²a','mω₀²a','m((ω + ω₀)/2)²a','mωω₀a'],correct:1,answer:'mω₀²a',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-29',sharedSkill:'Breaking a rotating frame',recoveryPurpose:'controlled transfer'},short:[
+ ["A centrifugal force belongs to the frame doing the looking, not to the motion being looked at.",'it is set by how fast the frame turns'],
+ ["The frame turns at ω₀, so that is the rate that enters.",'F = mω₀²a'],
+ ["The particle own rate ω governs the real centripetal force instead, which is why option (A) is the trap.",'Correct answer: (B)']
+]},
+{id:'CIRC-29-B',parent:'CIRC-29',variant:2,topic:'Breaking a rotating frame',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.41',printedAnswer:'A',verifiedAnswer:'A'},question:'A railway track is banked for a speed v, by making the height of the outer rail (h) higher than that of the inner rail. The distance between the rails is d. The radius of curvature of the track is r-',options:['h/d = v²/(rg)','tan(sin⁻¹(h/d)) = v²/(rg)','tan⁻¹(h/d) = v²/(rg)','h/r = v²/(dg)'],correct:0,answer:'h/d = v²/(rg)',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-29',sharedSkill:'Breaking a rotating frame',recoveryPurpose:'controlled transfer'},short:[
+ ["Raising one rail by h across a gauge d tilts the track through an angle whose sine is h/d.",'sin θ = h/d'],
+ ["The banking condition is a tangent, but at the small angles a railway uses the sine and the tangent agree closely.",`tan θ ≈ ${fraction('h','d')}`],
+ ["Equate to the banking relation. Option (C) sets an angle equal to a pure number, which cannot hold.",`${fraction('h','d')} = ${fraction('v²','rg')} · Correct answer: (A)`]
+]},
+{id:'CIRC-32-D',parent:'CIRC-32',variant:4,topic:'Motion on a circle with a speed that grows linearly in time',source:'Institute bank · Circular Motion (S.C.Q.) E',sourceRef:{documentName:'Institute question bank · Circular Motion (S.C.Q.) · Exercise E',paper:'Circular Motion (S.C.Q.) E, single-correct exercise',questionNumber:'Q.224',printedAnswer:'B',verifiedAnswer:'B'},question:'A particle is projected with a speed u at an angle θ with the horizontal. Consider a small part of its path near the highest point and take it approximately to be a circular arc. What is the radius of this circle ? This radius is called the radius of curvature of the curve at the point-',options:['u²sin²θ/g','u²cos²θ/g','u²tan²θ/g','u²/g'],correct:1,answer:'u²cos²θ/g',diagram:'',noDiagramReason:'Same reasoning as its core, which already records why a picture adds nothing here.',relevance:{parent:'CIRC-32',sharedSkill:'Motion on a circle with a speed that grows linearly in time',recoveryPurpose:'controlled transfer'},short:[
+ ["At the highest point the vertical component has gone, so the speed is the horizontal component alone.",'v = u cos θ'],
+ ["Gravity is perpendicular to the motion there, so it is wholly the centripetal acceleration of the little arc.",`g = ${fraction('v²','R')}`],
+ ["Rearrange for the radius.",`R = ${fraction('u²cos²θ','g')} · Correct answer: (B)`]
 ]}
 ];
 </script>
@@ -1594,6 +1843,65 @@ function diagram(q,solution=false){
   }
   break;
  }
+ case 'angle-at-centre-and-rim':{
+  height=380;
+  const cx=230,cy=190,R=120;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
+  const pa=70*Math.PI/180;                      // P somewhere on the circle
+  const px=cx+R*Math.cos(pa),py=cy-R*Math.sin(pa);
+  const ax=cx-R,ay=cy;                          // A and the far end of a diameter
+  s+=dot(cx,cy,W)+txt(cx+4,cy+24,'C',W,16,'middle');
+  s+=dot(ax,ay,GREEN)+txt(ax-16,ay+6,'A',GREEN,17,'end');
+  s+=dot(px,py,Y)+txt(px+12,py-10,'P',Y,17,'start');
+  s+=line(cx,cy,px,py,Y,2);
+  s+=line(ax,ay,px,py,GREEN,2);
+  s+=line(ax,ay,cx+R,cy,M,1.3,true);
+  if(solution){
+   // the angle P subtends at the rim is half the angle it subtends at the centre
+   s+=`<path d="${arcPath(cx,cy,48,0,-pa)}" fill="none" stroke="${M}" stroke-width="2"/>`;
+   s+=txt(cx+66*Math.cos(pa/2),cy-66*Math.sin(pa/2)+5,'2θ',M,16,'start');
+   s+=`<path d="${arcPath(ax,ay,70,0,-pa/2)}" fill="none" stroke="${M}" stroke-width="2"/>`;
+   s+=txt(ax+88*Math.cos(pa/4),ay-88*Math.sin(pa/4)+5,'θ',M,16,'start');
+   s+=txt(230,cy+R+56,'the angle at the rim is half the angle at the centre',GREEN,15);
+   s+=txt(230,cy+R+80,'so P turns about A at half the rate it turns about C',M,15);
+  }
+  break;
+ }
+ case 'critical-circle-speeds':{
+  height=400;
+  const cx=230,cy=206,R=118;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${M}" stroke-width="2" stroke-dasharray="5 6"/>`;
+  s+=dot(cx,cy,W)+txt(cx-14,cy+6,'O',W,16,'end');
+  s+=dot(cx,cy-R,GREEN)+txt(cx,cy-R-16,'C, the top',GREEN,15);
+  s+=dot(cx+R,cy,Y)+txt(cx+R+14,cy+5,'B',Y,17,'start');
+  s+=dot(cx,cy+R,Y)+txt(cx,cy+R+26,'A, the lowest point',Y,15);
+  if(solution){
+   s+=txt(cx-16,cy-R+26,'v² = rg',GREEN,15,'end');
+   s+=txt(cx+R-16,cy-22,'v² = 3rg',M,15,'end');
+   s+=txt(cx-16,cy+R-20,'v² = 5rg',M,15,'end');
+   s+=line(cx+8,cy-R,cx+8,cy,M,1.2,true);
+   s+=txt(cx+16,cy-R/2,'drop r',M,14,'start');
+   s+=line(cx+8,cy,cx+8,cy+R,M,1.2,true);
+   s+=txt(cx+16,cy+R/2,'drop r again',M,14,'start');
+   s+=txt(230,cy+R+56,'these are the squares; the ratio of the speeds takes their roots',GREEN,15);
+  }
+  break;
+ }
+ case 'couple-on-a-wheel':{
+  height=360;
+  const cx=230,cy=170,R=92;
+  s+=`<path d="${arcPath(cx,cy,R,0,Math.PI*2)}" fill="none" stroke="${W}" stroke-width="3"/>`;
+  s+=dot(cx,cy,W);
+  s+=line(cx,cy-R,cx,cy+R,M,1.3,true);
+  s+=arrow(cx,cy-R,cx-92,cy-R,'',Y)+txt(cx-100,cy-R-10,'0.1 N',Y,15,'end');
+  s+=arrow(cx,cy+R,cx+92,cy+R,'',Y)+txt(cx+100,cy+R+18,'0.1 N',Y,15,'start');
+  s+=txt(cx+14,cy,'0.05 m',M,15,'start');
+  if(solution){
+   s+=txt(230,cy+R+54,'the two forces are a couple, separated by the diameter',GREEN,15);
+   s+=txt(230,cy+R+78,'torque = 0.1 × 0.05 · one turn is 2π radians',M,15);
+  }
+  break;
+ }
  default: return '';
  }
  const subject=p.figure||q.title;
@@ -1619,7 +1927,8 @@ const baseSections=[
  {key:'comparing-bodies',title:'Comparing two bodies in circular motion',short:'Comparing bodies'},
  {key:'rotating-systems',title:'Rotating rods, tubes and frames',short:'Rotating systems'},
  {key:'angular-momentum',title:'Angular momentum in circular motion',short:'Angular momentum'},
- {key:'loops-and-tracks',title:'Loops, tracks and leaving a surface',short:'Loops and tracks'}
+ {key:'loops-and-tracks',title:'Loops, tracks and leaving a surface',short:'Loops and tracks'},
+ {key:'rigid-body-rotation',title:'Torque, moment of inertia and rolling',short:'Rigid-body rotation'}
 ];
 /* One entry per core id, same [subtopic name, [core ids]] shape as the other
    chapters. topics.js throws if content.js ever has a core this plan does not
@@ -1657,7 +1966,9 @@ const subtopicPlan={
   ['Total energy for a given centripetal force law',['CIRC-23']]],
  'comparing-bodies':[
   ['Bodies sharing a period on circles of different radii',['CIRC-24']],
-  ['Angular speeds of the hands of a clock',['CIRC-25']]],
+  ['Angular speeds of the hands of a clock',['CIRC-25']],
+  ['Angular velocity of a point seen from different centres',['CIRC-36']],
+  ['Scaling the centripetal force when every quantity changes',['CIRC-37']]],
  'rotating-systems':[
   ['Force at the end of a rotating tube',['CIRC-26']],
   ['A bead on a rod with angular acceleration',['CIRC-27']],
@@ -1669,7 +1980,13 @@ const subtopicPlan={
  'loops-and-tracks':[
   ['The minimum height that lets a body complete a loop',['CIRC-33']],
   ['Where a body leaves a convex surface',['CIRC-34']],
-  ['Banking with friction: the smallest coefficient that works',['CIRC-35']]]
+  ['Banking with friction: the smallest coefficient that works',['CIRC-35']],
+  ['Speeds at the top, side and bottom of a critical vertical circle',['CIRC-38']]],
+ 'rigid-body-rotation':[
+  ['Torque as the rate of change of angular momentum',['CIRC-39']],
+  ['Work done by a couple turning a wheel',['CIRC-40']],
+  ['Comparing a sliding body with a rolling one',['CIRC-41']],
+  ['Where the mass sits: moment of inertia against angular acceleration',['CIRC-42']]]
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const routeByCore={};
