@@ -3909,6 +3909,454 @@ detailed:[
  ['The only force on each particle is the other\'s gravitational pull, and this must supply exactly the centripetal force needed for its circular motion.','F_gravity = G·m²/(2r)²'],
  ['Set this equal to the centripetal force requirement, m·v²/r.','G·m²/(2r)² = m·v²/r','G·m²/(4r²) = m·v²/r'],
  ['Cancel common factors and solve for v.','v² = G·m/(4r)','v = √(G·m/4r)','Answer: (A) √(G·m/4r)']
+]},
+{id:'GRAV-413',topic:'Maximum height reached by a body launched with a fraction of escape velocity',source:'ExamSIDE · JEE Main 2022 (Online) 27th July Evening Shift · Xgi0iihimcwbhpc5k',sourceRef:true,question:'A body of mass m is projected with velocity μ·v_e in the vertically upward direction from the surface of the earth into space, where v_e is the escape velocity and μ < 1. If air resistance is negligible, the maximum height from the centre of the earth to which the body can go is (R = radius of earth):',options:['R/(1+μ²)','R/(1−μ²)','R/(1−μ)','μ²·R/(1−μ²)'],correct:1,answer:'R/(1−μ²)',
+short:[['Apply energy conservation between the launch point and the highest point, where the body momentarily comes to rest at distance r from Earth\'s centre.','(1/2)·m·μ²·v_e² − G·M·m/R = −G·M·m/r'],['Substitute v_e² = 2·G·M/R, the standard escape-velocity relation, and cancel the common factor of m.','μ²·G·M/R − G·M/R = −G·M/r'],['Simplify and solve for r.','G·M/R·(μ²−1) = −G·M/r','r = R/(1−μ²)'],['This is the maximum distance from Earth\'s centre.','Answer: (B) R/(1−μ²)']],
+detailed:[
+ ['The body leaves the surface with speed μ·v_e and rises until its speed drops to zero at some distance r from Earth\'s centre — apply conservation of energy between these two points.','(1/2)·m·(μ·v_e)² − G·M·m/R = −G·M·m/r'],
+ ['Escape velocity itself comes from setting total energy to zero at infinity, giving v_e² = 2G·M/R.','v_e² = 2·G·M/R'],
+ ['Substitute this into the energy equation.','(1/2)·m·μ²·(2·G·M/R) − G·M·m/R = −G·M·m/r','= μ²·G·M·m/R − G·M·m/R','= −G·M·m/r'],
+ ['Divide through by the common factor G·M·m.','(μ²−1)/R = −1/r'],
+ ['Invert and simplify to isolate r.','r = R/(1−μ²)'],
+ ['This is the maximum height from Earth\'s centre the body reaches.','Answer: (B) R/(1−μ²)']
+]},
+{id:'GRAV-414',topic:'Orbital period relation for a mass density that falls as 1/r²',source:'ExamSIDE · JEE Main 2019 (Online) 9th April Evening Slot · Xgilwdqtgcerst8og',sourceRef:true,question:'A test particle moves in a circular orbit in the gravitational field produced by a mass density ρ(r) = K/r². Identify the correct relation between the radius R of the particle\'s orbit and its period T:',options:['T²/R³ is a constant','T·R is a constant','T/R² is a constant','T/R is a constant'],correct:3,answer:'T/R is a constant',
+short:[['Find the mass enclosed within radius r by integrating the given density over thin spherical shells.','dm = 4π·r²·ρ(r)·dr','= 4π·K·dr'],['Integrate from 0 to r — the enclosed mass comes out linear in r.','M(r) = 4π·K·r'],['Equate gravity to the centripetal-force requirement to find the orbital speed, which turns out independent of r.','G·M(r)·m/r² = m·v²/r','v² = 4π·G·K'],['Since v is constant, the period T = 2πr/v is directly proportional to r.','T/R = constant','Answer: (D) T/R is a constant']],
+detailed:[
+ ['The mass of a thin spherical shell of radius r and thickness dr equals its density times its volume.','dm = ρ(r)·4π·r²·dr'],
+ ['Substitute the given density ρ(r) = K/r².','dm = (K/r²)·4π·r²·dr','= 4π·K·dr'],
+ ['Integrate from the centre out to r to get the enclosed mass M(r).','M(r) = ∫₀^(r) 4π·K·dr','= 4π·K·r'],
+ ['For the particle\'s circular orbit, gravity from the enclosed mass supplies the centripetal force.','G·M(r)·m/r² = m·v²/r'],
+ ['Substitute M(r) and solve for v².','v² = G·M(r)/r','= G·(4π·K·r)/r','= 4π·G·K'],
+ ['This shows v is the same at every radius — it doesn\'t depend on r at all.','v = constant'],
+ ['The period is the orbit\'s circumference divided by this constant speed, so T is directly proportional to R.','T = 2π·R/v','T/R = constant','Answer: (D) T/R is a constant']
+]},
+{id:'GRAV-415',topic:'Time period of a pendulum at a height equal to Earth\'s radius',source:'ExamSIDE · JEE Main 2024 (Online) 30th January Evening Shift · Xgqzshizpcnpnapot',sourceRef:true,question:'A simple pendulum is placed at a point whose distance from the earth\'s surface equals the radius of the earth. If the length of the string is 4 m, the time period of its small oscillations will be ........ s. (Take g = π² m s⁻² at the surface)',type:'numerical',answer:'8',unit:'s',
+short:[['At height h=R, the distance from Earth\'s centre doubles, so gravity there is reduced by the inverse-square factor.','g\' = g·R²/(2R)²','= g/4'],['Substitute g = π² to get the local value of gravity.','g\' = π²/4 m s⁻²'],['Use the pendulum-period formula with ℓ = 4 m.','T = 2π·√(ℓ/g\')','= 2π·√(16/π²)'],['Simplify.','T = 8 s','Answer: 8 s']],
+detailed:[
+ ['The point is at height h = R above the surface, so its distance from Earth\'s centre is R+h = 2R.','distance from centre = R + h','= 2R'],
+ ['Gravity falls off as the inverse square of distance from the centre, so compare this to the surface value g.','g\' = g·(R/(R+h))²','= g·(R/2R)²','= g/4'],
+ ['Substitute the given surface value g = π² m s⁻².','g\' = π²/4 m s⁻²'],
+ ['The period of a simple pendulum of length ℓ is T = 2π√(ℓ/g\'); substitute ℓ = 4 m.','T = 2π·√(4/(π²/4))','= 2π·√(16/π²)'],
+ ['Simplify the square root.','√(16/π²) = 4/π'],
+ ['Multiply through.','T = 2π×(4/π)','= 8 s','Answer: 8 s']
+]},
+{id:'GRAV-416',topic:'Binary star system — equal orbital periods about the common centre of mass',source:'ExamSIDE · JEE Main 2021 (Online) 20th July Evening Shift · Xhhu3fmaahalwveer',sourceRef:true,question:'Consider a binary star system of star A and star B with masses m_A and m_B revolving in a circular orbit of radii r_A and r_B respectively. If T_A and T_B are the time periods of star A and star B respectively, then:',options:['T_A/T_B = (r_A/r_B)·√(r_A/r_B)','T_A = T_B','T_A > T_B (if m_A > m_B)','T_A > T_B (if r_A > r_B)'],correct:1,answer:'T_A = T_B',
+short:[['Both stars orbit the common centre of mass, held together by their mutual gravitational attraction.','F = G·m_A·m_B/(r_A+r_B)²'],['This same force supplies the centripetal force for each star\'s circular motion about that centre.','F = m_A·ω_A²·r_A','= m_B·ω_B²·r_B'],['Since the two stars stay diametrically opposite at all times, they sweep through the same angle together, so they share one angular velocity.','ω_A = ω_B'],['Equal angular velocity means equal period.','Answer: (B) T_A = T_B']],
+detailed:[
+ ['In a binary system, the two stars don\'t orbit a fixed centre — they both orbit their common centre of mass, held in orbit by their mutual gravitational pull.','F = G·m_A·m_B/(r_A+r_B)²'],
+ ['For each star, this same mutual force is exactly what supplies its centripetal force around the centre of mass.','F = m_A·ω_A²·r_A','F = m_B·ω_B²·r_B'],
+ ['Geometrically, the two stars and the centre of mass stay collinear at all times (the stars remain diametrically opposite), so both stars sweep out the same angle in the same time.','ω_A = ω_B','= ω'],
+ ['This is consistent with the force balance too, since m_A·r_A = m_B·r_B defines the centre of mass and the two force equations reduce to the same ω automatically. Because the period is T = 2π/ω and both stars share the same ω, their periods must be equal, independent of their individual masses or radii.','T_A = 2π/ω','= T_B'],
+ ['So the correct relation is simply T_A = T_B.','Answer: (B) T_A = T_B']
+]},
+{id:'GRAV-417',topic:'Minimum increase in orbital speed for a near-surface satellite to escape',source:'ExamSIDE · JEE Main 2019 (Online) 11th January Morning Slot · Xhpyqhzhdhoulsk2t',sourceRef:true,question:'A satellite revolves in a circular orbit at height h from the earth\'s surface, such that h ≪ R, where R is earth\'s radius. Neglecting the effect of earth\'s atmosphere, the minimum increase in speed required for the satellite to escape earth\'s gravitational field is:',options:['√(g·R)·(√2−1)','√(2·g·R)','√(g·R)','√(g·R)/2'],correct:0,answer:'√(g·R)·(√2−1)',
+short:[['The orbital speed at radius R+h reduces to its surface form when h≪R.','v₀ = √(G·M/(R+h))','≈ √(g·R)'],['The escape speed from the same orbit similarly reduces to its surface form.','v_e = √(2·G·M/(R+h))','≈ √(2·g·R)'],['The minimum extra speed needed is the difference between the two.','Δv = v_e − v₀','= √(g·R)·(√2−1)','Answer: (A) √(gR)(√2−1)']],
+detailed:[
+ ['A satellite in a circular orbit at radius R+h has an orbital speed fixed by gravity supplying the centripetal force.','v₀ = √(G·M/(R+h))'],
+ ['Since h≪R, approximate R+h≈R and use G·M=g·R².','v₀ ≈ √(G·M/R)','= √(g·R)'],
+ ['The escape speed from that same radius is √2 times the circular orbital speed at that radius.','v_e = √(2·G·M/(R+h))','≈ √(2·g·R)'],
+ ['The minimum extra speed the satellite must gain is the difference between the escape speed and its current orbital speed.','Δv = v_e − v₀','= √(2·g·R) − √(g·R)'],
+ ['Factor out the common √(gR) term.','Δv = √(g·R)·(√2 − 1)','Answer: (A) √(gR)(√2−1)']
+]},
+{id:'GRAV-418',topic:'Energy needed to launch a spaceship from Earth\'s surface to free space',source:'ExamSIDE · AIEEE 2012 · Xhrdybt32hlvxvyew',sourceRef:true,question:'The mass of a spaceship is 1000 kg. It is to be launched from the earth\'s surface into free space. Given g = 10 m s⁻² and radius of earth R = 6400 km, the energy required for this is:',options:['6.4×10¹¹ Joules','6.4×10⁸ Joules','6.4×10⁹ Joules','6.4×10¹⁰ Joules'],correct:3,answer:'6.4×10¹⁰ Joules',
+short:[['The energy needed equals the magnitude of the spaceship\'s gravitational PE at the surface, since PE is taken as zero at infinity.','E = G·M·m/R'],['Use g = G·M/R² to rewrite this in terms of g and R.','E = m·g·R'],['Substitute the given numbers.','E = 1000×10×6.4×10⁶','= 6.4×10¹⁰ J','Answer: (D) 6.4×10¹⁰ Joules']],
+detailed:[
+ ['At the surface, the spaceship has gravitational potential energy −G·M·m/R (taking the zero of PE at infinity), and zero PE once it reaches free space.','U_s = −G·M·m/R','U∞ = 0'],
+ ['The work needed to move it from the surface to free space equals the rise in potential energy.','W = U∞ − U_s','= G·M·m/R'],
+ ['Use the surface relation g = G·M/R² to replace G·M with g·R².','G·M = g·R²'],
+ ['Substitute to write the required energy purely in terms of g, R and the mass m.','W = g·R²·m/R','= m·g·R'],
+ ['Substitute m = 1000 kg, g = 10 m s⁻², R = 6.4×10⁶ m.','W = 1000×10×6.4×10⁶'],
+ ['Evaluate.','W = 6.4×10¹⁰ J','Answer: (D) 6.4×10¹⁰ Joules']
+]},
+{id:'GRAV-419',topic:'Average density of the earth expressed in terms of g',source:'ExamSIDE · AIEEE 2005 · Xhx17m0eat8qqzrlp',sourceRef:true,question:'Average density of the earth:',options:['is a complex function of g','does not depend on g','is inversely proportional to g','is directly proportional to g'],correct:3,answer:'is directly proportional to g',
+short:[['Write Earth\'s mass in terms of its average density and volume.','M = (4/3)·π·R³·ρ'],['Substitute into g = G·M/R².','g = (4/3)·π·G·R·ρ'],['With Earth\'s radius R fixed, g is directly proportional to ρ.','g ∝ ρ','Answer: (D) is directly proportional to g']],
+detailed:[
+ ['Model the earth as a uniform sphere of radius R and average density ρ, so its mass is density times volume.','M = ρ·(4/3)·π·R³'],
+ ['Substitute this into Newton\'s expression for surface gravity, g = G·M/R².','g = G·ρ·(4/3)·π·R³/R²'],
+ ['Simplify.','g = (4/3)·π·G·ρ·R'],
+ ['Earth\'s radius R and the constants G, π are fixed, so this expression shows g scales linearly with ρ.','g ∝ ρ'],
+ ['Equivalently, ρ is directly proportional to g.','Answer: (D) is directly proportional to g']
+]},
+{id:'GRAV-420',topic:'True statements about planetary motion — inverse-square force and Kepler\'s third law',source:'ExamSIDE · JEE Main 2023 (Online) 25th January Evening Shift · Xiwrlpryi81ati9pd',sourceRef:true,question:'Every planet revolves around the sun in an elliptical orbit:\nA. The force acting on a planet is inversely proportional to the square of its distance from the sun.\nB. The force acting on a planet is inversely proportional to the product of the masses of the planet and the sun.\nC. The centripetal force acting on the planet is directed away from the sun.\nD. The square of the time period of revolution of a planet around the sun is directly proportional to the cube of the semi-major axis of its elliptical orbit.\nChoose the correct answer from the options given below:',options:['C and D only','B and C only','A and D only','A and C only'],correct:2,answer:'A and D only',
+short:[['Newton\'s law of gravitation gives a force inversely proportional to distance squared, and directly (not inversely) proportional to the product of the masses — so A is true and B is false.','F = G·m₁·m₂/r²'],['Gravity on a planet points toward the sun, supplying the centripetal force, so the claim that it\'s directed away from the sun (C) is false. Kepler\'s third law makes statement D true.','T² ∝ a³'],['Only A and D are correct statements.','Answer: (C) A and D only']],
+detailed:[
+ ['Statement A claims the force on a planet is inversely proportional to the square of its distance from the sun — this is exactly Newton\'s law of gravitation.','F = G·m₁·m₂/r²','F ∝ 1/r²','So A is true.'],
+ ['Statement B claims the force is inversely proportional to the product of the planet\'s and sun\'s masses — but Newton\'s law makes F directly proportional to that product, not inversely.','F ∝ m₁·m₂ (direct, not inverse)','So B is false.'],
+ ['Statement C claims the centripetal force is directed away from the sun — but gravity, which supplies this centripetal force, always pulls the planet toward the sun.','So C is false.'],
+ ['Statement D is Kepler\'s third law: the square of the orbital period is proportional to the cube of the orbit\'s semi-major axis.','T² ∝ a³','So D is true.'],
+ ['Only statements A and D hold.','Answer: (C) A and D only']
+]},
+{id:'GRAV-421',topic:'Effect of Earth\'s rotation on g at the equator versus the poles',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Evening Shift · Xjbzdsfmpbywxcaou',sourceRef:true,question:'Given below are two statements:\nStatement I: Rotation of the earth shows an effect on the value of acceleration due to gravity (g).\nStatement II: The effect of rotation of the earth on the value of g at the equator is minimum and that at the pole is maximum.\nIn the light of the above statements, choose the correct answer from the options given below:',options:['Statement I is false but statement II is true','Statement I is true but statement II is false','Both Statement I and Statement II are true','Both Statement I and Statement II are false'],correct:1,answer:'Statement I is true but statement II is false',
+short:[['Earth\'s rotation reduces effective gravity by a centrifugal term that depends on latitude λ.','g(λ) = g − ω²·R·cos²λ'],['This shows rotation does affect g, so Statement I is true. The reduction is largest at the equator (λ=0) and vanishes at the poles (λ=90°) — the reverse of what Statement II claims.','reduction: equator = ω²·R','poles = 0'],['So Statement II is false.','Answer: (B) Statement I is true but statement II is false']],
+detailed:[
+ ['Earth\'s rotation makes the effective gravity felt at the surface slightly less than the true gravitational pull, because part of that pull supplies the centripetal force needed to keep an object moving in a circle with the spinning earth.','g(λ) = g − ω²·R·cos²λ'],
+ ['This expression depends on latitude λ and is not zero in general, so Earth\'s rotation does change the value of g — Statement I is true. At the equator (λ=0°), cos²λ=1, so the reduction term is at its largest possible value.','reduction_equator = ω²·R'],
+ ['At the poles (λ=90°), cos²λ=0, so the reduction term vanishes entirely — g equals its true (unreduced) value there.','reduction_pole = 0'],
+ ['This means the rotation effect is maximum at the equator and minimum (zero) at the poles — exactly the opposite of Statement II\'s claim. So Statement II, as worded, is false.','Answer: (B) Statement I is true but statement II is false']
+]},
+{id:'GRAV-422',topic:'New orbital period after reducing a satellite\'s orbital radius to one quarter',source:'ExamSIDE · JEE Main 2023 (Online) 29th January Evening Shift · Xjro7stq4j0dhasaj',sourceRef:true,question:'The time period of a satellite of earth is 24 hours. If the separation between the earth and the satellite is decreased to one-fourth of its previous value, the new time period will become:',options:['12 hours','3 hours','6 hours','4 hours'],correct:1,answer:'3 hours',
+short:[['Kepler\'s third law gives T ∝ (R)·√(R) for orbits about the same body.','T² ∝ R³'],['Form the ratio for the new radius R₂ = R₁/4.','T₂/T₁ = (1/4)·√(1/4)','= 1/8'],['Solve for the new period.','T₂ = 24/8','= 3 hours','Answer: (B) 3 hours']],
+detailed:[
+ ['Kepler\'s third law states T² ∝ R³ for satellites orbiting the same central body.','T² ∝ R³'],
+ ['Form the ratio between the new and original orbits.','(T₂/T₁)² = (R₂/R₁)³'],
+ ['Substitute R₂ = R₁/4.','(T₂/T₁)² = (1/4)³','= 1/64'],
+ ['Take the square root of both sides.','T₂/T₁ = 1/8'],
+ ['Multiply by the original period T₁ = 24 h.','T₂ = 24/8','= 3 hours','Answer: (B) 3 hours']
+]},
+{id:'GRAV-423',topic:'Generalized Kepler\'s third law when the force varies as R^(−3/2)',source:'ExamSIDE · JEE Main 2024 (Online) 1st February Evening Shift · Xjxzd3ut5egnoogsn',sourceRef:true,question:'A light planet revolves around a massive star in a circular orbit of radius R with period of revolution T. If the force of attraction between the planet and the star is proportional to R^(−3/2), choose the correct option:',options:['T² ∝ R^(7/2)','T² ∝ R³','T² ∝ R^(5/2)','T² ∝ (R)·√(R)'],correct:2,answer:'T² ∝ R^(5/2)',
+short:[['Gravity supplies the centripetal force for the circular orbit.','m·v²/R ∝ R^(−3/2)'],['Solve for v² and then v in terms of R.','v² ∝ R^(−1/2)','v ∝ R^(−1/4)'],['The period is T = 2πR/v, so substitute the R-dependence of v.','T ∝ R/R^(−1/4) = R^(5/4)'],['Square both sides.','T² ∝ R^(5/2)','Answer: (C) T² ∝ R^(5/2)']],
+detailed:[
+ ['Since the planet moves in a circular orbit, the gravitational force of attraction supplies exactly the centripetal force needed.','m·v²/R = F ∝ R^(−3/2)'],
+ ['Rearrange to express v² in terms of R.','v² ∝ R·R^(−3/2) = R^(−1/2)'],
+ ['Take the square root to get v\'s dependence on R.','v ∝ R^(−1/4)'],
+ ['The orbital period is the circumference divided by the speed.','T = 2π·R/v'],
+ ['Substitute the R-dependence of v found above.','T ∝ R/R^(−1/4) = R^(1+1/4)','= R^(5/4)'],
+ ['Square both sides to get the period-radius relation in the requested form.','T² ∝ R^(5/2)','Answer: (C) T² ∝ R^(5/2)']
+]},
+{id:'GRAV-424',topic:'Radius Earth must be compressed to so escape velocity increases tenfold',source:'ExamSIDE · JEE Main 2021 (Online) 17th March Morning Shift · Xkcce9aazmc6zyvui',sourceRef:true,question:'The radius, in kilometres, to which the present radius of earth (R = 6400 km) must be compressed, so that the escape velocity is increased 10 times, is .........',type:'numerical',answer:'64',unit:'km',
+short:[['With the mass unchanged, escape velocity depends only on radius.','v_esc = √(2·G·M/R)','v_esc·√R = constant'],['Set the new escape velocity to 10 times the original and solve for the new radius.','10·v_esc·√R\' = v_esc·√R','R\' = R/100'],['Substitute R = 6400 km.','R\' = 64 km','Answer: 64 km']],
+detailed:[
+ ['Compressing the earth changes only its radius, not its mass, so write escape velocity purely as a function of R.','v_esc = √(2·G·M/R)'],
+ ['This means the product v_esc·√R stays the same before and after compression, since G and M don\'t change.','v_esc·√R = constant'],
+ ['Let the new escape velocity be 10 times the original, v_esc\' = 10·v_esc, at the new radius R\'.','10·v_esc·√R\' = v_esc·√R'],
+ ['Cancel v_esc and solve for R\'.','√R\' = √R/10','R\' = R/100'],
+ ['Substitute R = 6400 km.','R\' = 6400/100','= 64 km','Answer: 64 km']
+]},
+{id:'GRAV-425',topic:'Height above Earth\'s surface where gravity falls to g/9',source:'ExamSIDE · JEE Main 2026 (Online) 4th April Evening Shift · Xkhp1snsyhx7mhin5',sourceRef:true,question:'The height, in terms of the radius of the earth R, at which the acceleration due to gravity becomes g/9 (where g is the acceleration due to gravity on the earth\'s surface), is:',options:['√3·R','2√2·R','2R','(4/9)·R'],correct:2,answer:'2R',
+short:[['Gravity at height h follows the inverse-square law with distance from Earth\'s centre.','g_h = g·R²/(R+h)²'],['Set g_h = g/9 and simplify.','R²/(R+h)² = 1/9','(R+h)/R = 3'],['Solve for h.','h = 2R','Answer: (C) 2R']],
+detailed:[
+ ['At height h above the surface, gravity is g_h = G·M/(R+h)², while at the surface g = G·M/R².','g = G·M/R²','g_h = G·M/(R+h)²'],
+ ['Divide the two to eliminate G·M.','g_h/g = R²/(R+h)²'],
+ ['We\'re told g_h = g/9, so set the ratio equal to 1/9.','R²/(R+h)² = 1/9'],
+ ['Take the square root of both sides.','R/(R+h) = 1/3'],
+ ['Cross-multiply and solve for h.','R + h = 3R','h = 2R','Answer: (C) 2R']
+]},
+{id:'GRAV-426',topic:'Length of a second\'s pendulum at a height of 2R above the surface',source:'ExamSIDE · JEE Main 2024 (Online) 1st February Morning Shift · Xklovm46tajqxvhh4',sourceRef:true,question:'If R is the radius of the earth and the acceleration due to gravity at the earth\'s surface is g = π² m s⁻², the length of a second\'s pendulum at a height h = 2R from the surface of the earth will be:',options:['1/9 m','8/9 m','2/9 m','4/9 m'],correct:0,answer:'1/9 m',
+short:[['At height h=2R, gravity falls by the inverse-square factor (1+h/R)⁻² = 1/9.','g_h = g/9','= π²/9'],['A second\'s pendulum has period T=2 s — use T=2π√(ℓ/g_h) to solve for ℓ.','ℓ = g_h·T²/(4·π²)'],['Substitute g_h and T=2.','ℓ = (π²/9)×4/(4·π²)','= 1/9 m','Answer: (A) 1/9 m']],
+detailed:[
+ ['At height h above the surface, gravity is reduced by the factor R²/(R+h)²; here h=2R so R+h=3R.','g_h = g·R²/(3R)²','= g/9'],
+ ['Substitute the given surface value g = π² m s⁻².','g_h = π²/9 m s⁻²'],
+ ['A second\'s pendulum, by definition, has period T = 2 s.','T = 2 s'],
+ ['Use the pendulum formula T = 2π√(ℓ/g_h) and solve for ℓ.','ℓ = g_h·T²/(4·π²)'],
+ ['Substitute g_h and T.','ℓ = (π²/9)×2²/(4·π²)','= (π²/9)×4/(4·π²)'],
+ ['Simplify — the π² terms cancel.','ℓ = 1/9 m','Answer: (A) 1/9 m']
+]},
+{id:'GRAV-427',topic:'Satellite period scaling when orbital radius increases ninefold',source:'ExamSIDE · JEE Main 2021 (Online) 18th March Morning Shift · Xkot0ilb7d1wmstnf',sourceRef:true,question:'The time period of a satellite in a circular orbit of radius R is T. The period of another satellite in a circular orbit of radius 9R is:',options:['9 T','27 T','12 T','3 T'],correct:1,answer:'27 T',
+short:[['Kepler\'s third law: T² ∝ R³ for orbits about the same body.','T² ∝ R³'],['Form the ratio for R₂=9R.','(T₂/T)² = 9³','= 729'],['Take the square root.','T₂ = 27T','Answer: (B) 27 T']],
+detailed:[
+ ['Kepler\'s third law states the square of the orbital period is proportional to the cube of the orbital radius.','T² ∝ R³'],
+ ['Form the ratio between the two orbits, one with radius R and period T, the other with radius 9R and period T₂.','(T₂/T)² = (9R/R)³','= 9³'],
+ ['Evaluate the right side.','9³ = 729'],
+ ['Take the square root of both sides.','T₂/T = √729','= 27'],
+ ['So the new period is 27 times the original.','T₂ = 27T','Answer: (B) 27 T']
+]},
+{id:'GRAV-428',topic:'Height above the surface where weight equals the weight at an equal depth',source:'ExamSIDE · JEE Main 2020 (Online) 2nd September Evening Slot · Xkrq3ofoy4c5bs4nn',sourceRef:true,question:'The height h at which the weight of a body is the same as its weight at an equal depth h below the earth\'s surface is (R = radius of the earth, neglect the effect of earth\'s rotation):',options:['R/2','(√5·R−R)/2','(√3·R−R)/2','(√5/2)·R−R'],correct:1,answer:'(√5·R−R)/2',
+short:[['Above the surface gravity follows the inverse-square law, below it falls off linearly with depth.','g_above = g/(1+h/R)²','g_below = g·(1−h/R)'],['Set the two equal, writing x=h/R.','1/(1+x)² = 1−x'],['Expand and collect terms into a quadratic in x.','x² + x − 1 = 0'],['Solve the quadratic and keep the positive root.','x = (√5−1)/2','h = (√5·R−R)/2','Answer: (B) (√5R−R)/2']],
+detailed:[
+ ['At height h above the surface, gravity follows the inverse-square law with distance from the centre.','g_above = g·R²/(R+h)²','= g/(1+h/R)²'],
+ ['At depth h below the surface (uniform density), only the mass inside radius R−h attracts the body, giving a gravity that falls off linearly with depth.','g_below = g·(1−h/R)'],
+ ['Set the two equal, since g (and hence weight) must match at both points, and write x=h/R for brevity.','1/(1+x)² = 1−x'],
+ ['Clear the denominator by multiplying both sides by (1+x)².','1 = (1−x)·(1+x)²'],
+ ['Expand the right side and collect terms.','(1−x)(1+2x+x²) = 1+x−x²−x³','1 = 1+x−x²−x³','x³+x²−x = 0'],
+ ['Since x≠0, divide through by x to get a quadratic.','x²+x−1 = 0'],
+ ['Solve the quadratic, keeping the positive root since x=h/R>0.','x = (−1+√5)/2','h = (√5·R−R)/2','Answer: (B) (√5R−R)/2']
+]},
+{id:'GRAV-429',topic:'Satellite period scaling when separation increases fourfold',source:'ExamSIDE · AIEEE 2003 · Xktuwn2cwiqkcwksv',sourceRef:true,question:'The time period of a satellite of earth is 5 hours. If the separation between the earth and the satellite is increased to 4 times its previous value, the new time period will become:',options:['10 hours','80 hours','40 hours','20 hours'],correct:2,answer:'40 hours',
+short:[['Kepler\'s third law: T ∝ (R)·√(R) for orbits about the same body.','T² ∝ R³'],['Form the ratio for R₂=4R.','T₂/T₁ = 4^(3/2)','= 8'],['Solve for T₂.','T₂ = 5×8','= 40 hours','Answer: (C) 40 hours']],
+detailed:[
+ ['Kepler\'s third law relates period and orbital radius for bodies orbiting the same central mass.','T² ∝ R³'],
+ ['Write the ratio between the new and original orbit.','T₂/T₁ = (R₂/R₁)·√(R₂/R₁)'],
+ ['Substitute R₂=4R₁.','T₂/T₁ = 4^(3/2)'],
+ ['Evaluate 4^(3/2) = (√4)³.','4^(3/2) = 2³','= 8'],
+ ['Multiply by the original period.','T₂ = 5×8','= 40 hours','Answer: (C) 40 hours']
+]},
+{id:'GRAV-430',topic:'Weight on a planet with double Earth\'s mass and equal density',source:'ExamSIDE · JEE Main 2023 (Online) 6th April Morning Shift · Xkzuhv8cmly9jonts',sourceRef:true,question:'A planet has double the mass of the earth and the same average density as the earth. An object weighing W on earth will weigh, on that planet:',options:['2^(2/3)·W','W','2·W','2^(1/3)·W'],correct:3,answer:'2^(1/3)·W',
+short:[['Equal density means volume — and hence radius cubed — scales with mass.','R_P³/R_E³ = M_P/M_E','= 2','R_P = 2^(1/3)·R_E'],['Substitute into g=G·M/R² for the planet.','g_P = G·(2·M_E)/(2^(1/3)·R_E)²','= 2^(1/3)·g_E'],['Weight scales the same way as g.','W_P = 2^(1/3)·W','Answer: (D) 2^(1/3) W']],
+detailed:[
+ ['Weight is W = m·g, and surface gravity is g = G·M/R².','W = m·g','g = G·M/R²'],
+ ['Density is mass divided by volume, and the planet\'s density equals Earth\'s; since mass doubles, volume must also double.','ρ_P = ρ_E','V_P = 2·V_E'],
+ ['Volume of a sphere scales as R³, so the planet\'s radius is 2^(1/3) times Earth\'s.','R_P³ = 2·R_E³','R_P = 2^(1/3)·R_E'],
+ ['Substitute the planet\'s mass (2M_E) and radius into g=G·M/R².','g_P = G·(2·M_E)/(2^(1/3)·R_E)²'],
+ ['Simplify the power of 2.','g_P = 2^(1−2/3)·G·M_E/R_E²','= 2^(1/3)·g_E'],
+ ['Since weight scales directly with g for the same object, the weight on the planet is 2^(1/3) times W.','W_P = m·g_P','= 2^(1/3)·m·g_E','= 2^(1/3)·W','Answer: (D) 2^(1/3) W']
+]},
+{id:'GRAV-431',topic:'Height above Earth\'s surface where weight drops to one-third',source:'ExamSIDE · JEE Main 2022 (Online) 24th June Morning Shift · Xofvf3hrm6j0uj2a8',sourceRef:true,question:'The approximate height from the surface of the earth at which the weight of a body becomes 1/3 of its weight on the surface of the earth is (Radius of earth R = 6400 km, √3 = 1.732)',options:['3840 km','4685 km','2133 km','4267 km'],correct:1,answer:'4685 km',
+short:[['Weight at height h scales as the inverse square of distance from Earth\'s centre.','W_h/W_0 = (R/(R+h))²'],['Set this ratio to 1/3 and solve for R+h.','(R+h)/R = √3'],['Compute h using R = 6400 km and √3 = 1.732.','h = (√3−1)·R','≈ 4685 km','Answer: (B) 4685 km']],
+detailed:[
+ ['The acceleration due to gravity, and hence weight, at height h above the surface varies as the inverse square of distance from Earth\'s centre.','g_h = G·M/(R+h)²','W_h/W_0 = (R/(R+h))²'],
+ ['The problem states this ratio equals 1/3.','(R/(R+h))² = 1/3'],
+ ['Take the square root of both sides to get the ratio of distances.','(R+h)/R = √3'],
+ ['Rearrange to isolate h, then substitute R = 6400 km and √3 = 1.732.','h = (√3−1)·R','h = 0.732 × 6400 km','≈ 4685 km','Answer: (B) 4685 km']
+]},
+{id:'GRAV-432',topic:'Orbital speed of four masses mutually orbiting on a circle circumscribing a square',source:'ExamSIDE · JEE Main 2019 (Online) 8th April Morning Slot · Xolrt6fm08y2sjf15',sourceRef:true,question:'Four identical particles of mass M are located at the corners of a square of side a. What should their speed be if each of them revolves under the influence of the others\' gravitational field in a circular orbit circumscribing the square?',options:['1.21√(G·M/a)','1.16√(G·M/a)','1.41√(G·M/a)','1.35√(G·M/a)'],correct:1,answer:'1.16√(G·M/a)',
+short:[['Each particle feels a diagonal pull from the opposite corner and two equal pulls from the adjacent corners.','F_diag = G·M²/(2a²)','F_side = G·M²/a² (each)'],['Resolve the two side-forces along the diagonal and add the diagonal force to get the net inward pull.','F_net = G·M²/a² · (1/2 + √2)'],['This net force supplies the centripetal force for the circular path of radius a/√2.','F_net = M·v²/(a/√2)'],['Solve for v.','v² = (G·M/a)(1 + 1/(2√2))','≈ 1.35·G·M/a','v ≈ 1.16√(G·M/a)','Answer: (B) 1.16√(G·M/a)']],
+detailed:[
+ ['Take one particle, at corner B of the square. It is pulled by the particle diagonally opposite (distance a√2) and by the two adjacent particles (distance a each).','distance to opposite corner = a√2','distance to each adjacent corner = a'],
+ ['Newton\'s law of gravitation gives the magnitude of each pull.','F_diag = G·M²/((a√2)²)','= G·M²/(2a²)','F_side = G·M²/a² (for each adjacent particle)'],
+ ['The diagonal force already points straight toward the centre. Each side-force makes a 45° angle with that diagonal, so only its component along the diagonal contributes.','component of each F_side = F_side·cos45°','= F_side/√2'],
+ ['Add the diagonal force to the two side-force components to get the total force directed toward the centre.','F_net = F_diag + 2·F_side/√2','= G·M²/a²(1/2 + √2)'],
+ ['This net gravitational pull is exactly what keeps the particle on its circular path about the centre, so it equals the required centripetal force. The orbit radius is the distance from a corner to the centre, half the diagonal.','r = a/√2','F_net = M·v²/r'],
+ ['Substitute r and solve for v².','G·M²/a²(1/2+√2) = M·v²√2/a','v² = (G·M/a)(1/2+√2)/√2','= (G·M/a)(1 + 1/(2√2))'],
+ ['Evaluate the numerical coefficient.','v² ≈ 1.35·G·M/a','v ≈ 1.16√(G·M/a)','Answer: (B) 1.16√(G·M/a)']
+]},
+{id:'GRAV-433',topic:'Kinetic energy of a satellite in a known circular orbit',source:'ExamSIDE · JEE Main 2025 (Online) 2nd April Evening Shift · Xozvcfqbk4mwkkxir',sourceRef:true,question:'A satellite of mass 1000 kg is launched to revolve around the earth in an orbit at a height of 270 km from the earth\'s surface. The kinetic energy of the satellite in this orbit is ........ ×10¹⁰ J. (Mass of earth = 6×10²⁴ kg, Radius of earth = 6.4×10⁶ m, Gravitational constant = 6.67×10⁻¹¹ N m² kg⁻²)',type:'numerical',answer:'3',unit:'×10¹⁰ J',
+short:[['Orbital kinetic energy of a satellite equals half the magnitude of its gravitational potential energy.','KE = G·M·m/(2r)'],['Take the orbital radius as Earth\'s radius plus the given height.','r = R + h','= 6.4×10⁶ + 2.7×10⁵','= 6.67×10⁶ m'],['Substitute the given values and evaluate.','KE = (6.67×10⁻¹¹×6×10²⁴×1000)/(2×6.67×10⁶)','KE = 3×10¹⁰ J','Answer: 3 ×10¹⁰ J']],
+detailed:[
+ ['For a satellite in a circular orbit, gravity supplies the centripetal force, which fixes the orbital speed and hence the kinetic energy in terms of the orbit radius.','G·M·m/r² = m·v²/r','KE = (1/2)·m·v²','= G·M·m/(2r)'],
+ ['The orbital radius is measured from Earth\'s centre, so add the given height to Earth\'s radius.','r = R + h','= 6.4×10⁶ m + 2.7×10⁵ m','= 6.67×10⁶ m'],
+ ['List the given numerical values before substituting.','M = 6×10²⁴ kg','m = 1000 kg','G = 6.67×10⁻¹¹ N m² kg⁻²'],
+ ['Multiply the numerator values together.','G·M·m = 6.67×10⁻¹¹ × 6×10²⁴ × 10³','= 4.00×10¹⁷'],
+ ['Divide by twice the orbital radius to get the kinetic energy.','KE = 4.00×10¹⁷/(2×6.67×10⁶)','= 3.00×10¹⁰ J','Answer: 3 ×10¹⁰ J']
+]},
+{id:'GRAV-434',topic:'Side length of a square from the net gravitational force on one corner mass',source:'ExamSIDE · JEE Main 2024 (Online) 31st January Morning Shift · Xp0rd9luofokxsd2x',sourceRef:true,question:'Four identical particles of mass m are kept at the four corners of a square of side a. If the gravitational force exerted on one of the masses by the other three is ((2√2+1)/32)·G·m²/L², then a is',options:['4L','3L','2L','L/2'],correct:0,answer:'4L',
+short:[['The net pull on one corner combines two equal side-forces and one diagonal force.','F_net = G·m²/a²·(√2 + 1/2)'],['Match this to the given force expression.','G·m²/a²·(2√2+1)/2 = G·m²/L²·(2√2+1)/32'],['Cancel the common factor and solve for a.','1/(2a²) = 1/(32L²)','a = 4L','Answer: (A) 4L']],
+detailed:[
+ ['One corner mass is pulled by its two adjacent neighbours (distance a) and by the diagonally opposite mass (distance a√2).','F_side = G·m²/a² (each of two)','F_diag = G·m²/((a√2)²)','= G·m²/(2a²)'],
+ ['The two side-forces are perpendicular to each other, each at 45° to the diagonal, so their components along it add to the diagonal force.','F_net = F_diag + 2·F_side·cos45°','= G·m²/a²(1/2 + √2)'],
+ ['Write this with a common denominator to match the form given in the problem.','F_net = G·m²/a² · (2√2+1)/2'],
+ ['Equate this to the given force, expressed using the fixed length L.','G·m²/a²·(2√2+1)/2 = G·m²/L²·(2√2+1)/32'],
+ ['Cancel G·m² and the common factor (2√2+1) from both sides.','1/(2a²) = 1/(32L²)'],
+ ['Cross-multiply and solve for a.','32L² = 2a²','a² = 16L²','a = 4L','Answer: (A) 4L']
+]},
+{id:'GRAV-435',topic:'Increase in gravitational potential energy when raised to twice Earth\'s radius',source:'ExamSIDE · JEE Main 2026 (Online) 5th April Evening Shift · Xpe8znvnji9mn1t44',sourceRef:true,question:'A body of mass m is taken from the surface of the earth to a height equal to twice the radius of the earth (R_e). The increase in its gravitational potential energy will be ........ (g is the acceleration due to gravity at the surface of the earth)',options:['(1/2)·m·g·R_e','(3/4)·m·g·R_e','(1/4)·m·g·R_e','(2/3)·m·g·R_e'],correct:3,answer:'(2/3)·m·g·R_e',
+short:[['Gravitational PE at distance r from Earth\'s centre can be written using g = G·M/R_e².','U(r) = −m·g·R_e²/r'],['Evaluate U at the surface (r = R_e) and at the final height (r = 3R_e).','U_i = −m·g·R_e','U_f = −m·g·R_e/3'],['The increase is U_f − U_i.','ΔU = (2/3)·m·g·R_e','Answer: (D) (2/3)·m·g·R_e']],
+detailed:[
+ ['The gravitational potential energy of a mass m at distance r from Earth\'s centre is the standard formula, rewritten here in terms of surface gravity g using G·M = g·R_e².','U(r) = −G·M·m/r','= −m·g·R_e²/r'],
+ ['At the surface, r equals Earth\'s radius R_e.','U_i = −m·g·R_e²/R_e','= −m·g·R_e'],
+ ['The body is raised to a height of 2R_e above the surface, so its distance from the centre becomes three times R_e.','r_f = R_e + 2R_e','= 3R_e'],
+ ['Substitute this distance into the potential-energy formula.','U_f = −m·g·R_e²/(3R_e)','= −(1/3)·m·g·R_e'],
+ ['The increase in potential energy is the final value minus the initial value.','ΔU = U_f − U_i','= −(1/3)·m·g·R_e − (−m·g·R_e)'],
+ ['Simplify the result.','ΔU = (2/3)·m·g·R_e','Answer: (D) (2/3)·m·g·R_e']
+]},
+{id:'GRAV-436',topic:'Assertion-Reason — kinetic energy needed to escape Earth\'s gravity',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Morning Shift · Xpekd7ankpjm1je5j',sourceRef:true,question:'Given below are two statements: one labelled Assertion A and the other labelled Reason R.\nAssertion A: The kinetic energy needed to project a body of mass m from the earth\'s surface to infinity is (1/2)·m·g·R, where R is the radius of the earth.\nReason R: The maximum potential energy of a body is zero, attained when it is projected to infinity from the earth\'s surface.\nChoose the correct answer from the options given below.',options:['A is false but R is true','Both A and R are true and R is the correct explanation of A','A is true but R is false','Both A and R are true but R is NOT the correct explanation of A'],correct:0,answer:'A is false but R is true',
+short:[['The energy needed to escape equals the magnitude of the surface potential energy, found from energy conservation to infinity.','KE_needed = G·M·m/R','= m·g·R'],['This is twice the value claimed in Assertion A, so A is false.','Assertion claims (1/2)·m·g·R ≠ m·g·R'],['By convention potential energy is zero at infinity and negative everywhere closer, so zero is indeed the body\'s maximum (least negative) value — Reason R is true.','Answer: (A) A is false but R is true']],
+detailed:[
+ ['The gravitational potential energy of mass m at Earth\'s surface is the standard formula, and at infinity it is defined to be zero.','U(R) = −G·M·m/R','U(∞) = 0'],
+ ['The minimum kinetic energy needed to just reach infinity (with zero speed there) equals the rise in potential energy.','KE_needed = U(∞) − U(R)','= G·M·m/R'],
+ ['Using g = G·M/R², this can be written in terms of surface gravity.','KE_needed = m·g·R'],
+ ['Assertion A claims this kinetic energy is (1/2)·m·g·R, which is only half the correct value, so Assertion A is false.','(1/2)·m·g·R ≠ m·g·R'],
+ ['Potential energy increases monotonically from −G·M·m/R at the surface toward 0 as r→∞, so 0 is indeed the greatest value it attains, in this limiting sense.','U(r) → 0⁻ as r → ∞'],
+ ['So Reason R correctly states that the body\'s potential energy reaches its maximum, zero, at infinity.','Answer: (A) A is false but R is true']
+]},
+{id:'GRAV-437',topic:'Impact speed of an asteroid falling from 10 Earth-radii, given escape velocity',source:'ExamSIDE · JEE Main 2020 (Online) 8th January Evening Slot · Xpgzscr50m6mh7hko',sourceRef:true,question:'An asteroid is moving directly towards the centre of the earth. When at a distance of 10R from Earth\'s centre (R is the radius of the earth), it has a speed of 12 km s⁻¹. Neglecting the effect of Earth\'s atmosphere, find the speed of the asteroid when it hits the surface of the earth. (Escape velocity from the earth is 11.2 km s⁻¹.) Give your answer to the nearest integer, in km s⁻¹.',type:'numerical',answer:'16',unit:'km s⁻¹',
+short:[['Apply energy conservation between the two points of the fall.','(1/2)v₁² − G·M/(10R) = (1/2)v₂² − G·M/R'],['Rearrange, using G·M/R found from the escape-velocity formula.','v₂² = v₁² + (9/5)·G·M/R','G·M/R = v_e²/2'],['Substitute the given numbers and solve.','v₂² = 12² + (9/5)×(11.2²/2)','v₂ ≈ 16 km s⁻¹','Answer: 16 km s⁻¹']],
+detailed:[
+ ['Mechanical energy is conserved as the asteroid falls under gravity alone, with no atmosphere to remove energy.','(1/2)m·v₁² − G·M·m/(10R) = (1/2)m·v₂² − G·M·m/R'],
+ ['Cancel m and isolate v₂².','v₂² = v₁² + 2·G·M/R·(1 − 1/10)','= v₁² + (9/5)·G·M/R'],
+ ['The escape-velocity formula gives G·M/R directly from the given v_e.','v_e = √(2·G·M/R)','G·M/R = v_e²/2'],
+ ['Substitute v_e = 11.2 km s⁻¹.','G·M/R = (11.2)²/2','= 62.72 km² s⁻²'],
+ ['Substitute this and v₁ = 12 km s⁻¹ into the energy relation.','v₂² = 12² + (9/5)×62.72','= 144 + 112.9'],
+ ['Take the square root and round to the nearest integer.','v₂² ≈ 256.9','v₂ ≈ 16 km s⁻¹','Answer: 16 km s⁻¹']
+]},
+{id:'GRAV-438',topic:'Gravitational potential at the null point between two unequal masses',source:'ExamSIDE · AIEEE 2011 · Xphja0snc3xgjre0u',sourceRef:true,question:'Two bodies of masses m and 4m are placed a distance r apart. Find the gravitational potential at the point on the line joining them where the gravitational field is zero.',options:['−4G·m/r','−6G·m/r','−9G·m/r','zero'],correct:2,answer:'−9G·m/r',
+short:[['Let the null point P lie at distance x from mass m, so at distance (r−x) from mass 4m, and set the two fields equal.','G·m/x² = G·4m/(r−x)²'],['Solve this for x.','(r−x) = 2x','x = r/3'],['Add the potentials due to both masses at P.','V = −G·m/x − G·4m/(r−x)','V = −9G·m/r','Answer: (C) −9G·m/r']],
+detailed:[
+ ['Let P be the point of zero field, lying on the segment joining the masses at distance x from mass m and (r−x) from mass 4m.','field due to m at P = G·m/x²','field due to 4m at P = G·4m/(r−x)²'],
+ ['Since the two fields point in opposite directions along the line, they cancel when their magnitudes are equal.','G·m/x² = G·4m/(r−x)²'],
+ ['Take square roots and solve the resulting linear equation for x.','(r−x)/x = 2','r − x = 2x','x = r/3'],
+ ['So P sits at distance r/3 from m and 2r/3 from 4m.','distance to m = r/3','distance to 4m = 2r/3'],
+ ['The gravitational potential at P is the scalar sum of the potentials due to both masses.','V = −G·m/(r/3) − G·4m/(2r/3)'],
+ ['Simplify each term and add.','V = −3G·m/r − 6G·m/r','V = −9G·m/r','Answer: (C) −9G·m/r']
+]},
+{id:'GRAV-439',topic:'Additional velocity needed to go from a near-surface orbit to escape',source:'ExamSIDE · JEE Main 2023 (Online) 11th April Evening Shift · Xplwfzknrz37rkykk',sourceRef:true,question:'A spaceship of mass 2×10⁴ kg is launched into a circular orbit close to the earth\'s surface. The additional velocity that must be imparted to the spaceship in this orbit to overcome the gravitational pull is (g = 10 m s⁻², radius of earth = 6400 km)',options:['7.9(√2−1) km s⁻¹','11.2(√2−1) km s⁻¹','7.4(√2−1) km s⁻¹','8(√2−1) km s⁻¹'],correct:3,answer:'8(√2−1) km s⁻¹',
+short:[['Close to the surface, orbital speed follows from equating gravity to the centripetal requirement.','v_o = √(g·R)'],['Escape velocity from the surface is √2 times the orbital speed.','v_e = √2·v_o'],['Compute v_o numerically and take the difference.','v_o = √(10×6.4×10⁶)','= 8×10³ m s⁻¹','Δv = v_e − v_o','= (√2−1)×8 km s⁻¹','Answer: (D) 8(√2−1) km s⁻¹']],
+detailed:[
+ ['For a satellite orbiting just above the surface, gravity supplies the centripetal force, and g = G·M/R² at the surface.','G·M·m/R² = m·v_o²/R','v_o = √(G·M/R)','= √(g·R)'],
+ ['Substitute the given numbers in SI units.','R = 6400×10³ m','v_o = √(10 × 6.4×10⁶)','= √(6.4×10⁷)'],
+ ['Evaluate the square root.','v_o = 8×10³ m s⁻¹','= 8 km s⁻¹'],
+ ['Escape velocity from the surface is related to the orbital speed by a factor of √2.','v_e = √(2·g·R)','= √2·v_o'],
+ ['The extra speed needed is the difference between escape and orbital speed.','Δv = v_e − v_o','= (√2−1)·v_o'],
+ ['Substitute v_o = 8 km s⁻¹.','Δv = 8(√2−1) km s⁻¹','Answer: (D) 8(√2−1) km s⁻¹']
+]},
+{id:'GRAV-440',topic:'Ratio of surface gravities from density and radius ratios',source:'ExamSIDE · JEE Main 2023 (Online) 13th April Evening Shift · Xprzf4srkyjlhs6tp',sourceRef:true,question:'Two planets A and B of radii R and 1.5R have densities ρ and ρ/2 respectively. The ratio of the acceleration due to gravity at the surface of B to that of A is',options:['2 : 1','2 : 3','4 : 3','3 : 4'],correct:3,answer:'3 : 4',
+short:[['Surface gravity can be written in terms of density and radius.','g = (4/3)·π·G·ρ·R'],['Form the ratio for planets B and A using the given density and radius ratios.','g_B/g_A = (ρ_B/ρ_A)·(R_B/R_A)'],['Substitute ρ_B/ρ_A = 1/2 and R_B/R_A = 1.5.','g_B/g_A = (1/2)×1.5','= 3/4','Answer: (D) 3 : 4']],
+detailed:[
+ ['Express surface gravity using mass written in terms of density and volume.','g = G·M/R²','= G·(4/3)π·ρ·R³/R²','= (4/3)·π·G·ρ·R'],
+ ['So g is directly proportional to the product of density and radius.','g ∝ ρ·R'],
+ ['Write this proportionality separately for planets A and B.','g_A ∝ ρ_A·R','g_B ∝ (ρ_A/2)·(1.5R)'],
+ ['Form the ratio g_B to g_A.','g_B/g_A = (ρ_A/2 × 1.5R)/(ρ_A × R)','= 0.75'],
+ ['Express this ratio as a simple fraction.','g_B/g_A = 3/4','Answer: (D) 3 : 4']
+]},
+{id:'GRAV-441',topic:'Ratio of orbital speeds for satellites at different orbital radii',source:'ExamSIDE · JEE Main 2022 (Online) 25th June Evening Shift · Xpxaah3gk8dnv72nd',sourceRef:true,question:'Two satellites S₁ and S₂ revolve in circular orbits around a planet with orbital radii R₁ = 3200 km and R₂ = 800 km respectively. The ratio of the speed of S₁ to the speed of S₂ is 1/x. Find x.',type:'numerical',answer:'2',
+short:[['Orbital speed varies inversely with the square root of orbital radius.','v = √(G·M/R)'],['Form the ratio of speeds for the two satellites.','v₁/v₂ = √(R₂/R₁)'],['Substitute the given radii and simplify.','v₁/v₂ = √(800/3200)','= 1/2','x = 2','Answer: 2']],
+detailed:[
+ ['For a satellite in circular orbit, gravity supplies the centripetal force, which fixes the orbital speed in terms of the orbital radius.','G·M·m/R² = m·v²/R','v = √(G·M/R)'],
+ ['Write this expression separately for S₁ and S₂.','v₁ = √(G·M/R₁)','v₂ = √(G·M/R₂)'],
+ ['Divide the two to eliminate G·M.','v₁/v₂ = √(R₂/R₁)'],
+ ['Substitute the given orbital radii.','v₁/v₂ = √(800/3200)','= √(1/4)','= 1/2'],
+ ['Compare with the given form v₁/v₂ = 1/x to read off x.','1/x = 1/2','x = 2','Answer: 2']
+]},
+{id:'GRAV-442',topic:'Length of a seconds pendulum at a height of two Earth radii',source:'ExamSIDE · JEE Main 2022 (Online) 25th July Evening Shift · Xpzavxqwzc0igq3xx',sourceRef:true,question:'The length of a seconds pendulum at a height h = 2R from the earth\'s surface will be (R = radius of earth, and acceleration due to gravity at the surface of the earth, g = π² m s⁻²)',options:['2/9 m','4/9 m','8/9 m','1/9 m'],correct:3,answer:'1/9 m',
+short:[['At height h = 2R, the distance from Earth\'s centre is 3R, so gravity there is g/9.','g_h = g·(R/(R+h))²','= g/9'],['A seconds pendulum has period 2 s. Use the pendulum formula with g_h.','T = 2π√(l/g_h)'],['Substitute T = 2 s and g = π² m s⁻², then solve for l.','2 = 2π√(9l/π²)','l = 1/9 m','Answer: (D) 1/9 m']],
+detailed:[
+ ['At a height h above the surface, the distance from Earth\'s centre is R + h, so gravity scales by the inverse square of this ratio.','g_h = G·M/(R+h)²','= g·(R/(R+h))²'],
+ ['With h = 2R, the distance becomes 3R.','R + h = 3R','g_h = g·(R/3R)²','= g/9'],
+ ['A \'seconds pendulum\' completes one full oscillation in 2 s, so set up the period formula at this reduced gravity.','T = 2π√(l/g_h)','T = 2 s'],
+ ['Substitute g_h = g/9 into the period formula.','2 = 2π√(l/(g/9))','= 2π√(9l/g)'],
+ ['Divide both sides by 2π and square.','1/π = √(9l/g)','1/π² = 9l/g'],
+ ['Solve for l using g = π² m s⁻².','l = g/(9π²)','= π²/(9π²)','l = 1/9 m','Answer: (D) 1/9 m']
+]},
+{id:'GRAV-443',topic:'Orbital speed of four equal masses mutually orbiting on a common circle',source:'ExamSIDE · JEE Main 2021 (Online) 24th February Morning Shift · Xpzn40rwsyuwiawqd',sourceRef:true,question:'Four identical particles of mass 1 kg each sit at the corners of a square inscribed in a circle of radius 1 m, and move along the circumference of that circle under the action of their own mutual gravitational attraction. Find the speed of each particle.',options:['√(G/2·(1+2√2))','√(G/2·(2√2−1))','√(G·(1+2√2))','(1/2)√(G·(1+2√2))'],correct:3,answer:'(1/2)√(G·(1+2√2))',
+short:[['Each particle feels a diagonal pull (distance 2R) and two adjacent pulls (distance √2·R).','F_diag = G·m²/(2R)²','F_adj = G·m²/(√2·R)² (each)'],['Add the diagonal force to the resolved components of the two adjacent forces along the radius.','F_net = G·m²/R² · (1/4 + 1/√2)'],['This supplies the centripetal force for the circular path of radius R.','F_net = m·v²/R'],['Solve for v with m = 1 kg, R = 1 m.','v² = (G/4)(1+2√2)','v = (1/2)√(G(1+2√2))','Answer: (D) (1/2)√(G(1+2√2))']],
+detailed:[
+ ['The four particles sit at the corners of a square inscribed in the circle of radius R, so the square\'s diagonal is 2R and its side is R√2.','diagonal = 2R','side = R√2'],
+ ['For one particle, the diagonally opposite particle pulls with a force found from Newton\'s law at separation 2R, directed straight through the centre.','F_diag = G·m²/(2R)²','= G·m²/(4R²)'],
+ ['Each of the two adjacent particles pulls at separation R√2, along a direction making 45° with the line to the centre.','F_adj = G·m²/(R√2)²','= G·m²/(2R²) (each)'],
+ ['Add the diagonal force to the components of the two adjacent forces resolved along the centre-line.','F_net = F_diag + 2·F_adj·cos45°','= G·m²/R²(1/4 + 1/√2)'],
+ ['This net inward pull is exactly the centripetal force needed to keep the particle on the circle of radius R.','F_net = m·v²/R'],
+ ['Equate the two expressions and solve for v².','G·m²/R²(1/4+1/√2) = m·v²/R','v² = (G·m/R)(1/4+1/√2)'],
+ ['Simplify the bracket to a common form, then substitute m = 1 kg, R = 1 m.','1/4 + 1/√2 = (1+2√2)/4','v² = (G/4)(1+2√2)'],
+ ['Take the square root for the final speed.','v = (1/2)√(G(1+2√2))','Answer: (D) (1/2)√(G(1+2√2))']
+]},
+{id:'GRAV-444',topic:'Variation of g with distance from Earth\'s centre — graph identification',diagram:'gVariationWithDistanceGraphs',source:'ExamSIDE · JEE Main 2022 (Online) 26th June Morning Shift · Xq3ngoblpi5enyi7k',sourceRef:true,question:'The variation of acceleration due to gravity (g) with distance (r) from the centre of the earth is correctly represented by which of these g–r graphs? (R = radius of earth)',options:['g rises in a straight line from zero at the centre to a maximum at r = R, then falls off smoothly (curving, like 1/r²) for r > R','g stays constant from the centre out to r = R, then falls off smoothly (curving) for r > R','g rises along a concave curve from zero at the centre to a maximum at r = R, then falls off in a straight line for r > R','g rises along a concave curve from zero at the centre to a maximum at r = R, then falls off along a similarly curved path for r > R'],correct:0,answer:'g rises in a straight line from zero at the centre to a maximum at r = R, then falls off smoothly (curving, like 1/r²) for r > R',
+short:[['Inside the earth, enclosed mass grows as r³, making g rise linearly with r.','g = G·M·r/R³ for r ≤ R'],['Outside the earth, the full mass acts as if concentrated at the centre, so g falls as the inverse square of r.','g = G·M/r² for r > R'],['So g rises linearly to a peak at r = R, then decays smoothly beyond — the shape in option A.','Answer: (A)']],
+detailed:[
+ ['Inside a uniform earth of radius R, only the mass enclosed within radius r contributes to gravity there, and that enclosed mass is proportional to r³ for uniform density.','M_enc(r) = M·(R)³ for r ≤ R'],
+ ['Substitute into Newton\'s law of gravitation to get g inside.','g(r) = G·M_enc(r)/r²','= G·M·r/R³'],
+ ['This is a straight line through the origin, so g increases linearly with r up to the surface.','g ∝ r for r ≤ R'],
+ ['Beyond the surface, the entire mass M acts as if concentrated at the centre (shell theorem), so the usual inverse-square law applies.','g(r) = G·M/r² for r > R'],
+ ['This is a smooth, continuously falling curve that matches the surface value at r = R and decreases thereafter.','g ∝ 1/r² for r > R'],
+ ['Combining both regimes: a straight-line rise from zero at the centre to a peak exactly at r = R, followed by a smooth inverse-square decline — the shape shown in option A.','Answer: (A)']
+]},
+{id:'GRAV-445',topic:'Farthest distance reached after a tangential speed boost in a near-surface orbit',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Morning Slot · Xq5fyvuewnqw9pqbo',sourceRef:true,question:'A satellite moves in a low, nearly circular orbit around the earth, with orbital radius approximately equal to Earth\'s radius R_e. Rockets fired along its direction of motion instantaneously increase its speed to √(3/2) times the original orbital speed. The farthest distance from Earth\'s centre that the satellite then reaches is R. Find R.',options:['2R_e','3R_e','4R_e','2.5R_e'],correct:1,answer:'3R_e',
+short:[['The original circular-orbit speed at radius R_e is the usual orbital speed.','v_0 = √(G·M/R_e)'],['After the boost the new speed is tangential, so angular momentum is conserved between the firing point and the farthest point.','v_new = √(3/2)·v_0','m·v_new·R_e = m·v_max·R'],['Combine with energy conservation between the two points and solve the resulting quadratic for R in units of R_e.','R² − 4R_e·R + 3R_e² = 0'],['The two roots are R = R_e (original orbit) and R = 3R_e (the new farthest point).','Answer: (B) 3R_e']],
+detailed:[
+ ['In the original circular orbit at radius R_e, gravity supplies the centripetal force, fixing the orbital speed.','v_0 = √(G·M/R_e)'],
+ ['The rockets boost the speed tangentially (along the direction of motion) to √(3/2) times this value, without changing the radius at that instant.','v_new = √(3/2)·v_0'],
+ ['Both the firing point and the farthest point R are apsides, where velocity is purely tangential, so angular momentum is conserved between them.','m·v_new·R_e = m·v_max·R','v_max = v_new·R_e/R'],
+ ['Apply energy conservation between the firing point and the farthest point.','−G·M·m/R_e + (1/2)m·v_new² = −G·M·m/R + (1/2)m·v_max²'],
+ ['Substitute v_new² = (3/2)·G·M/R_e and v_max from the angular-momentum relation, then divide through by G·M·m/R_e.','−1 + 3/4 = −R_e/R + (3/4)·(R_e/R)²'],
+ ['Let x = R/R_e and simplify to a quadratic in x.','−1/4 = −1/x + (3/4)/x²','x² − 4x + 3 = 0'],
+ ['Factor and solve.','(x−1)(x−3) = 0','x = 1 or x','= 3'],
+ ['x = 1 is just the original circular orbit (no change), so the physically new farthest distance is the other root.','R = 3R_e','Answer: (B) 3R_e']
+]},
+{id:'GRAV-446',topic:'Ratio of kinetic energies of two satellites of different mass and orbital radius',source:'ExamSIDE · JEE Main 2019 (Online) 12th January Evening Slot · Xqfzqkf5dpp8j6kj0',sourceRef:true,question:'Two satellites A and B have masses m and 2m respectively. A is in a circular orbit of radius R, and B is in a circular orbit of radius 2R around the earth. The ratio of their kinetic energies, T_A/T_B, is',options:['2','1/2','√(1/2)','1'],correct:3,answer:'1',
+short:[['Orbital kinetic energy depends on mass and orbital radius through the standard relation.','T = G·M_e·m_sat/(2r)'],['Write this for both satellites and form the ratio.','T_A/T_B = (m·G·M_e/2R)/(2m·G·M_e/4R)'],['Simplify.','T_A/T_B = 1','Answer: (D) 1']],
+detailed:[
+ ['The kinetic energy of a satellite in circular orbit follows from its orbital speed, which comes from the centripetal-force balance with gravity.','v² = G·M_e/r','T = (1/2)·m_sat·v²','= G·M_e·m_sat/(2r)'],
+ ['Write this expression for satellite A, with mass m and radius R.','T_A = G·M_e·m/(2R)'],
+ ['Write this expression for satellite B, with mass 2m and radius 2R.','T_B = G·M_e·(2m)/(2·2R)','= G·M_e·m/(2R)'],
+ ['Both expressions simplify to the same quantity, so their ratio is exactly 1.','T_A/T_B = (G·M_e·m/(2R))/(G·M_e·m/(2R))'],
+ ['Evaluate.','T_A/T_B = 1','Answer: (D) 1']
+]},
+{id:'GRAV-447',topic:'Altitude at which gravity falls to half its surface value',source:'ExamSIDE · JEE Main 2019 (Online) 10th April Morning Slot · Xqhnddqbbyionrik5',sourceRef:true,question:'The value of acceleration due to gravity at Earth\'s surface is 9.8 m s⁻². The altitude above its surface at which the acceleration due to gravity decreases to 4.9 m s⁻² is close to (Radius of earth = 6.4×10⁶ m)',options:['1.6×10⁶ m','9.0×10⁶ m','6.4×10⁶ m','2.6×10⁶ m'],correct:3,answer:'2.6×10⁶ m',
+short:[['Gravity at height h follows the inverse-square law from Earth\'s centre.','g/(1+h/R)² = g/2'],['Solve for the distance ratio.','1+h/R = √2'],['Substitute R = 6.4×10⁶ m.','h = (√2−1)×6.4×10⁶ m','≈ 2.6×10⁶ m','Answer: (D) 2.6×10⁶ m']],
+detailed:[
+ ['At height h, gravity is reduced from its surface value by the square of the ratio of distances from Earth\'s centre.','g_h = g·(R/(R+h))²'],
+ ['The problem states g_h is exactly half the surface value.','g/2 = g·(R/(R+h))²'],
+ ['Cancel g and take the square root.','(R+h)/R = √2'],
+ ['Solve for h.','h = (√2−1)·R'],
+ ['Substitute R = 6.4×10⁶ m and √2 ≈ 1.414.','h = 0.414×6.4×10⁶ m','h ≈ 2.6×10⁶ m','Answer: (D) 2.6×10⁶ m']
+]},
+{id:'GRAV-448',topic:'Kepler\'s third law comparing orbital periods and radii of two planets',source:'ExamSIDE · JEE Main 2022 (Online) 28th June Morning Shift · Xz2frojwnbpaivww3',sourceRef:true,question:'Two planets A and B of equal mass are revolving in circular orbits of radii r_A and r_B around the Sun, with periods T_A and T_B such that T_A = 2T_B. Which of the following gives the correct relationship between their orbital radii?',options:['2r_A² = r_B³','r_A³ = 2r_B³','r_A³ = 4r_B³','T_A² − T_B² = π²/(G·M)·(r_B³ − 4r_A³)'],correct:2,answer:'r_A³ = 4r_B³',
+short:[['Kepler\'s third law holds with the same constant for every planet orbiting the Sun.','T² ∝ r³'],['Divide the law for planet A by the law for planet B to cancel that constant.','(r_A/r_B)³ = (T_A/T_B)²'],['Substitute T_A = 2T_B.','(T_A/T_B)² = 2²','= 4'],['So the orbital radii satisfy this cubic relation.','r_A³ = 4·r_B³','Answer: (C) r_A³ = 4r_B³']],
+detailed:[
+ ['Both planets orbit the same Sun, so Kepler\'s third law applies to each with the identical constant of proportionality linking period and orbital radius.','T_A² ∝ r_A³','T_B² ∝ r_B³'],
+ ['Dividing one relation by the other cancels that shared constant, leaving the radius ratio tied directly to the period ratio.','(r_A/r_B)³ = (T_A/T_B)²'],
+ ['The problem gives T_A = 2T_B, so the period ratio is 2.','T_A/T_B = 2'],
+ ['Squaring the period ratio gives the value the radius ratio must cube to.','(T_A/T_B)² = 4'],
+ ['Equate this to the radius-ratio cube and clear the ratio to get the relation between the two radii.','(r_A/r_B)³ = 4','r_A³ = 4·r_B³','Answer: (C) r_A³ = 4r_B³']
+]},
+{id:'GRAV-449',topic:'Graph of acceleration due to gravity g versus distance d from earth\'s centre',diagram:'gVsDistanceGraphs',source:'ExamSIDE · JEE Main 2017 (Offline) · Xz2tadzppqdmcvspt',sourceRef:true,question:'The variation of acceleration due to gravity g with distance d from the centre of the earth is best represented by which of the following graphs? (R = earth\'s radius)',options:['g rises in a straight line from the centre but keeps rising past d = R, reaching its peak only beyond the surface, then decreases','g rises along a curve (not a straight line) from the centre to a peak exactly at d = R, then decreases along a similar curve','g rises along a curve from the centre and keeps increasing throughout, with no peak or decrease at all','g rises in a straight line from the centre to a peak exactly at d = R, then decreases smoothly as d increases beyond R'],correct:3,answer:'g rises in a straight line from the centre to a peak exactly at d = R, then decreases smoothly as d increases beyond R',
+short:[['Inside, enclosed mass grows as d³ so g itself grows linearly with d — a straight line.','g = G·M·d/R³ for d ≤ R'],['Outside, g follows the usual inverse-square law.','g = G·M/d² for d ≥ R'],['The two expressions match at d = R, giving one peak exactly at the surface.','g is continuous, maximum at d = R'],['So the correct graph is a straight line up to R then a curved fall beyond it.','Answer: (D)']],
+detailed:[
+ ['Inside the earth, only the mass enclosed within radius d pulls on a point there, and for a uniform sphere that enclosed mass grows as d³ while the inverse-square factor contributes d⁻², so their ratio grows linearly with d.','g(d) = G·M·d/R³ for d ≤ R'],
+ ['This is a straight line through the origin, reaching the surface value exactly at d = R.','g(0) = 0','g(R) = G·M/R²'],
+ ['Outside the earth, the full mass acts as if concentrated at the centre, giving the familiar inverse-square fall-off.','g(d) = G·M/d² for d ≥ R'],
+ ['The two expressions agree at d = R, so the graph is continuous there with a single maximum exactly at the surface, not before or after it.','g is continuous and maximum at d = R'],
+ ['Only one of the four candidate graphs shows a straight-line rise to a peak exactly at R followed by a smooth curved decrease beyond it.','Answer: (D) linear rise to a peak at d = R, then a smooth decrease beyond R']
+]},
+{id:'GRAV-450',topic:'Effective gravity at the equator from earth\'s rotation, matched against gravity at height above the pole',source:'ExamSIDE · JEE Main 2020 (Online) 5th September Evening Slot · Xz66mevjqbdjvxmom',sourceRef:true,question:'The acceleration due to gravity on the earth\'s surface at the poles is g, and the angular velocity of the earth\'s rotation about the polar axis is ω. An object is weighed with a spring balance at the equator, and separately at a height h above the poles. If the two readings come out equal, find h (take h ≪ R, where R is earth\'s radius).',options:['R²ω²/(2g)','R²ω²/g','R²ω²/(8g)','R²ω²/(4g)'],correct:0,answer:'R²ω²/(2g)',
+short:[['At the equator, earth\'s rotation reduces the measured weight by the full centrifugal term.','g_eq = g − ω²R'],['Height above the pole reduces g by the usual variation-with-altitude formula (h ≪ R).','g_h = g(1 − 2h/R)'],['Equate the two readings and solve for h.','g − ω²R = g(1 − 2h/R)'],['Simplify to isolate h.','h = R²ω²/(2g)','Answer: (A) R²ω²/(2g)']],
+detailed:[
+ ['At the equator, the effective gravity is reduced from the true (pole) value by the centrifugal term associated with earth\'s rotation, which is largest at the equator where the full radius R acts.','g_eq = g − ω²R'],
+ ['A height h above the pole (no rotation effect there) reduces gravity by the standard altitude formula, which for h ≪ R can be linearised.','g_h = g(1 − 2h/R)'],
+ ['Equal spring-balance readings mean the two effective values of g are equal.','g − ω²R = g(1 − 2h/R)'],
+ ['Expand the right side and cancel the common g term from both sides.','g − ω²R = g − 2gh/R','−ω²R = −2gh/R'],
+ ['Solve the remaining equation for h.','ω²R = 2gh/R','h = R²ω²/(2g)','Answer: (A) h = R²ω²/(2g)']
+]},
+{id:'GRAV-451',topic:'True/false statements on acceleration due to gravity at different locations and depths',source:'ExamSIDE · JEE Main 2023 (Online) 1st February Morning Shift · Xzamza1nlzcagb98s',sourceRef:true,question:'Given below are two statements:\nStatement I: Acceleration due to gravity is different at different places on the surface of earth.\nStatement II: Acceleration due to gravity increases as we go down below the earth\'s surface.\nIn the light of the above statements, choose the correct answer from the options given below.',options:['Both Statement I and Statement II are true','Both Statement I and Statement II are false','Statement I is false but Statement II is true','Statement I is true but Statement II is false'],correct:3,answer:'Statement I is true but Statement II is false',
+short:[['Statement I: g does vary over earth\'s surface, because of its oblate shape, rotation and density differences.','Statement I — true'],['Statement II claims g increases as we go below the surface, but the depth formula shows the opposite.','g_d = g(1 − d/R) for depth d ≤ R'],['This decreases as d increases, so Statement II is false.','g_d falls with depth','Statement II — false'],['So only Statement I is true.','Answer: (D) Statement I is true but Statement II is false']],
+detailed:[
+ ['Statement I concerns the real variation of g across earth\'s surface, which does occur because earth is an oblate spheroid with an equatorial bulge, rotates (reducing effective g most at the equator), and has non-uniform crustal density.','Statement I is true'],
+ ['Statement II claims g increases with depth below the surface, which must be checked against the standard formula for g at depth d inside a uniform earth.','g_d = g(1 − d/R) for 0 ≤ d ≤ R'],
+ ['This expression is a decreasing linear function of d, falling from the surface value g at d = 0 toward zero at the centre d = R.','dg_d/dd = −g/R < 0'],
+ ['So going deeper below the surface decreases g rather than increasing it, the opposite of what Statement II claims, making it false.','Statement II is false'],
+ ['Combining both results: Statement I is true and Statement II is false.','Answer: (D) Statement I is true but Statement II is false']
+]},
+{id:'GRAV-452',topic:'Factors the orbital period of an earth satellite depends on and is independent of',source:'ExamSIDE · AIEEE 2004 · Xzcbvisxpjculbanl',sourceRef:true,question:'The time period of an earth satellite in a circular orbit is independent of',options:['both the mass and radius of the orbit','radius of its orbit','the mass of the satellite','neither the mass of the satellite nor the radius of its orbit'],correct:2,answer:'the mass of the satellite',
+short:[['Equate gravitational force to the centripetal force requirement for a satellite in circular orbit.','G·M·m/(R+x)² = m·v²/(R+x)'],['The satellite\'s mass m cancels, leaving orbital speed set only by the planet\'s mass and orbital radius.','v² = G·M/(R+x)'],['Period follows from T = 2π(R+x)/v, which also carries no m.','T = 2π√((R+x)³/(G·M))'],['So T depends on orbital radius but not on the satellite\'s own mass.','Answer: (C) the mass of the satellite']],
+detailed:[
+ ['For a satellite moving in a circular orbit, gravity supplies exactly the centripetal force needed to keep it on that path.','G·M·m/(R+x)² = m·v²/(R+x)'],
+ ['The satellite\'s mass m appears on both sides and cancels, so orbital speed depends only on the planet\'s mass M and the orbital radius (R+x).','v² = G·M/(R+x)'],
+ ['The orbital period relates this speed to the circumference of the orbit.','T = 2π(R+x)/v'],
+ ['Substituting v removes both v and m entirely, leaving T in terms of M and the orbital radius only.','T = 2π√((R+x)³/(G·M))'],
+ ['Since m never appears in this expression, the time period is independent of the satellite\'s mass — though it still depends on the orbital radius.','Answer: (C) the mass of the satellite']
+]},
+{id:'GRAV-453',topic:'Escape velocity scaling with a planet\'s mass and radius relative to earth',source:'ExamSIDE · JEE Main 2023 (Online) 13th April Morning Shift · Xzdadovdi20xavl2w',sourceRef:true,question:'A planet has mass 9M_e and radius 4R_e, where M_e and R_e are the mass and radius of the earth. Given earth\'s escape velocity V_e = 11.2 × 10³ m s⁻¹, find the escape velocity of this planet, in km s⁻¹.',options:['33.6','11.2','16.8','67.2'],correct:2,answer:'16.8',
+short:[['Escape velocity scales as the square root of mass over radius.','v_esc ∝ √(R)'],['Form the ratio to earth using the given mass and radius multiples.','v_esc/V_e = √((9M_e/4R_e)/(M_e/R_e))','= √(9/4)','= 3/2'],['Scale earth\'s escape velocity by this factor.','v_esc = 11.2 × 3/2','= 16.8 km s⁻¹','Answer: (C) 16.8']],
+detailed:[
+ ['Escape velocity from a spherical body of mass M and radius R comes from setting total mechanical energy to zero at infinity.','v_esc = √(2·G·M/R)'],
+ ['Writing this for both earth and the planet and dividing eliminates the constants, leaving only the mass and radius ratios.','v_esc/V_e = √((M/M_e)·(R_e/R))'],
+ ['Substitute the given mass and radius multiples, M = 9M_e and R = 4R_e.','v_esc/V_e = √(9/4)','= 3/2'],
+ ['Multiply through by earth\'s escape velocity to get the planet\'s escape velocity.','v_esc = (3/2) × 11.2×10³ m s⁻¹','= 16.8×10³ m s⁻¹'],
+ ['Convert to the requested units.','Answer: (C) 16.8 km s⁻¹']
+]},
+{id:'GRAV-454',topic:'Escape velocity independence from the angle of projection',source:'ExamSIDE · AIEEE 2003 · Xzge0iquzthg5owie',sourceRef:true,question:'The escape velocity for a body projected vertically upward from the surface of the earth is 11 km s⁻¹. If the same body is instead projected at 45° to the vertical, the escape velocity will be',options:['11√2 km s⁻¹','22 km s⁻¹','11 km s⁻¹','11/√2 km s⁻¹'],correct:2,answer:'11 km s⁻¹',
+short:[['Escape velocity comes purely from energy conservation between the surface and infinity, which depends only on speed, not direction.','½v² = G·M/R (escape condition)'],['This condition has no angle dependence.','v_esc independent of projection angle'],['So escape velocity stays the same regardless of the 45° angle.','Answer: (C) 11 km s⁻¹']],
+detailed:[
+ ['Escape velocity is defined by equating the kinetic energy given to a body with the gravitational potential energy it must overcome to just reach infinity with zero residual speed.','½·m·v_esc² = G·M·m/R'],
+ ['This energy balance involves only the magnitude of the launch speed — gravity is a central, conservative force, so the work done against it depends only on distance from the centre, not on the direction of travel.','v_esc = √(2·G·M/R), no angle term'],
+ ['Therefore launching at any angle, including 45° to the vertical, requires exactly the same minimum speed to escape as launching straight up.','v_esc(45°) = v_esc(vertical)'],
+ ['Since the vertical escape velocity is given as 11 km/s, the escape velocity at 45° is unchanged.','Answer: (C) 11 km s⁻¹']
+]},
+{id:'GRAV-455',topic:'Total gravitational potential energy of four corner masses and a central mass in a square arrangement',source:'ExamSIDE · JEE Main 2022 (Online) 27th June Evening Shift · Xzix2ehhsnvu4e4m6',sourceRef:true,question:'Four spheres, each of mass m, are placed at the four corners of a square of side d. A fifth sphere of mass M is placed at the centre of the square. What is the total gravitational potential energy of this five-sphere system?',options:['−(G·m/d)[(4+√2)m + 4√2·M]','−(G·m/d)[(4+√2)M + 4√2·m]','−(G·m/d)[3m² + 4√2·M]','−(G·m/d)[6m² + 4√2·M]'],correct:0,answer:'−(G·m/d)[(4+√2)m + 4√2·M]',
+short:[['List the three distinct pair-distances: adjacent corners (d), diagonal corners (d√2), and each corner to the centre (d/√2).','r_side = d','r_diag = d√2','r_cen = d/√2'],['Sum the PE of the 4 side pairs and 2 diagonal pairs among the corner masses.','PE_mm = −4·G·m²/d − 2·G·m²/(√2·d)','= −(4+√2)·G·m²/d'],['Add the PE of the 4 corner-to-centre pairs.','PE_mM = −4·G·M·m/(d/√2)','= −4√2·G·M·m/d'],['Add the two contributions and factor out G·m/d.','Answer: (A) −(G·m/d)[(4+√2)m + 4√2·M]']],
+detailed:[
+ ['A square of side d has two kinds of corner-to-corner separations: the four sides at distance d, and the two diagonals at distance d√2.','r_side = d','r_diag = d√2'],
+ ['The centre of the square sits at distance d/√2 from every corner (half the diagonal).','r_centre = d/√2'],
+ ['The 6 pairs among the four corner masses split into 4 side-pairs and 2 diagonal-pairs, each contributing a negative PE term.','PE_sides = −4·G·m²/d, PE_diag','= −2·G·m²/(√2·d)','= −√2·G·m²/d'],
+ ['The 4 pairs between a corner mass and the central mass M each contribute as well.','PE_centre = −4·G·M·m/(d/√2)','= −4√2·G·M·m/d'],
+ ['Add all three contributions.','PE_total = −4·G·m²/d − √2·G·m²/d − 4√2·G·M·m/d'],
+ ['Factor the common −G·m/d to get the total gravitational potential energy of the system.','PE_total = −(G·m/d)[(4+√2)m + 4√2·M]','Answer: (A) −(G·m/d)[(4+√2)m + 4√2·M]']
+]},
+{id:'GRAV-456',topic:'Gravitational force on a body at a height equal to twice earth\'s radius above the surface',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · Xzl8tjpklcjwr6xxp',sourceRef:true,question:'A 90 kg body is placed at a distance 2R above the earth\'s surface. What gravitational pull does it experience? (R = earth\'s radius, g = 10 m s⁻²)',options:['300 N','225 N','100 N','120 N'],correct:2,answer:'100 N',
+short:[['Distance from earth\'s centre is surface radius plus height.','r = R + 2R','= 3R'],['Gravity falls off as the inverse square of distance from the centre.','F = m·g/(R)²','= m·g/9'],['Surface weight is m·g, so divide by 9.','m·g = 90×10','= 900 N','F = 900/9','= 100 N','Answer: (C) 100 N']],
+detailed:[
+ ['The body is at a height of 2R above the surface, so its distance from earth\'s centre is the earth\'s radius plus that height.','r = R + 2R','= 3R'],
+ ['Gravitational pull follows the inverse-square law, so the force at distance r compares to the surface force by (r)².','F(r)/F(R) = (r)²','= (R/3R)²','= 1/9'],
+ ['The surface gravitational pull on the body is simply its weight, m·g.','F(R) = m·g','= 90 kg × 10 m s⁻²','= 900 N'],
+ ['Scale this by the inverse-square factor found above.','F(3R) = F(R)/9','= 900/9'],
+ ['This gives the gravitational pull at the given height.','Answer: (C) 100 N']
+]},
+{id:'GRAV-457',topic:'Effect of reducing orbital radius to one-fourth on a planet\'s orbital period',source:'ExamSIDE · JEE Main 2024 (Online) 29th January Evening Shift · Xzrouhqbs6skiz7cp',sourceRef:true,question:'A planet takes 200 days to complete one revolution around the Sun. If its distance from the Sun is reduced to one-fourth of the original value, how many days will it take to complete one revolution?',options:['20','50','100','25'],correct:3,answer:'25',
+short:[['Kepler\'s third law: T² is proportional to r³.','T² ∝ r³'],['New radius is r/4, so new T² scales by (1/4)³.','T_new² = T² × (1/4)³'],['Compute with T = 200 days.','T_new² = 200²/64','= 625','T_new = 25 days','Answer: (D) 25']],
+detailed:[
+ ['Kepler\'s third law links a planet\'s orbital period and its orbital radius through a fixed relation for bodies orbiting the same Sun.','T² ∝ r³'],
+ ['Write this as a ratio between the new and original orbits so the constant of proportionality cancels.','(T_new/T)² = (r_new/r)³'],
+ ['The new orbital radius is one-fourth the original, r_new = r/4.','(r_new/r)³ = (1/4)³','= 1/64'],
+ ['So the new period-squared is 1/64 of the original period-squared.','T_new² = T²/64','= 200²/64','= 40000/64','= 625'],
+ ['Take the square root to get the new period.','T_new = 25','Answer: (D) 25 days']
+]},
+{id:'GRAV-458',topic:'Deriving the height of a satellite above earth\'s surface from its time period',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · Xzujqe6fqg5gna5z5',sourceRef:true,question:'What is the correct formula for the height of a satellite above the earth\'s surface in terms of its time period T, earth\'s radius R, and surface gravity g?',options:['(T²R²g/4π²)^(1/3) − R','√(T²R²g/4π) − R','(T²R²g/4π²)^(−1/3) + R','(T²R²/4π²g)^(1/3) − R'],correct:0,answer:'(T²R²g/4π²)^(1/3) − R',
+short:[['Kepler\'s third law for a circular orbit gives T in terms of orbital radius (R+h).','T = 2π√((R+h)³/(G·M))'],['Cube-root solve for (R+h), then subtract R to get h.','R+h = (G·M·T²/4π²)^(1/3)'],['Replace G·M using g = G·M/R² (so G·M = g·R²).','h = (g·R²·T²/4π²)^(1/3) − R','Answer: (A) (T²R²g/4π²)^(1/3) − R']],
+detailed:[
+ ['For a satellite in circular orbit at distance R+h from the centre, gravity supplies the centripetal force, giving Kepler\'s third law in this form.','T² = 4π²(R+h)³/(G·M)'],
+ ['Solve for the orbital radius by isolating (R+h) and taking a cube root.','(R+h)³ = G·M·T²/4π²','R+h = (G·M·T²/4π²)^(1/3)'],
+ ['Subtract R to get the height above the surface.','h = (G·M·T²/4π²)^(1/3) − R'],
+ ['Replace G·M using the surface-gravity relation g = G·M/R², so G·M = g·R².','G·M = g·R²'],
+ ['Substitute this in to express h entirely in terms of T, R and g.','h = (g·R²·T²/4π²)^(1/3) − R','Answer: (A) (T²R²g/4π²)^(1/3) − R']
+]},
+{id:'GRAV-459',topic:'Escape velocity scaling with a planet\'s density and radius',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · Xzun54rtyr3bbggbt',sourceRef:true,question:'The escape velocity from a spherical planet A is 10 km s⁻¹. Planet B has density and radius that are each 10% of planet A\'s. What is the escape velocity from planet B, in m s⁻¹?',options:['1000','200√5','1000√2','100√10'],correct:3,answer:'100√10',
+short:[['Write escape velocity in terms of density by substituting M = (4/3)πR³ρ.','v_e ∝ R√ρ'],['Scale by the given 10% factors for radius and density.','v_eB/v_eA = 0.1 × √0.1','= 1/(10√10)'],['Apply to v_eA = 10000 m s⁻¹.','v_eB = 10000/(10√10)','= 1000/√10','= 100√10 m s⁻¹','Answer: (D) 100√10']],
+detailed:[
+ ['Start from the usual escape-velocity formula and substitute the planet\'s mass in terms of its density and radius.','v_e = √(2·G·M/R)','M = (4/3)π·R³·ρ'],
+ ['Substituting gives escape velocity purely in terms of radius and density.','v_e = R·√((8/3)π·G·ρ)','v_e ∝ R√ρ'],
+ ['Planet B has radius and density both 10% of planet A\'s values.','R_B = 0.1·R_A','ρ_B = 0.1·ρ_A'],
+ ['Form the ratio of escape velocities using the proportionality above.','v_eB/v_eA = (R_B/R_A)·√(ρ_B/ρ_A)','= 0.1×√0.1'],
+ ['Simplify the numeric factor.','v_eB/v_eA = 1/(10√10)'],
+ ['Scale planet A\'s escape velocity (10 km/s = 10000 m/s) by this factor.','v_eB = 10000/(10√10)','= 1000/√10','= 100√10 m s⁻¹','Answer: (D) 100√10 m s⁻¹']
 ]}
 ];
 if(typeof module!=='undefined')module.exports=questions;
@@ -4370,7 +4818,53 @@ const pilotTopicMap={
  'Minimum escape speed from the midpoint of a binary star system':['escape-velocity','Minimum escape speed from the midpoint of a binary star system'],
  'Change in surface gravity when Earth\'s diameter is cut to one third at constant mass':['g-variation','Change in surface gravity when Earth\'s diameter is cut to one third at constant mass'],
  'Which orbital quantity is independent of a satellite\'s own mass':['satellites','Which orbital quantity is independent of a satellite\'s own mass'],
- 'Orbital speed of two equal masses orbiting their common centre under mutual gravity':['newtons-law','Orbital speed of two equal masses orbiting their common centre under mutual gravity']
+ 'Orbital speed of two equal masses orbiting their common centre under mutual gravity':['newtons-law','Orbital speed of two equal masses orbiting their common centre under mutual gravity'],
+ 'Maximum height reached by a body launched with a fraction of escape velocity':['escape-velocity','Maximum height reached by a body launched with a fraction of escape velocity'],
+ 'Orbital period relation for a mass density that falls as 1/r²':['keplers-laws','Orbital period relation for a mass density that falls as 1/r²'],
+ 'Time period of a pendulum at a height equal to Earth\'s radius':['g-variation','Time period of a pendulum at a height equal to Earth\'s radius'],
+ 'Binary star system — equal orbital periods about the common centre of mass':['keplers-laws','Binary star system — equal orbital periods about the common centre of mass'],
+ 'Minimum increase in orbital speed for a near-surface satellite to escape':['escape-velocity','Minimum increase in orbital speed for a near-surface satellite to escape'],
+ 'Energy needed to launch a spaceship from Earth\'s surface to free space':['gravitational-potential-energy','Energy needed to launch a spaceship from Earth\'s surface to free space'],
+ 'Average density of the earth expressed in terms of g':['newtons-law','Average density of the earth expressed in terms of g'],
+ 'True statements about planetary motion — inverse-square force and Kepler\'s third law':['keplers-laws','True statements about planetary motion — inverse-square force and Kepler\'s third law'],
+ 'Effect of Earth\'s rotation on g at the equator versus the poles':['g-variation','Effect of Earth\'s rotation on g at the equator versus the poles'],
+ 'New orbital period after reducing a satellite\'s orbital radius to one quarter':['keplers-laws','New orbital period after reducing a satellite\'s orbital radius to one quarter'],
+ 'Generalized Kepler\'s third law when the force varies as R^(−3/2)':['keplers-laws','Generalized Kepler\'s third law when the force varies as R^(−3/2)'],
+ 'Radius Earth must be compressed to so escape velocity increases tenfold':['escape-velocity','Radius Earth must be compressed to so escape velocity increases tenfold'],
+ 'Length of a second\'s pendulum at a height of 2R above the surface':['g-variation','Length of a second\'s pendulum at a height of 2R above the surface'],
+ 'Satellite period scaling when orbital radius increases ninefold':['keplers-laws','Satellite period scaling when orbital radius increases ninefold'],
+ 'Height above the surface where weight equals the weight at an equal depth':['g-variation','Height above the surface where weight equals the weight at an equal depth'],
+ 'Satellite period scaling when separation increases fourfold':['keplers-laws','Satellite period scaling when separation increases fourfold'],
+ 'Weight on a planet with double Earth\'s mass and equal density':['newtons-law','Weight on a planet with double Earth\'s mass and equal density'],
+ 'Height above Earth\'s surface where weight drops to one-third':['g-variation','Height above Earth\'s surface where weight drops to one-third'],
+ 'Orbital speed of four masses mutually orbiting on a circle circumscribing a square':['satellites','Orbital speed of four masses mutually orbiting on a circle circumscribing a square'],
+ 'Kinetic energy of a satellite in a known circular orbit':['satellites','Kinetic energy of a satellite in a known circular orbit'],
+ 'Side length of a square from the net gravitational force on one corner mass':['newtons-law','Side length of a square from the net gravitational force on one corner mass'],
+ 'Increase in gravitational potential energy when raised to twice Earth\'s radius':['gravitational-potential-energy','Increase in gravitational potential energy when raised to twice Earth\'s radius'],
+ 'Assertion-Reason — kinetic energy needed to escape Earth\'s gravity':['escape-velocity','Assertion-Reason — kinetic energy needed to escape Earth\'s gravity'],
+ 'Impact speed of an asteroid falling from 10 Earth-radii, given escape velocity':['gravitational-potential-energy','Impact speed of an asteroid falling from 10 Earth-radii, given escape velocity'],
+ 'Gravitational potential at the null point between two unequal masses':['gravitational-potential-energy','Gravitational potential at the null point between two unequal masses'],
+ 'Additional velocity needed to go from a near-surface orbit to escape':['escape-velocity','Additional velocity needed to go from a near-surface orbit to escape'],
+ 'Ratio of surface gravities from density and radius ratios':['g-variation','Ratio of surface gravities from density and radius ratios'],
+ 'Ratio of orbital speeds for satellites at different orbital radii':['satellites','Ratio of orbital speeds for satellites at different orbital radii'],
+ 'Length of a seconds pendulum at a height of two Earth radii':['g-variation','Length of a seconds pendulum at a height of two Earth radii'],
+ 'Orbital speed of four equal masses mutually orbiting on a common circle':['satellites','Orbital speed of four equal masses mutually orbiting on a common circle'],
+ 'Variation of g with distance from Earth\'s centre — graph identification':['g-variation','Variation of g with distance from Earth\'s centre — graph identification'],
+ 'Farthest distance reached after a tangential speed boost in a near-surface orbit':['satellites','Farthest distance reached after a tangential speed boost in a near-surface orbit'],
+ 'Ratio of kinetic energies of two satellites of different mass and orbital radius':['satellites','Ratio of kinetic energies of two satellites of different mass and orbital radius'],
+ 'Altitude at which gravity falls to half its surface value':['g-variation','Altitude at which gravity falls to half its surface value'],
+ 'Kepler\'s third law comparing orbital periods and radii of two planets':['keplers-laws','Kepler\'s third law comparing orbital periods and radii of two planets'],
+ 'Graph of acceleration due to gravity g versus distance d from earth\'s centre':['g-variation','Graph of acceleration due to gravity g versus distance d from earth\'s centre'],
+ 'Effective gravity at the equator from earth\'s rotation, matched against gravity at height above the pole':['g-variation','Effective gravity at the equator from earth\'s rotation, matched against gravity at height above the pole'],
+ 'True/false statements on acceleration due to gravity at different locations and depths':['g-variation','True/false statements on acceleration due to gravity at different locations and depths'],
+ 'Factors the orbital period of an earth satellite depends on and is independent of':['satellites','Factors the orbital period of an earth satellite depends on and is independent of'],
+ 'Escape velocity scaling with a planet\'s mass and radius relative to earth':['escape-velocity','Escape velocity scaling with a planet\'s mass and radius relative to earth'],
+ 'Escape velocity independence from the angle of projection':['escape-velocity','Escape velocity independence from the angle of projection'],
+ 'Total gravitational potential energy of four corner masses and a central mass in a square arrangement':['gravitational-potential-energy','Total gravitational potential energy of four corner masses and a central mass in a square arrangement'],
+ 'Gravitational force on a body at a height equal to twice earth\'s radius above the surface':['g-variation','Gravitational force on a body at a height equal to twice earth\'s radius above the surface'],
+ 'Effect of reducing orbital radius to one-fourth on a planet\'s orbital period':['keplers-laws','Effect of reducing orbital radius to one-fourth on a planet\'s orbital period'],
+ 'Deriving the height of a satellite above earth\'s surface from its time period':['satellites','Deriving the height of a satellite above earth\'s surface from its time period'],
+ 'Escape velocity scaling with a planet\'s density and radius':['escape-velocity','Escape velocity scaling with a planet\'s density and radius']
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const coreIds=questions.filter(q=>!q.parent).map(q=>q.id),families=[];
