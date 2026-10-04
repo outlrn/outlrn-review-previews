@@ -3464,6 +3464,319 @@ const questions=[
  [`The length of such an average can never exceed the longest vector being averaged.`,`|r| ≤ R`],
  [`It equals R only when every particle sits at the same point, and it is zero only for a symmetric arrangement, so neither of those is forced.`,`≤ R, not necessarily either extreme`],
  [`Correct answer`,`(D)`]
+]},
+{id:'COM-94',level:3,
+ title:'Momentum ratio from the distance covered in one second',
+ topic:'Relating momentum to kinetic energy',
+ source:'ExamSide · JEE Main 2026 (Online) 8th April Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-masses-of-34-kg-and-25-kg-are-accelerated-from-an-i-jee-main-physics-units-and-measurements-jsrwfnfsvrat4ius',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2026 (Online) 8th April Evening Shift',questionNumber:'ExamSide #000',printedAnswer:'9',verifiedAnswer:'9'},
+ question:`Two masses of 3.4 kg and 2.5 kg are accelerated from an initial speed of 5 m/s and 12 m/s respectively. The distances traversed by the masses in the 5th second are 104 m and 129 m respectively. The ratio of their momenta after 10 s is x/8. The value of x is`,
+ type:'numerical',
+ answer:9,
+ diagram:'',
+ noDiagramReason:'Two bodies accelerating along a line; everything needed is in the numbers and there is no configuration to draw.',
+ short:[
+ [`The distance covered in the nth second is not the distance in n seconds; it has its own formula.`,`sₙ = u + ${fraction('a(2n − 1)','2')}`],
+ [`Put n = 5 for the first mass.`,`104 = 5 + 4.5a₁ ⇒ a₁ = 22 m/s²`],
+ [`And for the second.`,`129 = 12 + 4.5a₂ ⇒ a₂ = 26 m/s²`],
+ [`Now the velocities after 10 s.`,`v₁ = 5 + 220 = 225 m/s, v₂ = 12 + 260 = 272 m/s`],
+ [`Form the two momenta.`,`p₁ = 3.4 × 225 = 765, p₂ = 2.5 × 272 = 680`],
+ [`Take the ratio and put it over 8.`,`${fraction('765','680')} = ${fraction('9','8')}`],
+ [`Correct answer`,`9`]
+]},
+{id:'COM-95',level:3,
+ title:'Centre of mass of a stepped metal plate',
+ topic:'Centre of mass of a composite body made of plates',
+ source:'ExamSide · JEE Main 2024 (Online) 8th April Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-uniform-thin-metal-plate-of-mass-10-mathrmkg-wi-jee-main-physics-motion-deig1oqvb9n3vhq9',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 8th April Morning Shift',questionNumber:'ExamSide #001',printedAnswer:'15',verifiedAnswer:'15'},
+ question:`A uniform thin metal plate of mass 10 kg with the dimensions shown is bounded by the points (0, 0), (3, 0), (3, 2), (2, 2), (2, 1), (1, 1), (1, 2) and (0, 2). The ratio of the x and y coordinates of the centre of mass of the plate is n to 9. The value of n is`,
+ type:'numerical',
+ answer:15,
+ diagram:'stepped-plate',
+ short:[
+ [`Cut the plate into pieces whose centres are obvious: a base strip and the two raised squares.`,`base 3 by 1, two squares 1 by 1`],
+ [`Areas stand in for mass, since the plate is uniform.`,`A = 3 + 1 + 1 = 5`],
+ [`Average the x coordinates of the three centres by area.`,`x = ${fraction('3(1.5) + 1(0.5) + 1(2.5)','5')} = 1.5`],
+ [`Now the y coordinates.`,`y = ${fraction('3(0.5) + 1(1.5) + 1(1.5)','5')} = 0.9`],
+ [`Form the ratio and put it over 9.`,`${fraction('1.5','0.9')} = ${fraction('5','3')} = ${fraction('15','9')}`],
+ [`Correct answer`,`15`]
+]},
+{id:'COM-96',level:1,
+ title:'Centre of mass of three spheres on a right angle',
+ topic:'Centre of mass of masses placed at the corners of a figure',
+ source:'ExamSide · JEE Main 2024 (Online) 1st February Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/the-identical-spheres-each-of-mass-2-mathrmm-are-placed-jee-main-physics-oxnblisowkxrnnu9',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 1st February Morning Shift',questionNumber:'ExamSide #003',printedAnswer:'3',verifiedAnswer:'3'},
+ question:`Three identical spheres each of mass 2M are placed at the corners of a right angled triangle with mutually perpendicular sides equal to 4 m each. Taking the point of intersection of these two sides as origin, the magnitude of the position vector of the centre of mass of the system is 4√2 divided by x, where the value of x is`,
+ type:'numerical',
+ answer:3,
+ diagram:'',
+ noDiagramReason:'Three equal masses on two perpendicular sides of given length; placing them on axes is the whole of the work.',
+ short:[
+ [`Put the right angle at the origin and the two equal sides along the axes.`,`(0, 0), (4, 0), (0, 4)`],
+ [`The masses are all equal, so the centre of mass is the plain average of the three positions.`,`x = ${fraction('0 + 4 + 0','3')} = ${fraction('4','3')}`],
+ [`By the symmetry of the arrangement the other coordinate is the same.`,`y = ${fraction('4','3')}`],
+ [`Take the magnitude.`,`r = ${fraction('4','3')}√2 = ${fraction('4√2','3')}`],
+ [`Correct answer`,`3`]
+]},
+{id:'COM-97',level:3,
+ title:'Where an elastic bounce off an incline buys the most time',
+ topic:'Elastic bounce from a plate and the flight that follows',
+ source:'ExamSide · JEE Main 2024 (Online) 31st January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-starts-falling-freely-from-height-h-hits-an-in-jee-main-physics-motion-r0fjmwgbowzuxv2i',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 31st January Morning Shift',questionNumber:'ExamSide #005',printedAnswer:'2',verifiedAnswer:'2'},
+ question:`A body starts falling freely from height H and hits an inclined plane in its path at height h. As a result of this perfectly elastic impact the direction of the velocity of the body becomes horizontal. The value of H/h for which the body will take the maximum time to reach the ground is`,
+ type:'numerical',
+ answer:2,
+ diagram:'',
+ noDiagramReason:'The incline only turns the velocity horizontal, which the statement says outright; the drawing would not show the height h that the answer turns on.',
+ short:[
+ [`The body falls freely through H − h before the impact, which takes the usual time.`,`t₁ = √(${fraction('2(H − h)','g')})`],
+ [`After the bounce the velocity is horizontal, so the remaining fall from height h is a fresh drop from rest.`,`t₂ = √(${fraction('2h','g')})`],
+ [`The total time is the sum, with the common factor taken out.`,`T = √(${fraction('2','g')})(√(H − h) + √h)`],
+ [`Maximise the bracket over h with H fixed. The two square roots are symmetric, so the maximum sits where they are equal.`,`√(H − h) = √h`],
+ [``,`H = 2h ⇒ ${fraction('H','h')} = 2`],
+ [`Correct answer`,`2`]
+]},
+{id:'COM-98',level:1,
+ title:'Energy gained when momentum rises by half',
+ topic:'Relating momentum to kinetic energy',
+ source:'ExamSide · JEE Main 2023 (Online) 8th April Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pthe-momentum-of-a-body-is-increased-by-50--the-per-jee-main-physics-motion-q4jaehuvgqci8xmq',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 8th April Morning Shift',questionNumber:'ExamSide #006',printedAnswer:'125',verifiedAnswer:'125'},
+ question:`The momentum of a body is increased by 50%. The percentage increase in the kinetic energy of the body is`,
+ type:'numerical',
+ answer:125,
+ diagram:'',
+ noDiagramReason:'A single body and one relation between two scalars; there is nothing to draw.',
+ short:[
+ [`Write the kinetic energy through the momentum, since it is the momentum that is given.`,`K = ${fraction('p²','2m')}`],
+ [`Increasing p by half multiplies it by 1.5, and the energy goes as the square.`,`p′ = 1.5p ⇒ K′ = 2.25K`],
+ [`The increase is what is above the original, not the new total.`,`ΔK = 2.25K − K = 1.25K`],
+ [``,`increase = 125 per cent`],
+ [`Correct answer`,`125`]
+]},
+{id:'COM-99',level:1,
+ title:'Rebound height from the coefficient of restitution',
+ topic:'Restitution from heights and repeated bounces',
+ source:'ExamSide · JEE Main 2023 (Online) 31st January Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-ball-is-dropped-from-a-height-of-20-mathrmm-if-the-jee-main-physics-9losaifcgm7kt9nk',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 31st January Evening Shift',questionNumber:'ExamSide #007',printedAnswer:'5',verifiedAnswer:'5'},
+ question:`A ball is dropped from a height of 20 m. If the coefficient of restitution for the collision between ball and floor is 0.5, after hitting the floor the ball rebounds to a height of ____ m.`,
+ type:'numerical',
+ answer:5,
+ diagram:'',
+ noDiagramReason:'A ball bouncing on the floor; the relation between the two heights carries everything.',
+ short:[
+ [`The floor does not move, so the ball leaves at e times the speed it arrived with.`,`v′ = e v`],
+ [`Height depends on the square of the speed, so the height is multiplied by e squared, not by e.`,`h′ = e²h`],
+ [``,`h′ = (0.5)² × 20`],
+ [``,`h′ = 5 m`],
+ [`Correct answer`,`5`]
+]},
+{id:'COM-100',level:2,
+ title:'Initial speed recovered from the rebound of the lighter body',
+ topic:'What an elastic collision does to the two velocities',
+ source:'ExamSide · JEE Main 2023 (Online) 25th January Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-1-kg-collides-head-on-elastically-with-a-s-jee-main-physics-motion-4l4tcul9urawakwx',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 25th January Evening Shift',questionNumber:'ExamSide #008',printedAnswer:'4',verifiedAnswer:'4'},
+ question:`A body of mass 1 kg collides head on elastically with a stationary body of mass 3 kg. After collision, the smaller body reverses its direction of motion and moves with a speed of 2 m/s. The initial speed of the smaller body before collision is ____ m s⁻¹.`,
+ type:'numerical',
+ answer:4,
+ diagram:'',
+ noDiagramReason:'A head-on collision on one line; the standard result carries it.',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the striker keeps this fraction of its velocity.`,`v₁ = ${fraction('(m₁ − m₂)u','m₁ + m₂')}`],
+ [`Put the two masses in. The bracket is negative, which is why the body comes back.`,`v₁ = ${fraction('(1 − 3)u','4')} = −${fraction('u','2')}`],
+ [`Its speed afterwards is given as 2 m/s.`,`${fraction('u','2')} = 2`],
+ [``,`u = 4 m s⁻¹`],
+ [`Correct answer`,`4`]
+]},
+{id:'COM-101',level:3,
+ title:'Centre of mass of a rod whose density falls off quadratically',
+ topic:'Centre of mass by integration along a wire or rod',
+ source:'ExamSide · JEE Main 2022 (Online) 28th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pthe-distance-of-centre-of-mass-from-end-a-of-a-one-dimens-jee-main-physics-motion-ersginwtkeqthlh5',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 28th July Evening Shift',questionNumber:'ExamSide #009',printedAnswer:'8',verifiedAnswer:'8'},
+ question:`The distance of the centre of mass from end A of a one dimensional rod AB having mass density ρ = ρ₀(1 − x²/L²) kg/m and length L, in metres, is 3L/α m. The value of α is ____ , where x is the distance from end A.`,
+ type:'numerical',
+ answer:8,
+ diagram:'',
+ noDiagramReason:'A straight rod with a density that varies along it; a drawing cannot show the density, which is the only thing that matters.',
+ short:[
+ [`Take an element at distance x from A; its mass is the density there times its length.`,`dm = ρ₀(1 − ${fraction('x²','L²')}) dx`],
+ [`Integrate to get the total mass.`,`M = ρ₀(L − ${fraction('L','3')}) = ${fraction('2ρ₀L','3')}`],
+ [`Now the first moment about A.`,`∫x dm = ρ₀(${fraction('L²','2')} − ${fraction('L²','4')}) = ${fraction('ρ₀L²','4')}`],
+ [`Divide one by the other; ρ₀ cancels.`,`x = ${fraction('ρ₀L²','4')} ÷ ${fraction('2ρ₀L','3')}`],
+ [``,`x = ${fraction('3L','8')}`],
+ [`The answer sits nearer A than the midpoint, as it must when the rod thins towards B.`,`α = 8`],
+ [`Correct answer`,`8`]
+]},
+{id:'COM-96-A',parent:'COM-96',variant:1,
+ relevance:{parent:'COM-96',sharedSkill:'Averaging three equal masses placed on two perpendicular sides',recoveryPurpose:'direct retry'},
+ topic:'Centre of mass of masses placed at the corners of a figure',
+ source:'ExamSide · JEE Main 2022 (Online) 25th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pthree-identical-spheres-each-of-mass-m-are-placed-at-the-jee-main-physics-motion-wqksav07pmgriwyw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 25th July Evening Shift',questionNumber:'ExamSide #010',printedAnswer:'2',verifiedAnswer:'2'},
+ question:`Three identical spheres each of mass M are placed at the corners of a right angled triangle with mutually perpendicular sides equal to 3 m each. Taking the point of intersection of the mutually perpendicular sides as origin, the magnitude of the position vector of the centre of mass of the system will be √x m. The value of x is`,
+ type:'numerical',
+ answer:2,
+ diagram:'',
+ short:[
+ [`Put the right angle at the origin with the equal sides along the axes.`,`(0, 0), (3, 0), (0, 3)`],
+ [`Equal masses, so average the positions plainly.`,`x = ${fraction('0 + 3 + 0','3')} = 1, y = 1`],
+ [`Take the magnitude.`,`r = √(1² + 1²) = √2`],
+ [`Correct answer`,`2`]
+]},
+{id:'COM-102',level:1,
+ title:'Speed of a runner who lands on a stationary trolley',
+ topic:'A body leaving or joining a moving carrier',
+ source:'ExamSide · JEE Main 2022 (Online) 28th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-man-of-60-kg-is-running-on-the-road-and-suddenly-jumps-jee-main-physics-motion-d4gcgvdmvxa91shk',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 28th June Morning Shift',questionNumber:'ExamSide #011',printedAnswer:'6',verifiedAnswer:'6'},
+ question:`A man of 60 kg is running on the road and suddenly jumps into a stationary trolley car of mass 120 kg. Then, the trolley car starts moving with velocity 2 m s⁻¹. The velocity of the running man was ____ m s⁻¹ when he jumps into the car.`,
+ type:'numerical',
+ answer:6,
+ diagram:'',
+ noDiagramReason:'A man and a trolley on one line; momentum conservation across the jump is the whole of it.',
+ short:[
+ [`Nothing pushes the pair along the road, so the horizontal momentum is the same before and after.`,`m v = (m + M)v′`],
+ [`The man alone was moving beforehand; afterwards they move together.`,`60 v = (60 + 120)(2)`],
+ [``,`60 v = 360`],
+ [``,`v = 6 m s⁻¹`],
+ [`Correct answer`,`6`]
+]},
+{id:'COM-103',level:1,
+ title:'Impulse on a ball hit straight back',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2022 (Online) 26th June Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-batsman-hits-back-a-ball-of-mass-04-kg-straight-in-the-jee-main-physics-motion-vhgbxtvtgtxmhlfo',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 26th June Evening Shift',questionNumber:'ExamSide #012',printedAnswer:'12',verifiedAnswer:'12'},
+ question:`A batsman hits back a ball of mass 0.4 kg straight in the direction of the bowler without changing its initial speed of 15 m s⁻¹. The impulse imparted to the ball is ____ N s.`,
+ type:'numerical',
+ answer:12,
+ diagram:'',
+ noDiagramReason:'A ball reversed along one line; the whole question is the change in a vector, which a drawing would only restate.',
+ short:[
+ [`Take the incoming direction as positive. The ball arrives with this momentum.`,`p = 0.4 × 15 = 6 kg m s⁻¹`],
+ [`It goes straight back at the same speed, so its momentum is now the same size the other way.`,`p′ = −6 kg m s⁻¹`],
+ [`Impulse is the change in momentum, and the two contributions add because the ball reversed.`,`J = −6 − 6 = −12`],
+ [``,`|J| = 12 N s`],
+ [`Correct answer`,`12`]
+]},
+{id:'COM-104',level:3,
+ title:'Bullet speed that just sends a pendulum bob round a circle',
+ topic:'A ballistic pendulum: capture then rise',
+ source:'ExamSide · JEE Main 2021 (Online) 27th August Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-bullet-of-10-g-moving-with-velocity-v-collides-head-on-w-jee-main-physics-units-and-measurements-dlqnxrkig6fbprnb',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 27th August Evening Shift',questionNumber:'ExamSide #013',printedAnswer:'400',verifiedAnswer:'400'},
+ question:`A bullet of 10 g, moving with velocity v, collides head-on with the stationary bob of a pendulum and recoils with velocity 100 m/s. The length of the pendulum is 0.5 m and the mass of the bob is 1 kg. The minimum value of v so that the pendulum describes a circle is ____ m/s. Assume the string to be inextensible and g = 10 m/s².`,
+ type:'numerical',
+ answer:400,
+ diagram:'bullet-bob-recoil',
+ short:[
+ [`For a bob on a string to get right round a vertical circle it needs at least this speed at the lowest point.`,`u = √(5gL)`],
+ [`Put the length and g in.`,`u = √(5 × 10 × 0.5) = 5 m/s`],
+ [`Now conserve momentum across the impact, taking the bullet's original direction as positive. The bullet recoils, so its velocity afterwards is negative.`,`0.01 v = 0.01(−100) + 1(5)`],
+ [``,`0.01 v = −1 + 5 = 4`],
+ [``,`v = 400 m/s`],
+ [`Correct answer`,`400`]
+]},
+{id:'COM-105',level:3,
+ title:'Speed of the centre of mass from what the striker keeps',
+ topic:'Velocity of the centre of mass of a two-body system',
+ source:'ExamSide · JEE Main 2021 (Online) 25th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-body-of-mass-2-kg-moving-with-a-speed-of-4-ms-makes-an-e-jee-main-physics-units-and-measurements-vzqjou2u83spkngw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 25th July Morning Shift',questionNumber:'ExamSide #014',printedAnswer:'25',verifiedAnswer:'25'},
+ question:`A body of mass 2 kg moving with a speed of 4 m/s makes an elastic collision with another body at rest and continues to move in the original direction but with one fourth of its initial speed. The speed of the two body centre of mass is x/10 m/s. Then the value of x is`,
+ type:'numerical',
+ answer:25,
+ diagram:'',
+ noDiagramReason:'A head-on collision on one line; the target mass is recovered from the standard result and the rest is one average.',
+ short:[
+ [`The striker keeps a quarter of its speed, still forwards, so use the standard elastic result to find the target mass.`,`${fraction('m₁ − m₂','m₁ + m₂')} = ${fraction('1','4')}`],
+ [`Cross-multiply with m₁ = 2 kg.`,`4(2 − m₂) = 2 + m₂ ⇒ m₂ = 1.2 kg`],
+ [`The centre of mass moves with the total momentum over the total mass, and only the striker was moving at first.`,`V = ${fraction('2 × 4','2 + 1.2')}`],
+ [``,`V = ${fraction('8','3.2')} = 2.5 m/s`],
+ [`Put it over ten as the question asks.`,`V = ${fraction('25','10')}`],
+ [`Correct answer`,`25`]
+]},
+{id:'COM-106',level:2,
+ title:'Centre of mass of a semicircular wire',
+ topic:'Centre of mass by integration along a wire or rod',
+ source:'ExamSide · JEE Main 2021 (Online) 22th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/the-position-of-the-centre-of-mass-of-a-uniform-semi-circula-jee-main-physics-units-and-measurements-q1sp2ezwm7wryqaf',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 22th July Evening Shift',questionNumber:'ExamSide #015',printedAnswer:'2',verifiedAnswer:'2'},
+ question:`The position of the centre of mass of a uniform semi-circular wire of radius R placed in the x-y plane with its centre at the origin and the line joining its ends as the x-axis is given by (0, xR/π). Then the value of |x| is`,
+ type:'numerical',
+ answer:2,
+ diagram:'',
+ noDiagramReason:'A semicircular wire with its ends on the x-axis; the standard integral gives the answer and a sketch adds nothing to it.',
+ short:[
+ [`The wire is uniform, so take an element subtending dθ at the centre and integrate around the half turn.`,`dm = ${fraction('M','π')} dθ`],
+ [`The wire is symmetric about the y-axis, so the x coordinate vanishes without any work.`,`x = 0`],
+ [`Average y = R sin θ over θ from 0 to π.`,`y = ${fraction('1','π')} ∫ R sin θ dθ`],
+ [`The integral of sin θ over that range is two.`,`y = ${fraction('2R','π')}`],
+ [`Correct answer`,`2`]
+]},
+{id:'COM-107',level:3,
+ title:'Mass ratio that leaves the striker at rest after hitting a rod',
+ topic:'An inextensible string jerking taut between two particles',
+ source:'ExamSide · JEE Main 2021 (Online) 20th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-rod-of-mass-m-and-length-l-is-lying-on-a-horizontal-fricti-jee-main-physics-units-and-measurements-ujeyp7iojbcnceuw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 20th July Morning Shift',questionNumber:'ExamSide #016',printedAnswer:'4',verifiedAnswer:'4'},
+ question:`A rod of mass M and length L is lying on a horizontal frictionless surface. A particle of mass m travelling along the surface hits at one end of the rod with a velocity u in a direction perpendicular to the rod. The collision is completely elastic. After collision, the particle comes to rest. The ratio of masses m to M is 1 to x. The value of x will be`,
+ type:'numerical',
+ answer:4,
+ diagram:'',
+ noDiagramReason:'A rod struck at one end on a smooth surface; the drawing would show a rod and an arrow, while the work is the three conservation statements.',
+ short:[
+ [`The particle stops, so the rod must take all the momentum.`,`mu = M V`],
+ [`It also takes all the angular momentum about the rod's centre, delivered at a distance of half the length.`,`mu${fraction('L','2')} = ${fraction('ML²','12')} ω`],
+ [``,`ω = ${fraction('6mu','ML')}`],
+ [`The collision is elastic, so the rod's translation and rotation together carry the whole of the original energy.`,`${fraction('1','2')}mu² = ${fraction('1','2')}MV² + ${fraction('1','2')}Iω²`],
+ [`Substitute both results; the right-hand side collects to twice the first term.`,`${fraction('1','2')}mu² = ${fraction('2m²u²','M')}`],
+ [``,`${fraction('m','M')} = ${fraction('1','4')}`],
+ [`Correct answer`,`4`]
+]},
+{id:'COM-108',level:3,
+ title:'Momentum change over a symmetric projectile flight',
+ topic:'Total momentum changing only through the external force',
+ source:'ExamSide · JEE Main 2021 (Online) 18th March Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/the-projectile-motion-of-a-particle-of-mass-5-g-is-shown-in-jee-main-physics-units-and-measurements-x0wgmdej4wins6iu',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 18th March Evening Shift',questionNumber:'ExamSide #017',printedAnswer:'5',verifiedAnswer:'5'},
+ question:`The projectile motion of a particle of mass 5 g is shown in the figure, launched at 45° from A and landing at 45° at B. The initial velocity of the particle is 5√2 m s⁻¹ and the air resistance is assumed to be negligible. The magnitude of the change in momentum between the points A and B is x × 10⁻² kg m s⁻¹. The value of x, to the nearest integer, is`,
+ type:'numerical',
+ answer:5,
+ diagram:'projectile-A-to-B',
+ short:[
+ [`Resolve the launch velocity. At 45° the two components are equal.`,`vₓ = 5 m/s, v vertical = 5 m/s upward`],
+ [`At B the particle is back at the launch height, so the horizontal component is untouched and the vertical one is reversed.`,`vₓ = 5 m/s, v vertical = 5 m/s downward`],
+ [`Only the vertical part has changed, and it has reversed, so the change is twice its size.`,`Δv = 10 m/s downward`],
+ [`Multiply by the mass in kilograms.`,`Δp = 0.005 × 10 = 0.05 kg m s⁻¹`],
+ [``,`Δp = 5 × 10⁻² kg m s⁻¹`],
+ [`Correct answer`,`5`]
+]},
+{id:'COM-109',level:3,
+ title:'Speed of the second fragment after a collision and a break-up',
+ topic:'Energy released in an explosion from the fragment momenta',
+ source:'ExamSide · JEE Main 2021 (Online) 18th March Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-ball-of-mass-10-kg-moving-with-a-velocity-10sqrt-3--m-jee-main-physics-units-and-measurements-sgssubnr23dbnjhf',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 18th March Morning Shift',questionNumber:'ExamSide #018',printedAnswer:'20',verifiedAnswer:'20'},
+ question:`A ball of mass 10 kg moving with a velocity 10√3 m/s along the x-axis hits another ball of mass 20 kg which is at rest. After the collision, the first ball comes to rest while the second ball disintegrates into two equal pieces. One piece starts moving along the y-axis with a speed of 10 m/s. The second piece starts moving at an angle of 30° with respect to the x-axis. The velocity of the ball moving at 30° with the x-axis is x m/s. The value of x to the nearest integer is`,
+ type:'numerical',
+ answer:20,
+ diagram:'two-pieces-30-deg',
+ short:[
+ [`The first ball stops, so all the momentum it brought is now shared by the two pieces.`,`p = 10 × 10√3 = 100√3 kg m/s along x`],
+ [`The 20 kg ball splits equally, so each piece is 10 kg. Balance the components along x; only the second piece has any.`,`100√3 = 10 v cos 30°`],
+ [`The cosine of 30 degrees is half of root three, so the root threes cancel.`,`100√3 = 10 v × ${fraction('√3','2')}`],
+ [``,`v = 20 m/s`],
+ [`Check it against y, where nothing moved before: the first piece goes up at 10 and the second must come down by as much.`,`10(10) = 10 v sin 30° = 10(20)(0.5)`],
+ [`Both components agree, so the figure of 20 m/s is consistent.`,`v = 20 m/s`],
+ [`Correct answer`,`20`]
 ]}
 ];
 </script>
@@ -4083,6 +4396,60 @@ switch(q.diagram){
   s+=txt(230,gy+34,'both blocks rest on a smooth floor; the wall is on the left',M,13);
   break;
  }
+ case 'stepped-plate':{
+  height=320;
+  const ox=120,oy=250,u=62;                          // one unit of the (0,0)..(3,2) grid
+  const X=v=>ox+v*u, Y=v=>oy-v*u;
+  s+=line(ox-18,oy,X(3)+36,oy,M,1.5)+txt(X(3)+48,oy+5,'x',M,14,'start');
+  s+=line(ox,oy+18,ox,Y(2)-34,M,1.5)+txt(ox+12,Y(2)-38,'y',M,14,'start');
+  s+=`<path d="M ${X(0)} ${Y(0)} L ${X(3)} ${Y(0)} L ${X(3)} ${Y(2)} L ${X(2)} ${Y(2)} L ${X(2)} ${Y(1)} L ${X(1)} ${Y(1)} L ${X(1)} ${Y(2)} L ${X(0)} ${Y(2)} Z" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  [[0,2],[1,2],[2,2],[3,2],[1,1],[2,1],[0,0],[3,0]].forEach(([a,b])=>{s+=dot(X(a),Y(b),M);});
+  s+=txt(X(0)-10,Y(2)-8,'(0, 2)',M,12,'end')+txt(X(3)+10,Y(2)-8,'(3, 2)',M,12,'start');
+  s+=txt(X(1)-6,Y(1)+18,'(1, 1)',M,12,'end')+txt(X(2)+6,Y(1)+18,'(2, 1)',M,12,'start');
+  s+=txt(X(0)-10,Y(0)+18,'(0, 0)',M,12,'end')+txt(X(3)+10,Y(0)+18,'(3, 0)',M,12,'start');
+  s+=txt(230,oy+52,'a uniform plate of mass 10 kg',M,13);
+  break;
+ }
+ case 'bullet-bob-recoil':{
+  height=320;
+  const px=252,py=70,L=132;
+  s+=ground(px-46,py,92,true);
+  s+=line(px,py,px,py+L,W,1.7);
+  s+=line(px+30,py,px+30,py+L,M,1.2,true);
+  s+=txt(px+44,py+L/2,'0.5 m',M,13,'start');
+  s+=`<circle cx="${px}" cy="${py+L}" r="15" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=txt(px,py+L+32,'1 kg',W,14);
+  s+=`<circle cx="${px-128}" cy="${py+L}" r="6" fill="${Y}"/>`+txt(px-128,py+L+26,'10 g',Y,14);
+  s+=arrow(px-116,py+L,px-22,py+L,'',GREEN)+txt(px-70,py+L-14,'v',GREEN,15);
+  s+=txt(230,py+L+62,'the bullet rebounds; the bob must just reach the top',M,13);
+  break;
+ }
+ case 'projectile-A-to-B':{
+  height=270;
+  const ax=108,bx=360,gy=190;
+  s+=line(ax-42,gy,bx+42,gy,M,1.6);
+  s+=`<path d="M ${ax} ${gy} Q ${(ax+bx)/2} ${gy-176} ${bx} ${gy}" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=arrow(ax,gy,ax+46,gy-46,'',GREEN);
+  s+=arrow(bx-46,gy-46,bx,gy,'',Y);
+  s+=txt(ax+34,gy-16,'45°',M,13)+txt(bx-34,gy-16,'45°',M,13);
+  s+=txt(ax-6,gy+20,'A',M,15,'end')+txt(bx+8,gy+20,'B',M,15,'start');
+  s+=txt(230,gy+48,'the particle returns to the launch height at B',M,13);
+  break;
+ }
+ case 'two-pieces-30-deg':{
+  height=300;
+  const ox=208,oy=168;
+  s+=line(ox-130,oy,ox+150,oy,M,1.5)+txt(ox+162,oy+5,'x-axis',M,13,'start');
+  s+=line(ox,oy+104,ox,oy-110,M,1.5)+txt(ox+10,oy-114,'y-axis',M,13,'start');
+  s+=arrow(ox,oy,ox,oy-86,'',Y)+txt(ox+12,oy-64,'v₁ = 10 m/s',Y,13,'start');
+  s+=txt(ox+12,oy-98,'piece 1',Y,13,'start');
+  const a=Math.PI/6,Ln=140;
+  s+=arrow(ox,oy,ox+Ln*Math.cos(a),oy+Ln*Math.sin(a),'',B);
+  s+=txt(ox+46,oy+26,'30°',M,13);
+  s+=txt(ox+Ln*Math.cos(a)+10,oy+Ln*Math.sin(a)+6,'v₂',B,14,'start');
+  s+=txt(230,oy+118,'the 20 kg ball splits into two equal pieces',M,13);
+  break;
+ }
  case 'two-plates':{
   height=330;
   /* The two plates touch corner to corner. O is the lower-left corner of the
@@ -4385,41 +4752,41 @@ const baseSections=[
 const subtopicPlan={
  'com-particles':[
   ['Where the centre of mass of a pair of bodies lies',['COM-01','COM-18','COM-80']],
-  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64','COM-79']],
+  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64','COM-79','COM-96']],
   ['How the centre of mass shifts when mass is added or moved',['COM-68','COM-45']],
   ['Speed of the centre of mass under purely internal forces',['COM-20']]],
  'com-bodies':[
-  ['Composite bodies built from plates and discs',['COM-02']],
-  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37','COM-92']],
+  ['Composite bodies built from plates and discs',['COM-02','COM-95']],
+  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37','COM-92','COM-101','COM-106']],
   ['Recasting a body, cutting a piece out, draining it away',['COM-04','COM-47','COM-48','COM-87']],
   ['Centre of mass of a drawn or jointed figure',['COM-54','COM-56']]],
  'com-motion':[
-  ['Velocity of the centre of mass of a two-body system',['COM-05']],
+  ['Velocity of the centre of mass of a two-body system',['COM-05','COM-105']],
   ['Acceleration of the centre of mass',['COM-06','COM-21','COM-88']],
   ['Fragments balanced about the path of the centre of mass',['COM-52']],
-  ['Momentum written through the kinetic energy',['COM-22']]],
+  ['Momentum written through the kinetic energy',['COM-22','COM-94','COM-98']]],
  'momentum-conservation':[
   ['A body driven onto a free wedge or trolley',['COM-07','COM-83','COM-84','COM-89']],
-  ['Momentum as a vector relation and where it comes from',['COM-08','COM-57']],
-  ['A body leaving or joining a moving carrier',['COM-23','COM-49','COM-77','COM-86']],
+  ['Momentum as a vector relation and where it comes from',['COM-08','COM-57','COM-108']],
+  ['A body leaving or joining a moving carrier',['COM-23','COM-49','COM-77','COM-86','COM-102']],
   ['Internal rearrangement with the centre of mass fixed',['COM-24','COM-60']]],
  'impulse':[
   ['Impulse as the area under a force-time graph',['COM-16','COM-74']],
-  ['Average force from the change in momentum in an impact',['COM-17','COM-39','COM-73','COM-82']],
+  ['Average force from the change in momentum in an impact',['COM-17','COM-39','COM-73','COM-82','COM-103']],
   ['Impulse delivered along the normal at a surface',['COM-51','COM-75']],
   ['Energy change written through the impulse',['COM-42']]],
  'elastic-1d':[
-  ['Elastic collision with a massive moving body',['COM-09','COM-33']],
-  ['What an elastic collision does to the two velocities',['COM-10','COM-29','COM-72']],
+  ['Elastic collision with a massive moving body',['COM-09','COM-33','COM-97']],
+  ['What an elastic collision does to the two velocities',['COM-10','COM-29','COM-72','COM-100']],
   ['Chains and rows of identical bodies',['COM-32','COM-38','COM-53','COM-93']],
   ['A limiting condition that allows only one collision',['COM-44']]],
  'restitution':[
   ['Fixing the restitution from the velocities after impact',['COM-11']],
-  ['Restitution from heights and repeated bounces',['COM-30','COM-34','COM-90']],
+  ['Restitution from heights and repeated bounces',['COM-30','COM-34','COM-90','COM-99']],
   ['Restitution from the angles a bounce turns through',['COM-46','COM-61']],
   ['Restitution from the geometry after an oblique collision',['COM-40']]],
  'inelastic-loss':[
-  ['Energy lost when two bodies move off together',['COM-59','COM-41','COM-76']],
+  ['Energy lost when two bodies move off together',['COM-59','COM-41','COM-76','COM-104']],
   ['A collision that brings both bodies to rest',['COM-28']],
   ['Energy lost found from the relative velocities',['COM-43','COM-55','COM-78']],
   ['What is conserved, and for which system',['COM-69','COM-70']]],
@@ -4427,11 +4794,11 @@ const subtopicPlan={
   ['Two equal velocities meeting at an angle',['COM-12']],
   ['Equal masses separating after an elastic glancing collision',['COM-31']],
   ['Direction of the heavier body after an elastic deflection',['COM-50']],
-  ['An inextensible string jerking taut between two particles',['COM-35']]],
+  ['An inextensible string jerking taut between two particles',['COM-35','COM-107']]],
  'explosions':[
   ['A projectile bursting at the top of its flight',['COM-13']],
   ['Recoil shared between two fragments',['COM-25','COM-65']],
-  ['Energy released, and how it divides',['COM-26','COM-27']],
+  ['Energy released, and how it divides',['COM-26','COM-27','COM-109']],
   ['Fraction of energy transferred in a head-on collision',['COM-71']]],
  'spring-systems':[
   ['Relative velocity of a spring-coupled pair',['COM-14']],
