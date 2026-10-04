@@ -1277,7 +1277,7 @@ const questions=[
  topic:'Restitution and the angle a bounce turns through',
  source:'Institute bank · Centre of Mass',
  sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.84',printedAnswer:'D',verifiedAnswer:'D'},
- question:`The coefficient of restitution for a body is e = 1/3. At what angle must the body be incident on a perfectly hard plane so that the angle between the direction before and after the impact is a right angle?`,
+ question:`The coefficient of restitution for a body is one third. At what angle must the body be incident on a perfectly hard plane so that the angle between the direction before and after the impact is a right angle?`,
  options:[`37°`,`60°`,`45°`,`30°`],
  correct:3,
  answer:`30°`,
@@ -1375,7 +1375,7 @@ const questions=[
  topic:'Impulse from a wall acting along the normal only',
  source:'Institute bank · Centre of Mass',
  sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.83',printedAnswer:'A',verifiedAnswer:'A'},
- question:`A smooth sphere of mass m is moving on a horizontal plane with a velocity (3î + ĵ). It collides with a vertical wall which is parallel to the vector ĵ. If e = 1/2 then the impulse J that acts on the sphere is -`,
+ question:`A smooth sphere of mass m is moving on a horizontal plane with a velocity (3î + ĵ). It collides with a vertical wall which is parallel to the vector ĵ. If the coefficient of restitution is one half, then the impulse J that acts on the sphere is -`,
  options:[`−${fraction('9','2')}mî`,`(−${fraction('3','2')}mî + mĵ)`,`${fraction('3','2')}mĵ`,`(${fraction('3','2')}mĵ + ${fraction('1','2')}mî)`],
  correct:0,
  answer:`−${fraction('9','2')}mî`,
@@ -1395,7 +1395,7 @@ const questions=[
  topic:'Fragments balanced about the path of the centre of mass',
  source:'Institute bank · Centre of Mass',
  sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.90',printedAnswer:'A',verifiedAnswer:'A'},
- question:`An isolated particle of mass m is moving in a horizontal plane (x − y), along the x-axis, at a certain height above the ground. It suddenly explodes into two fragments of masses m/4 and 3m/4. An instant later, the smaller fragment is at y = +15 cm. The larger fragment at this instant is at -`,
+ question:`An isolated particle of mass m is moving in a horizontal plane (x − y), along the x-axis, at a certain height above the ground. It suddenly explodes into two fragments, one of a quarter of its mass and one of three quarters. An instant later, the smaller fragment is at y = +15 cm. The larger fragment at this instant is at -`,
  options:[`y = −5 cm`,`y = +20 cm`,`y = +5 cm`,`y = −20 cm`],
  correct:0,
  answer:`y = −5 cm`,
@@ -2237,6 +2237,1233 @@ const questions=[
  [``,`h′ = ${fraction('h','4')}`],
  [`Half the kinetic energy was lost in the collision, but the height falls to a quarter, because height goes as the square of the speed.`,`energy halves, height quarters`],
  [`Correct answer`,`(D)`]
+]},
+{id:'COM-10-E',parent:'COM-10',variant:5,
+ relevance:{parent:'COM-10',sharedSkill:'Equal masses exchange velocities in an elastic head-on collision',recoveryPurpose:'direct retry'},
+ topic:'What an elastic collision does to the two velocities',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.192',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two similar balls P and Q having velocities of 0.5 m/s and −0.3 m/s respectively collide elastically. The velocities of P and Q after the collision will respectively be -`,
+ options:[`−0.5 m/s and 0.3 m/s`,`0.5 m/s and 0.3 m/s`,`−0.3 m/s and 0.5 m/s`,`0.3 m/s and 0.5 m/s`],
+ correct:2,
+ answer:`−0.3 m/s and 0.5 m/s`,
+ diagram:'',
+ short:[
+ [`The balls are similar, so equal in mass, and the collision is elastic along one line. That is the case in which the two velocities are simply exchanged.`,`v₁ = u₂, v₂ = u₁`],
+ [`P had 0.5 m/s and Q had −0.3 m/s, so each takes the other's value, sign included.`,`P gets −0.3, Q gets 0.5`],
+ [`Check momentum: 0.5 − 0.3 before, −0.3 + 0.5 after.`,`0.2 either way`],
+ [`The signs matter: the first option reverses both velocities instead of swapping them, which conserves neither.`,`swap, do not reverse`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-72',level:3,
+ title:'Which standard claim about elastic collisions fails',
+ topic:'Testing the standard claims about elastic collisions',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.193',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Which of the following does not hold when two particles of masses m₁ and m₂ undergo elastic collision?`,
+ options:[`when m₁ = m₂ and m₂ is stationary, there is maximum transfer of kinetic energy in a head on collision`,`when m₁ = m₂ and m₂ is stationary, there is maximum transfer of momentum in a head on collision`,`when m₁ ≫ m₂ and m₂ is stationary, after a head on collision m₂ moves with twice the velocity of m₁`,`when the collision is oblique and m₁ = m₂ with m₂ stationary, after the collision the particles move in opposite directions`],
+ correct:3,
+ answer:`when the collision is oblique and m₁ = m₂ with m₂ stationary, after the collision the particles move in opposite directions`,
+ diagram:'',
+ noDiagramReason:'The question compares four general claims about elastic collisions, with no single configuration to draw.',
+ short:[
+ [`Equal masses in a head-on elastic collision exchange velocities, so the striker stops and the target leaves with everything. That is the most energy and the most momentum that can be handed over, so the first two claims hold.`,`(A) and (B) hold`],
+ [`For a very heavy striker the target leaves at twice the striker's speed, which is the standard limit.`,`v₂ = ${fraction('2m₁u','m₁ + m₂')} → 2u`],
+ [`For an oblique elastic collision between equal masses, momentum and energy together force the dot product of the two final velocities to vanish.`,`v₁⋅v₂ = 0`],
+ [`Perpendicular is not opposite, so the last claim is the one that fails. Opposite directions would mean an angle of 180°, which this collision cannot produce.`,`90°, not 180°`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-69-E',parent:'COM-69',variant:5,
+ relevance:{parent:'COM-69',sharedSkill:'Separating what every collision conserves from what only an elastic one does',recoveryPurpose:'direct retry'},
+ topic:'What is conserved in an inelastic collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.197',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`Two balls at the same temperature collide inelastically. What is conserved?`,
+ options:[`momentum`,`velocity`,`temperature`,`kinetic energy`],
+ correct:0,
+ answer:`momentum`,
+ diagram:'',
+ short:[
+ [`The forces the balls exert on each other are internal and cancel in pairs, so the total momentum survives any collision.`,`Δp = 0`],
+ [`Inelastic means kinetic energy is lost, so that is not conserved.`,`K falls`],
+ [`The lost kinetic energy goes into heating the balls, so the temperature rises rather than staying put.`,`temperature rises`],
+ [`Velocity is not a conserved quantity at all: the two balls change velocity, which is what a collision is.`,`momentum only`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-73',level:1,
+ title:'Which ball suffers the greater change in momentum',
+ topic:'Comparing momentum changes when one body rebounds and one does not',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.198',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A metal ball hits a wall and does not rebound whereas a rubber ball of the same mass on hitting the wall with the same velocity rebounds back. It can be concluded that -`,
+ options:[`the metal ball suffers a greater change in momentum`,`the rubber ball suffers a greater change in momentum`,`the initial momentum of the metal ball is greater than that of the rubber ball`,`both suffer the same change in momentum`],
+ correct:1,
+ answer:`the rubber ball suffers a greater change in momentum`,
+ diagram:'',
+ noDiagramReason:'Two balls striking the same wall; the comparison is between a reversal and a stop, which the words state exactly.',
+ short:[
+ [`Take the direction of approach as positive. Both balls arrive with the same momentum, since the masses and speeds match.`,`p = mu for each`],
+ [`The metal ball stops, so its momentum goes from mu to zero.`,`Δp metal = mu`],
+ [`The rubber ball comes back at the same speed, so its momentum goes from mu to −mu.`,`Δp rubber = 2mu`],
+ [`Reversing takes twice the change that stopping does, so the rubber ball suffers more, and the wall feels more from it.`,`2mu > mu`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-74',level:2,
+ title:'What holds while a bouncing ball is in contact with the floor',
+ topic:'What holds during the contact time of a bounce',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.199',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Before a rubber ball bounces off from the floor the ball is in contact with the floor for a fraction of a second. Which of the following statements are correct? (1) conservation of energy is not valid during this period (2) conservation of energy is valid during this period (3) as the ball is compressed, kinetic energy is converted into compressed potential energy`,
+ options:[`1 only`,`2 only`,`3 only`,`2 and 3 both`],
+ correct:3,
+ answer:`2 and 3 both`,
+ diagram:'',
+ noDiagramReason:'The question is about what is true during the contact, not about any geometry of the bounce.',
+ short:[
+ [`Energy is conserved at every instant; it simply changes form. Nothing suspends that while the ball is squashed.`,`statement 1 is wrong, 2 is right`],
+ [`While the ball flattens against the floor it slows down, so its kinetic energy falls.`,`K decreases`],
+ [`That energy is stored in the deformed rubber as elastic potential energy, which then pushes the ball back out.`,`K becomes elastic potential energy`],
+ [`So statements 2 and 3 both hold. Note that kinetic energy alone is not conserved, but total energy is, which is what statement 2 says.`,`2 and 3`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-66-B',parent:'COM-17',variant:3,
+ relevance:{parent:'COM-17',sharedSkill:'Momentum is a vector, so a reversal adds the two contributions',recoveryPurpose:'direct retry'},
+ topic:'Average force from the change in momentum in an impact',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.200',printedAnswer:'A',verifiedAnswer:'The printed key is [A], which reads 10³ N s. The ball has mass 0.1 kg and its speed changes from 6 m/s one way to 4 m/s the other, so the change in momentum is 0.1(6 + 4) = 1 N s exactly. That is option (D), and no reading of the data gives 10³. Option (D) is keyed here and the discrepancy is recorded for faculty.'},
+ question:`A ball of 0.1 kg strikes a wall at right angles with a speed of 6 m/s and rebounds along its original path at 4 m/s. The change in momentum, in newton seconds, is -`,
+ options:[`10³`,`10²`,`10`,`1`],
+ correct:3,
+ answer:`1`,
+ diagram:'',
+ short:[
+ [`Take the direction of approach as positive. The ball arrives with this momentum.`,`p before = 0.1 × 6 = 0.6 N s`],
+ [`It returns along the same path, so its velocity is now negative.`,`p after = 0.1 × (−4) = −0.4 N s`],
+ [`Subtract. The two contributions add in size because the ball turned round.`,`Δp = −0.4 − 0.6 = −1.0 N s`],
+ [`The magnitude is exactly one newton second.`,`|Δp| = 1 N s`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-59-D',parent:'COM-59',variant:4,
+ relevance:{parent:'COM-59',sharedSkill:'Momentum fixes the common velocity when two bodies adhere',recoveryPurpose:'direct retry'},
+ topic:'Energy lost when two bodies move off together',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.201',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A particle of mass m moving with velocity V collides with a particle of mass 2m at rest and adheres to it. The velocity of the system is -`,
+ options:[`2V`,`3V`,`${fraction('V','2')}`,`${fraction('V','3')}`],
+ correct:3,
+ answer:`${fraction('V','3')}`,
+ diagram:'',
+ short:[
+ [`Only the first particle is moving, so it brings all the momentum.`,`p = mV`],
+ [`They adhere, so afterwards the whole mass moves together.`,`(m + 2m)v = mV`],
+ [`Divide by the combined mass.`,`v = ${fraction('mV','3m')} = ${fraction('V','3')}`],
+ [`The answer must be smaller than V, since the same momentum is now spread over three times the mass; that rules out the first two options at once.`,`v < V`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-59-E',parent:'COM-59',variant:5,
+ relevance:{parent:'COM-59',sharedSkill:'Momentum fixes the common velocity when two bodies adhere',recoveryPurpose:'representation change'},
+ topic:'Energy lost when two bodies move off together',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.202',printedAnswer:'C',verifiedAnswer:'The printed key is [C], a(a + b)/c, which is not even a velocity: it divides a mass by a mass and multiplies by a mass. Momentum conservation gives ab/(a + c), which is option (B) exactly as printed. Option (B) is keyed here and the discrepancy is recorded for faculty.'},
+ question:`A bullet of mass a and velocity b is fired into a large block of mass c. The final velocity of the system is -`,
+ options:[`${fraction('c','a + b')} b`,`${fraction('a','a + c')} b`,`${fraction('a + b','c')} a`,`${fraction('a + c','a')} b`],
+ correct:1,
+ answer:`${fraction('a','a + c')} b`,
+ diagram:'',
+ short:[
+ [`The letters are unusual, so fix them first: a is the bullet mass, b its velocity, c the block mass.`,`bullet a at speed b, block c at rest`],
+ [`Only the bullet moves to begin with, so it carries the whole momentum.`,`p = ab`],
+ [`The bullet buries itself in the block, so afterwards the combined mass moves together.`,`(a + c)v = ab`],
+ [`Divide by the combined mass.`,`v = ${fraction('ab','a + c')}`],
+ [`Check it reads as a velocity: a mass over a mass, times a velocity. The two options with a or c on top of a bare mass fail that test.`,`dimensions`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-75',level:1,
+ title:'Momentum handed to a floating disc by an elastic bounce',
+ topic:'Momentum delivered to a surface in an elastic bounce',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.203',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`An elastic ball of mass m falls from a height h onto an aluminium disc of area A floating in a mercury pool. If the collision is perfectly elastic, the momentum transferred to the disc is -`,
+ options:[`√(2mgh)`,`2√(mgh)`,`m√(2gh)`,`2m√(2gh)`],
+ correct:3,
+ answer:`2m√(2gh)`,
+ diagram:'',
+ noDiagramReason:'A ball falling onto a horizontal disc; the drawing adds nothing that the drop height does not already give.',
+ short:[
+ [`Find the speed the ball arrives with, from the fall alone.`,`v = √(2gh)`],
+ [`The collision is perfectly elastic and the disc floats on a heavy pool, so the ball leaves at the same speed in the opposite direction.`,`v after = −√(2gh)`],
+ [`The ball's momentum changes by twice its arriving momentum, because it turns round rather than stopping.`,`Δp = 2m√(2gh)`],
+ [`Whatever the ball loses the disc gains, so this is what is handed over. The area A never enters the calculation.`,`p disc = 2m√(2gh)`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-60-A',parent:'COM-60',variant:1,
+ relevance:{parent:'COM-60',sharedSkill:'Displacements shared about a centre of mass that cannot move',recoveryPurpose:'direct retry'},
+ topic:'A person walking along a free plank',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.204',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A boy is standing at the centre of a boat which is free to move on water. If the masses of the boy and the boat are m₁ and m₂ respectively and the boy moves a distance of 1 m forward, then the movement of the boat is, in metres -`,
+ options:[`${fraction('m₁','m₁ + m₂')}`,`${fraction('m₂','m₁ + m₂')}`,`${fraction('m₁','m₂')}`,`${fraction('m₂','m₁')}`],
+ correct:0,
+ answer:`${fraction('m₁','m₁ + m₂')}`,
+ diagram:'',
+ short:[
+ [`Everything starts at rest and the water offers no horizontal resistance, so the centre of mass of boy and boat stays put.`,`m₁x₁ = m₂x₂`],
+ [`The boy moves 1 m relative to the boat, so relative to the water his advance and the boat's retreat together make up that metre.`,`x₁ + x₂ = 1`],
+ [`Substitute to eliminate the boy's displacement.`,`m₁(1 − x₂) = m₂x₂`],
+ [``,`x₂ = ${fraction('m₁','m₁ + m₂')}`],
+ [`The heavier the boat, the less it moves, which the formula shows: m₂ appears only underneath.`,`sense check`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-76',level:3,
+ title:'Bullet speed recovered from the height the block swings to',
+ topic:'A ballistic pendulum: capture then rise',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.205',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A bullet of mass m moving with velocity v₁ strikes a suspended wooden block of mass M as shown in the figure and sticks to it. If the block rises to a height y, the initial velocity of the bullet is -`,
+ options:[`${fraction('m + M','m')} √(2gy)`,`√(2gy)`,`${fraction('M + m','M')} √(2gy)`,`${fraction('m','m + M')} √(2gy)`],
+ correct:0,
+ answer:`${fraction('m + M','m')} √(2gy)`,
+ diagram:'ballistic-pendulum',
+ short:[
+ [`The capture and the swing are two separate stages, and they obey different laws. Treat them in turn.`,`momentum first, then energy`],
+ [`The bullet buries itself, so momentum fixes the speed the block and bullet start with.`,`mv₁ = (m + M)v`],
+ [`After that the pair swings up smoothly, so energy carries it.`,`${fraction('1','2')}(m + M)v² = (m + M)gy`],
+ [`The mass cancels from the energy line, leaving the usual free-fall relation.`,`v = √(2gy)`],
+ [`Substitute back into the momentum line and solve for the bullet speed.`,`v₁ = ${fraction('m + M','m')} √(2gy)`],
+ [`Using energy across the capture instead would be the error here: that stage loses energy, and the answer would come out too small.`,`momentum, not energy, for the capture`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-76-A',parent:'COM-76',variant:1,
+ relevance:{parent:'COM-76',sharedSkill:'Momentum across the impact, then the condition for completing a vertical circle',recoveryPurpose:'controlled transfer'},
+ topic:'A ballistic pendulum: capture then rise',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.206',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A bullet of mass m strikes a pendulum bob of mass M with velocity u. It passes through and emerges with a velocity u/2 from the bob. The length of the pendulum is ℓ. What should be the minimum value of u if the pendulum bob will swing through a complete circle?`,
+ options:[`${fraction('2M','m')} × √(5gℓ)`,`${fraction('M','2m')} √(5gℓ)`,`${fraction('2M','m')} × ${fraction('1','√(5gℓ)')}`,`${fraction('M','2m')} × ${fraction('1','√(5gℓ)')}`],
+ correct:0,
+ answer:`${fraction('2M','m')} × √(5gℓ)`,
+ diagram:'',
+ short:[
+ [`The bullet passes through, so it keeps half its speed and the bob takes what it lost.`,`mu = m${fraction('u','2')} + Mv`],
+ [`Solve for the speed the bob is left with.`,`v = ${fraction('mu','2M')}`],
+ [`For a bob on a string to get right round a vertical circle it needs at least this speed at the bottom.`,`v = √(5gℓ)`],
+ [`Set the two equal and solve for u.`,`${fraction('mu','2M')} = √(5gℓ)`],
+ [``,`u = ${fraction('2M','m')} × √(5gℓ)`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-77',level:3,
+ title:'Energy a coasting wagon loses as rain fills it',
+ topic:'A moving body that collects mass as it goes',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.207',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`An open watertight railway wagon of mass 5 × 10³ kg coasts at an initial velocity of 1.2 m/sec without friction on a railway track. Rain falls vertically downwards into the wagon. What change then occurred in the kinetic energy of the wagon when it has collected 10³ kg of water?`,
+ options:[`1200 J`,`300 J`,`600 J`,`900 J`],
+ correct:2,
+ answer:`600 J`,
+ diagram:'',
+ noDiagramReason:'A wagon on a straight track collecting rain; the numbers are masses and a speed, and there is no geometry to draw.',
+ short:[
+ [`The rain falls straight down, so it brings no horizontal momentum with it. Nothing pushes the wagon along the track either.`,`horizontal momentum is fixed`],
+ [`So the wagon's momentum is the same before and after, but the mass it is spread over has grown.`,`5000(1.2) = 6000 v`],
+ [``,`v = 1 m/s`],
+ [`Work out the kinetic energy at each stage.`,`K before = ${fraction('1','2')}(5000)(1.2)² = 3600 J`],
+ [``,`K after = ${fraction('1','2')}(6000)(1)² = 3000 J`],
+ [`The wagon has lost energy even though it gained mass, because momentum, not energy, is what carried over.`,`ΔK = 600 J`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-31-E',parent:'COM-31',variant:5,
+ relevance:{parent:'COM-31',sharedSkill:'Equal masses leaving an elastic collision have their speeds squared adding to the original',recoveryPurpose:'inverse check'},
+ topic:'Equal masses separating after an elastic glancing collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.208',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A ball moving on a horizontal frictionless plane hits an identical ball at rest with a velocity of 50 cm/sec. If the collision is elastic, calculate the speed imparted to the target ball if the speed of the striking ball after the collision is 30 cm/sec.`,
+ options:[`20 cm/sec`,`30 cm/sec`,`40 cm/sec`,`50 cm/sec`],
+ correct:2,
+ answer:`40 cm/sec`,
+ diagram:'',
+ short:[
+ [`The striker does not stop, so this is not a head-on collision; the two must leave at an angle.`,`oblique collision`],
+ [`For equal masses in an elastic collision the two final velocities are perpendicular, so the squares of the speeds add to the square of the original.`,`u² = v₁² + v₂²`],
+ [`Put the numbers in.`,`50² = 30² + v₂²`],
+ [``,`v₂² = 2500 − 900 = 1600`],
+ [``,`v₂ = 40 cm/sec`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-09-B',parent:'COM-09',variant:2,
+ relevance:{parent:'COM-09',sharedSkill:'Elastic rebound from a massive body that is itself moving',recoveryPurpose:'direct retry'},
+ topic:'Elastic collision with a massive moving body',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.210',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A ball after falling a distance of 5 metre from rest hits elastically the floor of a lift and rebounds. At the time of impact the lift was moving up with a velocity of 1 m/sec. The velocity with which the ball rebounds just after impact is - (g = 10 m/sec²)`,
+ options:[`10 m/sec`,`11 m/sec`,`12 m/sec`,`13 m/sec`],
+ correct:2,
+ answer:`12 m/sec`,
+ diagram:'',
+ short:[
+ [`Find the speed the ball arrives with, from the 5 m fall.`,`v = √(2 × 10 × 5) = 10 m/s downwards`],
+ [`The lift floor is far heavier than the ball, so the impact leaves the lift moving at its own 1 m/s upwards.`,`v floor = +1 m/s`],
+ [`Take upwards as positive. The two are closing on each other at the sum of their speeds.`,`approach = 1 − (−10) = 11 m/s`],
+ [`An elastic collision separates them just as fast.`,`v ball − 1 = 11`],
+ [`The ball leaves faster than it arrived, picking up twice the lift speed.`,`v = 12 m/sec`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-31-F',parent:'COM-31',variant:6,
+ relevance:{parent:'COM-31',sharedSkill:'Equal masses leave an elastic glancing collision at right angles',recoveryPurpose:'inverse check'},
+ topic:'Equal masses separating after an elastic glancing collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.213',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A ball collides elastically with another ball of the same mass. The collision is oblique and initially one of the balls was at rest. After the collision, the two balls move with the same speeds. What will be the angle between the velocities of the balls after the collision?`,
+ options:[`30°`,`45°`,`60°`,`90°`],
+ correct:3,
+ answer:`90°`,
+ diagram:'',
+ short:[
+ [`Momentum conservation makes the original velocity the vector sum of the two final ones.`,`u = v₁ + v₂`],
+ [`Square that relation.`,`u² = v₁² + v₂² + 2v₁⋅v₂`],
+ [`The collision is elastic with equal masses, so the squares of the speeds add to the same total on their own.`,`u² = v₁² + v₂²`],
+ [`Comparing the two lines, the dot product must vanish, so the angle is a right angle whatever the two speeds are.`,`v₁⋅v₂ = 0`],
+ [`The extra information that the speeds are equal is not needed, which is worth noticing.`,`90°`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-26-D',parent:'COM-26',variant:4,
+ relevance:{parent:'COM-26',sharedSkill:'Fixing the third fragment from two perpendicular momenta',recoveryPurpose:'controlled transfer'},
+ topic:'Energy released in an explosion from the fragment momenta',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.215',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`An explosion blows a rock into three pieces. Two pieces go off at right angles to each other: a 1.00 kg piece with a velocity of 12 m/sec and the other 2.00 kg piece with a velocity of 8 m/sec. If the third piece flies off with a velocity of 40 m/sec, then the mass of the third piece is -`,
+ options:[`0.2 kg`,`0.3 kg`,`0.4 kg`,`0.5 kg`],
+ correct:3,
+ answer:`0.5 kg`,
+ diagram:'',
+ short:[
+ [`The rock was at rest, so the three momenta must add to zero. Take the two known ones along x and y.`,`p₁ = 1 × 12 = 12, p₂ = 2 × 8 = 16`],
+ [`They are at right angles, so combine them with Pythagoras.`,`p = √(12² + 16²) = 20 kg m/s`],
+ [`The third piece must carry exactly that momentum, in the opposite direction.`,`m × 40 = 20`],
+ [``,`m = 0.5 kg`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-25-D',parent:'COM-25',variant:4,
+ relevance:{parent:'COM-25',sharedSkill:'Head-on elastic collision between very unequal masses',recoveryPurpose:'controlled transfer'},
+ topic:'Recoil energy shared between two fragments',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.216',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A proton of mass 1.67 × 10⁻²⁷ kg undergoes a head on collision with an α-particle initially at rest. After the collision, the α-particle moves with a speed of 8 × 10⁵ m/sec. Calculate the velocity of the proton before and after the collision. Given the mass of the α-particle is 6.68 × 10⁻²⁷ kg.`,
+ options:[`2 × 10³ m/sec, −1.2 × 10³ m/sec`,`2 × 10⁴ m/sec, −1.2 × 10⁴ m/sec`,`2 × 10⁵ m/sec, −1.2 × 10⁵ m/sec`,`2 × 10⁶ m/sec, −1.2 × 10⁶ m/sec`],
+ correct:3,
+ answer:`2 × 10⁶ m/sec, −1.2 × 10⁶ m/sec`,
+ diagram:'',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the target leaves with a fixed fraction of the striker's speed.`,`v₂ = ${fraction('2m₁u','m₁ + m₂')}`],
+ [`Put the two masses in and solve for u.`,`8 × 10⁵ = ${fraction('2(1.67)u','1.67 + 6.68')}`],
+ [``,`u = 2 × 10⁶ m/sec`],
+ [`Now the striker's own velocity after the impact. It is lighter than the target, so it bounces back.`,`v₁ = ${fraction('(m₁ − m₂)u','m₁ + m₂')}`],
+ [``,`v₁ = ${fraction('(1.67 − 6.68)','8.35')} × 2 × 10⁶ = −1.2 × 10⁶ m/sec`],
+ [`The negative sign is the point: a light particle striking a heavier one rebounds.`,`proton reverses`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-26-E',parent:'COM-26',variant:5,
+ relevance:{parent:'COM-26',sharedSkill:'Fixing the third fragment from two perpendicular momenta',recoveryPurpose:'direct retry'},
+ topic:'Energy released in an explosion from the fragment momenta',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.217',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A stationary body of mass m gets exploded in 3 parts having masses in the ratio 1 : 3 : 3. Its two fractions having equal mass move at right angles to each other with a velocity of 15 m/sec. Then the velocity of the third body is -`,
+ options:[`45√2 m/sec`,`5 m/s`,`5√32 m/sec`,`none of these`],
+ correct:0,
+ answer:`45√2 m/sec`,
+ diagram:'',
+ short:[
+ [`Name the masses from the ratio: the two equal pieces are 3 parts each and the odd one is 1 part.`,`m₁ = 1, m₂ = m₃ = 3`],
+ [`The two equal pieces go off at right angles with the same speed, so combine their momenta with Pythagoras.`,`p = √((3 × 15)² + (3 × 15)²)`],
+ [``,`p = 45√2 units`],
+ [`The body was at rest, so the third piece must carry that momentum in the opposite direction.`,`1 × v = 45√2`],
+ [`Its mass is a third of each of the others, so it leaves correspondingly faster.`,`v = 45√2 m/sec`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-32-C',parent:'COM-32',variant:3,
+ relevance:{parent:'COM-32',sharedSkill:'Momentum and energy applied to three identical bodies meeting at a point',recoveryPurpose:'controlled transfer'},
+ topic:'A chain of identical balls struck at one end',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.218',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Three particles each of mass m are located at the vertices of an equilateral triangle ABC. They start moving with equal speeds υ each along the medians of the triangle and collide at its centroid G. If after the collision A comes to rest and B retraces its path along GB, then C -`,
+ options:[`also comes to rest`,`moves with a speed υ along CG`,`moves with a speed υ along BG`,`moves with a speed along AG`],
+ correct:2,
+ answer:`moves with a speed υ along BG`,
+ diagram:'',
+ short:[
+ [`The three velocities point inwards along the medians, 120° apart and equal in size, so they add to zero.`,`p total = 0`],
+ [`Momentum is conserved, so the three velocities after the collision must also add to zero.`,`p after = 0`],
+ [`A is at rest afterwards and B retraces its path, so B now carries mυ outwards along GB.`,`p B = mυ along GB`],
+ [`Momentum after must also be zero. A is at rest and B retraces, so B now carries mυ outwards along GB, that is in the direction −b.`,`p B = −mυ b`],
+ [`C must cancel that exactly, so it carries mυ in the direction b, pointing from B towards G. So C moves off with speed υ along BG; the three median directions are 120 degrees apart, so BG and CG are not the same line.`,`C: υ along BG`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-13-C',parent:'COM-13',variant:3,
+ relevance:{parent:'COM-13',sharedSkill:'Momentum conservation at the top when two fragments cancel vertically',recoveryPurpose:'controlled transfer'},
+ topic:'A projectile bursting at the top of its flight',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.219',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A cannon ball is fired with a velocity 200 m/sec at an angle of 60° with the horizontal. At the highest point of its flight it explodes into 3 equal fragments, one going vertically upwards with a velocity 100 m/sec, the second one falling vertically downwards with a velocity 100 m/sec. The third fragment will be moving with a velocity -`,
+ options:[`100 m/sec in the horizontal direction`,`300 m/sec in the horizontal direction`,`300 m/sec in a direction making an angle of 60° with the horizontal`,`200 m/sec in a direction making an angle of 60° with the horizontal`],
+ correct:1,
+ answer:`300 m/sec in the horizontal direction`,
+ diagram:'',
+ short:[
+ [`At the highest point the vertical component has gone and only the horizontal one is left.`,`u = 200 cos 60° = 100 m/s`],
+ [`The whole ball of mass 3m carries that horizontally, and nothing vertically.`,`p = 3m(100) horizontally`],
+ [`The first two fragments go straight up and straight down at the same speed, so their momenta cancel completely.`,`+100m and −100m cancel`],
+ [`The third must therefore carry the entire horizontal momentum on its own.`,`m v = 3m(100)`],
+ [``,`v = 300 m/sec, horizontal`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-78',level:2,
+ title:'Energy released read off the separation after an explosion',
+ topic:'Energy released inferred from the later separation',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.220',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A shell lying in a smooth horizontal tube suddenly explodes and breaks into masses m₁ and m₂. If x is the distance of separation in the tube of the masses after time t seconds, then the energy released by the explosion is -`,
+ options:[`${fraction('2m₁m₂ x²','(m₁ + m₂)t²')}`,`${fraction('m₁m₂ t²','2x²(m₁ + m₂)')}`,`${fraction('m₁m₂ x²','2(m₁ + m₂)t²')}`,`none of these`],
+ correct:2,
+ answer:`${fraction('m₁m₂ x²','2(m₁ + m₂)t²')}`,
+ diagram:'',
+ noDiagramReason:'A straight tube with two fragments moving apart; the separation is a number in the statement and a drawing would not add to it.',
+ short:[
+ [`The tube is smooth and horizontal, so after the burst each fragment keeps its speed and the gap opens steadily.`,`x = v t`],
+ [`So the relative speed follows from the separation and the time.`,`v = ${fraction('x','t')}`],
+ [`The shell was at rest, so all the energy released is the energy of relative motion, which the reduced mass carries.`,`E = ${fraction('1','2')}μv²`],
+ [`Write the reduced mass out.`,`μ = ${fraction('m₁m₂','m₁ + m₂')}`],
+ [`Substitute both.`,`E = ${fraction('m₁m₂ x²','2(m₁ + m₂)t²')}`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-71-B',parent:'COM-71',variant:2,
+ relevance:{parent:'COM-71',sharedSkill:'Ratio of the striker energy before and after a head-on elastic collision',recoveryPurpose:'inverse check'},
+ topic:'Fraction of energy kept or transferred in a head-on elastic collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.227',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A body of mass m moving with velocity v makes a head-on collision with another body of mass 2m which is initially at rest. The ratio of kinetic energies of the colliding body before and after collision will be -`,
+ options:[`9 : 1`,`1 : 1`,`4 : 1`,`2 : 1`],
+ correct:0,
+ answer:`9 : 1`,
+ diagram:'',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the striker keeps this velocity.`,`v₁ = ${fraction('(m − 2m)v','m + 2m')}`],
+ [``,`v₁ = −${fraction('v','3')}`],
+ [`The sign says it rebounds; for the energy only the size matters, and the energy goes as the square of the speed.`,`K before ∝ v², K after ∝ (${fraction('v','3')})²`],
+ [`The square of a third is a ninth, so the striker keeps a ninth of what it had.`,`ratio = 9 : 1`],
+ [`The striker keeps a ninth of its energy, so eight ninths went to the heavier body.`,`9 : 1`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-43-A',parent:'COM-43',variant:1,
+ relevance:{parent:'COM-43',sharedSkill:'Energy lost in a collision from the velocities before and after',recoveryPurpose:'direct retry'},
+ topic:'Energy lost found from the relative velocities',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.228',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A lead ball of mass 2 kg moving with a velocity of 1.5 m s⁻¹ hits against a ball of mass 3 kg at rest. If the second ball moves with a velocity of 1 m s⁻¹ after the impact in the original direction of motion of the first ball, the loss of kinetic energy due to impact is -`,
+ options:[`0.033 J`,`0.75 J`,`1.5 J`,`2.25 J`],
+ correct:1,
+ answer:`0.75 J`,
+ diagram:'',
+ short:[
+ [`Momentum fixes what the first ball is left with.`,`2(1.5) = 2v₁ + 3(1)`],
+ [``,`3 = 2v₁ + 3 ⇒ v₁ = 0`],
+ [`So the striker stops dead. Work out the kinetic energy before the impact.`,`K before = ${fraction('1','2')}(2)(1.5)² = 2.25 J`],
+ [`And afterwards, when only the second ball is moving.`,`K after = ${fraction('1','2')}(3)(1)² = 1.5 J`],
+ [`The difference is what the impact destroyed.`,`ΔK = 0.75 J`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-51-A',parent:'COM-51',variant:1,
+ relevance:{parent:'COM-51',sharedSkill:'A smooth wall changes only the normal component, scaled by the restitution',recoveryPurpose:'direct retry'},
+ topic:'Impulse from a wall acting along the normal only',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.231',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A smooth sphere is moving on a horizontal surface with velocity vector 2î + 2ĵ immediately before it hits a vertical wall. The wall is parallel to the ĵ vector and the coefficient of restitution between the sphere and the wall is one half. The velocity vector of the sphere after it hits the wall is -`,
+ options:[`î − ĵ`,`−î + 2ĵ`,`−î − ĵ`,`2î − ĵ`],
+ correct:1,
+ answer:`−î + 2ĵ`,
+ diagram:'',
+ short:[
+ [`The wall runs along ĵ, so its normal is î. Split the velocity into the part into the wall and the part along it.`,`2î into the wall, 2ĵ along it`],
+ [`The sphere is smooth, so the component along the wall is untouched.`,`ĵ component stays 2`],
+ [`The normal component is reversed and reduced by the coefficient of restitution.`,`v normal = −e(2) = −1`],
+ [`Put the two back together.`,`v = −î + 2ĵ`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-79',level:3,
+ title:'Finding the unknown velocity component from a later collision',
+ topic:'Two bodies meeting at a later instant',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.232',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Two particles having position vectors r₁ = (3î + 5ĵ) m and r₂ = (−5î − 3ĵ) m are moving with velocities v₁ = (4î + 3ĵ) m/s and v₂ = (aî + 7ĵ) m/s. If they collide after 2 seconds, the value of a is -`,
+ options:[`2`,`4`,`6`,`8`],
+ correct:3,
+ answer:`8`,
+ diagram:'',
+ noDiagramReason:'Two particles given as position and velocity vectors; the condition is an equation between coordinates, not a picture.',
+ short:[
+ [`To collide is to be at the same place at the same time, so write each position after 2 s.`,`r = r₀ + v t`],
+ [`First particle.`,`r₁ = (3 + 8)î + (5 + 6)ĵ = 11î + 11ĵ`],
+ [`Second particle, leaving a unknown.`,`r₂ = (−5 + 2a)î + (−3 + 14)ĵ = (−5 + 2a)î + 11ĵ`],
+ [`The ĵ components already agree, which is the check that the data is consistent. Equate the î components.`,`11 = −5 + 2a`],
+ [``,`a = 8`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-14-A',parent:'COM-14',variant:1,
+ relevance:{parent:'COM-14',sharedSkill:'Reduced mass turning stored spring energy into the speed of one block',recoveryPurpose:'controlled transfer'},
+ topic:'Relative velocity of a spring-coupled pair',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.233',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A light spring of spring constant k is kept compressed between two blocks of masses m and M on a smooth horizontal surface. When released, the blocks acquire velocities in opposite directions. The spring loses contact with the blocks when it acquires natural length. If the spring was initially compressed through a distance x, find the final speed of mass m.`,
+ options:[`√(${fraction('kM','m(M + m)')}) x`,`√(${fraction('km','M(m + M)')}) x`,`√(${fraction('kM','m(M − m)')}) x`,`√(${fraction('km','M(M − m)')}) x`],
+ correct:0,
+ answer:`√(${fraction('kM','m(M + m)')}) x`,
+ diagram:'spring-between-m-M',
+ short:[
+ [`Nothing acts from outside, and the pair starts at rest, so the two momenta stay equal and opposite.`,`m v₁ = M v₂`],
+ [`All the stored energy has gone into motion by the time the spring reaches natural length.`,`${fraction('1','2')}kx² = ${fraction('1','2')}m v₁² + ${fraction('1','2')}M v₂²`],
+ [`Use the momentum relation to replace v₂ in terms of v₁.`,`v₂ = ${fraction('m v₁','M')}`],
+ [`Substitute and collect.`,`kx² = m v₁²(1 + ${fraction('m','M')}) = ${fraction('m(M + m)v₁²','M')}`],
+ [``,`v₁ = √(${fraction('kM','m(M + m)')}) x`],
+ [`Check the limit: a very heavy M barely moves and the light block takes almost everything, which is what the formula gives.`,`sense check`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-05-B',parent:'COM-05',variant:2,
+ relevance:{parent:'COM-05',sharedSkill:'Velocity of the centre of mass of two bodies moving oppositely',recoveryPurpose:'direct retry'},
+ topic:'Velocity of the centre of mass of a two-body system',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.236',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two identical particles move towards each other with velocity 2v and v respectively. The velocity of the centre of mass is -`,
+ options:[`v`,`${fraction('v','3')}`,`${fraction('v','2')}`,`zero`],
+ correct:2,
+ answer:`${fraction('v','2')}`,
+ diagram:'',
+ short:[
+ [`The particles are identical, so call each mass m, and take the direction of the faster one as positive.`,`u₁ = 2v, u₂ = −v`],
+ [`Average the two velocities by mass.`,`V = ${fraction('m(2v) + m(−v)','2m')}`],
+ [`The masses cancel because they are equal.`,`V = ${fraction('v','2')}`],
+ [`The centre of mass drifts along with the faster particle, which is the check: it cannot be zero unless the two momenta cancel.`,`V = ${fraction('v','2')}`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-80',level:3,
+ title:'What zero momentum and zero kinetic energy each imply',
+ topic:'What follows from zero momentum and from zero kinetic energy',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.237',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Consider the following two statements: (i) linear momentum of a system of particles is zero, (ii) kinetic energy of a system of particles is zero. Then -`,
+ options:[`(i) implies (ii) but (ii) does not imply (i)`,`(i) does not imply (ii) but (ii) implies (i)`,`(i) implies (ii) and (ii) implies (i)`,`(i) does not imply (ii) and (ii) does not imply (i)`],
+ correct:1,
+ answer:`(i) does not imply (ii) but (ii) implies (i)`,
+ diagram:'',
+ noDiagramReason:'The question compares two statements about a system of particles, with no configuration to draw.',
+ short:[
+ [`Kinetic energy is a sum of positive terms, so it can only vanish if every particle is at rest.`,`ΣK = 0 ⇒ every v = 0`],
+ [`If every particle is at rest then every momentum is zero, so the total is too. So (ii) implies (i).`,`(ii) ⇒ (i)`],
+ [`The other way round fails: two equal masses moving in opposite directions have momenta that cancel while both are plainly moving.`,`p = 0 with K > 0`],
+ [`So (i) does not imply (ii). Momentum can cancel by direction; energy cannot.`,`vectors cancel, scalars do not`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-52-B',parent:'COM-52',variant:2,
+ relevance:{parent:'COM-52',sharedSkill:'An internal break cannot shift the path of the centre of mass',recoveryPurpose:'inverse check'},
+ topic:'Fragments balanced about the path of the centre of mass',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.239',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A body A of mass M while falling vertically downwards under gravity breaks into two parts, a body B of one third of its mass and a body C of two thirds. The centre of mass of bodies B and C taken together shifts compared to that of body A towards -`,
+ options:[`depends on height of breaking`,`does not shift`,`body C`,`body B`],
+ correct:1,
+ answer:`does not shift`,
+ diagram:'',
+ short:[
+ [`Breaking apart is done by forces inside the body, which come in equal and opposite pairs and cancel.`,`ΣF internal = 0`],
+ [`The only external force is gravity, which acted before the break and acts just the same afterwards.`,`ΣF external = Mg throughout`],
+ [`So the centre of mass carries on along exactly the path it was already following, as if nothing had happened.`,`same trajectory`],
+ [`The pieces fly apart about that point, but the point itself does not shift towards either of them.`,`does not shift`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-81',level:2,
+ title:'Greatest momentum of a block that has compressed a spring',
+ topic:'Momentum recovered from stored spring energy',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.240',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A block of mass M moving on a frictionless horizontal surface collides with a spring of spring constant K and compresses it by a length L. The maximum momentum of the block after collision is -`,
+ options:[`√(MK) L`,`${fraction('KL²','2M')}`,`zero`,`${fraction('ML²','K')}`],
+ correct:0,
+ answer:`√(MK) L`,
+ diagram:'block-into-wall-spring',
+ short:[
+ [`At greatest compression the block has stopped and all its energy is in the spring.`,`${fraction('1','2')}KL² = ${fraction('1','2')}Mv²`],
+ [`The surface is frictionless and the spring is ideal, so the block is pushed back out with exactly the speed it arrived with. That is its greatest speed afterwards.`,`v = L√(${fraction('K','M')})`],
+ [`Momentum is mass times that speed.`,`p = M L√(${fraction('K','M')})`],
+ [`Take the M inside the root.`,`p = √(MK) L`],
+ [`The zero option is the trap: the block is momentarily at rest at full compression, but the question asks for the maximum afterwards.`,`not zero`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-31-G',parent:'COM-31',variant:7,
+ relevance:{parent:'COM-31',sharedSkill:'Resolving momentum into components after a two-dimensional collision',recoveryPurpose:'controlled transfer'},
+ topic:'Equal masses separating after an elastic glancing collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.241',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A mass m moves with a velocity v and collides inelastically with another identical mass. After the collision the first mass moves with velocity v/√3 in a direction perpendicular to the initial direction of motion. Find the speed of the second mass after the collision.`,
+ options:[`v`,`√3 v`,`${fraction('2','√3')} v`,`${fraction('v','√3')}`],
+ correct:2,
+ answer:`${fraction('2','√3')} v`,
+ diagram:'',
+ short:[
+ [`Take the original direction as x. All the momentum starts there.`,`pₓ = mv`],
+ [`The first mass leaves along y, so it carries no x momentum and the second must carry it all.`,`v₂ₓ = v`],
+ [`Nothing had y momentum to begin with, so the second mass must cancel what the first now has.`,`v₂ᵧ = −${fraction('v','√3')}`],
+ [`Combine the two components.`,`v₂ = √(v² + ${fraction('v²','3')})`],
+ [``,`v₂ = v√(${fraction('4','3')}) = ${fraction('2','√3')} v`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-25-E',parent:'COM-25',variant:5,
+ relevance:{parent:'COM-25',sharedSkill:'Equal and opposite momenta turned into kinetic energies',recoveryPurpose:'direct retry'},
+ topic:'Recoil energy shared between two fragments',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.242',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A bomb of mass 16 kg at rest explodes into two pieces of masses 4 kg and 12 kg. The velocity of the 12 kg mass is 4 m s⁻¹. The kinetic energy of the other mass is -`,
+ options:[`192 J`,`96 J`,`144 J`,`288 J`],
+ correct:3,
+ answer:`288 J`,
+ diagram:'',
+ short:[
+ [`The bomb was at rest, so the two pieces carry equal and opposite momenta.`,`4v = 12 × 4`],
+ [``,`v = 12 m s⁻¹`],
+ [`Now its kinetic energy.`,`K = ${fraction('1','2')}(4)(12)²`],
+ [``,`K = 288 J`],
+ [`The lighter piece ends up with the larger energy, which is the usual pattern for equal momenta.`,`288 J`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-45-A',parent:'COM-45',variant:1,
+ relevance:{parent:'COM-45',sharedSkill:'Mass-weighted displacements that must cancel to hold the centre of mass still',recoveryPurpose:'direct retry'},
+ topic:'Displacements shared about a fixed centre of mass',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.243',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`Consider a two particle system with particles having masses m₁ and m₂. If the first particle is pushed towards the centre of mass through a distance d, by what distance should the second particle be moved so as to keep the centre of mass at the same position?`,
+ options:[`${fraction('m₁','m₂')} d`,`d`,`${fraction('m₂','m₁')} d`,`${fraction('m₁','m₁ + m₂')} d`],
+ correct:0,
+ answer:`${fraction('m₁','m₂')} d`,
+ diagram:'',
+ short:[
+ [`The centre of mass is to stay where it is, so the two mass-weighted displacements must cancel.`,`m₁d₁ + m₂d₂ = 0`],
+ [`The first particle moves d towards the centre, so the second must move away from it.`,`m₁d = m₂d₂`],
+ [``,`d₂ = ${fraction('m₁','m₂')} d`],
+ [`The heavier the second particle, the less it needs to move, which the formula shows with m₂ underneath.`,`sense check`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-59-F',parent:'COM-59',variant:6,
+ relevance:{parent:'COM-59',sharedSkill:'Energy lost in a perfectly inelastic collision computed from the two kinetic energies',recoveryPurpose:'direct retry'},
+ topic:'Energy lost when two bodies move off together',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.244',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A block of mass 0.50 kg is moving with a speed of 2.00 m s⁻¹ on a smooth surface. It strikes another mass of 1.00 kg and then they move together as a single body. The energy loss during the collision is -`,
+ options:[`1.00 J`,`0.67 J`,`0.34 J`,`0.16 J`],
+ correct:1,
+ answer:`0.67 J`,
+ diagram:'',
+ short:[
+ [`Momentum fixes the common speed afterwards.`,`0.5(2) = 1.5 v`],
+ [``,`v = ${fraction('2','3')} m s⁻¹`],
+ [`Kinetic energy before the collision.`,`K before = ${fraction('1','2')}(0.5)(2)² = 1.00 J`],
+ [`And after, with the whole 1.5 kg moving at that speed.`,`K after = ${fraction('1','2')}(1.5)(${fraction('2','3')})² = ${fraction('1','3')} J`],
+ [`The difference is lost to heat and deformation.`,`ΔK = 1.00 − 0.33 = 0.67 J`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-14-B',parent:'COM-14',variant:2,
+ relevance:{parent:'COM-14',sharedSkill:'Energy of a spring-coupled pair at greatest compression, in the centre-of-mass frame',recoveryPurpose:'controlled transfer'},
+ topic:'Relative velocity of a spring-coupled pair',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.246',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two blocks A and B, each of mass m, are connected by a massless spring of natural length L and spring constant K. The blocks are initially resting on a smooth horizontal floor with the spring at its natural length, as shown in the figure. A third identical block C, also of mass m, moves on the floor with a speed v along the line joining A and B and collides with A. Then -`,
+ options:[`the kinetic energy of the A-B system, at maximum compression of the spring, is zero`,`the kinetic energy of the A-B system, at maximum compression of the spring, is ${fraction('mv²','4')}`,`the maximum compression of the spring is v√(${fraction('m','K')})`,`none of these`],
+ correct:1,
+ answer:`the kinetic energy of the A-B system, at maximum compression of the spring, is ${fraction('mv²','4')}`,
+ diagram:'blocks-A-B-C-spring',
+ short:[
+ [`C strikes A, and the two are identical, so the elastic collision exchanges their velocities: C stops and A moves off at v.`,`A starts at v, B at rest`],
+ [`Now A and B are a spring-coupled pair carrying total momentum mv.`,`p = mv`],
+ [`At greatest compression neither gains on the other, so both move at the common speed the momentum allows.`,`2m v′ = mv ⇒ v′ = ${fraction('v','2')}`],
+ [`The kinetic energy of the pair at that instant is that of the whole 2m moving together.`,`K = ${fraction('1','2')}(2m)(${fraction('v','2')})²`],
+ [``,`K = ${fraction('mv²','4')}`],
+ [`It is not zero, which is the first distractor: the centre of mass of A and B keeps moving even when the spring is most squeezed.`,`not zero`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-20-B',parent:'COM-20',variant:2,
+ relevance:{parent:'COM-20',sharedSkill:'What follows for a system whose external forces sum to zero',recoveryPurpose:'representation change'},
+ topic:'Speed of the centre of mass under purely internal forces',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.250',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`If the resultant of all the external forces acting on a system of particles is zero, then from an inertial frame one can surely say that -`,
+ options:[`linear momentum of the system does not change in time`,`kinetic energy of the system does not change in time`,`angular momentum of the system does not change in time`,`potential energy of the system does not change in time`],
+ correct:0,
+ answer:`linear momentum of the system does not change in time`,
+ diagram:'',
+ short:[
+ [`The total external force is the rate of change of the total momentum.`,`ΣF = ${fraction('dp','dt')}`],
+ [`Set it to zero and the momentum is constant. That much is certain.`,`p = constant`],
+ [`Kinetic and potential energy can still change: the particles may do work on each other internally, as a compressed spring between two blocks does.`,`energies may change`],
+ [`Angular momentum needs zero external torque, which is a different condition. Forces can sum to zero and still form a couple.`,`torque need not vanish`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-82',level:2,
+ title:'Fastest rate a gunner can fire against a force limit',
+ topic:'A force limit converted into a firing rate',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.252',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A machine gun fires a bullet of mass 40 g with a velocity 1200 m s⁻¹. The man holding it can exert a maximum force of 144 N on the gun. How many bullets can he fire per second at the most?`,
+ options:[`one`,`four`,`two`,`three`],
+ correct:3,
+ answer:`three`,
+ diagram:'',
+ noDiagramReason:'The question is a rate calculation from a momentum per bullet; there is nothing to draw.',
+ short:[
+ [`Each bullet leaves carrying this momentum, and the gun must be given the same backwards.`,`p = 0.04 × 1200 = 48 kg m s⁻¹`],
+ [`If n bullets leave each second, the momentum the man must absorb per second is n times that.`,`F = n p`],
+ [`The force he can supply is the limit.`,`144 = n × 48`],
+ [``,`n = 3`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-83',level:3,
+ title:'Speed of a wedge when a knife slides down it',
+ topic:'A body sliding on a free wedge, with a spring',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.263',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A knife of mass 1 kg slides on a frictionless wedge of mass 5 kg between two frictionless guides. At the instant shown in the figure, the spring has initial compression 1 m. The ground is also frictionless. The velocity of the wedge when the knife is about to touch the ground is, assuming the spring is ideal for large compressions -`,
+ options:[`${fraction('6','√89')} m/s`,`${fraction('12','√89')} m/s`,`${fraction('2','√89')} m/s`,`${fraction('24','√89')} m/s`],
+ correct:3,
+ answer:`${fraction('24','√89')} m/s`,
+ diagram:'knife-on-wedge',
+ short:[
+ [`The guides hold the knife vertical, so it can only fall; the wedge can only slide horizontally. The sloping face ties the two speeds together.`,`v knife = ${fraction('3','4')} v wedge from the 3 by 4 geometry`],
+ [`Nothing is lost to friction, so account for every store of energy. The knife falls 3 m and the spring gives up its compression.`,`mgh + ${fraction('1','2')}kx² = ΣK`],
+ [`Write the kinetic energies of knife and wedge, using the geometric link between their speeds.`,`1(10)(3) + ${fraction('1','2')}(1)(1)² = ${fraction('1','2')}(1)(${fraction('3','4')}v)² + ${fraction('1','2')}(5)v²`],
+ [`Collect the terms in v squared.`,`30.5 = v²(${fraction('9','32')} + ${fraction('5','2')})`],
+ [`Solving gives the wedge speed.`,`v = ${fraction('24','√89')} m/s`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-16-B',parent:'COM-16',variant:2,
+ relevance:{parent:'COM-16',sharedSkill:'Equating the area under a force-time graph to the change in momentum',recoveryPurpose:'inverse check'},
+ topic:'Impulse as the area under a force-time graph',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.264',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A ball of mass m moving with a velocity u rebounds from a wall. The collision is assumed to be elastic and the force of interaction between the ball and the wall varies as shown in the figure. Then the value of F₀ is -`,
+ options:[`${fraction('mu','T')}`,`${fraction('2mu','T')}`,`${fraction('4mu','T')}`,`${fraction('mu','2T')}`],
+ correct:2,
+ answer:`${fraction('4mu','T')}`,
+ diagram:'triangular-force-pulse',
+ short:[
+ [`The collision is elastic and the wall does not move, so the ball leaves at the same speed in the opposite direction.`,`Δp = 2mu`],
+ [`The impulse the wall delivers is the area under the force-time graph.`,`J = area`],
+ [`The graph is a triangle, rising to F₀ at ${fraction('T','2')} and falling back to zero at T, so its area is half base times height.`,`area = ${fraction('1','2')} T F₀`],
+ [`Set the area equal to the change in momentum.`,`${fraction('1','2')} T F₀ = 2mu`],
+ [``,`F₀ = ${fraction('4mu','T')}`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-84',level:3,
+ title:'Speed of a free block as a cylinder slides down its track',
+ topic:'A body free to recoil as another slides on it',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.267',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A block of mass M = 2 kg with a semicircular track of radius R = 1.1 m rests on a horizontal frictionless surface. A uniform cylinder of radius r = 10 cm and mass m = 1.0 kg is released from rest from the top point A. The cylinder slips on the semicircular frictionless track. The speed of the block when the cylinder reaches the bottom of the track at B is - (g = 10 m/s²)`,
+ options:[`√(${fraction('10','3')}) m/s`,`√(${fraction('4','3')}) m/s`,`√(${fraction('5','2')}) m/s`,`√10 m/s`],
+ correct:0,
+ answer:`√(${fraction('10','3')}) m/s`,
+ diagram:'block-semicircular-track',
+ short:[
+ [`The surface is frictionless and everything starts at rest, so the horizontal momentum stays zero throughout.`,`M v = m v cylinder`],
+ [`With M twice m, the cylinder moves twice as fast as the block, the other way.`,`v cylinder = 2v`],
+ [`The cylinder's centre drops by the track radius less its own radius, not by the full radius. That is the step worth care.`,`h = R − r = 1.0 m`],
+ [`Energy is conserved on the smooth track.`,`mgh = ${fraction('1','2')}M v² + ${fraction('1','2')}m(2v)²`],
+ [``,`10 = v² + 2v² = 3v²`],
+ [``,`v = √(${fraction('10','3')}) m/s`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-69-F',parent:'COM-69',variant:6,
+ relevance:{parent:'COM-69',sharedSkill:'Separating total energy, kinetic energy and momentum across a collision',recoveryPurpose:'representation change'},
+ topic:'What is conserved in an inelastic collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.268',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Which one of the following is true in the case of an inelastic collision, for the total energy, the kinetic energy and the momentum respectively?`,
+ options:[`conserved, conserved, conserved`,`conserved, not conserved, conserved`,`conserved, conserved, not conserved`,`not conserved, not conserved, conserved`],
+ correct:1,
+ answer:`conserved, not conserved, conserved`,
+ diagram:'',
+ short:[
+ [`Momentum survives every collision, because the forces between the bodies cancel in pairs.`,`momentum conserved`],
+ [`Inelastic means kinetic energy is lost, so that one fails.`,`kinetic energy not conserved`],
+ [`The lost kinetic energy is not destroyed: it becomes sound and heat, so the total energy is still conserved.`,`total energy conserved`],
+ [`The ordering in the question matters, so read the three columns in the order given.`,`conserved, not conserved, conserved`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-47-A',parent:'COM-47',variant:1,
+ relevance:{parent:'COM-47',sharedSkill:'Treating a hole as a negative mass laid on the complete body',recoveryPurpose:'direct retry'},
+ topic:'Centre of mass of a body with a piece removed',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.269',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`From a uniform circular plate of radius R, a small circular plate of radius R/4 is cut off, as shown. If O is the centre of the complete plate, then at what distance from O does the new centre of mass of the remaining plate lie?`,
+ options:[`−${fraction('R','20')}`,`−${fraction('R','16')}`,`−${fraction('R','15')}`,`−${fraction('R','12')}`],
+ correct:0,
+ answer:`−${fraction('R','20')}`,
+ diagram:'plate-with-hole',
+ short:[
+ [`The plate is uniform, so area stands in for mass. The hole has a sixteenth of the full area, since its radius is a quarter.`,`A hole = ${fraction('A','16')}`],
+ [`From the figure the hole is centred three quarters of the way out along the radius.`,`d = ${fraction('3R','4')}`],
+ [`Treat the hole as a negative mass on the complete plate. Its moment about O is its area times its offset.`,`moment = −${fraction('M','16')} × ${fraction('3R','4')} = −${fraction('3MR','64')}`],
+ [`The mass left behind is the full plate less the hole.`,`M − ${fraction('M','16')} = ${fraction('15M','16')}`],
+ [`Divide one by the other.`,`x = −${fraction('3R','64')} × ${fraction('16','15')}`],
+ [``,`x = −${fraction('R','20')}`],
+ [`The sign says the remaining material leans away from the hole, as it must.`,`sense check`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-69-G',parent:'COM-69',variant:7,
+ relevance:{parent:'COM-69',sharedSkill:'Which quantities survive a general collision',recoveryPurpose:'direct retry'},
+ topic:'What is conserved in an inelastic collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.270',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The quantities remaining constant in a collision are -`,
+ options:[`momentum, kinetic energy and temperature`,`momentum and kinetic energy but not temperature`,`momentum and temperature but not kinetic energy`,`momentum, but neither kinetic energy nor temperature`],
+ correct:3,
+ answer:`momentum, but neither kinetic energy nor temperature`,
+ diagram:'',
+ short:[
+ [`The question asks what is constant in a collision generally, not in an elastic one, so the answer must hold in every case.`,`general collision`],
+ [`Momentum is conserved in all of them.`,`momentum constant`],
+ [`Kinetic energy survives only an elastic collision, so in general it is not constant.`,`kinetic energy varies`],
+ [`The energy lost appears as heat, so the temperature of the bodies generally rises.`,`temperature varies`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-59-G',parent:'COM-59',variant:7,
+ relevance:{parent:'COM-59',sharedSkill:'Momentum conservation with vectors in a perfectly inelastic collision',recoveryPurpose:'representation change'},
+ topic:'Energy lost when two bodies move off together',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.272',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle of mass 1 g moving with a velocity u₁ = (3î − 2ĵ) m s⁻¹ experiences a perfectly inelastic collision with another particle of mass 2 g and velocity u₂ = (4ĵ − 6k̂) m s⁻¹. The velocity of the combined particle is, in m s⁻¹ -`,
+ options:[`î + 2ĵ − 4k̂`,`î − 2ĵ + 4k̂`,`î − 2ĵ − 4k̂`,`î + 3.33ĵ + 4k̂`],
+ correct:0,
+ answer:`î + 2ĵ − 4k̂`,
+ diagram:'',
+ short:[
+ [`Add the two momenta as vectors, in gram metres per second.`,`p = 1(3î − 2ĵ) + 2(4ĵ − 6k̂)`],
+ [``,`p = 3î − 2ĵ + 8ĵ − 12k̂`],
+ [``,`p = 3î + 6ĵ − 12k̂`],
+ [`The collision is perfectly inelastic, so the combined 3 g moves with that momentum.`,`3v = 3î + 6ĵ − 12k̂`],
+ [``,`v = î + 2ĵ − 4k̂`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-09-C',parent:'COM-09',variant:3,
+ relevance:{parent:'COM-09',sharedSkill:'A ball picks up twice the speed of the advancing wall it bounces off',recoveryPurpose:'direct retry'},
+ topic:'Elastic collision with a massive moving body',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.273',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle of mass m moves with velocity v₀ = 20 m/sec towards a wall that is moving with velocity v = 5 m/sec. If the particle collides with the wall elastically, the speed of the particle just after the collision is -`,
+ options:[`30 m/s`,`20 m/s`,`25 m/s`,`22 m/s`],
+ correct:0,
+ answer:`30 m/s`,
+ diagram:'ball-wall-approaching',
+ short:[
+ [`The wall is far heavier than the particle, so the impact leaves its velocity unchanged.`,`wall still at 5 m/s`],
+ [`Work in the wall frame: there the particle approaches at the sum of the two speeds.`,`20 + 5 = 25 m/s`],
+ [`An elastic bounce off a stationary surface returns that speed unchanged, in the wall frame.`,`25 m/s back`],
+ [`Return to the ground frame by adding the wall speed again.`,`25 + 5 = 30 m/s`],
+ [`The particle gains twice the wall speed, which is the standard result worth remembering.`,`30 m/s`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-69-H',parent:'COM-69',variant:8,
+ relevance:{parent:'COM-69',sharedSkill:'Kinetic energy is unchanged by any number of elastic collisions',recoveryPurpose:'inverse check'},
+ topic:'What is conserved in an inelastic collision',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.274',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two perfectly elastic balls of the same mass m are moving with velocities u₁ and u₂. They collide elastically n times. The kinetic energy of the system finally is -`,
+ options:[`${fraction('1','2')} ${fraction('m','n')} u₁²`,`${fraction('1','2')} ${fraction('m','n')} (u₁² + u₂²)`,`${fraction('1','2')}m(u₁² + u₂²)`,`${fraction('1','2')}mn(u₁² + u₂²)`],
+ correct:2,
+ answer:`${fraction('1','2')}m(u₁² + u₂²)`,
+ diagram:'',
+ short:[
+ [`An elastic collision is one that conserves kinetic energy, by definition.`,`K unchanged by each collision`],
+ [`Applying that n times changes nothing: the total is the same after every collision as before it.`,`K after n = K before`],
+ [`So the answer is simply the kinetic energy the two balls started with.`,`K = ${fraction('1','2')}m u₁² + ${fraction('1','2')}m u₂²`],
+ [`The number n never enters, which is what the two options carrying n get wrong.`,`n is a decoy`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-29-B',parent:'COM-29',variant:2,
+ relevance:{parent:'COM-29',sharedSkill:'The limit of the elastic result when the target is far lighter',recoveryPurpose:'controlled transfer'},
+ topic:'Finding the target mass from the velocities after impact',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.275',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A massive ball moving with speed v collides head-on with a tiny ball having a mass very much smaller than the mass of the first ball. If the collision is elastic, then immediately after the impact, the second ball will move with a speed approximately equal to -`,
+ options:[`v`,`2v`,`${fraction('v','2')}`,`∞`],
+ correct:1,
+ answer:`2v`,
+ diagram:'',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the target leaves with this velocity.`,`v₂ = ${fraction('2m₁u','m₁ + m₂')}`],
+ [`The striker is far heavier, so the small mass may be dropped beside it in the denominator.`,`m₁ + m₂ ≈ m₁`],
+ [`The m₁ then cancels.`,`v₂ ≈ 2v`],
+ [`The tiny ball leaves at twice the speed of the heavy one, and no faster: the infinity option mistakes a limit for a divergence.`,`2v, not unbounded`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-14-C',parent:'COM-14',variant:3,
+ relevance:{parent:'COM-14',sharedSkill:'Capture by a block, then the spring compression that follows',recoveryPurpose:'controlled transfer'},
+ topic:'Relative velocity of a spring-coupled pair',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.276',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A bullet of mass m strikes a block of mass M connected to a light spring of stiffness k, with a speed v₀. If the bullet gets embedded in the block then the maximum compression in the spring is -`,
+ options:[`√(${fraction('m²v₀²','(M + m)k')})`,`√(${fraction('Mmv₀²','2(M + m)k')})`,`√(${fraction('Mv₀²','2(M + m)k')})`,`√(${fraction('Mv²','(M + m)k')})`],
+ correct:0,
+ answer:`√(${fraction('m²v₀²','(M + m)k')})`,
+ diagram:'bullet-block-spring',
+ short:[
+ [`The bullet embeds itself, so the capture is perfectly inelastic and momentum fixes the speed they move off with.`,`mv₀ = (M + m)v`],
+ [``,`v = ${fraction('mv₀','M + m')}`],
+ [`After that the block and bullet compress the spring smoothly, so energy carries it the rest of the way.`,`${fraction('1','2')}(M + m)v² = ${fraction('1','2')}kx²`],
+ [`Substitute the captured speed.`,`(M + m)${fraction('m²v₀²','(M + m)²')} = kx²`],
+ [``,`x = √(${fraction('m²v₀²','(M + m)k')})`],
+ [`Using energy across the capture would overstate the compression: that stage loses energy and only momentum carries across it.`,`momentum, then energy`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-11-B',parent:'COM-11',variant:2,
+ relevance:{parent:'COM-11',sharedSkill:'Ratio of the two speeds after impact written through the restitution',recoveryPurpose:'direct retry'},
+ topic:'Fixing the restitution from the velocities after impact',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.277',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A sphere of mass m moving with a constant velocity hits another stationary sphere of the same mass. If e is the coefficient of restitution, then the ratio of the speed of the first sphere to the speed of the second sphere, after the collision, will be -`,
+ options:[`${fraction('1 − e','1 + e')}`,`${fraction('1 + e','1 − e')}`,`${fraction('e + 1','e − 1')}`,`${fraction('e − 1','e + 1')}`],
+ correct:0,
+ answer:`${fraction('1 − e','1 + e')}`,
+ diagram:'',
+ short:[
+ [`For equal masses with the target at rest, momentum and restitution together give both velocities after the impact.`,`v₁ = ${fraction('(1 − e)u','2')}`],
+ [``,`v₂ = ${fraction('(1 + e)u','2')}`],
+ [`Form the ratio in the order the question asks: the striker first, the target second.`,`${fraction('v₁','v₂')} = ${fraction('1 − e','1 + e')}`],
+ [`Check the limits: with e = 1 the striker stops and the ratio is zero, and with e = 0 they move together and the ratio is one.`,`both limits work`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-85',level:3,
+ title:'Thrust on the hand from a jet of water',
+ topic:'Force from a steady stream of water',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.279',printedAnswer:'A',verifiedAnswer:'D',note:'The printed key is [A], zero, which cannot be right: a steady jet carries momentum away and the hand must supply it. Working it through gives 0.127 N, option (D) exactly as printed. The authoring pass first mis-stated this as 1.27 x 10 to the minus 2 and the independent check caught it; option (D) is keyed and both discrepancies are recorded for faculty.'},
+ question:`A gardener waters the plants by a pipe of diameter 1 mm. The water comes out at the rate of 10 cm³/sec. The reactionary force exerted on the hand of the gardener is, taking the density of water to be 10³ kg/m³ -`,
+ options:[`zero`,`1.27 × 10⁻² N`,`1.28 × 10⁻⁴ N`,`0.127 N`],
+ correct:3,
+ answer:`0.127 N`,
+ diagram:'',
+ noDiagramReason:'A pipe delivering a steady stream; the numbers are a rate and a diameter, with no geometry to draw.',
+ short:[
+ [`The water leaves carrying momentum, and the hand must supply it, so the reaction is the momentum delivered each second.`,`F = ${fraction('dm','dt')} v`],
+ [`Get the speed from the volume rate and the bore. The area is π r² with r half a millimetre.`,`A = π(0.5 × 10⁻³)² ≈ 7.85 × 10⁻⁷ m²`],
+ [``,`v = ${fraction('10 × 10⁻⁶','7.85 × 10⁻⁷')} ≈ 12.7 m/s`],
+ [`The mass leaving each second is the volume rate times the density.`,`${fraction('dm','dt')} = 10 × 10⁻⁶ × 10³ = 10⁻² kg/s`],
+ [`Multiply the mass rate by the speed.`,`F = 10⁻² × 12.73`],
+ [``,`F ≈ 0.127 N`],
+ [`The jet carries momentum away every second, so the reaction cannot be zero, which rules out the printed key.`,`not zero`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-63-A',parent:'COM-63',variant:1,
+ relevance:{parent:'COM-63',sharedSkill:'Thrust as the product of exhaust speed and the rate of mass loss',recoveryPurpose:'inverse check'},
+ topic:'Speed gained from the thrust of expelled gas',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.280',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`If the force on a rocket which is ejecting gases with a relative velocity of 300 m/s is 210 N, then the rate of combustion of the fuel will be -`,
+ options:[`10.7 kg/sec`,`0.07 kg/sec`,`1.4 kg/sec`,`0.7 kg/sec`],
+ correct:3,
+ answer:`0.7 kg/sec`,
+ diagram:'',
+ short:[
+ [`The thrust on a rocket is the exhaust speed times the rate at which mass is thrown out.`,`F = u ${fraction('dm','dt')}`],
+ [`Rearrange for the rate, which is what the question wants.`,`${fraction('dm','dt')} = ${fraction('F','u')}`],
+ [`Put the numbers in.`,`${fraction('dm','dt')} = ${fraction('210','300')}`],
+ [``,`= 0.7 kg/sec`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-86',level:3,
+ title:'Speed of a chain as it leaves the apex of a wedge',
+ topic:'A chain sliding off a smooth wedge',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.290',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A flexible chain of length L = 20√2 m and weight W = 10 kg is initially placed at rest on a smooth frictionless wedge surface ABC. It is given a slight jerk on one side so that it will start sliding on that side. Find the speed of the chain when its one end will leave the vertex of the wedge.`,
+ options:[`10√2 m/s`,`10 m/s`,`4 m/s`,`√(10√2) m/s`],
+ correct:1,
+ answer:`10 m/s`,
+ diagram:'chain-on-wedge',
+ short:[
+ [`The chain is uniform and the wedge is symmetric, with each face at 45°, so the chain starts draped half on each side.`,`L on two faces of 10√2 m each`],
+ [`At the start the two halves balance, so the centre of mass sits at the height of the midpoint of each half face.`,`symmetric start`],
+ [`By the time one end reaches the vertex the whole chain lies on one face, and its centre of mass has dropped.`,`all on one side`],
+ [`Work out that drop from the geometry of the 45° faces, then set the lost height against the gained speed.`,`gh drop = ${fraction('1','2')}v²`],
+ [`The chain is flexible and the surface smooth, so no energy is lost in the rearrangement.`,`v = 10 m/s`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-13-D',parent:'COM-13',variant:4,
+ relevance:{parent:'COM-13',sharedSkill:'The centre of mass of the fragments lands where the whole projectile would have',recoveryPurpose:'controlled transfer'},
+ topic:'A projectile bursting at the top of its flight',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.294',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`An object is projected with a speed 10 m/s at an angle of 30° with the horizontal. The object breaks into n equal fragments during its motion. One fragment is found to strike the ground at a distance of √3 m from the point of projection in the same azimuthal plane in which the object is projected. If the centre of mass of the remaining fragments strikes the ground at a distance of 7√3 m from the point of projection, then the value of n is - (g = 10 m/s²)`,
+ options:[`2`,`3`,`4`,`525`],
+ correct:1,
+ answer:`3`,
+ diagram:'',
+ short:[
+ [`The break is internal, so the centre of mass of everything lands exactly where the unbroken object would have.`,`R = ${fraction('u² sin 2θ','g')}`],
+ [``,`R = ${fraction('100 sin 60°','10')} = 5√3 m`],
+ [`Average the landing points by mass. One fragment of mass m landed at √3, and the other n − 1 of them have their centre of mass at 7√3.`,`5√3 = ${fraction('m√3 + m(n − 1)7√3','mn')}`],
+ [`Cancel m and √3 throughout.`,`5n = 1 + 7(n − 1)`],
+ [``,`5n = 7n − 6 ⇒ n = 3`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-87',level:3,
+ title:'Centre of mass left when a semicircle is cut from a plate',
+ topic:'Centre of mass of a plate with a semicircle removed',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.297',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A semicircular portion of radius r is cut from a uniform rectangular plate as shown in the figure. The distance of the centre of mass C of the remaining plate, from the point O, is -`,
+ options:[`${fraction('2r','(3 − π)')}`,`${fraction('3r','2(4 − π)')}`,`${fraction('2r','(4 + π)')}`,`${fraction('2r','3(4 − π)')}`],
+ correct:3,
+ answer:`${fraction('2r','3(4 − π)')}`,
+ diagram:'plate-semicircle-cut',
+ short:[
+ [`The plate is uniform, so area stands in for mass. The rectangle is 2r tall and r wide.`,`A rect = 2r²`],
+ [`The semicircle cut out has half the area of a circle of radius r.`,`A semi = ${fraction('πr²','2')}`],
+ [`Put the origin at O and treat the cut as a negative mass. A semicircle has its centre of mass this far from its flat edge.`,`d = ${fraction('4r','3π')}`],
+ [`Form the moment of the removed piece about O. Its area times its offset, with the π cancelling.`,`moment = ${fraction('πr²','2')} × ${fraction('4r','3π')} = ${fraction('2r³','3')}`],
+ [`The area left behind is the rectangle less the semicircle.`,`A = 2r² − ${fraction('πr²','2')} = ${fraction('r²(4 − π)','2')}`],
+ [`Divide the moment by the remaining area.`,`x = ${fraction('2r³','3')} ÷ ${fraction('r²(4 − π)','2')}`],
+ [``,`x = ${fraction('2r','3(4 − π)')}`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-06-A',parent:'COM-06',variant:1,
+ relevance:{parent:'COM-06',sharedSkill:'Acceleration of the centre of mass when the two parts move oppositely',recoveryPurpose:'controlled transfer'},
+ topic:'Acceleration of the centre of mass',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.298',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two particles having a mass ratio n : 1 are interconnected by a light inextensible string that passes over a smooth pulley. If the system is released, then the acceleration of the centre of mass of the system is -`,
+ options:[`(n − 1)² g`,`(${fraction('n + 1','n − 1')})² g`,`(${fraction('n − 1','n + 1')})² g`,`${fraction('n + 1','n − 1')} g`],
+ correct:2,
+ answer:`(${fraction('n − 1','n + 1')})² g`,
+ diagram:'',
+ short:[
+ [`Call the masses nm and m. The unbalanced weight drives the whole string-connected mass.`,`a = ${fraction('(n − 1)g','n + 1')}`],
+ [`The two accelerate in opposite directions, so the mass-weighted average keeps only the difference.`,`A = ${fraction('nm a − m a','nm + m')}`],
+ [``,`A = ${fraction('(n − 1)a','n + 1')}`],
+ [`Substitute the value of a found above. The same factor appears twice, so it squares.`,`A = (${fraction('n − 1','n + 1')})² g`],
+ [`Check the equal-mass case: n = 1 gives zero, and indeed a balanced pair does not move at all.`,`sense check`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-20-C',parent:'COM-20',variant:3,
+ relevance:{parent:'COM-20',sharedSkill:'What internal forces can and cannot change',recoveryPurpose:'representation change'},
+ topic:'Speed of the centre of mass under purely internal forces',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.299',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Internal forces can change -`,
+ options:[`the linear momentum but not the kinetic energy of the system`,`the kinetic energy but not the linear momentum of the system`,`linear momentum as well as kinetic energy of the system`,`neither the linear momentum nor the kinetic energy of the system`],
+ correct:1,
+ answer:`the kinetic energy but not the linear momentum of the system`,
+ diagram:'',
+ short:[
+ [`Internal forces come in equal and opposite pairs, so the impulses they deliver cancel exactly.`,`Σ internal impulse = 0`],
+ [`The total momentum therefore cannot be touched by them.`,`p unchanged`],
+ [`Kinetic energy is different: the two members of a pair act on bodies that may move differently, so the works they do need not cancel.`,`works need not cancel`],
+ [`A compressed spring released between two blocks is the standard example: the momentum stays zero while the kinetic energy rises from nothing.`,`spring example`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-20-D',parent:'COM-20',variant:4,
+ relevance:{parent:'COM-20',sharedSkill:'Zero external force means zero acceleration of the centre of mass, not zero velocity',recoveryPurpose:'inverse check'},
+ topic:'Speed of the centre of mass under purely internal forces',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.300',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`If the external forces acting on a system have zero resultant, the centre of mass -`,
+ options:[`must not move`,`must not accelerate`,`may move`,`may accelerate`],
+ correct:1,
+ answer:`must not accelerate`,
+ diagram:'',
+ short:[
+ [`The external force on a system is its total mass times the acceleration of its centre of mass.`,`ΣF = MA`],
+ [`Set the resultant to zero and the acceleration must vanish with it.`,`A = 0`],
+ [`That forbids acceleration but not motion: the centre of mass may be travelling steadily and will carry on doing so.`,`constant velocity allowed`],
+ [`So "must not move" is too strong and "may accelerate" is wrong. "May move" is true but weaker than the statement that is certain.`,`must not accelerate`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-26-F',parent:'COM-26',variant:6,
+ relevance:{parent:'COM-26',sharedSkill:'Momentum conservation when one fragment is left at rest',recoveryPurpose:'direct retry'},
+ topic:'Energy released in an explosion from the fragment momenta',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.145',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A stone of mass m₁ moving with a uniform speed v suddenly explodes on its own into two fragments. If the fragment of mass m₂ is at rest, the speed of the other fragment is -`,
+ options:[`${fraction('m₁v','m₁ − m₂')}`,`${fraction('m₁v','m₁ + m₂')}`,`${fraction('m₂v','m₁ − m₂')}`,`${fraction('m₁v','m₂')}`],
+ correct:0,
+ answer:`${fraction('m₁v','m₁ − m₂')}`,
+ diagram:'',
+ short:[
+ [`The explosion is internal, so the momentum before and after is the same.`,`p = m₁v`],
+ [`One fragment is left at rest, so it carries none of it, and the other must carry all.`,`(m₁ − m₂)v′ = m₁v`],
+ [`The moving fragment has what is left of the original mass.`,`v′ = ${fraction('m₁v','m₁ − m₂')}`],
+ [`It must be faster than the stone was, since a smaller mass carries the same momentum, and only the first option is.`,`v′ > v`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-28-B',parent:'COM-28',variant:2,
+ relevance:{parent:'COM-28',sharedSkill:'Momenta that cancel leave the combined body at rest',recoveryPurpose:'direct retry'},
+ topic:'A collision that brings both bodies to rest',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.178',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A body of mass m moving with a constant velocity v hits another body of the same mass moving with the same velocity v but in the opposite direction and sticks to it. The velocity of the compound body after collision is -`,
+ options:[`v`,`2v`,`zero`,`${fraction('v','2')}`],
+ correct:2,
+ answer:`zero`,
+ diagram:'',
+ short:[
+ [`The two bodies have the same mass and the same speed but opposite directions, so their momenta are equal and opposite.`,`p = mv − mv`],
+ [`The total is therefore zero before the collision.`,`p = 0`],
+ [`Momentum is conserved, and they stick, so the combined 2m carries that zero momentum.`,`2m v′ = 0`],
+ [``,`v′ = 0`],
+ [`All the kinetic energy has gone into deforming and heating the two bodies, which a perfectly inelastic collision is free to do.`,`energy lost, momentum kept`],
+ [`Correct answer`,`(C)`]
+]},
+{id:'COM-32-D',parent:'COM-32',variant:4,
+ relevance:{parent:'COM-32',sharedSkill:'Equal masses exchange velocities, so the struck body takes everything',recoveryPurpose:'controlled transfer'},
+ topic:'A chain of identical balls struck at one end',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.182',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`The bob of a simple pendulum of length ℓ, dropped from a horizontal position, strikes a block of the same mass placed on a frictionless horizontal table as shown in the diagram. The block shall have kinetic energy -`,
+ options:[`zero`,`mgℓ`,`${fraction('1','2')} mgℓ`,`2mgℓ`],
+ correct:1,
+ answer:`mgℓ`,
+ diagram:'pendulum-strikes-block',
+ short:[
+ [`The bob swings down through the full length of the string, so find its speed at the bottom from energy.`,`mgℓ = ${fraction('1','2')}mv²`],
+ [`Its kinetic energy there is therefore exactly the potential energy it started with.`,`K bob = mgℓ`],
+ [`The bob then strikes a block of the same mass. Equal masses in an elastic collision exchange velocities, so the bob stops and the block leaves with the bob's speed.`,`v block = v`],
+ [`The block has the same mass and the same speed, so it carries the whole of that kinetic energy.`,`K block = mgℓ`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-88',level:3,
+ title:'Where a cart gaining sand sits on the acceleration it keeps',
+ topic:'Acceleration of a cart that is gaining mass',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.89',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A flat cart of mass m₀ starts moving to the right due to a constant horizontal force F at t = 0. Sand spills on the flat cart from a stationary hopper as shown in the figure. The velocity of loading is constant and is equal to μ kg/sec. Then -`,
+ options:[`the initial acceleration of the cart is equal to ${fraction('F','m₀')}`,`the acceleration at time t is ${fraction('F','m₀ + μt')}`,`the initial acceleration is less than ${fraction('F','m₀')}`,`the acceleration is constant throughout`],
+ correct:0,
+ answer:`the initial acceleration of the cart is equal to ${fraction('F','m₀')}`,
+ diagram:'cart-gaining-sand',
+ short:[
+ [`At the very first instant no sand has landed yet, so the cart still has only its own mass.`,`m = m₀ at t = 0`],
+ [`The cart is also not yet moving, so it is not having to drag any newly landed sand up to speed.`,`v = 0 at t = 0`],
+ [`So the initial acceleration is the plain ratio.`,`a = ${fraction('F','m₀')}`],
+ [`Later it is not simply F over the grown mass: the sand arrives with no horizontal motion and has to be accelerated, which takes part of the force.`,`F = m${fraction('dv','dt')} + v${fraction('dm','dt')}`],
+ [`That extra term is why the second option is wrong, and why the acceleration is not constant either.`,`a = ${fraction('F − μv','m₀ + μt')}`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-89',level:3,
+ title:'When the free block reaches its greatest speed',
+ topic:'When a freely recoiling body is moving fastest',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.87',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two identical blocks, each having mass M, are smoothly conjugated and placed on a smooth horizontal floor as shown in the figure. On the left of block A there is a wall. A small block of mass m is released from the position shown. The velocity of block B is maximum -`,
+ options:[`when m is at the highest position on B`,`when m is at the lowest position and moving towards the left`,`when m is at point C`,`is equal to ${fraction('m√(2gh)','m + M')}`],
+ correct:1,
+ answer:`when m is at the lowest position and moving towards the left`,
+ diagram:'two-blocks-conjugated',
+ short:[
+ [`While the small block slides down the left-hand curve, it pushes A towards the wall, which holds A still and lets nothing move.`,`wall takes the push`],
+ [`When m reaches the lowest point it is moving leftwards, and from then on the push it exerts is away from the wall.`,`direction reverses at the bottom`],
+ [`B is free to slide, so it is pushed along for as long as m presses it forwards; its speed keeps rising until that push ends.`,`B accelerates while pushed`],
+ [`The push on B is greatest and the contact ends at the lowest point, so B is moving fastest just as m passes through it heading left.`,`maximum at the lowest point`],
+ [`The fourth option is a speed rather than an instant, so it does not answer the question as asked.`,`question asks when`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-90',level:3,
+ title:'Elastic bounce of a ball tracked against its height',
+ topic:'Reading a bounce off a velocity-height graph',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.92',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A ball is dropped vertically from a height d above the ground. It hits the ground and bounces up vertically to half that height. Neglecting subsequent motion and air resistance, its velocity v varies with the height h above the ground as -`,
+ options:[`graph A`,`graph B`,`graph C`,`graph D`],
+ correct:0,
+ answer:`graph A`,
+ diagram:'',
+ optionFigures:'bounce-v-vs-h',
+ noDiagramReason:'The four answer choices are themselves the graphs, drawn by the option-figure renderer; a separate stem diagram would duplicate them.',
+ short:[
+ [`On the way down the ball starts at h = d with no speed and gains speed as h falls, so the magnitude grows as h decreases.`,`v² = 2g(d − h)`],
+ [`Taking downwards as negative, the curve runs from zero at h = d into negative values as h goes to zero.`,`downward branch is negative`],
+ [`At the ground it bounces, so the velocity jumps from negative to positive at h = 0 without any change in height.`,`vertical jump at h = 0`],
+ [`Going up it starts positive and falls to zero at the new height, which is only half the original, so that branch is shorter.`,`upward branch ends at ${fraction('d','2')}`],
+ [`Only the first graph shows both branches as parabolic in h, the sign reversing at the ground, and the upward branch stopping short of d.`,`graph A`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-91',level:3,
+ title:'Friction on the heavy block while the light one oscillates',
+ topic:'Friction tracking a varying spring force',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.256',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`Two blocks of masses 10 kg and 2 kg are connected by an ideal spring of spring constant 1000 N/m and the system is placed on a horizontal surface as shown. The coefficient of friction between the 10 kg block and the surface is 0.5, but friction is assumed to be absent between the 2 kg block and the surface. Initially the blocks are at rest and the spring is unstretched, then the 2 kg block is displaced by 1 cm to elongate the spring and released. Then the graph representing the magnitude of the frictional force on the 10 kg block against time t is - (time t is measured from the instant the 2 kg block is released)`,
+ options:[`graph A`,`graph B`,`graph C`,`graph D`],
+ correct:0,
+ answer:`graph A`,
+ diagram:'',
+ optionFigures:'friction-vs-time',
+ noDiagramReason:'The arrangement is described fully in words and the four answer choices are themselves the graphs, drawn by the option-figure renderer.',
+ short:[
+ [`The 10 kg block is held by friction and never moves, so the 2 kg block alone oscillates on the spring.`,`2 kg executes simple harmonic motion`],
+ [`The spring force on the 10 kg block therefore varies as a cosine from the moment of release, starting at its largest value.`,`F spring = kA cos ωt`],
+ [`The 10 kg block stays still, so friction must balance that force exactly at every instant.`,`f = |kA cos ωt|`],
+ [`Check it never has to exceed what friction can supply: the limit is 0.5 × 10 × 10 = 50 N and the spring needs only 1000 × 0.01 = 10 N.`,`10 N needed, 50 N available`],
+ [`The magnitude of a cosine is a run of positive humps starting at full height, which is the first graph. The second starts from zero and so has the phase wrong.`,`graph A`],
+ [`Correct answer`,`(A)`]
+]},
+{id:'COM-92',level:3,
+ title:'Where the centre of mass of a graded rod sits as the grading steepens',
+ topic:'Centre of mass of a rod whose grading exponent varies',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.245',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A thin rod of length L is lying along the x-axis with its ends at x = 0 and x = L. Its linear density varies with x as k(x/L)ⁿ, where n can be zero or any positive number. If the position x of the centre of mass of the rod is plotted against n, which of the following graphs best approximates the dependence of x on n?`,
+ options:[`graph A`,`graph B`,`graph C`,`graph D`],
+ correct:3,
+ answer:`graph D`,
+ diagram:'',
+ optionFigures:'xcm-vs-n',
+ noDiagramReason:'A straight rod with a density that varies along it; the four answer choices are themselves the graphs, drawn by the option-figure renderer.',
+ short:[
+ [`Integrate to find the centre of mass for a general exponent n.`,`x = ${fraction('∫x λ dx','∫λ dx')}`],
+ [`Both integrals are powers of x, so each gives a simple fraction of L.`,`x = ${fraction('(n + 1)L','n + 2')}`],
+ [`At n = 0 the rod is uniform and the centre of mass sits at the middle.`,`n = 0 gives ${fraction('L','2')}`],
+ [`As n grows the mass piles up towards the far end and the centre of mass creeps towards L without ever reaching it.`,`x → L as n → ∞`],
+ [`So the graph starts at half L and rises, flattening towards L. It rises steeply at first and then levels, which is the fourth graph; the third rises the wrong way round, slowly at first.`,`graph D`],
+ [`Correct answer`,`(D)`]
+]},
+{id:'COM-93',level:3,
+ title:'Time for two colliding pendulums to return',
+ topic:'Repeated elastic collisions between two pendulums',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.257',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two identical simple pendulums A and B are fixed at the same point. They are displaced by very small angles α and β (β > α) and released from rest. Find the time after which B reaches its initial position for the first time. Collisions are elastic and the length of the strings is ℓ.`,
+ options:[`π√(${fraction('ℓ','g')})`,`2π√(${fraction('ℓ','g')})`,`${fraction('πβ','α')} √(${fraction('ℓ','g')})`,`${fraction('2πβ','α')} √(${fraction('ℓ','g')})`],
+ correct:1,
+ answer:`2π√(${fraction('ℓ','g')})`,
+ diagram:'',
+ noDiagramReason:'Two pendulums hung from the same point; the drawing would show two strings and two bobs, while the whole question is the timing of their meetings.',
+ short:[
+ [`The pendulums are identical, so they have the same period whatever their amplitudes.`,`T = 2π√(${fraction('ℓ','g')})`],
+ [`Released together from opposite sides, both reach the lowest point after a quarter period and collide there.`,`first meeting at ${fraction('T','4')}`],
+ [`They are identical, so the elastic collision simply exchanges their velocities: each carries on with the other's amplitude.`,`velocities swap`],
+ [`Follow the motion through the successive quarter periods and collisions; B is back at its own starting position after four of them.`,`${fraction('T','4')} four times`],
+ [`That is one full period.`,`t = T = 2π√(${fraction('ℓ','g')})`],
+ [`Correct answer`,`(B)`]
+]},
+{id:'COM-18-A',parent:'COM-18',variant:1,
+ relevance:{parent:'COM-18',sharedSkill:'Bounding where the centre of mass of a set of particles can lie',recoveryPurpose:'controlled transfer'},
+ topic:'Where the centre of mass of a pair of bodies lies',
+ source:'Institute bank · Centre of Mass',
+ sourceRef:{documentName:'Institute question bank · Centre of Mass · single-correct exercise',paper:'Centre of Mass, single-correct exercise',questionNumber:'Q.259',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`All particles of a body are situated at a distance R from the origin. The distance of the centre of mass of the body from the origin is -`,
+ options:[`must be zero`,`may be greater than R`,`must be less than R`,`must be less than or equal to R`],
+ correct:3,
+ answer:`must be less than or equal to R`,
+ diagram:'',
+ short:[
+ [`Every particle lies on a sphere of radius R about the origin, so each position vector has length exactly R.`,`|rᵢ| = R`],
+ [`The centre of mass is a mass-weighted average of those vectors, with positive weights adding to one.`,`r = Σ wᵢ rᵢ`],
+ [`The length of such an average can never exceed the longest vector being averaged.`,`|r| ≤ R`],
+ [`It equals R only when every particle sits at the same point, and it is zero only for a symmetric arrangement, so neither of those is forced.`,`≤ R, not necessarily either extreme`],
+ [`Correct answer`,`(D)`]
 ]}
 ];
 </script>
@@ -2653,6 +3880,209 @@ switch(q.diagram){
   s+=txt(230,top+L+62,'the extreme right ball is drawn aside and released',M,13);
   break;
  }
+ case 'ballistic-pendulum':{
+  height=320;
+  const px=270,py=64,L=150;
+  s+=ground(px-60,py,120,true);
+  s+=line(px,py,px,py+L,W,1.8);
+  s+=rect(px-24,py+L,48,44,'M',B);
+  s+=`<circle cx="${px-128}" cy="${py+L+22}" r="8" fill="${Y}"/>`+txt(px-128,py+L-2,'m',Y,15);
+  s+=arrow(px-116,py+L+22,px-40,py+L+22,'',GREEN)+txt(px-78,py+L+10,'v₁',GREEN,15);
+  s+=line(px+96,py+L+44,px+96,py+L+44-54,M,1.3)+txt(px+108,py+L+20,'y',M,15,'start');
+  s+=line(px+24,py+L+44,px+104,py+L+44,M,1.1,true);
+  s+=line(px+40,py+L-10,px+104,py+L-10,M,1.1,true);
+  s+=txt(230,py+L+86,'the bullet sticks, then the block swings up',M,13);
+  break;
+ }
+ case 'spring-between-m-M':{
+  height=230;
+  const gy=150,ax=118,bx=326;
+  s+=ground(52,gy,356);
+  s+=rect(ax-34,gy-40,44,40,'m',Y);
+  s+=rect(bx-6,gy-46,50,46,'M',B);
+  const z=[];for(let k=0;k<=24;k++){const u=k/24;z.push([ax+14+u*(bx-10-ax-14),gy-20+(k%2?8:-8)*(u>0.08&&u<0.92?1:0)]);}
+  s+=`<path d="${curvePath(z)}" fill="none" stroke="${W}" stroke-width="1.9"/>`;
+  s+=txt(230,gy-62,'the spring is held compressed by x, then released',M,13);
+  break;
+ }
+ case 'block-into-wall-spring':{
+  height=240;
+  const gy=158,wx=372;
+  s+=ground(50,gy,340);
+  s+=`<rect x="${wx}" y="${gy-92}" width="20" height="92" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  for(let i=0;i<6;i++) s+=line(wx,gy-88+i*15,wx+20,gy-80+i*15,G,1.2);
+  const sx=268;
+  const z=[];for(let k=0;k<=20;k++){const u=k/20;z.push([sx+u*(wx-sx),gy-22+(k%2?8:-8)*(u>0.08&&u<0.92?1:0)]);}
+  s+=`<path d="${curvePath(z)}" fill="none" stroke="${W}" stroke-width="1.9"/>`;
+  s+=txt((sx+wx)/2,gy-44,'K',M,15);
+  s+=rect(150,gy-42,48,42,'M',Y);
+  s+=arrow(204,gy-21,256,gy-21,'',GREEN);
+  s+=txt(230,gy+34,'frictionless surface',M,13);
+  break;
+ }
+ case 'blocks-A-B-C-spring':{
+  height=240;
+  const gy=156,cx2=92,ax=176,bx=330;
+  s+=ground(48,gy,364);
+  s+=rect(cx2-26,gy-36,40,36,'C',G);
+  s+=rect(ax-20,gy-36,40,36,'A',Y);
+  s+=rect(bx-6,gy-36,40,36,'B',B);
+  const z=[];for(let k=0;k<=20;k++){const u=k/20;z.push([ax+22+u*(bx-8-ax-22),gy-18+(k%2?7:-7)*(u>0.09&&u<0.91?1:0)]);}
+  s+=`<path d="${curvePath(z)}" fill="none" stroke="${W}" stroke-width="1.8"/>`;
+  s+=span(ax+22,bx-8,gy-46,'L');
+  s+=arrow(cx2+18,gy-18,ax-26,gy-18,'',GREEN)+txt((cx2+ax)/2,gy-28,'v',GREEN,15);
+  s+=txt(230,gy+34,'smooth floor, spring at its natural length',M,13);
+  break;
+ }
+ case 'knife-on-wedge':{
+  height=340;
+  const gy=250,ax=74;
+  s+=ground(46,gy,380);
+  s+=`<path d="M ${ax} ${gy} L ${ax+176} ${gy} L ${ax+176} ${gy-132} Z" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=span(ax,ax+176,gy+40,'4 m');
+  s+=line(ax+196,gy,ax+196,gy-132,M,1.3)+txt(ax+208,gy-66,'3 m',M,14,'start');
+  const sx=ax+176, ex=ax+252;
+  const z=[];for(let k=0;k<=18;k++){const u=k/18;z.push([sx+u*(ex-sx),gy-112+(k%2?7:-7)*(u>0.1&&u<0.9?1:0)]);}
+  s+=`<path d="${curvePath(z)}" fill="none" stroke="${W}" stroke-width="1.8"/>`;
+  s+=txt((sx+ex)/2,gy-136,'K = 1 N m\u207b\u00b9',M,13);
+  const kx=ax+132, ky=gy-132*(132/176);            // the tip sits on the hypotenuse at that x
+  s+=`<path d="M ${kx-8} ${ky-56} l 16 0 l 0 34 l -8 22 l -8 -22 z" fill="${G}" stroke="${W}" stroke-width="1.6"/>`;
+  s+=line(kx-15,ky-60,kx-15,gy,M,1.1,true)+line(kx+15,ky-60,kx+15,gy,M,1.1,true);
+  s+=txt(kx-28,ky-34,'guides',M,12,'end');
+  s+=txt(230,gy+72,'guides hold the knife vertical; everything is frictionless',M,13);
+  break;
+ }
+ case 'triangular-force-pulse':{
+  height=300;
+  const ox=104,oy=230,W0=250,H0=150;
+  s+=line(ox,oy,ox,oy-H0-14,M,1.7)+line(ox,oy,ox+W0+18,oy,M,1.7);
+  s+=`<path d="M ${ox} ${oy-H0-20} l -4 8 l 8 0 z" fill="${M}"/><path d="M ${ox+W0+24} ${oy} l -8 -4 l 0 8 z" fill="${M}"/>`;
+  s+=txt(ox+6,oy-H0-26,'F',M,15,'start')+txt(ox+W0+14,oy+22,'t',M,15);
+  const mid=ox+W0*0.5, end=ox+W0;
+  s+=line(ox,oy,mid,oy-H0,W,2.6)+line(mid,oy-H0,end,oy,W,2.6);
+  s+=line(ox,oy-H0,mid,oy-H0,M,1.2,true)+txt(ox-10,oy-H0+5,'F₀',M,14,'end');
+  s+=line(mid,oy,mid,oy-H0,M,1.2,true);
+  s+=txt(mid,oy+20,'0.5 T',M,13)+txt(end,oy+20,'T',M,13);
+  break;
+ }
+ case 'block-semicircular-track':{
+  height=310;
+  const gy=238,bx=150,bw=190,bh=104;
+  s+=ground(44,gy,372);
+  s+=`<path d="M ${bx} ${gy} L ${bx} ${gy-bh} A ${bw/2} ${bh} 0 0 0 ${bx+bw} ${gy-bh} L ${bx+bw} ${gy} Z" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=txt(bx+16,gy-18,'M',W,16);
+  s+=`<circle cx="${bx+10}" cy="${gy-bh-10}" r="11" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=txt(bx+10,gy-bh-28,'m',Y,15)+txt(bx+30,gy-bh-24,'A',M,14,'start');
+  s+=txt(bx+bw/2,gy-bh+72,'B',M,14);
+  s+=txt(230,gy+34,'both the track and the floor are frictionless',M,13);
+  break;
+ }
+ case 'plate-with-hole':{
+  height=310;
+  const ox=206,oy=180,R=104;
+  s+=`<circle cx="${ox}" cy="${oy}" r="${R}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=line(ox-R-26,oy,ox+R+40,oy,M,1.3)+txt(ox+R+52,oy+5,'Y',M,15,'start');
+  s+=`<circle cx="${ox+3*R/4}" cy="${oy}" r="${R/4}" fill="none" stroke="${Y}" stroke-width="2.2" stroke-dasharray="4 3"/>`;
+  s+=dot(ox,oy,M)+txt(ox-6,oy-14,'O',M,15,'end');
+  s+=txt(ox+3*R/4,oy-R/4-12,'cut out',Y,13);
+  break;
+ }
+ case 'ball-wall-approaching':{
+  height=250;
+  const wx=340,cy=142;
+  s+=`<rect x="${wx}" y="${cy-70}" width="20" height="140" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  for(let i=0;i<9;i++) s+=line(wx,cy-66+i*16,wx+20,cy-58+i*16,G,1.2);
+  s+=`<circle cx="140" cy="${cy}" r="13" fill="${Y}"/>`;
+  s+=arrow(155,cy,222,cy,'',GREEN)+txt(188,cy-12,'v₀',GREEN,15);
+  s+=arrow(wx-14,cy-46,wx-76,cy-46,'',B)+txt(wx-46,cy-58,'v',B,15);
+  s+=txt(230,cy+94,'the wall advances on the particle',M,13);
+  break;
+ }
+ case 'bullet-block-spring':{
+  height=240;
+  const gy=158,wx=378;
+  s+=ground(44,gy,348);
+  s+=`<rect x="${wx}" y="${gy-90}" width="18" height="90" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  for(let i=0;i<6;i++) s+=line(wx,gy-86+i*15,wx+18,gy-78+i*15,G,1.2);
+  const sx=288;
+  const z=[];for(let k=0;k<=18;k++){const u=k/18;z.push([sx+u*(wx-sx),gy-22+(k%2?8:-8)*(u>0.09&&u<0.91?1:0)]);}
+  s+=`<path d="${curvePath(z)}" fill="none" stroke="${W}" stroke-width="1.9"/>`;
+  s+=txt((sx+wx)/2,gy-44,'k',M,15);
+  s+=rect(206,gy-44,48,44,'M',B);
+  s+=`<circle cx="118" cy="${gy-22}" r="8" fill="${Y}"/>`+txt(118,gy-40,'m',Y,14);
+  s+=arrow(130,gy-22,196,gy-22,'',GREEN)+txt(162,gy-34,'v₀',GREEN,15);
+  s+=txt(230,gy+34,'the bullet embeds itself in the block',M,13);
+  break;
+ }
+ case 'chain-on-wedge':{
+  height=300;
+  const ax=98,cx2=372,by=92,gy=238;
+  s+=ground(70,gy,330);
+  const bx=(ax+cx2)/2;
+  s+=`<path d="M ${ax} ${gy} L ${bx} ${by} L ${cx2} ${gy} Z" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=txt(ax-12,gy+6,'A',M,15,'end')+txt(bx,by-12,'B',M,15)+txt(cx2+12,gy+6,'C',M,15,'start');
+  const bead=(x0,y0,x1,y1)=>{let o='';for(let i=0;i<=9;i++){const t=i/9;o+=`<circle cx="${x0+t*(x1-x0)}" cy="${y0+t*(y1-y0)}" r="4.6" fill="none" stroke="${Y}" stroke-width="1.6"/>`;}return o;};
+  s+=bead(ax+54,gy-54,bx-4,by+4)+bead(bx+4,by+4,cx2-54,gy-54);
+  s+=txt(230,gy+40,'smooth faces at 45°, the chain draped over the vertex',M,13);
+  break;
+ }
+ case 'plate-semicircle-cut':{
+  height=320;
+  const ox=258,oy=180,r=88;
+  s+=`<rect x="${ox-r}" y="${oy-r}" width="${r}" height="${2*r}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=`<path d="M ${ox} ${oy-r} A ${r} ${r} 0 0 0 ${ox} ${oy+r}" fill="none" stroke="${Y}" stroke-width="2.2" stroke-dasharray="4 3"/>`;
+  s+=dot(ox,oy,M)+txt(ox+14,oy+5,'O',M,15,'start');
+  s+=dot(ox-40,oy,GREEN)+txt(ox-40,oy+22,'C',GREEN,15);
+  s+=span(ox-r,ox,oy-r-18,'r');
+  s+=line(ox-r-20,oy-r,ox-r-20,oy+r,M,1.3)+txt(ox-r-32,oy+5,'2r',M,14,'end');
+  s+=txt(230,oy+r+50,'the semicircle is cut away from the rectangle',M,13);
+  break;
+ }
+ case 'pendulum-strikes-block':{
+  height=310;
+  const px=160,py=72,L=132;
+  s+=ground(px-50,py,100,true);
+  s+=line(px,py,px-L,py,M,1.3,true);
+  s+=`<circle cx="${px-L}" cy="${py}" r="11" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=txt(px-L,py-20,'m',Y,14);
+  s+=`<path d="M ${px-L} ${py} A ${L} ${L} 0 0 1 ${px} ${py+L}" fill="none" stroke="${M}" stroke-width="1.3" stroke-dasharray="5 4"/>`;
+  s+=line(px,py,px,py+L,W,1.6);
+  s+=txt(px+12,py+L/2,'ℓ',M,15,'start');
+  s+=`<circle cx="${px}" cy="${py+L}" r="11" fill="${Y}"/>`;
+  s+=ground(px+6,py+L+12,230);
+  s+=rect(px+26,py+L-20,42,32,'m',B);
+  s+=txt(230,py+L+54,'frictionless table',M,13);
+  break;
+ }
+ case 'cart-gaining-sand':{
+  height=280;
+  const gy=196,cx=236,cw=200;
+  s+=`<rect x="${cx-cw/2}" y="${gy-26}" width="${cw}" height="20" fill="none" stroke="${W}" stroke-width="2.3"/>`;
+  s+=`<circle cx="${cx-cw/2+36}" cy="${gy}" r="12" fill="none" stroke="${W}" stroke-width="2"/>`+dot(cx-cw/2+36,gy,M);
+  s+=`<circle cx="${cx+cw/2-36}" cy="${gy}" r="12" fill="none" stroke="${W}" stroke-width="2"/>`+dot(cx+cw/2-36,gy,M);
+  s+=ground(cx-cw/2-20,gy+12,cw+40);
+  s+=arrow(cx+cw/2+4,gy-16,cx+cw/2+66,gy-16,'',GREEN)+txt(cx+cw/2+34,gy-28,'F',GREEN,16);
+  s+=`<path d="M ${cx-26} 58 l 52 0 l -16 30 l -20 0 z" fill="none" stroke="${M}" stroke-width="1.8"/>`;
+  for(let i=0;i<7;i++) s+=`<circle cx="${cx-8+((i*5)%16)}" cy="${98+i*12}" r="2.4" fill="${Y}"/>`;
+  s+=txt(cx+76,74,'sand, μ kg/s',M,13,'start');
+  s+=txt(230,gy+44,'the hopper is stationary and the cart runs beneath it',M,13);
+  break;
+ }
+ case 'two-blocks-conjugated':{
+  height=300;
+  const gy=234,wx=70;
+  s+=ground(wx,gy,340);
+  s+=`<rect x="${wx-20}" y="${gy-130}" width="20" height="130" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  for(let i=0;i<8;i++) s+=line(wx-20,gy-126+i*16,wx,gy-118+i*16,G,1.2);
+  const ax=wx,bw=132;
+  s+=`<path d="M ${ax} ${gy} L ${ax} ${gy-96} A 96 96 0 0 0 ${ax+96} ${gy} Z" fill="none" stroke="${W}" stroke-width="2.3"/>`;
+  s+=txt(ax+26,gy-16,'A',W,15);
+  s+=`<path d="M ${ax+96} ${gy} A 96 96 0 0 0 ${ax+192} ${gy-96} L ${ax+192} ${gy} Z" fill="none" stroke="${W}" stroke-width="2.3"/>`;
+  s+=txt(ax+164,gy-16,'B',W,15);
+  s+=`<circle cx="${ax+6}" cy="${gy-92}" r="9" fill="${Y}"/>`+txt(ax+6,gy-110,'m',Y,14);
+  s+=txt(230,gy+34,'both blocks rest on a smooth floor; the wall is on the left',M,13);
+  break;
+ }
  case 'two-plates':{
   height=330;
   /* The two plates touch corner to corner. O is the lower-left corner of the
@@ -2793,6 +4223,50 @@ function optionFigure(key,i){
    +tx(13,18,ylab,M,11,'middle')+tx(146,94,xlab,M,11,'middle');
  let s='';
  switch(key){
+  case 'bounce-v-vs-h':{
+   // v against h for a ball dropped from d that rebounds to d/2
+   s+=axes('v','h');
+   const x=u=>26+u*120, yv=v=>46+(1-v)*34;         // h from 0..d left to right, v scaled about the axis
+   const mid=46;
+   s+=ln(26,mid,150,mid,M,1.1);
+   const down=[],up=[];
+   for(let k=0;k<=20;k++){const u=k/20; down.push([x(u), mid+30*Math.sqrt(1-u)]);}
+   for(let k=0;k<=20;k++){const u=k/20; if(u<=0.5) up.push([x(u), mid-30*Math.sqrt(0.5-u)/Math.SQRT1_2*0.707]);}
+   const dpath=[0,1,2].length;
+   const toP=a=>a.map((p,n)=>(n?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+   if(i===0){s+=`<path d="${toP(down)}" fill="none" stroke="${Y}" stroke-width="2"/>`+`<path d="${toP(up)}" fill="none" stroke="${Y}" stroke-width="2"/>`;}
+   else if(i===1){s+=`<path d="${toP(down.map(p=>[p[0],mid-(p[1]-mid)]))}" fill="none" stroke="${Y}" stroke-width="2"/>`+`<path d="${toP(up.map(p=>[p[0],mid+(mid-p[1])]))}" fill="none" stroke="${Y}" stroke-width="2"/>`;}
+   else if(i===2){s+=`<path d="${toP(down)}" fill="none" stroke="${Y}" stroke-width="2"/>`+`<path d="${toP(down.map(p=>[p[0],mid-(p[1]-mid)]))}" fill="none" stroke="${Y}" stroke-width="2"/>`;}
+   else {const flat=[[x(0),mid+30],[x(1),mid+30]];s+=`<path d="${toP(flat)}" fill="none" stroke="${Y}" stroke-width="2"/>`+`<path d="${toP(up)}" fill="none" stroke="${Y}" stroke-width="2"/>`;}
+   break;
+  }
+  case 'friction-vs-time':{
+   // magnitude of a cosine (A), a sine (B), a constant (C), nothing (D)
+   s+=axes('f','t');
+   const x=u=>26+u*120, base=80, amp=52;
+   const pts=f=>{const a=[];for(let k=0;k<=60;k++){const u=k/60;a.push([x(u),base-amp*Math.abs(f(u))]);}return a;};
+   const toP=a=>a.map((p,n)=>(n?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+   if(i===0) s+=`<path d="${toP(pts(u=>Math.cos(u*3*Math.PI)))}" fill="none" stroke="${Y}" stroke-width="2"/>`;
+   else if(i===1) s+=`<path d="${toP(pts(u=>Math.sin(u*3*Math.PI)))}" fill="none" stroke="${Y}" stroke-width="2"/>`;
+   else if(i===2) s+=ln(26,base-amp*0.6,146,base-amp*0.6,Y,2);
+   else s+=tx(88,base-20,'none of these',M,12,'middle');
+   break;
+  }
+  case 'xcm-vs-n':{
+   // x_cm = (n+1)L/(n+2): starts at L/2, rises and flattens towards L
+   s+=axes('x','n');
+   const x=u=>26+u*120, yTop=22, yHalf=62;
+   s+=ln(26,yTop,146,yTop,M,1,true)+tx(20,yTop+4,'L',M,10,'end');
+   s+=ln(26,yHalf,146,yHalf,M,1,true)+tx(20,yHalf+4,'L/2',M,10,'end');
+   const toP=a=>a.map((p,k)=>(k?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+   const curve=f=>{const a=[];for(let k=0;k<=40;k++){const u=k/40;a.push([x(u),yHalf-(yHalf-yTop)*f(u)]);}return a;};
+   if(i===0) s+=ln(26,yHalf,146,yHalf,Y,2);                                  // flat at L/2
+   else if(i===1) s+=`<path d="${toP(curve(u=>Math.exp(-4*u)))}" fill="none" stroke="${Y}" stroke-width="2"/>`;
+   else if(i===2) s+=`<path d="${toP(curve(u=>u*u))}" fill="none" stroke="${Y}" stroke-width="2"/>`;
+   else s+=`<path d="${toP(curve(u=>1-Math.exp(-4*u)))}" fill="none" stroke="${Y}" stroke-width="2"/>`;
+   break;
+  }
+
   /* Q.2 -- how the normal reaction varies with angular displacement. */
   case 'normal-reaction-vs-angle':{
    s+=axes('N','θ')+ln(26,22,150,22,M,1.3,true)+tx(18,38,'3mg',M,10,'middle');
@@ -2910,44 +4384,44 @@ const baseSections=[
    core this plan does not know about, so the taxonomy cannot silently drift. */
 const subtopicPlan={
  'com-particles':[
-  ['Where the centre of mass of a pair of bodies lies',['COM-01','COM-18']],
-  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64']],
+  ['Where the centre of mass of a pair of bodies lies',['COM-01','COM-18','COM-80']],
+  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64','COM-79']],
   ['How the centre of mass shifts when mass is added or moved',['COM-68','COM-45']],
   ['Speed of the centre of mass under purely internal forces',['COM-20']]],
  'com-bodies':[
   ['Composite bodies built from plates and discs',['COM-02']],
-  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37']],
-  ['Recasting a body, cutting a piece out, draining it away',['COM-04','COM-47','COM-48']],
+  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37','COM-92']],
+  ['Recasting a body, cutting a piece out, draining it away',['COM-04','COM-47','COM-48','COM-87']],
   ['Centre of mass of a drawn or jointed figure',['COM-54','COM-56']]],
  'com-motion':[
   ['Velocity of the centre of mass of a two-body system',['COM-05']],
-  ['Acceleration of the centre of mass',['COM-06','COM-21']],
+  ['Acceleration of the centre of mass',['COM-06','COM-21','COM-88']],
   ['Fragments balanced about the path of the centre of mass',['COM-52']],
   ['Momentum written through the kinetic energy',['COM-22']]],
  'momentum-conservation':[
-  ['A body driven onto a free wedge or trolley',['COM-07']],
+  ['A body driven onto a free wedge or trolley',['COM-07','COM-83','COM-84','COM-89']],
   ['Momentum as a vector relation and where it comes from',['COM-08','COM-57']],
-  ['A body leaving or joining a moving carrier',['COM-23','COM-49']],
+  ['A body leaving or joining a moving carrier',['COM-23','COM-49','COM-77','COM-86']],
   ['Internal rearrangement with the centre of mass fixed',['COM-24','COM-60']]],
  'impulse':[
-  ['Impulse as the area under a force-time graph',['COM-16']],
-  ['Average force from the change in momentum in an impact',['COM-17','COM-39']],
-  ['Impulse delivered along the normal at a surface',['COM-51']],
+  ['Impulse as the area under a force-time graph',['COM-16','COM-74']],
+  ['Average force from the change in momentum in an impact',['COM-17','COM-39','COM-73','COM-82']],
+  ['Impulse delivered along the normal at a surface',['COM-51','COM-75']],
   ['Energy change written through the impulse',['COM-42']]],
  'elastic-1d':[
   ['Elastic collision with a massive moving body',['COM-09','COM-33']],
-  ['What an elastic collision does to the two velocities',['COM-10','COM-29']],
-  ['Chains and rows of identical bodies',['COM-32','COM-38','COM-53']],
+  ['What an elastic collision does to the two velocities',['COM-10','COM-29','COM-72']],
+  ['Chains and rows of identical bodies',['COM-32','COM-38','COM-53','COM-93']],
   ['A limiting condition that allows only one collision',['COM-44']]],
  'restitution':[
   ['Fixing the restitution from the velocities after impact',['COM-11']],
-  ['Restitution from heights and repeated bounces',['COM-30','COM-34']],
+  ['Restitution from heights and repeated bounces',['COM-30','COM-34','COM-90']],
   ['Restitution from the angles a bounce turns through',['COM-46','COM-61']],
   ['Restitution from the geometry after an oblique collision',['COM-40']]],
  'inelastic-loss':[
-  ['Energy lost when two bodies move off together',['COM-59','COM-41']],
+  ['Energy lost when two bodies move off together',['COM-59','COM-41','COM-76']],
   ['A collision that brings both bodies to rest',['COM-28']],
-  ['Energy lost found from the relative velocities',['COM-43','COM-55']],
+  ['Energy lost found from the relative velocities',['COM-43','COM-55','COM-78']],
   ['What is conserved, and for which system',['COM-69','COM-70']]],
  'oblique':[
   ['Two equal velocities meeting at an angle',['COM-12']],
@@ -2961,10 +4435,10 @@ const subtopicPlan={
   ['Fraction of energy transferred in a head-on collision',['COM-71']]],
  'spring-systems':[
   ['Relative velocity of a spring-coupled pair',['COM-14']],
-  ['Greatest stretch of the spring joining two moving bodies',['COM-15']],
+  ['Greatest stretch of the spring joining two moving bodies',['COM-15','COM-81','COM-91']],
   ['Equal and opposite forces inside a spring-coupled pair',['COM-67']]],
  'variable-mass':[
-  ['The principle behind rocket propulsion',['COM-62']],
+  ['The principle behind rocket propulsion',['COM-62','COM-85']],
   ['Speed gained from the thrust of expelled gas',['COM-63']]]
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
