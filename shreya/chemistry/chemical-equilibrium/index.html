@@ -574,7 +574,7 @@ detailed:[
  ['Halving every coefficient of a reaction takes the square root of its equilibrium constant.','K(target) = (K(reverse))^(1/2)','= √(5×10⁻¹⁶)','= √5 × 10⁻⁸','= 2.236×10⁻⁸'],
  ['Match the form x×10⁻⁸ and round to the nearest integer.','x ≈ 2.236 → x','= 2','Answer: 2']
 ]},
-{id:'EQ-42',level:2,topic:'Forward and reverse reaction rates approaching equality as equilibrium is reached (graphical)',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id be9mFEh0uaOIM9Asfgjgy2xukf92vfgc)',sourceRef:true,question:'For the equilibrium A ⇌ B, the rate of the forward reaction (a) and the rate of the reverse reaction (b) are plotted against time from the start of the reaction. Four graphs are offered (reproduced here in words, since the original is a set of images). Which one correctly describes how a and b vary and relate to each other once equilibrium is reached?',options:['a decreases and b increases, they cross, but then a turns upward and b turns downward again, leaving a large permanent gap between the two rates','a dips to a minimum and then rises again, while b rises to a maximum and then falls again, settling into a permanent gap between the two rates','a decreases steadily and b increases steadily, the two meeting at a single point where they become equal, and they stay equal for all later time','a decreases steadily and b increases steadily but they level off just short of each other, leaving a small permanent gap between the two rates'],correct:2,answer:'a decreases steadily and b increases steadily, the two meeting at a single point where they become equal, and they stay equal for all later time',
+{id:'EQ-42',level:2,topic:'Forward and reverse reaction rates approaching equality as equilibrium is reached (graphical)',diagram:'eqRateVsTimeGraphs',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id be9mFEh0uaOIM9Asfgjgy2xukf92vfgc)',sourceRef:true,question:'For the equilibrium A ⇌ B, the rate of the forward reaction (a) and the rate of the reverse reaction (b) are plotted against time from the start of the reaction. Which of the following graphs correctly describes how a and b vary and relate to each other once equilibrium is reached?',options:['A','B','C','D'],correct:2,answer:'C',
 short:[['At equilibrium the forward and reverse rates must be equal (not merely close), by the kinetic definition of equilibrium.','rate(forward) = rate(reverse) at and after equilibrium'],['As A is consumed its forward rate falls monotonically from its initial maximum, and as B accumulates its reverse rate rises monotonically from zero.','a smooth, monotonic approach to one common value is the only physically correct picture'],['Only the graph where the two curves actually meet at one point and stay together afterwards is consistent with rate(forward) = rate(reverse) at equilibrium.','Answer: (C)']],
 detailed:[
  ['In a reversible reaction A ⇌ B starting from pure A, the forward rate depends on [A], which only decreases with time, and the reverse rate depends on [B], which only increases with time.','rate(forward) = k_f[A] decreases monotonically','rate(reverse) = k_r[B] increases monotonically'],
@@ -1303,7 +1303,52 @@ const line=(d,c=M,w=2)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="
 const arrow=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2-8}L${x} ${y2}L${x+6} ${y2-8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 const arrowUp=(x,y1,y2,c,w=2)=>line(`M${x} ${y1}V${y2}`,c,w)+`<path d="M${x-6} ${y2+8}L${x} ${y2}L${x+6} ${y2+8}" fill="none" stroke="${c}" stroke-width="${w}"/>`;
 function wrap(inner,h=280,label='Solution concept diagram',w=520){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`}
-const STEM={};
+
+/* EQ-28 (ExamSIDE, JEE Main 2020 9th Jan Evening): particle-count box for
+   A(g) <=> B(g). Reactant A drawn as squares, product B as circles; K is
+   read directly from the count of each shape in the same box (same
+   volume, so count is proportional to concentration). The source figure
+   has 6 squares and 11 circles (K = 11/6 ~ 1.83, closest to option 2) --
+   counted and verified independently in this core's own detailed
+   solution before this SVG was built. */
+function eqSquaresCirclesBox(){
+ const sq=(cx,cy,s=20)=>`<rect x="${cx-s/2}" y="${cy-s/2}" width="${s}" height="${s}" rx="3" fill="none" stroke="${G}" stroke-width="2.4"/>`;
+ const ci=(cx,cy,r=11)=>`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${R}" stroke-width="2.4"/>`;
+ const squares=[[90,75],[220,60],[340,95],[120,170],[290,185],[410,150]];
+ const circles=[[60,130],[160,55],[250,120],[380,70],[440,110],[90,210],[200,195],[320,55],[400,200],[170,135],[450,170]];
+ let body='<rect x="30" y="30" width="460" height="200" rx="10" fill="none" stroke="'+M+'" stroke-width="2"/>';
+ for(const [x,y] of squares)body+=sq(x,y);
+ for(const [x,y] of circles)body+=ci(x,y);
+ body+=sq(60,260)+t(80,266,`= A, g (${squares.length} squares)`,G,15,'start',600);
+ body+=ci(290,260)+t(312,266,`= B, g (${circles.length} circles)`,R,15,'start',600);
+ return wrap(body,300,`Box showing reactant A as ${squares.length} squares and product B as ${circles.length} circles at equilibrium, A(g) ⇌ B(g)`,520);
+}
+
+/* Proven 2x2-panel mini-graph helper, same convention as physics/gravitation's diagrams.js: axis box from
+   (x+46,y+24) to (x+136,y+80), letter label top-left, axis labels clear of the strokes. Takes two paths (pathA
+   green = forward rate a, pathB salmon = reverse rate b) since this question's panels each show both curves. */
+function miniGraph2(x,y,label,yl,xl,pathA,pathB){
+ return line(`M${x+46} ${y+24}V${y+80}H${x+136}`,M,1.5)+`<path d="${pathA}" fill="none" stroke="${G}" stroke-width="2.2"/><path d="${pathB}" fill="none" stroke="${R}" stroke-width="2.2"/>`+t(x+42,y+44,yl,W,14,'end',600)+t(x+136,y+102,xl,W,14,'end',600)+t(x+10,y+22,label,W,15,'start',700);
+}
+
+/* EQ-42 (ExamSIDE): for A <=> B, forward rate (a, green) falls and reverse rate (b, salmon) rises as the
+   reaction proceeds. Four candidate graphs for how a and b behave once they meet; correct (C) has them meet at
+   a single point and stay equal forever (the equilibrium condition rate_forward = rate_reverse, unchanging
+   after that). The question's own text used to say "reproduced here in words, since the original is a set of
+   images" -- that is now untrue, this is the real figure. */
+function eqRateVsTimeGraphs(){
+ return wrap(
+  miniGraph2(10,8,'(A)','rate','t','M56 28L101 54L146 28','M56 80L101 54L146 80')+
+  miniGraph2(180,8,'(B)','rate','t','M226 28C245 50 255 60 260 60C265 60 275 50 294 30C300 24 306 22 312 22','M226 80C245 58 255 48 260 48C265 48 275 58 294 78C300 84 306 86 312 86')+
+  miniGraph2(10,132,'(C)','rate','t','M56 152C80 165 95 178 101 178L146 178','M56 204C80 191 95 178 101 178L146 178')+
+  miniGraph2(180,132,'(D)','rate','t','M226 152C255 170 275 178 312 180','M226 204C255 186 275 178 312 176'),
+  254,'Rate of the forward reaction a (green) and the reverse reaction b (salmon) vs time for A ⇌ B, 4 candidate graphs (A) to (D): correct curve has a falling and b rising to meet at one point and stay equal forever after',340);
+}
+
+const STEM={
+ eqSquaresCirclesBox:()=>eqSquaresCirclesBox(),
+ eqRateVsTimeGraphs:()=>eqRateVsTimeGraphs(),
+};
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
  if(!solution)return'';
