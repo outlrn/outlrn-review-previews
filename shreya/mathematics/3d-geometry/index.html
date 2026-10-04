@@ -3184,7 +3184,7 @@ detailed:[
  ['Check: (1, −1, 1) is equidistant from the point and its image.','(0)² + 3² + 2² = 13','(10/3)² + (1/3)² + (4/3)² = 117/9','= 13'],
  ['Wrong options: (B), (C) and (D) give sums −3, −1 and 3, not 1; a plane x + y + z = 6 (through the original point) or x + y + z = −4 (through the image) would be the slips of using one endpoint instead of the midpoint.','Answer: (A) (1, −1, 1)']
 ]},
-{id:'TDG-143',level:2,topic:'Distance of a point from a line parallel to an intersection of planes',source:'ExamSIDE · JEE Main 2022 (Online) 26th July Morning Shift · questions.examside.com (question id dluawcjp834sjszp)',sourceRef:true,question:'The length of the perpendicular from the point (1, −2, 5) on the line passing through (1, 2, 4) and parallel to the line x + y − z = 0 = x − 2y + 3z − 5 is :',options:['√(21/2)','√(9/2)','√(73/2)','1'],correct:0,answer:'√(21/2)',
+{id:'TDG-143',level:2,topic:'Distance of a point from a line parallel to an intersection of planes',diagram:'b14FootPQ',source:'ExamSIDE · JEE Main 2022 (Online) 26th July Morning Shift · questions.examside.com (question id dluawcjp834sjszp)',sourceRef:true,question:'The length of the perpendicular from the point (1, −2, 5) on the line passing through (1, 2, 4) and parallel to the line x + y − z = 0 = x − 2y + 3z − 5 is :',options:['√(21/2)','√(9/2)','√(73/2)','1'],correct:0,answer:'√(21/2)',
 short:[['','d⃗ = (1, 1, −1) × (1, −2, 3)','= (1, −4, −3)','A(1, 2, 4), P(1, −2, 5)','⇒ AP⃗ = (0, −4, 1)'],['','AP⃗ × d⃗ = (16, 1, 4)','|AP⃗ × d⃗|² = 273','|d⃗|² = 26'],['','distance² = 273/26','= 21/2','distance = √(21/2)']],
 detailed:[
  ['The line is parallel to the intersection of two planes, so its direction is the cross product of the two normals.','d⃗ = (1, 1, −1) × (1, −2, 3)','= (1·3 − (−1)(−2), (−1)(1) − 1·3, 1·(−2) − 1·1)','= (1, −4, −3)'],
@@ -5018,6 +5018,7 @@ const b14img=(P,I,o={})=>{let s=line('M30 140L250 140',B,2.4)+t(240,126,'L',B,14
  return wrap(s,262,'Image of a point in a line',280)};
 const DIAGRAMS_b14={
  'b14FootQ2':()=>b14foot('P(λ, 2, 3)','F(1, μ, 2)','L'),
+ 'b14FootPQ':()=>b14foot('Q(1, −2, 5)','N','L',{a:'P(1, 2, 4)'}),
  'b14FootA':()=>b14foot('P','F','L'),
  'b14FootAB':()=>b14foot('P','M','L',{a:'A',b:'B'}),
  'b14FootO':()=>b14foot('O','P','L'),
