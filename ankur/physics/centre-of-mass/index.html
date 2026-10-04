@@ -4238,6 +4238,865 @@ const questions=[
  [`With p the same size for both, the energy goes inversely as the mass.`,`${fraction('K₁','K₂')} = ${fraction('M₂','M₁')}`],
  [`The heavy gun therefore takes the smaller share, which is why it is safe to hold.`,`K₁ : K₂ = M₂ : M₁`],
  [`Correct answer`,`M₂/M₁`]
+]},
+{id:'COM-134',level:2,
+ title:'Impulse on a ball that bounces to a lower height',
+ topic:'Restitution from heights and repeated bounces',
+ source:'ExamSide · JEE Main 2024 (Online) 30th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-spherical-body-of-mass-100-mathrmg-is-dropped-f-jee-main-physics-motion-jwd6nrpg0s0waqlk',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 30th January Morning Shift',questionNumber:'ExamSide #045',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A spherical body of mass 100 g is dropped from a height of 10 m from the ground. After hitting the ground, the body rebounds to a height of 5 m. The impulse of force imparted by the ground to the body is given by (given g = 9.8 m/s²)`,
+ options:[`43.2 kg m s⁻¹`,`2.39 kg m s⁻¹`,`4.32 kg m s⁻¹`,`23.9 kg m s⁻¹`],
+ correct:1,
+ answer:`2.39 kg m s⁻¹`,
+ diagram:'',
+ noDiagramReason:'A ball dropped and rebounding; the two heights carry everything and a sketch would only restate them.',
+ short:[
+ [`Find the speed with which it arrives.`,`v = √(2 × 9.8 × 10) = 14 m/s downward`],
+ [`And the speed with which it leaves, from the rebound height.`,`v = √(2 × 9.8 × 5) = 9.9 m/s upward`],
+ [`The impulse is the change in momentum. The ball reverses, so the two speeds add rather than subtract.`,`J = 0.1(9.9 + 14)`],
+ [``,`J = 0.1 × 23.9 = 2.39 kg m s⁻¹`],
+ [`Correct answer`,`2.39 kg m s⁻¹`]
+]},
+{id:'COM-111-A',parent:'COM-111',variant:1,
+ relevance:{parent:'COM-111',sharedSkill:'Comparing momenta of two masses carrying equal kinetic energy',recoveryPurpose:'direct retry'},
+ topic:'Momentum written through the kinetic energy',
+ source:'ExamSide · JEE Main 2024 (Online) 27th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-bodies-of-mass-4-mathrmg-and-25-mathrmg-jee-main-physics-motion-0bizwezv8arepe3p',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 27th January Morning Shift',questionNumber:'ExamSide #046',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two bodies of mass 4 g and 25 g are moving with equal kinetic energies. The ratio of magnitude of their linear momentum is`,
+ options:[`3 : 5`,`5 : 4`,`2 : 5`,`4 : 5`],
+ correct:2,
+ answer:`2 : 5`,
+ diagram:'',
+ short:[
+ [`Write the momentum through the kinetic energy.`,`p = √(2mK)`],
+ [`The energies are equal, so the momentum follows the square root of the mass alone.`,`p ∝ √m`],
+ [``,`${fraction('p₁','p₂')} = ${fraction('√4','√25')} = ${fraction('2','5')}`],
+ [`Correct answer`,`2 : 5`]
+]},
+{id:'COM-135',level:1,
+ title:'Speed after extra mass is added to a moving body',
+ topic:'A body leaving or joining a moving carrier',
+ source:'ExamSide · JEE Main 2024 (Online) 27th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-1000-mathrmkg-is-moving-horizontal-jee-main-physics-motion-kug14gvf493uxqo8',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2024 (Online) 27th January Morning Shift',questionNumber:'ExamSide #047',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A body of mass 1000 kg is moving horizontally with a velocity 6 m/s. If 200 kg extra mass is added, the final velocity (in m/s) is`,
+ options:[`6`,`2`,`3`,`5`],
+ correct:3,
+ answer:`5`,
+ diagram:'',
+ noDiagramReason:'Mass added to a body already moving; the single momentum statement is the whole of it.',
+ short:[
+ [`Nothing pushes the body along, so its momentum is the same before and after the mass joins it.`,`Mv = (M + m)v′`],
+ [``,`1000(6) = 1200 v′`],
+ [``,`v′ = ${fraction('6000','1200')}`],
+ [``,`v′ = 5 m/s`],
+ [`The body must slow down, because the same momentum is now shared by more mass.`,`5 m/s`],
+ [`Correct answer`,`5`]
+]},
+{id:'COM-136',level:1,
+ title:'Impulse on a gun from the bullet it fires',
+ topic:'Energy released, and how it divides',
+ source:'ExamSide · JEE Main 2023 (Online) 13th April Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-bullet-of-10-mathrmg-leaves-the-barrel-of-gun-w-jee-main-physics-motion-s7gxd2vsw542sp53',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 13th April Morning Shift',questionNumber:'ExamSide #048',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A bullet of 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be`,
+ options:[`12 Ns`,`3 Ns`,`6 Ns`,`36 Ns`],
+ correct:2,
+ answer:`6 Ns`,
+ diagram:'',
+ noDiagramReason:'A gun and a bullet on one line; the barrel length and the gun mass play no part.',
+ short:[
+ [`Nothing pushes the pair along, so the gun takes exactly the momentum the bullet carries away.`,`J = m v`],
+ [``,`J = 0.01 × 600`],
+ [``,`J = 6 N s`],
+ [`The barrel length and the mass of the gun are not needed: they would fix the force and the recoil speed, not the impulse.`,`6 N s`],
+ [`Correct answer`,`6 Ns`]
+]},
+{id:'COM-137',level:2,
+ title:'Firing rate a gunner can hold against',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2023 (Online) 11th April Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pan-average-force-of-125-mathrmn-is-applied-on-a-m-jee-main-physics-motion-nbhcbykkp7vysr0i',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 11th April Morning Shift',questionNumber:'ExamSide #049',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`An average force of 125 N is applied on a machine gun firing bullets each of mass 10 g at the speed of 250 m/s to keep it in position. The number of bullets fired per second by the machine gun is`,
+ options:[`25`,`50`,`5`,`100`],
+ correct:1,
+ answer:`50`,
+ diagram:'',
+ noDiagramReason:'A stream of bullets leaving a gun; the force is a rate of momentum and there is nothing to draw.',
+ short:[
+ [`Each bullet carries away this much momentum.`,`p = 0.01 × 250 = 2.5 kg m/s`],
+ [`The force needed is the momentum carried away each second, so it is that figure times the firing rate.`,`F = n p`],
+ [``,`125 = 2.5 n`],
+ [``,`n = 50 bullets per second`],
+ [`Correct answer`,`50`]
+]},
+{id:'COM-138',level:1,
+ title:'Common speed after a body sticks to twice its mass',
+ topic:'Energy lost when two bodies move off together',
+ source:'ExamSide · JEE Main 2023 (Online) 10th April Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-particle-of-mass-m-moving-with-velocity-v-collides-with-jee-main-physics-motion-ue2ndxu6nom03w7h',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 10th April Morning Shift',questionNumber:'ExamSide #050',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A particle of mass m moving with velocity v collides with a stationary particle of mass 2m. After collision, they stick together and continue to move together with velocity`,
+ options:[`v`,`v/3`,`v/4`,`v/2`],
+ correct:1,
+ answer:`v/3`,
+ diagram:'',
+ noDiagramReason:'A head-on collision on one line that ends with the two bodies joined.',
+ short:[
+ [`They move off together, so the whole momentum is carried by the combined mass.`,`mv = 3m v′`],
+ [``,`v′ = ${fraction('v','3')}`],
+ [`Two thirds of the kinetic energy has gone, but the momentum has not.`,`v/3`],
+ [`Correct answer`,`v/3`]
+]},
+{id:'COM-139',level:2,
+ title:'Force on a wall from a shower of rebounding balls',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2023 (Online) 31st January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/p100-balls-each-of-mass-mathrmm-moving-with-speed--jee-main-physics-motion-liiabsmryulo2jcp',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 31st January Morning Shift',questionNumber:'ExamSide #051',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`100 balls each of mass m moving with speed v simultaneously strike a wall normally and are reflected back with the same speed, in time t s. The total force exerted by the balls on the wall is`,
+ options:[`200mv/t`,`100mv/t`,`mv/(100t)`,`200mvt`],
+ correct:0,
+ answer:`200mv/t`,
+ diagram:'',
+ noDiagramReason:'Balls striking a wall head on and returning; the algebra is general and a drawing would fix nothing.',
+ short:[
+ [`Take one ball first. It arrives with mv and leaves with mv the other way.`,`Δp = mv − (−mv) = 2mv`],
+ [`A hundred of them strike together.`,`total Δp = 200mv`],
+ [`Force is the momentum delivered divided by the time it takes.`,`F = ${fraction('200mv','t')}`],
+ [`By the third law the balls push on the wall as hard as the wall pushes on them.`,`F = ${fraction('200mv','t')}`],
+ [`Correct answer`,`200mv/t`]
+]},
+{id:'COM-140',level:2,
+ title:'Recoil speed of a machine gun firing at a steady rate',
+ topic:'Energy released, and how it divides',
+ source:'ExamSide · JEE Main 2023 (Online) 30th January Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-machine-gun-of-mass-10-mathrmkg-fires-20-mathrmg-jee-main-physics-f9sugmiiqabehl9p',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 30th January Evening Shift',questionNumber:'ExamSide #052',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A machine gun of mass 10 kg fires 20 g bullets at the rate of 180 bullets per minute with a speed of 100 m s⁻¹ each. The recoil velocity of the gun is`,
+ options:[`0.02 m/s`,`1.5 m/s`,`2.5 m/s`,`0.6 m/s`],
+ correct:3,
+ answer:`0.6 m/s`,
+ diagram:'',
+ noDiagramReason:'A gun firing a stream of bullets; the rate and the momentum per bullet carry the answer.',
+ short:[
+ [`Turn the firing rate into bullets per second.`,`180 per minute = 3 per second`],
+ [`Each second the bullets carry away this much momentum.`,`p = 3 × 0.02 × 100 = 6 kg m/s`],
+ [`The gun must take the same momentum the other way.`,`10 v = 6`],
+ [``,`v = 0.6 m/s`],
+ [`Correct answer`,`0.6 m/s`]
+]},
+{id:'COM-141',level:3,
+ title:'Speed given to an equal ball by one sliding down a quadrant',
+ topic:'What an elastic collision does to the two velocities',
+ source:'ExamSide · JEE Main 2023 (Online) 30th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pas-per-the-given-figure-a-small-ball-p-slides-down-the-q-jee-main-physics-motion-ktyfcgr0eooonex6',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 30th January Morning Shift',questionNumber:'ExamSide #053',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`As per the given figure, a small ball P slides down the quadrant of a circle and hits the other ball Q of equal mass which is initially at rest. Neglecting the effect of friction and assuming the collision to be elastic, the velocity of ball Q after collision will be (g = 10 m/s²)`,
+ options:[`0.25 m/s`,`4 m/s`,`0`,`2 m/s`],
+ correct:3,
+ answer:`2 m/s`,
+ diagram:'quadrant-slide-PQ',
+ short:[
+ [`P slides down a quarter circle, so it falls through the radius.`,`h = 20 cm = 0.2 m`],
+ [`The surface is smooth, so all of that becomes speed.`,`v = √(2 × 10 × 0.2) = 2 m/s`],
+ [`The balls are of equal mass and the collision is elastic, so they simply swap velocities.`,`P stops, Q leaves with 2 m/s`],
+ [`Correct answer`,`2 m/s`]
+]},
+{id:'COM-142',level:3,
+ title:'Reading the force off a momentum-time graph',
+ topic:'Impulse as the area under a force-time graph',
+ source:'ExamSide · JEE Main 2023 (Online) 30th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pthe-figure-represents-the-momentum-time-mathrmp-ma-jee-main-physics-motion-ei3wmuu7pdsysq8l',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 30th January Morning Shift',questionNumber:'ExamSide #054',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The figure represents the momentum time (p − t) curve for a particle moving along an axis under the influence of the force. Identify the regions on the graph where the magnitude of the force is maximum and minimum respectively, if the time from t₂ to t₃ is shorter than t₁.`,
+ options:[`b and c`,`c and a`,`a and b`,`c and b`],
+ correct:3,
+ answer:`c and b`,
+ diagram:'p-t-graph-abc',
+ short:[
+ [`Force is the rate at which momentum changes, so on this graph it is the steepness of the line.`,`F = the slope of the p-t curve`],
+ [`Region b climbs only gently over a long stretch, so its slope is the smallest of the three.`,`b has the least steep line`],
+ [`Region c drops from the peak to zero in a time shorter than region a took to climb, and it falls further.`,`c is the steepest`],
+ [`The question asks for the magnitude, so the sign of the slope in c does not matter.`,`maximum in c, minimum in b`],
+ [`Correct answer`,`c and b`]
+]},
+{id:'COM-143',level:3,
+ title:'Bullet speed recovered from where ball and bullet land',
+ topic:'A ballistic pendulum: capture then rise',
+ source:'ExamSide · JEE Main 2023 (Online) 30th January Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-ball-of-mass-200-mathrmg-rests-on-a-vertical-po-jee-main-physics-motion-ccxigvyk9py130cn',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2023 (Online) 30th January Morning Shift',questionNumber:'ExamSide #055',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A ball of mass 200 g rests on a vertical post of height 20 m. A bullet of mass 10 g, travelling in horizontal direction, hits the centre of the ball. After collision both travel independently. The ball hits the ground at a distance 30 m and the bullet at a distance of 120 m from the foot of the post. The value of initial velocity of the bullet will be (if g = 10 m/s²)`,
+ options:[`120 m/s`,`360 m/s`,`400 m/s`,`60 m/s`],
+ correct:1,
+ answer:`360 m/s`,
+ diagram:'ball-on-post-bullet',
+ short:[
+ [`Both leave the top of the post horizontally, so both take the same time to fall.`,`t = √(${fraction('2 × 20','10')}) = 2 s`],
+ [`Each one's horizontal distance divided by that time gives its speed after the collision.`,`ball: ${fraction('30','2')} = 15 m/s`],
+ [``,`bullet: ${fraction('120','2')} = 60 m/s`],
+ [`Now conserve momentum across the impact.`,`0.01 u = 0.2(15) + 0.01(60)`],
+ [``,`0.01 u = 3 + 0.6 = 3.6`],
+ [``,`u = 360 m/s`],
+ [`Correct answer`,`360 m/s`]
+]},
+{id:'COM-98-A',parent:'COM-98',variant:1,
+ relevance:{parent:'COM-98',sharedSkill:'Turning a percentage change in momentum into one in kinetic energy',recoveryPurpose:'direct retry'},
+ topic:'Momentum written through the kinetic energy',
+ source:'ExamSide · JEE Main 2022 (Online) 29th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pif-momentum-of-a-body-is-increased-by-20-then-its-kinet-jee-main-physics-motion-2mxnyld0xkaelysw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 29th July Evening Shift',questionNumber:'ExamSide #056',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`If momentum of a body is increased by 20%, then its kinetic energy increases by`,
+ options:[`36%`,`40%`,`44%`,`48%`],
+ correct:2,
+ answer:`44%`,
+ diagram:'',
+ short:[
+ [`Write the energy through the momentum.`,`K = ${fraction('p²','2m')}`],
+ [`Raising p by a fifth multiplies it by 1.2, and the energy follows the square.`,`K′ = (1.2)²K = 1.44K`],
+ [`The increase is what sits above the original.`,`ΔK = 0.44K`],
+ [``,`44 per cent`],
+ [`Correct answer`,`44%`]
+]},
+{id:'COM-144',level:2,
+ title:'Which vector matches the centre of mass in size',
+ topic:'Centre of mass from coordinates and position vectors',
+ source:'ExamSide · JEE Main 2022 (Online) 29th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-bodies-of-mass-1-mathrmkg-and-3-mathrmkg-jee-main-physics-motion-polbvrtpga1yvzcv',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 29th July Morning Shift',questionNumber:'ExamSide #057',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`Two bodies of mass 1 kg and 3 kg have position vectors î + 2ĵ + k̂ and −3î − 2ĵ + k̂ respectively. The magnitude of position vector of centre of mass of this system will be similar to the magnitude of vector`,
+ options:[`î + 2ĵ + k̂`,`−3î − 2ĵ + k̂`,`−2î + 2k̂`,`2î − ĵ + 2k̂`],
+ correct:0,
+ answer:`î + 2ĵ + k̂`,
+ diagram:'',
+ noDiagramReason:'Two position vectors in component form; the work is one weighted average and then four magnitudes.',
+ short:[
+ [`Average the two positions by mass.`,`r = ${fraction('1(î + 2ĵ + k̂) + 3(−3î − 2ĵ + k̂)','4')}`],
+ [`Collect each component.`,`= ${fraction('(1 − 9)î + (2 − 6)ĵ + (1 + 3)k̂','4')}`],
+ [``,`r = −2î − ĵ + k̂`],
+ [`Take its magnitude.`,`|r| = √(4 + 1 + 1) = √6`],
+ [`Now test the options. The first has the same magnitude.`,`|î + 2ĵ + k̂| = √(1 + 4 + 1) = √6`],
+ [`Correct answer`,`î + 2ĵ + k̂`]
+]},
+{id:'COM-145',level:2,
+ title:'What changes and what does not when the stopping time changes',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2022 (Online) 28th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pin-two-different-experiments-an-object-of-mass-5-math-jee-main-physics-motion-rgysb3vvbay6iqfj',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 28th July Morning Shift',questionNumber:'ExamSide #058',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`In two different experiments, an object of mass 5 kg moving with a speed of 25 m s⁻¹ hits two different walls and comes to rest within (i) 3 second, (ii) 5 seconds, respectively. Choose the correct option out of the following :`,
+ options:[`Impulse and average force acting on the object will be same for both the cases.`,`Impulse will be same for both the cases but the average force will be different.`,`Average force will be same for both the cases but the impulse will be different.`,`Average force and impulse will be different for both the cases.`],
+ correct:1,
+ answer:`Impulse will be same for both the cases but the average force will be different.`,
+ diagram:'',
+ noDiagramReason:'Two experiments compared through one relation; there is no configuration to draw.',
+ short:[
+ [`The impulse is the change in momentum, and that depends only on the mass and the two speeds.`,`J = 5(25) − 0 = 125 N s in both cases`],
+ [`The average force is that same impulse spread over the stopping time.`,`F = ${fraction('J','t')}`],
+ [``,`first wall: ${fraction('125','3')} ≈ 41.7 N`],
+ [``,`second wall: ${fraction('125','5')} = 25 N`],
+ [`So the impulse is fixed while the force is not. The softer wall takes longer and hurts less.`,`impulse same, force different`],
+ [`Correct answer`,`Impulse will be same for both the cases but the average force will be different.`]
+]},
+{id:'COM-146',level:3,
+ title:'Momentum of a projectile part way through its flight',
+ topic:'Momentum as a vector relation and where it comes from',
+ source:'ExamSide · JEE Main 2022 (Online) 27th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-10-mathrmkg-is-projected-at-an-ang-jee-main-physics-motion-sy9il3jnaj5rz6uv',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 27th July Evening Shift',questionNumber:'ExamSide #059',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A body of mass 10 kg is projected at an angle of 45° with the horizontal. The trajectory of the body is observed to pass through a point (20, 10). If T is the time of flight, then its momentum vector, at time t = T divided by √2, is (take g = 10 m/s²)`,
+ options:[`100î + (100√2 − 200)ĵ`,`100√2î + (100 − 200√2)ĵ`,`100î + (100 − 200√2)ĵ`,`100√2î + (100√2 − 200)ĵ`],
+ correct:3,
+ answer:`100√2î + (100√2 − 200)ĵ`,
+ diagram:'',
+ noDiagramReason:'A projectile through a stated point; the work is to recover the launch speed and then evaluate at one instant.',
+ short:[
+ [`Write the path of a projectile launched at forty-five degrees.`,`y = x − ${fraction('10x²','u²')}`],
+ [`Put the stated point in to recover the launch speed.`,`10 = 20 − ${fraction('10(400)','u²')} ⇒ u² = 400`],
+ [``,`u = 20 m/s, so each component is 20 cos 45° = 10√2 m/s`],
+ [`The time of flight follows from the vertical component.`,`T = ${fraction('2(10√2)','10')} = 2√2 s`],
+ [`The question asks for the instant T over root two.`,`t = 2 s`],
+ [`The horizontal component never changes; the vertical one has lost gt.`,`vₓ = 10√2, vᵥ = 10√2 − 20`],
+ [`Multiply by the mass.`,`p = 100√2î + (100√2 − 200)ĵ`],
+ [`Correct answer`,`100√2î + (100√2 − 200)ĵ`]
+]},
+{id:'COM-147',level:1,
+ title:'Contact time from the force on a bouncing ball',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2022 (Online) 26th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-ball-of-mass-015-mathrmkg-hits-the-wall-with-i-jee-main-physics-motion-6ua7kouyna6x9dbz',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 26th July Evening Shift',questionNumber:'ExamSide #060',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A ball of mass 0.15 kg hits the wall with its initial speed of 12 m s⁻¹ and bounces back without changing its initial speed. If the force applied by the wall on the ball during the contact is 100 N, calculate the time duration of the contact of ball with the wall.`,
+ options:[`0.018 s`,`0.036 s`,`0.009 s`,`0.072 s`],
+ correct:1,
+ answer:`0.036 s`,
+ diagram:'',
+ noDiagramReason:'A ball reversed by a wall; the change in a single vector is the whole of it.',
+ short:[
+ [`The ball arrives and leaves at the same speed but the other way, so the two contributions add.`,`Δp = 0.15(12 + 12)`],
+ [``,`Δp = 3.6 kg m s⁻¹`],
+ [`The force times the contact time is that change.`,`F t = Δp`],
+ [``,`t = ${fraction('3.6','100')}`],
+ [``,`t = 0.036 s`],
+ [`Correct answer`,`0.036 s`]
+]},
+{id:'COM-111-B',parent:'COM-111',variant:2,
+ relevance:{parent:'COM-111',sharedSkill:'Comparing momenta of two masses carrying equal kinetic energy',recoveryPurpose:'direct retry with heavier numbers'},
+ topic:'Momentum written through the kinetic energy',
+ source:'ExamSide · JEE Main 2022 (Online) 26th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-8-mathrmkg-and-another-of-mass-2-jee-main-physics-motion-bofsy7tihppb9ure',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 26th July Evening Shift',questionNumber:'ExamSide #061',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A body of mass 8 kg and another of mass 2 kg are moving with equal kinetic energy. The ratio of their respective momentum will be`,
+ options:[`1 : 1`,`2 : 1`,`1 : 4`,`4 : 1`],
+ correct:1,
+ answer:`2 : 1`,
+ diagram:'',
+ short:[
+ [`Write the momentum through the energy.`,`p = √(2mK)`],
+ [`Equal energies leave the square root of the mass.`,`p ∝ √m`],
+ [``,`${fraction('p₁','p₂')} = ${fraction('√8','√2')} = √4 = 2`],
+ [`Correct answer`,`2 : 1`]
+]},
+{id:'COM-148',level:2,
+ title:'Force between two billiard balls that rebound',
+ topic:'Average force from the change in momentum in an impact',
+ source:'ExamSide · JEE Main 2022 (Online) 25th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-billiard-balls-of-mass-005-kg-each-moving-in-opposit-jee-main-physics-motion-39kxq24bsxzqpyuf',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 25th July Evening Shift',questionNumber:'ExamSide #062',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two billiard balls of mass 0.05 kg each moving in opposite directions with 10 m s⁻¹ collide and rebound with the same speed. If the time duration of contact is t = 0.005 s, then what is the force exerted on the ball due to each other?`,
+ options:[`100 N`,`200 N`,`300 N`,`400 N`],
+ correct:1,
+ answer:`200 N`,
+ diagram:'',
+ noDiagramReason:'Two balls meeting head on and returning; the change in one ball\'s momentum carries the answer.',
+ short:[
+ [`Follow one ball. It arrives at 10 and leaves at 10 the other way.`,`Δp = 0.05(10 + 10) = 1 kg m s⁻¹`],
+ [`The force is that change spread over the contact time.`,`F = ${fraction('1','0.005')}`],
+ [``,`F = 200 N`],
+ [`Each ball feels this from the other, equal and opposite.`,`200 N`],
+ [`Correct answer`,`200 N`]
+]},
+{id:'COM-149',level:2,
+ title:'Energy ratio when one momentum is twice the other',
+ topic:'Momentum written through the kinetic energy',
+ source:'ExamSide · JEE Main 2022 (Online) 30th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-bodies-a-and-b-of-masses-5-kg-and-8-kg-are-moving-suc-jee-main-physics-motion-isxm6ycyhp0j1ua6',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 30th June Morning Shift',questionNumber:'ExamSide #063',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two bodies A and B of masses 5 kg and 8 kg are moving such that the momentum of body B is twice that of body A. The ratio of their kinetic energies will be`,
+ options:[`4 : 5`,`2 : 5`,`5 : 4`,`5 : 2`],
+ correct:1,
+ answer:`2 : 5`,
+ diagram:'',
+ noDiagramReason:'Two bodies compared through one scalar relation; nothing to draw.',
+ short:[
+ [`Write the kinetic energy through the momentum.`,`K = ${fraction('p²','2m')}`],
+ [`Call A's momentum p; then B's is 2p.`,`${fraction('K₁','K₂')} = ${fraction('p² ÷ (2 × 5)','4p² ÷ (2 × 8)')}`],
+ [`The p squared cancels; what is left is the masses against the factor of four.`,`= ${fraction('1 ÷ 5','4 ÷ 8')} = ${fraction('0.2','0.5')}`],
+ [``,`= 2 : 5`],
+ [`Correct answer`,`2 : 5`]
+]},
+{id:'COM-122-A',parent:'COM-122',variant:1,
+ relevance:{parent:'COM-122',sharedSkill:'Balancing a third fragment against two that fly off at right angles',recoveryPurpose:'direct retry'},
+ topic:'Energy released, and how it divides',
+ source:'ExamSide · JEE Main 2022 (Online) 29th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pa-body-of-mass-m-at-rest-explodes-into-three-pieces-in-t-jee-main-physics-motion-kydsjynasitnn8be',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 29th June Morning Shift',questionNumber:'ExamSide #064',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A body of mass M at rest explodes into three pieces, in the ratio of masses 1 : 1 : 2. Two smaller pieces fly off perpendicular to each other with velocities of 30 m s⁻¹ and 40 m s⁻¹ respectively. The velocity of the third piece will be`,
+ options:[`15 m s⁻¹`,`25 m s⁻¹`,`35 m s⁻¹`,`50 m s⁻¹`],
+ correct:1,
+ answer:`25 m s⁻¹`,
+ diagram:'',
+ short:[
+ [`Split the mass in the stated ratio.`,`1 : 1 : 2 gives m, m and 2m`],
+ [`The two light pieces carry these momenta, at right angles.`,`30m and 40m`],
+ [`Their resultant is the hypotenuse of a three-four-five triangle.`,`√(30² + 40²) m = 50m`],
+ [`The body started at rest, so the heavy piece must carry exactly that the other way.`,`2m v = 50m`],
+ [``,`v = 25 m s⁻¹`],
+ [`Correct answer`,`25 m s⁻¹`]
+]},
+{id:'COM-150',level:2,
+ title:'How far the second block must move to hold the centre of mass',
+ topic:'How the centre of mass shifts when mass is added or moved',
+ source:'ExamSide · JEE Main 2022 (Online) 27th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-blocks-of-masses-10-kg-and-30-kg-are-placed-on-the-sa-jee-main-physics-motion-vtl4h66h95clcsxe',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 27th June Morning Shift',questionNumber:'ExamSide #065',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two blocks of masses 10 kg and 30 kg are placed on the same straight line with coordinates (0, 0) cm and (x, 0) cm respectively. The block of 10 kg is moved on the same line through a distance of 6 cm towards the other block. The distance through which the block of 30 kg must be moved to keep the position of centre of mass of the system unchanged is`,
+ options:[`4 cm towards the 10 kg block`,`2 cm away from the 10 kg block`,`2 cm towards the 10 kg block`,`4 cm away from the 10 kg block`],
+ correct:2,
+ answer:`2 cm towards the 10 kg block`,
+ diagram:'',
+ noDiagramReason:'Two blocks on a line; the signed displacements are the whole of the argument.',
+ short:[
+ [`For the centre of mass to stay put, the two mass-weighted displacements must cancel.`,`m₁d₁ + m₂d₂ = 0`],
+ [`Take the direction from the 10 kg block towards the 30 kg block as positive.`,`10(+6) + 30 d₂ = 0`],
+ [``,`d₂ = −${fraction('60','30')} = −2 cm`],
+ [`The minus sign means the 30 kg block moves the other way, which is back towards the 10 kg block.`,`2 cm towards the 10 kg block`],
+ [`Correct answer`,`2 cm towards the 10 kg block`]
+]},
+{id:'COM-151',level:2,
+ title:'Share of energy passed to a body five times as heavy',
+ topic:'Fraction of energy transferred in a head-on collision',
+ source:'ExamSide · JEE Main 2022 (Online) 27th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pwhat-percentage-of-kinetic-energy-of-a-moving-particle-is-jee-main-physics-motion-vgjbckiyl3m9f94t',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 27th June Morning Shift',questionNumber:'ExamSide #066',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`What percentage of kinetic energy of a moving particle is transferred to a stationary particle when it strikes the stationary particle of 5 times its mass? (Assume the collision to be head-on elastic collision)`,
+ options:[`50.0%`,`66.6%`,`55.6%`,`33.3%`],
+ correct:2,
+ answer:`55.6%`,
+ diagram:'',
+ noDiagramReason:'A head-on elastic collision with the target at rest; the standard fraction carries it.',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the share handed over has a standard form.`,`f = ${fraction('4m₁m₂','(m₁ + m₂)²')}`],
+ [`Put the masses in as m and 5m.`,`f = ${fraction('4(1)(5)','36')}`],
+ [``,`f = ${fraction('20','36')} = 0.556`],
+ [``,`55.6 per cent`],
+ [`Correct answer`,`55.6%`]
+]},
+{id:'COM-152',level:1,
+ title:'Which quantity vanishes at the top of a vertical throw',
+ topic:'Momentum as a vector relation and where it comes from',
+ source:'ExamSide · JEE Main 2022 (Online) 26th June Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/pan-object-is-thrown-vertically-upwards-at-its-maximum-he-jee-main-physics-motion-ln6c1tuzmveji0bw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2022 (Online) 26th June Morning Shift',questionNumber:'ExamSide #067',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`An object is thrown vertically upwards. At its maximum height, which of the following quantity becomes zero?`,
+ options:[`Momentum`,`Potential Energy`,`Acceleration`,`Force`],
+ correct:0,
+ answer:`Momentum`,
+ diagram:'',
+ noDiagramReason:'A body thrown straight up; the question is about which quantity vanishes, not about a configuration.',
+ short:[
+ [`At the highest point the body has stopped rising and has not yet begun to fall, so its velocity is zero there.`,`v = 0 at the top`],
+ [`Momentum is mass times velocity, so it vanishes with the velocity.`,`p = mv = 0`],
+ [`Gravity has not switched off, so the acceleration and the weight are both unchanged.`,`a = g, F = mg`],
+ [`The potential energy is at its largest there, not its smallest.`,`momentum is the one that vanishes`],
+ [`Correct answer`,`Momentum`]
+]},
+{id:'COM-153',level:3,
+ title:'Largest mass ratio that lets both bodies leave at the same angle',
+ topic:'Oblique elastic collision between unequal masses',
+ source:'ExamSide · JEE Main 2021 (Online) 31st August Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-body-of-mass-m-moving-at-speed-vsub0sub-collides-elas-jee-main-physics-units-and-measurements-pmbqj8qz5q9iobez',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 31st August Morning Shift',questionNumber:'ExamSide #068',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A body of mass M moving at speed V₀ collides elastically with a mass m at rest. After the collision, the two masses move at angles θ₁ and θ₂ with respect to the initial direction of motion of the body of mass M. The largest possible value of the ratio M/m, for which the angles θ₁ and θ₂ will be equal, is`,
+ options:[`4`,`1`,`3`,`2`],
+ correct:2,
+ answer:`3`,
+ diagram:'',
+ noDiagramReason:'Two bodies leaving at equal angles either side of the original line; the symmetry is in the words and the algebra is the work.',
+ short:[
+ [`Let both leave at the same angle θ, one either side. Balance the momentum across the original line.`,`M v₁ sin θ = m v₂ sin θ ⇒ M v₁ = m v₂`],
+ [`Now balance it along the original line. The two contributions are equal, so the sum is twice either one.`,`M V₀ = 2M v₁ cos θ ⇒ v₁ = ${fraction('V₀','2 cos θ')}`],
+ [`The collision is elastic, so the energy must also balance.`,`M V₀² = M v₁² + m v₂²`],
+ [`Substitute both results. The right-hand side collects into one bracket.`,`M V₀² = ${fraction('M V₀²','4 cos²θ')}(1 + ${fraction('M','m')})`],
+ [``,`4 cos²θ = 1 + ${fraction('M','m')}`],
+ [`A cosine squared can never exceed one, so the left side can never exceed four.`,`1 + ${fraction('M','m')} ≤ 4`],
+ [``,`${fraction('M','m')} ≤ 3`],
+ [`Correct answer`,`3`]
+]},
+{id:'COM-154',level:2,
+ title:'Speed of the last block in a chain of two collisions',
+ topic:'Chains and rows of identical bodies',
+ source:'ExamSide · JEE Main 2021 (Online) 27th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/three-objects-a-b-and-c-are-kept-in-a-straight-line-on-a-fr-jee-main-physics-units-and-measurements-yciepletcm2gtqjq',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 27th July Morning Shift',questionNumber:'ExamSide #069',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Three objects A, B and C are kept in a straight line on a frictionless horizontal surface. The masses of A, B and C are m, 2m and 2m respectively. A moves towards B with a speed of 9 m/s and makes an elastic collision with it. Thereafter B makes a completely inelastic collision with C. All motions occur along the same straight line. The final speed of C is`,
+ options:[`6 m/s`,`9 m/s`,`4 m/s`,`3 m/s`],
+ correct:3,
+ answer:`3 m/s`,
+ diagram:'three-blocks-m-2m-2m',
+ short:[
+ [`Take the first collision, which is elastic with the target at rest.`,`vB = ${fraction('2m₁u','m₁ + m₂')}`],
+ [`Put the masses in as m and 2m.`,`vB = ${fraction('2m(9)','3m')} = 6 m/s`],
+ [`Now the second collision, in which B and C move off together.`,`2m(6) = 4m v`],
+ [``,`v = 3 m/s`],
+ [`Correct answer`,`3 m/s`]
+]},
+{id:'COM-155',level:3,
+ title:'Impulse along the normal for a head-on and a glancing bounce',
+ topic:'Impulse delivered along the normal at a surface',
+ source:'ExamSide · JEE Main 2021 (Online) 25th July Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/two-billiard-balls-of-equal-mass-30g-strike-a-rigid-wall-wit-jee-main-physics-units-and-measurements-9px4h3ugy8fbiwpr',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 25th July Morning Shift',questionNumber:'ExamSide #070',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two billiard balls of equal mass 30 g strike a rigid wall with same speed of 108 kmph (as shown) but at different angles. If the balls get reflected with the same speed then the ratio of the magnitude of impulses imparted to ball a and ball b by the wall along the X direction is`,
+ options:[`1 : 1`,`√2 : 1`,`2 : 1`,`1 : √2`],
+ correct:1,
+ answer:`√2 : 1`,
+ diagram:'two-balls-wall-0-45',
+ short:[
+ [`Only the component along x changes at the wall, and it reverses.`,`Δpₓ = 2 m u cos θ, with θ measured from the normal`],
+ [`Ball a arrives straight on, so its angle to the normal is zero.`,`Δpₓ = 2mu`],
+ [`Ball b arrives at forty-five degrees to the normal.`,`Δpₓ = 2mu cos 45° = √2 mu`],
+ [`Take the ratio. The mass and the speed cancel.`,`${fraction('2mu','√2 mu')} = √2`],
+ [`The speed of 108 km per hour, which is 30 m/s, is not needed for a ratio.`,`√2 : 1`],
+ [`Correct answer`,`√2 : 1`]
+]},
+{id:'COM-156',level:1,
+ title:'Impulse and recoil for a gun and its bullet',
+ topic:'Energy released, and how it divides',
+ source:'ExamSide · JEE Main 2021 (Online) 22th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-bullet-of-4-g-mass-is-fired-from-a-gun-of-mass-4-kg-if-jee-main-physics-units-and-measurements-dy0tywdtzxtmck3z',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 22th July Evening Shift',questionNumber:'ExamSide #071',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A bullet of 4 g mass is fired from a gun of mass 4 kg. If the bullet moves with the muzzle speed of 50 m s⁻¹, the impulse imparted to the gun and velocity of recoil of gun are`,
+ options:[`0.2 kg m s⁻¹, 0.1 m s⁻¹`,`0.4 kg m s⁻¹, 0.05 m s⁻¹`,`0.2 kg m s⁻¹, 0.05 m s⁻¹`,`0.4 kg m s⁻¹, 0.1 m s⁻¹`],
+ correct:2,
+ answer:`0.2 kg m s⁻¹, 0.05 m s⁻¹`,
+ diagram:'',
+ noDiagramReason:'A gun and a bullet on one line; both answers follow from the one momentum statement.',
+ short:[
+ [`The gun takes exactly the momentum the bullet carries away.`,`J = 0.004 × 50`],
+ [``,`J = 0.2 kg m s⁻¹`],
+ [`That momentum, spread over the mass of the gun, gives the recoil speed.`,`v = ${fraction('0.2','4')}`],
+ [``,`v = 0.05 m s⁻¹`],
+ [`Correct answer`,`0.2 kg m s⁻¹, 0.05 m s⁻¹`]
+]},
+{id:'COM-157',level:1,
+ title:'Change in momentum when the energy quadruples',
+ topic:'Momentum written through the kinetic energy',
+ source:'ExamSide · JEE Main 2021 (Online) 20th July Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/if-the-kinetic-energy-of-a-moving-body-becomes-four-times-it-jee-main-physics-units-and-measurements-ocwh3wawvt9lvjh3',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 20th July Evening Shift',questionNumber:'ExamSide #072',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`If the Kinetic energy of a moving body becomes four times its initial Kinetic energy, then the percentage change in its momentum will be`,
+ options:[`100%`,`200%`,`300%`,`400%`],
+ correct:0,
+ answer:`100%`,
+ diagram:'',
+ noDiagramReason:'A single body and one relation between two scalars.',
+ short:[
+ [`Write the momentum through the kinetic energy.`,`p = √(2mK)`],
+ [`The mass has not changed, so the momentum follows the square root of the energy.`,`p ∝ √K`],
+ [`Four times the energy means twice the momentum.`,`p′ = √4 p = 2p`],
+ [`The change is what sits above the original, not the new value.`,`Δp = p, which is 100 per cent`],
+ [`Correct answer`,`100%`]
+]},
+{id:'COM-158',level:3,
+ title:'Mass ratio that sends two bodies off at equal and opposite speeds',
+ topic:'What an elastic collision does to the two velocities',
+ source:'ExamSide · JEE Main 2021 (Online) 18th March Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/an-object-of-mass-msub1sub-collides-with-another-object-jee-main-physics-units-and-measurements-zmmsiusya0qfitii',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 18th March Evening Shift',questionNumber:'ExamSide #073',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`An object of mass m₁ collides with another object of mass m₂, which is at rest. After the collision the objects move with equal speeds in opposite direction. The ratio of the masses m₂ : m₁ is`,
+ options:[`1 : 1`,`3 : 1`,`2 : 1`,`1 : 2`],
+ correct:1,
+ answer:`3 : 1`,
+ diagram:'',
+ noDiagramReason:'A head-on collision on one line; the two conservation statements are the work.',
+ short:[
+ [`Call the common speed afterwards v. The striker comes back, so its velocity is negative.`,`m₁u = −m₁v + m₂v`],
+ [`Take the collision to be elastic, so the bodies separate as fast as they approached.`,`v − (−v) = u ⇒ u = 2v`],
+ [`Put that into the momentum statement.`,`m₁(2v) = v(m₂ − m₁)`],
+ [``,`2m₁ = m₂ − m₁`],
+ [``,`m₂ = 3m₁, so m₂ : m₁ = 3 : 1`],
+ [`Correct answer`,`3 : 1`]
+]},
+{id:'COM-159',level:3,
+ title:'Greatest compression of a spring struck through a third block',
+ topic:'Greatest stretch of the spring joining two moving bodies',
+ source:'ExamSide · JEE Main 2021 (Online) 17th March Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/two-identical-blocks-a-and-b-each-of-mass-m-resting-on-the-s-jee-main-physics-units-and-measurements-vefofkys3ssygswb',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 17th March Evening Shift',questionNumber:'ExamSide #074',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Two identical blocks A and B each of mass m resting on the smooth horizontal floor are connected by a light spring of natural length L and spring constant K. A third block C of mass m moving with a speed v along the line joining A and B collides with A. The maximum compression in the spring is`,
+ options:[`√(mv/K)`,`√(m/2K)`,`√(mv/2K)`,`v√(m/2K)`],
+ correct:3,
+ answer:`v√(m/2K)`,
+ diagram:'blocks-C-A-spring-B',
+ short:[
+ [`C and A are identical and the collision between them is elastic, so they swap velocities.`,`C stops, A moves off with v`],
+ [`The spring is squeezed hardest when A and B are moving at the same speed.`,`mv = 2m v′ ⇒ v′ = ${fraction('v','2')}`],
+ [`Compare the energy before with the energy at that moment.`,`before: ${fraction('1','2')}mv², at common speed: ${fraction('1','2')}(2m)(${fraction('v','2')})² = ${fraction('mv²','4')}`],
+ [`Whatever is missing has gone into the spring.`,`U = ${fraction('1','2')}mv² − ${fraction('mv²','4')} = ${fraction('mv²','4')}`],
+ [``,`${fraction('1','2')}Kx² = ${fraction('mv²','4')}`],
+ [``,`x² = ${fraction('mv²','2K')}, so x = v√(${fraction('m','2K')})`],
+ [`Correct answer`,`v√(m/2K)`]
+]},
+{id:'COM-160',level:3,
+ title:'Bullet speed from how far a struck block swings',
+ topic:'A ballistic pendulum: capture then rise',
+ source:'ExamSide · JEE Main 2021 (Online) 16th March Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-large-block-of-wood-of-mass-m--599-kg-is-hanging-from-tw-jee-main-physics-units-and-measurements-mjjsgqfewrvwo90p',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 16th March Evening Shift',questionNumber:'ExamSide #075',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A large block of wood of mass M = 5.99 kg is hanging from two long massless cords. A bullet of mass m = 10 g is fired into the block and gets embedded in it. The block and bullet then swing upwards, their centre of mass rising a vertical distance h = 9.8 cm before the pendulum comes momentarily to rest at the end of its arc. The speed of the bullet just before collision is (take g = 9.8 m s⁻²)`,
+ options:[`831.4 m/s`,`811.4 m/s`,`841.4 m/s`,`821.4 m/s`],
+ correct:0,
+ answer:`831.4 m/s`,
+ diagram:'block-cords-bullet',
+ short:[
+ [`Work backwards from the swing. The pair leaves the collision with just enough speed to rise through h.`,`V = √(2gh) = √(2 × 9.8 × 0.098)`],
+ [``,`V = 1.386 m/s`],
+ [`Now conserve momentum across the impact, where the bullet buries itself in the block.`,`m u = (M + m)V`],
+ [``,`0.01 u = 6.00 × 1.386`],
+ [``,`u = 831.4 m/s`],
+ [`Energy is not conserved in the impact, which is why the swing must be treated separately from the collision.`,`831.4 m/s`],
+ [`Correct answer`,`831.4 m/s`]
+]},
+{id:'COM-161',level:2,
+ title:'Whether a light body can leave at twice the striker speed',
+ topic:'Elastic collision with a massive moving body',
+ source:'ExamSide · JEE Main 2021 (Online) 26th February Morning Shift',
+ url:'https://questions.examside.com/past-years/jee/question/given-below-are-two-statements--one-is-labelled-as-assertio-jee-main-physics-units-and-measurements-qt8ep6puzrx7ar26',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 26th February Morning Shift',questionNumber:'ExamSide #077',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : Body P having mass M moving with speed u has head-on collision elastically with another body Q having mass m initially at rest. If m is much less than M, body Q will have a maximum speed equal to 2u after collision. Reason R : During elastic collision, the momentum and kinetic energy are both conserved. In the light of the above statements, choose the most appropriate answer from the options given below :`,
+ options:[`A is correct but R is not correct.`,`A is not correct but R is correct.`,`Both A and R are correct and R is the correct explanation of A.`,`Both A and R are correct but R is NOT the correct explanation of A.`],
+ correct:2,
+ answer:`Both A and R are correct and R is the correct explanation of A.`,
+ diagram:'',
+ noDiagramReason:'Two statements about a head-on elastic collision; the standard result settles both.',
+ short:[
+ [`For a head-on elastic collision with the target at rest, the target leaves with a standard speed.`,`v₂ = ${fraction('2M u','M + m')}`],
+ [`Let the target be very light beside the striker, so m can be dropped beside M.`,`v₂ → ${fraction('2M u','M')} = 2u`],
+ [`So the assertion holds, and 2u is the ceiling rather than a typical value.`,`A is correct`],
+ [`The reason states the two conservation laws, which are exactly what the standard result is derived from.`,`R is correct`],
+ [`And R is not merely true alongside A; it is where A comes from.`,`R explains A`],
+ [`Correct answer`,`Both A and R are correct and R is the correct explanation of A.`]
+]},
+{id:'COM-162',level:3,
+ title:'Centroid of a disc with a hole cut touching its rim',
+ topic:'Centre of mass of a body with a piece removed',
+ source:'ExamSide · JEE Main 2021 (Online) 24th February Evening Shift',
+ url:'https://questions.examside.com/past-years/jee/question/a-circular-hole-of-radius-left-a-over-2-right-i-jee-main-physics-units-and-measurements-pf7zc4hygsutkpkm',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2021 (Online) 24th February Evening Shift',questionNumber:'ExamSide #078',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A circular hole of radius a/2 is cut out of a circular disc of radius a as shown in figure. The centroid of the remaining circular portion with respect to point O will be`,
+ options:[`a/6`,`2a/3`,`5a/6`,`10a/11`],
+ correct:2,
+ answer:`5a/6`,
+ diagram:'disc-hole-half-radius',
+ short:[
+ [`Read the geometry off the figure. O sits on the rim, so the disc's own centre is one radius along.`,`disc centre at a from O`],
+ [`The hole has half the radius and touches the far rim, so its centre is a radius and a half from O.`,`hole centre at ${fraction('3a','2')} from O`],
+ [`Areas stand in for mass, and the hole counts negative.`,`disc ∝ a², hole ∝ ${fraction('a²','4')}`],
+ [`Take the weighted average about O.`,`x = ${fraction('a²(a) − (a² ÷ 4)(3a ÷ 2)','a² − a² ÷ 4')}`],
+ [`The a squared cancels from top and bottom.`,`x = ${fraction('a − 3a ÷ 8','3 ÷ 4')}`],
+ [``,`x = ${fraction('5a ÷ 8','3 ÷ 4')} = ${fraction('5a','6')}`],
+ [`Correct answer`,`5a/6`]
+]},
+{id:'COM-163',level:3,
+ title:'Angle between the two velocities after an oblique collision',
+ topic:'Oblique elastic collision between unequal masses',
+ source:'ExamSide · JEE Main 2020 (Online) 6th September Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/particle-a-of-mass-msub1sub-moving-with-velocity-le-jee-main-physics-impulse-and-momentum-zgd3lmjjcwyxvhcc',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 6th September Evening Slot',questionNumber:'ExamSide #079',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`Particle A of mass m₁ moving with velocity (√3î + ĵ) m s⁻¹ collides with another particle B of mass m₂ which is at rest initially. Let V₁ and V₂ be the velocities of particles A and B after collision respectively. If m₁ = 2m₂ and after collision V₁ = (î + √3ĵ) m s⁻¹, the angle between V₁ and V₂ is`,
+ options:[`105°`,`15°`,`−45°`,`60°`],
+ correct:0,
+ answer:`105°`,
+ diagram:'',
+ noDiagramReason:'Every velocity is given in component form; the work is one vector subtraction and two directions.',
+ short:[
+ [`Conserve momentum as a vector. Only A was moving at first.`,`m₁(√3î + ĵ) = m₁(î + √3ĵ) + m₂V₂`],
+ [`Put m₁ = 2m₂ in and divide through by m₂.`,`2(√3î + ĵ) − 2(î + √3ĵ) = V₂`],
+ [``,`V₂ = 2(√3 − 1)(î − ĵ)`],
+ [`Now read off the two directions. The first points up and to the right at a steep angle.`,`V₁ along (1, √3), which is 60° above the x-axis`],
+ [`The second points down and to the right along the diagonal.`,`V₂ along (1, −1), which is 45° below the x-axis`],
+ [`The angle between them is the sum of the two.`,`60° + 45° = 105°`],
+ [`Correct answer`,`105°`]
+]},
+{id:'COM-164',level:3,
+ title:'Energy left after a chain of sticking collisions',
+ topic:'Chains and rows of identical bodies',
+ source:'ExamSide · JEE Main 2020 (Online) 4th September Morning Slot',
+ url:'https://questions.examside.com/past-years/jee/question/blocks-of-masses-m-2m-4m-and-8m-are-arranged-in-a-line-on-jee-main-physics-work-power-and-energy-aakfnrfu0etebebq',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 4th September Morning Slot',questionNumber:'ExamSide #080',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Blocks of masses m, 2m, 4m and 8m are arranged in a line on a frictionless floor. Another block of mass m, moving with speed v along the same line (see figure) collides with mass m in a perfectly inelastic manner. All the subsequent collisions are also perfectly inelastic. By the time the last block of mass 8m starts moving the total energy loss is p per cent of the original energy. The value of p is close to`,
+ options:[`37`,`77`,`87`,`94`],
+ correct:3,
+ answer:`94`,
+ diagram:'chain-m-m-2m-4m-8m',
+ short:[
+ [`Each collision doubles the moving mass, because the block ahead always matches what is already moving.`,`m → 2m → 4m → 8m → 16m`],
+ [`Momentum is kept at every step, so each doubling halves the speed.`,`v → ${fraction('v','2')} → ${fraction('v','4')} → ${fraction('v','8')} → ${fraction('v','16')}`],
+ [`Compare the energy at the end with the energy at the start.`,`before: ${fraction('1','2')}mv²`],
+ [``,`after: ${fraction('1','2')}(16m)(${fraction('v','16')})² = ${fraction('1','2')}m${fraction('v²','16')}`],
+ [`So one sixteenth of the energy survives.`,`fraction left = ${fraction('1','16')}`],
+ [``,`loss = 1 − ${fraction('1','16')} = ${fraction('15','16')} = 93.75 per cent`],
+ [`Correct answer`,`94`]
+]},
+{id:'COM-165',level:2,
+ title:'Energy of a struck block as it reaches the floor',
+ topic:'Energy lost when two bodies move off together',
+ source:'ExamSide · JEE Main 2020 (Online) 3rd September Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-block-of-mass-19-kg-is-at-rest-at-the-edge-of-a-table-of-jee-main-physics-work-power-and-energy-dbscvpjipdtfuzzd',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 3rd September Evening Slot',questionNumber:'ExamSide #081',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A block of mass 1.9 kg is at rest at the edge of a table, of height 1 m. A bullet of mass 0.1 kg collides with the block and sticks to it. If the velocity of the bullet is 20 m/s in the horizontal direction just before the collision then the kinetic energy just before the combined system strikes the floor, is (take g = 10 m/s². Assume there is no rotational motion and loss of energy after the collision is negligible.)`,
+ options:[`23 J`,`21 J`,`20 J`,`19 J`],
+ correct:1,
+ answer:`21 J`,
+ diagram:'',
+ noDiagramReason:'A block on a table edge struck and then falling; the two stages are a collision and a drop, neither needing a picture.',
+ short:[
+ [`The bullet buries itself, so conserve momentum across the impact.`,`0.1(20) = 2.0 v ⇒ v = 1 m/s`],
+ [`That gives the energy the pair leaves the table with.`,`K = ${fraction('1','2')}(2)(1)² = 1 J`],
+ [`Falling through the height of the table adds the work gravity does.`,`mgh = 2 × 10 × 1 = 20 J`],
+ [`After the collision nothing more is lost, so the two simply add.`,`K = 1 + 20 = 21 J`],
+ [`Correct answer`,`21 J`]
+]},
+{id:'COM-166',level:3,
+ title:'How far a struck rod swings before it stops',
+ topic:'An inextensible string jerking taut between two particles',
+ source:'ExamSide · JEE Main 2020 (Online) 3rd September Morning Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-block-of-mass-m--1-kg-slides-with-velocity-v--6-ms-on-a-jee-main-physics-impulse-and-momentum-65xvrekcuxx0opjo',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 3rd September Morning Slot',questionNumber:'ExamSide #082',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A block of mass m = 1 kg slides with velocity v = 6 m/s on a frictionless horizontal surface and collides with a uniform vertical rod and sticks to it as shown. The rod is pivoted about O and swings as a result of the collision making angle θ before momentarily coming to rest. If the rod has mass M = 2 kg, and length l = 1 m, the value of θ is approximately (take g = 10 m/s²)`,
+ options:[`63°`,`69°`,`55°`,`49°`],
+ correct:0,
+ answer:`63°`,
+ diagram:'block-hits-pivoted-rod',
+ short:[
+ [`The pivot can take any force it likes, so momentum is not conserved here; angular momentum about O is.`,`m v l = I ω`],
+ [`Work out the moment of inertia of the rod with the block stuck at its end.`,`I = ${fraction('M l²','3')} + m l² = ${fraction('2','3')} + 1 = ${fraction('5','3')}`],
+ [``,`1(6)(1) = ${fraction('5','3')} ω ⇒ ω = 3.6 rad/s`],
+ [`That fixes the energy just after the impact.`,`K = ${fraction('1','2')}(${fraction('5','3')})(3.6)² = 10.8 J`],
+ [`Now the swing. The rod's centre rises half as far as the block does.`,`ΔU = Mg${fraction('l','2')}(1 − cos θ) + mgl(1 − cos θ)`],
+ [``,`10.8 = (10 + 10)(1 − cos θ)`],
+ [``,`cos θ = 1 − 0.54 = 0.46, so θ ≈ 63°`],
+ [`Correct answer`,`63°`]
+]},
+{id:'COM-167',level:3,
+ title:'Speed of a particle deflected sideways by a heavier one',
+ topic:'Oblique elastic collision between unequal masses',
+ source:'ExamSide · JEE Main 2020 (Online) 2nd September Morning Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-particle-of-mass-m-with-an-initial-velocity-uwidehat-i-jee-main-physics-work-power-and-energy-qy69dh4fnizyvchz',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 2nd September Morning Slot',questionNumber:'ExamSide #083',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A particle of mass m with an initial velocity uî collides perfectly elastically with a mass 3m at rest. It moves with a velocity vĵ after collision, then v is given by`,
+ options:[`v = √(2/3)u`,`v = u/√3`,`v = u/√2`,`v = u/√6`],
+ correct:2,
+ answer:`v = u/√2`,
+ diagram:'',
+ noDiagramReason:'The striker leaves at a right angle to its original line, which the statement says outright.',
+ short:[
+ [`The striker ends up moving straight across its original line, so the heavy body must carry all the forward momentum.`,`3m v₂ₓ = mu ⇒ v₂ₓ = ${fraction('u','3')}`],
+ [`Across the line the two must cancel, since there was nothing there to begin with.`,`3m v₂ᵥ = −mv ⇒ v₂ᵥ = −${fraction('v','3')}`],
+ [`The collision is elastic, so the energy balances too.`,`u² = v² + 3(v₂ₓ² + v₂ᵥ²)`],
+ [`Substitute the two components of the heavy body.`,`u² = v² + 3(${fraction('u²','9')} + ${fraction('v²','9')})`],
+ [``,`u² − ${fraction('u²','3')} = v² + ${fraction('v²','3')}`],
+ [``,`${fraction('2u²','3')} = ${fraction('4v²','3')}, so v² = ${fraction('u²','2')}`],
+ [``,`v = ${fraction('u','√2')}`],
+ [`Correct answer`,`v = u/√2`]
+]},
+{id:'COM-168',level:3,
+ title:'Range of a projectile that is struck at the top of its flight',
+ topic:'A projectile bursting at the top of its flight',
+ source:'ExamSide · JEE Main 2020 (Online) 9th January Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-particle-of-mass-m-is-projected-with-a-speed-u-from-the-gr-jee-main-physics-impulse-and-momentum-s3ef8qa3wlphexxq',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 9th January Evening Slot',questionNumber:'ExamSide #084',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A particle of mass m is projected with a speed u from the ground at an angle of 60° to the horizontal (x-axis). When it has reached its maximum height, it collides completely inelastically with another particle of the same mass and velocity uî. The horizontal distance covered by the combined mass before reaching the ground is`,
+ options:[`2√2u²/g`,`3√3u²/8g`,`3√2u²/4g`,`5u²/8g`],
+ correct:1,
+ answer:`3√3u²/8g`,
+ diagram:'',
+ noDiagramReason:'A projectile struck at its highest point; the geometry is the standard parabola and the work is one collision plus one drop.',
+ short:[
+ [`At the top of its flight the first particle keeps only its horizontal component.`,`v = u cos 60° = ${fraction('u','2')}, horizontal`],
+ [`The height it has reached follows from the vertical component.`,`h = ${fraction('u² sin²60°','2g')} = ${fraction('3u²','8g')}`],
+ [`The two stick, so average their momenta over the combined mass.`,`V = ${fraction('m(u ÷ 2) + m(u)','2m')} = ${fraction('3u','4')}`],
+ [`Both velocities are horizontal, so the pair starts its fall with no vertical speed.`,`t = √(${fraction('2h','g')}) = √(${fraction('3u²','4g²')}) = ${fraction('u√3','2g')}`],
+ [`Multiply the horizontal speed by that time.`,`x = ${fraction('3u','4')} × ${fraction('u√3','2g')}`],
+ [``,`x = ${fraction('3√3u²','8g')}`],
+ [`Correct answer`,`3√3u²/8g`]
+]},
+{id:'COM-169',level:3,
+ title:'Centre of mass of a rod whose density grows quadratically',
+ topic:'Centre of mass by integration along a wire or rod',
+ source:'ExamSide · JEE Main 2020 (Online) 9th January Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-rod-of-length-l-has-non-uniform-linear-mass-brdensity-g-jee-main-physics-rotational-motion-ohzsz8brmxglrinw',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 9th January Evening Slot',questionNumber:'ExamSide #085',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A rod of length L has non-uniform linear mass density given by ρ(x) = a + b(x/L)², where a and b are constants and 0 ≤ x ≤ L. The value of x for the centre of mass of the rod is at`,
+ options:[`(3/2)(a+b)/(2a+b) L`,`(4/3)(a+b)/(2a+3b) L`,`(3/4)(2a+b)/(3a+b) L`,`(3/2)(2a+b)/(3a+b) L`],
+ correct:2,
+ answer:`(3/4)(2a+b)/(3a+b) L`,
+ diagram:'',
+ noDiagramReason:'A straight rod with a density that varies along it; a drawing cannot show the density, which is all that matters.',
+ short:[
+ [`Integrate the density along the rod to get the mass.`,`M = ∫(a + ${fraction('bx²','L²')})dx = aL + ${fraction('bL','3')}`],
+ [`Now the first moment about the end at the origin.`,`∫x ρ dx = ${fraction('aL²','2')} + ${fraction('bL²','4')}`],
+ [`Divide one by the other.`,`x = ${fraction('aL² ÷ 2 + bL² ÷ 4','aL + bL ÷ 3')}`],
+ [`Take L out of the top and the bottom and tidy both.`,`x = L${fraction('(2a + b) ÷ 4','(3a + b) ÷ 3')}`],
+ [``,`x = ${fraction('3','4')} × ${fraction('2a + b','3a + b')} L`],
+ [`Correct answer`,`(3/4)(2a+b)/(3a+b) L`]
+]},
+{id:'COM-170',level:2,
+ title:'Energy lost when two equal masses meet at an angle and stick',
+ topic:'Energy lost when two bodies move off together',
+ source:'ExamSide · JEE Main 2020 (Online) 9th January Morning Slot',
+ url:'https://questions.examside.com/past-years/jee/question/two-particles-of-equal-mass-m-have-respective-brinitial-v-jee-main-physics-impulse-and-momentum-48kilxxoyuq60ett',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 9th January Morning Slot',questionNumber:'ExamSide #086',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two particles of equal mass m have respective initial velocities uî and u(î + ĵ)/2. They collide completely inelastically. The energy lost in the process is`,
+ options:[`(1/3)mu²`,`(1/8)mu²`,`(3/4)mu²`,`√(2/3)mu²`],
+ correct:1,
+ answer:`(1/8)mu²`,
+ diagram:'',
+ noDiagramReason:'Both velocities are given in component form; the work is one average and two energies.',
+ short:[
+ [`Average the two velocities, since the masses are equal and the pair moves off together.`,`V = ${fraction('uî + u(î + ĵ) ÷ 2','2')} = ${fraction('3u','4')}î + ${fraction('u','4')}ĵ`],
+ [`Its speed squared is the sum of the squares of the components.`,`V² = ${fraction('9u²','16')} + ${fraction('u²','16')} = ${fraction('5u²','8')}`],
+ [`Now the energy afterwards.`,`K after = ${fraction('1','2')}(2m)(${fraction('5u²','8')}) = ${fraction('5mu²','8')}`],
+ [`And the energy before. The second particle's speed squared is half of u squared.`,`K before = ${fraction('1','2')}mu² + ${fraction('1','2')}m${fraction('u²','2')} = ${fraction('3mu²','4')}`],
+ [`Subtract.`,`loss = ${fraction('3mu²','4')} − ${fraction('5mu²','8')} = ${fraction('mu²','8')}`],
+ [`Correct answer`,`(1/8)mu²`]
+]},
+{id:'COM-171',level:3,
+ title:'Time to the ground after two bodies meet and stick in mid-air',
+ topic:'Energy lost when two bodies move off together',
+ source:'ExamSide · JEE Main 2020 (Online) 8th January Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/a-particle-of-mass-m-is-dropped-from-a-height-h-above-the-gr-jee-main-physics-current-electricity-dp3w9gefo8f3jqq7',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 8th January Evening Slot',questionNumber:'ExamSide #087',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A particle of mass m is dropped from a height h above the ground. At the same time another particle of the same mass is thrown vertically upwards from the ground with a speed of √(2gh). If they collide head-on completely inelastically, the time taken for the combined mass to reach the ground, in units of √(h/g), is`,
+ options:[`√(1/2)`,`1/2`,`√(3/2)`,`√(3/4)`],
+ correct:2,
+ answer:`√(3/2)`,
+ diagram:'',
+ noDiagramReason:'One body dropped and one thrown up along the same line; the meeting point is found from the relative motion.',
+ short:[
+ [`Both have the same acceleration, so their relative velocity never changes and the gap closes at a steady rate.`,`relative speed = √(2gh)`],
+ [`The gap is h, so divide.`,`t = ${fraction('h','√(2gh)')} = √(${fraction('h','2g')})`],
+ [`Find each velocity at that moment.`,`dropped: √(gh ÷ 2) downward`],
+ [``,`thrown: √(2gh) − √(gh ÷ 2) = √(gh ÷ 2) upward`],
+ [`The masses are equal and the two velocities are equal and opposite, so the pair is at rest where they meet.`,`V = 0`],
+ [`The dropped particle has fallen a quarter of h by then, so the pair starts from three quarters of h, at rest.`,`h′ = ${fraction('3h','4')}`],
+ [``,`t = √(${fraction('2h′','g')}) = √(${fraction('3h','2g')})`],
+ [`Correct answer`,`√(3/2)`]
+]},
+{id:'COM-172',level:3,
+ title:'Equation fixing the radius when a cavity puts the centre of mass on its surface',
+ topic:'Centre of mass of a body with a piece removed',
+ source:'ExamSide · JEE Main 2020 (Online) 8th January Evening Slot',
+ url:'https://questions.examside.com/past-years/jee/question/as-shown-in-figure-when-a-spherical-cavity-centered-at-o-jee-main-physics-current-electricity-luzve51trer587h7',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 8th January Evening Slot',questionNumber:'ExamSide #088',printedAnswer:'D',verifiedAnswer:'D'},
+ question:`As shown in figure, when a spherical cavity (centred at O) of radius 1 is cut out of a uniform sphere of radius R (centred at C), the centre of mass of remaining (shaded) part of sphere is at G, i.e, on the surface of the cavity. R can be determined by the equation`,
+ options:[`(R² + R − 1)(2 − R) = 1`,`(R² − R − 1)(2 − R) = 1`,`(R² − R + 1)(2 − R) = 1`,`(R² + R + 1)(2 − R) = 1`],
+ correct:3,
+ answer:`(R² + R + 1)(2 − R) = 1`,
+ diagram:'sphere-cavity-G',
+ short:[
+ [`Read the figure: the cavity touches the outer surface, so its centre sits in from the rim by its own radius.`,`CO = R − 1`],
+ [`Masses go as the cubes of the radii. Treat the cavity as negative.`,`sphere ∝ R³, cavity ∝ 1`],
+ [`Take the weighted average about C, with the cavity on the positive side.`,`CG = −${fraction('(R − 1)','R³ − 1')}`],
+ [`G lies on the near surface of the cavity, one radius short of its centre.`,`CG = (R − 1) − 1 = R − 2`],
+ [`Set the two expressions equal and clear the fraction.`,`(R − 2)(R³ − 1) = −(R − 1)`],
+ [`Factor the difference of cubes and cancel the common bracket.`,`(2 − R)(R − 1)(R² + R + 1) = (R − 1)`],
+ [``,`(R² + R + 1)(2 − R) = 1`],
+ [`Correct answer`,`(R² + R + 1)(2 − R) = 1`]
+]},
+{id:'COM-173',level:2,
+ title:'Centre of mass of a flag-shaped lamina',
+ topic:'Centre of mass of a composite body made of plates',
+ source:'ExamSide · JEE Main 2020 (Online) 8th January Morning Slot',
+ url:'https://questions.examside.com/past-years/jee/question/the-coordinates-of-centre-of-mass-of-a-uniform-flag-shaped-l-jee-main-physics-current-electricity-q0lqovjzu4xlnho4',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Centre of Mass',paper:'JEE Main 2020 (Online) 8th January Morning Slot',questionNumber:'ExamSide #089',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The coordinates of centre of mass of a uniform flag shaped lamina (thin flat plate) of mass 4 kg, whose corner coordinates are shown in the figure, are`,
+ options:[`(0.75 m, 1.75 m)`,`(1 m, 1.75 m)`,`(0.75 m, 0.75 m)`,`(1.25 m, 1.50 m)`],
+ correct:0,
+ answer:`(0.75 m, 1.75 m)`,
+ diagram:'flag-lamina',
+ short:[
+ [`Cut the shape into two rectangles whose centres are obvious.`,`a tall one 1 by 3 and a small one 1 by 1`],
+ [`Areas stand in for mass, since the plate is uniform.`,`A = 3 + 1 = 4`],
+ [`The tall rectangle runs from the origin up to y = 3; the small one sits on top at the right.`,`centres at (0.5, 1.5) and (1.5, 2.5)`],
+ [`Average the x coordinates by area.`,`x = ${fraction('3(0.5) + 1(1.5)','4')} = 0.75 m`],
+ [`Now the y coordinates.`,`y = ${fraction('3(1.5) + 1(2.5)','4')} = 1.75 m`],
+ [`Correct answer`,`(0.75 m, 1.75 m)`]
 ]}
 ];
 </script>
@@ -5014,9 +5873,9 @@ switch(q.diagram){
  case 'spring-blocks-10-5':{
   height=250; const gy=172;
   s+=ground(40,gy,400,false);
-  s+=rect(62,gy-68,76,'A',W)+txt(100,gy-84,'m₁ = 10 kg',M,12);
+  s+=rect(62,gy-68,76,68,'A',W)+txt(100,gy-84,'m₁ = 10 kg',M,12);
   s+=arrow(146,gy-34,214,gy-34,'',GREEN)+txt(180,gy-48,'v = 3 m/s',GREEN,12);
-  s+=rect(336,gy-68,76,'B',W)+txt(374,gy-84,'m₂ = 5 kg',M,12);
+  s+=rect(336,gy-68,76,68,'B',W)+txt(374,gy-84,'m₂ = 5 kg',M,12);
   let d=`M 268 ${gy-34} `; for(let i=0;i<6;i++){d+=`L ${272+i*11} ${gy-34+(i%2?16:-16)} `;} d+=`L 336 ${gy-34}`;
   s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2"/>`+line(252,gy-34,268,gy-34,Y,2);
   s+=txt(296,gy-72,'k = 3000 N/m',Y,12);
@@ -5060,6 +5919,169 @@ switch(q.diagram){
   s+=txt(ox+w/2,oy+26,'a',W,15);
   s+=txt(ox+w+14,oy-h/2,'b',W,15,'start');
   s+=txt(230,oy+52,'the shading shows the density rising with x',M,13);
+  break;
+ }
+ case 'quadrant-slide-PQ':{
+  height=300; const ox=140,oy=236,R=130;
+  s+=line(ox-20,oy,430,oy,M,1.6);
+  for(let i=0;i<16;i++) s+=line(ox-16+i*26,oy,ox-26+i*26,oy+10,M,1);
+  s+=`<path d="M ${ox} ${oy-R} A ${R} ${R} 0 0 1 ${ox+R} ${oy}" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=line(ox,oy-R,ox,oy,M,1.2,true);
+  s+=span(ox,ox+R,oy-R-24,'20 cm',M);
+  s+=line(ox,oy-R-14,ox,oy-R+6,M,1.1)+line(ox+R,oy-R-14,ox+R,oy-6,M,1.1,true);
+  s+=dot(ox,oy-R,W)+txt(ox-14,oy-R+4,'P',W,15,'end');
+  s+=`<circle cx="${ox+R+16}" cy="${oy-11}" r="11" fill="none" stroke="${B}" stroke-width="2"/>`;
+  s+=txt(ox+R+16,oy-34,'Q',B,15);
+  s+=arrow(ox+R+32,oy-11,ox+R+86,oy-11,'',GREEN)+txt(ox+R+60,oy-26,'v = ?',GREEN,12);
+  s+=txt(230,oy+40,'equal masses, smooth track, elastic collision',M,13);
+  break;
+ }
+ case 'p-t-graph-abc':{
+  height=300; const ox=86,oy=232;
+  s+=line(ox,oy,430,oy,M,1.5)+txt(438,oy+5,'t',M,14,'start');
+  s+=line(ox,oy+10,ox,46,M,1.5)+txt(ox-6,40,'p',M,14,'end');
+  const x1=160,x2=320,x3=368,yA=150,yB=96;
+  s+=line(ox,196,x1,yA,W,2.2)+line(x1,yA,x2,yB,W,2.2)+line(x2,yB,x3,oy,W,2.2);
+  s+=line(x1,yA,x1,oy,M,1,true)+line(x2,yB,x2,oy,M,1,true);
+  s+=txt(x1,oy+18,'t₁',M,13)+txt(x2,oy+18,'t₂',M,13)+txt(x3,oy+18,'t₃',M,13);
+  s+=txt(120,166,'a',Y,15)+txt(240,104,'b',Y,15)+txt(356,150,'c',Y,15,'start');
+  s+=txt(230,oy+48,'the steeper the line, the larger the force',M,13);
+  break;
+ }
+ case 'ball-on-post-bullet':{
+  height=320; const px=150,gy=250,ph=160;
+  s+=line(40,gy,440,gy,M,1.6);
+  s+=`<rect x="${px-7}" y="${gy-ph}" width="14" height="${ph}" fill="${M}" fill-opacity="0.4" stroke="${M}" stroke-width="1.4"/>`;
+  s+=span(px,px+120,gy+34,'30 m',W)+span(px,px+290,gy+62,'120 m',Y);
+  s+=line(px+22,gy-ph,px+22,gy,M,1.1,true)+txt(px+30,gy-ph/2,'20 m',M,12,'start');
+  s+=`<circle cx="${px}" cy="${gy-ph-13}" r="13" fill="none" stroke="${W}" stroke-width="2"/>`+txt(px,gy-ph-34,'200 g',W,13);
+  s+=`<circle cx="${px-86}" cy="${gy-ph-13}" r="5" fill="${Y}"/>`+txt(px-86,gy-ph-32,'10 g',Y,13);
+  s+=arrow(px-76,gy-ph-13,px-20,gy-ph-13,'',GREEN)+txt(px-48,gy-ph+6,'u',GREEN,13);
+  s+=`<path d="M ${px+14} ${gy-ph-6} Q ${px+90} ${gy-80} ${px+120} ${gy}" fill="none" stroke="${W}" stroke-width="1.2" stroke-dasharray="4 4"/>`;
+  s+=`<path d="M ${px+14} ${gy-ph-18} Q ${px+200} ${gy-120} ${px+290} ${gy}" fill="none" stroke="${Y}" stroke-width="1.2" stroke-dasharray="4 4"/>`;
+  
+  break;
+ }
+ case 'three-blocks-m-2m-2m':{
+  height=220; const gy=150;
+  s+=ground(44,gy,392,false);
+  s+=rect(64,gy-56,62,56,'m',W)+txt(95,gy-72,'A',M,13);
+  s+=rect(196,gy-62,70,62,'2m',W)+txt(231,gy-78,'B',M,13);
+  s+=rect(336,gy-62,70,62,'2m',W)+txt(371,gy-78,'C',M,13);
+  s+=arrow(132,gy-28,188,gy-28,'',GREEN)+txt(160,gy-44,'9 m/s',GREEN,12);
+  s+=txt(230,gy+28,'A hits B elastically, then B and C stick',M,13);
+  break;
+ }
+ case 'two-balls-wall-0-45':{
+  height=280;
+  [[120,'ball (a)',0],[330,'ball (b)',45]].forEach(([cx,lab,ang])=>{
+   const wy=130, wx=cx+58;
+   s+=line(wx,wy-62,wx,wy+62,M,2);
+   for(let i=0;i<9;i++) s+=line(wx,wy-58+i*15,wx+11,wy-50+i*15,M,1);
+   s+=line(cx-58,wy,wx,wy,M,1.1,true);
+   if(ang===0){
+    s+=arrow(cx-44,wy,cx+34,wy,'',GREEN);
+    s+=arrow(cx+30,wy+16,cx-40,wy+16,'',Y);
+   } else {
+    const r=Math.PI/4,Ln=64;
+    s+=arrow(wx-Ln*Math.cos(r),wy-Ln*Math.sin(r),wx-6,wy,'',GREEN);
+    s+=arrow(wx-6,wy,wx-Ln*Math.cos(r),wy+Ln*Math.sin(r),'',Y);
+    s+=`<path d="${arcPath(wx,wy,34,Math.PI-r,Math.PI)}" fill="none" stroke="${M}" stroke-width="1.1"/>`;
+    s+=txt(wx-50,wy-12,'45°',M,12,'end');
+   }
+   s+=txt(cx,wy+92,lab,M,13);
+  });
+  s+=txt(230,246,'both arrive and leave at 108 km per hour',M,13);
+  break;
+ }
+ case 'blocks-C-A-spring-B':{
+  height=220; const gy=150;
+  s+=ground(40,gy,400,false);
+  s+=rect(56,gy-56,56,56,'m',W)+txt(84,gy-72,'C',M,13);
+  s+=arrow(118,gy-28,174,gy-28,'',GREEN)+txt(146,gy-44,'v',GREEN,13);
+  s+=rect(182,gy-56,56,56,'m',W)+txt(210,gy-72,'A',M,13);
+  s+=rect(360,gy-56,56,56,'m',W)+txt(388,gy-72,'B',M,13);
+  let d=`M 246 ${gy-28} `; for(let i=0;i<7;i++){d+=`L ${250+i*14} ${gy-28+(i%2?14:-14)} `;} d+=`L 360 ${gy-28}`;
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2"/>`+line(238,gy-28,246,gy-28,Y,2);
+  s+=txt(300,gy-74,'K, natural length L',Y,12);
+  break;
+ }
+ case 'block-cords-bullet':{
+  height=320; const cx=250,top=50,L=118;
+  s+=ground(cx-92,top,184,true);
+  s+=line(cx-62,top,cx-40,top+L,M,1.5)+line(cx+62,top,cx+40,top+L,M,1.5);
+  s+=rect(cx-56,top+L,112,56,'M',W)+txt(cx,top+L+76,'M = 5.99 kg',M,12);
+  s+=`<circle cx="${cx-150}" cy="${top+L+18}" r="5" fill="${Y}"/>`+txt(cx-150,top+L+40,'10 g',Y,12);
+  s+=arrow(cx-140,top+L+18,cx-66,top+L+18,'',GREEN)+txt(cx-104,top+L+2,'u',GREEN,13);
+  s+=line(cx+74,top+L+36,cx+74,top+L-26,M,1.2,true);
+  s+=arrow(cx+74,top+L+36,cx+74,top+L-24,'',M)+txt(cx+84,top+L+6,'h = 9.8 cm',M,12,'start');
+  
+  s+=txt(230,top+L+78,'the bullet buries itself, then the pair swings up',M,13);
+  break;
+ }
+ case 'disc-hole-half-radius':{
+  height=320; const ox=120,cy=168,R=132;
+  s+=`<circle cx="${ox+R}" cy="${cy}" r="${R}" fill="${W}" fill-opacity="0.1" stroke="${W}" stroke-width="2"/>`;
+  s+=`<circle cx="${ox+1.5*R}" cy="${cy}" r="${R/2}" fill="#131313" stroke="${Y}" stroke-width="2"/>`;
+  s+=line(ox-16,cy,ox+2*R+26,cy,M,1.2,true);
+  s+=line(ox,cy-R-16,ox,cy+R+16,M,1.2,true);
+  s+=dot(ox,cy,M)+txt(ox-12,cy-8,'O',M,14,'end');
+  s+=dot(ox+1.5*R,cy,Y);
+  s+=span(ox,ox+R,cy+R+28,'a',M)+line(ox+R,cy,ox+R,cy+R+24,M,1,true);
+  s+=line(ox+1.5*R,cy,ox+1.5*R,cy-R/2,Y,1.3)+txt(ox+1.5*R+8,cy-R/4,'a ÷ 2',Y,12,'start');
+  s+=txt(230,cy+R+56,'the hole touches the rim of the disc',M,13);
+  break;
+ }
+ case 'chain-m-m-2m-4m-8m':{
+  height=210; const gy=146;
+  s+=ground(30,gy,420,false);
+  [[44,40,'m'],[108,40,'m'],[176,46,'2m'],[248,52,'4m'],[326,58,'8m']].forEach(([x,w,lab])=>{
+   s+=rect(x,gy-w,w,w,lab,W);});
+  s+=arrow(44,gy-62,104,gy-62,'',GREEN)+txt(74,gy-78,'v',GREEN,13);
+  s+=txt(230,gy+28,'every collision is perfectly inelastic',M,13);
+  break;
+ }
+ case 'block-hits-pivoted-rod':{
+  height=300; const gy=228,px=300,L=150;
+  s+=line(40,gy,440,gy,M,1.6);
+  s+=dot(px,gy-L,M)+txt(px-4,gy-L-12,'O',M,14,'end');
+  s+=`<rect x="${px-5}" y="${gy-L}" width="10" height="${L}" fill="${W}" fill-opacity="0.35" stroke="${W}" stroke-width="1.6"/>`;
+  s+=txt(px+18,gy-L+18,'M = 2 kg',M,12,'start')+txt(px+18,gy-L+36,'l = 1 m',M,12,'start');
+  s+=rect(150,gy-44,56,44,'m',W);
+  s+=arrow(212,gy-22,px-8,gy-22,'',GREEN)+txt(250,gy-38,'v = 6 m/s',GREEN,12);
+  const a=0.9;
+  s+=line(px,gy-L,px+L*Math.sin(a),gy-L+L*Math.cos(a),M,1.4,true);
+  s+=`<path d="${arcPath(px,gy-L,54,Math.PI/2-a,Math.PI/2)}" fill="none" stroke="${M}" stroke-width="1.1"/>`;
+  s+=txt(px+34,gy-L+62,'θ',M,14,'start');
+  s+=txt(230,gy+30,'the block sticks; the rod swings about O',M,13);
+  break;
+ }
+ case 'sphere-cavity-G':{
+  // drawn to the scale the answer demands: R is about 1.84 when the cavity radius is 1,
+  // so CO is shorter than the cavity radius and G lands just to the LEFT of C
+  height=360; const cx=226,cy=160,R=126,r=R/1.839;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="${W}" fill-opacity="0.12" stroke="${W}" stroke-width="2"/>`;
+  const ox=cx+(R-r);
+  s+=`<circle cx="${ox}" cy="${cy}" r="${r}" fill="#131313" stroke="${Y}" stroke-width="2"/>`;
+  s+=line(cx-R-10,cy,cx+R+10,cy,M,1.1,true);
+  s+=dot(cx,cy,M)+txt(cx-6,cy+20,'C',M,14,'end');
+  s+=dot(ox,cy,Y)+txt(ox+6,cy+20,'O',Y,14,'start');
+  s+=dot(ox-r,cy,GREEN)+txt(ox-r-8,cy-12,'G',GREEN,14,'end');
+  s+=arrow(cx,cy,cx-R*0.6,cy-R*0.6,'',M)+txt(cx-R*0.6-10,cy-R*0.6-4,'R',M,14,'end');
+  s+=line(ox,cy,ox,cy-r,Y,1.4)+txt(ox+8,cy-r/2,'1',Y,13,'start');
+  s+=txt(230,cy+R+40,'the cavity touches the outer surface,',M,13);
+  s+=txt(230,cy+R+60,'and G lands on the cavity\'s own surface',M,13);
+  break;
+ }
+ case 'flag-lamina':{
+  height=320; const ox=168,oy=250,u=62;
+  const X=v=>ox+v*u, Y2=v=>oy-v*u;
+  s+=`<path d="M ${X(0)} ${Y2(0)} L ${X(1)} ${Y2(0)} L ${X(1)} ${Y2(2)} L ${X(2)} ${Y2(2)} L ${X(2)} ${Y2(3)} L ${X(0)} ${Y2(3)} Z" fill="${W}" fill-opacity="0.16" stroke="${W}" stroke-width="2.2"/>`;
+  [[0,0],[1,0],[1,2],[2,2],[2,3],[0,3]].forEach(([a,b])=>{s+=dot(X(a),Y2(b),M);});
+  s+=txt(X(0)-10,Y2(3)-8,'(0, 3)',M,12,'end')+txt(X(2)+10,Y2(3)-8,'(2, 3)',M,12,'start');
+  s+=txt(X(2)+10,Y2(2)+6,'(2, 2)',M,12,'start')+txt(X(1)-8,Y2(2)-8,'(1, 2)',M,12,'end');
+  s+=txt(X(0)-10,Y2(0)+18,'(0, 0)',M,12,'end')+txt(X(1)+8,Y2(0)+18,'(1, 0)',M,12,'start');
+  s+=txt(230,oy+48,'a uniform plate of mass 4 kg',M,13);
   break;
  }
  case 'two-plates':{
@@ -5364,57 +6386,57 @@ const baseSections=[
 const subtopicPlan={
  'com-particles':[
   ['Where the centre of mass of a pair of bodies lies',['COM-01','COM-18','COM-80']],
-  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64','COM-79','COM-96','COM-120']],
-  ['How the centre of mass shifts when mass is added or moved',['COM-68','COM-45']],
+  ['Centre of mass from coordinates and position vectors',['COM-19','COM-36','COM-64','COM-79','COM-96','COM-120','COM-144']],
+  ['How the centre of mass shifts when mass is added or moved',['COM-68','COM-45','COM-150']],
   ['Speed of the centre of mass under purely internal forces',['COM-20']]],
  'com-bodies':[
-  ['Composite bodies built from plates and discs',['COM-02','COM-95','COM-114','COM-126']],
-  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37','COM-92','COM-101','COM-106','COM-110','COM-130']],
-  ['Recasting a body, cutting a piece out, draining it away',['COM-04','COM-47','COM-48','COM-87','COM-117','COM-131']],
+  ['Composite bodies built from plates and discs',['COM-02','COM-95','COM-114','COM-126','COM-173']],
+  ['Centre of mass by integration along a wire or rod',['COM-03','COM-37','COM-92','COM-101','COM-106','COM-110','COM-130','COM-169']],
+  ['Recasting a body, cutting a piece out, draining it away',['COM-04','COM-47','COM-48','COM-87','COM-117','COM-131','COM-162','COM-172']],
   ['Centre of mass of a drawn or jointed figure',['COM-54','COM-56']]],
  'com-motion':[
   ['Velocity of the centre of mass of a two-body system',['COM-05','COM-105','COM-119']],
   ['Acceleration of the centre of mass',['COM-06','COM-21','COM-88']],
   ['Fragments balanced about the path of the centre of mass',['COM-52']],
-  ['Momentum written through the kinetic energy',['COM-22','COM-94','COM-98','COM-111','COM-112']]],
+  ['Momentum written through the kinetic energy',['COM-22','COM-94','COM-98','COM-111','COM-112','COM-149','COM-157']]],
  'momentum-conservation':[
   ['A body driven onto a free wedge or trolley',['COM-07','COM-83','COM-84','COM-89']],
-  ['Momentum as a vector relation and where it comes from',['COM-08','COM-57','COM-108']],
-  ['A body leaving or joining a moving carrier',['COM-23','COM-49','COM-77','COM-86','COM-102']],
+  ['Momentum as a vector relation and where it comes from',['COM-08','COM-57','COM-108','COM-146','COM-152']],
+  ['A body leaving or joining a moving carrier',['COM-23','COM-49','COM-77','COM-86','COM-102','COM-135']],
   ['Internal rearrangement with the centre of mass fixed',['COM-24','COM-60']]],
  'impulse':[
-  ['Impulse as the area under a force-time graph',['COM-16','COM-74']],
-  ['Average force from the change in momentum in an impact',['COM-17','COM-39','COM-73','COM-82','COM-103']],
-  ['Impulse delivered along the normal at a surface',['COM-51','COM-75']],
+  ['Impulse as the area under a force-time graph',['COM-16','COM-74','COM-142']],
+  ['Average force from the change in momentum in an impact',['COM-17','COM-39','COM-73','COM-82','COM-103','COM-137','COM-139','COM-145','COM-147','COM-148']],
+  ['Impulse delivered along the normal at a surface',['COM-51','COM-75','COM-155']],
   ['Energy change written through the impulse',['COM-42']]],
  'elastic-1d':[
-  ['Elastic collision with a massive moving body',['COM-09','COM-33','COM-97','COM-124']],
-  ['What an elastic collision does to the two velocities',['COM-10','COM-29','COM-72','COM-100','COM-128','COM-129']],
-  ['Chains and rows of identical bodies',['COM-32','COM-38','COM-53','COM-93']],
+  ['Elastic collision with a massive moving body',['COM-09','COM-33','COM-97','COM-161','COM-124']],
+  ['What an elastic collision does to the two velocities',['COM-10','COM-29','COM-72','COM-100','COM-128','COM-129','COM-141','COM-158']],
+  ['Chains and rows of identical bodies',['COM-32','COM-38','COM-53','COM-93','COM-154','COM-164']],
   ['A limiting condition that allows only one collision',['COM-44']]],
  'restitution':[
   ['Fixing the restitution from the velocities after impact',['COM-11']],
-  ['Restitution from heights and repeated bounces',['COM-30','COM-34','COM-90','COM-99']],
+  ['Restitution from heights and repeated bounces',['COM-30','COM-34','COM-90','COM-99','COM-134']],
   ['Restitution from the angles a bounce turns through',['COM-46','COM-61']],
   ['Restitution from the geometry after an oblique collision',['COM-40']]],
  'inelastic-loss':[
-  ['Energy lost when two bodies move off together',['COM-59','COM-41','COM-76','COM-104','COM-115','COM-123']],
+  ['Energy lost when two bodies move off together',['COM-59','COM-41','COM-76','COM-104','COM-115','COM-123','COM-138','COM-165','COM-170','COM-171','COM-143','COM-160']],
   ['A collision that brings both bodies to rest',['COM-28']],
   ['Energy lost found from the relative velocities',['COM-43','COM-55','COM-78']],
   ['What is conserved, and for which system',['COM-69','COM-70','COM-125']]],
  'oblique':[
   ['Two equal velocities meeting at an angle',['COM-12']],
   ['Equal masses separating after an elastic glancing collision',['COM-31','COM-113','COM-118']],
-  ['Direction of the heavier body after an elastic deflection',['COM-50','COM-116']],
-  ['An inextensible string jerking taut between two particles',['COM-35','COM-107']]],
+  ['Direction of the heavier body after an elastic deflection',['COM-50','COM-116','COM-153','COM-163','COM-167']],
+  ['An inextensible string jerking taut between two particles',['COM-35','COM-107','COM-166']]],
  'explosions':[
-  ['A projectile bursting at the top of its flight',['COM-13']],
+  ['A projectile bursting at the top of its flight',['COM-13','COM-168']],
   ['Recoil shared between two fragments',['COM-25','COM-65']],
-  ['Energy released, and how it divides',['COM-26','COM-27','COM-109','COM-122','COM-132','COM-133']],
-  ['Fraction of energy transferred in a head-on collision',['COM-71']]],
+  ['Energy released, and how it divides',['COM-26','COM-27','COM-109','COM-122','COM-132','COM-133','COM-136','COM-140','COM-156']],
+  ['Fraction of energy transferred in a head-on collision',['COM-71','COM-151']]],
  'spring-systems':[
   ['Relative velocity of a spring-coupled pair',['COM-14']],
-  ['Greatest stretch of the spring joining two moving bodies',['COM-15','COM-81','COM-91','COM-127']],
+  ['Greatest stretch of the spring joining two moving bodies',['COM-15','COM-81','COM-91','COM-127','COM-159']],
   ['Equal and opposite forces inside a spring-coupled pair',['COM-67']]],
  'variable-mass':[
   ['The principle behind rocket propulsion',['COM-62','COM-85']],
