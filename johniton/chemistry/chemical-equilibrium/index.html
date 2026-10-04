@@ -574,7 +574,7 @@ detailed:[
  ['Halving every coefficient of a reaction takes the square root of its equilibrium constant.','K(target) = (K(reverse))^(1/2)','= √(5×10⁻¹⁶)','= √5 × 10⁻⁸','= 2.236×10⁻⁸'],
  ['Match the form x×10⁻⁸ and round to the nearest integer.','x ≈ 2.236 → x','= 2','Answer: 2']
 ]},
-{id:'EQ-42',level:2,topic:'Forward and reverse reaction rates approaching equality as equilibrium is reached (graphical)',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id be9mFEh0uaOIM9Asfgjgy2xukf92vfgc)',sourceRef:true,question:'For the equilibrium A ⇌ B, the rate of the forward reaction (a) and the rate of the reverse reaction (b) are plotted against time from the start of the reaction. Four graphs are offered (reproduced here in words, since the original is a set of images). Which one correctly describes how a and b vary and relate to each other once equilibrium is reached?',options:['a decreases and b increases, they cross, but then a turns upward and b turns downward again, leaving a large permanent gap between the two rates','a dips to a minimum and then rises again, while b rises to a maximum and then falls again, settling into a permanent gap between the two rates','a decreases steadily and b increases steadily, the two meeting at a single point where they become equal, and they stay equal for all later time','a decreases steadily and b increases steadily but they level off just short of each other, leaving a small permanent gap between the two rates'],correct:2,answer:'a decreases steadily and b increases steadily, the two meeting at a single point where they become equal, and they stay equal for all later time',
+{id:'EQ-42',level:2,topic:'Forward and reverse reaction rates approaching equality as equilibrium is reached (graphical)',diagram:'eqRateVsTimeGraphs',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id be9mFEh0uaOIM9Asfgjgy2xukf92vfgc)',sourceRef:true,question:'For the equilibrium A ⇌ B, the rate of the forward reaction (a) and the rate of the reverse reaction (b) are plotted against time from the start of the reaction. Which of the following graphs correctly describes how a and b vary and relate to each other once equilibrium is reached?',options:['A','B','C','D'],correct:2,answer:'C',
 short:[['At equilibrium the forward and reverse rates must be equal (not merely close), by the kinetic definition of equilibrium.','rate(forward) = rate(reverse) at and after equilibrium'],['As A is consumed its forward rate falls monotonically from its initial maximum, and as B accumulates its reverse rate rises monotonically from zero.','a smooth, monotonic approach to one common value is the only physically correct picture'],['Only the graph where the two curves actually meet at one point and stay together afterwards is consistent with rate(forward) = rate(reverse) at equilibrium.','Answer: (C)']],
 detailed:[
  ['In a reversible reaction A ⇌ B starting from pure A, the forward rate depends on [A], which only decreases with time, and the reverse rate depends on [B], which only increases with time.','rate(forward) = k_f[A] decreases monotonically','rate(reverse) = k_r[B] increases monotonically'],
@@ -1324,8 +1324,30 @@ function eqSquaresCirclesBox(){
  return wrap(body,300,`Box showing reactant A as ${squares.length} squares and product B as ${circles.length} circles at equilibrium, A(g) ⇌ B(g)`,520);
 }
 
+/* Proven 2x2-panel mini-graph helper, same convention as physics/gravitation's diagrams.js: axis box from
+   (x+46,y+24) to (x+136,y+80), letter label top-left, axis labels clear of the strokes. Takes two paths (pathA
+   green = forward rate a, pathB salmon = reverse rate b) since this question's panels each show both curves. */
+function miniGraph2(x,y,label,yl,xl,pathA,pathB){
+ return line(`M${x+46} ${y+24}V${y+80}H${x+136}`,M,1.5)+`<path d="${pathA}" fill="none" stroke="${G}" stroke-width="2.2"/><path d="${pathB}" fill="none" stroke="${R}" stroke-width="2.2"/>`+t(x+42,y+44,yl,W,14,'end',600)+t(x+136,y+102,xl,W,14,'end',600)+t(x+10,y+22,label,W,15,'start',700);
+}
+
+/* EQ-42 (ExamSIDE): for A <=> B, forward rate (a, green) falls and reverse rate (b, salmon) rises as the
+   reaction proceeds. Four candidate graphs for how a and b behave once they meet; correct (C) has them meet at
+   a single point and stay equal forever (the equilibrium condition rate_forward = rate_reverse, unchanging
+   after that). The question's own text used to say "reproduced here in words, since the original is a set of
+   images" -- that is now untrue, this is the real figure. */
+function eqRateVsTimeGraphs(){
+ return wrap(
+  miniGraph2(10,8,'(A)','rate','t','M56 28L101 54L146 28','M56 80L101 54L146 80')+
+  miniGraph2(180,8,'(B)','rate','t','M226 28C245 50 255 60 260 60C265 60 275 50 294 30C300 24 306 22 312 22','M226 80C245 58 255 48 260 48C265 48 275 58 294 78C300 84 306 86 312 86')+
+  miniGraph2(10,132,'(C)','rate','t','M56 152C80 165 95 178 101 178L146 178','M56 204C80 191 95 178 101 178L146 178')+
+  miniGraph2(180,132,'(D)','rate','t','M226 152C255 170 275 178 312 180','M226 204C255 186 275 178 312 176'),
+  254,'Rate of the forward reaction a (green) and the reverse reaction b (salmon) vs time for A ⇌ B, 4 candidate graphs (A) to (D): correct curve has a falling and b rising to meet at one point and stay equal forever after',340);
+}
+
 const STEM={
  eqSquaresCirclesBox:()=>eqSquaresCirclesBox(),
+ eqRateVsTimeGraphs:()=>eqRateVsTimeGraphs(),
 };
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
@@ -1581,14 +1603,54 @@ function exportReviewPdf(){
 function downloadReviewPdf(){if(!reviewPdfUrl)return;const a=document.createElement('a');a.href=reviewPdfUrl;a.download='Atomic-Structure-Verdicts.pdf';a.click();}
 async function shareReviewPdf(){if(!reviewPdfFile)return;try{await navigator.share({files:[reviewPdfFile],title:'Chemical Equilibrium review'});}catch(e){if(e.name!=='AbortError')document.querySelector('#pdf-status').textContent='Sharing is unavailable here. Download the PDF and attach it to your message.';}}
 </script>
+<script>/* Single source of truth for the chapter tabs shown on every chapter page.
+   Add a completed chapter here once and every page picks it up on the next build. */
+const CHAPTERS=[
+ {subject:'physics',title:'Unit and Dimension',path:'physics/unit-dimension/'},
+ {subject:'physics',title:'Motion in 1D',path:'physics/motion-in-1d/'},
+ {subject:'physics',title:'Motion in a Plane',path:'physics/motion-in-a-plane/'},
+ {subject:'physics',title:'Laws of Motion',path:''},
+ {subject:'physics',title:'Circular Motion',path:'physics/circular-motion/'},
+ {subject:'physics',title:'Gravitation',path:'physics/gravitation/'},
+ {subject:'physics',title:'Fluid Mechanics',path:'physics/fluid-mechanics/'},
+ {subject:'chemistry',title:'Mole Concept',path:'chemistry/'},
+ {subject:'chemistry',title:'Atomic Structure',path:'chemistry/atomic-structure/'},
+ {subject:'chemistry',title:'Chemical Bonding',path:'chemistry/chemical-bonding/'},
+ {subject:'chemistry',title:'Redox Reactions',path:'chemistry/redox-reactions/'},
+ {subject:'chemistry',title:'Solutions',path:'chemistry/solutions/'},
+ {subject:'chemistry',title:'Chemical Equilibrium',path:'chemistry/chemical-equilibrium/'},
+ {subject:'chemistry',title:'Ionic Equilibrium',path:'chemistry/ionic-equilibrium/'},
+ {subject:'mathematics',title:'Logarithm and Modulus',path:'mathematics/logarithm-modulus/'},
+ {subject:'mathematics',title:'Trigonometry',path:'mathematics/trigonometry/'},
+ {subject:'mathematics',title:'Quadratic Equations',path:'mathematics/quadratic-equations/'},
+ {subject:'mathematics',title:'Sequence and Series',path:'mathematics/'},
+ {subject:'mathematics',title:'Permutation and Combination',path:'mathematics/permutation-combination/'},
+ {subject:'mathematics',title:'Probability',path:'mathematics/probability/'},
+];
+function chapterNav(subject,activePath,base){
+ base=base||'/';
+ return CHAPTERS.filter(c=>c.subject===subject).map(c=>`<a${c.path===activePath?' class="active"':''} href="${base}${c.path}">${c.title}</a>`).join('');
+}
+</script>
 <script>/* Chapter-wide Level and Question-type filters, shared by every library app.
 
    A filter acts on question sets: a core question together with all of its
-   practice variants. A set is shown whole or not at all, and it matches through
-   its core. Level is read from the core's numeric `level` (1, 2 or 3); practice
-   variants never carry their own. Question type is never stored — it is derived
-   from the provenance fields each library already has (see MIGRATE.md §1.2), so
-   it cannot drift from the source record.
+   practice variants. Level is read from the core's numeric `level` (1, 2 or
+   3); practice variants never carry their own, so a set matches the Level
+   filter through its core alone, and Level filtering shows a matching set
+   whole (there is nothing per-item to narrow — a practice has no level of
+   its own to fail the check).
+
+   Question type is never stored — it is derived from the provenance fields
+   each library already has (see MIGRATE.md §1.2) — and a practice variant's
+   provenance can differ from its core's (a PYQ added as practice under an
+   institute-sourced core, say). A set's row still APPEARS if any of its
+   questions has the filtered type, so it is never dropped from the index
+   just because its core doesn't match. But once a Type filter is active,
+   only the questions that themselves have that type are shown, counted and
+   walked by Prev/Next inside that set — a PYQ practice under an institute
+   core surfaces alone, not with the rest of that core's practices along for
+   the ride. The set tag lists only the types actually on display.
 
    Nothing here renders inside `.questionstage`. The filter rows and set tags live
    in the pinned index, so the per-question render composites stay unchanged.
@@ -1620,17 +1682,37 @@ const QF=(()=>{
  const coreOf=f=>f.items.find(x=>!x.variant)||f.items[0];
  const familyOf=q=>families.find(f=>f.n===q.family);
  const levelOfSet=f=>{const l=coreOf(f).level;return LEVELS.includes(l)?l:null;};
+ // The set's own reference type, for classification tooling (qa/levels/*):
+ // the core's type, as MIGRATE.md §1.2 defines it. Unchanged by the filter
+ // fix below, which is a browser-only concern.
  const typeOfSet=f=>typeOf(coreOf(f));
+ // Every type actually present in the set (core or any practice). A PYQ
+ // added as a practice under an institute-sourced core must still turn up
+ // under the PYQ chip -- the set is still shown whole, just matched by any
+ // member's type rather than the core's alone.
+ const typesInSet=f=>new Set(f.items.map(typeOf).filter(Boolean));
+ // Items of a set that satisfy the active Type filter. Level narrows which
+ // SETS appear (via matches, below), never which items inside one -- a
+ // practice has no level of its own, it inherits the core's -- so with no
+ // Type filter every item qualifies. With one, only the matching items do:
+ // a PYQ filed as a practice under an institute core must surface alone,
+ // not drag its whole family's other practices along.
+ const visibleItems=f=>state.type.length?f.items.filter(it=>state.type.includes(typeOf(it))):f.items;
  const active=()=>state.level.length>0||state.type.length>0;
  function matches(f){
   if(state.level.length&&!state.level.includes(levelOfSet(f)))return false;
-  if(state.type.length&&!state.type.includes(typeOfSet(f)))return false;
+  if(state.type.length){const present=typesInSet(f);if(!state.type.some(t=>present.has(t)))return false;}
   return true;
  }
  function build(){
   const ok=new Set(families.filter(matches).map(f=>f.n));
-  const indices=[];questions.forEach((q,i)=>{if(ok.has(q.family))indices.push(i);});
-  cache={ok,indices,pos:new Map(indices.map((i,k)=>[i,k]))};
+  const indices=[],visible=new Set();
+  questions.forEach((q,i)=>{
+   if(!ok.has(q.family))return;
+   if(state.type.length&&!state.type.includes(typeOf(q)))return;
+   indices.push(i);visible.add(q);
+  });
+  cache={ok,indices,visible,pos:new Map(indices.map((i,k)=>[i,k]))};
  }
  const view=()=>{if(!cache)build();return cache;};
  function persist(){if(!key)return;try{localStorage.setItem(key,JSON.stringify(state));}catch{}}
@@ -1648,10 +1730,14 @@ const QF=(()=>{
  function clear(){state={level:[],type:[]};cache=null;persist();onChange();}
 
  return {
-  LEVELS,TYPES,typeOf,levelOfSet,typeOfSet,coreOf,active,
+  LEVELS,TYPES,typeOf,levelOfSet,typeOfSet,coreOf,visibleItems,active,
   // Sets and questions that survive the filter, preserving the caller's order.
+  // fams keeps a set (row) if any item matches; qs keeps only the items that
+  // themselves match -- a set is a row in the index, but Prev/Next and the
+  // counter walk questions, and those must not include a sibling that only
+  // rode along because it shares a family with a matching one.
   fams:list=>active()?list.filter(f=>view().ok.has(f.n)):list,
-  qs:list=>active()?list.filter(q=>view().ok.has(q.family)):list,
+  qs:list=>active()?list.filter(q=>view().visible.has(q)):list,
   inView:i=>!active()||view().pos.has(i),
   first:()=>{const v=view().indices;return v.length?v[0]:-1;},
   // Neighbour of `i` inside the filtered order, or -1 at either end.
@@ -1679,11 +1765,15 @@ const QF=(()=>{
     +(active()?`<div class="qf-row qf-status"><span>${sets?`${sets} of ${families.length} sets`:'No sets match'}</span><button class="qf-clear" onclick="QF.clear()">Clear</button></div>`:'')
     +`</div>`;
   },
-  // Compact set tag for index entries: "L2 · PYQ", or just the type while a
-  // chapter's levels are still being migrated.
+  // Compact set tag for index entries: "L2 · PYQ", or "L2 · INST/PYQ" when
+  // more than one type is actually on display for this set right now (no
+  // Type filter active, so every item shows) -- under an active Type
+  // filter this lists only the type(s) of the items that survive it, since
+  // that's what the row now shows, not the full family's mix.
   tags(f){
-   const l=levelOfSet(f),t=typeOfSet(f);
-   const text=[l?'L'+l:'',t?TYPE_LABEL[t]:''].filter(Boolean).join(' · ');
+   const l=levelOfSet(f),present=new Set(visibleItems(f).map(typeOf).filter(Boolean));
+   const t=TYPES.map(([k])=>k).filter(k=>present.has(k)).map(k=>TYPE_LABEL[k]).join('/');
+   const text=[l?'L'+l:'',t].filter(Boolean).join(' · ');
    return text?`<span class="qf-tag">${text}</span>`:'';
   }
  };
@@ -1763,10 +1853,10 @@ function renderIndex(q){
      return `<div class="navtopic ${topen?'open':''} ${q.topic===t?'here':''}" data-topic="${ti}">`
       +`<button class="navtopicbtn" aria-expanded="${topen}" onclick="toggleTopic(${ti})">`
       +`<span class="chev" aria-hidden="true"></span><span class="navtopicname">${esc(t)}</span>${navCount(tQs)}</button>`
-      +(topen?tFams.map(f=>{const d=reviewedIn(f.items);
+      +(topen?tFams.map(f=>{const items=QF.visibleItems(f),d=reviewedIn(items);
         return `<button class="familybtn ${f.n===q.family?'active':''}" onclick="familyGo(${f.n})">`
          +`<span class="num">${String(f.n).padStart(2,'0')}</span><span class="name">${esc(f.title)}</span>`
-         +`${QF.tags(f)}<span class="count ${d===f.items.length?'full':d?'part':''}">${d}/${f.items.length}</span></button>`;}).join(''):'')
+         +`${QF.tags(f)}<span class="count ${d===items.length?'full':d?'part':''}">${d}/${items.length}</span></button>`;}).join(''):'')
       +`</div>`;}).join('')}</div>`:'')
    +`</section>`;}).join('')}</div>`;
 }
@@ -1788,7 +1878,7 @@ function keepActiveVariantVisible(){
 function setMobileNav(open){mobileNavOpen=open;document.body.style.overflow=open?'hidden':'';render();if(open){keepActiveVisible();persistNavigation();}}
 function toggleMobileNav(){setMobileNav(!mobileNavOpen);}
 function closeMobileNav(){if(mobileNavOpen)setMobileNav(false);}
-function familyGo(n){mobileNavOpen=false;document.body.style.overflow='';go(questions.findIndex(q=>q.family===Number(n)));}
+function familyGo(n){mobileNavOpen=false;document.body.style.overflow='';const f=families.find(x=>x.n===Number(n)),items=QF.visibleItems(f);go(questions.indexOf(items[0]||f.items[0]));}
 const reviewed=()=>questions.filter(q=>feedback[q.id]).length;
 function stageNote(){const id=questions[current].id;drafts[id]={notes:document.querySelector('#notes').value};try{localStorage.setItem('outlrn-preview-johniton-eq-review-drafts-v1',JSON.stringify(drafts));}catch{}const empty=!drafts[id].notes.trim();document.querySelector('#save-note').disabled=empty;document.querySelector('#saved').textContent=empty?'Add a note so the change is clear.':'Not saved yet';}
 function persistVerdict(id,verdict,notes){
@@ -1817,7 +1907,7 @@ function sourceLine(q){
 function render(){const keepPage=window.scrollY,visibleIndex=navScrollHost(),visibleVariants=document.querySelector('.variantbar');
 if(visibleIndex)indexScroll=visibleIndex.scrollTop;if(visibleVariants)variantScroll=visibleVariants.scrollLeft;
 const q=questions[current],f=families.find(x=>x.n===q.family),saved=feedback[q.id],draft=drafts[q.id]||{},done=reviewed(),noting=noteFor===q.id||Boolean(draft.notes);
-document.body.innerHTML=`<nav class="subjectswitch" aria-label="Subjects"><a href="/johniton/">Physics</a><a class="active" href="/johniton/chemistry/">Chemistry</a><a href="/johniton/mathematics/">Mathematics</a></nav><nav class="chapterswitch" aria-label="Chemistry chapters"><span class="chapterlabel">Chapters</span><a href="/johniton/chemistry/">Mole Concept</a><a href="/johniton/chemistry/atomic-structure/">Atomic Structure</a><a href="/johniton/chemistry/chemical-bonding/">Chemical Bonding</a><a class="active" href="/johniton/chemistry/chemical-equilibrium/">Chemical Equilibrium</a><a href="/johniton/chemistry/ionic-equilibrium/">Ionic Equilibrium</a><a href="/johniton/chemistry/solutions/">Solutions</a><a href="/johniton/chemistry/redox-reactions/">Redox Reactions</a></nav><header class="libraryheader"><div><span class="muted small">Question library</span><h1>Chemical Equilibrium</h1></div><span class="muted small">${QF.counter(current)}</span></header><main><button class="navtrigger ${mobileNavOpen?'open':''}" data-sec="${q.syllabusKey}" onclick="toggleMobileNav()" aria-haspopup="true" aria-expanded="${mobileNavOpen}"><span class="dot" aria-hidden="true"></span><span class="navtriggertext"><span class="navtriggersyl">${esc(q.syllabus)}</span><span class="navtriggerfam">${f.n}. ${esc(f.title)}</span></span><span class="chev" aria-hidden="true"></span></button><div class="navoverlay ${mobileNavOpen?'open':''}" onclick="closeMobileNav()"></div><nav class="navdrawer ${mobileNavOpen?'open':''}" aria-hidden="${!mobileNavOpen}" aria-label="Browse topics"><div class="navdrawerhead"><strong>Browse topics</strong><button class="navdrawerclose" onclick="closeMobileNav()" aria-label="Close">&times;</button></div><div class="navdrawerbody">${renderIndex(q)}</div></nav><div class="workspace"><aside class="familynav">${renderIndex(q)}</aside><section>${f.items.length>1?`<div class="variantbar" data-sec="${q.syllabusKey}">${f.items.map(v=>`<button class="${v.id===q.id?'active':''}" onclick="go(${questions.indexOf(v)})">${variantLabel(v.variant)}</button>`).join('')}</div>`:''}<article class="questionstage"><div class="row between"><strong class="small">${q.id}</strong><span class="pill">${q.type==='mcq'?'MCQ':'Numerical'}</span>${QF.levelOfSet(f)?`<span class="pill green">L${QF.levelOfSet(f)}</span>`:''}</div><div class="subtopic"><span class="syl">${esc(q.syllabus)}</span>${esc(q.topic)}</div>${sourceLine(q)}<p class="questiontext">${mathHtml(q.question)}</p><div class="diagram">${diagram(q)}</div>${q.type==='mcq'?`<div class="options" role="group" aria-label="Answer options">${q.options.map((o,i)=>`<button class="option ${selections[q.id]===i?'selected':''} ${revealed&&i===q.correct?'correct':''} ${revealed&&selections[q.id]===i&&i!==q.correct?'wrong':''}" aria-pressed="${selections[q.id]===i}" onclick="selections['${q.id}']=${i};render()"><span class="optionletter">${'ABCD'[i]}</span><span>${mathHtml(o)}</span></button>`).join('')}</div>`:''}<button class="wide revealbutton" onclick="revealed=!revealed;render()">${revealed?'Hide solution':'Show solution'}</button>${revealed?`<section class="answerreveal"><h3>Solution</h3><div class="answer">${q.type==='mcq'?'('+ 'ABCD'[q.correct]+') '+mathHtml(q.answer):mathHtml(q.answer)+(q.unit?' '+mathHtml(q.unit):'')}</div><div class="diagram solutiondiagram">${diagram(q,true)}</div>${briefSolution(q)}${detailedSolution(q)}</section>`:''}</article><div class="row between pagination"><button onclick="go(QF.step(current,-1))" ${QF.step(current,-1)<0?'disabled':''}>← Previous</button><button onclick="go(QF.step(current,1))" ${QF.step(current,1)<0?'disabled':''}>Next →</button></div></section><aside class="reviewcolumn"><section class="panel reviewform"><h3>Your verdict</h3>${saved?`<div class="verdictnow ${saved.verdict==='Approved'?'ok':'revise'}">${saved.verdict==='Approved'?'Approved':'Needs changes'}${saved.notes?`<p>${esc(saved.notes)}</p>`:''}</div>`:''}${noting?`<label for="notes">What needs changing?</label><textarea id="notes" oninput="stageNote()" placeholder="Describe the change you want.">${esc(draft.notes??saved?.notes??'')}</textarea><button class="wide save-note" id="save-note" onclick="saveNote()" ${(draft.notes??saved?.notes??'').trim()?'':'disabled'}>Save and next</button><button class="wide ghost" onclick="cancelNote()">Cancel</button>`:`<button class="wide approve" onclick="approve()">${saved?.verdict==='Approved'?'Approved ✓ · next':'Approve and next'}</button><button class="wide reject" onclick="openNote()">Needs changes…</button>`}<div class="savehint" id="saved" aria-live="polite">${draft.notes?'Not saved yet':saved?'Saved '+new Date(saved.savedAt).toLocaleString('en-IN'):''}</div></section><section class="panel reviewform exportpanel"><div class="reviewprogress"><strong>${done}</strong> of ${questions.length} reviewed${done===questions.length?' · all done':''}</div><div class="reviewbar"><span style="width:${Math.round(100*done/questions.length)}%"></span></div><button class="wide ${done===questions.length?'approve':''}" id="export-pdf" onclick="exportReviewPdf()">Export review · PDF</button><div class="savehint" id="export-status" aria-live="polite">${Object.keys(drafts).length?'Finish the open note before exporting.':''}</div></section></aside></div></main>`;
+document.body.innerHTML=`<nav class="subjectswitch" aria-label="Subjects"><a href="/johniton/">Physics</a><a class="active" href="/johniton/chemistry/">Chemistry</a><a href="/johniton/mathematics/">Mathematics</a></nav><nav class="chapterswitch" aria-label="Chemistry chapters"><span class="chapterlabel">Chapters</span>${chapterNav('chemistry','chemistry/chemical-equilibrium/',typeof NAVBASE==='undefined'?'/':NAVBASE)}</nav><header class="libraryheader"><div><span class="muted small">Question library</span><h1>Chemical Equilibrium</h1></div><span class="muted small">${QF.counter(current)}</span></header><main><button class="navtrigger ${mobileNavOpen?'open':''}" data-sec="${q.syllabusKey}" onclick="toggleMobileNav()" aria-haspopup="true" aria-expanded="${mobileNavOpen}"><span class="dot" aria-hidden="true"></span><span class="navtriggertext"><span class="navtriggersyl">${esc(q.syllabus)}</span><span class="navtriggerfam">${f.n}. ${esc(f.title)}</span></span><span class="chev" aria-hidden="true"></span></button><div class="navoverlay ${mobileNavOpen?'open':''}" onclick="closeMobileNav()"></div><nav class="navdrawer ${mobileNavOpen?'open':''}" aria-hidden="${!mobileNavOpen}" aria-label="Browse topics"><div class="navdrawerhead"><strong>Browse topics</strong><button class="navdrawerclose" onclick="closeMobileNav()" aria-label="Close">&times;</button></div><div class="navdrawerbody">${renderIndex(q)}</div></nav><div class="workspace"><aside class="familynav">${renderIndex(q)}</aside><section>${QF.visibleItems(f).length>1?`<div class="variantbar" data-sec="${q.syllabusKey}">${QF.visibleItems(f).map(v=>`<button class="${v.id===q.id?'active':''}" onclick="go(${questions.indexOf(v)})">${variantLabel(v.variant)}</button>`).join('')}</div>`:''}<article class="questionstage"><div class="row between"><strong class="small">${q.id}</strong><span class="pill">${q.type==='mcq'?'MCQ':'Numerical'}</span>${QF.levelOfSet(f)?`<span class="pill green">L${QF.levelOfSet(f)}</span>`:''}</div><div class="subtopic"><span class="syl">${esc(q.syllabus)}</span>${esc(q.topic)}</div>${sourceLine(q)}<p class="questiontext">${mathHtml(q.question)}</p><div class="diagram">${diagram(q)}</div>${q.type==='mcq'?`<div class="options" role="group" aria-label="Answer options">${q.options.map((o,i)=>`<button class="option ${selections[q.id]===i?'selected':''} ${revealed&&i===q.correct?'correct':''} ${revealed&&selections[q.id]===i&&i!==q.correct?'wrong':''}" aria-pressed="${selections[q.id]===i}" onclick="selections['${q.id}']=${i};render()"><span class="optionletter">${'ABCD'[i]}</span><span>${mathHtml(o)}</span></button>`).join('')}</div>`:''}<button class="wide revealbutton" onclick="revealed=!revealed;render()">${revealed?'Hide solution':'Show solution'}</button>${revealed?`<section class="answerreveal"><h3>Solution</h3><div class="answer">${q.type==='mcq'?'('+ 'ABCD'[q.correct]+') '+mathHtml(q.answer):mathHtml(q.answer)+(q.unit?' '+mathHtml(q.unit):'')}</div><div class="diagram solutiondiagram">${diagram(q,true)}</div>${briefSolution(q)}${detailedSolution(q)}</section>`:''}</article><div class="row between pagination"><button onclick="go(QF.step(current,-1))" ${QF.step(current,-1)<0?'disabled':''}>← Previous</button><button onclick="go(QF.step(current,1))" ${QF.step(current,1)<0?'disabled':''}>Next →</button></div></section><aside class="reviewcolumn"><section class="panel reviewform"><h3>Your verdict</h3>${saved?`<div class="verdictnow ${saved.verdict==='Approved'?'ok':'revise'}">${saved.verdict==='Approved'?'Approved':'Needs changes'}${saved.notes?`<p>${esc(saved.notes)}</p>`:''}</div>`:''}${noting?`<label for="notes">What needs changing?</label><textarea id="notes" oninput="stageNote()" placeholder="Describe the change you want.">${esc(draft.notes??saved?.notes??'')}</textarea><button class="wide save-note" id="save-note" onclick="saveNote()" ${(draft.notes??saved?.notes??'').trim()?'':'disabled'}>Save and next</button><button class="wide ghost" onclick="cancelNote()">Cancel</button>`:`<button class="wide approve" onclick="approve()">${saved?.verdict==='Approved'?'Approved ✓ · next':'Approve and next'}</button><button class="wide reject" onclick="openNote()">Needs changes…</button>`}<div class="savehint" id="saved" aria-live="polite">${draft.notes?'Not saved yet':saved?'Saved '+new Date(saved.savedAt).toLocaleString('en-IN'):''}</div></section><section class="panel reviewform exportpanel"><div class="reviewprogress"><strong>${done}</strong> of ${questions.length} reviewed${done===questions.length?' · all done':''}</div><div class="reviewbar"><span style="width:${Math.round(100*done/questions.length)}%"></span></div><button class="wide ${done===questions.length?'approve':''}" id="export-pdf" onclick="exportReviewPdf()">Export review · PDF</button><div class="savehint" id="export-status" aria-live="polite">${Object.keys(drafts).length?'Finish the open note before exporting.':''}</div></section></aside></div></main>`;
 const navHost=navScrollHost();if(navHost)navHost.scrollTop=indexScroll;
 const variantHost=document.querySelector('.variantbar');if(variantHost)variantHost.scrollLeft=variantScroll;
 if(window.scrollY!==keepPage)window.scrollTo(0,keepPage);}
