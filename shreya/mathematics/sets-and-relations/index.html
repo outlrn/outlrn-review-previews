@@ -205,7 +205,7 @@ detailed:[
  ['Compare each option with the allowed range 38 to 65.','63 ∈ [38, 65]','54 ∈ [38, 65]','38 ∈ [38, 65]','36 ∉ [38, 65]'],
  ['Option (B) 36 is below the lower bound, so the union would be 73 + 65 − 36 = 102% of the staff, which is impossible. The other three values lie in the allowed range, so x can take them; option (D) 38 is the endpoint that a strict inequality would wrongly exclude.','Answer: (B) 36']
 ]},
-{id:'SET-1-B',parent:'SET-1',variant:2,topic:'Possible overlap of two percentage groups',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id gxyhmiutfhmpuknc)',sourceRef:true,relevance:{parent:'SET-1',sharedSkill:'Both limits on the overlap of two groups come from n(A ∪ B) ≤ 100 and n(A ∩ B) ≤ smaller group.',recoveryPurpose:'This asks for a value that is possible rather than impossible, so the allowed range is applied to the options directly.'},question:'A survey shows that 63% of the people in a city read newspaper A whereas 76% read newspaper B. If x% of the people read both the newspapers, then a possible value of x can be:',options:['37','65','29','55'],correct:3,answer:'55',
+{id:'SET-1-B',parent:'SET-1',variant:2,topic:'Possible overlap of two percentage groups',diagram:'b03NewsVenn',source:'ExamSIDE · JEE Main 2020 (Online) 4th September Morning Slot · questions.examside.com (question id gxyhmiutfhmpuknc)',sourceRef:true,relevance:{parent:'SET-1',sharedSkill:'Both limits on the overlap of two groups come from n(A ∪ B) ≤ 100 and n(A ∩ B) ≤ smaller group.',recoveryPurpose:'This asks for a value that is possible rather than impossible, so the allowed range is applied to the options directly.'},question:'A survey shows that 63% of the people in a city read newspaper A whereas 76% read newspaper B. If x% of the people read both the newspapers, then a possible value of x can be:',options:['37','65','29','55'],correct:3,answer:'55',
 short:[['','63 + 76 − x ≤ 100','x ≥ 39'],['','x ≤ 63','39 ≤ x ≤ 63'],['','55 ∈ [39, 63]']],
 detailed:[
  ['Let A and B be the readers of the two newspapers as percentages of the people, with x the percentage who read both.','n(A) = 63','n(B) = 76'],
@@ -215,7 +215,7 @@ detailed:[
  ['Compare each option with the allowed range 39 to 63.','37 ∉ [39, 63]','65 ∉ [39, 63]','29 ∉ [39, 63]','55 ∈ [39, 63]'],
  ['37 and 29 are below 39 and would make the union exceed 100%, for example 63 + 76 − 37 = 102. The value 65 is above the smaller group 63, so it would exceed the readers of A, which is the slip of using the larger set 76 as the upper bound; only 55 fits.','Answer: (D) 55']
 ]},
-{id:'SET-2',level:3,topic:'Least and greatest triple overlap from set sizes',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Morning Shift · questions.examside.com (question id 8dbi9wuc5q5vjbgt)',sourceRef:true,question:'In a survey of 220 students of a higher secondary school, it was found that at least 125 and at most 130 students studied Mathematics; at least 85 and at most 95 studied Physics; at least 75 and at most 90 studied Chemistry; 30 studied both Physics and Chemistry; 50 studied both Chemistry and Mathematics; 40 studied both Mathematics and Physics and 10 studied none of these subjects. Let m and n respectively be the least and the most number of students who studied all the three subjects. Then m + n is equal to ........',type:'numerical',answer:'45',
+{id:'SET-2',level:3,topic:'Least and greatest triple overlap from set sizes',diagram:'b03Survey3',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Morning Shift · questions.examside.com (question id 8dbi9wuc5q5vjbgt)',sourceRef:true,question:'In a survey of 220 students of a higher secondary school, it was found that at least 125 and at most 130 students studied Mathematics; at least 85 and at most 95 studied Physics; at least 75 and at most 90 studied Chemistry; 30 studied both Physics and Chemistry; 50 studied both Chemistry and Mathematics; 40 studied both Mathematics and Physics and 10 studied none of these subjects. Let m and n respectively be the least and the most number of students who studied all the three subjects. Then m + n is equal to ........',type:'numerical',answer:'45',
 short:[['','n(M ∪ P ∪ C) = 220 − 10','= 210'],['','210 = n(M) + n(P) + n(C) − 120 + t','285 ≤ 330 − t ≤ 315','15 ≤ t ≤ 45'],['cap from the pairwise counts','t ≤ 30','m + n = 15 + 30','= 45']],
 detailed:[
  ['Ten students study none of the subjects, so the union has 210 students.','n(M ∪ P ∪ C) = 220 − 10','= 210'],
@@ -226,7 +226,7 @@ detailed:[
  ['Verify t = 30 with n(M) = 125, n(P) = 90, n(C) = 85, again all regions are non-negative and add to 210.','only M = 125 − 40 − 50 + 30','= 65','only P = 90 − 40 − 30 + 30','= 50','only C = 85 − 50 − 30 + 30','= 35','65 + 50 + 35 + (10 + 0 + 20) + 30 = 210'],
  ['So m = 15 and n = 30. Taking the upper limit 45 from the size ranges alone, without the cap t ≤ 30, would give 15 + 45 = 60, and dropping the lower bound would give 0 + 30 = 30.','m + n = 15 + 30','= 45','Answer: 45']
 ]},
-{id:'SET-3',level:2,topic:'Counting people by number of events won',source:'ExamSIDE · JEE Main 2023 (Online) 11th April Morning Shift · questions.examside.com (question id lcxmkeayuwzfnhcg)',sourceRef:true,question:'An organization awarded 48 medals in event \'A\', 25 in event \'B\' and 18 in event \'C\'. If these medals went to total 60 men and only five men got medals in all the three events, then, how many received medals in exactly two of three events?',options:['10','15','21','9'],correct:2,answer:'21',
+{id:'SET-3',level:2,topic:'Counting people by number of events won',diagram:'b03MedalVenn',source:'ExamSIDE · JEE Main 2023 (Online) 11th April Morning Shift · questions.examside.com (question id lcxmkeayuwzfnhcg)',sourceRef:true,question:'An organization awarded 48 medals in event \'A\', 25 in event \'B\' and 18 in event \'C\'. If these medals went to total 60 men and only five men got medals in all the three events, then, how many received medals in exactly two of three events?',options:['10','15','21','9'],correct:2,answer:'21',
 short:[['a = exactly two events, b = exactly one','a + b + 5 = 60','b + 2a + 15 = 91'],['','a + b = 55','b + 2a = 76'],['','a = 76 − 55','= 21']],
 detailed:[
  ['Let b men win medals in exactly one event and a men in exactly two events; five men win in all three.','b + a + 5 = 60','⇒ a + b = 55'],
@@ -244,9 +244,9 @@ detailed:[
  ['In Q the big circle covers the narrow lens shared by the two side circles, because the lens sits near the centre of the big circle.','lens ⊂ big circle','⇒ triple overlap ≠ ∅'],
  ['In R the right circle touches the big circle from inside and the left circle crosses it; the lens of the two small circles again lies inside the big circle.','lens ⊂ big circle','⇒ triple overlap ≠ ∅'],
  ['Check R with the position of the lens: it lies between the right edge of the left circle and the left edge of the right circle, both inside the big circle.','lens ⊂ big circle'],
- ['Every diagram shows a part common to all three circles, so none represents students who play two games but never all three. Options with P or Q or R would be right only for a picture where the two smaller circles overlap outside the big one.','Answer: (B) None of these']
+ ['Every diagram shows a part common to all three circles, so none represents students who play two games but never all three. Options (A), (C) and (D) each accept at least one of P, Q, R, which comes from checking only that the two small circles overlap and not that their common lens lies outside the big circle.','Answer: (B) None of these']
 ]},
-{id:'SET-5',level:2,topic:'Interval sets from modulus conditions',source:'ExamSIDE · JEE Main 2020 (Online) 9th January Evening Slot · questions.examside.com (question id weiafawqmony82tz)',sourceRef:true,question:'If A = {x ∈ ℝ : |x| < 2} and B = {x ∈ ℝ : |x − 2| ≥ 3}; then :',options:['A − B = [−1, 2)','A ∪ B = ℝ − (2, 5)','A ∩ B = (−2, −1)','B − A = ℝ − (−2, 5)'],correct:3,answer:'B − A = ℝ − (−2, 5)',
+{id:'SET-5',level:2,topic:'Interval sets from modulus conditions',diagram:'b03NumberLine',source:'ExamSIDE · JEE Main 2020 (Online) 9th January Evening Slot · questions.examside.com (question id weiafawqmony82tz)',sourceRef:true,question:'If A = {x ∈ ℝ : |x| < 2} and B = {x ∈ ℝ : |x − 2| ≥ 3}; then :',options:['A − B = [−1, 2)','A ∪ B = ℝ − (2, 5)','A ∩ B = (−2, −1)','B − A = ℝ − (−2, 5)'],correct:3,answer:'B − A = ℝ − (−2, 5)',
 short:[['','A = (−2, 2)','B = (−∞, −1] ∪ [5, ∞)'],['','B − A = (−∞, −2] ∪ [5, ∞)','= ℝ − (−2, 5)']],
 detailed:[
  ['Solve |x| < 2 as the interval between −2 and 2, with both ends excluded.','A = (−2, 2)'],
@@ -343,7 +343,7 @@ detailed:[
  ['Compute each totient value.','φ(2) = 1','φ(3) = 2','φ(4) = 2','φ(5) = 4','φ(6) = 2','φ(7) = 6','φ(8) = 4','φ(9) = 6','φ(10) = 4'],
  ['Add them.','n(B) = 1 + 2 + 2 + 4 + 2 + 6 + 4 + 6 + 4','= 31'],
  ['Verify by complement: there are 45 pairs with m < n, and 14 of them share a factor (4 with m = 2, 2 with m = 3, 3 with m = 4, 1 with m = 5, 3 with m = 6, 1 with m = 8).','45 − 14 = 31'],
- ['The options 36 and 37 fall short of the 14 non-coprime pairs, and 29 over-removes; each differs from 45 − 14, so only 31 satisfies the count.','Answer: (B) 31']
+ ['The options 36 and 37 correspond to removing only 9 or 8 of the 14 pairs with a common factor, and 29 removes 16, which counts two pairs too many; each differs from 45 − 14, so only 31 satisfies the count.','Answer: (B) 31']
 ]},
 {id:'SET-12',level:2,topic:'Number of real solutions of a modulus equation',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Morning Shift · questions.examside.com (question id vossb3wlyyn6peds)',sourceRef:true,question:'The number of elements in the set {x ∈ ℝ : (|x| − 3)|x + 4| = 6} is equal to :',options:['4','2','3','1'],correct:1,answer:'2',
 short:[['','x ≥ 0: (x − 3)(x + 4) = 6','x² + x − 18 = 0','x = (−1 + √73)/2'],['','−4 ≤ x < 0: (−x − 3)(x + 4) = 6','x² + 7x + 18 = 0','D = −23 < 0'],['','x < −4: (x + 3)(x + 4) = 6','x² + 7x + 6 = 0','x = −6','number of elements = 2']],
@@ -413,7 +413,7 @@ detailed:[
  ['Check with test points: x = −3 is in A so it is not in B − A, while x = −5, 0 and 5 satisfy both |x − 2| > 1 and |x² − 10| > 6.','|−5 − 2| = 7 > 1','|25 − 10| = 15 > 6'],
  ['Option (A) has the endpoints swapped: 1 is not in A ∪ B (|1 − 2| = 1 is not > 1) and 2 is in A, so A ∪ B = (−∞, 1) ∪ [2, ∞). Option (C) forgets that 3 ∈ A and 3 ∉ B, so A − B = [2, 3]. Option (D) forgets that 3 ∉ B, so A ∩ B = [−4, −2] ∪ (3, 4].','Answer: (B) B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)']
 ]},
-{id:'SET-18',level:2,topic:'Subset test between plane regions',source:'ExamSIDE · JEE Main 2018 (Offline) · questions.examside.com (question id dffepidax5irxuox)',sourceRef:true,question:'Two sets A and B are as under: A = {(a, b) ∈ ℝ × ℝ : |a − 5| < 1 and |b − 5| < 1}; B = {(a, b) ∈ ℝ × ℝ : 4(a − 6)² + 9(b − 5)² ≤ 36}. Then',options:['neither A ⊂ B nor B ⊂ A','B ⊂ A','A ⊂ B','A ∩ B = ∅ (an empty set)'],correct:2,answer:'A ⊂ B',
+{id:'SET-18',level:2,topic:'Subset test between plane regions',diagram:'b03EllipseSquare',source:'ExamSIDE · JEE Main 2018 (Offline) · questions.examside.com (question id dffepidax5irxuox)',sourceRef:true,question:'Two sets A and B are as under: A = {(a, b) ∈ ℝ × ℝ : |a − 5| < 1 and |b − 5| < 1}; B = {(a, b) ∈ ℝ × ℝ : 4(a − 6)² + 9(b − 5)² ≤ 36}. Then',options:['neither A ⊂ B nor B ⊂ A','B ⊂ A','A ⊂ B','A ∩ B = ∅ (an empty set)'],correct:2,answer:'A ⊂ B',
 short:[['','A: 4 < a < 6, 4 < b < 6, the open square with corners (4, 4), (4, 6), (6, 4), (6, 6)'],['','B: (a − 6)²/9 + (b − 5)²/4 ≤ 1'],['','(4, 4): 16 + 9 = 25 ≤ 36','(4, 6): 16 + 9 = 25 ≤ 36','⇒ A ⊂ B']],
 detailed:[
  ['Rewrite A: each modulus condition is a double inequality, so A is the open square centred at (5, 5) with side 2.','A = {(a, b) : 4 < a < 6, 4 < b < 6}'],
@@ -526,7 +526,7 @@ detailed:[
  ['The pair (1, 14) is not in R₂.','|1 − 14| = 13','⇒ (1, 14) ∉ R₂'],
  ['Both relations fail transitivity, so neither is an equivalence relation. Option (A) overlooks both counterexamples, (C) overlooks the counterexample of R₁, (D) overlooks the counterexample of R₂.','Answer: (B) Neither R₁ nor R₂ is an equivalence relation']
 ]},
-{id:'SET-28',level:2,topic:'Points of a region lying on the axes',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Evening Shift · questions.examside.com (question id owtnf17uwkfwhofp)',sourceRef:true,question:'Let A = {(x, y) ∈ ℝ × ℝ : |x + y| ≥ 3} and B = {(x, y) ∈ ℝ × ℝ : |x| + |y| ≤ 3}. If C = {(x, y) ∈ A ∩ B : x = 0 or y = 0}, then ∑_((x,y)∈C) |x + y| is:',options:['18','24','15','12'],correct:3,answer:'12',
+{id:'SET-28',level:2,topic:'Points of a region lying on the axes',diagram:'b03Diamond',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Evening Shift · questions.examside.com (question id owtnf17uwkfwhofp)',sourceRef:true,question:'Let A = {(x, y) ∈ ℝ × ℝ : |x + y| ≥ 3} and B = {(x, y) ∈ ℝ × ℝ : |x| + |y| ≤ 3}. If C = {(x, y) ∈ A ∩ B : x = 0 or y = 0}, then ∑_((x,y)∈C) |x + y| is:',options:['18','24','15','12'],correct:3,answer:'12',
 short:[['','x = 0: |y| ≥ 3 and |y| ≤ 3','⇒ y = ±3','y = 0: |x| ≥ 3 and |x| ≤ 3','⇒ x = ±3'],['','C = {(0, 3), (0, −3), (3, 0), (−3, 0)}'],['','∑|x + y| = 3 + 3 + 3 + 3','= 12']],
 detailed:[
  ['On the line x = 0 the condition of A becomes |y| ≥ 3 and the condition of B becomes |y| ≤ 3.','|y| ≥ 3 and |y| ≤ 3'],
@@ -537,7 +537,7 @@ detailed:[
  ['Add the four values.','∑|x + y| = 4 × 3','= 12'],
  ['Options (A) 18, (B) 24 and (C) 15 would need 6, 8 or 5 points with |x + y| = 3, but C has exactly four points.','Answer: (D) 12']
 ]},
-{id:'SET-29',level:3,topic:'Algebra of sets: which statement is not true',source:'ExamSIDE · JEE Main 2019 (Online) 12th April Evening Slot · questions.examside.com (question id tot2akcvu8d1alep)',sourceRef:true,question:'Let A, B and C be sets such that ∅ ≠ A ∩ B ⊆ C. Then which of the following statements is not true?',options:['If (A − B) ⊆ C, then A ⊆ C','B ∩ C ≠ ∅','(C ∪ A) ∩ (C ∪ B) = C','If (A − C) ⊆ B, then A ⊆ B'],correct:3,answer:'If (A − C) ⊆ B, then A ⊆ B',
+{id:'SET-29',level:3,topic:'Algebra of sets: which statement is not true',diagram:'b03SubsetVenn',source:'ExamSIDE · JEE Main 2019 (Online) 12th April Evening Slot · questions.examside.com (question id tot2akcvu8d1alep)',sourceRef:true,question:'Let A, B and C be sets such that ∅ ≠ A ∩ B ⊆ C. Then which of the following statements is not true?',options:['If (A − B) ⊆ C, then A ⊆ C','B ∩ C ≠ ∅','(C ∪ A) ∩ (C ∪ B) = C','If (A − C) ⊆ B, then A ⊆ B'],correct:3,answer:'If (A − C) ⊆ B, then A ⊆ B',
 short:[['','(A): A = (A − B) ∪ (A ∩ B) ⊆ C'],['','(B): ∅ ≠ A ∩ B ⊆ B ∩ C','(C): (C ∪ A) ∩ (C ∪ B) = C ∪ (A ∩ B)','= C'],['','(D): A = {1, 2}','B = {1}','C = {1, 2}','A − C = ∅ ⊆ B','2 ∈ A and 2 ∉ B','⇒ A ⊄ B']],
 detailed:[
  ['Split A into the part outside B and the part inside B.','A = (A − B) ∪ (A ∩ B)'],
@@ -559,7 +559,7 @@ detailed:[
  ['Check by substitution: m = 5 gives x² − 6x + 9 = 0 with real double root 3, so 5 ∈ A, and 5 ∉ B, so 5 ∈ A − B.','5 ∈ A − B'],
  ['Options (A), (B) and (C) agree with these sets, and A ∪ B = (−∞, −3] ∪ [−3, 5) ∪ [5, ∞) = ℝ. Option (D) is the one that wrongly drops the endpoint 5, as if A were open at 5.','Answer: (D) A − B = (−∞, −3) ∪ (5, ∞)']
 ]},
-{id:'SET-18-A',parent:'SET-18',variant:1,topic:'Subset test between plane regions',source:'ExamSIDE · JEE Main 2025 (Online) 7th April Evening Shift · questions.examside.com (question id u5vkjimjo1xox2qy)',sourceRef:true,relevance:{parent:'SET-18',sharedSkill:'Identify a region as a rectangle or an ellipse from its inequality and compare the two regions through their extreme coordinates',recoveryPurpose:'Here the closed rectangle is the larger set and the ellipse the smaller, so the inclusion runs the other way and the ellipse\'s extreme coordinates are compared with the rectangle\'s sides instead of testing the rectangle\'s corners'},question:'Let A = {(α, β) ∈ ℝ × ℝ : |α − 1| ≤ 4 and |β − 5| ≤ 6} and B = {(α, β) ∈ ℝ × ℝ : 16(α − 2)² + 9(β − 6)² ≤ 144}. Then',options:['A ⊂ B','B ⊂ A','neither A ⊂ B nor B ⊂ A','A ∪ B = {(x, y) : −4 ≤ x ≤ 4, −1 ≤ y ≤ 11}'],correct:1,answer:'B ⊂ A',
+{id:'SET-18-A',parent:'SET-18',variant:1,topic:'Subset test between plane regions',diagram:'b03RectEllipse',source:'ExamSIDE · JEE Main 2025 (Online) 7th April Evening Shift · questions.examside.com (question id u5vkjimjo1xox2qy)',sourceRef:true,relevance:{parent:'SET-18',sharedSkill:'Identify a region as a rectangle or an ellipse from its inequality and compare the two regions through their extreme coordinates',recoveryPurpose:'Here the closed rectangle is the larger set and the ellipse the smaller, so the inclusion runs the other way and the ellipse\'s extreme coordinates are compared with the rectangle\'s sides instead of testing the rectangle\'s corners'},question:'Let A = {(α, β) ∈ ℝ × ℝ : |α − 1| ≤ 4 and |β − 5| ≤ 6} and B = {(α, β) ∈ ℝ × ℝ : 16(α − 2)² + 9(β − 6)² ≤ 144}. Then',options:['A ⊂ B','B ⊂ A','neither A ⊂ B nor B ⊂ A','A ∪ B = {(x, y) : −4 ≤ x ≤ 4, −1 ≤ y ≤ 11}'],correct:1,answer:'B ⊂ A',
 short:[['','A: −3 ≤ α ≤ 5, −1 ≤ β ≤ 11'],['','B: (α − 2)²/9 + (β − 6)²/16 ≤ 1','⇒ −1 ≤ α ≤ 5, 2 ≤ β ≤ 10'],['','[−1, 5] ⊂ [−3, 5] and [2, 10] ⊂ [−1, 11]','⇒ B ⊂ A']],
 detailed:[
  ['Each modulus condition of A is a double inequality, so A is a closed rectangle.','|α − 1| ≤ 4','⇒ −3 ≤ α ≤ 5','|β − 5| ≤ 6','⇒ −1 ≤ β ≤ 11'],
@@ -678,7 +678,7 @@ detailed:[
  ['The relation splits A into classes by remainder on division by 3.','remainder 0: {0, 3, 6, 9}','remainder 1: {1, 4, 7}','remainder 2: {2, 5, 8}'],
  ['Two elements are related exactly when they lie in the same class, and ordered pairs count, so each class of size s gives s² pairs.','n(R) = 4² + 3² + 3²','= 34'],
  ['Verification by direct count: for x = 0, 3, 6, 9 there are 4 partners each (16 pairs), for the other six values 3 partners each (18 pairs).','16 + 18 = 34'],
- ['Statement I claims 36, which is 6² and would come from counting 6 elements per class or from taking classes of equal size; the true value is 34. So only Statement II holds.','Answer: (D) Statement I is incorrect but Statement II is correct']
+ ['Statement I claims 36, but the classes have the unequal sizes 4, 3 and 3, so the count is 16 + 9 + 9 = 34 and not 36. So only Statement II holds.','Answer: (D) Statement I is incorrect but Statement II is correct']
 ]},
 {id:'SET-32',level:1,topic:'Equivalence class of a given element',source:'ExamSIDE · JEE Main 2021 (Online) 26th February Morning Shift · questions.examside.com (question id bxykqqaxoqaaz4hb)',sourceRef:true,question:'Let R = {(P, Q) | P and Q are at the same distance from the origin} be a relation, then the equivalence class of (1, −1) is the set :',options:['S = {(x, y) | x² + y² = √2}','S = {(x, y) | x² + y² = 2}','S = {(x, y) | x² + y² = 1}','S = {(x, y) | x² + y² = 4}'],correct:1,answer:'S = {(x, y) | x² + y² = 2}',
 short:[['','distance of (1, −1) from the origin = √(1² + (−1)²)','= √2'],['','[(1, −1)] = {(x, y) : √(x² + y²) = √2}','= {(x, y) : x² + y² = 2}']],
@@ -773,9 +773,9 @@ detailed:[
  ['Since m > n, factor out the smaller power.','2ⁿ(2^(m − n) − 1) = 56','= 2³ × 7'],
  ['The bracket 2^(m − n) − 1 is odd, so all the factors of 2 sit in 2ⁿ. This determines the split uniquely.','2ⁿ = 8','⇒ n = 3','2^(m − n) − 1 = 7','⇒ m − n = 3'],
  ['Hence m = 6 and the point is P(6, 3).','m = n + 3','= 6'],
- ['Verification: the subsets numbers are 2⁶ = 64 and 2³ = 8, and 64 − 8 = 56.','64 − 8 = 56'],
+ ['Verification: the numbers of subsets are 2⁶ = 64 and 2³ = 8, and 64 − 8 = 56.','64 − 8 = 56'],
  ['Distance formula between P(6, 3) and Q(−2, −3).','PQ = √((6 − (−2))² + (3 − (−3))²)','= √(64 + 36)','= 10'],
- ['Option (A) 8 is only the horizontal difference 6 − (−2), and option (D) 6 is only the vertical difference 3 − (−3). Option (C) 4 has no traceable slip; it is not √(8² + 6²) = 10.','Answer: (B) 10']
+ ['Option (A) 8 is only the horizontal difference 6 − (−2), and option (D) 6 is only the vertical difference 3 − (−3). Option (C) 4 is smaller than the horizontal gap 8, so it cannot be the distance PQ.','Answer: (B) 10']
 ]},
 {id:'SET-38-A',parent:'SET-38',variant:1,topic:'Subset counts from 2ᵐ − 2ⁿ = k',source:'ExamSIDE · JEE Main 2020 (Online) 6th September Morning Slot · questions.examside.com (question id wfh0c59cuifggok9)',sourceRef:true,relevance:{parent:'SET-38',sharedSkill:'Write the subset counts as 2ᵐ and 2ⁿ and factor out the smaller power so the odd bracket fixes the split',recoveryPurpose:'The difference is 112 instead of 56 and the answer is the product m·n instead of a distance.'},question:'Set A has m elements and set B has n elements. If the total number of subsets of A is 112 more than the total number of subsets of B, then the value of m·n is .........',type:'numerical',answer:'28',
 short:[['','2ᵐ − 2ⁿ = 112','⇒ 2ⁿ(2^(m − n) − 1) = 16·7'],['','n = 4','m − n = 3','⇒ m = 7'],['','m·n = 7 × 4','= 28']],
@@ -806,7 +806,7 @@ detailed:[
  ['By inclusion-exclusion the number of students in at least one course is as follows.','n(M ∪ P ∪ C) = 70 + 46 + 28 − 23 − 14 − 9 + 4','= 102'],
  ['Students in none of the courses are the complement within the 140 students.','140 − 102 = 38'],
  ['Verification by a second route: the students in no course are the numbers coprime to 30. Each block of 30 has 8 such numbers, so 4 blocks give 32, and 121 to 140 adds 121, 127, 131, 133, 137 and 139.','32 + 6 = 38'],
- ['Option (B) 102 is the number with at least one course, forgetting the complement. Option (A) 42 and (C) 1 do not match any inclusion-exclusion count, and the coprime count above confirms 38.','Answer: (D) 38']
+ ['Option (B) 102 is the number with at least one course, forgetting the complement. Option (A) 42 comes from leaving out the triple overlap +4, since 140 − 98 = 42. Option (C) 1 matches no inclusion-exclusion count, and the coprime count above confirms 38.','Answer: (D) 38']
 ]},
 {id:'SET-40-A',parent:'SET-40',variant:1,topic:'Counting multiples by inclusion-exclusion',source:'ExamSIDE · JEE Main 2020 (Online) 7th January Evening Slot · questions.examside.com (question id t4udw2wknaucgr8q)',sourceRef:true,relevance:{parent:'SET-40',sharedSkill:'Count a union of sets of multiples by n(A ∪ B) = n(A) + n(B) − n(A ∩ B) with floor counts',recoveryPurpose:'Only two sets are involved and the question asks for the smallest set containing both (their union).'},question:'Let X = {n ∈ ℕ : 1 ≤ n ≤ 50}. If A = {n ∈ X : n is a multiple of 2} and B = {n ∈ X : n is a multiple of 7}, then the number of elements in the smallest subset of X containing both A and B is .........',type:'numerical',answer:'29',
 short:[['','smallest subset containing A and B = A ∪ B'],['','n(A) = 25','n(B) = 7','n(A ∩ B) = ⌊50/14⌋','= 3'],['','n(A ∪ B) = 25 + 7 − 3','= 29']],
@@ -818,7 +818,7 @@ detailed:[
  ['Verification: B = {7, 14, 21, 28, 35, 42, 49} has 4 odd elements (7, 21, 35, 49), so A ∪ B = 25 + 4 = 29.','25 + 4 = 29'],
  ['Adding 25 + 7 = 32 without subtracting the 3 common multiples double counts 14, 28 and 42, and giving 25 alone ignores B. The union has 29 elements.','Answer: 29']
 ]},
-{id:'SET-41',level:2,topic:'Percentage Venn with a rate in each region',source:'ExamSIDE · JEE Main 2019 (Online) 9th April Evening Slot · questions.examside.com (question id ws2vahucciokts7r)',sourceRef:true,question:'Two newspapers A and B are published in a city. It is known that 25% of the city populations reads A and 20% reads B while 8% reads both A and B. Further, 30% of those who read A but not B look into advertisements and 40% of those who read B but not A also look into advertisements, while 50% of those who read both A and B look into advertisements. Then the percentage of the population who look into advertisement is :-',options:['13.5','13','12.8','13.9'],correct:3,answer:'13.9',
+{id:'SET-41',level:2,topic:'Percentage Venn with a rate in each region',diagram:'b03AdsVenn',source:'ExamSIDE · JEE Main 2019 (Online) 9th April Evening Slot · questions.examside.com (question id ws2vahucciokts7r)',sourceRef:true,question:'Two newspapers A and B are published in a city. It is known that 25% of the city populations reads A and 20% reads B while 8% reads both A and B. Further, 30% of those who read A but not B look into advertisements and 40% of those who read B but not A also look into advertisements, while 50% of those who read both A and B look into advertisements. Then the percentage of the population who look into advertisement is :-',options:['13.5','13','12.8','13.9'],correct:3,answer:'13.9',
 short:[['','A only: 25 − 8 = 17','B only: 20 − 8 = 12','both: 8'],['','advertisement readers = 0.30 × 17 + 0.40 × 12 + 0.50 × 8'],['','= 13.9']],
 detailed:[
  ['Split the readers into three disjoint regions of the Venn diagram. The 25% and 20% include those who read both, so subtract the 8%.','A only: 25 − 8 = 17','B only: 20 − 8 = 12','both: 8'],
@@ -829,7 +829,7 @@ detailed:[
  ['Verification: the weighted average rate over the 37% who read at least one paper is 13.9/37 ≈ 37.6%, which lies between 30% and 50%, as it must.','17 + 12 + 8 = 37'],
  ['Using 30% of the full 25% (7.5) instead of 17% is the typical slip and gives a larger total. Options (A) 13.5, (B) 13 and (C) 12.8 have no single slip, and each differs from the verified exact sum 13.9.','Answer: (D) 13.9']
 ]},
-{id:'SET-42',level:3,topic:'Solving the defining equations of two sets and counting the union',source:'ExamSIDE · JEE Main 2025 (Online) 24th January Evening Shift · questions.examside.com (question id qu4vt1rfjfq4pewu)',sourceRef:true,question:'Let A = {x ∈ (0, π) − {π/2} : log_(2/π) |sin x| + log_(2/π) |cos x| = 2} and B = {x ≥ 0 : √x(√x − 4) − 3|√x − 2| + 6 = 0}. Then n(A ∪ B) is equal to :',options:['4','8','6','2'],correct:1,answer:'8',
+{id:'SET-42',level:3,topic:'Solving the defining equations of two sets and counting the union',diagram:'b03AbsSin',source:'ExamSIDE · JEE Main 2025 (Online) 24th January Evening Shift · questions.examside.com (question id qu4vt1rfjfq4pewu)',sourceRef:true,question:'Let A = {x ∈ (0, π) − {π/2} : log_(2/π) |sin x| + log_(2/π) |cos x| = 2} and B = {x ≥ 0 : √x(√x − 4) − 3|√x − 2| + 6 = 0}. Then n(A ∪ B) is equal to :',options:['4','8','6','2'],correct:1,answer:'8',
 short:[['','A: |sin 2x| = 8/π²','A: 0 < 8/π² < 1','⇒ n(A) = 4'],['','B: t = √x','t² − 4t − 3|t − 2| + 6 = 0','⇒ t = 0, 1, 3, 4','⇒ x = 0, 1, 9, 16'],['','A ∩ B = ∅','⇒ n(A ∪ B) = 4 + 4','= 8']],
 detailed:[
  ['For A, the sum of logarithms to the same base is the logarithm of the product, which is valid because |sin x| and |cos x| are positive for x ≠ π/2.','log_(2/π) |sin x cos x| = 2','⇒ |sin x cos x| = (2/π)²','= 4/π²'],
@@ -858,7 +858,7 @@ detailed:[
  ['For R₁, test transitivity on the chain b → c → a.','(b, c), (c, a) ∈ R₁ and (b, a) ∉ R₁','⇒ R₁ is not transitive'],
  ['For R₂, the off-diagonal pairs are (a, b), (b, a), (c, a), (a, c), and each has its reverse in R₂.','(a, b) ↔ (b, a), (c, a) ↔ (a, c)','⇒ R₂ is symmetric'],
  ['For R₂, test transitivity on the chain b → a → c.','(b, a), (a, c) ∈ R₂ and (b, c) ∉ R₂','⇒ R₂ is not transitive'],
- ['Independent check: R₂ would be transitive only if it contained (b, c) and (c, b), because b R a and a R c; its list has neither.','(b, c) ∉ R₂'],
+ ['Independent check: R₂ would be transitive only if it contained (b, c) and (c, b), because b R a, a R c and c R a, a R b; its list has neither.','(b, c) ∉ R₂'],
  ['Distractors: (A) misses that (c, a) and (a, c) make R₂ symmetric; (B) and (D) assume R₁ is transitive, but the chain b → c → a leaves (b, a) out.','Answer: (C) R₂ is symmetric but it is not transitive.']
 ]},
 {id:'SET-43-B',parent:'SET-43',variant:2,topic:'Properties of a relation given as a list of pairs',source:'ExamSIDE · AIEEE 2004 · questions.examside.com (question id lg4ktzf2tip0h7ab)',sourceRef:true,relevance:{parent:'SET-43',sharedSkill:'Test the standard properties of a listed relation (function, reflexive, symmetric, transitive) by finding a missing reverse, diagonal or chain pair.',recoveryPurpose:'The options add a function test and only one property is true, but the same missing-pair hunt decides each option.'},question:'Let R = {(1, 3), (4, 2), (2, 4), (2, 3), (3, 1)} be a relation on the set A = {1, 2, 3, 4}. The relation R is :',options:['a function','transitive','not symmetric','reflexive'],correct:2,answer:'not symmetric',
@@ -899,7 +899,7 @@ detailed:[
  ['Every x satisfies x = x, so each (x, x) ∈ R.','R is reflexive'],
  ['Symmetry needs y R x whenever x R y; take x = 3, y = 1.','(3, 1) ∈ R but (1, 3) ∉ R since 1 ≠ 3 and 1 ≠ 9','⇒ not symmetric'],
  ['Transitivity needs x R z from x R y and y R z; take 9, 3, 1.','9 = 3 × 3 and 3','= 3 × 1 but 9 ≠ 1 and 9 ≠ 3 × 1','⇒ (9, 1) ∉ R','⇒ not transitive'],
- ['Independent check: substitute (3, 1) into the original cubic, and then (1, 3).','27 − 27 − 3 + 3 = 0','but 1 − 9 − 3 + 81 = 70 ≠ 0'],
+ ['Independent check: substitute (3, 1) into the original cubic, and then (1, 3).','27 − 27 − 3 + 3 = 0','but 1 − 9 − 9 + 81 = 64 ≠ 0'],
  ['Distractors: (A) denies reflexivity although x = y always satisfies the equation; (C) wrongly takes x = 3y as two-way, and (D) assumes the symmetry that the factor x = 3y breaks.','Answer: (B) reflexive but neither symmetric nor transitive']
 ]},
 {id:'SET-44-C',parent:'SET-44',variant:3,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · questions.examside.com (question id nvdjezsbryhcqyuy)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'Reflexivity is immediate and symmetry and transitivity are refuted with explicit pairs, here for an \'or\' condition on two coordinates.'},question:'Let a relation R on N × ℕ be defined as: (x₁, y₁) R (x₂, y₂) if and only if x₁ ≤ x₂ or y₁ ≤ y₂. Consider the two statements: (I) R is reflexive but not symmetric. (II) R is transitive. Then which one of the following is true?',options:['Only (II) is correct.','Both (I) and (II) are correct.','Neither (I) nor (II) is correct.','Only (I) is correct.'],correct:3,answer:'Only (I) is correct.',
@@ -933,7 +933,7 @@ detailed:[
  ['For the reverse pair the expression becomes zero, which is rational.','3(b − a) + √7 = −√7 + √7','= 0','⇒ (b, a) ∉ R','⇒ not symmetric'],
  ['For transitivity add a point c with b − c = −2√7/3, so (b, c) ∈ R while (a, c) falls out.','(a, b): 2√7, (b, c): −2√7 + √7 = −√7, both irrational'],
  ['The combined difference gives zero, a rational number.','3a − 3c + √7 = −√7 + √7','= 0','⇒ (a, c) ∉ R','⇒ not transitive'],
- ['Independent check with numbers: a ≈ 0.8819, b = 0, c ≈ 1.7638 satisfy the same relations since 3(0.9449) = √7.','3a ≈ 2.6458','≈ √7'],
+ ['Independent check with numbers: a ≈ 0.8819, b = 0, c ≈ 1.7638 satisfy the same relations since 3(0.8819) ≈ √7.','3a ≈ 2.6458','≈ √7'],
  ['Distractors: (A), (B) and (C) assume that \'irrational + irrational\' behaves like an equivalence; the real flaw is that the set of irrationals is not closed under sums, so symmetry and transitivity break.','Answer: (D) reflexive but neither symmetric nor transitive']
 ]},
 {id:'SET-44-F',parent:'SET-44',variant:6,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Evening Slot · questions.examside.com (question id gbx5syvwbdviqmvw)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'A counterexample with irrational squares whose sums swing between rational and irrational disproves transitivity.'},question:'Let R₁ and R₂ be two relation defined as follows : R₁ = {(a, b) ∈ ℝ² : a² + b² ∈ ℚ} and R₂ = {(a, b) ∈ ℝ² : a² + b² ∉ ℚ}, where ℚ is the set of all rational numbers. Then :',options:['Neither R₁ nor R₂ is transitive.','R₂ is transitive but R₁ is not transitive.','R₁ and R₂ are both transitive.','R₁ is transitive but R₂ is not transitive.'],correct:0,answer:'Neither R₁ nor R₂ is transitive.',
@@ -980,7 +980,7 @@ detailed:[
  ['Independent check: take f(x) = x and h(x) = x; then f R g and g R h for g(x) = 1 − x, yet (f, h) ∉ R.','f(0) = 0 ≠ h(1)','= 1'],
  ['Distractors: (A) and (C) wrongly assume transitivity from the matching equalities; (D) assumes reflexivity because f R f looks natural, but the conditions cross the values at 0 and 1.','Answer: (B) Symmetric but neither reflective nor transitive']
 ]},
-{id:'SET-45-B',parent:'SET-45',variant:2,topic:'Properties of a relation on functions, matrices or sets',source:'ExamSIDE · JEE Main 2023 (Online) 1st February Evening Shift · questions.examside.com (question id d8ex4fndpxuvzava)',sourceRef:true,relevance:{parent:'SET-45',sharedSkill:'Prove or refute reflexive, symmetric and transitive for a relation on non-numeric objects (matrices, functions, sets) by rewriting the defining condition.',recoveryPurpose:'The objects are subsets and the condition is a set identity that must be reduced to A = B, so the three properties come from equality instead of from a counterexample hunt.'},question:'Let P(S) denote the power set of S = {1, 2, 3, …., 10}. Define the relations R₁ and R₂ on P(S) as A R₁ B if (A ∩ Bᶜ) ∪ (B ∩ Aᶜ) = ∅ and A R₂ B if A ∪ Bᶜ = B ∪ Aᶜ, ∀ A, B ∈ P(S). Then :',options:['only R₂ is an equivalence relation','both R₁ and R₂ are not equivalence relations','both R₁ and R₂ are equivalence relations','only R₁ is an equivalence relation'],correct:2,answer:'both R₁ and R₂ are equivalence relations',
+{id:'SET-45-B',parent:'SET-45',variant:2,topic:'Properties of a relation on functions, matrices or sets',diagram:'b03PowerVenn',source:'ExamSIDE · JEE Main 2023 (Online) 1st February Evening Shift · questions.examside.com (question id d8ex4fndpxuvzava)',sourceRef:true,relevance:{parent:'SET-45',sharedSkill:'Prove or refute reflexive, symmetric and transitive for a relation on non-numeric objects (matrices, functions, sets) by rewriting the defining condition.',recoveryPurpose:'The objects are subsets and the condition is a set identity that must be reduced to A = B, so the three properties come from equality instead of from a counterexample hunt.'},question:'Let P(S) denote the power set of S = {1, 2, 3, …., 10}. Define the relations R₁ and R₂ on P(S) as A R₁ B if (A ∩ Bᶜ) ∪ (B ∩ Aᶜ) = ∅ and A R₂ B if A ∪ Bᶜ = B ∪ Aᶜ, ∀ A, B ∈ P(S). Then :',options:['only R₂ is an equivalence relation','both R₁ and R₂ are not equivalence relations','both R₁ and R₂ are equivalence relations','only R₁ is an equivalence relation'],correct:2,answer:'both R₁ and R₂ are equivalence relations',
 short:[['','(A ∩ Bᶜ) ∪ (B ∩ Aᶜ) = ∅ ⇔ A − B','= ∅ and B − A','= ∅ ⇔ A','= B'],['','x ∈ A − B','⇒ x ∈ A ∪ Bᶜ, x ∉ B ∪ Aᶜ','⇒ A ∪ Bᶜ ≠ B ∪ Aᶜ'],['both relations equal the relation A = B','R₁ and R₂ are both equivalence relations']],
 detailed:[
  ['A union is empty only when both parts are empty, so R₁ says A − B and B − A are empty.','(A ∩ Bᶜ) ∪ (B ∩ Aᶜ) = ∅ ⇔ A − B','= ∅ and B − A','= ∅ ⇔ A','= B'],
@@ -1011,7 +1011,7 @@ detailed:[
  ['Count the pairs (y, w) with y ≤ w among five numbers: each y has the larger or equal w values.','5 + 4 + 3 + 2 + 1 = 15'],
  ['Multiply, since every (x, z) can go with every (y, w).','|R| = 8 × 15','= 120'],
  ['Independent check: a direct count of all 25 × 25 pairs of pairs with x | z and y ≤ w also gives 120.','|R| = 120'],
- ['Distractors for slips: using y < w gives 8 × 10 = 80, dropping x = z gives 5 × 15 = 75, and counting 5 × 5 pairs per factor gives 25 × 25 = 625; the correct count is 120.','Answer: 120']
+ ['Distractors for slips: using y < w gives 8 × 10 = 80, dropping x = z gives 3 × 15 = 45, and counting 5 × 5 pairs per factor gives 25 × 25 = 625; the correct count is 120.','Answer: 120']
 ]},
 {id:'SET-46-B',parent:'SET-46',variant:2,topic:'Counting the elements of a relation on A × A',source:'ExamSIDE · JEE Main 2026 (Online) 5th April Evening Shift · questions.examside.com (question id igi30kbacx3usws7)',sourceRef:true,relevance:{parent:'SET-46',sharedSkill:'Count the elements of a relation on A × A (or on pairs of pairs) by turning the condition into sums and counting the admissible combinations.',recoveryPurpose:'The pairs sit in (A × B) × (A × B) and the condition is divisibility between sums, so the count is built from the sum table, but it is still a count of related pairs.'},question:'Let A = {1, 4, 7} and B = {2, 3, 8}. Then the number of elements, in the relation R = {((a₁, b₁), (a₂, b₂)) ∈ ((A × B) × (A × B)) : a₁ + b₂ divides a₂ + b₁} is ........ .',type:'numerical',answer:'18',
 short:[['','s = a₁ + b₂','t = a₂ + b₁ each take the values 3, 4, 6, 7, 9, 9, 10, 12, 15'],['','number of (s, t) with s | t: 6 + 2 + 2 + 1 + 2 + 2 + 1 + 1 + 1 = 18']],
@@ -1114,7 +1114,7 @@ detailed:[
  ['Check from the other side: the x-values of R are {−2, …, 2}, which is the domain of R, not of R⁻¹.','dom R = {−2, −1, 0, 1, 2}'],
  ['Option (D) is dom R, the x-values, so it mixes up R and R⁻¹. Option (B) is that set without 0, and option (A) drops −1 by taking only y ≥ 0.','Answer: (C) {−1, 0, 1}']
 ]},
-{id:'SET-53',level:2,topic:'Range of a relation from an exponential rule',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Evening Shift · questions.examside.com (question id 9lbrlosqjrrknmmi)',sourceRef:true,question:'Let S = ℕ ∪ {0}. Define a relation R from S to ℝ by : R = {(x, y) : log_e y = x log_e (2/5), x ∈ S, y ∈ ℝ}. Then, the sum of all the elements in the range of R is equal to :',options:['3/2','10/9','5/2','5/3'],correct:3,answer:'5/3',
+{id:'SET-53',level:2,topic:'Range of a relation from an exponential rule',diagram:'b03ExpDecay',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Evening Shift · questions.examside.com (question id 9lbrlosqjrrknmmi)',sourceRef:true,question:'Let S = ℕ ∪ {0}. Define a relation R from S to ℝ by : R = {(x, y) : log_e y = x log_e (2/5), x ∈ S, y ∈ ℝ}. Then, the sum of all the elements in the range of R is equal to :',options:['3/2','10/9','5/2','5/3'],correct:3,answer:'5/3',
 short:[['','log_e y = x log_e (2/5)','⇒ y','= (2/5)ˣ','x = 0, 1, 2, …'],['','range = {1, 2/5, 4/25, …}'],['','sum = 1/(1 − 2/5)','= 5/3']],
 detailed:[
  ['Exponentiate the relation to solve for y, using x log a = log aˣ.','y = (2/5)ˣ'],
@@ -1181,7 +1181,7 @@ detailed:[
  ['Option (A) and (B) assume R₁ is reflexive, but a² + a² = 1 fails at a = 0. Option (D) misses the equal-difference form of R₂.','Answer: (C) Only R₂ is an equivalence relation']
 ]},
 {id:'SET-55-A',parent:'SET-55',variant:1,topic:'Proving equivalence by an equal-value rule',source:'ExamSIDE · JEE Main 2023 (Online) 29th January Evening Shift · questions.examside.com (question id svejaq0mcbkvxmwg)',sourceRef:true,relevance:{parent:'SET-55',sharedSkill:'Rewrite the defining condition as an equal-value rule, then equivalence follows',recoveryPurpose:'Condition is congruence mod 5 instead of an equal difference; same invariant idea'},question:'Let R be a relation defined on ℕ as aRb if 2a + 3b is a multiple of 5, a, b ∈ ℕ. Then R is',options:['an equivalence relation','non reflexive','symmetric but not transitive','transitive but not symmetric'],correct:0,answer:'an equivalence relation',
-short:[['','2a + 3b = 5b + 2(a − b)'],['','5 | 2a + 3b ⇔ 5 | 2(a − b) ⇔ a ≡ b (mod 5)'],['','congruence mod 5 is an equivalence relation']],
+short:[['','2a + 3b = 5b + 2(a − b)'],['','5 | 2a + 3b ⇔ 5 | 2(a − b)'],['','5 | 2(a − b) ⇔ a ≡ b (mod 5)'],['','congruence mod 5 is an equivalence relation']],
 detailed:[
  ['Split 2a + 3b so the multiple of 5 is separated out.','2a + 3b = 5b + 2(a − b)'],
  ['Since 5b is a multiple of 5, the condition is that 5 divides 2(a − b).','5 | 2(a − b)'],
@@ -1286,7 +1286,7 @@ detailed:[
  ['Transitivity applied to the chain 1 → 2 → 3 forces one more pair.','(1, 2), (2, 3) ∈ R','⇒ (1, 3) ∈ R','R₀ = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 3), (1, 3)}'],
  ['Only (2, 1), (3, 2) and (3, 1) can still be added. Adding (3, 1) forces the full relation, which is symmetric, so it is rejected.','(2, 3), (3, 1) ∈ R','⇒ (2, 1) ∈ R','(3, 1), (1, 2) ∈ R','⇒ (3, 2) ∈ R','R = A × A'],
  ['Adding both (2, 1) and (3, 2) also forces (3, 1), so that choice is symmetric as well.','(3, 2), (2, 1) ∈ R','⇒ (3, 1) ∈ R'],
- ['What remains is R₀ alone or R₀ with exactly one of (2, 1), (3, 2); each stays transitive and misses a mirror pair.','R₀ ∪ {(2, 1)}: (2, 1), (1, 3)','⇒ (2, 3) ∈ R','R₀ ∪ {(3, 2)}: (1, 3), (3, 2)','⇒ (1, 2) ∈ R','(3, 1) ∉ R₀ and (3, 2) ∉ R₀','⇒ not symmetric'],
+ ['What remains is R₀ alone or R₀ with exactly one of (2, 1), (3, 2); each stays transitive and misses a mirror pair.','R₀ ∪ {(2, 1)}: (2, 1), (1, 3)','⇒ (2, 3) ∈ R','R₀ ∪ {(3, 2)}: (1, 3), (3, 2)','⇒ (1, 2) ∈ R','(1, 3) ∈ R but (3, 1) ∉ R','⇒ not symmetric'],
  ['Check by brute force: running through all 2⁹ = 512 subsets of A × A with the four conditions leaves exactly these relations.','1 + 1 + 1 = 3'],
  ['A count of 2 forgets that R₀ itself qualifies; a count of 5 or more wrongly keeps R = A × A or the relation with both (2, 1) and (3, 2), which are symmetric.','Answer: 3']
 ]},
@@ -1311,7 +1311,7 @@ detailed:[
  ['The remaining off-diagonal pairs have no mirror image, and each needs exactly one new element.','m = 13 − 6','= 7','one-way pairs: (2, 5), (2, 7), (2, 9), (3, 5), (3, 7), (3, 9), (5, 9)'],
  ['Check one one-way pair directly: (5, 9) ∈ R but (9, 5) ∉ R, so (9, 5) must be added.','2 × 5 = 10 ≤ 3 × 9','= 27','2 × 9 = 18 > 3 × 5','= 15'],
  ['Adding the counts gives the required sum.','l + m = 18 + 7','= 25'],
- ['m = 13 would count the mutually related pairs again and gives 31. Every other option needs l or m to differ from the counted 18 and 7 (for example 21, 23 or 27 count the mutual pairs or the diagonal pairs wrongly), so only 25 matches.','Answer: (B) 25']
+ ['m = 13 would count the mutually related pairs again and gives 31. Options 21, 23 and 27 would need m = 3, 5 or 9, but the one-way off-diagonal pairs listed number exactly 7, so only 25 matches.','Answer: (B) 25']
 ]},
 {id:'SET-59-A',parent:'SET-59',variant:1,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Evening Shift · questions.examside.com (question id yo4wte9czwtvwure)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Count the pairs satisfying an inequality, then count the off-diagonal pairs that lack a mirror image.',recoveryPurpose:'The inequality 4x ≤ 5y on 1 to 5 replaces 2x ≤ 3y on a five-element set, so a new list of pairs is made but the same one-way pair count gives n.'},question:'Let A = {1, 2, 3, 4, 5}. Let R be a relation on A defined by xRy if and only if 4x ≤ 5y. Let m be the number of elements in R and n be the minimum number of elements from A × A that are required to be added to R to make it a symmetric relation. Then m + n is equal to :',options:['23','26','25','24'],correct:2,answer:'25',
 short:[['','1: 5 pairs','2: 4 pairs','3: 3 pairs','4: 2 pairs','5: 2 pairs'],['','m = 5 + 4 + 3 + 2 + 2','= 16'],['','two-way off-diagonal pairs: (4, 5), (5, 4)','n = (16 − 5) − 2','= 9','m + n = 25']],
@@ -1370,7 +1370,7 @@ detailed:[
  ['The other 20 − 14 = 6 pairs are one-way: (−2, 3), (−2, 4), (−1, 2), (−1, 3), (−1, 4), (0, 2) lack the mirror images, so six new elements are needed.','n = 6'],
  ['Check one: (−1, 4) ∈ R since −2 + 4 = 2 ≤ 2, but (4, −1) gives 8 − 1 = 7 > 2, so (4, −1) ∉ R and must be added.','2 × (−1) + 4 = 2','2 × 4 + (−1) = 7'],
  ['Add the three counts.','l + m + n = 23 + 4 + 6','= 33'],
- ['Counting the diagonal pairs inside n, or missing one of the mutual pairs, shifts the sum by one or two, giving 32, 34 or 35. Only 33 matches l = 23, m = 4, n = 6.','Answer: (C) 33']
+ ['Counting the three diagonal pairs of R inside n gives n = 9 and a total of 36, which is not an option, and 32, 34 and 35 would need l + m + n off by 1 or 2 from the counted 23, 4 and 6. Only 33 matches.','Answer: (C) 33']
 ]},
 {id:'SET-60-A',parent:'SET-60',variant:1,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Evening Shift · questions.examside.com (question id shfh14ck9j2snrvn)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'List the pairs of R from the condition, count the missing loops for reflexivity and the one-way off-diagonal pairs for symmetry, then add l, m, n.',recoveryPurpose:'Here the rule is a linear condition 2x − y ∈ {0, 1} with fewer pairs and no mutual pairs, so n equals all off-diagonal pairs of R.'},question:'Let A = {−3, −2, −1, 0, 1, 2, 3} and R be a relation on A defined by xRy if and only if 2x − y ∈ {0, 1}. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations, respectively. Then l + m + n is equal to:',options:['17','18','15','16'],correct:0,answer:'17',
 short:[['','y = 2x or y','= 2x − 1','R = {(−1, −2), (−1, −3), (0, 0), (0, −1), (1, 2), (1, 1), (2, 3)}','l = 7'],['','(0, 0), (1, 1) ∈ R','⇒ m = 7 − 2','= 5'],['','n = 7 − 2','= 5','l + m + n = 7 + 5 + 5','= 17']],
@@ -1459,7 +1459,7 @@ detailed:[
  ['d = −2 means b = a + 2 with both a and b in A, so a runs from 1 to 8.','b = a + 2 ≤ 10','⇒ a = 1, 2, …, 8','8 pairs'],
  ['Add the two counts; the cases are disjoint because d differs.','n(R) = 10 + 8','= 18'],
  ['Check by brute force over the 100 pairs of A × A, which gives 18.','count = 18'],
- ['Counting d = −1 or d = 1 (values −1 and 5, outside B) would add 9 pairs each, and using 9 pairs for d = −2 forgets that b = a + 2 needs a ≤ 8. Only 10 + 8 = 18 fits.','Answer: 18']
+ ['Counting d = −1 or d = 1 (values −1 and 5, outside B) would add 9 pairs each, and using 10 pairs for d = −2 (total 20) forgets that b = a + 2 needs a ≤ 8. Only 10 + 8 = 18 fits.','Answer: 18']
 ]},
 {id:'SET-64',level:2,topic:'Smallest equivalence relation containing given pairs',source:'ExamSIDE · JEE Main 2024 (Online) 29th January Evening Shift · questions.examside.com (question id rnmbxomwvfi0spod)',sourceRef:true,question:'If R is the smallest equivalence relation on the set {1, 2, 3, 4} such that {(1, 2), (1, 3)} ⊂ R, then the number of elements in R is ........',options:['15','10','12','8'],correct:1,answer:'10',
 short:[['','(1, 2), (1, 3) ∈ R','⇒ 1 ~ 2 ~ 3','class {1, 2, 3} and class {4}'],['','n(R) = 3² + 1²','= 10']],
@@ -1517,8 +1517,128 @@ function wrap(inner,h=280,label='Solution concept diagram',w=280){return `<svg v
 function venn(h,sets,extra='',label='Venn diagram',title=''){return wrap((title?t(140,16,title,W,14,'middle',600):'')+sets.map(s=>`<circle cx="${s.cx}" cy="${s.cy}" r="${s.r}" fill="${s.color||B}" fill-opacity=".14" stroke="${s.color||B}" stroke-width="2"/>`+(s.label?t(s.lx??s.cx,s.ly??s.cy,s.label,W,14,'middle',700):'')).join('')+extra,h,label,280)}
 const STEM={
 };
-const SOL={
+/* GENERATED SOLUTION DIAGRAMS BEGIN (qa/atomic-helpers/sets-integrate-diagrams.cjs; sources in qa/evidence/sets-and-relations-examside-01/diagrams) */
+/* b02.js */
+const DIAGRAMS_b02={
+ 'b02Games': ()=>{
+  const c=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${B}" fill-opacity=".12" stroke="${B}" stroke-width="1.8"/>`;
+  const panel=(cx,big,l,r,name)=>c(cx,52,31)+c(cx+l[0],52,l[1])+c(cx+r[0],52,r[1])+t(cx+ (big||0),122,name,W,16,'middle',700);
+  return wrap(
+   panel(36,0,[-11,15.5],[10.5,15.5],'P')+
+   panel(128,0,[-20.5,22],[18.5,22],'Q')+
+   panel(232,0,[-22,22],[12,19],'R'),
+   136,'Three Venn pictures P, Q and R, each with a large circle and two smaller circles',280);
+ }
 };
+/* b03.js */
+const DIAGRAMS_b03={
+ 'b03Survey3': ()=>{
+  const c=(x,y,col)=>`<circle cx="${x}" cy="${y}" r="76" fill="${col}" fill-opacity=".14" stroke="${col}" stroke-width="2"/>`;
+  return wrap(
+   c(92,100,B)+c(188,100,G)+c(140,178,R)+
+   t(14,24,'M',B,15,'start',700)+t(266,24,'P',G,15,'end',700)+t(266,262,'C',R,15,'end',700)+
+   t(56,102,'m',W,14,'middle',600)+t(224,102,'p',W,14,'middle',600)+t(140,226,'c',W,14,'middle',600)+
+   t(140,84,'40−x',W,14,'middle',600)+t(104,156,'50−x',W,14,'middle',600)+t(176,156,'30−x',W,14,'middle',600)+t(140,130,'x',Y,15,'middle',700),
+   274,'Three overlapping circles for Mathematics, Physics and Chemistry; the centre holds x students, the pairwise-only regions hold 40 minus x, 50 minus x and 30 minus x',280);
+ },
+ 'b03PowerVenn': ()=>wrap(
+  `<rect x="12" y="12" width="256" height="150" rx="6" fill="none" stroke="${M}" stroke-width="1.6"/>`+
+  `<circle cx="104" cy="82" r="56" fill="${B}" fill-opacity=".14" stroke="${B}" stroke-width="2"/><circle cx="176" cy="82" r="56" fill="${G}" fill-opacity=".14" stroke="${G}" stroke-width="2"/>`+
+  t(34,36,'A',B,15,'middle',700)+t(246,36,'B',G,15,'middle',700)+
+  t(72,88,'a',W,15,'middle',600)+t(140,88,'c',Y,15,'middle',700)+t(208,88,'b',W,15,'middle',600)+t(36,150,'d',W,15,'middle',600),
+  176,'Two overlapping circles A and B inside a rectangle, with regions a (only A), c (both), b (only B) and d (neither)',280),
+ 'b03ExpDecay': ()=>{
+  const X=(x)=>60+x*58,Yy=(v)=>190-v*130;let d='',pts='';
+  for(let i=0;i<=40;i++){const x=i*0.075;d+=(i?'L':'M')+X(x).toFixed(1)+' '+Yy(Math.pow(0.4,x)).toFixed(1)}
+  for(let n=0;n<=4;n++)pts+=`<circle cx="${X(n)}" cy="${Yy(Math.pow(0.4,n)).toFixed(1)}" r="4" fill="${Y}"/>`;
+  return wrap(
+   line('M20 190H270',M,2)+line('M60 30V205',M,2)+line(d,B,2.6)+pts+
+   t(90,56,'(0, 1)',Y,14,'start',700)+t(128,122,'x = 1',Y,13,'start',600)+t(268,184,'x',M,14,'end',600)+t(70,28,'y',M,14,'start',600),
+   220,'Graph of y equal to two fifths to the power x, falling from the point (0, 1); the dots mark x equal to 0, 1, 2, 3 and 4',280);
+ },
+ 'b03NewsVenn': ()=>wrap(
+  `<rect x="12" y="12" width="256" height="136" rx="6" fill="none" stroke="${M}" stroke-width="1.6"/>`+
+  `<circle cx="106" cy="80" r="52" fill="${B}" fill-opacity=".14" stroke="${B}" stroke-width="2"/><circle cx="174" cy="80" r="52" fill="${G}" fill-opacity=".14" stroke="${G}" stroke-width="2"/>`+
+  t(42,34,'A',B,15,'middle',700)+t(238,34,'B',G,15,'middle',700)+
+  t(76,86,'63−x',W,14,'middle',600)+t(140,86,'x',Y,15,'middle',700)+t(206,86,'76−x',W,14,'middle',600),
+  160,'Two overlapping circles for newspapers A and B inside the whole population, holding 63 minus x, x and 76 minus x percent',280),
+ 'b03MedalVenn': ()=>wrap(
+  `<rect x="12" y="12" width="256" height="238" rx="6" fill="none" stroke="${M}" stroke-width="1.6"/>`+
+  `<defs><clipPath id="m3a"><circle cx="105" cy="100" r="62"/></clipPath><clipPath id="m3b"><circle cx="175" cy="100" r="62"/></clipPath><clipPath id="m3c"><circle cx="140" cy="160" r="62"/></clipPath></defs>`+
+  `<g clip-path="url(#m3a)"><circle cx="175" cy="100" r="62" fill="${Y}" fill-opacity=".35"/></g>`+
+  `<g clip-path="url(#m3b)"><circle cx="140" cy="160" r="62" fill="${Y}" fill-opacity=".35"/></g>`+
+  `<g clip-path="url(#m3c)"><circle cx="105" cy="100" r="62" fill="${Y}" fill-opacity=".35"/></g>`+
+  `<g clip-path="url(#m3a)"><g clip-path="url(#m3b)"><circle cx="140" cy="160" r="62" fill="${W}" fill-opacity=".3"/></g></g>`+
+  `<circle cx="105" cy="100" r="62" fill="none" stroke="${B}" stroke-width="2"/><circle cx="175" cy="100" r="62" fill="none" stroke="${G}" stroke-width="2"/><circle cx="140" cy="160" r="62" fill="none" stroke="${R}" stroke-width="2"/>`+
+  t(28,36,'A',B,15,'middle',700)+t(252,36,'B',G,15,'middle',700)+t(252,238,'C',R,15,'middle',700),
+  262,'Three overlapping circles A, B and C inside a rectangle; the parts shared by exactly two circles are shaded and the part shared by all three is lighter',280),
+ 'b03EllipseSquare': ()=>{
+  const e=`<ellipse cx="140" cy="130" rx="108" ry="72" fill="${G}" fill-opacity=".12" stroke="${G}" stroke-width="2"/>`;
+  return wrap(
+   e+`<rect x="68" y="94" width="72" height="72" fill="${B}" fill-opacity=".2" stroke="${B}" stroke-width="2"/>`+
+   `<circle cx="140" cy="130" r="3.5" fill="${W}"/>`+
+   t(104,136,'A',B,15,'middle',700)+t(210,130,'B',G,15,'middle',700)+t(148,122,'(6, 5)',W,13,'start',600),
+   260,'An ellipse B centred at (6, 5) with semi-axes 3 and 2, and the square A with sides from 4 to 6 in both coordinates lying inside it',280);
+ },
+ 'b03RectEllipse': ()=>{
+  return wrap(
+   `<rect x="50" y="26" width="160" height="216" fill="${B}" fill-opacity=".1" stroke="${B}" stroke-width="2"/>`+
+   `<ellipse cx="150" cy="116" rx="60" ry="72" fill="${G}" fill-opacity=".16" stroke="${G}" stroke-width="2"/>`+
+   `<circle cx="150" cy="116" r="3.5" fill="${W}"/>`+
+   t(60,56,'A',B,15,'start',700)+t(150,100,'B',G,15,'middle',700)+t(160,134,'(2, 6)',W,13,'start',600)+
+   t(50,262,'(−3, −1)',M,13,'start',600)+t(210,18,'(5, 11)',M,13,'end',600),
+   272,'A rectangle A from −3 to 5 and −1 to 11, with an ellipse B centred at (2, 6) with semi-axes 3 and 4 lying inside it',280);
+ },
+ 'b03Diamond': ()=>wrap(
+  line('M20 120H260',M,1.8)+line('M140 20V220',M,1.8)+
+  line('M60 120L140 40L220 120L140 200Z',B,1.8,'5 4')+
+  line('M140 40L220 120',G,4)+line('M140 200L60 120',G,4)+
+  `<circle cx="220" cy="120" r="4.5" fill="${Y}"/><circle cx="60" cy="120" r="4.5" fill="${Y}"/><circle cx="140" cy="40" r="4.5" fill="${Y}"/><circle cx="140" cy="200" r="4.5" fill="${Y}"/>`+
+  t(226,110,'(3, 0)',Y,13,'start',700)+t(54,110,'(−3, 0)',Y,13,'end',700)+t(148,34,'(0, 3)',Y,13,'start',700)+t(148,216,'(0, −3)',Y,13,'start',700)+
+  t(262,138,'x',M,14,'end',600)+t(130,26,'y',M,14,'end',600),
+  230,'The square region with vertices (3, 0), (0, 3), (−3, 0) and (0, −3); the two edges where the sum of the coordinates is 3 or −3 are highlighted and the four vertices on the axes are marked',280),
+ 'b03AbsSin': ()=>{
+  const X=(x)=>30+x*70.03,Yy=(v)=>190-v*130;let d='';
+  for(let i=0;i<=120;i++){const x=Math.PI*i/120;d+=(i?'L':'M')+X(x).toFixed(1)+' '+Yy(Math.abs(Math.sin(2*x))).toFixed(1)}
+  const h=8/(Math.PI*Math.PI),a=Math.asin(h)/2;
+  const xs=[a,Math.PI/2-a,Math.PI/2+a,Math.PI-a];
+  return wrap(
+   line('M20 190H270',M,2)+line('M30 30V200',M,2)+line(d,B,2.6)+line(`M30 ${Yy(h).toFixed(1)}H262`,Y,2,'6 4')+
+   xs.map(x=>`<circle cx="${X(x).toFixed(1)}" cy="${Yy(h).toFixed(1)}" r="4" fill="${G}"/>`).join('')+
+   t(22,208,'0',M,14,'end',600)+t(135,212,'π/2',M,14,'middle',600)+t(240,212,'π',M,14,'middle',600)+t(24,Yy(1)+5,'1',M,14,'end',600)+t(262,Yy(h)-8,'8/π²',Y,13,'end',700),
+   226,'Graph of the absolute value of sine of 2x on 0 to pi with a horizontal line at 8 over pi squared crossing it at four points',280);
+ },
+ 'b03NumberLine': ()=>{
+  const X=(v)=>140+(v-1.5)*24;
+  return wrap(
+   line('M14 130H266',M,2)+[-2,-1,2,5].map(v=>line(`M${X(v)} 124V136`,M,2)+t(X(v),154,String(v).replace('-','−'),W,14,'middle',600)).join('')+
+   line(`M${X(-2)} 96H${X(2)}`,B,4)+`<circle cx="${X(-2)}" cy="96" r="5" fill="#1b1d1c" stroke="${B}" stroke-width="2.4"/><circle cx="${X(2)}" cy="96" r="5" fill="#1b1d1c" stroke="${B}" stroke-width="2.4"/>`+
+   line(`M16 62H${X(-1)}`,G,4)+`<circle cx="${X(-1)}" cy="62" r="5" fill="${G}"/>`+line(`M${X(5)} 62H262`,G,4)+`<circle cx="${X(5)}" cy="62" r="5" fill="${G}"/>`+
+   t(X(0)-2,86,'A',B,15,'middle',700)+t(34,52,'B',G,15,'middle',700)+t(246,52,'B',G,15,'middle',700),
+   170,'Number line: A is the open interval from −2 to 2, and B is every number up to −1 together with every number from 5 on',280);
+ },
+ 'b03AdsVenn': ()=>wrap(
+  `<rect x="12" y="12" width="256" height="136" rx="6" fill="none" stroke="${M}" stroke-width="1.6"/>`+
+  `<circle cx="106" cy="80" r="52" fill="${B}" fill-opacity=".14" stroke="${B}" stroke-width="2"/><circle cx="174" cy="80" r="52" fill="${G}" fill-opacity=".14" stroke="${G}" stroke-width="2"/>`+
+  t(42,34,'A',B,15,'middle',700)+t(238,34,'B',G,15,'middle',700)+
+  t(80,86,'17',W,15,'middle',600)+t(140,86,'8',Y,15,'middle',700)+t(202,86,'12',W,15,'middle',600),
+  160,'Two overlapping circles for newspapers A and B inside the whole population: 17 read only A, 8 read both and 12 read only B',280),
+ 'b03SubsetVenn': ()=>{
+  const pan=(ox,inner)=>`<rect x="${ox}" y="14" width="124" height="150" fill="none" stroke="${M}" stroke-width="1.6"/>`+inner;
+  return wrap(
+   `<defs><clipPath id="sv1"><circle cx="46" cy="92" r="40"/></clipPath><clipPath id="sv2"><rect x="150" y="14" width="124" height="150"/></clipPath></defs>`+
+   pan(10,'')+
+   `<circle cx="46" cy="92" r="40" fill="${B}" fill-opacity=".12" stroke="${B}" stroke-width="2"/><circle cx="102" cy="92" r="40" fill="${G}" fill-opacity=".12" stroke="${G}" stroke-width="2"/>`+
+   `<g clip-path="url(#sv1)"><circle cx="102" cy="92" r="40" fill="${Y}" fill-opacity=".45"/></g>`+
+   t(30,34,'C',M,15,'middle',700)+t(28,98,'A',B,15,'middle',700)+t(120,98,'B',G,15,'middle',700)+
+   pan(146,'')+
+   `<circle cx="204" cy="92" r="38" fill="${B}" fill-opacity=".3" stroke="${B}" stroke-width="2"/><circle cx="246" cy="92" r="30" fill="${G}" fill-opacity=".12" stroke="${G}" stroke-width="2"/>`+
+   t(166,34,'C',M,15,'middle',700)+t(190,98,'A',W,15,'middle',700)+t(256,98,'B',G,15,'middle',700),
+   180,'Two Venn pictures inside a rectangle C: on the left the shared part of A and B lies inside C; on the right the circle A lies inside C and overlaps B',280);
+ }
+};
+const SOL=Object.assign({},DIAGRAMS_b02,DIAGRAMS_b03);
+/* GENERATED SOLUTION DIAGRAMS END */
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
  if(SOL[q.diagram])return solution?SOL[q.diagram]():'';
