@@ -263,6 +263,205 @@ function detailedSolution(q){
 }
 </script>
 <script>const questions=[
+{id:'SHM-441',level:1,
+ title:'Which graph set relates displacement, velocity and acceleration',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.142',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The figure shows four panels, labelled (a), (b), (c) and (d). Each panel plots the displacement y, the velocity v and the acceleration a of a particle executing simple harmonic motion against time, the particle in every panel setting out from its mean position at t = 0. Which panel relates the three curves correctly?`,
+ options:[`Graph (a)`,`Graph (b)`,`Graph (c)`,`Graph (d)`],
+ correct:0,
+ answer:`Graph (a)`,
+ diagram:'y-v-a-against-time-four-panels',
+ short:[
+  [`Fix the form of the displacement first. In all four panels the y curve leaves the origin rising, so the motion is a pure sine of the time with no phase constant added.`,`y = A sin ωt`],
+  [`Differentiate once to reach the velocity. A sine differentiates to a cosine, so the velocity stands at its greatest positive value at the instant the particle passes the centre and drops to zero at the end of the swing.`,`v = Aω cos ωt`],
+  [`A cosine reaches its peak a quarter of a period before the matching sine does, so the velocity curve has to run a quarter of a period ahead of the displacement curve. Panel (b), whose velocity starts at zero, and panel (c), whose velocity starts at its minimum, both fail that test.`,`v leads y by ${fraction('T','4')}`],
+  [`Differentiate a second time for the acceleration. The minus sign that comes out is the whole content of simple harmonic motion: the acceleration is the displacement curve reflected in the time axis.`,`a = −Aω² sin ωt = −ω²y`],
+  [`Panel (d) draws the acceleration in step with the displacement rather than opposed to it, which would mean a force pushing the particle away from the centre instead of back towards it, and that is not an oscillation at all.`,`panel (d) has a and y in phase, not in antiphase`],
+  [`One panel is left: the velocity a quarter of a period ahead of the displacement and the acceleration inverted with respect to it.`,`y = A sin ωt, v = Aω cos ωt, a = −Aω² sin ωt`],
+  [`Correct answer`,`Graph (a)`]
+ ]},
+{id:'SHM-404',level:3,
+ title:'Separation of two points from the speeds and accelerations there',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.51',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A particle executes simple harmonic motion along a straight line. At two positions on the same side of its mean position its speeds are u and v, and the magnitudes of its acceleration there are α and β respectively, with β > α > 0. The distance between these two positions is −`,
+ options:[`${fraction('u² + v²','α + β')}`,`${fraction('u² − v²','α + β')}`,`${fraction('u² − v²','α − β')}`,`${fraction('u² + v²','β − α')}`],
+ correct:1,
+ answer:`${fraction('u² − v²','α + β')}`,
+ diagram:'',
+ noDiagramReason:'The two positions are given only through the speeds and accelerations found there, so there is nothing to place on a drawing.',
+ short:[
+  [`Write the standard speed-displacement relation at each of the two positions, with A for the amplitude and x₁ and x₂ for the distances of the two positions from the mean position.`,`u² = ω²(A² − x₁²) and v² = ω²(A² − x₂²)`],
+  [`Subtracting one from the other removes the amplitude, which the question never supplies.`,`u² − v² = ω²(x₂² − x₁²)`],
+  [`In simple harmonic motion the size of the acceleration at a point is fixed by the distance of that point from the mean position, so each given acceleration fixes one of those distances. Adding the two produces the sum of the distances, which is the factor the previous line needs.`,`α = ω²x₁ and β = ω²x₂, so α + β = ω²(x₁ + x₂)`],
+  [`Divide the first result by the second. The angular frequency cancels, and the difference of two squares cancels against the sum of the same two quantities, leaving the separation itself.`,`${fraction('u² − v²','α + β')} = ${fraction('x₂² − x₁²','x₁ + x₂')} = x₂ − x₁`],
+  [`Check the sign, because a distance cannot be negative. The larger acceleration belongs to the point further from the centre, and a particle moves more slowly the further out it is, so the numerator and the denominator are both positive.`,`β > α gives x₂ > x₁, and therefore u > v`],
+  [`Correct answer`,`${fraction('u² − v²','α + β')}`]
+ ]},
+{id:'SHM-414',level:2,
+ title:'Spring constant read off a potential energy parabola',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.178',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`The variation in the potential energy U of a harmonic oscillator with its displacement y is shown in the figure, the displacement being marked in millimetres. The spring constant of the oscillator is −`,
+ options:[`1 × 10² N m⁻¹`,`2 × 10² N m⁻¹`,`0.667 × 10² N m⁻¹`,`3 × 10² N m⁻¹`],
+ correct:1,
+ answer:`2 × 10² N m⁻¹`,
+ diagram:'potential-energy-parabola-in-mm',
+ short:[
+  [`The potential energy of a harmonic oscillator measured from its equilibrium position grows as the square of the displacement, which is why the graph is a parabola with its vertex at the origin.`,`U = ${fraction('1','2')}ky²`],
+  [`One point on the curve is therefore enough to fix the constant, and the dashed lines mark the point the figure means to be read.`,`U = 0.04 J where y = 20.0 mm`],
+  [`The scale on the horizontal axis is in millimetres while the answer is wanted in newtons per metre, so the displacement has to be converted before it is squared.`,`y = 20.0 mm = 2.0 × 10⁻² m`],
+  [`Rearrange the energy relation for the spring constant and substitute the single point read from the graph.`,`k = ${fraction('2U','y²')} = ${fraction('2 × 0.04','4.0 × 10⁻⁴')} N m⁻¹`],
+  [`Carry out the division. Leaving the displacement at the figure 20 and ignoring the millimetre scale would give 2 × 10⁻⁴ N m⁻¹ instead, a value a million times too small and absent from the list, which is what the scale is there to test.`,`k = 200 N m⁻¹`],
+  [`Correct answer`,`2 × 10² N m⁻¹`]
+ ]},
+{id:'SHM-416',level:2,
+ title:'Period of a ball oscillating in a large concave mirror',
+ topic:'Oscillation on a curved track or in a fluid',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.186',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A small spherical steel ball is placed a little away from the centre of a large concave mirror whose radius of curvature is 2.5 m. When the ball is released it oscillates about the centre of the mirror, and the motion may be taken as simple harmonic. Neglecting friction and taking g = 10 m/s², the period of the motion is −`,
+ options:[`1.423 s`,`2.412 s`,`3.142 s`,`3.802 s`],
+ correct:2,
+ answer:`3.142 s`,
+ diagram:'',
+ noDiagramReason:'The arrangement is one small ball resting in a concave surface and the radius of curvature is the only measurement given, so a drawing would add nothing.',
+ short:[
+  [`Displace the ball through a small arc s from the lowest point of the mirror. The normal force from the surface has no component along the surface, so the restoring force is the component of the weight along it.`,`F = −mg sin θ`],
+  [`The angle the displaced radius makes with the vertical is the arc divided by the radius of curvature, and for a small angle the sine may be replaced by the angle itself.`,`sin θ ≈ θ = ${fraction('s','R')}`],
+  [`The restoring force is then proportional to the displacement measured along the surface, which is what makes the motion harmonic, and the mass cancels when the force is turned into an acceleration.`,`a = −${fraction('g','R')}s`],
+  [`Comparing that with the standard form shows the ball behaves exactly as a simple pendulum whose length is the radius of curvature. The ball is small, so its own radius need not be taken off R.`,`ω = √(${fraction('g','R')}) and T = 2π√(${fraction('R','g')})`],
+  [`Substitute the radius of curvature and the stated value of g. Friction is neglected, so the ball slides instead of rolling and no rotational inertia enters; a ball rolling without slipping would have a period longer by a factor of √(7 ÷ 5).`,`T = 2π√(${fraction('2.5','10')}) = 2π × 0.5 s = π s`],
+  [`Correct answer`,`3.142 s`]
+ ]},
+{id:'SHM-444',level:1,
+ title:'Period from a single relation between speed and displacement',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.30',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`The displacement x and the speed v of a particle executing simple harmonic motion are related at every instant by 4v² = 25 − x², with x in metres, v in metres per second and time in seconds. The time period of the motion, in seconds, is −`,
+ options:[`π`,`2π`,`4π`,`6π`],
+ correct:2,
+ answer:`4π`,
+ diagram:'',
+ noDiagramReason:'The answer comes from comparing one algebraic relation with the standard one, so there is nothing to draw.',
+ short:[
+  [`In simple harmonic motion the speed at a displacement x is fixed by the amplitude and the angular frequency, so the square of the speed falls linearly with the square of the displacement.`,`v² = ω²(A² − x²)`],
+  [`The relation as given is not yet in that form, because the square of the speed carries a coefficient. Divide throughout by 4 so that v² stands on its own.`,`v² = ${fraction('25','4')} − ${fraction('x²','4')}`],
+  [`Expand the standard relation and match the two expressions term by term. The coefficient multiplying x² is the square of the angular frequency.`,`ω² = ${fraction('1','4')}`],
+  [`The constant term fixes the amplitude, which confirms that the match is consistent and that the numbers describe a real oscillation.`,`ω²A² = ${fraction('25','4')}, so A = 5 m`],
+  [`An angular frequency is a positive quantity, so take the positive root.`,`ω = ${fraction('1','2')} rad s⁻¹`],
+  [`Convert the angular frequency into a period. Matching the relation without first dividing by the coefficient 4 would give ω = 1 rad s⁻¹ and a period of 2π s, which is the option placed there to catch that slip.`,`T = ${fraction('2π','ω')} = 4π s`],
+  [`Correct answer`,`4π`]
+ ]},
+{id:'SHM-446',level:3,
+ title:'Transit time of a pulse along a spring stretched by its load',
+ topic:'Where SHM meets the next chapter',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.15',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A spring of force constant k has mass m, spread evenly along its length. The spring hangs vertically from a rigid support and a block is attached to its lower end. The mass of the block is much greater than m, and the block hangs at rest with the spring stretched so that its total length is exactly twice its relaxed length. A low-amplitude transverse pulse is then sent along the stretched spring. Taking the tension to be the same at every point of the spring, and its mass to be spread evenly over its stretched length, the time t the pulse takes to travel the whole length of the spring is −`,
+ options:[`√(${fraction('2m','k')})`,`√(${fraction('m','k')})`,`√(${fraction('m','2k')})`,`√(${fraction('2m','3k')})`],
+ correct:0,
+ answer:`√(${fraction('2m','k')})`,
+ diagram:'',
+ noDiagramReason:'The arrangement is one spring hanging with one block on it, and both lengths are quoted in words, so a drawing would add no measurement.',
+ short:[
+  [`Call the relaxed length L. The total length is twice that, so the extension is L as well, and Hooke's law turns that extension into the weight the block must have, writing M for the mass of the block.`,`Mg = kL`],
+  [`The block is far heavier than the spring, so the weight of the spring itself contributes almost nothing and the tension is the same all along it. That common tension is the weight of the block.`,`F = Mg = kL`],
+  [`The pulse travels on the spring as it now is, so the mass of the spring is spread over the stretched length 2L and not over the relaxed length. This is the step the problem hides.`,`μ = ${fraction('m','2L')}`],
+  [`A transverse pulse on a stretched line travels at a speed set by the tension pulling it taut and the mass carried by each unit of its length.`,`v = √(${fraction('F','μ')})`],
+  [`Substitute the tension and the mass per unit length just found. One power of L survives inside the root.`,`v = √(${fraction('2kL²','m')}) = L√(${fraction('2k','m')})`],
+  [`The pulse has the whole stretched length 2L to cover at that speed. The relaxed length cancels, so neither L nor the mass of the block is needed after all.`,`t = ${fraction('2L','v')} = 2√(${fraction('m','2k')})`],
+  [`Correct answer`,`√(${fraction('2m','k')})`]
+ ]},
+{id:'SHM-447',level:1,
+ title:'Wave speed when a stretched string is pulled further',
+ topic:'Where SHM meets the next chapter',
+ source:'IIT-JEE 1996 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 1996',questionNumber:'Q.96',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A string that obeys Hooke's law is held stretched with an extension x, and a transverse wave travels along it at speed v. The string is then pulled until its extension is 1.5x. Neglecting any change in the mass per unit length of the string, the speed of the transverse wave is now −`,
+ options:[`1.22 v`,`0.61 v`,`1.50 v`,`0.75 v`],
+ correct:0,
+ answer:`1.22 v`,
+ diagram:'',
+ noDiagramReason:'The question compares two states of the same string and quotes both extensions in words, so there is no geometry to draw.',
+ short:[
+  [`A string obeying Hooke's law pulls back in proportion to how far it has been stretched, so the tension in it is settled by the extension alone.`,`F = kx`],
+  [`The speed of a transverse wave along a stretched string is set by that tension together with the mass carried by each unit of its length.`,`v = √(${fraction('F','μ')})`],
+  [`Combine the two. With the mass per unit length taken as unchanged, the speed varies as the square root of the extension and with nothing else.`,`v ∝ √x`],
+  [`Form the ratio of the new speed to the old one. The force constant and the mass per unit length both cancel, so no value for either is required.`,`${fraction('v (new)','v')} = √(${fraction('1.5x','x')}) = √1.5`],
+  [`Take the root. The option 1.50 v comes from scaling the speed with the tension itself instead of with its square root, while 0.61 v and 0.75 v are those two candidates halved.`,`√1.5 = 1.2247`],
+  [`Correct answer`,`1.22 v`]
+ ]},
+// hold-batch-2 (SHM-418 … SHM-431): 2 of 14 published.
+// Twelve left out — five already published physics, three duplicated by the
+// lower-numbered hold-batch-1 or by each other, four genuinely unrepairable.
+// See the report for the per-question reasoning.,
+{id:'SHM-427',level:2,
+ title:'Speed at the mean position of a block between two walls',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.281',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A block of mass m rests on a smooth horizontal floor between two fixed walls and is joined to them by two light springs of force constants k₁ and k₂, as shown in the figure. In the position drawn both springs are at their natural length, so that position is the mean position. The block is displaced towards the right through a distance x and released. The speed of the block as it next passes through the mean position is −`,
+ options:[`√(${fraction('k₁ + k₂','m')}) x`,
+  `√(${fraction('k₁k₂','m(k₁ + k₂)')}) x`,
+  `√(${fraction('k₁²k₂²','m(k₁² + k₂²)')}) x`,
+  `√(${fraction('k₁³k₂³','m(k₁³ + k₂³)')}) x`],
+ correct:0,
+ answer:`√(${fraction('k₁ + k₂','m')}) x`,
+ diagram:'block-between-walls-two-unstretched-springs',
+ short:[
+  [`Each spring has its far end fixed to a wall, so a displacement to the right stretches one spring by x and compresses the other by the same x. Both then pull or push the block back towards the starting position, and the two restoring forces add.`,`F = −(k₁ + k₂)x`],
+  [`The arrangement therefore behaves as one spring whose constant is the sum. The series combination, which the second option carries, would apply only if the two springs were joined end to end at a free junction that could move independently of the block.`,`k (eq) = k₁ + k₂`],
+  [`At the moment of release the block is at rest, so all the energy of the system is the elastic energy stored in the two deformed springs.`,`E = ${fraction('1','2')}k₁x² + ${fraction('1','2')}k₂x²`],
+  [`Both springs return to their natural length together at the mean position, so nothing is left stored there and the whole of that energy has become kinetic energy of the block. The floor is smooth, so none of it is lost on the way.`,`${fraction('1','2')}mv² = ${fraction('1','2')}(k₁ + k₂)x²`],
+  [`Cancel the common factor and make the square of the speed the subject.`,`v² = ${fraction('(k₁ + k₂)x²','m')}`],
+  [`Take the positive root. The displacement x comes out as a plain multiplying factor, which is what fixes the amplitude of the motion.`,`v = x√(${fraction('k₁ + k₂','m')})`],
+  [`Correct answer`,`√(${fraction('k₁ + k₂','m')}) x`]
+ ]},
+{id:'SHM-431',level:3,
+ title:'Hinged rod with a spring at its midpoint and a load at its end',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.33',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A uniform thin rod of mass 1 kg carries a mass of 2.5 kg at its end B. The rod is hinged at A and is held horizontal by a vertical spring of force constant 18 kN m⁻¹ attached at the point C, as shown in the figure. The rod is given a small angular displacement in the vertical plane and released. The angular frequency of the oscillation that follows is nearly −`,
+ options:[`10 rad/s`,`20 rad/s`,`40 rad/s`,`80 rad/s`],
+ correct:2,
+ answer:`40 rad/s`,
+ diagram:'hinged-rod-spring-at-midpoint-load-at-end',
+ short:[
+  [`The rod can only turn about the hinge, so the motion is angular and the quantities to compare are the restoring torque about A and the moment of inertia about A.`,`Iα = τ`],
+  [`With the rod horizontal the spring is already stretched enough for its torque about A to balance the two weights. Those weights do not change when the rod tilts, so they cancel out of the equation of motion and only the extra spring force is left to restore the rod.`,`k x₀ (0.3) = (1)g(0.3) + (2.5)g(0.6)`],
+  [`Collect the inertia about the hinge. The figure gives AC = CB = 0.3 m, so the rod is 0.6 m long and the load sits at the full 0.6 m. Take the rod about its end and the load as a point mass.`,`I = ${fraction('(1)(0.6)²','3')} + (2.5)(0.6)² = 1.02 kg m²`],
+  [`For a small tilt θ the point C rises or falls by 0.3θ, so the additional spring force is k × 0.3θ. Its torque about A carries a second factor of 0.3, which is why the attachment distance enters squared.`,`τ = −k(0.3)²θ = −(0.09k)θ`],
+  [`Comparing this with the standard angular form of simple harmonic motion identifies the squared angular frequency as the angular stiffness divided by the moment of inertia.`,`ω² = ${fraction('0.09k','I')}`],
+  [`Put in k = 18000 N m⁻¹ and the moment of inertia found above.`,`ω² = ${fraction('0.09 × 18000','1.02')} = 1588 s⁻²`],
+  [`Take the positive root and read off the nearest option. Attaching the spring at the far end B instead would have given 0.36k in place of 0.09k and doubled the answer, which is the trap in the option list.`,`ω = √1588 = 39.9 rad/s`],
+  [`Correct answer`,`40 rad/s`]
+ ]},
 {id:'SHM-001',level:1,
  title:'Period from an acceleration proportional to displacement',
  topic:'What counts as simple harmonic motion',
@@ -3253,28 +3452,6 @@ function detailedSolution(q){
   [`The mass of the child does not enter the period at all, so there is no competing effect to weigh against the change of length.`,`T is independent of m`],
   [`Correct answer`,`decrease`]
  ]},
-{id:'SHM-190',level:1,
- title:'Comparing the two halves of a quarter cycle',
- topic:'Phase, and intervals read from it',
- source:'IIT-JEE 2001 · Simple Harmonic Motion',
- url:'',
- sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
-   paper:'IIT-JEE 2001',questionNumber:'Q.102',
-   printedAnswer:'A',verifiedAnswer:'A'},
- question:`A particle executes simple harmonic motion between x = −A and x = +A. The time it takes to go from 0 to A ÷ 2 is T₁, and the time it takes to go from A ÷ 2 to A is T₂. Then −`,
- options:[`T₁ < T₂`,`T₁ > T₂`,`T₁ = T₂`,`T₁ = 2T₂`],
- correct:0,
- answer:`T₁ < T₂`,
- diagram:'',
- noDiagramReason:'The two intervals are read off the phase of a sine function, so there is nothing to draw beyond the equation itself.',
- short:[
-  [`The particle sets out from the mean position, so measure time from there and write the displacement as a sine.`,`x = A sin ωt, ω = ${fraction('2π','T')}`],
-  [`Find the phase at which the displacement is half the amplitude. That phase, divided by ω, is the first interval.`,`sin ωt = ${fraction('1','2')} ⇒ ωT₁ = ${fraction('π','6')} ⇒ T₁ = ${fraction('T','12')}`],
-  [`The extreme is reached a quarter of a period after the mean position, so the second interval is what is left of that quarter.`,`T₂ = ${fraction('T','4')} − ${fraction('T','12')} = ${fraction('T','6')}`],
-  [`So the second leg takes twice as long as the first, even though both cover half an amplitude. Note the order: it is T₂ that is twice T₁, which is why the last option is wrong.`,`T₂ = 2T₁`],
-  [`The physics behind it is that the speed is greatest at the mean position and falls to zero at the extreme, so the outer half of the amplitude is crossed slowly.`,`v = ω√(A² − x²)`],
-  [`Correct answer`,`T₁ < T₂`]
- ]},
 {id:'SHM-191',level:2,
  title:'Small oscillations in a cosine potential well',
  topic:'Energy in simple harmonic motion',
@@ -5490,6 +5667,146 @@ switch(q.diagram){
   s+=txt(230,gy+28,'smooth floor, spring at natural length',M,13);
   break;
  }
+ case 'y-v-a-against-time-four-panels':{
+  /* SHM-441 -- the four candidate panels, each one period wide, every panel
+     framed and ticked identically so nothing in the drawing favours one of
+     them. In all four the displacement leaves the origin rising (the particle
+     starts from its mean position), and the three curves carry the same three
+     colours in every panel -- yellow y, blue v, green a -- so a label can never
+     be read onto the wrong curve even where two curves run nested.
+       (a) y = sin, v = cos (a quarter period ahead of y), a = −sin (inverted).
+       (b) y = sin, v = −sin, a = −sin at a smaller amplitude.
+       (c) y = sin, v = −cos, a = −cos.
+       (d) y = sin, v = cos, a = +sin, i.e. the acceleration in step with the
+           displacement instead of opposed to it.
+     The three amplitudes differ (y the largest, a the smallest) because in
+     panels (b), (c) and (d) two of the three curves have the SAME phase, and
+     drawn at one amplitude the inner one would vanish underneath the outer and
+     the panel would show two curves instead of three. The phase of every curve
+     is exactly as listed above -- that is what the question turns on -- and
+     nothing marks any panel as the right one. */
+  height=392;
+  const Lt=142,Ay=42,Av=28,Aa=14;
+  const S=u=>Math.sin(2*Math.PI*u),C=u=>Math.cos(2*Math.PI*u);
+  const curve=(ox,oy,f,c)=>{let d='';
+   for(let i=0;i<=160;i++){const u=i/160;d+=(i?' L ':'M ')+(ox+Lt*u).toFixed(1)+' '+(oy-f(u)).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.2" stroke-linecap="round"/>`;};
+  // identical frame for every panel: t to the right, the three quantities up,
+  // quarter-period ticks so the quarter-period lead can be seen, tag underneath
+  const frame=(ox,oy,tag)=>arrow(ox,oy+52,ox,oy-56,'',M)+arrow(ox,oy,ox+Lt+12,oy,'',M)
+   +txt(ox+Lt+16,oy-8,'t',M,14,'start')
+   +[0.25,0.5,0.75,1].map(u=>line(ox+Lt*u,oy-4,ox+Lt*u,oy+4,M,1.3)).join('')
+   +txt(ox+Lt/2,oy+78,tag,M,16);
+  s+=line(230,40,230,360,'#3a3a37',1.2,true);        // the four panels read apart
+  s+=line(28,204,432,204,'#3a3a37',1.2,true);
+  // ---- (a) top left: v a quarter period ahead of y, a inverted with respect to y
+  s+=frame(40,100,'(a)');
+  s+=curve(40,100,u=>Ay*S(u),Y)+curve(40,100,u=>Av*C(u),B)+curve(40,100,u=>-Aa*S(u),GREEN);
+  s+=txt(75.5,46,'y',Y,15);                          // above its first peak
+  s+=txt(111,146,'v',B,15);                          // below its trough at T/2, where y and a are both zero
+  s+=txt(75.5,132,'a',GREEN,15);                     // below its trough at T/4, where v is on the axis
+  // ---- (b) top right: velocity drawn in antiphase with y, acceleration a smaller −sin
+  s+=frame(258,100,'(b)');
+  s+=curve(258,100,u=>Ay*S(u),Y)+curve(258,100,u=>-Av*S(u),B)+curve(258,100,u=>-Aa*S(u),GREEN);
+  s+=txt(293.5,46,'y',Y,15);
+  s+=txt(293.5,148,'v',B,15);                        // below the deeper of the two troughs
+  s+=txt(372.5,126,'a',GREEN,15,'start')+line(369.5,115,362.5,89,GREEN,1.1);  // leader up to its own crest, nested inside v
+  // ---- (c) bottom left: velocity and acceleration both −cos, neither leading y
+  s+=frame(40,288,'(c)');
+  s+=curve(40,288,u=>Ay*S(u),Y)+curve(40,288,u=>-Av*C(u),B)+curve(40,288,u=>-Aa*C(u),GREEN);
+  s+=txt(75.5,234,'y',Y,15);
+  s+=txt(111,244,'v',B,15);                          // above its crest at T/2
+  s+=txt(188,308,'a',GREEN,15,'start');              // beside the end of its own curve, inside v's
+  // ---- (d) bottom right: acceleration in phase with the displacement
+  s+=frame(258,288,'(d)');
+  s+=curve(258,288,u=>Ay*S(u),Y)+curve(258,288,u=>Av*C(u),B)+curve(258,288,u=>Aa*S(u),GREEN);
+  s+=txt(293.5,234,'y',Y,15);
+  s+=txt(329,336,'v',B,15);
+  s+=txt(364.5,318,'a',GREEN,15);                    // below its trough at 3T/4, clear of y's deeper one
+  break;
+ }
+ case 'potential-energy-parabola-in-mm':{
+  /* SHM-414 -- the potential energy parabola with its vertex at the origin, the
+     displacement axis marked in millimetres as the stem says and the energy axis
+     in joules. The one point the figure means to be read, U = 0.04 J at
+     y = 20.0 mm, is fixed by a dashed ordinate and a dashed abscissa meeting on
+     the curve, and both numbers are on their axes as scale labels, so the point
+     is readable without the spring constant appearing anywhere. */
+  height=288;
+  const cx=230,oy=252,sx=6.4,su=3400;                // 6.4 units per mm, 3400 units per joule
+  const X=y=>cx+y*sx, U=u=>oy-u*su;
+  s+=arrow(84,oy,388,oy,'',M);                       // displacement axis, both signs of y
+  s+=arrow(cx,oy+16,cx,76,'',M);                     // energy axis, upward only: U is never negative
+  s+=txt(394,oy+5,'y (mm)',M,13,'start');
+  s+=txt(cx,64,'U (J)',M,14);
+  s+=txt(cx-9,oy+19,'O',M,13,'end');
+  // the parabola, U = ½ky², drawn out to y = ±22 mm
+  let d='';
+  for(let i=0;i<=120;i++){const y=-22+44*i/120;d+=(i?' L ':'M ')+X(y).toFixed(1)+' '+U(1e-4*y*y).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.6"/>`;
+  // displacement scale, in millimetres
+  [-20,-10,10,20].forEach(y=>{s+=line(X(y),oy-5,X(y),oy+5,M,1.5)+txt(X(y),oy+21,(y<0?'−':'')+Math.abs(y),M,13);});
+  // energy scale, in joules
+  [0.01,0.02,0.03,0.04].forEach(u=>{s+=line(cx-5,U(u),cx+5,U(u),M,1.5)+txt(cx-11,U(u)+5,u.toFixed(2),M,13,'end');});
+  // the point the dashed lines pick out: y = 20.0 mm, U = 0.04 J
+  s+=line(X(20),oy,X(20),U(0.04),M,1.3,true);
+  s+=line(cx,U(0.04),X(20),U(0.04),M,1.3,true);
+  s+=dot(X(20),U(0.04),GREEN);
+  break;
+ }
+ case 'block-between-walls-two-unstretched-springs':{
+  /* SHM-427 -- the block on the smooth floor between the two fixed walls, each
+     spring drawn at its natural length as the stem specifies, so the position
+     drawn IS the mean position. The displacement to the right is shown as a
+     dimension between two short dashed ordinates above the block, where it
+     crosses neither the block nor either spring. */
+  height=198;
+  const spring=(x1,y1,x2,y2,n=8,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;
+   let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;
+   d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}
+   return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=152,bw=56,bh=50,bx=202,mid=gy-bh/2;
+  s+=ground(26,gy,408);                              // smooth horizontal floor
+  s+=vwall(26,58,gy,-1)+vwall(434,58,gy,1);          // the two fixed walls
+  s+=line(26,mid,38,mid,B,2.2)+spring(38,mid,bx,mid,8,10);
+  s+=spring(bx+bw,mid,422,mid,8,10)+line(422,mid,434,mid,B,2.2);
+  s+=txt(120,mid-28,'k₁',B,17)+txt(340,mid-28,'k₂',B,17);
+  s+=rect(bx,gy-bh,bw,bh,'m',Y);                     // SIX arguments: x, y, width, height, label, colour
+  // the displacement: the left ordinate stands over the mean position the block
+  // is drawn in, the right one over the position it is released from
+  s+=line(230,68,230,100,M,1.2,true)+line(270,68,270,100,M,1.2,true);
+  s+=arrow(230,86,270,86,'',GREEN)+txt(250,76,'x',GREEN,15);
+  s+=txt(230,182,'smooth floor; both springs at their natural length',M,13);
+  break;
+ }
+ case 'hinged-rod-spring-at-midpoint-load-at-end':{
+  /* SHM-431 -- the rod held horizontal, hinged to the wall at A, the 2.5 kg load
+     at its far end B and the vertical spring at the midpoint C. The spring runs
+     upward to a fixed support, which is the sense in which it holds the rod up:
+     it is stretched, and its pull at C balances the two weights. AC and CB are
+     dimensioned because the solution reads both of them off the figure. The load
+     is drawn blue and the rod yellow so the two masses do not merge. */
+  height=238;
+  const coil=(x1,y1,x2,y2,n,amp)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),nx=-dy/L,ny=dx/L;
+   let d=`M ${x1} ${y1}`;for(let i=1;i<n;i++){const u=i/n,o=(i%2?1:-1)*amp;
+   d+=` L ${(x1+dx*u+nx*o).toFixed(1)} ${(y1+dy*u+ny*o).toFixed(1)}`;}
+   return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.1" stroke-linejoin="round"/>`;};
+  const ry=156,ax=56,cxp=224,bx=392;                 // A, C and B: AC = CB
+  s+=line(ax,62,ax,192,G,3);                         // the wall the hinge is set in
+  for(let yy=68;yy<=186;yy+=13)s+=line(ax-3,yy,ax-10,yy+7,M,1);
+  s+=line(ax,ry,bx,ry,Y,7);                          // the rod, held horizontal
+  s+=`<circle cx="${ax}" cy="${ry}" r="6" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=ground(184,60,80,true);                         // the fixed support the spring hangs from
+  s+=line(cxp,60,cxp,72,B,2.1)+coil(cxp,72,cxp,144,12,8)+line(cxp,144,cxp,ry-3,B,2.1);
+  s+=txt(238,106,'k = 18 kN m⁻¹',B,14,'start');
+  s+=`<circle cx="${bx}" cy="138" r="14" fill="${B}"/>`;   // the load carried at B
+  s+=txt(bx,110,'2.5 kg',B,15);
+  s+=txt(140,144,'rod, 1 kg',Y,15);
+  s+=txt(ax+16,180,'A',W,16)+txt(cxp,180,'C',W,16)+txt(bx,180,'B',W,16);
+  s+=span(ax,cxp,210,'0.3 m')+span(cxp,bx,210,'0.3 m');
+  break;
+ }
  }
  const subject=p.figure||q.title;
  const desc=solution?`Solution diagram for ${subject}.`:`Question diagram for ${subject}. ${q.question}`;
@@ -5551,11 +5868,11 @@ const subtopicPlan={
   ['What counts as simple harmonic motion',['SHM-001','SHM-003','SHM-009','SHM-022','SHM-028','SHM-100','SHM-109','SHM-125','SHM-323']],
   ['The differential equation and what it gives',['SHM-004','SHM-026','SHM-030','SHM-032','SHM-033','SHM-143']]],
  'shm-kinematics':[
-  ['Displacement, velocity and acceleration',['SHM-002','SHM-005','SHM-006','SHM-007','SHM-014','SHM-021','SHM-023','SHM-027','SHM-031','SHM-034','SHM-042','SHM-081','SHM-087','SHM-088','SHM-089','SHM-134','SHM-162','SHM-177','SHM-182','SHM-196','SHM-221','SHM-231','SHM-302','SHM-317']],
-  ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-016','SHM-083','SHM-085','SHM-086','SHM-106','SHM-110','SHM-122','SHM-165','SHM-190','SHM-222','SHM-235','SHM-242']],
+  ['Displacement, velocity and acceleration',['SHM-441','SHM-404','SHM-444','SHM-002','SHM-005','SHM-006','SHM-007','SHM-014','SHM-021','SHM-023','SHM-027','SHM-031','SHM-034','SHM-042','SHM-081','SHM-087','SHM-088','SHM-089','SHM-134','SHM-162','SHM-177','SHM-182','SHM-196','SHM-221','SHM-231','SHM-302','SHM-317']],
+  ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-016','SHM-083','SHM-085','SHM-086','SHM-106','SHM-110','SHM-122','SHM-165','SHM-222','SHM-235','SHM-242']],
   ['Adding two simple harmonic motions',['SHM-008','SHM-011','SHM-015','SHM-018','SHM-084','SHM-144','SHM-150','SHM-224']]],
  'shm-energy':[
-  ['Energy in simple harmonic motion',['SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102','SHM-149','SHM-156','SHM-163','SHM-171','SHM-172','SHM-185','SHM-191','SHM-193','SHM-194','SHM-195','SHM-229','SHM-234','SHM-360','SHM-371']]],
+  ['Energy in simple harmonic motion',['SHM-414','SHM-427','SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102','SHM-149','SHM-156','SHM-163','SHM-171','SHM-172','SHM-185','SHM-191','SHM-193','SHM-194','SHM-195','SHM-229','SHM-234','SHM-360','SHM-371']]],
  'shm-springs':[
   ['Springs in series, in parallel, and cut',['SHM-054','SHM-056','SHM-057','SHM-058','SHM-059','SHM-060','SHM-061','SHM-062','SHM-064','SHM-136','SHM-159','SHM-202','SHM-208','SHM-220','SHM-246','SHM-365']],
   ['The spring and mass oscillator',['SHM-013','SHM-053','SHM-063','SHM-076','SHM-078','SHM-079','SHM-096','SHM-112','SHM-124','SHM-141','SHM-207','SHM-228','SHM-288','SHM-245','SHM-344']],
@@ -5564,11 +5881,11 @@ const subtopicPlan={
  'shm-pendulum':[
   ['The simple pendulum',['SHM-037','SHM-038','SHM-043','SHM-046','SHM-050','SHM-077','SHM-092','SHM-105','SHM-107','SHM-108','SHM-120','SHM-151','SHM-155','SHM-160','SHM-179','SHM-181','SHM-188','SHM-267','SHM-334']],
   ['The pendulum when gravity is not the only force',['SHM-039','SHM-041','SHM-045','SHM-047','SHM-095','SHM-097','SHM-098','SHM-099','SHM-114','SHM-121','SHM-142','SHM-275','SHM-255','SHM-305']],
-  ['Rigid bodies that swing',['SHM-040','SHM-055','SHM-080','SHM-140','SHM-175','SHM-180','SHM-184','SHM-203','SHM-225','SHM-230']]],
+  ['Rigid bodies that swing',['SHM-431','SHM-040','SHM-055','SHM-080','SHM-140','SHM-175','SHM-180','SHM-184','SHM-203','SHM-225','SHM-230']]],
  'shm-other':[
-  ['Oscillation on a curved track or in a fluid',['SHM-024','SHM-091','SHM-093','SHM-101','SHM-104','SHM-133','SHM-330']],
+  ['Oscillation on a curved track or in a fluid',['SHM-416','SHM-024','SHM-091','SHM-093','SHM-101','SHM-104','SHM-133','SHM-330']],
   ['Damped and forced oscillation',['SHM-128','SHM-129']],
-  ['Where SHM meets the next chapter',['SHM-017','SHM-020','SHM-272']]],
+  ['Where SHM meets the next chapter',['SHM-446','SHM-447','SHM-017','SHM-020','SHM-272']]],
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const routeByCore={};
