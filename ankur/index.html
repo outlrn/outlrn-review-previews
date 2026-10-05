@@ -16273,7 +16273,9 @@ const QF=(()=>{
   const text=[q.kind,q.display&&q.display.kind,q.provenance].filter(x=>typeof x==='string').join(' | ');
   if(/institute/i.test(text))return 'institute';
   if(/\bPYQ\b|past-year/i.test(text)||/^ExamSIDE/.test(String(q.source||'')))return 'pyq';
-  if(/original|AI-authored/i.test(text))return 'original';
+  if(/original|authored/i.test(text))return 'original';
+  // 'authored' also catches the centre-of-mass wording 'Authored practice', which is
+  // how a question written for the bank rather than taken from a paper labels itself.
   // mole-concept labels unsourced practice with its recovery purpose; an item
   // with no source reference at all is authored practice.
   if(q.parent&&!q.sourceRef)return 'original';
