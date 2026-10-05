@@ -3484,7 +3484,7 @@ function detailedSolution(q){
   [`Put that constant into the standard period of a spring and a mass. The angle has already done its work in the projection and plays no further part, which is why no sine or cosine survives in the answer.`,`T = 2π√(${fraction('m','k (eq)')}) = 2π√(${fraction('m','2k')})`],
   [`Correct answer`,`2π√(${fraction('m','2k')})`]
  ]},
-{id:'SHM-221',level:2,
+{id:'SHM-221',level:1,
  title:'Amplitude from the force constant and the speed at the centre',
  topic:'Displacement, velocity and acceleration',
  source:'Institute bank · Simple Harmonic Motion',
@@ -3548,7 +3548,7 @@ function detailedSolution(q){
   [`Because the two components are equal, the resultant sits exactly halfway between the direction of x₁ and the quarter-cycle direction, that is an eighth of a cycle ahead of x₁.`,`φ = ${fraction('π','4')} ahead of x₁`],
   [`Correct answer`,`4√2, ${fraction('π','4')}`]
  ]},
-{id:'SHM-225',level:2,
+{id:'SHM-225',level:1,
  title:'Equivalent simple pendulum for a rod pivoted at one end',
  topic:'Rigid bodies that swing',
  source:'Institute bank · Simple Harmonic Motion',
@@ -3631,9 +3631,10 @@ function detailedSolution(q){
   [`Substituting, the mass cancels and the period is left in terms of the two lengths alone.`,`T = 2π√((k² + ℓ²) ÷ (gℓ))`],
   [`The restoring torque is the weight times the horizontal offset of the centre of gravity, and that offset is what the ℓ in the denominator measures. Suspend the body exactly at its centre of gravity and the weight acts through the axis, so no torque is produced, the body stays wherever it is put and the period is unbounded.`,`torque = −mgℓ sin θ = 0 when ℓ = 0`],
   [`The other two lengths do the opposite. Writing the period as a function of ℓ and minimising it shows that ℓ = k is where the pendulum swings fastest, not slowest.`,`T (min) = 2π√(2k ÷ g) at ℓ = k`],
+  [`The period also grows without limit as ℓ grows, so ℓ = ∞ satisfies the formula; but that is not the case the question asks for. At a large ℓ gravity still supplies a restoring torque and the body does swing back, merely very slowly. Only at ℓ = 0, with the centre of gravity at the suspension axis, is the restoring torque zero at every angle.`,`at ℓ = 0 the restoring torque is zero, not merely small`],
   [`Correct answer`,`ℓ = 0`]
  ]},
-{id:'SHM-231',level:3,
+{id:'SHM-231',level:2,
  title:'Acceleration at a given instant read from a displacement graph',
  topic:'Displacement, velocity and acceleration',
  source:'IIT-JEE 2009 · Simple Harmonic Motion',
@@ -3720,7 +3721,7 @@ function detailedSolution(q){
   [`The value is about 0.71A, so most of the amplitude is already covered in the first eighth of the cycle. The option offering half the amplitude comes from treating the displacement as proportional to the elapsed time, which it is not, because the body moves fastest near the centre and slows towards the extreme.`,`0.71A, not 0.5A`],
   [`Correct answer`,`${fraction('A','√2')}`]
  ]},
-{id:'SHM-244',level:2,
+{id:'SHM-244',level:3,
  title:'Force on the free block while the other is pulled',
  topic:'Two bodies on one spring',
  source:'AIEEE 2007 · Simple Harmonic Motion',
@@ -3762,7 +3763,7 @@ function detailedSolution(q){
   [`The two options built on 2K cannot produce a halving in any case, since doubling a stiffness shortens a period by a factor of root two only.`,`2π√(${fraction('m','2K')}) = ${fraction('T₀','√2')}`],
   [`Correct answer`,`π√(${fraction('m','K')})`]
  ]},
-{id:'SHM-246',level:2,
+{id:'SHM-246',level:1,
  title:'Period when a cut spring is rejoined in parallel',
  topic:'Springs in series, in parallel, and cut',
  source:'AIEEE 2002 · Simple Harmonic Motion',
@@ -4783,6 +4784,166 @@ switch(q.diagram){
   s+=txt(392,228,'(iv)',M,15);
   break;
  }
+ case 'three-springs-y-at-45-degrees':{
+  /* SHM-220 -- the Y of three identical springs. All three are drawn the SAME
+     length (120 units), because the stem turns on their being identical; A hangs
+     straight down to a hatched support, B and C rise at 45 degrees to the line of
+     A, each ending on its own support set perpendicular to it. The dashed line is
+     the line of A produced upwards, so the two 45 degree marks have something to
+     be measured from, and each sits inside its own sector. */
+  height=352;
+  const spring=(x1,y1,x2,y2,n=7,amp=9)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  // a short rigid support set square across a spring, hatched on the side away
+  // from it; (ux,uy) is the unit vector pointing from the particle to the support
+  const pad=(px,py,ux,uy,half=26)=>{const tx=-uy,ty=ux;
+   let o=line(px+tx*half,py+ty*half,px-tx*half,py-ty*half,G,3);
+   for(let i=-half+5;i<half-2;i+=11)o+=line(px+tx*i,py+ty*i,px+tx*i+ux*9+tx*5,py+ty*i+uy*9+ty*5,M,1);
+   return o;};
+  const jx=230,jy=186,r=0.70711,d=85;               // d,d offsets give exactly 45 degrees
+  const bx=jx-d,by=jy-d,cx2=jx+d,cy2=jy-d;
+  // the line of A produced upwards, dashed, as the reference the angles are taken from
+  s+=line(jx,jy,jx,116,M,1.6,true);
+  // spring A: straight down from the particle to a hatched support on the ground
+  s+=spring(jx,jy,jx,jy+120,8,9);
+  s+=ground(188,jy+120,84);
+  // springs B and C: up to the left and up to the right, each on its own support
+  s+=spring(jx,jy,bx,by,8,9)+pad(bx,by,-r,-r);
+  s+=spring(jx,jy,cx2,cy2,8,9)+pad(cx2,cy2,r,-r);
+  // the particle at the junction, O to its left and m to its right
+  s+=dot(jx,jy,Y);
+  s+=txt(jx-14,jy+5,'O',W,16,'end')+txt(jx+14,jy+5,'m',Y,16,'start');
+  // spring names, each set beside its own spring and clear of every support
+  s+=txt(jx+20,250,'A',B,17,'start');
+  s+=txt(166,152,'B',B,17,'end');
+  s+=txt(294,152,'C',B,17,'start');
+  // the two 45 degree sectors, each label inside its own sector
+  s+=`<path d="${arcPath(jx,jy,46,-Math.PI/2,-3*Math.PI/4)}" fill="none" stroke="${W}" stroke-width="1.4"/>`;
+  s+=txt(jx-24,127,'45°',W,14);
+  s+=`<path d="${arcPath(jx,jy,46,-Math.PI/2,-Math.PI/4)}" fill="none" stroke="${W}" stroke-width="1.4"/>`;
+  s+=txt(jx+24,127,'45°',W,14);
+  s+=txt(230,338,'A, B and C identical, each of constant k',M,13);
+  break;
+ }
+ case 'pulley-on-spring-string-anchored-to-floor':{
+  /* SHM-228 -- the pulley itself hangs on the spring. Ceiling hatched downward at
+     the top, floor hatched downward at the bottom; the string is drawn at a
+     slightly larger radius than the pulley rim so the wrap over the top reads,
+     and the spring runs to the axle, not to the rim. The left branch goes all the
+     way to the floor and ends there; the right branch is short and carries m,
+     which hangs clear of the floor. */
+  height=346;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const px=230,py=164,rp=22,rs=25,cy=44,fy=306;
+  s+=ground(130,cy,190,true);                        // ceiling
+  s+=spring(px,cy,px,126,6,10);
+  s+=txt(252,84,'spring',M,15,'start');
+  s+=txt(252,106,'k',B,16,'start');
+  s+=line(px,126,px,py,W,1.8);                       // spring runs to the axle
+  s+=`<circle cx="${px}" cy="${py}" r="${rp}" fill="none" stroke="${W}" stroke-width="2.6"/>`;
+  s+=dot(px,py,W);
+  s+=`<path d="${arcPath(px,py,rs,Math.PI,2*Math.PI)}" fill="none" stroke="${W}" stroke-width="2"/>`;
+  s+=line(px-rs,py,px-rs,fy,W,2);                    // left branch, down to the floor
+  s+=line(px+rs,py,px+rs,232,W,2);                   // right branch, down to the block
+  s+=dot(px-rs,fy,W);                                // where it is anchored
+  s+=rect(px+rs-22,232,44,44,'m',Y);
+  s+=ground(130,fy,190);                             // floor
+  s+=txt(193,250,'string',M,15,'end');
+  s+=txt(230,334,'string anchored to the floor',M,13);
+  break;
+ }
+ case 'pe-graphs-against-time-and-against-displacement':{
+  /* SHM-229 -- the four candidate curves. LEFT panel is PE against t: the solid
+     curve I starts at its MAXIMUM on the PE axis, the dashed curve II starts at
+     zero, and that difference in where they START is the whole question, so both
+     are drawn from t = 0 with their first value plainly visible. RIGHT panel is PE
+     against x: solid III is the upright parabola, dashed IV the dome. Each label
+     carries its curve's own colour AND an arrow landing on that curve at a point
+     where the other curve is nowhere near, so no label can be read onto the wrong
+     curve. Nothing marks any curve as the right one. */
+  height=240;
+  const oy=205,amp=78;
+  const curve=(f,u0,u1,c,dash)=>{let d='';
+   for(let i=0;i<=140;i++){const u=u0+(u1-u0)*i/140,p=f(u);d+=(i?' L ':'M ')+p[0].toFixed(1)+' '+p[1].toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.4" stroke-linecap="round"${dash?' stroke-dasharray="6 6"':''}/>`;};
+  // ---- left panel: PE against t, two interleaved trains of humps ----
+  const ox=70,P=48;
+  s+=line(ox,212,ox,112,M,1.8);
+  s+=arrow(ox,oy,188,oy,'',M);
+  s+=txt(ox,104,'PE',M,14);
+  s+=txt(194,210,'t',M,14,'start');
+  s+=txt(62,222,'0',M,13,'end');
+  s+=curve(u=>[ox+u,oy-amp*Math.pow(Math.cos(Math.PI*u/P),2)],0,108,Y,false);   // I  starts at max
+  s+=curve(u=>[ox+u,oy-amp*Math.pow(Math.sin(Math.PI*u/P),2)],0,108,B,true);    // II starts at zero
+  s+=arrow(48,114,74,131,'',Y)+txt(38,110,'I',Y,17,'end');
+  s+=arrow(44,166,78,184,'',B)+txt(38,163,'II',B,17,'end');
+  // ---- right panel: PE against x, parabola and dome ----
+  const ox2=350,half=58;
+  s+=line(ox2,212,ox2,112,M,1.8);
+  s+=arrow(286,oy,414,oy,'',M);
+  s+=txt(ox2,104,'PE',M,14);
+  s+=txt(420,210,'x',M,14,'start');
+  s+=txt(342,222,'0',M,13,'end');
+  s+=curve(u=>[ox2+u,oy-amp*Math.pow(u/half,2)],-half,half,Y,false);            // III upright
+  s+=curve(u=>[ox2+u,oy-amp*(1-Math.pow(u/half,2))],-half,half,B,true);         // IV  dome
+  s+=arrow(262,147,297,147,'',Y)+txt(256,152,'III',Y,17,'end');
+  s+=arrow(404,112,387,153,'',B)+txt(410,106,'IV',B,17);
+  break;
+ }
+ case 'x-t-sine-graph-amplitude-1cm-period-8s':{
+  /* SHM-231 -- the answer is read off this graph, so the scales are real: 28
+     units per second and 60 units per centimetre, and the curve is
+     x = sin(pi t / 4), which crests at +1 cm at t = 2, crosses zero at t = 4,
+     troughs at -1 at t = 6 and crosses zero again at t = 8 -- amplitude 1 cm,
+     period 8 s, both readable off the labelled ticks. Each t label sits on the
+     side of its tick where the curve is in the OTHER half plane, so no number
+     lands on the curve. */
+  height=250;
+  const ox=70,oy=160,st=28,sv=60;
+  const X=t=>ox+t*st, Yx=v=>oy-v*sv;
+  s+=arrow(ox,232,ox,86,'',M);                     // x axis, up
+  s+=arrow(ox,oy,428,oy,'',M);                     // t axis, right
+  s+=txt(ox,74,'x(cm)',M,14);
+  s+=txt(430,202,'t(s)',M,14,'end');               // clear of the 12 label's row
+  // the x scale: +1, 0 and -1, which is what fixes the amplitude
+  s+=line(ox-5,Yx(1),ox+5,Yx(1),M,1.5)+txt(ox-10,Yx(1)+5,'1',M,13,'end');
+  s+=txt(ox-10,oy+5,'0',M,13,'end');
+  s+=line(ox-5,Yx(-1),ox+5,Yx(-1),M,1.5)+txt(ox-10,Yx(-1)+5,'–1',M,13,'end');
+  // the t scale: 4, 8 and 12, which is what fixes the period
+  [4,8,12].forEach(t=>{s+=line(X(t),oy-5,X(t),oy+5,M,1.5);});
+  s+=txt(X(4)-4,181,'4',M,13,'end');               // curve is above the axis to the left
+  s+=txt(X(8)+4,181,'8',M,13,'start');             // curve is above the axis to the right
+  s+=txt(X(12)-4,181,'12',M,13,'end');
+  let d='';
+  for(let i=0;i<=200;i++){const t=12*i/200;d+=(i?' L ':'M ')+X(t).toFixed(1)+' '+Yx(Math.sin(Math.PI*t/4)).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4" stroke-linecap="round"/>`;
+  break;
+ }
+ case 'two-blocks-touching-springs-between-walls':{
+  /* SHM-245 -- the two equal blocks touching at the middle of the floor, each
+     joined to its own wall by a spring of constant K, both springs at natural
+     length. The shared vertical edge is drawn dark so the contact reads as contact
+     rather than as one long block, and each block carries both its name and its
+     mass. The floor is a plain line, not hatched: it is smooth. */
+  height=220;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  // vertical hatched wall; side=-1 hatches to the left, +1 to the right
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=170,bw=56,bh=56,by=gy-bh,yc=by+bh/2,mid=230;
+  s+=vwall(30,60,gy,-1)+vwall(430,60,gy,1);
+  s+=line(30,gy,430,gy,G,3);                        // smooth floor joining the wall bases
+  // the two blocks, side by side and in contact
+  s+=rect(mid-bw,by,bw,bh,'A',Y);
+  s+=rect(mid,by,bw,bh,'B',Y);
+  s+=line(mid,by+4,mid,gy-2,'#151515',1.8);         // the shared edge they touch along
+  s+=txt(mid-bw/2,by-10,'m',Y,16)+txt(mid+bw/2,by-10,'m',Y,16);
+  // left wall to A, and B to the right wall
+  s+=line(30,yc,42,yc,B,2.2)+spring(42,yc,mid-bw,yc,8,10);
+  s+=txt((42+mid-bw)/2,by+10,'K',B,17);
+  s+=spring(mid+bw,yc,418,yc,8,10)+line(418,yc,430,yc,B,2.2);
+  s+=txt((mid+bw+418)/2,by+10,'K',B,17);
+  s+=txt(230,196,'smooth floor, both springs at natural length',M,13);
+  break;
+ }
  }
  const subject=p.figure||q.title;
  const desc=solution?`Solution diagram for ${subject}.`:`Question diagram for ${subject}. ${q.question}`;
@@ -4848,7 +5009,7 @@ const subtopicPlan={
   ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-016','SHM-083','SHM-085','SHM-086','SHM-106','SHM-110','SHM-122','SHM-165','SHM-190','SHM-222','SHM-235','SHM-242']],
   ['Adding two simple harmonic motions',['SHM-008','SHM-011','SHM-015','SHM-018','SHM-084','SHM-144','SHM-150','SHM-224']]],
  'shm-energy':[
-  ['Energy in simple harmonic motion',['SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102','SHM-149','SHM-156','SHM-163','SHM-171','SHM-172','SHM-185','SHM-191','SHM-193','SHM-194','SHM-195','SHM-229','SHM-234','SHM-251']]],
+  ['Energy in simple harmonic motion',['SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102','SHM-149','SHM-156','SHM-163','SHM-171','SHM-172','SHM-185','SHM-191','SHM-193','SHM-194','SHM-195','SHM-229','SHM-234']]],
  'shm-springs':[
   ['Springs in series, in parallel, and cut',['SHM-054','SHM-056','SHM-057','SHM-058','SHM-059','SHM-060','SHM-061','SHM-062','SHM-064','SHM-136','SHM-159','SHM-202','SHM-208','SHM-220','SHM-246']],
   ['The spring and mass oscillator',['SHM-013','SHM-053','SHM-063','SHM-076','SHM-078','SHM-079','SHM-096','SHM-112','SHM-124','SHM-141','SHM-207','SHM-228','SHM-245']],
