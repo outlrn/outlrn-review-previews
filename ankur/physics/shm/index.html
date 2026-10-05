@@ -4795,9 +4795,9 @@ switch(q.diagram){
   const spring=(x1,y1,x2,y2,n=7,amp=9)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
   // a short rigid support set square across a spring, hatched on the side away
   // from it; (ux,uy) is the unit vector pointing from the particle to the support
-  const pad=(px,py,ux,uy,half=26)=>{const tx=-uy,ty=ux;
+  const pad=(px,py,ux,uy,sl=1,half=26)=>{const tx=-uy,ty=ux;
    let o=line(px+tx*half,py+ty*half,px-tx*half,py-ty*half,G,3);
-   for(let i=-half+5;i<half-2;i+=11)o+=line(px+tx*i,py+ty*i,px+tx*i+ux*9+tx*5,py+ty*i+uy*9+ty*5,M,1);
+   for(let i=-half+5;i<half-2;i+=11)o+=line(px+tx*i,py+ty*i,px+tx*i+ux*9+sl*tx*5,py+ty*i+uy*9+sl*ty*5,M,1);
    return o;};
   const jx=230,jy=186,r=0.70711,d=85;               // d,d offsets give exactly 45 degrees
   const bx=jx-d,by=jy-d,cx2=jx+d,cy2=jy-d;
@@ -4808,10 +4808,10 @@ switch(q.diagram){
   s+=ground(188,jy+120,84);
   // springs B and C: up to the left and up to the right, each on its own support
   s+=spring(jx,jy,bx,by,8,9)+pad(bx,by,-r,-r);
-  s+=spring(jx,jy,cx2,cy2,8,9)+pad(cx2,cy2,r,-r);
+  s+=spring(jx,jy,cx2,cy2,8,9)+pad(cx2,cy2,r,-r,-1);
   // the particle at the junction, O to its left and m to its right
   s+=dot(jx,jy,Y);
-  s+=txt(jx-14,jy+5,'O',W,16,'end')+txt(jx+14,jy+5,'m',Y,16,'start');
+  s+=txt(jx-24,jy+6,'O',W,16,'end')+txt(jx+24,jy+6,'m',Y,16,'start');
   // spring names, each set beside its own spring and clear of every support
   s+=txt(jx+20,250,'A',B,17,'start');
   s+=txt(166,152,'B',B,17,'end');
@@ -4860,33 +4860,33 @@ switch(q.diagram){
      carries its curve's own colour AND an arrow landing on that curve at a point
      where the other curve is nowhere near, so no label can be read onto the wrong
      curve. Nothing marks any curve as the right one. */
-  height=240;
-  const oy=205,amp=78;
+  height=196;
+  const oy=160,amp=78;
   const curve=(f,u0,u1,c,dash)=>{let d='';
    for(let i=0;i<=140;i++){const u=u0+(u1-u0)*i/140,p=f(u);d+=(i?' L ':'M ')+p[0].toFixed(1)+' '+p[1].toFixed(1);}
    return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.4" stroke-linecap="round"${dash?' stroke-dasharray="6 6"':''}/>`;};
   // ---- left panel: PE against t, two interleaved trains of humps ----
   const ox=70,P=48;
-  s+=line(ox,212,ox,112,M,1.8);
+  s+=line(ox,167,ox,67,M,1.8);
   s+=arrow(ox,oy,188,oy,'',M);
-  s+=txt(ox,104,'PE',M,14);
-  s+=txt(194,210,'t',M,14,'start');
-  s+=txt(62,222,'0',M,13,'end');
+  s+=txt(ox,59,'PE',M,14);
+  s+=txt(194,165,'t',M,14,'start');
+  s+=txt(62,177,'0',M,13,'end');
   s+=curve(u=>[ox+u,oy-amp*Math.pow(Math.cos(Math.PI*u/P),2)],0,108,Y,false);   // I  starts at max
   s+=curve(u=>[ox+u,oy-amp*Math.pow(Math.sin(Math.PI*u/P),2)],0,108,B,true);    // II starts at zero
-  s+=arrow(48,114,74,131,'',Y)+txt(38,110,'I',Y,17,'end');
-  s+=arrow(44,166,78,184,'',B)+txt(38,163,'II',B,17,'end');
+  s+=arrow(48,69,74,86,'',Y)+txt(38,65,'I',Y,17,'end');
+  s+=arrow(44,121,78,139,'',B)+txt(38,118,'II',B,17,'end');
   // ---- right panel: PE against x, parabola and dome ----
   const ox2=350,half=58;
-  s+=line(ox2,212,ox2,112,M,1.8);
+  s+=line(ox2,167,ox2,67,M,1.8);
   s+=arrow(286,oy,414,oy,'',M);
-  s+=txt(ox2,104,'PE',M,14);
-  s+=txt(420,210,'x',M,14,'start');
-  s+=txt(342,222,'0',M,13,'end');
+  s+=txt(ox2,59,'PE',M,14);
+  s+=txt(420,165,'x',M,14,'start');
+  s+=txt(342,177,'0',M,13,'end');
   s+=curve(u=>[ox2+u,oy-amp*Math.pow(u/half,2)],-half,half,Y,false);            // III upright
   s+=curve(u=>[ox2+u,oy-amp*(1-Math.pow(u/half,2))],-half,half,B,true);         // IV  dome
-  s+=arrow(262,147,297,147,'',Y)+txt(256,152,'III',Y,17,'end');
-  s+=arrow(404,112,387,153,'',B)+txt(410,106,'IV',B,17);
+  s+=arrow(262,102,297,102,'',Y)+txt(256,107,'III',Y,17,'end');
+  s+=arrow(432,98,402,142,'',B)+txt(432,88,'IV',B,17,'end');   // lands on the dome well clear of where the two curves cross
   break;
  }
  case 'x-t-sine-graph-amplitude-1cm-period-8s':{
@@ -4897,22 +4897,22 @@ switch(q.diagram){
      period 8 s, both readable off the labelled ticks. Each t label sits on the
      side of its tick where the curve is in the OTHER half plane, so no number
      lands on the curve. */
-  height=250;
-  const ox=70,oy=160,st=28,sv=60;
+  height=214;
+  const ox=70,oy=130,st=28,sv=60;
   const X=t=>ox+t*st, Yx=v=>oy-v*sv;
-  s+=arrow(ox,232,ox,86,'',M);                     // x axis, up
+  s+=arrow(ox,202,ox,56,'',M);                     // x axis, up
   s+=arrow(ox,oy,428,oy,'',M);                     // t axis, right
-  s+=txt(ox,74,'x(cm)',M,14);
-  s+=txt(430,202,'t(s)',M,14,'end');               // clear of the 12 label's row
+  s+=txt(ox,44,'x(cm)',M,14);
+  s+=txt(430,172,'t(s)',M,14,'end');               // clear of the 12 label's row
   // the x scale: +1, 0 and -1, which is what fixes the amplitude
   s+=line(ox-5,Yx(1),ox+5,Yx(1),M,1.5)+txt(ox-10,Yx(1)+5,'1',M,13,'end');
   s+=txt(ox-10,oy+5,'0',M,13,'end');
   s+=line(ox-5,Yx(-1),ox+5,Yx(-1),M,1.5)+txt(ox-10,Yx(-1)+5,'–1',M,13,'end');
   // the t scale: 4, 8 and 12, which is what fixes the period
   [4,8,12].forEach(t=>{s+=line(X(t),oy-5,X(t),oy+5,M,1.5);});
-  s+=txt(X(4)-4,181,'4',M,13,'end');               // curve is above the axis to the left
-  s+=txt(X(8)+4,181,'8',M,13,'start');             // curve is above the axis to the right
-  s+=txt(X(12)-4,181,'12',M,13,'end');
+  s+=txt(X(4)-4,151,'4',M,13,'end');               // curve is above the axis to the left
+  s+=txt(X(8)+4,151,'8',M,13,'start');             // curve is above the axis to the right
+  s+=txt(X(12)-4,151,'12',M,13,'end');
   let d='';
   for(let i=0;i<=200;i++){const t=12*i/200;d+=(i?' L ':'M ')+X(t).toFixed(1)+' '+Yx(Math.sin(Math.PI*t/4)).toFixed(1);}
   s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4" stroke-linecap="round"/>`;
