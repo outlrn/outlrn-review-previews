@@ -185,7 +185,7 @@ sup,sub{white-space:nowrap}
 <script>/* Sets and Relations question bank (JEE Main past-year questions from ExamSIDE). Entries are added by the merge tool
    (qa/chapter-tools.cjs sets-and-relations) from batch drafts; see qa/evidence/sets-and-relations-examside-01/. */
 const questions=[
-{id:'SET-1',level:2,topic:'Possible overlap of two percentage groups',source:'ExamSIDE · JEE Main 2021 (Online) 26th August Morning Shift · questions.examside.com (question id 0t2erazpdwja0waa)',sourceRef:true,question:'Out of all the patients in a hospital 89% are found to be suffering from heart ailment and 98% are suffering from lungs infection. If K% of them are suffering from both ailments, then K can not belong to the set :',options:['{80, 83, 86, 89}','{84, 86, 88, 90}','{79, 81, 83, 85}','{84, 87, 90, 93}'],correct:2,answer:'{79, 81, 83, 85}',
+{id:'SET-1',level:2,topic:'Possible overlap of two percentage groups',diagram:'b51Overlap',source:'ExamSIDE · JEE Main 2021 (Online) 26th August Morning Shift · questions.examside.com (question id 0t2erazpdwja0waa)',sourceRef:true,question:'Out of all the patients in a hospital 89% are found to be suffering from heart ailment and 98% are suffering from lungs infection. If K% of them are suffering from both ailments, then K can not belong to the set :',options:['{80, 83, 86, 89}','{84, 86, 88, 90}','{79, 81, 83, 85}','{84, 87, 90, 93}'],correct:2,answer:'{79, 81, 83, 85}',
 short:[['','n(H ∪ L) ≤ 100','89 + 98 − K ≤ 100','K ≥ 87'],['','K ≤ n(H) = 89','87 ≤ K ≤ 89'],['','{79, 81, 83, 85} ∩ [87, 89] = ∅']],
 detailed:[
  ['Let H and L be the patients with heart ailment and lung infection, taken as percentages of all patients.','n(H) = 89','n(L) = 98'],
@@ -195,7 +195,7 @@ detailed:[
  ['K can belong to a set exactly when the set contains a value from 87 to 89, so test each option.','89 ∈ {80, 83, 86, 89}','88 ∈ {84, 86, 88, 90}','87 ∈ {84, 87, 90, 93}'],
  ['Only the set {79, 81, 83, 85} has no value in [87, 89]. Options A, B, D each contain 89, 88 or 87, so K can belong to them; a solver who ignores the union bound K ≥ 87 would wrongly accept 83 or 85 as possible values.','Answer: (C) {79, 81, 83, 85}']
 ]},
-{id:'SET-1-A',parent:'SET-1',variant:1,topic:'Possible overlap of two percentage groups',source:'ExamSIDE · JEE Main 2020 (Online) 5th September Morning Slot · questions.examside.com (question id 1sphyrjvhyzwy2wo)',sourceRef:true,relevance:{parent:'SET-1',sharedSkill:'Both limits on the overlap of two groups come from n(A ∪ B) ≤ 100 and n(A ∩ B) ≤ smaller group.',recoveryPurpose:'Percentages differ and the question asks for an impossible value, but the same two bounds decide it.'},question:'A survey shows that 73% of the persons working in an office like coffee, whereas 65% like tea. If x denotes the percentage of them, who like both coffee and tea, then x cannot be :',options:['63','36','54','38'],correct:1,answer:'36',
+{id:'SET-1-A',parent:'SET-1',variant:1,topic:'Possible overlap of two percentage groups',diagram:'b51OverlapA',source:'ExamSIDE · JEE Main 2020 (Online) 5th September Morning Slot · questions.examside.com (question id 1sphyrjvhyzwy2wo)',sourceRef:true,relevance:{parent:'SET-1',sharedSkill:'Both limits on the overlap of two groups come from n(A ∪ B) ≤ 100 and n(A ∩ B) ≤ smaller group.',recoveryPurpose:'Percentages differ and the question asks for an impossible value, but the same two bounds decide it.'},question:'A survey shows that 73% of the persons working in an office like coffee, whereas 65% like tea. If x denotes the percentage of them, who like both coffee and tea, then x cannot be :',options:['63','36','54','38'],correct:1,answer:'36',
 short:[['','73 + 65 − x ≤ 100','x ≥ 38'],['','x ≤ 65','38 ≤ x ≤ 65'],['','36 < 38']],
 detailed:[
  ['Let C and T be the coffee and tea drinkers as percentages of the staff, with x the percentage who like both.','n(C) = 73','n(T) = 65'],
@@ -258,7 +258,7 @@ detailed:[
  ['Verify with test points: −2 satisfies the B condition, and 2 satisfies neither set.','|−2 − 2| = 4 ≥ 3','|−2| = 2 ≮ 2','|2| = 2 ≮ 2','|2 − 2| = 0 ≱ 3'],
  ['(A) wrongly includes −1 although −1 ∈ B; (B) removes only (2, 5), so it wrongly keeps the point 2 which is in neither set; (C) drops the endpoint −1 although −1 ∈ B.','Answer: (D) B − A = ℝ − (−2, 5)']
 ]},
-{id:'SET-5-A',parent:'SET-5',variant:1,topic:'Interval sets from modulus conditions',source:'ExamSIDE · JEE Main 2021 (Online) 27th August Morning Shift · questions.examside.com (question id btg6sbjkrj44y8a0)',sourceRef:true,relevance:{parent:'SET-5',sharedSkill:'Solving modulus and root conditions into intervals and combining them with ∩ and complement.',recoveryPurpose:'Three sets and a complement are combined and then integers and subsets are counted, but the interval work is the same.'},question:'If A = {x ∈ ℝ : |x − 2| > 1}, B = {x ∈ ℝ : √(x² − 3) > 1}, C = {x ∈ ℝ : |x − 4| ≥ 2} and ℤ is the set of all integers, then the number of subsets of the set (A ∩ B ∩ C)ᶜ ∩ ℤ is ................',type:'numerical',answer:'256',
+{id:'SET-5-A',parent:'SET-5',variant:1,topic:'Interval sets from modulus conditions',diagram:'b51ModSets',source:'ExamSIDE · JEE Main 2021 (Online) 27th August Morning Shift · questions.examside.com (question id btg6sbjkrj44y8a0)',sourceRef:true,relevance:{parent:'SET-5',sharedSkill:'Solving modulus and root conditions into intervals and combining them with ∩ and complement.',recoveryPurpose:'Three sets and a complement are combined and then integers and subsets are counted, but the interval work is the same.'},question:'If A = {x ∈ ℝ : |x − 2| > 1}, B = {x ∈ ℝ : √(x² − 3) > 1}, C = {x ∈ ℝ : |x − 4| ≥ 2} and ℤ is the set of all integers, then the number of subsets of the set (A ∩ B ∩ C)ᶜ ∩ ℤ is ................',type:'numerical',answer:'256',
 short:[['','A ∩ B ∩ C = (−∞, −2) ∪ [6, ∞)'],['','(A ∩ B ∩ C)ᶜ ∩ ℤ = {−2, −1, 0, 1, 2, 3, 4, 5}','n = 8'],['','2⁸ = 256']],
 detailed:[
  ['Solve A: |x − 2| > 1 means x < 1 or x > 3.','A = (−∞, 1) ∪ (3, ∞)'],
@@ -301,7 +301,7 @@ detailed:[
  ['Verify with S = {1, 2, 3, 4}: 15 non-empty subsets, 3 of them odd-only, so 12 have an even product, and 2²(2² − 1) = 12.','15 − 3 = 12','2²(2² − 1) = 12'],
  ['2⁵⁰ − 1 is the odd-only count, which is the complement; 2¹⁰⁰ − 1 ignores the condition and counts all non-empty subsets; 2⁵⁰ + 1 gives 5 for the small check, not 12.','Answer: (B) 2⁵⁰(2⁵⁰ − 1)']
 ]},
-{id:'SET-8',level:2,topic:'Counting subsets of a product set',source:'ExamSIDE · JEE Main 2019 (Online) 12th January Evening Slot · questions.examside.com (question id 5zsixnttkr704cdf)',sourceRef:true,question:'Let ℤ be the set of integers. If A = {x ∈ ℤ : 2^((x + 2)(x² − 5x + 6)) = 1} and B = {x ∈ ℤ : −3 < 2x − 1 < 9}, then the number of subsets of the set A × B, is',options:['2¹²','2¹⁸','2¹⁰','2¹⁵'],correct:3,answer:'2¹⁵',
+{id:'SET-8',level:2,topic:'Counting subsets of a product set',diagram:'b51ProdGrid',source:'ExamSIDE · JEE Main 2019 (Online) 12th January Evening Slot · questions.examside.com (question id 5zsixnttkr704cdf)',sourceRef:true,question:'Let ℤ be the set of integers. If A = {x ∈ ℤ : 2^((x + 2)(x² − 5x + 6)) = 1} and B = {x ∈ ℤ : −3 < 2x − 1 < 9}, then the number of subsets of the set A × B, is',options:['2¹²','2¹⁸','2¹⁰','2¹⁵'],correct:3,answer:'2¹⁵',
 short:[['','(x + 2)(x − 2)(x − 3) = 0','A = {−2, 2, 3}'],['','−1 < x < 5','B = {0, 1, 2, 3, 4}'],['','n(A × B) = 3 × 5','= 15','number of subsets = 2¹⁵']],
 detailed:[
  ['A power of 2 equals 1 only when its exponent is 0, so set the exponent to zero.','(x + 2)(x² − 5x + 6) = 0'],
@@ -345,7 +345,7 @@ detailed:[
  ['Verify by complement: there are 45 pairs with m < n, and 14 of them share a factor (4 with m = 2, 2 with m = 3, 3 with m = 4, 1 with m = 5, 3 with m = 6, 1 with m = 8).','45 − 14 = 31'],
  ['The options 36 and 37 correspond to removing only 9 or 8 of the 14 pairs with a common factor, and 29 removes 16, which counts two pairs too many; each differs from 45 − 14, so only 31 satisfies the count.','Answer: (B) 31']
 ]},
-{id:'SET-12',level:2,topic:'Number of real solutions of a modulus equation',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Morning Shift · questions.examside.com (question id vossb3wlyyn6peds)',sourceRef:true,question:'The number of elements in the set {x ∈ ℝ : (|x| − 3)|x + 4| = 6} is equal to :',options:['4','2','3','1'],correct:1,answer:'2',
+{id:'SET-12',level:2,topic:'Number of real solutions of a modulus equation',diagram:'b51ModGraph',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Morning Shift · questions.examside.com (question id vossb3wlyyn6peds)',sourceRef:true,question:'The number of elements in the set {x ∈ ℝ : (|x| − 3)|x + 4| = 6} is equal to :',options:['4','2','3','1'],correct:1,answer:'2',
 short:[['','x ≥ 0: (x − 3)(x + 4) = 6','x² + x − 18 = 0','x = (−1 + √73)/2'],['','−4 ≤ x < 0: (−x − 3)(x + 4) = 6','x² + 7x + 18 = 0','D = −23 < 0'],['','x < −4: (x + 3)(x + 4) = 6','x² + 7x + 6 = 0','x = −6','number of elements = 2']],
 detailed:[
  ['The expressions |x| and |x + 4| change form at x = 0 and x = −4, so solve in three ranges.','x ≥ 0','−4 ≤ x < 0','x < −4'],
@@ -378,7 +378,7 @@ detailed:[
  ['Check the total.','385 + 715 = 1100'],
  ['550 comes from keeping only one of the two index sums, 385 and 715 are the separate values of A and B, and 2200 doubles the count of pairs.','Answer: 1100']
 ]},
-{id:'SET-15',level:3,topic:'Numbers not expressible as sums from a set',source:'ExamSIDE · JEE Main 2022 (Online) 29th July Morning Shift · questions.examside.com (question id z7c4mxcbaml30l26)',sourceRef:true,question:'Let S = {4, 6, 9} and T = {9, 10, 11, …, 1000}. If A = {a₁ + a₂ + … + a_(k) : k ∈ ℕ, a₁, a₂, a₃, …, a_(k) ∈ S}, then the sum of all the elements in the set T − A is equal to ........',type:'numerical',answer:'11',
+{id:'SET-15',level:3,topic:'Numbers not expressible as sums from a set',diagram:'b51Reach',source:'ExamSIDE · JEE Main 2022 (Online) 29th July Morning Shift · questions.examside.com (question id z7c4mxcbaml30l26)',sourceRef:true,question:'Let S = {4, 6, 9} and T = {9, 10, 11, …, 1000}. If A = {a₁ + a₂ + … + a_(k) : k ∈ ℕ, a₁, a₂, a₃, …, a_(k) ∈ S}, then the sum of all the elements in the set T − A is equal to ........',type:'numerical',answer:'11',
 short:[['','A = {sums of 4, 6, 9 with repetition allowed}'],['','9, 10 ∈ A','12, 13, 14, 15 ∈ A','n ∈ A','⇒ n + 4 ∈ A'],['','11 ∉ A','T − A = {11}','sum = 11']],
 detailed:[
  ['A contains every sum of any number of terms from S, with repetition allowed and k = 1 giving the elements themselves.','4, 6, 9 ∈ A'],
@@ -390,7 +390,7 @@ detailed:[
  ['Verify with a direct computation of sums up to 1000: the only number from 9 to 1000 missing is 11.','T − A = {11}'],
  ['Forgetting k = 1 would also exclude 9 and give 20, and forgetting repetition would remove many more numbers.','Answer: 11']
 ]},
-{id:'SET-16',level:2,topic:'Equivalence relation on a subset of ℝ × ℝ',source:'ExamSIDE · AIEEE 2008 · questions.examside.com (question id jre7pdboffzdk15t)',sourceRef:true,question:'Let ℝ be the real line. Consider the following subsets of the plane ℝ × ℝ : S = {(x, y) : y = x + 1 and 0 < x < 2}, T = {(x, y) : x − y is an integer}, Which one of the following is true ?',options:['Neither S nor T is an equivalence relation on ℝ','Both S and T are equivalence relation on ℝ','S is an equivalence relation on ℝ but T is not','T is an equivalence relation on ℝ but S is not'],correct:3,answer:'T is an equivalence relation on ℝ but S is not',
+{id:'SET-16',level:2,topic:'Equivalence relation on a subset of ℝ × ℝ',diagram:'b51Plane',source:'ExamSIDE · AIEEE 2008 · questions.examside.com (question id jre7pdboffzdk15t)',sourceRef:true,question:'Let ℝ be the real line. Consider the following subsets of the plane ℝ × ℝ : S = {(x, y) : y = x + 1 and 0 < x < 2}, T = {(x, y) : x − y is an integer}, Which one of the following is true ?',options:['Neither S nor T is an equivalence relation on ℝ','Both S and T are equivalence relation on ℝ','S is an equivalence relation on ℝ but T is not','T is an equivalence relation on ℝ but S is not'],correct:3,answer:'T is an equivalence relation on ℝ but S is not',
 short:[['','(x, x) ∈ S','⇒ x = x + 1, impossible','S is not reflexive'],['','x − x = 0 ∈ ℤ','x − y ∈ ℤ','⇒ y − x ∈ ℤ','(x − y) + (y − z) = x − z ∈ ℤ'],['','T is an equivalence relation on ℝ, S is not']],
 detailed:[
  ['A subset of ℝ × ℝ is a relation on ℝ, and an equivalence relation must be reflexive, symmetric and transitive.','(x, x) ∈ R for all x'],
@@ -402,7 +402,7 @@ detailed:[
  ['So T is an equivalence relation and S is not.','x R y ⇔ x − y ∈ ℤ'],
  ['(A) wrongly rejects T; (B) wrongly accepts S, overlooking reflexivity; (C) swaps the two verdicts.','Answer: (D) T is an equivalence relation on ℝ but S is not']
 ]},
-{id:'SET-17',level:2,topic:'Set operations on interval sets',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Evening Shift · questions.examside.com (question id h9oaqjtj30ka8mqo)',sourceRef:true,question:'Let A = {x : |x² − 10| ≤ 6} and B = {x : |x − 2| > 1}. Then',options:['A ∪ B = (−∞, 1] ∪ (2, ∞)','B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)','A − B = [2, 3)','A ∩ B = [−4, −2] ∪ [3, 4]'],correct:1,answer:'B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)',
+{id:'SET-17',level:2,topic:'Set operations on interval sets',diagram:'b51Intervals',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Evening Shift · questions.examside.com (question id h9oaqjtj30ka8mqo)',sourceRef:true,question:'Let A = {x : |x² − 10| ≤ 6} and B = {x : |x − 2| > 1}. Then',options:['A ∪ B = (−∞, 1] ∪ (2, ∞)','B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)','A − B = [2, 3)','A ∩ B = [−4, −2] ∪ [3, 4]'],correct:1,answer:'B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)',
 short:[['','|x² − 10| ≤ 6','⇒ 4 ≤ x² ≤ 16','⇒ A = [−4, −2] ∪ [2, 4]'],['','|x − 2| > 1','⇒ B = (−∞, 1) ∪ (3, ∞)'],['','B − A = (−∞, −4) ∪ (−2, 1) ∪ (4, ∞)']],
 detailed:[
  ['The modulus inequality |u| ≤ 6 means −6 ≤ u ≤ 6, so apply it with u = x² − 10.','−6 ≤ x² − 10 ≤ 6','⇒ 4 ≤ x² ≤ 16'],
@@ -424,7 +424,7 @@ detailed:[
  ['A ∩ B is not empty either, because the centre (5, 5) of A gives 4(1) + 0 = 4 ≤ 36.','(5, 5) ∈ A ∩ B'],
  ['Option (A) fails because A ⊂ B holds. Option (B) fails because of (9, 5). Option (D) fails because of (5, 5).','Answer: (C) A ⊂ B']
 ]},
-{id:'SET-19',level:3,topic:'Counting multiples by inclusion-exclusion',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Morning Shift · questions.examside.com (question id 8yaze7l1ephavpla)',sourceRef:true,question:'Let A = {n ∈ [100, 700] ∩ ℕ : n is neither a multiple of 3 nor a multiple of 4}. Then the number of elements in A is',options:['300','310','290','280'],correct:0,answer:'300',
+{id:'SET-19',level:3,topic:'Counting multiples by inclusion-exclusion',diagram:'b51Venn34',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Morning Shift · questions.examside.com (question id 8yaze7l1ephavpla)',sourceRef:true,question:'Let A = {n ∈ [100, 700] ∩ ℕ : n is neither a multiple of 3 nor a multiple of 4}. Then the number of elements in A is',options:['300','310','290','280'],correct:0,answer:'300',
 short:[['','n(S) = 700 − 100 + 1','= 601'],['','multiples of 3: 233 − 33 = 200','multiples of 4: 175 − 24 = 151','multiples of 12: 58 − 8 = 50'],['','n(A) = 601 − (200 + 151 − 50)','= 300']],
 detailed:[
  ['Count all integers in the interval first, both ends included.','n(S) = 700 − 100 + 1','= 601'],
@@ -435,7 +435,7 @@ detailed:[
  ['Check by a different route: in every block of 12 consecutive integers exactly 12 − 4 − 3 + 1 = 6 are neither, and 601 ≈ 50 blocks of 12 plus one extra number, so about 300 numbers.','50 × 6 = 300 (numbers 100 to 699)','700 = 4 × 175 is a multiple of 4'],
  ['Options (B), (C) and (D) do not equal the checked count 300. A typical slip is to count multiples from 1 instead of from 100 (233, 175, 58), which gives 601 − 233 − 175 + 58 = 251, none of the options; skipping the \'add back multiples of 12\' step gives 601 − 351 = 250, also not offered.','Answer: (A) 300']
 ]},
-{id:'SET-20',level:3,topic:'Elements in a residue class as an AP',source:'ExamSIDE · JEE Main 2023 (Online) 15th April Morning Shift · questions.examside.com (question id oefhp39iyxwep6vb)',sourceRef:true,question:'The number of elements in the set {n ∈ ℕ : 10 ≤ n ≤ 100 and 3ⁿ − 3 is a multiple of 7} is .........',type:'numerical',answer:'15',
+{id:'SET-20',level:3,topic:'Elements in a residue class as an AP',diagram:'b51Step6',source:'ExamSIDE · JEE Main 2023 (Online) 15th April Morning Shift · questions.examside.com (question id oefhp39iyxwep6vb)',sourceRef:true,question:'The number of elements in the set {n ∈ ℕ : 10 ≤ n ≤ 100 and 3ⁿ − 3 is a multiple of 7} is .........',type:'numerical',answer:'15',
 short:[['','3ⁿ − 3 = 3(3^(n − 1) − 1) ≡ 0 (mod 7)','⇒ 3^(n − 1) ≡ 1 (mod 7)'],['','3⁶ ≡ 1 (mod 7)','n − 1 = 6k','n = 6k + 1'],['','13 ≤ n ≤ 97','⇒ k = 2, …, 16','⇒ 15 values']],
 detailed:[
  ['Factor 3 out; since 3 and 7 are coprime, 7 divides 3ⁿ − 3 exactly when 7 divides 3^(n − 1) − 1.','3ⁿ − 3 = 3(3^(n − 1) − 1)'],
@@ -446,7 +446,7 @@ detailed:[
  ['Spot check: n = 13 gives 3¹³ − 3 = 1594320, and 1594320 = 7 × 227760; n = 12 gives 3¹² − 3 = 531438, and 531438 = 7 × 75919 + 5, so it fails.','1594320 = 7 × 227760'],
  ['Using n ≡ 0 (mod 6) instead of n ≡ 1 is the wrong residue (n = 12 fails), and starting the count at n = 7, the first term of the progression, ignores the lower limit 10.','Answer: 15']
 ]},
-{id:'SET-21',level:2,topic:'Integers satisfying a modulus inequality',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Morning Shift · questions.examside.com (question id fqokfd6hg4boxq25)',sourceRef:true,question:'The number of elements in the set {n ∈ ℤ : |n² − 10n + 19| < 6} is .........',type:'numerical',answer:'6',
+{id:'SET-21',level:2,topic:'Integers satisfying a modulus inequality',diagram:'b51ModParabola',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Morning Shift · questions.examside.com (question id fqokfd6hg4boxq25)',sourceRef:true,question:'The number of elements in the set {n ∈ ℤ : |n² − 10n + 19| < 6} is .........',type:'numerical',answer:'6',
 short:[['','|n² − 10n + 19| < 6','⇒ |(n − 5)² − 6| < 6'],['','−6 < (n − 5)² − 6 < 6','⇒ 0 < (n − 5)² < 12'],['','n − 5 ∈ {±1, ±2, ±3}','⇒ 6 integers']],
 detailed:[
  ['Complete the square so the expression depends on n − 5.','n² − 10n + 19 = (n − 5)² − 6'],
@@ -457,7 +457,7 @@ detailed:[
  ['Check the ends: n = 2 gives 4 − 20 + 19 = 3 and n = 8 gives 64 − 80 + 19 = 3, both inside (−6, 6), while n = 1 gives 10 and n = 9 gives 10, which are outside.','|3| < 6, |10| > 6'],
  ['Counting n = 5 would give 7, but then |25 − 50 + 19| = |−6| = 6 is not < 6; allowing (n − 5)² = 12 has no integer solution, so no more elements arise.','Answer: 6']
 ]},
-{id:'SET-22',level:3,topic:'Counting subsets by a membership rule',source:'ExamSIDE · JEE Main 2022 (Online) 26th July Evening Shift · questions.examside.com (question id ufnm4gl51qybufyt)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7} and B = {3, 6, 7, 9}. Then the number of elements in the set {C ⊆ A : C ∩ B ≠ ∅} is .........',type:'numerical',answer:'112',
+{id:'SET-22',level:3,topic:'Counting subsets by a membership rule',diagram:'b51Subsets',source:'ExamSIDE · JEE Main 2022 (Online) 26th July Evening Shift · questions.examside.com (question id ufnm4gl51qybufyt)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7} and B = {3, 6, 7, 9}. Then the number of elements in the set {C ⊆ A : C ∩ B ≠ ∅} is .........',type:'numerical',answer:'112',
 short:[['','all subsets of A: 2⁷ = 128'],['','C ∩ B = ∅','⇔ C ⊆ A − B = {1, 2, 4, 5}','2⁴ = 16'],['','128 − 16 = 112']],
 detailed:[
  ['The set A has 7 elements, so it has 2⁷ subsets C in all.','n(P(A)) = 2⁷','= 128'],
@@ -468,7 +468,7 @@ detailed:[
  ['Check by direct counting: subsets containing at least one of 3, 6, 7 are (2³ − 1) × 2⁴, choosing a non-empty part of {3, 6, 7} and any part of {1, 2, 4, 5}.','(8 − 1) × 16 = 112'],
  ['Counting 9 as one of the elements to avoid, or taking the 5-element set {1, 2, 4, 5, 9}, would give 128 − 32 = 96; using only 2³ = 8 for the complement gives 120. Both miss that exactly 4 elements of A lie outside B, so the complement has 2⁴ = 16 subsets.','Answer: 112']
 ]},
-{id:'SET-23',level:3,topic:'Subsets with an either-or condition and a prime sum',source:'ExamSIDE · JEE Main 2022 (Online) 25th July Evening Shift · questions.examside.com (question id ihcbil7eckykysuv)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7}. Define B = {T ⊆ A : either 1 ∉ T or 2 ∈ T} and C = {T ⊆ A : the sum of all the elements of T is a prime number}. Then the number of elements in the set B ∪ C is .........',type:'numerical',answer:'107',
+{id:'SET-23',level:3,topic:'Subsets with an either-or condition and a prime sum',diagram:'b52Subsets23',source:'ExamSIDE · JEE Main 2022 (Online) 25th July Evening Shift · questions.examside.com (question id ihcbil7eckykysuv)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7}. Define B = {T ⊆ A : either 1 ∉ T or 2 ∈ T} and C = {T ⊆ A : the sum of all the elements of T is a prime number}. Then the number of elements in the set B ∪ C is .........',type:'numerical',answer:'107',
 short:[['','outside B ∪ C: 1 ∈ T, 2 ∉ T and the sum of T is not prime'],['','T = {1} ∪ U, U ⊆ {3, 4, 5, 6, 7}: 32 subsets, 1 + sum(U) prime for 11 of them'],['','n(B ∪ C) = 128 − (32 − 11)','= 107']],
 detailed:[
  ['A has 7 elements, so it has 2⁷ = 128 subsets. Count the subsets that are in neither B nor C and subtract.','n(B ∪ C) = 128 − n(not B and not C)'],
@@ -491,7 +491,7 @@ detailed:[
  ['Check: with n = 30 the 30 sets of 5 elements give 150 memberships, and 25 elements × 6 sets = 150.','30 × 5 = 25 × 6','= 150'],
  ['Option (B) 50 repeats the number of the Xᵢ, but 5 × 50 = 250 is not divisible by 6. Option (C) 15 gives 75 memberships, and 75/6 = 12.5 is not a whole number of elements. Option (D) 45 gives 225, and 225/6 = 37.5 is not whole either; only n = 30 gives n(T) = 25.','Answer: (A) 30']
 ]},
-{id:'SET-25',level:3,topic:'Counting one-one functions between solution sets',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Morning Shift · questions.examside.com (question id npu1udsjp1ys6nvz)',sourceRef:true,question:'Consider the sets A = {(x, y) ∈ ℝ × ℝ : x² + y² = 25}, B = {(x, y) ∈ ℝ × ℝ : x² + 9y² = 144}, C = {(x, y) ∈ ℤ × ℤ : x² + y² ≤ 4} and D = A ∩ B. The total number of one-one functions from the set D to the set C is:',options:['15120','18290','17160','19320'],correct:2,answer:'17160',
+{id:'SET-25',level:3,topic:'Counting one-one functions between solution sets',diagram:'b52Circle25',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Morning Shift · questions.examside.com (question id npu1udsjp1ys6nvz)',sourceRef:true,question:'Consider the sets A = {(x, y) ∈ ℝ × ℝ : x² + y² = 25}, B = {(x, y) ∈ ℝ × ℝ : x² + 9y² = 144}, C = {(x, y) ∈ ℤ × ℤ : x² + y² ≤ 4} and D = A ∩ B. The total number of one-one functions from the set D to the set C is:',options:['15120','18290','17160','19320'],correct:2,answer:'17160',
 short:[['','x² + y² = 25','x² + 9y² = 144','⇒ 8y² = 119','y² = 119/8','x² = 81/8','n(D) = 4'],['','C: (0, 0), (±1, 0), (0, ±1), (±1, ±1), (±2, 0), (0, ±2)','⇒ n(C) = 13'],['','one-one functions = ¹³P₄','= 13 × 12 × 11 × 10','= 17160']],
 detailed:[
  ['Subtract the circle equation from the ellipse equation to eliminate x².','(x² + 9y²) − (x² + y²) = 144 − 25','⇒ 8y² = 119'],
@@ -515,7 +515,7 @@ detailed:[
  ['Check with θ = 67.5°: sin 67.5° ≈ 0.9239, cos 67.5° ≈ 0.3827, so 0.9239 − 0.3827 = 0.5412 = √2 × 0.3827 and 0.9239 + 0.3827 = 1.3066 = √2 × 0.9239.','0.5412 = √2 × 0.3827','1.3066 = √2 × 0.9239'],
  ['Options (A), (B) and (C) each claim a proper inclusion or non-inclusion, which would need a θ in one set and not in the other; no such θ exists since both sets are tan θ = √2 + 1.','Answer: (D) P = Q']
 ]},
-{id:'SET-27',level:2,topic:'Reflexive, symmetric, transitive test on ℕ',source:'ExamSIDE · JEE Main 2022 (Online) 28th June Evening Shift · questions.examside.com (question id nk0vb5inaby2t6ps)',sourceRef:true,question:'Let R₁ = {(a, b) ∈ ℕ × ℕ : |a − b| ≤ 13} and R₂ = {(a, b) ∈ ℕ × ℕ : |a − b| ≠ 13}. Then on ℕ:',options:['Both R₁ and R₂ are equivalence relations','Neither R₁ nor R₂ is an equivalence relation','R₁ is an equivalence relation but R₂ is not','R₂ is an equivalence relation but R₁ is not'],correct:1,answer:'Neither R₁ nor R₂ is an equivalence relation',
+{id:'SET-27',level:2,topic:'Reflexive, symmetric, transitive test on ℕ',diagram:'b52Arcs27',source:'ExamSIDE · JEE Main 2022 (Online) 28th June Evening Shift · questions.examside.com (question id nk0vb5inaby2t6ps)',sourceRef:true,question:'Let R₁ = {(a, b) ∈ ℕ × ℕ : |a − b| ≤ 13} and R₂ = {(a, b) ∈ ℕ × ℕ : |a − b| ≠ 13}. Then on ℕ:',options:['Both R₁ and R₂ are equivalence relations','Neither R₁ nor R₂ is an equivalence relation','R₁ is an equivalence relation but R₂ is not','R₂ is an equivalence relation but R₁ is not'],correct:1,answer:'Neither R₁ nor R₂ is an equivalence relation',
 short:[['','(1, 14) ∈ R₁','(14, 27) ∈ R₁','|1 − 27| = 26 > 13','⇒ (1, 27) ∉ R₁'],['','(1, 5) ∈ R₂','(5, 14) ∈ R₂','|1 − 14| = 13','⇒ (1, 14) ∉ R₂'],['','neither is transitive']],
 detailed:[
  ['Reflexive: |a − a| = 0, which is ≤ 13 and ≠ 13, so both relations are reflexive.','|a − a| = 0'],
@@ -548,7 +548,7 @@ detailed:[
  ['Check that the counterexample satisfies the premise: A ∩ B = {1} is non-empty and ⊆ C, and A − C = ∅ ⊆ B, but 2 ∈ A and 2 ∉ B.','A ⊄ B'],
  ['Statements (A), (B) and (C) are proved true. Statement (D) is the one that fails; it is a common slip to assume that A − C ⊆ B puts all of A into B.','Answer: (D) If (A − C) ⊆ B, then A ⊆ B']
 ]},
-{id:'SET-17-A',parent:'SET-17',variant:1,topic:'Set operations on interval sets',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Morning Slot · questions.examside.com (question id azqmhn7dftbixjtz)',sourceRef:true,relevance:{parent:'SET-17',sharedSkill:'Turn the condition that defines a set into intervals, then apply union, intersection and difference with careful endpoints',recoveryPurpose:'The interval now comes from a discriminant condition instead of a modulus, so the solver must first solve a quadratic inequality, but the endpoint-checking in the set operations is the same'},question:'Consider the two sets: A = {m ∈ ℝ : both the roots of x² − (m + 1)x + m + 4 = 0 are real} and B = [−3, 5). Which of the following is not true?',options:['A ∩ B = {−3}','B − A = (−3, 5)','A ∪ B = ℝ','A − B = (−∞, −3) ∪ (5, ∞)'],correct:3,answer:'A − B = (−∞, −3) ∪ (5, ∞)',
+{id:'SET-17-A',parent:'SET-17',variant:1,topic:'Set operations on interval sets',diagram:'b52Interval17',source:'ExamSIDE · JEE Main 2020 (Online) 3rd September Morning Slot · questions.examside.com (question id azqmhn7dftbixjtz)',sourceRef:true,relevance:{parent:'SET-17',sharedSkill:'Turn the condition that defines a set into intervals, then apply union, intersection and difference with careful endpoints',recoveryPurpose:'The interval now comes from a discriminant condition instead of a modulus, so the solver must first solve a quadratic inequality, but the endpoint-checking in the set operations is the same'},question:'Consider the two sets: A = {m ∈ ℝ : both the roots of x² − (m + 1)x + m + 4 = 0 are real} and B = [−3, 5). Which of the following is not true?',options:['A ∩ B = {−3}','B − A = (−3, 5)','A ∪ B = ℝ','A − B = (−∞, −3) ∪ (5, ∞)'],correct:3,answer:'A − B = (−∞, −3) ∪ (5, ∞)',
 short:[['','D = (m + 1)² − 4(m + 4) ≥ 0','⇒ m² − 2m − 15 ≥ 0'],['','(m − 5)(m + 3) ≥ 0','⇒ A = (−∞, −3] ∪ [5, ∞)'],['','A − B = (−∞, −3) ∪ [5, ∞) ≠ (−∞, −3) ∪ (5, ∞)']],
 detailed:[
  ['Both roots are real exactly when the discriminant of the quadratic is non-negative.','D = (m + 1)² − 4(m + 4) ≥ 0'],
@@ -637,7 +637,7 @@ detailed:[
  ['Check by a second route: the first failure used a = 2 (gcd 2) and the second used 2a = b, so every property fails for a concrete reason and the three counterexamples are independent.','counterexamples: (2, 2), then (2, 1) with (1, 2), then (1, 3) and (3, 2) with (1, 2)'],
  ['Options (A), (B) and (C) each claim reflexivity, transitivity or symmetry, and each is refuted above: (A) assumes gcd(a, a) = 1 for all a, (B) overlooks (1, 3), (3, 2), (C) overlooks that 2a ≠ b is not symmetric. Only (D) agrees.','Answer: (D) neither symmetric nor transitive']
 ]},
-{id:'SET-30-A',parent:'SET-30',variant:1,topic:'Testing reflexive, symmetric and transitive from the definition',source:'ExamSIDE · JEE Main 2018 (Online) 16th April Morning Slot · questions.examside.com (question id 4qpbztez1fryj0qj)',sourceRef:true,relevance:{parent:'SET-30',sharedSkill:'List the pairs, then test symmetry and transitivity (and range) from the definition',recoveryPurpose:'The relation is given by linear equations on ℕ instead of a divisibility condition, so every property is tested on an explicit list of pairs.'},question:'Let ℕ denote the set of all natural numbers. Define two binary relations on ℕ as R₁ = {(x, y) ∈ ℕ × ℕ : 2x + y = 10} and R₂ = {(x, y) ∈ ℕ × ℕ : x + 2y = 10}. Then :',options:['Range of R₁ is {2, 4, 8}.','Range of R₂ is {1, 2, 3, 4}.','Both R₁ and R₂ are symmetric relations.','Both R₁ and R₂ are transitive relations.'],correct:1,answer:'Range of R₂ is {1, 2, 3, 4}.',
+{id:'SET-30-A',parent:'SET-30',variant:1,topic:'Testing reflexive, symmetric and transitive from the definition',diagram:'b52Pairs30A',source:'ExamSIDE · JEE Main 2018 (Online) 16th April Morning Slot · questions.examside.com (question id 4qpbztez1fryj0qj)',sourceRef:true,relevance:{parent:'SET-30',sharedSkill:'List the pairs, then test symmetry and transitivity (and range) from the definition',recoveryPurpose:'The relation is given by linear equations on ℕ instead of a divisibility condition, so every property is tested on an explicit list of pairs.'},question:'Let ℕ denote the set of all natural numbers. Define two binary relations on ℕ as R₁ = {(x, y) ∈ ℕ × ℕ : 2x + y = 10} and R₂ = {(x, y) ∈ ℕ × ℕ : x + 2y = 10}. Then :',options:['Range of R₁ is {2, 4, 8}.','Range of R₂ is {1, 2, 3, 4}.','Both R₁ and R₂ are symmetric relations.','Both R₁ and R₂ are transitive relations.'],correct:1,answer:'Range of R₂ is {1, 2, 3, 4}.',
 short:[['','R₁ = {(1, 8), (2, 6), (3, 4), (4, 2)}','R₂ = {(8, 1), (6, 2), (4, 3), (2, 4)}'],['','range of R₁ = {2, 4, 6, 8}','range of R₂ = {1, 2, 3, 4}'],['','(1, 8) ∈ R₁ but (8, 1) ∉ R₁','⇒ not symmetric','(3, 4), (4, 2) ∈ R₁ but (3, 2) ∉ R₁','⇒ not transitive']],
 detailed:[
  ['With ℕ = {1, 2, 3, …}, list every pair of each relation by solving for y (or x) from the equation and keeping positive integers.','R₁: y = 10 − 2x','⇒ x = 1, 2, 3, 4','R₁ = {(1, 8), (2, 6), (3, 4), (4, 2)}'],
@@ -670,7 +670,7 @@ detailed:[
  ['Cross-check by checking all 30 pairs of A × B by computer: reflexivity and symmetry hold for every pair, and many chains (2268 triples) break transitivity, so the failure is not a one-off.','reflexive, symmetric, not transitive'],
  ['Option (A) fails because R is symmetric, (B) because R is not transitive, and (D) because R is not transitive (it is symmetric as well). Only (C) matches.','Answer: (C) reflexive and symmetric but not transitive.']
 ]},
-{id:'SET-31',level:2,topic:'Equivalence relation from residue classes',source:'ExamSIDE · JEE Main 2026 (Online) 23rd January Evening Shift · questions.examside.com (question id 8kq77cwmhtjarnic)',sourceRef:true,question:'Let A = {0, 1, 2, …, 9}. Let R be a relation on A defined by (x, y) ∈ R if and only if |x − y| is a multiple of 3. Given below are two statements : Statement I : n(R) = 36. Statement II : R is an equivalence relation. In the light of the above statements, choose the correct answer from the options given below :',options:['Statement I is correct but Statement II is incorrect','Both Statement I and Statement II are correct','Both Statement I and Statement II are incorrect','Statement I is incorrect but Statement II is correct'],correct:3,answer:'Statement I is incorrect but Statement II is correct',
+{id:'SET-31',level:2,topic:'Equivalence relation from residue classes',diagram:'b52Classes31',source:'ExamSIDE · JEE Main 2026 (Online) 23rd January Evening Shift · questions.examside.com (question id 8kq77cwmhtjarnic)',sourceRef:true,question:'Let A = {0, 1, 2, …, 9}. Let R be a relation on A defined by (x, y) ∈ R if and only if |x − y| is a multiple of 3. Given below are two statements : Statement I : n(R) = 36. Statement II : R is an equivalence relation. In the light of the above statements, choose the correct answer from the options given below :',options:['Statement I is correct but Statement II is incorrect','Both Statement I and Statement II are correct','Both Statement I and Statement II are incorrect','Statement I is incorrect but Statement II is correct'],correct:3,answer:'Statement I is incorrect but Statement II is correct',
 short:[['','|x − y| is a multiple of 3','⇔ x ≡ y (mod 3)','⇒ R is an equivalence relation'],['','classes: {0, 3, 6, 9}, {1, 4, 7}, {2, 5, 8}'],['','n(R) = 4² + 3² + 3²','= 34 ≠ 36']],
 detailed:[
  ['The condition |x − y| = 3k for an integer k ≥ 0 is the same as x ≡ y (mod 3). So R is congruence modulo 3 restricted to A.','(x, y) ∈ R','⇔ x ≡ y (mod 3)'],
@@ -680,7 +680,7 @@ detailed:[
  ['Verification by direct count: for x = 0, 3, 6, 9 there are 4 partners each (16 pairs), for the other six values 3 partners each (18 pairs).','16 + 18 = 34'],
  ['Statement I claims 36, but the classes have the unequal sizes 4, 3 and 3, so the count is 16 + 9 + 9 = 34 and not 36. So only Statement II holds.','Answer: (D) Statement I is incorrect but Statement II is correct']
 ]},
-{id:'SET-32',level:1,topic:'Equivalence class of a given element',source:'ExamSIDE · JEE Main 2021 (Online) 26th February Morning Shift · questions.examside.com (question id bxykqqaxoqaaz4hb)',sourceRef:true,question:'Let R = {(P, Q) | P and Q are at the same distance from the origin} be a relation, then the equivalence class of (1, −1) is the set :',options:['S = {(x, y) | x² + y² = √2}','S = {(x, y) | x² + y² = 2}','S = {(x, y) | x² + y² = 1}','S = {(x, y) | x² + y² = 4}'],correct:1,answer:'S = {(x, y) | x² + y² = 2}',
+{id:'SET-32',level:1,topic:'Equivalence class of a given element',diagram:'b52Circle32',source:'ExamSIDE · JEE Main 2021 (Online) 26th February Morning Shift · questions.examside.com (question id bxykqqaxoqaaz4hb)',sourceRef:true,question:'Let R = {(P, Q) | P and Q are at the same distance from the origin} be a relation, then the equivalence class of (1, −1) is the set :',options:['S = {(x, y) | x² + y² = √2}','S = {(x, y) | x² + y² = 2}','S = {(x, y) | x² + y² = 1}','S = {(x, y) | x² + y² = 4}'],correct:1,answer:'S = {(x, y) | x² + y² = 2}',
 short:[['','distance of (1, −1) from the origin = √(1² + (−1)²)','= √2'],['','[(1, −1)] = {(x, y) : √(x² + y²) = √2}','= {(x, y) : x² + y² = 2}']],
 detailed:[
  ['The equivalence class of a point P is the set of all points Q with (P, Q) ∈ R, here all points at the same distance from the origin as P.','[(1, −1)] = {(x, y) : (x, y) R (1, −1)}'],
@@ -690,7 +690,7 @@ detailed:[
  ['Verification: the point (1, −1) itself gives 1 + 1 = 2, and so does (√2, 0), which is also at distance √2 from the origin.','1² + (−1)² = 2'],
  ['Option (A) leaves the distance √2 unsquared, equating x² + y² to the radius. Option (C) is the circle through (1, 0), and option (D) uses the radius 2 as the value of x² + y².','Answer: (B) S = {(x, y) | x² + y² = 2}']
 ]},
-{id:'SET-32-A',parent:'SET-32',variant:1,topic:'Equivalence class of a given element',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Evening Shift · questions.examside.com (question id buyfhixmmztpidvd)',sourceRef:true,relevance:{parent:'SET-32',sharedSkill:'Find the class of a given element by solving the defining condition for the unknown pair',recoveryPurpose:'The class is now counted inside a finite set of pairs, so the bounds on k decide the count instead of a locus.'},question:'Let A = {2, 3, 4, 5, ....., 30} and \'≃\' be an equivalence relation on A × A, defined by (a, b) ≃ (c, d), if and only if ad = bc. Then the number of ordered pairs which satisfy this equivalence relation with ordered pair (4, 3) is equal to :',options:['5','6','8','7'],correct:3,answer:'7',
+{id:'SET-32-A',parent:'SET-32',variant:1,topic:'Equivalence class of a given element',diagram:'b52Line32A',source:'ExamSIDE · JEE Main 2021 (Online) 16th March Evening Shift · questions.examside.com (question id buyfhixmmztpidvd)',sourceRef:true,relevance:{parent:'SET-32',sharedSkill:'Find the class of a given element by solving the defining condition for the unknown pair',recoveryPurpose:'The class is now counted inside a finite set of pairs, so the bounds on k decide the count instead of a locus.'},question:'Let A = {2, 3, 4, 5, ....., 30} and \'≃\' be an equivalence relation on A × A, defined by (a, b) ≃ (c, d), if and only if ad = bc. Then the number of ordered pairs which satisfy this equivalence relation with ordered pair (4, 3) is equal to :',options:['5','6','8','7'],correct:3,answer:'7',
 short:[['','(4, 3) ≃ (c, d)','⇔ 4d = 3c','⇒ c = 4k','d = 3k'],['','2 ≤ 3k and 4k ≤ 30','⇒ k = 1, 2, …, 7'],['','number of pairs = 7']],
 detailed:[
  ['The ordered pairs related to (4, 3) are the pairs (c, d) in A × A with 4d = 3c, which is the equivalence class of (4, 3).','4d = 3c'],
@@ -722,7 +722,7 @@ detailed:[
  ['Verification: the frequencies add up to 16 on both sides, and a direct pair check agrees, for example (2, 1) with (1, 1) works because 7 = 7, and (1, 2) with (1, 2) does not because 8 ≠ 11.','n(R) = 12'],
  ['Option (B) 15 and (D) 18 over-count, since only 10 values are common and just 11 and 14 occur twice on the left. Option (A) 6 under-counts, since the 8 common values occurring once already give 8. Only 12 fits.','Answer: (C) 12']
 ]},
-{id:'SET-34',level:2,topic:'Counting a relation defined by two independent inequalities',source:'ExamSIDE · JEE Main 2023 (Online) 11th April Evening Shift · questions.examside.com (question id avg8fmgsgz7uipbm)',sourceRef:true,question:'Let A = {1, 3, 4, 6, 9} and B = {2, 4, 5, 8, 10}. Let R be a relation defined on A × B such that R = {((a₁, b₁), (a₂, b₂)) : a₁ ≤ b₂ and b₁ ≤ a₂}. Then the number of elements in the set R is :',options:['180','26','52','160'],correct:3,answer:'160',
+{id:'SET-34',level:2,topic:'Counting a relation defined by two independent inequalities',diagram:'b53Rel34',source:'ExamSIDE · JEE Main 2023 (Online) 11th April Evening Shift · questions.examside.com (question id avg8fmgsgz7uipbm)',sourceRef:true,question:'Let A = {1, 3, 4, 6, 9} and B = {2, 4, 5, 8, 10}. Let R be a relation defined on A × B such that R = {((a₁, b₁), (a₂, b₂)) : a₁ ≤ b₂ and b₁ ≤ a₂}. Then the number of elements in the set R is :',options:['180','26','52','160'],correct:3,answer:'160',
 short:[['','a₁ ≤ b₂ and b₁ ≤ a₂ involve disjoint pairs of variables'],['','#{(a₁, b₂) : a₁ ≤ b₂} = 5 + 4 + 4 + 2 + 1','= 16'],['','#{(b₁, a₂) : b₁ ≤ a₂} = 4 + 3 + 2 + 1 + 0','= 10','n(R) = 16 × 10','= 160']],
 detailed:[
  ['The condition is a conjunction of a₁ ≤ b₂ and b₁ ≤ a₂. The first uses only a₁ and b₂ and the second only b₁ and a₂, so the choices are independent.','n(R) = #{(a₁, b₂)} × #{(b₁, a₂)}'],
@@ -733,7 +733,7 @@ detailed:[
  ['Multiply the two independent counts.','n(R) = 16 × 10','= 160'],
  ['Verification by brute force over all 25 × 25 = 625 pairs of elements of A × B gives 160. Option (B) 26 adds 16 + 10 instead of multiplying, and option (C) 52 is twice that. Option (A) 180 is not a product of the two counts, so it cannot be right.','Answer: (D) 160']
 ]},
-{id:'SET-35',level:2,topic:'Counting a relation whose second coordinate is restricted',source:'ExamSIDE · JEE Main 2022 (Online) 29th July Morning Shift · questions.examside.com (question id 63pinoat8dkiqjpd)',sourceRef:true,question:'Let R be a relation from the set {1, 2, 3, …, 60} to itself such that R = {(a, b) : b = pq, where p, q ≥ 3 are prime numbers}. Then, the number of elements in R is :',options:['600','660','540','720'],correct:1,answer:'660',
+{id:'SET-35',level:2,topic:'Counting a relation whose second coordinate is restricted',diagram:'b53Rel35',source:'ExamSIDE · JEE Main 2022 (Online) 29th July Morning Shift · questions.examside.com (question id 63pinoat8dkiqjpd)',sourceRef:true,question:'Let R be a relation from the set {1, 2, 3, …, 60} to itself such that R = {(a, b) : b = pq, where p, q ≥ 3 are prime numbers}. Then, the number of elements in R is :',options:['600','660','540','720'],correct:1,answer:'660',
 short:[['','b ∈ {9, 15, 21, 25, 33, 35, 39, 49, 51, 55, 57}'],['','number of admissible b = 11','number of choices of a = 60'],['','n(R) = 11 × 60','= 660']],
 detailed:[
  ['The condition restricts only b, since a does not appear in b = pq. So every a ∈ {1, …, 60} is related to every admissible b.','n(R) = 60 × (number of admissible b)'],
@@ -744,7 +744,7 @@ detailed:[
  ['Count the values and multiply by the 60 choices of a.','n(R) = 11 × 60','= 660'],
  ['Verification: 7 products with 3, three with 5 and one with 7 give 11 values. Option (C) 540 uses 9 values, (A) 600 uses 10, and (D) 720 uses 12, for example by wrongly including 45 = 3·3·5. Excluding 9 and 49 (distinct primes only) would give 9, so p = q matters.','Answer: (B) 660']
 ]},
-{id:'SET-36',level:2,topic:'Minimum size of a symmetric superset of a relation',source:'ExamSIDE · JEE Main 2024 (Online) 31st January Evening Shift · questions.examside.com (question id c0ybpocpvfagoao0)',sourceRef:true,question:'Let A = {1, 2, 3, …, 100}. Let R be a relation on A defined by (x, y) ∈ R if and only if 2x = 3y. Let R₁ be a symmetric relation on A such that R ⊂ R₁ and the number of elements in R₁ is n. Then, the minimum value of n is .........',type:'numerical',answer:'66',
+{id:'SET-36',level:2,topic:'Minimum size of a symmetric superset of a relation',diagram:'b53Rel36',source:'ExamSIDE · JEE Main 2024 (Online) 31st January Evening Shift · questions.examside.com (question id c0ybpocpvfagoao0)',sourceRef:true,question:'Let A = {1, 2, 3, …, 100}. Let R be a relation on A defined by (x, y) ∈ R if and only if 2x = 3y. Let R₁ be a symmetric relation on A such that R ⊂ R₁ and the number of elements in R₁ is n. Then, the minimum value of n is .........',type:'numerical',answer:'66',
 short:[['','R = {(3k, 2k) : k = 1, 2, …, 33}','n(R) = 33'],['','(2k, 3k) ∈ R','⇔ 2·2k = 3·3k','⇔ 4k = 9k','⇒ k = 0'],['','minimum R₁ = R ∪ R⁻¹','n = 33 + 33','= 66']],
 detailed:[
  ['Solve 2x = 3y in A. Then x is a multiple of 3 and y a multiple of 2.','x = 3k','y = 2k'],
@@ -755,7 +755,7 @@ detailed:[
  ['Count the elements of the union.','n = 33 + 33','= 66'],
  ['Verification by listing: (3, 2), (6, 4), …, (99, 66) with reverses (2, 3), (4, 6), …, (66, 99), all within A. A count of 33 only (R itself) is not symmetric, and 99 or 100 would add pairs that are not forced, so the minimum is 66.','Answer: 66']
 ]},
-{id:'SET-37',level:2,topic:'Smallest equivalence relation containing a given relation',source:'ExamSIDE · JEE Main 2024 (Online) 31st January Morning Shift · questions.examside.com (question id cgxfeqbzwln5qjze)',sourceRef:true,question:'Let A = {1, 2, 3, 4} and R = {(1, 2), (2, 3), (1, 4)} be a relation on A. Let S be the equivalence relation on A such that R ⊂ S and the number of elements in S is n. Then, the minimum value of n is .........',type:'numerical',answer:'16',
+{id:'SET-37',level:2,topic:'Smallest equivalence relation containing a given relation',diagram:'b53Rel37',source:'ExamSIDE · JEE Main 2024 (Online) 31st January Morning Shift · questions.examside.com (question id cgxfeqbzwln5qjze)',sourceRef:true,question:'Let A = {1, 2, 3, 4} and R = {(1, 2), (2, 3), (1, 4)} be a relation on A. Let S be the equivalence relation on A such that R ⊂ S and the number of elements in S is n. Then, the minimum value of n is .........',type:'numerical',answer:'16',
 short:[['','1 ~ 2, 2 ~ 3, 1 ~ 4','⇒ 1, 2, 3, 4 all in one class'],['','an equivalence relation with one class of 4 elements is A × A'],['','n = 4²','= 16']],
 detailed:[
  ['An equivalence relation splits A into classes, and it is the union of s² pairs over each class of size s. So find which elements must be in the same class.','n = ∑ s²'],
@@ -766,7 +766,7 @@ detailed:[
  ['Verification: reflexive pairs give 4, symmetry adds the reverses of (1, 2), (2, 3), (1, 4) giving 3 more pairs, transitivity then forces the remaining pairs, and 16 is the largest possible relation on A, so it cannot be exceeded.','n = 16'],
  ['Stopping at the reflexive and symmetric closure gives 4 + 6 = 10 pairs, which is not transitive, since (2, 1), (1, 4) need (2, 4). Only the full A × A is closed under all three properties.','Answer: 16']
 ]},
-{id:'SET-38',level:2,topic:'Subset counts from 2ᵐ − 2ⁿ = k',source:'ExamSIDE · JEE Main 2024 (Online) 27th January Evening Shift · questions.examside.com (question id ns3j7n2jywawlbig)',sourceRef:true,question:'Let A and B be two finite sets with m and n elements respectively. The total number of subsets of the set A is 56 more than the total number of subsets of B. Then the distance of the point P(m, n) from the point Q(−2, −3) is :',options:['8','10','4','6'],correct:1,answer:'10',
+{id:'SET-38',level:2,topic:'Subset counts from 2ᵐ − 2ⁿ = k',diagram:'b53Sub38',source:'ExamSIDE · JEE Main 2024 (Online) 27th January Evening Shift · questions.examside.com (question id ns3j7n2jywawlbig)',sourceRef:true,question:'Let A and B be two finite sets with m and n elements respectively. The total number of subsets of the set A is 56 more than the total number of subsets of B. Then the distance of the point P(m, n) from the point Q(−2, −3) is :',options:['8','10','4','6'],correct:1,answer:'10',
 short:[['','2ᵐ − 2ⁿ = 56','⇒ 2ⁿ(2^(m − n) − 1) = 8·7'],['','2^(m − n) − 1 is odd','⇒ 2ⁿ = 8','2^(m − n) = 8','⇒ n = 3','m = 6'],['','PQ = √((6 + 2)² + (3 + 3)²)','= √100','= 10']],
 detailed:[
  ['A set with m elements has 2ᵐ subsets, so the stated condition is an equation in powers of 2.','2ᵐ − 2ⁿ = 56'],
@@ -777,7 +777,7 @@ detailed:[
  ['Distance formula between P(6, 3) and Q(−2, −3).','PQ = √((6 − (−2))² + (3 − (−3))²)','= √(64 + 36)','= 10'],
  ['Option (A) 8 is only the horizontal difference 6 − (−2), and option (D) 6 is only the vertical difference 3 − (−3). Option (C) 4 is smaller than the horizontal gap 8, so it cannot be the distance PQ.','Answer: (B) 10']
 ]},
-{id:'SET-38-A',parent:'SET-38',variant:1,topic:'Subset counts from 2ᵐ − 2ⁿ = k',source:'ExamSIDE · JEE Main 2020 (Online) 6th September Morning Slot · questions.examside.com (question id wfh0c59cuifggok9)',sourceRef:true,relevance:{parent:'SET-38',sharedSkill:'Write the subset counts as 2ᵐ and 2ⁿ and factor out the smaller power so the odd bracket fixes the split',recoveryPurpose:'The difference is 112 instead of 56 and the answer is the product m·n instead of a distance.'},question:'Set A has m elements and set B has n elements. If the total number of subsets of A is 112 more than the total number of subsets of B, then the value of m·n is .........',type:'numerical',answer:'28',
+{id:'SET-38-A',parent:'SET-38',variant:1,topic:'Subset counts from 2ᵐ − 2ⁿ = k',diagram:'b53Sub38A',source:'ExamSIDE · JEE Main 2020 (Online) 6th September Morning Slot · questions.examside.com (question id wfh0c59cuifggok9)',sourceRef:true,relevance:{parent:'SET-38',sharedSkill:'Write the subset counts as 2ᵐ and 2ⁿ and factor out the smaller power so the odd bracket fixes the split',recoveryPurpose:'The difference is 112 instead of 56 and the answer is the product m·n instead of a distance.'},question:'Set A has m elements and set B has n elements. If the total number of subsets of A is 112 more than the total number of subsets of B, then the value of m·n is .........',type:'numerical',answer:'28',
 short:[['','2ᵐ − 2ⁿ = 112','⇒ 2ⁿ(2^(m − n) − 1) = 16·7'],['','n = 4','m − n = 3','⇒ m = 7'],['','m·n = 7 × 4','= 28']],
 detailed:[
  ['The number of subsets of A and of B are 2ᵐ and 2ⁿ, so the condition gives an equation in powers of 2.','2ᵐ − 2ⁿ = 112'],
@@ -797,7 +797,7 @@ detailed:[
  ['Verification by the direct count: choose k = 2, …, 11 elements with at least one even number, which gives C(11, k) − C(6, k).','∑_(k=2)^(11) (C(11, k) − C(6, k)) = (2048 − 1 − 11) − (64 − 1 − 6)','= 2036 − 57','= 1979'],
  ['Forgetting the size condition leaves 1984. Subtracting all 11 singletons would give 1973, which wrongly removes odd singletons that were never counted. The correct removal is the five even singletons.','n(A) = 1979','Answer: 1979']
 ]},
-{id:'SET-40',level:2,topic:'Counting multiples by inclusion-exclusion',source:'ExamSIDE · JEE Main 2019 (Online) 10th January Morning Slot · questions.examside.com (question id rebawiahizbr3lql)',sourceRef:true,question:'In a class of 140 students numbered 1 to 140, all even numbered students opted Mathematics course, those whose number is divisible by 3 opted Physics course and those whose number is divisible by 5 opted Chemistry course. Then the number of students who did not opt for any of the three courses is',options:['42','102','1','38'],correct:3,answer:'38',
+{id:'SET-40',level:2,topic:'Counting multiples by inclusion-exclusion',diagram:'b53Cnt40',source:'ExamSIDE · JEE Main 2019 (Online) 10th January Morning Slot · questions.examside.com (question id rebawiahizbr3lql)',sourceRef:true,question:'In a class of 140 students numbered 1 to 140, all even numbered students opted Mathematics course, those whose number is divisible by 3 opted Physics course and those whose number is divisible by 5 opted Chemistry course. Then the number of students who did not opt for any of the three courses is',options:['42','102','1','38'],correct:3,answer:'38',
 short:[['','n(M) = 70','n(P) = 46','n(C) = 28'],['','n(M ∩ P) = 23','n(M ∩ C) = 14','n(P ∩ C) = 9','n(M ∩ P ∩ C) = 4'],['','n(M ∪ P ∪ C) = 70 + 46 + 28 − 23 − 14 − 9 + 4','= 102','140 − 102 = 38']],
 detailed:[
  ['Let M, P, C be the sets of students with numbers divisible by 2, 3, 5. The number of multiples of d up to 140 is ⌊140/d⌋.','n(M) = 70','n(P) = 46','n(C) = 28'],
@@ -808,7 +808,7 @@ detailed:[
  ['Verification by a second route: the students in no course are the numbers coprime to 30. Each block of 30 has 8 such numbers, so 4 blocks give 32, and 121 to 140 adds 121, 127, 131, 133, 137 and 139.','32 + 6 = 38'],
  ['Option (B) 102 is the number with at least one course, forgetting the complement. Option (A) 42 comes from leaving out the triple overlap +4, since 140 − 98 = 42. Option (C) 1 matches no inclusion-exclusion count, and the coprime count above confirms 38.','Answer: (D) 38']
 ]},
-{id:'SET-40-A',parent:'SET-40',variant:1,topic:'Counting multiples by inclusion-exclusion',source:'ExamSIDE · JEE Main 2020 (Online) 7th January Evening Slot · questions.examside.com (question id t4udw2wknaucgr8q)',sourceRef:true,relevance:{parent:'SET-40',sharedSkill:'Count a union of sets of multiples by n(A ∪ B) = n(A) + n(B) − n(A ∩ B) with floor counts',recoveryPurpose:'Only two sets are involved and the question asks for the smallest set containing both (their union).'},question:'Let X = {n ∈ ℕ : 1 ≤ n ≤ 50}. If A = {n ∈ X : n is a multiple of 2} and B = {n ∈ X : n is a multiple of 7}, then the number of elements in the smallest subset of X containing both A and B is .........',type:'numerical',answer:'29',
+{id:'SET-40-A',parent:'SET-40',variant:1,topic:'Counting multiples by inclusion-exclusion',diagram:'b53Cnt40A',source:'ExamSIDE · JEE Main 2020 (Online) 7th January Evening Slot · questions.examside.com (question id t4udw2wknaucgr8q)',sourceRef:true,relevance:{parent:'SET-40',sharedSkill:'Count a union of sets of multiples by n(A ∪ B) = n(A) + n(B) − n(A ∩ B) with floor counts',recoveryPurpose:'Only two sets are involved and the question asks for the smallest set containing both (their union).'},question:'Let X = {n ∈ ℕ : 1 ≤ n ≤ 50}. If A = {n ∈ X : n is a multiple of 2} and B = {n ∈ X : n is a multiple of 7}, then the number of elements in the smallest subset of X containing both A and B is .........',type:'numerical',answer:'29',
 short:[['','smallest subset containing A and B = A ∪ B'],['','n(A) = 25','n(B) = 7','n(A ∩ B) = ⌊50/14⌋','= 3'],['','n(A ∪ B) = 25 + 7 − 3','= 29']],
 detailed:[
  ['Any subset of X containing both A and B contains A ∪ B, and A ∪ B itself qualifies, so the smallest such subset is A ∪ B.','smallest subset = A ∪ B'],
@@ -840,7 +840,7 @@ detailed:[
  ['Check each x of B in the original equation: x = 0 gives −6 + 6 = 0, x = 1 gives −3 − 3 + 6 = 0, x = 9 gives −3 − 3 + 6 = 0, x = 16 gives 0 − 6 + 6 = 0. So n(B) = 4.','n(B) = 4'],
  ['The only element of B in (0, π) is x = 1, and |sin 2| ≈ 0.909 ≠ 0.81, so 1 ∉ A. Hence A ∩ B = ∅ and the union has 4 + 4 elements. Option (A) 4 counts only one set, (C) 6 loses two solutions of |sin 2x| = c, (D) 2 counts too few.','Answer: (B) 8']
 ]},
-{id:'SET-43',level:1,topic:'Properties of a relation given as a list of pairs',source:'ExamSIDE · AIEEE 2005 · questions.examside.com (question id evum8crtnwlrkksv)',sourceRef:true,question:'Let R = {(3, 3), (6, 6), (9, 9), (12, 12), (6, 12), (3, 9), (3, 12), (3, 6)} be a relation on the set A = {3, 6, 9, 12}. The relation is :',options:['reflexive and symmetric only','an equivalence relation','reflexive only','reflexive and transitive only'],correct:3,answer:'reflexive and transitive only',
+{id:'SET-43',level:1,topic:'Properties of a relation given as a list of pairs',diagram:'b53Rel43',source:'ExamSIDE · AIEEE 2005 · questions.examside.com (question id evum8crtnwlrkksv)',sourceRef:true,question:'Let R = {(3, 3), (6, 6), (9, 9), (12, 12), (6, 12), (3, 9), (3, 12), (3, 6)} be a relation on the set A = {3, 6, 9, 12}. The relation is :',options:['reflexive and symmetric only','an equivalence relation','reflexive only','reflexive and transitive only'],correct:3,answer:'reflexive and transitive only',
 short:[['','(3, 3), (6, 6), (9, 9), (12, 12) ∈ R','⇒ R is reflexive'],['','(6, 12) ∈ R but (12, 6) ∉ R','⇒ R is not symmetric'],['','(3, 6), (6, 12) ∈ R','⇒ (3, 12) ∈ R, and every other chain also closes','⇒ R is transitive']],
 detailed:[
  ['A relation on A is reflexive when (a, a) ∈ R for every a ∈ A, so look for the four diagonal pairs.','(3, 3), (6, 6), (9, 9), (12, 12) ∈ R','⇒ R is reflexive'],
@@ -851,7 +851,7 @@ detailed:[
  ['Independent check: each pair (x, y) with x ≠ y in R has x dividing y, which is a partial order, and a partial order is transitive.','(3, 6), (3, 9), (3, 12), (6, 12)','⇒ x divides y'],
  ['Distractors: (A) and (B) claim symmetry, which the missing (12, 6) denies; (C) forgets that transitivity holds because every chain closes. The remaining option fits.','Answer: (D) reflexive and transitive only']
 ]},
-{id:'SET-43-A',parent:'SET-43',variant:1,topic:'Properties of a relation given as a list of pairs',source:'ExamSIDE · JEE Main 2018 (Online) 15th April Morning Slot · questions.examside.com (question id jv1foh4cnsa27qug)',sourceRef:true,relevance:{parent:'SET-43',sharedSkill:'Test reflexive, symmetric and transitive on a relation given as a list of pairs by hunting for a missing reverse pair or a broken chain.',recoveryPurpose:'Two relations are compared at once and the options are verdicts on both, so each property is checked twice, but the same list-and-chain method applies.'},question:'Consider the following two binary relations on the set A = {a, b, c} : R₁ = {(c, a), (b, b), (a, c), (c, c), (b, c), (a, a)} and R₂ = {(a, b), (b, a), (c, c), (c, a), (a, a), (b, b), (a, c)}. Then :',options:['both R₁ and R₂ are not symmetric.','R₁ is not symmetric but it is transitive.','R₂ is symmetric but it is not transitive.','both R₁ and R₂ are transitive.'],correct:2,answer:'R₂ is symmetric but it is not transitive.',
+{id:'SET-43-A',parent:'SET-43',variant:1,topic:'Properties of a relation given as a list of pairs',diagram:'b53Rel43A',source:'ExamSIDE · JEE Main 2018 (Online) 15th April Morning Slot · questions.examside.com (question id jv1foh4cnsa27qug)',sourceRef:true,relevance:{parent:'SET-43',sharedSkill:'Test reflexive, symmetric and transitive on a relation given as a list of pairs by hunting for a missing reverse pair or a broken chain.',recoveryPurpose:'Two relations are compared at once and the options are verdicts on both, so each property is checked twice, but the same list-and-chain method applies.'},question:'Consider the following two binary relations on the set A = {a, b, c} : R₁ = {(c, a), (b, b), (a, c), (c, c), (b, c), (a, a)} and R₂ = {(a, b), (b, a), (c, c), (c, a), (a, a), (b, b), (a, c)}. Then :',options:['both R₁ and R₂ are not symmetric.','R₁ is not symmetric but it is transitive.','R₂ is symmetric but it is not transitive.','both R₁ and R₂ are transitive.'],correct:2,answer:'R₂ is symmetric but it is not transitive.',
 short:[['','(b, c) ∈ R₁, (c, b) ∉ R₁','⇒ R₁ is not symmetric'],['','(b, a), (a, c) ∈ R₂ and (b, c) ∉ R₂','⇒ R₂ is not transitive'],['R₂ has the reverse of every pair','R₂ is symmetric but not transitive']],
 detailed:[
  ['For each relation, test symmetry by looking for a pair whose reverse is missing.','(b, c) ∈ R₁ and (c, b) ∉ R₁','⇒ R₁ is not symmetric'],
@@ -861,7 +861,7 @@ detailed:[
  ['Independent check: R₂ would be transitive only if it contained (b, c) and (c, b), because b R a, a R c and c R a, a R b; its list has neither.','(b, c) ∉ R₂'],
  ['Distractors: (A) misses that (c, a) and (a, c) make R₂ symmetric; (B) and (D) assume R₁ is transitive, but the chain b → c → a leaves (b, a) out.','Answer: (C) R₂ is symmetric but it is not transitive.']
 ]},
-{id:'SET-43-B',parent:'SET-43',variant:2,topic:'Properties of a relation given as a list of pairs',source:'ExamSIDE · AIEEE 2004 · questions.examside.com (question id lg4ktzf2tip0h7ab)',sourceRef:true,relevance:{parent:'SET-43',sharedSkill:'Test the standard properties of a listed relation (function, reflexive, symmetric, transitive) by finding a missing reverse, diagonal or chain pair.',recoveryPurpose:'The options add a function test and only one property is true, but the same missing-pair hunt decides each option.'},question:'Let R = {(1, 3), (4, 2), (2, 4), (2, 3), (3, 1)} be a relation on the set A = {1, 2, 3, 4}. The relation R is :',options:['a function','transitive','not symmetric','reflexive'],correct:2,answer:'not symmetric',
+{id:'SET-43-B',parent:'SET-43',variant:2,topic:'Properties of a relation given as a list of pairs',diagram:'b53Rel43B',source:'ExamSIDE · AIEEE 2004 · questions.examside.com (question id lg4ktzf2tip0h7ab)',sourceRef:true,relevance:{parent:'SET-43',sharedSkill:'Test the standard properties of a listed relation (function, reflexive, symmetric, transitive) by finding a missing reverse, diagonal or chain pair.',recoveryPurpose:'The options add a function test and only one property is true, but the same missing-pair hunt decides each option.'},question:'Let R = {(1, 3), (4, 2), (2, 4), (2, 3), (3, 1)} be a relation on the set A = {1, 2, 3, 4}. The relation R is :',options:['a function','transitive','not symmetric','reflexive'],correct:2,answer:'not symmetric',
 short:[['','(2, 4), (2, 3) ∈ R','⇒ 2 has two images','⇒ not a function'],['','(1, 3), (3, 1) ∈ R and (1, 1) ∉ R','⇒ not transitive, not reflexive'],['','(2, 3) ∈ R and (3, 2) ∉ R','⇒ R is not symmetric']],
 detailed:[
  ['A relation is a function only if each first entry has exactly one pair; look at the first entry 2.','(2, 4), (2, 3) ∈ R','⇒ R is not a function'],
@@ -871,7 +871,7 @@ detailed:[
  ['Independent check: only (1, 3) ↔ (3, 1) and (4, 2) ↔ (2, 4) are paired, and (2, 3) is the single unpaired pair, so one property survives.','R is not symmetric'],
  ['Distractors: (A) overlooks that 2 appears twice as a first entry; (B) ignores the chain through (1, 3), (3, 1); (D) needs diagonal pairs, and there are none.','Answer: (C) not symmetric']
 ]},
-{id:'SET-44',level:1,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2025 (Online) 28th January Morning Shift · questions.examside.com (question id no9ffrtgdad54tjk)',sourceRef:true,question:'The relation R = {(x, y) : x, y ∈ ℤ and x + y is even } is:',options:['reflexive and transitive but not symmetric','reflexive and symmetric but not transitive','an equivalence relation','symmetric and transitive but not reflexive'],correct:2,answer:'an equivalence relation',
+{id:'SET-44',level:1,topic:'Properties of a relation defined by a condition on numbers',diagram:'b53Rel44',source:'ExamSIDE · JEE Main 2025 (Online) 28th January Morning Shift · questions.examside.com (question id no9ffrtgdad54tjk)',sourceRef:true,question:'The relation R = {(x, y) : x, y ∈ ℤ and x + y is even } is:',options:['reflexive and transitive but not symmetric','reflexive and symmetric but not transitive','an equivalence relation','symmetric and transitive but not reflexive'],correct:2,answer:'an equivalence relation',
 short:[['','x + x = 2x is even','⇒ reflexive'],['','x + y even','⇒ y + x even','⇒ symmetric'],['','(x + y) + (y + z) − 2y = x + z is even','⇒ transitive']],
 detailed:[
  ['Reflexivity asks whether x R x for every integer x.','x + x = 2x is even','⇒ R is reflexive'],
@@ -881,7 +881,7 @@ detailed:[
  ['Independent check: x R y exactly when x and y have the same parity, and \'same parity\' is an equivalence relation with two classes.','x R y ⇔ x ≡ y (mod 2)'],
  ['Distractors: (A), (B) and (D) each deny one property that holds; the usual slip is testing transitivity with only odd numbers and missing that odd + odd is even.','Answer: (C) an equivalence relation']
 ]},
-{id:'SET-44-A',parent:'SET-44',variant:1,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Morning Shift · questions.examside.com (question id d39zjwkghvabgvda)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'The condition is first reduced with an identity until it reads x = y, and then the three properties follow at once instead of by separate counterexamples.'},question:'Define a relation R on the interval [0, π/2) by x R y if and only if sec²x − tan²y = 1. Then R is :',options:['both reflexive and symmetric but not transitive','both reflexive and transitive but not symmetric','reflexive but neither symmetric not transitive','an equivalence relation'],correct:3,answer:'an equivalence relation',
+{id:'SET-44-A',parent:'SET-44',variant:1,topic:'Properties of a relation defined by a condition on numbers',diagram:'b53Rel44A',source:'ExamSIDE · JEE Main 2025 (Online) 29th January Morning Shift · questions.examside.com (question id d39zjwkghvabgvda)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'The condition is first reduced with an identity until it reads x = y, and then the three properties follow at once instead of by separate counterexamples.'},question:'Define a relation R on the interval [0, π/2) by x R y if and only if sec²x − tan²y = 1. Then R is :',options:['both reflexive and symmetric but not transitive','both reflexive and transitive but not symmetric','reflexive but neither symmetric not transitive','an equivalence relation'],correct:3,answer:'an equivalence relation',
 short:[['','sec²x − tan²y = 1','⇒ tan²x = tan²y'],['','tan x ≥ 0 and tan is increasing on [0, π/2)','⇒ x = y'],['R is equality, so all three properties hold','R is an equivalence relation']],
 detailed:[
  ['Replace sec²x using the identity sec²x = 1 + tan²x.','1 + tan²x − tan²y = 1','⇒ tan²x = tan²y'],
@@ -891,7 +891,7 @@ detailed:[
  ['Independent check: sec²x − tan²x = 1 for every x, and x = 0, y = π/4 gives 1 − 1 = 0, not 1, so no different pair is related.','sec²0 − tan²(π/4) = 0 ≠ 1'],
  ['Distractors: (A), (B) and (C) each deny a property that equality has; they come from reading sec²x − tan²y = 1 as an asymmetric condition without first reducing it to tan²x = tan²y.','Answer: (D) an equivalence relation']
 ]},
-{id:'SET-44-B',parent:'SET-44',variant:2,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2021 (Online) 27th July Evening Shift · questions.examside.com (question id odsw0by7tsch8os9)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'The cubic is factorised first so the relation becomes x = y or x = 3y; the three properties are then tested with counterexamples.'},question:'Let N be the set of natural numbers and a relation R on N be defined by R = {(x, y) ∈ N × N : x³ − 3x²y − xy² + 3y³ = 0}. Then the relation R is :',options:['symmetric but neither reflexive nor transitive','reflexive but neither symmetric nor transitive','reflexive and symmetric, but not transitive','an equivalence relation'],correct:1,answer:'reflexive but neither symmetric nor transitive',
+{id:'SET-44-B',parent:'SET-44',variant:2,topic:'Properties of a relation defined by a condition on numbers',diagram:'b53Rel44B',source:'ExamSIDE · JEE Main 2021 (Online) 27th July Evening Shift · questions.examside.com (question id odsw0by7tsch8os9)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'The cubic is factorised first so the relation becomes x = y or x = 3y; the three properties are then tested with counterexamples.'},question:'Let N be the set of natural numbers and a relation R on N be defined by R = {(x, y) ∈ N × N : x³ − 3x²y − xy² + 3y³ = 0}. Then the relation R is :',options:['symmetric but neither reflexive nor transitive','reflexive but neither symmetric nor transitive','reflexive and symmetric, but not transitive','an equivalence relation'],correct:1,answer:'reflexive but neither symmetric nor transitive',
 short:[['','x³ − 3x²y − xy² + 3y³ = (x − 3y)(x − y)(x + y)'],['','x, y ∈ N','⇒ x + y > 0','⇒ x R y ⇔ x = y or x','= 3y'],['','(3, 1) ∈ R, (1, 3) ∉ R','⇒ not symmetric'],['','(9, 3), (3, 1) ∈ R, (9, 1) ∉ R','⇒ not transitive']],
 detailed:[
  ['Group the terms as x²(x − 3y) − y²(x − 3y) to factorise the cubic.','x³ − 3x²y − xy² + 3y³ = (x − 3y)(x² − y²)','= (x − 3y)(x − y)(x + y)'],
@@ -902,7 +902,7 @@ detailed:[
  ['Independent check: substitute (3, 1) into the original cubic, and then (1, 3).','27 − 27 − 3 + 3 = 0','but 1 − 9 − 9 + 81 = 64 ≠ 0'],
  ['Distractors: (A) denies reflexivity although x = y always satisfies the equation; (C) wrongly takes x = 3y as two-way, and (D) assumes the symmetry that the factor x = 3y breaks.','Answer: (B) reflexive but neither symmetric nor transitive']
 ]},
-{id:'SET-44-C',parent:'SET-44',variant:3,topic:'Properties of a relation defined by a condition on numbers',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · questions.examside.com (question id nvdjezsbryhcqyuy)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'Reflexivity is immediate and symmetry and transitivity are refuted with explicit pairs, here for an \'or\' condition on two coordinates.'},question:'Let a relation R on N × ℕ be defined as: (x₁, y₁) R (x₂, y₂) if and only if x₁ ≤ x₂ or y₁ ≤ y₂. Consider the two statements: (I) R is reflexive but not symmetric. (II) R is transitive. Then which one of the following is true?',options:['Only (II) is correct.','Both (I) and (II) are correct.','Neither (I) nor (II) is correct.','Only (I) is correct.'],correct:3,answer:'Only (I) is correct.',
+{id:'SET-44-C',parent:'SET-44',variant:3,topic:'Properties of a relation defined by a condition on numbers',diagram:'b53Rel44C',source:'ExamSIDE · JEE Main 2024 (Online) 4th April Evening Shift · questions.examside.com (question id nvdjezsbryhcqyuy)',sourceRef:true,relevance:{parent:'SET-44',sharedSkill:'Test reflexive, symmetric and transitive for a relation defined by a condition on numbers, with a proof or a counterexample for each property.',recoveryPurpose:'Reflexivity is immediate and symmetry and transitivity are refuted with explicit pairs, here for an \'or\' condition on two coordinates.'},question:'Let a relation R on N × ℕ be defined as: (x₁, y₁) R (x₂, y₂) if and only if x₁ ≤ x₂ or y₁ ≤ y₂. Consider the two statements: (I) R is reflexive but not symmetric. (II) R is transitive. Then which one of the following is true?',options:['Only (II) is correct.','Both (I) and (II) are correct.','Neither (I) nor (II) is correct.','Only (I) is correct.'],correct:3,answer:'Only (I) is correct.',
 short:[['','(x, y) R (x, y) since x ≤ x','⇒ R is reflexive'],['','(1, 1) R (2, 2) but (2, 2) R (1, 1) fails','⇒ not symmetric'],['','(3, 3) R (3, 1), (3, 1) R (1, 1) but (3, 3) R (1, 1) fails','⇒ not transitive']],
 detailed:[
  ['Reflexivity: every pair satisfies x ≤ x.','(x, y) R (x, y)','⇒ R is reflexive'],
@@ -1002,7 +1002,7 @@ detailed:[
  ['Independent check: a direct enumeration of all 16 × 16 pairs of pairs satisfying 2a + 3b = 4c + 5d also gives six.','|R| = 6'],
  ['Distractors for slips: ignoring a ≤ 4 and b ≤ 4 gives extra pairs such as (a, b) = (8, 1) for 19; the value 19 has no solutions, and 14 must be counted twice, so the total is six.','Answer: 6']
 ]},
-{id:'SET-46-A',parent:'SET-46',variant:1,topic:'Counting the elements of a relation on A × A',source:'ExamSIDE · JEE Main 2026 (Online) 2nd April Evening Shift · questions.examside.com (question id ds7t3wves4ovqgms)',sourceRef:true,relevance:{parent:'SET-46',sharedSkill:'Count the elements of a relation on A × A by counting the pairs of pairs that satisfy the condition.',recoveryPurpose:'The condition splits into two independent conditions, so the count is a product, instead of a single equation enumeration, but it is still a count of related pairs.'},question:'Let A = {2, 3, 4, 5, 6}. Let R be a relation on the set A × A given by (x, y) R (z, w) if and only if x divides z and y ≤ w. Then the number of elements in R is .........',type:'numerical',answer:'120',
+{id:'SET-46-A',parent:'SET-46',variant:1,topic:'Counting the elements of a relation on A × A',diagram:'b54Div46A',source:'ExamSIDE · JEE Main 2026 (Online) 2nd April Evening Shift · questions.examside.com (question id ds7t3wves4ovqgms)',sourceRef:true,relevance:{parent:'SET-46',sharedSkill:'Count the elements of a relation on A × A by counting the pairs of pairs that satisfy the condition.',recoveryPurpose:'The condition splits into two independent conditions, so the count is a product, instead of a single equation enumeration, but it is still a count of related pairs.'},question:'Let A = {2, 3, 4, 5, 6}. Let R be a relation on the set A × A given by (x, y) R (z, w) if and only if x divides z and y ≤ w. Then the number of elements in R is .........',type:'numerical',answer:'120',
 short:[['','pairs (x, z) with x | z in A: 3 + 2 + 1 + 1 + 1 = 8'],['','pairs (y, w) with y ≤ w in A: 5 + 4 + 3 + 2 + 1 = 15'],['','|R| = 8 × 15','= 120']],
 detailed:[
  ['The two conditions involve disjoint variables, so the elements of R are formed by independent choices (x, z) and (y, w).','|R| = (number of (x, z)) × (number of (y, w))'],
@@ -1025,7 +1025,7 @@ detailed:[
  ['Independent check: brute force over all 9 × 9 pairs of pairs gives 18.','|R| = 18'],
  ['Distractors for slips: counting the repeated sum 9 once instead of twice (as s and as t) gives fewer pairs, and reading the condition as \'a₁ + b₁ divides a₂ + b₂\' changes the sums entirely; the correct count is 18.','Answer: 18']
 ]},
-{id:'SET-46-C',parent:'SET-46',variant:3,topic:'Counting the elements of a relation on A × A',source:'ExamSIDE · JEE Main 2026 (Online) 8th April Evening Shift · questions.examside.com (question id hucxdlrxqgivsmcr)',sourceRef:true,relevance:{parent:'SET-46',sharedSkill:'Count or test a relation on a small finite set from the defining inequality by listing the excluded pairs and checking a bridging element.',recoveryPurpose:'Here the count of R is part of the question and the properties come from a counterexample through 0, but the same condition-to-pairs method applies.'},question:'Consider the relation R on the set {−2, −1, 0, 1, 2} defined by (a, b) ∈ R if and only if 1 + ab > 0. Then, among the statements : I. The number of elements in R is 17 II. R is an equivalence relation',options:['Only I is true','Only II is true','Both I and II are true','Neither I nor II is true'],correct:0,answer:'Only I is true',
+{id:'SET-46-C',parent:'SET-46',variant:3,topic:'Counting the elements of a relation on A × A',diagram:'b54Grid46C',source:'ExamSIDE · JEE Main 2026 (Online) 8th April Evening Shift · questions.examside.com (question id hucxdlrxqgivsmcr)',sourceRef:true,relevance:{parent:'SET-46',sharedSkill:'Count or test a relation on a small finite set from the defining inequality by listing the excluded pairs and checking a bridging element.',recoveryPurpose:'Here the count of R is part of the question and the properties come from a counterexample through 0, but the same condition-to-pairs method applies.'},question:'Consider the relation R on the set {−2, −1, 0, 1, 2} defined by (a, b) ∈ R if and only if 1 + ab > 0. Then, among the statements : I. The number of elements in R is 17 II. R is an equivalence relation',options:['Only I is true','Only II is true','Both I and II are true','Neither I nor II is true'],correct:0,answer:'Only I is true',
 short:[['','1 + ab > 0 ⇔ ab ≥ 0 (ab is an integer)','so |R| = 25 − 8','= 17'],['','(1, 0), (0, −1) ∈ R but 1 + (1)(−1) = 0','⇒ (1, −1) ∉ R','⇒ not transitive']],
 detailed:[
  ['Since ab is an integer, 1 + ab > 0 holds exactly when ab ≥ 0, so only pairs with ab ≤ −1 are excluded.','1 + ab > 0 ⇔ ab ≥ 0'],
@@ -1048,7 +1048,7 @@ detailed:[
  ['Independent check: β = 4 gives 3x + 4y = 3(x − y) + 7y, and β = 11 gives 3x + 11y = 3(x − y) + 14y, both multiples of 7 exactly when 7 | (x − y).','β = 4: 3x + 4y','= 3(x − y) + 7y'],
  ['Distractors: (A) β = 14 ≡ 0 gives 3x + 14y ≡ 3x, not always a multiple of 7; (B) β = 8 ≡ 1 fails reflexivity (3 + 8 = 11); (C) β = 14 has remainder 4 on division by 10 yet fails; only the remainder 4 modulo 7 works.','Answer: (D) 4 is the remainder when β is divided by 7']
 ]},
-{id:'SET-48',level:2,topic:'Longest chain of pairs in a relation a = 2b + 1',source:'ExamSIDE · JEE Main 2025 (Online) 2nd April Evening Shift · questions.examside.com (question id gheshi0bvalgbs8v)',sourceRef:true,question:'Let A = {1, 2, 3, …., 100} and R be a relation on A such that R = {(a, b) : a = 2b + 1}. Let (a₁, a₂), (a₂, a₃), (a₃, a₄), …., (a_(k), a_(k+1)) be a sequence of k elements of R such that the second entry of an ordered pair is equal to the first entry of the next ordered pair. Then the largest integer k , for which such a sequence exists, is equal to :',options:['6','8','7','5'],correct:3,answer:'5',
+{id:'SET-48',level:2,topic:'Longest chain of pairs in a relation a = 2b + 1',diagram:'b54Chain48',source:'ExamSIDE · JEE Main 2025 (Online) 2nd April Evening Shift · questions.examside.com (question id gheshi0bvalgbs8v)',sourceRef:true,question:'Let A = {1, 2, 3, …., 100} and R be a relation on A such that R = {(a, b) : a = 2b + 1}. Let (a₁, a₂), (a₂, a₃), (a₃, a₄), …., (a_(k), a_(k+1)) be a sequence of k elements of R such that the second entry of an ordered pair is equal to the first entry of the next ordered pair. Then the largest integer k , for which such a sequence exists, is equal to :',options:['6','8','7','5'],correct:3,answer:'5',
 short:[['','aᵢ = 2aᵢ₊₁ + 1','⇒ a₁ = 2ᵏ a_(k+1) + 2ᵏ − 1'],['','a_(k+1) ≥ 1','⇒ a₁ ≥ 2^(k+1) − 1','⇒ 2^(k+1) − 1 ≤ 100','⇒ 2^(k+1) ≤ 101','⇒ k + 1 ≤ 6'],['','k = 5']],
 detailed:[
  ['Each pair (aᵢ, aᵢ₊₁) ∈ R means aᵢ = 2aᵢ₊₁ + 1, so the sequence a₁, a₂, …, a_(k+1) is built by repeatedly applying b ↦ 2b + 1.','aᵢ = 2aᵢ₊₁ + 1'],
@@ -1059,7 +1059,7 @@ detailed:[
  ['Independent check: for k = 6 the first entry must be at least 2⁷ − 1 = 127, which exceeds 100.','a₁ ≥ 2⁷ − 1 = 127 > 100'],
  ['Distractors: (A) 6 counts the six numbers instead of the five pairs; (C) k = 7 and (B) k = 8 need a₁ ≥ 255 and a₁ ≥ 511, far outside A; the largest valid k is 5.','Answer: (D) 5']
 ]},
-{id:'SET-49',level:2,topic:'Minimum pairs to make a relation an equivalence relation',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Morning Shift · questions.examside.com (question id 0cktiutya2ssosuw)',sourceRef:true,question:'Let R = {(1, 2), (2, 3), (3, 3)} be a relation defined on the set {1, 2, 3, 4}. Then the minimum number of elements, needed to be added in R so that R becomes an equivalence relation, is:',options:['9','8','7','10'],correct:2,answer:'7',
+{id:'SET-49',level:2,topic:'Minimum pairs to make a relation an equivalence relation',diagram:'b54Equiv49',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Morning Shift · questions.examside.com (question id 0cktiutya2ssosuw)',sourceRef:true,question:'Let R = {(1, 2), (2, 3), (3, 3)} be a relation defined on the set {1, 2, 3, 4}. Then the minimum number of elements, needed to be added in R so that R becomes an equivalence relation, is:',options:['9','8','7','10'],correct:2,answer:'7',
 short:[['','1 ~ 2 ~ 3 and 4 alone'],['','equivalence relation = {1, 2, 3} × {1, 2, 3} ∪ {(4, 4)}','n = 9 + 1','= 10'],['','10 − 3 = 7']],
 detailed:[
  ['The classes of an equivalence relation partition the set, so first see which elements R forces into one class.','(1, 2) and (2, 3) link 1, 2 and 3'],
@@ -1070,7 +1070,7 @@ detailed:[
  ['Check by listing: reflexive needs (1,1), (2,2), (4,4); symmetry needs (2,1), (3,2); transitivity needs (1,3), (3,1).','3 + 2 + 2 = 7'],
  ['Option (D) 10 is the size of the whole equivalence relation, not the number added. Option (A) 9 forgets the pair (4, 4). Option (B) 8 would give 11 pairs, which is not a complete equivalence relation here.','Answer: (C) 7']
 ]},
-{id:'SET-49-A',parent:'SET-49',variant:1,topic:'Minimum pairs to make a relation an equivalence relation',source:'ExamSIDE · JEE Main 2023 (Online) 24th January Evening Shift · questions.examside.com (question id 8eua28wbdbi72mch)',sourceRef:true,relevance:{parent:'SET-49',sharedSkill:'Closure of a relation to an equivalence relation by connected elements',recoveryPurpose:'Same counting n(S) − n(R); here one class holds everything'},question:'The minimum number of elements that must be added to the relation R = {(a, b), (b, c), (b, d)} on the set {a, b, c, d} so that it is an equivalence relation, is .........',type:'numerical',answer:'13',
+{id:'SET-49-A',parent:'SET-49',variant:1,topic:'Minimum pairs to make a relation an equivalence relation',diagram:'b54Equiv49A',source:'ExamSIDE · JEE Main 2023 (Online) 24th January Evening Shift · questions.examside.com (question id 8eua28wbdbi72mch)',sourceRef:true,relevance:{parent:'SET-49',sharedSkill:'Closure of a relation to an equivalence relation by connected elements',recoveryPurpose:'Same counting n(S) − n(R); here one class holds everything'},question:'The minimum number of elements that must be added to the relation R = {(a, b), (b, c), (b, d)} on the set {a, b, c, d} so that it is an equivalence relation, is .........',type:'numerical',answer:'13',
 short:[['','a ~ b ~ c, b ~ d'],['','equivalence relation = {a, b, c, d} × {a, b, c, d}','n = 16'],['','16 − 3 = 13']],
 detailed:[
  ['An equivalence relation containing R must make every element linked through R equivalent.','a–b, b–c, b–d'],
@@ -1081,7 +1081,7 @@ detailed:[
  ['Check by listing: reflexive needs 4 pairs, symmetric needs (b, a), (c, b), (d, b), then (a, c), (a, d), (c, a), (d, a), (c, d), (d, c) by transitivity.','4 + 3 + 6 = 13'],
  ['Common slips are answering 16 (the size of S, not what is added) or stopping at reflexive and symmetric pairs only (4 + 3 = 7), which leaves transitivity unmet.','Answer: 13']
 ]},
-{id:'SET-50',level:2,topic:'Counting pairs in a relation on A × B',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Evening Shift · questions.examside.com (question id 1mjyrgdiqgajzov0)',sourceRef:true,question:'Let A = {2, 3, 4} and B = {8, 9, 12}. Then the number of elements in the relation R = {((a₁, b₁), (a₂, b₂)) ∈ (A × B, A × B) : a₁ divides b₂ and a₂ divides b₁} is :',options:['18','24','36','12'],correct:2,answer:'36',
+{id:'SET-50',level:2,topic:'Counting pairs in a relation on A × B',diagram:'b54Div50',source:'ExamSIDE · JEE Main 2023 (Online) 10th April Evening Shift · questions.examside.com (question id 1mjyrgdiqgajzov0)',sourceRef:true,question:'Let A = {2, 3, 4} and B = {8, 9, 12}. Then the number of elements in the relation R = {((a₁, b₁), (a₂, b₂)) ∈ (A × B, A × B) : a₁ divides b₂ and a₂ divides b₁} is :',options:['18','24','36','12'],correct:2,answer:'36',
 short:[['','a | b pairs: (2, 8), (2, 12), (3, 9), (3, 12), (4, 8), (4, 12)','6 pairs'],['','(a₁, b₂) and (a₂, b₁) are independent dividing pairs'],['','n(R) = 6 × 6','= 36']],
 detailed:[
  ['The two conditions involve different pairs of entries: a₁ with b₂ and a₂ with b₁.','a₁ | b₂ and a₂ | b₁'],
@@ -1092,7 +1092,7 @@ detailed:[
  ['Check by brute force over the 9 × 9 = 81 ordered pairs of elements of A × B: exactly 36 satisfy both conditions.','36'],
  ['Options 18, 24 and 12 are 6 × 3, 6 × 4 and 6 × 2, which count only one dividing pair times a partial choice and ignore that the second pair is independently free.','Answer: (C) 36']
 ]},
-{id:'SET-51',level:3,topic:'Counting reflexive transitive non-symmetric relations',source:'ExamSIDE · JEE Main 2025 (Online) 22nd January Evening Shift · questions.examside.com (question id 1pxetqrvnpxzz48l)',sourceRef:true,question:'Let A = {1, 2, 3}. The number of relations on A, containing (1, 2) and (2, 3), which are reflexive and transitive but not symmetric, is .........',type:'numerical',answer:'3',
+{id:'SET-51',level:3,topic:'Counting reflexive transitive non-symmetric relations',diagram:'b54Refl51',source:'ExamSIDE · JEE Main 2025 (Online) 22nd January Evening Shift · questions.examside.com (question id 1pxetqrvnpxzz48l)',sourceRef:true,question:'Let A = {1, 2, 3}. The number of relations on A, containing (1, 2) and (2, 3), which are reflexive and transitive but not symmetric, is .........',type:'numerical',answer:'3',
 short:[['','R ∋ (1, 1), (2, 2), (3, 3), (1, 2), (2, 3), (1, 3)'],['','free pairs: (2, 1), (3, 2), (3, 1)','∅, {(2, 1)}, {(3, 2)} keep R transitive'],['','number = 3']],
 detailed:[
  ['Reflexive means all of (1, 1), (2, 2), (3, 3) are present.','(1, 1), (2, 2), (3, 3) ∈ R'],
@@ -1103,7 +1103,7 @@ detailed:[
  ['Checking all 8 subsets of the three free pairs leaves transitive and non-symmetric only ∅, {(2, 1)}, {(3, 2)}.','3'],
  ['Counting all 2³ = 8 subsets overcounts: five of them fail transitivity or give the symmetric relation; forgetting that (1, 3) is forced also gives wrong counts.','Answer: 3']
 ]},
-{id:'SET-52',level:2,topic:'Domain of an inverse relation',source:'ExamSIDE · JEE Main 2020 (Online) 2nd September Morning Slot · questions.examside.com (question id 9beq4w4cu3jvctsv)',sourceRef:true,question:'If R = {(x, y) : x, y ∈ ℤ, x² + 3y² ≤ 8} is a relation on the set of integers ℤ, then the domain of R⁻¹ is :',options:['{0, 1}','{−2, −1, 1, 2}','{−1, 0, 1}','{−2, −1, 0, 1, 2}'],correct:2,answer:'{−1, 0, 1}',
+{id:'SET-52',level:2,topic:'Domain of an inverse relation',diagram:'b54Dom52',source:'ExamSIDE · JEE Main 2020 (Online) 2nd September Morning Slot · questions.examside.com (question id 9beq4w4cu3jvctsv)',sourceRef:true,question:'If R = {(x, y) : x, y ∈ ℤ, x² + 3y² ≤ 8} is a relation on the set of integers ℤ, then the domain of R⁻¹ is :',options:['{0, 1}','{−2, −1, 1, 2}','{−1, 0, 1}','{−2, −1, 0, 1, 2}'],correct:2,answer:'{−1, 0, 1}',
 short:[['','dom R⁻¹ = range R','= {y ∈ ℤ : x² + 3y² ≤ 8 for some x ∈ ℤ}'],['','3y² ≤ 8','⇒ y² ≤ 2','y ∈ {−1, 0, 1}']],
 detailed:[
  ['R⁻¹ swaps the pairs of R, so the domain of R⁻¹ is the set of second entries y of R.','dom R⁻¹ = range R'],
@@ -1125,7 +1125,7 @@ detailed:[
  ['Check numerically: 1 + 0.4 + 0.16 + 0.064 + 0.0256 + … gives 1.6256 after five terms, tending to 1.667.','5/3 ≈ 1.667'],
  ['Option (C) 5/2 comes from using 3/5 as the ratio. Options (A) 3/2 and (B) 10/9 are smaller than the partial sum 1.6256 already reached after five terms, so they cannot be the total. Dropping x = 0 would give 2/3.','Answer: (D) 5/3']
 ]},
-{id:'SET-54',level:2,topic:'Testing reflexive, symmetric and transitive from the definition',source:'ExamSIDE · JEE Main 2023 (Online) 8th April Evening Shift · questions.examside.com (question id oqs9w4wipkoydkyf)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7}. Then the relation R = {(x, y) ∈ A × A : x + y = 7} is :',options:['reflexive but neither symmetric nor transitive','transitive but neither symmetric nor reflexive','symmetric but neither reflexive nor transitive','an equivalence relation'],correct:2,answer:'symmetric but neither reflexive nor transitive',
+{id:'SET-54',level:2,topic:'Testing reflexive, symmetric and transitive from the definition',diagram:'b54Sym54',source:'ExamSIDE · JEE Main 2023 (Online) 8th April Evening Shift · questions.examside.com (question id oqs9w4wipkoydkyf)',sourceRef:true,question:'Let A = {1, 2, 3, 4, 5, 6, 7}. Then the relation R = {(x, y) ∈ A × A : x + y = 7} is :',options:['reflexive but neither symmetric nor transitive','transitive but neither symmetric nor reflexive','symmetric but neither reflexive nor transitive','an equivalence relation'],correct:2,answer:'symmetric but neither reflexive nor transitive',
 short:[['','R = {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}'],['','(1, 1) ∉ R'],['','(1, 6), (6, 1) ∈ R','(1, 1) ∉ R'],['','x + y = y + x']],
 detailed:[
  ['List the pairs with x + y = 7.','R = {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}'],
@@ -1136,7 +1136,7 @@ detailed:[
  ['Verify with the list: every pair has its reverse present, and no pair (x, x) is present.','6 pairs, 3 reverse pairs'],
  ['Options (A) and (D) need reflexivity, which fails. Option (B) claims transitivity, which fails at (1, 6), (6, 1).','Answer: (C) symmetric but neither reflexive nor transitive']
 ]},
-{id:'SET-54-A',parent:'SET-54',variant:1,topic:'Testing reflexive, symmetric and transitive from the definition',source:'ExamSIDE · JEE Main 2025 (Online) 8th April Evening Shift · questions.examside.com (question id qg0x5iqons3dbfve)',sourceRef:true,relevance:{parent:'SET-54',sharedSkill:'Test reflexive, symmetric, transitive from the definition, with a counterexample for each failure',recoveryPurpose:'Adds counting the pairs of R; same property tests'},question:'Let A = {0, 1, 2, 3, 4, 5}. Let R be a relation on A defined by (x, y) ∈ R if and only if max{x, y} ∈ {3, 4}. Then among the statements\n(S₁): The number of elements in R is 18, and\n(S₂): The relation R is symmetric but neither reflexive nor transitive',options:['both are false','only (S₁) is true','only (S₂) is true','both are true'],correct:2,answer:'only (S₂) is true',
+{id:'SET-54-A',parent:'SET-54',variant:1,topic:'Testing reflexive, symmetric and transitive from the definition',diagram:'b54Max54A',source:'ExamSIDE · JEE Main 2025 (Online) 8th April Evening Shift · questions.examside.com (question id qg0x5iqons3dbfve)',sourceRef:true,relevance:{parent:'SET-54',sharedSkill:'Test reflexive, symmetric, transitive from the definition, with a counterexample for each failure',recoveryPurpose:'Adds counting the pairs of R; same property tests'},question:'Let A = {0, 1, 2, 3, 4, 5}. Let R be a relation on A defined by (x, y) ∈ R if and only if max{x, y} ∈ {3, 4}. Then among the statements\n(S₁): The number of elements in R is 18, and\n(S₂): The relation R is symmetric but neither reflexive nor transitive',options:['both are false','only (S₁) is true','only (S₂) is true','both are true'],correct:2,answer:'only (S₂) is true',
 short:[['','max = 3: 4² − 3²','= 7 pairs','max = 4: 5² − 4²','= 9 pairs','n(R) = 16 ≠ 18'],['','(0, 0) ∉ R'],['','(0, 3), (3, 1) ∈ R','(0, 1) ∉ R']],
 detailed:[
  ['Count pairs by the value of the maximum, using pairs from {0, …, m} minus pairs from {0, …, m − 1}.','max = m: (m + 1)² − m²'],
@@ -1158,7 +1158,7 @@ detailed:[
  ['So one counterexample is enough to show that R is not transitive.','R is not transitive'],
  ['Option (B) assumes transitivity. Option (C) denies symmetry, though sharing a letter is mutual. Option (D) denies reflexivity, though a word shares letters with itself.','Answer: (A) reflexive, symmetric and not transitive']
 ]},
-{id:'SET-54-C',parent:'SET-54',variant:3,topic:'Testing reflexive, symmetric and transitive from the definition',source:'ExamSIDE · JEE Main 2024 (Online) 27th January Morning Shift · questions.examside.com (question id zge3oxq7cfjdprvf)',sourceRef:true,relevance:{parent:'SET-54',sharedSkill:'Test reflexive, symmetric, transitive from the definition, with a counterexample for each failure',recoveryPurpose:'Relation on subsets (the empty set breaks reflexivity); same three tests'},question:'Let S = {1, 2, 3, …, 10}. Suppose M is the set of all the subsets of S, then the relation R = {(A, B) : A ∩ B ≠ ∅ ; A, B ∈ M} is :',options:['symmetric only','reflexive only','symmetric and reflexive only','symmetric and transitive only'],correct:0,answer:'symmetric only',
+{id:'SET-54-C',parent:'SET-54',variant:3,topic:'Testing reflexive, symmetric and transitive from the definition',diagram:'b54Venn54C',source:'ExamSIDE · JEE Main 2024 (Online) 27th January Morning Shift · questions.examside.com (question id zge3oxq7cfjdprvf)',sourceRef:true,relevance:{parent:'SET-54',sharedSkill:'Test reflexive, symmetric, transitive from the definition, with a counterexample for each failure',recoveryPurpose:'Relation on subsets (the empty set breaks reflexivity); same three tests'},question:'Let S = {1, 2, 3, …, 10}. Suppose M is the set of all the subsets of S, then the relation R = {(A, B) : A ∩ B ≠ ∅ ; A, B ∈ M} is :',options:['symmetric only','reflexive only','symmetric and reflexive only','symmetric and transitive only'],correct:0,answer:'symmetric only',
 short:[['','A ∩ B = B ∩ A'],['','∅ ∩ ∅ = ∅','(∅, ∅) ∉ R'],['','{1, 2} ∩ {2, 3} ≠ ∅, {2, 3} ∩ {3, 4} ≠ ∅ but {1, 2} ∩ {3, 4} = ∅']],
 detailed:[
  ['Symmetric: intersection does not depend on the order of the sets.','A ∩ B = B ∩ A'],
@@ -1191,7 +1191,7 @@ detailed:[
  ['Quick check: (1, 6) works since 2 + 18 = 20, and (6, 1) works since 12 + 3 = 15.','5 | 20 and 5 | 15'],
  ['Option (B) fails because 2a + 3a = 5a. Options (C) and (D) deny symmetry or transitivity, which both hold for a ≡ b (mod 5).','Answer: (A) an equivalence relation']
 ]},
-{id:'SET-55-B',parent:'SET-55',variant:2,topic:'Proving equivalence by an equal-value rule',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Evening Shift · questions.examside.com (question id rbg1xjgdlain6q58)',sourceRef:true,relevance:{parent:'SET-55',sharedSkill:'Recognise the defining condition as equality of one value, giving an equivalence relation whose classes are level sets',recoveryPurpose:'The classes are lines in the plane and a second statement tests their direction'},question:'Let X = ℝ × ℝ. Define a relation R on X as : (a₁, b₁)R(a₂, b₂) ⇔ b₁ = b₂\nStatement I: R is an equivalence relation.\nStatement II : For some (a, b) ∈ X, the set S = {(x, y) ∈ X : (x, y)R(a, b)} represents a line parallel to y = x.\nIn the light of the above statements, choose the correct answer from the options given below :',options:['Both Statement I and Statement II are true','Statement I is true but Statement II is false','Both Statement I and Statement II are false','Statement I is false but Statement II is true'],correct:1,answer:'Statement I is true but Statement II is false',
+{id:'SET-55-B',parent:'SET-55',variant:2,topic:'Proving equivalence by an equal-value rule',diagram:'b54Line55B',source:'ExamSIDE · JEE Main 2025 (Online) 23rd January Evening Shift · questions.examside.com (question id rbg1xjgdlain6q58)',sourceRef:true,relevance:{parent:'SET-55',sharedSkill:'Recognise the defining condition as equality of one value, giving an equivalence relation whose classes are level sets',recoveryPurpose:'The classes are lines in the plane and a second statement tests their direction'},question:'Let X = ℝ × ℝ. Define a relation R on X as : (a₁, b₁)R(a₂, b₂) ⇔ b₁ = b₂\nStatement I: R is an equivalence relation.\nStatement II : For some (a, b) ∈ X, the set S = {(x, y) ∈ X : (x, y)R(a, b)} represents a line parallel to y = x.\nIn the light of the above statements, choose the correct answer from the options given below :',options:['Both Statement I and Statement II are true','Statement I is true but Statement II is false','Both Statement I and Statement II are false','Statement I is false but Statement II is true'],correct:1,answer:'Statement I is true but Statement II is false',
 short:[['','(a₁, b₁)R(a₂, b₂) ⇔ b₁ = b₂'],['','S = {(x, y) : y = b}'],['','y = b is parallel to the x-axis, not to y','= x']],
 detailed:[
  ['The condition compares only the second coordinates, so each pair carries the single value b.','b₁ = b₂'],
@@ -1202,7 +1202,7 @@ detailed:[
  ['Hence S is never parallel to y = x, and Statement II is false for every (a, b).','II is false'],
  ['Options (A) and (D) accept Statement II, mistaking a horizontal line for one parallel to y = x. Option (C) denies Statement I, but equal second coordinates give an equivalence.','Answer: (B) Statement I is true but Statement II is false']
 ]},
-{id:'SET-55-C',parent:'SET-55',variant:3,topic:'Proving equivalence by an equal-value rule',source:'ExamSIDE · JEE Main 2022 (Online) 29th June Morning Shift · questions.examside.com (question id p1blfj3cyamrdmwh)',sourceRef:true,relevance:{parent:'SET-55',sharedSkill:'Recognise the rule as \'same part of a partition\', i.e. an equal-value rule',recoveryPurpose:'Relation defined by membership in a partition; the result is the same equivalence'},question:'Let a set A = A₁ ∪ A₂ ∪ ... ∪ A_(k), where A_(i) ∩ A_(j) = ∅ for i ≠ j, 1 ≤ i, j ≤ k. Define the relation R from A to A by R = {(x, y) : y ∈ A_(i) if and only if x ∈ A_(i), 1 ≤ i ≤ k}. Then, R is :',options:['reflexive, symmetric but not transitive.','reflexive, transitive but not symmetric.','reflexive but not symmetric and transitive.','an equivalence relation.'],correct:3,answer:'an equivalence relation.',
+{id:'SET-55-C',parent:'SET-55',variant:3,topic:'Proving equivalence by an equal-value rule',diagram:'b55Partition',source:'ExamSIDE · JEE Main 2022 (Online) 29th June Morning Shift · questions.examside.com (question id p1blfj3cyamrdmwh)',sourceRef:true,relevance:{parent:'SET-55',sharedSkill:'Recognise the rule as \'same part of a partition\', i.e. an equal-value rule',recoveryPurpose:'Relation defined by membership in a partition; the result is the same equivalence'},question:'Let a set A = A₁ ∪ A₂ ∪ ... ∪ A_(k), where A_(i) ∩ A_(j) = ∅ for i ≠ j, 1 ≤ i, j ≤ k. Define the relation R from A to A by R = {(x, y) : y ∈ A_(i) if and only if x ∈ A_(i), 1 ≤ i ≤ k}. Then, R is :',options:['reflexive, symmetric but not transitive.','reflexive, transitive but not symmetric.','reflexive but not symmetric and transitive.','an equivalence relation.'],correct:3,answer:'an equivalence relation.',
 short:[['','A = A₁ ∪ A₂ ∪ ... ∪ A_(k)'],['','(x, y) ∈ R','⇔ x and y lie in the same A_(i)'],['','same-part relation is reflexive, symmetric and transitive']],
 detailed:[
  ['The parts are pairwise disjoint and cover A, so each element lies in exactly one part.','x ∈ A_(i) for exactly one i'],
@@ -1224,7 +1224,7 @@ detailed:[
  ['Check: (1/2, 2/4) ∈ S since 4 × 1 = 2 × 2, and every fraction is related to its equal forms.','4 × 1 = 2 × 2'],
  ['Options (A) and (D) accept R by overlooking w = 0. Option (B) rejects S although it only says two fractions are equal.','Answer: (C) S is an equivalence relation but R is not an equivalence relation']
 ]},
-{id:'SET-56',level:2,topic:'Disproving a property by a counterexample on the reals',source:'ExamSIDE · JEE Main 2022 (Online) 27th July Morning Shift · questions.examside.com (question id rehbnn1nyzsblzd5)',sourceRef:true,question:'Let R₁ and R₂ be two relations defined on ℝ by a R₁ b ⇔ ab ≥ 0 and a R₂ b ⇔ a ≥ b\nThen,',options:['R₁ is an equivalence relation but not R₂','R₂ is an equivalence relation but not R₁','both R₁ and R₂ are equivalence relations','neither R₁ nor R₂ is an equivalence relation'],correct:3,answer:'neither R₁ nor R₂ is an equivalence relation',
+{id:'SET-56',level:2,topic:'Disproving a property by a counterexample on the reals',diagram:'b55Quadrants',source:'ExamSIDE · JEE Main 2022 (Online) 27th July Morning Shift · questions.examside.com (question id rehbnn1nyzsblzd5)',sourceRef:true,question:'Let R₁ and R₂ be two relations defined on ℝ by a R₁ b ⇔ ab ≥ 0 and a R₂ b ⇔ a ≥ b\nThen,',options:['R₁ is an equivalence relation but not R₂','R₂ is an equivalence relation but not R₁','both R₁ and R₂ are equivalence relations','neither R₁ nor R₂ is an equivalence relation'],correct:3,answer:'neither R₁ nor R₂ is an equivalence relation',
 short:[['','(1, 0), (0, −1) ∈ R₁','(1, −1) ∉ R₁'],['','(2, 1) ∈ R₂','(1, 2) ∉ R₂']],
 detailed:[
  ['R₁ is reflexive, since a × a = a² ≥ 0, and symmetric, since ab = ba.','a² ≥ 0'],
@@ -1246,7 +1246,7 @@ detailed:[
  ['T is also transitive since a² − c² = (a² − b²) + (b² − c²) is a sum of integers.','T is transitive'],
  ['Options (A) and (C) are wrong about T being transitive. Option (B) is wrong because S is not symmetric. Only (D) fits.','Answer: (D) T is symmetric but S is not']
 ]},
-{id:'SET-56-B',parent:'SET-56',variant:2,topic:'Disproving a property by a counterexample on the reals',source:'ExamSIDE · JEE Main 2021 (Online) 31st August Morning Shift · questions.examside.com (question id t6ka2gatyfezs1yt)',sourceRef:true,relevance:{parent:'SET-56',sharedSkill:'Test each property of a relation on the reals by a numeric counterexample',recoveryPurpose:'Four relations are tested and the false claim is picked; same counterexample tests'},question:'Which of the following is not correct for relation R on the set of real numbers ?',options:['(x, y) ∈ R ⇔ 0 < |x| − |y| ≤ 1 is neither transitive nor symmetric.','(x, y) ∈ R ⇔ 0 < |x − y| ≤ 1 is symmetric and transitive.','(x, y) ∈ R ⇔ |x| − |y| ≤ 1 is reflexive but not symmetric.','(x, y) ∈ R ⇔ |x − y| ≤ 1 is reflexive and symmetric.'],correct:1,answer:'(x, y) ∈ R ⇔ 0 < |x − y| ≤ 1 is symmetric and transitive.',
+{id:'SET-56-B',parent:'SET-56',variant:2,topic:'Disproving a property by a counterexample on the reals',diagram:'b55Chain',source:'ExamSIDE · JEE Main 2021 (Online) 31st August Morning Shift · questions.examside.com (question id t6ka2gatyfezs1yt)',sourceRef:true,relevance:{parent:'SET-56',sharedSkill:'Test each property of a relation on the reals by a numeric counterexample',recoveryPurpose:'Four relations are tested and the false claim is picked; same counterexample tests'},question:'Which of the following is not correct for relation R on the set of real numbers ?',options:['(x, y) ∈ R ⇔ 0 < |x| − |y| ≤ 1 is neither transitive nor symmetric.','(x, y) ∈ R ⇔ 0 < |x − y| ≤ 1 is symmetric and transitive.','(x, y) ∈ R ⇔ |x| − |y| ≤ 1 is reflexive but not symmetric.','(x, y) ∈ R ⇔ |x − y| ≤ 1 is reflexive and symmetric.'],correct:1,answer:'(x, y) ∈ R ⇔ 0 < |x − y| ≤ 1 is symmetric and transitive.',
 short:[['','(B): (0, 0.8), (0.8, 1.6) ∈ R but |0 − 1.6|','= 1.6 > 1','not transitive'],['','(B) is the incorrect statement']],
 detailed:[
  ['The question asks for the incorrect statement, so find the option whose claim fails.','one claim is false'],
@@ -1257,7 +1257,7 @@ detailed:[
  ['Their outer pair is at distance 1.6 > 1.','(0, 1.6) ∉ R'],
  ['So (B) is not correct. Also (B) is not reflexive. Options (A), (C) and (D) are true statements, so they are not the answer.','Answer: (B) (x, y) ∈ R ⇔ 0 < |x − y| ≤ 1 is symmetric and transitive.']
 ]},
-{id:'SET-57',level:3,topic:'Counting elements of a difference of relations',source:'ExamSIDE · JEE Main 2022 (Online) 28th June Morning Shift · questions.examside.com (question id r9zowwyayzzlvdq6)',sourceRef:true,question:'Let R₁ and R₂ be relations on the set {1, 2, ......., 50} such that R₁ = {(p, pⁿ) : p is a prime and n ≥ 0 is an integer} and R₂ = {(p, pⁿ) : p is a prime and n = 0 or 1}. Then, the number of elements in R₁ − R₂ is .........',type:'numerical',answer:'8',
+{id:'SET-57',level:3,topic:'Counting elements of a difference of relations',diagram:'b55PrimePowers',source:'ExamSIDE · JEE Main 2022 (Online) 28th June Morning Shift · questions.examside.com (question id r9zowwyayzzlvdq6)',sourceRef:true,question:'Let R₁ and R₂ be relations on the set {1, 2, ......., 50} such that R₁ = {(p, pⁿ) : p is a prime and n ≥ 0 is an integer} and R₂ = {(p, pⁿ) : p is a prime and n = 0 or 1}. Then, the number of elements in R₁ − R₂ is .........',type:'numerical',answer:'8',
 short:[['','R₁ − R₂ = {(p, pⁿ) : n ≥ 2, pⁿ ≤ 50}'],['','p = 2: 4, 8, 16, 32','p = 3: 9, 27','p = 5: 25','p = 7: 49'],['','4 + 2 + 1 + 1 = 8']],
 detailed:[
  ['R₂ takes the exponents 0 and 1, so R₁ − R₂ keeps the pairs of R₁ with exponent n ≥ 2.','R₁ − R₂ = {(p, pⁿ) : n ≥ 2}'],
@@ -1268,7 +1268,7 @@ detailed:[
  ['Check by brute force over pairs (p, q) with p prime, q ≤ 50: exactly 8 pairs have q a perfect power of p with exponent at least 2.','8'],
  ['A common slip is to include n = 0 or n = 1, adding the 30 pairs (p, 1) and (p, p) for the 15 primes up to 47, or to forget that 32 = 2⁵ and 27 = 3³ count.','Answer: 8']
 ]},
-{id:'SET-57-A',parent:'SET-57',variant:1,topic:'Counting elements of a difference of relations',source:'ExamSIDE · JEE Main 2024 (Online) 1st February Morning Shift · questions.examside.com (question id rxpvqavogores5pu)',sourceRef:true,relevance:{parent:'SET-57',sharedSkill:'Count a difference of divisibility relations by removing the overlap',recoveryPurpose:'Divisibility on {1, …, 20} replaces prime powers; same difference-of-relations count'},question:'Let A = {1, 2, 3, …, 20}. Let R₁ and R₂ two relation on A such that R₁ = {(a, b) : b is divisible by a} R₂ = {(a, b) : a is an integral multiple of b}. Then, number of elements in R₁ − R₂ is equal to .........',type:'numerical',answer:'46',
+{id:'SET-57-A',parent:'SET-57',variant:1,topic:'Counting elements of a difference of relations',diagram:'b55Divisors',source:'ExamSIDE · JEE Main 2024 (Online) 1st February Morning Shift · questions.examside.com (question id rxpvqavogores5pu)',sourceRef:true,relevance:{parent:'SET-57',sharedSkill:'Count a difference of divisibility relations by removing the overlap',recoveryPurpose:'Divisibility on {1, …, 20} replaces prime powers; same difference-of-relations count'},question:'Let A = {1, 2, 3, …, 20}. Let R₁ and R₂ two relation on A such that R₁ = {(a, b) : b is divisible by a} R₂ = {(a, b) : a is an integral multiple of b}. Then, number of elements in R₁ − R₂ is equal to .........',type:'numerical',answer:'46',
 short:[['','R₁ − R₂ = {(a, b) : a | b and b ∤ a}','= {(a, b) : a | b, a ≠ b}'],['','n(R₁) = ∑_(a=1)^(20) ⌊20/a⌋','= 66'],['','n(R₁ − R₂) = 66 − 20','= 46']],
 detailed:[
  ['R₁ is pairs with a dividing b, and R₂ is pairs with b dividing a.','(a, b) ∈ R₁','⇔ a | b','(a, b) ∈ R₂','⇔ b | a'],
@@ -1279,7 +1279,7 @@ detailed:[
  ['Subtract the diagonal.','66 − 20 = 46'],
  ['Check with a = 1 alone: b = 2, …, 20 gives 19 pairs, and a = 10 gives only (10, 20). Slips are answering 66, which keeps the diagonal pairs.','Answer: 46']
 ]},
-{id:'SET-58',level:3,topic:'Counting reflexive transitive non-symmetric relations',source:'ExamSIDE · JEE Main 2023 (Online) 12th April Morning Shift · questions.examside.com (question id auu6mc4peolwkvno)',sourceRef:true,question:'The number of relations, on the set {1, 2, 3} containing (1, 2) and (2, 3), which are reflexive and transitive but not symmetric, is ........',type:'numerical',answer:'3',
+{id:'SET-58',level:3,topic:'Counting reflexive transitive non-symmetric relations',diagram:'b55Arrows',source:'ExamSIDE · JEE Main 2023 (Online) 12th April Morning Shift · questions.examside.com (question id auu6mc4peolwkvno)',sourceRef:true,question:'The number of relations, on the set {1, 2, 3} containing (1, 2) and (2, 3), which are reflexive and transitive but not symmetric, is ........',type:'numerical',answer:'3',
 short:[['','R ∋ (1, 1), (2, 2), (3, 3), (1, 2), (2, 3)','(1, 2), (2, 3) ∈ R','⇒ (1, 3) ∈ R'],['only (2, 1), (3, 2), (3, 1) are free','R₀ = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 3), (1, 3)}','(3, 1) ∈ R','⇒ R = A × A'],['','R₀, R₀ ∪ {(2, 1)}, R₀ ∪ {(3, 2)} are transitive and not symmetric','number of relations = 3']],
 detailed:[
  ['Reflexivity on {1, 2, 3} forces every loop, and (1, 2), (2, 3) are given.','(1, 1), (2, 2), (3, 3) ∈ R','(1, 2), (2, 3) ∈ R'],
@@ -1301,7 +1301,7 @@ detailed:[
  ['Check by brute force over all 512 subsets of A × A: the sizes 4, 5, 6, 7, 9 contain 1, 2, 3, 4, 0 relations that are not symmetric, and only the first three sizes obey n(R) ≤ 6.','number of relations = 6'],
  ['Counting the symmetric relation R + (2, 1) as valid gives 7, including the four 7-element relations gives 10, and stopping at 5 elements gives 3.','Answer: 6']
 ]},
-{id:'SET-59',level:2,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Evening Shift · questions.examside.com (question id f7vxpkt3g6wv8phs)',sourceRef:true,question:'Let A = {2, 3, 5, 7, 9}. Let R be the relation on A defined by xRy if and only if 2x ≤ 3y. Let l be the number of elements in R, and m be the minimum number of elements required to be added in R to make it a symmetric relation. Then l + m is equal to:',options:['21','25','23','27'],correct:1,answer:'25',
+{id:'SET-59',level:2,topic:'Minimum pairs to add to make a relation symmetric',diagram:'b55Grid59',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Evening Shift · questions.examside.com (question id f7vxpkt3g6wv8phs)',sourceRef:true,question:'Let A = {2, 3, 5, 7, 9}. Let R be the relation on A defined by xRy if and only if 2x ≤ 3y. Let l be the number of elements in R, and m be the minimum number of elements required to be added in R to make it a symmetric relation. Then l + m is equal to:',options:['21','25','23','27'],correct:1,answer:'25',
 short:[['','for each x list y ≥ 2x/3','2: 5 pairs','3: 5 pairs','5: 3 pairs','7: 3 pairs','9: 2 pairs'],['','l = 5 + 5 + 3 + 3 + 2','= 18'],['','m = (18 − 5) − 6','= 7','l + m = 18 + 7','= 25']],
 detailed:[
  ['The condition 2x ≤ 3y means y ≥ 2x/3, so list the allowed y for each x.','2: y ∈ {2, 3, 5, 7, 9}','3: y ∈ {2, 3, 5, 7, 9}','5: y ∈ {5, 7, 9}','7: y ∈ {5, 7, 9}','9: y ∈ {7, 9}'],
@@ -1313,7 +1313,7 @@ detailed:[
  ['Adding the counts gives the required sum.','l + m = 18 + 7','= 25'],
  ['m = 13 would count the mutually related pairs again and gives 31. Options 21, 23 and 27 would need m = 3, 5 or 9, but the one-way off-diagonal pairs listed number exactly 7, so only 25 matches.','Answer: (B) 25']
 ]},
-{id:'SET-59-A',parent:'SET-59',variant:1,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Evening Shift · questions.examside.com (question id yo4wte9czwtvwure)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Count the pairs satisfying an inequality, then count the off-diagonal pairs that lack a mirror image.',recoveryPurpose:'The inequality 4x ≤ 5y on 1 to 5 replaces 2x ≤ 3y on a five-element set, so a new list of pairs is made but the same one-way pair count gives n.'},question:'Let A = {1, 2, 3, 4, 5}. Let R be a relation on A defined by xRy if and only if 4x ≤ 5y. Let m be the number of elements in R and n be the minimum number of elements from A × A that are required to be added to R to make it a symmetric relation. Then m + n is equal to :',options:['23','26','25','24'],correct:2,answer:'25',
+{id:'SET-59-A',parent:'SET-59',variant:1,topic:'Minimum pairs to add to make a relation symmetric',diagram:'b55Grid59A',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Evening Shift · questions.examside.com (question id yo4wte9czwtvwure)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Count the pairs satisfying an inequality, then count the off-diagonal pairs that lack a mirror image.',recoveryPurpose:'The inequality 4x ≤ 5y on 1 to 5 replaces 2x ≤ 3y on a five-element set, so a new list of pairs is made but the same one-way pair count gives n.'},question:'Let A = {1, 2, 3, 4, 5}. Let R be a relation on A defined by xRy if and only if 4x ≤ 5y. Let m be the number of elements in R and n be the minimum number of elements from A × A that are required to be added to R to make it a symmetric relation. Then m + n is equal to :',options:['23','26','25','24'],correct:2,answer:'25',
 short:[['','1: 5 pairs','2: 4 pairs','3: 3 pairs','4: 2 pairs','5: 2 pairs'],['','m = 5 + 4 + 3 + 2 + 2','= 16'],['','two-way off-diagonal pairs: (4, 5), (5, 4)','n = (16 − 5) − 2','= 9','m + n = 25']],
 detailed:[
  ['The condition 4x ≤ 5y means y ≥ 4x/5, so list the allowed y for each x.','1: y ∈ {1, 2, 3, 4, 5}','2: y ∈ {2, 3, 4, 5}','3: y ∈ {3, 4, 5}','4: y ∈ {4, 5}','5: y ∈ {4, 5}'],
@@ -1325,7 +1325,7 @@ detailed:[
  ['Add the two counts.','m + n = 16 + 9','= 25'],
  ['Forgetting the two-way pair (4, 5), (5, 4) gives n = 11 and a total of 27, which is not an option, and the other options need m or n off by one or two from the counted 16 and 9. Only 25 matches.','Answer: (C) 25']
 ]},
-{id:'SET-59-B',parent:'SET-59',variant:2,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · questions.examside.com (question id e5ndw5zalls4goba)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'List the pairs of a relation given by a linear equation, then add the mirror image of each pair that is not its own mirror.',recoveryPurpose:'Here the relation comes from 4y = 5x − 3 on M and has only three pairs, so the listing step is short and the one-way pair count is the same.'},question:'Let the relation R on the set M = {1, 2, 3, …, 16} be given by R = {(x, y) : 4y = 5x − 3, x, y ∈ M}. Then the minimum number of elements required to be added in R, in order to make the relation symmetric, is equal to',options:['4','3','1','2'],correct:3,answer:'2',
+{id:'SET-59-B',parent:'SET-59',variant:2,topic:'Minimum pairs to add to make a relation symmetric',diagram:'b55Reflect59B',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Morning Shift · questions.examside.com (question id e5ndw5zalls4goba)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'List the pairs of a relation given by a linear equation, then add the mirror image of each pair that is not its own mirror.',recoveryPurpose:'Here the relation comes from 4y = 5x − 3 on M and has only three pairs, so the listing step is short and the one-way pair count is the same.'},question:'Let the relation R on the set M = {1, 2, 3, …, 16} be given by R = {(x, y) : 4y = 5x − 3, x, y ∈ M}. Then the minimum number of elements required to be added in R, in order to make the relation symmetric, is equal to',options:['4','3','1','2'],correct:3,answer:'2',
 short:[['','y = (5x − 3)/4 ∈ M','x = 3, 7, 11 gives y','= 3, 8, 13'],['','R = {(3, 3), (7, 8), (11, 13)}'],['(3, 3) is its own mirror','(8, 7), (13, 11) must be added','m = 2']],
 detailed:[
  ['The equation 4y = 5x − 3 needs 5x − 3 divisible by 4, so test the residue of x modulo 4.','5x − 3 ≡ x − 3 (mod 4)','x ≡ 3 (mod 4)'],
@@ -1336,7 +1336,7 @@ detailed:[
  ['So exactly two elements must be added.','m = 2'],
  ['3 counts the self-symmetric pair (3, 3) as needing a partner, 4 doubles each missing pair, and 1 adds a partner for only one of the two pairs.','Answer: (D) 2']
 ]},
-{id:'SET-59-C',parent:'SET-59',variant:3,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2023 (Online) 8th April Morning Shift · questions.examside.com (question id elaupkeg6qtldcel)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Decide which pairs of R lack a mirror image and count them.',recoveryPurpose:'Here no pair has a mirror image because the defining difference is always positive, so every pair of R must be mirrored, and the count n(R) is the answer.'},question:'Let A = {0, 3, 4, 6, 7, 8, 9, 10} and R be the relation defined on A such that R = {(x, y) ∈ A × A : x − y is odd positive integer or x − y = 2}. The minimum number of elements that must be added to the relation R, so that it is a symmetric relation, is equal to ........',type:'numerical',answer:'19',
+{id:'SET-59-C',parent:'SET-59',variant:3,topic:'Minimum pairs to add to make a relation symmetric',diagram:'b55Grid59C',source:'ExamSIDE · JEE Main 2023 (Online) 8th April Morning Shift · questions.examside.com (question id elaupkeg6qtldcel)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Decide which pairs of R lack a mirror image and count them.',recoveryPurpose:'Here no pair has a mirror image because the defining difference is always positive, so every pair of R must be mirrored, and the count n(R) is the answer.'},question:'Let A = {0, 3, 4, 6, 7, 8, 9, 10} and R be the relation defined on A such that R = {(x, y) ∈ A × A : x − y is odd positive integer or x − y = 2}. The minimum number of elements that must be added to the relation R, so that it is a symmetric relation, is equal to ........',type:'numerical',answer:'19',
 short:[['','every pair of R has x − y > 0','(y, x) has difference < 0','(y, x) ∉ R'],['pairs of R','0: none','3: 1','4: 1','6: 2','7: 3','8: 3','9: 5','10: 4'],['','n(R) = 19','elements to add = 19']],
 detailed:[
  ['In every pair of R the first entry exceeds the second: x − y is a positive odd number or equals 2.','x − y > 0 for all (x, y) ∈ R'],
@@ -1347,7 +1347,7 @@ detailed:[
  ['So 19 new pairs are required, none of which coincides with another.','elements to add = 19'],
  ['Counting only the odd differences gives 15, and adding the mirror of each pair twice would give 38; neither is the number of new elements.','Answer: 19']
 ]},
-{id:'SET-59-D',parent:'SET-59',variant:4,topic:'Minimum pairs to add to make a relation symmetric',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Morning Shift · questions.examside.com (question id ubpkphiylynkeigq)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Solve each linear equation for the pairs in the set, then add the mirror image of every pair not already mirrored.',recoveryPurpose:'Here two relations from linear equations on {1, …, 20} must be listed and their one-way pairs added together, so the listing is done twice.'},question:'Let the relations R₁ and R₂ on the set X = {1, 2, 3, …, 20} be given by R₁ = {(x, y) : 2x − 3y = 2} and R₂ = {(x, y) : −5x + 4y = 0}. If M and N be the minimum number of elements required to be added in R₁ and R₂, respectively, in order to make the relations symmetric, then M + N equals',options:['16','12','8','10'],correct:3,answer:'10',
+{id:'SET-59-D',parent:'SET-59',variant:4,topic:'Minimum pairs to add to make a relation symmetric',diagram:'b55Two59D',source:'ExamSIDE · JEE Main 2024 (Online) 6th April Morning Shift · questions.examside.com (question id ubpkphiylynkeigq)',sourceRef:true,relevance:{parent:'SET-59',sharedSkill:'Solve each linear equation for the pairs in the set, then add the mirror image of every pair not already mirrored.',recoveryPurpose:'Here two relations from linear equations on {1, …, 20} must be listed and their one-way pairs added together, so the listing is done twice.'},question:'Let the relations R₁ and R₂ on the set X = {1, 2, 3, …, 20} be given by R₁ = {(x, y) : 2x − 3y = 2} and R₂ = {(x, y) : −5x + 4y = 0}. If M and N be the minimum number of elements required to be added in R₁ and R₂, respectively, in order to make the relations symmetric, then M + N equals',options:['16','12','8','10'],correct:3,answer:'10',
 short:[['','2x − 3y = 2','⇒ x ≡ 1 (mod 3)','R₁ = {(4, 2), (7, 4), (10, 6), (13, 8), (16, 10), (19, 12)}'],['','−5x + 4y = 0','⇒ x = 4k','R₂ = {(4, 5), (8, 10), (12, 15), (16, 20)}'],['','M = 6','N = 4','M + N = 10']],
 detailed:[
  ['For R₁, y = (2x − 2)/3 must be a positive whole number at most 20, so x − 1 is divisible by 3 and x ≥ 4.','x ∈ {4, 7, 10, 13, 16, 19}'],
@@ -1359,7 +1359,7 @@ detailed:[
  ['Adding the two counts gives the required sum.','M + N = 6 + 4','= 10'],
  ['Including x = 1, y = 0 (but 0 ∉ X) would give M = 7 and a total of 11, and counting the mirrors twice doubles the total. Only 10 matches the listed pairs.','Answer: (D) 10']
 ]},
-{id:'SET-60',level:2,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2026 (Online) 23rd January Morning Shift · questions.examside.com (question id b8sba9i2kbhklu42)',sourceRef:true,question:'Let A = {−2, −1, 0, 1, 2, 3, 4}. Let R be a relation on A defined by xRy if and only if 2x + y ≤ 2. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations respectively. Then l + m + n is equal to :',options:['34','32','33','35'],correct:2,answer:'33',
+{id:'SET-60',level:2,topic:'Pairs to add for reflexive and symmetric',diagram:'b55Grid60',source:'ExamSIDE · JEE Main 2026 (Online) 23rd January Morning Shift · questions.examside.com (question id b8sba9i2kbhklu42)',sourceRef:true,question:'Let A = {−2, −1, 0, 1, 2, 3, 4}. Let R be a relation on A defined by xRy if and only if 2x + y ≤ 2. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations respectively. Then l + m + n is equal to :',options:['34','32','33','35'],correct:2,answer:'33',
 short:[['','y ≤ 2 − 2x','−2: 7 pairs','−1: 7 pairs','0: 5 pairs','1: 3 pairs','2: 1 pair','3, 4: none'],['','l = 7 + 7 + 5 + 3 + 1','= 23','(−2, −2), (−1, −1), (0, 0) ∈ R','⇒ m = 7 − 3','= 4'],['','n = (23 − 3) − 14','= 6','l + m + n = 23 + 4 + 6','= 33']],
 detailed:[
  ['The condition 2x + y ≤ 2 is y ≤ 2 − 2x; list the allowed y for each x ∈ A.','−2: all 7 values','−1: all 7 values','0: y ∈ {−2, −1, 0, 1, 2}','1: y ∈ {−2, −1, 0}','2: y ∈ {−2}','3: none','4: none'],
@@ -1372,7 +1372,7 @@ detailed:[
  ['Add the three counts.','l + m + n = 23 + 4 + 6','= 33'],
  ['Counting the three diagonal pairs of R inside n gives n = 9 and a total of 36, which is not an option, and 32, 34 and 35 would need l + m + n off by 1 or 2 from the counted 23, 4 and 6. Only 33 matches.','Answer: (C) 33']
 ]},
-{id:'SET-60-A',parent:'SET-60',variant:1,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Evening Shift · questions.examside.com (question id shfh14ck9j2snrvn)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'List the pairs of R from the condition, count the missing loops for reflexivity and the one-way off-diagonal pairs for symmetry, then add l, m, n.',recoveryPurpose:'Here the rule is a linear condition 2x − y ∈ {0, 1} with fewer pairs and no mutual pairs, so n equals all off-diagonal pairs of R.'},question:'Let A = {−3, −2, −1, 0, 1, 2, 3} and R be a relation on A defined by xRy if and only if 2x − y ∈ {0, 1}. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations, respectively. Then l + m + n is equal to:',options:['17','18','15','16'],correct:0,answer:'17',
+{id:'SET-60-A',parent:'SET-60',variant:1,topic:'Pairs to add for reflexive and symmetric',diagram:'b55Grid60A',source:'ExamSIDE · JEE Main 2025 (Online) 4th April Evening Shift · questions.examside.com (question id shfh14ck9j2snrvn)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'List the pairs of R from the condition, count the missing loops for reflexivity and the one-way off-diagonal pairs for symmetry, then add l, m, n.',recoveryPurpose:'Here the rule is a linear condition 2x − y ∈ {0, 1} with fewer pairs and no mutual pairs, so n equals all off-diagonal pairs of R.'},question:'Let A = {−3, −2, −1, 0, 1, 2, 3} and R be a relation on A defined by xRy if and only if 2x − y ∈ {0, 1}. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations, respectively. Then l + m + n is equal to:',options:['17','18','15','16'],correct:0,answer:'17',
 short:[['','y = 2x or y','= 2x − 1','R = {(−1, −2), (−1, −3), (0, 0), (0, −1), (1, 2), (1, 1), (2, 3)}','l = 7'],['','(0, 0), (1, 1) ∈ R','⇒ m = 7 − 2','= 5'],['','n = 7 − 2','= 5','l + m + n = 7 + 5 + 5','= 17']],
 detailed:[
  ['The condition 2x − y ∈ {0, 1} means y = 2x or y = 2x − 1; take those y that lie in A for each x.','x = −1 gives y ∈ {−2, −3}','x = 0 gives y ∈ {0, −1}','x = 1 gives y ∈ {2, 1}','x = 2 gives y ∈ {3}','x ∈ {−2, −3, 3}: none'],
@@ -1384,7 +1384,7 @@ detailed:[
  ['Add the three counts.','l + m + n = 7 + 5 + 5','= 17'],
  ['Counting the two loops as needing a mirror gives n = 7 and a total of 19, omitting one off-diagonal pair gives 16, and the other options need l, m or n off by one or two. Only 17 matches l = 7, m = 5, n = 5.','Answer: (A) 17']
 ]},
-{id:'SET-60-B',parent:'SET-60',variant:2,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2025 (Online) 3rd April Evening Shift · questions.examside.com (question id vz1z9jnzctjtqmoh)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'Count l, the missing loops for reflexivity and the missing mirror images for symmetry.',recoveryPurpose:'Here the relation is a function-defined rule y = max{x, 1} with one pair per x, so the pairs are read off directly and the same three counts are made.'},question:'Let A = {−2, −1, 0, 1, 2, 3}. Let R be a relation on A defined by xRy if and only if y = max{x, 1}. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations, respectively. Then l + m + n is equal to',options:['11','12','14','13'],correct:1,answer:'12',
+{id:'SET-60-B',parent:'SET-60',variant:2,topic:'Pairs to add for reflexive and symmetric',diagram:'b55Grid60B',source:'ExamSIDE · JEE Main 2025 (Online) 3rd April Evening Shift · questions.examside.com (question id vz1z9jnzctjtqmoh)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'Count l, the missing loops for reflexivity and the missing mirror images for symmetry.',recoveryPurpose:'Here the relation is a function-defined rule y = max{x, 1} with one pair per x, so the pairs are read off directly and the same three counts are made.'},question:'Let A = {−2, −1, 0, 1, 2, 3}. Let R be a relation on A defined by xRy if and only if y = max{x, 1}. Let l be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations, respectively. Then l + m + n is equal to',options:['11','12','14','13'],correct:1,answer:'12',
 short:[['','y = max{x, 1}','x = −2, −1, 0, 1','⇒ y = 1','x = 2','⇒ y = 2','x = 3','⇒ y = 3'],['','R = {(−2, 1), (−1, 1), (0, 1), (1, 1), (2, 2), (3, 3)}','l = 6'],['','loops missing: (−2, −2), (−1, −1), (0, 0)','⇒ m = 3','mirrors missing: (1, −2), (1, −1), (1, 0)','⇒ n = 3','l + m + n = 12']],
 detailed:[
  ['For each x compute max{x, 1}: it equals 1 for x ≤ 1 and equals x for x ≥ 1.','x = −2, −1, 0, 1','⇒ y = 1','x = 2','⇒ y = 2','x = 3','⇒ y = 3'],
@@ -1395,7 +1395,7 @@ detailed:[
  ['Add the three counts.','l + m + n = 6 + 3 + 3','= 12'],
  ['Taking m = 2 or n = 2 gives 11, and 13 or 14 need one or two extra additions, for example treating a loop as missing a mirror. Only 12 fits l = 6, m = 3, n = 3.','Answer: (B) 12']
 ]},
-{id:'SET-60-C',parent:'SET-60',variant:3,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2025 (Online) 3rd April Morning Shift · questions.examside.com (question id ojd4tut4yksaarow)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'List the pairs satisfying a condition, count the loops already present, and add the missing loops for reflexivity.',recoveryPurpose:'Here only reflexivity is asked and the condition is a quadratic double inequality, so the loops are tested by x² + 2x ∈ [0, 4] instead of counting mirrors.'},question:'Let A = {−3, −2, −1, 0, 1, 2, 3}. Let R be a relation on A defined by xRy if and only if 0 ≤ x² + 2y ≤ 4. Let l be the number of elements in R and m be the minimum number of elements required to be added in R to make it a reflexive relation. Then l + m is equal to',options:['18','20','17','19'],correct:0,answer:'18',
+{id:'SET-60-C',parent:'SET-60',variant:3,topic:'Pairs to add for reflexive and symmetric',diagram:'b55Grid60C',source:'ExamSIDE · JEE Main 2025 (Online) 3rd April Morning Shift · questions.examside.com (question id ojd4tut4yksaarow)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'List the pairs satisfying a condition, count the loops already present, and add the missing loops for reflexivity.',recoveryPurpose:'Here only reflexivity is asked and the condition is a quadratic double inequality, so the loops are tested by x² + 2x ∈ [0, 4] instead of counting mirrors.'},question:'Let A = {−3, −2, −1, 0, 1, 2, 3}. Let R be a relation on A defined by xRy if and only if 0 ≤ x² + 2y ≤ 4. Let l be the number of elements in R and m be the minimum number of elements required to be added in R to make it a reflexive relation. Then l + m is equal to',options:['18','20','17','19'],correct:0,answer:'18',
 short:[['','−x²/2 ≤ y ≤ (4 − x²)/2','±3: 1 pair','±2: 3 pairs','±1: 2 pairs','0: 3 pairs'],['','l = 2 × 1 + 2 × 3 + 2 × 2 + 3','= 15'],['','(−3, −3), (−2, −2), (0, 0), (1, 1) ∈ R','⇒ m = 7 − 4','= 3','l + m = 18']],
 detailed:[
  ['The condition 0 ≤ x² + 2y ≤ 4 is −x²/2 ≤ y ≤ (4 − x²)/2. List the y in A for each x.','x = 0 gives y ∈ {0, 1, 2}','x = ±1 gives y ∈ {0, 1}','x = ±2 gives y ∈ {−2, −1, 0}','x = ±3 gives y ∈ {−3}'],
@@ -1406,7 +1406,7 @@ detailed:[
  ['Add l and m.','l + m = 15 + 3','= 18'],
  ['Counting (−1, −1) as present gives m = 2 and 17, while treating (2, 2) or (3, 3) as present is also wrong since 8 and 15 exceed 4. The other options need l or m off from 15 and 3. Only 18 matches.','Answer: (A) 18']
 ]},
-{id:'SET-60-D',parent:'SET-60',variant:4,topic:'Pairs to add for reflexive and symmetric',source:'ExamSIDE · JEE Main 2023 (Online) 13th April Evening Shift · questions.examside.com (question id rlmrabgeflaut656)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'Add missing loops for reflexivity and missing mirror pairs for symmetry, then add the two counts.',recoveryPurpose:'Here both conditions are asked together for one relation defined by an equation or an absolute value, so the additions are summed after checking no pair is counted twice.'},question:'Let A = {−4, −3, −2, 0, 1, 3, 4} and R = {(a, b) ∈ A × A : b = |a| or b² = a + 1} be a relation on A. Then the minimum number of elements, that must be added to the relation R so that it becomes reflexive and symmetric, is ........',type:'numerical',answer:'7',
+{id:'SET-60-D',parent:'SET-60',variant:4,topic:'Pairs to add for reflexive and symmetric',diagram:'b55Grid60D',source:'ExamSIDE · JEE Main 2023 (Online) 13th April Evening Shift · questions.examside.com (question id rlmrabgeflaut656)',sourceRef:true,relevance:{parent:'SET-60',sharedSkill:'Add missing loops for reflexivity and missing mirror pairs for symmetry, then add the two counts.',recoveryPurpose:'Here both conditions are asked together for one relation defined by an equation or an absolute value, so the additions are summed after checking no pair is counted twice.'},question:'Let A = {−4, −3, −2, 0, 1, 3, 4} and R = {(a, b) ∈ A × A : b = |a| or b² = a + 1} be a relation on A. Then the minimum number of elements, that must be added to the relation R so that it becomes reflexive and symmetric, is ........',type:'numerical',answer:'7',
 short:[['','b = |a| gives (−4, 4), (−3, 3), (0, 0), (1, 1), (3, 3), (4, 4)','b² = a + 1 gives (0, 1), (3, −2)','R = {(−4, 4), (−3, 3), (0, 0), (0, 1), (1, 1), (3, −2), (3, 3), (4, 4)}'],['','loops missing: (−4, −4), (−3, −3), (−2, −2)','⇒ 3','mirrors missing: (4, −4), (3, −3), (1, 0), (−2, 3)','⇒ 4'],['','elements to add = 3 + 4','= 7']],
 detailed:[
  ['Find the pairs. b = |a| must land in A, so a = −2 gives 2 ∉ A and is dropped; b² = a + 1 gives b = ±1 for a = 0 (only 1 ∈ A) and b = ±2 for a = 3 (only −2 ∈ A), and no b for other a.','b = |a|: (−4, 4), (−3, 3), (0, 0), (1, 1), (3, 3), (4, 4)','b² = a + 1: (0, 1), (3, −2)'],
@@ -1417,7 +1417,7 @@ detailed:[
  ['Check from the target: a reflexive symmetric relation containing R has 7 loops plus the 4 mirrored off-diagonal pairs and their 4 mirrors, so 7 + 8 = 15 elements, against 8 present.','15 − 8 = 7'],
  ['Counting only the loops gives 3, only the mirrors gives 4, and double counting a pair shared by both additions would give 6, but no pair is shared. The sum is 7.','Answer: 7']
 ]},
-{id:'SET-61',level:2,topic:'Counting reflexive and symmetric relations on a set',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Morning Shift · questions.examside.com (question id o8gkjvqg0fglbqnj)',sourceRef:true,question:'The number of relations, defined on the set {a, b, c, d}, which are both reflexive and symmetric, is equal to:',options:['16','64','256','1024'],correct:1,answer:'64',
+{id:'SET-61',level:2,topic:'Counting reflexive and symmetric relations on a set',diagram:'b55Matrix61',source:'ExamSIDE · JEE Main 2026 (Online) 21st January Morning Shift · questions.examside.com (question id o8gkjvqg0fglbqnj)',sourceRef:true,question:'The number of relations, defined on the set {a, b, c, d}, which are both reflexive and symmetric, is equal to:',options:['16','64','256','1024'],correct:1,answer:'64',
 short:[['','(a, a), (b, b), (c, c), (d, d) ∈ R','free pairs {x, y}: C(4, 2) = 6'],['','number of relations = 2⁶','= 64']],
 detailed:[
  ['Reflexivity forces the four loops, so they give no choice.','(a, a), (b, b), (c, c), (d, d) ∈ R'],
@@ -1428,7 +1428,7 @@ detailed:[
  ['Check with the matrix view: a symmetric 4 × 4 0-1 matrix with 1s on the diagonal is fixed by its 6 entries above the diagonal.','6 free entries','⇒ 2⁶'],
  ['16 = 2⁴ counts subsets of the diagonal, which is forced anyway; 256 = 2⁸ assumes eight free pairs; 1024 = 2¹⁰ is the number of all symmetric relations, where the diagonal is also free.','Answer: (B) 64']
 ]},
-{id:'SET-61-A',parent:'SET-61',variant:1,topic:'Counting reflexive and symmetric relations on a set',source:'ExamSIDE · JEE Main 2024 (Online) 30th January Evening Shift · questions.examside.com (question id gtghnlfsi86hqsbs)',sourceRef:true,relevance:{parent:'SET-61',sharedSkill:'Count symmetric relations by free choices (diagonal loops and unordered pairs) and use complementary counting for the reflexive ones.',recoveryPurpose:'Here the loops are free, so the total is 2¹⁰ and the reflexive symmetric count 2⁶ from the core is subtracted.'},question:'The number of symmetric relations defined on the set {1, 2, 3, 4} which are not reflexive is ........',type:'numerical',answer:'960',
+{id:'SET-61-A',parent:'SET-61',variant:1,topic:'Counting reflexive and symmetric relations on a set',diagram:'b56SymFree',source:'ExamSIDE · JEE Main 2024 (Online) 30th January Evening Shift · questions.examside.com (question id gtghnlfsi86hqsbs)',sourceRef:true,relevance:{parent:'SET-61',sharedSkill:'Count symmetric relations by free choices (diagonal loops and unordered pairs) and use complementary counting for the reflexive ones.',recoveryPurpose:'Here the loops are free, so the total is 2¹⁰ and the reflexive symmetric count 2⁶ from the core is subtracted.'},question:'The number of symmetric relations defined on the set {1, 2, 3, 4} which are not reflexive is ........',type:'numerical',answer:'960',
 short:[['symmetric: 4 loops and 6 pairs are free','all symmetric: 2¹⁰ = 1024'],['','reflexive and symmetric: 2⁶ = 64'],['','symmetric, not reflexive = 1024 − 64','= 960']],
 detailed:[
  ['A symmetric relation is fixed by its 4 diagonal pairs and by one choice for each of the 6 unordered pairs of distinct elements.','4 + C(4, 2) = 10 free choices'],
@@ -1438,7 +1438,7 @@ detailed:[
  ['Check by counting the diagonal directly: the loops can be chosen in 2⁴ − 1 = 15 ways that are not all present, times 2⁶ for the pairs.','15 × 64 = 960'],
  ['1024 forgets to remove the reflexive relations, 64 is the reflexive count, and 1023 removes only one relation instead of the 64 reflexive ones. Only 960 agrees with both routes.','Answer: 960']
 ]},
-{id:'SET-62',level:3,topic:'Counting the pairs of a relation on integers',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Evening Shift · questions.examside.com (question id quor9f0hieh8wguh)',sourceRef:true,question:'The number of elements in the relation R = {(x, y) : 4x² + y² < 52, x, y ∈ ℤ} is',options:['86','67','89','77'],correct:3,answer:'77',
+{id:'SET-62',level:3,topic:'Counting the pairs of a relation on integers',diagram:'b56EllipseLattice',source:'ExamSIDE · JEE Main 2026 (Online) 22nd January Evening Shift · questions.examside.com (question id quor9f0hieh8wguh)',sourceRef:true,question:'The number of elements in the relation R = {(x, y) : 4x² + y² < 52, x, y ∈ ℤ} is',options:['86','67','89','77'],correct:3,answer:'77',
 short:[['','x = 0 gives 15 values','x = ±1 gives 13 values each','x = ±2 gives 11 values each','x = ±3 gives 7 values each'],['','x = ±4: 64 > 52, none'],['','n(R) = 15 + 2 × 13 + 2 × 11 + 2 × 7','= 77']],
 detailed:[
  ['The inequality bounds x: 4x² < 52 means x² < 13, so x ∈ {−3, −2, −1, 0, 1, 2, 3}.','4x² < 52','⇒ |x| ≤ 3'],
@@ -1449,7 +1449,7 @@ detailed:[
  ['Check by brute force over the integers with |x| ≤ 3 and |y| ≤ 7, counting the pairs with 4x² + y² < 52, which gives 77.','count = 77'],
  ['Using ≤ instead of < adds the boundary points (±2, ±6), (±3, ±4) and gives 85, which is not an option. 86, 89 and 67 do not follow the row counts 15, 13, 11, 7.','Answer: (D) 77']
 ]},
-{id:'SET-63',level:3,topic:'Counting pairs by the value of a - b',source:'ExamSIDE · JEE Main 2023 (Online) 6th April Morning Shift · questions.examside.com (question id hhlwycxhlcohenpo)',sourceRef:true,question:'Let A = {1, 2, 3, 4, …, 10} and B = {0, 1, 2, 3, 4}. The number of elements in the relation R = {(a, b) ∈ A × A : 2(a − b)² + 3(a − b) ∈ B} is ........',type:'numerical',answer:'18',
+{id:'SET-63',level:3,topic:'Counting pairs by the value of a - b',diagram:'b56DiagPairs',source:'ExamSIDE · JEE Main 2023 (Online) 6th April Morning Shift · questions.examside.com (question id hhlwycxhlcohenpo)',sourceRef:true,question:'Let A = {1, 2, 3, 4, …, 10} and B = {0, 1, 2, 3, 4}. The number of elements in the relation R = {(a, b) ∈ A × A : 2(a − b)² + 3(a − b) ∈ B} is ........',type:'numerical',answer:'18',
 short:[['','d = a − b, 2d² + 3d ∈ {0, 1, 2, 3, 4}','d = 0','⇒ 0 ✓','d = −2','⇒ 2 ✓'],['','d = 0: 10 pairs','d = −2: 8 pairs'],['','n(R) = 10 + 8','= 18']],
 detailed:[
  ['The expression depends only on d = a − b, so solve 2d² + 3d ∈ B for the integer d first.','2d² + 3d = d(2d + 3)'],
@@ -1461,7 +1461,7 @@ detailed:[
  ['Check by brute force over the 100 pairs of A × A, which gives 18.','count = 18'],
  ['Counting d = −1 or d = 1 (values −1 and 5, outside B) would add 9 pairs each, and using 10 pairs for d = −2 (total 20) forgets that b = a + 2 needs a ≤ 8. Only 10 + 8 = 18 fits.','Answer: 18']
 ]},
-{id:'SET-64',level:2,topic:'Smallest equivalence relation containing given pairs',source:'ExamSIDE · JEE Main 2024 (Online) 29th January Evening Shift · questions.examside.com (question id rnmbxomwvfi0spod)',sourceRef:true,question:'If R is the smallest equivalence relation on the set {1, 2, 3, 4} such that {(1, 2), (1, 3)} ⊂ R, then the number of elements in R is ........',options:['15','10','12','8'],correct:1,answer:'10',
+{id:'SET-64',level:2,topic:'Smallest equivalence relation containing given pairs',diagram:'b56EquivBlocks',source:'ExamSIDE · JEE Main 2024 (Online) 29th January Evening Shift · questions.examside.com (question id rnmbxomwvfi0spod)',sourceRef:true,question:'If R is the smallest equivalence relation on the set {1, 2, 3, 4} such that {(1, 2), (1, 3)} ⊂ R, then the number of elements in R is ........',options:['15','10','12','8'],correct:1,answer:'10',
 short:[['','(1, 2), (1, 3) ∈ R','⇒ 1 ~ 2 ~ 3','class {1, 2, 3} and class {4}'],['','n(R) = 3² + 1²','= 10']],
 detailed:[
  ['An equivalence relation is the same as a partition of the set into classes, and R = {(x, y) : x and y lie in the same class}.','n(R) = ∑ (class size)²'],
@@ -1472,7 +1472,7 @@ detailed:[
  ['Check by listing: the loops (4) plus (1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2) give 4 + 6 = 10.','4 + 6 = 10'],
  ['8 omits (2, 3) and (3, 2) that transitivity forces, and 12 and 15 contain pairs involving 4 that nothing forces, so the relation is not the smallest. Only 10 is minimal and equivalence.','Answer: (B) 10']
 ]},
-{id:'SET-65',level:2,topic:'Counting equivalence relations on a small set',source:'ExamSIDE · JEE Main 2025 (Online) 22nd January Morning Shift · questions.examside.com (question id w15h6oyqgjxt92el)',sourceRef:true,question:'The number of non-empty equivalence relations on the set {1, 2, 3} is :',options:['7','4','5','6'],correct:2,answer:'5',
+{id:'SET-65',level:2,topic:'Counting equivalence relations on a small set',diagram:'b56Partitions',source:'ExamSIDE · JEE Main 2025 (Online) 22nd January Morning Shift · questions.examside.com (question id w15h6oyqgjxt92el)',sourceRef:true,question:'The number of non-empty equivalence relations on the set {1, 2, 3} is :',options:['7','4','5','6'],correct:2,answer:'5',
 short:[['','equivalence relations on {1, 2, 3} = partitions of {1, 2, 3}'],['classes','{1}, {2}, {3}: 1 relation','{1, 2}, {3} and its two copies: 3 relations','{1, 2, 3}: 1 relation'],['','number = 1 + 3 + 1','= 5']],
 detailed:[
  ['Every equivalence relation corresponds to exactly one partition of the set into classes, so count the partitions of {1, 2, 3}.','equivalence relations ⇔ partitions'],
@@ -1483,7 +1483,7 @@ detailed:[
  ['Check with the Bell number B₃ = 5, and note that every equivalence relation on a non-empty set is non-empty because it contains the loops.','B₃ = 5'],
  ['4 forgets one of the three partitions with a pair, 6 adds the empty relation, which is not reflexive, so it is not an equivalence relation, and 7 exceeds the Bell number B₃ = 5. Only 5 is correct.','Answer: (C) 5']
 ]},
-{id:'SET-66',level:1,topic:'Minimum pairs to add for transitivity',source:'ExamSIDE · JEE Main 2023 (Online) 30th January Morning Shift · questions.examside.com (question id dijrksbcyula2pdu)',sourceRef:true,question:'The minimum number of elements that must be added to the relation R = {(a, b), (b, c)} on the set {a, b, c} so that it becomes symmetric and transitive is :',options:['7','3','4','5'],correct:0,answer:'7',
+{id:'SET-66',level:1,topic:'Minimum pairs to add for transitivity',diagram:'b56ClosureThree',source:'ExamSIDE · JEE Main 2023 (Online) 30th January Morning Shift · questions.examside.com (question id dijrksbcyula2pdu)',sourceRef:true,question:'The minimum number of elements that must be added to the relation R = {(a, b), (b, c)} on the set {a, b, c} so that it becomes symmetric and transitive is :',options:['7','3','4','5'],correct:0,answer:'7',
 short:[['','(b, a), (c, b) are added for symmetry'],['','(a, b), (b, a)','⇒ (a, a)','(b, c), (c, b)','⇒ (b, b)','(c, b), (b, c)','⇒ (c, c)','(a, b), (b, c)','⇒ (a, c)','(c, b), (b, a)','⇒ (c, a)'],['','R = A × A','elements to add = 9 − 2','= 7']],
 detailed:[
  ['Symmetry requires the mirror of each given pair, so two pairs must be added.','(b, a), (c, b) ∈ R'],
@@ -1494,7 +1494,7 @@ detailed:[
  ['Check minimality: each of these 7 pairs was forced by symmetry or by transitivity, so none can be left out.','2 + 5 = 7'],
  ['Adding only the mirrors gives 2, adding the mirrors and (a, c) gives 3, omitting the three loops from 7 gives 4, and omitting two loops gives 5. None of these is transitive and symmetric.','Answer: (A) 7']
 ]},
-{id:'SET-66-A',parent:'SET-66',variant:1,topic:'Minimum pairs to add for transitivity',source:'ExamSIDE · JEE Main 2026 (Online) 6th April Evening Shift · questions.examside.com (question id vjaz3gt2aoi2xwe3)',sourceRef:true,relevance:{parent:'SET-66',sharedSkill:'Add the pairs forced by chains (x, y), (y, z) so that the relation closes under transitivity, then subtract the pairs already present.',recoveryPurpose:'Here the relation is infinite-looking but bounded by x + y ≤ 7, and there is no symmetric step, but the same forced-composition reasoning gives the closure.'},question:'Let R = {(x, y) ∈ ℕ × ℕ : log_(e)(x + y) ≤ 2}. Then the minimum number of elements, required to be added in R to make it a transitive relation, is ........',type:'numerical',answer:'15',
+{id:'SET-66-A',parent:'SET-66',variant:1,topic:'Minimum pairs to add for transitivity',diagram:'b56ClosureSix',source:'ExamSIDE · JEE Main 2026 (Online) 6th April Evening Shift · questions.examside.com (question id vjaz3gt2aoi2xwe3)',sourceRef:true,relevance:{parent:'SET-66',sharedSkill:'Add the pairs forced by chains (x, y), (y, z) so that the relation closes under transitivity, then subtract the pairs already present.',recoveryPurpose:'Here the relation is infinite-looking but bounded by x + y ≤ 7, and there is no symmetric step, but the same forced-composition reasoning gives the closure.'},question:'Let R = {(x, y) ∈ ℕ × ℕ : log_(e)(x + y) ≤ 2}. Then the minimum number of elements, required to be added in R to make it a transitive relation, is ........',type:'numerical',answer:'15',
 short:[['','log_(e)(x + y) ≤ 2','⇒ x + y ≤ e² ≈ 7.39','x + y ≤ 7','n(R) = 6 + 5 + 4 + 3 + 2 + 1','= 21'],['','(x, 1), (1, z) ∈ R for x, z ≤ 6','⇒ (x, z) ∈ R','closure = {1, …, 6} × {1, …, 6}'],['','elements to add = 36 − 21','= 15']],
 detailed:[
  ['Since logₑ is increasing, the condition x + y ≤ e² ≈ 7.39 means x + y ≤ 7 for natural numbers (ℕ starts at 1).','x + y ≤ 7'],
@@ -1637,7 +1637,619 @@ const DIAGRAMS_b03={
    180,'Two Venn pictures inside a rectangle C: on the left the shared part of A and B lies inside C; on the right the circle A lies inside C and overlaps B',280);
  }
 };
-const SOL=Object.assign({},DIAGRAMS_b02,DIAGRAMS_b03);
+/* b51.js */
+const b51_dot=(x,y,c,r=5,open=false)=>`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="${open?'#131313':c}" stroke="${c}" stroke-width="2"/>`;
+const b51_seg=(x1,y1,x2,y2,c=M,w=2,d)=>line(`M${x1.toFixed(1)} ${y1.toFixed(1)}L${x2.toFixed(1)} ${y2.toFixed(1)}`,c,w,d);
+const DIAGRAMS_b51={
+ 'b51Overlap': ()=>{
+  const X=v=>20+(v-78)*18.5,y=70;
+  return wrap(
+   t(140,24,'K must lie here',G,13)+
+   b51_seg(X(78),y,X(91),y,M,2)+
+   b51_seg(X(87),y,X(89),y,G,7)+
+   [87,89].map(v=>b51_dot(X(v),y,G,5)).join('')+
+   [79,81,83,85].map(v=>b51_dot(X(v),y,R,5)).join('')+
+   [79,81,83,85,87,89].map(v=>t(X(v),102,v,v>=87?G:R,13)).join(''),
+   122,'Number line from 78 to 91: K must lie between 87 and 89, while 79, 81, 83 and 85 fall outside',280);
+ },
+ 'b51OverlapA': ()=>{
+  const X=v=>20+(v-30)*6,y=70;
+  return wrap(
+   t(X(51.5),30,'x can lie here',G,13)+
+   b51_seg(X(30),y,X(70),y,M,2)+
+   b51_seg(X(38),y,X(65),y,G,7)+
+   b51_dot(X(38),y,G)+b51_dot(X(65),y,G)+b51_dot(X(36),y,R)+
+   t(X(36),56,36,R,13)+t(X(38)+8,102,38,G,13)+t(X(65),102,65,G,13),
+   122,'Number line from 30 to 70: x lies between 38 and 65, and 36 falls outside',280);
+ },
+ 'b51ModSets': ()=>{
+  const X=v=>20+(v+6)*(240/14),y=80;
+  let s=b51_seg(X(-6),y,X(8),y,M,2)+b51_seg(X(-6),y,X(-2),y,B,6)+b51_seg(X(6),y,X(8),y,B,6)+
+   b51_dot(X(-2),y,B,5,true)+b51_dot(X(6),y,B,5);
+  for(let v=-2;v<=5;v++)s+=b51_dot(X(v),y,G,4.5);
+  s+=t(X(-4),56,'A∩B∩C',B,13)+t(X(7),56,'A∩B∩C',B,13)+t(X(1.5),52,'complement ∩ ℤ',G,13);
+  s+=[-2,5,6].map(v=>t(X(v),112,v<0?'−2':v,v===6?B:G,13)).join('');
+  return wrap(s,130,'Number line: A∩B∩C is the ray left of −2 and the ray from 6; the integers −2 to 5 form the complement',280);
+ },
+ 'b51ProdGrid': ()=>{
+  const X=v=>30+(v+3)*32,Y=v=>20+(5-v)*28;
+  let s=b51_seg(X(-3),Y(0),X(4),Y(0),M,1.5)+b51_seg(X(0),Y(-1),X(0),Y(5),M,1.5);
+  for(const a of [-2,2,3])for(const b of [0,1,2,3,4])s+=b51_dot(X(a),Y(b),G,5);
+  s+=[-2,2,3].map(v=>t(X(v),Y(-1)+16,v<0?'−2':v,B,13)).join('')+
+   [1,2,3,4].map(v=>t(X(0)-10,Y(v)+5,v,B,13,'end')).join('')+
+   t(X(4)-4,Y(0)-8,'A',B,14,'middle',700)+t(X(0)+12,Y(5)+4,'B',B,14,'middle',700);
+  return wrap(s,Y(-1)+30,'Grid of the 15 pairs of A times B with A = {−2, 2, 3} across and B = {0, 1, 2, 3, 4} up',280);
+ },
+ 'b51ModGraph': ()=>{
+  const X=v=>20+(v+7)*20,Y=v=>20+(13-v)*7,f=x=>(Math.abs(x)-3)*Math.abs(x+4);
+  let p='';for(let x=-7;x<=5.001;x+=0.05)p+=(p?'L':'M')+X(x).toFixed(1)+' '+Y(f(x)).toFixed(1);
+  const r=(-1+Math.sqrt(73))/2;
+  let s=b51_seg(X(-7),Y(0),X(5),Y(0),M,1.5)+b51_seg(X(0),Y(13),X(0),Y(-13),M,1.5)+
+   line(p,B,2.5)+b51_seg(X(-7),Y(6),X(5),Y(6),R,1.5,'5 4')+
+   b51_seg(X(-6),Y(6),X(-6),Y(0),M,1,'3 3')+b51_seg(X(r),Y(6),X(r),Y(0),M,1,'3 3')+
+   b51_dot(X(-6),Y(6),G,5)+b51_dot(X(r),Y(6),G,5)+
+   t(X(-6),Y(0)+18,'−6',G,13)+t(X(r),Y(0)+18,r.toFixed(2),G,13)+t(X(-1.8),Y(6)-8,'y = 6',R,13);
+  return wrap(s,Y(-13)+14,'Graph of (|x| − 3)|x + 4| cut by the line y = 6 at two points, one at x = −6 and one near 3.77',280);
+ },
+ 'b51Reach': ()=>{
+  const inA=n=>[4,6,8,9,10].includes(n)||n>=12;
+  let s='';
+  for(let n=4;n<=21;n++){const i=n-4,c=i%6,rw=Math.floor(i/6),x=26+c*42,y=28+rw*40;
+   let col=B,fo=.16,tc=W;
+   if(n===11){col=G;fo=.3}else if(n<9&&!inA(n)){col=M;fo=.08;tc=M}
+   s+=`<rect x="${x-18}" y="${y-16}" width="36" height="32" rx="6" fill="${col}" fill-opacity="${fo}" stroke="${col}" stroke-width="${n===11?2.5:1.5}"/>`+t(x,y+5,n,n===11?G:tc,14,'middle',n===11?700:500);}
+  s+=t(140,160,'only 11 is missing',G,13);
+  return wrap(s,176,'Numbers 4 to 21 in rows: all are sums from 4, 6 and 9 except 5, 7 (below 9) and the single gap 11',280);
+ },
+ 'b51Plane': ()=>{
+  const sc=38,X=v=>30+(v+1)*sc,Y=v=>16+(4-v)*sc;
+  let s='';
+  for(const k of [-2,-1,1,2]){const x0=Math.max(-1,-1-k),x1=Math.min(4,4-k);s+=b51_seg(X(x0),Y(x0+k),X(x1),Y(x1+k),M,1,'4 3');}
+  s+=b51_seg(X(-1),Y(0),X(4),Y(0),M,1.5)+b51_seg(X(0),Y(-1),X(0),Y(4),M,1.5);
+  s+=b51_seg(X(-1),Y(-1),X(4),Y(4),G,2.5)+b51_seg(X(0),Y(1),X(2),Y(3),B,4)+
+   b51_dot(X(0),Y(1),B,4.5,true)+b51_dot(X(2),Y(3),B,4.5,true);
+  s+=t(X(0.6),Y(3.1),'S',B,14,'middle',700)+t(X(4)+6,Y(4)+5,'y = x',G,13,'start')+t(X(4)-4,Y(0)+16,'x',M,13)+t(X(0)-10,Y(4)+4,'y',M,13);
+  return wrap(s,Y(-1)+14,'Plane with the diagonal y = x, the parallel integer-difference lines of T, and the open segment S from (0,1) to (2,3) that never touches the diagonal',280);
+ },
+ 'b51Intervals': ()=>{
+  const X=v=>150+19*v;
+  const row=(y,segs,c)=>b51_seg(X(-6),y,X(6),y,M,1)+segs.map(([a,b,oa,ob])=>b51_seg(X(a),y,X(b),y,c,6)+(a>-6?b51_dot(X(a),y,c,4.5,oa):'')+(b<6?b51_dot(X(b),y,c,4.5,ob):'')).join('');
+  let s='';
+  for(const v of [-4,-2,1,4])s+=b51_seg(X(v),30,X(v),128,M,1,'2 4');
+  s+=row(40,[[-4,-2,false,false],[2,4,false,false]],B)+
+   row(78,[[-6,1,false,true],[3,6,true,false]],B)+
+   row(116,[[-6,-4,false,true],[-2,1,true,true],[4,6,true,false]],G);
+  s+=t(4,45,'A',B,14,'start',700)+t(4,83,'B',B,14,'start',700)+t(4,121,'B−A',G,14,'start',700);
+  s+=[-4,-2,1,4].map(v=>t(X(v),156,v<0?'−'+(-v):v,W,13)).join('');
+  return wrap(s,172,'Three number lines for A, B and B minus A, with B minus A the parts of B outside A',280);
+ },
+ 'b51Venn34': ()=>{
+  const c=(x)=>`<circle cx="${x}" cy="118" r="50" fill="${B}" fill-opacity=".14" stroke="${B}" stroke-width="2"/>`;
+  return wrap(
+   `<rect x="10" y="30" width="260" height="176" rx="6" fill="none" stroke="${M}" stroke-width="1.5"/>`+
+   c(108)+c(172)+
+   t(26,50,601,M,13,'middle',600)+t(92,56,'×3',B,14,'middle',700)+t(188,56,'×4',B,14,'middle',700)+
+   t(88,123,150,W,15)+t(140,123,50,W,15)+t(192,123,101,W,15)+t(240,194,300,G,16,'middle',700),
+   216,'Venn diagram of 601 numbers: 150 multiples of 3 only, 101 of 4 only, 50 of both, and 300 outside both circles',280);
+ },
+ 'b51Step6': ()=>{
+  const X=v=>20+(v-10)*2.6,y=60;
+  let s=b51_seg(X(10),y,X(100),y,M,2);
+  for(let k=2;k<=16;k++)s+=b51_seg(X(6*k+1),y-9,X(6*k+1),y+9,G,2.5);
+  s+=t(X(16),34,'step 6',Y,13)+t(X(13),92,13,G,13)+t(X(97),92,97,G,13);
+  return wrap(s,110,'Number line from 10 to 100 with the fifteen numbers 13, 19, up to 97 marked at steps of 6',280);
+ },
+ 'b51ModParabola': ()=>{
+  const X=v=>24+(v-0.5)*26,Y=v=>20+(11-v)*8,f=n=>(n-5)*(n-5)-6;
+  let p='';for(let n=1;n<=9.001;n+=0.05)p+=(p?'L':'M')+X(n).toFixed(1)+' '+Y(f(n)).toFixed(1);
+  let s=b51_seg(X(0.5),Y(6),X(9.5),Y(6),M,1.5,'5 4')+b51_seg(X(0.5),Y(-6),X(9.5),Y(-6),M,1.5,'5 4')+line(p,B,2.5);
+  for(let n=1;n<=9;n++){const ok=Math.abs(f(n))<6;s+=b51_dot(X(n),Y(f(n)),ok?G:R,5)+t(X(n),Y(-7)+20,n,ok?G:R,13);}
+  s+=t(12,Y(6)+5,6,M,13)+t(10,Y(-6)+5,'−6',M,13);
+  return wrap(s,Y(-7)+32,'Parabola n squared minus 10n plus 19 for n from 1 to 9 between the lines at 6 and −6; points inside the band for n = 2, 3, 4, 6, 7, 8',280);
+ },
+ 'b51Subsets': ()=>{
+  const ci=(cx,r,col)=>`<circle cx="${cx}" cy="105" r="${r}" fill="${col}" fill-opacity=".14" stroke="${col}" stroke-width="2"/>`;
+  return wrap(
+   ci(95,75,B)+ci(185,60,Y)+
+   t(95,62,'A',B,14,'middle',700)+t(205,80,'B',Y,14,'middle',700)+
+   [[45,92,1],[85,92,2],[45,126,4],[85,126,5]].map(([x,y,v])=>t(x,y,v,R,16,'middle',700)).join('')+
+   [[148,86,3],[148,106,6],[148,126,7]].map(([x,y,v])=>t(x,y,v,G,16,'middle',700)).join('')+
+   t(212,110,9,W,16,'middle',700),
+   188,'Venn diagram of A and B: 1, 2, 4, 5 only in A, 3, 6, 7 in both, 9 only in B',280);
+ }
+};
+/* b52.js */
+const DIAGRAMS_b52={
+ 'b52Subsets23': ()=>{
+  const x0=20,sc=240/128,w1=96*sc,w2=11*sc,w3=21*sc,y=62,h=36;
+  const r=(x,w,c,o)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${c}" fill-opacity="${o}" stroke="${c}" stroke-width="2"/>`;
+  return wrap(
+   t(140,18,'128 subsets of A',W,14,'middle',600)+line(`M${x0} 28H${x0+240}`,M,2)+
+   r(x0,w1,B,.18)+r(x0+w1,w2,G,.35)+r(x0+w1+w2,w3,R,.18)+
+   t(x0+w1/2,86,'B: 96',W,14,'middle',700)+t(x0+w1+w2/2,54,'11',G,14,'middle',700)+t(x0+w1+w2+w3/2,54,'21',R,14,'middle',700)+
+   line(`M${x0+w1+2} 112H${x0+240}`,Y,2)+t(x0+w1+(w2+w3)/2-14,132,'1 ∈ T, 2 ∉ T: 32',Y,13,'middle',600)+
+   `<rect x="22" y="152" width="12" height="12" fill="${G}" fill-opacity=".35" stroke="${G}" stroke-width="2"/>`+t(42,163,'prime sum, so in C',W,13,'start',500)+
+   `<rect x="22" y="174" width="12" height="12" fill="${R}" fill-opacity=".18" stroke="${R}" stroke-width="2"/>`+t(42,185,'outside B ∪ C',W,13,'start',500),
+   196,'A bar of 128 subsets: 96 in B, then 11 with a prime sum and 21 in neither set, among the 32 subsets that contain 1 but not 2',280);
+ },
+ 'b52Circle25': ()=>{
+  const cx=140,cy=75,s=10,px=Math.sqrt(81/8)*s,py=Math.sqrt(119/8)*s;
+  let dots='';for(let x=-2;x<=2;x++)for(let y=-2;y<=2;y++)if(x*x+y*y<=4)dots+=`<circle cx="${cx+x*s}" cy="${cy-y*s}" r="2.5" fill="${M}"/>`;
+  const pts=[[1,1],[-1,1],[1,-1],[-1,-1]].map(([a,b])=>`<circle cx="${(cx+a*px).toFixed(1)}" cy="${(cy-b*py).toFixed(1)}" r="5" fill="${G}"/>`).join('');
+  return wrap(
+   line('M12 75H268M140 28V122',M,1.2)+
+   `<circle cx="${cx}" cy="${cy}" r="50" fill="none" stroke="${B}" stroke-width="2"/>`+
+   `<ellipse cx="${cx}" cy="${cy}" rx="120" ry="40" fill="none" stroke="${Y}" stroke-width="2"/>`+dots+pts+
+   t(cx,17,'A',B,14,'middle',700)+t(232,30,'B',Y,14,'middle',700)+
+   `<circle cx="28" cy="154" r="5" fill="${G}"/>`+t(40,159,'D: 4 points',W,13,'start',500)+
+   `<circle cx="28" cy="178" r="2.5" fill="${M}"/>`+t(40,183,'C: 13 lattice points',W,13,'start',500),
+   192,'The circle A and the ellipse B meet in four points forming D; thirteen grey lattice points of C lie inside a small disc at the origin',280);
+ },
+ 'b52Arcs27': ()=>{
+  const X1=v=>20+(v-1)*240/26,X2=v=>20+(v-1)*240/13;
+  const arc=(xa,xb,y,c,col)=>line(`M${xa} ${y}Q${(xa+xb)/2} ${c} ${xb} ${y}`,col,2.4);
+  const dot=(x,y,c,l)=>`<circle cx="${x}" cy="${y}" r="4.5" fill="${W}"/>`+t(x,y+22,l,W,14,'middle',700);
+  return wrap(
+   t(14,22,'R₁',B,15,'start',700)+line('M14 90H266',M,1.6)+
+   arc(X1(1),X1(14),90,52,B)+arc(X1(14),X1(27),90,52,B)+arc(X1(1),X1(27),90,-24,R)+
+   dot(X1(1),90,B,'1')+dot(X1(14),90,B,'14')+dot(X1(27),90,B,'27')+
+   t(14,150,'R₂',B,15,'start',700)+line('M14 230H266',M,1.6)+
+   arc(X2(1),X2(5),230,200,B)+arc(X2(5),X2(14),230,196,B)+arc(X2(1),X2(14),230,150,R)+
+   dot(X2(1),230,B,'1')+dot(X2(5),230,B,'5')+dot(X2(14),230,B,'14'),
+   262,'Two rows of dots on a number line. Row R1: arcs join 1 to 14 and 14 to 27, but the arc from 1 to 27 is red. Row R2: arcs join 1 to 5 and 5 to 14, but the arc from 1 to 14 is red',280);
+ },
+ 'b52Interval17': ()=>{
+  const X=v=>130+v*12,ys=[44,104,164];
+  const fd=(v,y,c)=>`<circle cx="${X(v)}" cy="${y}" r="5" fill="${c}"/>`;
+  const od=(v,y,c)=>`<circle cx="${X(v)}" cy="${y}" r="5" fill="#131313" stroke="${c}" stroke-width="2"/>`;
+  return wrap(
+   line(`M${X(-3)} 16V190M${X(5)} 16V190`,M,1,'3 4')+
+   t(10,ys[0]+5,'A',B,15,'start',700)+t(10,ys[1]+5,'B',G,15,'start',700)+t(10,ys[2]+5,'A−B',R,14,'start',700)+
+   line(`M46 ${ys[0]}H${X(-3)}M${X(5)} ${ys[0]}H268`,B,3.5)+fd(-3,ys[0],B)+fd(5,ys[0],B)+
+   line(`M${X(-3)} ${ys[1]}H${X(5)}`,G,3.5)+fd(-3,ys[1],G)+od(5,ys[1],G)+
+   line(`M46 ${ys[2]}H${X(-3)}M${X(5)} ${ys[2]}H268`,R,3.5)+od(-3,ys[2],R)+fd(5,ys[2],R)+
+   line('M46 206H268',M,1.6)+t(X(-3),228,'−3',W,14,'middle',700)+t(X(5),228,'5',W,14,'middle',700),
+   240,'Number line: A is everything up to minus 3 and from 5 onward, B runs from minus 3 up to but not including 5, and A minus B keeps the point 5',280);
+ },
+ 'b52Pairs30A': ()=>{
+  const ox=30,oy=232,s=24,X=v=>ox+v*s,Yy=v=>oy-v*s;
+  let tk='';for(const v of [2,4,6,8])tk+=t(X(v),252,v,M,13,'middle',500)+t(20,Yy(v)+5,v,M,13,'end',500);
+  const dots=(a,c)=>a.map(([x,y])=>`<circle cx="${X(x)}" cy="${Yy(y)}" r="5" fill="${c}"/>`).join('');
+  return wrap(
+   line(`M${ox} ${oy}H262M${ox} ${oy}V12`,M,1.6)+tk+
+   dots([[1,8],[2,6],[3,4],[4,2]],B)+dots([[8,1],[6,2],[4,3],[2,4]],G)+
+   t(X(1)+16,Yy(8)+5,'R₁',B,15,'start',700)+t(X(8),Yy(1)-12,'R₂',G,15,'middle',700),
+   262,'Grid of the ordered pairs of R1 in blue: (1,8), (2,6), (3,4), (4,2), and of R2 in green: (8,1), (6,2), (4,3), (2,4)',280);
+ },
+ 'b52Classes31': ()=>{
+  const rows=[[0,3,6,9],[1,4,7],[2,5,8]],cnt=['4²','3²','3²'];
+  let s='';
+  rows.forEach((r,i)=>{const y=40+i*62;
+   s+=t(8,y+5,'r = '+i,B,14,'start',700)+`<rect x="62" y="${y-22}" width="160" height="44" rx="10" fill="${B}" fill-opacity=".14" stroke="${B}" stroke-width="2"/>`+
+   r.map((v,j)=>t(82+j*40,y+5,v,W,15,'middle',600)).join('')+t(252,y+5,cnt[i],G,15,'middle',700);});
+  return wrap(s,196,'Three classes of 0 to 9 by remainder on division by 3: 0, 3, 6, 9 then 1, 4, 7 then 2, 5, 8, contributing 4 squared, 3 squared and 3 squared pairs',280);
+ },
+ 'b52Circle32': ()=>{
+  const cx=140,cy=110,s=40,r=Math.SQRT2*s;
+  return wrap(
+   line(`M44 ${cy}H236M${cx} 200V20`,M,1.4)+t(238,cy-8,'x',M,14,'start',600)+t(cx+8,26,'y',M,14,'start',600)+
+   `<circle cx="${cx}" cy="${cy}" r="${r.toFixed(1)}" fill="${G}" fill-opacity=".1" stroke="${G}" stroke-width="2.4"/>`+
+   line(`M${cx} ${cy}L${cx+s} ${cy+s}`,R,2,'4 3')+`<circle cx="${cx+s}" cy="${cy+s}" r="5" fill="${R}"/>`+
+   t(cx+s+10,cy+s+6,'(1, −1)',R,14,'start',700)+t(cx+12,cy+s+6-6,'√2',Y,14,'middle',700)+
+   t(190,58,'x² + y² = 2',G,14,'start',700),
+   212,'The circle about the origin through the point (1, minus 1), of radius root 2',280);
+ },
+ 'b52Line32A': ()=>{
+  const ox=30,oy=235,s=7.5,X=v=>ox+v*s,Yy=v=>oy-v*s;
+  let dots='';for(let k=1;k<=7;k++)dots+=`<circle cx="${X(4*k)}" cy="${Yy(3*k)}" r="4.5" fill="${G}"/>`;
+  return wrap(
+   line(`M${ox} ${oy}H270M${ox} ${oy}V28`,M,1.6)+t(266,oy-8,'c',M,14,'end',600)+t(ox-6,14,'d',M,14,'start',600)+
+   line(`M${ox} ${oy}L${X(32)} ${Yy(24)}`,B,1.6,'4 3')+dots+
+   t(70,223,'(4, 3)',W,13,'start',600)+t(100,40,'7 pairs',G,14,'start',700),
+   252,'The grid of pairs with entries from 2 to 30 and the dashed line 4d equals 3c, on which the seven pairs (4,3), (8,6) up to (28,21) lie as green dots',280);
+ }
+};
+/* b53.js */
+function b53_grid(x0,y0,n,cs,rl,cl,fn){let s='';for(let j=0;j<n;j++)s+=t(x0+cs*j+cs/2,y0-7,cl[j],M,13);
+ for(let i=0;i<n;i++){s+=t(x0-7,y0+cs*i+cs/2+5,rl[i],M,13,'end');
+  for(let j=0;j<n;j++){const c=fn(i,j)||{};const cx=x0+cs*j+cs/2,cy=y0+cs*i+cs/2;
+   s+=`<rect x="${x0+cs*j}" y="${y0+cs*i}" width="${cs}" height="${cs}" fill="${c.fill||'none'}" fill-opacity="${c.op||.22}" stroke="${c.stroke||M}" stroke-opacity="${c.stroke?1:.45}" stroke-width="${c.stroke?2:1}"${c.dash?` stroke-dasharray="${c.dash}"`:''}/>`;
+   if(c.dot)s+=`<circle cx="${cx}" cy="${cy}" r="${cs/5}" fill="${c.dot}"/>`}}return s}
+function b53_arr(x1,y1,x2,y2,c,dash){const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,sx=x1+ux*9,sy=y1+uy*9,ex=x2-ux*9,ey=y2-uy*9;
+ const px=-uy,py=ux;return line(`M${sx} ${sy}L${ex} ${ey}`,c,2.5,dash)+`<polygon points="${ex+ux*7},${ey+uy*7} ${ex-ux*2+px*5},${ey-uy*2+py*5} ${ex-ux*2-px*5},${ey-uy*2-py*5}" fill="${c}"/>`}
+function b53_has(L,a,b){return L.some(p=>p[0]===a&&p[1]===b)}
+function b53_bars(top,low,topLab,lowLab,diff,la,lb,sc){const base=200,x1=60,x2=170,w=56;
+ const hT=top*sc,hL=low*sc;
+ return `<rect x="${x1}" y="${base-hT}" width="${w}" height="${hT-hL}" fill="${G}" fill-opacity=".3" stroke="${G}" stroke-width="2"/>`+
+ `<rect x="${x1}" y="${base-hL}" width="${w}" height="${hL}" fill="${B}" fill-opacity=".25" stroke="${B}" stroke-width="2"/>`+
+ `<rect x="${x2}" y="${base-hL}" width="${w}" height="${hL}" fill="${B}" fill-opacity=".25" stroke="${B}" stroke-width="2"/>`+
+ line(`M${x1+w} ${base-hL}H${x2}`,M,1.5,'4 4')+
+ t(x1+w/2,base-hT-8,topLab,W,14,'middle',700)+t(x2+w/2,base-hL-8,lowLab,W,14,'middle',700)+
+ t(x1+w/2,base-(hT+hL)/2+5,diff,G,14,'middle',700)+
+ t(x1+w/2,base+22,la,M,14)+t(x2+w/2,base+22,lb,M,14)+line(`M40 ${base}H250`,M,1.5)}
+const DIAGRAMS_b53={
+'b53Rel34':()=>{const A=[1,3,4,6,9],Bv=[2,4,5,8,10];
+ const g=(x0,rows,cols,ok,title,cnt)=>t(x0+55,18,title,W,14,'middle',600)+b53_grid(x0,48,5,22,rows,cols,(i,j)=>ok(rows[i],cols[j])?{fill:B,dot:B,op:.18}:null)+t(x0+55,184,cnt,G,15,'middle',700);
+ return wrap(g(22,A,Bv,(a,b)=>a<=b,'a₁ ≤ b₂','16 pairs')+g(164,Bv,A,(a,b)=>a<=b,'b₁ ≤ a₂','10 pairs'),200,'Two 5 by 5 grids marking the pairs with a1 at most b2 and b1 at most a2',280)},
+'b53Rel35':()=>{const S=[9,15,21,25,33,35,39,49,51,55,57];let s='';
+ for(let n=1;n<=60;n++){const r=Math.floor((n-1)/10),c=(n-1)%10,x=15+c*25,y=10+r*26;
+  if(S.includes(n))s+=`<rect x="${x+1}" y="${y+1}" width="23" height="24" rx="4" fill="${G}" fill-opacity=".22" stroke="${G}" stroke-width="1.5"/>`+t(x+12.5,y+18,n,G,13,'middle',700);
+  else s+=`<circle cx="${x+12.5}" cy="${y+13}" r="2" fill="${M}"/>`}
+ s+=t(140,190,'b = pq with primes p, q ≥ 3',M,13);return wrap(s,204,'Numbers 1 to 60 in rows of ten with the eleven products of two odd primes highlighted',280)},
+'b53Rel36':()=>{const o=30,sc=2.2,Y0=250;let s=line(`M${o} ${Y0}H${o+235}M${o} ${Y0}V${Y0-235}`,M,1.5)+line(`M${o} ${Y0}L${o+220} ${Y0-220}`,M,1.5,'5 4');
+ for(let k=1;k<=33;k++){s+=`<circle cx="${o+3*k*sc}" cy="${Y0-2*k*sc}" r="2.6" fill="${B}"/>`;s+=`<circle cx="${o+2*k*sc}" cy="${Y0-3*k*sc}" r="2.6" fill="${G}"/>`}
+ s+=t(o+236,Y0+16,'x',M,13)+t(o-12,Y0-224,'y',M,13)+t(o+220,Y0+16,'100',M,13)+t(o-6,Y0+16,'0',M,13);
+ s+=`<circle cx="62" cy="283" r="4" fill="${B}"/>`+t(72,288,'R',W,14,'start',600)+`<circle cx="118" cy="283" r="4" fill="${G}"/>`+t(128,288,'R⁻¹ (added)',W,14,'start',600);
+ return wrap(s,300,'Points (3k,2k) of R and their mirror images (2k,3k) across the line y equals x',280)},
+'b53Rel37':()=>{const R_=[[1,2],[2,3],[1,4]],n=[1,2,3,4];
+ let s=b53_grid(70,34,4,44,n,n,(i,j)=>b53_has(R_,i+1,j+1)?{fill:B,dot:B,op:.3,stroke:B}:{fill:G,op:.22});
+ s+=`<rect x="40" y="228" width="12" height="12" fill="${B}" fill-opacity=".4" stroke="${B}"/>`+t(58,240,'R',W,14,'start',600)+`<rect x="100" y="228" width="12" height="12" fill="${G}" fill-opacity=".3" stroke="${G}"/>`+t(118,240,'added to make S',W,14,'start',600);
+ return wrap(s,252,'Four by four table of all pairs of A: the three pairs of R in blue, the other thirteen cells added in green',280)},
+'b53Sub38':()=>wrap(b53_bars(64,8,'2ᵐ = 64','2ⁿ = 8','56','A','B',2.5),236,'Bars for the number of subsets of A and of B differing by 56',280),
+'b53Sub38A':()=>wrap(b53_bars(128,16,'2ᵐ = 128','2ⁿ = 16','112','A','B',1.25),236,'Bars for the number of subsets of A and of B differing by 112',280),
+'b53Cnt40':()=>{const cs=[{cx:100,cy:98,r:62,color:B,label:''},{cx:180,cy:98,r:62,color:Y},{cx:140,cy:163,r:62,color:'#ff9f5a'}];
+ let e=`<rect x="4" y="26" width="272" height="226" rx="8" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ const c=(x,y,v,col=W)=>t(x,y+5,v,col,14,'middle',700);
+ e+=c(62,80,37)+c(218,80,18)+c(140,205,9)+c(140,80,19)+c(97,146,10)+c(183,146,5)+c(140,120,4)+c(30,240,38,G)+t(40,48,'M',B,14,'middle',700)+t(240,48,'P',Y,14,'middle',700)+t(212,236,'C','#ff9f5a',14,'middle',700);
+ return venn(260,cs,e,'Venn diagram of multiples of 2, 3 and 5 among 1 to 140 with the count in each region','')},
+'b53Cnt40A':()=>{const cs=[{cx:100,cy:100,r:66,color:G},{cx:172,cy:100,r:40,color:G}];
+ let e=`<rect x="4" y="22" width="272" height="170" rx="8" fill="none" stroke="${M}" stroke-width="1.5"/>`;
+ const c=(x,y,v,col=W)=>t(x,y+5,v,col,14,'middle',700);
+ e+=c(76,100,22)+c(150,100,3)+c(190,100,4)+c(30,176,21,M)+t(34,44,'A',G,14,'middle',700)+t(222,70,'B',G,14,'middle',700);
+ return venn(204,cs,e,'Venn diagram of multiples of 2 and 7 in 1 to 50 with the count in each region','')},
+'b53Rel43':()=>{const A=[3,6,9,12],R_=[[3,3],[6,6],[9,9],[12,12],[6,12],[3,9],[3,12],[3,6]];
+ let s=b53_grid(62,34,4,44,A,A,(i,j)=>{const a=A[i],b=A[j];
+  if(a===6&&b===12)return{fill:R,dot:R,op:.3,stroke:R};if(a===12&&b===6)return{stroke:R,dash:'4 3'};
+  return b53_has(R_,a,b)?{fill:B,dot:B,op:.25}:null});
+ s+=t(140,242,'row x, column y; red: no mirror pair',M,13);
+ return wrap(s,256,'Four by four table of the relation R on 3, 6, 9, 12 with the pair 6,12 marked red and its missing mirror 12,6',280)},
+'b53Rel43A':()=>{const A=['a','b','c'];
+ const R1=[['c','a'],['b','b'],['a','c'],['c','c'],['b','c'],['a','a']],R2=[['a','b'],['b','a'],['c','c'],['c','a'],['a','a'],['b','b'],['a','c']];
+ const g=(x0,L,ttl,miss)=>t(x0+51,18,ttl,W,14,'middle',600)+b53_grid(x0,48,3,34,A,A,(i,j)=>{const a=A[i],b=A[j];
+  if(miss.some(m=>m[0]===a&&m[1]===b))return{stroke:R,dash:'4 3'};
+  if(a==='b'&&b==='c'&&L===R1)return{fill:R,dot:R,op:.3,stroke:R};
+  return b53_has(L,a,b)?{fill:B,dot:B,op:.25}:null});
+ return wrap(g(26,R1,'R₁',[['c','b']])+g(156,R2,'R₂',[['b','c']])+t(140,176,'row x, column y; red: breaks a property',M,13),190,'Two three by three tables for R1 and R2 on a, b, c with the failing cells in red',280)},
+'b53Rel43B':()=>{const A=[1,2,3,4],R_=[[1,3],[4,2],[2,4],[2,3],[3,1]];
+ let s=b53_grid(62,34,4,44,A,A,(i,j)=>{const a=A[i],b=A[j];
+  if(a===2&&b===3)return{fill:R,dot:R,op:.3,stroke:R};if(a===3&&b===2)return{stroke:R,dash:'4 3'};
+  return b53_has(R_,a,b)?{fill:B,dot:B,op:.25}:null});
+ s+=t(140,242,'row x, column y; red: no mirror pair',M,13);
+ return wrap(s,256,'Four by four table of the relation R on 1 to 4 with the pair 2,3 in red and its missing mirror 3,2',280)},
+'b53Rel44':()=>{
+ const box=(y,col,nums,name)=>`<rect x="30" y="${y}" width="220" height="56" rx="12" fill="${col}" fill-opacity=".14" stroke="${col}" stroke-width="2"/>`+nums.map((n,i)=>t(60+i*50,y+34,n,W,15,'middle',700)).join('')+t(30,y-8,name,col,14,'start',600);
+ return wrap(box(30,B,[0,2,4,6],'x + y even if x, y both even')+box(150,Y,[1,3,5,7],'or both odd')+
+  line('M110 86V150',R,2.5,'5 4')+t(124,124,'sum odd: not related',R,13,'start'),228,'Integers split into evens and odds: related within a group, not across',280)},
+'b53Rel44A':()=>{const o=50,Y0=220,L=170;
+ let s=line(`M${o} ${Y0}H${o+L+22}M${o} ${Y0}V${Y0-L-22}`,M,1.5)+line(`M${o} ${Y0}L${o+L-3} ${Y0-L+3}`,G,3.5)+`<circle cx="${o+L}" cy="${Y0-L}" r="4.5" fill="#131313" stroke="${G}" stroke-width="2"/>`;
+ s+=line(`M${o+L} ${Y0-4}V${Y0+4}`,M,1.5)+line(`M${o-4} ${Y0-L}H${o+4}`,M,1.5)+t(o+L,Y0+20,'π/2',M,13)+t(o-8,Y0-L+5,'π/2',M,13,'end')+t(o+L+34,Y0+5,'x',M,13)+t(o,Y0-L-30,'y',M,13)+t(o-8,Y0+16,'0',M,13,'end');
+ s+=t(150,262,'pairs of R lie on y = x',M,13);
+ return wrap(s,272,'Square from 0 to pi over 2 on both axes with the pairs of R lying on the diagonal y equals x',280)},
+'b53Rel44B':()=>{const o=34,Y0=256,u=22;const P=(x,y)=>[o+x*u,Y0-y*u];let s=line(`M${o} ${Y0}H${o+u*10.6}M${o} ${Y0}V${Y0-u*10.6}`,M,1.5);
+ 
+ for(let k=1;k<=10;k++)s+=`<circle cx="${P(k,k)[0]}" cy="${P(k,k)[1]}" r="3.5" fill="${B}"/>`;
+ [[3,1],[6,2],[9,3]].forEach(p=>s+=`<circle cx="${P(...p)[0]}" cy="${P(...p)[1]}" r="3.5" fill="${B}"/>`);
+ [[1,3],[9,1]].forEach(p=>s+=`<circle cx="${P(...p)[0]}" cy="${P(...p)[1]}" r="4.5" fill="none" stroke="${R}" stroke-width="2"/>`);
+ s+=t(P(3,1)[0]-14,P(3,1)[1]-12,'(3,1)',B,13,'start',700)+t(P(1,3)[0]-10,P(1,3)[1]-12,'(1,3)',R,13,'start',700)+t(P(9,1)[0]-16,P(9,1)[1]-12,'(9,1)',R,13,'start',700)+t(P(9,3)[0]-2,P(9,3)[1]-12,'(9,3)',B,13,'start',700);
+ s+=t(o+u*10.6+6,Y0+16,'x',M,13)+t(o-10,Y0-u*10.6-4,'y',M,13);
+ return wrap(s,284,'Pairs of N with x equal y or x equal 3y, the pair 3,1 present and its mirror 1,3 missing, and 9,1 missing',280)},
+'b53Rel44C':()=>{const o=44,Y0=216,u=56;const P=(x,y)=>[o+x*u,Y0-y*u];
+ let s=line(`M${o} ${Y0}H${o+u*3.6}M${o} ${Y0}V${Y0-u*3.6}`,M,1.5);
+ const a=P(3,3),b=P(3,1),c=P(1,1);
+ s+=b53_arr(a[0],a[1],b[0],b[1],B)+b53_arr(b[0],b[1],c[0],c[1],B)+b53_arr(a[0],a[1],c[0],c[1],R,'5 4');
+ [a,b,c].forEach(p=>s+=`<circle cx="${p[0]}" cy="${p[1]}" r="5" fill="${W}"/>`);
+ s+=t(a[0]+10,a[1]-6,'(3,3)',W,13,'start',700)+t(b[0]+10,b[1]+18,'(3,1)',W,13,'start',700)+t(c[0]-8,c[1]+22,'(1,1)',W,13,'start',700)+t(o+u*3.6+6,Y0+16,'x',M,13)+t(o-12,Y0-u*3.6,'y',M,13);
+ s+=t(150,252,'blue: in R; red: not in R',M,13);
+ return wrap(s,262,'Pairs 3,3 and 3,1 and 1,1 joined by arrows: two links in R, the shortcut from 3,3 to 1,1 not in R',280)},
+};
+/* b54.js */
+function b54_grid(x0,y0,cs,rl,cl,fn){
+ let s='';
+ rl.forEach((l,i)=>{s+=t(x0-7,y0+i*cs+cs/2+5,l,W,13,'end',600)});
+ cl.forEach((l,j)=>{s+=t(x0+j*cs+cs/2,y0-7,l,W,13,'middle',600)});
+ for(let i=0;i<rl.length;i++)for(let j=0;j<cl.length;j++){
+  const c=fn(i,j);const col=c==='g'?G:c==='b'?B:c==='r'?R:M;
+  s+=`<rect x="${x0+j*cs+1}" y="${y0+i*cs+1}" width="${cs-2}" height="${cs-2}" rx="3" fill="${col}" fill-opacity="${c?(c==='r'?.35:.4):.08}" stroke="${col}" stroke-width="${c?1.6:1}" stroke-opacity="${c?1:.5}"/>`;
+ }
+ return s;
+}
+const DIAGRAMS_b54={
+ 'b54Div46A': ()=>{
+  const A=[2,3,4,5,6];
+  const g1=b54_grid(26,36,22,A,A,(i,j)=>A[j]%A[i]===0?'g':null);
+  const g2=b54_grid(160,36,22,A,A,(i,j)=>A[i]<=A[j]?'g':null);
+  return wrap(g1+g2+t(81,166,'x | z',W,14,'middle',600)+t(215,166,'y ≤ w',W,14,'middle',600),180,'Two five by five grids over 2 to 6, one marking pairs where x divides z, one marking pairs where y is at most w',280);
+ },
+ 'b54Grid46C': ()=>{
+  const V=[-2,-1,0,1,2],L=['−2','−1','0','1','2'];
+  let s=b54_grid(50,36,40,L,L,(i,j)=>V[i]*V[j]>=0?'b':'r');
+  s+=`<rect x="${50+1*40}" y="${36+3*40}" width="40" height="40" fill="none" stroke="${Y}" stroke-width="2.5" rx="3"/>`;
+  return wrap(s+t(150,262,'red cells: ab < 0, not in R',R,13,'middle',600)+t(24,20,'a',M,13,'middle',600)+t(250,26,'b',M,13,'middle',600),276,'Grid of pairs a, b from minus 2 to 2, blue where ab is at least zero and red where ab is negative, with the pair 1 comma minus 1 outlined',280);
+ },
+ 'b54Chain48': ()=>{
+  const v=[63,31,15,7,3,1];let s='';
+  v.forEach((n,i)=>{const x=5+i*46;const last=i===5,first=i===0;
+   s+=`<rect x="${x}" y="50" width="36" height="34" rx="6" fill="${first?G:B}" fill-opacity=".18" stroke="${first?G:B}" stroke-width="2"/>`+t(x+18,73,n,W,15,'middle',700)+t(x+18,106,'a'+'₁₂₃₄₅₆'[i],M,13,'middle',600);
+   if(!last)s+=line(`M${x+37} 67 L${x+45} 67 M${x+41} 63 L${x+45} 67 L${x+41} 71`,M,1.8);
+  });
+  s+=line('M23 36 L23 30 L251 30 L251 36',G,1.8);
+  s+=t(137,22,'5 pairs',G,14,'middle',700);
+  return wrap(s+t(140,140,'each a = 2b + 1 step, ending at 1',M,13,'middle',500),156,'Chain 63, 31, 15, 7, 3, 1 where each number is twice the next plus one, five pairs in total',280);
+ },
+ 'b54Equiv49': ()=>{
+  const L=['1','2','3','4'];
+  const given=[[0,1],[1,2],[2,2]];
+  const g=b54_grid(50,34,44,L,L,(i,j)=>given.some(p=>p[0]===i&&p[1]===j)?'b':((i<3&&j<3)||(i===3&&j===3))?'g':null);
+  return wrap(g+t(140,232,'blue given, green added (7)',W,13,'middle',600),244,'Four by four grid on 1 to 4: three given pairs in blue, seven added pairs in green completing the block 1 2 3 and the pair 4 4',280);
+ },
+ 'b54Equiv49A': ()=>{
+  const L=['a','b','c','d'];
+  const given=[[0,1],[1,2],[1,3]];
+  const g=b54_grid(50,34,44,L,L,(i,j)=>given.some(p=>p[0]===i&&p[1]===j)?'b':'g');
+  return wrap(g+t(140,232,'blue given, green added (13)',W,13,'middle',600),244,'Four by four grid on a, b, c, d with three given pairs in blue and thirteen added pairs in green',280);
+ },
+ 'b54Div50': ()=>{
+  const A=[2,3,4],B_=[8,9,12];
+  const g=b54_grid(76,40,56,A.map(String),B_.map(String),(i,j)=>B_[j]%A[i]===0?'g':null);
+  return wrap(g+t(34,33,'a',M,13,'middle',600)+t(256,33,'b',M,13,'middle',600)+t(140,232,'green: a divides b (6 pairs)',W,13,'middle',600),244,'Grid of a in 2, 3, 4 against b in 8, 9, 12 with the six pairs where a divides b in green',280);
+ },
+ 'b54Refl51': ()=>{
+  const L=['1','2','3'];
+  const bl=[[0,0],[1,1],[2,2],[0,1],[1,2],[0,2]];
+  const g=b54_grid(76,40,56,L,L,(i,j)=>bl.some(p=>p[0]===i&&p[1]===j)?'b':(i===1&&j===0)||(i===2&&j===1)?'g':'r');
+  return wrap(g+t(140,232,'green: may be added alone',G,13,'middle',600),244,'Three by three grid on 1, 2, 3: six forced pairs in blue, the free pairs 2 comma 1 and 3 comma 2 in green and 3 comma 1 in red',280);
+ },
+ 'b54Dom52': ()=>{
+  const cx=125,cy=105,k=36;let s='';
+  for(let x=-3;x<=3;x++)for(let y=-2;y<=2;y++){
+   const inn=x*x+3*y*y<=8;
+   s+=`<circle cx="${cx+x*k}" cy="${cy-y*k}" r="${inn?4.5:3}" fill="${inn?B:M}" fill-opacity="${inn?1:.5}"/>`;
+  }
+  s+=`<ellipse cx="${cx}" cy="${cy}" rx="${Math.sqrt(8)*k}" ry="${Math.sqrt(8/3)*k}" fill="${B}" fill-opacity=".08" stroke="${B}" stroke-width="2"/>`;
+  [-1,0,1].forEach(y=>{s+=line(`M${cx+3*k+8} ${cy-y*k} L${cx+3*k+24} ${cy-y*k}`,G,2.5)+t(cx+3*k+38,cy-y*k+5,y<0?'−1':String(y),G,14,'middle',700)});
+  return wrap(s+t(140,206,'integer points with x² + 3y² ≤ 8',W,13,'middle',600),218,'Ellipse x squared plus 3 y squared at most 8 with its integer points, the rows y equals minus 1, 0 and 1 marked in green',280);
+ },
+ 'b54Sym54': ()=>{
+  const L=['1','2','3','4','5','6','7'];
+  const g=b54_grid(50,34,30,L,L,(i,j)=>(i+1)+(j+1)===7?'g':(i===0&&j===0)?'r':null);
+  return wrap(g+t(140,274,'green: x + y = 7; red: (1, 1) ∉ R',W,13,'middle',600),288,'Seven by seven grid on 1 to 7 with the pairs x plus y equals 7 in green along the anti-diagonal and the pair 1 comma 1 in red',280);
+ },
+ 'b54Max54A': ()=>{
+  const L=['0','1','2','3','4','5'];
+  const g=b54_grid(52,34,34,L,L,(i,j)=>{const m=Math.max(i,j);return (i===0&&(j===0||j===1))?'r':(m===3||m===4)?'g':null});
+  return wrap(g+t(140,262,'green: max is 3 or 4 (16 cells)',W,13,'middle',600)+t(140,282,'red: (0, 0) and (0, 1) fail',R,13,'middle',600),294,'Six by six grid on 0 to 5, sixteen cells where the larger entry is 3 or 4 in green, and the pairs 0 comma 0 and 0 comma 1 in red',280);
+ },
+ 'b54Venn54C': ()=>{
+  const c=(x,col)=>`<circle cx="${x}" cy="84" r="44" fill="${col}" fill-opacity=".14" stroke="${col}" stroke-width="2"/>`;
+  return wrap(c(70,B)+c(140,G)+c(210,R)+t(54,28,'A',B,14,'middle',700)+t(140,28,'B',G,14,'middle',700)+t(226,28,'C',R,14,'middle',700)+
+   t(48,90,'1',W,14,'middle',700)+t(105,90,'2',W,14,'middle',700)+t(175,90,'3',W,14,'middle',700)+t(232,90,'4',W,14,'middle',700)+
+   t(140,152,'A and C do not meet',W,13,'middle',600),164,'Three subsets A equals 1 2, B equals 2 3, C equals 3 4 drawn as circles; A meets B and B meets C but A and C do not meet',280);
+ },
+ 'b54Line55B': ()=>{
+  const ox=140,oy=110;let s='';
+  s+=line(`M20 ${oy} L262 ${oy}`,M,1.5)+line(`M${ox} 205 L${ox} 14`,M,1.5)+t(268,oy-6,'x',M,13,'middle',600)+t(ox+10,22,'y',M,13,'middle',600);
+  s+=line(`M50 200 L230 20`,B,2,'6 5')+t(40,222,'y = x',B,13,'start',600);
+  s+=line(`M20 70 L262 70`,G,2.5)+t(256,60,'y = b',G,13,'end',700);
+  s+=`<circle cx="95" cy="70" r="4.5" fill="${R}"/>`+t(95,56,'(a, b)',R,13,'middle',700);
+  return wrap(s,232,'Coordinate plane with the horizontal line y equals b through the point a, b and the dashed line y equals x which is not parallel to it',280);
+ }
+};
+/* b55.js */
+const DIAGRAMS_b55=(()=>{
+const mn='−';
+const lab=v=>String(v).replace('-',mn);
+/* grid of A x A: x across, y up. cells=[[xi,yi,colour,opacity]], legend=[[colour,opacity,text,x]] */
+function grid(h0,vals,cells,legend,c,showLab,aria,diag=true){
+ const n=vals.length,L=34,T=10,gw=n*c,gh=n*c;let s='';
+ for(let i=0;i<n;i++)for(let j=0;j<n;j++)s+=`<rect x="${L+i*c}" y="${T+(n-1-j)*c}" width="${c}" height="${c}" fill="none" stroke="${M}" stroke-opacity=".35" stroke-width="1"/>`;
+ cells.forEach(([i,j,col,op])=>{s+=`<rect x="${L+i*c+1}" y="${T+(n-1-j)*c+1}" width="${c-2}" height="${c-2}" fill="${col}" fill-opacity="${op}"/>`});
+ if(diag)s+=line(`M${L} ${T+gh}L${L+gw} ${T}`,M,1.5,'4 4');
+ vals.forEach((v,i)=>{if(showLab(i)){s+=t(L+i*c+c/2,T+gh+16,lab(v),W,13);s+=t(L-6,T+(n-1-i)*c+c/2+5,lab(v),W,13,'end')}});
+ const ly=T+gh+40;
+ legend.forEach(([col,op,txt,x])=>{s+=`<rect x="${x}" y="${ly-11}" width="12" height="12" fill="${col}" fill-opacity="${op}"/>`+t(x+17,ly,txt,W,13,'start')});
+ return `<svg viewBox="0 0 280 ${T+gh+50}" role="img" aria-label="${aria}" xmlns="http://www.w3.org/2000/svg">${s}</svg>`;
+}
+const idx=(vals,v)=>vals.indexOf(v);
+function relCells(vals,R,loopCol,mirCol,loopsToo){
+ const has=(a,b)=>R.some(p=>p[0]===a&&p[1]===b),cells=[];
+ R.forEach(([a,b])=>cells.push([idx(vals,a),idx(vals,b),B,.7]));
+ const added=[];
+ R.forEach(([a,b])=>{if(a!==b&&!has(b,a)&&!added.some(p=>p[0]===b&&p[1]===a)){added.push([b,a]);cells.push([idx(vals,b),idx(vals,a),mirCol,.8])}});
+ if(loopsToo)vals.forEach(v=>{if(!has(v,v))cells.push([idx(vals,v),idx(vals,v),loopCol,.8])});
+ return {cells,added};
+}
+const out={};
+/* SET-55-C */
+out.b55Partition=()=>{
+ const blocks=[[20,30,70,120,'A₁'],[95,30,90,120,'A₂'],[190,30,70,120,'A₃']];
+ let s=blocks.map(([x,y,w,h,l],i)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${i===1?G:B}" fill-opacity="${i===1?.16:.12}" stroke="${i===1?G:B}" stroke-width="2"/>`+t(x+w/2,y+h+22,l,W,14,'middle',700)).join('');
+ s+=`<circle cx="125" cy="70" r="5" fill="${G}"/><circle cx="155" cy="115" r="5" fill="${G}"/>`+line('M128 74L152 111',G,2)+t(112,66,'x',W,14,'end')+t(166,126,'y',W,14,'start');
+ s+=t(140,16,'blocks never overlap',M,13);
+ return `<svg viewBox="0 0 280 190" role="img" aria-label="Disjoint parts A1, A2, A3 with x and y in the same part" xmlns="http://www.w3.org/2000/svg">${s}</svg>`};
+/* SET-56 */
+out.b55Quadrants=()=>{
+ const cx=140,cy=105,u=55;
+ let s=`<rect x="${cx}" y="12" width="125" height="${cy-12}" fill="${B}" fill-opacity=".16"/><rect x="15" y="${cy}" width="${cx-15}" height="${cy-12}" fill="${B}" fill-opacity=".16"/>`;
+ s+=line(`M15 ${cy}H265`,M,1.5)+line(`M${cx} 12V198`,M,1.5)+t(262,cy-8,'a',W,14,'end')+t(cx+8,26,'b',W,14,'start');
+ s+=`<circle cx="${cx+u}" cy="${cy}" r="5" fill="${B}"/><circle cx="${cx}" cy="${cy+u}" r="5" fill="${B}"/><circle cx="${cx+u}" cy="${cy+u}" r="5" fill="${R}"/>`;
+ s+=t(cx+u,cy-12,'(1, 0)',W,13)+t(cx-10,cy+u+5,'(0, '+mn+'1)',W,13,'end')+t(cx+u+10,cy+u+22,'(1, '+mn+'1)',R,13,'middle');
+ s+=t(cx+62,34,'ab ≥ 0',B,13)+t(cx-70,194,'ab ≥ 0',B,13);
+ return `<svg viewBox="0 0 280 210" role="img" aria-label="Region ab>=0 in the (a,b) plane with the pairs (1,0), (0,-1) inside and (1,-1) outside" xmlns="http://www.w3.org/2000/svg">${s}</svg>`};
+/* SET-56-B */
+out.b55Chain=()=>{
+ const y=120,x0=30,k=130,X=v=>x0+v*k;
+ let s=line(`M18 ${y}H262`,M,1.5);
+ [0,0.8,1.6].forEach(v=>{s+=`<circle cx="${X(v)}" cy="${y}" r="5" fill="${B}"/>`+t(X(v),y+24,String(v),W,13)});
+ s+=line(`M${X(0)} ${y-8}A${0.4*k} 26 0 0 1 ${X(.8)} ${y-8}`,B,2)+line(`M${X(.8)} ${y-8}A${0.4*k} 26 0 0 1 ${X(1.6)} ${y-8}`,B,2);
+ s+=line(`M${X(0)} ${y-8}A${0.8*k} 80 0 0 1 ${X(1.6)} ${y-8}`,R,2,'6 4');
+ s+=t(X(.8),y-98,'0 to 1.6 is more than 1',R,13);
+ s+=t(X(.4),y-44,'≤ 1',B,13)+t(X(1.2),y-44,'≤ 1',B,13);
+ return `<svg viewBox="0 0 280 160" role="img" aria-label="Number line 0, 0.8, 1.6: each step is at most 1 but the whole span is 1.6" xmlns="http://www.w3.org/2000/svg">${s}</svg>`};
+/* SET-57 */
+out.b55PrimePowers=()=>{
+ const x0=34,k=4.4,X=v=>x0+v*k,rows=[[2,[4,8,16,32]],[3,[9,27]],[5,[25]],[7,[49]]];
+ let s='';
+ rows.forEach(([p,vs],i)=>{const y=34+i*32;
+  s+=line(`M${X(0)} ${y}H${X(50)}`,M,1)+t(4,y+5,'p='+p,W,13,'start');
+  vs.forEach(v=>{s+=`<circle cx="${X(v)}" cy="${y}" r="5" fill="${G}"/>`+t(X(v),y-9,String(v),W,13)})});
+ const ya=34+4*32-8;
+ s+=line(`M${X(0)} ${ya}H${X(50)}`,W,1.5);
+ [0,10,20,30,40,50].forEach(v=>{s+=line(`M${X(v)} ${ya-4}V${ya+4}`,W,1.5)+t(X(v),ya+20,String(v),W,13)});
+ s+=t(150,ya+44,'8 powers pⁿ (n ≥ 2) up to 50',M,13);
+ return `<svg viewBox="0 0 280 ${ya+54}" role="img" aria-label="Prime powers p^n with n at least 2 up to 50: four for 2, two for 3, one for 5, one for 7" xmlns="http://www.w3.org/2000/svg">${s}</svg>`};
+/* SET-57-A */
+out.b55Divisors=()=>{
+ const v=[...Array(20)].map((_,i)=>i+1),cells=[];
+ v.forEach(a=>v.forEach(b=>{if(b%a===0)cells.push([a-1,b-1,a===b?M:G,a===b?.6:.8])}));
+ return grid(0,v,cells,[[G,.8,'46 pairs kept',34],[M,.6,'20 with a = b',150]],10.5,i=>[0,4,9,14,19].includes(i),'20 by 20 grid of pairs (a,b) with a dividing b: 66 cells, 20 on the diagonal',false);
+};
+/* SET-58 */
+out.b55Arrows=()=>{
+ const P={1:[40,150],2:[140,40],3:[240,150]};
+ function arrow(a,b,col,dash,off){const [x1,y1]=P[a],[x2,y2]=P[b];const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,nx=-uy*off,ny=ux*off;
+  const sx=x1+ux*20+nx,sy=y1+uy*20+ny,ex=x2-ux*20+nx,ey=y2-uy*20+ny;
+  const h=[[ex,ey],[ex-ux*10-uy*5,ey-uy*10+ux*5],[ex-ux*10+uy*5,ey-uy*10-ux*5]].map(p=>p.map(z=>z.toFixed(1)).join(',')).join(' ');
+  return line(`M${sx.toFixed(1)} ${sy.toFixed(1)}L${(ex-ux*8).toFixed(1)} ${(ey-uy*8).toFixed(1)}`,col,2.2,dash)+`<polygon points="${h}" fill="${col}"/>`}
+ let s=arrow(1,2,B,0,7)+arrow(2,3,B,0,7)+arrow(1,3,B,0,7)+arrow(2,1,G,'5 4',7)+arrow(3,2,G,'5 4',7)+arrow(3,1,R,'5 4',7);
+ Object.entries(P).forEach(([k,[x,y]])=>{s+=`<circle cx="${x}" cy="${y}" r="17" fill="#131313" stroke="${W}" stroke-width="2"/>`+t(x,y+5,k,W,14,'middle',700)});
+ s+=t(140,196,'loops at 1, 2, 3 are present',M,13);
+ return `<svg viewBox="0 0 280 210" role="img" aria-label="Arrow diagram on 1,2,3: forced arrows 1 to 2, 2 to 3, 1 to 3; optional 2 to 1 and 3 to 2; 3 to 1 not allowed" xmlns="http://www.w3.org/2000/svg">${s}</svg>`};
+/* SET-59 family */
+out.b55Grid59=()=>{const v=[2,3,5,7,9],R_=[];v.forEach(x=>v.forEach(y=>{if(2*x<=3*y)R_.push([x,y])}));
+ const {cells,added}=relCells(v,R_,G,G,false);if(R_.length!==18||added.length!==7)throw new Error('59');
+ return grid(0,v,cells,[[B,.7,'in R (18)',34],[G,.8,'to add (7)',150]],34,()=>true,'5 by 5 grid of A x A with R cells and the 7 mirror cells to add');};
+out.b55Grid59A=()=>{const v=[1,2,3,4,5],R_=[];v.forEach(x=>v.forEach(y=>{if(4*x<=5*y)R_.push([x,y])}));
+ const {cells,added}=relCells(v,R_,G,G,false);if(R_.length!==16||added.length!==9)throw new Error('59A');
+ return grid(0,v,cells,[[B,.7,'in R (16)',34],[G,.8,'to add (9)',150]],34,()=>true,'5 by 5 grid of A x A with R cells and the 9 mirror cells to add');};
+out.b55Reflect59B=()=>{const v=[...Array(16)].map((_,i)=>i+1);
+ const cells=[[3,3,B,.9],[7,8,B,.9],[11,13,B,.9],[8,7,G,.9],[13,11,G,.9]].map(([a,b,c,o])=>[a-1,b-1,c,o]);
+ return grid(0,v,cells,[[B,.9,'in R',34],[G,.9,'mirror to add (2)',110]],14,i=>[0,3,7,11,15].includes(i),'16 by 16 grid: points (3,3), (7,8), (11,13) of R and mirrors (8,7), (13,11) across the diagonal');};
+out.b55Grid59C=()=>{const v=[0,3,4,6,7,8,9,10],R_=[];v.forEach(x=>v.forEach(y=>{const d=x-y;if((d>0&&d%2===1)||d===2)R_.push([x,y])}));
+ const {cells,added}=relCells(v,R_,G,G,false);if(R_.length!==19||added.length!==19)throw new Error('59C');
+ return grid(0,v,cells,[[B,.7,'in R (19)',34],[G,.8,'mirrors (19)',140]],27,()=>true,'8 by 8 grid: all 19 pairs of R lie below the diagonal, so 19 mirrors are added above');};
+out.b55Two59D=()=>{const v=[...Array(20)].map((_,i)=>i+1),R1=[],R2=[];v.forEach(x=>v.forEach(y=>{if(2*x-3*y===2)R1.push([x,y]);if(-5*x+4*y===0)R2.push([x,y])}));
+ if(R1.length!==6||R2.length!==4)throw new Error('59D');
+ const cells=[];R1.forEach(([a,b])=>{cells.push([a-1,b-1,B,.9]);cells.push([b-1,a-1,G,.9])});R2.forEach(([a,b])=>{cells.push([a-1,b-1,Y,.9]);cells.push([b-1,a-1,G,.9])});
+ return grid(0,v,cells,[[B,.9,'R₁ (6)',20],[Y,.9,'R₂ (4)',85],[G,.9,'mirrors (10)',150]],10.5,i=>[0,4,9,14,19].includes(i),'20 by 20 grid with the 6 points of R1, the 4 points of R2 and their 10 mirror points');};
+/* SET-60 family */
+out.b55Grid60=()=>{const v=[-2,-1,0,1,2,3,4],R_=[];v.forEach(x=>v.forEach(y=>{if(2*x+y<=2)R_.push([x,y])}));
+ const {cells,added}=relCells(v,R_,Y,G,true);if(R_.length!==23||added.length!==6)throw new Error('60');
+ return grid(0,v,cells,[[B,.7,'in R',20],[Y,.8,'loops (4)',80],[G,.8,'mirrors (6)',170]],30,()=>true,'7 by 7 grid for 2x+y<=2 with 23 pairs, 4 missing loops and 6 mirrors');};
+out.b55Grid60A=()=>{const v=[-3,-2,-1,0,1,2,3],R_=[];v.forEach(x=>v.forEach(y=>{const d=2*x-y;if(d===0||d===1)R_.push([x,y])}));
+ const {cells,added}=relCells(v,R_,Y,G,true);if(R_.length!==7||added.length!==5)throw new Error('60A');
+ return grid(0,v,cells,[[B,.7,'in R (7)',20],[Y,.8,'loops (5)',90],[G,.8,'mirrors (5)',172]].map(a=>a),30,()=>true,'7 by 7 grid for 2x-y in {0,1} with 7 pairs, 5 missing loops and 5 mirrors');};
+out.b55Grid60B=()=>{const v=[-2,-1,0,1,2,3],R_=v.map(x=>[x,Math.max(x,1)]);
+ const {cells,added}=relCells(v,R_,Y,G,true);if(added.length!==3)throw new Error('60B');
+ return grid(0,v,cells,[[B,.7,'in R (6)',20],[Y,.8,'loops (3)',90],[G,.8,'mirrors (3)',172]],34,()=>true,'6 by 6 grid for y=max(x,1) with 6 pairs, 3 missing loops and 3 mirrors');};
+out.b55Grid60C=()=>{const v=[-3,-2,-1,0,1,2,3],R_=[];v.forEach(x=>v.forEach(y=>{const q=x*x+2*y;if(q>=0&&q<=4)R_.push([x,y])}));
+ if(R_.length!==15)throw new Error('60C '+R_.length);
+ const {cells}=relCells(v,R_,Y,G,true);const c2=cells.filter(c=>c[2]!==G);
+ return grid(0,v,c2,[[B,.7,'in R (15)',34],[Y,.8,'loops to add (3)',130]],30,()=>true,'7 by 7 grid for 0<=x^2+2y<=4 with 15 pairs and the 3 missing loops');};
+out.b55Grid60D=()=>{const v=[-4,-3,-2,0,1,3,4],R_=[];v.forEach(a=>v.forEach(b=>{if(b===Math.abs(a)||b*b===a+1)R_.push([a,b])}));
+ if(R_.length!==8)throw new Error('60D '+R_.length);
+ const {cells,added}=relCells(v,R_,Y,G,true);if(added.length!==4)throw new Error('60D2');
+ return grid(0,v,cells,[[B,.7,'in R (8)',20],[Y,.8,'loops (3)',90],[G,.8,'mirrors (4)',172]],30,()=>true,'7 by 7 grid with 8 pairs of R, 3 missing loops and 4 mirrors');};
+/* SET-61 */
+out.b55Matrix61=()=>{const v=['a','b','c','d'],cells=[];
+ for(let i=0;i<4;i++){cells.push([i,i,B,.7]);for(let j=i+1;j<4;j++){cells.push([j,i,G,.8]);cells.push([i,j,G,.35])}}
+ return grid(0,v,cells,[[B,.7,'forced loops',34],[G,.8,'6 free pairs',134]],44,()=>true,'4 by 4 grid: 4 forced diagonal cells and 6 free pairs whose mirrors follow',true);};
+return out;
+})();
+/* b56.js */
+const DIAGRAMS_b56={
+ /* grid of ordered pairs: n x n cells, rows = first element, columns = second element */
+ 'b56SymFree': ()=>{
+  const n=4,c=40,ox=70,oy=44;let s='';
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+   const col=i===j?Y:(j>i?B:M),op=i===j?.35:(j>i?.35:.12);
+   s+=`<rect x="${ox+j*c}" y="${oy+i*c}" width="${c}" height="${c}" fill="${col}" fill-opacity="${op}" stroke="${col}" stroke-width="1.5"/>`;
+  }
+  for(let k=0;k<n;k++){s+=t(ox+k*c+c/2,oy-8,k+1,W,14);s+=t(ox-12,oy+k*c+c/2+5,k+1,W,14)}
+  s+=`<rect x="${ox}" y="${oy+n*c+16}" width="14" height="14" fill="${Y}" fill-opacity=".35" stroke="${Y}"/>`+t(ox+22,oy+n*c+28,'4 loops, free',W,14,'start');
+  s+=`<rect x="${ox}" y="${oy+n*c+40}" width="14" height="14" fill="${B}" fill-opacity=".35" stroke="${B}"/>`+t(ox+22,oy+n*c+52,'6 pairs, free',W,14,'start');
+  s+=t(ox+n*c/2,oy+n*c+80,'grey cells copy the blue ones',M,13);
+  return wrap(s,oy+n*c+92,'4 by 4 grid of pairs: four diagonal loops and six free symmetric pairs',280);
+ },
+ 'b56EllipseLattice': ()=>{
+  const dx=34,dy=15,cx=140,cy=124;let s='';
+  s+=`<ellipse cx="${cx}" cy="${cy}" rx="${Math.sqrt(13)*dx}" ry="${Math.sqrt(52)*dy}" fill="${B}" fill-opacity=".1" stroke="${B}" stroke-width="2" stroke-dasharray="5 4"/>`;
+  const cnt={};
+  for(let x=-3;x<=3;x++){cnt[x]=0;for(let y=-7;y<=7;y++){
+   const v=4*x*x+y*y;
+   if(v<52){cnt[x]++;s+=`<circle cx="${cx+x*dx}" cy="${cy-y*dy}" r="4" fill="${G}"/>`}
+   else if(v===52){s+=`<circle cx="${cx+x*dx}" cy="${cy-y*dy}" r="4" fill="none" stroke="${R}" stroke-width="1.8"/>`}
+  }}
+  for(let x=-3;x<=3;x++){s+=t(cx+x*dx,cy+7*dy+30,x,W,14);s+=t(cx+x*dx,cy+7*dy+50,cnt[x],G,14,'middle',700)}
+  s+=t(cx,cy+7*dy+72,'green: points per column x; red: on the curve',M,13);
+  return wrap(s,cy+7*dy+84,'Integer points inside the ellipse 4x squared plus y squared equals 52, counted column by column',280);
+ },
+ 'b56DiagPairs': ()=>{
+  const n=10,c=20,ox=50,oy=40;let s='';
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+   const a=i+1,b=j+1,d=a-b;let col=M,op=.08;
+   if(d===0){col=G;op=.45}else if(d===-2){col=B;op=.45}
+   s+=`<rect x="${ox+j*c}" y="${oy+i*c}" width="${c}" height="${c}" fill="${col}" fill-opacity="${op}" stroke="${col}" stroke-width="1"/>`;
+  }
+  for(let k=0;k<n;k++){s+=t(ox+k*c+c/2,oy-6,k+1,W,13);s+=t(ox-8,oy+k*c+c/2+5,k+1,W,13,'end')}
+  s+=t(ox+n*c/2,oy-24,'b',M,14);s+=t(14,oy+n*c/2+5,'a',M,14,'start');
+  const y=oy+n*c+22;
+  s+=`<rect x="${ox}" y="${y-12}" width="14" height="14" fill="${G}" fill-opacity=".45" stroke="${G}"/>`+t(ox+22,y,'a − b = 0: 10 pairs',W,14,'start');
+  s+=`<rect x="${ox}" y="${y+12}" width="14" height="14" fill="${B}" fill-opacity=".45" stroke="${B}"/>`+t(ox+22,y+24,'a − b = −2: 8 pairs',W,14,'start');
+  return wrap(s,y+38,'10 by 10 grid of pairs with the two diagonals a minus b equal 0 and equal minus 2 shaded',280);
+ },
+ 'b56EquivBlocks': ()=>{
+  const n=4,c=40,ox=70,oy=44;let s='';
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+   const inR=(i<3&&j<3)||(i===3&&j===3);
+   s+=`<rect x="${ox+j*c}" y="${oy+i*c}" width="${c}" height="${c}" fill="${inR?G:M}" fill-opacity="${inR?.4:.08}" stroke="${inR?G:M}" stroke-width="1.5"/>`;
+  }
+  for(let k=0;k<n;k++){s+=t(ox+k*c+c/2,oy-8,k+1,W,14);s+=t(ox-12,oy+k*c+c/2+5,k+1,W,14)}
+  s+=t(ox+60,oy+n*c+24,'class {1, 2, 3}: 9',G,14);
+  s+=t(ox+60,oy+n*c+46,'class {4}: 1',G,14);
+  return wrap(s,oy+n*c+58,'4 by 4 grid: a 3 by 3 block for the class 1 2 3 and one cell for the class 4',280);
+ },
+ 'b56Partitions': ()=>{
+  let s='';
+  const sp=26,pw=22,ph=26;
+  const panel=(cx,cy,groups,col)=>{let o='';let pos=0;
+   groups.forEach(g=>{const x0=cx-1.5*sp+pos*sp-pw/2;const w=(g.length-1)*sp+pw;
+    o+=`<rect x="${x0}" y="${cy-ph/2}" width="${w}" height="${ph}" rx="11" fill="${col}" fill-opacity=".15" stroke="${col}" stroke-width="2"/>`;
+    g.forEach((v,k)=>{o+=t(x0+pw/2+k*sp,cy+5,v,W,14,'middle',700)});pos+=g.length}); return o};
+  const pr=(cx,cy,groups,col)=>panel(cx+sp/2,cy,groups,col);
+  s+=pr(47,36,[[1,2],[3]],B)+pr(140,36,[[1,3],[2]],B)+pr(233,36,[[2,3],[1]],B);
+  s+=t(140,82,'three partitions of this shape',B,14);
+  s+=pr(70,124,[[1],[2],[3]],Y)+pr(210,124,[[1,2,3]],G);
+  s+=t(70,170,'all apart',Y,14)+t(210,170,'all together',G,14);
+  return wrap(s,184,'The five partitions of the set 1 2 3: two of one shape each, three of the shape pair plus single',280);
+ },
+ 'b56ClosureThree': ()=>{
+  const n=3,c=50,ox=70,oy=44,L=['a','b','c'];let s='';
+  const given=new Set(['0,1','1,2']);
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+   const g=given.has(i+','+j),col=g?B:G;
+   s+=`<rect x="${ox+j*c}" y="${oy+i*c}" width="${c}" height="${c}" fill="${col}" fill-opacity=".35" stroke="${col}" stroke-width="1.5"/>`;
+  }
+  for(let k=0;k<n;k++){s+=t(ox+k*c+c/2,oy-8,L[k],W,14);s+=t(ox-12,oy+k*c+c/2+5,L[k],W,14)}
+  const y=oy+n*c+22;
+  s+=`<rect x="${ox}" y="${y-12}" width="14" height="14" fill="${B}" fill-opacity=".35" stroke="${B}"/>`+t(ox+22,y,'given: 2',W,14,'start');
+  s+=`<rect x="${ox}" y="${y+12}" width="14" height="14" fill="${G}" fill-opacity=".35" stroke="${G}"/>`+t(ox+22,y+24,'to add: 7',W,14,'start');
+  return wrap(s,y+38,'3 by 3 grid on a b c: the two given pairs and the seven pairs to add so that all nine are present',280);
+ },
+ 'b56ClosureSix': ()=>{
+  const n=6,c=32,ox=60,oy=44;let s='';
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+   const inR=(i+1)+(j+1)<=7,col=inR?B:G;
+   s+=`<rect x="${ox+j*c}" y="${oy+i*c}" width="${c}" height="${c}" fill="${col}" fill-opacity="${inR?.3:.4}" stroke="${col}" stroke-width="1.5"/>`;
+  }
+  for(let k=0;k<n;k++){s+=t(ox+k*c+c/2,oy-8,k+1,W,14);s+=t(ox-10,oy+k*c+c/2+5,k+1,W,14,'end')}
+  s+=t(ox+n*c/2,oy-26,'y',M,14);s+=t(14,oy+n*c/2+5,'x',M,14,'start');
+  const y=oy+n*c+22;
+  s+=`<rect x="${ox}" y="${y-12}" width="14" height="14" fill="${B}" fill-opacity=".3" stroke="${B}"/>`+t(ox+22,y,'in R: x + y ≤ 7, 21 pairs',W,14,'start');
+  s+=`<rect x="${ox}" y="${y+12}" width="14" height="14" fill="${G}" fill-opacity=".4" stroke="${G}"/>`+t(ox+22,y+24,'to add: 15 pairs',W,14,'start');
+  return wrap(s,y+38,'6 by 6 grid of pairs: 21 pairs with x plus y at most 7 and the 15 pairs to add to fill the square',280);
+ }
+};
+const SOL=Object.assign({},DIAGRAMS_b02,DIAGRAMS_b03,DIAGRAMS_b51,DIAGRAMS_b52,DIAGRAMS_b53,DIAGRAMS_b54,DIAGRAMS_b55,DIAGRAMS_b56);
 /* GENERATED SOLUTION DIAGRAMS END */
 function diagram(q,solution=false){
  if(STEM[q.diagram])return solution?'':STEM[q.diagram]();
