@@ -2338,6 +2338,1471 @@ function detailedSolution(q){
   [`The centre of mass cannot keep falling, because once the ball is nearly empty there is very little water left to pull it down, and the mass that remains is the shell, whose own centre is the centre of the sphere.`,`as water → 0, L → L₀`],
   [`So the effective length rises to a maximum at some intermediate level and then returns, and the period follows it. The empty ball has the same centre of mass as the full one, which is why the period comes back to exactly where it started rather than to some new value.`,`L₀ → L(max) → L₀`],
   [`Correct answer`,`first increase and then decrease to the original value`]
+ ]},
+{id:'SHM-109',level:2,
+ title:'Which everyday motion is simple harmonic',
+ topic:'What counts as simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.118',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Which one of the following is an example of simple harmonic motion ?`,
+ options:[`motion of an electron around the nucleus`,`motion of the earth around the sun`,`a car moving in a circular path`,`a glass ball rolling freely in a shallow hemispherical bowl`],
+ correct:3,
+ answer:`a glass ball rolling freely in a shallow hemispherical bowl`,
+ diagram:'',
+ noDiagramReason:'The question asks which of four named everyday motions satisfies the definition, so there is no measured geometry to draw.',
+ short:[
+  [`Simple harmonic motion asks for more than repetition. The body must move on a line, and the force on it must point back towards one fixed point and grow in proportion to the distance from it.`,`F = −kx`],
+  [`The earth moves round the sun on a closed orbit under an inverse-square attraction. That motion is periodic, but the force gets stronger as the distance falls, which is the opposite of a proportionality to displacement.`,`F ∝ 1 ÷ r², not −kx`],
+  [`A car on a circular path keeps a fixed distance from the centre, so its displacement from the centre never reverses and the inward force never acts as a restoring force. Only the shadow of such motion on a diameter is simple harmonic, and the shadow is not the car.`,`|r| constant, so no reversal`],
+  [`The electron bound to a nucleus is not described by a displacement oscillating about a point either; on the orbital picture it circulates, and on the quantum picture it has no trajectory at all.`,`no restoring force proportional to x`],
+  [`For the ball in the bowl, a small displacement from the lowest point leaves a component of the weight along the surface directed back to that point, and while the bowl is shallow that component is proportional to the displacement. The ball behaves as a pendulum whose length is the radius of the bowl.`,`F = −mg sin θ ≈ −${fraction('mg','R')}x`],
+  [`Correct answer`,`a glass ball rolling freely in a shallow hemispherical bowl`]
+ ]},
+{id:'SHM-110',level:2,
+ title:'The one parameter that differs between two identical oscillations',
+ topic:'Phase, and intervals read from it',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.119',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`The figure represents two simple harmonic motions, A and B, each along its own straight path, drawn at four successive instants of the same clock. The arrow on a frame shows the direction in which that particle is moving at that instant. The parameter which has different values in the two motions is`,
+ options:[`amplitude`,`frequency`,`phase`,`maximum speed`],
+ correct:2,
+ answer:`phase`,
+ diagram:'two-oscillators-four-instants',
+ short:[
+  [`Read the amplitude off the frames first. Each dot travels out to the ends of its own path, and the two paths are drawn the same length, so each particle swings the same distance either side of the centre.`,`amplitude of A = amplitude of B`],
+  [`Now read the timing. Both particles are at the centre in the first frame, both are at an end in the second, both are back at the centre in the third and both are at an end in the fourth, so each completes its cycle in the same number of frames.`,`frequency of A = frequency of B`],
+  [`The greatest speed of a particle in simple harmonic motion is fixed by the amplitude and the angular frequency alone, and the two motions agree in both, so they agree in greatest speed as well.`,`v (max) = Aω, the same for both`],
+  [`What differs is where in the cycle each particle is. In the first frame A is at the centre moving to the right while B is at the centre moving to the left, and in the second frame A is at the right-hand end while B is at the left-hand end.`,`B is always where A was half a cycle earlier`],
+  [`Two motions that agree in amplitude and in frequency but reach the same point of the path at opposite moments differ only in their starting phase, and here the two are half a cycle apart.`,`phase difference = π`],
+  [`Correct answer`,`phase`]
+ ]},
+{id:'SHM-112',level:2,
+ title:'Greatest reading of a weighing machine on an oscillating platform',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.74',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A person of normal weight 60 kg stands on a platform which oscillates up and down vertically with a frequency of 2.0 s⁻¹ and an amplitude of 5.0 cm. A weighing machine on the platform is graduated in kilograms and records the person's apparent weight. The maximum reading of the machine will be (take g = 10 m/s²)`,
+ options:[`701.3 kg`,`3.701 kg`,`731.0 kg`,`107.3 kg`],
+ correct:3,
+ answer:`107.3 kg`,
+ diagram:'',
+ noDiagramReason:'The one force that matters is the normal reaction under the person at the lowest point of the travel, which the solution writes out; the platform has no geometry to measure.',
+ short:[
+  [`A weighing machine shows the normal reaction it has to supply, and because it is graduated in kilograms it divides that force by g before displaying it.`,`reading = ${fraction('N','g')}`],
+  [`Apply Newton's second law to the person. The acceleration is that of simple harmonic motion and points towards the mean position, so the reaction is largest at the lowest point of the travel, where the acceleration points upwards and has its greatest magnitude.`,`N − mg = mω²A`],
+  [`Convert the data before substituting. The frequency is given in cycles per second, so the angular frequency is 2π times it, and the amplitude must be in metres.`,`ω = 2π × 2.0 = 4π rad s⁻¹ and A = 0.05 m`],
+  [`Work out the extra acceleration the oscillation demands at that point.`,`ω²A = 16π² × 0.05 = 7.9 m/s²`],
+  [`Add it to g and divide the whole by g, which is what the kilogram scale does.`,`reading = 60 × ${fraction('10 + 7.9','10')} = 107.3 kg`],
+  [`The check on the size is that the oscillation adds under four fifths of g, so the reading can rise by only about four fifths of 60 kg; the other three options are the same digits rearranged and come from leaving the amplitude as 5.0 instead of 0.05 m.`,`${fraction('ω²A','g')} = 0.79`],
+  [`Correct answer`,`107.3 kg`]
+ ]},
+{id:'SHM-114',level:2,
+ title:'A spring clock and a pendulum clock on a larger planet',
+ topic:'The pendulum when gravity is not the only force',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.187',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A clock S is based on the oscillations of a spring and a clock P is based on pendulum motion. Both clocks run at the same rate on earth. On a planet having the same density as earth, but twice the radius,`,
+ options:[`S will run faster than P`,`P will run faster than S`,`they will both run at the same rate as on earth`,`they will both run at equal rates, but not the same as on the earth`],
+ correct:1,
+ answer:`P will run faster than S`,
+ diagram:'',
+ noDiagramReason:'The comparison rests on how each period depends on g, and the planet is specified by two numbers rather than by any drawing.',
+ short:[
+  [`Find the surface gravity of the planet first. Writing the mass of a uniform sphere as its density times its volume makes the surface field proportional to the product of density and radius.`,`g = ${fraction('4','3')}πGρR`],
+  [`The density matches the earth's and the radius is doubled, so the field at the surface is twice as strong.`,`g (planet) = 2g`],
+  [`The period of the spring clock is fixed by the mass and the stiffness alone. A stronger field moves the equilibrium position of a hanging mass further down but leaves the stiffness untouched, so the spring clock keeps exactly the rate it had on earth.`,`T (S) = 2π√(${fraction('m','k')}), independent of g`],
+  [`The pendulum clock does depend on the field, and a stronger field shortens its period by the square root of the factor involved.`,`T (P) = 2π√(${fraction('ℓ','g')}) ⇒ T (P) becomes ${fraction('T (P)','√2')}`],
+  [`A clock whose period is shorter counts more swings in a given interval and so advances faster than it should. The pendulum clock therefore gains while the spring clock is unchanged, which also rules out both options that claim the two still agree.`,`T (P) falls, T (S) fixed`],
+  [`Correct answer`,`P will run faster than S`]
+ ]},
+{id:'SHM-120',level:3,
+ title:'Two pendulums released on opposite sides and colliding elastically',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.28',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two identical simple pendulums A and B hang from the same point. They are drawn aside to opposite sides of the vertical through the very small angles α and β, with β greater than α, and released from rest at the same instant. Collisions between the bobs are elastic and each string has length ℓ. The time after which B first comes back to the position it was released from is`,
+ options:[`π√(${fraction('ℓ','g')})`,`2π√(${fraction('ℓ','g')})`,`${fraction('πβ','α')}√(${fraction('ℓ','g')})`,`${fraction('2πβ','α')}√(${fraction('ℓ','g')})`],
+ correct:1,
+ answer:`2π√(${fraction('ℓ','g')})`,
+ diagram:'two-pendulums-one-point-opposite-sides',
+ short:[
+  [`The pendulums are identical and the angles are small, so both have the same period whatever amplitude each is given, and both reach the lowest point a quarter of a period after release. That is where they meet.`,`T = 2π√(${fraction('ℓ','g')}), first collision at ${fraction('T','4')}`],
+  [`The bobs have equal masses and the collision is elastic, so each bob leaves carrying the velocity the other brought. Each is turned back towards its own side, with the other's speed and therefore the other's amplitude.`,`equal masses and elastic ⇒ the velocities are exchanged`],
+  [`B now swings out on its own side to the smaller amplitude α, so it falls short of the angle β it started from and cannot have returned yet. It comes back to the lowest point half a period after the collision, and A, which went out to β, arrives there at the same instant.`,`second collision at ${fraction('T','4')} + ${fraction('T','2')} = ${fraction('3T','4')}`],
+  [`The second collision exchanges the velocities back again, so B leaves the lowest point with the speed it had at the very first collision, which is the speed belonging to amplitude β.`,`B recovers its own amplitude β`],
+  [`A quarter of a period later B is at the far end of that swing, which is the angle β on its own side, the position it was released from. Adding the three intervals gives one whole period, so the answer does not involve the angles at all, which rules out the two options containing β to α.`,`t = ${fraction('T','4')} + ${fraction('T','2')} + ${fraction('T','4')} = T`],
+  [`Correct answer`,`2π√(${fraction('ℓ','g')})`]
+ ]},
+{id:'SHM-121',level:1,
+ title:'Adjusting a pendulum clock for a weaker gravitational field',
+ topic:'The pendulum when gravity is not the only force',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.61',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A pendulum clock is carried upwards to an altitude at which the value of g is 5% less than its value at the ground. If the clock is to keep correct time there, the length of its pendulum has to undergo`,
+ options:[`no change`,`an increment by the same percentage`,`a decrement by the same percentage`,`none of these`],
+ correct:2,
+ answer:`a decrement by the same percentage`,
+ diagram:'',
+ noDiagramReason:'Only the proportional relation between the length, the field and the period is used, and the altitude enters solely through the stated 5%.',
+ short:[
+  [`A pendulum clock keeps correct time only while its period holds the value it was set to, so treat the period as fixed and let the length answer to the change in the field.`,`T = 2π√(${fraction('ℓ','g')}) is to stay constant`],
+  [`Square and rearrange. What has to be held fixed is the ratio of the length to g, not the length on its own.`,`${fraction('ℓ','g')} = ${fraction('T²','4π²')}`],
+  [`So the length must change in the same proportion as the field, and a field 5% weaker calls for a length 5% shorter.`,`ℓ′ = ℓ × ${fraction('g′','g')} = 0.95ℓ`],
+  [`Check the sense of that against the physics. A weaker field swings any given pendulum more slowly, so the untouched clock would lose time, and the cure is to shorten the pendulum, not to lengthen it.`,`g′ < g ⇒ T grows unless ℓ falls`],
+  [`The percentage carries across unchanged because the length and the field appear only as a ratio, so the square root in the period acts on both of them alike and cannot halve the figure.`,`Δℓ ÷ ℓ = Δg ÷ g = −5%`],
+  [`Correct answer`,`a decrement by the same percentage`]
+ ]},
+{id:'SHM-122',level:3,
+ title:'Phase difference from the greatest separation of two oscillators',
+ topic:'Phase, and intervals read from it',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.182',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Two particles P and Q perform simple harmonic motion along the same straight line about the same mean position, with the same amplitude a and the same frequency n. The greatest distance between P and Q at any instant of the motion is found to be a. The phase difference between the two motions is`,
+ options:[`π`,`${fraction('2π','3')}`,`${fraction('π','2')}`,`${fraction('π','3')}`],
+ correct:3,
+ answer:`${fraction('π','3')}`,
+ diagram:'',
+ noDiagramReason:'The separation is obtained algebraically from the two displacement equations, and the reference circle would only restate that step.',
+ short:[
+  [`Write the two displacements from the common mean position, with φ for the phase difference asked about.`,`x (P) = a sin ωt and x (Q) = a sin (ωt + φ)`],
+  [`The separation of the particles at any instant is the difference of the two displacements, and the difference of two sines of the same frequency is itself a sinusoid of that frequency.`,`x (Q) − x (P) = a[sin (ωt + φ) − sin ωt]`],
+  [`Apply the identity for a difference of sines, which splits the expression into a constant factor and an oscillation in time.`,`= 2a sin(${fraction('φ','2')}) cos(ωt + ${fraction('φ','2')})`],
+  [`The cosine runs over the whole range from −1 to 1 as time passes, so the greatest separation is the size of the constant factor. This is the step that decides the question: the greatest separation is not a sin φ, and it is not the difference of the amplitudes.`,`greatest separation = 2a sin(${fraction('φ','2')})`],
+  [`Set that equal to the separation observed and cancel the amplitude, which the question has made the same for both particles.`,`2a sin(${fraction('φ','2')}) = a ⇒ sin(${fraction('φ','2')}) = ${fraction('1','2')}`],
+  [`The smallest positive half-angle with that sine is 30 degrees, so double it. The other options fail the same test: a phase difference of π would open a gap of 2a and one of π to 2 would open a gap of a√2, both larger than a.`,`${fraction('φ','2')} = ${fraction('π','6')}`],
+  [`Correct answer`,`${fraction('π','3')}`]
+ ]},
+{id:'SHM-124',level:2,
+ title:'Two spring oscillators coming back into phase',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.78',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two identical springs, each of force constant k, hang from rigid supports. A block of mass M = 1 kg is attached to the lower end of one spring and a block of mass 4M to the lower end of the other, as shown. Both blocks are pulled down from their own mean positions and released at the same instant. If they are found to be in the same phase once every 4 seconds, the force constant k is`,
+ options:[`π N/m`,`π² N/m`,`2π N/m`,`It cannot be determined from the given data`],
+ correct:1,
+ answer:`π² N/m`,
+ diagram:'two-spring-mass-systems-m-and-4m',
+ short:[
+  [`The period of a block hanging on a spring is fixed by the mass that moves and by the stiffness, and the two springs here are identical.`,`T = 2π√(${fraction('m','k')})`],
+  [`The second block carries four times the mass, and the period grows as the square root of the mass, so its period is exactly twice that of the first.`,`T₂ = 2T₁`],
+  [`Both blocks are released from an extreme at the same instant, so they are in the same phase again at the first moment at which each has completed a whole number of oscillations. With the periods in the ratio 1 to 2, that moment is one full oscillation of the heavier block.`,`t = T₂ = 2T₁`],
+  [`The question states that this happens every 4 seconds, which fixes the period of the lighter block.`,`T₁ = 2 s`],
+  [`Rearrange the spring period for the stiffness, and use the mass of the lighter block, which the figure gives as 1 kg. The data are sufficient, so the last option is wrong.`,`k = ${fraction('4π²M','T₁²')} = ${fraction('4π² × 1','4')} N/m`],
+  [`Correct answer`,`π² N/m`]
+ ]},
+{id:'SHM-125',level:3,
+ title:'Motion of a charge released on the axis of a ring',
+ topic:'What counts as simple harmonic motion',
+ source:'IIT-JEE 1998 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 1998',questionNumber:'Q.251',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A positively charged thin metal ring of radius R is fixed in the xy-plane with its centre at the origin O. A negatively charged particle P is released from rest at the point (0, 0, z₀), where z₀ > 0. Then the motion of P is`,
+ options:[`periodic, for all values of z₀ satisfying 0 < z₀ < ∞`,
+  `simple harmonic, for all values of z₀ satisfying 0 < z₀ ≤ R`,
+  `approximately simple harmonic, provided z₀ >> R`,
+  `such that P crosses O and continues to move along the negative z axis towards z = −∞`],
+ correct:0,
+ answer:`periodic, for all values of z₀ satisfying 0 < z₀ < ∞`,
+ diagram:'',
+ noDiagramReason:'The ring and the release point are fixed by the coordinates given in the stem, and the argument runs entirely on the form of the force along the axis.',
+ short:[
+  [`By symmetry the force on a charge sitting on the axis points along the axis. The two charges are of opposite sign, so it points from the particle towards the centre of the ring on either side of the plane.`,`F = −kQq ${fraction('z','(R² + z²)√(R² + z²)')}`],
+  [`That force vanishes at the centre and is directed back towards it everywhere else, so the particle speeds up to O, overshoots, is pulled back and returns. This holds for a release point anywhere on the axis, however far out, so the motion is periodic for every z₀.`,`F and z always carry opposite signs`],
+  [`The motion is not harmonic in general, because the force is proportional to z only while the bracket in the denominator can be held constant, and that needs a displacement small beside the radius. Restricting z₀ to R does not make the law exact, so the second option fails.`,`for z << R, F ≈ −${fraction('kQqz','R³')}`],
+  [`The third option states the condition the wrong way round. Far out along the axis the ring acts as a point charge and the force falls off as the inverse square, which is nothing like a linear restoring law.`,`for z >> R, F ≈ −${fraction('kQq','z²')}`],
+  [`The last option fails on energy. The particle starts at rest, so it can travel no further than the mirror-image point on the far side, where its speed has fallen back to zero.`,`turning points at z = ±z₀`],
+  [`Correct answer`,`periodic, for all values of z₀ satisfying 0 < z₀ < ∞`]
+ ]},
+{id:'SHM-126',level:3,
+ title:'Two balls and two springs in a circular pipe',
+ topic:'Two bodies on one spring',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.274',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Two identical balls A and B, each of mass 0.1 kg, are attached to two identical massless springs. The spring and mass system is constrained to move inside a rigid smooth pipe bent in the form of a circle, as shown. The pipe is fixed in a horizontal plane, and the centres of the balls can move in a circle of radius 0.06 m. Each spring has a natural length of 0.06π m and a force constant of 0.1 N/m. Initially both balls are displaced through an angle θ = π ÷ 6 radian with respect to the diameter PQ of the circle and released from rest. The frequency of oscillation of ball B is`,
+ options:[`π Hz`,`${fraction('1','π')} Hz`,`2π Hz`,`${fraction('1','2π')} Hz`],
+ correct:1,
+ answer:`${fraction('1','π')} Hz`,
+ diagram:'circular-pipe-two-balls-two-springs',
+ short:[
+  [`Settle the equilibrium position first. The circle has a circumference of 2π times its radius, so the stated natural length is exactly half of it and neither spring is strained when the two balls stand at opposite ends of a diameter.`,`2πr = 0.12π m, and each natural length spans a half circle`],
+  [`The arrangement is symmetric about the diameter, so the balls remain mirror images of each other: when ball B has moved along the pipe through an arc s, ball A has moved through the same arc towards it. The release angle fixes only how large that arc becomes.`,`s (max) = rθ = 0.06 × ${fraction('π','6')} m`],
+  [`Each spring has both of its ends carried by the balls, so its length changes by the sum of the two movements rather than by one of them.`,`change in length of each spring = 2s`],
+  [`The short spring is compressed and the long one stretched by that same amount. A compressed spring pushes and a stretched spring pulls, and here both act to drive ball B back towards its equilibrium point, so the two forces add.`,`F = −k(2s) − k(2s) = −4ks`],
+  [`A restoring force proportional to the displacement of the ball along the pipe is simple harmonic motion, with an effective stiffness of four times that of one spring against the mass of the single ball.`,`ω = √(${fraction('4k','m')}) = √(${fraction('4 × 0.1','0.1')}) = 2 rad/s`],
+  [`The question asks for the frequency and not for the angular frequency, so divide by 2π.`,`f = ${fraction('ω','2π')} = ${fraction('2','2π')}`],
+  [`Correct answer`,`${fraction('1','π')} Hz`]
+ ]},
+{id:'SHM-128',level:1,
+ title:'Shape of the amplitude-squared graph of a damped pendulum',
+ topic:'Damped and forced oscillation',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.112',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`In an experiment to follow the loss of energy with time of a swinging simple pendulum, a student plots the square of the amplitude of the swing against the time elapsed. The graph obtained is`,
+ options:[`a curve starting at a non-zero value on the vertical axis and falling, steeply at first and then ever more gently, approaching the time axis without reaching it`,
+  `a straight line of positive slope rising from the origin`,
+  `a curve starting low and rising ever more steeply as time passes`,
+  `a curve falling to a minimum and then rising again, a symmetrical U shape`],
+ correct:0,
+ answer:`a curve starting at a non-zero value on the vertical axis and falling, steeply at first and then ever more gently, approaching the time axis without reaching it`,
+ diagram:'',
+ noDiagramReason:'The four candidate curves are described in the options themselves, and the reasoning is about the shape rather than about any measurement read off a figure.',
+ short:[
+  [`The energy stored in an oscillation of small amplitude is proportional to the square of that amplitude, so the quantity the student has plotted is a direct measure of the energy still left in the swing.`,`E = ${fraction('1','2')} mω²A² ∝ A²`],
+  [`Energy is drained by the drag of the air on the bob and by friction at the support. Both grow with the speed of the bob, so a wide swing loses energy faster than a narrow one, and the rate of loss is governed by the energy still present.`,`−${fraction('dE','dt')} ∝ E`],
+  [`A quantity that is lost at a rate proportional to itself falls away exponentially rather than steadily, so the plotted square of the amplitude drops by the same factor in every equal interval of time.`,`A² = A₀² exp(−bt)`],
+  [`Such a curve begins at whatever amplitude the student started the pendulum with, so it cannot pass through the origin; its slope is negative throughout and shrinking in size, so no part of it is a straight line and it never turns back upwards.`,`at t = 0, A² = A₀² and the slope is −bA₀²`],
+  [`Correct answer`,`a curve starting at a non-zero value on the vertical axis and falling, steeply at first and then ever more gently, approaching the time axis without reaching it`]
+ ]},
+{id:'SHM-129',level:2,
+ title:'Amplitude of a driven oscillator away from resonance',
+ topic:'Damped and forced oscillation',
+ source:'AIEEE 2004 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'AIEEE previous-year question, reprinted in the institute booklet',
+   paper:'AIEEE 2004',questionNumber:'Q.236',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A particle of mass m is attached to a spring of force constant k and has a natural angular frequency ω₀. An external force F(t) = F₀ cos ωt, with ω ≠ ω₀, is applied to the oscillator. Once the starting transient has died away, the amplitude of the displacement of the oscillator is proportional to`,
+ options:[`${fraction('m','ω₀² − ω²')}`,`${fraction('1','m(ω₀² − ω²)')}`,`${fraction('1','m(ω₀² + ω²)')}`,`${fraction('m','ω₀² + ω²')}`],
+ correct:1,
+ answer:`${fraction('1','m(ω₀² − ω²)')}`,
+ diagram:'',
+ noDiagramReason:'The oscillator is a mass on a spring and the whole question is the steady-state solution of its equation of motion.',
+ short:[
+  [`In the steady state a driven oscillator follows the force rather than its own natural rhythm, so look for a displacement that oscillates at the frequency of the driver.`,`x = A cos ωt`],
+  [`Write Newton's second law with the spring force expressed through the natural frequency, and the driving force alongside it.`,`m ${fraction('d²x','dt²')} = −mω₀²x + F₀ cos ωt`],
+  [`Substitute the trial displacement. Differentiating a cosine twice returns the same cosine with a factor of −ω², so the time dependence is common to every term and cancels.`,`−mω²A = −mω₀²A + F₀`],
+  [`Collect the two terms in A and divide through by the bracket.`,`A = ${fraction('F₀','m(ω₀² − ω²)')}`],
+  [`A heavier mass therefore responds less to the same force, which disposes of the two options carrying the mass in the numerator. The response must also grow without limit as the driving frequency is brought towards the natural one, which a difference of squares allows and a sum never does.`,`A → ∞ as ω → ω₀`],
+  [`Correct answer`,`${fraction('1','m(ω₀² − ω²)')}`]
+ ]},
+{id:'SHM-133',level:2,
+ title:'Period of a spring oscillator fully immersed in a liquid',
+ topic:'Oscillation on a curved track or in a fluid',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.73',
+   printedAnswer:'A',verifiedAnswer:'D'},
+ question:`A heavy brass sphere hangs from a spiral spring and executes vertical vibrations of period T. The sphere is now completely immersed in a non-viscous liquid whose density is one tenth that of brass, and is set into vertical vibration again, remaining wholly inside the liquid throughout the motion. The new time period is`,
+ options:[`√(${fraction('10','9')}) T`,`√(${fraction('9','10')}) T`,`√(${fraction('18','100')}) T`,`unchanged at T`],
+ correct:3,
+ answer:`unchanged at T`,
+ diagram:'',
+ noDiagramReason:'A sphere on a spring, hanging first in air and then under the surface of a liquid; the argument is about which quantities in the period formula have changed, and no geometry enters it.',
+ short:[
+  [`The period of a body on a spring is fixed by the mass in motion and by the stiffness of the spring. The strength of gravity does not appear in it at all.`,`T = 2π√(${fraction('m','k')})`],
+  [`The sphere stays wholly submerged for the whole of the motion, so the volume of liquid it displaces never alters and the upthrust on it has the same size and direction at every instant.`,`F (up) = ${fraction('mg','10')}, a constant`],
+  [`A constant extra force on a spring oscillator moves only the point at which the forces balance. Measured from that new resting position, the extra force is cancelled by the extra spring tension and the restoring force per unit displacement is untouched.`,`F = −kx about the new equilibrium`],
+  [`Neither the mass of the sphere nor the stiffness of the spring has changed, and the liquid is stated to be non-viscous, so it exerts no drag to damp the motion either.`,`m and k both unchanged`],
+  [`The printed answer treats the upthrust as a weakening of gravity, as it would be for a pendulum: an effective g of nine tenths would lengthen the period by a factor of the root of 10 ÷ 9. That route cannot be taken here, because g is absent from the period of a spring.`,`g (eff) = ${fraction('9g','10')} does not enter T = 2π√(m ÷ k)`],
+  [`Correct answer`,`unchanged at T`]
+ ]},
+{id:'SHM-134',level:2,
+ title:'Acceleration-time graph read off a displacement-time graph',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.44',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A body performs SHM of amplitude a and period T. The figure shows its position-time graph over one full period, the displacement starting at its positive extreme at t = 0. If f is the acceleration of the body at time t, which one of the following graphs is appropriate?`,
+ options:[`a graph of f against t of the same shape and phase as the given graph, starting at its positive maximum at t = 0 and back at that maximum at t = T`,
+  `a graph of f against x that is a straight line through the origin, rising to the right`,
+  `a graph of f against t of the same shape as the given graph but turned upside down, starting at its negative minimum at t = 0, rising through zero to a positive maximum halfway through and falling back to the minimum at t = T`,
+  `a graph of f against x of cosine shape, starting at a positive maximum, dipping to a negative minimum and returning to a maximum`],
+ correct:2,
+ answer:`a graph of f against t of the same shape as the given graph but turned upside down, starting at its negative minimum at t = 0, rising through zero to a positive maximum halfway through and falling back to the minimum at t = T`,
+ diagram:'shm-displacement-time-cosine-one-period',
+ short:[
+  [`Turn the given graph into an equation. The displacement stands at its positive extreme when the clock starts, so it is a cosine rather than a sine.`,`x = a cos ωt, with ω = ${fraction('2π','T')}`],
+  [`Differentiate twice with respect to time to reach the acceleration, each differentiation bringing out a factor of ω.`,`f = −aω² cos ωt`],
+  [`The minus sign decides the question. At every instant the acceleration carries the sign opposite to the displacement, so its graph against time is the given curve reflected in the time axis.`,`f = −ω²x`],
+  [`That rules out the first option, which has the acceleration in step with the displacement instead of in opposition to it.`,`phase difference between x and f = π`],
+  [`The two graphs drawn against displacement fail as well. The relation above is a straight line of negative slope through the origin, not one rising to the right, and nothing makes the acceleration a cosine of the position.`,`slope of f against x = −ω², a negative constant`],
+  [`Correct answer`,`a graph of f against t of the same shape as the given graph but turned upside down, starting at its negative minimum at t = 0, rising through zero to a positive maximum halfway through and falling back to the minimum at t = T`]
+ ]},
+{id:'SHM-136',level:2,
+ title:'Period of a block between two springs on an incline',
+ topic:'Springs in series, in parallel, and cut',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.206',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A body of mass M rests on a smooth plane inclined at an angle θ to the horizontal and is held between two springs, as shown. The lower spring runs down the incline to a firm support at the foot and the upper spring runs up the incline to a firm support at the top, and each spring has force constant k. Taking the springs as massless, the period of oscillation of the body along the incline is`,
+ options:[`2π√(${fraction('M','2k')})`,`2π√(${fraction('2M','k')})`,`2π√(${fraction('M sin θ','2k')})`,`2π√(${fraction('M sin θ','k')})`],
+ correct:0,
+ answer:`2π√(${fraction('M','2k')})`,
+ diagram:'block-between-two-springs-on-an-incline',
+ short:[
+  [`Displace the body a distance x down the incline from where it rests. The lower spring is then compressed by x and the upper spring stretched by the very same x.`,`both deformations equal x`],
+  [`A compressed spring pushes and a stretched spring pulls, and here both act up the incline, so the two restoring forces add rather than share the load between them.`,`F = −kx − kx = −2kx`],
+  [`Equal deformations with forces that add is what a parallel combination means, whatever the drawing suggests. Each spring has its own fixed support, so they are not in series; reading them that way would halve the stiffness and give the second option.`,`k (eq) = 2k`],
+  [`Put that single equivalent constant into the spring and mass period, with the whole mass M in motion.`,`T = 2π√(${fraction('M','k (eq)')})`],
+  [`The angle has dropped out. The component of the weight along the incline is the same at every point of the travel and is already balanced by the springs at the resting position, so it fixes where that position lies and nothing else; the two options carrying sin θ cannot be right.`,`Mg sin θ = 2kx₀, and x₀ does not enter T`],
+  [`Correct answer`,`2π√(${fraction('M','2k')})`]
+ ]},
+{id:'SHM-139',level:3,
+ title:'Time at which a body leaves an oscillating plank',
+ topic:'Friction and contact in an oscillating system',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.76',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A body of mass m rests on a horizontal plank of negligible mass. The plank is driven up and down so that its displacement, measured upwards in metres, is y = sin ωt + √3 cos ωt, with t in seconds. The angular frequency ω is the smallest for which the body leaves the plank at any instant of the cycle. The time at which the body first loses contact is –`,
+ options:[`√(${fraction('2π','3g')})`,`${fraction('π','3')}√(${fraction('2','g')})`,`${fraction('2','3')}√(${fraction('π','g')})`,`${fraction('π','6')}√(${fraction('2','g')})`],
+ correct:3,
+ answer:`${fraction('π','6')}√(${fraction('2','g')})`,
+ diagram:'',
+ noDiagramReason:'A block resting on a plank that moves up and down; the work is in the phase of the given displacement and in the normal reaction, both written out in the steps.',
+ short:[
+  [`The two terms have the same frequency, so they combine into a single sinusoid whose amplitude is the hypotenuse of the two coefficients and whose phase is set by their ratio.`,`y = 2 sin (ωt + ${fraction('π','3')})`],
+  [`The plank can only push the body upwards, never pull it down, so the body follows the plank only while the normal reaction stays positive.`,`N = m(g − ω²y)`],
+  [`The reaction is smallest at the top of the travel, where the acceleration points downwards and is largest in size. The body leaves the plank only if that acceleration can reach g.`,`ω²(2) ≥ g`],
+  [`Taking the smallest such ω makes the two sides equal, so contact breaks at exactly one point of the cycle, the highest point.`,`ω = √(${fraction('g','2')})`],
+  [`Find the first time the displacement reaches that highest point. The motion starts a third of π ahead in phase, so the first maximum arrives earlier than a quarter period.`,`ωt + ${fraction('π','3')} = ${fraction('π','2')} ⇒ ωt = ${fraction('π','6')}`],
+  [`Divide the phase by the angular frequency found above.`,`t = ${fraction('π','6ω')} = ${fraction('π','6')}√(${fraction('2','g')})`],
+  [`Correct answer`,`${fraction('π','6')}√(${fraction('2','g')})`]
+ ]},
+{id:'SHM-140',level:3,
+ title:'Frequency of a rod pivoted at its centre between two springs',
+ topic:'Rigid bodies that swing',
+ source:'IIT-JEE 2009 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2009',questionNumber:'Q.106',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A uniform rod of length L and mass M is pivoted at its centre. Its two ends are attached to two springs of equal spring constant k, whose other ends are fixed to rigid supports as shown, and the rod is free to turn in the horizontal plane. The rod is pushed gently through a small angle θ and released. The frequency of oscillation is –`,
+ options:[`${fraction('1','2π')}√(${fraction('2k','M')})`,`${fraction('1','2π')}√(${fraction('k','M')})`,`${fraction('1','2π')}√(${fraction('6k','M')})`,`${fraction('1','2π')}√(${fraction('24k','M')})`],
+ correct:2,
+ answer:`${fraction('1','2π')}√(${fraction('6k','M')})`,
+ diagram:'rod-pivoted-at-centre-two-springs',
+ short:[
+  [`The rod turns about a fixed axis instead of translating, so the motion is angular and the quantities needed are restoring torque and moment of inertia about the pivot. The pivot is at the centre, and the rod swings in a horizontal plane, so gravity contributes no torque.`,`I = ${fraction('ML²','12')}`],
+  [`For a small turn θ each end moves through half the length times the angle. The two ends move in opposite senses, so one spring is compressed while the other is stretched and both push the rod back.`,`x = ${fraction('L','2')}θ`],
+  [`Each spring force is k times its own end displacement and acts at a lever arm of half the length, so the two torques add rather than cancel.`,`τ = −2k(${fraction('L','2')}θ)(${fraction('L','2')}) = −${fraction('kL²','2')}θ`],
+  [`Compare with the angular equation of simple harmonic motion, in which the squared angular frequency is the angular stiffness divided by the moment of inertia. The L² cancels, so the length does not appear in the answer.`,`ω² = ${fraction('kL² ÷ 2','ML² ÷ 12')} = ${fraction('6k','M')}`],
+  [`The question asks for a frequency and not an angular frequency, so divide by 2π.`,`f = ${fraction('ω','2π')} = ${fraction('1','2π')}√(${fraction('6k','M')})`],
+  [`Using the whole length as the lever arm instead of the half-length multiplies the torque by four and gives option (D), which is the usual error here.`,`${fraction('2kL²','ML² ÷ 12')} = ${fraction('24k','M')}`],
+  [`Correct answer`,`${fraction('1','2π')}√(${fraction('6k','M')})`]
+ ]},
+{id:'SHM-141',level:1,
+ title:'Mass to be added to lengthen a spring period',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.71',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A mass M hangs from a spring of negligible mass. The spring is pulled down a little and released, so that the mass oscillates simple harmonically with a time period T. When a further mass m is added to M, the period becomes five quarters of T. The ratio of m to M is –`,
+ options:[`${fraction('9','16')}`,`${fraction('25','16')}`,`${fraction('4','5')}`,`${fraction('5','4')}`],
+ correct:0,
+ answer:`${fraction('9','16')}`,
+ diagram:'',
+ noDiagramReason:'A single mass hanging from a single spring, with nothing in the geometry that the standard period formula does not already carry.',
+ short:[
+  [`The period of a hanging mass on a spring depends only on the mass and the stiffness, and the same spring is used throughout, so the stiffness is fixed.`,`T = 2π√(${fraction('M','k')})`],
+  [`The period therefore varies as the square root of the oscillating mass. Squaring the ratio of the two periods removes the root and leaves a ratio of masses.`,`(${fraction('5','4')})² = ${fraction('M + m','M')} = ${fraction('25','16')}`],
+  [`The left-hand mass ratio counts the total mass, not the added mass, so subtract one from each side to isolate what was added.`,`${fraction('m','M')} = ${fraction('25','16')} − 1 = ${fraction('9','16')}`],
+  [`A check on the arithmetic: that added mass brings the total to twenty-five sixteenths of M, whose square root is five quarters, which is the period change stated.`,`√(${fraction('25M','16')}) = ${fraction('5','4')}√M`],
+  [`Stopping one step early, at the ratio of total mass to original mass, gives option (B), and the two remaining options are the period ratio and its inverse rather than a mass ratio.`,`${fraction('25','16')} ≠ ${fraction('m','M')}`],
+  [`Correct answer`,`${fraction('9','16')}`]
+ ]},
+{id:'SHM-142',level:1,
+ title:'Period of a pendulum swinging in water',
+ topic:'The pendulum when gravity is not the only force',
+ source:'AIEEE 2004 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'AIEEE previous-year question, reprinted in the institute booklet',
+   paper:'AIEEE 2004',questionNumber:'Q.233',printedAnswer:'C',verifiedAnswer:'C'},
+ question:`The bob of a simple pendulum executes simple harmonic motion in water with a period t, while the period of the same pendulum in air is t₀. The density of the bob is (4 ÷ 3) × 1000 kilograms per cubic metre and the density of water is 1000 kilograms per cubic metre. Neglecting the frictional force of the water, which relationship between t and t₀ is true?`,
+ options:[`t = t₀`,`t = ${fraction('t₀','2')}`,`t = 2t₀`,`t = 4t₀`],
+ correct:2,
+ answer:`t = 2t₀`,
+ diagram:'',
+ noDiagramReason:'A pendulum swinging in a liquid; the only new force is the upthrust, which the steps treat as a reduction of the effective gravity.',
+ short:[
+  [`The bob keeps its full weight in the water, but the water pushes it up with an upthrust equal to the weight of water displaced. The restoring force per unit mass is therefore reduced in the ratio of the two densities.`,`g(eff) = g(1 − ${fraction('ρ(w)','ρ(b)')})`],
+  [`Put in the two densities. The water is three quarters as dense as the bob.`,`${fraction('ρ(w)','ρ(b)')} = ${fraction('1000 × 3','4 × 1000')} = ${fraction('3','4')}`],
+  [`What is left of gravity is a quarter of its value in air.`,`g(eff) = ${fraction('g','4')}`],
+  [`The pendulum period varies inversely as the square root of the effective gravity, and the length of the string has not changed.`,`${fraction('t','t₀')} = √(${fraction('g','g(eff)')}) = √4 = 2`],
+  [`The upthrust does not oppose the motion, as a viscous drag would; it is constant and vertical, so the motion stays simple harmonic and only slows down.`,`t > t₀`],
+  [`Correct answer`,`t = 2t₀`]
+ ]},
+{id:'SHM-143',level:1,
+ title:'Displacement equation from the kinetic energy at the centre',
+ topic:'The differential equation and what it gives',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.54',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A point mass of 0.1 kg executes simple harmonic motion with an amplitude of 0.1 m. As it passes through its mean position its kinetic energy is 8 × 10⁻³ J. The initial phase of the motion is 90°, the displacement is in metres and the time is in seconds. The displacement equation of the particle is –. The particle starts at its extreme position, so the displacement is written as a cosine.`,
+ options:[`0.1 sin 4t`,`0.1 sin 4πt`,`0.1 cos 4t`,`0.1 cos 4πt`],
+ correct:2,
+ answer:`0.1 cos 4t`,
+ diagram:'',
+ noDiagramReason:'The equation is assembled from the energy and the stated phase, with nothing to draw.',
+ short:[
+  [`At the mean position the spring energy is zero, so the quoted kinetic energy is the whole energy of the oscillation.`,`E = ${fraction('1','2')}mω²A²`],
+  [`Rearrange for the angular frequency and substitute the mass, the amplitude and the energy.`,`ω² = ${fraction('2E','mA²')} = ${fraction('2 × 8 × 10⁻³','0.1 × 0.01')} = 16`],
+  [`So the angular frequency is four radians per second. The two options carrying π would need an angular frequency more than three times as large, which the energy does not allow.`,`ω = 4 rad s⁻¹, not 4π rad s⁻¹`],
+  [`Write the general displacement with the amplitude and the stated initial phase.`,`y = A sin (ωt + ${fraction('π','2')})`],
+  [`A sine advanced by a quarter of a cycle is a cosine, so the particle begins at an extreme of its travel rather than at the centre.`,`y = 0.1 cos 4t`],
+  [`A check on the phase: at the start this gives the full amplitude, which is what an initial phase of a right angle means for a sine.`,`y(0) = 0.1 m`],
+  [`Correct answer`,`0.1 cos 4t`]
+ ]},
+{id:'SHM-144',level:2,
+ title:'Resultant of three equal oscillations sixty degrees apart',
+ topic:'Adding two simple harmonic motions',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.87',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`Three simple harmonic motions of equal amplitude A and equal time period act along the same line. Each one leads the one before it by a phase of 60°. The amplitude of the resultant oscillation is –`,
+ options:[`A`,`2A`,`0`,`4A`],
+ correct:1,
+ answer:`2A`,
+ diagram:'',
+ noDiagramReason:'The three phasors are described by their phases, and the symmetry argument in the steps replaces a sketch of them.',
+ short:[
+  [`Motions of the same period along the same line add as phasors: three arrows of equal length A, each turned 60° from the next, whose vector sum gives the resultant amplitude.`,`A(res) = |A₁ + A₂ + A₃|`],
+  [`Measure the phases from the middle arrow. The other two then sit one on either side of it, at the same angle.`,`phases: −60°, 0°, +60°`],
+  [`The components across that reference direction are equal and opposite, so they cancel and only the components along it survive.`,`A(res) = A cos 60° + A + A cos 60°`],
+  [`The cosine of 60° is one half, so each outer motion contributes half its amplitude.`,`A(res) = ${fraction('A','2')} + A + ${fraction('A','2')} = 2A`],
+  [`Adding the three amplitudes as plain numbers would give three times A, which is not offered; the phase differences are what cut the outer contributions in half.`,`A + A + A = 3A`],
+  [`Correct answer`,`2A`]
+ ]},
+{id:'SHM-146',level:3,
+ title:'How often two blocks collide across a spring',
+ topic:'Two bodies on one spring',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.85',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A block of mass m slides to the right along a frictionless floor with speed v, towards a second block of the same mass m which rests in equilibrium against a spring of force constant K fixed to the right-hand wall, as shown. The left-hand wall is a distance L from the second block, and the blocks are narrow enough for their width to be ignored. Every collision, between the blocks and against the wall, is elastic. The frequency with which the two blocks collide with each other is –`,
+ options:[`${fraction('v','2L')} + ${fraction('1','π')}√(${fraction('K','m')})`,`2[${fraction('v','2L')} + ${fraction('1','π')}√(${fraction('K','m')})]`,`${fraction('2','2L ÷ v + π√(m ÷ K)')}`,`${fraction('2','2L ÷ v − π√(m ÷ K)')}`],
+ correct:2,
+ answer:`${fraction('2','2L ÷ v + π√(m ÷ K)')}`,
+ diagram:'block-collides-with-spring-block',
+ short:[
+  [`Follow one complete cycle of the motion. The moving block reaches the second one and they collide; equal masses in an elastic head-on collision exchange velocities, so the left block stops where it is and the right block moves off with the whole speed v.`,`v → 0 and 0 → v`],
+  [`The right block compresses the spring and is pushed back out. That is half a cycle of a mass on a spring, and it returns to the same place with the same speed reversed.`,`t₁ = ${fraction('T','2')} = π√(${fraction('m','K')})`],
+  [`It then strikes the waiting block, which is the second collision between the two masses, and hands the speed back, so the left block now moves left with speed v.`,`0 → v and v → 0`],
+  [`That block runs the distance L to the left-hand wall, bounces off it elastically and comes back the same distance to meet the other block again, which starts the cycle afresh.`,`t₂ = ${fraction('2L','v')}`],
+  [`So each cycle lasts the half oscillation plus the round trip, and contains exactly two collisions between the masses. The bounce off the wall is not one of them, which is why the answer is not simply one collision per cycle.`,`t(cycle) = ${fraction('2L','v')} + π√(${fraction('m','K')})`],
+  [`The frequency is the number of collisions in a cycle divided by the time the cycle takes.`,`f = ${fraction('2','2L ÷ v + π√(m ÷ K)')}`],
+  [`Correct answer`,`${fraction('2','2L ÷ v + π√(m ÷ K)')}`]
+ ]},
+{id:'SHM-149',level:2,
+ title:'Potential energy curve for a force pushing away from the origin',
+ topic:'Energy in simple harmonic motion',
+ source:'IIT-JEE 2004 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2004',questionNumber:'Q.260',printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle moves along the x-axis under the influence of a force F = Kx, where K is a positive constant, so that the force points away from the origin. The potential energy is taken to be zero at x = 0. The correct relation between the potential energy and x is shown by the curve that is –`,
+ options:[`a downward-opening parabola with its vertex at the origin, so that the potential energy is negative at every x other than zero`,`a straight line through the origin with a negative slope`,`a straight line through the origin with a positive slope`,`an upward-opening parabola with its vertex at the origin, so that the potential energy is positive at every x other than zero`],
+ correct:0,
+ answer:`a downward-opening parabola with its vertex at the origin, so that the potential energy is negative at every x other than zero`,
+ diagram:'',
+ noDiagramReason:'The four candidate curves are the printed answer options and are described in words in the option list, so drawing one of them would give the key away.',
+ short:[
+  [`A conservative force is minus the slope of the potential energy, which is the relation to use rather than any formula for a spring.`,`${fraction('dU','dx')} = −F`],
+  [`Substitute the given force. The slope of the potential energy is negative for positive x and positive for negative x, so the curve falls away on both sides of the origin.`,`${fraction('dU','dx')} = −Kx`],
+  [`Integrate from the origin, where the potential energy is zero by the stated choice. The result is quadratic in x with a negative coefficient.`,`U = −${fraction('Kx²','2')}`],
+  [`A quadratic is a parabola and not a straight line, which rules out the two line options; a straight line would need a force that does not depend on x at all.`,`U ∝ −x²`],
+  [`The negative coefficient turns the parabola downwards, so the origin is a maximum of the potential energy rather than a minimum. The particle is pushed away from the origin, and this force gives no oscillation at all; simple harmonic motion would need the opposite sign.`,`F = −Kx is the oscillating case, not this one`],
+  [`Correct answer`,`a downward-opening parabola with its vertex at the origin, so that the potential energy is negative at every x other than zero`]
+ ]},
+{id:'SHM-150',level:3,
+ title:'Counting the harmonic motions hidden in a product',
+ topic:'Adding two simple harmonic motions',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.45',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`The displacement y of a particle executing periodic motion is given by y = 4 cos² (t ÷ 2) sin (1000 t). This expression may be considered to be the result of the superposition of how many independent harmonic motions?`,
+ options:[`Two`,`Three`,`Four`,`Five`],
+ correct:1,
+ answer:`Three`,
+ diagram:'',
+ noDiagramReason:'The count comes from rewriting the expression as a sum, which the steps carry out.',
+ short:[
+  [`The expression is a product and not a sum, so it is not yet in the form of superposed harmonic motions. Flatten the squared cosine first with the double-angle identity.`,`cos² θ = ${fraction('1 + cos 2θ','2')}`],
+  [`Apply it with the half-time argument, so that the doubled angle is just t.`,`4 cos² (t ÷ 2) = 2(1 + cos t)`],
+  [`Multiply out. The first term is already a single harmonic motion of angular frequency 1000, and the second is still a product.`,`y = 2 sin (1000 t) + 2 cos t sin (1000 t)`],
+  [`A product of a sine and a cosine splits into a sum of two sines, one of the sum of the arguments and one of the difference.`,`2 sin B cos A = sin (B + A) + sin (B − A)`],
+  [`With the fast sine as B and the slow cosine as A, the product becomes two sinusoids whose frequencies sit either side of 1000.`,`y = 2 sin (1000 t) + sin (1001 t) + sin (999 t)`],
+  [`Three distinct angular frequencies remain, so no two of the terms can be combined into one; the amplitudes being unequal does not change the count.`,`ω = 999, 1000 and 1001 rad s⁻¹`],
+  [`Correct answer`,`Three`]
+ ]},
+{id:'SHM-151',level:2,
+ title:'Acceleration of a pendulum bob at the lowest point',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.116',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A simple pendulum of length ℓ carries a bob of mass m and oscillates simple harmonically with a small amplitude. As the bob passes through the lowest point of its path the tension in the string is T. The magnitude of the total acceleration of the bob at that lowest point is –`,
+ options:[`${fraction('T','m')} − g`,`zero`,`g − ${fraction('T','m')}`,`${fraction('T','m')} + g`],
+ correct:0,
+ answer:`${fraction('T','m')} − g`,
+ diagram:'',
+ noDiagramReason:'At the lowest point the string is vertical and only two forces act along it, which the first step writes down.',
+ short:[
+  [`At the lowest point the string is vertical, so both forces on the bob lie along it: the tension upwards and the weight downwards.`,`net upward force = T − mg`],
+  [`The lowest point is the mean position of the swing, where the restoring force vanishes, so the acceleration along the arc is zero and nothing is left of the tangential part.`,`a(tangential) = 0`],
+  [`What remains is the centripetal acceleration, because the bob is moving on a circular arc and is turning a corner even where the restoring force is zero.`,`a = ${fraction('v²','ℓ')}`],
+  [`Newton's second law along the string equates the net upward force to the mass times that centripetal acceleration.`,`T − mg = ma ⇒ a = ${fraction('T','m')} − g`],
+  [`The speed is greatest at the lowest point, so the tension there exceeds the weight and the result is positive, directed upwards towards the point of suspension. Option (C) is this answer with the sign reversed and option (D) adds the two instead of taking the net force.`,`T > mg`],
+  [`Correct answer`,`${fraction('T','m')} − g`]
+ ]},
+{id:'SHM-155',level:2,
+ title:'Largest swing a string of given breaking strength allows',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.69 (section 2)',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A pendulum consisting of a small sphere of mass M suspended by an inextensible and massless string of length ℓ is made to swing in a vertical plane. The sphere is released from rest at an angular displacement θ from the vertical. If the breaking strength of the string is 2 Mg, the largest value θ can take is −`,
+ options:[`0°`,`30°`,`60°`,`90°`],
+ correct:2,
+ answer:`60°`,
+ diagram:'',
+ noDiagramReason:'The arrangement is the standard pendulum, and the two positions the argument needs, the release point and the lowest point, are named in the words.',
+ short:[
+  [`The string is pulled hardest at the lowest point, where it has to hold up the weight and supply the centripetal force as well, so that is where it will give way.`,`T = Mg + ${fraction('Mv²','ℓ')}`],
+  [`Putting the breaking value in place of the tension fixes the greatest speed the sphere may be allowed to reach at the bottom.`,`2Mg = Mg + ${fraction('Mv²','ℓ')}, so v² = gℓ`],
+  [`The string does no work and the motion is free of resistance, so the kinetic energy at the bottom came entirely from the fall in height.`,`${fraction('1','2')}Mv² = Mgh`],
+  [`That turns the allowed speed into an allowed drop in height.`,`h = ${fraction('v²','2g')} = ${fraction('ℓ','2')}`],
+  [`The release point sits a vertical distance h above the lowest point, and the string of length ℓ fixes the angle belonging to that height.`,`cos θ = ${fraction('ℓ − h','ℓ')} = ${fraction('1','2')}`],
+  [`Correct answer`,`60°`]
+ ]},
+{id:'SHM-156',level:1,
+ title:'Angular frequency that makes two oscillators equal in energy',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.40',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The displacements of two identical particles executing SHM are given by x₁ = 4 sin(10t + π ÷ 6) and x₂ = 5 cos ωt, in the same set of units throughout. For what value of ω is the total energy of the two particles the same ?`,
+ options:[`16 unit`,`6 unit`,`4 unit`,`8 unit`],
+ correct:3,
+ answer:`8 unit`,
+ diagram:'',
+ noDiagramReason:'Both motions are given as equations, and the comparison is made between their constants.',
+ short:[
+  [`The total energy of an oscillator is set by its mass, its angular frequency and its amplitude, and stays constant through the cycle.`,`E = ${fraction('1','2')} m ω² A²`],
+  [`The particles are identical, so the mass cancels and equal energies mean equal products of amplitude and angular frequency.`,`A₁ω₁ = A₂ω₂`],
+  [`Read the amplitude and the angular frequency off each equation. The starting phase of π ÷ 6 only shifts the first motion in time and carries no energy, so it plays no part.`,`A₁ = 4, ω₁ = 10, A₂ = 5`],
+  [`A cosine stores the same energy as a sine of the same amplitude, so the second motion needs no separate treatment either.`,`E₂ = ${fraction('1','2')} m ω² (5)²`],
+  [`Substitute the two amplitudes and the known angular frequency, and divide by the second amplitude.`,`ω = ${fraction('4 × 10','5')}`],
+  [`Correct answer`,`8 unit`]
+ ]},
+{id:'SHM-159',level:2,
+ title:'Period when both halves of a cut spring carry the load',
+ topic:'Springs in series, in parallel, and cut',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.212',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`An object suspended from a spring oscillates with period T. The spring is now cut into two equal halves and the same object is hung from the two halves side by side, as shown in the figure. The new time period of oscillation will be −`,
+ options:[`${fraction('T','√2')}`,`2T`,`${fraction('T','2')}`,`${fraction('T','2√2')}`],
+ correct:2,
+ answer:`${fraction('T','2')}`,
+ diagram:'cut-spring-halves-in-parallel',
+ short:[
+  [`A spring stretches because every turn shares the extension, so a piece with half the turns needs twice the force for the same stretch.`,`k (half) = 2k`],
+  [`The two halves hang from the same support and carry the same object, so they stretch by equal amounts and their restoring forces add.`,`k (eq) = 2k + 2k = 4k`],
+  [`The period of a loaded spring falls as the square root of the stiffness.`,`T = 2π√(${fraction('m','k')})`],
+  [`Taking only one of the two effects, either the cut or the pairing, would give a stiffness of 2k, which is where the value with the square root of two comes from.`,`2k alone would give ${fraction('T','√2')}`],
+  [`Both effects together quadruple the stiffness, and a factor of four inside the square root comes out as a factor of two.`,`T (new) = 2π√(${fraction('m','4k')}) = ${fraction('1','2')} × 2π√(${fraction('m','k')})`],
+  [`Correct answer`,`${fraction('T','2')}`]
+ ]},
+{id:'SHM-160',level:1,
+ title:'Oscillations a seconds pendulum loses when it is lengthened',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.114',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The length of a seconds pendulum, whose time period is 2 s, is increased by 21 per cent. How many oscillations does it lose in one day ?`,
+ options:[`3927`,`3722`,`34273`,`None of these`],
+ correct:0,
+ answer:`3927`,
+ diagram:'',
+ noDiagramReason:'Only the period and a count of oscillations are at stake, and both follow from the given numbers.',
+ short:[
+  [`The period of a pendulum grows as the square root of its length, so a length multiplied by 1.21 multiplies the period by the square root of that figure.`,`T₂ = √1.21 × T₁ = 1.1 × 2 = 2.2 s`],
+  [`A day holds 86400 seconds, and the correct pendulum completes one oscillation every two of them.`,`N₁ = ${fraction('86400','2')} = 43200`],
+  [`The lengthened pendulum takes 2.2 s for each oscillation, so it fits fewer of them into the same day.`,`N₂ = ${fraction('86400','2.2')} = 39272.7`],
+  [`Only whole oscillations are counted, and the loss is the shortfall between the two counts.`,`N₁ − N₂ = 43200 − 39273`],
+  [`Correct answer`,`3927`]
+ ]},
+{id:'SHM-162',level:2,
+ title:'Reading force, speed and energy off a displacement-time graph',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.203',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`The graph in the figure shows how the displacement y of a particle describing S.H.M. varies with time t, the particle starting from its positive extreme. Which one of the following statements is not true ?`,
+ options:[`the force on the particle is zero at time ${fraction('3T','4')}`,`the speed of the particle is maximum at time ${fraction('T','2')}`,`the acceleration of the particle is maximum at time T`,`the potential energy equals the total energy at time ${fraction('T','2')}`],
+ correct:1,
+ answer:`the speed of the particle is maximum at time ${fraction('T','2')}`,
+ diagram:'shm-displacement-time-graph-quarters',
+ short:[
+  [`The curve leaves the vertical axis at its greatest positive value and returns there after one period, which is the cosine form.`,`y = A cos(2πt ÷ T)`],
+  [`Force and acceleration in simple harmonic motion are proportional to the displacement and point back towards the centre, so both vanish wherever the curve crosses the time axis, at a quarter and at three quarters of the period.`,`F = −mω²y, and y = 0 at t = ${fraction('3T','4')}`],
+  [`At t = T the curve is back at the crest, so the displacement there is as large as it ever gets and the acceleration is at its peak.`,`|a| = ω²A at y = ±A`],
+  [`At t = T ÷ 2 the curve is at the trough, which is the other extreme. The particle is as far out as it goes, so the whole of the energy is stored and none of it is kinetic.`,`U = ${fraction('1','2')}kA² = E, K = 0`],
+  [`That same instant is a turning point, so the speed there is at its least, not its greatest; the speed peaks a quarter of a period earlier and later, where the curve crosses the axis.`,`v = 0 at t = ${fraction('T','2')}`],
+  [`Correct answer`,`the speed of the particle is maximum at time ${fraction('T','2')}`]
+ ]},
+{id:'SHM-163',level:2,
+ title:'Which energy graphs belong to an oscillator released at an extreme',
+ topic:'Energy in simple harmonic motion',
+ source:'IIT-JEE 2003 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2003',questionNumber:'Q.103',
+   printedAnswer:'B',verifiedAnswer:'A'},
+ question:`For a particle executing SHM the displacement x is given by x = A cos ωt. The figure shows two curves of potential energy against time, marked I and II, and two curves of potential energy against displacement, marked III and IV. The pair that represents this particle is −`,
+ options:[`I and III`,`II and IV`,`II and III`,`I and IV`],
+ correct:0,
+ answer:`I and III`,
+ diagram:'potential-energy-graphs-time-and-displacement',
+ short:[
+  [`The energy stored in an oscillator depends on the square of the displacement, so it is never negative and falls to zero at the centre.`,`U = ${fraction('1','2')}kx²`],
+  [`Substituting the given displacement makes the stored energy a squared cosine of time, which is at its peak at t = 0 because the particle is released from an extreme.`,`U = ${fraction('1','2')}kA² cos²ωt`],
+  [`So the graph against time has to begin at the maximum and come down to zero a quarter of a period later. Curve I does that; curve II begins at zero and belongs instead to a particle released from the centre.`,`U(0) = ${fraction('1','2')}kA², U(T ÷ 4) = 0`],
+  [`Against displacement the same expression is an upward parabola, least at the centre and largest at either extreme, which is curve III.`,`U(0) = 0, U(±A) = ${fraction('1','2')}kA²`],
+  [`Curve IV peaks at the centre and vanishes at the extremes, so it is the kinetic energy and not the potential energy; pairing it with anything is the error the printed key makes.`,`K = E − U = ${fraction('1','2')}k(A² − x²)`],
+  [`Correct answer`,`I and III`]
+ ]},
+{id:'SHM-165',level:1,
+ title:'Equation of an oscillator whose initial phase is a quarter cycle',
+ topic:'Phase, and intervals read from it',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.57',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The amplitude and the time period of a particle in SHM are 0.8 cm and 0.2 s, and its initial phase is π ÷ 2 radian. With y measured in centimetres and t in seconds, the equation representing this motion is −`,
+ options:[`y = 0.8 cos 10πt`,`y = 0.8 sin πt`,`y = 3 × 0.8 sin πt`,`y = 0.8 sin 10πt`],
+ correct:0,
+ answer:`y = 0.8 cos 10πt`,
+ diagram:'',
+ noDiagramReason:'The answer is the equation itself, assembled from the three given constants.',
+ short:[
+  [`The general displacement of an oscillator carries the amplitude, the angular frequency and the phase it had at the start.`,`y = A sin(ωt + φ₀)`],
+  [`The angular frequency follows from the period alone.`,`ω = ${fraction('2π','0.2')} = 10π rad s⁻¹`],
+  [`Put the amplitude, that angular frequency and the given initial phase into the general form.`,`y = 0.8 sin(10πt + ${fraction('π','2')})`],
+  [`A head start of a quarter of a cycle turns a sine into a cosine of the same angle, which is the compact way of saying the particle begins at an extreme rather than at the centre.`,`sin(θ + ${fraction('π','2')}) = cos θ`],
+  [`The three options built on πt would mean an angular frequency of π rad s⁻¹ and so a period of 2 s, ten times the period given.`,`T = ${fraction('2π','π')} = 2 s, not 0.2 s`],
+  [`Correct answer`,`y = 0.8 cos 10πt`]
+ ]},
+{id:'SHM-171',level:3,
+ title:'Energies when the potential energy zero is not at the centre',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.52',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A linear harmonic oscillator of force constant 2 × 10⁶ N/m and amplitude 0.01 m has a total mechanical energy of 160 joules. The potential energy is NOT taken as zero at the mean position, so it carries a constant offset. Which one of the following statements about it is correct?`,
+ options:[`Maximum potential energy is 100J`,`Maximum K.E. is 160J`,`Maximum P.E. is 160J`,`Minimum P.E. is zero`],
+ correct:2,
+ answer:`Maximum P.E. is 160J`,
+ diagram:'',
+ noDiagramReason:'The whole question is a comparison of three energy values obtained from the force constant and the amplitude, with no geometry involved.',
+ short:[
+  [`Work out the energy that the restoring force stores between the centre of the motion and either extreme, which is the energy traded between kinetic and potential during the oscillation.`,`${fraction('1','2')}kA² = ${fraction('1','2')} × 2 × 10⁶ × (0.01)² = 100 J`],
+  [`That is only 100 J, while the stated total is 160 J, so the potential energy is not being measured from the mean position; there is a fixed 60 J already present at the centre.`,`U (centre) = 160 − 100 = 60 J`],
+  [`At either extreme the oscillator is momentarily at rest, so whatever datum is used the entire mechanical energy is potential there.`,`U (max) = E = 160 J`],
+  [`The kinetic energy is largest at the centre, where it is the total less the 60 J that stays locked in the potential term, so it never reaches 160 J, and the least potential energy is that 60 J rather than nothing.`,`K (max) = 160 − 60 = 100 J`],
+  [`Correct answer`,`Maximum P.E. is 160J`]
+ ]},
+{id:'SHM-172',level:2,
+ title:'Choosing the energy-displacement graph',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.148',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle is executing S.H.M. along a straight line. Four sets of graphs are shown, each plotting the kinetic energy K, the potential energy U and the total energy of the particle against displacement x, the total energy being labelled T in the figure. Which set is correct?`,
+ options:[`Graph (A)`,`Graph (B)`,`Graph (C)`,`Graph (D)`],
+ correct:0,
+ answer:`Graph (A)`,
+ diagram:'energy-graphs-against-displacement',
+ short:[
+  [`For an undamped oscillator no energy enters or leaves, so the total is the same at every displacement and its graph can only be a horizontal straight line.`,`E = ${fraction('1','2')}mω²A², independent of x`],
+  [`The potential energy rises as the square of the displacement, so its curve is an upward-opening parabola touching zero at the centre and reaching the full total at either extreme.`,`U = ${fraction('1','2')}mω²x²`],
+  [`The kinetic energy is whatever is left of that fixed total, so it is an inverted parabola, largest at the centre and falling to zero at the two turning points.`,`K = E − ${fraction('1','2')}mω²x²`],
+  [`Two of the four sets draw the total energy as a curve rather than a level line, which would mean energy appearing and disappearing within a cycle, and one of the remaining two has the kinetic energy least at the centre, which would make the particle slowest as it passes the mean position.`,`a level total, with K and U swapping roles, is the only consistent set`],
+  [`Correct answer`,`Graph (A)`]
+ ]},
+{id:'SHM-175',level:2,
+ title:'Frequency of a rod twisted on a torsional string',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.86',
+   printedAnswer:'C',verifiedAnswer:'A'},
+ question:`A uniform rod of mass m and length ℓ is held horizontally by a vertical string fastened to its centre, as shown. The rod is turned through a small angle about the string, in the horizontal plane, and released. The frequency of the resulting oscillation is proportional to (C is the torsional constant of the string)`,
+ options:[`√(${fraction('3C','mℓ²')})`,
+  `√(${fraction('12C','m')})`,
+  `√(${fraction('mℓ²','12C')})`,
+  `√(${fraction('m','12C')})`],
+ correct:0,
+ answer:`√(${fraction('3C','mℓ²')})`,
+ diagram:'rod-twisted-on-torsional-string',
+ short:[
+  [`A twisted string supplies a restoring couple proportional to the angle through which it has been turned, which is the rotational counterpart of Hooke's law.`,`τ = −Cθ`],
+  [`Newton's second law for rotation then gives an angular equation of exactly simple harmonic form, so the angular frequency is the square root of the couple constant divided by the moment of inertia.`,`I ${fraction('d²θ','dt²')} = −Cθ, so ω = √(C ÷ I)`],
+  [`The rod turns about a vertical axis through its own midpoint, at right angles to its length, so the standard centre-axis value applies.`,`I = ${fraction('mℓ²','12')}`],
+  [`Substituting that moment of inertia fixes the angular frequency, and the frequency is this divided by 2π.`,`ω = √(${fraction('12C','mℓ²')})`],
+  [`Two of the options carry C in the denominator, so they vary as a period rather than a frequency, and one has no ℓ in it at all, although a longer rod is plainly harder to twist. Only the remaining form has the right dependence, and because the question asks solely for a proportionality the numerical factor √12 = 2√3 may be absorbed into it.`,`f ∝ √(${fraction('C','mℓ²')})`],
+  [`Correct answer`,`√(${fraction('3C','mℓ²')})`]
+ ]},
+{id:'SHM-177',level:2,
+ title:'Mean position and amplitude of an offset oscillation',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.48',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A particle oscillates on the x-axis according to the equation x = A + B sin ωt, where A, B and ω are positive constants. Consider two statements. Statement 1: the mean position of the oscillation is at the origin. Statement 2: the amplitude of the oscillation is B. Then`,
+ options:[`Both statements are true`,`Both statements are false`,`Statement 1 is false but statement 2 is true`,`Statement 1 is true but statement 2 is false`],
+ correct:2,
+ answer:`Statement 1 is false but statement 2 is true`,
+ diagram:'',
+ noDiagramReason:'The two statements are settled by reading the range of the given equation, so there is nothing to draw.',
+ short:[
+  [`The sine term runs between −1 and +1 and nothing else in the equation changes with time, so the particle is confined between two fixed coordinates.`,`A − B ≤ x ≤ A + B`],
+  [`The mean position is the midpoint of that range, and it is displaced from the origin by the constant term, so it sits at the origin only in the special case A = 0, which has been excluded.`,`x (mean) = A`],
+  [`Measuring the displacement from that midpoint rather than from the origin puts the equation into standard form, which confirms the motion is genuinely simple harmonic about x = A.`,`x − A = B sin ωt`],
+  [`The amplitude is half the full range, so it is the coefficient of the sine and takes no account of the offset.`,`amplitude = ${fraction('(A + B) − (A − B)','2')} = B`],
+  [`Correct answer`,`Statement 1 is false but statement 2 is true`]
+ ]},
+{id:'SHM-179',level:2,
+ title:'Pendulum swinging past a peg below its support',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.216',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A simple pendulum of length ℓ has time period T for small oscillations. A thin obstacle P is fixed on the vertical line through the point of suspension O, at a distance 3ℓ ÷ 4 below O, so that the string wraps on to it once the string passes the vertical. The bob is drawn aside on the far side of the vertical and released from rest. Throughout the motion the moving string makes only small angles with the vertical. The time after which the bob first returns to its initial position is`,
+ options:[`T`,`${fraction('3T','4')}`,`${fraction('3T','5')}`,`${fraction('4T','5')}`],
+ correct:1,
+ answer:`${fraction('3T','4')}`,
+ diagram:'pendulum-with-peg-below-support',
+ short:[
+  [`On the side the bob starts from, the string is clear of the obstacle, so that part of the swing belongs to a pendulum of the full length and period T.`,`T = 2π√(ℓ ÷ g)`],
+  [`The bob is released from rest at its extreme position, and travelling from an extreme to the centre of an oscillation always takes a quarter of a period.`,`t₁ = ${fraction('T','4')}`],
+  [`Once the string is vertical it catches on the obstacle, and beyond that point the bob pivots about P on whatever length of string is left below it.`,`ℓ (short) = ℓ − ${fraction('3ℓ','4')} = ${fraction('ℓ','4')}`],
+  [`Period grows as the square root of length, so quartering the length halves the period.`,`T (short) = 2π√(ℓ ÷ 4g) = ${fraction('T','2')}`],
+  [`On that side the bob runs from the vertical out to its extreme and back to the vertical, which is half of a cycle of the shortened pendulum.`,`t₂ = ${fraction('T (short)','2')} = ${fraction('T','4')}`],
+  [`The string then leaves the obstacle and the bob climbs back to its starting point on the full length, taking the same quarter period as the first stretch. Add the three stretches.`,`t = ${fraction('T','4')} + ${fraction('T','4')} + ${fraction('T','4')}`],
+  [`Correct answer`,`${fraction('3T','4')}`]
+ ]},
+{id:'SHM-180',level:2,
+ title:'Rod pivoted at its end against a pendulum of equal length',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.35',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A simple pendulum has time period T. A uniform rod of the same length as that pendulum is pivoted at its upper end and undergoes small oscillations in a vertical plane. Its time period of oscillation will be`,
+ options:[`less than T`,`equal to T`,`greater than T`,`less than, equal to or greater than T according to whether T is less than, equal to or greater than 2 seconds`],
+ correct:0,
+ answer:`less than T`,
+ diagram:'',
+ noDiagramReason:'A rod hanging from one end is described completely in words, and the comparison is made by algebra on the two periods.',
+ short:[
+  [`Write down the period of the simple pendulum, whose whole mass is concentrated at the far end of the string.`,`T = 2π√(${fraction('ℓ','g')})`],
+  [`For the rod the weight acts at the centre of mass, half way down, so the restoring couple about the pivot uses only half the length.`,`τ = −mg ${fraction('ℓ','2')} sin θ ≈ −mg ${fraction('ℓ','2')} θ`],
+  [`The rod's mass is spread along its length rather than gathered at the end, so its moment of inertia about the pivot is the standard end-axis value.`,`I = ${fraction('mℓ²','3')}`],
+  [`Equating the couple to the moment of inertia times the angular acceleration gives an angular SHM equation whose coefficient is the square of the angular frequency.`,`ω² = ${fraction('3g','2ℓ')}`],
+  [`Hence the rod's period, which may be compared directly with the pendulum's because both are built from the same ℓ and g.`,`T (rod) = 2π√(${fraction('2ℓ','3g')})`],
+  [`The factor under the root is two thirds, which is less than one, so the rod swings the faster of the two. The mass cancels out of both periods and no numerical value of T enters the comparison, so the last option cannot hold either.`,`${fraction('T (rod)','T')} = √(${fraction('2','3')}) ≈ 0.82`],
+  [`Correct answer`,`less than T`]
+ ]},
+{id:'SHM-181',level:2,
+ title:'Iron pendulum clock after a temperature rise',
+ topic:'The simple pendulum',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.42',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A clock with an iron pendulum keeps correct time at 20°C. How much time will it lose or gain in one day if the temperature rises to 40°C? The coefficient of cubical expansion of iron is 36 × 10⁻⁶ °C⁻¹.`,
+ options:[`10.368 sec gain`,`10.368 sec loss`,`5.184 sec gain`,`5.184 sec loss`],
+ correct:1,
+ answer:`10.368 sec loss`,
+ diagram:'',
+ noDiagramReason:'The clock is an ordinary pendulum and the question is a proportional calculation on its length, so a drawing would carry no data.',
+ short:[
+  [`What lengthens is the suspension, a single dimension, so the figure quoted for cubical expansion must first be reduced to the linear coefficient, which is one third of it.`,`α = ${fraction('γ','3')} = 12 × 10⁻⁶ °C⁻¹`],
+  [`Over a rise of 20 degrees the pendulum lengthens by that fraction of itself.`,`ℓ′ = ℓ(1 + αΔθ) = ℓ(1 + 2.4 × 10⁻⁴)`],
+  [`Period goes as the square root of length, and taking the square root of a very small fractional change halves it, so the period grows by half the fractional change in length.`,`${fraction('ΔT','T')} = ${fraction('1','2')}αΔθ = 1.2 × 10⁻⁴`],
+  [`A clock displays the number of swings it has counted, so the fractional error in its reading equals the fractional error in the period. Multiplying by the seconds in a real day gives the size of the error, and the pendulum's own period never enters, so no further data are needed.`,`Δt = 1.2 × 10⁻⁴ × 86400 s = 10.368 s`],
+  [`The period has grown, so each swing takes longer than the second it is supposed to mark and the clock counts fewer swings than it should. The error is therefore a loss and not a gain, which settles the choice between the two values of the same size.`,`T′ > T, so the clock runs slow`],
+  [`Correct answer`,`10.368 sec loss`]
+ ]},
+{id:'SHM-182',level:2,
+ title:'Distances in the first and the second second from the centre',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.72',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The period of a particle executing SHM is 8 sec. At t = 0 the particle is at the mean position. The ratio of the distance covered during the first second to the distance covered during the second second is`,
+ options:[`${fraction('1','√2 + 1')}`,`√2`,`${fraction('1','√2')}`,`√2 + 1`],
+ correct:3,
+ answer:`√2 + 1`,
+ diagram:'',
+ noDiagramReason:'The two distances follow from the displacement equation at three instants, so no sketch of the path is needed.',
+ short:[
+  [`Starting at the mean position means the displacement is a pure sine with no phase constant, and the angular frequency comes from the period.`,`x = A sin(${fraction('πt','4')})`],
+  [`A quarter of the period is two seconds, so throughout the first two seconds the particle runs one way, from the centre out to the extreme, and never turns. Distance covered may therefore be taken as the change in displacement.`,`${fraction('T','4')} = 2 s`],
+  [`Find where the particle is after one second.`,`x₁ = A sin(${fraction('π','4')}) = ${fraction('A','√2')}`],
+  [`After two seconds it has just arrived at the extreme.`,`x₂ = A`],
+  [`The travel during the second second is the gap still left after the first, and it is the smaller of the two because the particle is slowing as it nears the extreme.`,`x₂ − x₁ = A(1 − ${fraction('1','√2')})`],
+  [`Form the ratio in the order the question asks for; the amplitude cancels, and multiplying numerator and denominator by √2 + 1 clears the surd from the bottom.`,`${fraction('x₁','x₂ − x₁')} = ${fraction('1','√2 − 1')}`],
+  [`Correct answer`,`√2 + 1`]
+ ]},
+{id:'SHM-184',level:3,
+ title:'Ring on a peg matched against a rod swung from its end',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.65',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A ring of radius R hangs from a peg and swings in its own plane. A thin uniform rod of length L hangs from one end and swings about that end. The two have the same time period. The relation between L and R is −`,
+ options:[`L = R`,`L = 2R`,`L = 3R`,`L = 4R`],
+ correct:2,
+ answer:`L = 3R`,
+ diagram:'',
+ noDiagramReason:'Both bodies are standard shapes hung from a stated point, so the moment of inertia and the distance to the centre of mass follow from the words alone.',
+ short:[
+  [`A rigid body hung from a pivot swings as a physical pendulum. Its period is fixed by the moment of inertia about the pivot and by the distance from the pivot down to the centre of mass.`,`T = 2π√(${fraction('I','mgd')})`],
+  [`For the ring the centre of mass is one radius below the peg, and the parallel-axis theorem adds mR² to the mR² the ring already has about its centre.`,`I (peg) = mR² + mR² = 2mR², d = R`],
+  [`Putting those into the period cancels the mass and one power of R, so the ring behaves as a simple pendulum of length 2R.`,`T (ring) = 2π√(${fraction('2R','g')})`],
+  [`A thin rod pivoted at one end has a third of mL² about that end, and its centre of mass sits halfway along it.`,`I (end) = ${fraction('mL²','3')}, d = ${fraction('L','2')}`],
+  [`The same substitution makes the rod a simple pendulum of length two thirds of L.`,`T (rod) = 2π√(${fraction('2L','3g')})`],
+  [`Equal periods mean equal equivalent lengths, so 2R must equal two thirds of L.`,`2R = ${fraction('2L','3')}`],
+  [`Correct answer`,`L = 3R`]
+ ]},
+{id:'SHM-185',level:1,
+ title:'Amplitude from the kinetic and potential energies at one point',
+ topic:'Energy in simple harmonic motion',
+ source:'IIT-JEE 1994 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 1994',questionNumber:'Q.250',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`An object of mass 0.2 kg executes simple harmonic oscillations along the x-axis with a frequency of (25 ÷ π) Hz. At the position x = 0.04 m the object has a kinetic energy of 0.5 J and a potential energy of 0.4 J, the potential energy being measured from the mean position. The amplitude of the oscillations is −`,
+ options:[`0.06 m`,`0.04 m`,`0.05 m`,`0.07 m`],
+ correct:0,
+ answer:`0.06 m`,
+ diagram:'',
+ noDiagramReason:'The question is a numerical energy balance along one axis, with no arrangement of bodies to show.',
+ short:[
+  [`The kinetic and potential energies at any one instant add to the total energy, and in an undamped oscillation that total is the same everywhere.`,`E = 0.5 + 0.4 = 0.9 J`],
+  [`The frequency is given in hertz, so turn it into an angular frequency before using any energy formula. The π cancels and leaves a round number.`,`ω = 2πf = 2π × ${fraction('25','π')} = 50 rad s⁻¹`],
+  [`At the extreme the object is momentarily at rest, so the whole of the total energy is stored as potential energy there. That is what fixes the amplitude.`,`E = ${fraction('1','2')}mω²A²`],
+  [`Rearrange for the square of the amplitude and put the numbers in.`,`A² = ${fraction('2E','mω²')} = ${fraction('1.8','500')} = 3.6 × 10⁻³ m²`],
+  [`Take the root. Option (B) is the given position rather than the amplitude, which is the trap here.`,`A = 0.06 m`],
+  [`A check on the data: the potential energy at x = 0.04 m should come to the stated 0.4 J, and it does.`,`${fraction('1','2')}mω²x² = 250 × 1.6 × 10⁻³ = 0.4 J`],
+  [`Correct answer`,`0.06 m`]
+ ]},
+{id:'SHM-188',level:1,
+ title:'Period of a swing when the child stands up',
+ topic:'The simple pendulum',
+ source:'AIEEE 2002 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'AIEEE previous-year question, reprinted in the institute booklet',
+   paper:'AIEEE 2002',questionNumber:'Q.226',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A child sitting on a swing is swinging gently to and fro. If the child then stands up on the seat, the time period of the swing will −`,
+ options:[`increase`,`decrease`,`remain the same`,`increase if the child is tall and decrease if the child is short`],
+ correct:1,
+ answer:`decrease`,
+ diagram:'',
+ noDiagramReason:'The whole argument is about which way the centre of mass moves, and that is stated in words.',
+ short:[
+  [`A loaded swing is a pendulum whose effective length is the distance from the point of support down to the centre of mass of the child and the seat together.`,`T = 2π√(${fraction('L (eff)','g')})`],
+  [`Standing up lifts the child's body, so the centre of mass rises towards the support and the effective length is shortened.`,`L (eff) decreases`],
+  [`The period follows the square root of that length, so a shorter effective pendulum completes each swing more quickly.`,`T ∝ √(L (eff))`],
+  [`Nothing in this depends on how tall the child is: whatever the height, raising the body shortens the pendulum, so the direction of the change is the same for everyone. That rules out the last option.`,`ΔL (eff) < 0 in every case`],
+  [`The mass of the child does not enter the period at all, so there is no competing effect to weigh against the change of length.`,`T is independent of m`],
+  [`Correct answer`,`decrease`]
+ ]},
+{id:'SHM-190',level:1,
+ title:'Comparing the two halves of a quarter cycle',
+ topic:'Phase, and intervals read from it',
+ source:'IIT-JEE 2001 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2001',questionNumber:'Q.102',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle executes simple harmonic motion between x = −A and x = +A. The time it takes to go from 0 to A ÷ 2 is T₁, and the time it takes to go from A ÷ 2 to A is T₂. Then −`,
+ options:[`T₁ < T₂`,`T₁ > T₂`,`T₁ = T₂`,`T₁ = 2T₂`],
+ correct:0,
+ answer:`T₁ < T₂`,
+ diagram:'',
+ noDiagramReason:'The two intervals are read off the phase of a sine function, so there is nothing to draw beyond the equation itself.',
+ short:[
+  [`The particle sets out from the mean position, so measure time from there and write the displacement as a sine.`,`x = A sin ωt, ω = ${fraction('2π','T')}`],
+  [`Find the phase at which the displacement is half the amplitude. That phase, divided by ω, is the first interval.`,`sin ωt = ${fraction('1','2')} ⇒ ωT₁ = ${fraction('π','6')} ⇒ T₁ = ${fraction('T','12')}`],
+  [`The extreme is reached a quarter of a period after the mean position, so the second interval is what is left of that quarter.`,`T₂ = ${fraction('T','4')} − ${fraction('T','12')} = ${fraction('T','6')}`],
+  [`So the second leg takes twice as long as the first, even though both cover half an amplitude. Note the order: it is T₂ that is twice T₁, which is why the last option is wrong.`,`T₂ = 2T₁`],
+  [`The physics behind it is that the speed is greatest at the mean position and falls to zero at the extreme, so the outer half of the amplitude is crossed slowly.`,`v = ω√(A² − x²)`],
+  [`Correct answer`,`T₁ < T₂`]
+ ]},
+{id:'SHM-191',level:2,
+ title:'Small oscillations in a cosine potential well',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.79',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A particle of mass m moves in a potential field U(x) = U₀ (1 − cos ax), where U₀ and a are positive constants. The period of small oscillations about x = 0 is −`,
+ options:[`2π√(${fraction('U₀','ma²')})`,`2π√(${fraction('mU₀','a²')})`,`2π√(${fraction('a²','mU₀')})`,`2π√(${fraction('m','U₀a²')})`],
+ correct:3,
+ answer:`2π√(${fraction('m','U₀a²')})`,
+ diagram:'',
+ noDiagramReason:'The potential is given as a formula and the work is an expansion of it, so a sketch of the well would add nothing to the algebra.',
+ short:[
+  [`The force on a particle in a potential field is minus the slope of that field, so differentiate the given expression.`,`F = −${fraction('dU','dx')} = −U₀a sin ax`],
+  [`This force is not proportional to x in general. For small oscillations, though, the angle ax is small and the sine may be replaced by its argument.`,`sin ax ≈ ax for small x`],
+  [`That leaves a force proportional to the displacement and directed back to the origin, which is exactly the condition for simple harmonic motion, with an effective spring constant read off the coefficient.`,`F ≈ −(U₀a²)x ⇒ k (eff) = U₀a²`],
+  [`The angular frequency of a mass on a spring of that constant follows at once.`,`ω = √(${fraction('U₀a²','m')})`],
+  [`Invert for the period. A dimension check confirms the placing of the mass: U₀a² is an energy times a reciprocal area, which is a force per unit length, so the mass divided by it gives a time squared.`,`T = ${fraction('2π','ω')} = 2π√(${fraction('m','U₀a²')})`],
+  [`Correct answer`,`2π√(${fraction('m','U₀a²')})`]
+ ]},
+{id:'SHM-193',level:3,
+ title:'Reading a Gaussian potential well',
+ topic:'Energy in simple harmonic motion',
+ source:'IIT-JEE 1999 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 1999',questionNumber:'Q.253',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A particle free to move along the x-axis has potential energy U(x) = k[1 − exp(−x²)] for every value of x, where k is a positive constant of appropriate dimensions. Then −`,
+ options:[`at points away from the origin the particle is in unstable equilibrium`,`for any finite non-zero value of x there is a force on the particle directed away from the origin`,`if its total mechanical energy is ${fraction('k','2')}, its kinetic energy is least at the origin`,`for small displacements from x = 0 the motion is simple harmonic`],
+ correct:3,
+ answer:`for small displacements from x = 0 the motion is simple harmonic`,
+ diagram:'',
+ noDiagramReason:'Every option is settled by differentiating the given potential or by subtracting it from a stated total energy, with no geometry involved.',
+ short:[
+  [`The force is minus the slope of the potential, so differentiate the exponential and keep the signs carefully.`,`F = −${fraction('dU','dx')} = −2kx exp(−x²)`],
+  [`The exponential is positive for every x, so the sign of the force is always opposite to the sign of x. The force therefore pulls the particle back towards the origin, never away from it, which disposes of the second option.`,`F < 0 for x > 0 and F > 0 for x < 0`],
+  [`Close to the origin the exponential is nearly one, leaving a force proportional to the displacement and directed back towards x = 0. That is the defining condition for simple harmonic motion.`,`F ≈ −2kx ⇒ ω = √(${fraction('2k','m')})`],
+  [`At any point away from the origin the slope is non-zero, so a force acts and the particle is not in equilibrium there at all. Only far out does the potential flatten, and that equilibrium is neutral rather than unstable, so the first option fails either way.`,`U → k and F → 0 as |x| grows`],
+  [`With a total energy of half of k, subtract the potential energy to get the kinetic energy. It is largest where the potential is smallest, which is at the origin, so the third option has the extremum the wrong way round.`,`K = ${fraction('k','2')} − U = k exp(−x²) − ${fraction('k','2')}`],
+  [`Correct answer`,`for small displacements from x = 0 the motion is simple harmonic`]
+ ]},
+{id:'SHM-194',level:2,
+ title:'Period from a total energy that sits on an offset',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.213',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The potential energy of a harmonic oscillator of mass 2 kg at its mean position is 5 J. Its total energy is 9 J and its amplitude is 0.01 m. Its time period is −`,
+ options:[`${fraction('π','100')} s`,`${fraction('π','50')} s`,`${fraction('π','20')} s`,`${fraction('π','10')} s`],
+ correct:0,
+ answer:`${fraction('π','100')} s`,
+ diagram:'',
+ noDiagramReason:'The oscillator is specified entirely by its mass, energies and amplitude, so there is no arrangement to draw.',
+ short:[
+  [`The 5 J held at the mean position is a fixed offset in the potential energy. It is there even when the oscillator is at rest at the centre, so it takes no part in the oscillation.`,`E (osc) = 9 − 5 = 4 J`],
+  [`At the extreme the oscillator stops, so the whole of the oscillation energy is stored in the spring at the amplitude.`,`${fraction('1','2')}kA² = 4 J`],
+  [`Solve for the force constant with the amplitude in metres.`,`k = ${fraction('8','A²')} = ${fraction('8','10⁻⁴')} = 8 × 10⁴ N m⁻¹`],
+  [`The angular frequency of a mass on that spring follows.`,`ω = √(${fraction('k','m')}) = √(4 × 10⁴) = 200 rad s⁻¹`],
+  [`Invert for the period.`,`T = ${fraction('2π','ω')} = ${fraction('2π','200')} = ${fraction('π','100')} s`],
+  [`Treating all 9 J as oscillation energy instead would give a force constant of 1.8 × 10⁵ N m⁻¹ and a period not on the list at all, which is the check that the offset had to come off first.`,`ω = 300 rad s⁻¹ ⇒ T = ${fraction('π','150')} s`],
+  [`Correct answer`,`${fraction('π','100')} s`]
+ ]},
+{id:'SHM-195',level:1,
+ title:'What the total energy of an oscillator is proportional to',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.147',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The total energy of a particle executing simple harmonic motion is proportional to −`,
+ options:[`its displacement from the equilibrium position`,`its frequency of oscillation`,`its velocity at the equilibrium position`,`the square of the amplitude of the motion`],
+ correct:3,
+ answer:`the square of the amplitude of the motion`,
+ diagram:'',
+ noDiagramReason:'The question asks only which quantity the standard energy expression contains, so there is nothing to draw.',
+ short:[
+  [`The total energy is the same at every point of the cycle, so evaluate it where the working is easiest. At the extreme the particle is at rest and all of the energy is potential.`,`E = ${fraction('1','2')}kA²`],
+  [`Write the force constant in terms of the mass and the angular frequency to expose every quantity the energy depends on.`,`E = ${fraction('1','2')}mω²A² = 2π²mf²A²`],
+  [`Being constant through the cycle, the energy cannot depend on the displacement at all, which rules out the first option.`,`E is independent of x`],
+  [`The frequency and the speed at the mean position do appear, but each as a square, so the energy is not proportional to either of them.`,`E ∝ f², and E ∝ v² taken at x = 0`],
+  [`Only the amplitude is left, and it too enters as a square: doubling the amplitude quadruples the energy.`,`E ∝ A²`],
+  [`Correct answer`,`the square of the amplitude of the motion`]
+ ]},
+{id:'SHM-196',level:2,
+ title:'Which scalar product never turns negative',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.23',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle is in simple harmonic motion. Write r for its displacement from the mean position and F, v and a for the force on it, its velocity and its acceleration, all taken as vectors. Which of the following scalar products is <b>never negative</b>, at any instant of the motion?`,
+ options:[`F ⋅ a`,`v ⋅ r`,`a ⋅ r`,`F ⋅ r`],
+ correct:0,
+ answer:`F ⋅ a`,
+ diagram:'',
+ noDiagramReason:'The signs follow from the standard vector relations between the four quantities, so no sketch of the path is needed.',
+ short:[
+  [`Newton's second law ties the force to the acceleration through the mass, which is a positive number, so those two vectors point the same way at every instant.`,`F = ma`],
+  [`A scalar product of two parallel vectors is the product of their magnitudes, and here that is a positive multiple of a square. It falls to zero at the mean position but never goes below it.`,`F ⋅ a = m|a|² ≥ 0`],
+  [`In simple harmonic motion the acceleration points back towards the mean position, so it is antiparallel to the displacement.`,`a = −ω²r`],
+  [`Both products that pair the displacement with the acceleration or with the force are therefore negative whenever the particle is away from the centre.`,`a ⋅ r = −ω²|r|², F ⋅ r = −mω²|r|²`],
+  [`The velocity changes its relation to the displacement twice in each cycle: on the way out the two agree in direction and on the way back they oppose, so this product takes both signs.`,`v ⋅ r > 0 outward, v ⋅ r < 0 inward`],
+  [`Correct answer`,`F ⋅ a`]
+ ]},
+{id:'SHM-202',level:2,
+ title:'Period of a spring in series with a parallel pair',
+ topic:'Springs in series, in parallel, and cut',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.9',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A body of mass m = 2 kg hangs from three identical springs, each of spring constant 1875 N/m, arranged as shown in the figure. If the body is displaced slightly from its equilibrium position and released, the system oscillates with a time period of`,
+ options:[`${fraction('π','5')} s`,`${fraction('π','25')} s`,`${fraction('2π','5')} s`,`${fraction('2π','25')} s`],
+ correct:3,
+ answer:`${fraction('2π','25')} s`,
+ diagram:'ceiling-spring-series-with-parallel-pair',
+ short:[
+  [`The two lower springs run side by side between the same pair of bars, so they stretch by the same amount and their constants add.`,`k (lower) = 1875 + 1875 = 3750 N m⁻¹`],
+  [`The upper spring and that pair form a chain: the whole weight passes through both in turn and their extensions add, so the reciprocals of the constants combine.`,`${fraction('1','k (eq)')} = ${fraction('1','1875')} + ${fraction('1','3750')}`],
+  [`Invert that sum. The chain is softer than any single spring in it, which is the usual check on a series result.`,`k (eq) = 1250 N m⁻¹`],
+  [`The body rides on this one equivalent spring, so its angular frequency follows from the equivalent constant and the mass.`,`ω = √(k (eq) ÷ m) = √(1250 ÷ 2) = 25 rad s⁻¹`],
+  [`Convert to a period. Treating all three springs as parallel instead would give 5625 N m⁻¹ and an angular frequency near 53 rad s⁻¹, so the series step is what separates the options.`,`T = ${fraction('2π','ω')}`],
+  [`Correct answer`,`${fraction('2π','25')} s`]
+ ]},
+{id:'SHM-203',level:2,
+ title:'Period of a solid sphere rolling against a spring',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.88',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A solid sphere of mass M and radius R rolls without slipping along a horizontal surface. A massless spring of force constant K joins the centre of the sphere to a fixed wall, as shown. The sphere is displaced so as to stretch the spring and is then released. The time period of the resulting oscillation is`,
+ options:[`2π√(${fraction('3M','2K')})`,`2π√(${fraction('3M','5K')})`,`2π√(${fraction('7M','5K')})`,`2π√(${fraction('M','K')})`],
+ correct:2,
+ answer:`2π√(${fraction('7M','5K')})`,
+ diagram:'sphere-rolling-against-spring',
+ short:[
+  [`Rolling without slipping ties the spin rate to the speed v of the centre, so a single coordinate describes the motion.`,`spin rate = v ÷ R`],
+  [`The kinetic energy has a translational share and a rotational share, the latter set by the moment of inertia of a solid sphere about its own centre.`,`KE = ${fraction('1','2')}Mv² + ${fraction('1','2')}I(v ÷ R)², with I = ${fraction('2','5')}MR²`],
+  [`Substitute the rolling constraint. The rotation adds two fifths again to the inertia, so the sphere resists being accelerated as though it were heavier than M.`,`KE = ${fraction('7','10')}Mv²`],
+  [`The spring is attached at the centre, so its stretch equals the displacement of the centre, and nothing dissipates energy because the contact point does not slide.`,`${fraction('7','10')}Mv² + ${fraction('1','2')}Kx² = constant`],
+  [`Differentiate with respect to time and divide through by v. The acceleration is proportional to the displacement and opposed to it, so the motion is simple harmonic with an effective mass of 7M ÷ 5.`,`${fraction('7','5')}Ma = −Kx, so ω² = ${fraction('5K','7M')}`],
+  [`Correct answer`,`2π√(${fraction('7M','5K')})`]
+ ]},
+{id:'SHM-207',level:2,
+ title:'Mass of a packet from the oscillation of a spring balance',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.175',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`The uniform scale of a spring balance reads from 0 to 100 kg over a length of 20 cm. A packet suspended from the balance is found to oscillate vertically with a frequency of 5 oscillations per second. Taking g = π² m/s² exactly, the mass of the packet is`,
+ options:[`1 kg`,`5 kg`,`10 kg`,`25 kg`],
+ correct:1,
+ answer:`5 kg`,
+ diagram:'',
+ noDiagramReason:'The balance is described completely by its scale length and full-scale reading, so a drawing would add nothing.',
+ short:[
+  [`The scale is uniform, so the whole 20 cm of travel belongs to the full 100 kg reading. That is a statement about how far the spring stretches under a known load.`,`x = 0.20 m when the load is 100 kg`],
+  [`A balance reads at rest, where the spring force balances the weight hanging on it, and this fixes the stiffness of the spring inside it.`,`k = ${fraction('100 × g','0.20')} = 500π² N m⁻¹`],
+  [`The quoted frequency is in oscillations per second, so multiply by 2π for the angular frequency.`,`ω = 2πν = 10π rad s⁻¹`],
+  [`The packet on the balance spring is an ordinary spring–mass oscillator, so rearranging its angular frequency gives the mass.`,`ω² = ${fraction('k','m')}, so m = ${fraction('k','ω²')}`],
+  [`The π² carried by g cancels against the π² in ω², which is why the question pins g to π² m/s² exactly.`,`m = ${fraction('500π²','100π²')}`],
+  [`Correct answer`,`5 kg`]
+ ]},
+{id:'SHM-208',level:3,
+ title:'Comparing four spring arrangements, two of them with pulleys',
+ topic:'Springs in series, in parallel, and cut',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.211',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A block of mass m is held by springs in the four arrangements shown in the figure, with the force constant of each spring marked. The strings are light and do not stretch, and the pulleys are light and turn freely. If the periods of small oscillation of the block in arrangements (i), (ii), (iii) and (iv) are T₁, T₂, T₃ and T₄ respectively, then`,
+ options:[`T₁ = T₂ = T₄`,`T₁ = T₂ and T₃ = T₄`,`T₁ = T₂ = T₃`,`T₁ = T₃ and T₂ = T₄`],
+ correct:1,
+ answer:`T₁ = T₂ and T₃ = T₄`,
+ diagram:'four-spring-pulley-arrangements',
+ short:[
+  [`In (i) the string does not stretch and the pulley only turns the direction of the pull, so lowering the block by x stretches the horizontal spring by the same x and the restoring force is kx.`,`T₁ = 2π√(${fraction('m','k')})`],
+  [`In (ii) one strand of the string is tied down to the floor, so the string cannot run over the pulley at all and the upper end of the spring is held fixed. The block hangs from a single spring k once more.`,`T₂ = 2π√(${fraction('m','k')})`],
+  [`In (iii) the two springs hang side by side from the same ceiling to the same block, so each takes the full displacement and the constants add.`,`k (iii) = 2k + 2k = 4k`],
+  [`In (iv) a downward displacement stretches the upper spring and compresses the lower one, and both then push the block back up, so these constants add as well.`,`k (iv) = 2k + 2k = 4k`],
+  [`The last two arrangements are four times as stiff as the first two while carrying the same mass, so their common period is half of the common period of the first two, and no equality runs across the two groups.`,`T₃ = T₄ = π√(${fraction('m','k')})`],
+  [`Correct answer`,`T₁ = T₂ and T₃ = T₄`]
+ ]},
+{id:'SHM-220',level:3,
+ title:'Period of a particle held by three springs, two of them angled',
+ topic:'Springs in series, in parallel, and cut',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.272',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A particle of mass m is attached to three identical springs A, B and C, each of force constant k, as shown in the figure. Spring A runs straight down from the particle to a rigid support, while B and C run upwards from it to their own supports, each making an angle of 45° with the line of A. The particle is pushed a small distance along the line of A, compressing A, and released. The time period of the resulting oscillation is −`,
+ options:[`2π√(${fraction('2m','k')})`,`2π√(${fraction('m','2k')})`,`2π√(${fraction('m','k')})`,`2π√(${fraction('m','3k')})`],
+ correct:1,
+ answer:`2π√(${fraction('m','2k')})`,
+ diagram:'three-springs-y-at-45-degrees',
+ short:[
+  [`B and C are mirror images of each other in the line of A, so whatever sideways pull one of them exerts the other cancels, and the particle keeps to that line throughout the motion.`,`the motion stays along the line of A`],
+  [`Move the particle a distance x along that line. Spring A changes length by the whole of x, but each angled spring changes length only by the part of x that lies along its own axis.`,`Δ (A) = x, Δ (B) = Δ (C) = x cos 45°`],
+  [`Each spring pushes back along its own axis with k times its own change of length, and only the component of that push along the line of motion drives the oscillation, which brings in a second factor of cos 45°.`,`F (B) = F (C) = kx cos² 45° = ${fraction('kx','2')}`],
+  [`Add the three restoring forces. Because cos² 45° is one half, the two angled springs together contribute exactly as much as A does by itself.`,`F = kx + 2 × ${fraction('kx','2')} = 2kx`],
+  [`The net force is proportional to the displacement and directed back towards the starting point, so the three springs behave as one spring of twice the constant.`,`k (eq) = 2k`],
+  [`Put that constant into the standard period of a spring and a mass. The angle has already done its work in the projection and plays no further part, which is why no sine or cosine survives in the answer.`,`T = 2π√(${fraction('m','k (eq)')}) = 2π√(${fraction('m','2k')})`],
+  [`Correct answer`,`2π√(${fraction('m','2k')})`]
+ ]},
+{id:'SHM-221',level:2,
+ title:'Amplitude from the force constant and the speed at the centre',
+ topic:'Displacement, velocity and acceleration',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.209',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle of mass 0.1 kg executes simple harmonic motion under a force F = (− 10x) N, where x is the displacement from the mean position in metres. The speed of the particle at the mean position is 6 m/s. The amplitude of the oscillation is −`,
+ options:[`0.6 m`,`0.2 m`,`0.4 m`,`0.1 m`],
+ correct:0,
+ answer:`0.6 m`,
+ diagram:'',
+ noDiagramReason:'The force law and a single speed settle the answer, so there is no geometry to draw.',
+ short:[
+  [`Compare the given force with the law of a restoring force proportional to displacement. The minus sign is what makes the force restoring, and the number multiplying the displacement is the force constant.`,`F = − kx ⇒ k = 10 N m⁻¹`],
+  [`Such a force gives simple harmonic motion whose angular frequency depends only on that constant and on the mass.`,`ω = √(${fraction('k','m')}) = √(${fraction('10','0.1')}) = 10 rad s⁻¹`],
+  [`The particle is fastest at the mean position, where none of the energy is yet stored in the spring, and that greatest speed is the amplitude multiplied by the angular frequency.`,`v (max) = ωA`],
+  [`Rearrange for the amplitude and substitute the speed and the angular frequency.`,`A = ${fraction('v (max)','ω')} = ${fraction('6','10')} = 0.6 m`],
+  [`The same figure follows from energy without mentioning the angular frequency at all, since the kinetic energy at the centre has all become stored energy at the extreme.`,`${fraction('1','2')}mv² = ${fraction('1','2')}kA² ⇒ A = v√(m ÷ k) = 6 × 0.1`],
+  [`Correct answer`,`0.6 m`]
+ ]},
+{id:'SHM-222',level:3,
+ title:'The velocity a particle regains only once in a cycle',
+ topic:'Phase, and intervals read from it',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.22',
+   printedAnswer:'D',verifiedAnswer:'A'},
+ question:`A particle executes simple harmonic motion. Throughout this question a velocity means a velocity together with its direction, not a speed on its own. For one particular velocity v⃗ of the particle, the shortest interval between two successive instants at which the velocity is exactly v⃗ is a whole time period, and not any shorter interval. The magnitude of v⃗ is then −. Take the velocity in question to be non-zero.`,
+ options:[`v (max)`,`0`,`between 0 and v (max)`,`between 0 and − v (max)`],
+ correct:0,
+ answer:`v (max)`,
+ diagram:'',
+ noDiagramReason:'The question is about how often a given velocity recurs, which follows from the velocity equation alone.',
+ short:[
+  [`Measure displacement from the centre, so that the displacement is a sine of time and the velocity is the matching cosine.`,`x = A sin ωt, v = Aω cos ωt`],
+  [`Only the square of the displacement enters the velocity, so for any speed below the greatest there are two displacements, one on each side of the centre, at which the particle moves with that very same velocity, direction included.`,`v = ± ω√(A² − x²) ⇒ x = ± √(A² − v² ÷ ω²)`],
+  [`Two such instants fall inside every cycle, so the gap between a pair of them is shorter than a period. The interval can only be a whole period if the two instants merge into one.`,`two instants per cycle ⇒ shortest gap < T`],
+  [`They merge when the two displacements coincide, and the only place where that happens is the centre, where the stored energy is zero and the speed is the largest the motion allows.`,`x = 0 ⇒ v² = ω²A²`],
+  [`The particle crosses the centre twice in a cycle, but it travels one way on the first crossing and the opposite way on the second, so a velocity complete with its direction is reached there just once per cycle.`,`interval between repeats = ${fraction('2π','ω')} = T`],
+  [`The other three choices fail on the same count: the velocity is zero at each extreme, so zero recurs every half period, and any value between the limits recurs twice per cycle whether it is read as positive or as negative.`,`v = 0 repeats after ${fraction('T','2')}`],
+  [`Correct answer`,`v (max)`]
+ ]},
+{id:'SHM-224',level:3,
+ title:'Superposing four oscillations a quarter cycle apart',
+ topic:'Adding two simple harmonic motions',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.111',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`Four simple harmonic vibrations x₁ = 8 sin ωt, x₂ = 6 sin (ωt + π ÷ 2), x₃ = 4 sin (ωt + π) and x₄ = 2 sin (ωt + 3π ÷ 2), all measured in the same unit of length, are superimposed on the same particle. The resulting amplitude, and the phase difference between the resultant and x₁, are respectively −`,
+ options:[`20, tan⁻¹ (${fraction('1','2')})`,`4√2, ${fraction('π','2')}`,`20, tan⁻¹ 2`,`4√2, ${fraction('π','4')}`],
+ correct:3,
+ answer:`4√2, ${fraction('π','4')}`,
+ diagram:'',
+ noDiagramReason:'The four equations state their phases explicitly, so the phasor sum is done arithmetically rather than measured off a drawing.',
+ short:[
+  [`All four motions share one angular frequency, so each can be represented by an arrow whose length is its amplitude and whose direction is turned from the direction of x₁ by its own phase constant.`,`8 at 0, 6 at ${fraction('π','2')}, 4 at π, 2 at ${fraction('3π','2')}`],
+  [`A phase constant of π turns an arrow right round, so x₃ opposes x₁ and x₄ opposes x₂. The four amplitudes therefore cannot add up to 20, which is what the first and third choices assume.`,`along x₁: 8 − 4 = 4, at right angles: 6 − 2 = 4`],
+  [`What survives is two oscillations of equal amplitude a quarter of a cycle apart, and arrows at right angles combine by Pythagoras.`,`A = √(4² + 4²) = 4√2`],
+  [`The direction of that resultant arrow is the phase of the combined motion, and it follows from the ratio of the two surviving components.`,`tan φ = ${fraction('4','4')} = 1`],
+  [`Because the two components are equal, the resultant sits exactly halfway between the direction of x₁ and the quarter-cycle direction, that is an eighth of a cycle ahead of x₁.`,`φ = ${fraction('π','4')} ahead of x₁`],
+  [`Correct answer`,`4√2, ${fraction('π','4')}`]
+ ]},
+{id:'SHM-225',level:2,
+ title:'Equivalent simple pendulum for a rod pivoted at one end',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.82',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A uniform rod of length ℓ is freely pivoted about a horizontal axis through one of its ends and is made to undergo small oscillations in a vertical plane. What is the length of the simple pendulum that has the same time period as the rod?`,
+ options:[`ℓ`,`${fraction('ℓ','2')}`,`${fraction('2ℓ','3')}`,`${fraction('ℓ','3')}`],
+ correct:2,
+ answer:`${fraction('2ℓ','3')}`,
+ diagram:'',
+ noDiagramReason:'A uniform rod hanging from one end is fully described by the words, and the moment of inertia is a standard result.',
+ short:[
+  [`A rigid body swinging through small angles about a horizontal axis is a physical pendulum, whose period needs the moment of inertia about the pivot and the distance from the pivot to the centre of mass.`,`T = 2π√(I ÷ (mgd))`],
+  [`For a uniform rod the moment of inertia about an axis through one end is a standard result, three times smaller than ml² because the mass nearest the pivot contributes little.`,`I = ${fraction('mℓ²','3')}`],
+  [`The centre of mass of a uniform rod sits at its midpoint, so the weight acts half a length below the pivot.`,`d = ${fraction('ℓ','2')}`],
+  [`Substitute both. The mass cancels, as it must for any pendulum, and one power of the length divides out.`,`T = 2π√(2ℓ ÷ (3g))`],
+  [`A simple pendulum of length L has its period in the same form, so the two agree when L is whatever multiplies one over g inside the root.`,`2π√(L ÷ g) = 2π√(2ℓ ÷ (3g)) ⇒ L = ${fraction('2ℓ','3')}`],
+  [`The equivalent length is shorter than the rod itself, because a point mass at the far end would give L = ℓ whereas the rod carries much of its mass closer in.`,`L (eq) = ${fraction('I','md')}`],
+  [`Correct answer`,`${fraction('2ℓ','3')}`]
+ ]},
+{id:'SHM-228',level:3,
+ title:'Period of a block on a string over a pulley hung from a spring',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.14',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Find the period of small vertical oscillations of the system shown. A light pulley hangs from the ceiling on a spring of force constant k. A light inextensible string passes over the pulley; one end of the string is anchored to the floor below and the other end carries a block of mass m.`,
+ options:[`2π√(${fraction('m','k')})`,`6π√(${fraction('m','k')})`,`4π√(${fraction('m','k')})`,`8π√(${fraction('m','k')})`],
+ correct:2,
+ answer:`4π√(${fraction('m','k')})`,
+ diagram:'pulley-on-spring-string-anchored-to-floor',
+ short:[
+  [`The spring is the only elastic element, so the first task is to relate the displacement of the block to the stretch of the spring. Let the pulley descend a distance y, which is also the extra stretch. The string cannot change length and one of its ends is tied to the floor, so a pulley that descends by y moves closer to that anchor and releases a length y of string to the other side.`,`stretch = y, and the block falls y relative to the pulley`],
+  [`The block also falls with the pulley, so its total displacement is twice the displacement of the pulley. This is the step that the factor of four comes from.`,`x = 2y ⇒ y = ${fraction('x','2')}`],
+  [`The pulley is light, so the net force on it must vanish. Both string segments hang downwards from it and the spring holds it up, giving the tension F.`,`ky = 2F`],
+  [`Substitute the stretch in terms of the displacement of the block. The tension is the only force the string exerts on the block, so it is the restoring force.`,`F = ${fraction('ky','2')} = ${fraction('kx','4')}`],
+  [`A restoring force of kx ÷ 4 is the same as a spring of one quarter the stiffness acting directly on the block.`,`k (eff) = ${fraction('k','4')}`],
+  [`Put that into the standard period. Dividing by k ÷ 4 multiplies the ratio by four, and the four leaves the square root as a factor of two.`,`2π√(4m ÷ k) = 4π√(m ÷ k)`],
+  [`Correct answer`,`4π√(${fraction('m','k')})`]
+ ]},
+{id:'SHM-229',level:2,
+ title:'Identifying the potential energy graphs against time and displacement',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.32',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`For a particle executing simple harmonic motion the displacement is given by x = A cos ωt, and the potential energy is taken to be zero at the mean position. Identify the pair of graphs in the figure which represent the variation of the potential energy with time t and with displacement x.`,
+ options:[`I, III`,`II, IV`,`II, III`,`I, IV`],
+ correct:0,
+ answer:`I, III`,
+ diagram:'pe-graphs-against-time-and-against-displacement',
+ short:[
+  [`A cosine starts at its peak, so at the instant the clock starts the particle is at an end of its path, momentarily at rest. With no kinetic energy left, the whole of the energy is potential there.`,`x = A at t = 0`],
+  [`The potential energy of a harmonic oscillator is fixed by the square of the displacement from the mean position.`,`PE = ${fraction('1','2')} mω²x²`],
+  [`Squaring the cosine gives a curve that is never negative, begins at its maximum, touches zero a quarter of a period later and then repeats as identical humps.`,`PE = ${fraction('1','2')} mω²A² cos²ωt`],
+  [`That is the solid curve I. The dotted curve II begins at zero, which is where the kinetic energy begins, so II is the kinetic energy and not the potential energy.`,`cos²ωt = 1 at t = 0`],
+  [`Plotted against displacement instead, the same expression depends on x² alone and cannot tell the two sides of the origin apart: an upright parabola with its lowest point at the mean position, which is curve III.`,`PE ∝ x², least at x = 0`],
+  [`The dome IV peaks at x = 0 and falls to zero at the extremes, which is again the kinetic energy, and the sum of III and IV is the constant total energy.`,`PE + KE = ${fraction('1','2')} mω²A²`],
+  [`Correct answer`,`I, III`]
+ ]},
+{id:'SHM-230',level:2,
+ title:'When a compound pendulum has an infinite period',
+ topic:'Rigid bodies that swing',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.63',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The distance between the centre of gravity of a compound pendulum and its point of suspension is ℓ, and the radius of gyration about a parallel axis through the centre of gravity is k. The time period of the pendulum becomes infinite, in the sense that gravity supplies no restoring torque at all and the body never swings back, if −`,
+ options:[`ℓ = 0`,`ℓ = ∞`,`ℓ = k`,`ℓ = 2k`],
+ correct:0,
+ answer:`ℓ = 0`,
+ diagram:'',
+ noDiagramReason:'The question is about a limiting case of the compound pendulum formula, and the two lengths in it are named in the stem.',
+ short:[
+  [`The period of a compound pendulum is set by the moment of inertia about the suspension axis and by the torque the weight can exert about that axis.`,`T = 2π√(I ÷ (mgℓ))`],
+  [`The radius of gyration fixes the moment of inertia about the centre of gravity, and the parallel-axis theorem carries it out to the suspension axis.`,`I = m(k² + ℓ²)`],
+  [`Substituting, the mass cancels and the period is left in terms of the two lengths alone.`,`T = 2π√((k² + ℓ²) ÷ (gℓ))`],
+  [`The restoring torque is the weight times the horizontal offset of the centre of gravity, and that offset is what the ℓ in the denominator measures. Suspend the body exactly at its centre of gravity and the weight acts through the axis, so no torque is produced, the body stays wherever it is put and the period is unbounded.`,`torque = −mgℓ sin θ = 0 when ℓ = 0`],
+  [`The other two lengths do the opposite. Writing the period as a function of ℓ and minimising it shows that ℓ = k is where the pendulum swings fastest, not slowest.`,`T (min) = 2π√(2k ÷ g) at ℓ = k`],
+  [`Correct answer`,`ℓ = 0`]
+ ]},
+{id:'SHM-231',level:3,
+ title:'Acceleration at a given instant read from a displacement graph',
+ topic:'Displacement, velocity and acceleration',
+ source:'IIT-JEE 2009 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2009',questionNumber:'Q.108',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The displacement-time graph of a particle undergoing simple harmonic motion is shown in the figure, with x in centimetres and t in seconds. The acceleration of the particle at t = 4 ÷ 3 s is −`,
+ options:[`${fraction('√3 π²','32')} cm s⁻²`,`−${fraction('π²','32')} cm s⁻²`,`${fraction('π²','32')} cm s⁻²`,`−${fraction('√3 π²','32')} cm s⁻²`],
+ correct:3,
+ answer:`−${fraction('√3 π²','32')} cm s⁻²`,
+ diagram:'x-t-sine-graph-amplitude-1cm-period-8s',
+ short:[
+  [`Read the two constants of the motion straight off the graph: the curve reaches 1 cm either side of the axis and repeats itself every 8 s. Convert the period into an angular frequency, since it is the angular frequency and not the period that enters the acceleration.`,`A = 1 cm, T = 8 s ⇒ ω = ${fraction('2π','8')} = ${fraction('π','4')} rad s⁻¹`],
+  [`The curve leaves the origin rising, so it is a sine with no phase constant added.`,`x = sin(${fraction('π','4')}t) cm`],
+  [`At the instant asked for, the phase is a third of π, a value whose sine is a standard surd.`,`x = sin ${fraction('π','3')} = ${fraction('√3','2')} cm`],
+  [`In simple harmonic motion the acceleration is ω² times the displacement and always points back towards the mean position, so it carries the opposite sign to x.`,`a = −ω²x = −${fraction('π²','16')} × ${fraction('√3','2')}`],
+  [`Multiply out. The two options without the surd come from taking the displacement to be the full 1 cm, which is where the particle is two thirds of a second later, not at this instant.`,`${fraction('π²','16')} × ${fraction('√3','2')} = ${fraction('√3 π²','32')}`],
+  [`The particle is on the positive side of the mean position at this instant, so the acceleration is directed towards the origin and is negative.`,`x > 0 ⇒ a < 0`],
+  [`Correct answer`,`−${fraction('√3 π²','32')} cm s⁻²`]
+ ]},
+{id:'SHM-234',level:2,
+ title:'Maximum kinetic energy of a pendulum from its angular amplitude',
+ topic:'Energy in simple harmonic motion',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.222',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A simple pendulum of length ℓ carries a bob of mass m and swings with a maximum angular displacement θ from the vertical. The maximum kinetic energy of the bob is −`,
+ options:[`${fraction('1','2')} m${fraction('ℓ','g')}`,`${fraction('mg','2ℓ')}`,`mgℓ(1 − cos θ)`,`${fraction('mgℓ sin θ','2')}`],
+ correct:2,
+ answer:`mgℓ(1 − cos θ)`,
+ diagram:'',
+ noDiagramReason:'The only geometry needed is the rise of a bob swinging through an angle θ, which the standard pendulum picture would not add to.',
+ short:[
+  [`At the end of the swing the bob is momentarily at rest at its highest point, and at the bottom of the arc it is at its fastest. The string is always perpendicular to the motion and does no work, so the whole rise converts into kinetic energy.`,`KE (max) = mgh`],
+  [`The rise is a piece of geometry. At the lowest point the bob hangs a full length below the pivot; at the extreme the string is tilted and the bob hangs only ℓ cos θ below it.`,`h = ℓ − ℓ cos θ`],
+  [`Take the common factor out of the two terms.`,`h = ℓ(1 − cos θ)`],
+  [`Substitute that height into the energy statement. The answer is proportional to the mass, since both the stored energy and the kinetic energy carry one factor of m.`,`KE (max) = mgℓ(1 − cos θ)`],
+  [`Two of the remaining options are not energies at all on dimensional grounds, and the sine form fails the small-angle check: for a small swing the correct result shrinks as the square of the angle, not in proportion to it.`,`1 − cos θ ≈ ${fraction('θ²','2')}`],
+  [`Correct answer`,`mgℓ(1 − cos θ)`]
+ ]},
+{id:'SHM-235',level:2,
+ title:'Comparing the times for two equal stretches of the path',
+ topic:'Phase, and intervals read from it',
+ source:'IIT-JEE 2001 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'IIT-JEE previous-year question, reprinted in the institute booklet',
+   paper:'IIT-JEE 2001',questionNumber:'Q.257',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A particle executes simple harmonic motion between x = −A and x = +A. Setting out from the mean position and moving outwards without turning round, it takes a time T₁ to travel from x = 0 to x = A ÷ 2 and a further time T₂ to travel from x = A ÷ 2 to x = A. Then −`,
+ options:[`T₁ < T₂`,`T₁ > T₂`,`T₁ = T₂`,`T₁ = 2T₂`],
+ correct:0,
+ answer:`T₁ < T₂`,
+ diagram:'',
+ noDiagramReason:'The two stretches of the path are stated as displacements, and the comparison rests on how the speed varies with displacement.',
+ short:[
+  [`The two stretches of the path are of equal length, half an amplitude each, so whichever takes longer is the one travelled at the lower average speed.`,`each leg covers A ÷ 2`],
+  [`The speed of a particle in simple harmonic motion is not uniform: it is greatest at the mean position and falls to nothing at the ends of the path.`,`v = ω√(A² − x²)`],
+  [`The first leg is run close to the centre, where the particle is near its fastest, while the second leg ends at the extreme, where the particle has stopped. The second must therefore take the longer time.`,`v = ωA at x = 0 and v = 0 at x = A`],
+  [`Put a number to it using x = A sin ωt, with the phase measured from the mean position. The displacement reaches half the amplitude when the sine is a half.`,`ωT₁ = ${fraction('π','6')}`],
+  [`The extreme is reached at a quarter of a full cycle of phase, so the phase left for the second leg is the remainder.`,`ωT₂ = ${fraction('π','2')} − ${fraction('π','6')} = ${fraction('π','3')}`],
+  [`In terms of the period the legs take T ÷ 12 and T ÷ 6, so the second takes exactly twice as long as the first. The option T₁ = 2T₂ states that ratio the wrong way round.`,`T₂ = 2T₁`],
+  [`Correct answer`,`T₁ < T₂`]
+ ]},
+{id:'SHM-242',level:1,
+ title:'Displacement one eighth of a period after the mean position',
+ topic:'Phase, and intervals read from it',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.109',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A small body executes simple harmonic motion about a point O with amplitude A and time period T. It passes through O at the instant the clock is started. Its displacement from O after a time equal to one eighth of the time period is`,
+ options:[`${fraction('A','8')}`,`${fraction('A','2√2')}`,`${fraction('A','2')}`,`${fraction('A','√2')}`],
+ correct:3,
+ answer:`${fraction('A','√2')}`,
+ diagram:'',
+ noDiagramReason:'The displacement follows from substituting a time into the standard equation of motion, so there is no arrangement to draw.',
+ short:[
+  [`The body is at the centre when the clock starts, so its displacement is a pure sine with no phase constant.`,`x = A sin ωt`],
+  [`Write the angular frequency through the period, since the elapsed time is quoted as a fraction of the period rather than in seconds.`,`x = A sin(${fraction('2πt','T')})`],
+  [`Substitute the elapsed time. One eighth of a period is one eighth of the 2π of phase that a full cycle carries, which is 45 degrees.`,`${fraction('2πt','T')} = ${fraction('π','4')}`],
+  [`Take the sine of that phase.`,`x = A sin 45° = ${fraction('A','√2')}`],
+  [`The value is about 0.71A, so most of the amplitude is already covered in the first eighth of the cycle. The option offering half the amplitude comes from treating the displacement as proportional to the elapsed time, which it is not, because the body moves fastest near the centre and slows towards the extreme.`,`0.71A, not 0.5A`],
+  [`Correct answer`,`${fraction('A','√2')}`]
+ ]},
+{id:'SHM-244',level:2,
+ title:'Force on the free block while the other is pulled',
+ topic:'Two bodies on one spring',
+ source:'AIEEE 2007 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'AIEEE previous-year question, reprinted in the institute booklet',
+   paper:'AIEEE 2007',questionNumber:'Q.246',printedAnswer:'B',verifiedAnswer:'C'},
+ question:`A block of mass m is joined to a block of mass M by a massless spring of force constant k. Both blocks rest on a smooth horizontal plane. The blocks start at rest with the spring stretched, and a constant force F then begins to act on the block of mass M, directed away from the block of mass m. Averaged over one complete oscillation of the spring, the force on the block of mass m is`,
+ options:[`${fraction('mF','M')}`,`${fraction('(M + m)F','m')}`,`${fraction('mF','m + M')}`,`${fraction('MF','m + M')}`],
+ correct:2,
+ answer:`${fraction('mF','m + M')}`,
+ diagram:'',
+ noDiagramReason:'The arrangement is two blocks in a line joined by a spring, with the applied force named in the stem, and the argument is about the motion of the centre of mass rather than about any geometry.',
+ short:[
+  [`Nothing touches the block of mass m except the spring, so the whole force on it is the spring force, and that force rises and falls as the spring stretches and relaxes.`,`F (on m) = k × extension`],
+  [`Take the two blocks and the spring as one body. The spring forces are internal and cancel in pairs, so the only external force along the plane is F and the centre of mass accelerates steadily.`,`a (cm) = ${fraction('F','m + M')}`],
+  [`The extension performs simple harmonic motion about the stretch at which the spring balances the pull, and the mean of a sinusoid is its central value, so over a full cycle each block's mean acceleration is that of the centre of mass.`,`mean a (m) = a (cm)`],
+  [`Multiply that mean acceleration by the mass of the block to recover the mean spring force on it.`,`F (on m) = m × ${fraction('F','m + M')}`],
+  [`The option with M in the numerator is the mean force on the other block, and the option with m alone in the denominator is larger than F itself, which no internal spring force can be.`,`${fraction('(M + m)F','m')} > F`],
+  [`Correct answer`,`${fraction('mF','m + M')}`]
+ ]},
+{id:'SHM-245',level:3,
+ title:'Period of two blocks that collide at the centre',
+ topic:'The spring and mass oscillator',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.278',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two blocks A and B, each of mass m, rest side by side and in contact at the middle of a smooth horizontal floor between two fixed walls. Each block is joined to the nearer wall by a horizontal spring of force constant K, and both springs have their natural length in this position. Block A is then pushed towards the left wall and block B towards the right wall, each through the same distance, and the two are released at the same instant. They meet at the centre and collide elastically. The time period of the motion of either block is`,
+ options:[`2π√(${fraction('m','K')})`,`2π√(${fraction('m','2K')})`,`π√(${fraction('m','K')})`,`π√(${fraction('m','2K')})`],
+ correct:2,
+ answer:`π√(${fraction('m','K')})`,
+ diagram:'two-blocks-touching-springs-between-walls',
+ short:[
+  [`Each block is held by one spring only, and the other block touches it but is not attached to it, so while the two are apart each block is an ordinary spring-mass oscillator.`,`T₀ = 2π√(${fraction('m','K')})`],
+  [`Both blocks are let go from rest one amplitude out from the contact point, so each needs a quarter of that free period to come back, and they arrive together with equal and opposite velocities.`,`t = ${fraction('T₀','4')}`],
+  [`An elastic head-on collision between equal masses exchanges the two velocities. With the velocities equal and opposite, the exchange simply reverses each one.`,`+v and −v are swapped`],
+  [`So neither block crosses the contact point: it turns round there, and its path runs from its release point in to the centre and straight back out.`,`the contact point is a turning point`],
+  [`That round trip is a quarter of the free period in and a quarter out, which is half the free period, not the whole of it.`,`T = ${fraction('T₀','2')}`],
+  [`The two options built on 2K cannot produce a halving in any case, since doubling a stiffness shortens a period by a factor of root two only.`,`2π√(${fraction('m','2K')}) = ${fraction('T₀','√2')}`],
+  [`Correct answer`,`π√(${fraction('m','K')})`]
+ ]},
+{id:'SHM-246',level:2,
+ title:'Period when a cut spring is rejoined in parallel',
+ topic:'Springs in series, in parallel, and cut',
+ source:'AIEEE 2002 · Simple Harmonic Motion',
+ url:'',
+ sourceRef:{documentName:'AIEEE previous-year question, reprinted in the institute booklet',
+   paper:'AIEEE 2002',questionNumber:'Q.225',printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A uniform spring carrying a mass m has time period T. The spring is now cut into n equal parts, and all n parts are joined side by side in parallel to carry the same mass m. The new time period will be`,
+ options:[`nT`,`${fraction('T','n')}`,`${fraction('T','√n')}`,`√n T`],
+ correct:1,
+ answer:`${fraction('T','n')}`,
+ diagram:'',
+ noDiagramReason:'The two arrangements are named in the stem and the whole question is the arithmetic of combining the constants, so a sketch would carry no extra information.',
+ short:[
+  [`The stiffness of a uniform spring is inversely proportional to its length, because every turn takes a share of the extension. Cutting it into n equal parts therefore leaves each part n times as stiff as the whole.`,`k (part) = nk`],
+  [`Springs in parallel all stretch by the same amount under a shared load, so their constants add, and here there are n identical parts.`,`k (eq) = n × nk = n²k`],
+  [`The period of a mass on a spring falls as the square root of the stiffness.`,`T = 2π√(${fraction('m','k')})`],
+  [`Put the equivalent constant in place of k. The factor n² comes out of the square root as a plain n.`,`T′ = 2π√(${fraction('m','n²k')}) = ${fraction('1','n')} × 2π√(${fraction('m','k')})`],
+  [`Two separate factors of n enter, one from the cutting and one from the parallel joining, and that is why the period is divided by n and not by root n, which is what the cutting alone would give.`,`cutting alone gives ${fraction('T','√n')}`],
+  [`Correct answer`,`${fraction('T','n')}`]
+ ]},
+{id:'SHM-255',level:2,
+ title:'Pendulum swinging in water instead of air',
+ topic:'The pendulum when gravity is not the only force',
+ source:'Institute bank · Simple Harmonic Motion',
+ sourceRef:{documentName:'Institute question bank · Simple Harmonic Motion · single-correct exercise',
+   paper:'Simple Harmonic Motion, single-correct exercise',questionNumber:'Q.155',
+   printedAnswer:'B',verifiedAnswer:'B'},
+ question:`A simple pendulum whose bob is a solid metal sphere, far denser than water, is set oscillating with water surrounding the bob instead of air. The viscous resistance of the water is to be ignored. Compared with the period of the same pendulum in air, the time period will`,
+ options:[`decrease slightly`,`increase slightly`,`remain the same`,`decrease considerably`],
+ correct:1,
+ answer:`increase slightly`,
+ diagram:'',
+ noDiagramReason:'A pendulum bob immersed in a liquid is a standard arrangement, and the single idea is the upthrust on the bob, which is stated rather than measured off a picture.',
+ short:[
+  [`The period of a pendulum is set by the length and by the net downward force per unit mass acting on the bob, which is what the formula calls the effective gravity.`,`T = 2π√(${fraction('ℓ','g (eff)')})`],
+  [`Surrounded by water the bob carries an upthrust equal to the weight of the water it displaces, and that force acts upwards, against the weight.`,`net downward force = mg − ρ (water)Vg`],
+  [`Dividing by the mass of the bob turns this into the effective gravity, which falls short of g by the ratio of the two densities.`,`g (eff) = g(1 − ${fraction('ρ (water)','ρ (bob)')})`],
+  [`A weaker effective gravity means a weaker restoring force at a given angle, so the bob is returned to the vertical more slowly and the period lengthens. That disposes of both options that shorten it, and of the option that leaves it unchanged.`,`g (eff) < g ⇒ T (water) > T (air)`],
+  [`Metal is many times denser than water, so the density ratio is a small fraction and the lengthening is a small one rather than a large one.`,`${fraction('ρ (water)','ρ (bob)')} ≪ 1`],
+  [`Correct answer`,`increase slightly`]
  ]}
 ];
 </script>
@@ -2828,6 +4293,496 @@ switch(q.diagram){
   // check cannot see that, because only the text's EXTENT crosses the boundary.
   s+=txt(cx0,py+L+58,'the bob part way through its swing',M,13);
   break;}
+ case 'two-oscillators-four-instants':{
+  /* SHM-110 -- the two rows of four frames. A and B occupy the same positions at
+     the same four instants; only the arrows differ, so the arrows are the whole
+     point of the figure and each sits clear of its own path line (above for A,
+     below for B). The frames are numbered t1..t4 because the stem calls them
+     four successive instants of the same clock. */
+  height=300;
+  const segs=[70,160,250,340],segL=70,yA=112,yB=236,mid=segL/2;
+  segs.forEach((x,i)=>{s+=txt(x+mid,56,'t'+'₁₂₃₄'[i],M,14);});
+  segs.forEach(x=>{s+=line(x,yA,x+segL,yA,W,2.4)+line(x,yB,x+segL,yB,W,2.4);});
+  s+=txt(42,yA+6,'A',Y,17)+txt(42,yB+6,'B',Y,17);
+  // A: centre moving right, right extreme, centre moving left, left extreme
+  s+=dot(segs[0]+mid,yA,Y)+arrow(segs[0]+mid-16,yA-26,segs[0]+mid+16,yA-26,'',Y);
+  s+=dot(segs[1]+segL,yA,Y);
+  s+=dot(segs[2]+mid,yA,Y)+arrow(segs[2]+mid+16,yA-26,segs[2]+mid-16,yA-26,'',Y);
+  s+=dot(segs[3],yA,Y);
+  // B: the same four positions at the same four instants, each the other way about
+  s+=dot(segs[0]+mid,yB,Y)+arrow(segs[0]+mid+16,yB+26,segs[0]+mid-16,yB+26,'',Y);
+  s+=dot(segs[1],yB,Y);
+  s+=dot(segs[2]+mid,yB,Y)+arrow(segs[2]+mid-16,yB+26,segs[2]+mid+16,yB+26,'',Y);
+  s+=dot(segs[3]+segL,yB,Y);
+  break;
+ }
+ case 'two-pendulums-one-point-opposite-sides':{
+  /* SHM-120 -- both strings of length l from one point on the hatched ceiling,
+     drawn to opposite sides of the dashed vertical, with beta the larger. The two
+     angle labels sit inside their own wedges; the wedges are narrow, so each label
+     is centred on the mid-line of its own sector at a radius where the sector is
+     wide enough for it. */
+  height=300;
+  const px=230,py=44,L=210,al=16*Math.PI/180,be=24*Math.PI/180;
+  const ax=px-L*Math.sin(al),ay=py+L*Math.cos(al);
+  const bx=px+L*Math.sin(be),by=py+L*Math.cos(be);
+  s+=ground(px-92,py,184,true);
+  s+=line(px,py,px,py+L+28,M,1.4,true);                 // the vertical through the suspension point
+  s+=line(px,py,ax,ay,W,2.4)+line(px,py,bx,by,W,2.4);
+  s+=dot(px,py,W);
+  s+=`<circle cx="${ax.toFixed(1)}" cy="${ay.toFixed(1)}" r="9" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=`<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="9" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=txt(ax,ay+28,'A',Y,17)+txt(bx,by+28,'B',Y,17);
+  s+=txt(193,146,'ℓ',W,17,'end')+txt(281,140,'ℓ',W,17,'start');
+  s+=`<path d="${arcPath(px,py,75,Math.PI/2,Math.PI/2+al)}" fill="none" stroke="${M}" stroke-width="1.3"/>`;
+  s+=txt(217,135,'α',W,16);
+  s+=`<path d="${arcPath(px,py,75,Math.PI/2,Math.PI/2-be)}" fill="none" stroke="${M}" stroke-width="1.3"/>`;
+  s+=txt(249,134,'β',W,16);
+  break;
+ }
+ case 'two-spring-mass-systems-m-and-4m':{
+  /* SHM-124 -- two separate systems, identical springs k off their own hatched
+     ceiling bars, identical blocks, named below the block as the source does so
+     no text lands on the spring or inside the block. */
+  height=265;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  // left system: the spring k carrying M = 1 kg
+  s+=ground(90,46,100,true);
+  s+=spring(140,46,140,150,5,10);
+  s+=txt(118,102,'k',B,17,'end');
+  s+=rect(112,150,56,50,'',Y);
+  s+=txt(140,222,'M = 1kg',W,16);
+  // right system: the same spring k carrying 4M
+  s+=ground(270,46,100,true);
+  s+=spring(320,46,320,150,5,10);
+  s+=txt(298,102,'k',B,17,'end');
+  s+=rect(292,150,56,50,'',Y);
+  s+=txt(320,222,'4M',W,16);
+  break;
+ }
+ case 'circular-pipe-two-balls-two-springs':{
+  /* SHM-126 -- the circular pipe seen from above, drawn as an annulus. Both balls
+     sit on the mid-circle of the pipe, pi/6 above the diameter PQ on either side
+     of the vertical; the short spring runs over the top between them and the long
+     one the whole other way round. A and B are named OUTSIDE the pipe along their
+     own radii so neither label lands on the ring, a spring or an angle label. */
+  height=316;
+  const cx=230,cy=160,ro=118,ri=86,rm=102;
+  const aA=-Math.PI+Math.PI/6,aB=-Math.PI/6;
+  // a coil spring bent along an arc of the pipe, coiling about the mid-circle
+  const arcSpring=(a1,a2,n,amp)=>{const k=2*n,pts=[[cx+rm*Math.cos(a1),cy+rm*Math.sin(a1)]];
+   for(let i=0;i<k;i++){const a=a1+(a2-a1)*(i+0.5)/k,r=rm+(i%2?amp:-amp);pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)]);}
+   pts.push([cx+rm*Math.cos(a2),cy+rm*Math.sin(a2)]);
+   return `<path d="M ${pts.map(([x,y])=>x.toFixed(1)+' '+y.toFixed(1)).join(' L ')}" fill="none" stroke="${B}" stroke-width="2" stroke-linejoin="round"/>`;};
+  s+=`<circle cx="${cx}" cy="${cy}" r="${ro}" fill="none" stroke="${M}" stroke-width="2.4"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${ri}" fill="none" stroke="${M}" stroke-width="2.4"/>`;
+  s+=arcSpring(aA,aB,9,11);                              // the short way, over the top
+  s+=arcSpring(aA,aB-2*Math.PI,22,11);                   // the long way, down and round the bottom
+  s+=line(cx-ro,cy,cx+ro,cy,W,2.2);                      // the diameter PQ
+  // the two angles, each label inside its own sector and clear of the diameter
+  s+=`<path d="${arcPath(cx,cy,48,-Math.PI,aA)}" fill="none" stroke="${W}" stroke-width="1.4"/>`;
+  s+=txt(cx+68*Math.cos((-Math.PI+aA)/2),cy+68*Math.sin((-Math.PI+aA)/2)+3,'π/6',W,15);
+  s+=`<path d="${arcPath(cx,cy,48,0,aB)}" fill="none" stroke="${W}" stroke-width="1.4"/>`;
+  s+=txt(cx+68*Math.cos(aB/2),cy+68*Math.sin(aB/2)+3,'π/6',W,15);
+  const Ax=cx+rm*Math.cos(aA),Ay=cy+rm*Math.sin(aA),Bx=cx+rm*Math.cos(aB),By=cy+rm*Math.sin(aB);
+  s+=line(cx,cy,Ax,Ay,M,1.4,true)+line(cx,cy,Bx,By,M,1.4,true);
+  s+=`<circle cx="${Ax.toFixed(1)}" cy="${Ay.toFixed(1)}" r="10" fill="${Y}"/>`;
+  s+=`<circle cx="${Bx.toFixed(1)}" cy="${By.toFixed(1)}" r="10" fill="${Y}"/>`;
+  s+=txt(cx+138*Math.cos(aA),cy+138*Math.sin(aA)+6,'A',Y,17);
+  s+=txt(cx+138*Math.cos(aB),cy+138*Math.sin(aB)+6,'B',Y,17);
+  s+=txt(cx-ro-9,cy+6,'P',W,17,'end')+txt(cx+ro+9,cy+6,'Q',W,17,'start');
+  s+=txt(cx-ro-9,cy-20,'y₁',M,16,'end')+txt(cx+ro+9,cy-20,'y₂',M,16,'start');
+  s+=txt(cx,302,'each ball 0.1 kg; pipe horizontal, seen from above',M,13);
+  break;
+ }
+ case 'shm-displacement-time-cosine-one-period':{
+  /* SHM-134 -- only the stem's own x-t graph. The source page carries the four
+     option graphs as well; drawing them would print the key on the page, so the
+     options stay in words (this chapter's optionFigure switch is deliberately
+     empty for exactly this reason). One full period, starting at +a. */
+  height=280;
+  const ox=78,oy=158,a=78,Tx=378;
+  const X=t=>ox+(Tx-ox)*t,Yx=v=>oy-a*v;                  // t in periods, v in amplitudes
+  s+=arrow(ox,250,ox,62,'',M);                           // x-axis, up
+  s+=arrow(ox,oy,424,oy,'',M);                           // t-axis, right
+  s+=txt(ox,48,'x',M,16);
+  s+=txt(428,oy+20,'t',M,16,'start');
+  s+=txt(ox-13,oy+19,'O',W,15,'end');
+  s+=line(ox-5,Yx(1),ox+5,Yx(1),M,1.5)+txt(ox-11,Yx(1)+5,'a',M,14,'end');
+  s+=line(ox-5,Yx(-1),ox+5,Yx(-1),M,1.5)+txt(ox-11,Yx(-1)+5,'–a',M,14,'end');
+  let d='';
+  for(let i=0;i<=160;i++){const t=i/160;d+=(i?' L ':'M ')+X(t).toFixed(1)+' '+Yx(Math.cos(2*Math.PI*t)).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=line(Tx,oy,Tx,Yx(1),M,1.3,true);                    // the ordinate at one period
+  s+=txt(Tx,oy+20,'T',M,15);
+  break;
+ }
+ case 'block-between-two-springs-on-an-incline':{
+  /* SHM-136 -- the block held between two springs of constant k on the smooth
+     incline, each spring anchored to a cross-hatched end-stop standing on the
+     plane, one at the foot and one at the top. Everything is laid out along the
+     slope by P(t,o): t is distance up the slope from the foot, o is distance out
+     along the outward normal, so the springs run parallel to the surface at the
+     blocks' mid-height and the two k labels sit clear above their own springs.
+     The theta label sits inside the wedge between the ground line and the plane. */
+  height=300;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const fx=55,fy=272,th=28*Math.PI/180,bs=52;
+  const ux=Math.cos(th),uy=-Math.sin(th),nx=-Math.sin(th),ny=-Math.cos(th);
+  const P=(t,o=0)=>[fx+ux*t+nx*o,fy+uy*t+ny*o];
+  // a rigid end-stop standing on the plane, cross-hatched on its down-slope side
+  const stop=t=>{const[x1,y1]=P(t),[x2,y2]=P(t,46);let o=line(x1,y1,x2,y2,G,3.5);
+   for(let d2=7;d2<=42;d2+=8.5){const[hx,hy]=P(t,d2);o+=line(hx,hy,hx-ux*10,hy-uy*10,M,1.1);}return o;};
+  s+=ground(25,fy,175);                                  // the horizontal ground at the foot
+  s+=line(...P(0),...P(408),W,5);                        // the plane, drawn as a slab
+  s+=`<path d="${arcPath(fx,fy,60,0,-th)}" fill="none" stroke="${M}" stroke-width="1.3"/>`;
+  s+=txt(fx+80*Math.cos(th/2),fy-80*Math.sin(th/2),'θ',W,16);
+  s+=stop(22)+stop(390);
+  s+=line(...P(22,bs/2),...P(32,bs/2),B,2.2)+spring(...P(32,bs/2),...P(180,bs/2),9,9);
+  s+=spring(...P(232,bs/2),...P(380,bs/2),9,9)+line(...P(380,bs/2),...P(390,bs/2),B,2.2);
+  s+=txt(...P(106,bs/2+26),'k',B,17);
+  s+=txt(...P(306,bs/2+26),'k',B,17);
+  s+=`<g transform="translate(${P(180)[0].toFixed(1)},${P(180)[1].toFixed(1)}) rotate(${(-28).toFixed(0)})">`
+    +rect(0,-bs,bs,bs,'M',Y)+`</g>`;
+  break;
+ }
+ case 'rod-pivoted-at-centre-two-springs':{
+  /* SHM-140 -- the rod seen edge-on, so it is the vertical bar; one spring from
+     the left support to its upper end, one from its lower end to the right
+     support, pivot at its centre. The caption says the view is edge-on, because
+     a vertical bar turning in a horizontal plane reads as nonsense without it. */
+  height=312;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const rx=230,top=66,bot=238,mid=(top+bot)/2;
+  s+=vwall(40,40,264,-1)+vwall(420,40,264,1);
+  s+=line(40,top,52,top,B,2.2)+spring(52,top,218,top,9,10)+line(218,top,rx,top,B,2.2);
+  s+=txt(135,42,'k',B,17);
+  s+=line(rx,bot,242,bot,B,2.2)+spring(242,bot,408,bot,9,10)+line(408,bot,420,bot,B,2.2);
+  s+=txt(325,266,'k',B,17);
+  s+=line(rx,top,rx,bot,Y,7);                            // the rod, end on
+  s+=`<circle cx="${rx}" cy="${mid}" r="6" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=txt(246,158,'(M, L)',Y,16,'start');
+  s+=txt(230,296,'edge-on view: the rod turns in the horizontal plane',M,13);
+  break;
+ }
+ case 'block-collides-with-spring-block':{
+  /* SHM-146 -- the two equal blocks on the smooth floor between the two hatched
+     walls, the left one moving right with speed v, the right one against the
+     spring K anchored to the right wall, and L measured from the left wall to the
+     second block. The v label sits above the arrow's shaft, not at its head, so it
+     cannot land on the block it belongs to. */
+  height=240;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=170,bh=52,by=gy-bh,mid=by+bh/2;
+  s+=ground(35,gy,390);
+  s+=vwall(35,58,gy,-1)+vwall(425,58,gy,1);
+  s+=rect(60,by,bh,bh,'m',Y);
+  s+=arrow(112,mid,170,mid,'',GREEN)+txt(141,mid-14,'v',GREEN,16);
+  s+=rect(250,by,bh,bh,'m',B);
+  s+=line(302,mid,312,mid,B,2.2)+spring(312,mid,415,mid,7,9)+line(415,mid,425,mid,B,2.2);
+  s+=txt(363,114,'K',B,17);
+  // L, from the left wall across to the second block, below the floor
+  s+=line(250,174,250,214,M,1.2,true);
+  s+=arrow(142,206,35,206,'',M)+arrow(142,206,250,206,'',M);
+  s+=txt(142,196,'L',M,15);
+  s+=txt(355,196,'frictionless',M,13);
+  break;
+ }
+ case 'cut-spring-halves-in-parallel':{
+  /* SHM-159 -- the cut spring: two half-length springs side by side off one
+     hatched ceiling, both strands carrying the one block, so they are in
+     parallel. The stem names no symbol for the object or for the halves, so
+     neither is given an invented letter; the two captions sit clear of the
+     block and of each other. */
+  height=300;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  s+=ground(165,45,130,true);
+  [200,260].forEach(x=>{
+   s+=line(x,45,x,88,B,2.2);
+   s+=spring(x,88,x,148,4,10);                           // a half of the original spring
+   s+=line(x,148,x,188,B,2.2);
+  });
+  s+=rect(180,188,100,52,'',B);
+  s+=txt(292,218,'the same object',M,13,'start');
+  s+=txt(230,274,'the spring cut in two, the halves side by side',M,13);
+  break;
+ }
+ case 'shm-displacement-time-graph-quarters':{
+  /* SHM-162 -- the y-t cosine over one full period, starting at the positive
+     extreme. Every instant the statements are tested against is ticked and
+     named, and the drawn curve really passes through them: y = a cos(2*pi*t/T),
+     so zero at T/4, the minimum at T/2, zero again at 3T/4 and back to +a at T.
+     The amplitude ticks are numbered a and -a so the extremes read off the axis.
+     Each time label sits in the half-plane the curve is NOT in at that instant. */
+  height=268;
+  const ox=62,oy=148,T=310,A=70;
+  const X=u=>ox+u*T, Yv=v=>oy-v*A;                 // u in periods, v in amplitudes
+  s+=arrow(ox,236,ox,60,'',M);                     // y axis, up
+  s+=arrow(ox,oy,404,oy,'',M);                     // t axis, right
+  s+=txt(74,48,'y (displacement)',M,14,'start');
+  s+=txt(404,oy+50,'t (time)',M,14,'end');
+  s+=txt(ox-12,oy+18,'O',W,14,'end');
+  // amplitude scale
+  s+=line(ox-5,Yv(1),ox+5,Yv(1),M,1.5)+txt(ox-10,Yv(1)+5,'a',M,13,'end');
+  s+=line(ox-5,Yv(-1),ox+5,Yv(-1),M,1.5)+txt(ox-10,Yv(-1)+5,'−a',M,13,'end');
+  // the quarter-period ticks
+  [0.25,0.5,0.75,1].forEach(u=>{s+=line(X(u),oy-5,X(u),oy+5,M,1.5);});
+  // dashed reference lines: down to the trough at T/2, up to the crest at T
+  s+=line(X(0.5),oy,X(0.5),Yv(-1),M,1.3,true);
+  s+=line(X(1),oy,X(1),Yv(1),M,1.3,true);
+  // labels, each clear of the curve and of the tick it names
+  s+=txt(X(0.25)-6,oy+26,'T/4',M,13,'end');       // curve is above the axis there
+  s+=txt(X(0.5),oy-16,'T/2',M,13);                // curve is below the axis there
+  s+=txt(X(0.75)+6,oy+26,'3T/4',M,13,'start');
+  s+=txt(X(1)+6,oy+26,'T',M,13,'start');
+  // the curve
+  let d='';
+  for(let i=0;i<=160;i++){const u=i/160,v=Math.cos(2*Math.PI*u);
+   d+=(i?' L ':'M ')+X(u).toFixed(1)+' '+Yv(v).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  break;
+ }
+ case 'potential-energy-graphs-time-and-displacement':{
+  /* SHM-163 -- the four candidate curves the stem names. TOP: two trains of
+     non-negative humps against time, I starting at the peak and II starting at
+     zero, with the t-axis marked where train I first touches zero (T/2 in the
+     source figure, so each hump is drawn a full T wide). BOTTOM: potential
+     energy against displacement between x = -A and x = +A, III opening upward
+     (zero at the centre) and IV the dome (zero at both ends).
+     The four curves carry four DIFFERENT colours on purpose: sharing a colour
+     between a time curve and a displacement curve would hint at the pairing,
+     which is the answer. */
+  height=368;
+  // ---- potential energy against time
+  const ox=70,oy=135,P=62,Tp=165;
+  const hump=(ph,c)=>{let d='';for(let i=0;i<=200;i++){const x=ox+330*i/200,a=Math.PI*(x-ox)/Tp,
+    f=ph?Math.sin(a)*Math.sin(a):Math.cos(a)*Math.cos(a);
+    d+=(i?' L ':'M ')+x.toFixed(1)+' '+(oy-P*f).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.3"/>`;};
+  s+=arrow(ox,150,ox,56,'',M);
+  s+=arrow(ox,oy,420,oy,'',M);
+  s+=txt(58,46,'PE (J)',M,14,'start');
+  s+=txt(420,oy+34,'t (time)',M,14,'end');
+  s+=hump(0,Y);                                    // train I: peak at t = 0
+  s+=hump(1,B);                                    // train II: zero at t = 0
+  s+=line(ox+Tp/2,oy-5,ox+Tp/2,oy+5,M,1.5)+txt(ox+Tp/2,oy+26,'T/2',M,13);
+  s+=txt(120,56,'I',Y,15)+arrow(120,64,106,92,'',Y);      // on I's first falling branch
+  s+=txt(205,56,'II',B,15)+arrow(200,64,181,84,'',B);     // on II's first rising hump
+  // ---- potential energy against displacement
+  const cx=230,oy2=308,H=76,Ax=120;
+  const par=(up,c)=>{let d='';for(let i=0;i<=120;i++){const u=-1+2*i/120,x=cx+u*Ax,
+    f=up?u*u:1-u*u;d+=(i?' L ':'M ')+x.toFixed(1)+' '+(oy2-H*f).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.3"/>`;};
+  s+=arrow(84,oy2,400,oy2,'',M);
+  s+=line(cx,316,cx,232,M,1.8)+arrow(cx,240,cx,224,'',M);
+  s+=txt(222,218,'PE (J)',M,14,'end');
+  s+=txt(404,oy2+42,'x (m)',M,14,'end');
+  s+=txt(222,oy2+20,'O',M,13,'end');
+  s+=line(cx-Ax,oy2,cx-Ax,oy2-H-4,M,1.3,true)+txt(cx-Ax,oy2+22,'−A',M,13);
+  s+=line(cx+Ax,oy2,cx+Ax,oy2-H-4,M,1.3,true)+txt(cx+Ax,oy2+22,'+A',M,13);
+  s+=par(1,GREEN);                                 // III: least at the centre
+  s+=par(0,W);                                     // IV: greatest at the centre
+  s+=txt(150,212,'III',GREEN,15)+arrow(146,216,121,240,'',GREEN);
+  s+=txt(306,222,'IV',W,15)+arrow(302,228,293,249,'',W);
+  break;
+ }
+ case 'energy-graphs-against-displacement':{
+  /* SHM-172 -- the four lettered sets, drawn exactly as the source has them so
+     that no set is flattered: every panel gets the same base line, the same
+     short energy axis standing on its middle, the same x arrow under its left
+     end, and the same three letters down its right-hand edge. Solid curve is
+     drawn in yellow and the dashed curve in blue in every panel, which is the
+     source's own solid/dashed distinction and carries no information about
+     which letter is which -- the letters do that, and they differ panel to
+     panel. */
+  height=425;
+  const L=88,R=368,C=228,HW=140,H=62;
+  const path=(by,up)=>{let d='';for(let i=0;i<=80;i++){const u=-1+2*i/80,x=C+u*HW,
+    f=up?u*u:1-u*u;d+=(i?' L ':'M ')+x.toFixed(1)+' '+(by-H*f).toFixed(1);}return d;};
+  const solid=d=>`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.2"/>`;
+  const dashed=d=>`<path d="${d}" fill="none" stroke="${B}" stroke-width="2.2" stroke-dasharray="6 5"/>`;
+  const frame=(by,tag)=>line(L,by,R,by,M,1.8)+line(C,by,C,by-18,M,1.6)
+    +arrow(L,by+18,L+40,by+18,'',M)+txt(L+46,by+23,'x',M,14,'start')+txt(40,by-26,tag,M,15);
+  const [a,b2,c,dd]=[92,190,288,386];
+  // (A) total energy flat; solid curve greatest at the centre, dashed one least there
+  s+=frame(a,'(A)');
+  s+=line(L,a-H,R,a-H,W,2)+txt(C,a-H-8,'T',W,15);
+  s+=solid(path(a,0))+txt(376,a+5,'K',Y,15,'start');
+  s+=dashed(path(a,1))+txt(376,a-H+4,'U',B,15,'start');
+  // (B) the same flat line, the two curves swapped over
+  s+=frame(b2,'(B)');
+  s+=line(L,b2-H,R,b2-H,W,2)+txt(C,b2-H-8,'T',W,15);
+  s+=solid(path(b2,1))+txt(376,b2-H+4,'K',Y,15,'start');
+  s+=dashed(path(b2,0))+txt(376,b2+5,'U',B,15,'start');
+  // (C) no flat line at all; T sits on the dashed dome
+  s+=frame(c,'(C)');
+  s+=solid(path(c,1))+txt(376,c-H+4,'K',Y,15,'start');
+  s+=dashed(path(c,0))+txt(C,c-H-8,'U',B,15)+txt(376,c+5,'T',B,15,'start');
+  // (D) no flat line; the solid dome is the one called T
+  s+=frame(dd,'(D)');
+  s+=solid(path(dd,0))+txt(376,dd+5,'T',Y,15,'start');
+  s+=dashed(path(dd,1))+txt(376,dd-H+4,'K',B,15,'start');
+  s+=txt(376,dd-28,'U',M,15,'start');
+  break;
+ }
+ case 'rod-twisted-on-torsional-string':{
+  /* SHM-175 -- the rod hung horizontally from one vertical string at its
+     midpoint, with the twisted position drawn dashed over it. The angle between
+     the two positions is drawn out to a radius where the wedge is wide enough
+     for its label, so theta sits inside the sector and touches neither rod nor
+     the end circle. */
+  height=248;
+  const cx=230,ceil=42,ry=150,half=110,th=20*Math.PI/180;
+  s+=ground(cx-60,ceil,120,true);
+  s+=line(cx,ceil,cx,ry,W,2.4);                     // the string
+  s+=txt(cx+12,96,'C',W,16,'start');                // its torsional constant
+  s+=line(cx-half,ry,cx+half,ry,Y,4);               // the rod, at rest
+  s+=`<circle cx="${cx-half}" cy="${ry}" r="6" fill="none" stroke="${Y}" stroke-width="2.2"/>`;
+  s+=`<circle cx="${cx+half}" cy="${ry}" r="6" fill="none" stroke="${Y}" stroke-width="2.2"/>`;
+  s+=dot(cx,ry,W);
+  s+=txt(cx-96,ry-14,'(m, ℓ)',Y,16,'start');        // above its left half
+  // the twisted position: left end swung down-left, right end up-right
+  const dx=half*Math.cos(th),dy=half*Math.sin(th);
+  s+=line(cx-dx,ry+dy,cx+dx,ry-dy,M,2,true);
+  s+=`<circle cx="${(cx-dx).toFixed(1)}" cy="${(ry+dy).toFixed(1)}" r="6" fill="none" stroke="${M}" stroke-width="1.6" stroke-dasharray="4 3"/>`;
+  s+=`<circle cx="${(cx+dx).toFixed(1)}" cy="${(ry-dy).toFixed(1)}" r="6" fill="none" stroke="${M}" stroke-width="1.6" stroke-dasharray="4 3"/>`;
+  s+=`<path d="${arcPath(cx,ry,56,0,-th)}" fill="none" stroke="${W}" stroke-width="1.4"/>`;
+  s+=txt(302,140,'θ',W,14);                         // inside the wedge, outside the arc
+  s+=txt(cx,222,'dashed: the twisted position',M,13);
+  break;
+ }
+ case 'pendulum-with-peg-below-support':{
+  /* SHM-179 -- the peg P on the vertical through O at a depth 3L/4, and the bob
+     on its full string of length L drawn aside to one side. The depth dimension
+     is carried on a bar to the LEFT of the vertical so that neither it nor the
+     label O crosses the string, the vertical or the hatching. */
+  height=252;
+  const ox=230,oy=42,Lr=200,pegY=oy+0.75*Lr,th=35*Math.PI/180;
+  const bx=ox+Lr*Math.sin(th),by=oy+Lr*Math.cos(th);
+  s+=ground(ox-80,oy,160,true);
+  s+=dot(ox,oy,W);
+  s+=txt(ox-12,oy+16,'O',W,16,'end');
+  s+=line(ox,oy,ox,pegY,M,1.8);                     // the vertical through O
+  s+=`<circle cx="${ox}" cy="${pegY}" r="5.5" fill="${W}"/>`;   // the peg
+  s+=txt(ox-14,pegY+5,'P',W,16,'end');
+  // the 3L/4 depth, measured down the left-hand side
+  s+=line(186,oy,186,pegY,M,1.4)+line(180,oy,192,oy,M,1.4)+line(180,pegY,192,pegY,M,1.4);
+  s+=txt(176,(oy+pegY)/2+4,'{3ℓ|4}',M,15,'end');
+  // the string, drawn aside, and the bob
+  s+=line(ox,oy,bx,by,W,2.5);
+  s+=txt(ox+58,oy+74,'ℓ',W,17,'start');
+  s+=`<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="15" fill="#a17d18"/><circle cx="${(bx-2).toFixed(1)}" cy="${(by-2).toFixed(1)}" r="15" fill="${Y}"/>`;
+  break;
+ }
+ case 'ceiling-spring-series-with-parallel-pair':{
+  /* SHM-202 -- one spring from the ceiling in series with the two parallel
+     springs that hang off the rigid frame, the block slung under the lower bar.
+     Each spring is named k beside itself, and the two numbers the stem gives sit
+     in one caption under the picture so neither lands on the drawing. */
+  height=342;
+  const cx=230;
+  const spring=(x1,y1,x2,y2,n=6,amp=10)=>{const dx=x2-x1,dy=y2-y1,Ln=Math.hypot(dx,dy),px=-dy/Ln,py=dx/Ln,k=2*n;
+   let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;
+   d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}
+   return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  s+=ground(cx-60,40,120,true);
+  s+=spring(cx,40,cx,118,5,10);                     // the single ceiling spring
+  s+=txt(cx+18,84,'k',B,17,'start');
+  s+=line(150,118,310,118,W,3);                     // top bar of the rigid frame
+  s+=spring(150,118,150,230,6,10);                  // the two springs in parallel
+  s+=spring(310,118,310,230,6,10);
+  s+=txt(132,178,'k',B,17,'end');
+  s+=txt(328,178,'k',B,17,'start');
+  s+=line(150,230,310,230,W,3);                     // lower bar
+  s+=line(cx,230,cx,252,W,2.5);
+  s+=rect(cx-30,252,60,48,'m',Y);
+  s+=txt(cx,326,'m = 2 kg,  each k = 1875 N m⁻¹',M,14);
+  break;
+ }
+ case 'sphere-rolling-against-spring':{
+  /* SHM-203 -- the sphere on its horizontal surface with the spring joining its
+     CENTRE to the wall: the straight rod from the centre out through the surface
+     of the sphere is what the source draws, and it is what makes the spring act
+     at the centre rather than at the rim. M inside the sphere, R on its own
+     radius, K above the spring. */
+  height=238;
+  const gy=190,scx=118,scy=135,rr=55;
+  const spring=(x1,y1,x2,y2,n=9,amp=10)=>{const dx=x2-x1,dy=y2-y1,Ln=Math.hypot(dx,dy),px=-dy/Ln,py=dx/Ln,k=2*n;
+   let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;
+   d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}
+   return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  s+=ground(24,gy,404);                             // the horizontal surface it rolls on
+  s+=line(428,78,428,gy,G,3);                       // the fixed wall
+  for(let yy=84;yy<=184;yy+=13)s+=line(431,yy,438,yy+7,M,1);
+  s+=`<circle cx="${scx}" cy="${scy}" r="${rr}" fill="none" stroke="${Y}" stroke-width="2.6"/>`;
+  s+=line(scx,scy,scx-rr*0.707,scy-rr*0.707,M,1.6); // a radius, to name R
+  s+=txt(scx-8,scy-20,'R',M,15,'start');
+  s+=txt(scx-28,scy+32,'M',Y,17);
+  s+=dot(scx,scy,W);
+  s+=line(scx,scy,246,scy,W,2.5);                   // the rod from the centre out to the spring
+  s+=spring(246,scy,418,scy,9,10);
+  s+=line(418,scy,428,scy,B,2.2);
+  s+=txt(332,scy-24,'K',B,17);
+  s+=txt(230,224,'rolls without slipping',M,13);
+  break;
+ }
+ case 'four-spring-pulley-arrangements':{
+  /* SHM-208 -- the four arrangements side by side, each in its own column with a
+     faint divider so the panels read apart at a glance, and each labelled
+     underneath. Every spring carries the constant the source marks on it (k, k,
+     2k and 2k, 2k and 2k), every block is the same m, and the strings, pulleys,
+     walls, ceilings and floors the source draws are all drawn. */
+  height=248;
+  const spring=(x1,y1,x2,y2,n=5,amp=7)=>{const dx=x2-x1,dy=y2-y1,Ln=Math.hypot(dx,dy),px=-dy/Ln,py=dx/Ln,k=2*n;
+   let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;
+   d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}
+   return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const pulley=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${M}" stroke-width="2"/>`
+   +`<circle cx="${x}" cy="${y}" r="2.5" fill="${M}"/>`;
+  [133,231,347].forEach(x=>{s+=line(x,38,x,212,'#3a3a37',1.2,true);});   // column dividers
+  // (i) wall, horizontal spring, string over a bracket-mounted pulley, block below
+  s+=line(22,56,22,134,G,3);
+  for(let yy=60;yy<=128;yy+=13)s+=line(19,yy,12,yy+7,M,1);
+  s+=line(22,90,96,90,M,2);                         // the bracket back to the wall
+  s+=line(22,78,30,78,B,2.1)+spring(30,78,68,78,5,6)+line(68,78,96,78,W,2.2);
+  s+=txt(49,62,'k',B,15);
+  s+=pulley(96,90,12);
+  s+=`<path d="${arcPath(96,90,12,-Math.PI/2,0)}" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=line(108,90,108,150,W,2.2);
+  s+=rect(91,150,34,32,'m',Y);
+  s+=txt(108,228,'(i)',M,15);
+  // (ii) ceiling pulley, one strand tied to the floor, the other on the spring
+  s+=ground(137,50,80,true);
+  s+=line(177,50,177,56,M,2);
+  s+=pulley(177,72,16);
+  s+=`<path d="${arcPath(177,72,16,Math.PI,2*Math.PI)}" fill="none" stroke="${W}" stroke-width="2.2"/>`;
+  s+=line(161,72,161,200,W,2.2);                    // anchored to the floor
+  s+=line(193,72,193,100,W,2.2)+spring(193,100,193,148,5,7);
+  s+=txt(203,126,'k',B,15,'start');
+  s+=rect(175,148,36,32,'m',Y);
+  s+=ground(137,200,80);
+  s+=txt(177,228,'(ii)',M,15);
+  // (iii) two springs side by side off one ceiling, both on the same block
+  s+=ground(245,50,80,true);
+  s+=line(263,50,263,70,W,2.2)+spring(263,70,263,130,5,7)+line(263,130,263,150,W,2.2);
+  s+=line(307,50,307,70,W,2.2)+spring(307,70,307,130,5,7)+line(307,130,307,150,W,2.2);
+  s+=txt(251,104,'2k',B,15,'end');
+  s+=txt(319,104,'2k',B,15,'start');
+  s+=rect(255,150,60,34,'m',Y);
+  s+=txt(285,228,'(iii)',M,15);
+  // (iv) one spring above the block and one below it, down to the floor
+  s+=ground(360,50,66,true);
+  s+=spring(392,50,392,110,5,7);
+  s+=txt(404,84,'2k',B,15,'start');
+  s+=rect(372,108,40,34,'m',Y);
+  s+=spring(392,150,392,196,5,7);
+  s+=txt(404,174,'2k',B,15,'start');
+  s+=ground(360,196,66);
+  s+=txt(392,228,'(iv)',M,15);
+  break;
+ }
  }
  const subject=p.figure||q.title;
  const desc=solution?`Solution diagram for ${subject}.`:`Question diagram for ${subject}. ${q.question}`;
@@ -2882,29 +4837,30 @@ const baseSections=[
  {key:'shm-energy',title:'Energy',short:'Energy'},
  {key:'shm-springs',title:'Spring systems',short:'Spring systems'},
  {key:'shm-pendulum',title:'Pendulums',short:'Pendulums'},
- {key:'shm-other',title:'Curved tracks, fluids and neighbouring chapters',short:'Curved tracks, fluids and neighbouring chapters'},
+ {key:'shm-other',title:'Curved tracks, fluids, damping and neighbouring chapters',short:'Curved tracks, fluids, damping and neighbouring chapters'},
 ];
 const subtopicPlan={
  'shm-basics':[
-  ['What counts as simple harmonic motion',['SHM-001','SHM-003','SHM-009','SHM-022','SHM-028','SHM-100']],
-  ['The differential equation and what it gives',['SHM-004','SHM-026','SHM-030','SHM-032','SHM-033']]],
+  ['What counts as simple harmonic motion',['SHM-001','SHM-003','SHM-009','SHM-022','SHM-028','SHM-100','SHM-109','SHM-125']],
+  ['The differential equation and what it gives',['SHM-004','SHM-026','SHM-030','SHM-032','SHM-033','SHM-143']]],
  'shm-kinematics':[
-  ['Displacement, velocity and acceleration',['SHM-002','SHM-005','SHM-006','SHM-007','SHM-014','SHM-021','SHM-023','SHM-027','SHM-031','SHM-034','SHM-042','SHM-081','SHM-087','SHM-088','SHM-089']],
-  ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-016','SHM-083','SHM-085','SHM-086','SHM-106']],
-  ['Adding two simple harmonic motions',['SHM-008','SHM-011','SHM-015','SHM-018','SHM-084']]],
+  ['Displacement, velocity and acceleration',['SHM-002','SHM-005','SHM-006','SHM-007','SHM-014','SHM-021','SHM-023','SHM-027','SHM-031','SHM-034','SHM-042','SHM-081','SHM-087','SHM-088','SHM-089','SHM-134','SHM-162','SHM-177','SHM-182','SHM-196','SHM-221','SHM-231']],
+  ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-016','SHM-083','SHM-085','SHM-086','SHM-106','SHM-110','SHM-122','SHM-165','SHM-190','SHM-222','SHM-235','SHM-242']],
+  ['Adding two simple harmonic motions',['SHM-008','SHM-011','SHM-015','SHM-018','SHM-084','SHM-144','SHM-150','SHM-224']]],
  'shm-energy':[
-  ['Energy in simple harmonic motion',['SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102']]],
+  ['Energy in simple harmonic motion',['SHM-044','SHM-049','SHM-065','SHM-066','SHM-067','SHM-068','SHM-069','SHM-071','SHM-072','SHM-073','SHM-074','SHM-075','SHM-102','SHM-149','SHM-156','SHM-163','SHM-171','SHM-172','SHM-185','SHM-191','SHM-193','SHM-194','SHM-195','SHM-229','SHM-234','SHM-251']]],
  'shm-springs':[
-  ['Springs in series, in parallel, and cut',['SHM-054','SHM-056','SHM-057','SHM-058','SHM-059','SHM-060','SHM-061','SHM-062','SHM-064']],
-  ['The spring and mass oscillator',['SHM-013','SHM-053','SHM-063','SHM-076','SHM-078','SHM-079','SHM-096']],
-  ['Two bodies on one spring',['SHM-029','SHM-082','SHM-094']],
-  ['Friction and contact in an oscillating system',['SHM-051','SHM-052']]],
+  ['Springs in series, in parallel, and cut',['SHM-054','SHM-056','SHM-057','SHM-058','SHM-059','SHM-060','SHM-061','SHM-062','SHM-064','SHM-136','SHM-159','SHM-202','SHM-208','SHM-220','SHM-246']],
+  ['The spring and mass oscillator',['SHM-013','SHM-053','SHM-063','SHM-076','SHM-078','SHM-079','SHM-096','SHM-112','SHM-124','SHM-141','SHM-207','SHM-228','SHM-245']],
+  ['Two bodies on one spring',['SHM-029','SHM-082','SHM-094','SHM-126','SHM-146','SHM-244']],
+  ['Friction and contact in an oscillating system',['SHM-051','SHM-052','SHM-139']]],
  'shm-pendulum':[
-  ['The simple pendulum',['SHM-037','SHM-038','SHM-043','SHM-046','SHM-050','SHM-077','SHM-092','SHM-105','SHM-107','SHM-108']],
-  ['The pendulum when gravity is not the only force',['SHM-039','SHM-041','SHM-045','SHM-047','SHM-095','SHM-097','SHM-098','SHM-099']],
-  ['Rigid bodies that swing',['SHM-040','SHM-055','SHM-080']]],
+  ['The simple pendulum',['SHM-037','SHM-038','SHM-043','SHM-046','SHM-050','SHM-077','SHM-092','SHM-105','SHM-107','SHM-108','SHM-120','SHM-151','SHM-155','SHM-160','SHM-179','SHM-181','SHM-188']],
+  ['The pendulum when gravity is not the only force',['SHM-039','SHM-041','SHM-045','SHM-047','SHM-095','SHM-097','SHM-098','SHM-099','SHM-114','SHM-121','SHM-142','SHM-255']],
+  ['Rigid bodies that swing',['SHM-040','SHM-055','SHM-080','SHM-140','SHM-175','SHM-180','SHM-184','SHM-203','SHM-225','SHM-230']]],
  'shm-other':[
-  ['Oscillation on a curved track or in a fluid',['SHM-024','SHM-091','SHM-093','SHM-101','SHM-104']],
+  ['Oscillation on a curved track or in a fluid',['SHM-024','SHM-091','SHM-093','SHM-101','SHM-104','SHM-133']],
+  ['Damped and forced oscillation',['SHM-128','SHM-129']],
   ['Where SHM meets the next chapter',['SHM-017','SHM-020']]],
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
