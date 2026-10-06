@@ -13668,7 +13668,8 @@ const CHAPTERS=[
  {subject:'mathematics',title:'Probability',path:'mathematics/probability/'},
 ];
 function chapterNav(subject,activePath,base){
- base=base||'/';
+ /* No prefix passed: take it from the address, so links stay on the route serving the page (production, the branch preview or a prefix such as /johniton/). */
+ if(!base){const m=(typeof location!=='undefined'?location.pathname:'/').match(/^(.*?)(?:physics|chemistry|mathematics)\//);base=m?m[1]:'/';}
  return CHAPTERS.filter(c=>c.subject===subject).map(c=>`<a${c.path===activePath?' class="active"':''} href="${base}${c.path}">${c.title}</a>`).join('');
 }
 </script>
