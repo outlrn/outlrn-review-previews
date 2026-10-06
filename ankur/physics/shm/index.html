@@ -327,6 +327,27 @@ function detailedSolution(q){
   [`Nine times the load slows the oscillation by a factor of three rather than nine, because frequency falls as the inverse square root of the mass and not as its reciprocal.`,`√9 = 3`],
   [`Correct answer`,`3`]
  ]},
+{id:'SHM-649',parent:'SHM-208',variant:5,relevance:{parent:'SHM-208',sharedSkill:'deciding from a drawing that disguises it whether the springs all take the same deformation, so that their constants simply add',recoveryPurpose:'controlled transfer'},
+ title:'Period of a block held by a lone spring beside a series-parallel branch',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2024 (Online) 31st January Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pthe-time-period-of-simple-harmonic-motion-of-mass-m-i-jee-main-physics-motion-xbjtevvssvtgq5ie',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2024 (Online) 31st January Evening Shift',
+   questionNumber:'ExamSide EX-150',
+   printedAnswer:'12',verifiedAnswer:'12'},
+ question:`The time period of the simple harmonic motion of the mass M in the figure is π√(αM ÷ 5k), every spring in the arrangement having the same force constant k. The value of α is`,
+ type:'numerical',
+ answer:12,
+ diagram:'lone-spring-beside-parallel-pair-in-series',
+ short:[
+  [`Take the arrangement apart branch by branch. The two springs that hang side by side from the ceiling both end on the same crossbar, so they share the pull of whatever is below it and their constants add.`,`k (pair) = k + k = 2k`],
+  [`That pair is joined end to end with the single spring beneath the crossbar. Springs in series stretch one after the other under the same pull, so it is their compliances that add and the combination is softer than either.`,`k (branch) = ${fraction('2k × k','2k + k')} = ${fraction('2k','3')}`],
+  [`The remaining spring runs from the ceiling straight down to the block, so it carries its own share of the weight alongside that whole branch and its constant adds on.`,`k (eq) = k + ${fraction('2k','3')} = ${fraction('5k','3')}`],
+  [`The block now oscillates as a mass on one spring of that stiffness.`,`T = 2π√(${fraction('M','k (eq)')}) = 2π√(${fraction('3M','5k')})`],
+  [`Take the factor of two inside the root, where it becomes a four, so that the result can be compared with the form printed in the question.`,`T = π√(${fraction('12M','5k')})`],
+  [`Correct answer`,`12`]
+ ]},
 {id:'SHM-651',parent:'SHM-010',variant:8,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'controlled transfer'},
  title:'Time to fall back from the extreme to √3 ÷ 2 of the amplitude',
  topic:'Phase, and intervals read from it',
@@ -439,6 +460,27 @@ function detailedSolution(q){
   [`The stiffness cancels, which is why the answer needs neither the mass nor the period.`,`9(A² − x²) = 5A² ⇒ x² = ${fraction('4A²','9')}`],
   [`Take the root and put in the amplitude of 3 cm.`,`x = ${fraction('2A','3')} = ${fraction('2 × 3','3')} cm`],
   [`Correct answer`,`2`]
+ ]},
+{id:'SHM-658',parent:'SHM-064',variant:7,relevance:{parent:'SHM-064',sharedSkill:'reducing a block held by several springs to one equivalent constant, series where the force is shared and parallel where the displacement is shared, and putting it into the period or frequency',recoveryPurpose:'controlled transfer'},
+ title:'Counting oscillations of a block held between two walls by two springs',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2023 (Online) 31st January Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pin-the-figure-given-below-a-block-of-mass-m490-mathr-jee-main-physics-motion-jeyova5amrcmiqrv',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2023 (Online) 31st January Morning Shift',
+   questionNumber:'ExamSide EX-159',
+   printedAnswer:'20',verifiedAnswer:'20'},
+ question:`In the figure, a block of mass M = 490 g placed on a frictionless table is connected to two fixed walls by two springs of the same force constant K = 2 N m⁻¹. The block is displaced horizontally through a distance X and released. The number of complete oscillations it makes in 14π seconds is`,
+ type:'numerical',
+ answer:20,
+ diagram:'block-two-equal-springs-to-opposite-walls',
+ short:[
+  [`Displace the block to one side and one spring stretches while the other is compressed. Both then push it back towards the centre, so the restoring forces add and the pair acts as one stiffer spring.`,`k (eq) = K + K = 2K = 4 N m⁻¹`],
+  [`Convert the mass to kilograms before it is used.`,`M = 490 g = 0.49 kg`],
+  [`The block then oscillates as a mass on a single spring of that stiffness. The amplitude X never enters, because the period of simple harmonic motion does not depend on how far the block was pulled.`,`T = 2π√(${fraction('M','k (eq)')}) = 2π√(${fraction('0.49','4')})`],
+  [`The root comes out exactly, which is what the chosen figures were for.`,`T = 2π × 0.35 = ${fraction('7π','10')} s`],
+  [`Divide the time allowed by the period to count the complete oscillations, and the factor of π cancels.`,`N = 14π × ${fraction('10','7π')}`],
+  [`Correct answer`,`20`]
  ]},
 {id:'SHM-472',level:2,
  title:'Shape of a logarithmic amplitude plot for a damped oscillator',
@@ -575,6 +617,26 @@ function detailedSolution(q){
   [`Compare that with the form the question asks for, where the time is one divided by a.`,`${fraction('1','a')} = ${fraction('1','6')}`],
   [`Correct answer`,`6`]
  ]},
+{id:'SHM-678',parent:'SHM-365',variant:3,relevance:{parent:'SHM-365',sharedSkill:'springs in series carry one common force, so their compliances add and the softer spring takes the larger share of the deformation',recoveryPurpose:'representation change'},
+ title:'Period ratio for one spring and for two in series',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2021 (Online) 17th March Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/consider-two-identical-springs-each-of-spring-constant-k-and-jee-main-physics-units-and-measurements-fjqjvbnyyhfaau84',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 17th March Morning Shift',questionNumber:'ExamSide EX-179',
+   printedAnswer:'2',verifiedAnswer:'2'},
+ question:`Consider two identical springs, each of spring constant k and of mass negligible compared with the mass M, as shown. Fig. 1 shows one of them and Fig. 2 shows their series combination. The ratio of the time period of oscillation in Fig. 2 to that in Fig. 1 is √x. The value of x is ________. (Round off to the nearest integer)`,
+ type:'numerical',
+ answer:2,
+ diagram:'single-spring-and-series-pair',
+ short:[
+  [`A hanging mass oscillates about the stretched equilibrium position, and its period depends only on the mass and on the stiffness that the mass feels.`,`T = 2π√(M ÷ k)`],
+  [`Springs joined end to end are pulled by the same force, because the junction between them is massless and cannot take a net load.`,`each spring carries Mg`],
+  [`Each spring therefore stretches by as much as the single spring would, so the pair gives twice the extension for the same force.`,`k (eq) = ${fraction('k','2')}`],
+  [`Feed that stiffness into the period. Halving the stiffness multiplies the period by the square root of two, since stiffness sits under the root.`,`T (b) = 2π√(2M ÷ k)`],
+  [`Divide by the period of the single spring, where the mass and the factor 2π cancel and only the stiffness ratio survives.`,`T (b) ÷ T (a) = √2 = √x`],
+  [`Correct answer`,`2`]
+ ]},
 {id:'SHM-680',parent:'SHM-010',variant:11,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'controlled transfer'},
  title:'Time for five-eighths of an oscillation from the mean position',
  topic:'Phase, and intervals read from it',
@@ -688,6 +750,28 @@ function detailedSolution(q){
   [`Take the smallest positive angle whose sine is one half.`,`${fraction('φ₂ − φ₁','2')} = ${fraction('π','6')}`],
   [`Correct answer`,`${fraction('π','3')}`]
  ]},
+{id:'SHM-615',parent:'SHM-577',variant:2,relevance:{parent:'SHM-577',sharedSkill:'carrying momentum through a mass gently joined to an oscillator at its mean position, where the two share a speed and the amplitude changes',recoveryPurpose:'representation change'},
+ title:'Amplitude after a mass is added at the mean position',
+ topic:'Two bodies on one spring',
+ source:'AIEEE 2011 · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/a-mass-m-attached-to-a-horizontal-spring-executes-s-2011-marks-4-nc8i9htkalvvnxmy.htm',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'AIEEE 2011',questionNumber:'ExamSide EX-116',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A mass M attached to a horizontal spring executes simple harmonic motion with amplitude A₁. When the mass M passes through its mean position a smaller mass m is placed over it, and the two then move together with amplitude A₂. The ratio of A₁ to A₂ is`,
+ options:[`${fraction('M + m','M')}`,`√(${fraction('M','M + m')})`,`√(${fraction('M + m','M')})`,`${fraction('M','M + m')}`],
+ correct:2,
+ answer:`√(${fraction('M + m','M')})`,
+ diagram:'',
+ noDiagramReason:'The arrangement is one block on a horizontal spring with a second block laid on top of it, which the stem states completely.',
+ short:[
+  [`At the mean position the spring is at its natural length, so no horizontal force acts on the block at the instant the smaller mass is laid on it, and the horizontal momentum of the pair is conserved through that instant.`,`Mv₁ = (M + m)v₂`],
+  [`The speed as a mass passes the mean position is its amplitude times its angular frequency, and the angular frequency is set by the spring constant and the mass being carried.`,`v₁ = A₁√(k ÷ M) and v₂ = A₂√(k ÷ (M + m))`],
+  [`Substitute both speeds into the momentum equation.`,`MA₁√(k ÷ M) = (M + m)A₂√(k ÷ (M + m))`],
+  [`The spring constant is the same before and after and cancels, and on each side one factor of the mass is absorbed into the square root.`,`A₁√M = A₂√(M + m)`],
+  [`Divide to form the ratio asked for. It exceeds one, as it must: the pair starts from the mean position at a reduced speed while the spring is no stiffer, so it cannot travel as far out.`,`${fraction('A₁','A₂')} = ${fraction('√(M + m)','√M')}`],
+  [`Correct answer`,`√(${fraction('M + m','M')})`]
+ ]},
 {id:'SHM-624',parent:'SHM-022',variant:3,relevance:{parent:'SHM-022',sharedSkill:'collapsing a trigonometric displacement expression to a single sinusoid to decide whether it is simple harmonic and to read its frequency',recoveryPurpose:'direct retry'},
  title:'Whether a squared sine is simple harmonic, and its period',
  topic:'What counts as simple harmonic motion',
@@ -732,6 +816,28 @@ function detailedSolution(q){
   [`Substitute the two spring constants and the two masses, in kilograms. Note that the stiffer spring is the one carrying the heavier mass.`,`${fraction('A₁','A₂')} = √(${fraction('9k × 0.050','2k × 0.100')})`],
   [`The unknown stiffness k cancels and what is left under the root is a perfect square.`,`${fraction('A₁','A₂')} = √(${fraction('9','4')})`],
   [`Correct answer`,`3 : 2`]
+ ]},
+{id:'SHM-550',level:3,diagram:'pe-curve-spring-oscillator-5kg',
+ title:'Gravity on a planet from an energy curve and a matching pendulum',
+ topic:'Energy in simple harmonic motion',
+ source:'JEE Main 2021 (Online) 1st September Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/a-mass-of-5-kg-is-connected-to-a-spring-the-potential-energ-jee-main-physics-units-and-measurements-9cd54i3l2u9jibx5',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 1st September Evening Shift',
+   questionNumber:'ExamSide EX-051',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A mass of 5 kg is connected to a spring. The potential energy curve of the simple harmonic motion executed by the system is shown in the figure, with the energy U in joules and the displacement x in metres. A simple pendulum of length 4 m has the same period of oscillation as the spring system. What is the value of the acceleration due to gravity on the planet where these experiments are performed?`,
+ options:[`10 m/s²`,`5 m/s²`,`4 m/s²`,`9.8 m/s²`],
+ correct:2,
+ answer:`4 m/s²`,
+ short:[
+  [`The curve is lowest at x = 2 m, so that point is the equilibrium position, and the motion turns round where the stored energy reaches its largest value, at x = 0 and at x = 4 m. The amplitude is the distance from the centre to either turning point, and not the full width of the curve.`,`A = 2 m`],
+  [`At a turning point the body is momentarily at rest, so the whole of the energy is potential and the height of the curve there fixes the stiffness.`,`U (max) = ${fraction('1','2')}kA² = 10 J`],
+  [`Substitute the amplitude and solve for the spring constant.`,`k = ${fraction('2 × 10','2²')} = 5 N/m`],
+  [`The period of the spring system follows from that stiffness and the 5 kg mass.`,`T = 2π√(${fraction('m','k')})`],
+  [`The pendulum of length 4 m is said to keep the same time, so equate the two periods and square both sides; the factor 2π cancels.`,`${fraction('L','g')} = ${fraction('m','k')}`],
+  [`Put in the length, the mass and the stiffness. The mass over the stiffness is one second squared, so the gravity comes out numerically equal to the length in metres, well below the terrestrial value offered as a distractor.`,`${fraction('4','g')} = ${fraction('5','5')} ⇒ g = 4 m/s²`],
+  [`Correct answer`,`4 m/s²`]
  ]},
 {id:'SHM-551',parent:'SHM-142',variant:2,relevance:{parent:'SHM-142',sharedSkill:'reducing the effective gravity on a submerged bob by the buoyancy density ratio, one minus the density of the liquid over the density of the bob',recoveryPurpose:'controlled transfer'},
  title:'Pendulum period with the bob in a liquid and the thread lengthened',
@@ -778,6 +884,26 @@ function detailedSolution(q){
   [`For statement (4), average each part over one full period, using that the mean of a squared sine and the mean of a squared cosine over a whole period are both one half.`,`K (av) = U (av) = ${fraction('1','4')}kA²`],
   [`Statement (2) makes the same claim over any interval whatever, which is stronger and false. Averaged over the quarter period that begins at the mean position, for example, the body spends that interval nearer the centre than the extreme, so the kinetic share exceeds the potential share.`,`K (av) ≠ U (av) over an arbitrary interval`],
   [`Correct answer`,`(3) and (4)`]
+ ]},
+{id:'SHM-553',parent:'SHM-229',variant:5,relevance:{parent:'SHM-229',sharedSkill:'recognising the shapes of the kinetic, potential and total energy curves plotted against time and against displacement',recoveryPurpose:'representation change'},diagram:'u-against-time-choices-free-shm',
+ title:'Shape of the potential energy against time for a free oscillator',
+ topic:'Energy in simple harmonic motion',
+ source:'JEE Main 2021 (Online) 27th August Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/the-variation-of-displacement-with-time-of-a-particle-execut-jee-main-physics-units-and-measurements-clrqw1gbeztsujc1',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 27th August Morning Shift',
+   questionNumber:'ExamSide EX-054',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`The variation of displacement with time of a particle executing free simple harmonic motion is shown in the upper graph of the figure. Four candidate plots of the potential energy U of the particle against time t are drawn below it, marked I to IV and all on the same time scale. The correct one is`,
+ options:[`Curve I`,`Curve II`,`Curve III`,`Curve IV`],
+ correct:3,
+ answer:`Curve IV`,
+ short:[
+  [`The energy stored in an oscillator depends on the square of the displacement from the mean position, so it can never take a negative value.`,`U = ${fraction('1','2')}kx²`],
+  [`That alone removes three of the four candidates: curves I and II spend half of every cycle below the time axis, and curve III lies below it throughout.`,`U ≥ 0 at every instant`],
+  [`Squaring a sinusoid also halves its period. The displacement passes through the mean position twice in each cycle, and the stored energy falls to zero at both of those instants.`,`U = ${fraction('1','2')}kA² sin²ωt`],
+  [`So the correct plot is a chain of identical humps above the axis, each rising from zero at the mean position to its peak at an extreme and back, two humps for every one cycle of the displacement.`,`U (max) = ${fraction('1','2')}kA² at x = ± A`],
+  [`Correct answer`,`Curve IV`]
  ]},
 {id:'SHM-554',parent:'SHM-185',variant:4,relevance:{parent:'SHM-185',sharedSkill:'tying mass, angular frequency and amplitude together through the total energy one-half m omega squared A squared',recoveryPurpose:'representation change'},
  title:'Potential energy a quarter period after leaving the mean position',
@@ -1024,6 +1150,29 @@ function detailedSolution(q){
   [`That working is not a separate fact standing alongside the assertion: it is the reason the assertion holds, because determining the motion means exactly determining those two constants.`,`two starting values ⇒ two constants ⇒ x(t) and p(t)`],
   [`Correct answer`,`Both (A) and (R) are true and (R) is the correct explanation of (A)`]
  ]},
+{id:'SHM-519',parent:'SHM-550',variant:1,relevance:{parent:'SHM-550',sharedSkill:'reading a force constant and an amplitude off a potential-energy curve whose minimum is not at the origin',recoveryPurpose:'representation change'},
+ title:'Kinetic energy against position for a sine-squared oscillation',
+ topic:'Energy in simple harmonic motion',
+ source:'JEE Main 2025 (Online) 24th January Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pa-particle-oscillates-along-the-x-axis-according-to-the-l-jee-main-physics-ftzvxjslxkmvonwf',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2025 (Online) 24th January Evening Shift',questionNumber:'ExamSide EX-020',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A particle oscillates along the x-axis according to the law x(t) = x₀ sin²(t ÷ 2), where x₀ = 1 m. The kinetic energy K of the particle is plotted against its position x. Which description of that graph is correct?`,
+ options:[`A parabola opening upwards, least at x = 0.5 m and rising to equal non-zero values at x = 0 and at x = 1 m`,`A curve falling to zero at x = 0.5 m with a sharp corner there and rising on either side of it`,`A sharp peak at x = 0.5 m, falling steeply on both sides and tailing off towards x = 0 and x = 1 m`,`A parabola opening downwards, greatest at x = 0.5 m and falling to zero at x = 0 and at x = 1 m`],
+ correct:3,
+ answer:`A parabola opening downwards, greatest at x = 0.5 m and falling to zero at x = 0 and at x = 1 m`,
+ diagram:'',
+ noDiagramReason:'The law of motion is given in the stem, and the four candidate graphs are described in words in the options.',
+ 
+ short:[
+  [`A squared sine is not itself a simple harmonic function, so rewrite it with the double-angle identity before reading anything off it. What appears is an ordinary cosine riding on a constant.`,`x = x₀ sin²(t ÷ 2) = ${fraction('x₀(1 − cos t)','2')}`],
+  [`With x₀ = 1 m the motion is harmonic about x = 0.5 m with an amplitude of 0.5 m, so the particle never leaves the stretch between x = 0 and x = 1 m. The centre of the oscillation is not the origin, and that is where the graph will be symmetric.`,`x = 0.5 − 0.5 cos t, in metres`],
+  [`Differentiating gives the velocity, and the kinetic energy follows from its square. The particle is momentarily at rest at both ends of the stretch and fastest as it passes the centre.`,`v = 0.5 sin t ⇒ K = ${fraction('m v²','2')}`],
+  [`Writing the square of the velocity in terms of the position removes the time. The result is quadratic in x with a negative coefficient, which is a parabola opening downwards, with its vertex at the centre of the oscillation and its two roots at the ends.`,`K = ${fraction('mω²','2')}(0.25 − (x − 0.5)²)`],
+  [`The three rejected shapes all place the particle at rest, or nearly at rest, in the middle of its path and moving fastest at the ends, which is the opposite of what an oscillator does.`,`K = 0 at x = 0 and x = 1, K greatest at x = 0.5`],
+  [`Correct answer`,`A parabola opening downwards, greatest at x = 0.5 m and falling to zero at x = 0 and at x = 1 m`]
+ ]},
 {id:'SHM-520',parent:'SHM-177',variant:2,relevance:{parent:'SHM-177',sharedSkill:'locating the centre and the two extremes of an oscillation, and so its amplitude and the path length between them',recoveryPurpose:'controlled transfer'},
  title:'Path length against net displacement over six and a quarter periods',
  topic:'Displacement, velocity and acceleration',
@@ -1112,6 +1261,26 @@ function detailedSolution(q){
   [`The length of the pendulum does not change, so the period varies as one over the square root of the local gravity, and the ratio of the two periods is the square root of the inverted ratio of the two accelerations.`,`${fraction('T₁','T₂')} = √(${fraction('g₂','g₁')}) = √(${fraction('4','9')}) = ${fraction('2','3')}`],
   [`Cross-multiplying puts that in the form the options use. With the given four seconds at the lower point the pendulum takes six seconds a period at the higher one, so it is slower higher up, as weaker gravity demands.`,`3T₁ = 2T₂, so T₂ = 6 s`],
   [`Correct answer`,`3T₁ = 2T₂`]
+ ]},
+{id:'SHM-524',parent:'SHM-185',variant:6,relevance:{parent:'SHM-185',sharedSkill:'tying mass, angular frequency and amplitude together through the total energy one-half m omega squared A squared',recoveryPurpose:'controlled transfer'},
+ title:'Doubling the oscillating mass at the same amplitude',
+ topic:'Energy in simple harmonic motion',
+ source:'JEE Main 2024 (Online) 4th April Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pin-simple-harmonic-motion-the-total-mechanical-energy-of-jee-main-physics-xjwlcbibvhx1vlv3',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2024 (Online) 4th April Evening Shift',questionNumber:'ExamSide EX-025',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A particle P of mass m hangs from the lower end of a light vertical spring of force constant k, as shown, and the total mechanical energy of the oscillation is E. If the mass of the oscillating particle is doubled while the amplitude is kept the same, the new energy of the system is −`,
+ options:[`${fraction('E','√2')}`,`2E`,`E√2`,`E`],
+ correct:3,
+ answer:`E`,
+ diagram:'hanging-spring-with-block-p',
+ short:[
+  [`Measure the energy of the oscillation from the position the particle hangs at when it is at rest. At the far point of the swing the particle is momentarily still, so the whole of the energy is then stored in the spring.`,`E = ${fraction('k A²','2')}`],
+  [`Neither of the two quantities in that expression is touched. The spring is the same spring, so k is the same, and the amplitude is held fixed by the terms of the question.`,`k and A unchanged ⇒ E unchanged`],
+  [`The heavier particle does oscillate differently: it is slower, its angular frequency falling by a factor of the square root of two, and its maximum speed falls in the same proportion.`,`ω = √(${fraction('k','m')}) ⇒ ω halves in square-root measure`],
+  [`Writing the energy through the speed instead shows why that does not matter. The extra mass and the lower frequency enter the same expression and cancel, returning the spring form above.`,`E = ${fraction('m ω² A²','2')} = ${fraction('k A²','2')}`],
+  [`Correct answer`,`E`]
  ]},
 {id:'SHM-525',level:2,
  title:'Height reached after a bullet embeds itself in a pendulum bob',
@@ -1858,6 +2027,29 @@ function detailedSolution(q){
   [`The cosine of a hundred and fifty degrees is negative, so that root describes a particle at half the amplitude on its way back inwards, and it has to be rejected.`,`cos ${fraction('5π','6')} < 0`],
   [`Correct answer`,`${fraction('π','6')}`]
  ]},
+{id:'SHM-533',level:2,
+ title:'Projection on the x-axis of a particle going round a circle',
+ topic:'Displacement, velocity and acceleration',
+ source:'JEE Main 2023 (Online) 8th April Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pfor-particle-p-revolving-round-the-centre-o-with-radius-o-jee-main-physics-motion-0mxr74yz6jhmomcp',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2023 (Online) 8th April Evening Shift',questionNumber:'ExamSide EX-034',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`A particle P travels anticlockwise round a circle of radius r centred on O, with a constant angular velocity ω. At t = 0 the radius OP makes an angle of 30° with the x-axis, as shown in the figure. The projection of OP on the x-axis at time t is`,
+ options:[`x(t) = cos(ωt − ${fraction('πω','6')})`,
+  `x(t) = cos(ωt)`,
+  `x(t) = r cos(ωt + ${fraction('π','6')})`,
+  `x(t) = r sin(ωt + ${fraction('π','6')})`],
+ correct:2,
+ answer:`x(t) = r cos(ωt + ${fraction('π','6')})`,
+ diagram:'particle-on-circle-projection-from-30-degrees',
+ short:[
+  [`The projection of a particle in uniform circular motion onto a diameter is simple harmonic, and that projection is the radius multiplied by the cosine of the angle the radius makes with the axis.`,`x = r cos θ`],
+  [`Fix the starting angle. The radius is already 30° above the x-axis when the clock starts, and 30° is a sixth of a straight angle.`,`θ₀ = 30° = ${fraction('π','6')}`],
+  [`The radius turns at a steady rate, so by time t it has swept a further angle equal to the angular velocity times the time. The swept angle adds to the starting angle because the particle travels anticlockwise.`,`θ = ωt + ${fraction('π','6')}`],
+  [`The sine form would give the projection on the y-axis instead, and the two options that have lost the factor r do not even have the dimensions of a length, so all three can be set aside.`,`y-projection = r sin(ωt + ${fraction('π','6')})`],
+  [`Correct answer`,`x(t) = r cos(ωt + ${fraction('π','6')})`]
+ ]},
 {id:'SHM-534',parent:'SHM-064',variant:5,relevance:{parent:'SHM-064',sharedSkill:'reducing a block held by several springs to one equivalent constant, series where the force is shared and parallel where the displacement is shared, and putting it into the period or frequency',recoveryPurpose:'direct retry'},
  title:'Period of a block held between two walls by two springs',
  topic:'Springs in series, in parallel, and cut',
@@ -1881,6 +2073,31 @@ function detailedSolution(q){
   [`Put that equivalent constant into the standard period of a spring and a mass.`,`T = 2π√(${fraction('m','k (eq)')})`],
   [`The two options with 1 over 2π in front are frequencies, not periods, and the option with a difference of the constants would make the period infinite for two equal springs.`,`k₁ = k₂ would give T → ∞`],
   [`Correct answer`,`2π√(${fraction('m','k₁ + k₂')})`]
+ ]},
+{id:'SHM-535',parent:'SHM-510',variant:1,relevance:{parent:'SHM-510',sharedSkill:'turning the pendulum period-length relation into the shape of a plotted graph',recoveryPurpose:'representation change'},
+ title:'Shape of the length against square-of-period graph for a pendulum',
+ topic:'The simple pendulum',
+ source:'JEE Main 2023 (Online) 1st February Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pchoose-the-correct-length-l-versus-square-of-time-perio-jee-main-physics-motion-3tjx17uvjrogamnj',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2023 (Online) 1st February Evening Shift',questionNumber:'ExamSide EX-036',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A simple pendulum of length L executes simple harmonic motion with time period T at one fixed place on the earth. The square of the time period, T², is plotted on the vertical axis against the length L on the horizontal axis. Which description fits the graph obtained?`,
+ options:[`A curve that starts high on the T² axis and falls steeply, flattening towards the L-axis`,
+  `A straight line of negative slope, meeting the L-axis at a finite length`,
+  `A curve that rises steeply from the origin and then flattens towards a horizontal level`,
+  `A straight line through the origin, rising with a constant positive slope`],
+ correct:3,
+ answer:`A straight line through the origin, rising with a constant positive slope`,
+ diagram:'',
+ noDiagramReason:'Each option names a shape in words, so the four curves the original paper drew are carried by the option text itself and nothing is measured off a picture.',
+ short:[
+  [`Start from the period of a simple pendulum, since that is the only relation between the two quantities being plotted.`,`T = 2π√(${fraction('L','g')})`],
+  [`Square both sides to be rid of the root, because the root is what hides the shape of the curve.`,`T² = ${fraction('4π²L','g')}`],
+  [`At one fixed place g does not change, so the whole coefficient of L is a constant and there is nothing added on the end.`,`T² = constant × L`],
+  [`A relation of that form is a straight line whose intercept is zero, and its slope is fixed by gravity alone, so the line would be steeper at a place where g is smaller.`,`slope = ${fraction('4π²','g')}`],
+  [`The trap is to remember that a plot of T against L is curved. It is, as the arm of a parabola lying on its side, but squaring the vertical axis is exactly what straightens it.`,`T against L curves, T² against L does not`],
+  [`Correct answer`,`A straight line through the origin, rising with a constant positive slope`]
  ]},
 {id:'SHM-537',parent:'SHM-124',variant:4,relevance:{parent:'SHM-124',sharedSkill:'scaling the period of a loaded spring with the square root of the oscillating mass, and comparing two such oscillators',recoveryPurpose:'direct retry'},
  title:'Angular frequency ratio when the mass on a spring is doubled',
@@ -1947,6 +2164,31 @@ function detailedSolution(q){
   [`Both variables appear squared with positive coefficients and there is no product term, so the curve is closed and centred on the origin. Its two semi-axes are A and Aω, which differ, so it is an ellipse and not a circle.`,`semi-axes A and Aω`],
   [`A sine curve is what velocity against time gives, not velocity against displacement, and a straight line is what acceleration against displacement gives.`,`a = −ω²x is the straight-line pair`],
   [`Correct answer`,`Elliptical`]
+ ]},
+{id:'SHM-543',parent:'SHM-208',variant:4,relevance:{parent:'SHM-208',sharedSkill:'deciding from a drawing that disguises it whether the springs all take the same deformation, so that their constants simply add',recoveryPurpose:'controlled transfer'},
+ title:'Period ratio of two flanking-spring arrangements with different loads',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2022 (Online) 25th July Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pimagep-pin-figure-mathrma-mass-2-mathr-jee-main-physics-motion-ov8mekvm9lg6bxnx',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2022 (Online) 25th July Morning Shift',questionNumber:'ExamSide EX-044',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`In figure (A) a block of mass 2m is fixed on top of a block of mass m, and the lower block is joined to two rigid walls, one on each side, by two springs of spring constant k each. In figure (B) a block of mass m alone is joined to two rigid walls by springs of spring constant k and 2k. Both surfaces are frictionless. The mass in (A) and the mass in (B) are each displaced horizontally through a distance x and released, giving time periods T₁ and T₂ respectively. These follow the relation`,
+ options:[`${fraction('T₁','T₂')} = ${fraction('3','√2')}`,
+  `${fraction('T₁','T₂')} = √(${fraction('3','2')})`,
+  `${fraction('T₁','T₂')} = √(${fraction('2','3')})`,
+  `${fraction('T₁','T₂')} = ${fraction('√2','3')}`],
+ correct:0,
+ answer:`${fraction('T₁','T₂')} = ${fraction('3','√2')}`,
+ diagram:'two-flanking-spring-arrangements-a-and-b',
+ short:[
+  [`In both pictures each spring has its far end on a wall, so displacing the block stretches one and compresses the other and the two restoring forces act the same way. Each pair is in parallel and its constants add.`,`k (eq) = the sum of the two constants`],
+  [`In (A) the upper block is fixed to the lower one, so the two travel together and the mass that oscillates is the whole stack, while the two identical springs give twice k.`,`mass = 3m and k₁ = 2k`],
+  [`In (B) only the single block moves, and the two unequal constants still add because the arrangement is the same kind.`,`mass = m and k₂ = 3k`],
+  [`Write each period from the standard spring and mass result.`,`T₁ = 2π√(${fraction('3m','2k')}) and T₂ = 2π√(${fraction('m','3k')})`],
+  [`Divide one by the other. The factor 2π, the mass m and the stiffness k all cancel, leaving a pure number under the root.`,`${fraction('T₁','T₂')} = √(${fraction('9','2')})`],
+  [`Take the root of the numerator out, which is what separates this from the two options that leave the whole ratio inside a root.`,`√9 = 3`],
+  [`Correct answer`,`${fraction('T₁','T₂')} = ${fraction('3','√2')}`]
  ]},
 {id:'SHM-544',parent:'SHM-573',variant:1,relevance:{parent:'SHM-573',sharedSkill:'substituting a measured length and period straight into the pendulum formula and solving it for the remaining quantity',recoveryPurpose:'representation change'},
  title:'Length of a pendulum read from its equation of motion',
@@ -2225,6 +2467,26 @@ function detailedSolution(q){
   [`Collect the mass on one side.`,`3m = 3`],
   [`Correct answer`,`m = 1 kg`]
  ]},
+{id:'SHM-663',parent:'SHM-064',variant:8,relevance:{parent:'SHM-064',sharedSkill:'reducing a block held by several springs to one equivalent constant, series where the force is shared and parallel where the displacement is shared, and putting it into the period or frequency',recoveryPurpose:'representation change'},type:'numerical',
+ title:'Period of a block flanked by two identical springs',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2023 (Online) 24th January Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pimagep-pa-block-of-a-mass-2-kg-is-attached-with-two-jee-main-physics-motion-980a3i6kdmqylm4n',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2023 (Online) 24th January Morning Shift',questionNumber:'ExamSide EX-164',
+   printedAnswer:'5',verifiedAnswer:'5'},
+ question:`A block of mass 2 kg is attached to two identical springs of spring constant 20 N/m each. The block is placed on a frictionless surface and the outer ends of the springs are attached to rigid supports (see figure). When the mass is displaced from its equilibrium position it executes simple harmonic motion. The time period of oscillation is π divided by √x in SI units. The value of x is ____________.`,
+ answer:5,
+ unit:'',
+ diagram:'two-springs-flanking-a-block',
+ short:[
+  [`Displacing the block stretches the spring behind it and compresses the one in front, and both then push it back towards the centre, so the two restoring forces add rather than oppose.`,`F = −(k₁ + k₂)x`],
+  [`Springs that act together in this way combine as a parallel pair, whatever side of the block they sit on.`,`k (eq) = 20 + 20 = 40 N/m`],
+  [`Put the combined constant and the 2 kg block into the period of a spring oscillator.`,`T = 2π√(${fraction('2','40')})`],
+  [`Simplify the root; the factor of two outside cancels against the four inside it.`,`T = ${fraction('2π','√20')} = ${fraction('π','√5')}`],
+  [`The question writes the period as π divided by the root of x, so the two forms must agree term by term.`,`√x = √5`],
+  [`Correct answer`,`x = 5`]
+ ]},
 {id:'SHM-664',parent:'SHM-142',variant:3,relevance:{parent:'SHM-142',sharedSkill:'reducing the effective gravity on a submerged bob by the buoyancy density ratio, one minus the density of the liquid over the density of the bob',recoveryPurpose:'direct retry'},type:'numerical',
  title:'Period of a pendulum whose bob is lowered into water',
  topic:'The pendulum when gravity is not the only force',
@@ -2268,6 +2530,47 @@ function detailedSolution(q){
   [`Convert the angular frequency to a period.`,`T = ${fraction('2π','4')} = ${fraction('π','2')} s`],
   [`Correct answer`,`K = 2`]
  ]},
+{id:'SHM-666',parent:'SHM-577',variant:3,relevance:{parent:'SHM-577',sharedSkill:'carrying momentum through a mass gently joined to an oscillator at its mean position, where the two share a speed and the amplitude changes',recoveryPurpose:'direct retry'},type:'numerical',
+ title:'Amplitude after a rider is laid on at the mean position',
+ topic:'Two bodies on one spring',
+ source:'JEE Main 2022 (Online) 27th July Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pa-mass-09-mathrmkg-attached-to-a-horizontal-spr-jee-main-physics-motion-bgxxcmm2o1ygwec4',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2022 (Online) 27th July Morning Shift',questionNumber:'ExamSide EX-167',
+   printedAnswer:'16',verifiedAnswer:'16'},
+ question:`A mass of 0.9 kg attached to a horizontal spring executes SHM with an amplitude A₁. When this mass passes through its mean position a smaller mass of 124 g is placed over it, and both masses then move together with amplitude A₂. If the ratio of A₁ to A₂ is α to (α − 1), then the value of α will be ___________.`,
+ answer:16,
+ unit:'',
+ diagram:'',
+ noDiagramReason:'The two stages are described fully in words, and the step that matters is a momentum balance rather than a geometry.',
+ short:[
+  [`The rider is laid on at the mean position, where the spring is at its natural length and exerts no horizontal force, so nothing outside the pair acts along the line of motion and the horizontal momentum carries through the moment of contact.`,`m₁v₁ = (m₁ + m₂)v₂`],
+  [`Each of those speeds is the speed at the centre of its own stage, the amplitude times the angular frequency, and the angular frequency depends on the mass being carried.`,`v₁ = A₁√(${fraction('k','m₁')}) · v₂ = A₂√(${fraction('k','m₁ + m₂')})`],
+  [`Substitute both into the momentum balance; one factor of the mass cancels against the root, so each side keeps only the square root of its own mass.`,`A₁√(k m₁) = A₂√(k (m₁ + m₂))`],
+  [`The spring is the same one throughout, so the force constant cancels, leaving the amplitude ratio in terms of the masses in kilograms.`,`${fraction('A₁','A₂')} = √(${fraction('1.024','0.9')}) = ${fraction('16','15')}`],
+  [`The question states that ratio as α to α − 1, so match the two forms.`,`15α = 16α − 16`],
+  [`Correct answer`,`α = 16`]
+ ]},
+{id:'SHM-667',parent:'SHM-064',variant:9,relevance:{parent:'SHM-064',sharedSkill:'reducing a block held by several springs to one equivalent constant, series where the force is shared and parallel where the displacement is shared, and putting it into the period or frequency',recoveryPurpose:'controlled transfer'},type:'numerical',
+ title:'Two springs rearranged from series to parallel',
+ topic:'Springs in series, in parallel, and cut',
+ source:'JEE Main 2022 (Online) 26th July Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pas-per-given-figures-two-springs-of-spring-constants-k-jee-main-physics-motion-rwxqv0dz3nm2lxol',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2022 (Online) 26th July Evening Shift',questionNumber:'ExamSide EX-168',
+   printedAnswer:'2',verifiedAnswer:'2'},
+ question:`As per the given figures, two springs of spring constants k and 2k are connected to a mass m. If the period of oscillation in figure (a) is 3 s, then the period of oscillation in figure (b) will be √x s. The value of x is ___________.`,
+ answer:2,
+ unit:'',
+ diagram:'springs-in-series-then-in-parallel',
+ short:[
+  [`In figure (a) the springs hang one below the other, so the whole weight passes through both and their extensions add. Compliances, not constants, are what add here.`,`${fraction('1','k (a)')} = ${fraction('1','k')} + ${fraction('1','2k')}`],
+  [`Invert to get the series value, which is smaller than either spring on its own.`,`k (a) = ${fraction('2k','3')}`],
+  [`In figure (b) both springs run from the support to the block, so they stretch by the same amount and share the load, and now the constants add.`,`k (b) = k + 2k = 3k`],
+  [`The period varies inversely as the square root of the constant and the mass is the same in both figures, so only the ratio of the two constants is needed.`,`${fraction('T (b)','T (a)')} = √(${fraction('k (a)','k (b)')}) = √(${fraction('2','9')})`],
+  [`Apply that factor to the three seconds given for figure (a).`,`T (b) = 3 × ${fraction('√2','3')} = √2 s`],
+  [`Correct answer`,`x = 2`]
+ ]},
 {id:'SHM-668',parent:'SHM-606',variant:1,relevance:{parent:'SHM-606',sharedSkill:'changing the speed of an oscillator impulsively at a stated displacement, where only the kinetic part of the energy is altered and the stored potential part is untouched',recoveryPurpose:'controlled transfer'},type:'numerical',
  title:'New amplitude after an air jet triples the speed',
  topic:'Displacement, velocity and acceleration',
@@ -2288,6 +2591,26 @@ function detailedSolution(q){
   [`Neither the spring nor the mass has changed, so the angular frequency is the same on both sides and cancels. Square what is left.`,`9 × 75 = A₂² − 25`],
   [`Collect the terms.`,`A₂² = 675 + 25 = 700`],
   [`Correct answer`,`A₂ = √700 cm, so x = 700`]
+ ]},
+{id:'SHM-669',parent:'SHM-234',variant:6,relevance:{parent:'SHM-234',sharedSkill:'converting the whole of the energy stored at the turning point into kinetic energy at the mean position to get a speed or a maximum kinetic energy',recoveryPurpose:'direct retry'},type:'numerical',
+ title:'Maximum speed of a bob released from sixty degrees',
+ topic:'Energy in simple harmonic motion',
+ source:'JEE Main 2022 (Online) 28th June Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pa-pendulum-is-suspended-by-a-string-of-length-250-cm-the-jee-main-physics-motion-kzrqfvsnqqbonlah',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2022 (Online) 28th June Morning Shift',questionNumber:'ExamSide EX-170',
+   printedAnswer:'5',verifiedAnswer:'5'},
+ question:`A pendulum is suspended by a string of length 250 cm. The mass of the bob of the pendulum is 200 g. The bob is pulled aside until the string is at 60° to the vertical, as shown in the figure. After the bob is released, the maximum velocity attained by the bob will be ____________ m s⁻¹. (Take g = 10 m/s²)`,
+ answer:5,
+ unit:'m/s',
+ diagram:'pendulum-held-at-sixty-degrees',
+ short:[
+  [`The string stays taut and pulls at right angles to the motion, so it does no work; the bob trades height for speed and is fastest at the lowest point of the arc.`,`${fraction('1','2')}mv² = mgh`],
+  [`The height lost is the part of the string length that the lean takes off the vertical, so it is set by the angle rather than by the arc travelled.`,`h = ℓ(1 − cos 60°)`],
+  [`Put in the length in metres and the cosine of sixty degrees.`,`h = 2.5 × (1 − 0.5) = 1.25 m`],
+  [`The mass appears on both sides of the energy balance and cancels, so the 200 g given in the stem never enters the answer.`,`v = √(2gh)`],
+  [`Evaluate with g taken as ten.`,`v = √(2 × 10 × 1.25) = √25`],
+  [`Correct answer`,`v = 5 m/s`]
  ]},
 {id:'SHM-670',parent:'SHM-010',variant:9,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'controlled transfer'},type:'numerical',
  title:'Time from the extreme to half the amplitude',
@@ -2372,6 +2695,26 @@ function detailedSolution(q){
   [`Square the two conditions and add them. The squared sine and cosine add to one, which removes the unknown phase and leaves the amplitude alone.`,`A² = 2² + 2² = 8`],
   [`Take the root, keeping the form the question asks for.`,`A = 2√2 cm`],
   [`Correct answer`,`x = 2`]
+ ]},
+{id:'SHM-675',parent:'SHM-094',variant:4,relevance:{parent:'SHM-094',sharedSkill:'replacing two unanchored masses on a spring by one body of the reduced mass to get the period',recoveryPurpose:'direct retry'},type:'numerical',
+ title:'Angular frequency of two blocks joined by two springs',
+ topic:'Two bodies on one spring',
+ source:'JEE Main 2021 (Online) 25th July Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/in-the-reported-figure-two-bodies-a-and-b-of-masses-200-g-a-jee-main-physics-units-and-measurements-ie3t6lwpxzcbmmhe',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 25th July Morning Shift',questionNumber:'ExamSide EX-176',
+   printedAnswer:'10',verifiedAnswer:'10'},
+ question:`In the figure, two bodies A and B of masses 200 g and 800 g are attached to a system of two springs S₁ and S₂ of spring constants k and 4k. The springs are held in a stretched position with some extension and the system is then released. The horizontal surface is frictionless. The angular frequency will be ____________ rad/s when k = 20 N/m.`,
+ answer:10,
+ unit:'rad/s',
+ diagram:'two-blocks-joined-by-two-springs',
+ short:[
+  [`Neither block is tied down and the floor is frictionless, so the pair oscillates about its own centre of mass. The relative motion of the two is that of a single body of the reduced mass.`,`μ = ${fraction('m (A) m (B)','m (A) + m (B)')}`],
+  [`Put in the two masses in kilograms.`,`μ = ${fraction('0.2 × 0.8','0.2 + 0.8')} = 0.16 kg`],
+  [`The two springs lie one behind the other between the blocks, so the same tension runs through both and their extensions add; that is a series pair.`,`k (eq) = ${fraction('k × 4k','k + 4k')} = ${fraction('4k','5')}`],
+  [`With k equal to twenty newtons per metre this gives the effective constant, which is smaller than either spring alone.`,`k (eq) = ${fraction('4 × 20','5')} = 16 N/m`],
+  [`The angular frequency uses that effective constant against the reduced mass, not against either block on its own.`,`ω = √(${fraction('16','0.16')}) = √100`],
+  [`Correct answer`,`ω = 10 rad/s`]
  ]},
 {id:'SHM-564',level:2,
  title:'Time for a damped amplitude to halve',
@@ -2461,6 +2804,27 @@ function detailedSolution(q){
   [`Only the second-quadrant angle has a positive sine together with a negative cosine, which is the particle sitting above the centre and already on its way back towards it.`,`sin φ₀ > 0 and cos φ₀ < 0`],
   [`Correct answer`,`${fraction('5π','6')}`]
  ]},
+{id:'SHM-572',parent:'SHM-533',variant:1,relevance:{parent:'SHM-533',sharedSkill:'treating simple harmonic motion as the projection of uniform circular motion onto a diameter',recoveryPurpose:'controlled transfer'},
+ title:'Restoring force per unit mass at the end of the diameter',
+ topic:'Displacement, velocity and acceleration',
+ source:'JEE Main 2021 (Online) 25th February Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/the-point-a-moves-with-a-uniform-speed-along-the-circumferen-jee-main-physics-units-and-measurements-e3so6ydwwu7eogyi',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 25th February Evening Shift',questionNumber:'ExamSide EX-073',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`The point A moves with a uniform speed along the circumference of a circle of radius 0.36 m and covers 30° in 0.1 s. The perpendicular projection P of A on the diameter MN represents the simple harmonic motion of P. The restoring force per unit mass when P touches M will be`,
+ options:[`9.87 N`,`0.49 N`,`50 N`,`100 N`],
+ correct:0,
+ answer:`9.87 N`,
+ diagram:'circle-projection-onto-diameter-mn',
+ short:[
+  [`The projection of uniform circular motion on a diameter is simple harmonic, with the radius of the circle as the amplitude and the angular speed of A as the angular frequency.`,`A = 0.36 m`],
+  [`Thirty degrees is one twelfth of a revolution, so a full revolution, which is one complete oscillation of P, takes twelve times as long.`,`T = 12 × 0.1 s = 1.2 s`],
+  [`Convert that period into an angular frequency.`,`ω = ${fraction('2π','1.2')} = ${fraction('5π','3')} rad/s`],
+  [`The restoring force on an oscillator is the mass times ω² times the displacement, so dividing it by the mass leaves ω² times the displacement. P touches M at the end of the diameter, where the displacement is the whole amplitude.`,`${fraction('F','m')} = ω²A`],
+  [`Substitute. The data are chosen so that the result comes out as exactly π².`,`${fraction('F','m')} = ${fraction('25π²','9')} × 0.36 = π²`],
+  [`Correct answer`,`9.87 N`]
+ ]},
 {id:'SHM-573',level:1,
  title:'Gravity from the period of a two metre pendulum',
  topic:'The simple pendulum',
@@ -2494,7 +2858,7 @@ function detailedSolution(q){
  options:[`${fraction('1','2π')}√(${fraction('2k','Mg sin α')})`,`${fraction('1','2π')}√(${fraction('k','Mg sin α')})`,`${fraction('1','2π')}√(${fraction('2k','M')})`,`${fraction('1','2π')}√(${fraction('k','2M')})`],
  correct:2,
  answer:`${fraction('1','2π')}√(${fraction('2k','M')})`,
- diagram:'block-between-two-springs-on-an-incline',
+ diagram:'block-between-two-springs-on-an-incline-alpha',
  short:[
   [`The component of the weight along the slope is a constant force. A constant force moves the equilibrium position further down the slope but alters neither the stiffness nor the frequency, so the angle of the incline cannot appear in the answer.`,`Mg sin α only shifts the centre of oscillation`],
   [`Measure the displacement from that shifted equilibrium. Moving the block along the slope stretches one spring and compresses the other by the same amount, so the two restoring forces add.`,`k(eff) = k + k = 2k`],
@@ -2525,6 +2889,28 @@ function detailedSolution(q){
   [`Add the two contributions.`,`0.001 + 0.01025 = 0.01125`],
   [`Correct answer`,`1.13%`]
  ]},
+{id:'SHM-577',level:3,
+ title:'New amplitude when a mass is placed on at the centre',
+ topic:'The spring and mass oscillator',
+ source:'JEE Main 2021 (Online) 24th February Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/in-the-given-figure-a-mass-m-is-attached-to-a-horizontal-sp-jee-main-physics-units-and-measurements-9bmjoiaclnalfldb',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2021 (Online) 24th February Morning Shift',questionNumber:'ExamSide EX-078',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`In the given figure, a mass M is attached to a horizontal spring which is fixed on one side to a rigid support. The spring constant of the spring is k. The mass oscillates on a frictionless surface with time period T and amplitude A. When the mass is in the equilibrium position, as shown in the figure, another mass m is gently fixed upon it. The new amplitude of oscillations will be`,
+ options:[`A√(${fraction('M','M − m')})`,`A√(${fraction('M − m','M')})`,`A√(${fraction('M + m','M')})`,`A√(${fraction('M','M + m')})`],
+ correct:3,
+ answer:`A√(${fraction('M','M + m')})`,
+ diagram:'mass-placed-on-a-block-at-the-equilibrium-position',
+ short:[
+  [`The block is at the equilibrium position, which is where it moves fastest, and that greatest speed is the amplitude times the angular frequency.`,`v = Aω = A√(${fraction('k','M')})`],
+  [`The second mass is fixed on gently, which is a perfectly inelastic join. The spring is at its natural length at that instant and so exerts no impulse along the motion, leaving the momentum conserved.`,`MAω = (M + m)v′`],
+  [`Solve for the speed the pair share immediately afterwards. The system is heavier, so it is slower.`,`v′ = ${fraction('MAω','M + m')}`],
+  [`The spring has not changed but the oscillating mass has, so the new angular frequency is smaller as well.`,`ω′ = √(${fraction('k','M + m')})`],
+  [`The join happened at the centre, which remains the centre of the new motion, so that shared speed is again the maximum speed and the amplitude is it divided by the new angular frequency.`,`A′ = ${fraction('v′','ω′')}`],
+  [`Substituting both and cancelling leaves a ratio below one, which it has to be: kinetic energy is lost in an inelastic join, so the three options that enlarge the swing can be set aside.`,`${fraction('A′','A')} = √(${fraction('M','M + m')}) < 1`],
+  [`Correct answer`,`A√(${fraction('M','M + m')})`]
+ ]},
 {id:'SHM-578',level:3,
  title:'Angular frequency from a squared-sine displacement',
  topic:'The spring and mass oscillator',
@@ -2547,6 +2933,28 @@ function detailedSolution(q){
   [`The angular frequency of the actual motion is the usual spring value, and it has already been identified as twice ω.`,`2ω = √(${fraction('2g','y₀')})`],
   [`Divide by two, which puts a factor of four under the root.`,`ω = √(${fraction('2g','4y₀')})`],
   [`Correct answer`,`√(${fraction('g','2y₀')})`]
+ ]},
+{id:'SHM-579',parent:'SHM-577',variant:1,relevance:{parent:'SHM-577',sharedSkill:'carrying momentum through a mass gently joined to an oscillator at its mean position, where the two share a speed and the amplitude changes',recoveryPurpose:'inverse check'},
+ title:'Amplitude after half the block breaks away at the centre',
+ topic:'The spring and mass oscillator',
+ source:'JEE Main 2020 (Online) 3rd September Evening Slot · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/a-block-of-mass-m-attached-to-a-massless-spring-is-performin-jee-main-physics-simple-harmonic-motion-zpuljd35gecwqyf3',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2020 (Online) 3rd September Evening Slot',questionNumber:'ExamSide EX-080',
+   printedAnswer:'D',verifiedAnswer:'D'},
+ question:`A block of mass m attached to a massless spring is performing oscillatory motion of amplitude A on a frictionless horizontal plane. If half of the mass of the block breaks off when it is passing through its equilibrium point, the amplitude of oscillation for the remaining system becomes fA. The value of f is`,
+ options:[`1`,`${fraction('1','2')}`,`√2`,`${fraction('1','√2')}`],
+ correct:3,
+ answer:`${fraction('1','√2')}`,
+ diagram:'',
+ noDiagramReason:'A block on a horizontal spring with the break occurring at the centre; the argument is about the speed and the stiffness rather than about the arrangement.',
+ short:[
+  [`Just before the break the block is crossing the equilibrium position, where it moves fastest, at the amplitude times the angular frequency.`,`v = A√(${fraction('k','m')})`],
+  [`The two halves merely separate, so neither exerts an impulse on the other and the half that stays on the spring keeps that same speed. This is what distinguishes the problem from one where a mass is added.`,`the speed at the centre is unchanged`],
+  [`The spring is the same but it now has half the mass to move, so the oscillation becomes quicker.`,`ω′ = √(${fraction('2k','m')})`],
+  [`The break happens at the centre, which is still the centre of the new motion, so that unchanged speed is again the maximum speed and the new amplitude is it divided by the new angular frequency.`,`A′ = ${fraction('v','ω′')}`],
+  [`The ratio of the new amplitude to the old is therefore the inverse ratio of the two angular frequencies, in which the stiffness and the mass both cancel and the square root of one half is left.`,`${fraction('A′','A')} = ${fraction('ω','ω′')}`],
+  [`Correct answer`,`${fraction('1','√2')}`]
  ]},
 {id:'SHM-477',level:3,
  title:'Period of a block hung from a movable pulley with a spring in the string',
@@ -2683,6 +3091,32 @@ function detailedSolution(q){
   [`A phase of π ÷ 4 is an eighth of a full turn of 2π, so the interval is an eighth of the period whatever the period happens to be.`,`t = ${fraction('T','8')}`],
   [`Correct answer`,`${fraction('5','8')}`]
  ]},
+{id:'SHM-504',parent:'SHM-184',variant:6,relevance:{parent:'SHM-184',sharedSkill:'building the physical-pendulum period from the moment of inertia about the pivot over mass times the centre-of-mass distance, and reading off the equivalent simple-pendulum length',recoveryPurpose:'controlled transfer'},
+ title:'Period of a disc swinging about a tangent lying in its plane',
+ topic:'Rigid bodies that swing',
+ source:'JEE Main 2026 (Online) 4th April Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/pa-uniform-disc-of-radius-r-and-mass-m-is-free-to-osci-jee-main-physics-units-and-measurements-eti5z6qkgagkk8ad',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2026 (Online) 4th April Evening Shift',
+   questionNumber:'ExamSide EX-005',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`A uniform disc of radius R and mass M is free to oscillate about the fixed horizontal axis A shown in the figure. The axis touches the rim of the disc at its highest point and lies in the plane of the disc, so the disc swings out of that plane. For small oscillations the time period is ______. Here g is the acceleration due to gravity.`,
+ options:[`2π√(${fraction('5R','4g')})`,
+  `2π√(${fraction('2R','3g')})`,
+  `2π√(${fraction('3R','2g')})`,
+  `2π√(${fraction('3R','g')})`],
+ correct:0,
+ answer:`2π√(${fraction('5R','4g')})`,
+ diagram:'disc-swinging-about-in-plane-tangent',
+ short:[
+  [`The disc is a physical pendulum. Gravity acts at the centre of mass and provides a restoring torque about the fixed axis, and for a small angle the sine of the angle may be replaced by the angle itself, which is what makes the motion harmonic.`,`τ = −Mgd sin θ ≈ −Mgdθ`],
+  [`Compare that with the equation of angular simple harmonic motion to get the period in terms of the moment of inertia about the axis and the distance from the axis to the centre of mass.`,`T = 2π√(${fraction('I','Mgd')})`],
+  [`The axis is a tangent and the centre lies one radius from the point of contact, so that distance is the radius.`,`d = R`],
+  [`Because the axis lies in the plane of the disc, the parallel axis through the centre is a diameter and not the axis at right angles to the disc. The two diameters share the perpendicular-axis value equally, so each carries half of it.`,`I (dia) = ${fraction('1','2')} × ${fraction('1','2')}MR² = ${fraction('1','4')}MR²`],
+  [`Shift that to the tangent with the parallel axis theorem.`,`I = ${fraction('1','4')}MR² + MR² = ${fraction('5','4')}MR²`],
+  [`Substitute, and note that the mass cancels. Taking the perpendicular axis by mistake would give three halves MR² and the period of the third option, which is the trap this question sets.`,`T = 2π√(${fraction('5MR²','4MgR')})`],
+  [`Correct answer`,`2π√(${fraction('5R','4g')})`]
+ ]},
 {id:'SHM-505',level:2,
  title:'First instants at which the velocity and the acceleration vanish',
  topic:'Phase, and intervals read from it',
@@ -2801,6 +3235,28 @@ function detailedSolution(q){
   [`Halving the period therefore divides the length by four, not by two. Dividing by two instead gives 15 cm, which is the third option.`,`L₂ = ${fraction('30','4')} cm`],
   [`Correct answer`,`7.5`]
  ]},
+{id:'SHM-510',level:2,
+ title:'Shape of a plot of one over the period squared against length',
+ topic:'The simple pendulum',
+ source:'JEE Main 2026 (Online) 22nd January Evening Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/using-a-simple-pendulum-experiment-g-is-determind-by-measu-jee-main-physics-units-and-measurements-gtfhnziaxzvrgf3a',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2026 (Online) 22nd January Evening Shift',
+   questionNumber:'ExamSide EX-011',
+   printedAnswer:'A',verifiedAnswer:'A'},
+ question:`In a simple pendulum experiment g is determined by measuring the time period T for a series of pendulum lengths L. The quantity 1 divided by T² is plotted against L. The figure shows four graphs, labelled (a), (b), (c) and (d). Which one represents the correct relation?`,
+ options:[`Graph (a)`,`Graph (b)`,`Graph (c)`,`Graph (d)`],
+ correct:0,
+ answer:`Graph (a)`,
+ diagram:'inverse-period-squared-against-length-four-panels',
+ short:[
+  [`Start from the period of a simple pendulum and square both sides, which clears the square root.`,`T² = ${fraction('4π²L','g')}`],
+  [`Invert, because the quantity actually plotted is one over the square of the period.`,`${fraction('1','T²')} = ${fraction('g','4π²L')}`],
+  [`Nothing but L changes during the experiment, so the plotted quantity varies inversely as the length.`,`${fraction('1','T²')} = ${fraction('c','L')} with c = ${fraction('g','4π²')}`],
+  [`A relation of that form is a rectangular hyperbola: the product of the two plotted quantities keeps a fixed value. The curve falls steeply at small lengths and then flattens, drawing closer and closer to the length axis without ever meeting it.`,`${fraction('1','T²')} × L = c`],
+  [`That settles the three wrong panels. The straight line of panel (d) would mean the plotted quantity falling by equal steps for equal increases in length, and it would reach zero at a finite length. The rising curve of panel (c) would mean a longer pendulum swinging faster. Panel (b) does fall, but it steepens instead of flattening and so cuts the length axis, which would make the period infinite at a finite length.`,`a finite intercept on the L axis would require T to become infinite there`],
+  [`Correct answer`,`Graph (a)`]
+ ]},
 {id:'SHM-511',parent:'SHM-360',variant:4,relevance:{parent:'SHM-360',sharedSkill:'writing the kinetic energy as a squared sinusoid and using the double-angle identity to read off its mean value and its frequency',recoveryPurpose:'representation change'},
  title:'Oscillator frequency found from the frequency of its kinetic energy',
  topic:'Energy in simple harmonic motion',
@@ -2871,6 +3327,35 @@ function detailedSolution(q){
   [`Set the two angular accelerations equal. The acceleration due to gravity is common to both and cancels.`,`${fraction('g','ℓ₁')}θ₁ = ${fraction('g','ℓ₂')}θ₂`],
   [`Multiply through by both lengths to clear the denominators. As a check on which length goes with which angle: the longer pendulum has the smaller angular acceleration for a given angle, so it needs the larger angle to match, and the angle therefore pairs with the other pendulum's length.`,`${fraction('θ₁','ℓ₁')} = ${fraction('θ₂','ℓ₂')}`],
   [`Correct answer`,`θ₁ℓ₂ = θ₂ℓ₁`]
+ ]},
+{id:'SHM-514',parent:'SHM-051',variant:3,relevance:{parent:'SHM-051',sharedSkill:'matching the contact force that the greatest SHM acceleration demands, m omega squared A, against the most the contact can supply',recoveryPurpose:'representation change'},
+ title:'Which statements hold for a block riding on a spring-driven block',
+ topic:'Friction and contact in an oscillating system',
+ source:'JEE Main 2025 (Online) 3rd April Morning Shift · Simple Harmonic Motion',
+ url:'https://questions.examside.com/past-years/jee/question/ptwo-blocks-of-masses-m-and-mmm-are-placed-on-a-f-jee-main-physics-units-and-measurements-8qeybsbtlpwkmhsp',
+ sourceRef:{documentName:'ExamSide, JEE Main previous-year questions, Simple Harmonic Motion',
+   paper:'JEE Main 2025 (Online) 3rd April Morning Shift',
+   questionNumber:'ExamSide EX-015',
+   printedAnswer:'C',verifiedAnswer:'C'},
+ question:`Two blocks of masses m and M, with M greater than m, are placed on a frictionless table as shown in the figure. The block of mass M rests on the table and is joined to a rigid support by a massless spring of force constant k; the block of mass m rests on top of it. The coefficient of friction between the two blocks is μ. The system is displaced slightly and released, and x denotes the displacement of the blocks from the mean position. Consider the following statements.
+A. The time period of small oscillation of the two blocks is T = 2π√((m + M) ÷ k).
+B. The acceleration of the blocks is a = −kx ÷ (M + m).
+C. The magnitude of the frictional force on the upper block is mμ|x| ÷ (M + m).
+D. The maximum amplitude of the upper block, if it does not slip, is μ(M + m)g ÷ k.
+E. The maximum frictional force can be μ(M + m)g.
+Choose the correct answer from the options given below.`,
+ options:[`B, C and D only`,`C, D and E only`,`A, B and D only`,`A, B and C only`],
+ correct:2,
+ answer:`A, B and D only`,
+ diagram:'block-riding-on-spring-driven-block',
+ short:[
+  [`So long as the two blocks move together they behave as one body of their combined mass carried on the spring, so the period carries that total mass. Statement A is correct.`,`T = 2π√(${fraction('M + m','k')})`],
+  [`The table is frictionless, so the spring force is the only horizontal force on the pair. Dividing it by the combined mass gives their common acceleration, which is directed back towards the mean position. Statement B is correct.`,`a = −${fraction('kx','M + m')}`],
+  [`Nothing acts horizontally on the upper block except friction, so friction alone must supply its share of that acceleration. Statement C has μ standing where k belongs; those are different quantities and are not even of the same dimensions, so statement C is wrong.`,`f = ma = ${fraction('mk|x|','M + m')}`],
+  [`What friction can supply is limited by the normal reaction at the contact, and the only thing pressing the upper block on to the lower one is its own weight. The lower mass M never presses on that surface, so statement E, which uses the combined weight, is wrong.`,`f (max) = μmg`],
+  [`The demand on friction is greatest where the acceleration is greatest, which is at the extreme of the swing where the displacement equals the amplitude. Set the demand there against what friction can supply.`,`${fraction('mkA','M + m')} = μmg`],
+  [`The mass m cancels, which is why the surviving expression carries only the combined mass. Statement D is correct, so the statements that hold are A, B and D.`,`A = ${fraction('μ(M + m)g','k')}`],
+  [`Correct answer`,`A, B and D only`]
  ]},
 {id:'SHM-515',parent:'SHM-224',variant:2,relevance:{parent:'SHM-224',sharedSkill:'adding several collinear oscillations of one frequency as phasor arrows and resolving them about a chosen reference direction',recoveryPurpose:'controlled transfer'},
  title:'Greatest acceleration when two motions sixty degrees apart combine',
@@ -9647,6 +10132,569 @@ case 'soln-shm-121':{
   s+=txt(230,350,'g is 5% lower, so ℓ must be 5% shorter',M,14);
   break;
  }
+
+ // --- ExamSide batch figures (blocks.js) ---
+case 'two-blocks-joined-by-two-springs':{
+  /* SHM-675 -- A (200 g) and B (800 g) on the frictionless horizontal surface, joined
+     by S1 (k) then S2 (4k) one behind the other, so the pair is a series spring
+     between the two bodies. The junction between the springs carries a dot because it
+     is free: nothing in this figure is anchored to anything, which is the whole reason
+     the motion is reduced-mass motion. S2 is drawn with more, tighter turns than S1 so
+     it reads as the stiffer spring; B is the wider block for the larger mass. */
+  height=190;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const gy=150,by=98,bh=52,mid=by+bh/2;
+  s+=ground(25,gy,410);
+  s+=rect(50,by,56,bh,'A',Y);
+  s+=txt(78,88,'200 g',M,14);
+  s+=line(106,mid,116,mid,B,2.2)+spring(116,mid,206,mid,7,10)+line(206,mid,216,mid,B,2.2);
+  s+=dot(216,mid,B);                                  // free junction between the two springs
+  s+=line(216,mid,226,mid,B,2.2)+spring(226,mid,324,mid,10,8)+line(324,mid,334,mid,B,2.2);
+  s+=rect(334,by,76,bh,'B',Y);
+  s+=txt(372,88,'800 g',M,14);
+  s+=txt(161,70,'S₁',B,17)+txt(161,90,'k',B,17);
+  s+=txt(275,70,'S₂',B,17)+txt(275,90,'4k',B,17);
+  s+=txt(230,178,'frictionless horizontal surface',M,13);
+  break;
+ }
+ case 'hanging-spring-with-block-p':{
+  /* SHM-524 -- the particle P of mass m on the lower end of the light vertical spring
+     of force constant k. The stem says only "as shown", and the question is about the
+     energy of the oscillation, so this figure carries NO amplitude marks, no mean
+     position line and no arrows; any of those would begin the reasoning for the reader. */
+  height=226;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const cx=230,ceil=48;
+  s+=ground(cx-70,ceil,140,true);
+  s+=spring(cx,ceil,cx,152,6,10);
+  s+=txt(cx-24,106,'k',B,17,'end');
+  s+=line(cx,152,cx,160,B,2.2);
+  s+=rect(cx-32,160,64,48,'m',Y);
+  s+=txt(cx+48,188,'P',Y,17,'start');
+  break;
+ }
+ case 'mass-placed-on-a-block-at-the-equilibrium-position':{
+  /* SHM-577 -- M on the frictionless floor, joined to the rigid support by the spring
+     of constant k, drawn at its natural length because the stem has the block at its
+     equilibrium position; that position is marked on the floor under the block. The
+     second mass m is held clear of M with a short arrow down on to it, because the stem
+     fixes it on at that instant rather than having it sit there all along. */
+  height=230;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=172,mid=144;
+  s+=vwall(34,44,gy,-1);
+  s+=ground(30,gy,400);
+  s+=line(34,mid,46,mid,B,2.2)+spring(46,mid,240,mid,10,10)+line(240,mid,250,mid,B,2.2);
+  s+=txt(143,120,'k',B,17);
+  s+=rect(250,116,80,56,'M',Y);
+  s+=rect(268,48,44,34,'m',B);                        // held clear of M, not yet in contact
+  s+=arrow(290,86,290,111,'',W);
+  s+=txt(320,106,'gently fixed',M,14,'start');
+  s+=txt(118,200,'frictionless',M,13);
+  s+=line(290,gy,290,196,M,1.4,true);
+  s+=txt(290,216,'equilibrium position',M,13);
+  break;
+ }
+ case 'block-riding-on-spring-driven-block':{
+  /* SHM-514 -- the whole question turns on where friction is and is not: the table
+     under M is frictionless and mu belongs to the m-M contact alone. So the floor
+     carries its own "smooth" label, mu is brought in by a leader to the highlighted
+     contact face between the blocks and nowhere else, and the caption states both
+     halves of the contrast in words. M is the larger block, as the stem has M > m. */
+  height=236;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=166,mid=138,face=110;
+  s+=vwall(32,36,gy,-1);
+  s+=ground(28,gy,404);
+  s+=line(32,mid,44,mid,B,2.2)+spring(44,mid,230,mid,10,10)+line(230,mid,240,mid,B,2.2);
+  s+=txt(137,114,'k',B,17);
+  s+=rect(240,face,112,56,'M',Y);
+  s+=rect(262,72,68,38,'m',B);
+  // the one surface that has friction, run out past m's right edge so the leader can
+  // land ON it rather than on the corner where m, M and the face all meet
+  s+=line(252,face,346,face,W,2);
+  s+=arrow(400,74,342,107,'',GREEN);
+  s+=txt(404,68,'μ',GREEN,18,'start');
+  s+=txt(392,156,'smooth',M,13);
+  s+=txt(230,196,'the table under M is frictionless (μ = 0)',M,13);
+  s+=txt(230,216,'friction, of coefficient μ, acts only between m and M',M,13);
+  break;
+ }
+ case 'pendulum-held-at-sixty-degrees':{
+  /* SHM-669 -- the bob held out with the string at 60 degrees to the vertical, the
+     dashed vertical from the pivot for the angle to be read against, and the dashed
+     arc of the swing running from the bob down to the lowest point. The 60 degree
+     wedge is wide enough to hold its own label, so the label sits inside the sector on
+     the bisector, clear of both rays and inside the arc; the arc is pushed out to
+     r = 90 so that nothing crowds the label. */
+  height=300;
+  const px=170,py=52,L=210,s60=0.8660254,c60=0.5;
+  const bx=px+L*s60,by=py+L*c60;
+  s+=ground(px-100,py,200,true);
+  s+=line(px,py,px,py+228,M,1.5,true);                 // the vertical the angle is read from
+  s+=`<path d="${arcPath(px,py,L,Math.PI/6,Math.PI/2)}" fill="none" stroke="${M}" stroke-width="1.3" stroke-dasharray="5 6"/>`;
+  s+=line(px,py,bx,by,W,2.5);
+  s+=dot(px,py,W);
+  s+=arc(px,py,90,Math.PI/2,Math.PI/6,'60°',203,104);
+  s+=`<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="15" fill="#a17d18"/><circle cx="${(bx-2).toFixed(1)}" cy="${(by-2).toFixed(1)}" r="15" fill="${Y}"/>`;
+  s+=txt(313,107,'ℓ = 250 cm',W,16,'start');
+  break;
+ }
+
+ // --- ExamSide batch figures (springs.js) ---
+case 'two-springs-flanking-a-block':{
+  /* SHM-663 -- the 2 kg block on the frictionless floor with an identical
+     20 N m⁻¹ spring on each side running to a rigid support. The two constants
+     are printed in full beside their own spring (the stem gives a number, not a
+     symbol), so this figure can never be confused with the k₁/k₂ drawing. */
+  height=172;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=124,bw=60,bh=52,bx=196,mid=gy-bh/2;
+  s+=ground(26,gy,408);                               // frictionless floor
+  s+=vwall(26,30,gy,-1)+vwall(434,30,gy,1);           // the two rigid supports
+  s+=line(26,mid,38,mid,B,2.2)+spring(38,mid,bx,mid,8,10);
+  s+=spring(bx+bw,mid,422,mid,8,10)+line(422,mid,434,mid,B,2.2);
+  s+=txt(117,mid-26,'20 N m⁻¹',B,15)+txt(339,mid-26,'20 N m⁻¹',B,15);
+  s+=rect(bx,gy-bh,bw,bh,'2 kg',Y);                   // SIX arguments: x, y, w, h, label, colour
+  s+=txt(230,158,'frictionless surface; both outer ends on rigid supports',M,13);
+  break;
+ }
+
+ case 'block-two-equal-springs-to-opposite-walls':{
+  /* SHM-658 -- M = 490 g on the frictionless table, one spring of force constant
+     K = 2 N m⁻¹ from each face to a hatched wall, both drawn at natural length so
+     the position drawn is the mean position. The displacement X is shown, because
+     the stem names it, but in the muted construction colour: the point of the
+     question is that it never enters the answer. */
+  height=186;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=136,bw=96,bh=54,bx=182,mid=gy-bh/2;
+  s+=ground(26,gy,408);                               // the table
+  s+=vwall(26,34,gy,-1)+vwall(434,34,gy,1);           // the two fixed walls
+  s+=line(26,mid,38,mid,B,2.2)+spring(38,mid,bx,mid,8,10);
+  s+=spring(bx+bw,mid,422,mid,8,10)+line(422,mid,434,mid,B,2.2);
+  s+=txt(110,mid-26,'K = 2 N m⁻¹',B,15)+txt(350,mid-26,'K = 2 N m⁻¹',B,15);
+  s+=rect(bx,gy-bh,bw,bh,'M = 490 g',Y);              // SIX arguments
+  // the displacement: left ordinate over the mean position, right over the
+  // position the block is released from, both clear of the springs and the block
+  s+=line(230,48,230,78,M,1.2,true)+line(274,48,274,78,M,1.2,true);
+  s+=arrow(230,64,274,64,'',M)+txt(252,50,'X',M,15);
+  s+=txt(230,170,'frictionless table; both springs at their natural length',M,13);
+  break;
+ }
+
+ case 'two-flanking-spring-arrangements-a-and-b':{
+  /* SHM-543 -- the two arrangements side by side, captioned (A) and (B) as the
+     stem names them. In (A) the oscillating body is a STACK: 2m bolted on top of
+     m, and the springs reach only the lower block, so the mass in motion reads as
+     3m. The three dark pins through the interface are there to make the "fixed
+     on top of" unmistakable -- read as two separate blocks it becomes a different
+     question. In (B) one block with k on the left and 2k on the right. */
+  height=186;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const vwall=(x,y1,y2,side)=>line(x,y1,x,y2,G,3)+Array.from({length:Math.floor((y2-y1)/13)},(_,i)=>line(x+side*3,y1+6+i*13,x+side*10,y1+6+i*13+7,M,1)).join('');
+  const gy=128;
+  // ---- panel (A): 2m fixed on m, two springs of constant k each
+  s+=ground(14,gy,202)+vwall(14,38,gy,-1)+vwall(216,38,gy,1);
+  s+=rect(87,88,56,40,'m',Y);                         // lower block, on the floor
+  s+=rect(87,48,56,40,'2m',Y);                        // upper block, square on it
+  // two pins through the joint, set at the block edges so they stay clear of the
+  // 2m and m labels -- run down the middle they land straight on the text
+  s+=line(95,76,95,100,'#151515',2.2)+line(135,76,135,100,'#151515',2.2);
+  s+=line(14,108,24,108,B,2.2)+spring(24,108,87,108,4,8);
+  s+=spring(143,108,206,108,4,8)+line(206,108,216,108,B,2.2);
+  s+=txt(55,94,'k',B,17)+txt(175,94,'k',B,17);
+  s+=txt(115,164,'(A)',W,17);
+  // ---- panel (B): the single block m, with k on one side and 2k on the other
+  s+=ground(244,gy,202)+vwall(244,38,gy,-1)+vwall(446,38,gy,1);
+  s+=rect(317,82,56,46,'m',Y);
+  s+=line(244,105,254,105,B,2.2)+spring(254,105,317,105,4,8);
+  s+=spring(373,105,436,105,4,8)+line(436,105,446,105,B,2.2);
+  s+=txt(285,91,'k',B,17)+txt(404,91,'2k',B,17);
+  s+=txt(345,164,'(B)',W,17);
+  break;
+ }
+
+ case 'single-spring-and-series-pair':{
+  /* SHM-678 -- Fig. 1 is one spring of constant k carrying M; Fig. 2 is the two
+     identical springs joined end to end carrying the same M. Both springs in
+     Fig. 2 are drawn at the same natural length and the same number of turns as
+     the one in Fig. 1, because the stem's "two identical springs" is what makes
+     each of them stretch by the full single-spring amount. The junction between
+     them is marked, so the pair cannot be read as one long spring. The captions
+     are the stem's own "Fig. 1" and "Fig. 2". */
+  height=352;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  // ---- Fig. 1: the single spring
+  s+=ground(80,42,100,true);
+  s+=spring(130,42,130,142,5,10);
+  s+=txt(152,96,'k',B,17,'start');
+  s+=rect(102,142,56,46,'M',Y);                       // SIX arguments
+  s+=txt(130,334,'Fig. 1',W,17);
+  // ---- Fig. 2: the same two springs, one below the other
+  s+=ground(280,42,100,true);
+  s+=spring(330,42,330,142,5,10);
+  s+=line(330,142,330,156,B,2.2)+dot(330,149,B);      // the massless junction
+  s+=spring(330,156,330,256,5,10);
+  s+=txt(352,96,'k',B,17,'start')+txt(352,210,'k',B,17,'start');
+  s+=rect(302,256,56,46,'M',Y);
+  s+=txt(330,334,'Fig. 2',W,17);
+  break;
+ }
+
+ case 'springs-in-series-then-in-parallel':{
+  /* SHM-667 -- the stem calls these figure (a) and figure (b), so the captions
+     read exactly that. (a) has k above 2k in one vertical chain, with the
+     junction marked so the whole weight visibly passes through both. (b) has the
+     same two springs side by side off one support, yoked to the block, so they
+     stretch together. */
+  height=334;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  // ---- (a): in series, k then 2k
+  s+=ground(70,42,100,true);
+  s+=spring(120,42,120,130,5,10);
+  s+=txt(142,90,'k',B,17,'start');
+  s+=line(120,130,120,146,B,2.2)+dot(120,138,B);      // the junction between them
+  s+=spring(120,146,120,234,5,10);
+  s+=txt(142,196,'2k',B,17,'start');
+  s+=rect(92,234,56,46,'m',Y);                        // SIX arguments
+  s+=txt(120,316,'(a)',W,17);
+  // ---- (b): the same two springs in parallel off one support
+  s+=ground(268,42,124,true);
+  s+=spring(300,42,300,150,5,10)+spring(360,42,360,150,5,10);
+  s+=line(300,150,300,168,B,2.2)+line(360,150,360,168,B,2.2)
+    +line(300,168,360,168,B,2.2)+line(330,168,330,186,B,2.2);
+  s+=txt(278,100,'k',B,17,'end')+txt(382,100,'2k',B,17,'start');
+  s+=rect(302,186,56,46,'m',Y);
+  s+=txt(330,316,'(b)',W,17);
+  break;
+ }
+
+ case 'lone-spring-beside-parallel-pair-in-series':{
+  /* SHM-649 -- four springs, every one of force constant k, and the entire
+     question is reading the topology. Two springs hang side by side from the
+     ceiling and both END on the short rigid crossbar, which overhangs them on
+     each side so it cannot be mistaken for a spring passing through. One spring
+     runs from the middle of that crossbar down to the block, putting the pair in
+     series with it. The fourth runs from the ceiling straight to the same block,
+     in parallel with that whole branch. */
+  height=342;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const cy=40,by=140,ty=250;
+  s+=ground(60,cy,340,true);                          // the rigid ceiling
+  // the parallel pair, ceiling down to the crossbar
+  s+=spring(125,cy,125,by,5,10)+spring(195,cy,195,by,5,10);
+  s+=txt(107,96,'k',B,17,'end')+txt(213,96,'k',B,17,'start');
+  s+=line(106,by,214,by,W,5);                         // the crossbar, overhanging both
+  // the single spring from the crossbar down to the block
+  s+=spring(160,by,160,ty,5,10);
+  s+=txt(178,200,'k',B,17,'start');
+  // the fourth spring, ceiling straight to the same block
+  s+=spring(330,cy,330,ty,10,10);
+  s+=txt(348,150,'k',B,17,'start');
+  s+=rect(130,ty,230,42,'M',Y);                       // SIX arguments
+  s+=txt(230,324,'every spring has the same force constant k',M,13);
+  break;
+ }
+
+ // --- ExamSide batch figures (graphs.js) ---
+case 'pe-curve-spring-oscillator-5kg':{
+  /* SHM-550 -- a QUESTION figure. The student has to read the force constant and
+     the amplitude off it, so it carries the source's numbers and nothing else:
+     no k, no A, no arrow at the equilibrium point, no total-energy line. The
+     curve is the upward parabola U = 2.5(x - 2)², lowest at x = 2 m and reaching
+     10 J at x = 0 and at x = 4 m, and it is drawn ONLY over 0 <= x <= 4 because
+     that is the whole of the printed curve; continuing it past either end would
+     invent turning points the source does not show.
+       The two dashed guides are the reason the figure is readable at all: the
+     horizontal at U = 10 runs across to x = 4 and the vertical at x = 4 comes up
+     to meet it, so the far turning point and its height are both fixed by
+     construction rather than by eye. The marked values are exactly the listed
+     ones -- 5 and 10 up the energy axis, 0, 2 and 4 along the displacement axis.
+     Anything more (a half-amplitude tick, the energy at x = 1) would start
+     handing over the working. */
+  height=300;
+  const ox=92,oy=258,sx=68,su=17.6;                    // 68 units per metre, 17.6 units per joule
+  const X=x=>ox+x*sx, U=u=>oy-u*su;
+  // the energy axis runs well past U = 10 so its arrowhead cannot sit on the 10 tick:
+  // at a shorter axis the head and the tick merge and the topmost scale value is lost
+  s+=arrow(ox,oy+14,ox,52,'',M);                       // energy axis, upward only: U is never negative here
+  s+=arrow(ox,oy,400,oy,'',M);                         // displacement axis, first quadrant only
+  s+=txt(ox,40,'U(J)',M,14);
+  s+=txt(406,oy+5,'x(m)',M,14,'start');
+  // the two dashed guides, drawn under the curve so the curve stays on top
+  s+=line(ox,U(10),X(4),U(10),M,1.3,true);             // the U = 10 level, across to the far turning point
+  s+=line(X(4),oy,X(4),U(10),M,1.3,true);              // the ordinate at x = 4, up to that level
+  // the parabola itself: least at x = 2 m, 10 J at both ends of the drawn range
+  let d='';
+  for(let i=0;i<=140;i++){const x=4*i/140,u=2.5*(x-2)*(x-2);
+   d+=(i?' L ':'M ')+X(x).toFixed(1)+' '+U(u).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.6"/>`;
+  // energy scale: only the two values the source prints
+  [5,10].forEach(u=>{s+=line(ox-5,U(u),ox+5,U(u),M,1.5)+txt(ox-11,U(u)+5,String(u),M,13,'end');});
+  // displacement scale: 0 at the origin, then 2 and 4
+  s+=txt(ox,oy+21,'0',M,13);
+  [2,4].forEach(x=>{s+=line(X(x),oy-5,X(x),oy+5,M,1.5)+txt(X(x),oy+21,String(x),M,13);});
+  break;
+ }
+ case 'u-against-time-choices-free-shm':{
+  /* SHM-553 -- a QUESTION figure, and the four lower panels ARE the options: the
+     entry's choices read "Curve I" to "Curve IV", so the panels carry ROMAN
+     numerals. Arabic or lettered panels would not match the question's own
+     option text, and a reader could not say which curve they had chosen.
+       TOP: the given graph, x against t, a plain sine leaving the origin upward
+     over two full cycles, in blue because it is the DATA. Nothing is marked on
+     it beyond the two axis letters and O -- no mean-position instants, no
+     extremes -- because pointing at the instants where x = 0 is the step the
+     question is testing.
+       BELOW: the four candidates, all in the one yellow at the one amplitude on
+     the one time scale, so nothing in the drawing flatters any of them:
+       I   -- a sine of the SAME period as x, positive hump first, so it spends
+              half of every cycle below the axis.
+       II  -- that same sine inverted, negative hump first.
+       III -- identical humps lying wholly BELOW the axis, touching zero wherever
+              the displacement passes the mean position, i.e. at twice the
+              frequency of x.
+       IV  -- the same chain of humps lying wholly ABOVE the axis, zero at those
+              same instants. (This is the keyed one, and nothing says so.)
+     Every panel gets the identical frame and an axis stub reaching the same
+     distance either side of its base line, which is what makes the single
+     vertical scale visible; without that, III and IV would look like half-height
+     panels. The four dashed verticals stand at the mean-position instants
+     (t = T/2, T, 3T/2, 2T) and run through all four candidate panels only, so a
+     reader can carry one instant across the comparison -- the whole point of the
+     question -- without the guides reaching up into the given graph. */
+  height=438;
+  const ox=96,T=150,Lt=300;
+  const S=t=>Math.sin(2*Math.PI*t/T);
+  const curve=(oy,f,c)=>{let d='';
+   for(let i=0;i<=240;i++){const t=Lt*i/240;d+=(i?' L ':'M ')+(ox+t).toFixed(1)+' '+(oy-f(t)).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${c}" stroke-width="2.3" stroke-linecap="round"/>`;};
+  // ---- the given displacement-time graph
+  const oy0=84,A0=32;
+  s+=arrow(ox,oy0+40,ox,44,'',M);                      // x axis, up
+  s+=arrow(ox,oy0,ox+Lt+14,oy0,'',M);                  // t axis, right
+  s+=txt(ox,34,'x',M,16);
+  s+=txt(416,oy0+5,'t',M,14,'start');
+  s+=txt(ox-8,oy0+18,'O',W,14,'end');                  // tight into the origin corner: further out it
+                                                       // sits in the numerals' column and reads as a fifth panel tag
+  s+=curve(oy0,t=>A0*S(t),B);
+  s+=line(28,146,432,146,'#3a3a37',1.2,true);          // the given graph reads apart from the choices
+  // ---- the four candidates
+  const Au=22,base=[186,254,322,390],num=['I','II','III','IV'];
+  const frame=(oy,tag)=>arrow(ox,oy+28,ox,oy-32,'',M)+arrow(ox,oy,ox+Lt+14,oy,'',M)
+   +txt(ox-10,oy-22,'U',M,13,'end')+txt(416,oy+5,'t',M,14,'start')
+   +txt(ox-26,oy+6,tag,W,17,'end');
+  base.forEach((oy,i)=>{s+=frame(oy,num[i]);});
+  // the shared mean-position ordinates, drawn before the curves so the curves sit on top
+  [T/2,T,1.5*T,2*T].forEach(t=>{s+=line(ox+t,150,ox+t,420,M,1.1,true);});
+  s+=curve(base[0],t=>Au*S(t),Y);                      // I   : same period as x, positive first
+  s+=curve(base[1],t=>-Au*S(t),Y);                     // II  : the same, inverted
+  s+=curve(base[2],t=>-Au*S(t)*S(t),Y);                // III : humps below the axis, double frequency
+  s+=curve(base[3],t=>Au*S(t)*S(t),Y);                 // IV  : the same humps above the axis
+  break;
+ }
+ case 'inverse-period-squared-against-length-four-panels':{
+  /* SHM-510 -- a QUESTION figure whose four panels are the options, and the
+     entry's choices read "Graph (a)" to "Graph (d)", so the panels are lettered
+     (a) to (d). Each is a bare first-quadrant pair of axes, one over T squared
+     up the side and L along the bottom, with NO scale numbers anywhere: the
+     question is about the shape of the relation, and a number on an axis would
+     invite the reader to test it arithmetically instead.
+       (a) the rectangular hyperbola, 1/T² = c/L. It enters high up beside the
+           energy axis, drops steeply, then flattens and runs on close to the
+           length axis without ever touching it -- asymptotic to both. This is
+           the correct panel, and nothing marks it.
+       (b) a quarter ellipse: it starts ON the vertical axis at the top, falls
+           gently at first, then ever more steeply, and MEETS the length axis at
+           a finite L. It bends the opposite way to (a), and the finite
+           intercept is exactly what makes it wrong.
+       (c) rises instead of falling, concave up, steepening as L grows.
+       (d) a straight line of negative slope, cutting the length axis at a
+           finite L.
+     Each panel differs from every other in a feature that survives being shrunk
+     to phone width: (a) falls at once and never lands, (b) stays high and then
+     lands, (c) goes the other way, (d) is straight. All four are drawn in the
+     one colour at the one line width in the identical frame. */
+  height=376;
+  const Lt=130,H=100;
+  const curve=(ox,oy,f,u0,u1)=>{let d='';
+   for(let i=0;i<=160;i++){const u=u0+(u1-u0)*i/160;
+    d+=(i?' L ':'M ')+(ox+Lt*u).toFixed(1)+' '+(oy-f(u)).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4" stroke-linecap="round"/>`;};
+  // the vertical axis runs 18 units past the top of the tallest curve: at a shorter
+  // axis the start of (b) and of (d), both of which begin ON that axis at full height,
+  // lands inside the arrowhead and it stops being clear where the curve begins
+  const frame=(ox,oy,tag)=>arrow(ox,oy,ox,oy-118,'',M)+arrow(ox,oy,ox+Lt+14,oy,'',M)
+   +txt(ox-10,oy-96,'1/T²',M,13,'end')+txt(ox+Lt+20,oy+5,'L',M,14,'start')
+   +txt(ox+Lt/2,oy+34,tag,M,16);
+  const oxA=72,oxB=288,oyA=146,oyB=320;
+  s+=line(28,196,432,196,'#3a3a37',1.2,true);          // the four panels read apart
+  s+=line(248,30,248,366,'#3a3a37',1.2,true);
+  // (a) rectangular hyperbola: high beside the vertical axis, flattening along the horizontal one
+  s+=frame(oxA,oyA,'(a)');
+  s+=curve(oxA,oyA,u=>12/u,0.12,1);
+  // (b) quarter ellipse: gentle, then steep, reaching the length axis at a finite L
+  s+=frame(oxB,oyA,'(b)');
+  s+=curve(oxB,oyA,u=>H*Math.sqrt(Math.max(0,1-(u/0.84)*(u/0.84))),0,0.84);
+  // (c) rising, concave up
+  s+=frame(oxA,oyB,'(c)');
+  s+=curve(oxA,oyB,u=>H*u*u,0,1);
+  // (d) straight, negative slope, finite intercept on the length axis
+  s+=frame(oxB,oyB,'(d)');
+  s+=curve(oxB,oyB,u=>H*(1-u/0.84),0,0.84);
+  break;
+ }
+
+ // --- ExamSide batch figures (circles.js) ---
+case 'particle-on-circle-projection-from-30-degrees':{
+  /* SHM-533 -- the reference circle for the projection on the x-axis. Axes through
+     O, the radius already 30 degrees above the +x axis when the clock starts, and
+     the same radius a little further round at time t, so the reader can see the
+     swept angle ADD to the starting angle (which is the whole question: the plus
+     sign in cos(wt + pi/6)). The source page prints `T = 6s` beside its circle and
+     the stem never uses it, so it is deliberately left out -- data the solution
+     never touches reads as an error. The 30 degree label sits inside its own
+     sector, and the omega arc starts 7 degrees clear of that sector so the two
+     arcs cannot be read as one. */
+  height=330;
+  const cx=230,cy=182,R=120,a0=30*Math.PI/180,a1=65*Math.PI/180;
+  const Pt=(a,r)=>[cx+r*Math.cos(a),cy-r*Math.sin(a)];
+  s+=line(58,cy,cx,cy,M,1.6)+arrow(cx,cy,412,cy,'',M);       // x-axis, positive to the right
+  s+=line(cx,316,cx,cy,M,1.6)+arrow(cx,cy,cx,40,'',M);       // y-axis, positive up
+  s+=txt(420,cy+6,'x',M,16,'start');
+  s+=txt(214,46,'y',M,16,'end');             // clear above the circle, not on its arc
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  const [x0,y0]=Pt(a0,R),[x1,y1]=Pt(a1,R);
+  s+=line(cx,cy,x0,y0,M,2.2);                                // OP at t = 0
+  s+=line(cx,cy,x1,y1,W,2.4);                                // OP at time t, the live radius
+  s+=dot(x0,y0,Y)+dot(x1,y1,Y);
+  s+=txt(...Pt(a0,138),'P(t = 0)',Y,17,'start');
+  s+=txt(...Pt(a1,142),'P(t)',Y,17,'start');
+  const [rx0,ry0]=Pt(a1,78);
+  s+=txt(rx0-18.1,ry0-8.5,'r',W,15);                         // r, offset clear of its own radius
+  // the sense of rotation: anticlockwise, from the t = 0 radius towards the later one
+  const wb=-a1+0.30,wa=-a1+0.12;
+  s+=`<path d="${arcPath(cx,cy,60,-a0-0.12,wb)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=arrow(cx+60*Math.cos(wb),cy+60*Math.sin(wb),cx+60*Math.cos(wa),cy+60*Math.sin(wa),'',GREEN);
+  s+=txt(...Pt(48*Math.PI/180,80),'ω',GREEN,16);
+  s+=arc(cx,cy,58,0,-a0,'30°',cx+80*Math.cos(a0/2),cy-80*Math.sin(a0/2)+5);
+  s+=dot(cx,cy,W)+txt(222,204,'O',W,16,'end');
+  break;
+ }
+ case 'circle-projection-onto-diameter-mn':{
+  /* SHM-572 -- A runs round the circle at uniform speed and P is its foot on the
+     diameter MN, so P oscillates between M and N with the radius as amplitude.
+     The true 30 degrees is drawn, which puts P only a little short of N (cos 30
+     of the radius): that is the geometry, so P is named BELOW the diameter and N
+     outside the circle, rather than straightening the angle to separate them.
+     0.36 m is dimensioned along OM with end ticks, so it reads as the radius and
+     not as the whole diameter; 0.1 s sits outside the circle beside AP, where the
+     source prints it, with a short leader back to the perpendicular. */
+  height=306;
+  const cx=230,cy=168,R=120,aA=30*Math.PI/180;
+  const Ax=cx+R*Math.cos(aA),Ay=cy-R*Math.sin(aA);
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${W}" stroke-width="2.4"/>`;
+  s+=line(cx-R,cy,cx+R,cy,W,2.4);                            // the diameter MN
+  s+=line(cx,cy,Ax,Ay,W,2.4);                                // the radius OA
+  s+=line(Ax,Ay,Ax,cy,M,1.8,true);                           // the perpendicular from A down to the diameter
+  s+=arc(cx,cy,52,0,-aA,'30°',cx+72*Math.cos(aA/2),cy-72*Math.sin(aA/2)+4);
+  s+=span(112,cx,156,'0.36 m',M);                            // the radius, ticked from M to O
+  s+=txt(356,146,'0.1 s',M,15,'start');                      // beside AP, clear outside the rim
+  // A travels round the rim at uniform speed; the arrowhead sits high on the arc,
+  // well clear of the 30 degree sector, the perpendicular and the 0.1 s label.
+  s+=arrow(cx+R*Math.cos(0.87),cy-R*Math.sin(0.87),cx+R*Math.cos(1.02),cy-R*Math.sin(1.02),'',Y);
+  s+=dot(Ax,Ay,Y)+txt(Ax+16,Ay-10,'A',Y,17,'start');
+  s+=dot(Ax,cy,Y)+txt(Ax-2,cy+25,'P',Y,17);
+  s+=dot(cx,cy,W)+txt(cx-8,cy+23,'O',W,16,'end');
+  s+=txt(cx-R-10,cy+6,'M',W,17,'end')+txt(cx+R+10,cy+6,'N',W,17,'start');
+  break;
+ }
+ case 'disc-swinging-about-in-plane-tangent':{
+  /* SHM-504 -- everything in this question hangs on WHERE the axis is. The axis A
+     lies in the plane of the disc and is tangent to the rim at the topmost point,
+     so the parallel axis through the centre is a DIAMETER (I = MR**2/4) and not the
+     perpendicular axis (MR**2/2); taking the perpendicular one gives 3MR**2/2 and
+     the question's own third option. So the drawing has to make the in-plane
+     reading unavoidable, and does it four ways at once: the disc is face-on, the
+     axis is a straight line drawn right across the figure IN that same plane
+     through the single point where it touches the rim, the dashed outline shows
+     the disc swung out of the page about that line (rotation about a horizontal
+     line foreshortens the disc vertically and leaves its width alone, which no
+     rotation about the perpendicular axis could do), the curved arrow wraps the
+     line itself, and the caption says it in words. R is marked twice because the
+     solution needs it twice: centre to rim, and centre to axis. */
+  height=376;
+  const cx=230,ay=96,R=110,oy=ay+R,ry=R*Math.cos(40*Math.PI/180);
+  s+=line(36,ay,424,ay,W,2.6);                               // the fixed axis A, in the plane of the page
+  for(let x=40;x<=66;x+=8.5)s+=line(x,ay,x-8,ay-9,M,1.1);    // mounted rigidly at both ends
+  for(let x=398;x<=424;x+=8.5)s+=line(x,ay,x-8,ay-9,M,1.1);
+  s+=txt(90,ay-14,'A',W,17);
+  s+=`<ellipse cx="${cx}" cy="${(ay+ry).toFixed(1)}" rx="${R}" ry="${ry.toFixed(1)}" fill="none" stroke="${M}" stroke-width="1.5" stroke-dasharray="6 6"/>`;
+  s+=`<circle cx="${cx}" cy="${oy}" r="${R}" fill="none" stroke="${Y}" stroke-width="2.8"/>`;
+  s+=line(cx,oy,cx,ay,M,1.6,true);                           // centre to the axis: one radius
+  s+=txt(cx-9,(ay+oy)/2+6,'R',M,15,'end');
+  s+=line(cx,oy,cx-R,oy,W,2);                                // centre to the rim: the same radius
+  s+=txt(cx-R/2,oy-9,'R',W,15);
+  s+=dot(cx,ay,W);                                           // the one point where the axis touches the rim
+  s+=dot(cx,oy,W);
+  s+=txt(cx,oy+90,'M',Y,18);
+  // a curved arrow wrapping the axis: the lower edge of the disc comes out of the page
+  const wx=372,wrx=13,wry=34,Wp=t=>[wx+wrx*Math.cos(t),ay+wry*Math.sin(t)];
+  let wd='';
+  for(let i=0;i<=40;i++){const t=(150-195*i/40)*Math.PI/180,[px,py]=Wp(t);wd+=(i?' L ':'M ')+px.toFixed(1)+' '+py.toFixed(1);}
+  s+=`<path d="${wd}" fill="none" stroke="${GREEN}" stroke-width="2"/>`;
+  s+=arrow(...Wp(-45*Math.PI/180),...Wp(-60*Math.PI/180),'',GREEN);
+  s+=txt(wx,46,'out of page',M,12);
+  s+=txt(cx,342,'axis A lies in the plane of the disc, tangent at the top',M,13);
+  s+=txt(cx,362,'dashed: the disc swung out of the page about A',M,13);
+  break;
+ }
+ case 'block-between-two-springs-on-an-incline-alpha':{
+  /* SHM-574 -- the same construction as `block-between-two-springs-on-an-incline`
+     (SHM-136), which this is copied from so the two read identically, with ONE
+     change: the base angle is labelled α, not θ. SHM-574 is sourced wording and
+     its own stem and options are written in α (Mg sin α), so pointing it at the
+     θ-labelled key printed an angle symbol that appears nowhere in the question
+     it belongs to, and no gate in the repo can see that. The stem is not touched;
+     the figure is what changes.
+
+     The block held between two springs of constant k on the smooth
+     incline, each spring anchored to a cross-hatched end-stop standing on the
+     plane, one at the foot and one at the top. Everything is laid out along the
+     slope by P(t,o): t is distance up the slope from the foot, o is distance out
+     along the outward normal, so the springs run parallel to the surface at the
+     blocks' mid-height and the two k labels sit clear above their own springs.
+     The α label sits inside the wedge between the ground line and the plane. */
+  height=300;
+  const spring=(x1,y1,x2,y2,n=7,amp=10)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),px=-dy/L,py=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+px*amp*g).toFixed(1)} ${(y1+dy*t+py*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  const fx=55,fy=272,th=28*Math.PI/180,bs=52;
+  const ux=Math.cos(th),uy=-Math.sin(th),nx=-Math.sin(th),ny=-Math.cos(th);
+  const P=(t,o=0)=>[fx+ux*t+nx*o,fy+uy*t+ny*o];
+  // a rigid end-stop standing on the plane, cross-hatched on its down-slope side
+  const stop=t=>{const[x1,y1]=P(t),[x2,y2]=P(t,46);let o=line(x1,y1,x2,y2,G,3.5);
+   for(let d2=7;d2<=42;d2+=8.5){const[hx,hy]=P(t,d2);o+=line(hx,hy,hx-ux*10,hy-uy*10,M,1.1);}return o;};
+  s+=ground(25,fy,175);                                  // the horizontal ground at the foot
+  s+=line(...P(0),...P(408),W,5);                        // the plane, drawn as a slab
+  s+=`<path d="${arcPath(fx,fy,60,0,-th)}" fill="none" stroke="${M}" stroke-width="1.3"/>`;
+  s+=txt(fx+80*Math.cos(th/2),fy-80*Math.sin(th/2),'α',W,16);
+  s+=stop(22)+stop(390);
+  s+=line(...P(22,bs/2),...P(32,bs/2),B,2.2)+spring(...P(32,bs/2),...P(180,bs/2),9,9);
+  s+=spring(...P(232,bs/2),...P(380,bs/2),9,9)+line(...P(380,bs/2),...P(390,bs/2),B,2.2);
+  s+=txt(...P(106,bs/2+26),'k',B,17);
+  s+=txt(...P(306,bs/2+26),'k',B,17);
+  // The block, lying on the slope. Written as a rotation ABOUT the block's own
+  // lower corner with the rect in absolute coordinates: translate()+local rect draws
+  // the identical picture, but leaves negative y attributes in the file, which the
+  // figure checker reports as OUTSIDE HEIGHT (the original case still does).
+  const [bx,by]=P(180);
+  s+=`<g transform="rotate(-28 ${bx.toFixed(1)} ${by.toFixed(1)})">`+rect(bx,by-bs,bs,bs,'M',Y)+`</g>`;
+  break;
+ }
  }
  const subject=p.figure||q.title;
  const desc=solution?`Solution diagram for ${subject}.`:`Question diagram for ${subject}. ${q.question}`;
@@ -9705,27 +10753,27 @@ const baseSections=[
 ];
 const subtopicPlan={
  'shm-basics':[
-  ['What counts as simple harmonic motion',['SHM-003','SHM-022','SHM-028','SHM-527','SHM-125']],
-  ['The differential equation and what it gives',['SHM-033','SHM-518','SHM-143']]],
+  ['What counts as simple harmonic motion',['SHM-527','SHM-003','SHM-022','SHM-028','SHM-125']],
+  ['The differential equation and what it gives',['SHM-518','SHM-033','SHM-143']]],
  'shm-kinematics':[
-  ['Displacement, velocity and acceleration',['SHM-475','SHM-007','SHM-596','SHM-606','SHM-465','SHM-480','SHM-404','SHM-134','SHM-177','SHM-182']],
-  ['Phase, and intervals read from it',['SHM-010','SHM-012','SHM-106','SHM-505','SHM-570','SHM-122']],
+  ['Displacement, velocity and acceleration',['SHM-475','SHM-404','SHM-596','SHM-606','SHM-533','SHM-480','SHM-465','SHM-007','SHM-134','SHM-177','SHM-182']],
+  ['Phase, and intervals read from it',['SHM-570','SHM-505','SHM-010','SHM-012','SHM-106','SHM-122']],
   ['Adding two simple harmonic motions',['SHM-015','SHM-084','SHM-150','SHM-224']]],
  'shm-energy':[
-  ['Energy in simple harmonic motion',['SHM-072','SHM-102','SHM-512','SHM-660','SHM-478','SHM-171','SHM-185','SHM-229','SHM-234','SHM-360']]],
+  ['Energy in simple harmonic motion',['SHM-550','SHM-660','SHM-478','SHM-512','SHM-072','SHM-102','SHM-171','SHM-185','SHM-229','SHM-234','SHM-360']]],
  'shm-springs':[
   ['Springs in series, in parallel, and cut',['SHM-064','SHM-208','SHM-220','SHM-246','SHM-365']],
-  ['The spring and mass oscillator',['SHM-013','SHM-076','SHM-501','SHM-578','SHM-643','SHM-462','SHM-477','SHM-112','SHM-124','SHM-228','SHM-245','SHM-344']],
+  ['The spring and mass oscillator',['SHM-643','SHM-577','SHM-578','SHM-477','SHM-501','SHM-462','SHM-013','SHM-076','SHM-112','SHM-124','SHM-228','SHM-245','SHM-344']],
   ['Two bodies on one spring',['SHM-082','SHM-094','SHM-146']],
   ['Friction and contact in an oscillating system',['SHM-474','SHM-051','SHM-052']]],
  'shm-pendulum':[
-  ['The simple pendulum',['SHM-108','SHM-038','SHM-105','SHM-513','SHM-525','SHM-573','SHM-589','SHM-607','SHM-608','SHM-460','SHM-120','SHM-155','SHM-181','SHM-267']],
+  ['The simple pendulum',['SHM-525','SHM-607','SHM-608','SHM-589','SHM-573','SHM-510','SHM-513','SHM-460','SHM-038','SHM-105','SHM-108','SHM-120','SHM-155','SHM-181','SHM-267']],
   ['The pendulum when gravity is not the only force',['SHM-045','SHM-095','SHM-098','SHM-142']],
   ['Rigid bodies that swing',['SHM-431','SHM-184']]],
  'shm-other':[
-  ['Oscillation on a curved track or in a fluid',['SHM-024','SHM-091','SHM-101','SHM-507','SHM-466','SHM-330']],
-  ['Damped and forced oscillation',['SHM-472','SHM-473','SHM-564','SHM-613','SHM-464','SHM-128','SHM-129']],
-  ['Where SHM meets the next chapter',['SHM-020','SHM-611','SHM-446','SHM-272']]],
+  ['Oscillation on a curved track or in a fluid',['SHM-466','SHM-507','SHM-024','SHM-091','SHM-101','SHM-330']],
+  ['Damped and forced oscillation',['SHM-472','SHM-473','SHM-613','SHM-564','SHM-464','SHM-128','SHM-129']],
+  ['Where SHM meets the next chapter',['SHM-611','SHM-446','SHM-020','SHM-272']]],
 };
 const sectionByKey=Object.fromEntries(baseSections.map(s=>[s.key,s]));
 const routeByCore={};
