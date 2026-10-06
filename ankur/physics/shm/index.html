@@ -956,7 +956,7 @@ function detailedSolution(q){
   [`Simplify the surd. The result exceeds 4 because the sine and the cosine peak a quarter of a cycle apart, so they reinforce in part but never add their full values at the same instant, which is why 8 is too large.`,`A = 4√2`],
   [`Correct answer`,`4√2`]
  ]},
-{id:'SHM-012',level:2,
+{id:'SHM-012',solutionDiagram:'soln-shm-012',level:2,
  title:'Phase of the acceleration against the displacement',
  topic:'Phase, and intervals read from it',
  source:'AIEEE 2007 · Simple Harmonic Motion',
@@ -969,7 +969,7 @@ function detailedSolution(q){
  correct:3,
  answer:`A = x₀ω² , δ = ${fraction('3π','4')}`,
  diagram:'',
- noDiagramReason:'The comparison is between two algebraic forms of the same cosine, so no drawing is involved.',
+ noDiagramReason:'The comparison is between two algebraic forms of the same cosine, so no drawing is involved. A figure is shown with the solution instead.',
  short:[
   [`Differentiate the displacement twice with respect to time; each differentiation brings out a factor of ω.`,`a = −x₀ω² cos (ωt − ${fraction('π','4')})`],
   [`The required form carries a positive amplitude in front, so the minus sign has to be absorbed into the phase instead of being left outside.`,`−cos ψ = cos (ψ + π)`],
@@ -1041,7 +1041,7 @@ function detailedSolution(q){
   [`The maximum speed in simple harmonic motion is the product of amplitude and angular frequency.`,`v (max) = Aω = 5 × 2`],
   [`Correct answer`,`5, 10`]
  ]},
-{id:'SHM-016',parent:'SHM-010',variant:2,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'direct retry'},
+{id:'SHM-016',solutionDiagram:'soln-shm-016',parent:'SHM-010',variant:2,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'direct retry'},
  title:'Time from equilibrium to the extreme',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -1053,7 +1053,7 @@ function detailedSolution(q){
  correct:3,
  answer:`1.0 s`,
  diagram:'',
- noDiagramReason:'The equation of motion carries all the information; no geometry is involved.',
+ noDiagramReason:'The equation of motion carries all the information; no geometry is involved. A figure is shown with the solution instead.',
  short:[
   [`Read the angular frequency straight off the argument of the cosine.`,`ω = 0.5π rad s⁻¹`],
   [`Convert that to a period, since the angular frequency is the phase swept per second and one cycle is 2π of phase.`,`T = ${fraction('2π','ω')} = ${fraction('2π','0.5π')} = 4 s`],
@@ -1478,7 +1478,7 @@ function detailedSolution(q){
   [`Cancelling that factor, the moment of inertia about the centre of gravity is the mass times the product of the two distances. The stated period of 1.5 s is not needed at all.`,`I (cg) = ml₁l₂ = 1 × 0.20 × 0.40`],
   [`Correct answer`,`8 × 10⁻²`]
  ]},
-{id:'SHM-041',parent:'SHM-098',variant:2,relevance:{parent:'SHM-098',sharedSkill:'building the effective gravity when a constant extra vertical force acts on the bob, with the sign of that force decided first',recoveryPurpose:'controlled transfer'},
+{id:'SHM-041',solutionDiagram:'soln-shm-041',parent:'SHM-098',variant:2,relevance:{parent:'SHM-098',sharedSkill:'building the effective gravity when a constant extra vertical force acts on the bob, with the sign of that force decided first',recoveryPurpose:'controlled transfer'},
  title:'Pendulum on an accelerating support',
  topic:'The pendulum when gravity is not the only force',
  source:'IIT-JEE 2005 · Simple Harmonic Motion',
@@ -1490,7 +1490,7 @@ function detailedSolution(q){
  correct:1,
  answer:`${fraction('T₁²','T₂²')} = ${fraction('6','5')}`,
  diagram:'',
- noDiagramReason:'The motion of the support is given as an equation, so the set-up is fully described in words.',
+ noDiagramReason:'The motion of the support is given as an equation, so the set-up is fully described in words. A figure is shown with the solution instead.',
  short:[
   [`Differentiate the given motion of the suspension point twice to find how fast the support is accelerating.`,`y = kt², so the acceleration is 2k = 2 m s⁻²`],
   [`In the frame of the accelerating support the bob feels a downward pseudo-force in addition to its weight, so the effective field is larger than g.`,`g (eff) = g + 2k = 12 m s⁻²`],
@@ -1604,7 +1604,7 @@ function detailedSolution(q){
   [`The common error is to carry the 21% straight across, or to halve it to 10.5%; the square root of 1.21 is a clean 1.1, which is what makes the figure exact.`,`√1.21 = 1.1 exactly`],
   [`Correct answer`,`10%`]
  ]},
-{id:'SHM-047',parent:'SHM-095',variant:2,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'controlled transfer'},
+{id:'SHM-047',solutionDiagram:'soln-shm-047',parent:'SHM-095',variant:2,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'controlled transfer'},
  title:'Period of a pendulum hanging in an accelerating train',
  topic:'The pendulum when gravity is not the only force',
  source:'Institute bank · Simple Harmonic Motion',
@@ -1616,7 +1616,7 @@ function detailedSolution(q){
  correct:1,
  answer:`decrease`,
  diagram:'',
- noDiagramReason:'The result follows from adding two perpendicular vectors, which the equation states more precisely than a sketch would.',
+ noDiagramReason:'The result follows from adding two perpendicular vectors, which the equation states more precisely than a sketch would. A figure is shown with the solution instead.',
  short:[
   [`In the frame of the accelerating train the bob feels gravity downwards and a pseudo-force backwards, so it settles along the resultant of the two.`,`g (eff) = √(g² + a²)`],
   [`The pendulum swings about that new equilibrium line, so its period uses the effective gravity in place of g.`,`T (new) = 2π√(${fraction('ℓ','g (eff)')})`],
@@ -2370,7 +2370,7 @@ function detailedSolution(q){
   [`The velocity there is zero, which rules out maximum velocity; and the total energy of an oscillator is the same at every phase, so it cannot pick out one value of φ.`,`v = Aω cos(${fraction('π','2')}) = 0`],
   [`Correct answer`,`maximum displacement`]
  ]},
-{id:'SHM-086',parent:'SHM-106',variant:2,relevance:{parent:'SHM-106',sharedSkill:'writing the phase of each of two oscillators separately and subtracting them to get the phase difference',recoveryPurpose:'controlled transfer'},
+{id:'SHM-086',solutionDiagram:'soln-shm-086',parent:'SHM-106',variant:2,relevance:{parent:'SHM-106',sharedSkill:'writing the phase of each of two oscillators separately and subtracting them to get the phase difference',recoveryPurpose:'controlled transfer'},
  title:'Phase difference between a sine and a cosine oscillation',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -2382,7 +2382,7 @@ function detailedSolution(q){
  correct:0,
  answer:`${fraction('7π','12')}`,
  diagram:'',
- noDiagramReason:'Both motions are given as equations, so the phases are read off and subtracted directly.',
+ noDiagramReason:'Both motions are given as equations, so the phases are read off and subtracted directly. A figure is shown with the solution instead.',
  short:[
   [`The two are written in different functions, so convert the cosine into a sine before comparing anything; a cosine leads the matching sine by a quarter cycle.`,`y₂ = 10 sin(8πt + ${fraction('π','4')} + ${fraction('π','2')}) = 10 sin(8πt + ${fraction('3π','4')})`],
   [`With both in sine form the phase of each particle is the argument of its own sine.`,`φ₁ = 10πt + ${fraction('π','3')}, φ₂ = 8πt + ${fraction('3π','4')}`],
@@ -2576,7 +2576,7 @@ function detailedSolution(q){
   [`Note that the amplitude has to be converted: leaving it as 2.5 gives a period of π seconds, which is exactly option (A).`,`2.5 cm = 0.025 m`],
   [`Correct answer`,`${fraction('π','10')} sec`]
  ]},
-{id:'SHM-097',parent:'SHM-098',variant:1,relevance:{parent:'SHM-098',sharedSkill:'building the effective gravity when a constant extra vertical force acts on the bob, with the sign of that force decided first',recoveryPurpose:'direct retry'},
+{id:'SHM-097',solutionDiagram:'soln-shm-097',parent:'SHM-098',variant:1,relevance:{parent:'SHM-098',sharedSkill:'building the effective gravity when a constant extra vertical force acts on the bob, with the sign of that force decided first',recoveryPurpose:'direct retry'},
  title:'Pendulum in a lift accelerating upwards',
  topic:'The pendulum when gravity is not the only force',
  source:'Institute bank · Simple Harmonic Motion',
@@ -2588,7 +2588,7 @@ function detailedSolution(q){
  correct:1,
  answer:`${fraction('√3','2')} T`,
  diagram:'',
- noDiagramReason:'A pendulum hanging in an accelerating lift; the single idea is the effective gravity, which is stated as a sum rather than seen in a picture.',
+ noDiagramReason:'A pendulum hanging in an accelerating lift; the single idea is the effective gravity, which is stated as a sum rather than seen in a picture. A figure is shown with the solution instead.',
  short:[
   [`In the frame of the lift there is a pseudo-force on the bob directed downward, because the lift accelerates upward. It adds to the weight.`,`mg(eff) = mg + m${fraction('g','3')}`],
   [`So the bob behaves as though gravity were stronger than it really is.`,`g(eff) = ${fraction('4g','3')}`],
@@ -2617,7 +2617,7 @@ function detailedSolution(q){
   [`The sign is the whole question. Had the field pointed downward, or the bob carried a negative charge, the two forces would add and option (B) would follow; and the pendulum oscillates at all only while the electric force stays below the weight.`,`qE < mg, otherwise g(eff) ≤ 0`],
   [`Correct answer`,`2π √(${fraction('ℓ','g − qE ÷ m')})`]
  ]},
-{id:'SHM-099',parent:'SHM-095',variant:1,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'controlled transfer'},
+{id:'SHM-099',solutionDiagram:'soln-shm-099',parent:'SHM-095',variant:1,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'controlled transfer'},
  title:'Pendulum in a trolley accelerating horizontally',
  topic:'The pendulum when gravity is not the only force',
  source:'Institute bank · Simple Harmonic Motion',
@@ -2629,7 +2629,7 @@ function detailedSolution(q){
  correct:2,
  answer:`2π√(${fraction('ℓ','√(f² + g²)')})`,
  diagram:'',
- noDiagramReason:'The pseudo-force is horizontal and the weight vertical, and the right-angled combination is written out in the steps; a sketch of the tilted string would add no information.',
+ noDiagramReason:'The pseudo-force is horizontal and the weight vertical, and the right-angled combination is written out in the steps; a sketch of the tilted string would add no information. A figure is shown with the solution instead.',
  short:[
   [`In the frame of the trolley the bob feels a pseudo-force opposite to the acceleration, which is horizontal, as well as its own weight, which is vertical.`,`F(pseudo) = mf, horizontal`],
   [`These two are perpendicular, so they combine as a right triangle rather than adding as numbers.`,`g(eff) = √(f² + g²)`],
@@ -2742,7 +2742,7 @@ function detailedSolution(q){
   [`The resultant of two perpendicular non-zero vectors lies strictly between them, so the acceleration can be neither purely along the string nor purely along the tangent. Nor is it vertical, since a vertical acceleration would require the string tension to be balanced, and the tension exceeds the radial component of the weight whenever the bob is moving.`,`0 < angle from the string < ${fraction('π','2')}`],
   [`Correct answer`,`At an angle to the string, between the direction along the string towards the point of suspension and the tangential direction towards the mean position`]
  ]},
-{id:'SHM-106',level:3,
+{id:'SHM-106',solutionDiagram:'soln-shm-106',level:3,
  title:'Phase difference of two oscillations crossing at the same point',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -2754,7 +2754,7 @@ function detailedSolution(q){
  correct:0,
  answer:`${fraction('5π','6')} − sin⁻¹(${fraction('1','4')})`,
  diagram:'',
- noDiagramReason:'The two phases are obtained from the sine of the displacement and a sign condition on the velocity, so the reference circle is a convenience rather than data.',
+ noDiagramReason:'The two phases are obtained from the sine of the displacement and a sign condition on the velocity, so the reference circle is a convenience rather than data. A figure is shown with the solution instead.',
  short:[
   [`Measure the phase of each particle from the mean position, so that the displacement of each is its own amplitude multiplied by the sine of its phase.`,`x = (amplitude) sin φ`],
   [`For the particle of amplitude A the crossing point is halfway out, which makes the sine of its phase one half.`,`sin φ₁ = ${fraction('1','2')} ⇒ φ₁ = ${fraction('π','6')}`],
@@ -2930,7 +2930,7 @@ function detailedSolution(q){
   [`The percentage carries across unchanged because the length and the field appear only as a ratio, so the square root in the period acts on both of them alike and cannot halve the figure.`,`Δℓ ÷ ℓ = Δg ÷ g = −5%`],
   [`Correct answer`,`a decrement by the same percentage`]
  ]},
-{id:'SHM-122',level:3,
+{id:'SHM-122',solutionDiagram:'soln-shm-122',level:3,
  title:'Phase difference from the greatest separation of two oscillators',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -2942,7 +2942,7 @@ function detailedSolution(q){
  correct:3,
  answer:`${fraction('π','3')}`,
  diagram:'',
- noDiagramReason:'The separation is obtained algebraically from the two displacement equations, and the reference circle would only restate that step.',
+ noDiagramReason:'The separation is obtained algebraically from the two displacement equations, and the reference circle would only restate that step. A figure is shown with the solution instead.',
  short:[
   [`Write the two displacements from the common mean position, with φ for the phase difference asked about.`,`x (P) = a sin ωt and x (Q) = a sin (ωt + φ)`],
   [`The separation of the particles at any instant is the difference of the two displacements, and the difference of two sines of the same frequency is itself a sinusoid of that frequency.`,`x (Q) − x (P) = a[sin (ωt + φ) − sin ωt]`],
@@ -3463,7 +3463,7 @@ function detailedSolution(q){
   [`Curve IV peaks at the centre and vanishes at the extremes, so it is the kinetic energy and not the potential energy; pairing it with anything is the error the printed key makes.`,`K = E − U = ${fraction('1','2')}k(A² − x²)`],
   [`Correct answer`,`I and III`]
  ]},
-{id:'SHM-165',parent:'SHM-012',variant:1,relevance:{parent:'SHM-012',sharedSkill:'re-expressing a sinusoid in a demanded standard form by shifting its phase constant (a minus sign as pi, a quarter cycle as sine-to-cosine)',recoveryPurpose:'inverse check'},
+{id:'SHM-165',solutionDiagram:'soln-shm-165',parent:'SHM-012',variant:1,relevance:{parent:'SHM-012',sharedSkill:'re-expressing a sinusoid in a demanded standard form by shifting its phase constant (a minus sign as pi, a quarter cycle as sine-to-cosine)',recoveryPurpose:'inverse check'},
  title:'Equation of an oscillator whose initial phase is a quarter cycle',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -3475,7 +3475,7 @@ function detailedSolution(q){
  correct:0,
  answer:`y = 0.8 cos 10πt`,
  diagram:'',
- noDiagramReason:'The answer is the equation itself, assembled from the three given constants.',
+ noDiagramReason:'The answer is the equation itself, assembled from the three given constants. A figure is shown with the solution instead.',
  short:[
   [`The general displacement of an oscillator carries the amplitude, the angular frequency and the phase it had at the start.`,`y = A sin(ωt + φ₀)`],
   [`The angular frequency follows from the period alone.`,`ω = ${fraction('2π','0.2')} = 10π rad s⁻¹`],
@@ -3949,7 +3949,7 @@ function detailedSolution(q){
   [`The same figure follows from energy without mentioning the angular frequency at all, since the kinetic energy at the centre has all become stored energy at the extreme.`,`${fraction('1','2')}mv² = ${fraction('1','2')}kA² ⇒ A = v√(m ÷ k) = 6 × 0.1`],
   [`Correct answer`,`0.6 m`]
  ]},
-{id:'SHM-222',parent:'SHM-010',variant:5,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'controlled transfer'},
+{id:'SHM-222',solutionDiagram:'soln-shm-222',parent:'SHM-010',variant:5,relevance:{parent:'SHM-010',sharedSkill:'converting a stretch of the path into the phase it sweeps, and that phase into a time through omega',recoveryPurpose:'controlled transfer'},
  title:'The velocity a particle regains only once in a cycle',
  topic:'Phase, and intervals read from it',
  source:'Institute bank · Simple Harmonic Motion',
@@ -3961,7 +3961,7 @@ function detailedSolution(q){
  correct:0,
  answer:`v (max)`,
  diagram:'',
- noDiagramReason:'The question is about how often a given velocity recurs, which follows from the velocity equation alone.',
+ noDiagramReason:'The question is about how often a given velocity recurs, which follows from the velocity equation alone. A figure is shown with the solution instead.',
  short:[
   [`Measure displacement from the centre, so that the displacement is a sine of time and the velocity is the matching cosine.`,`x = A sin ωt, v = Aω cos ωt`],
   [`Only the square of the displacement enters the velocity, so for any speed below the greatest there are two displacements, one on each side of the centre, at which the particle moves with that very same velocity, direction included.`,`v = ± ω√(A² − x²) ⇒ x = ± √(A² − v² ÷ ω²)`],
@@ -4035,7 +4035,7 @@ function detailedSolution(q){
   [`Compare the space part with the standard 2πx divided by the wavelength. That coefficient has doubled too, so the wavelength is halved.`,`${fraction('4πx','λ')} = ${fraction('2πx','λ ÷ 2')}`],
   [`Correct answer`,`amplitude ${fraction('a','2')}, frequency 2n and wavelength ${fraction('λ','2')}`]
  ]},
-{id:'SHM-275',parent:'SHM-095',variant:3,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'inverse check'},
+{id:'SHM-275',solutionDiagram:'soln-shm-275',parent:'SHM-095',variant:3,relevance:{parent:'SHM-095',sharedSkill:'taking the resultant of weight and pseudo-force in an accelerating frame, which fixes both the tilted equilibrium line and the effective gravity in the period',recoveryPurpose:'inverse check'},
  title:'Which way a pendulum leans in an accelerating trolley',
  topic:'The pendulum when gravity is not the only force',
  source:'Institute bank · Simple Harmonic Motion',
@@ -4047,7 +4047,7 @@ function detailedSolution(q){
  correct:1,
  answer:`tan⁻¹ ${fraction('a','g')} in the backward direction`,
  diagram:'',
- noDiagramReason:'The two forces on the bob are at right angles and both are named in the steps, so a sketch of the tilted thread would only repeat them.',
+ noDiagramReason:'The two forces on the bob are at right angles and both are named in the steps, so a sketch of the tilted thread would only repeat them. A figure is shown with the solution instead.',
  short:[
   [`Work in the frame of the trolley, in which the bob hangs at rest. Besides its weight it carries a pseudo-force of size ma, and that force points opposite to the acceleration, so towards the rear of the trolley.`,`F (pseudo) = ma, backwards`],
   [`The thread must lie along the resultant of the two, because a thread can only pull along its own length and the bob is in equilibrium in this frame.`,`mg downwards and ma backwards ⇒ one resultant pull`],
@@ -6316,7 +6316,7 @@ switch(key){
   s+=txt(185,336,'φ = π/4',GREEN,15)+txt(253,336,'ahead of x₁',GREEN,15);
   break;
  }
- case 'soln-shm-010':{
+case 'soln-shm-010':{
   /* SHM-010 -- x = A sin(omega t + pi/6), travelling from x = -A/2 to x = +A/2
      without turning round. The two phases either side of the mean position are
      -pi/6 and +pi/6, so the swept angle is pi/3 and t = pi/(3 omega). The two
@@ -6359,7 +6359,7 @@ switch(key){
   s+=txt(230,338,'Δθ = π/3, so t = π/(3ω)',GREEN,12.5);
   break;
  }
- case 'soln-shm-085':{
+case 'soln-shm-085':{
   /* SHM-085 -- phase pi/2 means the point is at the TOP of the reference
      circle, so x = A, the extreme. The figure also carries the reason the
      velocity is zero there: the tangential velocity A*omega is horizontal at
@@ -6397,7 +6397,7 @@ switch(key){
   s+=txt(230,338,'so x = A, the extreme, and there v = 0',GREEN,12.5);
   break;
  }
- case 'soln-shm-242':{
+case 'soln-shm-242':{
   /* SHM-242 -- the body starts at O, so x = A sin(2 pi t / T). One eighth of a
      period is one eighth of a turn, 45 degrees, and the projection of that
      point is A / root 2, about 0.71 A. The A/2 level is drawn as well, because
@@ -6434,7 +6434,7 @@ switch(key){
   s+=txt(230,338,'x = A sin 45° = A/√2'+'\u00A0'+'≈ 0.71A, well past A/2',GREEN,12.5);
   break;
  }
- case 'soln-shm-235':{
+case 'soln-shm-235':{
   /* SHM-235 -- the two legs x = 0 to A/2 and A/2 to A are the SAME length on
      the path, half an amplitude each, but they are 30 and 60 degrees of phase.
      The dimension bars on the oscillation line show the two legs are equal; the
@@ -6463,27 +6463,28 @@ switch(key){
   s+=txt(328,cy+5,'x = 0',Y,13,'start');
   s+=txt(cx-12,cy-R+60,'A',Y,15,'end');
   // the two legs are the same length on the path
+  [cy,PY(30),cy-R].forEach(yy=>{s+=line(384,yy,398,yy,M,1,true);});
   s+=vspan(cy,PY(30),404,'A/2')+vspan(PY(30),cy-R,404,'A/2');
   // but they are not the same phase
   s+=`<path d="${AP(58,0,30)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
   s+=ahd(cx+58*Math.cos(rd(30)),cy-58*Math.sin(rd(30)),tg(30),GREEN);
   s+=`<path d="${AP(76,30,90)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
   s+=ahd(cx+76*Math.cos(rd(90)),cy-76*Math.sin(rd(90)),tg(90),GREEN);
-  s+=txt(246,cy+6,'T₁ = T/12',GREEN,13,'start')+line(244,cy+2,204,cy-8,GREEN,1.1);
+  s+=txt(252,cy+46,'T₁ = T/12',GREEN,13,'start')+line(250,cy+40,204,cy-6,GREEN,1.1);
   s+=txt(196,96,'T₂ = T/6',GREEN,13,'start')+line(194,100,174,110,GREEN,1.1);
-  s+=ahd(PX(170),PY(170),tg(170),M)+txt(58,150,'ω',M,14,'end');
+  s+=ahd(PX(170),PY(170),tg(170),M)+txt(34,180,'ω',M,14);
   s+=txt(230,302,'x = A sin φ — the SHM is the vertical projection',M,12.5);
   s+=txt(230,320,'the legs are equal on the path, 30° and 60° in phase',M,12.5);
   s+=txt(230,338,'T₁ = T/12, T₂ = T/6, so T₂ = 2T₁ and T₁ < T₂',GREEN,12.5);
   break;
  }
- case 'soln-shm-083':{
+case 'soln-shm-083':{
   /* SHM-083 -- only phases are compared, and neither amplitude is given, so
      the two particles share one reference circle and no oscillation line is
      drawn. After a time equal to A's period, A has swept a whole turn (2 pi)
      and B, whose period is a quarter longer, has swept only four fifths of one
      (8 pi / 5). The wedge left between them is the answer, 2 pi / 5. */
-  height=352;
+  height=370;
   const cx=230,cy=160,R=100,rd=d=>d*Math.PI/180;
   const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
   const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
@@ -6492,21 +6493,22 @@ switch(key){
   s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
   s+=arrow(cx,cy+R+18,cx,cy-R-18,'',M)+txt(cx+9,cy-R-20,'displacement',M,13,'start');
   s+=dot(cx,cy,W);
-  s+=txt(cx+10,cy-R+50,'radius = amplitude',M,13,'start');
+
   // A is back where it started, on the mean position with x rising
   s+=line(cx,cy,PX(0),PY(0),Y,2.4)+dot(PX(0),PY(0),Y)+txt(PX(0)+14,cy-6,'A',Y,15,'start');
-  s+=line(PX(0),PY(0),cx,cy,B,1.3,true);
+  s+=txt(276,138,'amplitude',M,13)+line(276,144,280,156,M,1.1);
   // B is 72 degrees short of a full turn
   s+=line(cx,cy,PX(-72),PY(-72),Y,2.4)+dot(PX(-72),PY(-72),Y)+txt(PX(-72)+12,PY(-72)+20,'B',Y,15,'start');
   s+=line(PX(-72),PY(-72),cx,PY(-72),B,1.3,true)+line(cx-6,PY(-72),cx+6,PY(-72),B,2);
   // the wedge still to be closed
   s+=`<path d="${AP(66,-72,0)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
   s+=ahd(cx+66*Math.cos(rd(0)),cy-66*Math.sin(rd(0)),tg(0),GREEN);
-  s+=txt(316,216,'Δφ = 2π/5',GREEN,13,'start')+line(314,212,286,200,GREEN,1.1);
+  s+=txt(316,216,'Δφ = 2π/5',GREEN,13,'start')+line(314,212,292,202,GREEN,1.1);
   s+=ahd(PX(140),PY(140),tg(140),M)+txt(142,88,'ω',M,14,'end');
-  s+=txt(230,302,'both start at the mean position, so each phase is φ = ωt',M,12.5);
-  s+=txt(230,320,'after t = T, A has swept 2π, B only four fifths of a turn',M,12.5);
-  s+=txt(230,338,'Δφ = 2π − 8π/5 = 2π/5',GREEN,12.5);
+  s+=txt(230,302,'one circle, radius each particle\u2019s own amplitude',M,12.5);
+  s+=txt(230,320,'both start at the mean position, so φ = ωt for each',M,12.5);
+  s+=txt(230,338,'after t = T: A has swept 2π, B only 8π/5',M,12.5);
+  s+=txt(230,356,'Δφ = 2π − 8π/5 = 2π/5',GREEN,12.5);
   break;
  }
  case 'soln-shm-047':{
@@ -6680,6 +6682,491 @@ switch(key){
   s+=txt(284,90,'spring',M,14,'start');
   s+=txt(284,112,'k',B,18,'start');
   s+=txt(348,196,'light pan',M,14,'start');
+  break;
+ }
+ case 'pendulum-as-long-as-the-earth-radius':{
+  /* Repaired question -- the figure has to make ONE thing visible: the weight at
+     the displaced bob points at the earth's centre O, NOT parallel to the mean
+     position PB, so as the bob swings the weight turns through phi at O while the
+     string turns through theta at P. That is the whole reason the earth's radius
+     enters the period. Pivot P sits one earth radius above the surface, so OP = 2R
+     and the string PB = R reaches exactly to the surface. Nothing dimensions the
+     combination of R and L, and no period is written anywhere. */
+  height=352;
+  const px=230,py=52,Re=86,ox=230,oy=224;             // P, earth radius in px, O
+  const th=0.6981,st=0.6428,ct=0.7660;                // theta = 40 degrees, exaggerated to read
+  const bx=px+Re*st,by=py+Re*ct;                      // B', the bob on its arc about P
+  const dx=ox-bx,dy=oy-by,dL=Math.hypot(dx,dy),ux=dx/dL,uy=dy/dL;   // B' towards O
+  s+=`<circle cx="${ox}" cy="${oy}" r="${Re}" fill="none" stroke="${G}" stroke-width="2.4"/>`;
+  s+=txt(230,268,'earth',G,14);                       // inside the circle, clear of O and phi
+  s+=line(px,py,ox,oy,M,1.8,true);                    // P-B-O: the mean position, dashed
+  s+=txt(222,98,'L = R',M,14,'end');                  // string length, left of the dashed line
+  s+=txt(222,186,'R',M,14,'end');                     // earth radius OB, same line lower down
+  s+=dot(px,py,W)+txt(230,42,'P',W,16);
+  s+=dot(ox,oy,W)+txt(218,230,'O',W,15,'end');
+  s+=`<circle cx="${px}" cy="${(py+Re).toFixed(1)}" r="9" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=txt(206,130,'B',Y,15,'end');                     // above the earth's arc at that x
+  s+=`<path d="${arcPath(px,py,Re,Math.PI/2,Math.PI/2-th)}" fill="none" stroke="${M}" stroke-width="1.3" stroke-dasharray="4 5"/>`;
+  s+=line(px,py,bx,by,W,2.4);                         // the string, swung across to B'
+  s+=`<circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="9" fill="none" stroke="${Y}" stroke-width="2.4"/>`;
+  s+=txt(299,118,'B′',Y,15,'start');            // clear of the bob's own circle
+  s+=line(ox,oy,bx,by,M,1.4,true);                    // O-B', the direction the weight takes
+  // tension along B'P, drawn over the string; weight along B'O, drawn over O-B'
+  s+=arrow(bx,by,bx-56*st,by-56*ct,'',B)+txt(286,86,'T',B,15,'start');
+  s+=arrow(bx,by,bx+56*ux,by+56*uy,'',Y)+txt(294,157,'mg',Y,14,'start');
+  s+=arc(px,py,50,Math.PI/2,Math.PI/2-th,'θ',243,89);               // theta at P, inside its sector
+  s+=`<path d="${arcPath(ox,oy,70,-Math.PI/2,Math.atan2(by-oy,bx-ox))}" fill="none" stroke="${W}" stroke-width="1.5"/>`;
+  s+=txt(243,182,'φ',W,16);                                          // phi at O, inside its sector
+  s+=txt(230,336,'mg points at O, so it turns as the bob moves',M,13);
+  break;
+ }
+ case 'bullet-fired-into-a-hanging-spring-block':{
+  /* Repaired question -- the figure gives the geometry of the two equilibrium
+     levels and the data, and stops there. The block alone hangs at the upper
+     dashed level; once the bullet is embedded the new equilibrium is d lower, and
+     d is marked but not valued. No amplitude, no energy line, no velocity after
+     impact: the whole question is getting from the momentum of the bullet and that
+     offset to the amplitude, so nothing here may measure either. */
+  height=292;
+  const spring=(x1,y1,x2,y2,n,amp)=>{const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),nx=-dy/L,ny=dx/L,k=2*n;let d=`M ${x1} ${y1}`;for(let i=0;i<k;i++){const t=(i+0.5)/k,g=i%2?1:-1;d+=` L ${(x1+dx*t+nx*amp*g).toFixed(1)} ${(y1+dy*t+ny*amp*g).toFixed(1)}`;}return `<path d="${d} L ${x2} ${y2}" fill="none" stroke="${B}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;};
+  s+=ground(80,34,110,true);                          // ceiling, hatched upward
+  s+=spring(135,34,135,116,6,10);
+  s+=txt(118,84,'k = 300 N/m',M,14,'end');            // left of the coil, clear of its amplitude
+  s+=rect(96,116,78,52,'',Y);                         // SIX args: x, y, width, height, label, colour
+  s+=txt(88,150,'0.98 kg',Y,15,'end');                // beside the block, between the two levels
+  s+=line(84,128,210,128,M,1.8,true);                 // equilibrium of the block alone
+  s+=line(84,158,210,158,M,1.8,true);                 // equilibrium of block + bullet, lower
+  s+=line(186,129,186,157,M,1.5)+txt(196,149,'d',M,15,'start');
+  s+=txt(216,133,'equilibrium of the block alone',M,13,'start');
+  s+=txt(216,163,'equilibrium of block + bullet',M,13,'start');
+  s+=`<path d="M 129 250 L 141 250 L 141 236 L 135 228 L 129 236 Z" fill="${GREEN}"/>`;
+  s+=arrow(135,224,135,180,'',GREEN);                 // head stops short of the block
+  s+=txt(146,214,'20 g, 3.0 m/s',GREEN,14,'start');
+  s+=txt(124,246,'bullet',GREEN,13,'end');
+  s+=txt(230,276,'the gap d is drawn exaggerated',M,12);
+  break;
+ }
+ case 'sphere-rolling-in-concave-mirror':{
+  /* Repaired question -- key corrected. The figure draws the mirror of radius R
+     about C, the sphere of radius r with centre O, and the one angle theta that
+     the sphere has rolled through, and deliberately DOES NOT dimension (R - r),
+     which is the distance CO and the whole insight: two of the options differ from
+     the key by exactly that substitution. R is labelled on C-to-contact, r on
+     O-to-contact; the reader has to see for themselves that O swings on a circle
+     of the difference. Theta is exaggerated to about 34 degrees so the sector can
+     carry its own label. */
+  height=306;
+  const cx0=230,cy0=68,R=190,rr=34,th=0.60,st=0.564642,ct=0.825336;
+  const Px=cx0+R*st,Py=cy0+R*ct;                      // contact point on the mirror
+  const Ox=cx0+(R-rr)*st,Oy=cy0+(R-rr)*ct;            // centre of the sphere
+  s+=ground(80,258,300);                              // table, the mirror resting on it
+  s+=`<path d="${arcPath(cx0,cy0,R,Math.PI/2-0.88,Math.PI/2+0.88)}" fill="none" stroke="${W}" stroke-width="2.8"/>`;
+  s+=line(cx0,cy0,cx0,256,M,1.6,true);                // vertical through C to the lowest point
+  s+=line(cx0,cy0,Px,Py,M,1.6,true);                  // C-O-P: one ray, R long
+  s+=txt(266,86,'R',M,15,'start')+line(264,82,250,88,M,1.1);
+  s+=dot(cx0,cy0,W)+txt(230,54,'C',W,16);
+  s+=`<circle cx="${Ox.toFixed(1)}" cy="${Oy.toFixed(1)}" r="${rr}" fill="none" stroke="${Y}" stroke-width="2.6"/>`;
+  s+=line(Ox,Oy,Px,Py,W,2.2);                         // r, the part of the ray inside the sphere
+  s+=txt(338,203,'r',W,15,'start');
+  s+=dot(Ox,Oy,Y)+txt(328,184,'O',Y,15,'start');
+  s+=arrow(Ox,Oy,Ox-78*st,Oy-78*ct,'',B);             // normal reaction, along O towards C
+  s+=txt(288,118,'N',B,15,'start')+line(286,120,278,130,B,1.1);
+  s+=arrow(Ox,Oy,Ox,246,'',Y);                        // weight, head clear of both the mirror and the table
+  s+=txt(280,220,'mg',Y,14,'end')+line(283,218,314,228,Y,1.1);   // label parked left of the sphere, led back
+  s+=arc(cx0,cy0,60,Math.PI/2,Math.PI/2-th,'θ',242,117);
+  s+=txt(230,290,'mirror of radius R, sphere of radius r',M,13);
+  break;
+ }
+ case 'damped-amplitude-decay-raw-data':{
+  /* Repaired question -- a broken option replaced. The stem hands over the
+     MEASURED curve only: successive amplitudes against time, falling smoothly
+     from a-zero and flattening towards the axis without reaching it. The answer
+     is what the logarithm of that data looks like when it is replotted, so there
+     is deliberately NO log axis, no second set of axes and no straight line
+     anywhere in this figure -- drawing any of them would print the key. */
+  height=310;
+  const ox=90,oy=252,Lt=320,a0=160;
+  const X=u=>ox+Lt*u, A=u=>oy-a0*Math.exp(-2.3*u);
+  s+=arrow(ox,oy,ox,62,'',M);                         // a axis, up
+  s+=arrow(ox,oy,428,oy,'',M);                        // t axis, right
+  s+=txt(ox,50,'a',M,16)+txt(436,258,'t',M,16,'start');
+  s+=line(80,oy-a0,100,oy-a0,M,1.6)+txt(74,oy-a0+5,'a₀',M,14,'end');  // long enough to read past the first point
+  let d='';
+  for(let i=0;i<=140;i++){const u=i/140;d+=(i?' L ':'M ')+X(u).toFixed(1)+' '+A(u).toFixed(1);}
+  s+=`<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4" stroke-linecap="round"/>`;
+  for(const u of [0,0.12,0.26,0.42,0.6,0.8,1])s+=dot(X(u),A(u),Y);   // the readings themselves
+  s+=txt(230,292,'the measured amplitude, reading by reading',M,13);
+  break;
+ }
+ case 'amplitude-against-time-four-panels':{
+  /* Repaired question -- stem reframed. These are the four candidate shapes for
+     the amplitude of a lightly damped oscillator against time, and each differs
+     from the others in exactly ONE readable feature, so none may be tidied:
+       (a) constant at A-zero -- no decay at all.
+       (b) straight, falling at a constant gradient, reaching the axis at a finite t.
+       (c) exponential: steep then gentle, asymptotic to the axis, never reaching it.
+       (d) concave the other way -- flat at the start, steepening, cutting the axis
+           at a finite t, a quarter-ellipse.
+     (b) and (d) both reach the axis and differ only in curvature; (c) and (d) are
+     both curved and differ only in which way they bend; (a) and (c) both never
+     reach the axis and differ only in whether they fall at all. Every panel gets
+     the identical frame, the identical A-zero tick and the identical colour, and
+     nothing marks any of them -- the only honest way to put four options on one
+     canvas. */
+  height=388;
+  const Lt=142,A0=72;
+  const curve=(ox,oy,f,uMax)=>{let d='';
+   for(let i=0;i<=120;i++){const u=uMax*i/120;d+=(i?' L ':'M ')+(ox+Lt*u).toFixed(1)+' '+(oy-f(u)).toFixed(1);}
+   return `<path d="${d}" fill="none" stroke="${Y}" stroke-width="2.4" stroke-linecap="round"/>`;};
+  const frame=(ox,oy,tag)=>arrow(ox,oy,ox,oy-100,'',M)+arrow(ox,oy,ox+Lt+14,oy,'',M)
+   +txt(ox-11,oy-96,'A',M,14,'end')+txt(ox+Lt+18,oy+5,'t',M,14,'start')
+   +line(ox-5,oy-A0,ox+5,oy-A0,M,1.4)+txt(ox-9,oy-A0+5,'A₀',M,13,'end')
+   +txt(ox+Lt/2,oy+32,tag,M,16);
+  s+=line(235,44,235,372,'#3a3a37',1.2,true);          // the four panels read apart
+  s+=line(28,210,432,210,'#3a3a37',1.2,true);
+  s+=frame(56,152,'(a)')+curve(56,152,()=>A0,1);
+  s+=frame(272,152,'(b)')+curve(272,152,u=>A0*(1-u/0.78),0.78);
+  s+=frame(56,336,'(c)')+curve(56,336,u=>A0*Math.exp(-2.2*u),1);
+  s+=frame(272,336,'(d)')+curve(272,336,u=>A0*Math.sqrt(Math.max(0,1-(u/0.86)*(u/0.86))),0.86);
+  break;
+ }
+ case 'coin-on-vertically-oscillating-platform':{
+  /* Repaired question -- key corrected. The platform is drawn AT THE MEAN
+     POSITION, with the two extremes only as dashed levels, because the question
+     is where on the travel the coin leaves the platform: drawing it at the top of
+     the stroke, where the platform's acceleration is downward and largest, would
+     hand that over. So the coin sits at the mean position, where the acceleration
+     is zero, and the note states the general rule (a = omega-squared times y,
+     always back towards the mean position) without saying which extreme matters.
+     The two forces on the coin are drawn and labelled; nothing is resolved. */
+  height=226;
+  const my=104,amp=58;
+  s+=line(56,my-amp,404,my-amp,M,1.6,true)+txt(410,my-amp+5,'+A',M,14,'start');
+  s+=line(56,my+amp,404,my+amp,M,1.6,true)+txt(410,my+amp+5,'–A',M,14,'start');
+  s+=line(56,my,136,my,M,1.6,true)+line(314,my,404,my,M,1.6,true);
+  s+=txt(410,my+5,'mean',M,13,'start');
+  s+=arrow(96,my+52,96,50,'',M)+arrow(96,my-50,96,158,'',M);    // it oscillates between the levels
+  s+=rect(140,my,170,9,'',B);                         // SIX args: the platform, at the mean position
+  s+=txt(316,125,'platform',M,13,'start');
+  s+=rect(207,my-14,38,14,'',Y);                      // SIX args: the coin, resting on it
+  s+=txt(196,101,'coin',Y,14,'end');
+  // at the mean position the acceleration is zero, so the two arrows are drawn the
+  // SAME length -- 50 px each. Unequal ones would be a statement about the travel.
+  s+=arrow(216,my,216,my-50,'',B)+txt(206,66,'N',B,15,'end');    // normal reaction, up on the coin
+  s+=arrow(236,my-7,236,my+43,'',Y)+txt(246,137,'mg',Y,15,'start');  // weight, down from the coin
+  s+=txt(230,188,'platform acceleration a = ω²y',M,13);
+  s+=txt(230,208,'always directed towards the mean position',M,13);
+  break;
+ }
+ case 'shm-force-and-velocity-at-a-general-displacement':{
+  /* Repaired question -- a broken option replaced. Both quantities are drawn at
+     ONE general displacement x, between O and +A: the velocity outward, the
+     restoring force back towards O. The two arrow lengths here are drawing, not
+     data -- the figure is deliberately neutral about where either quantity peaks,
+     and there is NO plot of the magnitude of F against x beside a plot of speed,
+     because the comparison of those two is exactly what the question asks for. */
+  height=228;
+  const y0=110,ox=230,xp=307;
+  s+=line(70,y0,390,y0,W,2.4);
+  s+=line(90,102,90,118,M,1.6)+line(ox,102,ox,118,M,1.6)+line(370,102,370,118,M,1.6);
+  s+=txt(90,136,'–A',M,15)+txt(ox,136,'O',M,15)+txt(370,136,'+A',M,15);
+  s+=span(ox,xp,72,'x',M);
+  s+=line(xp,88,xp,176,M,1.1,true);                   // ties both arrows to the one displacement
+  s+=`<circle cx="${xp}" cy="${y0}" r="9" fill="${Y}"/>`;
+  s+=arrow(xp,92,347,92,'v',B,0,-10);                 // velocity, outward, away from O
+  s+=arrow(xp,172,239,172,'F',GREEN,0,-14);           // restoring force, back towards O
+  s+=txt(230,208,'a general displacement x between O and +A',M,13);
+  break;
+ }
+case 'soln-shm-016':{
+  /* SHM-016 -- x = 7 cos 0.5 pi t. A cosine, so the oscillation is the
+     HORIZONTAL diameter and t = 0 finds the point at the right-hand extreme.
+     The centre and an extreme are a quarter turn apart however the point is
+     travelling, and the quarter drawn here is the one the question asks for:
+     equilibrium to maximum displacement. One turn is T = 4 s, so it takes 1 s. */
+  height=352;
+  const cx=230,cy=160,R=100,rd=d=>d*Math.PI/180;
+  const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  // the oscillation IS the horizontal diameter here
+  s+=arrow(cx-R-22,cy,cx+R+22,cy,'',Y)+txt(cx+R+28,cy+5,'x',Y,14,'start');
+  s+=line(cx-R-22,cy,cx-R,cy,Y,2.5);
+  s+=dot(cx,cy,W);
+  // the extreme the clock starts from
+  s+=dot(PX(0),PY(0),Y)+line(PX(0),cy-9,PX(0),cy+9,Y,2);
+  s+=txt(PX(0)+10,cy-14,'t = 0',Y,13,'start');
+  // equilibrium: the top of the circle projects to the centre of the path
+  s+=line(cx,cy,cx,cy-R,Y,2.5)+dot(cx,cy-R,Y);
+  s+=line(cx+14,cy,cx+14,cy-14,B,1.5)+line(cx,cy-14,cx+14,cy-14,B,1.5);
+  s+=txt(cx+22,cy-R+58,'A = 7 cm',Y,13,'start');
+  s+=txt(cx,44,'the mean position',M,13)+line(cx,50,cx,cy-R-6,M,1.1);
+  // the extreme the quarter turn ends on: its projection is the point itself
+  s+=dot(PX(180),PY(180),Y)+line(PX(180),cy-9,PX(180),cy+9,Y,2);
+  s+=txt(cx-R-10,cy-14,'x = −7 cm',Y,13,'end');
+  s+=txt(cx,cy+24,'x = 0',M,13);
+  s+=txt(cx+R+12,cy+24,'x = +7 cm',Y,13,'start');
+  // the quarter turn from the mean position to the extreme
+  s+=`<path d="${AP(66,90,180)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+66*Math.cos(rd(180)),cy-66*Math.sin(rd(180)),tg(180),GREEN);
+  s+=txt(204,138,'π/2',GREEN,14);
+  s+=ahd(PX(-60),PY(-60),tg(-60),M)+txt(300,250,'ω = 0.5π rad s⁻¹',M,13,'start');
+  s+=txt(230,302,'x = 7 cos 0.5πt — the SHM is the horizontal projection',M,12.5);
+  s+=txt(230,320,'one turn is a period: T = 2π ÷ 0.5π = 4 s',M,12.5);
+  s+=txt(230,338,'mean to extreme is a quarter turn: t = T/4 = 1 s',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-165':{
+  /* SHM-165 -- amplitude 0.8 cm, period 0.2 s, initial phase pi/2. The quarter
+     turn of head start is drawn: at t = 0 the point is already at the TOP of
+     the circle, so the body starts at an extreme, not at the centre. That is
+     the whole content of "sin(theta + pi/2) = cos theta". */
+  height=352;
+  const cx=142,cy=168,R=96,px=318,rd=d=>d*Math.PI/180;
+  const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=arrow(cx,cy+R+18,cx,cy-R-18,'',M)+txt(cx+9,cy-R-20,'y',M,14,'start');
+  s+=dot(cx,cy,W);
+  s+=line(px,cy-R,px,cy+R,Y,2.6)+line(px-7,cy+R,px+7,cy+R,Y,2.2);
+  // where a plain sine would have started
+  s+=dot(PX(0),PY(0),M)+txt(248,cy+6,'φ = 0',M,13,'start');
+  // where this one actually starts: a quarter turn ahead, at the extreme
+  s+=line(cx,cy,cx,cy-R,Y,2.6)+dot(cx,cy-R,Y)+txt(cx-12,cy-R+60,'0.8 cm',Y,13,'end');
+  s+=line(cx,cy-R,px,cy-R,B,1.3,true)+line(px-5,cy-R,px+5,cy-R,Y,1.8);
+  s+=txt(328,cy-R+5,'y = +0.8 cm',Y,13,'start')+txt(328,cy-R+21,'at t = 0',Y,13,'start');
+  s+=line(px-5,cy,px+5,cy,M,1.8)+txt(328,cy+5,'y = 0',M,13,'start');
+  s+=txt(328,cy+R+5,'y = −0.8 cm',M,13,'start');
+  s+=`<path d="${AP(74,0,82)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+74*Math.cos(rd(82)),cy-74*Math.sin(rd(82)),tg(82),GREEN);
+  s+=txt(176,140,'φ₀ = π/2',GREEN,13);
+  s+=ahd(PX(215),PY(215),tg(215),M)+txt(234,286,'one turn = T = 0.2 s',M,13);
+  s+=txt(230,302,'y = 0.8 sin(10πt + π/2), and ω = 2π ÷ 0.2 = 10π',M,12.5);
+  s+=txt(230,320,'a plain sine starts at φ = 0; this one is a quarter ahead',M,12.5);
+  s+=txt(230,338,'starting at the extreme is what y = 0.8 cos 10πt says',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-086':{
+  /* SHM-086 -- y1 = 10 sin(10 pi t + pi/3) and y2 = 10 cos(8 pi t + pi/4),
+     both of amplitude 10 m, so one circle carries both. At t = 0.5 s the raw
+     phases are 16 pi/3 and 19 pi/4; dropping the four whole turns each has
+     made leaves 4 pi/3 and 3 pi/4, and the figure shows the 7 pi/12 between
+     them. Whole turns are dropped precisely because they return the point to
+     where it was -- which is what the circle makes obvious. */
+  height=372;
+  const cx=142,cy=168,R=96,px=318,rd=d=>d*Math.PI/180;
+  const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=arrow(cx,cy+R+18,cx,cy-R-18,'',M)+txt(cx+9,cy-R-20,'y',M,14,'start');
+  s+=dot(cx,cy,W);
+  s+=line(px,cy-R,px,cy+R,Y,2.6)+line(px-7,cy-R,px+7,cy-R,Y,2.2)+line(px-7,cy+R,px+7,cy+R,Y,2.2);
+  s+=line(cx,cy,cx,cy-R,Y,2.4)+txt(cx+10,cy-R+54,'a = 10 m',Y,13,'start');
+  s+=line(px-5,cy,px+5,cy,M,1.8)+txt(328,cy+5,'y = 0',M,13,'start');
+  [[240,'y₁ = −8.7 m'],[135,'y₂ = +7.1 m']].forEach(([d,lab])=>{
+   s+=line(cx,cy,PX(d),PY(d),W,2.2)+line(PX(d),PY(d),px,PY(d),B,1.3,true)
+     +line(cx-6,PY(d),cx+6,PY(d),B,2)+line(px-5,PY(d),px+5,PY(d),Y,1.8)+dot(PX(d),PY(d),Y)
+     +txt(328,PY(d)+5,lab,Y,13,'start');
+  });
+  s+=txt(84,278,'φ₁ = 4π/3',W,13,'end');
+  s+=txt(66,76,'φ₂ = 3π/4',W,13,'end');
+  s+=`<path d="${AP(76,135,240)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+76*Math.cos(rd(240)),cy-76*Math.sin(rd(240)),tg(240),GREEN);
+  s+=txt(98,182,'Δφ = 7π/12',GREEN,13);
+  s+=ahd(PX(0),PY(0),tg(0),M)+txt(248,162,'ω',M,14,'start');
+  s+=txt(230,302,'both written as sines, amplitude 10 m, so one circle',M,12.5);
+  s+=txt(230,320,'at t = 0.5 s the phases are φ₁ = 16π/3, φ₂ = 19π/4',M,12.5);
+  s+=txt(230,338,'four whole turns each bring the point back, so drop 4π',M,12.5);
+  s+=txt(230,356,'Δφ = 4π/3 − 3π/4 = 7π/12',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-122':{
+  /* SHM-122 -- the step the question turns on is that the greatest separation
+     is 2a sin(phi/2), which on the reference circle is the LENGTH OF THE CHORD
+     joining the two points. The separation at any instant is that chord's
+     component along the oscillation axis, so it is greatest at the instant the
+     chord lies parallel to the axis -- which is the instant drawn. With a 60
+     degree chord in a circle of radius a the chord is a itself, and the two
+     projections sit at +a/2 and -a/2, a apart, as the dimension bar shows. */
+  height=372;
+  const cx=142,cy=168,R=96,px=318,rd=d=>d*Math.PI/180;
+  const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const vspan=(y1,y2,x,label,c=M)=>line(x,y1,x,y2,c,1.5)+line(x-6,y1,x+6,y1,c,1.5)+line(x-6,y2,x+6,y2,c,1.5)+txt(x+9,(y1+y2)/2+5,label,c,14,'start');
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=arrow(cx,cy+R+18,cx,cy-R-18,'',M)+txt(cx+9,cy-R-20,'x',M,14,'start');
+  s+=dot(cx,cy,W);
+  s+=line(px,cy-R,px,cy+R,Y,2.6)+line(px-7,cy-R,px+7,cy-R,Y,2.2)+line(px-7,cy+R,px+7,cy+R,Y,2.2);
+  s+=line(cx,cy,cx,cy-R,Y,2.4)+txt(cx+10,cy-R+34,'a',Y,15,'start');
+  s+=line(px-5,cy,px+5,cy,M,1.8)+txt(328,cy+5,'x = 0',M,13,'start');
+  [[30,'x (Q) = +a/2'],[-30,'x (P) = −a/2']].forEach(([d,lab])=>{
+   s+=line(cx,cy,PX(d),PY(d),W,2.2)+line(PX(d),PY(d),px,PY(d),B,1.3,true)
+     +line(cx-6,PY(d),cx+6,PY(d),B,2)+line(px-5,PY(d),px+5,PY(d),Y,1.8)+dot(PX(d),PY(d),Y)
+     +txt(328,PY(d)+5,lab,Y,13,'start');
+  });
+  // the chord: its length is the greatest separation the two can reach
+  s+=line(PX(30),PY(30),PX(-30),PY(-30),GREEN,2.6);
+  s+=txt(236,152,'chord = a',GREEN,13,'start');
+  // and here the chord is upright, so the gap on the path is the chord itself
+  [PY(30),PY(-30)].forEach(yy=>{s+=line(394,yy,402,yy,M,1,true);});
+  s+=vspan(PY(30),PY(-30),408,'a');
+  s+=`<path d="${AP(58,-30,30)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+58*Math.cos(rd(30)),cy-58*Math.sin(rd(30)),tg(30),GREEN);
+  s+=txt(176,174,'60°',GREEN,14);
+  s+=ahd(PX(120),PY(120),tg(120),M)+txt(86,70,'ω',M,14,'end');
+  s+=txt(230,302,'both of amplitude a on one circle, φ apart in phase',M,12.5);
+  s+=txt(230,320,'their gap is the chord measured along the axis',M,12.5);
+  s+=txt(230,338,'greatest when the chord is upright: 2a sin(φ/2) = a',M,12.5);
+  s+=txt(230,356,'half the phase is π/6, so φ = 60° = π/3',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-106':{
+  /* SHM-106 -- two amplitudes, A and 2A, about one mean position, so two
+     concentric reference circles sharing one axis. The crossing point x = A/2
+     is ONE horizontal line, and it cuts the small circle where sin = 1/2 and
+     the big one where sin = 1/4: that is why the same place gives two different
+     phases. The short tangent arrows carry the sign condition -- the inner
+     point is on its way out, the outer one on its way back, which is what puts
+     the outer phase in the second quadrant rather than the first. */
+  height=390;
+  const cx=160,cy=168,r1=48,r2=96,px=326,rd=d=>d*Math.PI/180;
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const d1=30,d2=180-Math.asin(0.25)*180/Math.PI;          // sin d1 = 1/2, sin d2 = 1/4, second quadrant
+  const p1=[cx+r1*Math.cos(rd(d1)),cy-r1*Math.sin(rd(d1))];
+  const p2=[cx+r2*Math.cos(rd(d2)),cy-r2*Math.sin(rd(d2))];
+  const lev=p1[1];                                          // both land on the same level: x = A/2
+  s+=`<circle cx="${cx}" cy="${cy}" r="${r2}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${r1}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  s+=arrow(cx,cy+r2+18,cx,cy-r2-18,'',M)+txt(cx+9,cy-r2-20,'x',M,14,'start');
+  s+=dot(cx,cy,W);
+  s+=line(px,cy-r2,px,cy+r2,Y,2.6)+line(px-7,cy-r2,px+7,cy-r2,Y,2.2)+line(px-7,cy+r2,px+7,cy+r2,Y,2.2);
+  // the two radii are the two amplitudes, measured down the axis
+  s+=line(cx-7,cy+r1,cx+7,cy+r1,Y,2)+txt(cx-12,cy+r1+20,'A',Y,14,'end');
+  s+=line(cx-7,cy+r2,cx+7,cy+r2,Y,2)+txt(cx-12,cy+r2+20,'2A',Y,14,'end');
+  // one crossing point, one level, two circles
+  s+=line(p2[0],lev,px,lev,B,1.5,true)+line(cx-6,lev,cx+6,lev,B,2)+line(px-5,lev,px+5,lev,Y,1.8);
+  s+=line(cx,cy,p1[0],p1[1],Y,2.2)+dot(p1[0],p1[1],Y);
+  s+=line(cx,cy,p2[0],p2[1],Y,2.2)+dot(p2[0],p2[1],Y);
+  s+=txt(212,166,'P₁',Y,14,'start')+txt(56,130,'P₂',Y,14,'end');
+  // which way each is going
+  s+=arrow(p1[0],p1[1],p1[0]+24*Math.cos(tg(d1)),p1[1]+24*Math.sin(tg(d1)),'',GREEN)+txt(206,112,'out',GREEN,13,'start');
+  s+=arrow(p2[0],p2[1],p2[0]+24*Math.cos(tg(d2)),p2[1]+24*Math.sin(tg(d2)),'',GREEN)+txt(52,190,'back',GREEN,13,'end');
+  s+=txt(336,cy-r2+5,'x = +2A',Y,13,'start');
+  s+=txt(336,lev+5,'x = A/2',Y,13,'start');
+  s+=line(px-5,cy,px+5,cy,M,1.8)+txt(336,cy+5,'x = 0',M,13,'start');
+  s+=txt(336,cy+r2+5,'x = −2A',M,13,'start');
+  s+=`<path d="${AP(68,d1,d2)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+68*Math.cos(rd(d2)),cy-68*Math.sin(rd(d2)),tg(d2),GREEN);
+  s+=txt(158,126,'Δφ',GREEN,15);
+  s+=ahd(cx+r2*Math.cos(rd(250)),cy-r2*Math.sin(rd(250)),tg(250),M)+txt(116,274,'ω',M,14,'end');
+  s+=txt(230,302,'two circles, radius A and radius 2A, about one centre',M,12.5);
+  s+=txt(230,320,'they cross at x = A/2, with sin φ₁ = 1/2, sin φ₂ = 1/4',M,12.5);
+  s+=txt(230,338,'one is going out, the other back, so φ₂ is in quadrant two',M,12.5);
+  s+=txt(230,356,'φ₁ = π/6, φ₂ = π − sin⁻¹(1/4)',M,12.5);
+  s+=txt(230,374,'Δφ = 5π/6 − sin⁻¹(1/4)',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-222':{
+  /* SHM-222 -- a velocity, direction included, normally comes round twice in a
+     cycle. On the reference circle the SHM velocity is the part of the
+     tangential A*omega that lies along the oscillation axis, and the two points
+     at equal angles either side of the three-o'clock position have exactly the
+     same such part: same size, same direction. So the gap between those two
+     instants is less than a period. They coincide only when the angle shrinks
+     to zero -- at the mean position, where the tangent lies wholly along the
+     axis and the velocity is the largest the motion allows. */
+  height=352;
+  const cx=170,cy=160,R=92,rd=d=>d*Math.PI/180;
+  const PX=d=>cx+R*Math.cos(rd(d)),PY=d=>cy-R*Math.sin(rd(d));
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const D=55,L=44,vy=L*Math.cos(rd(D));                    // the part of A*omega along the axis
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=arrow(cx,cy+R+18,cx,cy-R-18,'',M)+txt(cx+9,cy-R-20,'x',M,14,'start');
+  s+=dot(cx,cy,W);
+  s+=line(cx,cy,cx,cy-R,Y,2.2)+txt(cx+9,cy-R+46,'A',Y,14,'start');
+  // the two points that share one velocity, direction and all
+  [D,-D].forEach(d=>{
+   const x=PX(d),y=PY(d),a=tg(d);
+   s+=line(x,y,x+L*Math.cos(a),y+L*Math.sin(a),W,2)
+     +ahd(x+L*Math.cos(a),y+L*Math.sin(a),a,W)
+     +arrow(x,y,x,y-vy,'',GREEN)
+     +line(x,y-vy,x+L*Math.cos(a),y+L*Math.sin(a),M,1,true)
+     +dot(x,y,Y);
+  });
+  s+=txt(212,PY(D)-14,'v',GREEN,14,'end')+txt(212,PY(-D)-14,'v',GREEN,14,'end');
+  s+=txt(198,50,'Aω',W,13,'start')+txt(266,206,'Aω',W,13,'start');
+  s+=txt(234,PY(D)+6,'P₁',Y,14,'start')+txt(234,PY(-D)+6,'P₂',Y,14,'start');
+  // the mean position, where the two merge and the tangent is wholly along x
+  s+=dot(PX(0),PY(0),Y)+arrow(PX(0),PY(0),PX(0),PY(0)-L,'',Y);
+  s+=txt(272,150,'v (max)',Y,13,'start')+txt(272,166,'at φ = 0',Y,13,'start');
+  s+=dot(PX(180),PY(180),M)+arrow(PX(180),PY(180),PX(180),PY(180)+L,'',M);
+  s+=txt(60,226,'−v (max)',M,13)+line(66,218,76,208,M,1.1);
+  s+=`<path d="${AP(44,-D,D)}" fill="none" stroke="${GREEN}" stroke-width="1.8"/>`;
+  s+=ahd(cx+44*Math.cos(rd(D)),cy-44*Math.sin(rd(D)),tg(D),GREEN);
+  s+=txt(300,196,'gap < T',GREEN,13,'start')+line(298,192,218,176,GREEN,1.1);
+  s+=txt(230,302,'v is the part of the tangential Aω that lies along x',M,12.5);
+  s+=txt(230,320,'P₁ and P₂ share it exactly, so it returns inside one turn',M,12.5);
+  s+=txt(230,338,'they merge only at φ = 0, and there v = Aω, once a turn',GREEN,12.5);
+  break;
+ }
+case 'soln-shm-012':{
+  /* SHM-012 -- a phasor picture rather than a timing one. Both x and a are
+     projections on the SAME horizontal axis, x of a phasor of length x0 at
+     phase omega t - pi/4, a of a phasor of length x0 omega^2. Differentiating
+     twice multiplies the length by omega^2 and turns the cosine negative,
+     which on the circle is half a turn: the two phasors lie along one straight
+     line through the centre, pointing opposite ways. Hence delta = -pi/4 + pi
+     = 3 pi/4, and the projections always have opposite signs -- which is just
+     a proportional to -x. The two radii are drawn on their own circles so the
+     omega^2 factor is a real length, not a claim in a caption. */
+  height=348;
+  const cx=200,cy=152,r1=56,r2=104,rd=d=>d*Math.PI/180;
+  const AP=(r,d1,d2)=>arcPath(cx,cy,r,-rd(d1),-rd(d2));
+  const tg=d=>Math.atan2(-Math.cos(rd(d)),-Math.sin(rd(d)));
+  const ahd=(x,y,a,c)=>`<path d="M ${(x-9*Math.cos(a-.45)).toFixed(1)} ${(y-9*Math.sin(a-.45)).toFixed(1)} L ${x.toFixed(1)} ${y.toFixed(1)} L ${(x-9*Math.cos(a+.45)).toFixed(1)} ${(y-9*Math.sin(a+.45)).toFixed(1)}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const px1=[cx+r1*Math.cos(rd(-45)),cy-r1*Math.sin(rd(-45))];
+  const pa=[cx+r2*Math.cos(rd(135)),cy-r2*Math.sin(rd(135))];
+  s+=`<circle cx="${cx}" cy="${cy}" r="${r2}" fill="none" stroke="${M}" stroke-width="1.6"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${r1}" fill="none" stroke="${M}" stroke-width="1.4"/>`;
+  // both quantities project on this one axis
+  s+=arrow(cx-r2-30,cy,cx+r2+30,cy,'',M)+txt(cx+r2+36,cy+5,'x, a',M,13,'start');
+  s+=dot(cx,cy,W);
+  // the displacement phasor and its projection
+  s+=line(cx,cy,px1[0],px1[1],Y,2.4)+dot(px1[0],px1[1],Y);
+  s+=line(px1[0],px1[1],px1[0],cy,B,1.4,true)+line(px1[0],cy-6,px1[0],cy+6,B,2);
+  s+=txt(222,196,'x',Y,15);
+  // the acceleration phasor, omega^2 times as long and pointing the other way
+  s+=line(cx,cy,pa[0],pa[1],GREEN,2.4)+dot(pa[0],pa[1],GREEN);
+  s+=line(pa[0],pa[1],pa[0],cy,B,1.4,true)+line(pa[0],cy-6,pa[0],cy+6,B,2);
+  s+=txt(112,100,'a',GREEN,15,'end');
+  // the phase the displacement starts at
+  s+=`<path d="${AP(34,0,-45)}" fill="none" stroke="${W}" stroke-width="1.5"/>`;
+  s+=txt(252,178,'−π/4',W,13,'start')+line(250,174,234,168,W,1.1);
+  // the two phasors lie along ONE straight line through the centre: that is the π
+  s+=txt(290,230,'π apart, on one line',GREEN,13,'start')+line(288,226,262,212,GREEN,1.1);
+  // and the phase that leaves the acceleration with
+  s+=`<path d="${AP(124,0,135)}" fill="none" stroke="${W}" stroke-width="1.5"/>`;
+  s+=ahd(cx+124*Math.cos(rd(135)),cy-124*Math.sin(rd(135)),tg(135),W);
+  s+=txt(276,36,'δ = 3π/4',W,13,'start');
+  // the two lengths, measured off the axis they both project on
+  s+=line(cx+r1,cy,cx+r1,232,M,1,true)+span(cx,cx+r1,232,'x₀');
+  s+=line(cx+r2,cy,cx+r2,262,M,1,true)+span(cx,cx+r2,262,'x₀ω²');
+  s+=ahd(cx+r2*Math.cos(rd(215)),cy-r2*Math.sin(rd(215)),tg(215),M)+txt(104,230,'ω',M,14,'end');
+  s+=txt(230,302,'both project on one axis; a is ω² times as long as x',M,12.5);
+  s+=txt(230,320,'two differentiations negate the cosine, which is half a turn',M,12.5);
+  s+=txt(230,338,'so δ = −π/4, plus π, is 3π/4: a always opposes x',GREEN,12.5);
   break;
  }
  }
