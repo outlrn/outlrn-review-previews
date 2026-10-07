@@ -5540,8 +5540,14 @@ const CHAPTERS=[
  {subject:'mathematics',title:'Probability',path:'mathematics/probability/'},
 ];
 function chapterNav(subject,activePath,base){
- /* No prefix passed: take it from the address, so links stay on the route serving the page (production, the branch preview or a prefix such as /johniton/). */
- if(!base){const m=(typeof location!=='undefined'?location.pathname:'/').match(/^(.*?)(?:physics|chemistry|mathematics)\//);base=m?m[1]:'/';}
+ /* Every caller already collapses a missing NAVBASE to the literal '/' before calling this, so a falsy check never fires. Work out the prefix here instead, from the first path segment: on a preview route that segment is one of these fixed slugs (mirrors qa/build-preview-entrypoints.cjs), on production it's a subject name or nothing. Overrides whatever base the caller passed. */
+ if(typeof location!=='undefined'){
+  const PREVIEW_SLUGS=['vishnu','ankur','johniton','kartikeya','manan','shreya'];
+  const seg=location.pathname.split('/').filter(Boolean)[0];
+  base=PREVIEW_SLUGS.includes(seg)?'/'+seg+'/':'/';
+ }else{
+  base=base||'/';
+ }
  return CHAPTERS.filter(c=>c.subject===subject).map(c=>`<a${c.path===activePath?' class="active"':''} href="${base}${c.path}">${c.title}</a>`).join('');
 }
 </script>
